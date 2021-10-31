@@ -107,7 +107,9 @@ beyliks_subjugated = {
 	land_morale = 0.1
 	cavalry_cost = -0.1
 }
-
+pap_papal_swiss_guard = {
+	mercenary_discipline = 0.05
+}
 prester_john_discovered = {
 	infantry_power = 0.1
 }
@@ -131,7 +133,7 @@ gecko_cannon_foundries = {
 }
 
 gecko_mysorean_rockets = {
-	artillery_fire = 0.5
+	artillery_fire = 0.25
 }
 
 gecko_cannon_institute = {

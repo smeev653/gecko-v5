@@ -344,9 +344,11 @@ allianceaction = {
 	}
 	condition = {
 		tooltip = sm_tooltip_mamottoally
-		potential = {	
-			tag = MAM
-				
+		potential = {
+			OR = {
+				tag = MAM
+				tag = EGY
+			}	
 			NOT = {
 				has_reform = parliamentary_reform
 				has_reform = royal_decree_reform
@@ -383,7 +385,8 @@ allianceaction = {
 			FROM = {
 				NOT = { 
 					OR = {
-						tag = MAM					
+						tag = MAM
+						tag = EGY						
 					}
 				}
 			}

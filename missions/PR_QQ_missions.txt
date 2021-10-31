@@ -12,10 +12,8 @@ QAR_conquest = {
 		
 		trigger = {
 			OR = {
-				is_rival = KRM
-				is_rival = FRS
-				is_rival = MHR
-		
+				is_rival = AKK
+				is_rival = ETH
 				}
 		}
 		effect = {

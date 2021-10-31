@@ -65,6 +65,13 @@ emp_pap_slot_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -128,7 +135,7 @@ emp_pap_slot_1 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = corsica_sardinia_area
+				area = corsica_area
 				area = liguria_area
 				area = piedmont_area
 			}
@@ -141,7 +148,7 @@ emp_pap_slot_1 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 7
 				OR = {
-					area = corsica_sardinia_area
+					area = corsica_area
 					area = liguria_area
 					area = piedmont_area
 				}

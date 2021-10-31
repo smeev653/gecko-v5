@@ -15,8 +15,8 @@ religious_school = maliki_school
 		name = "Mar-Arkana"
 		dynasty = "Sonni"
 		adm = 3
-		dip = 2
-		mil = 3
+		dip = 4
+		mil = 5
 	}
 	add_piety = 0.25
 }

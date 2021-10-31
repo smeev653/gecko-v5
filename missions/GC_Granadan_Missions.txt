@@ -2091,13 +2091,6 @@ andalusia_slot_5_missions = {
 				}
 				add_claim = ROOT
 			}
-			trans_jordan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
 			iraq_arabi_area = {
 				limit = {
 					NOT = { is_core = ROOT }

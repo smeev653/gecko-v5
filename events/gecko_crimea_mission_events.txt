@@ -1,5 +1,3 @@
-#Loot Sarai
-
 namespace = gecko_crimea_mission
 
 country_event = {
@@ -19,6 +17,7 @@ country_event = {
 			add_base_production = 4
 			add_base_manpower = 4
 		}
+		add_treasury = 500
 	}
 }
 
@@ -144,9 +143,6 @@ country_event = {
 			add_base_production = 1
 			add_base_manpower = 1
 			change_culture = crimean
-		}
-		285 = {
-					add_center_of_trade_level = 1
 		}
 		#add_treasury = 500
 		add_manpower = 10

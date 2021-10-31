@@ -9,8 +9,10 @@ estate_nomadic_tribes = {
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_reform = cossacks_reform }
-		is_nomad = yes
+		OR = {
+			is_nomad = yes
+			has_reform = cossacks_reform
+		}
 		
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }

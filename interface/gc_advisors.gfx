@@ -33,5 +33,71 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_advisor_gc_inquisitor"
+		texturefile = "gfx//interface//advisors//gc_inquisitor.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_gc_inquisitor_female"
+		texturefile = "gfx//interface//advisors//gc_inquisitor_female.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_siege_specialist"
+		texturefile = "gfx//interface//advisors//siege_specialist.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_siege_specialist_female"
+		texturefile = "gfx//interface//advisors//siege_specialist_female.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_infantry_leader"
+		texturefile = "gfx//interface//advisors//infantry_leader.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	#generic female 
+	spriteType = {
+		name = "GFX_advisor_infantry_leader_female"
+		texturefile = "gfx//interface//advisors//infantry_leader_female.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_cavalry_leader"
+		texturefile = "gfx//interface//advisors//cavalry_leader.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	#generic female 
+	spriteType = {
+		name = "GFX_advisor_cavalry_leader_female"
+		texturefile = "gfx//interface//advisors//cavalry_leader_female.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
 }
 

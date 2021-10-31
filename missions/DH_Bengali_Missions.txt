@@ -626,13 +626,6 @@ bng_slot_3 = {
 					}
 				}
 			}
-			yun_gui_borderland_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	bng_tiger_mission = {

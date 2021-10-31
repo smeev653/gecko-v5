@@ -1,0 +1,789 @@
+gc_cri_branch_1 = {
+    slot = 1
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = CRI
+            tag = HET
+        }
+	}
+	has_country_shield = yes
+
+    gc_cri_mission_1 = {
+        icon = mission_steppe_warriors
+        required_missions = { gc_cri_mission_3 }
+		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+				area = podolia_volhynia_area
+				area = west_dniepr_area
+				area = east_dniepr_area
+				area = chernigov_area
+				area = sloboda_ukraine_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+
+        trigger = {
+            podolia_volhynia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			chernigov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sloboda_ukraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+
+        effect = {
+            add_adm_power = 25
+			add_mil_power = 25
+			add_dip_power = 25
+			add_prestige = 25
+			add_manpower = 10
+        }
+    }
+
+    gc_cri_mission_2 = {
+        icon = mission_colonial
+        required_missions = { gc_cri_mission_1 }
+		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+				area = podolia_volhynia_area
+				area = west_dniepr_area
+				area = east_dniepr_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+
+        trigger = {
+            podolia_volhynia_area = {
+				type = all
+				owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+			}
+			west_dniepr_area = {
+				type = all
+				owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+			}
+			east_dniepr_area = {
+				type = all
+				owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+			}
+        }
+
+        effect = {
+            podolia_volhynia_area = {
+				add_base_tax = 1
+                add_base_production = 1
+			}
+			west_dniepr_area = {
+				add_base_tax = 1
+                add_base_production = 1
+			}
+			east_dniepr_area = {
+				add_base_tax = 1
+                add_base_production = 1
+			}
+        }
+    }
+} #End Branch 1
+
+gc_cri_branch_2 = {
+    slot = 2
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = CRI
+            tag = HET
+        }
+	}
+	has_country_shield = yes
+
+    gc_cri_mission_3 = {
+        icon = mission_non-western_soldiers
+        required_missions = { }
+		position = 1
+
+        provinces_to_highlight = {
+            OR = {
+				area = azov_area
+				area = simferopol_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+
+        trigger = {
+			azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			simferopol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+
+        effect = {
+            country_event = { id = gecko_crimea_mission.2 }
+			moldavia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			podolia_volhynia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			west_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			chernigov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			sloboda_ukraine_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+            lower_don_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+            tambov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+            saratov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+            circassia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+            dagestan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+            stavropol_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+            astrakhan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+    }
+
+    gc_cri_mission_4 = {
+        icon = mission_conquer_romania
+        required_missions = { gc_cri_mission_3 }
+		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+				area = moldavia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+
+        trigger = {
+            moldavia_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_adm_power = 25
+            add_dip_power = 25
+            add_mil_power = 25
+        }
+    }
+
+    gc_cri_mission_5 = {
+        icon = mission_collect_yasak
+        required_missions = { gc_cri_mission_4 }
+		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+				area = moldavia_area
+			}
+        }
+
+        trigger = {
+            moldavia_area = {
+                type = all
+                owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+            }
+        }
+
+        effect = {
+            moldavia_area = {
+                add_base_tax = 1
+                add_base_production = 1
+            }
+        }
+    }
+} #End Branch 2
+
+gc_cri_branch_3 = {
+    slot = 3
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = CRI
+            tag = HET
+        }
+	}
+	has_country_shield = yes
+
+    gc_cri_mission_6 = {
+        icon = mission_great_trading_houses
+        required_missions = { }
+		position = 1
+
+        provinces_to_highlight = {
+            OR = {
+                area = crimea_area
+            }
+        }
+
+        trigger = {
+            crimea_area = {
+                type = all
+                owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+            }
+        }
+
+        effect = {
+            crimea_area = {
+                add_base_tax = 1
+                add_base_production = 1
+            }
+        }
+    }
+
+    gc_cri_mission_7 = {
+        icon = mission_conquer_riga
+        required_missions = { gc_cri_mission_6 }
+		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+                area = simferopol_area
+            }
+        }
+
+        trigger = {
+            simferopol_area = {
+                type = all
+                owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+            }
+        }
+
+        effect = {
+            simferopol_area = {
+                add_base_tax = 1
+                add_base_production = 1
+            }
+        }
+    }
+
+    gc_cri_mission_8 = {
+        icon = mission_novgorod_the_great
+        required_missions = { gc_cri_mission_7 }
+		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+                area = astrakhan_area
+                area = saratov_area
+            }
+        }
+
+        trigger = {
+            astrakhan_area = {
+                type = all
+                owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+            }
+            saratov_area = {
+                type = all
+                owned_by = ROOT
+                OR = {
+                    AND = {
+                        has_building = temple
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = workshop
+                    }
+                    AND = {
+                        has_building = barracks
+                        has_building = temple
+                    }
+                }
+            }
+        }
+
+        effect = {
+            astrakhan_area = {
+                add_base_tax = 1
+                add_base_production = 1
+            }
+            saratov_area = {
+                add_base_tax = 1
+                add_base_production = 1
+            }
+        }
+    }
+
+    gc_cri_mission_9 = {
+        icon = mission_rule_ruthenia
+        required_missions = { gc_cri_mission_2 gc_cri_mission_5 gc_cri_mission_8 gc_cri_mission_12 gc_cri_mission_14 }
+		position = 4
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            tag = CRI
+            horde_unity = 80
+            is_at_war = no
+			is_free_or_tributary_trigger = yes
+        }
+
+        effect = {
+            change_tag = HET
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			set_country_flag = ASU_formed_hetmanate
+			country_event = {
+				id = ideagroups.1
+			}
+			define_ruler = {
+				name = "Tokhtamysh"
+				dynasty = "Borjigin"
+				fixed = yes
+				religion = sunni
+				claim = 100
+				adm = 5
+				dip = 5
+				mil = 6
+			}							
+			kill_heir = yes
+            if = {
+				limit = {
+					NOT = { government = republic }
+					is_revolutionary = no
+				}
+				change_government_to_republic = yes
+				add_government_reform = cossacks_reform
+			}
+        }
+    }
+} #End Branch 3
+
+gc_cri_branch_4 = {
+    slot = 4
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = CRI
+            tag = HET
+        }
+	}
+	has_country_shield = yes
+
+    gc_cri_mission_10 = {
+        icon = mission_recruit_the_cossacks
+        required_missions = { }
+		position = 1
+
+        provinces_to_highlight = {
+            OR = {
+                area = lower_don_area
+                area = tambov_area
+                area = saratov_area
+            }
+        }
+
+        trigger = {
+            lower_don_area = {
+                type = all
+                owned_by = ROOT
+            }
+            tambov_area = {
+                type = all
+                owned_by = ROOT
+            }
+            saratov_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_adm_power = 25
+            add_dip_power = 25
+            add_mil_power = 25
+        }
+    }
+
+    gc_cri_mission_11 = {
+        icon = mission_break_the_tatar_yoke
+        required_missions = { gc_cri_mission_10 gc_cri_mission_13 }
+		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+				province_id = 303
+				province_id = 466
+				province_id = 464
+				#province_id = 465
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+        }
+
+        trigger = {
+			num_of_cities = 25
+			owns_core_province = 303
+			owns_core_province = 466
+			owns_core_province = 464
+			#owns_core_province = 465
+        }
+
+        effect = {
+            add_mil_power = 25
+			add_dip_power = 25
+			add_adm_power = 25
+			country_event = { id = gecko_crimea_mission.1 }
+			lower_yik_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			nogai_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			bashkiria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			volga_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			samara_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+    }
+
+    gc_cri_mission_12 = {
+        icon = mission_unite_home_region
+        required_missions = { gc_cri_mission_11 }
+		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+                area = bashkiria_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            bashkiria_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_adm_power = 25
+            add_dip_power = 25
+            add_mil_power = 25
+        }
+    }
+} #End Branch 4
+
+gc_cri_branch_5 = {
+    slot = 5
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = CRI
+            tag = HET
+        }
+	}
+	has_country_shield = yes
+
+    gc_cri_mission_13 = {
+        icon = mission_cossack_cavalry
+        required_missions = { }
+		position = 1
+
+        provinces_to_highlight = {
+            OR = {
+                area = astrakhan_area
+                area = stavropol_area
+                area = circassia_area
+                area = dagestan_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            astrakhan_area = {
+                type = all
+                owned_by = ROOT
+            }
+            stavropol_area = {
+                type = all
+                owned_by = ROOT
+            }
+            circassia_area = {
+                type = all
+                owned_by = ROOT
+            }
+            dagestan_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_prestige = 25
+            add_manpower = 15
+        }
+    }
+
+    gc_cri_mission_14 = {
+        icon = mission_reclaim_lost_territory
+        required_missions = { gc_cri_mission_11 }
+		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+                area = nogai_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            nogai_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_adm_power = 50
+            add_dip_power = 50
+            add_mil_power = 50
+        }
+    }
+} #End Branch 5

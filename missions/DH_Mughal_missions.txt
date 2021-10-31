@@ -382,15 +382,6 @@ mug_towards_china = {
 			#	}
 			#	add_permanent_claim = ROOT
 			#}
-			yun_gui_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 }

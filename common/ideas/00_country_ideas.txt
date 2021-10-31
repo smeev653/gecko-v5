@@ -2866,7 +2866,7 @@ PAP_ideas = {
 		state_maintenance_modifier = -0.25
 	}
 	the_vatican_museums = {
-		possible_policy = 1
+		free_mil_policy = 1
 	}
 
 }
@@ -3275,7 +3275,7 @@ SWI_ideas = {
 
 SON_ideas = {
 	start = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 		army_tradition = 0.5
 	}
 	

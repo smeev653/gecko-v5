@@ -415,6 +415,7 @@ iqta = {
 	potential = {
 		religion_group = muslim
 		NOT = {tag = SON}
+		NOT = {tag = PR2}
 		NOt = {tag = ZAN}
 	}
 	valid_for_nation_designer = yes
@@ -1247,6 +1248,7 @@ enforce_privileges_reform = {
 	}
 	modifiers = {
 		global_manpower_modifier = 0.15
+		church_influence_modifier = -0.1
 	}
 	ai = {
 		factor = 1
@@ -1942,7 +1944,7 @@ regional_representation_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
 	modifiers = {
-		min_autonomy_in_territories = -0.10
+		possible_policy = 1
 	}
 }
 
