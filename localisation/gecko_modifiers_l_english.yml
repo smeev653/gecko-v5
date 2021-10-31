@@ -1,0 +1,100 @@
+﻿l_english:
+ hungary_unleashed:0 "Hungary Unleashed"
+ desc_hungary_unleashed:0 "Janos Hunyadi is sole regent of Hungary. It would be wise to make use of his excellent statecraft."
+ burgundy_subjects_placated:0 "Burgundian Subjects Placated"
+ desc_burgundy_subjects_placated:0 "We have successfully placated our subjects"
+ free_colonist:0 "Colonial Fervour"
+ burgundy_subjects_placated:0 "Burgundian subjects placated"
+ desc_burgundy_subjects_placated:0 "We have successfully placated our subjects"
+ bukharan_wool:0 "Bukharan Wool"
+ silk_road_restored:0 "Silk Road Restored"
+ low_army_tradition:0 "Low Army Tradition"
+ gecko_estate_cossacks_exploration_expedition_effect_tooltip:0 "§G-10%§! local development cost in all Steppe provinces"
+ estate_cossacks_prime_herding_rights_effect_tooltip:0 "§G+25%§! manpower from all Steppe provinces\n§R-20%§! tax income from all Steppe provinces"
+ enlist_rajputs:0 "Rajputs Enlisted"
+ jihad:0 "Religious Fervour"
+ over_merc_cap_early_minor:0 "Overreliance on Mercenaries" 
+ over_merc_cap_early:0 "Overreliance on Mercenaries" 
+ over_merc_cap_mid:0 "Overreliance on Mercenaries" 
+ over_merc_cap_late:0 "Overreliance on Mercenaries"
+ over_merc_cap_early_pluto:0 "Overreliance on Mercenaries - Pluto"
+ over_merc_cap_mid_pluto:0 "Overreliance on Mercenaries - Pluto"  
+ the_upper_nile:0 "The Upper Nile"
+ desc_the_upper_nile:0 "The fertile lands of the Upper Nile provide great potential for agriculture and further development."
+ isles_secured:0 "Isles Secured"
+ desc_isles_secured:0 "We have brought the Isles under our control, let us use this momentum to enforce our will elsewhere."
+ grand_armee:0 "Grande Armée"
+ desc_grand_armee:0 "We must assemble the greatest fighting force in history."
+ angevin_supremacy:0 "Angevin Supremacy"
+ desc_angevin_supremacy:0 "Our recent conquests on the mainland have demonstrated our abilities as the finest fighting force on the continent."
+ swedish_empire:0 "Swedish Empire"
+ desc_swedish_empire:0 "Sweden has elevated itself to a Great Power."
+ kaiser_of_europe:0 "Kayser of Europe"
+ desc_kaiser_of_europe:0 "Vienna is ours. Europe must recognise our supremacy."
+ third_rome:0 "The Third Rome"
+ desc_third_rome:0 "We have conquered the City of World's Desire. This achievement has provided our armies with unrelenting fervour for the Russian state."
+
+ #Province Triggered Modifiers
+ conquest_of_constantinople:0 "Conquest of Constantinople"
+ conquest_of_paris:0 "Conquest of Paris"
+ conquest_of_vienna:0 "Conquest of Vienna"
+ conquest_of_jerusalem:0 "Conquest of Jerusalem"
+ conquest_of_baghdad:0 "Conquest of Baghdad"
+ conquest_of_delhi:0 "Conquest of Delhi"
+ conquest_of_kiev:0 "Conquest of Kiev"
+ conquest_of_cairo:0 "Conquest of Cairo"
+
+ #Advisor Event modifiers
+ gc_arty_officer_delayed:0 "Arty Officer Delayed"
+ gc_arty_officer_modifier:0 "Excellent Artillery Officers"
+ gc_drill_master_delayed:0 "Drill Master Delayed"
+ gc_drill_master_modifier:0 "Excellent Drill Master"
+
+ #Mamluks
+ mam_slave_soldiers:0 "Gihadiya Conscription"
+ desc_mam_slave_soldiers:0 "We have conquered the Sudan and enlisted their warriors into our regiments in return for them keeping their domains."
+ ethiopian_integration:0 "Ethiopian Integration"
+ desc_ethiopian_integration:0 "We have begun to install a new administration in Ethiopia."
+ mam_african_market:0 "African Market"
+ desc_mam_african_market:0 "We have conquered the narrow passage to the Sahel. Let our traders follow the flow of trade."
+
+ #Ethiopia
+ gecko_ethiopia_highlands_and_mountains_modifier:0 "Temper the Roof of Africa"
+ gc_ethiopia_prester_john:0 "Legacy of Prester John"
+ gc_ethiopia_crusade:0 "Crusade from Africa"
+
+ #Mysore
+ gecko_cannon_foundries:0 "Cannon Foundries"
+ gecko_mysorean_rockets:0 "Mysorean Rockets"
+ gecko_cannon_institute:0 "Artillery Research Institute"
+ gecko_handheld_rockets:0 "Handheld Rocketry"
+ gecko_mysore_encourage_production:0 "Encourage Craftsmanship"
+ gecko_mysore_expand_ports:0 "Mercantile Urbanization"
+ gecko_mysore_navy:0 "Merchant Fleet"
+ gecko_mysore_industrial_expansion:0 "Industral Expansion"
+ gecko_south_indian_empire:0 "South Indian Empire"
+ gecko_entrepreneural_spirit:0 "Entrepreneurial Spirit"
+ gecko_marathas_subdued:0 "Marathas Subdued"
+
+ #Salt Road
+ alte_salzstrase:0 "Alte Salzstraße"
+ desc_alte_salzstrase:0 "The Alte Salzstraße, also known as the Old Salt Road, was a very rich salt transporting network. Often called "White Gold", the salt mines were very lucrative for the northern parts of Germany, especially Lübeck, until the 17th century."
+
+ #Hansa Missions
+
+ hsa_north_sea:0 "Hanseatic Power Restored"
+ desc_hsa_north_sea:0 "We have restored our influence in the North Sea."
+
+ #France Missions
+
+ france_united:0 "France United"
+ desc_france_united:0 "We have united the French lands much to betterment of our armies"
+
+ #Ottoman Missions
+
+ caliphate_proclaimed:0 "Caliphate Proclaimed"
+ desc_caliphate_proclaimed:0 "Our control over the holy sites and destruction of the Mamluke Sultanate mean that we can claim the title of Caliph for the first time since the great Muslim empires."
+
+ #Portugal
+ cape_trade_established:0 "Cape City Established"
+ prester_john_discovered:0 "Prester John Discovered"

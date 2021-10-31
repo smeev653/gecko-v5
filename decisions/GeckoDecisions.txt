@@ -1,0 +1,383 @@
+country_decisions = {
+
+	sm_hire_general = {
+			potential = {
+				ai = no
+				NOT = { has_country_flag = sm_hire_general }
+			}
+			allow = {
+				NOT = { army_tradition = 40 }
+			}
+			effect = {
+				add_years_of_income = -0.3
+				create_general = { tradition = 40 }
+				set_country_flag = sm_hire_general
+			}
+		}
+		
+	sm_hire_explorer = {	
+		potential = {
+				ai = no
+				has_institution = new_world_i
+				NOT = { has_country_modifier = hired_explorer }
+			}
+			allow = {
+				has_institution = new_world_i
+			}
+			effect = {
+				add_years_of_income = -0.1
+				create_explorer = { tradition = 10 }
+				add_country_modifier = {
+				name = "hired_explorer"
+				duration = 1825
+				hidden = yes
+				}
+			}
+		}	
+		
+	sm_hire_conquistador = {	
+		potential = {
+				ai = no
+				has_institution = new_world_i
+				NOT = { has_country_modifier = hired_conquistador }
+			}
+			allow = {
+				has_institution = new_world_i
+			}
+			effect = {
+				add_years_of_income = -0.1
+				create_conquistador = { tradition = 10 }
+				add_country_modifier = {
+				name = "hired_conquistador"
+				duration = 1825
+				hidden = yes
+				}
+			}	
+		}
+	#gecko_absolutism = {
+	#	potential = {
+	#			has_institution = manufactories
+	#			NOT = { has_country_flag = gecko_absolutism }
+	#		}
+	#		allow = { 
+	#			absolutism = 50
+	#		}
+	#		effect = {
+	#			add_country_modifier = {
+	#			name = "gecko_absolutism"
+	#			duration = -1
+	#			}
+	#			set_country_flag = gecko_absolutism
+	#		}
+	#	}
+	enlist_rajputs = {
+		potential = {
+				has_estate = estate_rajput
+				NOT = { has_country_flag = enlist_rajputs }
+			}
+			allow = { 
+				has_estate_privilege = estate_rajput_rajput_regiments
+			}
+			effect = {
+				add_country_modifier = {
+				name = "enlist_rajputs"
+				duration = -1
+				}
+				set_country_flag = enlist_rajputs
+			}
+		}
+	educate_ruler = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = educate_ruler_flag }
+			NOT = {
+				government = republic
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = educate_ruler_tooltip
+				OR = {
+					NOT = {
+						adm = 3
+						dip = 3
+						mil = 3
+					}
+					NOT = {
+						adm = 5
+						dip = 2
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 5
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 2
+						mil = 5
+					}
+					NOT = {
+						adm = 4
+						dip = 2
+						mil = 3
+					}
+					NOT = {
+						adm = 4
+						dip = 3
+						mil = 2
+					}
+					NOT = {
+						adm = 3
+						dip = 4
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 4
+						mil = 3
+					}
+					NOT = {
+						adm = 2
+						dip = 3
+						mil = 4
+					}
+					NOT = {
+						adm = 3
+						dip = 2
+						mil = 4
+					}
+				}
+			}
+		}
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_years_of_income = -0.5
+			set_country_flag = educate_ruler_flag
+		}
+	}
+	PR_critical_events = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = PR_radical_reform_decision
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_military_reform_decision
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_commandant_decision
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_grand_captain_decision
+				NOT = { has_country_flag = grand_captain }
+			}
+			always = no
+		}
+		effect = {
+		}
+	}
+		
+
+	prepare_for_holy_war = {	
+			potential = {
+					ai = no
+					religion_group = muslim
+					has_border_with_religious_enemy = yes
+				}
+				allow = {
+					religion_group = muslim
+					NOT = { has_country_modifier = jihad }
+					at_war_with_religious_enemy = yes
+					has_border_with_religious_enemy = yes
+					army_size_percentage = 1
+					manpower_percentage = 0.50
+					prestige = 50
+					OR = { 	advisor = commandant
+							advisor = army_reformer
+					}
+				}
+				effect = {
+					add_piety = -1
+					add_country_modifier = {
+					name = "jihad"
+					duration = 3650
+					}
+				}	
+			}
+	drain_the_mesopotamian_marshes = {
+		potential = {
+			owns = 2311
+			#owns = 4288
+			#owns = 4290
+			#owns = 408
+			NOT = { has_global_flag = mesopotamian_marshes_drained }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			religion_group = muslim
+			controls = 410
+			owns = 2311
+			owns = 4288
+			owns = 4290
+			owns = 408
+			treasury = 1500
+		}
+		effect = {
+			set_global_flag = mesopotamian_marshes_drained
+			add_treasury = -1500
+			2311 = {
+				add_permanent_province_modifier = {
+				name = mesopotamian_marshes_drained 
+				duration = -1
+				}
+			}
+			4288 = {
+				add_permanent_province_modifier = {
+				name = mesopotamian_marshes_drained 
+				duration = -1
+				}
+			}
+			408 = {
+				add_permanent_province_modifier = {
+				name = mesopotamian_marshes_drained 
+				duration = -1
+				}
+			}
+			4290 = {
+				add_permanent_province_modifier = {
+				name = mesopotamian_marshes_drained 
+				duration = -1
+				}
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	crimea_form_the_hetmanate = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = ASU_formed_hetmanate }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = HET }
+			primary_culture = crimean
+			tag = CRI
+			is_colonial_nation = no
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 284	
+				province_id = 302		
+				province_id = 464
+				province_id = 465
+				province_id = 466
+				province_id = 476
+				province_id = 2411
+				province_id = 1075
+				province_id = 2354
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 284
+			owns_core_province = 302
+			owns_core_province = 464
+			owns_core_province = 465
+			owns_core_province = 466
+			owns_core_province = 476
+			owns_core_province = 2411
+			owns_core_province = 1075
+			owns_core_province = 2354
+		}
+		effect = {
+			change_tag = HET
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			set_country_flag = ASU_formed_hetmanate
+			country_event = {
+				id = ideagroups.1
+			}
+			define_ruler = {
+				name = "Tokhtamysh"
+				dynasty = "Borjigin"
+				fixed = yes
+				religion = sunni
+				claim = 100
+				adm = 5
+				dip = 5
+				mil = 6
+				}							
+			kill_heir = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_importance = 400
+	}
+	disband_janissaries = {	
+		potential = {
+				ai = no
+				tag = TUR
+				NOT = { current_age = age_of_discovery }
+				NOT = { current_age = age_of_reformation }
+				NOT = { has_country_flag = janissary_decadence }
+			}
+			allow = {
+				NOT = { current_age = age_of_discovery }
+				NOT = { current_age = age_of_reformation }
+				janissary_percentage = 0.2
+			}
+			effect = {
+				set_country_flag = janissary_decadence
+			}
+	}
+	gc_war_taxes_notification = {
+		major = yes
+		potential = {
+			ai = no
+			has_wartaxes = yes
+			NOT = { current_age = age_of_discovery }
+		}
+		allow = {
+			has_wartaxes = yes
+		}
+		effect = {
+		}
+	}	
+}			
+
+		

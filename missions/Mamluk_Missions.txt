@@ -1,0 +1,990 @@
+mam_south_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	mam_holy_cities = {
+		icon = mission_mosque
+		required_missions = {  }
+		completed_by = 1482.6.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 384
+				province_id = 385
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			384 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			385 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = flavor_mam.23 }
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_yemen_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			yemen_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			asir_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			hadramut_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mam_yemeni_trade = {
+		icon = mission_asian_trader
+		required_missions = { mam_holy_cities }
+		provinces_to_highlight = {
+			OR = {
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+				area = asir_area
+				area = hadramut_area
+				province_id = 4346
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4346 = {
+				is_strongest_trade_power = ROOT
+			}
+			tihama_al_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			asir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hadramut_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "yemeni_trade_modifier"
+				duration = 7300
+			}
+		}
+	}
+}
+mam_north_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	mam_alexandria_trade = {
+		icon = mission_egyptian_mamluk_soldier
+		required_missions = {  }
+		trigger = {
+			OR = {
+				trade_embargoing = VEN
+				358 = {
+					has_trade_building_trigger = yes
+				}
+			}
+		}
+		effect = {
+			syrian_desert_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			nafud_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			tabuk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mam_pacify_bedouins = {
+		icon = mission_bedouins
+		required_missions = { mam_alexandria_trade }
+		provinces_to_highlight = {
+			OR = {
+				area = syrian_desert_area
+				area = nafud_area
+				area = tabuk_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			syrian_desert_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nafud_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tabuk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "bedouins_pacified"
+				duration = 7300
+			}
+			anatolia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mam_subjugate_beyliks = {
+		icon = mission_non-western_soldiers
+		required_missions = { mam_pacify_bedouins }
+		provinces_to_highlight = {
+				region = anatolia_region
+		}
+		trigger = {
+			war_with = TUR
+		}
+		effect = {
+			add_country_modifier = {
+				name = "beyliks_subjugated"
+				duration = 7300
+			}
+		}
+	}
+}
+
+gecko_mam_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gecko_mam_mission_1 = {
+		icon = mission_high_income
+		position = 4
+		required_missions = { gecko_mam_mission_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = kanem_area
+				area = bornu_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kanem_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bornu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "mam_african_market"
+				duration = -1
+			}
+		}
+	}
+}
+
+gecko_mam_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gecko_mam_mission_2 = {
+		icon = mission_egyptian_mamluk_soldier
+		position = 2
+		required_missions = { gecko_mam_mission_6 }
+		provinces_to_highlight = {
+			OR = {
+				area = dongola_area
+				province_id = 2797
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			dongola_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2797 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kurdufan_area = {
+				add_permanent_claim = ROOT
+			}
+			darfur_central_sahara_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gecko_mam_mission_3 = {
+		icon = mission_egyptian_mamluk_soldier
+		position = 3
+		required_missions = { gecko_mam_mission_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = kurdufan_area
+				area = darfur_central_sahara_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kurdufan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			darfur_central_sahara_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kanem_area = {
+				add_permanent_claim = ROOT
+			}
+			bornu_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gecko_mam_mission_4 = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = { gecko_mam_mission_9 }
+		provinces_to_highlight = {
+			OR = {
+				area = hadiya_area
+				area = shewa_area
+				area = southern_ethiopia_area
+				area = ifat_area
+				area = central_ethiopia_area
+				area = damot_area
+				area = aussa_area
+				area = tigray_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hadiya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shewa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_ethiopia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ifat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_ethiopia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			damot_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aussa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tigray_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				hadiya_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+				shewa_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+				southern_ethiopia_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+				ifat_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+				central_ethiopia_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+				damot_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+				aussa_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+				tigray_area = {
+					add_province_modifier = {
+						name = ethiopian_integration
+						duration = 7300
+					}
+				}
+		}
+	}
+
+	gecko_mam_mission_5 = {
+		icon = mission_arabian_fort
+		position = 6
+		required_missions = { gecko_mam_mission_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1210
+			}
+		}
+		trigger = {
+			1210 = {
+				owned_by = MAM
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+		effect = {
+			1798 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+			1799 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+			2779 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+			1207 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+			4053 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+			4075 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+			4052 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+			4051 = {
+				cede_province = MAM
+				add_core = MAM
+			}
+		}
+	}
+}
+
+gecko_mam_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gecko_mam_mission_6 = {
+		icon = mission_egyptian_mamluk_soldier
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				area = lower_nubia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			lower_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			dongola_area = {
+				add_permanent_claim = ROOT
+			}
+			2797 = {
+				add_permanent_claim = ROOT
+			}
+			hadendoa_area = {
+				add_permanent_claim = ROOT
+			}
+			1226 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gecko_mam_mission_7 = {
+		icon = mission_pue_irrigation_cannals
+		position = 2
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1234
+				province_id = 2322
+				province_id = 6030
+				province_id = 6018
+				province_id = 6022
+				province_id = 1220
+				province_id = 2797
+				province_id = 2798
+				province_id = 1222
+				province_id = 2799
+			}
+		}
+		trigger = {
+			1234 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			2322 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			6030 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			6018 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			6022 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			1220 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			2797 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			2798 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			1222 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			2799 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = sunni
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+		}
+		effect = {
+		add_country_modifier = {
+				name = "ara_gen_goods_mod"
+				duration = 7300
+			}	
+		}
+	}
+
+	gecko_mam_mission_8 = {
+		icon = mission_african_soldier
+		position = 3
+		required_missions = { gecko_mam_mission_7 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 774
+				province_id = 1219
+				province_id = 2801
+				province_id = 1221
+				province_id = 2800
+				province_id = 1216
+				province_id = 2799
+				province_id = 1217
+			}
+		}
+		trigger = {
+			774 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+			1219 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+			2801 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+			1221 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+			2800 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+			1216 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+			2799 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+			1217 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+		}
+		effect = {
+			774 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}
+			1219 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}
+			2801 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}
+			1221 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}
+			2800 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}
+			1216 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}		
+			2799 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}
+			1217 = {
+				add_province_modifier = {
+						name = mam_slave_soldiers
+						duration = -1
+					}
+			}
+		}
+	}
+
+	gecko_mam_mission_9 = {
+		icon = mission_impaled_soldies
+		position = 4
+		required_missions = { gecko_mam_mission_3 gecko_mam_mission_13 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2757
+				province_id = 2762
+				province_id = 1224
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			2757 = {
+				owned_by = ROOT
+			}
+			2762 = {
+				owned_by = ROOT
+			}
+			1224 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			hadiya_area = {
+				add_permanent_claim = ROOT
+			}
+			shewa_area = {
+				add_permanent_claim = ROOT
+			}
+			ifat_area = {
+				add_permanent_claim = ROOT
+			}
+			aussa_area = {
+				add_permanent_claim = ROOT
+			}
+			tigray_area = {
+				add_permanent_claim = ROOT
+			}
+			387 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gecko_mam_mission_10 = {
+		icon = mission_galleys_in_port
+		position = 6
+		required_missions = { gecko_mam_mission_4 gecko_mam_mission_14 }
+		provinces_to_highlight = {
+			OR = {
+				area = somaliland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			somaliland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ogaden_area = {
+				add_permanent_claim = ROOT
+			}
+			mogadishu_area = {
+				add_permanent_claim = ROOT
+			}
+			ajuuran_area = {
+				add_permanent_claim = ROOT
+			}
+			majarteen_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gecko_mam_mission_11 = {
+		icon = mission_war_chest
+		position = 7
+		required_missions = { gecko_mam_mission_10 }
+		provinces_to_highlight = {
+			OR = {
+				area = mogadishu_area
+				area = ogaden_area
+				area = ajuuran_area
+				area = majarteen_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mogadishu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ogaden_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ajuuran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			majarteen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			east_africa_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+gecko_mam_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gecko_mam_mission_12 = {
+		icon = mission_egyptian_mamluk_soldier
+		position = 2
+		required_missions = { gecko_mam_mission_6 }
+		provinces_to_highlight = {
+			OR = {
+				area = hadendoa_area
+				province_id = 1226
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hadendoa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1226 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			2798 = {
+				add_permanent_claim = ROOT
+			}
+			1222 = {
+				add_permanent_claim = ROOT
+			}
+			1225 = {
+				add_permanent_claim = ROOT
+			}
+			sennar_area = {
+				add_permanent_claim = ROOT
+			}
+			red_sea_coast_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gecko_mam_mission_13 = {
+		icon = mission_egyptian_mamluk_soldier
+		position = 3
+		required_missions = { gecko_mam_mission_12 }
+		provinces_to_highlight = {
+			OR = {
+				area = upper_nubia_area
+				area = sennar_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			upper_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sennar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			central_ethiopia_area = {
+				add_permanent_claim = ROOT
+			}
+			damot_area = {
+				add_permanent_claim = ROOT
+			}
+			southern_ethiopia_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	gecko_mam_mission_14 = {
+		icon = mission_dominate_home_trade_node
+		position = 5
+		required_missions = { gecko_mam_mission_9 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 387
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			387 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			somaliland_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+

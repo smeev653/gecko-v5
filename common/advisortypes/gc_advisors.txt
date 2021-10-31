@@ -1,0 +1,38 @@
+gc_drill_master = {
+	monarch_power = MIL
+	
+	# Bonus
+	drill_gain_modifier = 0.33
+
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+gc_arty_officer = {
+	monarch_power = MIL
+	
+	# Bonus
+	artillery_power = 0.1
+	artillery_cost = -0.1
+
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 16 }
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = persian
+religion = shiite
+technology_group = muslim
+capital = 429 # Isfahan
+religious_school = ismaili_school
+historical_rival = FRS
+historical_rival = KHO
+historical_rival = QOM
+historical_rival = KRM
+historical_rival = SIS
+historical_rival = AFG
+historical_rival = TRS
+historical_rival = BAL
+historical_rival = NOG
+historical_rival = SHY
+historical_rival = KAS
+historical_rival = CHG
+1504.1.1 = {
+	religious_school = jafari_school
+}

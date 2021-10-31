@@ -1,0 +1,21 @@
+#5788 - Marsica
+
+owner = PAP
+controller = PAP
+culture = neapolitan 
+religion = catholic 
+hre = yes 
+base_tax = 4
+base_production = 5 
+trade_goods = wine 
+base_manpower = 3
+capital = "Avezzano" 
+is_city = yes 
+add_core = PAP
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

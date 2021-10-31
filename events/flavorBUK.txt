@@ -1,0 +1,122 @@
+namespace = flavor_buk
+normal_or_historical_nations = yes
+
+# Bukharan Wool
+country_event = {
+	id = flavor_buk.1
+	title = flavor_buk.1.t
+	desc = flavor_buk.1.d
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUK		
+		
+		NOT = { is_year = 1600 }
+		any_owned_province = {
+			OR = {
+				area = khiva_area
+				area = termez_area
+				area = ferghana_area
+				}
+			trade_goods = wool
+		}
+		has_estate = estate_church
+		has_estate = estate_nobles
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "flavor_buk.1.a"
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = khiva_area
+					area = termez_area
+					area = ferghana_area
+				}
+				trade_goods = wool
+			}
+			add_province_modifier = {
+				name = bukharan_wool
+				duration = -1
+			}
+		}
+		give_estate_land_share_medium = { estate = estate_nobles }
+		give_estate_land_share_medium = { estate = estate_church }
+	}
+}
+
+
+# The Mesta
+country_event = {
+	id = flavor_buk.2
+	title = flavor_buk.2.t
+	desc = flavor_buk.2.d
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUK		
+		
+		any_owned_province = {
+			has_province_modifier = bukharan_wool
+			OR = {
+				has_building = counting_house
+				has_building = textile
+				has_building = workshop
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "flavor_buk.2.a"
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		take_estate_land_share_small = { estate = estate_nobles }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		take_estate_land_share_small = { estate = estate_church }
+		every_owned_province = {
+			limit = {
+				has_province_modifier = bukharan_wool
+			}
+			remove_province_modifier = bukharan_wool
+			change_trade_goods = cloth
+			add_province_modifier = {
+				name = "mesta_privileged_revoked"
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = "flavor_buk.2.b"
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = bukharan_wool
+			}
+			add_local_autonomy = 50
+		}
+	}
+}

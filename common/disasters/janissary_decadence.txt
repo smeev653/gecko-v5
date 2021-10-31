@@ -1,0 +1,112 @@
+janissary_decadence = {
+	potential = {
+		has_country_flag = janissary_decadence
+	}
+
+	can_start = {
+		has_any_disaster = no
+	}
+	
+	can_stop = {
+			has_any_disaster = yes
+	}
+
+	
+	progress = {
+		modifier = {
+			factor = 1
+			num_of_loans = 50
+		}
+		modifier = {
+			factor = 2
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				janissary_percentage = 0.3
+				else = { always = no }
+			}
+		}
+		modifier = {
+			factor = 2
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				janissary_percentage = 0.2
+				else = { always = no }
+			}
+		}
+		modifier = {
+			factor = 2
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				janissary_percentage = 0.1
+				else = { always = no }
+			}
+		}
+		modifier = {
+			factor = 1
+			is_great_power = no
+		}
+		modifier = {
+			factor = 1
+			has_ruler_modifier = janissaries_denied_reward
+		}
+		modifier = {
+			factor = 2
+			is_bankrupt = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { army_tradition = 70 }
+		}
+		modifier = {
+			factor = 1
+			if = {
+				limit = { NOT = { has_dlc = "Cradle of Civilization" } }
+				NOT = { army_tradition = 50 }
+				else = { always = no }
+			}
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = janissary_landholders
+		}
+		modifier = {
+			factor = 1
+			has_country_modifier = janissaries_upset
+		}
+
+	}
+
+
+
+
+	
+	can_end = {
+			custom_trigger_tooltip = {
+				tooltip = force_janissaries_to_undergo_yoklama
+				has_country_flag = yoklama
+			}
+		}
+
+	modifier = {
+		legitimacy = -1
+	}
+
+	on_start = janissary_decadence.1
+	on_end = janissary_decadence.100
+	
+	on_monthly = {
+		events = {
+		}
+		
+		random_events = { 
+			1250 = 0
+			10 = janissary_decadence.2 #Ruler Killed
+			10 = janissary_decadence.3
+			10 = janissary_decadence.4
+			10 = janissary_decadence.5
+			10 = janissary_decadence.6
+			10 = janissary_decadence.7
+		}
+	}
+}
+

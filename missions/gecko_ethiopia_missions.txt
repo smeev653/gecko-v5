@@ -1,0 +1,801 @@
+gc_eth_branch_1 = {
+    slot = 1
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = ETH
+        }
+	}
+	has_country_shield = yes
+
+    gc_eth_mission_1 = {
+        icon = mission_establish_high_seas_navy
+		required_missions = { }
+		position = 1
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            OR = {
+                num_of_galley = 15
+                num_of_heavy_ship = 5
+            }
+        }
+
+        effect = {
+          add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125 #25 years
+			}	
+        }
+    }
+
+    gc_eth_mission_2 = {
+        icon = mission_friends_or_enemies
+		required_missions = { gc_eth_mission_1 }
+		position = 2
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            has_discovered = 227
+        }
+
+        effect = {
+            add_prestige = 25
+        }
+    }
+
+    gc_eth_mission_3 = {
+        icon = mission_envoy_to_ethiopia
+		required_missions = { gc_eth_mission_2 }
+		position = 3
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            has_country_flag = eth_prester_john_discovered
+        }
+
+        effect = {
+            country_event = { #Mil aid event
+                id = flavor_eth.4
+            }
+            custom_tooltip = g_help_from_the_west
+        }
+    }
+
+    gc_eth_mission_4 = {
+        icon = mission_arabian_fort
+		required_missions = { gc_eth_mission_7 }
+		position = 5
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 386
+                province_id = 390
+                province_id = 4280
+                province_id = 2345
+            }
+        }
+
+        trigger = {
+            386 = {
+                owned_by = ROOT
+                OR = {
+                    has_building = fort_15th
+                    has_building = fort_16th
+                    has_building = fort_17th
+                    has_building = fort_18th
+                }
+            }
+            390 = {
+                owned_by = ROOT
+                OR = {
+                    has_building = fort_15th
+                    has_building = fort_16th
+                    has_building = fort_17th
+                    has_building = fort_18th
+                }
+            }
+            4280 = {
+                owned_by = ROOT
+                OR = {
+                    has_building = fort_15th
+                    has_building = fort_16th
+                    has_building = fort_17th
+                    has_building = fort_18th
+                }
+            }
+            2345 = {
+                owned_by = ROOT
+                OR = {
+                    has_building = fort_15th
+                    has_building = fort_16th
+                    has_building = fort_17th
+                    has_building = fort_18th
+                }
+            }
+        }
+
+        effect = {
+            add_treasury = 500
+        }
+    }
+
+    gc_eth_mission_5 = {
+        icon = mission_conquer_tunisia
+		required_missions = { }
+		position = 7
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 388
+            }
+        }
+
+        trigger = {
+            388 = {
+                owned_by = ROOT
+                religion = ROOT
+            }
+        }
+
+        effect = {
+            add_prestige = 25
+            add_treasury = 100
+        }
+    }
+
+} #End branch 1
+
+gc_eth_branch_2 = {
+    slot = 2
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = ETH
+        }
+	}
+	has_country_shield = yes
+
+    gc_eth_mission_6 = {
+        icon = mission_levantine_restoration
+		required_missions = { gc_eth_mission_11 }
+		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 387
+            }
+        }
+
+        trigger = {
+            387 = {
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            tihama_al_yemen_area = {
+                add_permanent_claim = ROOT
+            }
+            asir_area = {
+                add_permanent_claim = ROOT
+            }
+            upper_yemen_area = {
+                add_permanent_claim = ROOT
+            }
+            yemen_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_eth_mission_7 = {
+        icon = mission_impaled_soldies
+		required_missions = { gc_eth_mission_6 }
+		position = 4
+
+        provinces_to_highlight = {
+            OR = {
+                area = tihama_al_yemen_area
+                area = asir_area
+                area = upper_yemen_area
+                area = yemen_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            tihama_al_yemen_area = {
+                type = all
+                owned_by = ROOT
+            }
+            asir_area = {
+                type = all
+                owned_by = ROOT
+            }
+            upper_yemen_area = {
+                type = all
+                owned_by = ROOT
+            }
+            yemen_area = {
+                type = all
+                owned_by = ROOT
+            }
+            
+        }
+
+        effect = {
+            mecca_area = {
+                add_permanent_claim = ROOT
+            }
+            hadramut_area = {
+                add_permanent_claim = ROOT
+            }
+            mahra_area = {
+                add_permanent_claim = ROOT
+            }
+            add_adm_power = 50
+        }
+    }
+
+    gc_eth_mission_8 = {
+        icon = mission_unite_home_region
+		required_missions = { gc_eth_mission_7 }
+		position = 6
+
+        provinces_to_highlight = {
+            OR = {
+                area = hadramut_area
+                area = mahra_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            hadramut_area = {
+                type = all
+                owned_by = ROOT
+            }
+            mahra_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_treasury = 200
+        }
+    }
+
+    gc_eth_mission_9 = {
+        icon = mission_into_arabia
+		required_missions = { gc_eth_mission_8 }
+		position = 7
+
+        provinces_to_highlight = {
+            OR = {
+                area = mecca_area
+            }
+        }
+
+        trigger = {
+            mecca_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_prestige = 25
+            add_treasury = 100
+        }
+    }
+
+    gc_eth_mission_10 = {
+        icon = mission_hands_praying
+		required_missions = { gc_eth_mission_5 gc_eth_mission_9 gc_eth_mission_17 }
+		position = 8
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            religious_unity = 0.85
+        }
+
+        effect = {
+            country_event = { #Coptic Reformed
+                id = gc_eth_events.3
+            }
+        }
+    }
+
+} #End branch 2
+
+gc_eth_branch_3 = {
+    slot = 3
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = ETH
+        }
+	}
+	has_country_shield = yes
+
+    gc_eth_mission_11 = {
+        icon = mission_african_soldier
+		required_missions = { }
+		position = 1
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            army_size_percentage = 1
+        }
+
+        effect = {
+            387 = {
+                add_permanent_claim = ROOT
+            }
+            sennar_area = {
+                add_permanent_claim = ROOT
+            }
+            somaliland_area = {
+                add_permanent_claim = ROOT
+            }
+            upper_nubia_area = {
+                add_permanent_claim = ROOT
+            }
+            2766 = {
+                add_permanent_claim = ROOT
+            }
+            2787 = {
+                add_permanent_claim = ROOT
+            }
+            1230 = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    gc_eth_mission_12 = {
+        icon = mission_pue_irrigation_cannals
+		required_missions = { gc_eth_mission_11 }
+		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+                area = sennar_area
+                province_id = 1222
+                province_id = 2798
+                province_id = 1225
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            sennar_area = {
+                type = all
+                owned_by = ROOT
+            }
+            1222 = {
+                owned_by = ROOT
+            }
+            2798 = {
+                owned_by = ROOT
+            }
+            1225 = {
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            darfur_central_sahara_area = {
+                add_permanent_claim = ROOT
+            }
+            kurdufan_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    gc_eth_mission_13 = {
+        icon = mission_have_two_subjects
+		required_missions = { gc_eth_mission_12 }
+		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+                area = darfur_central_sahara_area
+                area = kurdufan_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            darfur_central_sahara_area = {
+                type = all
+                owned_by = ROOT
+            }
+            kurdufan_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            dongola_area = {
+                add_permanent_claim = ROOT
+            }
+            hadendoa_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    gc_eth_mission_14 = {
+        icon = mission_african_soldier
+		required_missions = { gc_eth_mission_13 }
+		position = 4
+
+        provinces_to_highlight = {
+            OR = {
+                area = dongola_area
+                area = hadendoa_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            dongola_area = {
+                type = all
+                owned_by = ROOT
+            }
+            hadendoa_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            lower_nubia_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    gc_eth_mission_15 = {
+        icon = mission_arabian_fort
+		required_missions = { gc_eth_mission_14 }
+		position = 5
+
+        provinces_to_highlight = {
+            OR = {
+                area = lower_nubia_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            lower_nubia_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            said_area = {
+                add_permanent_claim = ROOT
+            }
+            red_sea_coast_area = {
+                add_permanent_claim = ROOT
+            }
+            al_wahat_area = {
+                add_permanent_claim = ROOT
+            }
+            vostani_area = {
+                add_permanent_claim = ROOT
+            }
+            bahari_area = {
+                add_permanent_claim = ROOT
+            }
+            gulf_of_arabia_area = {
+                add_permanent_claim = ROOT
+            }
+
+        }
+    }
+    gc_eth_mission_16 = {
+        icon = mission_the_songhai_campaign
+		required_missions = { gc_eth_mission_15 }
+		position = 6
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 361
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            361 = {
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_mil_power = 100
+            delta_area = {
+                add_permanent_claim = ROOT
+            }
+            jaghbub_area = {
+                add_permanent_claim = ROOT
+            }
+            cyrenaica_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    gc_eth_mission_17 = {
+        icon = mission_occupy_alexandria
+		required_missions = { gc_eth_mission_16 }
+		position = 7
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 358
+            }
+        }
+
+        trigger = {
+            358 = {
+                owned_by = ROOT
+                religion = ROOT
+            }
+        }
+
+        effect = {
+            add_prestige = 25
+            add_treasury = 100
+        }
+    }
+
+} #End branch 3
+
+gc_eth_branch_4 = {
+    slot = 4
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = ETH
+        }
+	}
+	has_country_shield = yes
+
+    gc_eth_mission_18 = {
+        icon = mission_have_two_subjects
+		required_missions = { gc_eth_mission_11 }
+		position = 2
+
+        provinces_to_highlight = {
+            OR = {
+                area = somaliland_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            somaliland_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            majarteen_area = {
+                add_permanent_claim = ROOT
+            }
+            ogaden_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    gc_eth_mission_19 = {
+        icon = mission_dominate_gujarati_trade
+		required_missions = { gc_eth_mission_18 }
+		position = 3
+
+        provinces_to_highlight = {
+            OR = {
+                area = majarteen_area
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            majarteen_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            ajuuran_area = {
+                add_permanent_claim = ROOT
+            }
+            mogadishu_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    gc_eth_mission_20 = { 
+        icon = mission_dharma_mission_arabian_trade
+		required_missions = { gc_eth_mission_19 }
+		position = 4 
+
+        provinces_to_highlight = {
+            OR = {
+                area = ajuuran_area
+                area = mogadishu_area
+            }
+        }
+
+        trigger = {
+            ajuuran_area = {
+                type = all
+                owned_by = ROOT
+            }
+            mogadishu_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_treasury = 500
+        }
+    }
+    gc_eth_mission_21 = {
+        icon = mission_fortify_mandu
+		required_missions = { gc_eth_mission_15 }
+		position = 6
+
+        provinces_to_highlight = {
+            province_id = 1234
+        }
+
+        trigger = {
+            1234 = {
+                owned_by = ROOT
+                religion = ROOT
+                OR = {
+                    has_building = fort_15th
+                    has_building = fort_16th
+                    has_building = fort_17th
+                    has_building = fort_18th
+                }
+            }
+        }
+
+        effect = {
+            add_mil_power = 50
+        }
+    }
+} #End branch 4
+
+gc_eth_branch_5 = {
+    slot = 5
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = ETH
+        }
+	}
+	has_country_shield = yes
+
+    gc_eth_mission_22 = {
+        icon = mission_african_gold
+		required_missions = { }
+		position = 1
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 2762
+                province_id = 2757
+            }
+        }
+
+        trigger = {
+            2762 = {
+                owned_by = ROOT
+                base_production = 8
+            }
+            2757 = {
+                owned_by = ROOT
+                base_production = 8
+            }
+        }
+
+        effect = {
+            add_adm_power = 50
+            add_dip_power = 50
+        }
+    }
+    gc_eth_mission_23 = {
+        icon = mission_luther_theses
+		required_missions = { }
+		position = 3
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            religious_unity = 0.5
+        }
+
+        effect = {
+            define_advisor = {
+				type = inquisitor
+				name = "Fiqtor Dereje"
+				culture = amhara
+				religion = Coptic
+				skill = 3
+				cost_multiplier = 0.67
+			}
+        }
+    }
+    gc_eth_mission_24 = {
+        icon = befriend_ethiopia
+		required_missions = { gc_eth_mission_23 }
+		position = 4
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            full_idea_group = religious_ideas
+        }
+
+        effect = {
+            country_event = { #Legacy of Prester John
+                id = gc_eth_events.1
+            }
+        }
+    }
+    gc_eth_mission_25 = {
+        icon = mission_traverse_the_sahara
+		required_missions = { gc_eth_mission_24 }
+		position = 5
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            is_great_power = yes
+            total_development = 1000
+            army_size = 300
+        }
+
+        effect = {
+            country_event = { #Crusade from Africa
+                id = gc_eth_events.2
+            }
+        }
+    }
+} #End branch 5

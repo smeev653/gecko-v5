@@ -1,0 +1,243 @@
+########################################
+# PR Events                            #
+########################################
+
+namespace = PR_events
+
+# Revealing Africa to Africans
+country_event = {
+    id = PR_events.1
+    title = "PR_events.1.t"
+    desc = "PR_events.1.d"
+    picture = COURT_eventPicture
+
+    trigger = {
+        OR = {
+            tag = MOR
+            tag = SON
+            tag = ZAN
+            tag = ETH
+            tag = KON
+			tag = MAM
+			tag = MAL
+        }
+        NOT = { 
+			has_country_flag = PR_discover_africa_flag
+		}
+    }
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+    immediate = {
+		hidden_effect = {
+			set_country_flag = PR_discover_africa_flag
+			niger_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			guinea_region= {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+			sahel_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+			horn_of_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+			maghreb_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}		
+
+			east_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			kongo_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			south_africa_regionn = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			central_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+		}
+	}
+	
+	option = {
+        name = "PR_events.1.a"
+		custom_tooltip = PR_events.1.a
+		ai_chance = {
+			factor = 0
+		}
+    }
+}
+
+# Choosing muslim school
+country_event = {
+    id = PR_events.2
+    title = "PR_events.2.t"
+    desc = "PR_events.2.d"
+    picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = { 
+				religious_school = {
+					group = muslim
+					school = hanafi_school
+				}
+			}
+		}
+		name = PR_events.2.a # Hanafi
+		adm_power_cost = 50
+		clear_religious_scholar_modifiers_effect = yes
+		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+		add_country_modifier = { name = hanafi_scholar_modifier duration = 7300 }
+	}
+	option = {
+		trigger = {
+			NOT = { 
+				religious_school = {
+					group = muslim
+					school = hanbali_school
+				}
+			}
+		}
+		name = PR_events.2.b # Hanbali
+		adm_power_cost = 50
+		clear_religious_scholar_modifiers_effect = yes
+		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+		add_country_modifier = { name = hanbali_scholar_modifier duration = 7300 }
+	}
+	option = {
+		trigger = {
+			NOT = { 
+				religious_school = {
+					group = muslim
+					school = maliki_school
+				}
+			}
+		}
+		name = PR_events.2.c # Maliki
+		adm_power_cost = 50
+		clear_religious_scholar_modifiers_effect = yes
+		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+		add_country_modifier = { name = maliki_scholar_modifier duration = 7300 }
+	}
+	option = {
+		trigger = {
+			NOT = { 
+				religious_school = {
+					group = muslim
+					school = shafii_school
+				}
+			}
+		}
+		name = PR_events.2.d2 # Shafii
+		adm_power_cost = 50
+		clear_religious_scholar_modifiers_effect = yes
+		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+		add_country_modifier = { name = shafii_scholar_modifier duration = 7300 }
+	}
+	option = {
+		trigger = {
+			NOT = { 
+				religious_school = {
+					group = muslim
+					school = ismaili_school
+				}
+			}
+		}
+		name = PR_events.2.e # Ismaili
+		adm_power_cost = 50
+		clear_religious_scholar_modifiers_effect = yes
+		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+		add_country_modifier = { name = ismaili_scholar_modifier duration = 7300 }
+	}
+	option = {
+		trigger = {
+			NOT = { 
+				religious_school = {
+					group = muslim
+					school = jafari_school
+				}
+			}
+		}
+		name = PR_events.2.f # Jafari
+		adm_power_cost = 50
+		clear_religious_scholar_modifiers_effect = yes
+		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+		add_country_modifier = { name = jafari_scholar_modifier duration = 7300 }
+	}
+	option = {
+		trigger = {
+			NOT = { 
+				religious_school = {
+					group = muslim
+					school = zaidi_school
+				}
+			}
+		}
+		name = PR_events.2.g # Zaidi
+		adm_power_cost = 50
+		clear_religious_scholar_modifiers_effect = yes
+		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+		add_country_modifier = { name = zaidi_scholar_modifier duration = 7300 }
+	}
+}
+
+
+# Iberian Wedding failsafe
+country_event = {
+    id = PR_events.3
+    title = "PR_events.3.t"
+    desc = "PR_events.3.d"
+    picture = COURT_eventPicture
+	hidden = yes
+
+    trigger = {
+		AND = {
+			is_year = 1485
+			NOT = { 
+				has_country_flag = PR_iberian_wedding_late
+			}
+		}
+	}
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+    immediate = {
+		hidden_effect = {
+			country_event = { 
+				id = flavor_spa.3716
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+    }
+}

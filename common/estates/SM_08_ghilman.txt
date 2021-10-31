@@ -1,0 +1,39 @@
+estate_ghilman = {
+	icon = 13
+	
+	# If true, country will get estate
+	trigger = {
+		has_government_attribute = enables_ghilman_estate
+	}
+
+	country_modifier_happy = {
+		recover_army_morale_speed = 0.1
+		state_maintenance_modifier = -0.20
+	}
+	country_modifier_neutral = {
+		state_maintenance_modifier = -0.20
+	}
+	country_modifier_angry = {
+		state_maintenance_modifier = 0.20
+		recover_army_morale_speed = -0.1
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		ghilman_loyalty_modifier = 0.2
+	}
+
+	# Influence modifiers
+	base_influence = 0
+	
+	# Influence modifiers from Events:
+
+	color = { 025 179 025 }
+	
+	privileges = {
+		estate_ghilman_land_rights
+		estate_ghilman_military_corps
+		estate_ghilman_morale
+	}
+	
+	influence_from_dev_modifier = 1.0
+}

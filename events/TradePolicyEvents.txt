@@ -1,0 +1,7 @@
+######################################################
+# Trade Policy Events								 #
+#                         							 #
+# Written by Henrik Lohmander						 #
+######################################################
+
+namespace = trade_policy_events

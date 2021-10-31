@@ -1,0 +1,11 @@
+# Hanseatic League Members
+
+alliance = {
+	first = HSA
+	second = RIG
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1581.1.1
+}
+
+

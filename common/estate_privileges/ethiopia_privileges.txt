@@ -1,0 +1,66 @@
+estate_gecko_ethiopia_highlands_and_mountains = {
+	icon = privilege_grant_new_world_charter
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		has_dlc = "Emperor"
+		any_owned_province = {
+			OR = {
+                has_terrain = highlands
+                has_terrain = mountain
+            }
+		}
+        tag = ETH
+	}
+	can_revoke = {
+	}
+	on_granted = {
+		custom_tooltip = gecko_ethiopia_highlands_and_mountains_privilege_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+                        has_terrain = highlands
+                        has_terrain = mountain
+                    }
+                    region = horn_of_africa_region
+				}
+				add_province_modifier = {
+					name = gecko_ethiopia_highlands_and_mountains_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = gecko_ethiopia_highlands_and_mountains_privilege_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gecko_ethiopia_highlands_and_mountains_modifier
+				}
+				remove_province_modifier = gecko_ethiopia_highlands_and_mountains_modifier
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = gecko_ethiopia_highlands_and_mountains_privilege_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gecko_ethiopia_highlands_and_mountains_modifier
+				}
+				remove_province_modifier = gecko_ethiopia_highlands_and_mountains_modifier
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}

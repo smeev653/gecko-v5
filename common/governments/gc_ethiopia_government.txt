@@ -1,0 +1,79 @@
+gc_ethiopian_government = {
+	color = { 75 85 75 }
+	basic_reform = GC_Ethiopia_Mechanic
+
+	reform_levels = {
+		theocratic_leadership = {
+			reforms = {
+				gc_ethiopian_theocracy_reform
+			}
+		}
+		internal_vs_external_mission = {
+			reforms = {
+				internal_mission_reform
+				external_mission_reform
+				mission_to_civilize_reform
+				mission_to_kill_pirates_reform
+			}
+		}
+		divine_cause = {
+			reforms = {
+				safeguard_holy_sites_reform
+				combat_heresy_reform
+				expel_heathens_reform
+				guru_advisors_reform
+				kingdom_of_god_reform
+			}
+		}
+		clergy_in_administration = {
+			reforms = {
+				subservient_administrators_reform
+				religious_administrators_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				loyal_nobility_reform
+				pious_merchants_reform
+				monastic_breweries_reform
+				warrior_monks_reform
+			}
+		}
+		secularization = {
+			reforms = {
+				partial_secularisation_reform
+				maintain_religious_head_reform
+				hereditary_religious_leadership_reform
+				battle_pope_reform
+				conciliarism_reform
+			}
+		}
+		separation_of_power_theocracy = {
+			reforms = {
+				clerical_commission_reform
+				divine_guidance_reform
+				theocratic_democracy_reform
+				regionally_elected_commanders
+				monastic_elections_reform
+				commander_king_reform
+				admiral_king_reform
+			}
+		}
+		nature_of_faith = {
+			reforms = {
+				church_and_state_reform
+				religious_harmony_reform
+				god_and_man_reform
+				organising_our_religion_reform
+			}
+		}
+		faith_and_the_world = {
+			reforms = {
+				religion_in_one_country_reform
+				religious_permanent_revolution_reform
+				many_fingers_of_god_reform
+				priestly_autonomy_reform
+				proclaim_religious_head_reform
+				all_under_tengri_reform
+			}
+		}
+	}
+}

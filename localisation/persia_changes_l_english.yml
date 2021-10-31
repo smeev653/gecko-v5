@@ -1,0 +1,232 @@
+﻿l_english:
+ ######national ideas######
+ #persia
+ the_tupchi:0 "The Tupchiyan"
+ the_tupchi_desc:0 "Abbas has ordered the creation of an artillery corps, integrating the use of massed cannon into our newly reformed armies. Our use of combined firearms will ensure victory."
+ the_tofangchi:0 "Establish the Tufangchiyan"
+ the_tofangchi_desc:0 "Following a series of defeats, it is becoming evermore clear that our armies of Turkoman tribal supporters are struggling to keep pace on the battlefield with organized foot soldiers bearing firearms. We must learn from these defeats, and as such we will found our own corps of musketeers which will be outfitted with sophisticated firearms to handle any threat to our kingdom."
+ promotion_of_irrigation:0 "Promotion of Irrigation"
+ promotion_of_irrigation_desc:0 "If we encourage agriculture, we will increase our population so we will have more manpower for our army."
+ #ottomans
+ humbaraci_corps:0 "Establish the Humbaraci Corps"
+ humbaraci_corps_desc:0 "The Humbaraci Ocagi were in charge of the manufacturing, transportation, and use of cannons. The Ottoman army later established a workshop to cast humbaras in order to give the fire power of the artillery to the mobilized infantry groups."
+ #arabia
+ ARB_ideas:0 "Arabian Empire Ideas"
+ ARB_ideas_start:0 "Arabian Empire Traditions"
+ ARB_ideas_bonus:0 "Arabian Empire Ambition"
+ arb_1:0 "Indian Ocean Trade"
+ arb_1_desc:0 "Our sailors have been to the Swahili coasts and as far as Hindustan and even the Malay lands. We can play a critical role in the flow of goods between these wealthy regions."
+ arb_2:0 "Arabian Horsemanship"
+ arb_2_desc:0 "The man who rides for pleasure or military occupation has no idea what true horsemanship is. The Bedouin rides to trade, to eat, to live. It should surprise no one that, in addition to the finest horses, Arabia produces the finest cavalrymen."
+ arb_3:0 "Bedouin Raiders"
+ arb_3_desc:0 "Since before the days of the Prophet, Bedouins have been experts at the art of the raid. An army may march on its stomach, but it won't march far when our raiders take the food right out of the army's mouth through rapid hit and run seizures of their supply lines. Pull back and let the raiders do their work and watch as the invader dies of thirst."
+ arb_4:0 "Spreading the Prophet's Word"
+ arb_4_desc:0 "There is no god but Allah, Muhammad is His messenger. By now, all men should know these holy words, but a shocking amount still dwell in the pitiable state of ignorance of Islam. Our missionaries are ready to spread the words of the Prophet."
+ arb_5:0 "Unite the Tribes"
+ arb_5_desc:0 "Our loosely-organized way of handling our affairs has its upsides. Perhaps we could allow the tribes to continue providing for the upkeep of their own soldiers and horsemen while bringing them together in a more modern military pointed outwards rather than within?"
+ arb_6:0 "Bedouin Traders"
+ arb_6_desc:0 "There aren't many sharply-delineated man-made borders in Arabia, and even if there were, the Bedouin would ignore them. Though the Bedouin nomadic journeys through our lands and into others has risks, it also facilitates easy access to trade through the entire region, as Bedouin nomads know no import tariffs or trade embargoes."
+ arb_7:0 "Arabia"
+ arb_7_desc:0 "Although Arabia has many different clans, tribes and countries, all share in the use of the Arabic language, it forms the unifying feature of all Arabs. Under a strong leadership we can unite all Arabian lands under a single flag and one ruler."
+ ######goverment reforms######
+ #government reforms
+ #persia#
+ persian_theocracy:0 "Persian Theocracy"
+ persian_theocracy_desc:0 "After declaring our lands to be a bastion of Shi'ism, we must now launch a vigorous campaign to convert those who would oppose the true faith, ridding our kingdom of the Sunni population by either persuasion or force. Political and religious power will remain completely intertwined, and encapsulated in the person of the Shah."
+ establish_qurchi_corps_reform:0 "Establish Qurchi Corps"
+ establish_qurchi_corps_reform_desc:0 "The Qizilbash tribes are the core of our military strength, and their nobles already occupy the Office of the Sepahsalar. If we trust them to protect our kingdom, we should extend this trust to ourselves by establishing a permanent royal guard. Naturally, the newly created Office of the Qurchi-bashi will also need to be filled. Who better to command our royal guard than the same nobles who have led our armies?"
+ foreign_ghilman_reform:0 "Enlist Ghilman"
+ foreign_ghilman_reform_desc:0 "As we conquer deeper into the Caucasus, our lands have become full of Christian tribes and clans that we could put to good use if we gave them a place within our system of state. Their people consist of tough warriors and innovative thinkers. If we can convert them from their heathen ways, they could make excellent advisors, military officers, and act as local representatives. Most of all they could mobilize their kinsmen and provice us with a source of elite soldiers who could counter the immense influence of the Qizilbash in our armies and military command."
+ qizilbash_in_officer_corps_reform:0 "Qizilbash Officer Corps Influence"
+ qizilbash_in_officer_corps_reform_desc:0 "With the important military administrative position of the Office of the Qullar-bashi firmly in control of the Ghilman, the jealous Qizilbash have pushed for control of the Office of the Tupchi-bashi and the Office of the Tufangchi-bashi, commanders of our musketeer and artillery corps respectively. With the Qizilbash already having such power, it would be wise to appease them... for now."
+ reforms_of_abbas_i_reform:0 "Reforms of Abbas I"
+ reforms_of_abbas_i_reform_desc:0 "Far too much power has been concentrated by the Qizilbash tribes, and we have become far too reliant on them for our military might. It is time to restructure the army. We should bolster our military with a greater emphasis on artillery and firearms, and shift the backbone of our armies from the untrustworthy Turkoman tribes to the Ghilman, who have become solely loyal to us.\n\nBeyond this, as our kingdom grows our lands have become home to many Christians. Despite our tradition of zealotry, it would be wise to show tolerance for their practices, if only to further integrate them and quell any spark of rebellion.\n\nHowever, it is not only the army and bureaucracy that need change, but our kingdom's economy as well. We will foster our diminishing trade back to health by reestablishing the security of our roads so that caravans may travel our lands unmolested."
+ ghilman_administrative_positions_reform:0 "Ghilman Administrative Positions"
+ ghilman_administrative_positions_reform_desc:0 "Over time it has become evermore clear that we cannot trust our conflict prone Qizilbash commanders and administrators. If we are to acquire officials we can trust we must look to recruit elite slaves to fill these positions instead."
+ #ottomans#
+ upgrade_janissary_weaponry_reform:0 "Upgrade Janissary Weaponry"
+ upgrade_janissary_weaponry_reform_desc:0 "During the initial period of formation, Janissaries were expert archers, but they began adopting firearms as soon as they became available."
+ derbend_organization_reform:0 "Derbend Organization"
+ derbend_organization_reform_desc:0 "Derbendjis were the most important and largest Ottoman military auxiliary constabulary units usually responsible for guarding important roads, bridges, fords or mountain passes. Usually, the population of an entire village near some important pass would be assigned with Derbendji status in exchange for tax exemptions. By rehabilitating the Derbendjis, the Ottomans released conventional military units from routine internal duties, such as guarding and repairing roads and bridges."
+ establish_auxiliary_support_system_reform:0 "Establish Auxiliary Support System"
+ establish_auxiliary_support_system_reform_desc:0 "The Ottoman armies were distinguished from their contemporaries not just by the numerical predominance of its military forces but by the thoroughness of the administrative backup and general support that maintained them in the field. The Ottoman army had a corps to prepare the road, a corps to pitch the tents ahead, a corps to bake the bread. The Djebedji Corps, a subunit of the Ottoman artillery corps, functioned as part of the Janissaries, who also maintained its own medical auxiliaries."
+ reform_the_janissaries_reform:0 "Reform the Janissary Corps"
+ reform_the_janissaries_reform_desc:0 "Despite an early adoption of firearm technology, the Janissaries have become increasingly resistant to changes, often rising in rebellion when feeling threatened by outside influence, leaving our infantry in a weakened state as Western nations modernize their militaries. We must enforce a change and reorganize the Janissary Corps, or risk falling indefinitely behind our rivals."
+ janissary_administrative_positions_reform:0 "Janissary Administrative Positions"
+ janissary_administrative_positions_reform_desc:0 "Likely a product of the disciplined lifestyle that is standard to the Janissaries, many have become well-educated members of the askeri class, whose talents would be better served as administrators and scholars than soldiers... for a price."
+ #goverment reform mechanics
+ #persia#
+ mechanic_enables_ghilman_estate_yes: "Ghilman Estate becomes available."
+ mechanic_enables_ghilman_estate_no: " " #intentionally empty
+ mechanic_qizilbash_qurchis_privilege_interaction_yes: "Enables the Qizilbash Estate Privilege §YEstablish Qurchi Corps§!, which grants §G-10%§! Shock Damage Received and §R-10%§! Tax Income."
+ mechanic_qizilbash_qurchis_privilege_interaction_no: " " #intentionally empty
+ mechanic_qizilbash_discipline_looting_interaction_yes: "Enables the Qizilbash Estate Privilege §YEnforced Discipline§!, which grants §G+2.5%§! Discipline and §R-90%§! Looting Efficiency.\n"
+ mechanic_qizilbash_discipline_looting_interaction_no: " " #intentionally empty
+ mechanic_qizilbash_officer_interaction_yes: "Enables the Qizilbash Estate Privilege §YQizilbash in Officer Corps§!, which gives the Qizilbash control of the Office of the Tufangchi-bashi, and §G+10%§! Siege Ability."
+ mechanic_qizilbash_officer_interaction_no: " " #intentionally empty
+ mechanic_ghilman_morale_interaction_yes: "Enables the Ghilman Estate Privilege §YReform the Ghilman Corps§!, which grants §G+10%§! Morale of Armies on Janissaries."
+ mechanic_ghilman_morale_interaction_no: " " #intentionally empty
+ #ottomans#
+ mechanic_enables_janissary_estate_yes: "Janissaries Estate becomes available."
+ mechanic_enables_janissary_estate_no: " " #intentionally empty
+ mechanic_upgrade_janissary_weaponry_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YUpgrade Janissary Weaponry§!, which grants §G+0.15§! Infantry Fire and §R+10.0%§! Land Maintenance Modifier to §YJanissary Regiments§!"
+ mechanic_upgrade_janissary_weaponry_privilege_interaction_no: " " #intentionally empty
+ mechanic_establish_auxiliary_support_system_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YEstablish Janissary Auxiliary Corps§!, which grants §G+5.0%§! Manpower Recovery Speed and §G+10.0%§! Reinforce Speed."
+ mechanic_establish_auxiliary_support_system_privilege_interaction_no: " " #intentionally empty
+ mechanic_reform_the_janissaries_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YReform the Janissary Corps§!, which grants §G+10.0%§! Discipline to §YJanissary Regiments§!."
+ mechanic_reform_the_janissaries_privilege_interaction_no: " " #intentionally empty
+ ######estates and loyalty/influence modifiers######
+ #ghilman#
+ estate_ghilman: "Ghilman"
+ estate_ghilman_desc: "Although a term reserved for slaves, the Ghilman represent an educated class of military commanders and skilled soldiers."
+ ghilman_loyalty_modifier: "Ghilman Loyalty Equilibrium"
+ ghilman_influence_modifier: "Ghilman Influence"
+ estate_ghilman_ownership: "Ghilman Land Ownership"
+ #qizilbash#
+ estate_qizilbash: "Qizilbash"
+ estate_qizilbash_desc: "The Qizilbash are a Shiite militant group comprised of mostly Turkoman tribes, whose dominance on the battlefield has led to the consolidation of Persia under our control. While they remain fierce raiders of the border regions, the Qizilbash aspire to be recognized as an estate of the same importance as the nobility. Following the establishment of our kingdom, the loyalty of the Qizilbash has shifted from a purely religious relationship to a political one as well."
+ qizilbash_loyalty_modifier: "Qizilbash Loyalty Equilibrium"
+ qizilbash_influence_modifier: "Qizilbash Influence"
+ estate_qizilbash_ownership: "Qizilbash Land Ownership"
+ TURKOMAN_TRIBES: "Turkoman Tribes: §Y$VAL$%§!"
+ HERETIC_WAR: "At war with heretic or heathen nation: §G$VAL$§!"
+ #janissaries#
+ estate_janissary:0 "Janissaries"
+ estate_janissary_desc:0 "This estate represents the Janissaries, a warrior class in the Ottoman Empire that consisted of children taxed from Christian families in Anatolia and the Balkans. Known for their strict discipline and quick adoption of better weaponry, they became essential to Ottoman military power as their elite corps of infantry."
+ janissary_loyalty_modifier: "Janissaries Loyalty Equilibrium"
+ janissary_influence_modifier: "Janissaries Influence"
+ estate_janissary_ownership: "Janissaries Land Ownership"
+ #safavid order#
+ estate_safavid_order:0 "Safavid Order" #description and loyalty/influence modifiers same as churc2h
+ ######estate privileges######
+ #clergy#
+ estate_church_negative_piety_privilege:0 "Sufi Ministers"
+ estate_church_negative_piety_privilege_desc:0 "If we listen to the advice of the [Root.GetClergyName] and place their concerns at the forefront of our mind, we may derive considerable benefits for our rule and see the people's faith in [Root.GetReligionNoun] greatly strengthened."
+ #mountain dev cost 
+ smeev_mountain_dev_cost:0 "Clergy Exploration Expeditions"
+ smeev_mountain_dev_cost_desc:0 "[Root.GetClergyName] roam our mountainous frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."
+ PR_estate_clergy_exploration_expedition_mod:0 "Clergy Exploration"
+ desc_PR_estate_clergy_exploration_expedition_mod:0 "We are harnessing the pioneering instincts of the clergy to accelerate the settlement and growth of this area."
+ smeev_mountain_dev_cost_effect_tooltip:1 "§G-15%§! local development cost in all Mountain provinces."
+ smeev_mountain_dev_cost_mod_revoke_tooltip:0 "Removes §YClergy Exploration§! from all owned Mountain provinces."
+ #estate_safavid_order_militarized
+ estate_safavid_order_militarised:0 "Safavid Order Militarised"
+ estate_safavid_order_militarised_desc:0 "To wage war for our faith is the prime calling of all true believers."
+ estate_safavid_order_militarised_effect_tooltip:2 "Morale of Armies: §G+5%§! and Manpower Recovery: §G+10%§! when at war with heretics or heathens. \nMorale of Armies: §R-5%§! and Manpower Recovery Speed: §R-10%§! if at peace with heretics and heathens for 15 years."
+ #qizilbash#
+ #estate_qizilbash_land_rights
+ estate_qizilbash_land_rights:0 "Qizilbash Land Rights"
+ estate_qizilbash_land_rights_desc:0 "Granting the Qizilbash land will surely ensure their continued loyalty and service within our nation."
+ #estate_qizilbash_levies
+ estate_qizilbash_levies:0 "Qizilbash Levies"
+ estate_qizilbash_levies_desc:0 "If the reward of land is offered, the Turkoman Tribes will be more than willing to serve as the backbone of our armies."
+ estate_qizilbash_levies_effect_tooltip:0 "Every owned province of §YTurkoman Tribe§! culture gains §Y'Qizilbash Levies'§!, giving the following effects:\nLocal Manpower Modifier: §G+10.0%§!"
+ estate_qizilbash_levies_revoke_effect_tooltip:0 "The modifier §Y'Qizilbash Levies'§! is removed from all owned §YTurkoman Tribe§! provinces."
+ estate_qizilbash_levies_mod: "Qizilbash Levies"
+ desc_estate_qizilbash_levies_mod:0 "The state has increased its conscription of the Turkoman Tribes."
+ #estate_qizilbash_establish_qurchis
+ estate_qizilbash_establish_qurchis:0 "Establish Qurchi Corps"
+ estate_qizilbash_establish_qurchis_desc:0 "We have expanded the enlistment of the Qizilbash tribes to now also serve as a royal guard."
+ #estate_qizilbash_officer_corps
+ estate_qizilbash_officer_corps:0 "Qizilbash in Officer Corps"
+ estate_qizilbash_officer_corps_desc:0 "Qizilbash have been granted control over the Office of the Tufangchi-bashi and the Office of the Tupchi-bashi, directly involving them in the leadership of our armies."
+ estate_qizilbash_officer_corps_effect_tooltip:0 "Qizilbash gain control over the Office of the Tufangchi-bashi and the Office of the Tupchi-bashi."
+ estate_qizilbash_officer_corps_revoke_effect_tooltip:0 "The modifier §Y'Qizilbash Officers'§! is removed."
+ estate_qizilbash_officers_modifier: "Qizilbash Officers"
+ #estate_qizilbash_disciplined_enforced
+ estate_qizilbash_disciplined_enforced:0 "Enforced Discipline"
+ estate_qizilbash_disciplined_enforced_desc:0 "We have enforced ruthless discipline on our armies, severely punishing any attempt to extract war plunder for personal gain."
+ #ghilman#
+ #estate_ghilman_land_rights
+ estate_ghilman_land_rights:0 "Ghilman Land Rights"
+ estate_ghilman_land_rights_desc:0 "Granting governorships and land to the Ghilman will further increase their loyalty and reduce our reliance on the Qizilbash."
+ #estate_ghilman_military_corps
+ estate_ghilman_military_corps:0 "Ghilman Military Corps"
+ estate_ghilman_military_corps_desc:0 "We have enforced ruthless discipline on the Ghilman, severely punishing any attempt to extract war plunder for personal gain."
+ estate_ghilman_discipline_modifier:0 "Ghilman Military Corps"
+ #estate_ghilman_morale
+ estate_ghilman_morale:0 "Reform the Ghilman Corps"
+ estate_ghilman_morale_desc:0 "Further drilling led by our foreign advisors has resulted in the increased effectiveness of our Ghilman corps."
+ estate_ghilman_morale_modifier:0 "Reform the Ghilman Corps"
+ #janissaries#
+ #estate_janissary_phase_base
+ estate_janissary_phase_base:0 "Train Against Offensive Maneuvers"
+ estate_janissary_phase_base_desc:0 "Janissaries began as an elite corps of infantry, famed for their internal cohesion cemented by strict discipline and order. This prevented them from breaking to the offensive maneuvers of enemies designed to force a retreat, keeping a solid central line of infantry."
+ estate_janissary_phase_modifier:0 "Defensive Tactics"
+ #estate_janissary_upgrade_weaponry
+ estate_janissary_upgrade_weaponry:0 "Upgrade Janissary Weaponry"
+ estate_janissary_upgrade_weaponry_desc:0 "Janissaries were expert archers, but became early adopters of firearms. New technology has led to the development of better firearms, and they should follow in their tradition and adopt the use of these better firearms."
+ estate_janissary_weaponry_modifier:0 "Upgraded Weaponry"
+ #estate_janissary_auxiliaries
+ estate_janissary_auxiliaries:0 "Establish Janissary Auxiliary Corps"
+ estate_janissary_auxiliaries_desc:0 "The Janissary Corps maintained a vast network of auxiliary support for any campaigns the Sultan would command. The Janissary Corps had its own internal medical auxiliaries: Muslim and Jewish surgeons who would travel with the corps during campaigns and had organized methods of moving the wounded and the sick to traveling hospitals behind the lines. There was also the Djerbedji Corps, who were to carry and distribute weapons and ammunition on extended campaigns."
+ estate_janissary_auxiliaries_modifier:0 "Janissary Auxiliaries"
+ #estate_janissary_reform_the_janissaries
+ estate_janissary_reform_the_janissaries:0 "Reform the Janissary Corps"
+ estate_janissary_reform_the_janissaries_desc:0 "Having chosen to keep the Janissary Corps as our primary infantry corps, we will ensure they remain loyal to the Sultan and update their methods of warfare to match the growing threat of Western technology and military tactics."
+ estate_janissary_discipline_modifier:0 "Reformed Janissaries"
+ #disband
+ yoklama_effect_tooltip:0 "§RThe Janissaries estate will be removed entirely and all Janissary related government reforms and privileges will be lost. However, this brings an opportunity to reform the army..§!"
+ force_janissaries_to_undergo_yoklama:0 "§YPost-Janissary Army Reform§!"
+ ######province modifiers######
+ northern_dvina_estuary_modifier: "Northern Dvina Estuary"
+ desc_northern_dvina_estuary_modifier:0 "Controlling the important river estuary of Northern Dvina strengthens our hold of the trade in the region."
+ house_of_wisdom: "House of Wisdom"
+ desc_house_of_wisdom: "House of Wisdom Description"
+ kaffa_slave_market: "Kaffa Slave Market"
+ desc_kaffa_slave_market: "In the late 13th century, traders from the Republic of Genoa arrived and purchased Kaffa from the ruling Golden Horde. They established a flourishing trading settlement, which virtually monopolized trade in the Black Sea region and served as a major port and administrative center for the Genoese settlements around the Sea. It came to house one of Europe's biggest slave markets, where captured Europeans from raids by the military of the Crimean Khanate and the Nogai Horde were sold."
+ karun_tributary_modifier: "Karun Tributary"
+ desc_karun_tributary_modifier:0 "Controlling the important tributary of Karun strengthens our hold of the trade in the region."
+ transcaucasian_wine_valleys: "Transcaucasian Wine Valleys"
+ desc_transcaucasian_wine_valleys:0 "The fertile valleys and protective slopes of Transcaucasia have made the region home to grapevine cultivation and wine production for millennia."
+ #mission tree
+ #persia
+ caucasus_conquest_title:0 "Georgian Jihad"
+ caucasus_conquest_desc:0 "The restless Safavid order demands we launch a grand Jihad against the upstart Georgians. Not only will this benefit our caravans, it will also allow for the blossoming slave trade to grow. Perhaps we may one day have Janissaries of our own."
+ caucasus_integration:0 "Integration of the Caucasus"
+ #qq
+ PR_qar_missions4_reward:0 "Unlock Clergy Exploration Expeditions Estate Privilege"
+ PR_qar_missions1_desc_title:0 "Conquer Samtskhe"
+ PR_qar_missions1_desc_desc:0 "TBD"
+ PR_qar_missions2_desc_title:0 "Secure the Caucasus"
+ PR_qar_missions2_desc_desc:0 "TBD"
+ PR_qar_missions3_desc_title:0 "Into Arabia"
+ PR_qar_missions3_desc_desc:0 "TBD"
+ PR_qar_missions4_desc_title:0 "Settle the Deserts"
+ PR_qar_missions4_desc_desc:0 "TBD"
+ PR_qar_missions5_desc_title:0 "Follow the Coast"
+ PR_qar_missions5_desc_desc:0 "TBD"
+ PR_qar_missions6_desc_title:0 "Consolidate Yemen"
+ PR_qar_missions6_desc_desc:0 "TBD"
+ #diplomatic setup
+ sm_tooltip_mamottoally:0 "We cannot ally the House of Osman."
+ sm_tooltip_ottomamally:0 "We cannot ally the Mamluk Sultanate."
+ ###nomad estate changes###
+ estate_nomadic_tribes_steppe_devcost:0 "Settle the Steppes"
+ estate_nomadic_tribes_steppe_devcost_grant_tooltip:0 "§G-15%§! Local Development Cost in all Steppe provinces"
+ estate_nomadic_tribes_steppe_devcost_revoke_tooltip:0 "Removes §YSettle the Steppes§! from all owned Steppe provinces."
+ estate_nomadic_tribes_share_of_the_spoils:0 "Settle the Steppe"
+ estate_nomadic_tribes_chieftains_autonomy:0 "Greater Autonomy for Chieftains"
+ estate_nomadic_tribes_guaranteed_leadership_in_host:0 "Guaranteed Leadership of Host"
+ estate_nomadic_tribes_guaranteed_leadership_in_host_desc:0 "Our tribal chieftains make fine leaders of men. We need look no further when seeking new generals for our armies."
+ estate_nomadic_tribes_tribute:0 "Increased Tribal Tribute"
+ estate_nomadic_tribes_tribute_desc:0 " "
+ #drillmaster
+ excellent_drill:0 "Excellent Drill"
+ drillmaster_events.1.t:0 "$DRILLMASTER$"
+ drillmaster_events.1.d:0 "One of our advisors, $DRILLMASTER$ has drilled our men to the pitch of military efficiency. Like a coiled spring we cannot maintain this high level for too long. Still, for a while our armies will stand where lesser men would run."
+ #crimea events
+ gecko_crimea_mission.1.t:0 "Dominance over the Tatar Steppe"
+ gecko_crimea_mission.1.d:0 "The last remnants of the §YGolden Horde§! are dead. With the great cities of Sarai and Astrakhan under our control and their treasures under our safekeeping, we proclaim our hegemony over the steppes."
+ gecko_crimea_mission.1.a:0 "Now to press our claim to the east..."
+ gecko_crimea_mission.2.t:0 "Settle the Crimea"
+ gecko_crimea_mission.2.d:0 "With full control over the Crimean penisular and its lucrative slave trade, we have the resources to settle and make Crimea our yurt."
+ gecko_crimea_mission.2.a:0 "The future is bright."
+ #arabia decision
+ arab_nation_majors_title:0 "Form Arabia"
+ arab_nation_majors_desc:0 "For hundreds of years the Arabs have been divided, but we remember when the Prophet Muhammad, peace be upon him, organized all of us into one ummah, a community of the faithful that transcended tribal affiliation. Today we have overcome disunity and regained the oneness that triumphed in the day of the Prophet and united Arabia!"
+ edict_devastation_edict:0 "Reduce Devastation"
+ #hire general
+ sm_hire_general_title:0 "Recruit Foreign General"
+ sm_hire_general_desc:0 "Our nobility is producing an underwhelming amount of promising generals. Perhaps we should look to hiring a foreign general for a fee.."
+ 

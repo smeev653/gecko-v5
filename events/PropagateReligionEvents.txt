@@ -1,0 +1,7 @@
+######################################################
+# Muslim Propagation of Religion Trade Policy Events #
+#                         							 #
+# Written by Henrik Lohmander						 #
+######################################################
+
+namespace = propagate_religion_events

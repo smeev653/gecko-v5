@@ -1,0 +1,97 @@
+#estate_nomadic_tribes_share_of_the_spoils = {
+#	icon = privilege_supply_arms
+#	max_absolutism = -10
+#	land_share = 5
+#	loyalty = 0.05
+#	influence = 0.05
+#	can_select = {
+#		NOT = {
+#			num_of_estate_privileges = {
+#			estate = estate_nomadic_tribes
+#			value = 4
+#			}
+#		}
+#	}
+#	benefits = {
+#		development_cost = -0.05
+#	}
+#	modifier_by_land_ownership = {
+#		horde_unity = -1
+#	}
+#	on_granted = {
+#		custom_tooltip = estate_nomadic_tribes_steppe_devcost_grant_tooltip
+#	
+#		hidden_effect = {
+#			every_owned_province = { 
+#				limit = {
+#					has_terrain = steppe
+#				}
+#				
+#				add_province_modifier = {
+#					name = estate_nomadic_tribes_steppe_devcost
+#					duration = -1
+#				}
+#			}
+#		}
+#	}
+#	on_revoked = {
+#		custom_tooltip = estate_nomadic_tribes_steppe_devcost_revoke_tooltip
+#	
+#		hidden_effect = {
+#			every_owned_province = { 
+#				limit = {
+#					has_province_modifier = estate_nomadic_tribes_steppe_devcost
+#				}
+#
+#				remove_province_modifier = estate_nomadic_tribes_steppe_devcost
+#			}
+#		}
+#	}
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
+
+estate_nomadic_tribes_tribal_host = {
+	icon = privilege_raise_host
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	can_select = {
+	}
+	benefits = {
+		global_manpower_modifier = 0.1
+	}
+	modifier_by_land_ownership = {
+		cavalry_cost = -0.15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_nomadic_tribes_tribute = {
+	icon = privilege_lighten_dhimmi_tax_burden
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.1
+	can_select = {
+	}
+	benefits = {
+	
+	}
+	modifier_by_land_ownership = {
+		global_tax_modifier = 0.5
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}

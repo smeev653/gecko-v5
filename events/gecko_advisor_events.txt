@@ -1,0 +1,139 @@
+namespace = gc_advisor_events
+
+country_event = { #Arty Officer
+    id = gc_advisor_events.1
+    title = gc_advisor_events.1.t
+    desc = gc_advisor_events.1.d 
+    picture = ADVISOR_eventPicture
+
+    trigger = {
+		gc_arty_officer = 3
+		NOT = { has_country_modifier = gc_arty_officer_delayed }
+		NOT = { has_country_flag = gc_arty_officer_flag }
+	}
+
+    mean_time_to_happen = {
+		months = 60
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+
+    option = { #Perhaps another time
+        name = gc_advisor_events.1.a 
+        ai_chance = {
+			factor = 100
+		}
+        add_country_modifier = {
+			name = "gc_arty_officer_delayed"
+			duration = 7300
+		}
+    }
+
+    option = { # His efforts will be admired throughout the nation
+        name = gc_advisor_events.1.b 
+        add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+        add_country_modifier = {
+			name = "gc_arty_officer_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_arty_officer_flag
+    }
+
+    option = { # His reputation will reach further than our borders
+        name = gc_advisor_events.1.c
+        add_meritocracy_effect = yes
+		add_prestige = 50
+        add_country_modifier = {
+			name = "gc_arty_officer_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_arty_officer_flag
+    }
+}
+
+
+
+country_event = { #Drill Master
+    id = gc_advisor_events.2
+    title = gc_advisor_events.2.t
+    desc = gc_advisor_events.2.d 
+    picture = ADVISOR_eventPicture
+
+    trigger = {
+		gc_drill_master = 3
+		NOT = { has_country_modifier = gc_drill_master_delayed }
+		NOT = { has_country_flag = gc_drill_master_flag }
+	}
+
+    mean_time_to_happen = {
+		months = 60
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+
+    option = { #Perhaps another time
+        name = gc_advisor_events.2.a 
+        ai_chance = {
+			factor = 100
+		}
+        add_country_modifier = {
+			name = "gc_drill_master_delayed"
+			duration = 7300
+		}
+    }
+
+    option = { # His efforts will be admired throughout the nation
+        name = gc_advisor_events.2.b 
+        add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+        add_country_modifier = {
+			name = "gc_drill_master_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_drill_master_flag
+    }
+
+    option = { # His reputation will reach further than our borders
+        name = gc_advisor_events.2.c
+        add_meritocracy_effect = yes
+		add_prestige = 50
+        add_country_modifier = {
+			name = "gc_drill_master_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_drill_master_flag
+    }
+}

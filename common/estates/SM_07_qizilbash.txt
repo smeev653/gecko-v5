@@ -1,0 +1,67 @@
+estate_qizilbash =
+ {
+	icon = 5
+	
+	# If true, country will get estate
+	trigger = {
+		tag = PER
+	}
+	
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		army_tradition = 0.5
+		cavalry_power = 0.1
+	}
+	country_modifier_neutral = {
+		cavalry_power = 0.1  
+	}	
+	country_modifier_angry = {
+		army_tradition = -0.5
+		cavalry_power = -0.1
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		qizilbash_loyalty_modifier = 0.2 #this is % of estateland = loyalty (i.e., 10 crownland owned by them = 2% loyalty)
+	}
+	
+	#Influence
+	base_influence = 0
+	influence_from_dev_modifier = 1.0 #seems to be influence_from_estateland = estateland*float/2. (i.e., 10 crownland owned by them, influence_from_dev_modifier = 0.5, then influence = 10*.25=2.5)
+	
+	#Influence Modifiers
+	
+	influence_modifier = {
+		desc = TURKOMAN_TRIBES
+		trigger = {
+			any_owned_province = {
+				OR = {
+					culture = azerbaijani
+					culture = mazandarani
+					culture = kurdish
+					culture = luri
+				}
+			}
+		}
+		influence = 10
+	}
+
+	loyalty_modifier = {
+		desc = HERETIC_WAR
+		trigger = {
+			any_known_country = {
+				war_with = ROOT
+				NOT = { religion = shiite }
+				}
+			}
+		loyalty = 10
+	}
+
+	privileges = {
+		estate_qizilbash_land_rights
+		estate_qizilbash_levies
+		estate_qizilbash_establish_qurchis
+		estate_qizilbash_officer_corps
+		estate_qizilbash_disciplined_enforced
+	}
+	color = { 255 000 000 }
+}

@@ -1,0 +1,117 @@
+namespace = gc_eth_events
+
+country_event = { #Legacy of Prester John
+	id = gc_eth_events.1
+	title = gc_eth_events.1.t
+	desc = gc_eth_events.1.d
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gc_eth_events.1.a
+		add_country_modifier = {
+			name = gc_ethiopia_prester_john
+			duration = -1
+		}
+	}
+}
+
+country_event = { #Crusade from Africa
+	id = gc_eth_events.2
+	title = gc_eth_events.2.t
+	desc = gc_eth_events.2.d
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gc_eth_events.2.a
+		add_country_modifier = {
+			name = gc_ethiopia_crusade
+			duration = -1
+		}
+	}
+}
+
+country_event = { #Coptic Reformed
+	id = gc_eth_events.3
+	title = gc_eth_events.3.t
+	desc = gc_eth_events.3.d
+	picture = BIG_BOOK_eventPicture
+    major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gc_eth_events.3.a
+        add_prestige = 100
+        add_adm_power = 100
+        add_dip_power = 100
+        add_mil_power = 100
+		change_government_to_gc_ethiopia_Government = yes
+        add_government_reform = gc_ethiopian_theocracy_reform
+	}
+}
+
+country_event = { #Election of new Head of the State
+    id = gc_eth_events.4
+    title = gc_eth_events.4.title
+	desc = gc_eth_events.4.desc
+	picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+		name = gc_eth_events.4.a
+        define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+            age = 40
+			adm = 2
+		}
+	}
+    option = {
+		name = gc_eth_events.4.b
+        define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+            age = 40
+			dip = 2
+		}
+	}
+    option = {
+		name = gc_eth_events.4.c
+        define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+            age = 40
+			mil = 2
+		}
+	}
+    option = {
+		name = gc_eth_events.4.d
+        define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+            age = 40
+            adm = 1
+			mil = 1
+		}
+	}
+    option = {
+		name = gc_eth_events.4.e
+        define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+            age = 40
+            dip = 1
+			mil = 1
+		}
+	}
+}

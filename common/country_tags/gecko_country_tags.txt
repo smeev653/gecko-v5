@@ -1,0 +1,4 @@
+#PR Africa Tags:
+PR2 = "countries/PRSokoto.txt"
+HET = "countries/Hetmanate.txt"
+GZM = "countries/Great Zimbabwe.txt"

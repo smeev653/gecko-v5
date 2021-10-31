@@ -1,0 +1,3 @@
+# Triggers will be evaluated in the scope of the Subject, with the Overlord as its FROM scope.
+
+#Crown Colony Upgrades

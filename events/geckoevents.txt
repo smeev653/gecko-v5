@@ -1,0 +1,706 @@
+namespace = gecko
+
+country_event = { #Poland Ruler Failsafe
+	id = gecko.1
+	title = gecko.1.t
+	desc = gecko.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		NOT = { adm = 6 dip = 6 mil = 6 }
+		NOT = { is_year = 1475 }
+		is_free_or_tributary_trigger = yes
+		has_country_flag = gecko_localnoble
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_pol_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_pol_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_pol_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = gecko.1.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			culture = ROOT
+			religion = ROOT
+			adm = 5
+			dip = 5
+			mil = 5
+			age = 34
+			claim = 20
+		}
+		event_target:gecko_pol_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:gecko_pol_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = gecko.1.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:gecko_pol_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+country_event = { #Ottoman Ruler Failsafe
+	id = gecko.2
+	title = gecko.2.t
+	desc = gecko.2.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		NOT = { has_ruler = "Mehmed II Fatih" }
+		NOT = { is_year = 1480 }
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_tur_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_tur_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_tur_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = gecko.2.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 5
+			dip = 4
+			mil = 5
+			age = 30
+			claim = 20
+		}
+		event_target:gecko_tur_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:gecko_tur_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = gecko.2.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:gecko_tur_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+country_event = { #Persian Ruler Failsafe
+	id = gecko.3
+	title = gecko.3.t
+	desc = gecko.3.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		NOT = { has_ruler = "Ismail I" }
+		NOT = { is_year = 1500 }
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_per_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_per_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_per_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = gecko.3.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 4
+			dip = 4
+			mil = 3
+			age = 30
+			claim = 20
+		}
+		event_target:gecko_per_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:gecko_per_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = gecko.3.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:gecko_per_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+country_event = { #Mughal Ruler Failsafe
+	id = gecko.4
+	title = gecko.4.t
+	desc = gecko.4.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		NOT = { has_ruler = "Babur" }
+		NOT = { is_year = 1500 }
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_mug_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_mug_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_mug_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = gecko.4.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 4
+			dip = 3
+			mil = 4
+			age = 30
+			claim = 20
+		}
+		event_target:gecko_mug_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:gecko_mug_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = gecko.4.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:gecko_mug_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+
+# Empire of Hungary
+country_event = {
+	id = gecko.5
+	title = gecko.5.t
+	desc = gecko.5.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = gecko.5.a
+		add_government_reform = empire_of_hungary_reform
+		set_government_rank = 3
+	}
+
+	option = {
+		name = gecko.5.b
+		add_prestige = 10
+	}
+}
+
+
+#Swedish Missions Event
+
+#Coronation of a Swedish King
+country_event = {
+	id = gecko.100
+	title = gecko.100.title
+	desc = gecko.100.desc
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gecko.100.a
+		define_ruler = {
+			name = "Johan I"
+			dynasty = "Vasa"
+			adm = 5
+			dip = 5
+			mil = 2
+			fixed = yes
+			age = 20
+			claim = 80
+		}
+		
+		define_consort = {
+			name = "Birgitta"
+			dynasty = "Sture"
+			culture = ROOT
+			religion = ROOT
+			age = 19
+			adm = 3
+			dip = 3
+			mil = 3
+			female = yes
+		}
+		
+		custom_tooltip = h_swedish_missions_event_tooltip_1
+		
+		hidden_effect = {
+			set_country_flag = johanking
+			add_ruler_personality = industrious_personality
+		}
+	}
+	
+	option = {
+		name = gecko.100.b
+		define_ruler = {
+			name = "Gustav I"
+			dynasty = "Vasa"
+			adm = 3
+			dip = 2
+			mil = 6
+			fixed = yes
+			age = 20
+			claim = 80
+		}
+		
+		define_consort = {
+			name = "Birgitta"
+			dynasty = "Sture"
+			culture = ROOT
+			religion = ROOT
+			age = 19
+			adm = 3
+			dip = 3
+			mil = 3
+			female = yes
+		}
+		
+		custom_tooltip = h_swedish_missions_event_tooltip_1
+		
+		hidden_effect = {
+			set_country_flag = gustavking
+			add_ruler_personality = strict_personality
+		}
+	}
+}
+
+##Military Reforms for Sweden
+country_event = {
+	id = gecko.101
+	title = gecko.101.title
+	desc = gecko.101.desc
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gecko.101.a
+		add_country_modifier = {
+			name = h_swedish_reform_infantry_core
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = gecko.101.b
+		add_country_modifier = {
+			name = h_swedish_reform_leadership
+			duration = -1
+		}
+	}
+}
+
+##Ga-Pa
+country_event = {
+	id = gecko.102
+	title = gecko.102.title
+	desc = gecko.102.desc
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gecko.102.a
+		add_country_modifier = {
+			name = h_swedish_ga_pa_doctrine
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = gecko.102.b
+		add_army_tradition = 25
+		add_mil_power = 100
+	}
+}
+
+##Alexander of the North
+country_event = {
+	id = gecko.103
+	title = gecko.103.title
+	desc = gecko.103.desc
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gecko.103.a
+		add_ruler_modifier = {
+			name = h_swedish_alexander_of_the_north
+			duration = -1
+		}
+	}
+}
+
+##Aftermath of the Kalmar War
+country_event = {
+	id = gecko.110
+	title = gecko.110.title
+	desc = gecko.110.desc
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gecko.110.a
+		##Vow to restore the union
+		add_prestige = 10
+		add_treasury = 100
+
+		add_casus_belli = {
+			target = NOR
+			type = cb_restore_personal_union
+		}
+
+		skaneland_area = {
+			add_core = ROOT
+		}
+
+		25 = {
+			add_permanent_claim = ROOT
+		}
+
+		subarctic_islands_area = {
+			add_permanent_claim = ROOT
+		}
+
+		custom_tooltip = h_danes_kalmar_event_tooltip
+
+		hidden_effect = {
+			set_country_flag = h_restore_the_union
+			set_country_flag = h_kalmar_union_event_choice_concluded
+		}
+	}
+	
+	option = {
+		name = gecko.110.b
+		##Forget the union
+
+		add_prestige = -5
+		add_stability_or_adm_power = yes
+		add_manpower = 3
+		add_sailors = 500
+
+		subarctic_islands_area = {
+			add_permanent_claim = ROOT
+		}
+
+		hidden_effect = {
+			set_country_flag = h_forget_the_union
+			set_country_flag = h_kalmar_union_event_choice_concluded
+		}
+	}
+}
+
+country_event = { #Ethopian Ruler Failsafe
+	id = gecko.7
+	title = gecko.7.t
+	desc = gecko.7.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ETH
+		NOT = { has_ruler = "Zara Yakob" }
+		NOT = { is_year = 1475 }
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_eth_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_eth_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_eth_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = gecko.7.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			dynasty = ROOT
+			culture = ROOT
+			religion = ROOT
+			adm = 4
+			dip = 3
+			mil = 4
+			age = 30
+			claim = 20
+		}
+		event_target:gecko_eth_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:gecko_eth_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = gecko.7.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:gecko_eth_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}

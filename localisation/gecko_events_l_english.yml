@@ -1,0 +1,75 @@
+﻿l_english:
+ gecko.1.t:0 "Legacy Of Our Previous King"
+ gecko.1.d:0 "Our previous ruler was taken from us far too soon. Luckily for us, his cousin shares many of the same talents and ambitions as his relative and has expressed his desire to continue the legacy of our late monarch. However, it will greatly upset the nobility if we bypass the tradition succession laws.."
+ gecko.1.a:0 "Abdicate in favour of the late ruler's cousin."
+ gecko.1.b:0 "Execute this traitor!"
+ gecko.2.t:0 "Legacy Of Our Previous King"
+ gecko.2.d:0 "Our previous ruler was taken from us far too soon. Luckily for us, his cousin shares many of the same talents and ambitions as his relative and has expressed his desire to continue the legacy of our late monarch. However, it will greatly upset the nobility if we bypass the tradition succession laws.."
+ gecko.2.a:0 "Abdicate in favour of the late ruler's cousin."
+ gecko.2.b:0 "Execute this traitor!"
+ gecko.3.t:0 "Legacy Of Our Previous King"
+ gecko.3.d:0 "Our previous ruler was taken from us far too soon. Luckily for us, his cousin shares many of the same talents and ambitions as his relative and has expressed his desire to continue the legacy of our late monarch. However, it will greatly upset the nobility if we bypass the tradition succession laws.."
+ gecko.3.a:0 "Abdicate in favour of the late ruler's cousin."
+ gecko.3.b:0 "Execute this traitor!"
+ gecko.4.t:0 "Legacy Of Our Previous King"
+ gecko.4.d:0 "Our previous ruler was taken from us far too soon. Luckily for us, his cousin shares many of the same talents and ambitions as his relative and has expressed his desire to continue the legacy of our late monarch. However, it will greatly upset the nobility if we bypass the tradition succession laws.."
+ gecko.4.a:0 "Abdicate in favour of the late ruler's cousin."
+ gecko.4.b:0 "Execute this traitor!"
+ flavor_buk.1.t:0 "Bukharan Wool"
+ flavor_buk.1.d:0 "The Nomads, so long a threat to our nation's stability, are finding the incentives of sedentary life more and more attractive; however they struggle to find a place in this modern economy and languish in a form of destitute poverty, leading to unrest and banditry. By relocating them and their flocks and forcing them into treasury supported enterprises we can improve their production yield, support them economically, and make hefty profits through the taxes in the regions."
+ flavor_buk.1.a:0 "Excellent."
+ flavor_buk.2.t:0 "A Failed Investment?"
+ flavor_buk.2.d:0 "To make matters worse, the market for wool has been shocked by recent good yields in Europe. Our biggest market is now buying cheaper and cheaper. The investment clearly hasn't panned out. The price of cloth is on the rise though, we could import Artisans into these provinces instead of a standard slave, possibly converting the province from basic wool production to cloth produce using their refined skills from the Indian subcontinent."
+ flavor_buk.2.a:0 "Encourage cloth production instead."
+ flavor_buk.2.b:0 "The current situation is preferable."
+ gecko.5.t:0 "Empire of Hungary"
+ gecko.5.d:0 "Through a series of sweeping and comprehensive conquests, the Kingdom of Hungary has established itself as the hegemon of Europe and has such been elevated to empire status."
+ gecko.5.a:0 "It is right."
+ gecko.5.b:0 "We are not worthy."
+ gecko.7.t:0 "Legacy Of Our Previous King"
+ gecko.7.d:0 "Our previous ruler was taken from us far too soon. Luckily for us, his cousin shares many of the same talents and ambitions as his relative and has expressed his desire to continue the legacy of our late monarch. However, it will greatly upset the nobility if we bypass the tradition succession laws.."
+ gecko.7.a:0 "Abdicate in favour of the late ruler's cousin."
+ gecko.7.b:0 "Execute this traitor!"
+
+ #Advisor Events
+ gc_advisor_events.1.t:0 "$GC_ARTY_OFFICER$"
+ gc_advisor_events.1.d:0 "An Artillery Officer par excellence, $GC_ARTY_OFFICER$ has turned our Artillery Crews into clockwork automatons that don't fail on the battlefield."
+ gc_advisor_events.1.a:0 "Perhaps another Time"
+ gc_advisor_events.1.b:0 "$GC_ARTY_OFFICER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
+ gc_advisor_events.1.c:0 "$GC_ARTY_OFFICER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
+
+ gc_advisor_events.2.t:0 "$GC_DRILL_MASTER$"
+ gc_advisor_events.2.d:0 "A drillmaster par excellence, $GC_DRILL_MASTER$ has turned our army into clockwork automatons that don't flinch on the battlefield."
+ gc_advisor_events.2.a:0 "Perhaps another Time" 
+ gc_advisor_events.2.b:0 "$GC_DRILL_MASTER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
+ gc_advisor_events.2.c:0 "$GC_DRILL_MASTER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
+
+ #Ethiopia Mission Events
+ gc_eth_events.1.t:0 "Legacy of Prester John"
+ gc_eth_events.1.d:0 "Prester John was a legendary Christian patriarch, presbyter, and king. Stories popular in Europe in the twelfth through to the seventeenth centuries told of a Nestorian patriarch and king who was said to rule over a Christian nation lost amid the pagans and Muslims in the Orient. The accounts are varied collections of medieval popular fantasy, depicting Prester John as a descendant of the Three Magi, ruling a kingdom full of riches, marvels, and strange creatures. "
+ gc_eth_events.1.a:0 "We must continue to search"
+
+ gc_eth_events.2.t:0 "Crusade from Africa"
+ gc_eth_events.2.d:0 "The Nation of Ethiopia has ever been on the defensive side of war, encircled by religious Enemies it has fought several times for survival. Now it is the time we turn the tides and go on the offensive!"
+ gc_eth_events.2.a:0 "In the Name of God!"
+
+ gc_eth_events.3.t:0 "Reformation of the Coptic Faith"
+ gc_eth_events.3.d:0 "The Coptic Faith has reformed into a Religion where the Emperor is also the Head of the State."
+ gc_eth_events.3.a:0 "Sent by God"
+
+ gc_eth_events.4.title:0 "New Leader Elected!"
+ gc_eth_events.4.desc:0 "Now that your time as a Mortal comes to an end, you must chose your Heir."
+ gc_eth_events.4.a:0 "The Administrator"
+ gc_eth_events.4.b:0 "The Diplomat"
+ gc_eth_events.4.c:0 "The Militarist"
+ gc_eth_events.4.d:0 "The Strategist"
+ gc_eth_events.4.e:0 "The Tactician"
+
+ #Timurids 
+
+ gc_tim_events.1.t:0 "New Heir of Timur"
+ gc_tim_events.1.d:0 "As the descendant of Timur Lenk, the great conqueror of Iran, Transoxiana and Khorasan, it is our duty to reclaim his legacy. With the traditional Timurid Strongholds under our control we can at last proclaim ourselves the head of Timur's dynasty, and the leader of all of the Ghurkani princes."
+ gc_tim_events.1.a:0 "One to rule them all"
+
+
+ 

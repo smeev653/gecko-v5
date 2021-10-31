@@ -1,0 +1,315 @@
+transcaucasian_wine_valleys = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+	}
+
+	trade_goods_size= 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+kaffa_slave_market = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			TAG = CRI
+		}
+	}
+
+	trade_goods_size= 5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+the_upper_nile = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+	}
+
+	trade_goods_size= 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+conquest_of_constantinople = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = { tag = TUR }
+		}
+	}
+
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_paris = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				tag = BUR
+				tag = ENG
+				tag = GBR
+				tag = LOT
+			}
+		}
+	}
+
+	infantry_power = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+
+conquest_of_vienna = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				tag = TUR
+				tag = FRA
+			}
+		}
+	}
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+
+conquest_of_jerusalem = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+				religion = catholic
+				religion = anglican
+				religion = protestant
+				religion = hussite
+				religion = reformed
+				religion = coptic
+				religion = orthodox
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				religion = catholic
+				religion = anglican
+				religion = protestant
+				religion = hussite
+				religion = reformed
+				religion = coptic
+				religion = orthodox
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}
+		}
+	}
+
+	missionaries = 1
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+
+conquest_of_baghdad = {
+	potential = {
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}	
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}	
+		}
+	}
+
+	technology_cost = -0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+
+conquest_of_delhi = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = { tag = DLH }
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}	
+		}
+	}
+
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+
+conquest_of_kiev = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				tag = MOS
+				tag = RUS
+				tag = CRI
+				tag = UKR
+				tag = POL
+				tag = PLC
+				tag = HET
+			}
+		}
+	}
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_cairo = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = MAM }
+				NOT = { tag = EGY }
+			}
+		}	
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+
+		

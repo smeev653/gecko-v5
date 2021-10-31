@@ -1,0 +1,16 @@
+namespace = gc_tim_events
+
+country_event = { #New Heir of Timur
+	id = gc_tim_events.1
+	title = gc_tim_events.1.t
+	desc = gc_tim_events.1.d
+	picture = BIG_BOOK_eventPicture
+    major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gc_tim_events.1.a
+		add_prestige = 25
+	}
+}

@@ -1,0 +1,39 @@
+﻿l_english:
+
+  #Egypt
+  EGY_ideas:0 "Egyptian Ideas"
+  EGY_ideas_start:0 "Egyptian Ideas"
+  EGY_ideas_bonus:0 "Egyptian Ambition"
+  egy_1:0 "Reform the Army"
+  egy_2:0 "Reform the Fellah System"
+  egy_3:0 "Religious Tolerance"
+  egy_4:0 "Purchase New Mamluks"
+  egy_5:0 "Camel breeding"
+  egy_7:0 "Breadbasket of the Mediterranean"
+
+  egy_1_desc:0 "Our victory over the Mongols is far in the past, when we were the foremost military power in the world. Times have changed and our armies are no longer what they were. It is time to improve the training of our troops to ensure we do not fall behind."
+  egy_2_desc:0 "Since time immemorial the basis of Egypt's economy has been the Fellah farmer who farms his land as no more than a slave. It is time to reform this system to ensure that our farmers have a good incentive to grow more."
+  egy_3_desc:0 "Religious toleration may signify 'no more than forbearance and the permission given by the adherents of a dominant religion for other religions to exist, even though the latter are looked on with disapproval as inferior, mistaken, or harmful'."
+  egy_4_desc:0 "Our administration is staffed with time servers who are too busy plotting against each other to aggrandize themselves. We shall return to the traditional ways and bring in new Mamluks to staff our administration."
+  egy_5_desc:0 "Africas finest Camel are bred and domesticated in Egypt."
+  egy_7_desc:0 "The breadbasket of a country or of a region is an area which, because of the richness of the soil and/or advantageous climate, produces large quantities of wheat or other grain."^
+
+
+  #Great Zimbabwe
+  GZM_ideas:0 "Great Zimbabwean Ideas"
+  GZM_ideas_start:0 "Great Zimbabwean Traditions"
+  GZM_ideas_bonus:0 "Great Zimbabwean Ambition"
+
+  GZM_legacy_of_zimbabwe:0 "Legacy of Zimbabwe"
+  GZM_empowering_the_rozwi:0 "Empowering the Rozwi"
+  GZM_4:0 "Regular Training"
+  GZM_5:0 "Introduce new Conscription"
+  GZM_6:0 "Knowledge of Home Terrain"
+  GZM_vashambadzi:0 "Vashambadzi"
+
+  GZM_legacy_of_zimbabwe_desc:0 "With the fall of Great Zimbabwe many traditions and customs have been lost. The Mutapa has built a new kind of state, independent of the age old legacy of these lands. Our people on the other hand have chosen to cling to old traditions, we still construct stone buildings that leave outsiders in awe and we still cherish that which once was."
+  GZM_empowering_the_rozwi_desc:0 "A powerful faction has begun to grow in our lands, showing a strong loyalty to their leader and dissatisfaction with their lot in life in the Zimbabwe plateau. The Rozwi, or 'destroyers', are disciplined fighters ready to unify the Shona peoples and create a new type of state. If we do not embrace them we may well find ourselves overrun against our will."
+  GZM_4_desc:0 "Discipline, preparation and training are what win battles. With this in mind our commanders have successfully begun to pioneer elaborate new tactics and a new army organization. Let us make good use of these innovations by dividing our warriors into regiments and then let them train regularly with their bows, assegais, daggers and axes. Practice will also allow them to fight in formation without fear, defeating much more numerous enemies."
+  GZM_5_desc:0 "By Introducing a new System of Conscription we will ensure that we will have enough men to fill our ranks."
+  GZM_6_desc:0 "The People of Great Zimbabwe are home to hostile terrain. Their knowledge of their home region will prove benefitial."
+  GZM_vashambadzi_desc:0 "The growing intracontinental trade, with goods flowing back and forth from the central parts of the Kongo river basin to the trade cities of Eastern Africa, the Great Lakes and the Zimbabwe highlands has greatly enriched the Vashambadzi, our native merchant community. Let us support this group over all others by baring Swahili traders as well as European fortune seekers from trading within our borders."

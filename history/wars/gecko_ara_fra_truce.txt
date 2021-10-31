@@ -1,0 +1,17 @@
+
+name = "France - Aragon War"
+war_goal = {
+    type = take_claim
+    casus_belli = cb_conquest
+	province = 197 
+}
+# War start date
+1443.1.1 = {
+	add_attacker = FRA
+	add_defender = ARA
+}
+# War end date
+1444.11.10 = {
+    	rem_attacker = FRA
+	rem_defender = ARA
+}

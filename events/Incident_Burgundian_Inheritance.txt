@@ -1,0 +1,516 @@
+#### The Burgundian Inheritance ###
+### By James Beaumont ###
+
+
+namespace = incidents_bur_inheritance
+normal_or_historical_nations = yes
+
+# Mary is appointed regent
+country_event = {
+	id = incidents_bur_inheritance.0
+	title = "incidents_bur_inheritance.0.t"
+	desc = "incidents_bur_inheritance.0.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUR
+		has_country_modifier = burgundian_succession_crisis
+		NOT = { has_country_flag = burgundian_succession_start }
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+		has_regency = no
+		NOT = { is_year = 1500 }
+		OR = {
+			AND = {
+				has_heir = no
+				is_year = 1457
+			}
+			AND = {
+				has_ruler = "Charles"
+				dynasty = "de Bourgogne"
+				ruler_age = 43
+				NOT = {
+					heir_age = 15
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+
+		modifier = {
+			factor = 0.5
+			is_year = 1473
+		}
+	}
+	
+	option = {
+		name = "incidents_bur_inheritance.0.a"
+		ai_chance = { 
+			factor = 10
+		}
+		if = {
+			limit = {
+				is_year = 1473
+			}
+			define_heir = {
+				name = "Marie"
+				dynasty = ROOT
+				birth_date = 1457.02.13
+				adm = 4
+				dip = 5
+				mil = 3
+				claim = 95
+				block_disinherit = yes
+				female = yes
+			}
+		}
+		else = {
+			define_heir = {
+				name = "Marie"
+				dynasty = ROOT
+				age = 16
+				adm = 4
+				dip = 5
+				mil = 3
+				claim = 95
+				block_disinherit = yes
+				female = yes
+			}
+		}
+
+		set_heir_flag = mary_is_heir
+	}
+	option = {
+		name = "incidents_bur_inheritance.0.b"
+		ai_chance = { 
+			factor = 10
+		}
+		add_legitimacy = 20
+	}
+}
+
+# Ruler of Burgundy Dies
+country_event = {
+	id = incidents_bur_inheritance.1
+	title = "incidents_bur_inheritance.1.t"
+	desc = "incidents_bur_inheritance.1.desc"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = burgundian_succession_start
+			add_country_modifier = { 
+				name = mary_is_on_the_throne
+				duration = 14600 
+				hidden = yes
+			}
+			random_country = { #largest Nation with a marriage with Burgundy
+				limit = {
+					is_emperor = no
+					marriage_with = ROOT
+					government = monarchy
+					is_free_or_tributary_trigger = yes
+					NOT = {
+						any_country = {
+							is_emperor = no
+							marriage_with = ROOT
+							is_free_or_tributary_trigger = yes
+							num_of_cities = prev
+							NOT = { prev = { num_of_cities = prev } }
+						}
+					}
+				}
+				save_event_target_as = bur_strongest_ally
+			}
+		}
+	}
+	
+	option = { #stand alone
+		name = "incidents_bur_inheritance.1.a"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				is_great_power = yes
+			}
+			modifier = {
+				factor = 2
+				army_strength = {
+					who = emperor
+					value = 0.8
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = emperor
+						value = -100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				is_rival = emperor
+			}
+			modifier = {
+				factor = 1.25
+				emperor = { is_rival = ROOT }
+			}
+			modifier = {
+				factor = 2
+				army_strength = {
+					who = FRA
+					value = 0.8
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = FRA
+						value = -100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				is_rival = FRA
+			}
+			modifier = {
+				factor = 1.5
+				FRA = { is_rival = ROOT }
+			}
+		}
+		trigger = {
+			FRA = { 
+				exists = yes
+				government = monarchy
+				is_emperor = no
+			}
+		}
+		custom_tooltip = bur_france_may_get_mad_tt
+		custom_tooltip = lowland_privilege_tt
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = incidents_bur_inheritance.101
+					days = 10
+				}
+			}
+			emperor = {
+				if = {
+					limit = {
+						has_dlc = "Emperor"
+					}
+					set_imperial_incident = incident_burgundian_succ_alone
+				}
+				else = {
+					country_event = {
+						id = incidents_bur_inheritance.4
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	option = { #Stand alone, but France doesn't exist or France IS the Emperor
+		name = "incidents_bur_inheritance.1.b"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				army_strength = {
+					who = emperor
+					value = 0.8
+				}
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					has_opinion = {
+						who = emperor
+						value = -100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.3
+				is_rival = emperor
+			}
+			modifier = {
+				factor = 1.3
+				emperor = { is_rival = ROOT }
+			}
+		}
+		trigger = { 
+			FRA = { 
+				OR = {
+					exists = no
+					is_emperor = yes
+				}
+			}
+		}
+		custom_tooltip = lowland_privilege_tt
+		hidden_effect = {
+			emperor = {
+				if = {
+					limit = {
+						has_dlc = "Emperor"
+					}
+					set_imperial_incident = incident_burgundian_succ_alone
+				}
+				else = {
+					country_event = {
+						id = incidents_bur_inheritance.4
+						days = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+# France can DoW Burgundy
+
+country_event = {
+	id = incidents_bur_inheritance.101
+	title = "incidents_bur_inheritance.101.t"
+	desc = {
+		trigger = {
+			BUR = { is_subject_of = emperor }
+		}
+		desc = "incidents_bur_inheritance.101.d.emp"
+	}
+	desc = {
+		trigger = {
+			BUR = { is_subject = no }
+		}
+		desc = "incidents_bur_inheritance.101.d.indi"
+	}
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "incidents_bur_inheritance.101.a"
+		ai_chance = {
+			factor = 90
+		}
+		west_burgundy_area = {
+			add_permanent_claim = FRA
+		}
+		bourgogne_area = {
+			add_permanent_claim = FRA
+		}
+	}
+	option = {
+		name = "incidents_bur_inheritance.101.b"
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Burgundy stands alone
+country_event = {
+	id = incidents_bur_inheritance.4
+	title = "incidents_bur_inheritance.4.t"
+	desc = "incidents_bur_inheritance.4.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		BUR = {
+			every_owned_province = {
+				limit = {
+					region = france_region
+				}
+				set_province_flag = bur_succession_province
+			}
+		}
+	}
+	
+	option = { #Let it go
+		name = "incidents_bur_inheritance.101.b"
+		ai_chance = { 
+			factor = 100
+			modifier = {
+				factor = 0
+				army_strength = {
+					who = BUR
+					value = 0.8
+				}
+			}
+		}
+		hidden_effect = {
+			BUR = {
+				clr_country_flag = burgundian_succession_start
+				set_country_flag = bur_crisis_has_happened
+			}
+		}
+	}
+}
+
+# Mary dies
+country_event = {
+	id = incidents_bur_inheritance.5
+	title = "incidents_bur_inheritance.5.t"
+	desc = "incidents_bur_inheritance.5.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUR
+		is_subject_of_type = personal_union
+		has_country_modifier = mary_is_on_the_throne
+	}
+	
+	immediate = {
+		overlord = {
+			save_event_target_as = burgundy_senior_partner
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = { #Be integrated
+		name = "incidents_bur_inheritance.5.a"
+		ai_chance = { 
+			factor = 100
+		}
+		trigger = {
+			ai = yes
+		}
+		hidden_effect = {
+			overlord = {
+				country_event = {
+					id = incidents_bur_inheritance.501
+					days = 10
+				}
+			}
+		}
+		tooltip = {
+			overlord = {
+				inherit = BUR
+			}
+		}
+	}
+	option = { #Fight for independence, players only
+		name = "incidents_bur_inheritance.5.b"
+		ai_chance = { 
+			factor = 0
+		}
+		hidden_effect = {
+			overlord = {
+				country_event = {
+					id = incidents_bur_inheritance.502
+				}
+			}
+		}
+		tooltip = {
+			declare_war_with_cb = {
+				who = event_target:burgundy_senior_partner
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+}
+
+# Overlord accepts integration
+country_event = {
+	id = incidents_bur_inheritance.501
+	title = "incidents_bur_inheritance.5.t"
+	desc = "incidents_bur_inheritance.501.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #integrate Burgundy
+		name = "incidents_bur_inheritance.501.a"
+		ai_chance = { 
+			factor = 100
+		}
+		inherit = BUR
+	}
+}
+
+# Overlord fights Burgundy
+country_event = {
+	id = incidents_bur_inheritance.502
+	title = "incidents_bur_inheritance.5.t"
+	desc = "incidents_bur_inheritance.502.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Let them go
+		name = "incidents_bur_inheritance.502.a"
+		ai_chance = { 
+			factor = 0
+		}
+		hidden_effect = {
+			BUR = {
+				define_ruler = {
+					dynasty = "de Bourgogne"
+				}
+			}
+		}
+	}
+	option = { #Fight
+		name = "incidents_bur_inheritance.502.b"
+		ai_chance = { 
+			factor = 100
+		}
+		BUR = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		hidden_effect = {
+			BUR = {
+				define_ruler = {
+					dynasty = "de Bourgogne"
+				}
+			}
+		}
+	}
+}
+
+# Mary is successful and changes inheritance laws
+country_event = {
+	id = incidents_bur_inheritance.6
+	title = "incidents_bur_inheritance.6.t"
+	desc = "incidents_bur_inheritance.6.d"
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Mary changes the inheritance laws
+		name = "incidents_bur_inheritance.6.a"
+		add_country_modifier = { name = mary_inheritance_reforms duration = -1 }
+	}
+
+	option = { #Mary is a stable ruler to trust in
+		name = "incidents_bur_inheritance.6.b"
+		add_stability_or_adm_power = yes
+		add_ruler_modifier = { name = mary_reputation }
+	}
+}

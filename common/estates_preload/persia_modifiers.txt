@@ -1,0 +1,52 @@
+#these are the defines for influence and loyalty changes from estate privileges and so on for this custom estate
+estate_qizilbash = {
+	modifier_definition = {
+		type = loyalty
+		key = qizilbash_loyalty_modifier
+		trigger = {
+			tag = PER
+		}
+	}
+	
+	modifier_definition = {
+		type = influence
+		key = qizilbash_influence_modifier
+		trigger = {
+			tag = PER
+		}
+	}
+}
+
+estate_ghilman = {
+	modifier_definition = {
+		type = loyalty
+		key = ghilman_loyalty_modifier
+		trigger = {
+			has_estate = estate_ghilman
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = ghilman_influence_modifier
+		trigger = {
+			has_estate = estate_ghilman
+		}
+	}
+}
+
+estate_janissary = {
+	modifier_definition = {
+		type = loyalty
+		key = janissary_loyalty_modifier
+		trigger = {
+			has_estate = estate_janissary
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = janissary_influence_modifier
+		trigger = {
+			has_estate = estate_janissary
+		}
+	}
+}

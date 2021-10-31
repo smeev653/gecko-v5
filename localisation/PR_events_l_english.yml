@@ -1,0 +1,13 @@
+﻿l_english:
+ PR_events.1.t:0 "Cartography of Africa"
+ PR_events.1.d:0 "Our scribes have recently found a cache of maps, detailing all of Africa. We will use these valuable pieces of information to our nations advantage!"
+ PR_events.1.a:0 "This makes life a lot easier - glory to Africa!"
+ PR_events.2.t:0 "Inviting Islamic Scholars"
+ PR_events.2.d:0 "Fiqh is often described as the human understanding and practices of the divine Islamic law as revealed in the Quran and the Sunnah. Figuratively, Fiqh means knowledge about Islamic legal rulings from their sources and deriving religious rulings from their sources necessitates the Mujtahid to have a deep understanding in the different discussions of jurisprudence. Perhaps it is time we invite a scholar of an alternate school, so that we may become better educated."
+ PR_events.2.a:0 "Invite the Hanafi scholar."
+ PR_events.2.b:0 "Invite the Hanbali scholar."
+ PR_events.2.c:0 "Invite the Maliki scholar."
+ PR_events.2.d2:0 "Invite the Shafii scholar."
+ PR_events.2.e:0 "Invite the Ismaili scholar."
+ PR_events.2.f:0 "Invite the Jafari scholar."
+ PR_events.2.g:0 "Invite the Zaidi scholar."

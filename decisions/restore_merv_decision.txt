@@ -1,0 +1,74 @@
+country_decisions = {
+
+restore_merv = {
+		potential = {
+			OR = {
+				tag = BUK
+					}
+			owns = 445
+			NOT = { capital = 445 }
+			NOT = { has_country_flag = restored_merv }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			primary_culture = uzbehk
+			religion_group = muslim
+			controls = 445
+			owns = 442 		# Bukhara
+			owns = 454		# Samarkand
+			owns = 1973		# Urgench
+					
+		}
+		effect = {
+			set_country_flag = restored_merv
+			set_global_flag = restored_merv
+			add_stability = 1
+			add_core = 445
+			445 = {
+				change_culture = uzbehk
+				change_religion = ROOT
+				rename_capital = Merv
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
+				}
+			445 = {
+				change_trade_goods = silk
+				}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+					445 = {
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}
+				445 = {
+					add_center_of_trade_level = 1
+				}
+			}
+			else = {
+				445 = {
+					add_trade_modifier = {
+						who = root
+						duration = 7300
+						power = 50
+						key = crimean_trade
+					}
+				}
+			}	
+			set_global_flag = restored_merv
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}	
+}	

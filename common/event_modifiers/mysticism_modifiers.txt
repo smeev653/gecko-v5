@@ -1,0 +1,5 @@
+bng_sufi_mystic_settlers = {
+	build_cost = -0.15
+	religious_unity = 0.1
+	monthly_piety = -0.005
+}

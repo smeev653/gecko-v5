@@ -1,0 +1,41 @@
+estate_janissary = {
+	icon = 13
+	
+	# If true, country will get estate
+	trigger = {
+		has_reform = ottoman_government
+		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
+	}
+
+	country_modifier_happy = {
+		infantry_cost = -0.10
+		army_tradition_decay = -0.01
+	}
+	country_modifier_neutral = {
+		army_tradition_decay = -0.01
+	}
+	country_modifier_angry = {
+		infantry_cost = 0.10
+		army_tradition_decay = 0.01
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		janissary_loyalty_modifier = 0.2
+	}
+
+	# Influence modifiers
+	base_influence = 0
+	
+	# Influence modifiers from Events:
+
+	color = { 025 179 025 }
+	
+	privileges = {
+	estate_janissary_phase_base
+	estate_janissary_upgrade_weaponry
+	estate_janissary_auxiliaries
+	estate_janissary_reform_the_janissaries
+	}
+	
+	influence_from_dev_modifier = 1.0
+}
