@@ -19,7 +19,7 @@ emp_ven_slot_1 = {
 		position = 1
 		
 		trigger = {
-			has_institution = printing_press
+			has_institution = renaissance
 		}
 		effect = {
 			add_country_modifier = {
@@ -95,12 +95,11 @@ emp_ven_slot_2 = {
 			}
 		}
 		effect = {
-			112 = {
-				add_province_modifier = {
+				add_country_modifier = {
 					name = "ven_urban_renewal"
 					duration = 7300
 				}
-			}
+			
 		}
 	}
 	
@@ -451,7 +450,7 @@ emp_ven_slot_4 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1308
+					province_id = 109
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -462,7 +461,7 @@ emp_ven_slot_4 = {
 			}
 		}
 		trigger = {
-			1308 = {
+			109 = {
 				trade_share = {
 					country = ROOT
 					share = 50
