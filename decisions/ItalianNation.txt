@@ -71,7 +71,7 @@ country_decisions = {
 			owns_core_province = 116	# Firenze
 			owns_core_province = 118	# Roma
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 40
 				region = italy_region
 				is_core = root
 			}
