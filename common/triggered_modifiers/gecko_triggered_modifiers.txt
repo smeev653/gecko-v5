@@ -30,36 +30,24 @@ free_colonist = {
 Minor = {
 	potential = {
 			was_player = yes
-			NOT = {total_development = 300}
+			NOT = {total_development = 199}
 		}
 	
 
 	trigger = {
-			was_player = yes
-			NOT = { is_emperor = yes }
-			NOT = { is_colonial_nation = yes }	
-			NOT = { is_great_power = yes }
-			NOT = { government_rank = 3 }
-			NOT = { total_development = 300 }
-			OR = {
-				culture_group = latin
-				culture_group = germanic
-				culture_group = turko_semitic
-				culture_group = mande
-				culture_group = amhara
-				culture_group = iranian
-				culture_group = altaic
-				culture_group = western_aryan
-				culture_group = iberian
-				}
-	}	
+		
+		NOT = {total_development = 199}
+		was_player = yes
+		NOT = { is_emperor = yes }
+		NOT = {tag = MOS }
+		NOT = { is_colonial_nation = yes }	
+	}
 	advisor_cost = -0.15
 	advisor_pool = 1
 	#ae_impact = -0.15
 	interest = -0.5
 	artillery_cost = -0.5
 	province_warscore_cost  = -0.15
-	development_cost = -0.1
 }
 
 To_the_last_man = {
