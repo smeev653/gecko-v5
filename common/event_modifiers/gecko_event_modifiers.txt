@@ -134,3 +134,9 @@ gc_drill_master_modifier = {
 	yearly_army_professionalism = 0.02
     drill_decay_modifier = -0.25
 }
+
+free_colonist = {
+	colonists = 2
+	range = 2
+	global_colonial_growth = 20
+}			

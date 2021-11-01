@@ -278,7 +278,6 @@ navigator = {
 	monarch_power = DIP
 	
 	# Bonus
-	range = 1
 	global_colonial_growth = 20
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }

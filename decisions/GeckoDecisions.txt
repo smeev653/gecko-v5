@@ -66,11 +66,11 @@ country_decisions = {
 						continent = south_america
 					}
 				}
+				NOT = { has_country_modifier = free_colonist}
 				dip_tech = 7	
 			}
 
-		trigger = {
-			
+		allow = {
 			NOT = {
 				OR = {
 					capital_scope = { region = australia_region }
@@ -81,8 +81,9 @@ country_decisions = {
 			was_player = yes
 		}
 		effect = {
-			colonists = 2
-			global_colonial_growth = 20
+			add_country_modifier = {
+				name = "free_colonist"
+				duration = -1
 		}
 	}
 	enlist_rajputs = {
