@@ -4727,11 +4727,9 @@ province;red;green;blue;x;x
 4727;11;159;77;Saluzzo;x
 4728;23;128;70;Pavia;x
 4729;111;248;124;Padova;x
-4730;24;248;124;Bologna;x
-4731;50;217;66;Spoleto;x
-4732;216;236;203;Terracina;x
-4733;144;222;92;Molise;x
-4734;239;33;241;Avellino;x
+4730;200;200;24;Bologna;x
+4731;0;200;26;Spoleto;x
+4733;200;0;27;Molise;x
 4735;77;22;255;Arborea;x
 4736;255;193;247;Trapani;x
 4737;172;68;159;Girgenti;x
@@ -5056,8 +5054,6 @@ province;red;green;blue;x;x
 5783;92;196;52;Ivrea;x
 5785;200;217;220;Ossola;x
 5786;120;179;24;Catanzaro;x
-5787;132;251;13;Piacenza;x
-5788;217;87;199;Marsica;x
 6000;200;44;0;Kerch;x
 6001;144;249;253;Kezlev;x
 6002;94;159;86;Cankoy;x
@@ -5102,4 +5098,16 @@ province;red;green;blue;x;x
 6041;102;27;224;korea-wasteland;x
 6042;187;5;21;pacific-islands-wasteland;x
 6043;211;98;30;NA-Wasteland;x
-6044;85;1;3;SA-wasteland;x
+6044;85;1;3;SA-wasteland;x  
+6045;0;200;28;Reggio;x
+6046;200;200;23;Cinque Terre;x
+6047;200;21;200;Pistoia;x
+6048;0;200;25;Livorno;x
+6049;200;0;29;Maremma;x
+6050;200;0;25;Rimini;x
+6051;200;200;25;Viterbo;x
+6052;200;0;30;Frosinone;x
+6053;0;200;29;Caserta;x
+6060;200;200;29;Irpinia;x
+6075;200;0;24;Asti;x
+6078;200;20;200;Piacenza;x

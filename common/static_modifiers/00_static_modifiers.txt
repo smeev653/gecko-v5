@@ -1009,8 +1009,8 @@ over_extension = {
 
 prestige = {
 	global_trade_power = 0.15			#+15/-15 total bonus from prestige.
-	land_morale = 0.10
-	naval_morale = 0.1
+	land_morale = 0.05
+	naval_morale = 0.05
 	global_spy_defence = 0.1				#+10/-10
 	legitimacy = 1.0
 	improve_relation_modifier = 0.5

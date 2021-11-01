@@ -128,13 +128,6 @@ korea_nomad_group = {
 				}
 				add_permanent_claim = root
 			}
-			chengde_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = root
-			}
 			shandong_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -497,13 +490,6 @@ korea_conquer_china_group = {
 				add_permanent_claim = root
 			}
 			jiangsu_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = root
-			}
-			hangzhou_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

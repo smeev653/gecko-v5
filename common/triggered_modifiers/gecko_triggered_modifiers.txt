@@ -46,6 +46,8 @@ Minor = {
 	advisor_pool = 1
 	ae_impact = -0.15
 	interest = -0.5
+	artillery_cost = -0.25
+	province_warscore_cost  = -0.15
 }
 
 To_the_last_man = {

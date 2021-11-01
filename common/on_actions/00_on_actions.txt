@@ -735,7 +735,6 @@ on_new_monarch = {
 	hab_remove_mission_mods_if_not_emperor_effect = yes
 	thu_remain_von_wettin_effect = yes
 	events = {
-		tribal_succession.1		# Harsh anti-tribals.
 		9492 					# Remove some event modifiers
 		flavor_boh.8			# Winter King in Prague
 		flavor_kol.1			# Bavarian Archbishop
@@ -843,9 +842,6 @@ on_monarch_death = {
 
 # country
 on_regent = {
-	events = {
-		tribal_succession.1	# harsh anti-tribals.
-	}
 }
 
 # country

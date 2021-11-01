@@ -90,6 +90,7 @@ italy_region = {
 		corsica_area
 		torino_area
 		carinthia_area
+		siena_area
 	}
 }
 

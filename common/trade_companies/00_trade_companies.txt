@@ -639,15 +639,23 @@ trade_company_genua = {
 	
 	provinces = {
 		1298 #Sea
-		115 116 117 2978 2980 #tuscany_area
+		#124 125 126 2982 #sicily_area
+		115 116 2978 2980 #tuscany_area
+		#123 1934 2984 #calabria_area
 		101 102 2992 #liguria_area
-		103 1875 2981 #piedmont_area	
+		103 1875 2981 #piedmont_area
+		1247
 		4727 # also new for 1.30, but this time it's in Italy
-		118 2976 4731 4732 # lazio-umbria
-		104 1862 2979 4728 4740 # Lombardy	
-		5781 5782 1247
-		5787 105
-		5785 5783
+		#121 2983 # campania
+		104 1862 2979 4728 4740 # Lombardy
+		5781 5782 5783 5785 	#abaitaly
+		105
+		6075 6078 6045 6046 6047 #gc italy
+		106 108 111 112 113 114 130 1308 1774 4729 4730 4738
+		5779 5778 5777
+		109
+		107 4739
+		117 6048 6049
 	}
 	
 	# Specific
@@ -749,8 +757,11 @@ trade_company_venice = {
 	color = { 54 167 156 }
 	
 	provinces = {
-		106 107 108 109 111 112 113 114 119 120 129 130 1308 1769 1774 2977 4729 4730 4738 4739 4751
-		5777 5779 5778
+	2977
+	2976 4731 118
+	6050 119 6051 6052 6053 6060
+	121 2983 122 1933 2985 4733 123 1934 2984 124 126 2982 5776 125 4736 4737 5775 127 2986 4735 5780 5786
+	120
 	}
 	
 	# Specific
@@ -762,29 +773,6 @@ trade_company_venice = {
 		name = "TRADE_COMPANY_VENICE_European_Trade_Company"
 	}
 }
-
-trade_company_sicily = {
-
-	color = { 232 36 39 }
-
-	provinces = {
-		4733 2985 1933 122 5788
-		4734 121 2983
-		1934 2984 123 5786
-		124 125 126 2982 #sicily_area
-		5775 4736 4737 5776 4735
-		127 2986 5780 #corsica_sardinia_area
-	}
-
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_SICILY_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_SICILY_European_Trade_Company"
-	}
-}	
 
 trade_company_krakow = {
 	color = { 108 111 86 }

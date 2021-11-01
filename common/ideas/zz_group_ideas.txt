@@ -923,8 +923,12 @@ latin_ideas = {
 	}
 	
 	trigger = {
-		culture_group = latin
-		capital_scope = { region = italy_region }
+		OR = {
+			culture_group = latin
+			capital_scope = { region = italy_region }
+			tag = RIM
+			tag = STI
+		}
 	}
 	free = yes
 	

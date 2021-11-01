@@ -752,7 +752,7 @@ gc_eth_branch_5 = {
 				type = inquisitor
 				name = "Fiqtor Dereje"
 				culture = amhara
-				religion = Coptic
+				religion = coptic
 				skill = 3
 				cost_multiplier = 0.67
 			}

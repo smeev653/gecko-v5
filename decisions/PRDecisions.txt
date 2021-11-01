@@ -8,7 +8,7 @@ country_decisions = {
 				religion_group = muslim
 				NOT = { has_country_modifier = PR_muslim_school_cooldown }
 				ai = no
-				is_year = 1446
+				is_year = 1445
 			}
 		}
 		allow = {

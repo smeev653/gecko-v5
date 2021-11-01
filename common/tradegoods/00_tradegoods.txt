@@ -905,7 +905,6 @@ tea = {
 			NOT = { region = south_china_region }
 			NOT = { region = xinan_region }
 			NOT = { region = japan_region }
-			NOT = { area = taiwan_area }
 			NOT = { area = assam_area }
 			NOT = { area = banda_oriental_area } #Yerba Mate
 			NOT = { area = rio_grande_do_sol_area } #Yerba Mate

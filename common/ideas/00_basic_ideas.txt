@@ -12,7 +12,7 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
-		nobles_loyalty_modifier = 0.2
+		
 	}
 	
 	noble_knights = {
@@ -30,9 +30,10 @@ aristocracy_ideas = {
 	}
 	quality_education = {
 		army_tradition_from_battle = 0.5
+		prestige_from_land = 1
 	}
 	noble_resilience = {
-		general_cost = -0.20
+		nobles_loyalty_modifier = 0.2
 	}
 	international_nobility = {
 		fire_damage_received = -0.15
@@ -65,7 +66,7 @@ plutocracy_ideas = {
 	}
 	tradition_of_payment = {
 		mercenary_cost = -0.2
-		mercenary_discipline = 0.03
+		mercenary_discipline = 0.5
 	}
 	free_merchants = {
 		merchants = 1
@@ -207,7 +208,7 @@ innovativeness_ideas = {
 	category = ADM
 
 	bonus = {
-	possible_policy = 1
+	free_policy = 1
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
@@ -266,7 +267,7 @@ religious_ideas = {
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
-		warscore_cost_vs_other_religion = -0.10
+		province_warscore_cost = -0.10
 	}
 	church_attendance_duty = {
 		global_tax_modifier = 0.2
@@ -308,7 +309,7 @@ spy_ideas = {
 	category = DIP
 
 	bonus = {
-		 all_power_cost = -0.02
+		 all_power_cost = -0.025
 	}
 
 	efficient_spies = {
@@ -404,7 +405,7 @@ offensive_ideas = {
 	}
 
 	bayonet_leaders = {
-		shock_damage = 0.15
+		shock_damage = 0.20
 	}
 	national_conscripts = {
 		movement_speed = 0.1
@@ -413,7 +414,7 @@ offensive_ideas = {
 		leader_land_fire = 1
 	}
 	glorious_arms = {
-		prestige_from_land = 1.0
+		general_cost = -0.25
 	}
 	engineer_corps = {
 		siege_ability = 0.2
@@ -761,7 +762,7 @@ maritime_ideas = {
 	}
 
 	bonus = {
-		free_policy = 1
+		free_mil_policy = 1
 	}
 
 	merchant_traditions = {
@@ -837,7 +838,7 @@ quality_ideas = {
 	}
 
 	private_to_marshal = {
-		infantry_power = 0.125
+		infantry_power = 0.10
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
@@ -882,22 +883,23 @@ quantity_ideas = {
 		global_manpower_modifier = 0.50
 	}
 	the_young_can_serve = {
-		manpower_recovery_speed = 0.20
+		manpower_recovery_speed = 0.30
 	}
 	enforced_service = {
 		global_regiment_cost = -0.1
 	}
 	the_old_and_infirm = {
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.1
 	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.33
 	}
 	garrison_conscription = {
 		free_leader_pool = 1
+		land_morale = 0.05
 	}
 	expanded_supply_trains = {
-		land_attrition = -0.1
+		land_attrition = -0.25
 	}
 
 	ai_will_do = {
@@ -999,7 +1001,7 @@ administrative_ideas = {
 	}
 	civil_servants = {
 		monthly_splendor = 3
-		
+		advisor_pool = 2
 	}
 	benefits_for_mercenaries = {
 		mercenary_cost = -0.25

@@ -62,7 +62,7 @@ change_estate_land_share = {
 		birth_date = 1405.3.6
 		adm = 3
 		dip = 3
-		mil = 3
+		mil = 5
 	}
 	queen = {
 		country_of_origin = ARA

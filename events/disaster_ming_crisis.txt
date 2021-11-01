@@ -652,14 +652,6 @@ country_event = {
 			add_claim = ROOT
 		}
 
-		chengde_area = {
-			limit = {
-				owned_by = CSH
-				NOT = { is_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
 
 		shanxi_area = {
 			limit = {
