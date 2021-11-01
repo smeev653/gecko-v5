@@ -576,31 +576,31 @@ on_province_religion_converted_estate_privileges_effect = {
 
 on_province_owner_change_estate_privileges_effect = {
 ###nomadic tribes changes###
-	#if = {
-	#	limit = { has_terrain = steppe }
-	#	if = {
-	#		limit = {
-	#			owner = {
-	#				has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils
-	#			}
-	#			NOT = { has_province_modifier = estate_nomadic_tribes_steppe_devcost }
-	#		}
-	#		add_province_modifier = {
-	#			name = estate_nomadic_tribes_steppe_devcost
-	#			duration = -1
-	#		}
-	#	}
-	#}
-	#else_if = {
-	#	limit = {
-	#		has_terrain = steppe
-	#		has_province_modifier = estate_nomadic_tribes_steppe_devcost
-	#		owner = {
-	#			NOT = { has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils }
-	#		}
-	#	}
-	#	remove_province_modifier = estate_nomadic_tribes_steppe_devcost
-	#}
+	if = {
+		limit = { has_terrain = steppe }
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils
+				}
+				NOT = { has_province_modifier = estate_nomadic_tribes_steppe_devcost }
+			}
+			add_province_modifier = {
+				name = estate_nomadic_tribes_steppe_devcost
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_terrain = steppe
+			has_province_modifier = estate_nomadic_tribes_steppe_devcost
+			owner = {
+				NOT = { has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils }
+			}
+		}
+		remove_province_modifier = estate_nomadic_tribes_steppe_devcost
+	}
 ############################
 	if = {
 		limit = { has_terrain = steppe }
