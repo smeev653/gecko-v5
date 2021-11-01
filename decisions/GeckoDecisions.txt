@@ -54,22 +54,36 @@ country_decisions = {
 				}
 			}	
 		}
-	#gecko_absolutism = {
-	#	potential = {
-	#			has_institution = manufactories
-	#			NOT = { has_country_flag = gecko_absolutism }
-	#		}
-	#		allow = { 
-	#			absolutism = 50
-	#		}
-	#		effect = {
-	#			add_country_modifier = {
-	#			name = "gecko_absolutism"
-	#			duration = -1
-	#			}
-	#			set_country_flag = gecko_absolutism
-	#		}
-	#	}
+	free_colonist = {
+		potential = {
+				NOT = {
+					capital_scope = {
+						continent = north_america
+					}
+				}
+				NOT = {
+					capital_scope = {
+						continent = south_america
+					}
+				}
+				dip_tech = 7	
+			}
+
+		trigger = {
+			
+			NOT = {
+				OR = {
+					capital_scope = { region = australia_region }
+					capital_scope = { region = oceanea_region }
+				}
+			}
+			has_institution = new_world_i
+			was_player = yes
+		}
+		effect = {
+			colonists = 2
+		}
+	}
 	enlist_rajputs = {
 		potential = {
 				has_estate = estate_rajput
