@@ -112,7 +112,7 @@ technology = { #Modern Theocracy
 	# Tech 10
 	year = 1531
 	
-	allowed_idea_groups = 3
+	#allowed_idea_groups = 3
 	theocratic_government = yes
 }
 
