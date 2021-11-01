@@ -137,7 +137,7 @@ polynesian_tribe = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = -10
 	native_mechanic = no
-	allow_migration = yes
+	#allow_migration = yes
 	fixed_rank = 1
 	lock_level_when_selected = yes
 	modifiers = {
@@ -172,7 +172,7 @@ siberian_tribe = {
 	nation_designer_cost = -10
 	legacy_equivalent = siberian_native_council
 	native_mechanic = no
-	allow_migration = yes
+	#allow_migration = yes
 	fixed_rank = 1
 	lock_level_when_selected = yes
 	modifiers = {
@@ -314,15 +314,9 @@ horde_barbaric_despoilers_reform = {
 horde_tribal_unity_reform = {
 	icon = "fist_in_air"
 	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			has_reform = steppe_horde
-			has_reform = great_mongol_state_reform
-		}
-		has_dlc = "The Cossacks"
-	}
+
 	modifiers = {
-		horde_unity = 2
+		possible_policy = 1
 	}
 	ai = {
 		factor = 2
