@@ -52,6 +52,9 @@ add_army_professionalism = 0.1
 		dip = 4
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = well_connected_personality
 }
 
 1425.1.1 = { leader = {	name = "Francesco da Carmagnola" type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1432.5.5 } }
