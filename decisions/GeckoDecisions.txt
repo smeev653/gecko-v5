@@ -82,6 +82,7 @@ country_decisions = {
 		}
 		effect = {
 			colonists = 2
+			global_colonial_growth = 20
 		}
 	}
 	enlist_rajputs = {
