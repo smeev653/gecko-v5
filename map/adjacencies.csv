@@ -9,7 +9,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 321;2302;sea;1317;-1;-1;-1;-1;Cyprus-Icel 
 320;319;sea;1319;-1;-1;-1;-1;Rhodes-Mentesha 
 2982;126;sea;1305;-1;-1;-1;-1;Siracusa-Malta 
-115;1247;sea;1298;-1;-1;-1;-1;Pisa-Corsica 
+115;1247;sea;1298;-1;-1;-1;-1;Pisa-Corsica
+130;4753;sea;1308;-1;-1;-1;-1;Istria-Zara
+4754;4174;sea;1310;-1;-1;-1;-1;Kotor-Durazzo
 320;163;sea;1319;-1;-1;-1;-1;Rhodes-Crete 
 145;163;sea;1319;-1;-1;-1;-1;Morea-Crete
 235;87;sea;1271;-1;-1;-1;-1;Kent-Calais
