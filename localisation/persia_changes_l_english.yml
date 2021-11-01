@@ -120,7 +120,7 @@
  #estate_qizilbash_levies
  estate_qizilbash_levies:0 "Qizilbash Levies"
  estate_qizilbash_levies_desc:0 "If the reward of land is offered, the Turkoman Tribes will be more than willing to serve as the backbone of our armies."
- estate_qizilbash_levies_effect_tooltip:0 "Every owned province of §YTurkoman Tribe§! culture gains §Y'Qizilbash Levies'§!, giving the following effects:\nLocal Manpower Modifier: §G+10.0%§!"
+ estate_qizilbash_levies_effect_tooltip:0 "Every owned province of §YTurkoman Tribe§! culture gains §Y'Qizilbash Levies'§!, giving the following effects:\nLocal Manpower Modifier: §G+20.0%§!"
  estate_qizilbash_levies_revoke_effect_tooltip:0 "The modifier §Y'Qizilbash Levies'§! is removed from all owned §YTurkoman Tribe§! provinces."
  estate_qizilbash_levies_mod: "Qizilbash Levies"
  desc_estate_qizilbash_levies_mod:0 "The state has increased its conscription of the Turkoman Tribes."

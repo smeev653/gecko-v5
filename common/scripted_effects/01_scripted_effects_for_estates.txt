@@ -601,6 +601,32 @@ on_province_owner_change_estate_privileges_effect = {
 		}
 		remove_province_modifier = estate_nomadic_tribes_steppe_devcost
 	}
+###qizilbash changes###
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_qizilbash_levies
+			}
+			OR = {
+				culture = azerbaijani
+				culture = turkish
+				culture = luri
+				}
+		}
+		add_province_modifier = {
+			name = estate_qizilbash_levies_mod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = estate_qizilbash_levies_mod
+			owner = {
+				NOT = { has_estate_privilege = estate_qizilbash_levies }
+			}
+		}
+		remove_province_modifier = estate_qizilbash_levies_mod
+	}
 ############################
 	if = {
 		limit = { has_terrain = steppe }

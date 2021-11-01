@@ -20,7 +20,7 @@ transcaucasian_wine_valleys = {
 	
 ######estate changes######
 estate_qizilbash_levies_mod = {
-	local_manpower_modifier = 0.3
+	local_manpower_modifier = 0.2
 	}
 
 estate_ghilman_discipline_modifier = {
