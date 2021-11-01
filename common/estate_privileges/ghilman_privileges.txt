@@ -34,6 +34,7 @@ estate_ghilman_military_corps = {
 	loyalty = 0.00
 	influence = 0.05
 	can_select = {
+		tag = PER
 		NOT = {
 			num_of_estate_privileges = {
 			estate = estate_ghilman
