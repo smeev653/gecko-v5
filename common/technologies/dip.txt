@@ -127,7 +127,6 @@ technology = { #The Flute
 	# Tech 10
 	year = 1531
 	
-	allowed_idea_groups = 3
 	trade_efficiency		= 	0.02
 	trade_range				=	20
 	global_colonial_growth  = 	10
