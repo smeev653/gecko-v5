@@ -12,6 +12,7 @@ base_manpower = 2
 capital = "Caserta" 
 is_city = yes	# Estimated
 add_core = PAP
+hre = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
