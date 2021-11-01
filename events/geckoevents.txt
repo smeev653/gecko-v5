@@ -521,7 +521,7 @@ country_event = {
 		name = gecko.102.a
 		add_country_modifier = {
 			name = h_swedish_ga_pa_doctrine
-			duration = -1
+			duration = 5475
 		}
 	}
 	
