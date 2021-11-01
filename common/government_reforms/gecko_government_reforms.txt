@@ -41,7 +41,7 @@ mughal_government = {
 	legacy_equivalent = feudal_monarchy
 
 	modifiers = {
-		global_manpower_modifier = 0.20
+		#global_manpower_modifier = 0.20
 		monarch_admin_power = 2
 		global_autonomy = -0.05
 		infantry_power = 0.10

@@ -1655,7 +1655,7 @@ MUG_ideas = {
 		#land_morale = 0.1
 	}
 	zabt_system = {
-	global_tax_modifier = 0.33
+	global_tax_modifier = 0.2
 	}
 	control_of_the_ulema = {
 		global_manpower_modifier = 0.2
