@@ -988,7 +988,7 @@ constantinople={
 		322 1848 4308 4311 #germiyan_area
 		318 319 2297 2298 4309 #aydin_area
 		326 4312 4313 #ankara_area
-		321 327 2302 #cukurova_area #smeev
+		327 2302 #smeev
 		323 324 2301 4307 #karaman_area #smeev
 		332 2303 4310 2308 #dulkadir_area #smeev
 		331 2305 330 #erzurum #smeev
@@ -1427,6 +1427,7 @@ alexandria={
 		364 #ghazzah
 		6024 6023 6025 6026 #jaghbub #aba
 		6020 6030 #lower nubia #aba
+		163 320 321
 	}
 }
 
@@ -1641,13 +1642,13 @@ ragusa={
 	}
 	members={
 		142 144 147 1853 3001 148
-		145 146 163 1773 #morea_area
+		145 146 1773 #morea_area
 		4702 4699 4698 4701  4780 # 1.30
 		160 161 2998 4531 4532 # wallachia_area #smeev change
 		4703 1765 2746 150 2750 #bulgaria # smeev
 		159 4706 4704 #silistria #smeev
 		1764 151 4779 4705 149 #thrace #smeev
-		4700 164 320 2348 3003 #aegean_archipelago_area
+		4700 164 2348 3003 #aegean_archipelago_area
 		1319 #aegean sea #smeev
 		4174 4750 143 4175 #albania #smeev
 		4239 141 4176 3000 4757 #serbia #smeev

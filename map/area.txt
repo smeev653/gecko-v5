@@ -1143,7 +1143,7 @@ macedonia_area = { #5 (Macedonia)
 }
 
 morea_area = { #4 Central Greece & Crete
-	145 146 163 1773 4701
+	145 146 1773 4701
 }
 
 northern_greece_area = { #3 #Northern Greece
@@ -1268,7 +1268,7 @@ hudavendigar_area = { #3
 
 germiyan_area = { #4
 	color = { 234 145 65 }
-	322 1848 4308 4311
+	322 1848 4308 4311 323
 }
 
 aydin_area = { #5
@@ -1282,7 +1282,7 @@ ankara_area = { #3
 }
 
 aegean_archipelago_area = { #4
-	164 320 2348 3003 4700
+	164 2348 3003 4700
 }
 
 kastamonu_area = { #4
@@ -1290,12 +1290,12 @@ kastamonu_area = { #4
 }
 
 karaman_area = { #4
-	323 324 2301 4307
+	 324 2301 4307 327 2302
 }
 
 cukurova_area = { #3
 	color = { 50 177 200 }
-	321 327 2302
+	321 320 163
 }
 
 aleppo_area = { #4
