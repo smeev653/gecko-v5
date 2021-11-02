@@ -53,7 +53,7 @@ add_accepted_culture = slovene
 		name = "Friedrich III"
 		dynasty = "von Habsburg"
 		birth_date = 1415.9.21
-		adm = 2
+		adm = 3
 		dip = 5
 		mil = 3
 	}
@@ -74,6 +74,7 @@ add_accepted_culture = slovene
 		mil = 3
 	}
 }
+1444.10.10 = { add_manpower = 20 }
 
 #1450.1.1 = { decision = court_of_wards_and_liveries }
 
