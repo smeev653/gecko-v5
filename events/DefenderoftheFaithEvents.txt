@@ -119,6 +119,17 @@ country_event = {
 					}
 				}
 			}
+			361 = { # Cairo
+				has_discovered = ROOT
+				owner = {
+					NOT = {
+						religion_group = muslim
+					}
+					any_neighbor_country = {
+						religion = ROOT
+					}
+				}
+			}
 		}
 		NOT = { has_global_flag = active_jihad }
 	}
@@ -197,6 +208,44 @@ country_event = {
 					owner = {
 						save_event_target_as = jihad_target_country
 						set_country_flag = jihad_target_country_flag
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+					358 = { # Alexandria
+						has_discovered = ROOT
+						owner = {
+							NOT = {
+								religion_group = muslim
+							}
+							any_neighbor_country = {
+								religion = ROOT
+							}
+						}
+					}
+				}
+				358 = {
+					save_event_target_as = jihad_target_province
+					set_province_flag = jihad_target_province_flag
+					owner = {
+						save_event_target_as = jihad_target_country
+						set_country_flag = jihad_target_country_flag
+					}
+				}
+			}	
+			else_if = {
+				limit = {
+					361 = { # Cairo
+						has_discovered = ROOT
+						owner = {
+							NOT = {
+								religion_group = muslim
+							}
+							any_neighbor_country = {
+								religion = ROOT
+							}
+						}
 					}
 				}
 				361 = {
@@ -334,7 +383,8 @@ country_event = {
 			limit = {
 				capital_scope = {
 					has_discovered = ROOT
-				}				religion = catholic
+				}				
+				religion = catholic
 				total_development = 200
 				NOT = {
 					tag = event_target:catholic_rival
