@@ -2,7 +2,7 @@ gc_drill_master = {
 	monarch_power = MIL
 	
 	# Bonus
-	drill_gain_modifier = 0.33
+	drill_gain_modifier = 0.35
 
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
