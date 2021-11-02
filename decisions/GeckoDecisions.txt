@@ -230,7 +230,7 @@ country_decisions = {
 					add_piety = -1
 					add_country_modifier = {
 					name = "jihad"
-					duration = 3650
+					duration = 1825
 					}
 				}	
 			}
