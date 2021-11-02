@@ -678,7 +678,7 @@ bankruptcy = {
 war = {
 	rr_girondists_influence = 0.15
 	#interest = -0.25
-	yearly_army_professionalism = 0.00125
+	#yearly_army_professionalism = 0.00125
 }
 
 peace = {
@@ -751,17 +751,17 @@ mercantilism = {
 
 army_tradition = {
 	recover_army_morale_speed = 0.1
-	land_morale = 0.375
-	manpower_recovery_speed = 0.1
+	land_morale = 0.3125
+	manpower_recovery_speed = 0.15
 	siege_ability = 0.05
 	temples_influence = 0.1
 	mr_aristocrats_influence = 0.1
 	rr_girondists_influence = 0.1
 	monthly_militarized_society = 0.1
-	nobles_loyalty_modifier = 0.05
+	nobles_loyalty_modifier = 0.1
 	maratha_loyalty_modifier = 0.05
 	rajput_loyalty_modifier = 0.05
-	yearly_army_professionalism = 0.005
+	yearly_army_professionalism = 0.01
 }
 
 navy_tradition = {
@@ -823,8 +823,8 @@ emperor = {
 }
 
 states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor
-	land_forcelimit	= 0.5					#each state increases forcelimit by 0.5
-	global_manpower = 0.5					#each gives 0.5 MP to the emperor.
+	land_forcelimit	= 0.75					#each state increases forcelimit by 0.5
+	global_manpower = 0.75				#each gives 0.5 MP to the emperor.
 }
 
 free_cities_in_hre = {							#bonuses for each free city in the HRE.. as emperor
@@ -1115,7 +1115,7 @@ production_leader = {
 
 
 trade_company_bonus = {
-	trade_goods_size_modifier = 0.5
+	trade_goods_size_modifier = 0.25
 }
 
 bonus_from_merchant_republics = {
@@ -1707,7 +1707,7 @@ innovativeness = {
 rajput_regiment = {
 	drill_decay_modifier = -0.25
 	reinforce_cost_modifier = -0.5
-	land_morale = 0.1
+	#land_morale = 0.1
 }
 
 raiding_parties_modifier = {
