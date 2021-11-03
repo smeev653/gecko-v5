@@ -408,15 +408,23 @@ designate_march = {
 	condition = {
 		tooltip = h_tooltip_many_marches_noinfluence
 		potential = {
-			ROOT = {has_idea = marcher_lords }
+			
 		}
 		allow = {
-			has_idea = marcher_lords
 			NOT = {
 				ROOT = {
 					march = 4
 				}
 			}
+		}
+	}
+	condition = {
+		tooltip = gc_take_influence_ideas_for_marches
+		potential = {
+			ROOT = { NOT = {has_idea = marcher_lords } }
+		}
+		allow = {
+			always = no
 		}
 	}
 }

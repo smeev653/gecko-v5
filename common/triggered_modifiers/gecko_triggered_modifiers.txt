@@ -14,10 +14,10 @@ empowered_subjects = {
 		NOT = { is_colonial_nation = yes }	
 		NOT = { is_lesser_in_union = yes }	
 	}
-	global_manpower = 10
+	global_manpower = 5
 	global_manpower_modifier = 0.5
 	manpower_recovery_speed = 0.50
-	global_tax_income = 24
+	global_tax_income = 48
 	global_regiment_cost = -0.33
 	global_regiment_recruit_speed = -0.5
 	global_ship_cost = -0.33
