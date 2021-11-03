@@ -60,10 +60,10 @@ PR2_ideas = {
     }
     free = yes
     PR2_1 = {
-        advisor_cost = -0.15
+        advisor_cost = -0.10
     }
     PR2_2 = {
-        infantry_power = 0.15
+        infantry_power = 0.10
 		years_of_nationalism = -5
     }
     PR2_3 = {
@@ -71,7 +71,7 @@ PR2_ideas = {
 		administrative_efficiency = 0.05
     }
     PR2_4 = {
-        land_morale = 0.15
+        land_morale = 0.10
     }
     PR2_5 = {
         num_accepted_cultures = 2
