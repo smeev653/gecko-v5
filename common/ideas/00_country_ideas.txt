@@ -145,7 +145,7 @@ GBR_ideas = {
 		global_colonial_growth = 20
 	}
 	eng_red_coats = {
-		fire_damage = 0.15
+		leader_land_fire = 1
 	}
 	gbr_the_royal_society = {
 		technology_cost = -0.05
