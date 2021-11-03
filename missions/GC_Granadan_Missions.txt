@@ -1965,9 +1965,6 @@ andalusia_slot_5_missions = {
 		}
 		
 		effect = {
-			country_event = {
-				id = flavor_gra.3
-			}
 			said_area = {
 				limit = {
 					NOT = { is_core = ROOT }
