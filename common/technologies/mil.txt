@@ -25,7 +25,7 @@ technology = {
 	year = 1390
 	
 	#infantry_shock		= 	0.1
-	#infantry_fire 		= 	0.1
+	infantry_fire 		= 	0.1
 	
 	fort_15th = yes
 	
