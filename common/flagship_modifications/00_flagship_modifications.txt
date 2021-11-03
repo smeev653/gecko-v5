@@ -18,9 +18,6 @@ mass_load_cannons = {
                     tag = SPA
                 }
             }
-			NOT = {
-				has_country_modifier = PR_player_cn
-			}
             normal_or_historical_nations = no
         }
     }
@@ -77,9 +74,6 @@ command_aftercastle = {
                     tag = NED
                 }
             }
-			NOT = {
-				has_country_modifier = PR_player_cn
-			}
             normal_or_historical_nations = no
         }
     }
@@ -97,9 +91,6 @@ command_aftercastle = {
 
 improved_crows_nest = {
 	trigger = {
-		NOT = {
-			has_country_modifier = PR_player_cn
-		}
 	}
 	modifier = {
         flagship_naval_engagement_modifier = 3
@@ -115,9 +106,6 @@ improved_crows_nest = {
 
 mortars = {
 	trigger = {
-		NOT = {
-			has_country_modifier = PR_player_cn
-		}
 	}
 	modifier = {
         blockade_impact_on_siege_in_fleet_modifier = 1
@@ -154,9 +142,6 @@ standardized_signal_book = {
 
 hull_sheating = {
 	trigger = {
-		NOT = {
-			has_country_modifier = PR_player_cn
-		}
 	}
 	modifier = {
         flagship_durability = 0.5
