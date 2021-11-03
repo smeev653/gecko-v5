@@ -14446,7 +14446,7 @@ ASU_ideas = {
 ADU_ideas = {
 	start = {
 		land_morale = 0.15 
-		global_ship_trade_power = 0.25 
+		naval_forcelimit_modifier = 0.5 
 	}
 
 	bonus = {
@@ -14462,7 +14462,7 @@ ADU_ideas = {
 		fire_damage_received = -0.15
 	}
 	adu_taifa_adminstration = {
-		discipline = 0.05
+		technology_cost = -0.1
     }
 	adu_ahl_uhl_dhimma = {
 		tolerance_heathen = 3
