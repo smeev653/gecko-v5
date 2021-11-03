@@ -41,7 +41,7 @@ client_ideas = {
 
 colonial_ideas = {
 	start = {
-		colonists = 1
+		colonists = 2
 		no_religion_penalty = yes
 	}
 	
