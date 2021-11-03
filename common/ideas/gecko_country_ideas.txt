@@ -43,7 +43,7 @@ ARB_ideas = { #Arabian Empire
 
 EGY_ideas = { #Egyptian Empire
 	start = {
-		infantry_power = 0.15
+		infantry_power = 0.10
 		global_autonomy = -0.05
 	}
 	
