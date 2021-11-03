@@ -1302,7 +1302,7 @@ primitive_nation = {
 
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
-	army_tradition = 2
+	army_tradition = 1
 }
 
 gov_rank_1 = {
