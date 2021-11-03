@@ -6,6 +6,15 @@ vassal = {
 	end_date = 1534.1.1
 }
 
+# Venice and Aquileia
+vassal = {
+	first = VEN
+	second = AQU
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+
+
 # Montferrat and Savoy
 vassal = {
 	first = SAV
