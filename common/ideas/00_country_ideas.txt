@@ -14770,7 +14770,7 @@ LOT_ideas = {
 	}
 	
 	bonus = {
-		discipline = 0.05
+		global_trade_goods_size_modifier = 0.15
 	}
 	
 	trigger = {
@@ -14778,11 +14778,15 @@ LOT_ideas = {
 	}
 	free = yes		#will be added at load.
 	
+	bur_estates_general = {
+		mercenary_manpower = 0.5
+	}
 	lot_legacy_of_the_carolingians = {
 		prestige_decay = -0.01
 	}
 	lot_glory_of_charlemagne = {
-		land_morale = 0.15
+		land_morale = 0.10
+		discipline = 0.05
 	}
 	lot_dutch_cities = {
 		trade_efficiency = 0.1
@@ -14793,9 +14797,6 @@ LOT_ideas = {
 	lot_court_of_europe = {
 		prestige = 1
 		advisor_pool = 1
-	}
-	bur_estates_general = {
-		mercenary_manpower = 0.5
 	}
 	lot_european_empire = {
 		core_creation = -0.2
