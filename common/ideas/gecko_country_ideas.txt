@@ -29,7 +29,7 @@ ARB_ideas = { #Arabian Empire
 		global_missionary_strength = 0.03
 	}
 	arb_5 = { #Unite the Tribes
-		infantry_power = 0.15
+		infantry_power = 0.10
 		manpower_recovery_speed = 0.2
 	}
 	arb_6 = { #Bedouin Traders
