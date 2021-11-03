@@ -305,7 +305,7 @@ SPA_ideas = {
 	free = yes		#will be added at load.
 
 	devout_catholisism = {
-		infantry_power = 0.1
+		shock_damage_received = -0.35
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes
@@ -324,7 +324,7 @@ SPA_ideas = {
 	}
 	spa_cortes = { 
 		possible_dip_policy = 1
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.25
 	}
 	siglo_de_oro = {
 		prestige = 1
