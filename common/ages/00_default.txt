@@ -434,7 +434,7 @@ age_of_reformation = {
 				}
 			}
 			modifier = {
-				shock_damage_received = -0.2
+				mercenary_manpower = 0.5
 			}
 			ai_will_do = {
 				factor = 100
