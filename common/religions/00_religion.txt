@@ -326,7 +326,7 @@ christian = {
 			catholic
 		}
 		country = {
-			land_morale = 0.05
+			fire_damage = 0.15
 			innovativeness_gain = 1
 		}
 		
