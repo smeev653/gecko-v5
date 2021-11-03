@@ -8,8 +8,8 @@ edict_devastation_edict = {
 	}
 	
 	modifier = {
-		local_monthly_devastation = -0.5
-		local_autonomy = -0.05
+		local_monthly_devastation = -0.25
+		local_autonomy = -0.025
 	}
 	
 	color = {  46 187 508  }
