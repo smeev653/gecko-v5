@@ -1093,7 +1093,7 @@ influence_ideas = {
 		reduced_liberty_desire = 25
 		province_warscore_cost = -0.1
 	}
-inf_flexible_negotiation = {
+	inf_flexible_negotiation = {
 		center_of_trade_upgrade_cost = -0.25
 		mercantilism_cost = -0.25
 	}
