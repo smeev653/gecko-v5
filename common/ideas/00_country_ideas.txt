@@ -1642,7 +1642,7 @@ MUG_ideas = {
 	
 	bonus = {
 		
-		land_morale = 0.1
+		land_forcelimit_modifier = 0.2
 	}
 	
 	trigger = {
