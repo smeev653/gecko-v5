@@ -13845,7 +13845,7 @@ MYS_ideas = {
 		prestige = 1
 	}
 	mys_dynamic_diplomacy = {
-		artillery_power = 0.1
+		artillery_power = 0.05
 	}
 }
 
