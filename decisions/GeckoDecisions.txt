@@ -84,8 +84,9 @@ country_decisions = {
 			add_country_modifier = {
 				name = "free_colonist"
 				duration = -1
+			}
 		}
-	}
+	}	
 	enlist_rajputs = {
 		potential = {
 				has_estate = estate_rajput
