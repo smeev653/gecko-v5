@@ -332,7 +332,7 @@ spy_ideas = {
 	}
 	agent_training = {
 		power_projection_from_insults = 1
-		prestige = 1
+		prestige = 0.5
 	}
 	claim_fabrication = {
 		 embargo_efficiency = 0.33
