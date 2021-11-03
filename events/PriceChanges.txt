@@ -55,60 +55,7 @@ country_event = {
 }
 
 
-# Europeans in China
-country_event = {
-	id = prices.2
-	title = prices.2.t
-	desc = prices.2.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		capital_scope = { continent = europe }
-		OR = {
-			1371 = {	# Canton
-				trade_share = {
-					country = ROOT
-					share = 5
-				}
-			}
-			684 = {  #Hangzhou
-				trade_share = {
-					country = ROOT
-					share = 5
-				}
-			}
-		}
-		NOT = { has_global_flag = europeans_in_china_happened }
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = europeans_in_china_happened
-		}
-	}	
-	
-	option = {
-		name = prices.2.a
-		change_price = {
-			trade_goods = chinaware
-			key = EUROPEANS_IN_CHINA
-			value = 0.5
-			duration = -1
-		}
-		add_years_of_income  = 0.25
-		add_prestige = 20
-	}
-}
-
-#Johann Friedrich Böttger
+#Johann Friedrich Boettger
 country_event = {
 	id = prices.3
 	title = prices.3.t
@@ -923,7 +870,6 @@ country_event = {
 	major = yes
 
 	trigger = {
-		capital_scope = { continent = europe }
 		owns = 61
 		NOT = { has_global_flag = depleted_beaver_happened }
 		is_year = 1570
@@ -1064,85 +1010,6 @@ country_event = {
 	}
 }
 
-# Japanese Tea Culture
-country_event = {
-	id = prices.21
-	title = prices.21.t
-	desc = prices.21.d
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		dip_tech = 8
-		OR = {
-			has_reform = shogunate
-			tag = JAP
-		}
-		NOT = { has_global_flag = japanese_tea_happened }
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	
-	option = {
-		name = prices.21.a
-		change_price = {
-			trade_goods = tea
-			key = JAPANESE_TEA_CULTURE
-			value = 0.25
-			duration = -1
-		}
-		change_price = {
-			trade_goods = incense
-			key = JAPANESE_TEA_CULTURE
-			value = 0.10
-			duration = -1
-		}
-	}
-}
-
-# Decline of the Spice Trade
-country_event = {
-	id = prices.22
-	title = prices.22.t
-	desc = prices.22.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		is_year = 1600
-		capital_scope = { continent = europe }
-		religion_group = christian
-		spices = 3
-		any_known_country = {
-			capital_scope = { continent = europe }
-			religion_group = christian
-			spices = 3
-		}
-		NOT = { has_global_flag = decline_of_spices_happened }
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	
-	option = {
-		name = prices.22.a
-		change_price = {
-			trade_goods = spices
-			key = DECLINE_OF_SPICE_TRADE
-			value = -0.4
-			duration = -1
-		}
-	}
-}
 
 # Changing Patterns of Consumption
 country_event = {
