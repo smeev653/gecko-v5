@@ -1129,7 +1129,7 @@ POL_ideas = {
 		war_exhaustion = -0.02
 	}
 	winged_hussars = {
-		cavalry_power = 0.33
+		cavalry_power = 0.20
 		cossacks_loyalty_modifier = 0.1
 	}
 	wojsko_komputoe = {
@@ -2112,7 +2112,6 @@ ITA_ideas = {
 		global_tax_modifier = 0.2
 	}
 	heir_to_the_empire = {
-		trade_efficiency = 0.1
 		development_cost = -0.05
 	}
 	path_to_citizenship = {
@@ -3275,7 +3274,7 @@ SWI_ideas = {
 
 SON_ideas = {
 	start = {
-		infantry_power = 0.15
+		infantry_power = 0.10
 		army_tradition = 0.5
 	}
 	
