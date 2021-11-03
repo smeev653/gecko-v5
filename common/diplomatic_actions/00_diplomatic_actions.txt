@@ -408,11 +408,12 @@ designate_march = {
 	condition = {
 		tooltip = h_tooltip_many_marches_noinfluence
 		potential = {
+		has_idea = marcher_lords
 		}
 		allow = {
 			NOT = {
 				ROOT = {
-					march = 3
+					march = 4
 				}
 			}
 		}
