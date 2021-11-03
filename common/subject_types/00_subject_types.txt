@@ -242,6 +242,8 @@ march = {
 	base_liberty_desire = -15.0
 	can_be_annexed = yes
 	forcelimit_to_overlord = 0.2
+	manpower_bonus = 1.0
+	manpower_to_overlord = 0.25
 	is_march = yes
 	forms_trade_companies = no		   
 
