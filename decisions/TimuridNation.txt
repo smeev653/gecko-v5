@@ -3,37 +3,7 @@ country_decisions = {
 	enthrone_timurid_prince = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = { dynasty = "Timurid" }
-			NOT = { is_year = 1490 }
-			OR = {
-				government = monarchy
-				government = tribal
-			}
-			NOT = { tag = HLR }
-			NOT = { tag = ROM }
-			NOT = { tag = MUG }
-			NOT = { tag = PER }
-			NOT = { tag = ORM }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-				tag = QOM
-				tag = KHO
-				tag = FRS
-				tag = YZD
-				tag = AFG
-				tag = TRS
-			}
-			OR = {
-				culture_group = iranian
-				primary_culture = uzbehk
-				primary_culture = turkmeni
-			}
-			NOT = { has_reform = tribal_federation }
-			NOT = { has_reform = feudal_theocracy }
-			religion_group = muslim
+		always = no
 		}
 		provinces_to_highlight = {
 			OR = {
