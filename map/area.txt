@@ -2069,8 +2069,7 @@ transcaspia_area = {
 }
 
 mashhad_area = { #4 - Northern Khorasan
-	2221 2235 2236 4326
-	4325 #sarakhs smeev
+	2214 2221 2235 2236 4326
 }
 
 
@@ -2085,7 +2084,7 @@ ghor_area = { #3
 
 merv_area = { #3
 	color = { 60 186 134 }
-	444 445 2350
+	444 445 2350 4325
 }
 
 balkh_area = { #3
@@ -2127,7 +2126,7 @@ tabriz_area = { #4 Central Azerbaijan
 }
 
 tabarestan_area = { #5
-	417 426 2214 4339 4341
+	417 426 4339 4341
 }
 
 ########################################
