@@ -17,10 +17,7 @@ emp_mlo_conquest_branch = {
 	emp_mlo_subdue_genoa = {
 		icon = mission_dominate_genoa
 		required_missions = { }
-		provinces_to_highlight = {
-			province_id = 101
-			NOT = { country_or_non_sovereign_subject_holds = root }
-		}
+
 		ai_weight = {
 			factor = 5
 		}
@@ -29,8 +26,8 @@ emp_mlo_conquest_branch = {
 		}
 
 		trigger = {
-			owns_or_non_sovereign_subject_of = 101
-			is_subject = no
+			army_size_percentage = 1
+			num_of_generals = 1
 		}
 		effect = {
 			101 = {

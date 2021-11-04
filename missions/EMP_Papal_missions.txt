@@ -16,24 +16,11 @@ emp_pap_slot_1 = {
 		icon = conquer_tuscany
 		required_missions = {  }
 		position = 1
-		
-		provinces_to_highlight = {
-			OR = {
-				area = central_italy_area
-				area = emilia_romagna_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
 
 		trigger = {
 			
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 4 # out of 8
-					OR = {
-						area = central_italy_area
-						area = apulia_area
-					}
-				}
+			army_size_percentage = 1
+			num_of_generals = 1
 			
 		}
 		effect = {

@@ -11,10 +11,8 @@ QAR_conquest = {
 		position = 1
 		
 		trigger = {
-			OR = {
-				is_rival = AKK
-				is_rival = ETH
-				}
+			army_size_percentage = 1
+			num_of_generals = 1
 		}
 		effect = {
 			nafud_area  = {
