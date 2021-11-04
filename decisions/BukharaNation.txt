@@ -87,7 +87,6 @@ country_decisions = {
 				}
 			}	
 			change_government_to_monarchy = yes
-			change_unit_type = gunpowder_empire
 			set_government_rank = 3			
 			add_government_reform = silk_road_empire
 			add_permanent_claim = 441 #Khiva
