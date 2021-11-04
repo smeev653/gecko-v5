@@ -43,6 +43,15 @@
  conquest_of_delhi:0 "Conquest of Delhi"
  conquest_of_kiev:0 "Conquest of Kiev"
  conquest_of_cairo:0 "Conquest of Cairo"
+ conquest_of_london:0 "Conquest of London"
+ conquest_of_berlin:0 "Conquest of Berlin"
+ conquest_of_pest:0 "Conquest of Pest"
+ conquest_of_saint_petersburg:0 "Conquest of St. Petersburg"
+ conquest_of_sarai:0 "Conquest of Sarai"
+ conquest_of_fez:0 "Conquest of Fez"
+ conquest_of_isfahan:0 "Conquest of Isfahan"
+ conquest_of_samarkand:0 "Conquest of Samarkand"
+
 
  #Advisor Event modifiers
  gc_arty_officer_delayed:0 "Arty Officer Delayed"
