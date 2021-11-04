@@ -262,7 +262,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = {
-		same_culture_advisor_cost = -0.15
+		same_culture_advisor_cost = -0.10
 		monthly_piety = -0.005
 	}
 	deus_vult = {
@@ -930,7 +930,7 @@ expansion_ideas = {
 	}
 	factories = {
 		years_of_nationalism = -10
-		trade_company_investment_cost = -0.20
+		trade_company_investment_cost = -0.10
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.2
@@ -1086,27 +1086,25 @@ influence_ideas = {
 		global_tax_income = 48
 	}
 	tribute_system = {
-		dip_tech_cost_modifier = -0.1
-		war_exhaustion = -0.05
+		reduced_liberty_desire = 25
+		diplomatic_upkeep = 2
 	}
 	additional_loyalist_recruitment = {
-		reduced_liberty_desire = 25
-		province_warscore_cost = -0.1
+		province_warscore_cost = -0.2
 	}
 	inf_flexible_negotiation = {
 		center_of_trade_upgrade_cost = -0.25
-		mercantilism_cost = -0.25
+		trade_company_investment_cost = -0.10
 	}
 	buffer_states = {
 		global_own_trade_power = 0.25 
-		diplomatic_upkeep = 2
 	}
 	integrated_elites = {
-		yearly_corruption = -0.5
+		global_manpower = 10
+		land_forcelimit = 10
 	}
 	marcher_lords = {
-		vassal_forcelimit_bonus = 1
-		can_fabricate_for_vassals = yes
+		global_manpower_modifier = 0.1
 	}
 
 	ai_will_do = {
