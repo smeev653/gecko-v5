@@ -1206,7 +1206,7 @@ power_projection_25 = {
 }
 
 trade_company_strong = {
-	merchants = 1
+	global_trade_power = 0.05
 }
 
 
