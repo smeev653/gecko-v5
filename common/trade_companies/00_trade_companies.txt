@@ -1146,7 +1146,7 @@ trade_company_basra = {
 	
 	provinces = {
 	
-		1335 #Persian Gulf
+	1335 #Persian Gulf
 		394 395 396 2340 2347 #bahrain_area
 		393 2338 4272 #nafud_area
 		392 2337 4273 4274 #qasim_area
@@ -1154,12 +1154,17 @@ trade_company_basra = {
 		408 2311 2312 4288 #basra_area
 		406 409 410 2310 4291 #iraq_arabi_area
 		415 4293 4294 #shahrizor_area
-		411 2309 2314  #al_jazira_area
+		411 2309 2314 407 4292 #al_jazira_area
 		2334 4276 #Wasteland
 		384 2329 2330 #medina_area #smeev
 		383 2328 4268 4269 2327 #tabuk_area #smeev
 		385 2331 2332 4277 4278 #mecca_area #smeev
-		407 4292 405 4270 4271 #syrian_desert_area
+		405 4270 4271 #syrian_desert_area
+		397 398 404 2333 #pirate_coast_area
+		403 4285 4287 #oman_area
+		399 400 4286 #mascat_area
+		401 2341 2342 #dhofar_area
+		1332 1334 4347#Sea
 		
 	}
 	
@@ -1198,10 +1203,10 @@ trade_company_persia = {
 	# Specific
 	# Generic
 	names = {
-		name = "TRADE_COMPANY_BASRA_Root_Culture_GetName"
+		name = "TRADE_COMPANY_PERSIA_Root_Culture_GetName"
 	}
 	names = {
-		name = "TRADE_COMPANY_BASRA_Asia_Trade_Company"
+		name = "TRADE_COMPANY_PERSIA_Asia_Trade_Company"
 	}
 }
 
@@ -1224,30 +1229,6 @@ trade_company_caucasus = { #smeev mod
 	}
 	names = {
 		name = "TRADE_COMPANY_caucasus_Near_East_Trade_Company"
-	}
-}
-trade_company_hormuz = {
-	color = { 177 108 98 }
-	
-	provinces = {
-		397 398 404 2333 #pirate_coast_area
-		434 575 2231 2232 2233 #makran_area
-		430 2219 2223 4332  #persian_gulf_coast
-		2218 4329 4330 4331 #farsistan_area
-		403 4285 4287 #oman_area
-		399 400 4286 #mascat_area
-		431 2999 4327 #mogostan_area
-		401 2341 2342 #dhofar_area
-		1332 1334 4347#Sea
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_HORMUZ_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_HORMUZ_Near_East_Trade_Company"
 	}
 }
 
@@ -1274,8 +1255,11 @@ trade_company_samarkand = {
 	color = { 141 120 67 }
 	
 	provinces = {
-		440 441 442 444 445 453 454 455 456 457 459 476 477 1967 1969 1970 1973 461 478 2126 2370 2362 2363 2356 2364 2368 2355 2360 2361 2358 2352 2351 2353 2359 458 2125 460 2350 437 438 439 443 2349 739 2124 2127 4209 4210 
+		440 441 442 444 445 453 454 455 456 457 459 476 477 1967 1969 1970 1973 461 478 2126 2370 2362 2363 2356 2364 2368 2355 2360 2361 2358 2352 2351 2353 2359 458 2125 460 2350 437 438  2349 739 2124 2127 4209 4210 
 		4685
+		439 443
+		2214 2221 2235 2236 4326 #mashhad_area
+		4325
 	}
 	
 	# Specific
