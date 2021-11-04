@@ -776,10 +776,7 @@ slaves = {
 	}
 	chance = {
 		factor = 15
-		modifier = {
-			factor = 0
-			holy_order = dominican_order
-		}
+
 		modifier = {
 			factor = 0
 			area = newfoundland_area

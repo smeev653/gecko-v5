@@ -919,17 +919,7 @@ has_final_tier_reforms_trigger = {
 }
 
 has_holy_order_trigger = {
-	custom_trigger_tooltip = {
-		tooltip = "has_holy_order_trigger_tooltip"
-		OR = {
-			holy_order = jesuit_order
-			holy_order = dominican_order
-			holy_order = franciscan_order
-			holy_order = shadhili_order
-			holy_order = qadiri_order
-			holy_order = aissawa_order
-		}
-	}
+#removed
 }
 
 same_govt_as_root_trigger = {

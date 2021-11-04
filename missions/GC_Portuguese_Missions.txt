@@ -158,7 +158,6 @@ gc_por_1 = {
 				custom_trigger_tooltip = {
 					tooltip = port_jesuits_tooltip
 					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
-						holy_order = jesuit_order
 						colonial_region = colonial_brazil
 						value = 7
 					}
