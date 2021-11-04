@@ -474,7 +474,7 @@ production_quota_act = {
 		full_idea_group = trade_ideas
 		full_idea_group = quantity_ideas
 	}
-	global_trade_goods_size_modifier = 0.1
+	global_trade_goods_size_modifier = 0.2
  
 
 	ai_will_do = {
