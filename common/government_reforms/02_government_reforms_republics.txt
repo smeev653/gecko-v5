@@ -1113,7 +1113,7 @@ dutch_republic = {
 	}
 
 	modifiers = {
-		heavy_ship_power = 0.1
+		artillery_fire = 0.5
 		trade_efficiency = 0.1
 		governing_capacity = 50
 		max_absolutism = -30
