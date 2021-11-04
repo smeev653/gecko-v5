@@ -73,6 +73,7 @@ conquest_of_constantinople = {
 		owner = {
 			NOT = { tag = TUR }
 		}
+		controlled_by = ROOT
 	}
 
 
@@ -103,9 +104,10 @@ conquest_of_paris = {
 				tag = LOT
 			}
 		}
+		controlled_by = ROOT
 	}
 
-	infantry_power = 0.05
+	discipline = 0.03
 	prestige = 0.5
 	
 	#Province scope
@@ -125,11 +127,9 @@ conquest_of_vienna = {
 
 	trigger = {
 		owner = {
-			OR = {
-				tag = TUR
-				tag = FRA
-			}
+			NOT = { tag = HAB }
 		}
+		controlled_by = ROOT
 	}
 
 	land_morale = 0.05
@@ -177,6 +177,7 @@ conquest_of_jerusalem = {
 				religion = ibadi
 			}
 		}
+		controlled_by = ROOT
 	}
 
 	missionaries = 1
@@ -209,6 +210,7 @@ conquest_of_baghdad = {
 				religion = ibadi
 			}	
 		}
+		controlled_by = ROOT
 	}
 
 	technology_cost = -0.05
@@ -238,6 +240,7 @@ conquest_of_delhi = {
 				religion = ibadi
 			}	
 		}
+		controlled_by = ROOT
 	}
 
 
@@ -271,6 +274,7 @@ conquest_of_kiev = {
 				tag = HET
 			}
 		}
+		controlled_by = ROOT
 	}
 
 	land_morale = 0.05
@@ -296,6 +300,7 @@ conquest_of_cairo = {
 				NOT = { tag = MAM }
 				NOT = { tag = EGY }
 			}
+		controlled_by = ROOT	
 		}	
 
 	land_morale = 0.05
@@ -311,5 +316,225 @@ conquest_of_cairo = {
 	}
 }
 
+conquest_of_fez = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
 
-		
+	trigger = {
+		owner = {
+				NOT = { tag = MOR }
+				NOT = { tag = ADU }
+			}
+		controlled_by = ROOT	
+		}	
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_london = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = ENG }
+				NOT = { tag = GBR }
+			}
+		controlled_by = ROOT	
+		}	
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_berlin = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = BRA }
+				NOT = { tag = PRU }
+			}
+		OR = { 
+			tag = SWE
+			tag = HSA
+			tag = HES
+			tag = WES
+			tag = HAN
+		}	
+		controlled_by = ROOT
+	}
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_saint_petersburg = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = MOS }
+				NOT = { tag = RUS }
+			}
+		controlled_by = ROOT	
+		}	
+
+	discipline = 0.03
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_sarai = {
+	potential = {
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}	
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}
+		controlled_by = ROOT	
+		}
+	}
+
+	technology_cost = -0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_isfahan = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = ARL }
+				NOT = { tag = PER }
+			}
+		controlled_by = ROOT	
+		}	
+
+	discipline = 0.03
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+
+conquest_of_samarkand = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = TRS }
+				NOT = { tag = BUK }
+				NOT = { tag = TIM }
+			}
+		controlled_by = ROOT	
+		}	
+
+	morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_pest = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = HUN }
+				NOT = { tag = TUR }
+				NOT = { tag = TIM }
+			}
+		controlled_by = ROOT	
+		}	
+
+	discipline = 0.03
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}								
