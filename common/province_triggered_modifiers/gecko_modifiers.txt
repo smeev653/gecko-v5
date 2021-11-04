@@ -411,7 +411,7 @@ conquest_of_saint_petersburg = {
 				NOT = { tag = RUS }
 			}
 		controlled_by = ROOT	
-		}	
+	}	
 
 	discipline = 0.03
 	prestige = 0.5
@@ -442,8 +442,8 @@ conquest_of_sarai = {
 				religion = shiite
 				religion = ibadi
 			}
+		}	
 		controlled_by = ROOT	
-		}
 	}
 
 	technology_cost = -0.05
@@ -499,7 +499,7 @@ conquest_of_samarkand = {
 		controlled_by = ROOT	
 		}	
 
-	morale = 0.05
+	land_morale = 0.05
 	prestige = 0.5
 	
 	#Province scope
@@ -521,7 +521,6 @@ conquest_of_pest = {
 		owner = {
 				NOT = { tag = HUN }
 				NOT = { tag = TUR }
-				NOT = { tag = TIM }
 			}
 		controlled_by = ROOT	
 		}	

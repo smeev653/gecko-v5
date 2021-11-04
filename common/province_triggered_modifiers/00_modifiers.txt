@@ -47,6 +47,7 @@ non_catholic_rome = {
 				religion_group = muslim
 			}
 		}
+		controlled_by = ROOT
 	}
 
 	prestige = 0.5
