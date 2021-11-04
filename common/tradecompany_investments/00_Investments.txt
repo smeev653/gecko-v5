@@ -13,7 +13,7 @@ local_quarter = {
 	cost = 200.0
 	
 	company_province_area_modifier = {
-		local_defensiveness = 0.15
+		local_defensiveness = 0.1 #was 0.15
 		supply_limit_modifier = 0.25
 	}
 	
@@ -31,7 +31,7 @@ permanent_quarters = {
 	cost = 400.0
 
 	company_province_area_modifier = {
-		local_defensiveness = 0.30
+		local_defensiveness = 0.2 #was 0.3
 		supply_limit_modifier = 0.50
 	}
 	
@@ -107,7 +107,7 @@ company_warehouse = {
 	}
 
 	area_modifier = {
-		local_production_efficiency = 0.25
+		local_production_efficiency = 0.15 #was 0.25
 	}
 	
 	ai_global_worth = { factor = 0 }
@@ -128,7 +128,7 @@ company_depot = {
 	}
 
 	area_modifier = {
-		local_production_efficiency = 0.5
+		local_production_efficiency = 0.3 #was 0.5
 	}
 	
 	ai_global_worth = { factor = 0 }
@@ -199,7 +199,7 @@ brokers_office = {
 	cost = 200.0
 
 	company_province_area_modifier = {
-		local_production_efficiency = 0.25
+		local_production_efficiency = 0.15 #was 0.25
 	}
 
 	area_modifier = {
@@ -220,7 +220,7 @@ brokers_exchange = {
 	cost = 400.0
 
 	company_province_area_modifier = {
-		local_production_efficiency = 0.5
+		local_production_efficiency = 0.3 #was 0.5
 	}
 
 	area_modifier = {
@@ -274,7 +274,7 @@ property_appraiser = {
 	}
 	
 	owner_company_region_modifier = {
-		trade_steering = 0.5
+		trade_steering = 0.25 #was 0.5
 	}
 	
 	ai_global_worth = { factor = 0 }
@@ -299,7 +299,7 @@ settlements = {
 	}
 
 	area_modifier = {
-		local_development_cost = -0.075
+		local_development_cost = -0.025 #was 0.075
 	}
 	
 	ai_global_worth = { factor = 0 }
@@ -320,7 +320,7 @@ district = {
 	}
 
 	area_modifier = {
-		local_development_cost = -0.15
+		local_development_cost = -0.05 #was 0.15
 	}
 	
 	ai_global_worth = { factor = 0 }
@@ -374,7 +374,7 @@ townships = {
 	}
 	
 	company_region_modifier = {
-		trade_value_modifier = 0.1
+		trade_value_modifier = 0.05 #was 0.1
 	}
 	
 	ai_global_worth = { factor = 0 }
