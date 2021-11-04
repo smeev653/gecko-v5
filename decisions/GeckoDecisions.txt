@@ -350,7 +350,7 @@ country_decisions = {
 			
 			add_country_modifier = {
 				name = "gc_urbanisation"
-				duration = 3650
+				duration = 5475
 			}
 		}
 	}

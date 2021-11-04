@@ -4,7 +4,8 @@ restore_merv = {
 		potential = {
 			OR = {
 				tag = BUK
-					}
+				tag = TIM
+			}
 			owns = 445
 			NOT = { capital = 445 }
 			NOT = { has_country_flag = restored_merv }
@@ -15,18 +16,13 @@ restore_merv = {
 			}
 		}
 		allow = {
-			is_at_war = no
-			primary_culture = uzbehk
-			religion_group = muslim
-			controls = 445
-			owns = 442 		# Bukhara
-			owns = 454		# Samarkand
-			owns = 1973		# Urgench
-					
+			OR = {
+				tag = BUK
+				tag = TIM
+			}
 		}
 		effect = {
 			set_country_flag = restored_merv
-			set_global_flag = restored_merv
 			add_stability = 1
 			add_core = 445
 			445 = {
@@ -63,8 +59,6 @@ restore_merv = {
 					}
 				}
 			}	
-			set_global_flag = restored_merv
-
 		}
 		ai_will_do = {
 			factor = 1
