@@ -33,6 +33,7 @@
  desc_kaiser_of_europe:0 "Vienna is ours. Europe must recognise our supremacy."
  third_rome:0 "The Third Rome"
  desc_third_rome:0 "We have conquered the City of World's Desire. This achievement has provided our armies with unrelenting fervour for the Russian state."
+ gc_urbanisation:0 "Forced Urbanisation"
 
  #Province Triggered Modifiers
  conquest_of_constantinople:0 "Conquest of Constantinople"
