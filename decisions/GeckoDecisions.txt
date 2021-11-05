@@ -346,18 +346,13 @@ country_decisions = {
 
 	urbanisation = {
 		potential = {
-				NOT = {
-					is_ai = yes
-				}
-				
+				was_player = yes
 				NOT = { has_country_modifier = gc_urbanisation}
 				dip_tech = 10	
 			}
 
 		allow = {
-				NOT = {
-					is_ai = yes
-				}
+				was_player = yes
 				dip_tech = 10
 				NOT = { is_colonial_nation = yes }	
 				AND = {

@@ -288,8 +288,8 @@ brittany_area = { #5
 	169 170 171 172 4384
 }
 
-normandy_area = { #4
-	167 168 1879 4385
+normandy_area = {  #4
+	167 168 4385 6082 6081
 }
 
 provence_area = { #3
@@ -312,13 +312,13 @@ languedoc_area = { #5
 	200 2753 4391 4695 196
 }
 
-bourgogne_area = { #3
+bourgogne_area = {   #3
 	color = { 144 0 32 }
-	192 193 4764
+	192 193 4764 6093
 }
 
-west_burgundy_area = { #3
-	191 1877 4392
+west_burgundy_area = {  #3
+	191 1877 4392 6092 
 }
 
 massif_central_area = { #3
@@ -330,45 +330,45 @@ savoy_dauphine_area = { #3 Savoy and Dauphiné, Upper Burgundy
 	203 204 205 4719
 }
 
-lorraine_area = { #4
-	187 188 189 4766
+lorraine_area = {   #4
+	187 188 189 4766 6091
 }
 
 picardy_area = { #4
-	87 88 89 1743
+	87 88 89 6089 1743 
 }
 
-ile_de_france_area = { #4
-	182 183 185 4388
+ile_de_france_area = { 6088  #4
+	 183 185 4388 6085
 }
 
-champagne_area = { #3
-	181 186 4390
+champagne_area = {  #3
+	186 4390 182 6084 6083 
 }
 
-loire_area = { #5
+loire_area = {  #5
 	color = { 231 143 5 }
-	177 178 4389
+	177 178 1879 6087 6086
 }
 
 orleans_area = {
-	184 179 4776
+	184 179 4776 4389 
 }
 
 ########################################
 # Low Countries				 		   #
 ########################################
 
-wallonia_area = { #4
-	91 93 94 1866
+wallonia_area = {  #4
+	 93 94 1866 6090 181 
 }
 
 holland_area = { #4
 	96 97 98 4383
 }
 
-flanders_area = { #3
-	90 1865 4769
+flanders_area = {  #3
+	90 1865 4769 91
 }
 
 frisia_area = { #5
