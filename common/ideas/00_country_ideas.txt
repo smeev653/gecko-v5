@@ -407,7 +407,6 @@ NED_ideas = {
 	}
 	army_sappers = {
 		siege_ability = 0.20
-		infantry_power = 0.10
 	}
 	platoon_fire = {
 		fire_damage = 0.2
