@@ -27,6 +27,7 @@ france_region = {
 		pyrenees_area
 		poitou_area
 		orleans_area
+		cahors_area
 	}
 }
 

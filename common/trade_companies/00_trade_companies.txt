@@ -519,6 +519,7 @@ trade_company_bordeaux = {
 		203 204 205 4719 #savoy_dauphine_area #smeev genoa remerge
 		201 202 2991 4696  # new for 1.30 #provence_area
 		173 #labourd
+		6098 6096 6095 6094 
 	}
 	
 	# Specific

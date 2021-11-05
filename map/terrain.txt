@@ -295,7 +295,7 @@ categories =  {
 			4766 4767 4768 4770 4786
 			254 #poznan #smeev
 			135 #sopron #smeev 
-			6087 6090 6091 #gcfrance
+			6087 6090 6091 6094 6095 6096 6098 #gcfrance
 		}
 	}
 	
