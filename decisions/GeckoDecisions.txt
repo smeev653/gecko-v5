@@ -21,6 +21,7 @@ country_decisions = {
 				NOT = { has_country_flag = sm_hire_recruitmaster }
 			}
 			allow = {
+			NOT = { mil_tech = 4 }
 			}
 			effect = {
 				add_years_of_income = -0.5
