@@ -15,6 +15,25 @@ country_decisions = {
 			}
 		}
 		
+	sm_hire_recruitmaster = {
+			potential = {
+				ai = no
+				NOT = { has_country_flag = sm_hire_recruitmaster }
+			}
+			allow = {
+			}
+			effect = {
+				add_years_of_income = -0.5
+				define_advisor  = { 
+				type = recruitmaster
+				skill = 3
+				discount = yes
+				culture = variable:new_ruler_culture
+			}	
+				set_country_flag = sm_hire_recruitmaster
+			}
+		}	
+		
 	sm_hire_explorer = {	
 		potential = {
 				ai = no
