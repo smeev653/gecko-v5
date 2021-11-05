@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Vermandois
-add_core = FRA
-owner = FRA
-controller = FRA
+add_core = ORL
+owner = ORL
+controller = ORL
 culture = cosmopolitan_french
 religion = catholic
 hre = no
