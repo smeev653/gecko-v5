@@ -2858,7 +2858,7 @@ PAP_ideas = {
 		trade_efficiency = 0.15
 	}
 	glory_of_rome = {
-		infantry_power = 0.10
+		manpower_in_true_faith_provinces = 0.2
 	}
 	donation_of_constantine = {
 		prestige = 1

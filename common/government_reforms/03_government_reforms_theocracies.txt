@@ -359,7 +359,7 @@ battle_pope_reform = {
 	rulers_can_be_generals = yes
 
 	modifiers = {
-		manpower_in_true_faith_provinces = 0.15
+		#manpower_in_true_faith_provinces = 0.15
 		leader_land_fire = 1
 	}
 	ai = {
