@@ -1,7 +1,6 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Rouen
 add_core = ENG
-add_core = FRA
 owner = ENG
 controller = ENG
 culture = normand

@@ -3,7 +3,6 @@
 add_core = ENG
 owner = ENG
 controller = ENG
-add_core = FRA
 culture = normand
 religion = catholic
 hre = no
