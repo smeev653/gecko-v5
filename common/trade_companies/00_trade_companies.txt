@@ -809,6 +809,7 @@ trade_company_pest = {
 		156 1951 4128 # Southern Transylvania
 		152 1767 4173 4756 1828 # Slavonia
 		131 4752 1826 #croatia #smeev
+		6100 6099 #gcpest
 	}
 	
 	# Specific
