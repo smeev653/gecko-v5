@@ -1293,6 +1293,9 @@ BUR_Ideas = {
 	bur_estates_general = {
 		mercenary_manpower = 0.5
 	}
+	reform_of_feudal_army = {
+		discipline = 0.05
+	}
 	compagnies_ordonnance = {
 		merc_maintenance_modifier = -0.15
 	}
@@ -1308,9 +1311,7 @@ BUR_Ideas = {
 	freedom_of_worship = {
 		tolerance_heretic = 2
 	}
-	reform_of_feudal_army = {
-		discipline = 0.05
-	}
+	
 }
 
 

@@ -6,7 +6,7 @@ add_accepted_culture = wallonian
 add_accepted_culture = flemish
 religion = catholic
 technology_group = western
-capital = 192	# Dijon
+capital = 1866	# Dijon
 add_army_professionalism = 0.1
 
 1363.1.1 = {
