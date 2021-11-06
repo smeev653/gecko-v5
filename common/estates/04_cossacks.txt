@@ -49,16 +49,14 @@ estate_cossacks = {
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }
 		unit_type = eastern
-		OR = {
-			religion_group = christian
-			has_country_flag = formed_bukhara_flag
-		}
+		religion_group = christian
 		NOT = { has_reform = revolutionary_empire_reform }
 		OR = {
 			has_estate = estate_cossacks
 			any_owned_province = {
 				has_terrain = steppe
 			}
+			tag = HUN
 		}
 	}
 
@@ -72,7 +70,7 @@ estate_cossacks = {
 	}	
 	country_modifier_angry = {
 		cavalry_cost = 0.2
-		cavalry_power = -0.1
+		#cavalry_power = -0.1
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
