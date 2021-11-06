@@ -1123,9 +1123,19 @@ emp_pap_slot_4 = {
 			NOT = { num_of_loans = 1 }
 		}
 		effect = {
-			add_country_modifier = {
-				name = "growing_economy"
-				duration = 9125 #25 years
+			custom_tooltip = emp_pap_rebuild_the_papal_treasury_effect_tooltip
+			hidden_effect = {
+				every_country = {
+					limit = {
+						religion = catholic
+						NOT = { tag = ROOT }
+					}
+					add_country_modifier = {
+						name = pap_higher_curia_contribution_hidden_modifier
+						duration = 7300
+						hidden = yes
+					}
+				}
 			}
 		}
 	}
@@ -1136,15 +1146,12 @@ emp_pap_slot_4 = {
 		position = 2
 		
 		trigger = {
-			curia_treasury_size = 1000
+			curia_treasury_size = 2000
 		}
 		effect = {
-			add_country_modifier = {
-				name = "proto_industrialization"
-				duration = 9125
-			}
-			add_years_of_income = 1.5
-			}
+			effect = {
+			add_prestige = 20
+		}
 		}
 	emp_pap_new_st_peters_basilica = {
 		icon = new_st_peters_basilica

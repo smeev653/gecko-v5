@@ -195,6 +195,10 @@ ven_genoese_humiliation = {
 }
 
 ven_urban_renewal = {
-	build_time = -0.2
-	build_cost = -0.2
+	development_cost = -0.1
+}
+
+ven_la_francocrazia = {
+	naval_forcelimit_modifier = 0.5
+	galley_power = 0.25
 }

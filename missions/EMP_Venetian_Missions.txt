@@ -483,13 +483,10 @@ emp_ven_slot_4 = {
 		required_missions = {  }
 		
 		provinces_to_highlight = {
-			province_id = 151
-			NOT = { owned_by = ROOT }
+			112
 		}
 		trigger = {
-			151 = {
-				owned_by = ROOT
-			}
+			num_of_galley = 35
 		}
 		effect = {
 			add_country_modifier = {
