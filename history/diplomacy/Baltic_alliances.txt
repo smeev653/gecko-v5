@@ -7,12 +7,12 @@
 #}
 
 # Polish guarantee/tribute
-guarantee = {
-	first = POL
-	second = MOL
-	start_date = 1444.1.1
-	end_date = 1447.12.12
-}
+#guarantee = {
+#	first = POL
+#	second = MOL
+#	start_date = 1444.1.1
+#	end_date = 1447.12.12
+#}
 
 # Polish vassal
 march = {
