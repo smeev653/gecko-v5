@@ -58,14 +58,9 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 213	# Barcelona
-				province_id = 214	# Aragón
-				province_id = 215	# Castilla La Vieja
-				province_id = 216	# Salamanca
-				province_id = 224	# Andalucia
-				province_id = 219	# Toledo
-				province_id = 220	# Valencia
-				province_id = 223	# Granada
+				area = aragon_area
+				area = valencia_area
+				area = catalonia_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -77,14 +72,9 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			owns_core_province = 213	# Barcelona
-			owns_core_province = 214	# Aragón
-			owns_core_province = 215	# Castilla La Vieja
-			owns_core_province = 216	# Salamanca
-			owns_core_province = 224	# Andalucia
-			owns_core_province = 219	# Toledo
-			owns_core_province = 220	# Valencia
-			owns_core_province = 223	# Granada
+			aragon_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			valencia_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			catalonia_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 		}
 		effect = {
 			change_tag = SPA
