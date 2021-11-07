@@ -5,3 +5,14 @@
   estate_gecko_ethiopia_highlands_and_mountains_desc:0 "We will Temper the Roof of Africa and one day we will pierce the Heavens."
   gecko_ethiopia_highlands_and_mountains_privilege_tooltip:0 "This privilege will grant -10% development cost on Highlands and Mountains in the Horn of Africa Region."
   gecko_ethiopia_highlands_and_mountains_privilege_revoke_tooltip:0 "Will remove any Modifier granted by this Privilege."
+
+ ###nomad estate changes###
+ estate_nomadic_tribes_steppe_devcost:0 "Settle the Steppes"
+ estate_nomadic_tribes_steppe_devcost_grant_tooltip:0 "§G-10%§! Local Development Cost in all Livestock provinces"
+ estate_nomadic_tribes_steppe_devcost_revoke_tooltip:0 "Removes §YSettle the Steppes§! from all owned Livestock provinces."
+ estate_nomadic_tribes_share_of_the_spoils:0 "Settle the Steppe"
+ estate_nomadic_tribes_chieftains_autonomy:0 "Greater Autonomy for Chieftains"
+ estate_nomadic_tribes_guaranteed_leadership_in_host:0 "Guaranteed Leadership of Host"
+ estate_nomadic_tribes_guaranteed_leadership_in_host_desc:0 "Our tribal chieftains make fine leaders of men. We need look no further when seeking new generals for our armies."
+ estate_nomadic_tribes_tribute:0 "Increased Tribal Tribute"
+ estate_nomadic_tribes_tribute_desc:0 " "
