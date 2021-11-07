@@ -1141,6 +1141,7 @@ emp_pap_slot_4 = {
 		effect = {
 			add_prestige = 20
 		}
+	}	
 	emp_pap_new_st_peters_basilica = {
 		icon = new_st_peters_basilica
 		required_missions = { emp_pap_restore_curia_funding }
