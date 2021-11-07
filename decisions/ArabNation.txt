@@ -123,6 +123,7 @@ country_decisions = {
 			change_unit_type = gunpowder_empire
 			change_government = tribal
 			add_government_reform = tribal_federation
+			change_government_reform_progress  = 200
 			define_ruler = {
 				name = "Husayn"
 				dynasty = "ibn Ali"

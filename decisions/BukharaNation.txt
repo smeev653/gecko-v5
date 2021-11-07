@@ -71,6 +71,7 @@ country_decisions = {
 				}
 			}	
 			change_government_to_monarchy = yes
+			change_government_reform_progress  = 200
 			set_government_rank = 3			
 			add_government_reform = silk_road_empire
 			add_permanent_claim = 441 #Khiva
