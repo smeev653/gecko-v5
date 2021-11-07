@@ -11,9 +11,13 @@ estate_nomadic_tribes = {
 		NOT = { has_reform = pirate_republic_reform }
 		OR = {
 			is_nomad = yes
-			has_reform = cossacks_reform
-		}
-		
+			AND = { 
+				government = tribal
+				any_owned_province = {
+					has_terrain = steppe
+				}
+			}
+		}	
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }
 		NOT = { has_reform = revolutionary_empire_reform }
