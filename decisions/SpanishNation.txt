@@ -3,58 +3,7 @@ country_decisions = {
 	spanish_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_spain_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			NOT = { tag = SPA }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			NOT = { tag = FRA }		# Basque is a valid culture for both FRA and SPA
-			NOT = { tag = KNI }		# Maltese is part of iberian culture group
-			NOT = { tag = ADU }
-			NOT = { religion_group = muslim }
-			OR = {
-				ai = no
-				AND = {
-					ARA = { ai = yes }
-					tag = CAS
-				}
-				AND = {
-					CAS = { ai = yes }
-					tag = ARA
-				}
-			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 3
-					NOT = { exists = SPA }
-				}
-			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { tag = POR }
-				}
-			}
-			OR = {
-				culture_group = iberian
-				primary_culture = basque
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
+			tag = CAS
 		}
 		provinces_to_highlight = {
 			OR = {
