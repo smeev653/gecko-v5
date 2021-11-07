@@ -1,0 +1,24 @@
+#5807 - Taghaza
+
+owner = TMB
+controller = TMB
+add_core = TMB
+is_city = yes
+culture = tuareg
+religion = sunni
+capital = "Taghaza"
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+
+
+
+discovered_by = MOR
+discovered_by = sub_saharan
+
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9

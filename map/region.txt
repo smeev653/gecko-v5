@@ -460,6 +460,7 @@ niger_region = {
 		manding_area
 		tekrur_area
 		jenne_area
+		pr_africa_area_11
 	}
 	monsoon = {
 		00.06.01
@@ -477,6 +478,8 @@ guinea_region = {
 		west_africa_coast_area
 		jolof_area
 		sao_tome_area
+		pr_africa_area_9
+		pr_africa_area_10
 	}
 	monsoon = {
 		00.06.01
@@ -497,6 +500,14 @@ sahel_region = {
 		baghena_area
 		niger_bend_area
 		east_azbin_area
+		pr_africa_area_1
+		pr_africa_area_2
+		pr_africa_area_3
+		pr_africa_area_4
+		pr_africa_area_5
+		pr_africa_area_6
+		pr_africa_area_7
+		pr_africa_area_8
 	}
 	monsoon = {
 		00.06.01
