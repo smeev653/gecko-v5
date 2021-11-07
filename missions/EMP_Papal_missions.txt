@@ -1123,21 +1123,11 @@ emp_pap_slot_4 = {
 			NOT = { num_of_loans = 1 }
 		}
 		effect = {
-			custom_tooltip = emp_pap_rebuild_the_papal_treasury_effect_tooltip
-			hidden_effect = {
-				every_country = {
-					limit = {
-						religion = catholic
-						NOT = { tag = ROOT }
-					}
-					add_country_modifier = {
-						name = pap_higher_curia_contribution_hidden_modifier
-						duration = 7300
-						hidden = yes
-					}
-				}
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
 			}
-		}
+		}	
 	}
 	
 	emp_pap_restore_curia_funding = {

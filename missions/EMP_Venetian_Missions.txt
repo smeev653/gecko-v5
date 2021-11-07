@@ -476,46 +476,6 @@ emp_ven_slot_4 = {
 			}
 		}
 	}
-	
-	emp_ven_the_francocracy = {
-		icon = la_latinocrazia
-		position = 3
-		required_missions = {  }
-		
-		provinces_to_highlight = {
-			112
-		}
-		trigger = {
-			num_of_galley = 35
-		}
-		effect = {
-			add_country_modifier = {
-				name = "ven_la_francocrazia"
-				duration = -1
-			}
-		}
-	}
-	
-	emp_ven_challenge_papal_supremacy = {
-		icon = counter_reformation
-		position = 4
-		required_missions = { emp_ven_the_francocracy }
-		
-		trigger = {
-			religious_unity = 1
-			OR = {
-				is_papal_controller = yes
-				PAP = { vassal_of = ROOT }
-				owns = 118
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "ven_autonomous_venetian_patriarchate"
-				duration = 5475
-			}
-		}
-	}
 }
 
 emp_ven_slot_5 = {
@@ -627,6 +587,10 @@ emp_ven_slot_5 = {
 			add_country_modifier = {
 				name = "mediterranean_ambition"
 				duration = 3650
+			}
+			add_country_modifier = {
+				name = "ven_la_francocrazia"
+				duration = -1
 			}
 			delta_area = {
 				limit = {
