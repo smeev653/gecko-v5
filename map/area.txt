@@ -1757,7 +1757,7 @@ hadendoa_area = { #4
 }
 
 fezzan_area = { #5
-	2448 2449 2474 4567 6027
+	2448 2449 4567 5825 5826
 }
 
 jaghbub_area = { #4
@@ -1878,7 +1878,7 @@ te_waipounamu_area = { #3
 ########################################
 
 western_sahara_area = { #5
-    1127 1128 1129 1130 2271
+    1128 1129 1130 2271 5810
 }
 
 cap_verde_area = { #2 
@@ -1966,7 +1966,7 @@ azbin_area = { #5
 }
 
 east_azbin_area = { #3
-	2275 2277 2475
+	2275 2277 5830
 }
 
 atacora_oueme_area = { #5
