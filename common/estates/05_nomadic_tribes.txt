@@ -73,12 +73,10 @@ estate_nomadic_tribes = {
 	privileges = {
 		estate_nobles_advisors
 		estate_nobles_nobility_primacy
-		estate_nomadic_tribes_share_of_the_spoils
 		estate_nomadic_tribes_tribal_host
 		estate_nomadic_tribes_primacy_to_the_bannermen
-		estate_nomadic_tribes_tribute #smeev change
-		estate_church_religious_state
-		
+		#estate_nomadic_tribes_tribute #smeev change
+		estate_nomadic_tribes_share_of_the_spoils #gchorde		
 	}
 
 	agendas = {

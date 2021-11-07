@@ -16,11 +16,6 @@ estate_burghers =
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		OR = {
-			is_nomad = no
-			tag = CRI
-			tag = HET
-		}
 		is_colonial_nation = no
 		NOT = { has_reform = revolutionary_empire_reform }
 	}
