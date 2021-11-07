@@ -1139,9 +1139,7 @@ emp_pap_slot_4 = {
 			curia_treasury_size = 2000
 		}
 		effect = {
-			effect = {
 			add_prestige = 20
-		}
 		}
 	emp_pap_new_st_peters_basilica = {
 		icon = new_st_peters_basilica
