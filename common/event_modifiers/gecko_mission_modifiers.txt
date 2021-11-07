@@ -202,3 +202,8 @@ ven_la_francocrazia = {
 	naval_forcelimit_modifier = 0.5
 	galley_power = 0.25
 }
+
+bng_sufi_mystic_settlers = {
+	build_cost = -0.15
+	religious_unity = 0.1
+}

@@ -1562,7 +1562,7 @@ livestock = {
 		cavalry_power = 0.1
 	}
 	province = {
-		land_forcelimit = 0.5
+		local_manpower = 0.25
 	}
 	chance = {
 		factor = 30
