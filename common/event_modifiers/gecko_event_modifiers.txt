@@ -163,3 +163,8 @@ PR_manpower_edict_cooldown = {
 	global_manpower = 0.001
 }
 		
+
+gc_african_corridor = {
+	allowed_num_of_buildings = -2
+	local_development_cost = 0.5
+}
