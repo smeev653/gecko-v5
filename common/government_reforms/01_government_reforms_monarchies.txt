@@ -436,10 +436,6 @@ iqta = {
 		government_abilities = {
 			iqta_mechanic
 		}
-		has_pashas = yes 
-		custom_attributes = {
-			enables_ghilman_estate = yes #used for localization of estate privilege
-		}
 	}
 }
 
