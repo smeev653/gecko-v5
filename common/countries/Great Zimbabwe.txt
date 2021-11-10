@@ -1,7 +1,7 @@
 #Country Name: Please see filename.
 
 graphical_culture = asiangfx
-color = { 21  16  16 }
+color = { 177  12  12 }
 
 historical_score = 1300
 
