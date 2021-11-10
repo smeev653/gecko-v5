@@ -76,6 +76,7 @@ infantry_leader = {
 	
 	# Bonus
 	infantry_power = 0.1
+	infantry_cost = -0.1
 
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
@@ -93,6 +94,7 @@ cavalry_leader = {
 	
 	# Bonus
 	cavalry_power = 0.1
+	cavalry_cost = -0.1
 
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
