@@ -107,17 +107,6 @@ country_event = {
 			region = north_china_region
 			controlled_by = REB
 		}
-		any_owned_province = {
-			OR = {
-				area = gansu_area
-				area = west_gansu_area
-				area = shaanxi_area
-				area = shanxi_area
-				area = hebei_area
-				area = chengde_area
-				area = liaoning_area
-			}
-		}
 	}
 	
 	immediate = {
@@ -128,15 +117,7 @@ country_event = {
 						controlled_by = REB
 						controlled_by = ROOT
 					}
-					OR = {
-						area = gansu_area
-						area = west_gansu_area
-						area = shaanxi_area
-						area = shanxi_area
-						area = hebei_area
-						area = chengde_area
-						area = liaoning_area
-					}
+		
 					OR = {
 						controlled_by = REB
 						controlled_by = ROOT
@@ -266,13 +247,6 @@ country_event = {
 			region = xinan_region
 			controlled_by = REB
 		}
-		any_owned_province = {
-			OR = {
-				area = yun_gui_area
-				#area = chuannan_area
-				#area = yun_gui_borderland_area
-			}
-		}
 	}
 	
 	immediate = {
@@ -283,11 +257,7 @@ country_event = {
 						controlled_by = REB
 						controlled_by = ROOT
 					}
-					OR = {
-						area = yun_gui_area
-						#area = chuannan_area
-						#area = yun_gui_borderland_area
-					}
+					
 					OR = {
 						controlled_by = REB
 						controlled_by = ROOT
@@ -354,15 +324,7 @@ country_event = {
 			region = south_china_region
 			controlled_by = REB
 		}
-		any_owned_province = {
-			OR = {
-				area = zhejiang_area
-				area = fujian_area
-				area = guangdong_area
-				area = west_guangdong_area
-				area = guangxi_area
-			}
-		}
+
 	}
 	
 	immediate = {
@@ -380,10 +342,7 @@ country_event = {
 								controlled_by = REB
 								controlled_by = ROOT
 							}
-							OR = {
-								area = zhejiang_area
-								area = fujian_area
-							}
+							
 							OR = {
 								controlled_by = REB
 								controlled_by = ROOT
@@ -422,11 +381,7 @@ country_event = {
 								controlled_by = REB
 								controlled_by = ROOT
 							}
-							OR = {
-								area = guangdong_area
-								area = west_guangdong_area
-								area = guangxi_area
-							}
+							
 							OR = {
 								controlled_by = REB
 								controlled_by = ROOT
@@ -634,33 +589,7 @@ country_event = {
 	option = {
 		name = ming_crisis.9.A
 
-		liaoning_area = {
-			limit = {
-				owned_by = CSH
-				NOT = { is_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-
-		hebei_area = {
-			limit = {
-				owned_by = CSH
-				NOT = { is_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-
-
-		shanxi_area = {
-			limit = {
-				owned_by = CSH
-				NOT = { is_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
+		
 		
 		if = {
 			limit = {

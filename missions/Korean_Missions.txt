@@ -39,34 +39,6 @@ korea_nomad_group = {
 			add_prestige = 15
 			add_legitimacy = 10
 		
-			ningguta_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			jilin_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			liaoning_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			furdan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
@@ -84,16 +56,6 @@ korea_nomad_group = {
 		
 		provinces_to_highlight = {
 			ROOT = {
-				NOT = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						OR = {
-							area = ningguta_area
-							area = jilin_area
-							area = liaoning_area
-							area = furdan_area
-						}
-						value = 6
-					}
 				}
 			}
 			OR = {

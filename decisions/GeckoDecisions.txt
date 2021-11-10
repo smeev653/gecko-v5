@@ -391,7 +391,6 @@ country_decisions = {
 						is_state_core = ROOT
 						NOT = {
 							OR = {
-								has_state_edict = edict_centralization_effort
 								has_state_edict = edict_advancement_effort
 								has_state_edict = edict_defensive_edict
 								has_state_edict = edict_feudal_de_jure_law
@@ -399,8 +398,7 @@ country_decisions = {
 								has_state_edict = edict_protect_trade
 								has_state_edict = edict_religion_enforced
 								has_state_edict = edict_religious_unity
-								has_state_edict = edict_of_absolutism
-								has_state_edict = devastation_edict
+								has_state_edict = edict_devastation_edict
 							}
 						}
 					}
