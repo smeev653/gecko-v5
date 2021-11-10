@@ -1237,6 +1237,7 @@ crown_colony_subject = {
 	ship_recruit_speed = 0.5
 	local_ship_repair = -0.5
 	heavy_ship_cost = 0.2
+	trade_range_modifier = -0.75
 }
 
 private_enterprise_subject = {
@@ -1251,6 +1252,7 @@ private_enterprise_subject = {
 	ship_recruit_speed = 0.5
 	local_ship_repair = -0.5
 	heavy_ship_cost = 0.2
+	trade_range_modifier = -0.75
 }
 
 self_governing_colony_subject = {
@@ -1265,6 +1267,7 @@ self_governing_colony_subject = {
 	ship_recruit_speed = 0.5
 	local_ship_repair = -0.5
 	heavy_ship_cost = 0.2
+	trade_range_modifier = -0.75
 }								 		 
 march_subject = {
 	land_forcelimit = 1
