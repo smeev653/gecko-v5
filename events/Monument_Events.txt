@@ -1,1 +1,0 @@
-namespace = monument_events
