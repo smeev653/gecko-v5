@@ -62,7 +62,7 @@ korea_nomad_group = {
 				area = furdan_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = root }
-		
+		}
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
