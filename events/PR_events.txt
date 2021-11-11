@@ -206,38 +206,3 @@ country_event = {
 		add_country_modifier = { name = zaidi_scholar_modifier duration = 7300 }
 	}
 }
-
-
-# Iberian Wedding failsafe
-country_event = {
-    id = PR_events.3
-    title = "PR_events.3.t"
-    desc = "PR_events.3.d"
-    picture = COURT_eventPicture
-	hidden = yes
-
-    trigger = {
-		AND = {
-			is_year = 1485
-			NOT = { 
-				has_country_flag = PR_iberian_wedding_late
-			}
-		}
-	}
-	
-    mean_time_to_happen = {
-        days = 1
-    }
-	
-    immediate = {
-		hidden_effect = {
-			country_event = { 
-				id = flavor_spa.3716
-				days = 1
-			}
-		}
-	}
-	
-	option = {
-    }
-}
