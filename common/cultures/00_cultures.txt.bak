@@ -7,23 +7,6 @@
 # graphical_culture = westerngfx
 # second_graphical_culture = muslimgfx (fallback if the first does not exist)
 
-
-
-great_lakes_group = {
-	graphical_culture = westerngfx
-	poop6 = {
-
-		dynasty_names = { poop
-		}
-		male_names= { poop
-		}
-		female_names = { poop
-		}
-	}	
-}
-
-
-
 byzantine = {
 
 	graphical_culture = westerngfx

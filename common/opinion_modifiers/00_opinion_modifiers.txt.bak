@@ -4699,8 +4699,8 @@ opinion_trent = {
 	opinion = 25
 	years = 10
 	yearly_decay = 2
-}
 
+}
 sitting_in_my_tribal_land_opinion = {
 	opinion = -3
 	yearly_decay = 2

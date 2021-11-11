@@ -544,7 +544,7 @@ gc_cri_branch_3 = {
 			define_ruler = {
 				name = "Tokhtamysh"
 				dynasty = "Borjigin"
-				fixed = yes
+				
 				religion = sunni
 				claim = 100
 				adm = 5

@@ -131,7 +131,7 @@ country_decisions = {
 			define_ruler = {
 				name = "Abu Sa'id"
 				dynasty = "Timurid"
-				fixed = yes
+				
 				religion = sunni
 				claim = 100
 				adm = 4

@@ -131,7 +131,7 @@ country_decisions = {
 			define_ruler = {
 				name = "Ismail I"
 				dynasty = "Safavid"
-				fixed = yes
+				
 				religion = shiite
 				claim = 100
 				adm = 6

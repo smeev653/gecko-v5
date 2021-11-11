@@ -4407,6 +4407,7 @@ on_country_creation = {
 on_pillaged_capital = {
 		slave_raid_pillage_capital_effect = yes
 }
+}
 
 #FROM = country dev was transferred from, ROOT = country doing the transferring
 on_transfer_development = {

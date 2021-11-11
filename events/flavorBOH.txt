@@ -77,7 +77,7 @@ country_event = {
 			religion = hussite
 			culture = czech
 			age = 25
-			fixed = yes
+			
 		}
 		if = {
 			limit = {
@@ -120,7 +120,7 @@ country_event = {
 	#		dip = 4
 	#		mil = 3
 	#		religion = hussite
-	#		fixed = yes
+	#		
 	#	}
 	#	if = {
 	#		limit = {

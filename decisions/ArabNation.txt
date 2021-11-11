@@ -126,7 +126,7 @@ country_decisions = {
 			define_ruler = {
 				name = "Husayn"
 				dynasty = "ibn Ali"
-				fixed = yes
+				
 				religion = sunni
 				claim = 100
 				adm = 5
