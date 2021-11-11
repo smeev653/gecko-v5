@@ -94,7 +94,10 @@ country_decisions = {
 				dip = 5
 				mil = 6
 				}
-			kill_heir = yes	
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

@@ -550,8 +550,11 @@ gc_cri_branch_3 = {
 				adm = 5
 				dip = 5
 				mil = 6
-			}							
-			kill_heir = yes
+			}
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}			
             if = {
 				limit = {
 					NOT = { government = republic }

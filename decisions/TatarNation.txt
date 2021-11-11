@@ -166,7 +166,10 @@ country_decisions = {
 				dip = 5
 				mil = 6
 				}							
-			kill_heir = yes
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}
 		}
 		ai_will_do = {
 			factor = 1

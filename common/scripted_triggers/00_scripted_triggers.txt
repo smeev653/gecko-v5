@@ -1164,7 +1164,7 @@ province_has_current_tech_fort_trigger = {
 
 
 
-heck_reducing_estate_revolt_size_trigger = {
+check_reducing_estate_revolt_size_trigger = {
 	if = {
 		limit = {
 			NOT = { num_of_cities = 16 }

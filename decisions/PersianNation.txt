@@ -138,7 +138,10 @@ country_decisions = {
 				dip = 5
 				mil = 5
 				}							
-			kill_heir = yes
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
 			change_unit_type = gunpowder_empire
 			change_estate_land_share = {
 				estate = estate_nobles

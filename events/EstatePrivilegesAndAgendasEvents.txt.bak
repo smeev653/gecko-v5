@@ -49,10 +49,7 @@ country_event = {
 		
 		remove_government_reform = elective_monarchy
 		#set_legacy_government = administrative_monarchy
-		if = {
-				limit = { has_heir = yes }
-				kill_heir = {}
-			}
+		remove_heir = ()
 		add_absolutism = 10
 
 		hidden_effect = {
