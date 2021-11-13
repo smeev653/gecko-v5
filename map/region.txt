@@ -480,7 +480,11 @@ guinea_region = {
 		sao_tome_area
 		pr_africa_area_9
 		pr_africa_area_10
-	}
+		pr_africa_area_11
+		pr_africa_area_12
+		pr_africa_area_13
+		pr_africa_area_14
+	}	
 	monsoon = {
 		00.06.01
 		00.09.30

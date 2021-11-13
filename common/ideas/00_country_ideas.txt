@@ -305,7 +305,7 @@ SPA_ideas = {
 	free = yes		#will be added at load.
 
 	devout_catholisism = {
-		shock_damage_received = -0.35
+		shock_damage_received = -0.2
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes

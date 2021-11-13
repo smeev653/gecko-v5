@@ -1458,9 +1458,30 @@ south_german_organ_tradition = {
 }
 
 rome_reborn = {
-	prestige = 1
+	picture = "imperial_authority"
+	prestige = 3
+	technology_cost = -0.05
+	global_institution_spread = 0.1
 	global_tax_modifier = 0.05
-}
+	spy_offence = 0.1
+	advisor_pool = 1
+	free_leader_pool = 1
+	diplomats = 1
+	diplomatic_reputation = 3
+	diplomatic_upkeep = 1
+	land_forcelimit = 50
+	global_manpower = 50
+	tax_income = 50
+	build_cost = -0.05
+	build_time = -0.05
+	global_unrest = -2
+	state_maintenance_modifier = -0.25
+	core_creation = -0.1
+	stability_cost_modifier = -0.1
+	legitimacy = 0.25
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+	mercenary_cost = -0.25}
 
 rebel_sentiment = {
 	local_unrest = 15
@@ -4019,6 +4040,10 @@ eth_itinerant_capital = {
 	global_unrest = -0.5
 }
 
+eth_accepted_society = {
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -1
+}
 eth_independent_church = {
 	stability_cost_modifier = 0.1
 	idea_cost = -0.05
@@ -4035,7 +4060,6 @@ eth_mount_geshen = {
 }
 
 eth_negusa_nagast_issues = {
-	global_autonomy = 0.2
 }
 #Bahmanis
 bah_bidriware_boom = {
@@ -10844,27 +10868,7 @@ borgia_diplomacy = {
 	diplomatic_reputation = 1
 }
 
-# Mandala Modifiers
 
-siamese_revolution = {
-	tolerance_own = 1
-	global_spy_defence = 0.15
-}
-
-siamese_age_of_openness = {
-	global_institution_spread = 0.15
-	global_spy_defence = -0.15
-}
-
-emerald_buddha = {
-	prestige = 0.5
-	monthly_karma = 0.1
-}
-
-emerald_buddha_alternate = {
-	prestige = 0.5
-	monthly_karma = -0.1
-}
 #Estate Privileges
 
 estate_dhimmi_lighter_dhimmi_taxes_privilege_mod = {

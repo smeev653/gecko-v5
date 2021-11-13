@@ -107,7 +107,7 @@ east_africa_region = {
 kongo_region = {
 	kongo_region
 }
-south_africa_regionn = {
+south_africa_region = {
 	south_africa_region
 }
 central_africa_region = {
@@ -221,3 +221,10 @@ china_superregion={
 
 india_superregion={
 }
+
+far_east_superregion={
+}
+
+near_east_superregion={
+}
+

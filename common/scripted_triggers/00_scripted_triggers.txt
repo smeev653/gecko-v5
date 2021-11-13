@@ -891,8 +891,6 @@ has_completed_all_reforms_trigger = {
 			has_reform = many_fingers_of_god_reform
 			has_reform = religious_permanent_revolution_reform
 			has_reform = religion_in_one_country_reform
-			has_reform = native_remain_being_native_reform
-			has_reform = tribe_remain_tribal_reform
 		}
 	}
 }
@@ -916,14 +914,22 @@ has_final_tier_reforms_trigger = {
 			has_reform = many_fingers_of_god_reform
 			has_reform = religious_permanent_revolution_reform
 			has_reform = religion_in_one_country_reform
-			has_reform = native_remain_being_native_reform
-			has_reform = tribe_remain_tribal_reform
 		}
 	}
 }
 
 has_holy_order_trigger = {
-#removed
+	custom_trigger_tooltip = {
+		tooltip = "has_holy_order_trigger_tooltip"
+		OR = {
+			holy_order = jesuit_order
+			holy_order = dominican_order
+			holy_order = franciscan_order
+			holy_order = shadhili_order
+			holy_order = qadiri_order
+			holy_order = aissawa_order
+		}
+	}
 }
 
 same_govt_as_root_trigger = {
