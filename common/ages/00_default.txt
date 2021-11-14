@@ -189,10 +189,8 @@ age_of_discovery = {
 		
 		ab_ottoman_siege_ability = {
 			allow = {
-				OR = {
-						tag = TUR
-						tag = RUM
-					}	
+				tag = TUR
+					}
 			}
 			modifier = {
 				siege_ability = 0.33
@@ -276,7 +274,10 @@ age_of_discovery = {
 		}
 		ab_mamluk_tradition = {
 			allow = {
-				tag = MAM
+				OR = {
+					tag = MAM
+					tag = EGY
+				}	
 			}
 			modifier = {
 				army_tradition_from_battle = 0.5
