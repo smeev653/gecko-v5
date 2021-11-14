@@ -17,6 +17,7 @@ christian = {
 	
 	
 	catholic = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 204 204 0 }
 		icon = 1
@@ -317,6 +318,7 @@ christian = {
 	}
 
 	anglican = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 135 77 255 }
@@ -348,6 +350,7 @@ christian = {
 	}
 	
 	hussite = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 244 55 9 }
@@ -382,6 +385,7 @@ christian = {
 	}
 	
 	protestant = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 0 0 178 }
@@ -519,6 +523,7 @@ christian = {
 	}
 
 	reformed = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 76 76 229 }
@@ -636,6 +641,7 @@ christian = {
 	}
 
 	orthodox = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 178 127 0 }
@@ -766,6 +772,7 @@ christian = {
 	}
 	
 	coptic = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		flags_with_emblem_percentage = 20
@@ -800,6 +807,7 @@ christian = {
 }
 
 muslim = {
+	allow_female_defenders_of_the_faith = yes
 	defender_of_faith = yes
 	
 	center_of_religion = 385 # Mecca
@@ -1377,6 +1385,7 @@ eastern = {
 	flag_emblem_index_range = { 58 80 }
 
 	buddhism = { #Theravada
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 204 76 0 }
 		icon = 24
@@ -1405,6 +1414,7 @@ eastern = {
 	}
 	
 	vajrayana = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 204 76 76 }
@@ -1434,6 +1444,7 @@ eastern = {
 	}
 	
 	mahayana = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 204 76 127 }
@@ -1463,6 +1474,7 @@ eastern = {
 	}
 
 	confucianism = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 214 229 140 }
 		icon = 9
@@ -1475,6 +1487,7 @@ eastern = {
 	}
 
 	shinto = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 204 0 0 }
 		icon = 10
@@ -1503,6 +1516,7 @@ dharmic = {
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
 
 	hinduism = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		can_have_secondary_religion = yes
 		color = { 0 204 204 }
@@ -1533,6 +1547,7 @@ dharmic = {
 	}
 
 	sikhism = {
+		allow_female_defenders_of_the_faith = yes
 		color = { 0 153 153 }
 		icon = 15
 		allowed_conversion = {
@@ -2142,6 +2157,7 @@ pagan = {
 	flag_emblem_index_range = { 83 96 }
 
 	animism = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 127 0 0 }
 		icon = 11
@@ -2157,6 +2173,7 @@ pagan = {
 		heretic = { SNAKE_CLAN }
 	}
 	shamanism = { #Fetishism, tag kept to avoid breaking saves.
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 127 76 76 }
 		icon = 12
@@ -2172,6 +2189,7 @@ pagan = {
 		heretic = { GOAT_SKULL }
 	}
 	totemism = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 127 115 115 }
 		icon = 13
@@ -2188,6 +2206,7 @@ pagan = {
 	}
 	
 	inti = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		color = { 64 115 115 }
 		icon = 18
@@ -2209,6 +2228,7 @@ pagan = {
 	}
 	
 	nahuatl = {
+		allow_female_defenders_of_the_faith = yes
 		color = { 64 115 64 }
 		icon = 17
 		country = {
@@ -2229,6 +2249,7 @@ pagan = {
 	}
 	
 	mesoamerican_religion = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		#color = { 76 25 178 }
 		color = { 127 25 178 }
@@ -2248,6 +2269,7 @@ pagan = {
 	}
 	
 	norse_pagan_reformed = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		icon = 21
 		color = { 191 191 191 }
@@ -2266,6 +2288,7 @@ pagan = {
 	}
 	
 	tengri_pagan_reformed = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		icon = 27
 		color = { 25 76 217 }
@@ -2278,6 +2301,7 @@ pagan = {
 	}
 	
 	dreamtime = {
+		allow_female_defenders_of_the_faith = yes
 		icon = 29
 		color = { 197 133 43 }
 		country = {
@@ -2299,6 +2323,7 @@ jewish_group = {
 	flag_emblem_index_range = { 106 107 }
 
 	jewish = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		icon = 20
 		color = { 0 156 231 }
@@ -2408,6 +2433,7 @@ zoroastrian_group = {
 
 	flag_emblem_index_range = { 110 110 }
 	zoroastrian = {
+		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
 		icon = 26
 		color = { 127 178 51 }
