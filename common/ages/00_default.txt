@@ -191,7 +191,7 @@ age_of_discovery = {
 			allow = {
 				tag = TUR
 					}
-			}
+			
 			modifier = {
 				siege_ability = 0.33
 			}
@@ -311,7 +311,7 @@ age_of_discovery = {
 				shock_damage  = 0.2
 
 				}
-			}
+			
 			modifier = {
 				land_forcelimit_modifier = 0.35
 			}
