@@ -11,4 +11,34 @@ spriteTypes = {
 		name = "GFX_ab_hungary_fort_defense"
 		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ab_burgundy_merc_manpower"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_timurids_tech"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_mamluks_force_limit"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_morocco_raids"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_bukhara_arty"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_arabia_speed"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_hesse_mercs"
+		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+	}
 }	
