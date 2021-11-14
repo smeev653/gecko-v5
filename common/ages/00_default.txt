@@ -280,7 +280,7 @@ age_of_discovery = {
 				}	
 			}
 			modifier = {
-				army_tradition_from_battle = 0.5
+				shock_damage  = 0.2
 			}
 			ai_will_do = {
 				factor = 10
