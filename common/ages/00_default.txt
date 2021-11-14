@@ -274,6 +274,17 @@ age_of_discovery = {
 				factor = 10
 			}
 		}
+		ab_mamluk_tradition = {
+			allow = {
+				tag = MAM
+			}
+			modifier = {
+				army_tradition_from_battle = 0.5
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
 	}
 }
 

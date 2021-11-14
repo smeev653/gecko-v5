@@ -883,7 +883,7 @@ quantity_ideas = {
 		global_manpower_modifier = 0.50
 	}
 	the_young_can_serve = {
-		manpower_recovery_speed = 0.30
+		manpower_recovery_speed = 0.20
 	}
 	enforced_service = {
 		global_regiment_cost = -0.1
