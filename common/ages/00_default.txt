@@ -189,11 +189,9 @@ age_of_discovery = {
 		
 		ab_ottoman_siege_ability = {
 			allow = {
-				OR = {
-						tag = TUR
-						tag = RUM
-					}	
-			}
+				tag = TUR
+					}
+			
 			modifier = {
 				siege_ability = 0.33
 			}
@@ -301,12 +299,19 @@ age_of_discovery = {
 		}
 
 		ab_mamluks_force_limit = {
+
 			allow = {
 				OR = {
 					tag = MAM
 					tag = EGY
-				}
+
+				}	
 			}
+			modifier = {
+				shock_damage  = 0.2
+
+				}
+			
 			modifier = {
 				land_forcelimit_modifier = 0.35
 			}
@@ -321,6 +326,7 @@ age_of_discovery = {
 			}
 			modifier = {
 				may_perform_slave_raid_on_same_religion = yes
+
 			}
 			ai_will_do = {
 				factor = 10
@@ -764,21 +770,6 @@ age_of_absolutism = {
 			}
 			modifier = {
 				manpower_recovery_speed = 0.35
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-
-		ab_manchu_banner = {
-			allow = {
-				OR = {
-					tag = MCH
-					tag = QNG
-				}
-			}
-			modifier = {
-				discipline = 0.05
 			}
 			ai_will_do = {
 				factor = 100
