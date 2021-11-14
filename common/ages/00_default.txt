@@ -306,12 +306,7 @@ age_of_discovery = {
 					tag = EGY
 
 				}	
-			}
-			modifier = {
-				shock_damage  = 0.2
-
-				}
-			
+			}	
 			modifier = {
 				land_forcelimit_modifier = 0.35
 			}
