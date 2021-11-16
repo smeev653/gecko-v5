@@ -129,7 +129,7 @@ GBR_ideas = {
 	}
 
 	bonus = {
-		backrow_artillery_damage = 0.2
+		backrow_artillery_damage = 0.15
 	}
 	
 	trigger = {
@@ -271,7 +271,7 @@ RUS_ideas = {
 	}
 	russian_artillery_yard = {
 		artillery_cost = -0.2
-		artillery_power = 0.1
+		backrow_artillery_damage = 0.15
 	}
 	gatherers_of_tribute = {
 		global_tax_modifier = 0.2
@@ -281,11 +281,11 @@ RUS_ideas = {
 		army_tradition = 0.25
 	}	
 	abolish_the_mestnichestvo = {
-		yearly_corruption = -0.2
+		recover_army_morale_speed = 0.1
 	}
 	curriculum_of_the_cadet_corps = {
 		land_morale = 0.1
-		fire_damage_received = -0.1
+		fire_damage_received = -0.15
 	}
 }
 
@@ -1398,7 +1398,7 @@ SCO_Ideas = {
 HUN_ideas = {
 	start = {
 		cavalry_power = 0.20
-		recover_army_morale_speed = 0.05
+		recover_army_morale_speed = 0.1
 	}
 	
 	bonus = {
@@ -1696,7 +1696,7 @@ TIM_ideas = {
 	}
 	
 	the_mantle_of_the_great_khan = {
-		land_morale = 0.15
+		land_morale = 0.20
 	}
 	timurid_renaissance = {
 		technology_cost = -0.1
@@ -1711,7 +1711,7 @@ TIM_ideas = {
 		global_own_trade_power = 0.25
 	}
 	reform_the_diwan = {
-		manpower_recovery_speed = 0.2
+		fire_damage_received = -0.15
  	}
 }
 
