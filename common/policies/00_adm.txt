@@ -327,7 +327,8 @@ the_spy_discovery_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	province_warscore_cost = -0.25
+	province_warscore_cost = -0.10
+	reinforce_speed = 0.2
 
 	ai_will_do = {
 		factor = 0.6 #Keep in mind lower stab cost is probably pretty weak given this costs ADM...
