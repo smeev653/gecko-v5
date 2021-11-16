@@ -57,19 +57,29 @@ country_decisions = {
 				province_id = 1204
 				province_id = 2796
 				province_id = 2774
-				
+				region = central_africa_region
+				region = kongo_region
 			}
+		}
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
-		}
+		
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-				
+			
+			num_of_owned_provinces_with = {
+								is_core = ROOT
+								OR = {
+									region = central_africa_region
+									region = kongo_region
+								}
+								value = 30
+							}	
 			owns_core_province = 4037
 			owns_core_province = 4040 
 			owns_core_province = 4039  
