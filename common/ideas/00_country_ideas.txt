@@ -14924,7 +14924,7 @@ CLI_ideas = {
 
 WES_ideas = {
 	start = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 		land_forcelimit_modifier = 0.33
 	}
 	bonus = {
