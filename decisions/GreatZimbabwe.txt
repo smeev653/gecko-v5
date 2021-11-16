@@ -61,10 +61,6 @@ country_decisions = {
 				region = kongo_region
 			}
 		}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
 		
 		allow = {
 			adm_tech = 10

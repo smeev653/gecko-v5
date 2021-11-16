@@ -69,7 +69,7 @@ country_event = {
 								discover_province = PREV
 							}
 			}
-			south_africa_regionn = {
+			south_africa_region = {
 				ROOT = {
 								discover_province = PREV
 							}
