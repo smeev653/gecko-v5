@@ -189,7 +189,7 @@ SWE_ideas = {
 		global_autonomy  = -0.05
 	}
 	indelningsverket = {
-		manpower_recovery_speed = 0.20
+		manpower_recovery_speed = 0.15
 	}
 	swedish_absolutism = {
 		stability_cost_modifier = -0.1
@@ -271,7 +271,7 @@ RUS_ideas = {
 	}
 	russian_artillery_yard = {
 		artillery_cost = -0.2
-		backrow_artillery_damage = 0.15
+		backrow_artillery_damage = 0.10
 	}
 	gatherers_of_tribute = {
 		global_tax_modifier = 0.2
@@ -281,11 +281,11 @@ RUS_ideas = {
 		army_tradition = 0.25
 	}	
 	abolish_the_mestnichestvo = {
-		recover_army_morale_speed = 0.1
+		reinforce_speed = 0.25
 	}
 	curriculum_of_the_cadet_corps = {
 		land_morale = 0.1
-		fire_damage_received = -0.15
+		fire_damage_received = -0.10
 	}
 }
 
