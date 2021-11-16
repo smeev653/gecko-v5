@@ -128,8 +128,7 @@ caliphate_proclaimed = {
 
 gecko_cannon_foundries = {
 	artillery_power = 0.05
-	artillery_cost = -0.05
-	army_tradition = 0.5
+	army_tradition = 0.25
 }
 
 gecko_mysorean_rockets = {
@@ -146,18 +145,15 @@ gecko_handheld_rockets = {
 }
 
 gecko_mysore_encourage_production = {
-	production_efficiency = 0.15
+	production_efficiency = 0.10
 }
 
 gecko_mysore_expand_ports = {
-	center_of_trade_upgrade_cost = -0.5
 	global_trade_power = 0.1
 }
 
 gecko_mysore_navy = {
 	naval_morale = 0.1
-	global_ship_trade_power = 0.2
-	navy_tradition = 1
 }
 
 gecko_mysore_industrial_expansion = {
@@ -170,7 +166,7 @@ gecko_south_indian_empire = {
 }
 
 gecko_entrepreneural_spirit = {
-	trade_efficiency = 0.2
+	trade_efficiency = 0.1
 }
 
 gecko_marathas_subdued = {
