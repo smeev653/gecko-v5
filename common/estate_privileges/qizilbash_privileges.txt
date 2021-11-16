@@ -114,10 +114,10 @@ estate_qizilbash_establish_qurchis = {
 		}
 	}
 	penalties = {
-		global_tax_modifier = -0.10
+		global_tax_modifier = -0.05
 	}
 	benefits = {
-		shock_damage_received = -0.10
+		shock_damage_received = -0.15
 	}
 	ai_will_do = {					
         factor = 1000                               
