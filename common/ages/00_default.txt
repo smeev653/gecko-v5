@@ -308,7 +308,7 @@ age_of_discovery = {
 				}	
 			}	
 			modifier = {
-				land_forcelimit_modifier = 0.35
+				production_efficiency = 0.15
 			}
 			ai_will_do = {
 				factor = 10
