@@ -106,7 +106,9 @@ at_the_gates_of_europe = {
 beyliks_subjugated = {
 	land_morale = 0.1
 	cavalry_cost = -0.1
+	land_forcelimit_modifier = 0.25
 }
+
 pap_papal_swiss_guard = {
 	mercenary_discipline = 0.05
 }
