@@ -8887,7 +8887,7 @@ RZW_ideas = {
 		global_tax_modifier = 0.1
 	}
 	rzw_discipline_and_traning = {
-		discipline = 0.05
+		army_tradition_from_battle = 0.5
 	}
 	rzw_mwari_cult = {
 		global_unrest = -1
