@@ -269,6 +269,7 @@ development = {
 	local_sailors = 60			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.2
 	local_amount_of_banners = 0.066
+	local_amount_of_cawa = 0.1
 }
 
 development_scaled = {
@@ -1698,9 +1699,8 @@ janissary_regiment = {
 
 cawa_regiment = {
 	shock_damage_received = -0.15
-	land_attrition = -0.25
-	reinforce_cost_modifier = 0.25
-	reinforce_speed = -0.25
+	shock_damage = 0.15
+	reinforce_cost_modifier = 1
 }
 
 revolutionary_guard_regiment = {

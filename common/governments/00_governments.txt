@@ -33,6 +33,7 @@ monarchy = {
 				persian_theocracy #dum
 				mughal_government #smeev
 				silk_road_empire #smeev
+				gc_imperial_spain_reform
 			}
 		}
 		hereditary_vs_nobility = {
