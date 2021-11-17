@@ -1,8 +1,7 @@
 jesuit_order = {
     icon = GFX_holy_order_jesuits
     trigger = {
-        culture_group = byzantine
-        religion = catholic
+        tag = ULM
     }
     cost = 50
     cost_type = adm_power
@@ -28,8 +27,7 @@ jesuit_order = {
 dominican_order = {
     icon = GFX_holy_order_dominicans
     trigger = {
-        culture_group = byzantine
-        religion = catholic
+        tag = ULM
     }
     cost = 50
     cost_type = dip_power
@@ -70,8 +68,7 @@ dominican_order = {
 franciscan_order = {
     icon = GFX_holy_order_franciscans
     trigger = {
-        culture_group = byzantine
-        religion = catholic
+         tag = ULM
     }
     cost = 50
     cost_type = mil_power
@@ -101,8 +98,7 @@ franciscan_order = {
 shadhili_order = {
     icon = GFX_holy_order_shadhili
     trigger = {
-        primary_culture = byzantine
-        religion_group = muslim
+         tag = ULM
     }
     cost = 50
     cost_type = adm_power
@@ -130,8 +126,7 @@ shadhili_order = {
 qadiri_order = {
     icon = GFX_holy_order_qadiri
     trigger = {
-        primary_culture = byzantine
-        religion_group = muslim
+        tag = ULM
     }
     cost = 50
     cost_type = dip_power
@@ -159,8 +154,7 @@ qadiri_order = {
 aissawa_order = {
     icon = GFX_holy_order_aissawa
     trigger = {
-        primary_culture = byzantine
-        religion_group = muslim
+         tag = ULM
     }
     cost = 50
     cost_type = mil_power

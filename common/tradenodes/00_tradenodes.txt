@@ -1540,7 +1540,8 @@ crimea={
 
 krakow={
 	location=262
-
+	color = { 114  70  103 }
+	
 	outgoing={
 		name="rheinland"
 		path={

@@ -11,7 +11,7 @@
 
 great_lakes_group = {
 	graphical_culture = westerngfx
-	poop6 = {
+	poop = {
 
 		dynasty_names = { poop
 		}
@@ -27,7 +27,7 @@ great_lakes_group = {
 byzantine = {
 
 	graphical_culture = westerngfx
-	poop = {
+	poop1 = {
 
 		dynasty_names = { poop
 		}
@@ -40,7 +40,7 @@ byzantine = {
 
 south_slavic = {
 	graphical_culture = easterngfx
-	poop = {
+	poop2 = {
 
 		dynasty_names = { poop
 		}
@@ -54,7 +54,7 @@ south_slavic = {
 
 sahelian = {
 	graphical_culture = africangfx
-	poop = {
+	poop3 = {
 
 		dynasty_names = { poop
 		}
@@ -66,7 +66,7 @@ sahelian = {
 }
 west_african = {
 	graphical_culture = africangfx
-	poop = {
+	poop4 = {
 
 		dynasty_names = { poop
 		}
@@ -81,7 +81,7 @@ west_african = {
 african = {
 
 	graphical_culture = westerngfx
-	poop1 = {
+	poop5 = {
 
 		dynasty_names = { poop
 		}
@@ -95,7 +95,7 @@ african = {
 caucasian = {
 
 	graphical_culture = westerngfx
-	poop2 = {
+	poop6 = {
 
 		dynasty_names = { poop
 		}
@@ -109,7 +109,7 @@ caucasian = {
 sudanese = {
 
 	graphical_culture = westerngfx
-	poop3 = {
+	poop7 = {
 
 		dynasty_names = { poop
 		}
@@ -123,7 +123,7 @@ sudanese = {
 baltic = {
 
 	graphical_culture = westerngfx
-	poop4 = {
+	poop8 = {
 
 		dynasty_names = { poop
 		}
@@ -137,7 +137,7 @@ baltic = {
 mande = {
 
 	graphical_culture = westerngfx
-	poop5 = {
+	poop9 = {
 
 		dynasty_names = { poop
 		}
