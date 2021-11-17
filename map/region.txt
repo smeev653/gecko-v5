@@ -250,6 +250,7 @@ poland_region = {
 		central_poland_area
 		sandomierz_area
 		kuyavia_area
+		breg_area
 	}
 }
 
