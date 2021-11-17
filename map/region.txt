@@ -106,6 +106,7 @@ north_german_region = {
 		mittelmark_area
 		vorpommern_area
 		bohemia_area
+		hradecko_area
 		moravia_area
 		hinter_pommern_area
 		north_rhine_area
@@ -245,6 +246,7 @@ poland_region = {
 		red_ruthenia_area
 		mazovia_area
 		silesia_area
+		opole_area
 		central_poland_area
 		sandomierz_area
 		kuyavia_area

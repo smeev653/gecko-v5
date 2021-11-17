@@ -985,24 +985,36 @@ lower_don_area = { #5
 # Germany			 				   #
 ########################################
 
-silesia_area = { #4
-	263 264 2966 4238 4723
+silesia_area = {  #4
+ 2966 6112 6111 4238 
 }
 
-bohemia_area = { #5
-	 266 2968 2970 4725 4724
+opole_area = { #3
+263 4723 6107 
 }
 
-erzgebirge_area = { #3
-	267 1771 2967
+breg_area = { #4
+6110 6109 6108 264 
+}
+
+hradecko_area = { #4
+ 4724 6104 2970 6105 
+}
+
+bohemia_area = {  #5
+	 266 2968 6103 6102 4725
+}
+
+erzgebirge_area = { #4
+	267 1771 2967 6101
 }
 
 lusatia_area = { #3
 	60 1763 4778
 }
 
-moravia_area = {
-	265 4237 4726
+moravia_area = { #4
+6106 265 4237 4726 
 }
 
 south_saxony_area = { #4
