@@ -53,7 +53,7 @@ emp_mlo_conquest_branch = {
 				}
 				add_permanent_claim = root
 			}
-		siena_area = {
+			siena_area = {
 				limit = {
 					NOT = { is_core = root }
 					NOT = { is_permanent_claim = root }

@@ -491,6 +491,20 @@ emp_hun_bohemia_austria_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
+			breg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			opole_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			lusatia_area = {
 				limit = {
 					NOT = { is_core = ROOT }

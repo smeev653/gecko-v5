@@ -115,6 +115,7 @@ hab_holy_roman_ambitions = {
 									area = bohemia_area
 									area = erzgebirge_area
 									area = moravia_area
+									area = hradecko_area
 								}
 							}
 						}
@@ -123,6 +124,7 @@ hab_holy_roman_ambitions = {
 						area = bohemia_area
 						area = erzgebirge_area
 						area = moravia_area
+						area = hradecko_area
 					}
 				}
 			}
@@ -137,6 +139,7 @@ hab_holy_roman_ambitions = {
 					area = bohemia_area
 					area = erzgebirge_area
 					area = moravia_area
+					area = hradecko_area
 				}
 			}
 		}
@@ -146,6 +149,12 @@ hab_holy_roman_ambitions = {
 				duration = 5475 #15 years
 			}
 			silesia_area = {
+				add_permanent_claim = ROOT
+			}
+			breg_area = {
+				add_permanent_claim = ROOT
+			}
+			opole_area = {
 				add_permanent_claim = ROOT
 			}
 			hidden_effect = {
@@ -178,6 +187,20 @@ hab_holy_roman_ambitions = {
 		}
 		effect = {
 			silesia_area = {
+				add_province_modifier = {
+					name = "austrian_silesia"
+					duration = 7300
+				}
+				add_nationalism = -5
+			}
+			breg_area = {
+				add_province_modifier = {
+					name = "austrian_silesia"
+					duration = 7300
+				}
+				add_nationalism = -5
+			}
+			opole_area = {
 				add_province_modifier = {
 					name = "austrian_silesia"
 					duration = 7300

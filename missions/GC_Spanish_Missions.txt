@@ -1291,6 +1291,7 @@ gc_spain_4 = {
 				area = tuscany_area
 				area = lombardy_area
 				area = po_valley_area
+				area = siena_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1305,6 +1306,10 @@ gc_spain_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			po_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			siena_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
