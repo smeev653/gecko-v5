@@ -11,7 +11,7 @@ the_combination_act = {
 	}
 	
 	production_efficiency = 0.15
-
+	
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -134,7 +134,8 @@ agricultural_cultivations = {
 		full_idea_group = quantity_ideas
 	}		
 	
-	land_forcelimit_modifier = 0.33
+	land_forcelimit_modifier = 0.25
+	global_regiment_cost = -0.05
 
 	ai_will_do = {
 		factor = 1
@@ -492,8 +493,8 @@ land_inheritance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	discipline = 0.03
-	production_efficiency = 0.1
+	mercenary_discipline = 0.05
+	mercenary_cost = -0.25
 	
 	ai_will_do = {
 		factor = 1
