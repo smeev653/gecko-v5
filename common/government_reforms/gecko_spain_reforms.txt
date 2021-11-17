@@ -8,7 +8,7 @@ gc_imperial_spain_reform = { #tier 1
 		culture_conversion_cost = -0.15
 		monarch_diplomatic_power = 2
 		missionaries = 1
-	    manpower_in_true_faith = 0.1
+	    manpower_in_true_faith_provinces = 0.1
 	}
 	conditional = {
 		allow = {

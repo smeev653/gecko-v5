@@ -322,10 +322,8 @@ kongo_catholic_missions_slot = {
 		required_missions = { kon_gain_cardinal }
 		position = 5
 		provinces_to_highlight = {
-			OR = {
-				superregion = africa_superregion
 				superregion = south_africa_region
-			}
+			
 			NOT = { religion = catholic }
 		}
 		trigger = {
@@ -464,10 +462,8 @@ kongo_choose_path_missions_slot = {
 								continent = europe
 							}
 						}
-						OR = {
-							superregion = africa_superregion
 							superregion = south_africa_region
-						}
+						
 					}
 					add_permanent_claim = ROOT
 				}
@@ -495,7 +491,7 @@ kongo_choose_path_missions_slot = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = kon_banish_the_westerners_from_africa_tt
-				southern_africa_superregion = {
+				south_africa_region = {
 					OR = {
 						is_empty = yes
 						owner = {
@@ -1001,7 +997,7 @@ kongo_conquest_missions_slot = {
 			}
 		}
 		effect = {
-			superregion = south_africa_region
+			region = south_africa_region
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

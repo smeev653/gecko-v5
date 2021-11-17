@@ -5,12 +5,6 @@ on_startup = {
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
-	if = {
-		limit = {
-			is_emperor_of_china = yes
-		}
-		save_global_event_target_as = EmperorOfChina
-	}
 	events = {
 		muslim_school_events.20 #Pick School
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789

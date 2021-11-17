@@ -468,9 +468,7 @@ jol_missions_internal_slot = {
 		}
 		trigger = {
 			has_institution = feudalism
-			OR = {
-				NOT = { government = tribal }
-				has_reform = tribe_remain_tribal_reform
+			NOT = { government = tribal }
 			}
 		}
 		effect = { 

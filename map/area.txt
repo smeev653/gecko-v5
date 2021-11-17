@@ -3868,11 +3868,11 @@ western_aegean_area = {
 odishi_area = {
 }
 
-georgia_area = {
-}
+#georgia_area = {
+#}
 
-rakka_area = {
-}
+#rakka_area = {
+#}
 
 south_kurdistan_area = {
 }
@@ -3897,13 +3897,13 @@ east_altishahr_area = {
 
 }
 
-amnok_area = {
+#amnok_area = {
+#
+#}
 
-}
-
-north_korea_area = {
-
-}
+#north_korea_area = {
+#
+#}
 
 hejaz_area = {
 
@@ -3916,9 +3916,9 @@ sarat_area = {
 ad_dahna_area = {
 }
 
-najd_area = {
-
-}
+#najd_area = {
+#
+#}
 
 northern_england_area = {
 }
@@ -3957,7 +3957,7 @@ gujarat_area = { }
 central_doab_area = {
 }
 
-nepalese_area = { }
+#nepalese_area = { }
 
 pomerelia_area = { }
 

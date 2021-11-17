@@ -2171,7 +2171,7 @@ country_event = {
 
 	option = {
 		name = "hindu_events.49.a"
-		create_general = { tradition = -30 }
+		create_general = { tradition = 30 }
 		add_prestige = 10
 	}
 
