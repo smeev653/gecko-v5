@@ -1138,7 +1138,7 @@ dutch_republic = {
 
 		states_general_mechanic = {
 			statists = {
-				naval_forcelimit_modifier = 0.10
+				heavy_ship_power = 0.1
 				global_trade_power = 0.05
 				republican_tradition = 1
 			}

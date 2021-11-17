@@ -640,6 +640,9 @@ country_event = {
 			NOT = { has_reform = feuillant_reform }
 		}
 		define_ruler = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
 		}
 		change_statists_vs_orangists = -0.33
 	
@@ -674,6 +677,9 @@ country_event = {
 		name = elections.720.b
 		define_ruler = {
 			dynasty = "van Oranje"
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
 		}
 		change_statists_vs_orangists = 0.33
 	}
@@ -780,6 +786,9 @@ country_event = {
 			NOT = { has_reform = feuillant_reform }
 		}
 		define_ruler = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
 		}
 		change_statists_vs_orangists = -0.33
 	
@@ -814,6 +823,9 @@ country_event = {
 		name = elections.720.b
 		define_ruler = {
 			dynasty = "van Oranje"
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
 		}
 		change_statists_vs_orangists = 0.33
 	}
