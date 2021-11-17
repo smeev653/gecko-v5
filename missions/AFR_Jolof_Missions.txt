@@ -470,15 +470,11 @@ jol_missions_internal_slot = {
 			has_institution = feudalism
 			NOT = { government = tribal }
 			}
-		}
+	
 		effect = { 
-			if = {
-				limit = { NOT = { government = tribal } }
-				change_government_reform_progress = 100
-			}
-			else = {
-				add_adm_power = 100
-			}
+			change_government_reform_progress = 100
+			add_adm_power = 100
+			
 		}
 	}
 
