@@ -531,7 +531,7 @@ tr_russia_conquest_1 = {
 		}
 		effect = {
 			ruthenia_region = {
-				limit = { owned_by = ROOT }
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				add_province_modifier = {
 					name = "ruthenian_integration"
 					duration = 5475
@@ -891,7 +891,7 @@ tr_russia_conquest_3 = {
 		}
 		trigger = {
 			tambov_area = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				OR = {
 					religion = ROOT
 					culture = ROOT
@@ -993,7 +993,7 @@ tr_russia_conquest_3 = {
 		effect = {
 			tambov_area = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1002,7 +1002,7 @@ tr_russia_conquest_3 = {
 			}
 			lower_don_area = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1011,7 +1011,7 @@ tr_russia_conquest_3 = {
 			}
 			astrakhan_area = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1020,7 +1020,7 @@ tr_russia_conquest_3 = {
 			}
 			saratov_area = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1073,7 +1073,7 @@ tr_russia_conquest_3 = {
 			}
 			crimea_region = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1096,10 +1096,10 @@ tr_russia_conquest_3 = {
 		}
 		trigger = {
 			1074 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			1075 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			west_siberia_region = {
 				type = all
@@ -1120,7 +1120,7 @@ tr_russia_conquest_3 = {
 			west_siberia_region = {
 				limit = {
 					trade_goods = fur
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "siberian_fur_production"
@@ -1282,28 +1282,28 @@ tr_siberia_missions = {
 		}
 		effect = {
 			kazan_area = {
-				limit = { owned_by = ROOT }
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				add_province_modifier = {
 					name = "convert_the_steppes"
 					duration = 5475
 				}
 			}
 			volga_area = {
-				limit = { owned_by = ROOT }
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				add_province_modifier = {
 					name = "convert_the_steppes"
 					duration = 5475
 				}
 			}
 			kama_area = {
-				limit = { owned_by = ROOT }
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				add_province_modifier = {
 					name = "convert_the_steppes"
 					duration = 5475
 				}
 			}
 			samara_area = {
-				limit = { owned_by = ROOT }
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				add_province_modifier = {
 					name = "convert_the_steppes"
 					duration = 5475
@@ -1385,7 +1385,7 @@ tr_siberia_missions = {
 			}
 			ural_region = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1394,7 +1394,7 @@ tr_siberia_missions = {
 			}
 			west_siberia_region = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1403,7 +1403,7 @@ tr_siberia_missions = {
 			}
 			nogai_area = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1412,7 +1412,7 @@ tr_siberia_missions = {
 			}
 			lower_yik_area = {
 				limit = {
-					owned_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 				add_province_modifier = {
 					name = "convert_the_steppes"
@@ -1476,7 +1476,7 @@ gecko_rus_events = {
 	slot = 1
 	generic = no
 	ai = yes
-		potential = {
+	potential = {
 		tag = RUS
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
@@ -1489,31 +1489,30 @@ gecko_rus_events = {
 		required_missions = {  }
 		position = 6
 		trigger = {
-		tag = RUS
-		is_year = 1600
-		NOT = { is_year = 1700 }
-	}
+			tag = RUS
+			is_year = 1600
+			NOT = { is_year = 1700 }
+		}
 		effect = {
 			country_event = {
-					id = flavor_rus.10
-				}		
+				id = flavor_rus.10
+			}		
 		}
 	}
 	full_serfdom = {
 		icon = mission_non-western_soldiers
-		required_missions = {enserfed_peasants}
+		required_missions = { enserfed_peasants }
 		position = 7
 		trigger = {
-		tag = RUS
-		is_year = 1650
-		NOT = { is_year = 1750 }
-		government = monarchy
-
-	}
+			tag = RUS
+			is_year = 1650
+			NOT = { is_year = 1750 }
+			government = monarchy
+		}
 		effect = {
 			country_event = {
 					id = flavor_rus.13
-				}		
+			}		
 		}
 	}
 }
