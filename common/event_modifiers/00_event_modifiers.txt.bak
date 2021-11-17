@@ -1529,13 +1529,11 @@ papal_blessing = {
 
 papal_sanction_for_holy_war = {
 	manpower_recovery_speed = 0.15
-	land_maintenance_modifier = -0.05
 	religion = yes
 }
 
 papal_legate = {
 	diplomatic_reputation = 1
-	diplomatic_annexation_cost = -0.1
 	religion = yes
 }
 
