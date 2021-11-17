@@ -201,3 +201,9 @@ gc_eth_mission_25_desc:0 ""
  gc_cri_mission_12_desc:0 ""
  gc_cri_mission_13_desc:0 ""
  gc_cri_mission_14_desc:0 ""
+
+ #Russia
+ enserfed_peasants_title:0 "Enserfed Peasents"
+ enserfed_peasants_desc:0 ""
+ full_serfdom_title:0 "Full Serfdom"
+ full_serfdom_desc:0 ""
