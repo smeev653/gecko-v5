@@ -871,8 +871,8 @@ country_development = {
 
 # Multiplied by Tribal Allegiance / 100
 tribal_allegiance = {
-	manpower_recovery_speed = 0.33
-	global_unrest = -3
+	global_regiment_cost = -0.1
+	land_forcelimit_modifier = 0.25
 }
 
 # Multiplied by current Legitimacy - 50
