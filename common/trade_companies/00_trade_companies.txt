@@ -741,7 +741,7 @@ trade_company_wien = {
 		75 4765 1880 #alsace #smeev
 		1873 4722 1870 166 1869 #switzerland #smeev
 		165 1867 1871 4721 4720 #romandie_area #smeev
-		266 4724 4725 2968 2970 6102 6013 #bohemia #smeev
+		266 4724 4725 2968 2970 6102 #bohemia #smeev
 		267 2967 1771 6101 #erzgebirge #smeev
 		129 1769 4751 #krain
 		6103 6104 6105 
