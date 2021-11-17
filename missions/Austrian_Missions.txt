@@ -35,7 +35,7 @@ hab_holy_roman_ambitions = {
 									preferred_emperor = ROOT
 									has_opinion = { who = ROOT value = 100 }
 								}
-								amount = 5
+								amount = 3
 							}
 						}
 					}
@@ -51,7 +51,7 @@ hab_holy_roman_ambitions = {
 					preferred_emperor = ROOT
 					has_opinion = { who = ROOT value = 100 }
 				}
-				amount = 5
+				amount = 3
 			}
 		}
 		effect = {
@@ -70,6 +70,13 @@ hab_holy_roman_ambitions = {
 				add_permanent_claim = ROOT
 			}
 			moravia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			hradecko_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}

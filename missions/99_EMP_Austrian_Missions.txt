@@ -27,6 +27,7 @@ emp_hab_develop_hungary_bohemia_branch = {
 						area = erzgebirge_area
 						area = bohemia_area
 						area = moravia_area
+						area = hradecko_area
 						area = slovakia_area
 						area = transdanubia_area
 						area = alfold_area
@@ -41,6 +42,7 @@ emp_hab_develop_hungary_bohemia_branch = {
 						area = erzgebirge_area
 						area = bohemia_area
 						area = moravia_area
+						area = hradecko_area
 					}
 					ROOT = {
 						NOT = {
@@ -49,6 +51,7 @@ emp_hab_develop_hungary_bohemia_branch = {
 									area = erzgebirge_area
 									area = bohemia_area
 									area = moravia_area
+									area = hradecko_area
 								}
 								development = 30
 							}
@@ -86,6 +89,7 @@ emp_hab_develop_hungary_bohemia_branch = {
 					area = slovakia_area
 					area = transdanubia_area
 					area = alfold_area
+					area = hradecko_area
 				}
 				development = 10
 			}
@@ -94,6 +98,7 @@ emp_hab_develop_hungary_bohemia_branch = {
 					area = erzgebirge_area
 					area = bohemia_area
 					area = moravia_area
+					area = hradecko_area
 				}
 				development = 30
 			}
