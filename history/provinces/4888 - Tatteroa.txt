@@ -1,9 +1,6 @@
 # No previous file for Tatteroa
 
-owner = HWK
-controller = HWK
-add_core = HWK
-is_city = yes
+
 culture = shawnee
 religion = totemism
 capital = "Tatteroa"

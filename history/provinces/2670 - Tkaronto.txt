@@ -1,9 +1,6 @@
 # No previous file for Tkaronto
 
-owner = TAH
-controller = TAH
-add_core = TAH
-is_city = yes
+
 culture = huron
 religion = totemism
 capital = "Tahontaenrat"

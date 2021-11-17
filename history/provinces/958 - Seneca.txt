@@ -1,8 +1,6 @@
 #958 - Seneca (Area was Wenro until 1638)
 
-owner = SEN
-controller = SEN
-add_core = SEN
+
 culture = iroquois
 religion = totemism
 capital = "Seneca"

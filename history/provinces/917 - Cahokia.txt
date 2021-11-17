@@ -1,9 +1,6 @@
 #917 - Cahokia
 
-owner = CAO
-controller = CAO
-add_core = CAO
-is_city = yes
+
 culture = illini
 religion = totemism
 capital = "Cahokia"

@@ -1,9 +1,6 @@
 ## No previous file for Shatteras
 
-owner = KSP
-controller = KSP
-add_core = KSP
-is_city = yes
+
 culture = shawnee
 religion = totemism
 capital = "Shatteras"
