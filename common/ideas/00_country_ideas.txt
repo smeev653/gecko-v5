@@ -1402,7 +1402,7 @@ HUN_ideas = {
 	}
 	
 	bonus = {
-		free_leader_pool = 1
+		army_tradition_from_battle = 0.5
 	}
 	
 	trigger = {
@@ -1429,7 +1429,7 @@ HUN_ideas = {
 		global_own_trade_power = 0.25
 	}
 	hungarian_estates_general = {
-		no_religion_penalty = yes
+		country_military_power = 1
 	}
 }
 
