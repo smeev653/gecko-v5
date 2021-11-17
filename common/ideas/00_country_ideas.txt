@@ -948,7 +948,7 @@ VEN_ideas = {
 	free = yes		#will be added at load.
 	
 	DAL_kingdom_of_dalmatia = {
-		global_unrest = -2
+		reform_progress_growth = 0.25
 	}
 	DAL_principalities = {
 		global_foreign_trade_power = 0.15
