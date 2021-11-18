@@ -1,0 +1,61 @@
+estate_gc_noble_levies = {
+	icon = privilege_raise_host
+	max_absolutism = -5
+	influence = 0.30
+	cooldown_years = 10
+	on_cooldown_expires = { 
+			country_event = { id = gecko.8 }
+	}
+	is_valid = {
+		tag = MAM
+	}
+	can_select = {
+	}
+	on_granted = {
+		create_general = {
+			add_shock = 1
+			tradition = 30
+		}
+		if = {
+			limit = {
+				capital_scope = { 
+					owned_by = ROOT
+				}
+			}
+			capital_scope = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1
+					cost = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+			random_owned_province = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1
+					cost = 0
+				}
+			}
+		}
+	}
+	on_revoked = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

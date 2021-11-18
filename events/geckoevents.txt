@@ -704,3 +704,35 @@ country_event = { #Ethopian Ruler Failsafe
 		}
 	}
 }
+
+# Remove noble levies priv
+country_event = {
+	id = gecko.8
+	title = gecko.8.t
+	desc = {
+		trigger = { has_estate_privilege = estate_gc_noble_levies }
+		desc = gecko.8.d
+	}
+	picture = MAMLUK_WARRIORS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gecko.8.a
+	}
+	option = {
+		name = gecko.8.b
+
+		remove_estate_privilege = estate_gc_noble_levies
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -30
+		}
+		capital_scope = { 
+			spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}
+		}		
+	}
+}

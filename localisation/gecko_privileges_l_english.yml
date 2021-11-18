@@ -16,3 +16,9 @@
  estate_nomadic_tribes_guaranteed_leadership_in_host_desc:0 "Our tribal chieftains make fine leaders of men. We need look no further when seeking new generals for our armies."
  estate_nomadic_tribes_tribute:0 "Increased Tribal Tribute"
  estate_nomadic_tribes_tribute_desc:0 " "
+
+
+#mamlukl privilege
+
+estate_gc_noble_levies:0 "Mamluk Noble Levies"
+estate_gc_noble_levies_desc:0 " "

@@ -1269,7 +1269,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		has_reform = mamluk_government
-		is_at_war = no
 		num_of_cities = 10
 		NOT = { has_country_modifier = furusiyya } 
 	}

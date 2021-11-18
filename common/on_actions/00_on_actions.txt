@@ -2102,7 +2102,7 @@ on_bi_yearly_pulse_5 = {
 		250 = mamluk_events.7
 		185 = mamluk_events.10
 		185 = mamluk_events.11
-		235 = mamluk_events.12
+		300 = mamluk_events.12
 
 		#Colonization of Siberia
 		125 = siberian_events.2
