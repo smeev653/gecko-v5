@@ -166,6 +166,14 @@ mam_north_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			cukurova_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_sailors = 5000
 		}
 	}
 	mam_pacify_bedouins = {
