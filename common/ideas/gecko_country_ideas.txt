@@ -44,11 +44,11 @@ ARB_ideas = { #Arabian Empire
 EGY_ideas = { #Egyptian Empire
 	start = {
 		infantry_power = 0.10
-		global_autonomy = -0.05
+		reinforce_speed = 0.25
 	}
 	
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.33
 	}
 	
 	trigger = {
