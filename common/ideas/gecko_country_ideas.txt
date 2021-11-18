@@ -43,8 +43,8 @@ ARB_ideas = { #Arabian Empire
 
 EGY_ideas = { #Egyptian Empire
 	start = {
-		infantry_power = 0.10
-		reinforce_speed = 0.25
+		global_regiment_cost = -0.10
+		infantry_power = 0.15
 	}
 	
 	bonus = {
@@ -56,21 +56,24 @@ EGY_ideas = { #Egyptian Empire
 	}
 	free = yes
 	
-	egy_1 = {
-		discipline = 0.05
-	}
-	egy_2 = {
+	egy_3 = {
 		production_efficiency = 0.15
-	}
-	monuments_to_greatness = {
-		prestige = 1
 		development_cost = -0.05
 	}
 	egy_4 = { 
-		land_morale = 0.15
+		manpower_recovery_speed = 0.2
 	}
 	egy_5 = {
-		manpower_recovery_speed = 0.2
+		land_attrition = -0.33
+	}
+	egy_2 = {
+		reinforce_speed = 0.25
+		free_leader_pool = 3
+		
+	}
+	egy_1 = {
+		land_morale = 0.15
+		drill_gain_modifier = 0.25
 	}
 	mam_monopoly_ports = {
 		trade_efficiency = 0.10
