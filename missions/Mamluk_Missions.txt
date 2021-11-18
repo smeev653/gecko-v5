@@ -455,6 +455,8 @@ gecko_mam_branch_2 = {
 				}
 		}
 	}
+	
+	
 
 	gecko_mam_mission_5 = {
 		icon = mission_arabian_fort
@@ -537,10 +539,8 @@ gecko_mam_branch_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			lower_nubia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			army_size_percentage = 1
+			num_of_generals = 1
 		}
 		effect = {
 			dongola_area = {
@@ -553,6 +553,9 @@ gecko_mam_branch_3 = {
 				add_permanent_claim = ROOT
 			}
 			1226 = {
+				add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -809,6 +812,20 @@ gecko_mam_branch_3 = {
 			}
 			387 = {
 				add_permanent_claim = ROOT
+			}
+			2762 = {
+				add_local_autonomy = -100
+				add_province_modifier = {
+					name = eth_increased_gold_mining
+					duration = 9125
+				}
+			}
+			2757 = {
+				add_local_autonomy = -100
+				add_province_modifier = {
+					name = eth_increased_gold_mining
+					duration = 9125
+				}
 			}
 		}
 	}
