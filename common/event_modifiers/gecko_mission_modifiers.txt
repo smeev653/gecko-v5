@@ -205,3 +205,8 @@ bng_sufi_mystic_settlers = {
 	build_cost = -0.15
 	religious_unity = 0.1
 }
+
+bedouins_pacified = {
+	cavalry_cost = -0.05
+	cavalry_power = 0.05
+}

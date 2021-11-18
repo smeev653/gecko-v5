@@ -206,7 +206,7 @@ mam_north_missions = {
 		effect = {
 			add_country_modifier = {
 				name = "bedouins_pacified"
-				duration = 7300
+				duration = -1
 			}
 			anatolia_region = {
 				limit = {
