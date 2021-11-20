@@ -1789,7 +1789,7 @@ mascarenes_area = { #3
 }
 
 indian_ocean_islands_area = { #5
-	574 1101 1248 1998 1999
+	574 1248
 }
 
 papua_area = { #5 (Papuan Peninsula)
@@ -2474,7 +2474,7 @@ angkor_area = { #5
 }
 
 lower_burma_area = { #5
-	586 590 1815 2403 4399
+	586 590 1815 4399
 }
 
 arakan_area = { #3
@@ -2869,11 +2869,11 @@ tannu_uriankhai_area = {#3
 }
 
 central_mongolia_area = { #3
-	720 2193 4221 4669 4677 2191 4676
+	4676 2193 2191
 }
 
 uliastai_area = {#3
-	719 2189 2190 4668 4678
+	719 2189 2190 
 }
 
 jetysuu_area = { #5
@@ -3172,11 +3172,11 @@ bogota_area = { #4
 }
 
 popayan_area = { #4	
-	823 826 2818 4596 4604 
+	823 826 4604 
 }
 
 colombian_amazonas_area = { #3
-	822 2816 4605
+	822 2816 4605 2818
 }
 
 cordillera_occidental_area = { #5
@@ -3196,7 +3196,7 @@ central_chile_area = { #3
 }
 
 southern_chile_area = { #3
-	783 2873 2874
+	783 2874
 }
 
 antisuyu_area = { #4
@@ -3420,7 +3420,7 @@ iowa_area = { # 4 NEW
 }
 
 lower_plains_area = { #3
-	891 892 896 4908
+	892 896 
 }
 
 central_plains_area = { #5
@@ -3444,7 +3444,7 @@ south_dakota_area = { #3
 }
 
 minnessota_area = { #4 NEW
-    904 908 2512 4901
+    904 908 2512 4901 4902
 }
 
 upper_missouri_area = { #5
@@ -3456,7 +3456,7 @@ badlands_area = { #3
 }
 
 llano_estacado_area = { #5
-	882 885 2496 2497 4630
+	882 885 2496 4630
 }
 
 coastal_prarie_area = { #4
@@ -3575,11 +3575,11 @@ hudson_bay_area = { #5
 }
 
 red_river_area = { #3
-     2016 2511 4902
+    2016 2511 
 }
 
 manitoba_area = { #5 NEW
-    1008 1010 1011 2593 4919
+    1008 1010 1011 2593
 }
 
 assiniboia_area = { #3
@@ -3599,7 +3599,7 @@ athabasca_area = { #5
 }
 
 northeast_mexico_area = { #5
-    861 2619 2666 2667 4606
+    861 2619 2666 2667 
 }
 
 durango_area = { #3
@@ -3611,7 +3611,7 @@ chihuahua_area = { #4
 }
 
 pecos_area = { #3
-    2498 4628 4629
+    2498 4628 4629 2497
 }
 
 rio_grande_area = { # 4
@@ -3655,7 +3655,7 @@ baja_california_area = { #4
 }
 
 jalisco_area = { #5
-    2617 2621 2657 4576 854
+    2617 2621
 }
 
 nayarit_area = { #4
@@ -3667,7 +3667,7 @@ michoacan_area = { #5
 }
 
 tierra_caliente_area = { #5
-     851 2643 4575 4579 4580
+    2643 4575 4579 
 }
 
 gran_chichimeca_area = { #3 
@@ -3691,15 +3691,15 @@ puebla_area = { # 5
 }
 
 guerrero_area = { #3
-     2627 2645 2648 
+    2627 2648 
 }
 
 oaxaca_area = { #3
-     844 2629 4584
+    2629 4584
 }
 
 mixteca_area = { #4
-    847 849 2646 4581
+    2646 4581 2645
 }
 
 eastern_mexico_area = { #5
@@ -3711,7 +3711,7 @@ huasteca_area = {
 }
 
 chiapas_area = { #4
-    2635 2638 2649 4585 4586
+    2635 4585 4586
 }
 
 yucatan_area = { #5
@@ -3735,11 +3735,11 @@ guatemala_lowlands_area = { #5
 }
 
 honduras_area = { #4
-    840 2637 2640 2662 4593
+    840 2637 2662 4593
 }
 
 nicaragua_area = { #5
-    837 838 2660 2661 4592
+    838 2660 2661 4592
 }
 
 costa_rica_area = { #3
@@ -3747,7 +3747,7 @@ costa_rica_area = { #3
 }
 
 panama_area = { #5
-    835 2664 2819 4595
+    835 2664 2819 4595 4596
 }
 
 cuba_area = { #5
