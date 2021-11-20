@@ -22,8 +22,7 @@
  COT_DOWNGRADE_CONFIRM_DESC:0 "Downgrade to $NAME|Y$:\n$DESCRIPTION$.\nThis will provide the following benefits:\n$BENEFITS$\n"
  PR_african_colonist_reform:0 "Land Reclamation"
  PR_african_colonist_reform_desc:0 "The jungle has long been untamed and wild, to further our interests these areas must be reclaimed for human use."
- grand_duchy_reform:0 "Grand Kingdom"
- grand_duchy_reform_desc:0 "Our region never had many emperors, instead it is our kings that have united and led the various peoples within our borders to greatness."
+
  PR_renaissance_capital_country_over_100_dev:0 "Renaissance in capital of nation with 100 development."
  PR_colonialism_coastal:0 "Coastal province."
  PR_colonialism_coastal_cot_lvl_3:0 "Coastal province with level 3 Centre of Trade."

@@ -1484,18 +1484,18 @@ on_mil_development = {
 }
 
 on_overextension_pulse = {
-	#random_events = {
-	#	100 = overextension.1
-	#	100 = overextension.2
-	#	100 = overextension.3
-	#	100 = overextension.4
-	#	100 = overextension.5
-	#	100 = overextension.6
-	#	100 = overextension.7
-	#	100 = overextension.8
-	#	100 = overextension.9
-	#	100 = overextension.10
-	#}
+random_events = {
+	100 = overextension.1
+		100 = overextension.2
+		100 = overextension.3
+		100 = overextension.4
+		100 = overextension.5
+		100 = overextension.6
+		100 = overextension.7
+		100 = overextension.8
+		100 = overextension.9
+		100 = overextension.10
+	}
 }
 
 

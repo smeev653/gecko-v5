@@ -3,7 +3,7 @@
 add_core = OPL
 owner = OPL
 controller = OPL
-culture = czech
+culture = schlesian
 religion = catholic
 hre = no
 base_tax = 2
