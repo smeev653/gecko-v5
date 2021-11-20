@@ -169,6 +169,14 @@ NDefines.NMilitary.CAWA_STARTING_STRENGTH = 1
 NDefines.NMilitary.CREATE_JANISSARIES_MIL_COST = 8
 NDefines.NMilitary.CREATE_CAWA_MIL_COST = 7	
 
+NDefines.NMilitary.ASSAULT_WIDTH_LIMIT = 5						-- how many times the garrison size that can effectively assault at the same time.
+NDefines.NMilitary.ASSAULT_ATTACKER_LOSS = 1.0 					-- MDEF_ASSAULT_ATTACKER_LOSS = 10,
+NDefines.NMilitary.ASSAULT_DEFENDER_LOSS = 0.05 					-- _MDEF_ASSAULT_DEFENDER_LOSS = 10,
+NDefines.NMilitary.ASSAULT_DICE_MODIFIER = 5 						-- _MDEF_ASSAULT_DICE_MODIFIER_
+NDefines.NMilitary.SIEGE_FORCE_NEEDED_MULTIPLIER = 0.334				-- x times garrison to be able to siege.
+NDefines.NMilitary.GARRISON_SIZE = 3000 							-- GARRISON_SIZE
+NDefines.NMilitary.FORTRESS_COST = 0.167
+
 NDefines.NReligion.CONVERSION_ZEAL_DURATION = 1825
 NDefines.NReligion.MAX_CARDINALS_PER_COUNTRY = 10
 NDefines.NReligion.YEARLY_POPE_INVESTED_INFLUENCE_PER_CARDINAL = 0
