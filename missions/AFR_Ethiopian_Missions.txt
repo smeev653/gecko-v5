@@ -43,6 +43,10 @@ ethiopia_european_slot = {
 		}
 		effect = {
 			add_navy_tradition = 20
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125 #25 years
+		    }
 			custom_tooltip = eth_create_a_navy_tt
 			hidden_effect = {
 				country_event = {
@@ -63,15 +67,13 @@ ethiopia_european_slot = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			monthly_dip = 9
 			OR = {
-				AND = {
-					is_year = 1550
-					custom_trigger_tooltip = {
-						tooltip = eth_find_other_christians_tt
-						POR = {
-							any_owned_province = {
-								has_discovered = ROOT
-							}
+				custom_trigger_tooltip = {
+					tooltip = eth_find_other_christians_tt
+					POR = {
+						any_owned_province = {
+							has_discovered = ROOT
 						}
 					}
 				}
@@ -81,21 +83,13 @@ ethiopia_european_slot = {
 				}
 				NOT = { exists = POR }
 			}
-			monthly_dip = 9
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = POR
-					POR = { is_free_or_tributary_trigger = yes }
-				}
-				country_event = {
-					id = flavor_eth.44
-				}
-			}
-			else = {
-				add_dip_power = 100
-			}
+			add_prestige = 25
+			country_event = { #Mil aid event
+                id = flavor_eth.4
+            }
+            custom_tooltip = g_help_from_the_west
 		}
 	}
 
@@ -180,18 +174,17 @@ ethiopia_european_slot = {
 		icon = mission_assemble_an_army
 		required_missions = { 
 			eth_ideas_and_institutions
-			eth_cawa_discipline
 		}
 		position = 6
 		trigger = {
+			mil_power = 200
 			OR = {
+				mil_tech = 15
 				AND = {
 					army_tradition = 75
 					army_professionalism = 0.8
 				}
-				mil_tech = 20
 			}
-			mil_power = 200
 		}
 		effect = {
 			country_event = {
@@ -218,24 +211,12 @@ ethiopia_policy_with_the_cushitic_people = {
 		required_missions = {  }
 		position = 1
 		trigger = {
+			treasury = 300
 			army_size_percentage = 1
-			num_of_generals = 1
+			num_of_generals = 2
 		}
 		effect = {
-			southern_ethiopia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			hadiya_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_mil_power = 50
 		}
 	}
 
@@ -249,16 +230,21 @@ ethiopia_policy_with_the_cushitic_people = {
 				area = southern_ethiopia_area
 				area = hadiya_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			AND = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { religion = ROOT }
+			}
 		}
 		trigger = {
 			southern_ethiopia_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
+				religion = ROOT 
 			}
 			hadiya_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
+				religion = ROOT
 			}
 		}
 		effect = {
@@ -332,36 +318,6 @@ ethiopia_policy_with_the_cushitic_people = {
 			change_government_reform_progress = 100
 		}
 	}
-
-	#Train the Cawa
-	eth_cawa_discipline = {
-		icon = mission_son_military_expertise
-		required_missions = {}
-		position = 5
-		trigger = {
-			num_of_cawa = 30
-			if = {
-				limit = {
-					has_dlc = "Cradle of Civilization"
-				}
-				army_professionalism = 0.4
-				army_tradition = 30
-			}
-			else = {
-				army_tradition = 60
-			}
-			num_of_generals = 1
-		}
-		effect = {
-			add_army_professionalism = 0.05
-			unlock_estate_privilege = {
-				estate_privilege = estate_nobles_cawa_peace_keepers
-			}
-			unlock_estate_privilege = {
-				estate_privilege = estate_nobles_cawa_offensive_fighters
-			}
-		}
-	}
 }
 
 #Religion slot
@@ -382,14 +338,20 @@ ethiopia_religion_slot = {
 		position = 1
 		provinces_to_highlight = {
 			OR = {
-				AND = {
-					owned_by = ROOT
-					controlled_by = REB
-				}
-				owned_by = BTI	#For the case the player releases Semien
+				province_id = 2771
+				province_id = 2772
 			}
+			NOT = { religion = ROOT }
 		}
 		trigger = {
+			2771 = {
+				owned_by = ROOT 
+				religion = ROOT
+			}
+			2772 = {
+				owned_by = ROOT 
+				religion = ROOT
+			}
 			NOT = { num_of_rebel_armies = 1 }
 			all_owned_province = {
 				NOT = { controlled_by = REB }
@@ -476,16 +438,16 @@ ethiopia_religion_slot = {
 		required_missions = { eth_secure_religious_unity }
 		position = 3
 		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 65
+			}
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = eth_church_reforms_ct
 					has_country_flag = eth_had_centralization_event
 				}
 				is_year = 1460
-			}
-			estate_loyalty = {
-				estate = estate_church
-				loyalty = 65
 			}
 		}
 		effect = {
@@ -523,7 +485,7 @@ ethiopia_religion_slot = {
 
 	#Coptic mission - Qasr Ibrim
 	eth_conquest_of_qasr_ibrim = {
-		icon = mission_bedouins
+		icon = mission_fortify_mandu
 		required_missions = { }
 		provinces_to_highlight = {
 			province_id = 1234
@@ -534,11 +496,20 @@ ethiopia_religion_slot = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 1234
-			1234 = { religion = ROOT }
+			1234 = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+				religion = ROOT 
+				OR = {
+                    has_building = fort_15th
+                    has_building = fort_16th
+                    has_building = fort_17th
+                    has_building = fort_18th
+                }
+			}
 		}
 		position = 4
 		effect = {
+			add_mil_power = 50
 			add_country_modifier = {
 				name = eth_coptic_offense
 				duration = 9125
@@ -571,6 +542,7 @@ ethiopia_religion_slot = {
 		}
 		position = 5
 		effect = {
+			add_mil_power = 100
 			add_accepted_culture = al_misr_arabic
 			add_country_modifier = {
 				name = eth_legacy_of_alexandria
@@ -631,6 +603,8 @@ ethiopia_religion_slot = {
 			eth_westernize_the_army
 			eth_conquest_of_antioch
 			eth_restore_aksumite_empire
+			gc_eth_mission_10
+			gc_eth_mission_25
 		}
 		provinces_to_highlight = {
 			region = horn_of_africa_region
@@ -665,60 +639,17 @@ ethiopia_trade_slot = {
 	}
 	has_country_shield = yes
 
-	#Handle vassals
-	eth_please_the_vassals = {
-		icon = mission_have_two_subjects
+
+	gc_eth_mission_11 = {
+		icon = mission_african_soldier
 		required_missions = {  }
 		position = 1
 		provinces_to_highlight = {
-			OR = {
-				owned_by = DAM
-				owned_by = HDY
-			}
 		}
 		trigger = {
-			OR = {
-				DAM = {
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
-				NOT = { exists = DAM }
-			}
-			OR = {
-				HDY = {
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
-				NOT = { exists = HDY }
-			}
+			army_size_percentage = 1
 		}
 		effect = {
-			#Event for Damot and Hadiya to join us
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							exists = DAM
-							DAM = {
-								is_subject_of = ROOT
-							}
-						}
-						AND = {
-							exists = HDY
-							HDY = {
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				country_event = {
-					id = flavor_eth.35
-				}
-			}
 			sennar_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -747,13 +678,27 @@ ethiopia_trade_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
+			kurdufan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			darfur_central_sahara_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	#Push towards north
 	eth_unify_the_kingdoms = {
 		icon = trade_with_the_natives
-		required_missions = { eth_please_the_vassals }
+		required_missions = { gc_eth_mission_11 }
 		position = 2
 		provinces_to_highlight = {
 			OR = {
@@ -781,6 +726,13 @@ ethiopia_trade_slot = {
 			}
 			add_accepted_culture = nubian
 			add_permanent_claim = 1232
+			hadendoa_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -790,53 +742,24 @@ ethiopia_trade_slot = {
 		required_missions = { eth_unify_the_kingdoms }
 		position = 3
 		provinces_to_highlight = {
-			province_id = 1232
+			OR = {
+				province_id = 1232
+				area = hadendoa_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			owns_or_non_sovereign_subject_of = 1232
+			hadendoa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			country_event = {
 				id = flavor_eth.37
 			}
 			change_government_reform_progress = 100
-		}
-	}
-
-	#Reform the government
-	eth_reform_the_negusa_government = {
-		icon = mission_zim_strong_rulership
-		required_missions = {}
-		position = 5
-		trigger = {
-			OR = {
-				has_reached_government_reform_tier = {
-					tier_6 = yes
-				}
-				NOT = { has_reform = negusa_nagast }
-			}
-			OR = {
-				has_estate_privilege = estate_church_yakobs_churches
-				AND = {
-					NOT = { religion_group = christian }
-					religious_unity = 0.9
-				}
-			}
-			OR = {
-				absolutism = 40
-				AND = {
-					stability = 3
-					monthly_adm = 9
-				}
-			}
-		}
-		effect = {
-			custom_tooltip = eth_reform_the_negusa_government_ct
-			hidden_effect = {
-				set_country_flag = unlocked_solomid_empire_reform
-			}
-			country_event = { id = flavor_eth.30 }
 		}
 	}
 }
@@ -921,7 +844,7 @@ ethiopia_slot_aksumite_empire = {
 			owns = 1230
 			1230 = {
 				religion = ROOT
-				num_of_times_improved = 5
+				num_of_times_improved = 3
 			}
 		}
 		effect = {
@@ -979,6 +902,7 @@ ethiopia_slot_aksumite_empire = {
 					area = ifat_area
 					province_id = 1208
 				}
+				NOT = { local_autonomy = 5 }
 				value = 6
 			}
 			owns = 1210
@@ -989,6 +913,13 @@ ethiopia_slot_aksumite_empire = {
 			}
 			create_colony_mission_reward = {
 				province = 2779
+			}
+			2778 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			somaliland_area = {
 				limit = {
@@ -1025,7 +956,6 @@ ethiopia_slot_aksumite_empire = {
 	eth_unify_the_horn_of_africa = {
 		icon = mission_arabian_fort
 		required_missions = {
-			eth_retake_suakin
 			eth_conquer_adal
 		}
 		position = 4
@@ -1044,6 +974,7 @@ ethiopia_slot_aksumite_empire = {
 			}
 		}
 		effect = {
+			add_treasury = 500
 			add_country_modifier = {
 				name = eth_lord_of_the_horn
 				duration = 9125
@@ -1162,7 +1093,6 @@ ethiopia_slot_aksumite_empire = {
 		icon = prester_john
 		required_missions = { 
 			eth_yemens_coasts
-			eth_reform_the_negusa_government
 		}
 		position = 6
 		provinces_to_highlight = {
@@ -1187,3 +1117,165 @@ ethiopia_slot_aksumite_empire = {
 		}
 	}
 }
+
+
+#Custom Missions merged
+
+gc_eth_branch_2 = {
+    slot = 2
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = ETH
+        }
+	}
+	has_country_shield = yes
+
+    gc_eth_mission_5 = {
+        icon = mission_conquer_tunisia
+		required_missions = { }
+		position = 4
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 388
+            }
+        }
+
+        trigger = {
+            388 = {
+                owned_by = ROOT
+                religion = ROOT
+            }
+        }
+
+        effect = {
+            add_prestige = 25
+            add_treasury = 100
+        }
+    }
+
+    gc_eth_mission_9 = {
+        icon = mission_into_arabia
+		required_missions = { gc_eth_mission_5 }
+		position = 5
+
+        provinces_to_highlight = {
+            OR = {
+                area = mecca_area
+            }
+            NOT = { owned_by = ROOT }
+        }
+
+        trigger = {
+            mecca_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+
+        effect = {
+            add_prestige = 25
+            add_treasury = 100
+        }
+    }
+
+    gc_eth_mission_10 = {
+        icon = mission_hands_praying
+		required_missions = { gc_eth_mission_9 eth_conquest_of_alexandria }
+		position = 6
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            religious_unity = 0.85
+        }
+
+        effect = {
+            country_event = { #Coptic Reformed
+                id = gc_eth_events.3
+            }
+        }
+    }
+
+} #End branch 2
+
+gc_eth_branch_4 = {
+    slot = 4
+    generic = no 
+    ai = no
+    potential = {
+		OR = {
+            tag = ETH
+        }
+	}
+	has_country_shield = yes
+
+    gc_eth_mission_23 = {
+        icon = mission_luther_theses
+		required_missions = { }
+		position = 4
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            religious_unity = 0.5
+        }
+
+        effect = {
+            define_advisor = {
+				type = inquisitor
+				name = "Fiqtor Dereje"
+				culture = amhara
+				religion = coptic
+				skill = 3
+				cost_multiplier = 0.67
+			}
+        }
+    }
+    gc_eth_mission_24 = {
+        icon = befriend_ethiopia
+		required_missions = { gc_eth_mission_23 }
+		position = 5
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            full_idea_group = religious_ideas
+        }
+
+        effect = {
+            country_event = { #Legacy of Prester John
+                id = gc_eth_events.1
+            }
+        }
+    }
+    gc_eth_mission_25 = {
+        icon = mission_traverse_the_sahara
+		required_missions = { gc_eth_mission_24 }
+		position = 6
+
+        provinces_to_highlight = {
+
+        }
+
+        trigger = {
+            is_great_power = yes
+            total_development = 1000
+            army_size = 300
+        }
+
+        effect = {
+            country_event = { #Crusade from Africa
+                id = gc_eth_events.2
+            }
+        }
+    }
+} #End branch 4
