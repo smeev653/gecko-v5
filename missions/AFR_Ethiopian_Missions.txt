@@ -3,11 +3,7 @@ ethiopia_european_slot = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = ETH
 	}
@@ -210,11 +206,7 @@ ethiopia_policy_with_the_cushitic_people = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = ETH
 	}
@@ -377,11 +369,7 @@ ethiopia_religion_slot = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = ETH
 	}
@@ -671,11 +659,7 @@ ethiopia_trade_slot = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = ETH
 	}
@@ -862,11 +846,7 @@ ethiopia_slot_aksumite_empire = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = ETH
 	}
