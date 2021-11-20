@@ -69,7 +69,7 @@ country_event = { #Election of new Head of the State
 			culture = ROOT
 			religion = ROOT
             age = 40
-			adm = 2
+			change_adm = 2
 		}
 	}
     option = {
@@ -79,7 +79,7 @@ country_event = { #Election of new Head of the State
 			culture = ROOT
 			religion = ROOT
             age = 40
-			dip = 2
+			change_dip = 2
 		}
 	}
     option = {
@@ -89,7 +89,7 @@ country_event = { #Election of new Head of the State
 			culture = ROOT
 			religion = ROOT
             age = 40
-			mil = 2
+			change_mil = 2
 		}
 	}
     option = {
@@ -99,8 +99,8 @@ country_event = { #Election of new Head of the State
 			culture = ROOT
 			religion = ROOT
             age = 40
-            adm = 1
-			mil = 1
+            change_adm = 1
+			change_mil = 1
 		}
 	}
     option = {
@@ -110,8 +110,8 @@ country_event = { #Election of new Head of the State
 			culture = ROOT
 			religion = ROOT
             age = 40
-            dip = 1
-			mil = 1
+            change_dip = 1
+			change_mil = 1
 		}
 	}
 }
