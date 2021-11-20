@@ -402,6 +402,11 @@ trade_company_north_sea = {
 		1978 1979 #subarctic_islands_area
 		370 371 #iceland_area
 		4375 244
+		#Norway
+		4143 17 5031 4144
+		4145 23 24 2752 5032 
+		5030 22 5029 5028 10
+		20 5039 21 5033 315
 	}
 	
 	# Specific
@@ -418,11 +423,11 @@ trade_company_white_sea = {
 	color = { 210 46 28 }
 	
 	provinces = {
-		1652 315 1777 4151
+		1652 1777
 		1955 4122 4256 4257 #arkhangelsk_area
 		313 1776 1958 4258 #pomor_area
 		32 309 4124 #north karelia #smeev
-		33 34 30 1961 #south karelia #smeev
+		33 34 1961 #south karelia #smeev
 		274 275 1960 4148 #pskov_area #smeev 
 		310 311 1959 2749 4260 #novgorod_area #smeev
 		312 4259 4261 #beloozero_area #smeev
@@ -445,7 +450,6 @@ trade_company_lubeck = {
 	provinces = {
 		12 13 14 15 44 45 46 53 54 55 1775 1857 1874 1981 1983 1984  2996 4141 4142 4149
 		4749 4771 4772 4786
-		4153 4146 #smeev
 		47 4745 2994 1858 #vorpommern #smeev
 		48 4746 2995 #hinterpommern #smeev
 		5004 5003 5007 5005 5006
@@ -468,10 +472,8 @@ trade_company_baltic_sea = {
 		1926 1 2 3 4 5 1985 8 9 11 18 19 25 27 28 29 31 35 37 38 39 273 1930 1935 4113 4114 4123 4152 36 1834 1842 4241
 		26 1982 4165 6 #skaneland #smeev
 		16 4164 7 4163 #gotaland #smeev
-		5008 5009 5010 5011 5012 5013 5014 5015 5016 5017 5018 5020 5021 5022 5019 5023 5025 5024 5026 5027 5028 5029 5030 5033 5039 5032 5031
-		10 20 21 #northern_norway #smeev
-		23 24 2752 4145 #western_norway #smeev
-		4143 22 17 4144 #oslo #smeev
+		5008 5009 5010 5011 5012 5013 5014 5015 5016 5017 5018 5020 5021 5022 5019 5023 5025 5024 5026 5027 4151
+		30
 	}
 	
 	# Specific

@@ -2003,7 +2003,7 @@ white_sea={
 		1955 4122 4256 4257 #arkhangelsk_area
 		313 1776 1958 4258 #pomor_area
 		32 309 4124 #north karelia #smeev
-		33 34 30 1961 #south karelia #smeev
+		33 34 1961 #south karelia #smeev
 		274 275 1960 4148 #pskov_area #smeev 
 		310 311 1959 2749 4260 #novgorod_area #smeev
 		312 4259 4261 #beloozero_area #smeev
@@ -2211,7 +2211,7 @@ champagne={
 		167 168 1879 4385 #normandy_area #smeev
 		169 170 171 172 4384 #brittany_area #smeev
 		4764 4766 
-		91 93 94 1866 #wallonia_area
+		93 94 1866 #wallonia_area
 		177 178 4389 #loire_area #smeev
 		87 88 89 1743 #picardy_area #smeev
 		6093 6092 6091 6090 6089 6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
@@ -2239,7 +2239,7 @@ english_channel={
 		92 95 98 99 2974 #netherlands & brabant_area
 		96 97 4383 #holland_area
 		100 1931 4381 4382 #frisia_area
-		90 1744 1865 #flanders_area
+		90 1744 1865 91 #flanders_area
 		4769 4770 1742
 
 	}
