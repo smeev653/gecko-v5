@@ -171,7 +171,10 @@ songhai_military_slot = {
 			}
 		}
 		effect = {
+			change_technology_group = western
+			change_unit_type = western
 			custom_tooltip = no_more_comet_sighted_event_tt
+			add_mil_power = -200
 			hidden_effect = {
 				set_country_flag = no_more_comet_sighted_event
 			}
