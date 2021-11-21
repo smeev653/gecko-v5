@@ -4580,17 +4580,3 @@ on_colonist_boosting_colony = {
 		}
 	}
 }
-
-#Fort Code Courtesy of Dave
-if = {
-		limit = {
-			has_province_flag = PR_new_conquest_fort_delay
-		}
-		clr_province_flag = PR_new_conquest_fort_delay
-	}
-	if = {
-		limit = {
-			fort_level = 2
-		}
-		set_province_flag = PR_new_conquest_fort_delay
-	}

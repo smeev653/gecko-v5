@@ -187,12 +187,16 @@ country_event = {
 			add_permanent_claim = ROOT
 		}
 		5809 = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT	}
-				NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-			add_permanent_claim = ROOT
-		}
+			}
 		western_sahara_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT	}

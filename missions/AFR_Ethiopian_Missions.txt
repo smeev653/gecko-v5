@@ -915,11 +915,15 @@ ethiopia_slot_aksumite_empire = {
 				province = 2779
 			}
 			2778 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			somaliland_area = {
 				limit = {
