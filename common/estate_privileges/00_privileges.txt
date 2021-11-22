@@ -1621,54 +1621,53 @@ estate_burghers_new_world_charter = {
 }
 
 estate_burghers_indebted_to_burghers = {
-	icon = privilege_give_money
-	max_absolutism = -5
-	loyalty = 0.05
-	influence = 0.05
-		
-	on_granted = {
-		custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
-		add_mercantilism = -1
-		tooltip = {
-			add_inflation = 0.5
-		}
-		hidden_effect = {
-			add_loan = {
-				fixed_interest = 1
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 1
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 1
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 1
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 1
-				duration = 60
-				estate_loan = yes
-			}
-		}
-	}
-	penalties = {
-		trade_efficiency = -0.05
-	}
-	benefits = {
-	}
-	cooldown_years = 15
-	ai_will_do = {
-		factor = 0
-	}
+    icon = privilege_give_money
+    max_absolutism = -5
+    loyalty = 0.05
+    influence = 0.05
+    on_granted = {
+        custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
+        add_mercantilism = -1
+        tooltip = {
+            add_inflation = 0.5
+        }
+        hidden_effect = {
+            add_loan = {
+                fixed_interest = 1
+                duration = 60
+                estate_loan = yes
+            }
+            add_loan = {
+                fixed_interest = 1
+                duration = 60
+                estate_loan = yes
+            }
+            add_loan = {
+                fixed_interest = 1
+                duration = 60
+                estate_loan = yes
+            }
+            add_loan = {
+                fixed_interest = 1
+                duration = 60
+                estate_loan = yes
+            }
+            add_loan = {
+                fixed_interest = 1
+                duration = 60
+                estate_loan = yes
+            }
+        }
+    }
+    penalties = {
+        trade_efficiency = -0.05
+    }
+    benefits = {
+    }
+    cooldown_years = 15
+    ai_will_do = {
+        factor = 0
+    }
 }
 
 estate_burghers_free_enterprise = {
