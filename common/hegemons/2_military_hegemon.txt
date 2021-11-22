@@ -18,7 +18,7 @@ military_hegemon = {
 		land_attrition = -0.25
 		land_forcelimit_modifier = 0.25
 		global_regiment_cost = -0.1
-		reinforce_speed = -0.25
+		reinforce_speed = 0.25
 		siege_ability = 0.2
 	}
 	

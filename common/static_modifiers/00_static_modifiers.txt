@@ -1228,48 +1228,13 @@ self_governing_colony_overlord = {
 }
 
 crown_colony_subject = {
-	land_forcelimit_modifier = -0.25
-	naval_forcelimit_modifier = -0.5
-	development_cost = 0.25
-	manpower_recovery_speed = -0.25
-	sailors_recovery_speed = -0.25
-	global_manpower_modifier = -0.35
-	global_sailors_modifier = -0.5
-	sailor_maintenance_modifer = 0.2
-	ship_recruit_speed = 0.5
-	local_ship_repair = -0.5
-	heavy_ship_cost = 0.2
-	trade_range_modifier = -0.75
 }
 
 private_enterprise_subject = {
-	land_forcelimit_modifier = -0.25
-	naval_forcelimit_modifier = -0.5
-	development_cost = 0.25
-	manpower_recovery_speed = -0.25
-	sailors_recovery_speed = -0.25
-	global_manpower_modifier = -0.35
-	global_sailors_modifier = -0.5
-	sailor_maintenance_modifer = 0.2
-	ship_recruit_speed = 0.5
-	local_ship_repair = -0.5
-	heavy_ship_cost = 0.2
-	trade_range_modifier = -0.75
 }
 
 self_governing_colony_subject = {
-	land_forcelimit_modifier = -0.25
-	naval_forcelimit_modifier = -0.5
-	development_cost = 0.25
-	manpower_recovery_speed = -0.25
-	sailors_recovery_speed = -0.25
-	global_manpower_modifier = -0.35
-	global_sailors_modifier = -0.5
-	sailor_maintenance_modifer = 0.2
-	ship_recruit_speed = 0.5
-	local_ship_repair = -0.5
-	heavy_ship_cost = 0.2
-	trade_range_modifier = -0.75
+
 }								 		 
 march_subject = {
 	land_forcelimit = 1
