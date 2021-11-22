@@ -1,16 +1,16 @@
-#1233 - Kargah
+#4323 - Farafreh
 
 owner = MAM
 controller = MAM #Local Badawin in control
 add_core = MAM
 culture = al_misr_arabic
 religion = sunni
-capital = "Kharga"
+capital = "Farafreh"
 is_city = yes
 base_manpower = 2
 trade_goods = livestock
 hre = no
-base_tax = 2 
+base_tax = 2
 base_production = 3
 discovered_by = MAM
 discovered_by = muslim
@@ -19,7 +19,6 @@ discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
-fort_15th = yes
 
 1517.1.1 = {
 	owner = TUR
