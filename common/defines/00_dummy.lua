@@ -168,6 +168,10 @@ NDefines.NMilitary.CAWA_USES_CONSTRUCTION = 1
 NDefines.NMilitary.CAWA_STARTING_STRENGTH = 1
 NDefines.NMilitary.CREATE_JANISSARIES_MIL_COST = 8
 NDefines.NMilitary.CREATE_CAWA_MIL_COST = 7	
+NDefines.NMilitary.TRANSPORT_COST = 0
+NDefines.NMilitary.TRANSPORT_SHIP_SAILORS_COST = 0
+NDefines.NMilitary.TRANSPORT_TIME = 1
+NDefines.NMilitary.TRANSPORT_COMBAT_WIDTH = 5
 
 NDefines.NMilitary.ASSAULT_WIDTH_LIMIT = 5						-- how many times the garrison size that can effectively assault at the same time.
 NDefines.NMilitary.ASSAULT_ATTACKER_LOSS = 1.0 					-- MDEF_ASSAULT_ATTACKER_LOSS = 10,
