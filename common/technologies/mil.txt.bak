@@ -110,7 +110,7 @@ technology = {
 	
 	#Standardised Pikes
 	supply_limit 		= 	0.5
-	infantry_shock		= 	0.05
+	infantry_shock		= 	0.15
 	cavalry_shock		= 	0.2
 
 	enable = western_men_at_arms	
