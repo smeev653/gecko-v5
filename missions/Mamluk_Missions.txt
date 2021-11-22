@@ -954,6 +954,9 @@ gecko_mam_branch_4 = {
 			red_sea_coast_area = {
 				add_permanent_claim = ROOT
 			}
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_hydraulic_rights
+			}
 		}
 	}
 
