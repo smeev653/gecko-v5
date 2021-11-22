@@ -29,7 +29,7 @@ aristocracy_ideas = {
 		global_manpower_modifier = 0.33
 	}
 	quality_education = {
-		army_tradition_from_battle = 0.5
+		#army_tradition_from_battle = 0.5
 		prestige_from_land = 1
 	}
 	noble_resilience = {
