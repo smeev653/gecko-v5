@@ -1699,6 +1699,8 @@ janissary_regiment = {
 
 cawa_regiment = {
 	infantry_power = 0.1
+	drill_decay_modifier = -0.1
+	drill_gain_modifier = 0.25
 	reinforce_cost_modifier = 1
 }
 
@@ -1770,7 +1772,7 @@ expanded_infrastructure = {
 }
 
 centralize_state = {
-	state_governing_cost_increase = -20
+	local_culture_conversion_cost = -0.25
 	picture = "centralize_state"
 }
 
