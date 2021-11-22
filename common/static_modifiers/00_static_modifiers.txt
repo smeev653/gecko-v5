@@ -1772,7 +1772,7 @@ expanded_infrastructure = {
 }
 
 centralize_state = {
-	local_culture_conversion_cost = -0.25
+	state_governing_cost_increase = -20
 	picture = "centralize_state"
 }
 
