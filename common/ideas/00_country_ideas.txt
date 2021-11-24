@@ -1696,7 +1696,7 @@ TIM_ideas = {
 	}
 	
 	the_mantle_of_the_great_khan = {
-		land_morale = 0.20
+		land_morale = 0.15
 	}
 	timurid_renaissance = {
 		technology_cost = -0.1
