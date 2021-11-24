@@ -501,7 +501,7 @@ age_of_reformation = {
 					tag = SPA
 			}
 			modifier = {
-				amount_of_cawa = 0.5
+				shock_damage_received = -0.15
 			}
 			ai_will_do = {
 				factor = 100
