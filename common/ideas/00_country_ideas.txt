@@ -292,7 +292,8 @@ RUS_ideas = {
 SPA_ideas = {
 	start = {
 		land_morale = 0.15
-		shock_damage_received = -0.2
+		heavy_ship_power = 0.1
+
 	}
 	
 	bonus = {
@@ -315,7 +316,7 @@ SPA_ideas = {
 		naval_forcelimit_modifier = 0.25
 	}
 	spanish_armada = {
-		heavy_ship_power = 0.1
+		shock_damage_received = -0.15
 		leader_naval_manuever = 1
 	}
 	spa_casa_de_contracion = {
