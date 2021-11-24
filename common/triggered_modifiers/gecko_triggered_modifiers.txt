@@ -34,3 +34,31 @@ empowered_subjects = {
 	technology_cost = -0.10
 	loot_amount = 0.25
 }
+
+Minor = {
+	potential = {
+			was_player = yes
+            is_part_of_hre = yes
+            
+			NOT = {total_development = 199}
+		}
+	
+
+	trigger = {
+		
+		NOT = {total_development = 199}
+		was_player = yes
+        is_part_of_hre = yes
+        OR = {
+            culture_group = germanic
+            culture_group = south_germanic
+        }
+		NOT = { is_emperor = yes }
+		NOT = {tag = MOS }
+		NOT = { is_colonial_nation = yes }	
+	}
+	advisor_cost = -0.15
+	advisor_pool = 1
+	ae_impact = -0.15
+	interest = -0.5
+}
