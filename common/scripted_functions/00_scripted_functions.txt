@@ -187,6 +187,9 @@ can_scorch_earth = {
 }
 
 can_garrison_sorties = {
+	allow = {
+		always = no
+	}
 }
 
 can_seize_colony = {

@@ -292,11 +292,11 @@ RUS_ideas = {
 SPA_ideas = {
 	start = {
 		land_morale = 0.15
-		artillery_fire = 0.5
+		shock_damage_received = -0.2
 	}
 	
 	bonus = {
-		discipline = 0.05
+		artillery_fire = 0.5
 	}
 	
 	trigger = {
@@ -305,7 +305,7 @@ SPA_ideas = {
 	free = yes		#will be added at load.
 
 	devout_catholisism = {
-		shock_damage_received = -0.2
+		discipline = 0.05
 	}
 	inter_caetera = {
 		idea_claim_colonies = yes
