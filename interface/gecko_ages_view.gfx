@@ -14,31 +14,31 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ab_burgundy_merc_manpower"
-		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+		texturefile = "gfx/interface/ages/ab_burgundy_mercs.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_timurids_tech"
-		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+		texturefile = "gfx/interface/ages/ab_timurid_renaissance.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_mamluks_force_limit"
-		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+		texturefile = "gfx/interface/ages/ab_mamluk_production.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_morocco_raids"
-		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+		texturefile = "gfx/interface/ages/ab_moroccan_pirates.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ab_bukhara_arty"
-		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+		texturefile = "gfx/interface/ages/ab_bukharan_artillery.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_arabia_speed"
-		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+		texturefile = "gfx/interface/ages/ab_arabian_speed.dds"
 	}
 	spriteType = {
 		name = "GFX_ab_hesse_mercs"
-		texturefile = "gfx/interface/ages/ab_hungary_fort_defense.dds"
+		texturefile = "gfx/interface/ages/ab_hessian_mercs.dds"
 	}
 }	
