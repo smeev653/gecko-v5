@@ -1200,8 +1200,8 @@ emp_burgundy_4 = {
 					}
 					add_permanent_claim = root
 				}
-				add_prestige = 30
 			}
+		add_prestige = 30
 		}
 	}
 	emp_bur_king_of_the_franks = {
