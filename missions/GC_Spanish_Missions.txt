@@ -1236,7 +1236,7 @@ gc_spain_4 = {
 		effect = {
 			add_country_modifier = {
 				name = "spa_rb_italian_ambition_mod"
-				duration = 5475
+				duration = -1
 			}
 			tuscany_area = {
 				limit = {

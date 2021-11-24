@@ -210,3 +210,8 @@ bedouins_pacified = {
 	cavalry_cost = -0.05
 	cavalry_power = 0.05
 }
+
+spa_rb_italian_ambition_mod = {
+	artillery_fire = 0.25
+	galley_power = 0.25
+}
