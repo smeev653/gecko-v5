@@ -131,10 +131,12 @@ songhai_military_slot = {
 			army_professionalism = 0.8
 			custom_trigger_tooltip = {
 				tooltip = son_modernize_army_tt
-				NOT = {
+					NOT = {
 					any_country = {
-						unit_type = western
-						mil_tech = ROOT
+						technology_group = western
+						ROOT = {
+							NOT = { mil_tech = PREV }	#Checks if no country with western tech has more mil tech than Songhai. Double negations are fun!
+						}
 					}
 				}
 			}

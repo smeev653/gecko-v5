@@ -7,171 +7,6 @@
 namespace = flavor_eth
 normal_or_historical_nations = yes
 
-	
-# Pero da Covilha
-country_event = {
-	id = flavor_eth.1
-	title = flavor_eth.1.t
-	desc = flavor_eth.1.d
-	picture = SHIP_SAILING_eventPicture
-	fire_only_once = yes
-
-	trigger = {
-		tag = ETH
-		NOT = { is_year = 1550 }
-		religion_group = christian
-		
-		any_owned_province = {
-			has_discovered = POR
-		}
-		NOT = { war_with = POR }
-
-	}
-
-	mean_time_to_happen = {
-		months = 30
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_country_flag = eth_contact_with_portugal
-		}
-	}
-	
-	option = { 
-		name = flavor_eth.1.a
-		ai_chance = { factor = 90 }
-		add_prestige = 5
-		custom_tooltip = flavor_eth.1.a.desc
-		set_country_flag = portuguese_embassy
-		hidden_effect = {
-			capital_scope = {
-				POR = {
-					discover_province = PREV
-				}
-			}
-		}
-	}
-	option = {
-		name = flavor_eth.1.b	
-		ai_chance = { factor = 5 }
-		add_legitimacy = 5
-		hidden_effect = {
-			capital_scope = {
-				POR = {
-					discover_province = PREV
-				}
-			}
-		}
-	}
-	option = {
-		name = flavor_eth.1.c
-		ai_chance = { factor = 5 }
-		reverse_add_casus_belli = {
-			target = POR
-			type = cb_insult
-			months = 60
-		}
-		hidden_effect = {
-			capital_scope = {
-				POR = {
-					discover_province = PREV
-				}
-			}
-		}
-	}	
-	
-	
-}
-
-#An Embassy Is Here!
-country_event = {
-	id = flavor_eth.2
-	title = flavor_eth.2.t
-	desc = flavor_eth.2.d
-	picture = DIPLOMACY_eventPicture
-	fire_only_once = yes
-
-	trigger = {
-		tag = ETH
-		has_country_flag = portuguese_embassy
-		NOT = { war_with = POR }
-	}
-
-	mean_time_to_happen = {
-		months = 90
-	}
-	
-	
-	option = { 
-		name = flavor_eth.2.a
-		trigger = {
-			is_neighbor_of = MAM
-		}
-		POR = {
-			country_event = {
-				id = flavor_eth.3
-				days = 180
-				tooltip = flavor_eth.2.3
-			}
-		}
-		add_mil_power = 25
-	}
-	option = {
-		name = flavor_eth.2.b	
-		add_adm_power = 50
-		add_dip_power = 50
-		add_mil_power = 50
-	}
-	option = {
-		name = flavor_eth.2.c
-		add_years_of_income = 1.0
-	}	
-
-}
-
-
-#Prester John?
-country_event = {
-	id = flavor_eth.3
-	title = flavor_eth.3.t
-	desc = flavor_eth.3.d
-	picture = DIPLOMACY_eventPicture
-	is_triggered_only = yes
-	
-	
-	option = { 
-		name = flavor_eth.3.a
-		ai_chance = { factor = 90 }
-		hidden_effect = {
-			ETH = {
-				country_event = {
-					id = flavor_eth.4
-					days = 180
-				}
-			}
-		}
-		add_mil_power = -50
-		add_papal_influence = 10
-		reverse_add_opinion = { who = ETH modifier = opinion_military_aid }
-			
-	}
-	option = {
-		name = flavor_eth.3.b
-		add_prestige = -5
-		hidden_effect = {
-			ETH = {
-				country_event = {
-					id = flavor_eth.5
-					days = 1825
-				}
-			}
-		}
-		reverse_add_opinion = { who = ETH modifier = opinion_refused_military_aid }
-	}
-
-}
-
 # aid given
 country_event = {
 	id = flavor_eth.4
@@ -185,22 +20,8 @@ country_event = {
 		reverse_add_opinion = { who = POR modifier = opinion_military_aid }
 		add_country_modifier = {
 			name = eth_mil_aid_from_portugal
-			duration = 3650
+			duration = 7300
 		}
-	}
-}
-
-# aid refused
-country_event = {
-	id = flavor_eth.5
-	title = flavor_eth.5.t
-	desc = flavor_eth.5.d
-	picture = DIPLOMACY_eventPicture
-	is_triggered_only = yes
-	
-	option = { 
-		name = flavor_eth.5.a
-		add_legitimacy = -10
 	}
 }
 
@@ -227,12 +48,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 48
-	}
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = eth_had_centralization_event
-		}
 	}
 	
 	
@@ -267,7 +82,6 @@ country_event = {
 	trigger = {
 		tag = ETH
 		NOT = { is_year = 1460 }
-		NOT = { has_dlc = "Origins" } 
 	}
 
 	mean_time_to_happen = {
@@ -308,8 +122,6 @@ country_event = {
 		NOT = { is_year = 1520 }
 		owns_core_province = 1213 #Shewa
 		has_country_flag = eth_itinerant_capital_flag
-		NOT = { has_dlc = "Origins" }
-		religion_group = christian
 	}
 
 	mean_time_to_happen = {
@@ -393,7 +205,6 @@ country_event = {
 		tag = ETH
 		is_year = 1630
 		owns_core_province = 1224 #Begmeder
-		NOT = { has_dlc = "Origins" }
 	}
 
 	mean_time_to_happen = {
@@ -451,6 +262,7 @@ country_event = {
 		NOT = { overlord_of = MAM }
 		NOT = { alliance_with = MAM }
 		NOT = { war_with = MAM }
+
 		MAM = {
 			religion_group = muslim
 			owns = 358
@@ -1245,6 +1057,7 @@ country_event = {
 		remove_country_modifier = eth_mount_geshen
 	}
 }
+
 
 ########################################
 # DLC Events for Ethiopia

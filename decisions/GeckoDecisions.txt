@@ -24,10 +24,10 @@ country_decisions = {
 			NOT = { mil_tech = 4 }
 			}
 			effect = {
-				add_years_of_income = -0.5
+				add_years_of_income = -0.25
 				define_advisor  = { 
 				type = recruitmaster
-				skill = 3
+				skill = 2
 				discount = yes
 				culture = variable:new_ruler_culture
 			}	

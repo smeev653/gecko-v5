@@ -977,10 +977,10 @@ kongo_conquest_missions_slot = {
 		position = 4
 		provinces_to_highlight = {
 			culture_group = kongo_group
-			NOT = { owned_by = ROOT }
-			NOT = { is_core = ROOT }
+
 			NOT = { culture = sawabantu }
 			NOT = { culture = jukun }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			custom_trigger_tooltip = {
@@ -988,8 +988,8 @@ kongo_conquest_missions_slot = {
 				NOT = {
 					any_province = {
 						culture_group = kongo_group
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						
 						NOT = { culture = sawabantu }
 						NOT = { culture = jukun }
 					}

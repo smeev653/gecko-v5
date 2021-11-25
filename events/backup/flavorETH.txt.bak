@@ -138,6 +138,7 @@ country_event = {
 		set_capital = 1213
 		1213 = {
 			rename_capital = "Debre Berhan"
+			add_building = temple
 		}
 		every_owned_province = {
 			limit = {
@@ -257,16 +258,16 @@ country_event = {
 		is_year = 1450
 		NOT = { is_year = 1480 }
 		exists = MAM
-		NOT = {
-			vassal_of = MAM
-			overlord_of = MAM
-			alliance_with = MAM
-			war_with = MAM
-		}
+		NOT = { vassal_of = MAM }
+		NOT = { overlord_of = MAM }
+		NOT = { alliance_with = MAM }
+		NOT = { war_with = MAM }
+
 		MAM = {
 			religion_group = muslim
 			owns = 358
 		}
+		religion = coptic
 	}
 
 	mean_time_to_happen = {
@@ -459,12 +460,10 @@ country_event = {
 			NOT = { has_country_flag = eth_autonomous_church }
 			religion = coptic
 		}
-		NOT = {
-			vassal_of = ETH
-			overlord_of = ETH
-			alliance_with = ETH
-			war_with = ETH
-		}
+		NOT = { vassal_of = ETH }
+		NOT = { overlord_of = ETH }
+		NOT = { alliance_with = ETH }
+		NOT = { war_with = ETH }
 	}
 
 	mean_time_to_happen = {
@@ -1026,7 +1025,7 @@ country_event = {
 				female = yes
 			}
 			hidden_effect = {
-				add_queen_personality_ancestor = { key = righteous }
+				add_queen_personality = righteous_personality
 				add_queen_personality = intricate_web_weaver_personality
 			}
 		}

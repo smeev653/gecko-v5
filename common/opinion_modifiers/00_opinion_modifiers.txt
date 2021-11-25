@@ -4764,6 +4764,10 @@ diplomatic_rabbi_opinion = {
 	opinion = 35
 }
 
+diplomatic_rabbi_opinion_reverse = {
+	opinion = 35
+}
+
 mal_accepted_gift = {
 	opinion = 75
 	yearly_decay = 3
