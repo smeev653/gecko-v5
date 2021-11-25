@@ -215,3 +215,19 @@ spa_rb_italian_ambition_mod = {
 	artillery_fire = 0.25
 	galley_power = 0.25
 }
+
+#Country modifier
+son_professional_songhaian_army = {	#As long as the ruler lives
+	army_tradition = 0.5
+	discipline = 0.025
+	yearly_army_professionalism = 0.005
+	manpower_recovery_speed = -0.1
+}
+
+#Country modifier
+son_focus_on_professional_armies = {	#As long as the ruler lives, renewable through decision
+	army_tradition = 0.5
+	discipline = 0.025
+	yearly_army_professionalism = 0.005
+	manpower_recovery_speed = -0.1
+}
