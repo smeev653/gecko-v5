@@ -9,10 +9,10 @@
  gecko_noble_regiments_reform_desc:0 "The state is me. And my armies.."
 
  #Ethiopia
- gc_ethiopian_theocracy_reform:0 "Ethiopian Theocracy"
- gc_ethiopian_theocracy_reform_desc:0 "The Ethiopian Theocracy is lead by an Emperor who is also the Head of the Church."^
- gc_ethiopian_government_name:0 "Ethiopian Theocracy"
- GC_Ethiopia_Mechanic:0 "Ethiopian Theocracy"
+ gc_ethiopian_theocracy_reform:0 "Coptic Theocracy"
+ gc_ethiopian_theocracy_reform_desc:0 "The Coptic Theocracy is lead by an Emperor who is also the Head of the Church."
+ gc_ethiopian_government_name:0 "Coptic Theocracy"
+ GC_Ethiopia_Mechanic:0 "Coptic Theocracy"
 
  #Spain
  gc_imperial_spain_reform:0 "Imperio Español"

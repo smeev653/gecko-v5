@@ -3,11 +3,8 @@ songhai_military_slot = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
+
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 	}
@@ -193,11 +190,8 @@ songhai_historical_conquest_slot = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
+
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 	}
@@ -433,11 +427,7 @@ songhai_maghreb_slot = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 	}
@@ -749,11 +739,7 @@ songhai_mossi_slot = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 	}
@@ -794,11 +780,7 @@ songhai_question_mark_slot = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 		NOT = { has_country_flag = son_islamtic_focus }
@@ -1201,11 +1183,7 @@ songhai_jihad_slot = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 		has_country_flag = son_islamtic_focus
@@ -1498,11 +1476,7 @@ songhai_protection_slot = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 		has_country_flag = son_tolderance_focus
@@ -1709,11 +1683,7 @@ songhai_money_maker_slot = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Origins"
-	}
 	potential = {
-		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
 		tag = SON
 	}
