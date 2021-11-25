@@ -1278,7 +1278,6 @@ on_hre_defense = {
 # Emperor NOT coming to the defense of a HRE member
 on_hre_non_defense = {
 	events = {
-		909
 	}
 }
 
@@ -1530,8 +1529,6 @@ on_siberian_pulse = {
 # country random events
 on_bi_yearly_pulse = {
 	events = {
-		center_of_revolution.2950
-		center_of_revolution.3000
 	}
 	random_events = {
 		# randomevents.txt
@@ -3324,8 +3321,6 @@ on_buy_religious_reform = {
 
 on_circumnavigation = {
 	events = {
-		exploration_events.17
-		exploration_events.16 #First Circumnavigation Europe
 	}
 }
 

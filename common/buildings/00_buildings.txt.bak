@@ -35,22 +35,6 @@ marketplace = {
 		province_trade_power_modifier = 0.5
 		trade_value_modifier = 0.10
 	}
-	on_built = {
-		add_development_from_building = {
-			building = marketplace
-			type = production
-			value = 1
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = marketplace
-			type = production
-			value = 1
-		}
-	}
-	on_obsolete = {
-	}
 
 	ai_will_do = {
 		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.

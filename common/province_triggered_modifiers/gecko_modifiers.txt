@@ -536,4 +536,24 @@ conquest_of_pest = {
 	on_deactivation = {
 	
 	}
-}								
+}	
+
+my_desert = {
+	potential = {
+			normal_or_historical_nations = yes
+		}
+
+		trigger = {
+		}
+
+		trade_goods_size= 1
+		
+		#Province scope
+		on_activation = {
+		
+		}
+		
+		on_deactivation = {
+		
+		}
+}		
