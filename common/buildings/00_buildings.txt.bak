@@ -35,6 +35,22 @@ marketplace = {
 		province_trade_power_modifier = 0.5
 		trade_value_modifier = 0.10
 	}
+	on_built = {
+		add_development_from_building = {
+			building = marketplace
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = marketplace
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
@@ -46,6 +62,22 @@ workshop = {
 	time = 12
 	modifier = {
 		local_production_efficiency = 0.5
+	}
+	on_built = {
+		add_development_from_building = {
+			building = workshop
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = workshop
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
 	}
 
 	allow_in_gold_provinces = no
@@ -63,6 +95,45 @@ temple = {
 		local_missionary_strength = 0.01
 	}
 
+	on_built = {
+		if = {
+				limit = {
+					FROM = {
+						religion = catholic
+						has_estate_privilege = estate_church_influence_temples
+					}
+				}
+				FROM = {
+					add_papal_influence = 3
+				}
+			}
+			add_development_from_building = {
+				building = temple
+				type = tax
+				value = 1
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+		remove_development_from_building = {
+			building = temple
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
 	ai_will_do = {
 		factor = 250
 	}
@@ -73,6 +144,22 @@ barracks = {
 	time = 12
 	modifier = {
 		local_manpower_modifier = 0.5
+	}
+	on_built = {
+		add_development_from_building = {
+			building = barracks
+			type = manpower
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = barracks
+			type = manpower
+			value = 1
+		}
+	}
+	on_obsolete = {
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -114,11 +201,27 @@ shipyard = {
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
 	}
+	on_built = {
+		add_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 105 # Little above build cost
+			factor = 1.5 # Little above build cost
 			FROM = { navy_size_percentage = 0.95 }
 		}
 		modifier = {
@@ -616,7 +719,22 @@ courthouse = {
 		local_friendly_movement_speed = 0.25
 		allowed_num_of_buildings = 1
 	}
-
+	on_built = {
+		add_development_from_building = {
+			building = courthouse
+			type = tax
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = courthouse
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
 	ai_will_do = {
 		factor = 1000
 	}
@@ -631,6 +749,43 @@ dock = {
 	modifier = {
 		local_sailors_modifier = 0.5
 	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -644,31 +799,25 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 1.2
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			#add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				#add_army_professionalism = -0.005
-#			}
-#		}
-#	}
+	on_built = {
+		add_development_from_building = {
+			building = regimental_camp
+			type = manpower
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = regimental_camp
+			type = manpower
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -1172,7 +1321,46 @@ cathedral = {
 		local_missionary_strength = 0.03
 		local_tax_modifier = 0.8
 	}
-
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = 3
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = cathedral
+			obsolete_building = church
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+		remove_development_from_building = {
+			building = cathedral
+			type = tax
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1186,7 +1374,22 @@ university = {
 		local_development_cost = -0.05
 		allowed_num_of_buildings = 1
 	}
-
+	on_built = {
+		add_development_from_building = {
+			building = university
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = trade_depot
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 	ai_will_do = {
 		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
 		factor = 1
@@ -1230,6 +1433,24 @@ trade_depot = {
 	modifier = {
 		province_trade_power_modifier = 1
 		trade_value_modifier = 0.20
+	}	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = trade_depot
+			obsolete_building = marketplace
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = trade_depot
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
 	}
 
 	ai_will_do = {
@@ -1252,6 +1473,24 @@ grand_shipyard = {
 		local_ship_repair = 0.50
 	}
 
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = grand_shipyard
+			obsolete_building = shipyard
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = grand_shipyard
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -1296,6 +1535,24 @@ training_fields = {
 
 	modifier = {
 		local_manpower_modifier = 1
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = training_field
+			obsolete_building = barracks
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+
+	on_obsolete = {
+		remove_development_from_building = {
+			building = training_field
+			type = manpower
+			value = 2
+		}
 	}
 
 	ai_will_do = {
@@ -1778,6 +2035,44 @@ stock_exchange = {
 	modifier = {
 		province_trade_power_modifier = 1.25
 		trade_value_modifier = 0.30
+	}	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_trade_depot
+			}
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = build_dev_marketplace
+			}
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = stock_exchange
+			type = production
+			value = 3
+		}
+	}
+	on_obsolete = {
 	}
 
 	ai_will_do = {
@@ -1794,6 +2089,24 @@ counting_house = {
 		local_production_efficiency = 1
 	}
 
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = counting_house
+			obsolete_building = workshop
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = counting_house
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 	allow_in_gold_provinces = no
 
 	ai_will_do = {
@@ -1816,6 +2129,25 @@ town_hall = {
 		local_governing_cost = -0.5
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.50
+		}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = town_hall
+			obsolete_building = courthouse
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = town_hall
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
 	}
 
 	ai_will_do = {
@@ -1835,6 +2167,25 @@ drydock = {
 
 	modifier = {
 		local_sailors_modifier = 1.0
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = drydock
+			obsolete_building = dock
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	
+	on_destroyed = {
+		remove_development_from_building = {
+			building = drydock
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
 	}
 
 	ai_will_do = {
@@ -1874,6 +2225,24 @@ conscription_center = {
 
 	modifier = {
 		land_forcelimit = 2
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = conscription_center
+			obsolete_building = regimental_camp
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = conscription_center
+			type = manpower
+			value = 2
+		}
+	}
+	on_obsolete = {
 	}
 
 	ai_will_do = {
@@ -2373,6 +2742,22 @@ wharf = {
 		salt
 	}
 	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 500
@@ -2410,6 +2795,22 @@ weapons = {
 		iron
 	}
 	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1750
@@ -2424,6 +2825,22 @@ textile = {
 		dyes
 	}
 	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1750
@@ -2440,6 +2857,22 @@ plantations = {
 		cocoa
 	}
 	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1750
@@ -2455,6 +2888,22 @@ tradecompany = {
 		incense
 	}
 	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1750
@@ -2468,6 +2917,23 @@ farm_estate = {
 		wine
 	}
 	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
 
 	ai_will_do = {
 		factor = 1750
@@ -2483,6 +2949,22 @@ mills = {
 		chinaware
 	}
 	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -2503,6 +2985,22 @@ furnace = {
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -2545,6 +3043,22 @@ soldier_households = {
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = manpower
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = manpower
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -2569,12 +3083,30 @@ impressment_offices = {
 
 	modifier = {
 		local_sailors = 250
+		ship_recruit_speed = -0.1
+		local_ship_cost = -0.05
 	}
 	bonus_modifier = {
 		local_sailors = 250
+		ship_recruit_speed = -0.1
+		local_ship_cost = -0.05
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = impressment_offices
+			type = manpower
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = impressment_offices
+			type = manpower
+			value = 2
+		}
+	}
 
 	ai_will_do = {
 		factor = 1
@@ -2632,6 +3164,22 @@ state_house = {
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = state_house
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = state_house
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
 
 	ai_will_do = {
 		factor = 1
