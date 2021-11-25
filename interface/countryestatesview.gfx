@@ -466,5 +466,4 @@ spriteTypes = {
 		name = "privilege_centralized"
 		texturefile = "gfx/interface/privileges/privilege_centralized.dds"
 	}
-
 }

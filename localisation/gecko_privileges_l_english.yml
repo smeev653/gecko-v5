@@ -22,3 +22,19 @@
 
 estate_gc_noble_levies:0 "Mamluk Noble Levies"
 estate_gc_noble_levies_desc:0 " "
+
+#bunker mod merge
+ estate_mamluks_land_rights:0 "Mamluk Land Rights"
+ estate_mamluks_land_rights_desc:0 "The different Mamluk factions are as greedy as they are scheming. To keep them in line they all need to have their own piece of land to operate in."
+ estate_mamluks:0 "Mamluks"
+ estate_mamluks_desc:0 "This estate represents the Mamluk caste, members of one of the armies of slaves established during the Abbasid era, which later won political control of several Muslim states. Typically of foreign extraction, the Mamluks form a distinct military and political class, and through their martial skills and ruthlessness, they have been able to become powerful assets, as well as wealthy landowners. Their reputation for rebelliousness and infighting makes others quite wary of their influence."
+ estate_mamluks_ownership:0 "Mamluks Land Ownership"
+ mamluks_loyalty_modifier:0 "Mamluks Loyalty Equilibrium"
+ mamluks_influence_modifier:0 "Mamluks Influence"
+ EST_VAL_HIGH_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 50% of the Force Limit: §Y$VAL$%§!"
+ EST_VAL_MEDIUM_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 25% of the Force Limit: §Y$VAL$%§!"
+ EST_VAL_LOW_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 10% of the Force Limit: §Y$VAL$%§!"
+ EST_VAL_VERY_LOW_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising less than 10% of the Force Limit: §Y$VAL$%§!"
+ EST_VAL_HIGH_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 50% of the Force Limit: §G$VAL$§!"
+ EST_VAL_MEDIUM_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 25% of the Force Limit: §G$VAL$§!"
+ EST_VAL_VERY_LOW_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising less than 10% of the Force Limit: §R$VAL$§!"
