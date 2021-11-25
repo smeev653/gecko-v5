@@ -77,6 +77,11 @@ country_event = {
 								discover_province = PREV
 							}
 			}
+			egypt_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
 		}
 	}
 	
