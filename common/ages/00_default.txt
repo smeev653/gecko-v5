@@ -251,7 +251,10 @@ age_of_discovery = {
 		}
 		songhai_timbuktu_university = {
 			allow = {
-					tag = SON
+					OR = {
+						tag = SON
+						tag = PR2
+					}
 				}	
 				modifier = {
 					technology_cost = -0.15
