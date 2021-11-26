@@ -10135,6 +10135,7 @@ doges_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_ship_repair = 0.25
 		}
 		area_modifier = {
 		}
@@ -10154,6 +10155,7 @@ doges_palace = {
 			factor = 2500
 		}
 		province_modifiers = {
+			local_ship_repair = 0.5
 		}
 		area_modifier = {
 		}
@@ -10174,12 +10176,13 @@ doges_palace = {
 			factor = 5000
 		}
 		province_modifiers = {
+			local_ship_repair = 0.9
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
 			reform_progress_growth = 0.3
-			global_ship_repair = 0.5
+			republican_tradition = 0.3 
 			global_ship_recruit_speed = -1
 		}
 		on_upgraded = {
@@ -10316,8 +10319,6 @@ dutch_polders = {
 	type = monument
 
 	build_trigger = {
-		culture = dutch
-		province_is_or_accepts_culture = yes
 	}
 
 	on_built = {
@@ -10327,13 +10328,9 @@ dutch_polders = {
 	}
 
 	can_use_modifiers_trigger = {
-		culture = dutch
-		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
-		culture = dutch
-		province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {

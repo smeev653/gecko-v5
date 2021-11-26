@@ -1489,7 +1489,7 @@ consolidate_power_in_cities_reform = {
 		}
 	}
 	modifiers = {
-		merchant = 1
+		merchants = 1
 		global_foreign_trade_power = 0.20
 	}
 	has_term_election = yes
