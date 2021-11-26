@@ -10107,7 +10107,10 @@ doges_palace = {
 	}
 
 	keep_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			tag = ITA
+		}	
 	}
 
 	tier_0 = {
@@ -10162,7 +10165,6 @@ doges_palace = {
 		country_modifiers = {
 			reform_progress_growth = 0.2
 			republican_tradition = 0.25 
-			prestige = 0.5
 		}
 		on_upgraded = {
 		}

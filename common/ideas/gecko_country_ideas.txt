@@ -202,7 +202,7 @@ AKS_ideas = {
 	}
 	
 	aks_christianity_stronghold = {
-		land_morale = 0.2
+		land_morale = 0.15
 		garrison_size = 0.25
 	}
 	

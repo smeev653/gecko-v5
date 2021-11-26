@@ -1198,7 +1198,7 @@ country_event = {
 		define_heir = {
 			dynasty = original_dynasty
 			age = 25
-			change_mil = 1
+		change_mil = 1
 			male = yes
 			claim = 65
 		}
