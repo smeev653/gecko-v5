@@ -1284,7 +1284,7 @@ hudavendigar_area = { #3
 
 germiyan_area = { #4
 	color = { 234 145 65 }
-	322 1848 4308 4311 323
+	322 1848 4308 4311
 }
 
 aydin_area = { #5
@@ -1306,20 +1306,24 @@ kastamonu_area = { #4
 }
 
 karaman_area = { #4
-	 324 2301 4307 327 2302
+	 324 2301 4307 323
 }
 
 cukurova_area = { #3
 	color = { 50 177 200 }
+	6115 6116 6117 327 2302 
+}
+
+eastern_mediterrenean_islands_area = {
 	321 320 163
 }
 
 aleppo_area = { #4
-	377 1849 2313 4298
+	377 1849 2313 4298 6114
 }
 
 syria_area = { #4
-	378 382 1855 4297
+	378 382 1855 4297 6113
 }
 
 trans_jordan_area = { #3
@@ -2499,11 +2503,11 @@ north_malaya_area = { # 4
 }
 
 vietnam_area = { #4
-	610 1016 2373 4821
+	610 1016 2373 
 }
 
 red_river_delta_area = { #5
-	613 616 2372 4819 4820
+	613 616 2372
 }
 
 north_laos_area = { #4
@@ -2571,7 +2575,7 @@ jambi_area = { # 4
 }
  
 minangkabau_area = { #5
-	2680 2681 2683 4817 4818
+	2680 2681 2683
 }
 
 south_sumatra_area = { #5
@@ -3871,8 +3875,7 @@ central_egypt_area = {
 upper_egypt_area = {
 }
 
-eastern_mediterrenean_islands_area = {
-}
+
 
 western_aegean_area = {
 }

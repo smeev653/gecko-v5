@@ -659,6 +659,7 @@ categories =  {
 			361 #gecko drylands
 			1751 #Sebtah
 			226 #Gibraltar
+			6114 6115 6116 #bunker mod merge
 		}
 	}
 
@@ -713,7 +714,7 @@ categories =  {
 			2314 #smeev change
 			1798 1799 #smeev change
 			#405 #smeev change
-			
+			6113 6117 #bunker mod merge
 		}
 	}
 

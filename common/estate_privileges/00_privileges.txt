@@ -3323,6 +3323,8 @@ estate_nobles_supremacy_over_crown = {
 		ghilman_influence_modifier = 0.1 #dum
 		janissary_loyalty_modifier = 0.1 #dum
 		janissary_influence_modifier = 0.1 #dum
+		mamluks_loyalty_modifier = 0.1
+		mamluks_influence_modifier = 0.1
 	}
 	mechanics = {
 		can_give_agendas_without_interaction

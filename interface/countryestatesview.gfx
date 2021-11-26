@@ -138,7 +138,7 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "privilege_admin_power"
 		texturefile = "gfx/interface/privileges/privilege_admin_power.dds"
 	}

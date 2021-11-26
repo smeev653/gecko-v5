@@ -691,7 +691,7 @@ mamluk_government = {
 		government_abilities = {
 			mamluk_mechanic
 		}
-	
+	}
 	custom_attributes = {
 		heir = no
 		foreign_slave_rulers = yes

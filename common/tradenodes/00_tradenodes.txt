@@ -966,6 +966,7 @@ aleppo={
 		#transjordan
 		379 1854 380 381 #palestine_area
 		378 382 1855 4297 #syria_area
+		6113 6114
 	}
 }
 
@@ -1004,6 +1005,7 @@ constantinople={
 		332 2303 4310 2308 #dulkadir_area #smeev
 		331 2305 330 #erzurum #smeev
 		418 2306 2307 4295 4296 #north_kurdistan_area
+		6115 6116 6117
 		}
 }
 

@@ -379,6 +379,7 @@ anatolia_region = {
 		ankara_area
 		aegean_archipelago_area
 		germiyan_area
+		eastern_mediterrenean_islands_area
 	}
 }
 
