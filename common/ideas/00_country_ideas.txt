@@ -107,11 +107,11 @@ ENG_ideas = {
 	secretaries_of_state = {
 		diplomatic_upkeep = 1
 	}
-	navigation_acts = {
-		trade_efficiency = 0.1
-	}
 	eng_red_coats = {
 		leader_land_fire = 1
+	}
+	navigation_acts = {
+		trade_efficiency = 0.1
 	}
 	sick_and_hurt_board = {
 		sailors_recovery_speed = 0.10
@@ -129,7 +129,7 @@ GBR_ideas = {
 	}
 
 	bonus = {
-		backrow_artillery_damage = 0.15
+		backrow_artillery_damage = 0.20
 	}
 	
 	trigger = {

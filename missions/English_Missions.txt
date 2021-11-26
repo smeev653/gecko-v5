@@ -309,6 +309,20 @@ eng_french_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_manpower = 10
+			236 = {
+				limit = { controlled_by = ROOT  }
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+					western_longbow =  ROOT
+			}
 		}
 	}
 	

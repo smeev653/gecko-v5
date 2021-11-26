@@ -11,6 +11,14 @@ on_startup = {
 	}
 	if = {
 		limit = {
+			tag = ENG
+		}
+		country_event = { 
+			id = gecko.9
+		}
+	}		
+	if = {
+		limit = {
 			has_dlc = "Cradle of Civilization"
 			has_country_modifier = tur_janissary
 		}

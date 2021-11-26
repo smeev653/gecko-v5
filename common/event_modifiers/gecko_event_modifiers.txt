@@ -172,3 +172,8 @@ gc_african_corridor = {
 my_desert = {
 	trade_goods_size = 1.0
 }
+
+gecko_hyw = {
+	infantry_power = 0.1
+	land_morale = 0.05
+}	

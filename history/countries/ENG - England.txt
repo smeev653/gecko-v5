@@ -5,8 +5,9 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 236 # London
-national_focus = DIP
+national_focus = MIL
 add_accepted_culture = normand
+add_army_professionalism = 0.1
 
 change_estate_land_share = {
 	estate = estate_church
@@ -30,9 +31,9 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 		name = "Henry VI"
 		dynasty = "Lancaster"
 		birth_date = 1421.12.6
-		adm = 0
-		dip = 0
-		mil = 0
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = infertile_personality
@@ -40,7 +41,7 @@ change_estate_land_share = { #compensates for lack of nobles, distributes 20 bet
 
 1434.1.1 = { leader = {	name = "Richard Neville"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
 
-1444.1.1 = { leader = {	name = "John Talbot"	type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1453.7.17 } }
+1444.1.1 = { leader = {	name = "John Talbot"	type = general	fire = 3	shock = 4	manuever = 3	siege = 2	death_date = 1453.7.17 } }
 
 1445.4.23 = {
 	queen = {
