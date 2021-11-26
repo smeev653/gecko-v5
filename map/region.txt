@@ -300,6 +300,7 @@ balkan_region = {
 		albania_area
 		silistria_area
 		slavonia_area
+		XMP_central_greece_area
 	}
 }
 

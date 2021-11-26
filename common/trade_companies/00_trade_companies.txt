@@ -856,7 +856,8 @@ trade_company_ragusa = {
 		4754 4753 136 137 #dalmatia #smeev
 		4239 141 4176 3000 4757 #serbia #smeev
 		1827 1766 138 #rascia #smeev
-		140 4755 3002 139 1831 #bosnia #smeev	
+		140 4755 3002 139 1831 #bosnia #smeev
+		6120 6122 6123 #xmp		
 	}
 	
 	# Specific
@@ -916,6 +917,8 @@ trade_company_alexandria = {
 		6024 6023 6025 6026 #jaghbub #aba
 		6020 6030 #lower nubia #aba
 		321 163 320
+		6121 #xmp
+
 	}
 	
 	

@@ -13,7 +13,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 130;4753;sea;1308;-1;-1;-1;-1;Istria-Zara
 4754;4174;sea;1310;-1;-1;-1;-1;Kotor-Durazzo
 320;163;sea;1319;-1;-1;-1;-1;Rhodes-Crete 
-145;163;sea;1319;-1;-1;-1;-1;Morea-Crete
+
 235;87;sea;1271;-1;-1;-1;-1;Kent-Calais
 235;168;sea;1271;-1;-1;-1;-1;Kent-Rouen
 4624;2652;sea;1512;-1;-1;-1;-1;Guane-Ecab
@@ -143,7 +143,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2954;353;sea;1305;2973;1210;2972;1208;Djerba-Tataouine
 431;2999;sea;1334;3693;1091;3689;1089;Mogostan-Hormuz
 398;2999;sea;1334;3686;1080;3684;1084;Qawasim-Hormuz
-146;3003;sea;1319;3174;1294;3175;1294;Athens - Euboea
 3003;164;sea;1319;3190;1287;3191;1286;Euboea - Cyclades
 1751;226;sea;1293;-1;-1;-1;-1;Ceuta-Gibraltar
 4353;4352;sea;1397;-1;-1;-1;-1;Leyte-Cebu
@@ -164,4 +163,20 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 5004;6;sea;1258;-1;-1;-1;-1;Skane-Copenhagen
 6000;2447;sea;1324;-1;-1;-1;-1;Kerch-Matrika
 28;36;sea;1254;-1;-1;-1;-1;Nyland-Reval
+###XMP###
+147;3003;sea;1319;-1;-1;-1;-1;Salonica-Euboea #XMP
+145;6121;sea;1319;-1;-1;-1;-1;Morea-XMP Chania #XMP
+4779;6123;sea;1319;-1;-1;-1;-1;Gallipoli-XMP Lemnos #XMP
+6120;3003;sea;1319;-1;-1;-1;-1;XMP Boeotia-Euboea #XMP
+6122;318;sea;1319;-1;-1;-1;-1;XMP Samos-Sugla #XMP
+6122;164;sea;1319;-1;-1;-1;-1;XMP Samos-Naxos #XMP
+6121;164;sea;1319;-1;-1;-1;-1;XMP Chania-Naxos #XMP
+6122;320;sea;1319;-1;-1;-1;-1;XMP Samos-Rhodes #XMP
+6122;2348;sea;1319;-1;-1;-1;-1;XMP Samos-Chios #XMP
+2348;4700;sea;1319;-1;-1;-1;-1;XMP Chios-Lesbos #XMP
+6122;164;sea;1319;-1;-1;-1;-1;XMP Samos-Naxos #XMP
+164;320;sea;1319;-1;-1;-1;-1;Naxos-Rhodes #XMP
+4700;6123;sea;1319;-1;-1;-1;-1;Lesbos-XMP Lemnos #XMP
+#146;3003;sea;1319;3174;1294;3175;1294;Athens - Euboea #XMP removed
+#########
 -1;-1;;-1;-1;-1;-1;-1;-1;

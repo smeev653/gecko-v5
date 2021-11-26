@@ -447,6 +447,7 @@ categories =  {
 			4340 #persia #smeev
 			426 #persia #smeev
 			4238 #gcbohemia
+			6120 #xmp
 		}
 	}
 
@@ -606,6 +607,8 @@ categories =  {
 			642 643 644 648 649 650 2713 2714 2716 2717 2718 2725 #Moluccas & Sulawesi
 			1015 4193 #Japan
 			387 4279 #Tihama al yemen
+			6122
+			163 #removed from highlands
 		}
 	}	
 	
@@ -690,7 +693,7 @@ categories =  {
 			1773 127 1247
 			1766
 			319 2298 
-			371 163 321
+			371 321
 			661 662 673 674 675 678 705
 			2131 2132 2133 2134 2135 2165 2167 2168 2170 2748 2183 
 			3001 4176 #Balkans
@@ -715,6 +718,7 @@ categories =  {
 			1798 1799 #smeev change
 			#405 #smeev change
 			6113 6117 #bunker mod merge
+			6121
 		}
 	}
 
