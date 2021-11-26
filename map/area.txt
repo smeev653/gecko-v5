@@ -2508,11 +2508,11 @@ north_malaya_area = { # 4
 }
 
 vietnam_area = { #4
-	610 1016 2373 
+	610 1016 2373 4821
 }
 
 red_river_delta_area = { #5
-	613 616 2372
+	613 616 2372 4819 4820
 }
 
 north_laos_area = { #4
@@ -2580,7 +2580,7 @@ jambi_area = { # 4
 }
  
 minangkabau_area = { #5
-	2680 2681 2683
+	2680 2681 2683 4817 4818
 }
 
 south_sumatra_area = { #5

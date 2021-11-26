@@ -4974,7 +4974,7 @@ siouan = {
 	chiwere = {
 		primary = OEO
 		dynasty_names = {
-		Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
+			Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
 			Ihantkhunwan Ihankthunwanna Isanyathi Thithunwan Wichiyena
 			Wahpéthunwan Mdewakanthunwan Wahpéhute Sisithunwan 
 		}
@@ -6087,8 +6087,8 @@ tibetan_group = {
 
 
 malay = { 
-	graphical_culture = asiangfx
-	
+	graphical_culture = southeastasiangfx
+	second_graphical_culture = asiangfx
 	malayan = {
 	
 		primary = MLC
@@ -6293,7 +6293,8 @@ malay = {
 }
 
 thai_group = {
-	graphical_culture = asiangfx
+	graphical_culture = southeastasiangfx
+	second_graphical_culture = asiangfx
 	central_thai = {
 		primary = AYU
 		dynasty_names = { 
@@ -6363,7 +6364,8 @@ thai_group = {
 	}
 }
 southeastasian_group = { 
-	graphical_culture = asiangfx
+	graphical_culture = southeastasiangfx
+	second_graphical_culture = asiangfx
 	khmer = {
 		primary = KHM
 		dynasty_names = {
@@ -8375,9 +8377,6 @@ kongo_group = {
 	}
 	luba = {
 		primary = LUB
-	}
-	acholi = {
-		
 	}
 	kongolese = {
 		primary = KON

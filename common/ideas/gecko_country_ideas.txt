@@ -144,7 +144,7 @@ ETH_ideas = {
 	free = yes		#will be added at load.
 	
 	diplomatic_demeanor = {
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 	solomonid_claim = {
 		prestige = 1
