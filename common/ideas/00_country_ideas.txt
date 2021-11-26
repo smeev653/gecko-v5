@@ -463,7 +463,7 @@ FRA_ideas = {
 	}
 	
 	bonus = {
-		diplomatic_upkeep = 1
+		recover_army_morale_speed = 0.1
 	}	
 
 	trigger = {
