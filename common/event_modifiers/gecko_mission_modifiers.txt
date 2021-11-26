@@ -125,7 +125,7 @@ france_united = {
 }
 
 caliphate_proclaimed = {
-	fire_damage = 0.15
+	fire_damage = 0.05
 }	
 
 gecko_cannon_foundries = {

@@ -303,7 +303,7 @@ conquest_of_cairo = {
 		controlled_by = ROOT	
 		}	
 
-	land_morale = 0.05
+	fire_damage = 0.10
 	prestige = 0.5
 	
 	#Province scope

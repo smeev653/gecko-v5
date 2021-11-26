@@ -463,7 +463,7 @@ macaronesia_area = { #3
 ########################################
 
 lombardy_area = { #5
-	104 1862 4728 4740 6078
+	104 1862 4740 6078 105
 }
 
 tuscany_area = { #5
@@ -471,15 +471,15 @@ tuscany_area = { #5
 }
 
 naples_area = { #3  #Campania
-	121 2983 6060
+	121 2983 6060 6053
 }
 
 lazio_area = { #4 Lazio-Umbria
-	118 4731 6052 6053 6051
+	118 4731 6052  6051 2976
 }
 
-apulia_area = { #4
-	122 1933 2985 4733
+apulia_area = { 6126  #4
+	122 1933 2985 4733 
 }
 
 
@@ -487,21 +487,21 @@ apulia_area = { #4
 # GC Italy							   #
 ########################################
 
-venetia_area = { #5
-	112 1774 4729 5779 108
+venetia_area = {  #5
+	112 1774 4729 5779 6124 
 }
 
 po_valley_area = { #4
 	color = { 205 190 47 }
-	 4739 107 109 
+	 4739 107 109 108 
 }
 
 piedmont_area = { #4
-	1875 2981 4727 6075 5783 103
+	1875 4727 5783 103 
 }
 
 liguria_area = { #3
-	101 102 2992 105 6046
+	101 102 2992 6046
 }
 
 corsica_sardinia_area = { #4
@@ -516,8 +516,8 @@ western_sicily_area = { #3
 	125 4736 4737 5775
 }
 
-central_italy_area = { #3
-	119 120 6050 2977 2976
+central_italy_area = {   #3
+	119 120 6050 2977 6125
 }
 
 krain_area = { #3
@@ -543,7 +543,7 @@ calabria_area = { #5 (+Lucania)
 }
 
 torino_area = { #3 #Mountains woo
-	5785 2981 6075 2979
+	5785 2981 6075 2979 4728
 }	
 
 

@@ -2792,8 +2792,7 @@ GRA_ideas = {
 PAP_ideas = {
 	start = {
 		development_cost = -0.05
-		global_unrest = -2
-		
+		infantry_power = 0.1
 	}
 
 	bonus = {
