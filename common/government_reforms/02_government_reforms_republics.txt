@@ -30,7 +30,6 @@ oligarchy_reform = {
 	potential = {
 		OR = {
 			tag = HSA
-			tag	= VEN
 		}	
 	}
 	nation_designer_trigger = {
@@ -296,16 +295,9 @@ venice_merchants_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	legacy_equivalent = venetian_merchant_republic
+	duration = 4
 	potential = {
-		NOT = { map_setup = map_setup_random }
-		OR = {
-			tag = VEN
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = venice_merchants_reform
-			}
-		}
-		always = no
+		tag = VEN
 	}
 	boost_income = yes
 	factions = {
@@ -339,12 +331,10 @@ venice_merchants_reform = {
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-		lottery_election = yes
+		enables_aristocratic_idea_group = yes
 		election_on_death = yes
 		is_merchant_republic = yes
 	}
-	has_term_election = no
 }
 
 pirate_republic_reform = {
@@ -1466,7 +1456,8 @@ consolidate_power_in_doge_reform = {
 		}
 	}
 	modifiers = {
-		governing_capacity = 250
+		land_forcelimit_modifier = 0.25
+		global_manpower = 15
 	}
 	has_term_election = no
 	ai = {
@@ -1498,11 +1489,11 @@ consolidate_power_in_cities_reform = {
 		}
 	}
 	modifiers = {
-		diplomatic_upkeep = 1
-		global_foreign_trade_power = 0.1
+		merchant = 1
+		global_foreign_trade_power = 0.20
 	}
 	has_term_election = yes
-	duration = 4
+	duration = 3
 	ai = {
 		factor = 10
 		modifier = {

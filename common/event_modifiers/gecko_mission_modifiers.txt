@@ -183,8 +183,8 @@ ven_mercenaries_paid_with_land = {
 }
 
 ven_venture_captain_recruitment = {
-	land_forcelimit_modifier = 0.2
-	free_leader_pool = 2
+	land_forcelimit_modifier = 0.25
+	free_leader_pool = 3
 }
 
 ven_genoese_humiliation = {
