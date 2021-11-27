@@ -128,7 +128,8 @@ emp_ven_slot_2 = {
 			}
 		}
 		effect = {
-			enable_development_on_buildings_built = yes	
+			add_adm_power = 100
+			add_dip_power = 100
 		}
 	}
 	
