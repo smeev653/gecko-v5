@@ -278,8 +278,8 @@ country_event = {
 				has_saved_event_target = noble_province
 			}
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = yes
 				culture = event_target:noble_province
@@ -287,8 +287,8 @@ country_event = {
 		}
 		else = {
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = yes
 			}
@@ -366,8 +366,8 @@ country_event = {
 			}
 			ROOT = { 
 				define_heir = { 
-					DIP = 1
-					MIL = 1
+					change_DIP = 1
+					change_MIL = 1
 					dynasty = PREV 
 					age = 35
 					culture = PREV
@@ -428,8 +428,8 @@ country_event = {
 				has_saved_event_target = burgher_province
 			}
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = yes
 				culture = event_target:burgher_province
@@ -437,8 +437,8 @@ country_event = {
 		}
 		else = {
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = yes
 			}
@@ -497,16 +497,16 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				hidden = yes
 				culture = event_target:church_province
 			}
 		}
 		else = {
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = yes
 			}
@@ -577,8 +577,8 @@ country_event = {
 				has_saved_event_target = church_province
 			}
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = no
 				culture = event_target:church_province
@@ -586,8 +586,8 @@ country_event = {
 		}
 		else = {
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = no
 			}
@@ -636,8 +636,8 @@ country_event = {
 				has_saved_event_target = papal_protoge_country
 			}
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				culture = event_target:papal_protoge_country
 				hidden = no
@@ -645,8 +645,8 @@ country_event = {
 		}
 		else = {
 			define_heir = {
-				DIP = 1
-				MIL = 1
+				change_DIP = 1
+				change_MIL = 1
 				age = 35
 				hidden = no
 			}
@@ -681,8 +681,8 @@ country_event = {
 			}
 		}		
 		define_heir = {
-			DIP = 1
-			MIL = 1
+			change_DIP = 1
+			change_MIL = 1
 			age = 35
 			hidden = yes
 		}
@@ -720,8 +720,8 @@ country_event = {
 			}
 		}
 		define_heir = {
-			DIP = 1
-			MIL = 1
+			change_DIP = 1
+			change_MIL = 1
 			age = 35
 			hidden = yes
 		}
@@ -743,8 +743,8 @@ country_event = {
 			has_country_flag = KOL_secondogeniture_of_BAV
 		}
 		define_heir = {
-			DIP = 1
-			MIL = 1
+			change_DIP = 1
+			change_MIL = 1
 			age = 35
 			dynasty = event_target:probably_bavaria
 			culture = event_target:probably_bavaria
