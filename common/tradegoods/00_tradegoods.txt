@@ -346,6 +346,7 @@ fur = {
 				region = south_africa_region
 				region = australia_region
 				region = central_africa_region
+				region = guinea_region
 				area = newfoundland_area
 			}
 		}
