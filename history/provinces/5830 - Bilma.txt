@@ -3,7 +3,7 @@
 owner = AIR
 controller = AIR
 add_core = AIR
-culture = bilala
+culture = tuareg
 capital = "Bilma"
 religion = sunni
 trade_goods = slaves

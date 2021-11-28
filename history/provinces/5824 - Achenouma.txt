@@ -1,6 +1,6 @@
 #5824 - Achenouma
 
-culture = bilala
+culture = tuareg
 capital = "Achenouma"
 religion = sunni
 trade_goods = unknown

@@ -1,6 +1,6 @@
 #5823 - Dao Timmi
 
-culture = bilala
+culture = tuareg
 capital = "Dao Timmi"
 religion = sunni
 trade_goods = unknown

@@ -1,6 +1,6 @@
 #5829 - Dirkou
 
-culture = bilala
+culture = tuareg
 capital = "Dirkou"
 religion = sunni
 trade_goods = unknown
