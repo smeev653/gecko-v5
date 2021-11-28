@@ -21,27 +21,9 @@ songhai_military_slot = {
 		}
 		effect = {
 			capital_scope = {
-				add_institution_embracement = {
-					which = feudalism
-					value = 100
-				}
+				add_base_tax = 3
+				add_base_production = 3
 			}
-			random_owned_province = {
-				limit = {
-					NOT = {
-						provincial_institution_progress = {
-							which = feudalism
-							value = 1
-						}
-					}
-					is_state = yes
-				}
-				add_institution_embracement = {
-					which = feudalism
-					value = 100
-				}
-			}
-			change_government_reform_progress = -25
 		}
 	}
 
