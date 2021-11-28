@@ -8,6 +8,7 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1133	# Gao
 religious_school = maliki_school
+add_accepted_culture = tuareg
 
 
 1429.1.1 = {
@@ -33,8 +34,8 @@ religious_school = maliki_school
 
 1449.1.1 = {
 	heir = {
-		name = "Sulaymân"
-		monarch_name = "Sulaymân"
+		name = "Sulaymï¿½n"
+		monarch_name = "Sulaymï¿½n"
 		dynasty = "Sonni"
 		birth_date = 1420.1.1
 		death_Date = 1464.1.1
@@ -47,7 +48,7 @@ religious_school = maliki_school
 
 1456.1.1 = {
 	monarch = {
-		name = "Sulaymân"
+		name = "Sulaymï¿½n"
 		dynasty = "Sonni"
 		adm = 1
 		dip = 1
@@ -57,8 +58,8 @@ religious_school = maliki_school
 
 1456.1.1 = {
 	heir = {
-		name = "Alî Ber"
-		monarch_name = "Alî Ber"
+		name = "Alï¿½ Ber"
+		monarch_name = "Alï¿½ Ber"
 		dynasty = "Sonni"
 		birth_date = 1430.1.1
 		death_Date = 1492.11.7
@@ -66,18 +67,18 @@ religious_school = maliki_school
 		adm = 4
 		dip = 0
 		mil = 6
-		leader = {	name = "'Alî Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1}
+		leader = {	name = "'Alï¿½ Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1}
 	}
 }
 
 1464.1.1 = {
 	monarch = {
-		name = "'Alî Ber"
+		name = "'Alï¿½ Ber"
 		dynasty = "Sonni"
 		adm = 4
 		dip = 0
 		mil = 6
-		leader = {	name = "'Alî Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1}
+		leader = {	name = "'Alï¿½ Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1}
 	}
 }
 
@@ -98,7 +99,7 @@ religious_school = maliki_school
 
 1492.11.7 = {
 	monarch = {
-		name = "Bakarî"
+		name = "Bakarï¿½"
 		dynasty = "Sonni"
 		adm = 0
 		dip = 2
@@ -134,8 +135,8 @@ religious_school = maliki_school
 
 1493.3.4 = {
 	heir = {
-		name = "Mûsâ"
-		monarch_name = "Mûsâ"
+		name = "Mï¿½sï¿½"
+		monarch_name = "Mï¿½sï¿½"
 		dynasty = "Askiya"
 		birth_date = 1490.1.1
 		death_Date = 1531.4.13
@@ -148,7 +149,7 @@ religious_school = maliki_school
 
 1528.8.27 = {
 	monarch = {
-		name = "Mûsâ"
+		name = "Mï¿½sï¿½"
 		dynasty = "Askiya"
 		adm = 0
 		dip = 0
@@ -182,8 +183,8 @@ religious_school = maliki_school
 
 1531.4.13 = {
 	heir = {
-		name = "Ismâ'îl"
-		monarch_name = "Ismâ'îl"
+		name = "Ismï¿½'ï¿½l"
+		monarch_name = "Ismï¿½'ï¿½l"
 		dynasty = "Askiya"
 		birth_date = 1510.1.1
 		death_Date = 1539.12.2
@@ -196,7 +197,7 @@ religious_school = maliki_school
 
 1537.4.23 = {
 	monarch = {
-		name = "Ismâ'îl"
+		name = "Ismï¿½'ï¿½l"
 		dynasty = "Askiya"
 		adm = 1
 		dip = 5
@@ -206,8 +207,8 @@ religious_school = maliki_school
 
 1537.4.23 = {
 	heir = {
-		name = "Ishâq"
-		monarch_name = "Ishâq I"
+		name = "Ishï¿½q"
+		monarch_name = "Ishï¿½q I"
 		dynasty = "Askiya"
 		birth_date = 1510.1.1
 		death_Date = 1549.3.24
@@ -220,7 +221,7 @@ religious_school = maliki_school
 
 1539.12.2 = {
 	monarch = {
-		name = "Ishâq I"
+		name = "Ishï¿½q I"
 		dynasty = "Askiya"
 		adm = 0
 		dip = 0
@@ -230,8 +231,8 @@ religious_school = maliki_school
 
 1539.12.2 = {
 	heir = {
-		name = "Dâ'ûd"
-		monarch_name = "Dâ'ûd"
+		name = "Dï¿½'ï¿½d"
+		monarch_name = "Dï¿½'ï¿½d"
 		dynasty = "Askiya"
 		birth_date = 1530.1.1
 		death_Date = 1582.8.7
@@ -239,18 +240,18 @@ religious_school = maliki_school
 		adm = 5
 		dip = 3
 		mil = 4
-		leader = {	name = "Dâ'ûd"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0}
+		leader = {	name = "Dï¿½'ï¿½d"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0}
 	}
 }		
 
 1549.3.24 = {
 	monarch = {
-		name = "Dâ'ûd"
+		name = "Dï¿½'ï¿½d"
 		dynasty = "Askiya"
 		adm = 5
 		dip = 3
 		mil = 4
-		leader = {	name = "Dâ'ûd"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0}
+		leader = {	name = "Dï¿½'ï¿½d"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0}
 	}
 }
 
@@ -304,8 +305,8 @@ religious_school = maliki_school
 
 1586.12.16 = {
 	heir = {
-		name = "Ishâq"
-		monarch_name = "Ishâq II"
+		name = "Ishï¿½q"
+		monarch_name = "Ishï¿½q II"
 		dynasty = "Askiya"
 		birth_date = 1570.1.1
 		death_Date = 1591.4.15
@@ -318,7 +319,7 @@ religious_school = maliki_school
 
 1588.4.10 = {
 	monarch = {
-		name = "Ishâq II"
+		name = "Ishï¿½q II"
 		dynasty = "Askiya"
 		adm = 1
 		dip = 0
@@ -328,8 +329,8 @@ religious_school = maliki_school
 
 1588.4.10 = {
 	heir = {
-		name = "Nûh"
-		monarch_name = "Nûh"
+		name = "Nï¿½h"
+		monarch_name = "Nï¿½h"
 		dynasty = "Askiya"
 		birth_date = 1570.1.1
 		death_Date = 1599.1.1
@@ -344,7 +345,7 @@ religious_school = maliki_school
 }
 1591.4.15 = {
 	monarch = {
-		name = "Nûh"
+		name = "Nï¿½h"
 		dynasty = "Askiya"
 		adm = 1
 		dip = 0
@@ -378,8 +379,8 @@ religious_school = maliki_school
 
 1599.1.1 = {
 	heir = {
-		name = "Hârûn"
-		monarch_name = "Hârûn"
+		name = "Hï¿½rï¿½n"
+		monarch_name = "Hï¿½rï¿½n"
 		dynasty = "Askiya"
 		birth_date = 1590.1.1
 		death_Date = 1612.1.1
@@ -392,7 +393,7 @@ religious_school = maliki_school
 
 1604.1.1 = {
 	monarch = {
-		name = "Hârûn"
+		name = "Hï¿½rï¿½n"
 		dynasty = "Askiya"
 		adm = 1
 		dip = 2
@@ -402,8 +403,8 @@ religious_school = maliki_school
 
 1604.1.1 = {
 	heir = {
-		name = "al-Amîn"
-		monarch_name = "al-Amîn"
+		name = "al-Amï¿½n"
+		monarch_name = "al-Amï¿½n"
 		dynasty = "Askiya"
 		birth_date = 1604.1.1
 		death_Date = 1617.1.1
@@ -416,7 +417,7 @@ religious_school = maliki_school
 
 1612.1.1 = {
 	monarch = {
-		name = "al-Amîn"
+		name = "al-Amï¿½n"
 		dynasty = "Askiya"
 		adm = 4
 		dip = 1
@@ -426,8 +427,8 @@ religious_school = maliki_school
 
 1612.1.1 = {
 	heir = {
-		name = "Dâ'ûd"
-		monarch_name = "Dâ'ûd I"
+		name = "Dï¿½'ï¿½d"
+		monarch_name = "Dï¿½'ï¿½d I"
 		dynasty = "Askiya"
 		birth_date = 1600.1.1
 		death_Date = 1635.1.1
@@ -440,7 +441,7 @@ religious_school = maliki_school
 
 1617.1.1 = {
 	monarch = {
-		name = "Dâ'ûd I"
+		name = "Dï¿½'ï¿½d I"
 		dynasty = "Askiya"
 		adm = 5
 		dip = 0
@@ -450,8 +451,8 @@ religious_school = maliki_school
 
 1617.1.1 = {
 	heir = {
-		name = "Ismâ'îl"
-		monarch_name = "Ismâ'îl I"
+		name = "Ismï¿½'ï¿½l"
+		monarch_name = "Ismï¿½'ï¿½l I"
 		dynasty = "Askiya"
 		birth_date = 1600.1.1
 		death_Date = 1639.1.1
@@ -463,7 +464,7 @@ religious_school = maliki_school
 }
 1635.1.1 = {
 	monarch = {
-		name = "Ismâ'îl I"
+		name = "Ismï¿½'ï¿½l I"
 		dynasty = "Askiya"
 		adm = 1
 		dip = 4
@@ -497,8 +498,8 @@ religious_school = maliki_school
 
 1639.1.1 = {
 	heir = {
-		name = "Dâ'ûd II"
-		monarch_name = "Dâ'ûd II"
+		name = "Dï¿½'ï¿½d II"
+		monarch_name = "Dï¿½'ï¿½d II"
 		dynasty = "Askiya"
 		birth_date = 1600.1.1
 		death_date = 1650.1.1
@@ -511,7 +512,7 @@ religious_school = maliki_school
 
 1645.1.1 = {
 	monarch = {
-		name = "Dâ'ûd II"
+		name = "Dï¿½'ï¿½d II"
 		dynasty = "Askiya"
 		adm = 0
 		dip = 0
@@ -521,8 +522,8 @@ religious_school = maliki_school
 
 1645.1.1 = {
 	heir = {
-		name = "Ismâ'îl"
-		monarch_name = "Ismâ'îl II"
+		name = "Ismï¿½'ï¿½l"
+		monarch_name = "Ismï¿½'ï¿½l II"
 		dynasty = "Askiya"
 		birth_date = 1620.1.1
 		death_Date = 1660.1.1
@@ -536,7 +537,7 @@ religious_school = maliki_school
 
 1650.1.1 = {
 	monarch = {
-		name = "Ismâ'îl II"
+		name = "Ismï¿½'ï¿½l II"
 		dynasty = "Askiya"
 		adm = 2
 		dip = 0
@@ -546,8 +547,8 @@ religious_school = maliki_school
 
 1650.1.1 = {
 	heir = {
-		name = "Dâ'ûd"
-		monarch_name = "Dâ'ûd III"
+		name = "Dï¿½'ï¿½d"
+		monarch_name = "Dï¿½'ï¿½d III"
 		dynasty = "Askiya"
 		birth_date = 1650.1.1
 		death_Date = 1680.1.1
@@ -560,7 +561,7 @@ religious_school = maliki_school
 
 1660.1.1 = {
 	monarch = {
-		name = "Dâ'ûd III"
+		name = "Dï¿½'ï¿½d III"
 		dynasty = "Askiya"
 		adm = 0
 		dip = 3
@@ -570,8 +571,8 @@ religious_school = maliki_school
 
 1660.1.1 = {
 	heir = {
-		name = "Ishâq"
-		monarch_name = "Ishâq"
+		name = "Ishï¿½q"
+		monarch_name = "Ishï¿½q"
 		dynasty = "Askiya"
 		birth_date = 1660.1.1
 		death_Date = 1700.1.1
@@ -584,7 +585,7 @@ religious_school = maliki_school
 
 1680.1.1 = {
 	monarch = {
-		name = "Ishâq"
+		name = "Ishï¿½q"
 		dynasty = "Askiya"
 		adm = 1
 		dip = 1
@@ -618,8 +619,8 @@ religious_school = maliki_school
 
 1700.1.1 = {
 	heir = {
-		name = "Dâ'ûd"
-		monarch_name = "Dâ'ûd IV"
+		name = "Dï¿½'ï¿½d"
+		monarch_name = "Dï¿½'ï¿½d IV"
 		dynasty = "Askiya"
 		birth_date = 1700.1.1
 		death_Date = 1761.1.1
@@ -632,7 +633,7 @@ religious_school = maliki_school
 
 1730.1.1 = {
 	monarch = {
-		name = "Dâ'ûd IV"
+		name = "Dï¿½'ï¿½d IV"
 		dynasty = "Askiya"
 		adm = 2
 		dip = 1
