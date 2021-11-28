@@ -231,7 +231,6 @@ mam_north_missions = {
 				name = "beyliks_subjugated"
 				duration = 7300
 			}
-			add_manpower = 30
 		}
 	}
 }
