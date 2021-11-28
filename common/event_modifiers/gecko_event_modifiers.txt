@@ -175,5 +175,4 @@ my_desert = {
 
 gecko_hyw = {
 	infantry_power = 0.1
-	land_morale = 0.05
 }	
