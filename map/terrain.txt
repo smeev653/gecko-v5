@@ -119,7 +119,7 @@ categories =  {
 			67 4765 4769 4712 #Germany
 			
 			#smeev terrain changes
-			2319 4318 4320 2317 #nile
+			361 2319 4318 4320 2317 #nile
 			406 4291 #iraq arabi #smeev
 			412 #ahvaz #smeev
 			2798 1222 2799 #upper nile #smeev
@@ -657,9 +657,7 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			2797 4319 1231 1234 2322 1220 4033 #smeev nile provinces
 			6018 6022 6030 #aba new nile provinces
-			1848 #Hamid
 			324 #Karaman
-			361 #gecko drylands
 			1751 #Sebtah
 			226 #Gibraltar
 			6114 6115 6116 #bunker mod merge
@@ -707,7 +705,7 @@ categories =  {
 			23 24 370 2752 #Norway
 			154 162 263 1318 2960 2968 2970 #Central Europe
 			216 228 2755 2989 #Iberia
-			323 2202 4299 4305 #Anatolia and Caucasus
+			1848 323 2202 4299 4305 #Anatolia and Caucasus
 			736 1047 4228  #Korea & Manchuria
 			2986 4391 #Italy & France
 			4406 4398 # Burma
