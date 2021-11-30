@@ -405,7 +405,7 @@ take_border = {
 	
 	badboy_factor = 0.75
 	prestige_factor = 1
-	peace_cost_factor = 0.75
+	peace_cost_factor = 1
 
 	allowed_provinces = {
 		is_capital = no
@@ -910,7 +910,7 @@ superiority_crusade = {
 	defender = {
 		badboy_factor = 0.75
 		prestige_factor = 1.25
-		peace_cost_factor = 1.0	
+		peace_cost_factor = 1.2	
 		
 		allowed_provinces = {
 			always = yes
@@ -991,7 +991,7 @@ take_province_excommunication = {
 	
 	badboy_factor = 0.5
 	prestige_factor = 1.25
-	peace_cost_factor = 1.0	
+	peace_cost_factor = 1.2
 
 	defender = {
 		is_excommunication = yes
@@ -1268,7 +1268,7 @@ superiority_horde = {
 	attacker = {
 		badboy_factor = 0.75
 		prestige_factor = 1
-		peace_cost_factor = 1	
+		peace_cost_factor = 1.2	
 		
 		allowed_provinces = {
 			always = yes
@@ -1313,7 +1313,7 @@ take_province_tribal_feud = {
 	attacker = {
 		badboy_factor = 0.75
 		prestige_factor = 1
-		peace_cost_factor = 1	
+		peace_cost_factor = 1.2	
 		
 		allowed_provinces = {
 			always = yes
