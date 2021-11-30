@@ -1,7 +1,10 @@
 QAR_conquest = {
-	slot = 1
+	slot = 5
 	potential = {
+		OR = {
 			tag = ORM
+			tag = ARB
+			}
 			NOT = { map_setup = map_setup_random }
 		}
 		has_country_shield = yes
@@ -15,84 +18,7 @@ QAR_conquest = {
 			num_of_generals = 1
 		}
 		effect = {
-			nafud_area  = {
-				limit = {
-					NOT = { is_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			qasim_area  = {
-				limit = {
-					NOT = { is_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			yamamah_area  = {
-				limit = {
-					NOT = { is_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	PR_qar_missions4_desc = {
-		icon = mission_bedouins
-		position = 2
-		required_missions = { PR_qar_missions3_desc }
-		provinces_to_highlight = {
-			OR = { 
-				area = bahrain_area
-				area = nafud_area
-				area = qasim_area
-				area = yamamah_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			bahrain_area = {
-				type = all
-				owned_by = ROOT
-			}
-			nafud_area = {
-				type = all
-				owned_by = ROOT
-			}
-			qasim_area = {
-				type = all
-				owned_by = ROOT
-			}
-			yamamah_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			pirate_coast_area = {
-				limit = {
-					NOT = { is_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			oman_area = {
-				limit = {
-					NOT = { is_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			mascat_area = {
-				limit = {
-					NOT = { is_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+	
 			dhofar_area = {
 				limit = {
 					NOT = { is_claim = ROOT }
@@ -100,12 +26,12 @@ QAR_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}	
+		}
 	}
 	PR_qar_missions5_desc = {
 		icon = mission_bedouins
-		position = 3
-		required_missions = { PR_qar_missions4_desc }
+		position = 2
+		required_missions = { PR_qar_missions3_desc }
 		provinces_to_highlight = {
 			OR = { 
 				area = pirate_coast_area
@@ -192,10 +118,10 @@ QAR_conquest = {
 				add_permanent_claim = ROOT
 			}
 		}
-	}	
+	}
 	PR_qar_missions6_desc = {
 		icon = mission_bedouins
-		position = 4
+		position = 3
 		required_missions = { PR_qar_missions5_desc }
 		provinces_to_highlight = {
 			OR = { 
@@ -290,7 +216,62 @@ QAR_conquest = {
 					add_center_of_trade_level = 1
 				}
 			}
+			nafud_area  = {
+				limit = {
+					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			qasim_area  = {
+				limit = {
+					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			yamamah_area  = {
+				limit = {
+					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
+	}
+	PR_qar_missions4_desc = {
+		icon = mission_bedouins
+		position = 4
+		required_missions = { PR_qar_missions6_desc }
+		provinces_to_highlight = {
+			OR = { 
+				area = nafud_area
+				area = qasim_area
+				area = yamamah_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			nafud_area = {
+				type = all
+				owned_by = ROOT
+			}
+			qasim_area = {
+				type = all
+				owned_by = ROOT
+			}
+			yamamah_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+		unlock_estate_privilege = {
+				estate_privilege = estate_burghers_hydraulic_rights
+			}
+		}	
 	}	
 }	
 	

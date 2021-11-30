@@ -1696,11 +1696,12 @@ PR_estate_clergy_exploration_expedition = {
 	influence = 0.05
 	
 	is_valid = {
-		OR = {
-			tag = MOR
-			tag = ARB
-			tag = BUK
-		}	
+			OR = {
+				tag = MOR
+				tag = BUK
+				tag = ARB
+			}
+			NOT = { has_estate_privilege = estate_burghers_hydraulic_rights	}
 	}
 	
 	can_select = {
@@ -1710,6 +1711,7 @@ PR_estate_clergy_exploration_expedition = {
 			value = 4
 			}
 		}
+		NOT = { has_estate_privilege = estate_burghers_hydraulic_rights	}
 	}
 	on_granted = {
 		custom_tooltip = PR_estate_clergy_exploration_expedition_effect_tooltip
@@ -1737,6 +1739,17 @@ PR_estate_clergy_exploration_expedition = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = { has_province_modifier = PR_estate_clergy_exploration_expedition_mod }
+				remove_province_modifier = PR_estate_clergy_exploration_expedition_mod
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = PR_estate_clergy_exploration_expedition_mod_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = PR_estate_clergy_exploration_expedition_mod
+				}
 				remove_province_modifier = PR_estate_clergy_exploration_expedition_mod
 			}
 		}

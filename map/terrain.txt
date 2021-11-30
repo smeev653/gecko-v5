@@ -119,7 +119,7 @@ categories =  {
 			67 4765 4769 4712 #Germany
 			
 			#smeev terrain changes
-			361 2319 4318 4320 2317 #nile
+		 2319 4318 4320 2317 #nile
 			406 4291 #iraq arabi #smeev
 			412 #ahvaz #smeev
 			2798 1222 2799 #upper nile #smeev
@@ -661,6 +661,7 @@ categories =  {
 			1751 #Sebtah
 			226 #Gibraltar
 			6114 6115 6116 #bunker mod merge
+			361
 		}
 	}
 

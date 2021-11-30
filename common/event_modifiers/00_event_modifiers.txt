@@ -12131,7 +12131,7 @@ estate_burghers_hydraulic_rights_desert = {
 }
 
 estate_burghers_hydraulic_rights_coastal_desert = {
-	local_development_cost = -0.175
+	local_development_cost = -0.25
 }
 
 estate_burghers_hydraulic_rights_steppes = {
