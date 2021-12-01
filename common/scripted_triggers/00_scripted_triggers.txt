@@ -2021,12 +2021,9 @@ has_better_tech_than_westerns = {
 	custom_trigger_tooltip = {
 		tooltip = has_better_tech_than_westerns_tt
 		NOT = {
-			calc_true_if = {
-				all_country = {
-					tech_difference = 1
-					technology_group = western
-				}
-				amount = 1
+			any_country = {
+				tech_difference = 1
+				technology_group = western
 			}
 		}
 	}
@@ -2088,4 +2085,32 @@ mal_owns_provinces_in_region = {
 		AND = { has_country_flag = mal_journey_to_arabia			any_owned_province = { region = arabia_region			} }
 		AND = { has_country_flag = mal_journey_to_horn_of_africa	any_owned_province = { region = horn_of_africa_region	} }
 	}
+}
+
+province_is_or_accepts_culture = {
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}
+}
+
+province_is_buddhist_or_accepts_buddhism = {
+	OR = {
+		religion = buddhism
+		religion = vajrayana
+		religion = mahayana
+		AND = {
+			religion = hinduism
+			owner = {
+				has_personal_deity = buddha	
+			}						
+		}
+		AND = {
+			religion = shamanism
+			owner = {
+				has_unlocked_cult = buddhism_cult
+			}
+		}
+	}
+	has_owner_religion = yes
 }

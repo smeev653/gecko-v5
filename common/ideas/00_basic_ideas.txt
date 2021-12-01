@@ -11,8 +11,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		leader_siege = 1
-		
+		reinforce_cost_modifier = -0.20
 	}
 	
 	noble_knights = {
@@ -55,8 +54,7 @@ plutocracy_ideas = {
 
 	bonus = {
 		fire_damage = 0.15
-		burghers_loyalty_modifier = 0.2
-		vaisyas_loyalty_modifier = 0.2
+		country_military_power = 1
 	}
 	bill_of_rights = {
 		infantry_cost = -0.125
@@ -407,9 +405,6 @@ offensive_ideas = {
 	bayonet_leaders = {
 		shock_damage = 0.20
 	}
-	national_conscripts = {
-		movement_speed = 0.1
-	}
 	superior_firepower = {
 		leader_land_fire = 1
 	}
@@ -426,7 +421,9 @@ offensive_ideas = {
 	napoleonic_warfare = {
 		artillery_power = 0.1
 	}
-
+	national_conscripts = {
+		leader_siege = 1
+	}
 	ai_will_do = {
 		factor = 0.94
 	}
