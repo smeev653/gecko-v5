@@ -46,12 +46,8 @@ grand_armee = {
 	land_forcelimit_modifier = 0.33
 	}
 	
-bur_carolingia = {
-	global_manpower_modifier = 0.2
-}
-
 angevin_supremacy = {
-	global_manpower_modifier = 0.2
+	global_manpower_modifier = 0.25
 }
 
 united_scandinavia = {

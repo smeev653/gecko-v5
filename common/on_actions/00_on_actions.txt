@@ -12,7 +12,9 @@ on_startup = {
 	if = {
 		limit = {
 			tag = ENG
+			NOT =  {has_country_flag = gecko.9_fired }
 		}
+		set_country_flag = gecko.9_fired
 		country_event = { 
 			id = gecko.9
 		}

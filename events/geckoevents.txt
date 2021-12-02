@@ -747,8 +747,9 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = gecko.9.a
-	
+		name = "gecko.9.a"
+		custom_tooltip = gecko.9_warning_tt
+		
 		add_country_modifier = {
 			name = gecko_hyw
 			duration = -1
@@ -756,7 +757,7 @@ country_event = {
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
-		}		
+		}
 	}
 }
 
