@@ -116,7 +116,7 @@ gc_mysore_mission_19_desc:0 ""
 
 prestor_john_title:0 "Prestor John"
 prestor_john_desc:0 " "
-g_help_from_the_west:0 "This event will grant§G 10% Land Morale§! §G5% Discpline§! and §G 20% Manpower§! for 20 years."
+g_help_from_the_west:0 "This event will grant§G 10% Land Morale§! §G5% Discpline§! and §G 20% Manpower§! for 10 years."
 
 gc_eth_mission_1_title:0 "Prepare a Navy"
 gc_eth_mission_2_title:0 "European Ties"

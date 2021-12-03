@@ -20,8 +20,8 @@ tribal_rebels = {
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
 	artillery = 0.0
-	infantry = 0.5
-	cavalry = 0.5
+	infantry = 0.75
+	cavalry = 0.25
 	
 	morale = 0.75
 	
