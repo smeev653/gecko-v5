@@ -406,7 +406,7 @@ ask_for_march = {
 
 designate_march = {
 	condition = {
-		tooltip = h_tooltip_many_marches_noinfluence
+		tooltip = h_tooltip_many_marches_influence
 		potential = {
 			
 		}
