@@ -554,6 +554,8 @@ base_values = {
 	cav_to_inf_ratio = 1
 	merc_maintenance_modifier = 0.5
 	monthly_heir_claim_increase = 0.417								
+	tolerance_of_heretics_capacity = 3
+	tolerance_of_heathens_capacity = 3
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -878,7 +880,7 @@ tribal_allegiance = {
 
 # Multiplied by current Legitimacy - 50
 legitimacy = {
-	global_unrest = -6
+	global_unrest = -4
 	tolerance_own = 2
 	tolerance_heathen = 2
 	tolerance_heretic = 2
