@@ -1082,10 +1082,6 @@ influence_ideas = {
 	diplomatic_influence = {
 		global_tax_income = 48
 	}
-	tribute_system = {
-		reduced_liberty_desire = 25
-		diplomatic_upkeep = 2
-	}
 	additional_loyalist_recruitment = {
 		province_warscore_cost = -0.2
 	}
@@ -1099,6 +1095,10 @@ influence_ideas = {
 	integrated_elites = {
 		global_manpower = 10
 		land_forcelimit = 10
+	}
+	tribute_system = {
+		reduced_liberty_desire = 25
+		diplomatic_upkeep = 2
 	}
 	marcher_lords = {
 		global_manpower_modifier = 0.1
