@@ -81,14 +81,14 @@ mam_south_missions = {
 				area = yemen_area
 				area = asir_area
 				area = hadramut_area
-				province_id = 1335
+				province_id = 4346
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			1335 = {
+			4346 = {
 				is_strongest_trade_power = ROOT
 			}
 			tihama_al_yemen_area = {
