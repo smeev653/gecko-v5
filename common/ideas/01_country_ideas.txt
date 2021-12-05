@@ -13,7 +13,7 @@ BUK_ideas = {
 	}
 	
 	bonus = {
-		discipline = 0.05
+		infantry_power = 0.1
 	}	
 
 	trigger = {
@@ -21,14 +21,11 @@ BUK_ideas = {
 	}
 	free = yes
 	
-	buk_ = {
-		core_creation = -0.25
-	}
 	trs_mawarannahr = {
 		cavalry_power = 0.2
-	}
+	}	
 	PR_BUK1 = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 		center_of_trade_upgrade_cost = -0.25
 	}
 	BUK_the_mantle_of_the_great_khan = {
@@ -42,8 +39,11 @@ BUK_ideas = {
 		auto_explore_adjacent_to_colony = yes
 	}
 	chinese_artillery = {
-		artillery_power = 0.15
+		artillery_power = 0.10
 		artillery_cost = -0.15		
+	}
+	buk_ = {
+		discipline = 0.05
 	}
 }
 
@@ -63,7 +63,7 @@ PR2_ideas = {
         advisor_cost = -0.10
     }
     PR2_2 = {
-        infantry_power = 0.10
+        infantry_power = 0.15
 		years_of_nationalism = -5
     }
     PR2_3 = {

@@ -131,14 +131,17 @@ country_decisions = {
 			define_ruler = {
 				name = "Ismail I"
 				dynasty = "Safavid"
-				fixed = yes
+				
 				religion = shiite
 				claim = 100
 				adm = 6
 				dip = 5
 				mil = 5
 				}							
-			kill_heir = yes
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
 			change_unit_type = gunpowder_empire
 			change_estate_land_share = {
 				estate = estate_nobles

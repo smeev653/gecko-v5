@@ -1,9 +1,6 @@
 #994 - Stadacona
 
-owner = STA
-controller = STA
-add_core = STA
-is_city = yes
+
 culture = laurentian
 religion = totemism
 capital = "Stadacona"

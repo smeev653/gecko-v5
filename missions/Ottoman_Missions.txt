@@ -36,6 +36,8 @@ tur_conquerors_of_the_near_east = {
 						province_id = 4701
 						province_id = 4699
 						province_id = 4698
+						province_id = 6120
+						province_id = 3003
 					}
 				}
 				add_permanent_claim = ROOT
@@ -49,7 +51,7 @@ tur_conquerors_of_the_near_east = {
 		provinces_to_highlight = {
 			OR = {
 				area = morea_area
-				area = northern_greece_area
+				area = XMP_central_greece_area
 			}
 		}
 		trigger = {
@@ -57,7 +59,7 @@ tur_conquerors_of_the_near_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_greece_area = {
+			XMP_central_greece_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -433,12 +435,19 @@ tur_conquest_of_middle_east = {
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
+			cukurova_area = {
 				limit = {
-					NOT = { is_core = 2302 }
-					NOT = { owns = 2302 }
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = 2302
+				add_permanent_claim = ROOT
+			}
+			dulkadir_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 			kastamonu_area = {
 				limit = {

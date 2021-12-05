@@ -38,7 +38,7 @@ the_mercenary_registration_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	global_regiment_cost = -0.10
+	manpower_recovery_speed = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -246,7 +246,7 @@ modern_siege_weapons = {
 }
 
 superior_fortification_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = innovativeness_ideas
@@ -258,9 +258,8 @@ superior_fortification_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	defensiveness = 0.10
-	fort_maintenance_modifier = -0.2
-
+	production_efficiency = 0.10
+	discipline = 0.03
 
 	ai_will_do = {
 		factor = 1
@@ -843,7 +842,7 @@ noble_loyalty_act = {
 	}
 
 	cavalry_power = 0.10
-	cavalry_cost = -0.10
+	cavalry_fire = 0.25
 	
 	ai_will_do = {
 		factor = 1

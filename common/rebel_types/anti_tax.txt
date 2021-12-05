@@ -22,7 +22,7 @@ anti_tax_rebels = {
 	artillery = 0.0
 	infantry = 0.9
 	cavalry = 0.1
-	morale = 0.8
+	morale = 0.75
 	
 	
 	# Possible handle actions

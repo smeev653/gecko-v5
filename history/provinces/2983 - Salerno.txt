@@ -1,7 +1,7 @@
 # - Salerno
 
-owner = NAP
-controller = NAP
+owner = PAP
+controller = PAP
 culture = neapolitan 
 religion = catholic 
 hre = yes 
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 4
 capital = "Salerno" 
 is_city = yes	# Estimated
-add_core = NAP
+add_core = PAP
 
 
 

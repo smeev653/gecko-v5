@@ -823,19 +823,49 @@ eng_rb_conquest_europe = {
 		trigger = {
 			brittany_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
 		effect = {
-			1276 = {
+			186 = {
 				add_trade_modifier = {
 					who = root
 					duration = 5475
-					power = 25
+					power = 30
 					key = bordeaux_ambition
 				}
 			}
+			167 = {
+				if = {
+					limit = {	
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}	
+				center_of_trade = 1
+			}		
+			177 = {
+				if = {
+					limit = {	
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}	
+				center_of_trade = 1
+			}	
+			172 = {
+				if = {
+					limit = {	
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}	
+				center_of_trade = 1
+			}	
 			pyrenees_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -901,27 +931,23 @@ eng_rb_conquest_europe = {
 		trigger = {
 			pyrenees_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			poitou_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			loire_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			199 = {
-				owned_by = ROOT
+			guyenne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			194 = {
-				owned_by = ROOT
-			}
-			195 = {
-				owned_by = ROOT
-			}
-			4697 = {
-				owned_by = ROOT
+			cahors_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		

@@ -22,9 +22,9 @@ discovered_by = ottoman
 
 
 1409.7.25 = {
-	owner = NAP
-	controller = NAP
-	add_core = NAP
+	owner = PAP
+	controller = PAP
+	add_core = PAP
 } # Martin I inherits Sicily from his son
 1516.1.23 = {	owner = SPA
 	controller = SPA

@@ -106,6 +106,7 @@ north_german_region = {
 		mittelmark_area
 		vorpommern_area
 		bohemia_area
+		hradecko_area
 		moravia_area
 		hinter_pommern_area
 		north_rhine_area
@@ -245,9 +246,11 @@ poland_region = {
 		red_ruthenia_area
 		mazovia_area
 		silesia_area
+		opole_area
 		central_poland_area
 		sandomierz_area
 		kuyavia_area
+		breg_area
 	}
 }
 
@@ -297,6 +300,7 @@ balkan_region = {
 		albania_area
 		silistria_area
 		slavonia_area
+		XMP_central_greece_area
 	}
 }
 
@@ -376,6 +380,7 @@ anatolia_region = {
 		ankara_area
 		aegean_archipelago_area
 		germiyan_area
+		eastern_mediterrenean_islands_area
 	}
 }
 
@@ -480,7 +485,11 @@ guinea_region = {
 		sao_tome_area
 		pr_africa_area_9
 		pr_africa_area_10
-	}
+		pr_africa_area_11
+		pr_africa_area_12
+		pr_africa_area_13
+		pr_africa_area_14
+	}	
 	monsoon = {
 		00.06.01
 		00.09.30

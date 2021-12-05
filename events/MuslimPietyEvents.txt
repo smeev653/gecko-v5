@@ -1503,18 +1503,19 @@ country_event = {
 	
 	option = {
 		name = muslim_piety.20.a
-	
+		if = {
+			limit = { has_heir = yes }
 			define_ruler = {
 				ADM = 1
 				DIP = 2
 				MIL = 2
 			}
-		
+		}
 		if = {
 			limit = {
 				has_heir = yes
 			}
-			remove_heir = yes
+			remove_heir = {}
 		}
 		add_piety = -0.25
 		add_legitimacy = -25

@@ -101,7 +101,7 @@ categories =  {
 			
 			43 97 98 100 4382 4383 #Netherlands
 			
-			234 235 236 238 4367 4368 4371 4375 #British isles
+			234 236 238 4367 4368 4371 4375 4370 #British isles
 			
 			358 359 363 2316 4316 #Egypt
 			
@@ -119,7 +119,7 @@ categories =  {
 			67 4765 4769 4712 #Germany
 			
 			#smeev terrain changes
-			2319 4318 4320 2317 #nile
+		 2319 4318 4320 2317 #nile
 			406 4291 #iraq arabi #smeev
 			412 #ahvaz #smeev
 			2798 1222 2799 #upper nile #smeev
@@ -127,9 +127,10 @@ categories =  {
 			4728 #pavia 
 			105
 			4729
-			6078 6075 6045 6046 6047 6048 6049 6051 6052 6053 # gcitaly
+			6078 6075 6045 6046 6047 6048 6049 6051 6052 6053 6124 # gcitaly
 			6081 6082 6084 6085 6086 6092 6093 #gcfrance
 			6099 6100
+			6102 6103 6108 6109 #gcbohemia
 				}		
 	}
 	
@@ -299,6 +300,7 @@ categories =  {
 			6087 6090 6091 6094 6095 6096 6098 #gcfrance
 			4392 193 4764 #gcburgundy
 			6084 #gcfrance
+			6112 #gcbohemia
 		}
 	}
 	
@@ -444,6 +446,8 @@ categories =  {
 			1858 4760 #Germany
 			4340 #persia #smeev
 			426 #persia #smeev
+			4238 #gcbohemia
+			6120 #xmp
 		}
 	}
 
@@ -482,7 +486,7 @@ categories =  {
 			2731 2732 #Australia
 			4021 4024 4025 4026 #Madagascar
 			4090 4105 4109 #Central Africa
-
+			5841
 		}
 	}	
 	
@@ -517,7 +521,7 @@ categories =  {
 			4706 # 1.30 Greece and Bulgaria
 			88 #artois smeev
 			408 2311 4288 4290 #iraq marshes #smeev
-			87 #calais #smeev
+			87 235 #calais #smeev
 		}
 	}
 	
@@ -529,7 +533,7 @@ categories =  {
 
 		movement_cost = 1.0
 		supply_limit = 4
-		local_development_cost = 0.35
+		local_development_cost = 0.30
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = {
@@ -546,6 +550,7 @@ categories =  {
 			860 2618
 			#gecko 
 			6017 6020 6023 6024 6025 6026 6019 1228 6021
+			2475
 		}
 	}
 	
@@ -556,7 +561,7 @@ categories =  {
 		sound_type = desert
 
 		movement_cost = 1.0
-		local_development_cost = 0.35
+		local_development_cost = 0.30
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 4
 
@@ -602,6 +607,8 @@ categories =  {
 			642 643 644 648 649 650 2713 2714 2716 2717 2718 2725 #Moluccas & Sulawesi
 			1015 4193 #Japan
 			387 4279 #Tihama al yemen
+			6122
+			163 #removed from highlands
 		}
 	}	
 	
@@ -650,11 +657,11 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			2797 4319 1231 1234 2322 1220 4033 #smeev nile provinces
 			6018 6022 6030 #aba new nile provinces
-			1848 #Hamid
 			324 #Karaman
-			361 #gecko drylands
 			1751 #Sebtah
 			226 #Gibraltar
+			6114 6115 6116 #bunker mod merge
+			361
 		}
 	}
 
@@ -685,7 +692,7 @@ categories =  {
 			1773 127 1247
 			1766
 			319 2298 
-			371 163 321
+			371 321
 			661 662 673 674 675 678 705
 			2131 2132 2133 2134 2135 2165 2167 2168 2170 2748 2183 
 			3001 4176 #Balkans
@@ -697,9 +704,9 @@ categories =  {
 			798 4053 4055 4056 4057 4059 4067 4073 4077 4084 4100 4101 4103 #Africa
 			4110 #Scotland
 			23 24 370 2752 #Norway
-			154 162 263 1318 2960 2968 2970 4238 #Central Europe
+			154 162 263 1318 2960 2968 2970 #Central Europe
 			216 228 2755 2989 #Iberia
-			323 2202 4299 4305 #Anatolia and Caucasus
+			1848 323 2202 4299 4305 #Anatolia and Caucasus
 			736 1047 4228  #Korea & Manchuria
 			2986 4391 #Italy & France
 			4406 4398 # Burma
@@ -709,6 +716,8 @@ categories =  {
 			2314 #smeev change
 			1798 1799 #smeev change
 			#405 #smeev change
+			6113 6117 #bunker mod merge
+			6121
 		}
 	}
 

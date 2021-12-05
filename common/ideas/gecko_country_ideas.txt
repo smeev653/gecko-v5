@@ -43,12 +43,12 @@ ARB_ideas = { #Arabian Empire
 
 EGY_ideas = { #Egyptian Empire
 	start = {
-		infantry_power = 0.10
-		global_autonomy = -0.05
+		global_regiment_cost = -0.10
+		infantry_power = 0.15
 	}
 	
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.33
 	}
 	
 	trigger = {
@@ -56,21 +56,24 @@ EGY_ideas = { #Egyptian Empire
 	}
 	free = yes
 	
-	egy_1 = {
-		discipline = 0.05
-	}
-	egy_2 = {
+	egy_3 = {
 		production_efficiency = 0.15
-	}
-	monuments_to_greatness = {
-		prestige = 1
 		development_cost = -0.05
 	}
 	egy_4 = { 
-		land_morale = 0.15
+		manpower_recovery_speed = 0.2
 	}
 	egy_5 = {
-		manpower_recovery_speed = 0.2
+		land_attrition = -0.33
+	}
+	egy_2 = {
+		reinforce_speed = 0.25
+		free_leader_pool = 3
+		
+	}
+	egy_1 = {
+		land_morale = 0.15
+		drill_gain_modifier = 0.25
 	}
 	mam_monopoly_ports = {
 		trade_efficiency = 0.10
@@ -121,3 +124,98 @@ GZM_ideas = { #Great Zimbabwe Empire
 	}
 	
 }	
+
+#Ethiopian ideas for better scaling
+
+ETH_ideas = {
+	start = {
+		global_autonomy = -0.05
+		infantry_power = 0.1
+	}
+	
+	bonus = {
+		legitimacy = 1
+		devotion = 1
+	}
+	
+	trigger = {
+		tag = ETH
+	}
+	free = yes		#will be added at load.
+	
+	diplomatic_demeanor = {
+		land_morale = 0.10
+	}
+	solomonid_claim = {
+		prestige = 1
+	}
+	nagusa_negast = {
+		global_trade_goods_size_modifier = 0.1
+		development_cost = -0.05
+	}
+	hostile_borders = {
+		hostile_attrition = 1
+		defensiveness = 0.20
+	}
+	
+	the_ark_of_the_covenant = {
+		missionaries = 1
+		global_tax_modifier = 0.1
+	}
+	eth_expansionist_policy = {
+		build_cost = -0.1
+		governing_capacity_modifier = 0.2
+	}
+	eth_reformed_armies = {
+		land_maintenance_modifier = -0.05
+	}
+}
+
+#Aksum Crusader Ideas for better military
+
+AKS_ideas = {
+	start = {
+		reinforce_speed = 0.25
+		discipline = 0.05
+	}
+	
+	bonus = {
+		manpower_in_true_faith_provinces = 0.25
+	}
+	
+	trigger = {
+		tag = AKS
+	}
+	free = yes
+	
+	aks_stellae_builders = {
+		prestige = 1
+	}
+	
+	aks_legacy_of_king_kaleb = {
+		infantry_cost = -0.1
+		infantry_power = 0.05
+	}
+	
+	aks_persian_revenge = {
+		land_attrition = -0.20
+	}
+	
+	aks_christianity_stronghold = {
+		land_morale = 0.15
+		garrison_size = 0.25
+	}
+	
+	aks_mediterranean_contacts = {
+		technology_cost = -0.1
+	}
+	
+	aks_trade_hub = {
+		merchants = 1
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	aks_coin_minting = {
+		inflation_reduction = 0.1
+	}
+}

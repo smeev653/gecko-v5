@@ -242,7 +242,7 @@ emp_ven_slot_3 = {
 			add_mil_power = 50
 			add_country_modifier = {
 				name = ven_venture_captain_recruitment
-				duration = 7300
+				duration = 18250
 			}
 		}
 	}
@@ -425,10 +425,9 @@ emp_ven_slot_4 = {
 		
 		trigger = {
 			navy_size_percentage = 1
-			sailors_percentage = 0.6
 		}
 		effect = {
-			add_navy_tradition = 10
+			add_navy_tradition = 20
 			define_admiral = {
 				shock = 3
 				fire = 2
@@ -438,6 +437,28 @@ emp_ven_slot_4 = {
 			add_country_modifier = {
 				name = "ven_arsenal_marines"
 				duration = -1
+			}
+			109 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			113 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}

@@ -46,11 +46,9 @@ country_decisions = {
 			}
 			add_legitimacy = 20
 			if = {
-				limit = {
-					has_heir = yes
-				}
-				remove_heir = yes
-			}
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
 			define_heir = {
 				dynasty = "Timurid"
 			}
@@ -131,7 +129,7 @@ country_decisions = {
 			define_ruler = {
 				name = "Abu Sa'id"
 				dynasty = "Timurid"
-				fixed = yes
+				
 				religion = sunni
 				claim = 100
 				adm = 4

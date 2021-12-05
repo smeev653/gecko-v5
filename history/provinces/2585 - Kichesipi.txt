@@ -1,9 +1,6 @@
 # No previous file for Kichesipi
 
-owner = ARN
-controller = ARN
-add_core = ARN
-is_city = yes
+
 culture = huron
 religion = totemism
 capital = "Arendaronon"

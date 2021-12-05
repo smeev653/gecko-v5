@@ -14,7 +14,7 @@ technology = {
 	
 	sprite_level = 1
 
-	#infantry_fire		= 	0.25
+	infantry_fire		= 	0.25
 	infantry_shock 		= 	0.20	
 	cavalry_shock  		= 	0.8	
 	land_morale 		= 	2.0
@@ -24,7 +24,7 @@ technology = {
 	# Tech 1
 	year = 1390
 	
-	#infantry_shock		= 	0.1
+	infantry_shock		= 	0.1
 	infantry_fire 		= 	0.1
 	
 	fort_15th = yes
@@ -110,7 +110,7 @@ technology = {
 	
 	#Standardised Pikes
 	supply_limit 		= 	0.5
-	infantry_shock		= 	0.15
+	infantry_shock		= 	0.10
 	cavalry_shock		= 	0.2
 
 	enable = western_men_at_arms	
@@ -222,7 +222,7 @@ technology = {
 	enable = ha_xiuhtecuhtli_soldier
 	military_tactics 	= 	0.25
 	combat_width = 1
-	infantry_fire = 0.15
+	#infantry_fire = 0.15
 }
 
 technology = {
@@ -284,7 +284,7 @@ technology = {
 	
 	supply_limit 		= 	0.5
 	military_tactics	=	0.25
-	infantry_fire = 0.2
+	#infantry_fire = 0.2
 
 	enable = tofongchis_musketeer
 	enable = ge_tofongchis_musketeer	

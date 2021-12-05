@@ -116,7 +116,7 @@ gc_mysore_mission_19_desc:0 ""
 
 prestor_john_title:0 "Prestor John"
 prestor_john_desc:0 " "
-g_help_from_the_west:0 "This event will grant§G 10% Land Morale§! §G5% Discpline§! and §G 20% Manpower§! for 20 years."
+g_help_from_the_west:0 "This event will grant§G 10% Land Morale§! §G5% Discpline§! and §G 20% Manpower§! for 10 years."
 
 gc_eth_mission_1_title:0 "Prepare a Navy"
 gc_eth_mission_2_title:0 "European Ties"
@@ -153,7 +153,7 @@ gc_eth_mission_6_desc:0 ""
 gc_eth_mission_7_desc:0 ""
 gc_eth_mission_8_desc:0 ""
 gc_eth_mission_9_desc:0 ""
-gc_eth_mission_10_desc:0 ""
+gc_eth_mission_10_desc:0 "Changes Government Type to Ethiopian Theocracy."
 gc_eth_mission_11_desc:0 ""
 gc_eth_mission_12_desc:0 ""
 gc_eth_mission_13_desc:0 ""
@@ -167,8 +167,8 @@ gc_eth_mission_20_desc:0 ""
 gc_eth_mission_21_desc:0 ""
 gc_eth_mission_22_desc:0 ""
 gc_eth_mission_23_desc:0 ""
-gc_eth_mission_24_desc:0 ""
-gc_eth_mission_25_desc:0 ""
+gc_eth_mission_24_desc:0 "Gives -1 Yearly Prestige Decay and 2 Tolerance of True Faith."
+gc_eth_mission_25_desc:0 "Gives -1 Army Tradition Decay and 10% Movementspeed."
 
  #Crimea 
 
@@ -201,3 +201,9 @@ gc_eth_mission_25_desc:0 ""
  gc_cri_mission_12_desc:0 ""
  gc_cri_mission_13_desc:0 ""
  gc_cri_mission_14_desc:0 ""
+
+ #Russia
+ enserfed_peasants_title:0 "Enserfed Peasents"
+ enserfed_peasants_desc:0 ""
+ full_serfdom_title:0 "Full Serfdom"
+ full_serfdom_desc:0 ""

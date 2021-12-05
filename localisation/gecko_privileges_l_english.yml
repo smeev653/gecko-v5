@@ -16,3 +16,26 @@
  estate_nomadic_tribes_guaranteed_leadership_in_host_desc:0 "Our tribal chieftains make fine leaders of men. We need look no further when seeking new generals for our armies."
  estate_nomadic_tribes_tribute:0 "Increased Tribal Tribute"
  estate_nomadic_tribes_tribute_desc:0 " "
+
+
+#mamluk privilege
+ estate_gc_noble_levies:0 "Mamluk Noble Levies"
+ estate_gc_noble_levies_desc:0 " "
+
+#bunker mod merge
+ estate_mamluks_land_rights:0 "Mamluk Land Rights"
+ estate_mamluks_land_rights_desc:0 "The different Mamluk factions are as greedy as they are scheming. To keep them in line they all need to have their own piece of land to operate in."
+ estate_mamluks_promote_leadership:0 "Promote Mamluk Leadership"
+ estate_mamluks_promote_leadership_desc:0 "There are many Mamluk factions in our realm, most of them in direct competition with one another. By promoting their most capable leaders to the highest ranks in the military, we will increase the capabilities of our armies."
+ estate_mamluks: "Mamluks"
+ estate_mamluks_desc: "This estate represents the Mamluk caste, members of one of the armies of slaves established during the Abbasid era, which later won political control of several Muslim states. Typically of foreign extraction, the Mamluks form a distinct military and political class, and through their martial skills and ruthlessness, they have been able to become powerful assets, as well as wealthy landowners. Their reputation for rebelliousness and infighting makes others quite wary of their influence."
+ estate_mamluks_ownership: "Mamluks Land Ownership"
+ mamluks_loyalty_modifier: "Mamluks Loyalty Equilibrium"
+ mamluks_influence_modifier: "Mamluks Influence"
+ EST_VAL_HIGH_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 50% of the total Army: §Y$VAL$%§!"
+ EST_VAL_MEDIUM_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 25% of the total Army: §Y$VAL$%§!"
+ EST_VAL_LOW_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 10% of the total Army: §Y$VAL$%§!"
+ EST_VAL_VERY_LOW_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising less than 10% of the total Army: §Y$VAL$%§!"
+ EST_VAL_HIGH_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 50% of the total Army: §G$VAL$§!"
+ EST_VAL_MEDIUM_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 25% of the total Army: §G$VAL$§!"
+ EST_VAL_VERY_LOW_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising less than 10% of the total Army: §R$VAL$§!"

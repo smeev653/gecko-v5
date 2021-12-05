@@ -242,6 +242,13 @@ emp_burgundy_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			siena_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }
@@ -1170,13 +1177,6 @@ emp_burgundy_4 = {
 					}
 					add_permanent_claim = root
 				}
-				FRA = {
-					country_event = { id = new_flavour_bur.6 }
-					every_subject_country = {
-						limit = { capital_scope = { region = france_region } }
-						add_liberty_desire = 50
-					}
-				}
 			}
 			else = {
 				ile_de_france_area = {
@@ -1201,6 +1201,7 @@ emp_burgundy_4 = {
 					add_permanent_claim = root
 				}
 			}
+		add_prestige = 30
 		}
 	}
 	emp_bur_king_of_the_franks = {
@@ -1713,7 +1714,7 @@ emp_burgundy_5 = {
 	}
 	emp_bur_crown_of_lothair = {
 		icon = the_crown_of_lothair
-		required_missions = { emp_bur_join_the_empire emp_bur_king_of_the_franks }
+		required_missions = { emp_bur_join_the_empire }
 
 		trigger = {
 					is_at_war = no

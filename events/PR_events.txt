@@ -17,9 +17,7 @@ country_event = {
             tag = SON
             tag = ZAN
             tag = ETH
-            tag = KON
 			tag = MAM
-			tag = MAL
         }
         NOT = { 
 			has_country_flag = PR_discover_africa_flag
@@ -27,7 +25,7 @@ country_event = {
     }
 	
     mean_time_to_happen = {
-        days = 1
+        days = 90
     }
 	
     immediate = {
@@ -69,12 +67,17 @@ country_event = {
 								discover_province = PREV
 							}
 			}
-			south_africa_regionn = {
+			south_africa_region = {
 				ROOT = {
 								discover_province = PREV
 							}
 			}
 			central_africa_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			egypt_region = {
 				ROOT = {
 								discover_province = PREV
 							}

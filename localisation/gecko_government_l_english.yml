@@ -9,7 +9,11 @@
  gecko_noble_regiments_reform_desc:0 "The state is me. And my armies.."
 
  #Ethiopia
- gc_ethiopian_theocracy_reform:0 "Ethiopian Theocracy"
- gc_ethiopian_theocracy_reform_desc:0 "The Ethiopian Theocracy is lead by an Emperor who is also the Head of the Church."^
- gc_ethiopian_government_name:0 "Ethiopian Theocracy"
- GC_Ethiopia_Mechanic:0 "Ethiopian Theocracy"
+ gc_ethiopian_theocracy_reform:0 "Coptic Theocracy"
+ gc_ethiopian_theocracy_reform_desc:0 "The Coptic Theocracy is lead by an Emperor who is also the Head of the Church."
+ gc_ethiopian_government_name:0 "Coptic Theocracy"
+ GC_Ethiopia_Mechanic:0 "Coptic Theocracy"
+
+ #Spain
+ gc_imperial_spain_reform:0 "Imperio Español"
+ gc_imperial_spain_reform_desc:0 "The Spanish Empire also know as the 'Imperio Español' or the Catholic Monarchy during the Early Modern period, was a colonial empire governed by Spain and its predecessor states between 1492 and 1976. One of the largest empires in history, it was, in conjunction with the Portuguese, the first to usher the European Age of Discovery and achieve a global scale, controlling vast portions of the Americas, the archipelago of Philippines, various islands in the Pacific and territories in Western Europe and Africa. It was one of the world's most powerful empires of the early modern period, becoming known as 'the empire on which the sun never sets' and reached its maximum extent in the 18th century."

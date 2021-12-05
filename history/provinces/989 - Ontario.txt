@@ -1,9 +1,6 @@
 #989 - Ontario
 
-owner = AGG
-controller = AGG
-add_core = AGG
-is_city = yes
+
 culture = huron
 religion = totemism
 capital = "Attigneenongnahac"

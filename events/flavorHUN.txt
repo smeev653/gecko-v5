@@ -43,7 +43,7 @@ country_event = {
 			DIP = 5			
 			ADM = 4
 			MIL = 5
-			fixed = yes
+			
 			age = 39
 			attach_leader = "János Hunyadi"
 		}
@@ -122,7 +122,7 @@ country_event = {
 			DIP = 5			
 			ADM = 4
 			MIL = 5
-			fixed = yes
+			
 			age = 39
 			attach_leader = "János Hunyadi"
 		}
@@ -327,7 +327,10 @@ country_event = {
 		}
 		remove_historical_friend = HAB
 		HAB = { remove_historical_friend = HUN }
-		kill_heir = yes
+		if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}
 		define_heir = {
 			name = "Mátyás"
 			culture = hungarian
@@ -2462,7 +2465,7 @@ country_event = {
 			adm = 4
 			dip = 5
 			mil = 4
-			fixed = yes
+			
 		}
 		if = {
 			limit = {
@@ -2532,7 +2535,7 @@ country_event = {
 						adm = 4
 						dip = 5
 						mil = 4
-						fixed = yes
+						
 					}
 				}
 			}
@@ -2587,7 +2590,7 @@ country_event = {
 					adm = 4
 					dip = 5
 					mil = 4
-					fixed = yes
+					
 				}
 			}
 		}

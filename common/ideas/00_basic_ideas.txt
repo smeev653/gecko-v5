@@ -11,8 +11,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		leader_siege = 1
-		
+		reinforce_cost_modifier = -0.20
 	}
 	
 	noble_knights = {
@@ -29,7 +28,7 @@ aristocracy_ideas = {
 		global_manpower_modifier = 0.33
 	}
 	quality_education = {
-		army_tradition_from_battle = 0.5
+		#army_tradition_from_battle = 0.5
 		prestige_from_land = 1
 	}
 	noble_resilience = {
@@ -55,8 +54,7 @@ plutocracy_ideas = {
 
 	bonus = {
 		fire_damage = 0.15
-		burghers_loyalty_modifier = 0.2
-		vaisyas_loyalty_modifier = 0.2
+		country_military_power = 1
 	}
 	bill_of_rights = {
 		infantry_cost = -0.125
@@ -212,7 +210,7 @@ innovativeness_ideas = {
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
-		embracement_cost = -0.25
+		monthly_reform_progress_modifier = 0.25
 	}
 	empiricism = {
 		innovativeness_gain = 0.5
@@ -407,9 +405,6 @@ offensive_ideas = {
 	bayonet_leaders = {
 		shock_damage = 0.20
 	}
-	national_conscripts = {
-		movement_speed = 0.1
-	}
 	superior_firepower = {
 		leader_land_fire = 1
 	}
@@ -426,7 +421,9 @@ offensive_ideas = {
 	napoleonic_warfare = {
 		artillery_power = 0.1
 	}
-
+	national_conscripts = {
+		leader_siege = 1
+	}
 	ai_will_do = {
 		factor = 0.94
 	}
@@ -452,7 +449,7 @@ defensive_ideas = {
 	}
 	
 	regimental_system = {
-		garrison_size = 0.33
+		garrison_size = 0.1
 	}
 	improved_manuever = {
 		leader_land_manuever = 1
@@ -462,7 +459,7 @@ defensive_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	improved_foraging = {
-		land_attrition = -0.25
+		land_attrition = -0.33
 	}
 
 	ai_will_do = {
@@ -540,7 +537,7 @@ economic_ideas = {
 		global_autonomy = -0.05
 	}
 	nationalistic_enthusiasm = {
-		land_maintenance_modifier = -0.1
+		global_regiment_cost = -0.05
 	}
 	smithian_economics = {
 		production_efficiency = 0.1
@@ -883,7 +880,7 @@ quantity_ideas = {
 		global_manpower_modifier = 0.50
 	}
 	the_young_can_serve = {
-		manpower_recovery_speed = 0.30
+		manpower_recovery_speed = 0.20
 	}
 	enforced_service = {
 		global_regiment_cost = -0.1

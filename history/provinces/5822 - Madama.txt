@@ -1,6 +1,6 @@
 #5822 - Madama
 
-culture = bilala
+culture = tuareg
 capital = "Madama"
 religion = sunni
 trade_goods = unknown

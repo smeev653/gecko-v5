@@ -13,7 +13,8 @@ base_manpower = 2
 capital = "Lisieux"
 is_city = yes
 extra_cost = 26
-fort_15th = yes
+fort_16th = yes
+
 
 discovered_by = eastern
 discovered_by = ottoman

@@ -390,9 +390,6 @@ iqta = {
 	allow_normal_conversion = yes
 	potential = {
 		religion_group = muslim
-		NOT = {tag = SON}
-		NOT = {tag = PR2}
-		NOt = {tag = ZAN}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
@@ -694,11 +691,8 @@ mamluk_government = {
 		government_abilities = {
 			mamluk_mechanic
 		}
-		has_pashas = yes 
-	
+	}
 	custom_attributes = {
-		enables_ghilman_estate = yes #used for localization of estate privilege
-		}
 		heir = no
 		foreign_slave_rulers = yes
 	}

@@ -1,9 +1,5 @@
 #954 - Allegheny
 
-owner = ERI
-controller = ERI
-add_core = ERI
-is_city = yes
 culture = tionontate
 religion = totemism
 capital = "Allegheny"

@@ -309,6 +309,18 @@ eng_french_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
+			236 = {
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+				western_longbow =  ROOT
+			}
 		}
 	}
 	

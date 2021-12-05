@@ -1,9 +1,6 @@
 # No previous file for Piktuk
 
-add_core = MIK
-owner = MIK
-controller = MIK
-is_city = yes
+
 culture = mikmaq
 religion = totemism
 capital = "Piktuk"

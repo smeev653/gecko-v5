@@ -1,0 +1,27 @@
+naval_hegemon = {
+	allow = {
+		is_great_power = yes
+		num_of_heavy_ship = 250
+		NOT = { any_other_great_power = { num_of_heavy_ship = root } }
+	}
+	
+	base = {
+		global_spy_defence = 0.25
+		war_exhaustion = -0.1
+		global_naval_engagement_modifier = 0.10
+	}
+	
+	# At max 100% tickup.
+	scale = {
+		global_sailors_modifier = 2.0
+		trade_efficiency = 0.2
+		global_ship_cost = -0.2
+		ship_durability = 0.1
+	}
+	
+	max = {
+		own_coast_naval_combat_bonus = 1.0
+		all_power_cost = -0.1
+	}
+	
+}

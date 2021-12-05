@@ -867,7 +867,7 @@ burgundian_inheritance_start_effect = {
 					mil = 3
 					claim = 50
 					female = yes
-					fixed = yes
+					
 				}
 				set_ruler_flag = mary_is_heir
 			}

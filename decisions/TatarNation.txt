@@ -159,14 +159,17 @@ country_decisions = {
 			define_ruler = {
 				name = "Tokhtamysh"
 				dynasty = "Borjigin"
-				fixed = yes
+				
 				religion = sunni
 				claim = 100
 				adm = 5
 				dip = 5
 				mil = 6
 				}							
-			kill_heir = yes
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}
 		}
 		ai_will_do = {
 			factor = 1

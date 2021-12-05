@@ -1,6 +1,6 @@
 #5817 - Cherda
 
-culture = bilala
+culture = tuareg
 capital = "Cherda"
 religion = sunni
 trade_goods = unknown

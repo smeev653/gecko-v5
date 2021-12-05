@@ -423,7 +423,7 @@ country_event = {
 			ADM = 5
 			DIP = 5
 			MIL = 5
-			fixed = yes
+			
 		}
 	}
 	option = { # we don't need him

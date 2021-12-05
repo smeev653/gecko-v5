@@ -1,8 +1,6 @@
 #966 - Nipmuc (Western Massachusetts)
 
-owner = WAM
-controller = WAM
-add_core = WAM
+
 culture = massachusset
 religion = totemism 
 capital = "Nipmuc" 

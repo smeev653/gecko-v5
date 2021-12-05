@@ -81,14 +81,14 @@ mam_south_missions = {
 				area = yemen_area
 				area = asir_area
 				area = hadramut_area
-				province_id = 4346
+				province_id = 1335
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			4346 = {
+			1335 = {
 				is_strongest_trade_power = ROOT
 			}
 			tihama_al_yemen_area = {
@@ -166,6 +166,14 @@ mam_north_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			eastern_mediterrenean_islands_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_sailors = 5000
 		}
 	}
 	mam_pacify_bedouins = {
@@ -198,7 +206,7 @@ mam_north_missions = {
 		effect = {
 			add_country_modifier = {
 				name = "bedouins_pacified"
-				duration = 7300
+				duration = -1
 			}
 			anatolia_region = {
 				limit = {
@@ -446,6 +454,8 @@ gecko_mam_branch_2 = {
 				}
 		}
 	}
+	
+	
 
 	gecko_mam_mission_5 = {
 		icon = mission_arabian_fort
@@ -528,10 +538,8 @@ gecko_mam_branch_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			lower_nubia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			army_size_percentage = 1
+			num_of_generals = 1
 		}
 		effect = {
 			dongola_area = {
@@ -544,6 +552,9 @@ gecko_mam_branch_3 = {
 				add_permanent_claim = ROOT
 			}
 			1226 = {
+				add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -800,6 +811,20 @@ gecko_mam_branch_3 = {
 			}
 			387 = {
 				add_permanent_claim = ROOT
+			}
+			2762 = {
+				add_local_autonomy = -100
+				add_province_modifier = {
+					name = eth_increased_gold_mining
+					duration = 9125
+				}
+			}
+			2757 = {
+				add_local_autonomy = -100
+				add_province_modifier = {
+					name = eth_increased_gold_mining
+					duration = 9125
+				}
 			}
 		}
 	}

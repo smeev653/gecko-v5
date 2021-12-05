@@ -1,0 +1,19 @@
+gc_imperial_spain_reform = { #tier 1
+	icon = "austrian_archduchy_reform"
+	potential = {
+		tag = SPA
+		religion = catholic
+	}
+	modifiers = {
+		culture_conversion_cost = -0.15
+		monarch_diplomatic_power = 2
+		missionaries = 1
+	    manpower_in_true_faith_provinces = 0.1
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+}

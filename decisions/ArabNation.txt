@@ -59,8 +59,6 @@ country_decisions = {
 				area = pirate_coast_area
 				area = dhofar_area
 				area = mascat_area
-				area = qasim_area
-				area = yamamah_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -82,8 +80,6 @@ country_decisions = {
 			pirate_coast_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			dhofar_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			mascat_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
-			qasim_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
-			yamamah_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 		}
 		effect = {
 			change_tag = ARB
@@ -101,13 +97,13 @@ country_decisions = {
 				}
 				add_permanent_claim = ARB
 			}
-			#egypt_region = {
-			#	limit = {
-			#		NOT = { owned_by = ROOT }
-			#		NOT = { area = lower_nubia_area }
-			#	}
-			#	add_permanent_claim = ARB
-			#}
+			egypt_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { area = lower_nubia_area }
+				}
+				add_permanent_claim = ARB
+			}
 			arabia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -126,14 +122,17 @@ country_decisions = {
 			define_ruler = {
 				name = "Husayn"
 				dynasty = "ibn Ali"
-				fixed = yes
+				
 				religion = sunni
 				claim = 100
 				adm = 5
 				dip = 5
 				mil = 6
-				}
-			kill_heir = yes	
+			}
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

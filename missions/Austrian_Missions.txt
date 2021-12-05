@@ -35,7 +35,7 @@ hab_holy_roman_ambitions = {
 									preferred_emperor = ROOT
 									has_opinion = { who = ROOT value = 100 }
 								}
-								amount = 5
+								amount = 3
 							}
 						}
 					}
@@ -51,7 +51,7 @@ hab_holy_roman_ambitions = {
 					preferred_emperor = ROOT
 					has_opinion = { who = ROOT value = 100 }
 				}
-				amount = 5
+				amount = 3
 			}
 		}
 		effect = {
@@ -70,6 +70,13 @@ hab_holy_roman_ambitions = {
 				add_permanent_claim = ROOT
 			}
 			moravia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			hradecko_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -115,6 +122,7 @@ hab_holy_roman_ambitions = {
 									area = bohemia_area
 									area = erzgebirge_area
 									area = moravia_area
+									area = hradecko_area
 								}
 							}
 						}
@@ -123,6 +131,7 @@ hab_holy_roman_ambitions = {
 						area = bohemia_area
 						area = erzgebirge_area
 						area = moravia_area
+						area = hradecko_area
 					}
 				}
 			}
@@ -137,6 +146,7 @@ hab_holy_roman_ambitions = {
 					area = bohemia_area
 					area = erzgebirge_area
 					area = moravia_area
+					area = hradecko_area
 				}
 			}
 		}
@@ -146,6 +156,12 @@ hab_holy_roman_ambitions = {
 				duration = 5475 #15 years
 			}
 			silesia_area = {
+				add_permanent_claim = ROOT
+			}
+			breg_area = {
+				add_permanent_claim = ROOT
+			}
+			opole_area = {
 				add_permanent_claim = ROOT
 			}
 			hidden_effect = {
@@ -178,6 +194,20 @@ hab_holy_roman_ambitions = {
 		}
 		effect = {
 			silesia_area = {
+				add_province_modifier = {
+					name = "austrian_silesia"
+					duration = 7300
+				}
+				add_nationalism = -5
+			}
+			breg_area = {
+				add_province_modifier = {
+					name = "austrian_silesia"
+					duration = 7300
+				}
+				add_nationalism = -5
+			}
+			opole_area = {
 				add_province_modifier = {
 					name = "austrian_silesia"
 					duration = 7300

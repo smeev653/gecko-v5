@@ -29,7 +29,17 @@ emp_france_missions_1 = {
 			}
 		}
 		effect = {
-			add_dip_power = 100
+			add_dip_power = 100	
+			172 = {
+				if = {
+					limit = {	
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}	
+				center_of_trade = 1
+			}
 		}
 	}
 	emp_fra_brest = {
@@ -459,6 +469,23 @@ emp_france_missions_2 = {
 			else = {
 				add_prestige = 15
 			}
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			167 = {
+				if = {
+					limit = {	
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}	
+				center_of_trade = 1
+			}	
 		}
 	}
 	
@@ -963,6 +990,13 @@ emp_france_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			normandy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	emp_fra_conquer_provence = {
@@ -1005,7 +1039,17 @@ emp_france_missions_3 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
+			}	
+			177 = {
+				if = {
+					limit = {	
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}	
+				center_of_trade = 1
+			}	
 		}
 	}
 	emp_fra_toulon_dockyard = {
