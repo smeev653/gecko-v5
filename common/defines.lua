@@ -2160,7 +2160,7 @@ NGui = {
 	MACRO_BUILD_BIG_SMALL_HEIGHT = 0.15,
 	DELAY_ACCEPT_EVENT = 0.5, 				-- Seconds. Disables event option buttons for the duration if > 0
 	DELAY_ACCEPT_CALL_TO_ARMS = 0.5,		-- Seconds. Disables Call to Arms accept button for the duration if > 0
-	AUTO_SELECT_EVENT_MONTHS = 4,
+	AUTO_SELECT_EVENT_MONTHS = 6,
 	LEDGER_GUI_OBJECT_OFFSET = -5,
 	LEDGER_RIGHT_ALIGNED_COLUMN_PADDING = 20,
 },

@@ -6,7 +6,7 @@ on_startup = {
 		save_global_event_target_as = Emperor
 	}
 	events = {
-		muslim_school_events.20 #Pick School
+		#muslim_school_events.20 #Pick School
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {
@@ -17,6 +17,7 @@ on_startup = {
 		set_country_flag = gecko.9_fired
 		country_event = { 
 			id = gecko.9
+			days = 7
 		}
 	}		
 	if = {
@@ -26,32 +27,31 @@ on_startup = {
 		}
 		remove_country_modifier = tur_janissary
 	}
-	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
 
-	if = {
-		limit = {
-			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
-			OR = {
-				tag = UBV
-				tag = LBV
-				tag = ING
-			}
-		}
-		set_country_flag = new_flavour_bav_13_has_been_triggered
-		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
-	}
-	if = {
-		limit = {
-			tag = FRA
-			started_in = 1789.7.14
-			NOT = { is_year = 1790 }
-			NOT = { has_disaster = french_revolution }
-		}
-		add_disaster_progress = {
-			value = 100
-			disaster = french_revolution
-		}
-	}
+	#if = {
+	#	limit = {
+	#		NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+	#		OR = {
+	#			tag = UBV
+	#			tag = LBV
+	#			tag = ING
+	#		}
+	#	}
+	#	set_country_flag = new_flavour_bav_13_has_been_triggered
+	#	country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	#}
+	#if = {
+	#	limit = {
+	#		tag = FRA
+	#		started_in = 1789.7.14
+	#		NOT = { is_year = 1790 }
+	#		NOT = { has_disaster = french_revolution }
+	#	}
+	#	add_disaster_progress = {
+	#		value = 100
+	#		disaster = french_revolution
+	#	}
+	#}
 	##Swedish Succession
 	if = {
 		limit = {
@@ -63,17 +63,17 @@ on_startup = {
 			days = 7
 		} 
 	}
-	if = {
-		limit = {
-			exists = SUK
-		}
-		SUK = {
-			set_ruler_flag = suk_monarch_flag
-		}
-		AYU = {
-			set_country_flag = ayu_monarch_flag
-		}
-	}
+	#if = {
+	#	limit = {
+	#		exists = SUK
+	#	}
+	#	SUK = {
+	#		set_ruler_flag = suk_monarch_flag
+	#	}
+	#	AYU = {
+	#		set_country_flag = ayu_monarch_flag
+	#	}
+	#}
 }
 
 # country
@@ -1493,18 +1493,6 @@ on_mil_development = {
 }
 
 on_overextension_pulse = {
-random_events = {
-	100 = overextension.1
-		100 = overextension.2
-		100 = overextension.3
-		100 = overextension.4
-		100 = overextension.5
-		100 = overextension.6
-		100 = overextension.7
-		100 = overextension.8
-		100 = overextension.9
-		100 = overextension.10
-	}
 }
 
 
@@ -3330,8 +3318,6 @@ on_buy_religious_reform = {
 }
 
 on_circumnavigation = {
-	events = {
-	}
 }
 
 on_become_free_city = {
