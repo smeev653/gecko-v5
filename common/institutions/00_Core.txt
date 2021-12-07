@@ -1079,7 +1079,8 @@ global_trade = {
 	
 
 	bonus = {
-		merchants = 2
+		merchants = 1
+		advisor_pool = 2
 	}
 
 	trade_company_efficiency = 1.0
