@@ -999,7 +999,7 @@ administrative_ideas = {
 	}
 	civil_servants = {
 		monthly_splendor = 3
-		advisor_pool = 2
+		advisor_pool = 4
 	}
 	benefits_for_mercenaries = {
 		mercenary_cost = -0.25
