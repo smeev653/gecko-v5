@@ -7533,7 +7533,7 @@ estate_church_one_faith_one_culture = {
 	max_absolutism = -5
 	influence = 0.1
 	loyalty = 0.1
-	land_share = 5
+	#land_share = 5
 	is_valid = {
 	}
 	can_select = {
@@ -7629,8 +7629,8 @@ estate_church_one_faith_one_culture = {
 		}
 	}
 	penalties = {
-		tolerance_heathen = -2
-		tolerance_heretic = -2
+		tolerance_heathen = -1
+		tolerance_heretic = -1
 	}
 	benefits = {
 		global_missionary_strength = 0.01
