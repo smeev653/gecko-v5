@@ -21,7 +21,7 @@ country_decisions = {
 				NOT = { has_country_flag = sm_hire_recruitmaster }
 			}
 			allow = {
-			NOT = { mil_tech = 4 }
+				ai = no
 			}
 			effect = {
 				add_years_of_income = -0.25
@@ -38,11 +38,11 @@ country_decisions = {
 	sm_hire_explorer = {	
 		potential = {
 				ai = no
-				has_institution = new_world_i
+				#has_institution = new_world_i
 				NOT = { has_country_modifier = hired_explorer }
 			}
 			allow = {
-				has_institution = new_world_i
+				#has_institution = new_world_i
 			}
 			effect = {
 				add_years_of_income = -0.1
@@ -58,11 +58,11 @@ country_decisions = {
 	sm_hire_conquistador = {	
 		potential = {
 				ai = no
-				has_institution = new_world_i
+				#has_institution = new_world_i
 				NOT = { has_country_modifier = hired_conquistador }
 			}
 			allow = {
-				has_institution = new_world_i
+				#has_institution = new_world_i
 			}
 			effect = {
 				add_years_of_income = -0.1
@@ -87,7 +87,7 @@ country_decisions = {
 					}
 				}
 				NOT = { has_country_modifier = free_colonist}
-				dip_tech = 7	
+					
 			}
 
 		allow = {
@@ -97,7 +97,8 @@ country_decisions = {
 					capital_scope = { region = oceanea_region }
 				}
 			}
-			has_institution = new_world_i
+			#has_institution = new_world_i
+			dip_tech = 6
 			was_player = yes
 		}
 		effect = {
