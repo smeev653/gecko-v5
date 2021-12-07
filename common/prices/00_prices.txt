@@ -56,7 +56,7 @@ slaves = {
 	base_price = 3
 }
 ivory = {
-	base_price = 4 
+	base_price = 3 
 }
 
 
