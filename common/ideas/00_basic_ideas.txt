@@ -215,11 +215,10 @@ innovativeness_ideas = {
 		innovativeness_gain = 0.5
 	}
 	patron_of_art  = {
-		autonomy_change_time = -0.5
 		prestige_decay = -0.01
 	}
 	dynamic_court = {
-		idea_cost = -0.1
+		idea_cost = -0.05
 	}
 	print_culture = {
 		mercenary_manpower = 0.25
@@ -522,19 +521,22 @@ economic_ideas = {
 	}
 
 	bureaucracy = {
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.20
 	}
 	organised_construction = {
-		build_cost = -0.05
+		build_cost = -0.10
+		build_time = -0.25
 	}
 	national_bank = {
 		inflation_reduction = 0.2
+		inflation_action_cost = -0.25
 	}
 	debt_and_loans = {
-		build_time = -0.25
+		interest = -0.25
 	}
 	centralization = {
 		global_autonomy = -0.05
+		autonomy_change_time = -0.5
 	}
 	nationalistic_enthusiasm = {
 		global_regiment_cost = -0.05
