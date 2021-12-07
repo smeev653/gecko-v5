@@ -784,7 +784,7 @@ foreign_conscription_centers = {
 }
 
 guerilla_warfare = {
-	monarch_power = DIP
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = influence_ideas
@@ -796,7 +796,7 @@ guerilla_warfare = {
 		full_idea_group = quantity_ideas
 	}	
 	
-	global_manpower_modifier = 0.2
+	global_manpower_modifier = 0.1
 	vassal_forcelimit_bonus = 1
 	
 	ai_will_do = {
