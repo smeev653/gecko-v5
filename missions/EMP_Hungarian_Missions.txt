@@ -749,7 +749,7 @@ emp_hun_bohemia_austria_branch_2 = {
 								OR = {
 									area = austria_proper_area
 									area = inner_austria_area
-									area = carinthia_area
+									area = krain_area
 								}
 							}
 						}
@@ -768,7 +768,7 @@ emp_hun_bohemia_austria_branch_2 = {
 				OR = {
 					area = austria_proper_area
 					area = inner_austria_area
-					area = carinthia_area
+					area = krain_area
 				}
 			}
 		}
