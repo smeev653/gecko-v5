@@ -12,6 +12,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 115;1247;sea;1298;-1;-1;-1;-1;Pisa-Corsica
 130;4753;sea;1308;-1;-1;-1;-1;Istria-Zara
 4754;4174;sea;1310;-1;-1;-1;-1;Kotor-Durazzo
+6126;4174;sea;1310;-1;-1;-1;-1;Otranto-Durazzo
 320;163;sea;1319;-1;-1;-1;-1;Rhodes-Crete 
 
 235;87;sea;1271;-1;-1;-1;-1;Kent-Calais
