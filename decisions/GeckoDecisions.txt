@@ -345,6 +345,7 @@ country_decisions = {
 		}
 	}
 	urbanisation = {
+		major = yes
 		potential = {
 				NOT = { has_country_flag = urbanisation_taken }
 			}

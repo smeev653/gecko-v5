@@ -6,7 +6,10 @@ songhai_military_slot = {
 
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = SON
+		OR = {
+			tag = SON
+			tag = PR2
+		}	
 	}
 	has_country_shield = yes
 
@@ -175,8 +178,11 @@ songhai_historical_conquest_slot = {
 
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = SON
-	}
+		OR = {
+			tag = SON
+			tag = PR2
+		}
+	}	
 	has_country_shield = yes
 
 	#Conquer Timbuktu
@@ -411,7 +417,10 @@ songhai_maghreb_slot = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = SON
+		OR = {
+			tag = SON
+			tag = PR2
+		}	
 	}
 	has_country_shield = yes
 
@@ -723,7 +732,10 @@ songhai_mossi_slot = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = SON
+		OR = {
+			tag = SON
+			tag = PR2
+		}	
 	}
 	has_country_shield = yes
 
@@ -764,7 +776,10 @@ songhai_question_mark_slot = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = SON
+		OR = {
+			tag = SON
+			tag = PR2
+		}	
 		NOT = { has_country_flag = son_islamtic_focus }
 		NOT = { has_country_flag = son_tolderance_focus }
 	}
@@ -1167,7 +1182,10 @@ songhai_jihad_slot = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = SON
+		OR = {
+			tag = SON
+			tag = PR2
+		}	
 		has_country_flag = son_islamtic_focus
 	}
 	has_country_shield = yes
@@ -1460,7 +1478,10 @@ songhai_protection_slot = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = SON
+		OR = {
+			tag = SON
+			tag = PR2
+		}	
 		has_country_flag = son_tolderance_focus
 	}
 	has_country_shield = yes
