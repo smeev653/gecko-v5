@@ -756,7 +756,7 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
-		land_forcelimit = 1.2
+		land_forcelimit = 1
 	}
 
 	on_built = {
