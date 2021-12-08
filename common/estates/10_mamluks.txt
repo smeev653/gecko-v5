@@ -191,6 +191,7 @@ estate_mamluks = {
 		estate_mamluks_land_rights
 		estate_gc_noble_levies
 		estate_mamluks_promote_leadership
+		estate_mamluks_recruit_turkmen
 	}
 	
 	agendas = {

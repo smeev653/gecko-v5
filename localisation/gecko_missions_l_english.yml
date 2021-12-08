@@ -30,6 +30,9 @@
  gecko_mam_mission_13_title:0 "Subjugate Alodia"
  gecko_mam_mission_14_title:0 "Arabian Coffee"
  gecko_mam_mission_15_title:0 "Conquer Yemen"
+ gecko_mam_mission_16_title:0 "Improve the Economy"
+ mam_turks_defeated_title:0 "Turks Defeated"
+ unlock_privilege_estate_mamluks_recruit_turkmen_tt:0 "Unlock Recruit Turkmen Privilege"
 
  gecko_mam_mission_1_desc:0 ""
  gecko_mam_mission_2_desc:0 ""
@@ -46,6 +49,12 @@
  gecko_mam_mission_13_desc:0 ""
  gecko_mam_mission_14_desc:0 ""
  gecko_mam_mission_15_desc:0 ""
+ gecko_mam_mission_15_desc:0 ""
+ mam_turks_defeated_desc:0 ""
+ mam_Mimar_Sinan's_Great_Constructions_title:0 "Mimar Sinan's Great Constructions"
+ mam_Mimar_Sinan's_Great_Constructions_desc:0 "Mimar Sinan planned and oversaw the construction of countless mosques, aqueducts, bathhouses, bridges, palaces, caravanserais and schools during his half-a-century long career. His masterpieces were the Selimiye and Suleymaniye Mosques in Adrianople and Constantinople respectively."
+ mam_Expansion_of_the_Royal_Bureaucracy_title:0 "Expansion of the Royal Bureaucracy"
+ mam_Expansion_of_the_Royal_Bureaucracy_desc:0 "Süleyman I was probably the greatest of the Ottoman Sultans. Called Kanuni (Lawgiver), he was an unsurpassed administrator who realized that the power of the provincial Beys had to be curbed by a strong central government. Thus he struggled to promote a powerful royal bureaucracy which was not popular in all camps..."
 
 #ottoman event missions
 

@@ -182,7 +182,6 @@ mam_north_missions = {
 		provinces_to_highlight = {
 			OR = {
 				area = syrian_desert_area
-				area = nafud_area
 				area = tabuk_area
 			}
 			NOT = {
@@ -191,10 +190,6 @@ mam_north_missions = {
 		}
 		trigger = {
 			syrian_desert_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			nafud_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -208,7 +203,21 @@ mam_north_missions = {
 				name = "bedouins_pacified"
 				duration = -1
 			}
-			anatolia_region = {
+			cukurova_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			dulkadir_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -231,6 +240,90 @@ mam_north_missions = {
 				name = "beyliks_subjugated"
 				duration = 7300
 			}
+			
+		}
+	}
+	mam_turks_defeated = {
+		icon = mission_non-western_soldiers
+		required_missions = { mam_subjugate_beyliks }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 316
+				province_id = 2296
+				province_id = 2298
+				province_id = 318
+				province_id = 1848
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			316 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2296 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2298 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			318 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1848 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "turks_defeated"
+				duration = 7300
+			}
+			add_treasury = 1000
+			add_manpower = 30
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			anatolia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			unlock_estate_privilege = {
+				estate_privilege = estate_mamluks_recruit_turkmen
+			}
+		
+		}
+	}
+	mam_Mimar_Sinan's_Great_Constructions = {
+		icon = mission_golden_century
+		required_missions = { mam_turks_defeated }
+		trigger = {
+		is_year = 1519
+		owns = 151
+	}
+		effect = {
+			country_event = {
+					id = flavor_tur.3374
+				}
+			custom_tooltip = g_constructions			
+		}
+	}
+	mam_Expansion_of_the_Royal_Bureaucracy = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { Mimar_Sinan's_Great_Constructions }
+		trigger ={
+		is_at_war = no
+		is_year = 1520
+	}
+		effect = {
+			country_event = {
+					id = flavor_tur.3366
+				}
+			custom_tooltip = g_expansion_of_the_royal_bureaucracy
 		}
 	}
 }
@@ -916,7 +1009,22 @@ gecko_mam_branch_4 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-
+	
+	gecko_mam_mission_16 = {
+		icon = mission_african_gold
+		position = 1
+		required_missions = {  }
+		trigger = {
+			share_of_starting_income = 1.5
+		}
+		effect = {
+			add_country_modifier = {
+				name = hun_strong_economy
+				duration = 7300
+			}
+		}
+	}
+	
 	gecko_mam_mission_12 = {
 		icon = mission_egyptian_mamluk_soldier
 		position = 2

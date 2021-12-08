@@ -43,7 +43,7 @@ fra_into_germany = {
 }
 
 grand_armee = {
-	land_forcelimit_modifier = 0.33
+	land_forcelimit_modifier = 0.20
 	}
 	
 angevin_supremacy = {
@@ -121,7 +121,7 @@ france_united = {
 }
 
 caliphate_proclaimed = {
-	fire_damage = 0.05
+	fire_damage = 0.10
 }	
 
 gecko_cannon_foundries = {
@@ -230,4 +230,17 @@ son_focus_on_professional_armies = {	#As long as the ruler lives, renewable thro
 
 empowered_junkers = {
 	monthly_militarized_society = 0.02
+}
+
+turks_defeated = {
+	global_monthly_devastation = -0.2
+	interest = -0.5
+	reduced_liberty_desire = 25
+	inflation_reduction = 3
+}
+
+mamluks_subjugated = {
+	global_monthly_devastation = -0.2
+	interest = -0.25
+	inflation_reduction = 3
 }
