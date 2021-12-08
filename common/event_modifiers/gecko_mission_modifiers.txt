@@ -1,5 +1,5 @@
 hungary_unleashed = {
-	ae_impact = -0.25
+	ae_impact = -0.50
 	province_warscore_cost = -0.2
 }
 

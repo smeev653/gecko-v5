@@ -569,21 +569,6 @@ emp_hun_bohemia_austria_branch = {
 		effect = {
 			add_adm_power = 50
 			
-			if = {
-				limit = {
-					exists = BOH
-					valid_for_personal_unions_trigger = yes
-					BOH = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = BOH
-				}
-			}
-			else = {
 				bohemia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -605,7 +590,6 @@ emp_hun_bohemia_austria_branch = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
 		}
 	}
 	
@@ -627,22 +611,17 @@ emp_hun_bohemia_austria_branch = {
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		trigger = { #8 provinces so fine for demanding all
-			bohemia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				OR = {
+					area = bohemia_area
+					area = erzgebirge_area
+					area = moravia_area
+					area = hradecko_area
+				}
 			}
-			erzgebirge_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			hradecko_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			is_subject = no
-			NOT = { active_imperial_incident = any }
-		}
+		}	
 		effect = {
 			add_prestige = 25
 					country_event = { id = new_flavour_hun.1 }
@@ -739,7 +718,7 @@ emp_hun_bohemia_austria_branch_2 = {
 					OR = {
 						area = austria_proper_area
 						area = inner_austria_area
-						area = carinthia_area
+						area = krain_area
 					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = {
