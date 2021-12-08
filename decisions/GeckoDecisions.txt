@@ -344,8 +344,29 @@ country_decisions = {
 		effect = {
 		}
 	}
-
 	urbanisation = {
+		potential = {
+				NOT = { has_country_modifier = urbanisation}
+			}
+
+		allow = {
+				AND = {
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
+				}
+				splendor = 800
+		}
+		effect = {
+			
+			add_country_modifier = {
+				name = "urbanisation"
+				duration = -1
+			}
+		}
+	}
+	
+	force_urbanisation = {
 		potential = {
 				was_player = yes
 				NOT = { has_country_modifier = gc_urbanisation}
@@ -356,11 +377,6 @@ country_decisions = {
 				was_player = yes
 				dip_tech = 10
 				NOT = { is_colonial_nation = yes }	
-				AND = {
-					adm_power = 100
-					dip_power = 100
-					mil_power = 100
-				}
 		}
 		effect = {
 			

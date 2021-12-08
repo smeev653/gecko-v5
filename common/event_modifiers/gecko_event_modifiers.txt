@@ -141,6 +141,12 @@ free_colonist = {
 	global_colonial_growth = 20
 }
 
+urbanisation = {
+	all_power_cost = -0.1
+	build_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+}
+
 gc_urbanisation = {
 	development_cost = -0.1
 	build_cost = -0.1
