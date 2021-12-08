@@ -304,7 +304,7 @@ conquest_of_cairo = {
 		}	
 
 	fire_damage = 0.10
-	prestige = 0.5
+	interest = -0.25
 	
 	#Province scope
 	on_activation = {
