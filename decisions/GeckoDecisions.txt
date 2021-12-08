@@ -346,7 +346,7 @@ country_decisions = {
 	}
 	urbanisation = {
 		potential = {
-				NOT = { has_country_modifier = urbanisation}
+				NOT = { has_country_flag = urbanisation_taken }
 			}
 
 		allow = {
@@ -361,8 +361,9 @@ country_decisions = {
 			
 			add_country_modifier = {
 				name = "urbanisation"
-				duration = -1
+				duration = 18250
 			}
+			set_country_flag = urbanisation_taken
 		}
 	}
 	

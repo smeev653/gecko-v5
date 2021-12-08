@@ -28,6 +28,7 @@
  free_colonist_desc:0 "Recent discoveries have lead to a great demand for Crown sponsored colonies."
  force_urbanisation_title:0 "Force Urbanisation"
  force_urbanisation_desc:0 "Although our state is developing at a pleasing rate, it could be faster. We could focus all our resources into centralising the state. However diverting funding away from the army will have its consequences.."
+ urbanisation:0 "Urbanisation"
  urbanisation_title:0 "Urbanisation"
  urbanisation_desc:0 "Focus our efforts into centralising and developing the state,"
  sm_hire_recruitmaster_title:0 "Hire a Master Recruiter"
