@@ -8674,6 +8674,7 @@ estate_church_develop_x = {
 						area_for_scope_province = {
 							is_capital_of = root
 						}
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -8711,6 +8712,7 @@ estate_church_develop_x = {
 						region_for_scope_province = {
 							is_capital_of = root
 						}
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -8719,6 +8721,7 @@ estate_church_develop_x = {
 				random_owned_province = {
 					limit = {
 						is_state_core = root
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -8969,6 +8972,7 @@ estate_nobles_develop_x = {
 						area_for_scope_province = {
 							is_capital_of = root
 						}
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -9006,6 +9010,7 @@ estate_nobles_develop_x = {
 						region_for_scope_province = {
 							is_capital_of = root
 						}
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -9014,6 +9019,7 @@ estate_nobles_develop_x = {
 				random_owned_province = {
 					limit = {
 						is_state_core = root
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -9359,6 +9365,7 @@ estate_burghers_develop_x = {
 						area_for_scope_province = {
 							is_capital_of = root
 						}
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -9396,6 +9403,7 @@ estate_burghers_develop_x = {
 						region_for_scope_province = {
 							is_capital_of = root
 						}
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -9404,6 +9412,7 @@ estate_burghers_develop_x = {
 				random_owned_province = {
 					limit = {
 						is_state_core = root
+						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
