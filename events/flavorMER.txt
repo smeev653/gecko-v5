@@ -180,6 +180,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		always = no #Gecko change
 		tag = MER
 		has_ruler = "Kumbhakarna Singh"
 		is_year = 1460
