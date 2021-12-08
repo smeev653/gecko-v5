@@ -871,7 +871,6 @@ country_development = {
 
 # Multiplied by Tribal Allegiance / 100
 tribal_allegiance = {
-	global_regiment_cost = -0.1
 	land_forcelimit_modifier = 0.25
 }
 
@@ -1563,7 +1562,7 @@ lenient_taxation_modifier = {
 }
 
 train_horsemanship_modifier = {
-	cavalry_power = 0.15
+	cavalry_power = 0.10
 }
 
 promote_culture_in_government_modifier = {
@@ -1575,7 +1574,7 @@ seize_clerical_holdings_modifier = {
 }
 
 invite_minorities_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 ########################################
