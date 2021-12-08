@@ -34,7 +34,30 @@ country_decisions = {
 				set_country_flag = sm_hire_recruitmaster
 			}
 		}	
-		
+	urbanisation = {
+		major = yes
+		potential = {
+				NOT = { has_country_flag = urbanisation_taken }
+			}
+
+		allow = {
+				AND = {
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
+				}
+				splendor = 800
+		}
+		effect = {
+			
+			add_country_modifier = {
+				name = "urbanisation"
+				duration = 18250
+			}
+			set_country_flag = urbanisation_taken
+		}
+	}
+	
 	sm_hire_explorer = {	
 		potential = {
 				ai = no
@@ -342,29 +365,6 @@ country_decisions = {
 			has_wartaxes = yes
 		}
 		effect = {
-		}
-	}
-	urbanisation = {
-		major = yes
-		potential = {
-				NOT = { has_country_flag = urbanisation_taken }
-			}
-
-		allow = {
-				AND = {
-					adm_power = 100
-					dip_power = 100
-					mil_power = 100
-				}
-				splendor = 800
-		}
-		effect = {
-			
-			add_country_modifier = {
-				name = "urbanisation"
-				duration = 18250
-			}
-			set_country_flag = urbanisation_taken
 		}
 	}
 	
