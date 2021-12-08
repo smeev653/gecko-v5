@@ -1235,11 +1235,11 @@ CHI_ideas = {
 PER_ideas = {
 	start = {
 		tolerance_own = 2
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	
 	bonus = {
-		discipline = 0.05
+		artillery_power = 0.10
 	}
 	
 	trigger = {
@@ -1248,7 +1248,7 @@ PER_ideas = {
 	free = yes
 
 	the_qizilbash = {
-		manpower_in_true_faith_provinces = 0.2
+		manpower_in_true_faith_provinces = 0.15
 		monthly_piety = -0.001
 	}
 	persian_rug_production = {
@@ -1268,7 +1268,6 @@ PER_ideas = {
 		manpower_recovery_speed = 0.10
 	}
 	the_tupchi = {
-		artillery_power = 0.10
 		siege_ability = 0.10
 	}
 }
