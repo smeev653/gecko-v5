@@ -119,7 +119,7 @@ categories =  {
 			67 4765 4769 4712 #Germany
 			
 			#smeev terrain changes
-		 2319 4318 4320 2317 #nile
+			2319 4318 4320 2317 #nile
 			406 4291 #iraq arabi #smeev
 			412 #ahvaz #smeev
 			2798 1222 2799 #upper nile #smeev
@@ -131,7 +131,8 @@ categories =  {
 			6081 6082 6084 6085 6086 6092 6093 #gcfrance
 			6099 6100
 			6102 6103 6108 6109 #gcbohemia
-				}		
+			254 #poznan #smeev
+			}		
 	}
 	
 	forest = {
@@ -227,6 +228,7 @@ categories =  {
 			#4764 # Salins
 			4788 4789
 			111
+			4237 #gecko change
 
 		}
 	}
@@ -295,7 +297,6 @@ categories =  {
 			4713 4716 4717 4747 4749 4748 4741 4742 4743 4772 4773 4774 4775 4746 #Germany
 			128 1769 4751 #Austria
 			4766 4767 4768 4770 4786
-			254 #poznan #smeev
 			135 #sopron #smeev 
 			6087 6090 6091 6094 6095 6096 6098 #gcfrance
 			4392 193 4764 #gcburgundy
