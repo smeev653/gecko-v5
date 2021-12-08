@@ -126,7 +126,40 @@ country_decisions = {
 		}
 	}
 
-
+	subjugate_mamluks = {
+		major = yes
+		potential = {
+			OR = {
+				tag = TUR
+				tag = RUM
+			}
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = subjugated_mamluks }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			religion_group = muslim
+			owns = 361		
+		}
+		effect = {
+			set_country_flag = subjugated_mamluks
+			add_stability = 1
+			add_core = 361
+			add_treasury = 1000
+			add_manpower = 30
+			add_country_modifier = {
+					name = "mamluks_subjugated"
+					duration = 7300
+					}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	disband_the_janissaries = {
 		major = yes
 		potential = {
