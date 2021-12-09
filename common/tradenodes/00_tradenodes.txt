@@ -1744,38 +1744,7 @@ pest={
 	
 	}
 }
-ragusa={
-	location=151
-	
-	outgoing={
-		name="genua"
-		path={
-			136 1308 
-		}
-		control={
-			3164.000000 1337.000000 3109.000000 1349.000000 3080.500000 1356.000000 3031.000000 1383.000000 
-		}
-	}
-	members={
-		142 144 147 1853 3001 148
-		145 146 1773 #morea_area
-		4702 4699 4698 4701  4780 # 1.30
-		160 161 2998 4531 4532 # wallachia_area #smeev change
-		4703 1765 2746 150 2750 #bulgaria # smeev
-		159 4706 4704 #silistria #smeev
-		1764 151 4779 4705 149 #thrace #smeev
-		4700 164 2348 3003 #aegean_archipelago_area
-		1319 #aegean sea #smeev
-		4174 4750 143 4175 #albania #smeev
-		4239 141 4176 3000 4757 #serbia #smeev
-		1827 1766 138 #rascia #smeev
-		140 4755 3002 139 1831 #bosnia #smeev
-		4754 4753 136 137 #dalmatia #smeev		
-		###XMP###
-		6120 6122 6123
-		#########
-	}
-}
+
 rheinland={
 	location=1876
 	inland=yes
@@ -2125,7 +2094,38 @@ tunis={
 	}
 }
 
-
+ragusa={
+	location=151
+	
+	outgoing={
+		name="genua"
+		path={
+			136 1308 
+		}
+		control={
+			3164.000000 1337.000000 3109.000000 1349.000000 3080.500000 1356.000000 3031.000000 1383.000000 
+		}
+	}
+	members={
+		142 144 147 1853 3001 148
+		145 146 1773 #morea_area
+		4702 4699 4698 4701  4780 # 1.30
+		160 161 2998 4531 4532 # wallachia_area #smeev change
+		4703 1765 2746 150 2750 #bulgaria # smeev
+		159 4706 4704 #silistria #smeev
+		1764 151 4779 4705 149 #thrace #smeev
+		4700 164 2348 3003 #aegean_archipelago_area
+		1319 #aegean sea #smeev
+		4174 4750 143 4175 #albania #smeev
+		4239 141 4176 3000 4757 #serbia #smeev
+		1827 1766 138 #rascia #smeev
+		140 4755 3002 139 1831 #bosnia #smeev
+		4754 4753 136 137 #dalmatia #smeev		
+		###XMP###
+		6120 6122 6123
+		#########
+	}
+}
 
 genua={
 	location=109
