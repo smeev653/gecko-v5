@@ -143,7 +143,6 @@ free_colonist = {
 
 urbanisation = {
 	all_power_cost = -0.1
-	build_cost = -0.1
 	global_trade_goods_size_modifier = 0.1
 }
 
