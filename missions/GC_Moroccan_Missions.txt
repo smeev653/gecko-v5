@@ -441,14 +441,14 @@ gc_morocco_2 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			province_id = 1293
+			province_id = 341
 		}
 		
 		trigger = {
-			1293 = {
+			341 = {
 				trade_share = {
 						country = ROOT
-						share = 25
+						share = 50
 					}
 			}
 		}
