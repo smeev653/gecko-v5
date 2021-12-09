@@ -1358,7 +1358,7 @@ gecko_tur_events = {
 				tag = TUR
 				tag = RUM
 			}
-		is_year = 1519
+		is_year = 1520
 		owns = 151
 	}
 		effect = {
@@ -1368,23 +1368,23 @@ gecko_tur_events = {
 			custom_tooltip = g_constructions			
 		}
 	}
-	Expansion_of_the_Royal_Bureaucracy = {
-		icon = mission_rb_monopolize_the_channel
-		required_missions = {  }
-		position = 5
-		trigger ={
-		OR ={
-				tag = TUR
-				tag = RUM
-			}
-		is_at_war = no
-		is_year = 1520
-	}
-		effect = {
-			country_event = {
-					id = flavor_tur.3366
-				}
-			custom_tooltip = g_expansion_of_the_royal_bureaucracy
-		}
-	}
+	#Expansion_of_the_Royal_Bureaucracy = {
+	#	icon = mission_rb_monopolize_the_channel
+	#	required_missions = {  }
+	#	position = 5
+	#	trigger ={
+	#	OR ={
+	#			tag = TUR
+	#			tag = RUM
+	#		}
+	#	is_at_war = no
+	#	is_year = 1620
+	#}
+	#	effect = {
+	#		country_event = {
+	#				id = flavor_tur.3366
+	#			}
+	#		custom_tooltip = g_expansion_of_the_royal_bureaucracy
+	#	}
+	#}
 }

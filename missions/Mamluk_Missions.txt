@@ -302,7 +302,7 @@ mam_north_missions = {
 		icon = mission_golden_century
 		required_missions = { mam_turks_defeated }
 		trigger = {
-		is_year = 1519
+		is_year = 1520
 		owns = 151
 	}
 		effect = {
@@ -312,20 +312,20 @@ mam_north_missions = {
 			custom_tooltip = g_constructions			
 		}
 	}
-	mam_Expansion_of_the_Royal_Bureaucracy = {
-		icon = mission_rb_monopolize_the_channel
-		required_missions = { Mimar_Sinan's_Great_Constructions }
-		trigger ={
-		is_at_war = no
-		is_year = 1520
-	}
-		effect = {
-			country_event = {
-					id = flavor_tur.3366
-				}
-			custom_tooltip = g_expansion_of_the_royal_bureaucracy
-		}
-	}
+	#mam_Expansion_of_the_Royal_Bureaucracy = {
+	#	icon = mission_rb_monopolize_the_channel
+	#	required_missions = { Mimar_Sinan's_Great_Constructions }
+	#	trigger ={
+	#	is_at_war = no
+	#	is_year = 1600
+	#}
+	#	effect = {
+	#		country_event = {
+	#				id = flavor_tur.3366
+	#			}
+	#		custom_tooltip = g_expansion_of_the_royal_bureaucracy
+	#	}
+	#}
 }
 
 gecko_mam_branch_1 = {
