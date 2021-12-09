@@ -57,13 +57,6 @@ per_western_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
-			shirvan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			armenia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -82,50 +75,48 @@ per_western_branch = {
 				area = kartli_kakheti_area
 				area = samtskhe_area
 				area = imereti_area
-				area = shirvan_area
 				area = armenia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value =  10
+				value =  14
 				OR = {
 					area = kartli_kakheti_area
 					area = samtskhe_area
 					area = imereti_area
-					area = shirvan_area
 					area = armenia_area
 				}
 			}	
 		}
 		effect = {
 			kartli_kakheti_area = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = caucasus_integration
 					duration = -1
 				}
 			}
 			samtskhe_area = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = caucasus_integration
 					duration = -1
 				}
 			}
 			imereti_area = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = caucasus_integration
 					duration = -1
 				}
 			}
 			shirvan_area = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = caucasus_integration
 					duration = -1
 				}
 			}
 			armenia_area = {
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = caucasus_integration
 					duration = -1
 				}

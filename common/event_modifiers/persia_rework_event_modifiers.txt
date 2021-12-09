@@ -71,7 +71,7 @@ force_janissaries_to_undergo_yoklama = {
 caucasus_integration = {
 	local_unrest = -2
 	local_autonomy = -0.05
-	local_development_cost = -0.25
+	local_development_cost = -0.15
 }
 
 ######event changes######
