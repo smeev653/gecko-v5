@@ -1,7 +1,7 @@
 #124 - Messina
 
-owner = ARA
-controller = ARA
+owner = NAP
+controller = NAP
 culture = sicilian 
 religion = catholic 
 hre = no 
@@ -12,7 +12,7 @@ base_manpower = 5
 fort_15th = yes #Numerous forts, Castello Maniace and Castello di Milazzo being the prominent.
 capital = "Messina"
 is_city = yes 
-add_core = ARA
+add_core = NAP
 add_core = SIC
 
 
