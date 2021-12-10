@@ -152,7 +152,7 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	#infantry_shock		= 	0.30
+	infantry_shock		= 	0.10
 	infantry_fire 		= 	0.20
 	
 	
@@ -223,6 +223,7 @@ technology = {
 	military_tactics 	= 	0.25
 	combat_width = 1
 	#infantry_fire = 0.15
+	infantry_shock		= 	0.20
 }
 
 technology = {
