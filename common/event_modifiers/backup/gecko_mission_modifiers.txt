@@ -106,7 +106,7 @@ beyliks_subjugated = {
 }
 
 pap_papal_swiss_guard = {
-	mercenary_discipline = 0.1
+	mercenary_discipline = 0.025
 }
 prester_john_discovered = {
 	infantry_power = 0.1
@@ -175,7 +175,7 @@ gecko_marathas_subdued = {
 ven_mercenaries_paid_with_land = {
 	mercenary_cost = -0.1
 	merc_maintenance_modifier = -0.2
-	mercenary_discipline = 0.1
+	mercenary_discipline = 0.05
 }
 
 ven_venture_captain_recruitment = {
