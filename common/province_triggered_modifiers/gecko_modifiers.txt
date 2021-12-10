@@ -485,32 +485,32 @@ conquest_of_isfahan = {
 	}
 }	
 
-conquest_of_samarkand = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-
-	trigger = {
-		owner = {
-				NOT = { tag = TRS }
-				NOT = { tag = BUK }
-				NOT = { tag = TIM }
-			}
-		controlled_by = ROOT	
-		}	
-
-	land_morale = 0.05
-	prestige = 0.5
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
+#conquest_of_samarkand = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		owner = {
+#				NOT = { tag = TRS }
+#				NOT = { tag = BUK }
+#				NOT = { tag = TIM }
+#			}
+#		controlled_by = ROOT	
+#		}	
+#
+#	land_morale = 0.05
+#	prestige = 0.5
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}
 
 conquest_of_pest = {
 	potential = {
@@ -536,8 +536,42 @@ conquest_of_pest = {
 	on_deactivation = {
 	
 	}
-}	
+}
 
+
+
+conquest_of_herat = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				tag = TRS
+				tag = BUK
+				tag = TIM
+				tag = AFG
+				tag = MUG
+				tag = ARL
+				tag = PER
+			}
+		}
+		controlled_by = ROOT
+	}
+
+	infantry_power = 0.1
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
 my_desert = {
 	potential = {
 			normal_or_historical_nations = yes
