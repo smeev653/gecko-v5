@@ -440,7 +440,7 @@ province;red;green;blue;x;x
 439;190;142;255;Mangyshlak;x
 440;62;144;0;Qaraqalpak;x
 441;191;146;64;Khiva;x
-442;63;148;128;Bukhara;x
+442;255;20;184;Bukhara;x
 443;191;150;192;Ust Yurt;x
 444;63;152;255;Charjuy;x
 445;191;154;0;Marv;x
@@ -5206,3 +5206,16 @@ province;red;green;blue;x;x
 6124;255;30;187;Padua;x
 6125;72;0;255;Senigallia;x
 6126;88;255;66;Apulia;x
+6127;68;199;255;Dscham;x
+6128;63;255;239;Totta;x
+6129;76;255;147;Hissar;x
+6130;191;168;40;Katty kurgan;x
+6131;155;201;255;Iskander kul;x
+6132;201;255;248;Karatepe;x
+#6133;147;28;121;Sahur;x
+#6134;255;51;15;Utsch tul;x
+#6135;255;160;45;Kermine;x
+#6136;193;255;48;Karnah;x
+#6137;48;255;182;Paikend;x
+#6138;24;255;12;Kassan-basar;x
+#6139;255;242;63;Kusk;x changed bukhara into this province

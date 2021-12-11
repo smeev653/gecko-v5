@@ -2072,16 +2072,20 @@ kyzylkum_area = { #3
 	455 1970 2363
 }
 
-transoxiana_area = { #3
-	442 453 454
+transoxiana_area = {    #3
+	442 453 441  
+}
+
+samarkand_area = {
+	454 6127 6128 6130 6129 
 }
 
 termez_area = { #3
-	1968 4344 4343
+	1968 4344 4343 6131 6132 
 }
 
 khiva_area = { #5
-	440 441 1973 2362 2370
+	440  1973 2362 2370
 }
 
 kabulistan_area = { #5
