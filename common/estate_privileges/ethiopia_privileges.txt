@@ -12,7 +12,10 @@ estate_gecko_ethiopia_highlands_and_mountains = {
                 has_terrain = mountain
             }
 		}
-        tag = ETH
+        OR = {
+			tag = ETH
+			tag = AKS
+		}
 	}
 	can_revoke = {
 	}
