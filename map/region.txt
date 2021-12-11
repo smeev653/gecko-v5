@@ -636,7 +636,7 @@ central_asia_region = {
 		kyzylkum_area
 		termez_area
 		samarkand_area
-	
+	}
 }
 
 south_africa_region = {
