@@ -662,6 +662,7 @@ categories =  {
 			226 #Gibraltar
 			6114 6115 6116 #bunker mod merge
 			361
+			6127 6128 6129 6130 6132
 		}
 	}
 

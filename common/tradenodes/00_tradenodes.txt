@@ -502,6 +502,7 @@ lahore={
 		446 #herat #smeev change
 		1968 4344 4343 #termez_area #smeev change
 		522 2060 2062 #upper_doab_area #smeev change
+		6132 6131
 	}
 }
 
@@ -702,7 +703,7 @@ samarkand={
 		4685
 		439 443
 		4325
-		6132 6131 6130 6129 6128 6127 
+		6130 6129 6128 6127 
 	}
 }
 basra={

@@ -3,17 +3,17 @@
 add_core = TRS
 owner = TRS
 controller = TRS
-culture = uzbek
+culture = uzbehk
 religion = sunni
 hre = no
 base_tax = 2
 base_production = 2
-trade_goods = grain
+trade_goods = wool
 base_manpower = 3
 capital = "Totta"
 is_city = yes
 extra_cost = 26
-center_of_trade = 2
+
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim
