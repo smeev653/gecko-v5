@@ -1,8 +1,8 @@
 #2433 - Kemerovo
 
-owner = SHY
-controller = SHY
-add_core = SHY
+#owner = SHY
+#controller = SHY
+#add_core = SHY
 culture = ostyaki
 religion = tengri_pagan_reformed
 capital = "Vah"
