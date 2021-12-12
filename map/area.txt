@@ -1265,12 +1265,11 @@ kartli_kakheti_area = { #3
 }
 
 armenia_area = { #5
-	420 419 2202 2205 4302
+	420 419 2202 2205 6141
 }
-
 shirvan_area = { #5 #Northern Azerbaijan
 	color = { 225 231 53 }
-	421 4299 4305 4340
+	421 4299 4305 4340 6139
 }
 
 dagestan_area = { #5
@@ -1287,7 +1286,7 @@ rum_area = { #5
 }
 
 erzurum_area = { #3	Erzurum and Trebizond
-	330 331 2305
+	330 331 2305 2306
 }
 
 hudavendigar_area = { #3
@@ -1358,7 +1357,7 @@ luristan_area = { #4
 }
 
 north_kurdistan_area = { #5
-	418 2306 2307 4295 4296
+	418 2307 4295 4296 4302
 }
 
 khuzestan_area = { #5
@@ -2098,12 +2097,12 @@ transcaspia_area = {
 }
 
 mashhad_area = { #4 - Northern Khorasan
-	2214 2221 2235 2236 4326
+	 2221 2235 2236 4326
 }
 
 
 birjand_area = { #3 - Western Khorasan
-	436 4334 4336 
+	4334 433 2222 6151 2216
 }
 
 ghor_area = { #3
@@ -2134,11 +2133,15 @@ mogostan_area = { #3
 }
 
 farsistan_area = { #4
-	2218 4329 4330 4331
+	2218 4329 4330 4331 4171 
 }
 
-iraq_e_ajam_area = { #5
-	427 428 2213 2216 4337
+teheran_area = {
+ 428 4337 6144 2213 6145
+}
+
+iraq_e_ajam_area = {     #5
+	 6149  6148 6146    427
 }
 
 azerbaijan_area = { #5 #Southern Azerbaijan
@@ -2146,16 +2149,27 @@ azerbaijan_area = { #5 #Southern Azerbaijan
 }
 
 isfahan_area = { #3
-	429 433 2222 4335 4171
+	429  4335 6152 6153 6154
 }
 
-tabriz_area = { #4 Central Azerbaijan
-	416 2206 2207 4304 
-	424 #ardabil smeev
+tabriz_area = {   #4 Central Azerbaijan
+	6136  6133 416 6134  
 }
 
-tabarestan_area = { #5
-	417 426 4339 4341
+ardabil_area = {
+	6142 424 6138 6140
+}
+
+urmia_area = {
+	2207 2206 6135  4304 
+}
+
+tabarestan_area = {   6155  #5
+	417 426 4339 
+}
+
+astrabad_area = {
+	2214 6157 4341  6156 
 }
 
 ########################################

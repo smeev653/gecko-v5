@@ -10,9 +10,10 @@ dh_tim_india = {
 			tag = TIM
 			tag = TRS
 			tag = AFG
-			tag = QOM
-			tag = KHO
+			#tag = QOM
+			#tag = KHO
 			tag = BUK
+			tag = ISF
 		}
 		has_dlc = "Dharma"
 		NOT = { map_setup = map_setup_random }
@@ -42,6 +43,27 @@ dh_tim_india = {
 				add_permanent_claim = ROOT
 			}
 			birjand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iraq_e_ajam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			azerbaijan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			teheran_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -129,6 +151,20 @@ dh_tim_india = {
 				add_permanent_claim = ROOT
 			}
 			balkh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			astrabad_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tabarestan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }

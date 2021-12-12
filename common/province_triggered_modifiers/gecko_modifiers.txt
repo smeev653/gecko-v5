@@ -466,6 +466,30 @@ conquest_of_isfahan = {
 
 	trigger = {
 		owner = {
+		}
+		controlled_by = ROOT	
+	}	
+	
+	
+	trade_goods_size = 5
+	development_cost = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}	
+conquest_of_tabriz = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
 				NOT = { tag = ARL }
 				NOT = { tag = PER }
 			}
@@ -483,8 +507,7 @@ conquest_of_isfahan = {
 	on_deactivation = {
 	
 	}
-}	
-
+}
 #conquest_of_samarkand = {
 #	potential = {
 #		normal_or_historical_nations = yes
