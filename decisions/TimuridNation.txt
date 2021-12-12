@@ -71,6 +71,7 @@ country_decisions = {
 			OR = {
 				tag = AFG
 				tag = TRS
+				tag = ISF
 			}
 		}
 		provinces_to_highlight = {

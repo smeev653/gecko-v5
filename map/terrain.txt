@@ -377,6 +377,7 @@ categories =  {
 			156 #Temes 
 			4239 #Belgrade
 			5777 5778
+			6135 6140 432 4334 #gc persia
 		}
 	}
 
@@ -446,7 +447,7 @@ categories =  {
 			4394 # Burma
 			1858 4760 #Germany
 			4340 #persia #smeev
-			426 #persia #smeev
+			6157 6156 6155 426 #persia #smeev
 			4238 #gcbohemia
 			6120 #xmp
 		}
@@ -663,6 +664,7 @@ categories =  {
 			6114 6115 6116 #bunker mod merge
 			361
 			6127 6128 6129 6130 6132
+			6139 6144 #gc persia
 		}
 	}
 
@@ -813,7 +815,7 @@ categories =  {
 		sound_type = plains
 
 		movement_cost = 1.00
-		local_development_cost = 0.15
+		local_development_cost = 0.05
 		nation_designer_cost_multiplier = 0.95
 		supply_limit = 5
 		movement_speed = 0.1
@@ -828,6 +830,7 @@ categories =  {
 			2121
 			445
 			4275
+			404
 		}
 	}
 }

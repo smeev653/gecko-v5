@@ -392,12 +392,17 @@ persia_region = {
 		tabarestan_area
 		azerbaijan_area
 		isfahan_area
+		teheran_area
 		kerman_area
 		persian_gulf_coast
 		tabriz_area
+		ardabil_area
+		urmia_area
 		khuzestan_area
 		shahrizor_area
 		mogostan_area
+		birjand_area
+		astrabad_area
 	}
 }
 
@@ -410,7 +415,6 @@ khorasan_region = {
 		sistan_area
 		makran_area
 		kalat_area
-		birjand_area
 		mashhad_area
 	}
 }

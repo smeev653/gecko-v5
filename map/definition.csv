@@ -422,7 +422,7 @@ province;red;green;blue;x;x
 421;188;106;64;Shirvan;x
 422;60;108;128;Imereti;x
 423;188;110;192;Kartli;x
-424;60;112;255;Ardabil;x
+424;188;79;159;Ardabil;x
 425;188;114;0;Dagestan;x
 426;60;116;64;Amol;x
 427;189;118;128;Shahrud;x
@@ -434,7 +434,7 @@ province;red;green;blue;x;x
 433;189;130;192;Dash-i-Lut;x
 434;62;132;255;Quhistan;x
 435;190;134;0;Sistan;x
-436;62;136;64;Birjand;x
+#436;62;136;64;Birjand;x
 437;190;138;128;Atak;x
 438;62;140;192;Kara Kum;x
 439;190;142;255;Mangyshlak;x
@@ -4333,7 +4333,7 @@ province;red;green;blue;x;x
 4333;104;180;181;Dahlak Archipelago;x
 4334;224;12;72;Tabas;x
 4335;236;112;20;Kashan;x
-4336;215;155;85;Tus;x
+#4336;215;155;85;Tus;x
 4337;73;158;166;Savah;x
 4338;201;70;30;Soltanieh;x
 4339;208;71;200;Rasht;x
@@ -5212,10 +5212,28 @@ province;red;green;blue;x;x
 6130;191;168;40;Katty kurgan;x
 6131;155;201;255;Iskander kul;x
 6132;201;255;248;Karatepe;x
-#6133;147;28;121;Sahur;x
-#6134;255;51;15;Utsch tul;x
-#6135;255;160;45;Kermine;x
-#6136;193;255;48;Karnah;x
-#6137;48;255;182;Paikend;x
-#6138;24;255;12;Kassan-basar;x
-#6139;255;242;63;Kusk;x changed bukhara into this province
+6133;191;133;141;Tasuj;x
+6134;126;132;191;Miandoab;x
+6135;95;167;191;Benab;x
+6136;122;191;159;Marand;x
+#6137;111;191;97;Salavat;x
+6138;191;184;109;Namin;x
+6139;191;82;84;Lankaran;x
+6140;190;191;151;Beylagan;x
+6141;185;137;191;Arzni;x
+6142;60;112;255;Bishak;x
+6143;191;115;109;Birjand Mountains;x
+6144;129;255;94;Ghilas;x
+6145;107;255;185;Sel;x
+6146;142;206;255;Feyad;x
+#6147;113;188;119;Faris;x
+6148;204;168;255;Samnan;x
+6149;255;163;215;Kin;x
+#6150;178;188;64;Gedman;x
+6151;186;122;165;Hira;x
+6152;154;154;186;Komshah;x
+6153;165;186;172;Katta;x
+6154;186;130;107;Seda;x
+6155;96;184;188;Khest;x
+6156;33;188;28;Ferabad;x
+6157;188;94;0;Astrabad;x
