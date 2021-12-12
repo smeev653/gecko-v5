@@ -7,9 +7,7 @@ tim_reconquest_persia = {
 			tag = TIM
 			tag = TRS
 			tag = AFG
-			tag = QOM
-			tag = KHO
-			tag = FRS
+			tag = ISF
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -138,11 +136,6 @@ tim_reconquest_persia = {
 			OR = {
 				area = farsistan_area
 				area = persian_gulf_coast
-				area = kerman_area
-				province_id = 431
-				province_id = 4327
-				province_id = 2217
-				province_id = 4342
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -154,22 +147,6 @@ tim_reconquest_persia = {
 			}
 			persian_gulf_coast = {
 				type = all
-				owned_by = ROOT
-			}
-			kerman_area = {
-				type = all
-				owned_by = ROOT
-			}
-			431 = {
-				owned_by = ROOT
-			}
-			4327 = {
-				owned_by = ROOT
-			}
-			2217 = {
-				owned_by = ROOT
-			}
-			4342 = {
 				owned_by = ROOT
 			}
 		}
@@ -192,20 +169,6 @@ tim_reconquest_persia = {
 				}
 				add_permanent_claim = ROOT
 			}
-			iraq_e_ajam_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			azerbaijan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
@@ -219,6 +182,7 @@ tim_reconquest_persia = {
 				area = isfahan_area
 				area = iraq_e_ajam_area
 				area = azerbaijan_area
+				area = teheran_area
 				province_id = 413
 				province_id = 414
 				province_id = 2210
@@ -245,6 +209,10 @@ tim_reconquest_persia = {
 				owned_by = ROOT
 			}
 			azerbaijan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			teheran_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -439,7 +407,7 @@ tim_reconquest_transoxiana = {
 			tag = TIM
 			tag = TRS
 			tag = AFG
-			tag = QOM
+			tag = ISF
 			tag = KHO
 			tag = BUK
 		}

@@ -121,13 +121,20 @@ per_western_branch = {
 					duration = -1
 				}
 			}
-			#iraq_e_ajam_area = {
-			#	limit = {
-			#		NOT = { is_core = ROOT }
-			#		NOT = { is_permanent_claim = ROOT }
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
+			iraq_e_ajam_area = {
+				limit = {
+			 	NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			teheran_area = {
+				limit = {
+			 	NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			isfahan_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -159,9 +166,11 @@ per_western_branch = {
 		provinces_to_highlight = {
 			OR = {
 				#area = azerbaijan_area
-				#area = iraq_e_ajam_area
+				area = iraq_e_ajam_area
 				area = isfahan_area
 				area = farsistan_area
+				area = birjand_area
+				area = kerman_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -170,15 +179,23 @@ per_western_branch = {
 			#	type = all
 			#	country_or_non_sovereign_subject_holds = ROOT
 			#}
-			#iraq_e_ajam_area = {
-			#	type = all
-			#	country_or_non_sovereign_subject_holds = ROOT
-			#}
+			iraq_e_ajam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			isfahan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			farsistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			birjand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kerman_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
