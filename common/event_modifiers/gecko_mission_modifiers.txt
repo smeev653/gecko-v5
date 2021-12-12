@@ -243,3 +243,8 @@ mamluks_subjugated = {
 	global_monthly_devastation = -0.2
 	inflation_reduction = 0.5
 }
+
+hun_supreme_black_army = {
+	mercenary_discipline = 0.10
+	core_creation = -0.1
+}
