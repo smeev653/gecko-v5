@@ -2160,49 +2160,57 @@ estate_dhimmi_guaranteed_autonomy = {
 		any_owned_province = {
 			NOT = { religion_group = root }
 		}
+		NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_dhimmi_guarantee_of_traditions } }
 	}
 	on_granted = {
 		custom_tooltip = estate_dhimmi_guaranteed_autonomy_effect_tooltip
 		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					NOT = { religion_group = root }
-				}
-				add_province_modifier = {
-					name = estate_dhimmi_guaranteed_autonomy_mod
-					duration = -1
-				}
+			set_country_flag = dhimmi_tolerates_wrong_religion
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				NOT = { religion_group = root }
 			}
+			add_province_modifier = {
+				name = estate_dhimmi_guaranteed_autonomy_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 		}
 	}
 	on_revoked = {
 		custom_tooltip = estate_dhimmi_guaranteed_autonomy_revoke_effect_tooltip
 		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
-				}
-				remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+			clr_country_flag = dhimmi_tolerates_wrong_religion
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 			}
+			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 		}
 	}
 	on_invalid = {
 		custom_tooltip = estate_dhimmi_guaranteed_autonomy_revoke_effect_tooltip
 		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
-				}
-				remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
-			}
+			clr_country_flag = dhimmi_tolerates_wrong_religion
 		}
 	}
-	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_dhimmi
-			value = 4
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 			}
+			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 		}
 	}
 	penalties = {
