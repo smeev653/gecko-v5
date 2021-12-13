@@ -22,14 +22,10 @@ per_western_branch = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			tabriz_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			azerbaijan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			army_size_percentage = 1
+			#manpower_percentage = 0.6
+			num_of_generals = 1
+
 		}
 		effect = {
 			add_country_modifier = {
