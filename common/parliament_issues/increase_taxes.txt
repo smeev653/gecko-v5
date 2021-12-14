@@ -11,7 +11,7 @@ increase_taxes = {
 	}
 	
 	modifier = {
-		global_tax_modifier = 0.10
+		global_tax_modifier = 0.2
 	}
 	
 	chance = {

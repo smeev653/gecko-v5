@@ -11,7 +11,7 @@ the_draft = {
 	}
 	
 	chance = {
-		factor = 1
+		factor = 50
 		modifier = {
 			factor = 2
 			NOT = { manpower_percentage = 0.5 }

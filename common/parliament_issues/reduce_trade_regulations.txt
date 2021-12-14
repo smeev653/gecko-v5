@@ -3,7 +3,7 @@ reduce_trade_regulations = {
 	category = 2
 	
 	allow = {
-		dip_tech = 16
+		dip_tech = 4
 	}
 	
 	effect = {

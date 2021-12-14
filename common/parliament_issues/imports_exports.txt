@@ -8,11 +8,11 @@ imports_exports = {
 	}
 	
 	effect = {
-		add_mercantilism = 2
+		add_mercantilism = 5
 	}
 	
 	modifier = {
-		global_own_trade_power = 0.05
+		global_own_trade_power = 0.15
 	}
 	
 	chance = {

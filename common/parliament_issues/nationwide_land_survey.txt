@@ -54,7 +54,7 @@ nationwide_land_survey = {
 	}
 	
 	modifier = {
-		production_efficiency = 0.05
+		production_efficiency = 0.1
 	}
 
 	ai_will_do = {

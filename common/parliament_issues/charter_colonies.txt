@@ -3,8 +3,8 @@ charter_colonies = {
 	category = 2
 
 	allow = {
-	has_institution = new_world_i
-	was_player = yes
+		num_of_colonists = 1 
+		was_player = yes
 	}
 	
 	effect = {
