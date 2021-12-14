@@ -772,7 +772,7 @@ cultural_unity = {
 		full_idea_group = religious_ideas
 	}	
 	
-	province_warscore_cost = 0.1
+	province_warscore_cost = -0.1
 	global_tax_modifier = 0.1
 	
 	ai_will_do = {

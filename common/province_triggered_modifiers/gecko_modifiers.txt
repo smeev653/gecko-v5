@@ -492,6 +492,7 @@ conquest_of_tabriz = {
 		owner = {
 				NOT = { tag = ARL }
 				NOT = { tag = PER }
+				NOT = { tag = ISF }
 			}
 		controlled_by = ROOT	
 		}	
