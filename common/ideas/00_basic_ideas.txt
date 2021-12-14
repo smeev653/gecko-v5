@@ -45,10 +45,11 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage = 0.15
+		fire_damage = 0.20
 	}
 	bill_of_rights = {
 		infantry_cost = -0.125
+		infantry_fire = 0.1
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
