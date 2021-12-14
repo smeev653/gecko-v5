@@ -756,7 +756,7 @@ foreign_conscription_centers = {
 		full_idea_group = offensive_ideas
 	}	
 	
-	leader_land_shock = 1
+	leader_land_fire = 1
 	
 	ai_will_do = {
 		factor = 1
@@ -940,7 +940,7 @@ unified_army_command = {
 		full_idea_group = influence_ideas
 	}	
 	
-	leader_land_fire = 1
+	leader_land_shock = 1
 	
 	ai_will_do = {
 		factor = 1
