@@ -33,7 +33,7 @@ aristocracy_ideas = {
 	}
 	noble_resilience = {
 		nobles_loyalty_modifier = 0.1
-		tribes_loyalty_modifier = 0.1
+		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	international_nobility = {
 		fire_damage_received = -0.15
