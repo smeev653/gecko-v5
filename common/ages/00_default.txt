@@ -500,7 +500,6 @@ age_of_reformation = {
 				factor = 10
 			}
 		}
-
 	
 		ab_spain_tercio = {
 			allow = {
@@ -594,6 +593,20 @@ age_of_reformation = {
 			}
 			ai_will_do = {
 				factor = 100
+			}
+		}
+		ab_improved_weaponry = {
+			allow = {
+				AND = {
+						full_idea_group = plutocracy_ideas
+						full_idea_group = economic_ideas
+					}
+			}		
+			modifier = {
+				infantry_fire = 0.10
+			}	
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -767,6 +780,20 @@ age_of_absolutism = {
 			}
 			ai_will_do = {
 				factor = 100
+			}
+		}
+		ab_improved_weaponry = {
+			allow = {
+				AND = {
+					full_idea_group = plutocracy_ideas
+					full_idea_group = economic_ideas
+				}
+			}	
+			modifier = {
+				infantry_fire = 0.10
+			}	
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -945,6 +972,20 @@ age_of_revolutions = {
 			}
 			ai_will_do = {
 				factor = 100
+			}
+		}
+		ab_improved_weaponry = {
+			allow = {
+				AND = {
+					full_idea_group = plutocracy_ideas
+					full_idea_group = economic_ideas
+				}
+			}	
+			modifier = {
+				infantry_fire = 0.10
+			}	
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
