@@ -908,7 +908,7 @@ age_of_revolutions = {
 				tag = PRU
 			}
 			modifier = {
-				fire_damage_received = -0.35
+				fire_damage_received = -0.15
 			}
 			ai_will_do = {
 				factor = 100
