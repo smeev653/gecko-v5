@@ -499,7 +499,22 @@ country_decisions = {
 			}
 			set_country_flag = h_founded_riyadh
 		}
-	}	
+	}
+	gecko_recruit_military_advisor = {
+		major = no
+		potential = {
+			is_year = 1445
+			ai = no
+       }
+		allow = {
+        adm_power = 50
+		}
+		effect = {
+			country_event = {
+				id = gecko.11
+			}
+		}
+	}
 }			
 
 		

@@ -780,4 +780,82 @@ country_event = {
 		}		
 	}
 }
+
+
+#advisors
+country_event = {
+	id = gecko.11
+	title = gecko.11.title
+	desc = gecko.11.desc
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gecko.11.a
+		
+		add_adm_power  = -25
+		create_advisor = commandant		
+	}
+	option = {
+		name = gecko.11.b
+		
+		add_adm_power  = -25
+		create_advisor = army_reformer
+	}
+	option = {
+		name = gecko.11.c
+		
+		add_adm_power  = -25
+		create_advisor = recruitmaster
+	}
+	option = {
+		name = gecko.11.d
+		
+		add_adm_power  = -25
+		create_advisor = gc_drill_master		
+	}
+	option = {
+		name = gecko.11.e
+		
+		add_adm_power  = -25
+		create_advisor = siege_specialist	
+	}
+	option = {
+		name = gecko.11.f
+		
+		add_adm_power  = -25
+		create_advisor = infantry_leader		
+	}
+	option = {
+		name = gecko.11.g
+		
+		add_adm_power  = -25
+		create_advisor = cavalry_leader	
+	}
+	option = {
+		name = gecko.11.h
+		
+		add_adm_power  = -25
+		create_advisor = grand_captain	
+	}
+	option = {
+		name = gecko.11.i
+		
+		add_adm_power  = -25
+		create_advisor = fortification_expert		
+	}
+	option = {
+		name = gecko.11.j
+		
+		add_adm_power  = -25
+		create_advisor = quartermaster		
+	}
+	option = {
+		name = gecko.11.k
+		
+		add_adm_power  = -25
+		create_advisor = gc_arty_officer	
+	}	
+}
 	

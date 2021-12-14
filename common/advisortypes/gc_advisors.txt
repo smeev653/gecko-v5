@@ -28,7 +28,7 @@ gc_arty_officer = {
 		factor = 1
 		modifier = {
 			factor = 0
-			NOT = { is_year = 1608 }
+			owner = { NOT = { mil_tech = 13 } }
 		}
 	}
 	

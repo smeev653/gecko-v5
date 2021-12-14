@@ -44,6 +44,20 @@
  gc_advisor_events.2.b:0 "$GC_DRILL_MASTER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
  gc_advisor_events.2.c:0 "$GC_DRILL_MASTER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
 
+ gecko.11.title:0 "Recruit Military Advisor"
+ gecko.11.desc:0 "Use the state's resources to find an appropriate advisor. Scroll down for more."
+ gecko.11.a:0 "Recruit Commandant"
+ gecko.11.b:0 "Recruit Army Reformer"
+ gecko.11.c:0 "Recruit Master of Recruitment"
+ gecko.11.d:0 "Recruit Drillmaster"
+ gecko.11.e:0 "Recruit Siege Specialist"
+ gecko.11.f:0 "Recruit Infantry Leader"
+ gecko.11.g:0 "Recruit Cavalry Leader"
+ gecko.11.h:0 "Recruit Grand Captain"
+ gecko.11.i:0 "Recruit Fortification Expert"
+ gecko.11.j:0 "Recruit Quartermaster"
+ gecko.11.k:0 "Recruit Artillery Officer"
+
  #Ethiopia Mission Events
  gc_eth_events.1.t:0 "Legacy of Prester John"
  gc_eth_events.1.d:0 "Prester John was a legendary Christian patriarch, presbyter, and king. Stories popular in Europe in the twelfth through to the seventeenth centuries told of a Nestorian patriarch and king who was said to rule over a Christian nation lost amid the pagans and Muslims in the Orient. The accounts are varied collections of medieval popular fantasy, depicting Prester John as a descendant of the Three Magi, ruling a kingdom full of riches, marvels, and strange creatures. "
