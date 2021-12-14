@@ -371,20 +371,20 @@ offensive_ideas = {
 	}
 
 	bayonet_leaders = {
-		shock_damage = 0.20
+		shock_damage = 0.15
 	}
 	superior_firepower = {
 		leader_land_fire = 1
 	}
 	glorious_arms = {
-		general_cost = -0.25
+		general_cost = -0.20
 	}
 	engineer_corps = {
 		siege_ability = 0.2
 		artillery_bonus_vs_fort = 1
 	}
 	grand_army = {
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.20
 	}
 	napoleonic_warfare = {
 		artillery_power = 0.1
