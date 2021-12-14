@@ -603,7 +603,7 @@ age_of_reformation = {
 					}
 			}		
 			modifier = {
-				infantry_fire = 0.10
+				infantry_fire = 0.05
 			}	
 			ai_will_do = {
 				factor = 10
@@ -790,7 +790,7 @@ age_of_absolutism = {
 				}
 			}	
 			modifier = {
-				infantry_fire = 0.15
+				infantry_fire = 0.10
 			}	
 			ai_will_do = {
 				factor = 10
@@ -982,7 +982,7 @@ age_of_revolutions = {
 				}
 			}	
 			modifier = {
-				infantry_fire = 0.2
+				infantry_fire = 0.10
 			}	
 			ai_will_do = {
 				factor = 10

@@ -49,7 +49,7 @@ plutocracy_ideas = {
 	}
 	bill_of_rights = {
 		infantry_cost = -0.125
-		infantry_fire = 0.1
+		infantry_fire = 0.05
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
