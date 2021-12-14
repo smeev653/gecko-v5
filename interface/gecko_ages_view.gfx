@@ -42,7 +42,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_hessian_mercs.dds"
 	}
 	spriteType = {
-		name = "GFX_ab_improved_weaponry"
+		name = "GFX_ab_improved_weaponry1"
+		texturefile = "gfx/interface/ages/ab_improved_weaponry.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_improved_weaponry2"
+		texturefile = "gfx/interface/ages/ab_improved_weaponry.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_improved_weaponry3"
 		texturefile = "gfx/interface/ages/ab_improved_weaponry.dds"
 	}
 	

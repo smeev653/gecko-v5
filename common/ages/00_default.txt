@@ -595,7 +595,7 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
-		ab_improved_weaponry = {
+		ab_improved_weaponry1 = {
 			allow = {
 				AND = {
 						full_idea_group = plutocracy_ideas
@@ -782,7 +782,7 @@ age_of_absolutism = {
 				factor = 100
 			}
 		}
-		ab_improved_weaponry = {
+		ab_improved_weaponry2 = {
 			allow = {
 				AND = {
 					full_idea_group = plutocracy_ideas
@@ -790,7 +790,7 @@ age_of_absolutism = {
 				}
 			}	
 			modifier = {
-				infantry_fire = 0.10
+				infantry_fire = 0.15
 			}	
 			ai_will_do = {
 				factor = 10
@@ -974,7 +974,7 @@ age_of_revolutions = {
 				factor = 100
 			}
 		}
-		ab_improved_weaponry = {
+		ab_improved_weaponry3 = {
 			allow = {
 				AND = {
 					full_idea_group = plutocracy_ideas
@@ -982,7 +982,7 @@ age_of_revolutions = {
 				}
 			}	
 			modifier = {
-				infantry_fire = 0.10
+				infantry_fire = 0.2
 			}	
 			ai_will_do = {
 				factor = 10
