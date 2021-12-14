@@ -44,6 +44,8 @@ country_decisions = {
 				province_id = 2213		# Qom
 				province_id = 2215		# Qazvin
 				province_id = 2218      # Shiraz
+				province_id = 4341
+				province_id = 416      
 				AND = {
 					province_id = 426
 					ROOT = { NOT = { owns_core_province = 2218 } }
@@ -81,6 +83,8 @@ country_decisions = {
 			owns_core_province = 2213		# Qom
 			owns_core_province = 2215		# Qazvin
 			owns_core_province = 2218		# Shiraz
+			owns_core_province = 4341
+			owns_core_province = 416 
 			OR = {		
 				owns_core_province = 432		# Kerman
 				owns_core_province = 2221		# Mashhad
