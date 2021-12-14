@@ -178,7 +178,7 @@ the_espionage_act = {
 	}
 
 	technology_cost = -0.1
-
+	
 	
 	ai_will_do = {
 		factor = 0.6
@@ -328,8 +328,7 @@ the_spy_discovery_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	province_warscore_cost = -0.10
-	reinforce_speed = 0.2
+	reinforce_speed = 0.25
 
 	ai_will_do = {
 		factor = 0.6 #Keep in mind lower stab cost is probably pretty weak given this costs ADM...
@@ -758,7 +757,8 @@ foreign_advisors = {
 		full_idea_group = innovativeness_ideas
 	}	
 	
-	technology_cost = -0.1
+	technology_cost = -0.05
+	innovativeness_gain = 0.25
 	
 	ai_will_do = {
 		factor = 1

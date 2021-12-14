@@ -715,10 +715,10 @@ maritime_ideas = {
 		war_taxes_cost_modifier = -0.50
 	}
 	naval_fighting_instruction = {
-		advisor_cost = -0.1
+		advisor_cost = -0.05
 	}
 	grand_navy = {
-		expand_administration_cost = -0.25
+		move_capital_cost_modifier = -0.25
 	}
 	merchant_marine = {
 		global_trade_goods_size_modifier = 0.075
