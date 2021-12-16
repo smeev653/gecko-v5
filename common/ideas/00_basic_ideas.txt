@@ -275,7 +275,7 @@ spy_ideas = {
 	category = DIP
 
 	bonus = {
-		 country_diplomatic_power = 1
+		reduced_stab_impacts = yes	
 	}
 
 	efficient_spies = {
@@ -297,8 +297,7 @@ spy_ideas = {
 		dip_tech_cost_modifier = -0.1
 	}
 	vetting = {
-		advisor_pool = 2
-		advisor_cost = -0.10
+		war_taxes_cost_modifier = -1
 	}
 	agent_training = {
 		power_projection_from_insults = 1
@@ -709,10 +708,11 @@ maritime_ideas = {
 		move_capital_cost_modifier = -0.4
 	}	
 	grand_navy = {
-		idea_cost = -0.05
+		all_power_cost = -0.0375
 	}
 	ships_penny = {
-		war_taxes_cost_modifier = -1
+		advisor_pool = 2
+		advisor_cost = -0.10
 	}
 	naval_fighting_instruction = {
 		prestige = 1
@@ -923,8 +923,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		reduced_stab_impacts = yes
-
+		country_diplomatic_power = 1
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
@@ -941,7 +940,7 @@ influence_ideas = {
 		trade_company_investment_cost = -0.10
 	}
 	buffer_states = {
-		all_power_cost = -0.0375
+		idea_cost = -0.1
 	}
 
 	tribute_system = {
