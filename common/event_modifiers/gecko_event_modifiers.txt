@@ -1,7 +1,4 @@
- gecko_absolutism = {
-	max_absolutism = 150
-	}
-	
+
 enlist_rajputs = {	
 	special_unit_forcelimit = 0.2
 	}

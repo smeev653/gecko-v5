@@ -196,34 +196,6 @@ vassalaction = {
 			FROM = { ai = yes }
 		}
 	}
-	
-	condition = {
-		tooltip = h_tooltip_many_marches_noinfluence
-		potential = {
-			ROOT = { NOT = { full_idea_group = influence_ideas } }
-		}
-		allow = {
-			NOT = {
-				ROOT = {
-					vassal = 4
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = h_tooltip_many_marches_influence
-		potential = {
-			ROOT = { full_idea_group = influence_ideas }
-		}
-		allow = {
-			ROOT = {
-				NOT = {
-					vassal = 3
-				}
-			}
-		}
-	}
-	
 }
 
 abandon_union_action = {
@@ -413,7 +385,7 @@ designate_march = {
 		allow = {
 			NOT = {
 				ROOT = {
-					march = 4
+					march = 2
 				}
 			}
 		}
