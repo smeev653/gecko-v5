@@ -37,7 +37,7 @@ sco_rb_adm_missions = {
 				limit = {
 					owned_by = SCO
 				}
-				add_base_manpower = 1
+				add_base_manpower = 3
 			}
 		}
 	}
@@ -194,10 +194,35 @@ sco_rb_colonial = {
 			}
 		}
 	}
+	sco_nova_scotia = {
+		icon = mission_rb_nova_scotia
+		required_missions = { sco_north_sea }
+		position = 7
+		provinces_to_highlight = {
+			colonial_region = colonial_canada
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_canada
+				is_city = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "nova_scotia_modifier"
+				duration = 7300
+			}
+		}
+	}
 	darien_scheme = {
 		icon = mission_rb_scottish_the_darien_scheme
-		required_missions = { sco_north_sea  }
-		position = 12
+		required_missions = { sco_nova_scotia }
+		position = 8
 		provinces_to_highlight = {
 			area = panama_area
 			NOT = {
@@ -220,7 +245,7 @@ sco_rb_colonial = {
 	}
 }
 sco_rb_colonial_2 = {
-	slot = 2
+	slot = 4
 	generic = no
 	ai = yes
 	potential_on_load = {
@@ -239,8 +264,8 @@ sco_rb_colonial_2 = {
 	
 	claiming_orkney = {
 		icon = mission_sea_battles
-		required_missions = { sco_auld_alliance }
-		position = 11
+		required_missions = { }
+		position = 8
 		provinces_to_highlight = {
 			OR = {
 				area = highlands_area
@@ -286,7 +311,7 @@ sco_rb_colonial_2 = {
 	sco_north_atlantic = {
 		icon = mission_rb_cod_wars
 		required_missions = { claiming_orkney }
-		position = 12
+		position = 9
 		provinces_to_highlight = {
 			area = subarctic_islands_area
 			NOT = {
@@ -308,29 +333,5 @@ sco_rb_colonial_2 = {
 			}
 		}
 	}
-	sco_nova_scotia = {
-		icon = mission_rb_nova_scotia
-		required_missions = { sco_north_sea }
-		position = 13
-		provinces_to_highlight = {
-			colonial_region = colonial_canada
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				colonial_region = colonial_canada
-				is_city = yes
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "nova_scotia_modifier"
-				duration = 7300
-			}
-		}
-	}
+	
 }
