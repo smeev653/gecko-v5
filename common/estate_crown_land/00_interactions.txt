@@ -42,21 +42,11 @@ interaction = {
 		set_country_flag = recent_land_distribution
     }
 	ai_will_do = {
-		factor = 25
+		factor = 1500
 		modifier = {
 			factor = 0
 			OR = {
-				NOT = { crown_land_share = 25 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 40 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 35 }
+				NOT = { crown_land_share = 5 }
 				AND = {
 					is_absolutism_active = yes
 					NOT = { crown_land_share = 50 }
@@ -65,12 +55,25 @@ interaction = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { num_of_loans = 1 }
+					AND = {
+						NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
+						NOT = { has_estate_privilege = estate_church_religious_state }
+						NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
+					}	
 		}
 		modifier = {
-			factor = 0.5
-			is_in_deficit = no
-		}
+			factor = 0
+					technology_group = indian
+					AND = {	
+						NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
+						NOT = { has_estate_privilege = estate_jains_diplomacy}
+						OR = {
+							NOT = { has_estate_privilege = estate_rajput_military }
+							NOT = { has_estate_privilege = estate_maratha_military }
+							NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
+						}	
+					}
+		}			
 		modifier = {
 			factor = 1.25
 			has_any_disaster = yes
@@ -110,20 +113,6 @@ interaction = {
 			crown_land_share = 80
 		}
 		modifier = {
-			factor = 0.75
-			num_of_powerful_estates = 1
-		}
-		modifier = {
-			factor = 0.8
-			has_country_flag = recent_land_distribution
-			NOT = {
-				had_country_flag = {
-					flag = recent_land_distribution
-					days = 5475
-				}
-			}
-		}
-		modifier = {
 			factor = 1.2
 			had_country_flag = {
 				flag = recent_land_distribution
@@ -131,14 +120,18 @@ interaction = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0
 			has_country_flag = recent_land_seizure
 			NOT = {
 				had_country_flag = {
 					flag = recent_land_seizure
-					days = 5475
+					days = 2706
 				}
-			}
+			}	
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 2 }
 		}
 	}
 }
@@ -298,27 +291,7 @@ interaction = {
 		}
 	}
 	ai_will_do = {
-		factor = 25
-		modifier = {
-			factor = 0
-			crown_land_share = 30
-			has_any_disaster = yes
-			NOT = { #sorry, scripted triggers glitched out
-				OR = {
-					has_disaster = estate_brahmins_disaster
-					has_disaster = estate_burghers_disaster
-					has_disaster = estate_church_disaster
-					has_disaster = estate_cossacks_disaster
-					has_disaster = estate_dhimmi_disaster
-					has_disaster = estate_jains_disaster
-					has_disaster = estate_maratha_disaster
-					has_disaster = estate_nobility_disaster
-					has_disaster = estate_nomadic_tribes_disaster
-					has_disaster = estate_rajput_disaster
-					has_disaster = estate_vaisyas_disaster
-				}
-			}
-		}
+		factor = 1000
 		modifier = {
 			factor = 0
 			crown_land_share = 30
@@ -399,6 +372,10 @@ interaction = {
 			}
 		}
 		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 3 }
+		}
+		modifier = {
 			factor = 1.5
 			is_absolutism_active = yes
 			NOT = { num_of_rebel_armies = 1 }
@@ -408,6 +385,22 @@ interaction = {
 			is_absolutism_active = yes
 			NOT = { average_unrest = 1 }
 			NOT = { num_of_rebel_armies = 1 }
+		}
+		modifier = {
+			factor = 1000
+			NOT = { crown_land_share = 0 }
+		}
+		modifier = {
+			factor = 1000
+			NOT = { crown_land_share = 5 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { crown_land_share = 10 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { crown_land_share = 15 }
 		}
 		modifier = {
 			factor = 2
@@ -456,56 +449,6 @@ interaction = {
 					days = 10950
 				}
 			}
-		}
-		modifier = {
-			factor = 0.5
-			has_country_flag = recent_land_distribution
-			NOT = {
-				had_country_flag = {
-					flag = recent_land_distribution
-					days = 5475
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 50
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 40
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 35 # Estate is almost disloyal
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 30 # Estate is basically disloyal
-				}
-			}
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { num_of_owned_areas = 2 }
 		}
 		modifier = {
 			factor = 10

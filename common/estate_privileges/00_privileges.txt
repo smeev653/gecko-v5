@@ -762,7 +762,7 @@ estate_nobles_nobility_primacy = {
 		country_military_power = 1
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 1500
 	}
 }
 
@@ -1461,7 +1461,7 @@ estate_burghers_free_enterprise = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 1000
 		modifier = {
 			factor = 0
 			is_absolutism_active = yes
@@ -2342,7 +2342,7 @@ estate_maratha_military = {
 		country_military_power = 1
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 1500
 	}
 }
 
@@ -2616,7 +2616,7 @@ estate_rajput_military = {
 		country_military_power = 1
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 1500
 	}
 }
 
@@ -6207,7 +6207,7 @@ estate_burghers_control_over_monetary_policy = {
 			}
 			
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 		modifier = {
 			factor = 10
 			OR = {
@@ -6241,9 +6241,9 @@ estate_vaisyas_control_over_monetary_policy = {
 			}
 			
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 		modifier = {
-			factor = 10
+			factor = 1
 			OR = {
 				inflation = 15
 				num_of_loans = 15
@@ -6275,7 +6275,7 @@ estate_jains_control_over_monetary_policy = {
 			}
 			
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 		modifier = {
 			factor = 10
 			OR = {
