@@ -45,13 +45,10 @@ interaction = {
 		factor = 1500
 		modifier = {
 			factor = 0
-			OR = {
-				NOT = { crown_land_share = 5 }
 				AND = {
 					is_absolutism_active = yes
 					NOT = { crown_land_share = 50 }
 				}
-			}
 		}
 		modifier = {
 			factor = 0
