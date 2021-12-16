@@ -368,7 +368,7 @@ quartermaster = {
 	}
 	
 	ai_will_do = {
-		factor = factor = 100
+		factor = 100
 		modifier = {
 			factor = 1.4
 			is_at_war = yes
