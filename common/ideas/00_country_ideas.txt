@@ -85,7 +85,7 @@ GER_ideas = {
 ENG_ideas = {
 	start = {
 		infantry_power = 0.10 # agincourt
-		development_cost = -0.1 # magna carta, parliament
+		development_cost = -0.05 # magna carta, parliament
 	}
 
 	bonus = {
@@ -138,7 +138,7 @@ GBR_ideas = {
 	free = yes		#will be added at load.
 
 	gbr_acts_of_union = {
-		development_cost = -0.1
+		development_cost = -0.05
 		governing_capacity_modifier = 0.15
 	}
 	city_upon_a_hill = {
