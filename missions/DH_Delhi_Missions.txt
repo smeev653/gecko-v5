@@ -12,7 +12,7 @@ dlh_slot_1 = {
 	}
 	has_country_shield = yes
 	
-	high_income_mission = {
+	dlh_high_income_mission = {
 		icon = mission_high_income
 		required_missions = {  } #None
 		position = 1

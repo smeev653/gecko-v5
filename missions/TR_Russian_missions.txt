@@ -764,7 +764,7 @@ tr_russia_conquest_2 = {
 	}
 	has_country_shield = yes
 	
-	high_income_mission = {
+	mos_high_income_mission = {
 		icon = mission_high_income
 		required_missions = {  } #None
 		position = 1
