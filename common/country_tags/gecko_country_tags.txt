@@ -2,3 +2,7 @@
 PR2 = "countries/PRSokoto.txt"
 HET = "countries/Hetmanate.txt"
 GZM = "countries/Great Zimbabwe.txt"
+
+#Gecko Germans
+NGF = "countries/NorthGermanFederation.txt"
+SGF = "countries/SouthGermanFederation.txt"
