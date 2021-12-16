@@ -1666,6 +1666,10 @@ emp_france_missions_5 = {
 				remove_country_modifier = annexers_legacy
 			}
 			add_reform_progress_medium_effect = yes
+			add_country_modifier = {
+				name = gc_investment
+				duration = 7300
+			}
 		}
 	}
 	emp_fra_wars_of_religion = {
