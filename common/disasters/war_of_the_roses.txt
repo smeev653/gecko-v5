@@ -13,14 +13,9 @@ war_of_the_roses = {
 	can_start = {
 		current_age = age_of_discovery
 		has_any_disaster = no
-		OR = {
-			has_heir = no
-			AND = {
-				has_heir = yes
-				NOT = { heir_dynasty = York }
-				NOT = { heir_dynasty = Lancaster }
-				NOT = { heir_dynasty = Plantagenet }
-			}
+		AND = {
+			NOT = { dynasty = Tudor }
+			NOT = { heir_dynasty = Tudor }
 		}
 		has_regency = no
 		is_lesser_in_union = no
@@ -102,8 +97,7 @@ war_of_the_roses = {
 
 
 	modifier = {
-		global_unrest = 5
-		mercenary_manpower = 0.125
+		mercenary_manpower = 0.5
 	}	
 	
 	

@@ -3,7 +3,7 @@ the_draft = {
 	category = 1
 
 	allow = {
-		is_at_war = yes
+		NOT = { manpower_percentage = 0.5 }
 	}
 	
 	effect = {
@@ -11,10 +11,10 @@ the_draft = {
 	}
 	
 	chance = {
-		factor = 50
+		factor = 500
 		modifier = {
 			factor = 2
-			NOT = { manpower_percentage = 0.5 }
+			NOT = { manpower_percentage = 0.25 }
 		}
 	}
 

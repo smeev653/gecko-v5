@@ -30,14 +30,14 @@ country_event = {
 	option = {		# Support the House of Lancaster
 		name = war_of_the_roses.1.a
 
-		add_stability = -2
+		add_stability = -1
 		set_country_flag = war_of_the_roses
 		set_country_flag = supports_house_of_lancaster
 
 		define_ruler = {
 			dynasty = Lancaster
 			age = 31
-			change_adm = 1
+			change_adm = 2
 			change_dip = 1
 			change_mil = 1
 		}
@@ -53,7 +53,6 @@ country_event = {
 			}
 			hidden_effect = { add_ruler_personality_ancestor = { key = well_connected } }
 		}
-		add_yearly_manpower = -2.5
 
 		if = {
 			limit = {
@@ -110,14 +109,14 @@ country_event = {
 	option = {		# Support the House of York
 		name = war_of_the_roses.1.b
 
-		add_stability = -2
+		add_stability = -1
 		set_country_flag = supports_house_of_york
 		define_ruler = {
 			dynasty = York
 			age = 31
 			change_adm = 1
 			change_dip = 1
-			change_mil = 1
+			change_mil = 2
 		}
 		if = {
 			limit = {
@@ -131,7 +130,6 @@ country_event = {
 			}
 			hidden_effect = { add_ruler_personality_ancestor = { key = tactical_genius } }
 		}
-		add_yearly_manpower = -2.5
 		if = {
 			limit = {
 				owns = 244		# Lancashire

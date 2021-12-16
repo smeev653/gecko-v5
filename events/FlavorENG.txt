@@ -2534,9 +2534,9 @@ country_event = {
 			name = "Henry #0"
 			dynasty = "Tudor"
 			culture = english
-			adm = 3
+			adm = 4
 			dip = 4
-			mil = 2
+			mil = 5
 			age = 24
 		}
 	}
