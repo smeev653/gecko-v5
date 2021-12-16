@@ -119,3 +119,7 @@
  desc_my_desert:0 "The Spice Must Flow."
  gecko_hyw:0 "The last Bastion of English France"
  desc_gecko_hyw:0 "The last Bastion of English France."
+
+ #buildup mission
+
+ gc_investment:0 "Internal Investment"
