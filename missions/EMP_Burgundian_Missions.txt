@@ -1976,3 +1976,25 @@ emp_lotharingia_5 = {
 		}
 	}
 }
+
+administrative_missions = {
+	slot = 2
+	
+	generic = no
+	
+	potential = {
+	   always = yes
+	}
+	high_income_mission = {
+		icon = mission_high_income
+		required_missions = {  } #None
+		position = 1
+		trigger = { share_of_starting_income = 1.5 }
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}	
