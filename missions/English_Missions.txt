@@ -617,115 +617,7 @@ eng_chesapeake_dominance = {
 
 }
 
-eng_indian_ocean_exploration = {
-	
-	slot = 5
-	ai = yes
-	
-	potential = {
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	england_discovers_india = {
-		icon = mission_junk_boat
-		required_missions = { }
-		position = 7
-		completed_by = 1579.1.1
-		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = england_discovers_india.tooltip
-				west_india_region = { has_discovered = ROOT }
-				bengal_region = { has_discovered = ROOT }
-				coromandel_region = { has_discovered = ROOT }
-				deccan_region = { has_discovered = ROOT }
-			}
-		}
-		
-		effect = {
-			add_dip_power = 100
-			add_navy_tradition = 20
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Rule Britannia"
-					}
-				}
-				west_bengal_area = {
-					limit = {
-						NOT = { is_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_claim = ROOT
-				}
-			}
-		}
-	}
-}
 
-eng_indian_cot_dominance = {
-
-	slot = 4
-	ai = yes
-	
-	potential = {
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-		NOT = {
-			has_dlc = "Rule Britannia"
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
-	establish_trade_in_indian_cot = {
-		icon = mission_indian_stateman
-		required_missions = { england_discovers_india }
-		position = 7
-		completed_by = 1776.7.1
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 504
-				province_id = 1340
-				province_id = 1343
-				province_id = 1948
-			}
-		}
-		
-		trigger = { 
-			OR = {
-				504 = {		# Sind
-					is_strongest_trade_power = ROOT
-				}
-				1340 = {	# Comorin Cape
-					is_strongest_trade_power = ROOT
-				}
-				1343 = {	# Ganges Delta
-					is_strongest_trade_power = ROOT
-				}
-				1948 = {	# Deccan
-					is_strongest_trade_power = ROOT
-				}
-			}
-		}
-	
-		effect = {
-			add_country_modifier = {
-				name = "east_india_trade_rush"
-				duration = 5475
-			}
-		}
-	}
-
-}
 
 eng_british_cot_dominance = {
 
@@ -749,7 +641,6 @@ eng_british_cot_dominance = {
 		icon = mission_high_income
 		required_missions = { 
 			establish_trade_in_american_cot
-			establish_trade_in_indian_cot
 		}
 		position = 8
 		
