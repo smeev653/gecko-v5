@@ -54,6 +54,8 @@ country_decisions = {
 				tag = YUA
 				tag = HET
 				tag = ILK
+				tag = BUK
+				tag = TIM
 			}
 			central_asia_region = {
 				type = all
