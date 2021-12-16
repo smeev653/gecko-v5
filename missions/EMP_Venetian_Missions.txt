@@ -26,6 +26,10 @@ emp_ven_slot_1 = {
 				name = ven_aldine_monopoly_modifier
 				duration = 7300
 			}
+			add_country_modifier = {
+				name = gc_investment
+				duration = 7300
+			}
 		}
 	}
 	

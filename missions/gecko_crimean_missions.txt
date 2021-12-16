@@ -9,7 +9,20 @@ gc_cri_branch_1 = {
         }
 	}
 	has_country_shield = yes
-
+	
+	high_income_mission = {
+		icon = mission_high_income
+		required_missions = {  } #None
+		position = 1
+		trigger = { share_of_starting_income = 1.5 }
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
     gc_cri_mission_1 = {
         icon = mission_steppe_warriors
         required_missions = { gc_cri_mission_3 }

@@ -13,6 +13,19 @@ gc_por_1 = {
 	}
 	has_country_shield = yes
 	
+	high_income_mission = {
+		icon = mission_high_income
+		required_missions = {  } #None
+		position = 1
+		trigger = { share_of_starting_income = 1.5 }
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
 	gc_por_portugal_discovers_south_america = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { gc_por_discover_african_coast }

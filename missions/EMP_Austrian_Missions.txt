@@ -131,6 +131,19 @@ emp_hab_empire_branch = {
 	
 	has_country_shield = yes
 	
+	high_income_mission = {
+		icon = mission_high_income
+		required_missions = {  } #None
+		position = 1
+		trigger = { share_of_starting_income = 1.5 }
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
 	emp_hab_no_one_to_threaten_us = {
 		icon = imperial_ascendancy
 		position = 2
