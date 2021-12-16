@@ -1774,6 +1774,7 @@ smeev_mountain_dev_cost = {
 			tag = MUG
 			tag = MOR
 			tag = ISF
+			tag = ARL
 			} 
 		
 	}
