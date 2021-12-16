@@ -290,25 +290,26 @@ spy_ideas = {
 		yearly_harmony = 1
 		devotion = 0.5
 		monthly_piety = -0.01
+		yearly_patriarch_authority = 0.01
 		
 	}
 	claim_fabrication = {
 		dip_tech_cost_modifier = -0.1
 	}
 	vetting = {
-		power_projection_from_insults = 1
 		advisor_pool = 2
+		advisor_cost = -0.10
 	}
 	agent_training = {
-		prestige = 1
+		power_projection_from_insults = 1
 	}
 
 	privateers = {
 		siege_ability = 0.10
-		movement_speed = 0.1
+		fort_maintenance_modifier = -0.15
 	}
 	audit_checks = {
-		fort_maintenance_modifier = -0.15
+		reinforce_cost_modifier = -0.15
 	}
 
 	ai_will_do = {
@@ -703,20 +704,21 @@ maritime_ideas = {
 	merchant_traditions = {
 		stability_cost_modifier = -0.25
 	}
-	sheltered_ports = {
-		num_accepted_cultures = 2
-	}
 	sea_hawks = {
 		min_autonomy_in_territories = -0.2
+		move_capital_cost_modifier = -0.4
+	}	
+	grand_navy = {
+		idea_cost = -0.05
 	}
 	ships_penny = {
-		war_taxes_cost_modifier = -0.50
+		war_taxes_cost_modifier = -1
 	}
 	naval_fighting_instruction = {
-		advisor_cost = -0.05
+		prestige = 1
 	}
-	grand_navy = {
-		move_capital_cost_modifier = -0.25
+	sheltered_ports = {
+		num_accepted_cultures = 2
 	}
 	merchant_marine = {
 		global_trade_goods_size_modifier = 0.075
