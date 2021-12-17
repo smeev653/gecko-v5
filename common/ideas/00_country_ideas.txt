@@ -955,13 +955,13 @@ PRU_ideas = {
 		stability_cost_modifier = -0.2
 	}
 	army_professionalism = {
-		land_morale = 0.20
+		land_morale = 0.10
 	}	
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.10
 	}
 	goose_step = {
-		infantry_power = 0.20
+		infantry_power = 0.15
 	}
 	regimental_cantons = {
 		global_manpower_modifier = 0.10
