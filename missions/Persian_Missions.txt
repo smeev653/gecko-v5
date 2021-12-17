@@ -88,33 +88,33 @@ per_western_branch = {
 		}
 		effect = {
 			kartli_kakheti_area = {
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = caucasus_integration
-					duration = -1
+					duration = 18250
 				}
 			}
 			samtskhe_area = {
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = caucasus_integration
-					duration = -1
+					duration = 18250
 				}
 			}
 			imereti_area = {
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = caucasus_integration
-					duration = -1
+					duration = 18250
 				}
 			}
 			shirvan_area = {
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = caucasus_integration
-					duration = -1
+					duration = 18250
 				}
 			}
 			armenia_area = {
-				add_permanent_province_modifier = {
+				add_province_modifier = {
 					name = caucasus_integration
-					duration = -1
+					duration = 18250
 				}
 			}
 			iraq_e_ajam_area = {

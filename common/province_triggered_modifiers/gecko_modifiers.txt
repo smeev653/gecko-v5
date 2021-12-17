@@ -471,7 +471,7 @@ conquest_of_isfahan = {
 	}	
 	
 	
-	trade_goods_size = 5
+	trade_goods_size = 2
 	development_cost = -0.05
 	
 	#Province scope

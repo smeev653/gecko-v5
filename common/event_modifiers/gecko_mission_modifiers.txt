@@ -253,3 +253,11 @@ gc_investment = {
 	build_cost = -0.10
 	build_time = -0.25
 }
+
+increased_janissary_recruitment = {
+	local_manpower_modifier = 0.2
+}
+
+baghdad_restored = {
+	all_power_cost = -0.02
+}
