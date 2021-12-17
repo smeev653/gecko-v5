@@ -641,7 +641,7 @@ categories =  {
 			1178 2764 2768 2801 2864
 			754 755 786 862 868 876 1809 2492 2507 2619 2667 2846 2861 2912 2913 2921 
 			1172 2682 2503 2068 
-			6028 1173 6029 #gecko
+			6028 1173 6029 2314 #gecko
 			
 			322
 			2308 407 337 1849 2309 377
@@ -716,7 +716,6 @@ categories =  {
 			4422 4436 4464 #Central India
 			4561 4566 4553 # new provinces 1.28
 			4701 4699 4780 # 1.30 Greece and Bulgaria
-			2314 #smeev change
 			1798 1799 #smeev change
 			#405 #smeev change
 			6113 6117 #bunker mod merge
@@ -822,7 +821,6 @@ categories =  {
 	
 		terrain_override = {
 			4285 403 4287
-			2474 2475
 			5807
 			1127
 			1128
