@@ -7,11 +7,8 @@ country_decisions = {
 			NOT = { has_country_flag = gc_formed_ngf }
 			NOT = { exists = NGF }
             OR = {
-                tag = BRA
                 tag = PRU
-                tag = HES
                 tag = WES
-                tag = HSA
                 tag = HAN
             }
 			culture_group = germanic
@@ -88,7 +85,6 @@ country_decisions = {
 			NOT = { has_country_flag = gc_formed_sgf }
 			NOT = { exists = SGF }
             OR = {
-                tag = HES
                 tag = WES
                 tag = HAB
             }
