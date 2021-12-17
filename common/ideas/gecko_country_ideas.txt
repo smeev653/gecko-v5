@@ -220,7 +220,56 @@ AKS_ideas = {
 	}
 }
 
-#German Tags
+
+############################################
+############# The Raidboss #################
+############################################
+
+GER_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.33
+		infantry_power = 0.2
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.5
+	}	
+
+	trigger = {
+		tag = GER
+	}
+	free = yes
+	
+	ger_german_confederation = {
+		land_morale = 0.2
+	}
+	ger_german_universities = {
+		technology_cost = -0.1
+		development_cost = -0.1
+	}
+	ger_reichsheer = {
+		discipline = 0.05
+	}
+	ger_new_hanseatics = {
+		trade_efficiency = 0.20
+	}
+	ger_junkers = {
+		army_tradition = 0.5
+		land_maintenance_modifier = -0.05
+	}
+	ger_reichstag = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+	}
+	ger_eisen_und_kohle = {
+		global_trade_goods_size_modifier = 0.2
+	}
+}
+
+############################################
+########## German Federations ##############
+############################################
 
 NGF_ideas = {
 	start = {
@@ -302,44 +351,249 @@ SGF_ideas = {
 	}
 }
 
-GER_ideas = {
+############################################
+########### German Regionals ###############
+############################################
+
+PRU_ideas = {
 	start = {
-		land_forcelimit_modifier = 0.33
-		infantry_power = 0.2
+		army_tradition = 0.5
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.5
-	}	
-
+		discipline = 0.05
+	}
+	
 	trigger = {
-		tag = GER
+		tag = PRU
+	}
+	free = yes		#will be added at load.
+	
+	teutonic_legacy = {
+		tolerance_own = 2
+	}
+	soldier_king = {
+		stability_cost_modifier = -0.2
+	}
+	army_professionalism = {
+		land_morale = 0.10
+	}	
+	noble_cadets = {
+		nobles_loyalty_modifier = 0.10
+	}
+	goose_step = {
+		infantry_power = 0.15
+	}
+	regimental_cantons = {
+		global_manpower_modifier = 0.10
+		global_regiment_recruit_speed = -0.10
+	}
+	religious_toleration = {
+		development_cost = -0.05
+		tolerance_heretic = 1
+	}
+}
+
+HAN_ideas = {
+	start = {
+		global_foreign_trade_power = 0.1
+		build_cost = -0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = HAN
 	}
 	free = yes
 	
-	ger_german_confederation = {
-		land_morale = 0.2
+	han_niedersachsicher_reichskreis = {
+		state_maintenance_modifier = -0.15
 	}
-	ger_german_universities = {
-		technology_cost = -0.1
+	han_weser_renaissance = {
 		development_cost = -0.1
 	}
-	ger_reichsheer = {
-		discipline = 0.05
-	}
-	ger_new_hanseatics = {
-		trade_efficiency = 0.20
-	}
-	ger_junkers = {
-		army_tradition = 0.5
+	han_shutzenfest = {
 		land_maintenance_modifier = -0.05
+		fire_damage = 0.15
 	}
-	ger_reichstag = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
+	han_herrenhausen_gardens = {
+		prestige = 1
 	}
-	ger_eisen_und_kohle = {
-		global_trade_goods_size_modifier = 0.2
+	han_strengthen_the_meiertum = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	han_hanoverian_chancery = {
+		diplomatic_upkeep = 1
+	}
+	han_kings_legion = {
+		fire_damage_received = -0.15
 	}
 }
+
+WES_ideas = {
+	start = {
+		infantry_power = 0.15
+		land_forcelimit_modifier = 0.33
+	}
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	trigger = {
+		tag = WES
+	}
+	free = yes
+
+	wes_jewish_rights = {
+		idea_cost = -0.1
+	}
+	wes_increased_conscription = {
+		discipline = 0.05
+	}
+	wes_westphalian_decentralisation  = {
+		state_maintenance_modifier = -0.1
+		development_cost = -0.05
+	}
+	wes_taxation = {
+		global_tax_modifier = 0.2
+	}
+	wes_enlightenment = {
+		tolerance_heretic = 3
+		tolerance_heathen = 3
+	}
+	wes_cities_of_the_rhineland = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	wes_administrative_assimilation_of_rheinlanders = {
+		fire_damage = 0.10
+		same_culture_advisor_cost = -0.25
+	}
+}
+
+
+############################################
+############# German minors ################
+############################################
+
+BRA_ideas = {
+	start = {
+		infantry_power = 0.10
+		monthly_militarized_society = 0.2
+	}
+	
+	bonus = {
+		state_maintenance_modifier = -0.25
+	}
+	
+	trigger = {
+		tag = BRA
+	}
+	free = yes		#will be added at load.
+	
+	northern_march = {
+		build_cost = -0.15
+	}
+	bra_pomeranian_wars = {
+		land_morale = 0.10
+	}
+	
+	divided_estates = {
+		development_cost = -0.05
+	}
+	kammergericht = {
+		global_tax_modifier = 0.2
+	}
+	seat_of_the_old_emperors = {
+		diplomatic_reputation = 1
+		imperial_authority_value = 0.1
+	}
+	iron_tooth = {
+		global_unrest = -2
+	}
+	margrave_council = {
+		burghers_loyalty_modifier = 0.05
+		nobles_loyalty_modifier = 0.05
+	}
+}
+
+HSA_ideas = {
+	start = {
+		development_cost = -0.05
+		trade_steering = 0.15
+	}
+	
+	bonus = {
+		trade_efficiency = 0.10
+	}
+	
+	trigger = {
+		tag = HSA
+	}
+	free = yes
+	
+	end_of_victual_brothers = {
+		global_trade_power = 0.15
+	}
+	strong_league_obligations = {
+		land_morale = 0.10
+	}
+	hsa_shipbuilding = {
+		light_ship_cost = -0.20
+		global_sailors_modifier = 0.15
+		global_manpower_modifier = 0.2
+	}
+	reformed_hanstag = {
+		naval_forcelimit_modifier = 0.5
+		naval_morale = 0.1
+		disengagement_chance = 0.05
+	}
+	hanseatic_levy_system = {
+		manpower_recovery_speed = 0.15
+	}
+	regularised_contribution = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	the_hansa_bank = {
+		interest = -0.5
+	}
+}
+
+
+HES_ideas = {
+	start = {
+		development_cost = -0.05
+		infantry_power = 0.1
+	}
+	bonus = {
+		merc_maintenance_modifier = -0.15
+	}
+	trigger = {
+		tag = HES
+	}
+	
+	free = yes
+	
+	break_the_hessian_estates = {
+		stability_cost_modifier = -0.1
+	}
+	modernization_of_the_hessian_army = {
+		discipline = 0.05
+	}
+	welcome_reformers = {
+		religious_unity = 0.25
+		church_power_modifier = 0.05
+	}
+	let_in_religious_emigrants = {
+		global_tax_modifier = 0.15
+	}
+	marburg_university = {
+		idea_cost = -0.1
+	}
+	hessian_mercenaries_idea = {
+		land_forcelimit_modifier = 0.25
+	}
+	hessian_economic_reforms = {
+		production_efficiency = 0.1
+	}
+}
+
