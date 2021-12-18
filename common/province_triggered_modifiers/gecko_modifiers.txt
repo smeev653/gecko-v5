@@ -128,6 +128,8 @@ conquest_of_vienna = {
 	trigger = {
 		owner = {
 			NOT = { tag = HAB }
+			NOT = { tag = POL }
+			NOT = { tag = PLC }
 		}
 		controlled_by = ROOT
 	}
