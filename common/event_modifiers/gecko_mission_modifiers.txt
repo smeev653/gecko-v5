@@ -59,11 +59,11 @@ swedish_empire = {
 }
 
 kaiser_of_europe = {
-	infantry_cost = -0.25
+	infantry_cost = -0.15
 }
 
 third_rome = {
-	land_forcelimit_modifier = 0.33
+	land_forcelimit_modifier = 0.20
 }
 
 mor_barbary_pirate_coast = {
@@ -179,7 +179,7 @@ ven_mercenaries_paid_with_land = {
 }
 
 ven_venture_captain_recruitment = {
-	land_forcelimit_modifier = 0.25
+	land_forcelimit_modifier = 0.15
 	free_leader_pool = 3
 }
 
