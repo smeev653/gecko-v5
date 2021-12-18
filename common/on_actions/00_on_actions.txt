@@ -2811,28 +2811,17 @@ on_five_year_pulse = {
 		100 = ideagroups.910
 
 		# Maritime			22 (14g 8b)
-		100 = ideagroups.1000
-		100 = ideagroups.1001
-		100 = ideagroups.1002
-		100 = ideagroups.1003
-		100 = ideagroups.1004
-		100 = ideagroups.1005
-		100 = ideagroups.1006
-		100 = ideagroups.1007
-		100 = ideagroups.1008
-		100 = ideagroups.1009
-		100 = ideagroups.1010
-		100 = ideagroups.1011
-		100 = ideagroups.1012
-		100 = ideagroups.1013
-		100 = ideagroups.1014
-		100 = ideagroups.1015
-		100 = ideagroups.1016
-		100 = ideagroups.1017
-		100 = ideagroups.1018
-		100 = ideagroups.1019
-		100 = ideagroups.1020
-		100 = ideagroups.1021
+		100 = ideagroups.1900
+		100 = ideagroups.1901
+		100 = ideagroups.1902
+		100 = ideagroups.1903
+		100 = ideagroups.1904
+		100 = ideagroups.1905
+		100 = ideagroups.1906
+		100 = ideagroups.1907
+		100 = ideagroups.1908
+		100 = ideagroups.1909
+		100 = ideagroups.1910
 
 		# Economic		11 (7g 4b)
 		100 = ideagroups.1100
