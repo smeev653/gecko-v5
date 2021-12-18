@@ -12,7 +12,7 @@ base_manpower = 2
 capital = "Feltre" 
 is_city = yes # Estimated
 add_core = VEN
-#fort_15th = yes
+fort_15th = yes
 
 
 
