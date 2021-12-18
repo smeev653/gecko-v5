@@ -7557,7 +7557,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		NOT = { has_country_modifier = "free_freethinkers" }
 	}
 
@@ -7592,7 +7592,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		NOT = { has_country_modifier = "fair_laws" }
 	}
 
@@ -7620,7 +7620,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 	}
 
 	mean_time_to_happen = {
@@ -7658,7 +7658,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 	}
 
 	mean_time_to_happen = {
@@ -7690,7 +7690,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = {
 			has_owner_accepted_culture = yes
 		}
@@ -7720,7 +7720,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = {
 			has_owner_religion = no
 			is_reformation_center = no
@@ -7757,7 +7757,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = {
 			has_owner_religion = no
 			is_reformation_center = no
@@ -7796,7 +7796,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = {
 			nationalism = 1
 		}
@@ -7838,7 +7838,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		NOT = { religion = jewish } #Has no heretic religions
 		NOT = { has_reform = pope_reform }
 		NOT = { has_reform = leading_clergy_reform }
@@ -8049,7 +8049,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		any_owned_province = {
 			has_owner_religion = no
 			has_missionary = yes
@@ -8086,9 +8086,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
 		any_neighbor_country = {
-			NOT = { has_idea_group = humanist_ideas }
+			NOT = { has_idea_group = maritime_ideas }
 		}
 	}
 
@@ -8101,7 +8101,7 @@ country_event = {
 		add_piety = -0.05
 		every_neighbor_country = {
 			limit = {
-				NOT = { has_idea_group = humanist_ideas }
+				NOT = { has_idea_group = maritime_ideas }
 			}
 			add_opinion = {
 				who = ROOT
