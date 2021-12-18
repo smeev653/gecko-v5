@@ -749,9 +749,15 @@ gc_por_3_c = {
 			1192 = {
 				add_permanent_claim = ROOT
 			}
-			1177 = {
-				cede_province = POR
-				add_core = POR
+			if = { 1177 = { is_empty = yes }
+				1177 = {
+					cede_province = POR
+					add_core = POR
+				}
+			}
+			else = { 1177 = {
+				add_permanent_claim = ROOT
+			}
 			}
 			add_country_modifier = {
 					name = "cape_trade_established"
