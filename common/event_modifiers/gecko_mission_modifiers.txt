@@ -108,6 +108,12 @@ beyliks_subjugated = {
 pap_papal_swiss_guard = {
 	mercenary_discipline = 0.1
 }
+
+mlo_the_swiss_mercs = {
+	mercenary_cost = -0.1
+	mercenary_discipline = 0.10
+}
+
 prester_john_discovered = {
 	infantry_power = 0.1
 }
