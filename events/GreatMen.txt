@@ -985,7 +985,7 @@ country_event = {
 	trigger = {
 		grand_captain = 3
 		NOT = { has_country_modifier = PR_grand_captain_cooldown }
-		NOT = { has_country_flag = grand_captain }
+		NOT = { has_country_modifier = grand_captain_cooldown }
 	}
 	
 	mean_time_to_happen = {
@@ -1024,7 +1024,12 @@ country_event = {
 			name = "grand_captain_boost"
 			duration = 2190
 		}		
-		set_country_flag = grand_captain
+		#set_country_flag = grand_captain
+		add_country_modifier = { 
+			name = grand_captain_cooldown
+			duration = 36500
+			hidden = yes
+		}
 	}
 
 	option = {
@@ -1042,7 +1047,12 @@ country_event = {
 			name = "grand_captain_boost"
 			duration = 2190
 		}
-		set_country_flag = grand_captain
+		#set_country_flag = grand_captain
+		add_country_modifier = { 
+			name = grand_captain_cooldown
+			duration = 36500
+			hidden = yes
+		}
 	}
 	
 	option = {
@@ -1139,7 +1149,7 @@ country_event = {
 	trigger = {
 		commandant = 3
 		NOT = { has_country_modifier = PR_commandant_cooldown }
-		NOT = { has_country_flag = commandant }
+		NOT = { has_country_modifier = commandant_cooldown }
 	}
 	
 	mean_time_to_happen = {
@@ -1179,7 +1189,12 @@ country_event = {
 			name = "commandant_boost"
 			duration = 2190
 		}		
-		set_country_flag = commandant
+		#set_country_flag = commandant
+		add_country_modifier = { 
+			name = commandant_cooldown
+			duration = 36500
+			hidden = yes
+		}
 	}
 
 	option = {
@@ -1197,7 +1212,12 @@ country_event = {
 			name = "commandant_boost"
 			duration = 2190
 		}
-		set_country_flag = commandant
+		add_country_modifier = { 
+			name = commandant_cooldown
+			duration = 36500
+			hidden = yes
+		}
+		#set_country_flag = commandant
 	}
 	
 	option = {

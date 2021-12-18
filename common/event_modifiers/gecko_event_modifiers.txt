@@ -43,6 +43,11 @@ gecko_militaryreform_cooldown = {
 	land_morale = 0.001
 }
 
+commandant_cooldown = {
+}
+
+grand_captain_cooldown = {
+}
 
 hired_explorer = {
 }
