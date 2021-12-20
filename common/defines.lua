@@ -97,7 +97,7 @@ NDiplomacy = {
 	PEACE_IMPACT_MIL_SCORE = 0.25,
 
 	AUTONOMY_WARSCORE_COST_MODIFIER = 0.33,			-- How much autonomy reduces score by (at 1, 50% autonomy = 50% reduction)
-	GREAT_PROJECT_WARSCORE_COST_MODIFIER = 0.33,	-- How much each great project multiplies a war score cost by (so 1 GP adds 33%, 2 add 66% etc)
+	GREAT_PROJECT_WARSCORE_COST_MODIFIER = 0,	-- How much each great project multiplies a war score cost by (so 1 GP adds 33%, 2 add 66% etc)
 
 	NUM_POSSIBLE_RIVALS = 3,
 	RIVAL_PRESTIGE_BONUS = 0.25,
@@ -328,7 +328,7 @@ NDiplomacy = {
 	DIP_PORT_FEES = 0.1,							-- DIP_PORT_FEES
 	IMPROVE_RELATION_MAX = 25,						-- IMPROVE_RELATION_MAX
 	IMPROVE_RELATION_SPEED = 1,						-- IMPROVE_RELATION_SPEED
-	STABHIT_FOR_BREAKING_ALLIANCE_IN_WAR = 2,
+	STABHIT_FOR_BREAKING_ALLIANCE_IN_WAR = 0,
 	WARGOAL_PEACE_FRACTION = 0.66,					-- Fraction of warscore you need for wargoal
 	CLAIM_PEACE_COST_DIP_FRACTION = -0.1,			-- Fraction of dipcost you pay for claims
 	CORE_PEACE_COST_DIP_FRACTION = -0.2,			-- Fraction of dipcost you pay for cores
