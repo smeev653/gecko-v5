@@ -64,7 +64,7 @@ EGY_ideas = { #Egyptian Empire
 		manpower_recovery_speed = 0.2
 	}
 	egy_5 = {
-		land_attrition = -0.33
+		land_attrition = -0.25
 	}
 	egy_2 = {
 		reinforce_speed = 0.25
