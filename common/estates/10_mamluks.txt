@@ -43,7 +43,7 @@ estate_mamluks = {
 	}
 	
 	country_modifier_neutral = {
-		state_maintenance_modifier = -0.25
+		cavalry_cost = -0.1
 	}
 	
 	country_modifier_angry = {

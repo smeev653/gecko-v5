@@ -17,6 +17,7 @@ aristocracy_ideas = {
 	noble_knights = {
 		cavalry_power = 0.10
 		cavalry_cost = -0.10
+		cavalry_flanking = 1
 	}
 	local_nobility = {
 		leader_land_shock = 1

@@ -55,6 +55,7 @@ estate_gc_noble_levies = {
 	penalties = {
 	}
 	benefits = {
+			cavalry_flanking = 1
 	}
 	ai_will_do = {
 		factor = 0
@@ -140,7 +141,7 @@ estate_mamluks_promote_leadership = {
 	loyalty = 0.05
 	influence = 0.1
 	can_select = {
-		army_tradition = 15
+		army_tradition = 10
 	}
 	on_granted = {
 	}
