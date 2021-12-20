@@ -1788,7 +1788,7 @@ jingdezhen_kilns = {
 }
 
 coffea_arabica_modifier = { #Removed by prices.32 event
-	trade_goods_size = 3.0
+	trade_goods_size = 5.0
 }
 
 bookmarket_of_x = { #Added by prices.36 event
