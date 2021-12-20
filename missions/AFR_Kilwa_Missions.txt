@@ -316,25 +316,8 @@ kilwa_internal_missions_slot = {
 			owns_core_province = 1196
 			1196 = {
 				development = 20
-				if = {
-					limit = {
-						has_dlc = "Leviathan"
-					}
-				OR = {
-						has_great_project = {
-							type = kilwa_city
-							tier = 2
-						}
-						has_great_project = {
-							type = kilwa_city
-							tier = 3
-						}
-					}
-				}
-				else = {
-					has_tax_building_trigger = yes
-					has_trade_building_trigger = yes
-				}
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
 			}
 		}
 		effect = {
