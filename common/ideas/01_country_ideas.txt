@@ -24,7 +24,7 @@ BUK_ideas = {
 	BUK_the_mantle_of_the_great_khan = {
 		land_morale = 0.1
 	}
-	trs_mawarannahr = {
+	PR_BUK4 = {
 		production_efficiency = 0.1
 	}	
 	PR_BUK1 = {

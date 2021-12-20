@@ -51,6 +51,8 @@
  PR_BUK3_desc:0 "Temur's army was famed for it's discipline. We must instil this onto our people by forcing them to constantly drill and remember their manoeuvre. Special academies have been established to restore our ancient history of relentless drill."
  PR_BUK2:0 "Loot and Plunder"
  PR_BUK2_desc:0 "The glory of plunder and the poverty of the peasants means we never fail to restore our ranks."
+ PR_BUK4:0 "The Silk Road"
+ PR_BUK4_desc:0 "Properly utilising our strategic location along the Silk Road means we may benefit from its lucrative trade.
  chinese_artillery:0 "Chinese Artillery"
  chinese_artillery_desc:0 "The Chinese traders first spoke in whispers of an ancient black powder that packed quite a punch. Thanks to some leaked samples, we have been able to distil the recipe and recreate our own refined gunpowder. Let our cannon be the bane of our enemies."
  drain_the_mesopotamian_marshes_title:0 "Drain the Mesopotamian Marshes" 
