@@ -63,18 +63,15 @@ QAR_conquest = {
 		}
 		effect = {
 			if = {
-				limit = {
-					has_dlc = "Dharma"
-					400 = {
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}
-				400 = {
-					add_center_of_trade_level = 1
-				}
-			}
+                limit = {
+                    400 = {
+                        NOT = { province_has_center_of_trade_of_level = 2 }
+                        NOT = {    province_has_center_of_trade_of_level = 3 }
+                    }
+                }
+                400 = { add_center_of_trade_level = 1 }
+            }
+            else = { add_treasury = 200 }
 			mahra_area = {
 				limit = {
 					NOT = { is_claim = ROOT }
@@ -178,44 +175,38 @@ QAR_conquest = {
 				add_permanent_claim = ROOT
 			}
 			if = {
-				limit = {
-					has_dlc = "Dharma"
-					388 = {
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}
-				388 = {
-					add_center_of_trade_level = 1
-				}
-			}
+                limit = {
+                    388 = {
+                        NOT = { province_has_center_of_trade_of_level = 2 }
+                        NOT = {    province_has_center_of_trade_of_level = 3 }
+                    }
+                }
+                388 = { add_center_of_trade_level = 1 }
+            }
+            else = { add_treasury = 200 }
+
 			if = {
-				limit = {
-					has_dlc = "Dharma"
-					4283 = {
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}
-				4283 = {
-					add_center_of_trade_level = 1
-				}
-			}
+                limit = {
+                    4238 = {
+                        NOT = { province_has_center_of_trade_of_level = 2 }
+                        NOT = {    province_has_center_of_trade_of_level = 3 }
+                    }
+                }
+                4238 = { add_center_of_trade_level = 1 }
+            }
+            else = { add_treasury = 200 }
+			
 			if = {
-				limit = {
-					has_dlc = "Dharma"
-					4279 = {
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}
-				4279 = {
-					add_center_of_trade_level = 1
-				}
-			}
+                limit = {
+                    4279 = {
+                        NOT = { province_has_center_of_trade_of_level = 2 }
+                        NOT = {    province_has_center_of_trade_of_level = 3 }
+                    }
+                }
+                4279 = { add_center_of_trade_level = 1 }
+            }
+            else = { add_treasury = 200 }
+			
 			nafud_area  = {
 				limit = {
 					NOT = { is_claim = ROOT }
