@@ -65,7 +65,7 @@ Decay = {
 			}
 	trigger  = {
 				num_of_allies = 2
-				NOT = { great_power_rank = 2 }
+				NOT = { great_power_rank = 3 }
 	}
 	advisor_cost = 0.2
 	global_regiment_cost = 0.1

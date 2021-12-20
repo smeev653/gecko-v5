@@ -187,12 +187,12 @@ QAR_conquest = {
 
 			if = {
                 limit = {
-                    4238 = {
+                    4283 = {
                         NOT = { province_has_center_of_trade_of_level = 2 }
                         NOT = {    province_has_center_of_trade_of_level = 3 }
                     }
                 }
-                4238 = { add_center_of_trade_level = 1 }
+                4283 = { add_center_of_trade_level = 1 }
             }
             else = { add_treasury = 200 }
 			
