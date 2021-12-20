@@ -380,8 +380,11 @@ country_decisions = {
 
 		allow = {
 				was_player = yes
+				is_great_power = no
 				dip_tech = 10
+				NOT = { num_of_allies = 2 }
 				NOT = { is_colonial_nation = yes }	
+				NOT = { is_lacking_institutions = yes }
 		}
 		effect = {
 			
