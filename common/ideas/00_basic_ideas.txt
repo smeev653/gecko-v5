@@ -372,7 +372,8 @@ offensive_ideas = {
 	}
 
 	bayonet_leaders = {
-		shock_damage = 0.15
+		shock_damage = 0.1
+		fire_damage = 0.1
 	}
 	superior_firepower = {
 		leader_land_fire = 1
@@ -385,7 +386,8 @@ offensive_ideas = {
 		artillery_bonus_vs_fort = 1
 	}
 	grand_army = {
-		land_forcelimit_modifier = 0.20
+		reinforce_speed = 0.25
+		land_attrition = -0.15
 	}
 	napoleonic_warfare = {
 		artillery_power = 0.1
@@ -404,6 +406,7 @@ defensive_ideas = {
 
 	bonus = {
 		shock_damage_received = -0.15
+		land_morale = 0.025
 	}
 
 	battlefield_commisions = {
@@ -418,17 +421,16 @@ defensive_ideas = {
 	}
 	
 	regimental_system = {
-		garrison_size = 0.1
+		garrison_size = 0.15
 	}
 	improved_manuever = {
 		leader_land_manuever = 1
 	}
 	supply_trains = {
-		reinforce_speed = 0.33
-		global_manpower_modifier = 0.10
+		land_forcelimit_modifier = 0.15
 	}
 	improved_foraging = {
-		land_attrition = -0.33
+		global_manpower_modifier = 0.10
 	}
 
 	ai_will_do = {
