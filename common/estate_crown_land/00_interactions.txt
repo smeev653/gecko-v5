@@ -64,16 +64,7 @@ interaction = {
 		}
 		modifier = {
 			factor = 0
-					technology_group = indian
-					AND = {	
-						NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
-						NOT = { has_estate_privilege = estate_jains_diplomacy}
-						OR = {
-							NOT = { has_estate_privilege = estate_rajput_military }
-							NOT = { has_estate_privilege = estate_maratha_military }
-							NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-						}	
-					}
+			technology_group = indian
 		}			
 		modifier = {
 			factor = 1.25
@@ -307,6 +298,10 @@ interaction = {
 			}
 		modifier = {
 			factor = 0
+			technology_group = indian
+		}
+		modifier = {
+			factor = 0
 			crown_land_share = 30
 			if = {
 				limit = { num_of_cities = 50 }
@@ -383,10 +378,6 @@ interaction = {
 					}
 				}
 			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_cities = 3 }
 		}
 		modifier = {
 			factor = 1.5
