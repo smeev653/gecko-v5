@@ -8,12 +8,12 @@ country_event = {
 	trigger = {
 
 		mil = 5
-		dip = 5
 		is_year = 1500
 		NOT = { has_country_modifier = army_reform }
 		NOT = { has_country_modifier = naval_reform }
 		NOT = { has_country_modifier = military_reform }
 		NOT = { has_country_modifier = gecko_armyreform_cooldown }
+		NOT = { has_country_flag = military_reform }
 	}
 	
 	mean_time_to_happen = {
@@ -79,7 +79,7 @@ country_event = {
 			name = "army_reform"
 			duration = 3650
 		}
-		
+		set_country_flag = military_reform
 	}
 	option = {
 		name = "EVTOPTB4011" # Only reform the navy
@@ -89,6 +89,7 @@ country_event = {
 			name = "naval_reform"
 			duration = 3650
 		}
+		set_country_flag = military_reform
 	}
 	option = {
 		name = "EVTOPTC4011" # Reform the army and navy.
@@ -99,5 +100,6 @@ country_event = {
 			name = "military_reform"
 			duration = 3650
 		}
+		set_country_flag = military_reform
 	}
 }
