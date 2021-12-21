@@ -413,7 +413,10 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						is_state_core = ROOT
+						OR = {
+							is_state_core = ROOT
+							is_territorial_core = ROOT
+						}
 						NOT = {
 							OR = {
 								has_state_edict = edict_advancement_effort
