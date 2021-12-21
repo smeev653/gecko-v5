@@ -532,8 +532,8 @@ base_values = {
 	prestige_decay = 0.05					#lose 5% prestige each year
 	tolerance_own = 3
 	diplomatic_upkeep = 4
-	tolerance_heathen = -1
-	tolerance_heretic = -1
+	tolerance_heathen = -3
+	tolerance_heretic = -2
 	global_missionary_strength = 0.02
 	global_manpower = 10.0
 	advisor_pool = 3
@@ -546,7 +546,7 @@ base_values = {
 	devotion = -0.5
 	meritocracy = -2
 	governing_capacity = 200
-	num_accepted_cultures = 3
+	num_accepted_cultures = 2
 	monthly_splendor = 1
 	artillery_bonus_vs_fort = 5
 	cav_to_inf_ratio = 1
@@ -1734,6 +1734,7 @@ expanded_infrastructure = {
 	allowed_num_of_buildings = 1
 	allowed_num_of_manufactories = 1
 	local_governing_cost_increase = 30
+	local_governing_cost = 1.0
 }
 
 centralize_state = {
