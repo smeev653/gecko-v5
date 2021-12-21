@@ -158,32 +158,7 @@ estate_mamluks = {
 		}
 		loyalty = -20
 	}
-	loyalty_modifier = {
-		desc = EST_VAL_HIGH_CAVALRY_FRACTION_MAM_LOY
-		trigger = {
-			cavalry_fraction = 0.5
-		}
-		loyalty = 10
-	}
-	loyalty_modifier = {
-		desc = EST_VAL_MEDIUM_CAVALRY_FRACTION_MAM_LOY
-		trigger = {
-			cavalry_fraction = 0.25
-			NOT = {
-				cavalry_fraction = 0.5
-			}
-		}
-		loyalty = 5
-	}
-	loyalty_modifier = {
-		desc = EST_VAL_VERY_LOW_CAVALRY_FRACTION_MAM_LOY
-		trigger = {
-			NOT = {
-				cavalry_fraction = 0.1
-			}
-		}
-		loyalty = -20
-	}
+	
 
 	color = { 230 145 20 }
 	
