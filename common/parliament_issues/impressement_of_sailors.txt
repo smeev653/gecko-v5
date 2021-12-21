@@ -15,12 +15,8 @@ impressment_of_sailors = {
 	}
 	
 	chance = {
-		factor = 2
-		modifier = {
-			factor = 2
-			navy_size_percentage = 0.7
-			num_of_ports = 15
-		}
+		factor = 1
+	
 		modifier = {
 			factor = 0.25
 			NOT = { navy_size_percentage = 0.5 }

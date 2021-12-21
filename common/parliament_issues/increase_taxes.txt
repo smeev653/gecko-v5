@@ -15,7 +15,7 @@ increase_taxes = {
 	}
 	
 	chance = {
-		factor = 1
+		factor = 5
 		modifier = {
 			factor = 2
 			num_of_loans = 5

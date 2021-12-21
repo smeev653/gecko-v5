@@ -15,7 +15,7 @@ increase_crown_land_share = {
 	}
 	
 	chance = {
-		factor = 1
+		factor = 5
 		modifier = {
 			factor = 0.5
 			crown_land_share = 50
