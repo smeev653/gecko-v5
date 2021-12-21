@@ -42,7 +42,7 @@ interaction = {
 		set_country_flag = recent_land_distribution
     }
 	ai_will_do = {
-		factor = 1500
+		factor = 2000
 		modifier = {
 			factor = 0
 				AND = {
@@ -52,11 +52,15 @@ interaction = {
 		}
 		modifier = {
 			factor = 0
-					AND = {
-						NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-						NOT = { has_estate_privilege = estate_church_religious_state }
-						NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-					}	
+			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }	
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_estate_privilege = estate_church_religious_state }
 		}
 		modifier = {
 			factor = 0
@@ -291,6 +295,18 @@ interaction = {
 		factor = 1000
 		modifier = {
 			factor = 0
+					NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
+			}
+		modifier = {
+			factor = 0
+					NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
+			}
+		modifier = {
+			factor = 0
+					NOT = { has_estate_privilege = estate_church_religious_state }	
+			}
+		modifier = {
+			factor = 0
 			crown_land_share = 30
 			if = {
 				limit = { num_of_cities = 50 }
@@ -383,50 +399,7 @@ interaction = {
 			NOT = { average_unrest = 1 }
 			NOT = { num_of_rebel_armies = 1 }
 		}
-		modifier = {
-			factor = 1000
-			NOT = { crown_land_share = 0 }
-		}
-		modifier = {
-			factor = 1000
-			NOT = { crown_land_share = 5 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { crown_land_share = 10 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { crown_land_share = 15 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { crown_land_share = 20 }
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { crown_land_share = 30 }
-		}
-		modifier = {
-			factor = 1.2
-			NOT = { crown_land_share = 35 }
-		}
-		modifier = {
-			factor = 1.2
-			NOT = { crown_land_share = 50 }
-		}
-		modifier = {
-			factor = 1.1
-			stability = 2
-		}
-		modifier = {
-			factor = 1.1
-			stability = 3
-		}
-		modifier = {
-			factor = 0.5
-			average_unrest = 3
-		}
+		
 		modifier = {
 			factor = 0.5
 			has_country_flag = recent_land_seizure

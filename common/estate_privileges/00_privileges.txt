@@ -930,7 +930,7 @@ estate_church_religious_state = {
 		country_admin_power = 1
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 1500
 	}
 }
 
@@ -1320,7 +1320,7 @@ estate_burghers_land_of_commerce = {
 		country_diplomatic_power = 1
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 1500
 	}
 }
 
@@ -2946,9 +2946,6 @@ estate_nobles_supremacy_over_crown = {
 		mamluks_loyalty_modifier = 0.1
 		mamluks_influence_modifier = 0.1
 	}
-	mechanics = {
-		can_give_agendas_without_interaction
-	}
 	ai_will_do = {
 		factor = 0
 	}
@@ -2988,11 +2985,8 @@ estate_brahmins_supremacy_over_crown = {
 		vaisyas_influence_modifier = 0.1
 		nomadic_tribes_influence_modifier = 0.1
 	}
-	mechanics = {
-		can_give_agendas_without_interaction
-	}
 	ai_will_do = {
-		factor = 0
+		factor = 1250
 	}
 }
 

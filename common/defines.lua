@@ -1938,10 +1938,10 @@ NAI = {
 	APPOINT_CARDINAL_WANTS_ALLY = 50,							-- AI scoring for appoint cardinals is increased by this if they have an attitude with 'ally' desire
 	APPOINT_CARDINAL_CAN_INTEGRATE = 150,						-- AI scoring for appoint cardinals is increased by this if they can integrate/annex the target and inherit the cardinals
 	ESTATE_PRIVILEGE_REVOKE_THRESHOLD = 5.1,
-	ESTATE_PRIVILEGE_GRANT_THRESHOLD = 1,
+	ESTATE_PRIVILEGE_GRANT_THRESHOLD = 0,
 	ESTATE_INTERACTION_THRESHOLD = 49.9,
 	ESTATE_MAX_WANTED_INFLUENCE = 73.0,
-	ESTATE_MIN_WANTED_CROWNLAND = 1,
+	ESTATE_MIN_WANTED_CROWNLAND = 0,
 	ESTATE_MAX_PRIVILEDGES = 4,
 	MIN_SCORE_TO_CONCENTRATE_DEVELOPMENT = 1.5,
 },
