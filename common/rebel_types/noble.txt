@@ -22,7 +22,7 @@ noble_rebels = {
 	infantry = 0.8
 	cavalry = 0.2
 	
-	morale = 1.0
+	morale = 0.75
 	
 	# Possible handle actions
 	handle_action_negotiate = yes

@@ -24,7 +24,7 @@ orthodox_rebels = {
 	infantry = 0.7
 	cavalry = 0.3
 	
-	morale = 1.1
+	morale = 0.75
 
 	# Possible handle actions
 	handle_action_negotiate = yes
