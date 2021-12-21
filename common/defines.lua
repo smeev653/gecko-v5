@@ -1086,7 +1086,7 @@ NCountry = {
 },
 
 NEconomy = {
-	EDICTS_COST_INCREASE = 1.5,				-- % increase on state maintenance.
+	EDICTS_COST_INCREASE = 2,				-- % increase on state maintenance.
 	EDICTS_DURATION_MONTHS = 3,				-- months lastin at least.
 
 
@@ -1297,8 +1297,8 @@ NMilitary = {
 	GALLEY_COST = 10, 								-- _MDEF_GALLEY_COST = 10,
 	TRANSPORT_COST = 1,							-- _MDEF_TRANSPORT_COST = 10,
 	INFANTRY_TIME = 60, 							-- _MDEF_INFANTRY_TIME = 10,
-	CAVALRY_TIME = 90, 								-- _MDEF_CAVALRY_TIME = 10,
-	ARTILLERY_TIME = 120, 							-- _MDEF_ARTILLERY_TIME = 10,
+	CAVALRY_TIME = 60, 								-- _MDEF_CAVALRY_TIME = 10,
+	ARTILLERY_TIME = 60, 							-- _MDEF_ARTILLERY_TIME = 10,
 	HEAVY_SHIP_TIME = 730, 							-- _MDEF_HEAVY_SHIP_TIME = 10,
 	LIGHT_SHIP_TIME = 365, 							-- _MDEF_LIGHT_SHIP_TIME = 10,
 	GALLEY_TIME = 90, 								-- _MDEF_GALLEY_TIME = 10,
@@ -1407,7 +1407,7 @@ NMilitary = {
 	RAJPUT_MAXIMUM_RATIO = 1.0,						-- Maximum number of Rajput regiments, relative to force limit
 	MARINE_DISEMBARK_SPEED_BONUS = 2.0	,			-- marine disembark speed bonus
 	BASE_COST_MODIFIER = 2.0,						-- Revolutionary guards base cost is double as expensive
-	RAJPUT_BASE_COST_MODIFIER = 1.5,				-- Rajput base cost is double as expensive
+	RAJPUT_BASE_COST_MODIFIER = 2,				-- Rajput base cost is double as expensive
 	COSSACK_BASE_COST_MODIFIER = 1.5,				-- Cossack base cost is double as expensive
 	REVOLUTIONARY_GUARD_BASE_COST_MODIFIER = 2.0,	-- Revolutionary guards base cost is double as expensive
 
