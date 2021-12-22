@@ -47,7 +47,7 @@ country_decisions = {
 					dip_power = 100
 					mil_power = 100
 				}
-				splendor = 800
+				splendor = 200
 		}
 		effect = {
 			
