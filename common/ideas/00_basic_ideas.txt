@@ -756,7 +756,7 @@ quality_ideas = {
 		yearly_army_professionalism = 0.005
 	}
 	copper_bottoms = {
-		reserves_organisation = 0.2
+		reserves_organisation = 0.25
 	}
 	massed_battery = {
 		artillery_power = 0.1
@@ -796,7 +796,7 @@ quantity_ideas = {
 		global_supply_limit_modifier = 0.33
 	}
 	garrison_conscription = {
-		free_leader_pool = 3
+		free_leader_pool = 5
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.25
