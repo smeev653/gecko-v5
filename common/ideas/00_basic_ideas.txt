@@ -203,7 +203,7 @@ innovativeness_ideas = {
 		
 	}
 	empiricism = {
-		innovativeness_gain = 0.5
+		innovativeness_gain = 1
 	}
 	patron_of_art  = {
 		monthly_reform_progress_modifier = 0.25
@@ -276,7 +276,7 @@ spy_ideas = {
 	category = DIP
 
 	bonus = {
-		reduced_stab_impacts = yes	
+		mil_advisor_cost = -0.15
 	}
 
 	efficient_spies = {
@@ -444,7 +444,7 @@ trade_ideas = {
 	category = DIP
 
 	bonus = {
-		placed_merchant_power = 10
+		country_diplomatic_power = 1
 	}
 
 	shrewd_commerce_practise = {
@@ -718,7 +718,7 @@ maritime_ideas = {
 		advisor_cost = -0.10
 	}
 	naval_fighting_instruction = {
-		prestige = 1
+		idea_cost = -0.1
 	}
 	sheltered_ports = {
 		num_accepted_cultures = 2
@@ -926,7 +926,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		country_diplomatic_power = 1
+		reduced_stab_impacts = yes
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
@@ -943,7 +943,7 @@ influence_ideas = {
 		trade_company_investment_cost = -0.10
 	}
 	buffer_states = {
-		idea_cost = -0.1
+		prestige = 1
 	}
 
 	tribute_system = {
