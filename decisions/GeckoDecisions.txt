@@ -385,6 +385,7 @@ country_decisions = {
 				NOT = { num_of_allies = 2 }
 				NOT = { is_colonial_nation = yes }	
 				NOT = { is_lacking_institutions = yes }
+				NOT = { is_subject_of_type = tributary_state }
 		}
 		effect = {
 			
