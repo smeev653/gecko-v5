@@ -223,8 +223,8 @@ NDiplomacy = {
 	AE_PRIMITIVES = -0.75, -- less AE from primitives
 
 	-- Peace Option Effects, base values for the winner. The loser gets the inverse.
-	PO_DEMAND_PROVINCES_AE = 0.6, 				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
-	PO_RETURN_CORES_AE = 0.4, 					-- (Per core, only applied if returning cores to vassals of winner)
+	PO_DEMAND_PROVINCES_AE = 0.75, 				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
+	PO_RETURN_CORES_AE = 0.5, 					-- (Per core, only applied if returning cores to vassals of winner)
 	PO_FORM_PU_AE = 0.20, 							-- _DDEF_PO_FORM_PU_AE = 10, (Per development)
 	PO_CONCEDE_COLONIAL_AE = 0.2,
 	PO_BECOME_VASSAL_AE = 0.5, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
@@ -401,7 +401,7 @@ NDiplomacy = {
 
 	NUM_OF_GREAT_POWERS = 8,						-- The number of ordinary (i.e. non-leaving) Great Powers if RightsOfManDLC is enabled.
 	LEAVING_GREAT_POWER_YEARS = 5,					-- The number of years a Great Power can remain after being removed from the top (8).
-	GREAT_POWER_SUBJECT_CONTRIBUTION = 0.5,			-- Share of subjects' development that will count towards overlord's Great Power score.
+	GREAT_POWER_SUBJECT_CONTRIBUTION = 0.25,			-- Share of subjects' development that will count towards overlord's Great Power score.
 
 	FORCE_BREAK_ALLIANCE_TRUCE_YEARS = 10,			-- Length of truce imposed by Break Alliance.
 	FORCE_END_RIVALRY_YEARS = 15,					-- Years until you can re-add a Rival after being forced to remove them by peace treaty.
@@ -413,7 +413,7 @@ NDiplomacy = {
 	TRIBUTE_MAX_MONARCH_POWER = 12.0,				-- Tributary State: Max Adm/Dip/Mil per Tributary
 	TRIBUTE_BASE_MANPOWER = 0.25,					-- Tributary State: Part of yearly manpower given in tribute
 	TRIBUTE_SENT_TRUST = 1,							-- Tributary State: Bilateral Trust if tribute sent
-	TRIBUTE_REFUSED_TRUST = -15,						-- Tributary State: Trust hit if no tribute sent
+	TRIBUTE_REFUSED_TRUST = 0,						-- Tributary State: Trust hit if no tribute sent
 	DECLINED_TRIBUTARY_TRUST = -15,					-- Tributary State: Trust hit if declining or cancelling a Tributary relation as subject
 	TRIBUTARY_OVERLORD_LOW_TRUST = 30,				-- Tributary State: If Tributary Overlord's trust falls below this, bad things happen
 	REFUSED_CALL_FROM_TRIBUTARY_MANDATE_LOSS = 10,	-- Mandate lost when Celestial Emperor refuses CtA from a tributary subject
@@ -461,7 +461,7 @@ NDiplomacy = {
 	IMPERIAL_REALM_WAR_MONTHS = 60,					-- How many months the CB will be available
 	SAME_TRIBUTARY_OVERLORD_SUPPORT_INDEPENDENCE_CHANCE = -50,
 	
-	UNCONDITIONAL_SURRENDER_MIN_MONTHS = 12,
+	UNCONDITIONAL_SURRENDER_MIN_MONTHS = 6,
 },
 
 NCountry = {
@@ -609,11 +609,11 @@ NCountry = {
 	MAX_GOV_RANK = 3,									-- Max possible is 10
 
 
-	PARLIAMENT_BACKING_PERCENTAGE = 25,			-- average percent of seats backing an issue (0-100)
+	PARLIAMENT_BACKING_PERCENTAGE = 50,			-- average percent of seats backing an issue (0-100)
 	PARLIAMENT_ISSUE_DURATION = 10,				-- in years
 	PARLIAMENT_DEBATE_DURATION = 5,				-- in years
-	NUM_PARLIAMENT_ISSUES = 5,
-	PARLIAMENT_PRESTIGE_HIT = -20,				-- penalty if failed debate.
+	NUM_PARLIAMENT_ISSUES = 10,
+	PARLIAMENT_PRESTIGE_HIT = 0,				-- penalty if failed debate.
 	PARLIAMENT_CHANCE_OF_DECISION = 10,			-- % Chance debate is ended after PARLIAMENT_DEBATE_DURATION
 
 	ALLOW_FEMALE_GENERALS = 0,
