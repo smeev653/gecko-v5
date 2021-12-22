@@ -280,7 +280,7 @@ modern_firearm_techniques = {
 	}
 	
 	infantry_power = 0.10
-	yearly_army_professionalism = 0.002
+	yearly_army_professionalism = 0.0025
 
 	ai_will_do = {
 		factor = 1.2		
