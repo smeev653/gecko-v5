@@ -181,6 +181,7 @@ country_decisions = {
 			add_permanent_claim = 1750
 			add_permanent_claim = 1747
 			set_country_flag = formed_andalusia_flag
+			change_unit_type = gunpowder_empire
 			if = {
 				limit = {
 					mission_completed = gra_reconquer_sevilla
