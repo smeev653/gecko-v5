@@ -26,7 +26,7 @@ aristocracy_ideas = {
 		mil_tech_cost_modifier  = -0.1
 	}
 	serfdom = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.25
 	}
 	quality_education = {
 		#army_tradition_from_battle = 0.5
