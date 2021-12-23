@@ -233,7 +233,7 @@ the_royal_commission_act = {
 }
 
 edict_of_resistance = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = defensive_ideas
@@ -246,8 +246,8 @@ edict_of_resistance = {
 	}
 
 
-	shock_damage_received = -0.1
-	defensiveness = 0.10
+	prestige = 1
+	hostile_attrition = 1
 
 	ai_will_do = {
 		factor = 1
@@ -705,7 +705,7 @@ the_loyalty_act = {
 #}
 
 vassal_obligations_act = {
-	monarch_power = ADM
+	monarch_power = DIP
 	
 	potential = {
 		has_idea_group = influence_ideas
