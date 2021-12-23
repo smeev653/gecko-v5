@@ -735,7 +735,8 @@ local_militias = {
 		full_idea_group = defensive_ideas
 	}	
 	
-	shock_damage_received = -0.15
+	shock_damage_received = -0.10
+	defensiveness = 0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -840,7 +841,7 @@ noble_loyalty_act = {
 		full_idea_group = spy_ideas
 	}
 
-	cavalry_cost = -0.05
+	cavalry_cost = -0.10
 	cavalry_power = 0.10
 	
 	ai_will_do = {
