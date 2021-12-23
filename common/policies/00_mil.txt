@@ -841,7 +841,7 @@ noble_loyalty_act = {
 		full_idea_group = spy_ideas
 	}
 
-	cavalry_cost = -0.10
+	cavalry_cost = -0.05
 	cavalry_power = 0.10
 	
 	ai_will_do = {

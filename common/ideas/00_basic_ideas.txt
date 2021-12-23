@@ -16,7 +16,7 @@ aristocracy_ideas = {
 	
 	noble_knights = {
 		cavalry_power = 0.10
-		cavalry_cost = -0.10
+		cavalry_cost = -0.15
 		cavalry_flanking = 1
 	}
 	local_nobility = {
@@ -31,10 +31,11 @@ aristocracy_ideas = {
 	quality_education = {
 		#army_tradition_from_battle = 0.5
 		prestige_from_land = 1
-	}
-	noble_resilience = {
 		nobles_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
+	}
+	noble_resilience = {
+		cavalry_fire = 0.2
 	}
 	international_nobility = {
 		fire_damage_received = -0.15
@@ -70,7 +71,7 @@ plutocracy_ideas = {
 		manpower_recovery_speed = 0.2
 	}
 	free_cities = {
-		country_military_power = 1
+		monarch_military_power = 1
 	}
 }	
 horde_gov_ideas = {
