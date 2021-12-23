@@ -121,10 +121,6 @@ interaction = {
 				}
 			}	
 		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_cities = 2 }
-		}
 	}
 }
 
@@ -299,6 +295,10 @@ interaction = {
 		modifier = {
 			factor = 0
 			technology_group = indian
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 2 }
 		}
 		modifier = {
 			factor = 0
