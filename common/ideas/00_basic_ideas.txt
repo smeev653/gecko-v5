@@ -11,7 +11,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		reinforce_cost_modifier = -0.20
+		fire_damage_received = -0.15
 	}
 	
 	noble_knights = {
@@ -35,10 +35,10 @@ aristocracy_ideas = {
 		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	noble_resilience = {
-		cavalry_fire = 0.2
+		cavalry_fire = 0.25
 	}
 	international_nobility = {
-		fire_damage_received = -0.15
+		land_morale = 0.05
 	}
 }
 
@@ -408,7 +408,6 @@ defensive_ideas = {
 
 	bonus = {
 		shock_damage_received = -0.15
-		land_morale = 0.025
 	}
 
 	battlefield_commisions = {
