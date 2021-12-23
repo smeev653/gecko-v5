@@ -13613,7 +13613,7 @@ RIG_ideas = {
 
 CRI_ideas = {
 	start = {
-		trade_efficiency = 0.1
+		cavalry_power = 0.2
 		loot_amount = 0.25
 	}
 	bonus = {
@@ -13624,18 +13624,19 @@ CRI_ideas = {
 	}
 	free = yes
 	
+	cri_allow_nogai_protectorates = {
+		global_manpower_modifier = 0.25
+	}
 	cri_genghisid_legacy = {
-		cavalry_power = 0.2
+		land_morale = 0.1
 	}
 	cri_slavers = {
 		global_own_trade_power = 0.25
 		tolerance_heathen = 3
 	}
-	cri_allow_nogai_protectorates = {
-		global_manpower_modifier = 0.25
-	}
+
 	cri_ruthenian_raids = {
-		land_morale = 0.1
+		trade_efficiency = 0.1
 	}
 	
 	cri_free_cattle_grazing = {
@@ -14190,7 +14191,7 @@ ADU_ideas = {
 		technology_cost = -0.1
     }
 	adu_ahl_uhl_dhimma = {
-		tolerance_heathen = 3
+		discipline = 0.05
     }
 	adu_legacy_of_ibn_arabi = {
 		idea_cost = -0.1
