@@ -26,7 +26,10 @@ gc_ethiopian_theocracy_reform = { #tier 1
 	icon = "divine_guidance_reform"
 	potential = {
         religion = coptic
-		tag = ETH
+		OR = {
+			tag = ETH
+			tag = AKS
+		}
 	}
 	modifiers = {
 		advisor_cost = -0.10
