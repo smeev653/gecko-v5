@@ -246,7 +246,7 @@ modern_siege_weapons = {
 }
 
 superior_fortification_act = {
-	monarch_power = MIL
+	monarch_power = ADM
 	
 	potential = {
 		has_idea_group = innovativeness_ideas
@@ -258,8 +258,7 @@ superior_fortification_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	production_efficiency = 0.10
-	discipline = 0.03
+	production_efficiency = 0.15
 
 	ai_will_do = {
 		factor = 1
