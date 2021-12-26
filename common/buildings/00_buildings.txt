@@ -53,7 +53,7 @@ marketplace = {
 	}
 
 	ai_will_do = {
-		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		factor = 0 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
 	}
 }
 
@@ -83,8 +83,14 @@ workshop = {
 	allow_in_gold_provinces = no
 
 	ai_will_do = {
-		factor = 2500
+		factor = 250
+		modifier = {
+			factor = 10
+			base_production = 5
+			is_state = yes
+		}
 	}
+	
 }
 
 temple = {
@@ -135,7 +141,12 @@ temple = {
 	on_obsolete = {
 	}
 	ai_will_do = {
-		factor = 250
+		factor = 1
+		modifier = {
+			factor = 250
+			base_tax = 5
+			is_state = yes
+		}
 	}
 }
 
@@ -163,7 +174,12 @@ barracks = {
 	}
 
 	ai_will_do = {
-		factor = 25
+		factor = 1
+		modifier = {
+			factor = 250
+			base_manpower = 5
+			is_state = yes
+		}
 	}
 }
 
@@ -183,15 +199,7 @@ shipyard = {
 	}
 
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5 # Little above build cost
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
+		factor = 0
 	}
 }
 
@@ -705,10 +713,7 @@ dock = {
 	}
 
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0.5
-		}
+		factor = 0
 	}
 }
 
@@ -741,10 +746,6 @@ regimental_camp = {
 		modifier = {
 			factor = 1 # Little above build cost
 			FROM = { army_size_percentage = 0.95 }
-		}
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
 		}
 	}
 }
@@ -1353,15 +1354,7 @@ grand_shipyard = {
 	on_obsolete = {
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 320 # Little above build cost
-			FROM = { navy_size_percentage = 0.95 }
-		}
-		modifier = {
-			factor = 1.1
-			local_autonomy = 50
-		}
+		factor = 0
 	}
 }
 
@@ -1944,7 +1937,7 @@ drydock = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -2483,7 +2476,7 @@ wharf = {
 	}
 
 	ai_will_do = {
-		factor = 500
+		factor = 3000
 
 		modifier = {
 			factor = 1.5
@@ -2517,7 +2510,7 @@ weapons = {
 	
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2534,7 +2527,7 @@ textile = {
 	}
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2553,7 +2546,7 @@ plantations = {
 	}
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2571,7 +2564,7 @@ tradecompany = {
 	}
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2588,7 +2581,7 @@ farm_estate = {
 	
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2606,7 +2599,7 @@ mills = {
 	}
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2629,7 +2622,7 @@ furnace = {
 	}
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2645,7 +2638,7 @@ ramparts = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -2674,7 +2667,7 @@ soldier_households = {
 	}
 
 	ai_will_do = {
-		factor = 1750
+		factor = 3000
 	}
 }
 
@@ -2709,7 +2702,7 @@ impressment_offices = {
 
 
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 

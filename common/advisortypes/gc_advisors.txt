@@ -11,7 +11,7 @@ gc_drill_master = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 5000
 	}
 }
 
@@ -33,7 +33,7 @@ gc_arty_officer = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 5000
 	}
 }
 
@@ -50,7 +50,7 @@ gc_inquisitor = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 5000
 	}
 }
 
@@ -65,9 +65,8 @@ siege_specialist = {
 	chance = {
 		factor = 1
 	}
-	
 	ai_will_do = {
-		factor = 1
+		factor = 5000
 	}
 }
 
@@ -85,7 +84,7 @@ infantry_leader = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 5000
 	}
 }
 
@@ -103,6 +102,6 @@ cavalry_leader = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 5000
 	}
 }
