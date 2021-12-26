@@ -55,6 +55,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2745;4651;sea;1376;-1;-1;-1;-1;Gyeongju-Tsushima Korea-Japan
 333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
 4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
+1750;4560;sea;1295;-1;-1;-1;-1;Alicante-Ibiza
 366;4565;sea;1471;-1;-1;-1;-1;Canaries
 12;14;sea;1258;2980;1631;2975;1631;Sjaelland-Fyn
 14;4142;sea;1258;2965;1635;2963;1641;Fyn-Aarhus
