@@ -83,10 +83,10 @@ workshop = {
 	allow_in_gold_provinces = no
 
 	ai_will_do = {
-		factor = 250
+		factor = 350
 		modifier = {
 			factor = 10
-			base_production = 5
+			base_production = 4
 			is_state = yes
 		}
 	}
@@ -144,7 +144,7 @@ temple = {
 		factor = 1
 		modifier = {
 			factor = 250
-			base_tax = 5
+			base_tax = 4
 			is_state = yes
 		}
 	}
@@ -177,7 +177,7 @@ barracks = {
 		factor = 1
 		modifier = {
 			factor = 250
-			base_manpower = 5
+			base_manpower = 4
 			is_state = yes
 		}
 	}
@@ -2581,7 +2581,7 @@ farm_estate = {
 	
 
 	ai_will_do = {
-		factor = 3000
+		factor = 250
 	}
 }
 
