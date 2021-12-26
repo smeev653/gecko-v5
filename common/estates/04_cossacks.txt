@@ -56,7 +56,6 @@ estate_cossacks = {
 			any_owned_province = {
 				has_terrain = steppe
 			}
-			tag = HUN
 		}
 	}
 
