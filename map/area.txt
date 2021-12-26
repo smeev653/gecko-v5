@@ -2879,8 +2879,13 @@ inner_mongolia_area = { #5
 }
 
 outer_mongolia_area = { #5
-	717 721 2116  4220
+	717 721 2116 4220 4668
 }
+
+central_mongolia_area = { #3
+	720 2193 4221 4669 4677 2114
+}
+
 
 xilin_gol_area = {
 	4219 4673 723 4666 4667
@@ -2895,12 +2900,8 @@ tannu_uriankhai_area = {#3
 	716 1065 1066 4679
 }
 
-central_mongolia_area = { #3
-	4676 2193 2191
-}
-
 uliastai_area = {#3
-	719 2189 2190 
+	719 2189 2190 4678
 }
 
 jetysuu_area = { #5
@@ -3015,7 +3016,7 @@ gansu_area = { #5 (East Gansu)
 }
 
 west_gansu_area = { #4 
-	707 708
+	707 708 2191 4676
 }
 
 ########################################

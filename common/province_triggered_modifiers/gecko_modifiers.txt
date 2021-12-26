@@ -616,4 +616,22 @@ my_desert = {
 		on_deactivation = {
 		
 		}
-}		
+}	
+
+gc_mongol_kurultai = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_global_flag = gc_mongol_kurultai
+	}
+	trigger = {
+		owner = {
+			OR = {
+				tag = OIR
+				tag = MGE
+			}
+		}
+	}
+	
+	horde_unity = 1
+	trade_goods_size = 5
+}	
