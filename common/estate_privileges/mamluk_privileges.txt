@@ -8,7 +8,11 @@ estate_gc_noble_levies = {
 			country_event = { id = gecko.8 }
 	}
 	is_valid = {
-		tag = MAM
+		OR ={
+			tag = MAM
+			culture_group = altaic
+			culture_group = tartar
+		}
 	}
 	can_select = {
 	}
@@ -26,8 +30,8 @@ estate_gc_noble_levies = {
 			capital_scope = { 
 				add_unit_construction = {
 					type = cavalry
-					amount = 10
-					speed = 1
+					amount = 15
+					speed = 2
 					cost = 0
 				}
 			}
@@ -43,7 +47,7 @@ estate_gc_noble_levies = {
 			random_owned_province = { 
 				add_unit_construction = {
 					type = cavalry
-					amount = 10
+					amount = 15
 					speed = 2
 					cost = 0
 				}

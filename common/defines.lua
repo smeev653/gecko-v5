@@ -1325,9 +1325,9 @@ NMilitary = {
 	LOOTED_RECOVERY = 0.1,							-- Speed at which a looted province recovers in fractional units per month (multiply by 100 for percentage).
 	NAVAL_SUPPLY_RANGE = 150, 						-- Supply range for ships.
 	REBEL_TRADITION_GAIN = 0.5, 					-- _MDEF_REBEL_TRADITION_GAIN_; Factor of army/navy tradition gained from fighting rebels and pirates.
-	NOMAD_LOOT_TRADITION = 0.05,	 				-- _MDEF_NOMAD_LOOT_TRADITION_;Military tradition a horde gets from looting territory
-	NOMAD_PLAINS_SHOCK_BONUS = 0, 				--
-	NOMAD_NON_PLAINS_SHOCK_PENALTY = 0, 			--
+	NOMAD_LOOT_TRADITION = 0.5,	 				-- _MDEF_NOMAD_LOOT_TRADITION_;Military tradition a horde gets from looting territory
+	NOMAD_PLAINS_SHOCK_BONUS = 0.05, 				--
+	NOMAD_NON_PLAINS_SHOCK_PENALTY = -0.05, 			--
 	SUPPLYLIMIT_BASE_MULTIPLIER = 6.0, 				--
 	WAR_LENGTH_DAMAGE_MODIFIER = 0.01,				-- How much (by percentage) the damage dealt will be increased each day of the combat
 	MORALE_RECOVERY_SPEED = 0.15,					-- How much (by percentage) of the maximum morale that the current morale will be recovered with at a time
@@ -1597,7 +1597,7 @@ NAI = {
 
 	DEBASE_THRESHOLD = 10000,-- AI will not debase if it has more gold than this.
 
-	DEVELOPMENT_CAP_BASE = 50,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
+	DEVELOPMENT_CAP_BASE = 35,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 	DEVELOPMENT_CAP_MULT = 2,
 
 	PEACE_BASE_RELUCTANCE = 0, -- AI base stubbornness to refuse peace (always applied)

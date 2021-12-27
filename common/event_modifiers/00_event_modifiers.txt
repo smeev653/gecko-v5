@@ -2293,24 +2293,24 @@ church_reduction = {
 	religion = yes
 }
 
-wallon_immigrants = {
-	trade_goods_size = 0.2
-}
+#wallon_immigrants = {
+#	trade_goods_size = 0.2
+#}
 
-swedish_military_reforms = {
-	infantry_cost = -0.1
-	land_morale = 0.05
-}
+#swedish_military_reforms = {
+#	infantry_cost = -0.1
+#	land_morale = 0.05
+#}
 
-swedish_mercenary_core = {
-	merc_maintenance_modifier = -0.1
-	mercenary_manpower = 0.5
-}
+#swedish_mercenary_core = {
+#	merc_maintenance_modifier = -0.1
+#	mercenary_manpower = 0.5
+#}
 
-swedish_naval_reforms = {
-	heavy_ship_cost = -0.1
-	naval_morale = 0.05
-}
+#swedish_naval_reforms = {
+#	heavy_ship_cost = -0.1
+#	naval_morale = 0.05
+#}
 
 swedish_mercantile_reforms = {
 	global_prov_trade_power_modifier = 0.10
@@ -4150,10 +4150,9 @@ guj_hardline_rel_policy = {
 }
 
 #Persia
-per_abbas_advisors = {
-	technology_cost = -0.20
-
-}
+#per_abbas_advisors = {
+#	technology_cost = -0.20
+#}
 
 per_political_turmoil_timer = { }
 per_political_fragmentation_timer = { }
@@ -9680,21 +9679,21 @@ good_pious_mufti_modifier = {
 	yearly_corruption = -0.05
 }
 
-bad_sufi_modifier = {
-	religion = yes
-	legitimacy = 0.5
-}
+#bad_sufi_modifier = {
+#	religion = yes
+#	legitimacy = 0.5
+#}
 
-ok_sufi_modifier = {
-	religion = yes
-	legitimacy = 1
-}
+#ok_sufi_modifier = {
+#	religion = yes
+#	legitimacy = 1
+#}
 
-good_sufi_modifier = {
-	religion = yes
-	legitimacy = 1
-	global_missionary_strength = 0.02
-}
+#good_sufi_modifier = {
+#	religion = yes
+#	legitimacy = 1
+#	global_missionary_strength = 0.02
+#}
 
 #Trade Policy Events
 

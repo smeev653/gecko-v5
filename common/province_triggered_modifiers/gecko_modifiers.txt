@@ -430,26 +430,24 @@ conquest_of_saint_petersburg = {
 
 conquest_of_sarai = {
 	potential = {
-			OR = {
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}	
+		OR = {
+			culture_group = altaic
+			culture_group = tartar
+		}	
 	}
 
 	trigger = {
 		owner = {
 			OR = {
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}
+			culture_group = altaic
+			culture_group = tartar
+		}
 		}	
 		controlled_by = ROOT	
 	}
 
-	technology_cost = -0.05
-	prestige = 0.5
+	technology_cost = -0.1
+	global_tax_modifier = 0.15
 	
 	#Province scope
 	on_activation = {
