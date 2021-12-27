@@ -71,6 +71,7 @@ country_event = { #Election of new Head of the State
             age = 40
 			change_adm = 2
 		}
+		set_country_flag = gc_eth_theocracy_failsafe
 	}
     option = {
 		name = gc_eth_events.4.b
@@ -81,6 +82,7 @@ country_event = { #Election of new Head of the State
             age = 40
 			change_dip = 2
 		}
+		set_country_flag = gc_eth_theocracy_failsafe
 	}
     option = {
 		name = gc_eth_events.4.c
@@ -91,6 +93,7 @@ country_event = { #Election of new Head of the State
             age = 40
 			change_mil = 2
 		}
+		set_country_flag = gc_eth_theocracy_failsafe
 	}
     option = {
 		name = gc_eth_events.4.d
@@ -102,6 +105,7 @@ country_event = { #Election of new Head of the State
             change_adm = 1
 			change_mil = 1
 		}
+		set_country_flag = gc_eth_theocracy_failsafe
 	}
     option = {
 		name = gc_eth_events.4.e
@@ -113,5 +117,6 @@ country_event = { #Election of new Head of the State
             change_dip = 1
 			change_mil = 1
 		}
+		set_country_flag = gc_eth_theocracy_failsafe
 	}
 }
