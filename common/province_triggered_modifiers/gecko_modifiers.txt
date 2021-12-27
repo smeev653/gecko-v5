@@ -379,14 +379,15 @@ conquest_of_berlin = {
 		owner = {
 				NOT = { tag = BRA }
 				NOT = { tag = PRU }
-			}
-		OR = { 
-			tag = SWE
-			tag = HSA
-			tag = HES
-			tag = WES
-			tag = HAN
-		}	
+			
+				OR = { 
+					tag = SWE
+					tag = HSA
+					tag = HES
+					tag = WES
+					tag = HAN
+				}
+		}		
 		controlled_by = ROOT
 	}
 	land_morale = 0.05

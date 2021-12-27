@@ -13614,10 +13614,10 @@ RIG_ideas = {
 CRI_ideas = {
 	start = {
 		cavalry_power = 0.2
-		loot_amount = 0.25
+		core_creation = -0.25
 	}
 	bonus = {
-		core_creation = -0.25
+		trade_efficiency = 0.1
 	}
 	trigger = {
 		tag = CRI
@@ -13636,7 +13636,7 @@ CRI_ideas = {
 	}
 
 	cri_ruthenian_raids = {
-		trade_efficiency = 0.1
+		loot_amount = 0.25
 	}
 	
 	cri_free_cattle_grazing = {

@@ -3,7 +3,12 @@
   HET_ADJ:0 "Hetmanate"
   GZM:0 "Great Zimbabwe"
   GZM_ADJ:0 "Great Zimbabwe"
+  STI:0 "Asti"
+  STI_ADJ:0 "Astese"
+  RIM:0 "Rimini"
+  RIM_ADJ:0 "Riminese"
 
+ 
   #Germans
   NGF:0 "North German Federation"
   NGF_ADJ:0 "North German"
