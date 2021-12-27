@@ -645,8 +645,8 @@ bank_loan = {
 
 inflation = {
 	#build_cost = 0.01						#1% for each inflation step.
-	infantry_cost = 0.02					#1% for each inflation step
-	cavalry_cost = 0.02					#1% for each inflation step
+	infantry_cost = 0.01					#1% for each inflation step
+	cavalry_cost = 0.01					#1% for each inflation step
 	artillery_cost = 0.02					#1% for each inflation step
 	heavy_ship_cost = 0.01					#1% for each inflation step
 	light_ship_cost = 0.01					#1% for each inflation step
@@ -659,7 +659,7 @@ inflation = {
 }
 
 bankruptcy = {
-	#interest = 5
+	interest = 0.5
 	land_morale = -0.75
 	naval_morale = -0.75
 	reinforce_speed = -0.5					#Slower reinforce

@@ -878,4 +878,23 @@ country_event = {
 		create_advisor = gc_arty_officer	
 	}	
 }
+
+country_event = {
+	id = gecko.12
+	title = gecko.12.t
+	desc = gecko.12.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = gecko.12.a
+		add_stability = 3
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_war_exhaustion = -20
+	}
+}
 	
