@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 		tag = KHA
+		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 723 #Xilin Gol
