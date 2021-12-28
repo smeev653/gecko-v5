@@ -2298,6 +2298,7 @@ pagan = {
 		}
 		can_have_secondary_religion = yes
 		heretic = { OLD_TENGRI }
+		ancestors = yes
 	}
 	
 	dreamtime = {
