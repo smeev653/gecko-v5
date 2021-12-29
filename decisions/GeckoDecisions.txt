@@ -112,6 +112,16 @@ country_decisions = {
 						continent = south_america
 					}
 				}
+				NOT = {
+					capital_scope = {
+						continent = asia
+					}
+				}
+				NOT = {
+					capital_scope = {
+						region = ural_region
+					}
+				}
 				NOT = { has_country_modifier = free_colonist}
 					
 			}
