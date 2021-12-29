@@ -70,7 +70,7 @@ estate_nomadic_tribes = {
 	}
 
 	# Influence modifiers
-	base_influence = 25
+	base_influence = 20
 
 	influence_from_dev_modifier = 0.4
 

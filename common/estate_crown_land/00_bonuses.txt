@@ -53,7 +53,7 @@ bonus = {
     range_from = 20.0
     range_to = 30.0
     modifier = {
-        max_absolutism = -10
+        #max_absolutism = -10
         #liberty_desire_from_subject_development = 0.25
         #global_tax_modifier = -0.1
     }

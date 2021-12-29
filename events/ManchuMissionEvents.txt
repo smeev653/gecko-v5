@@ -287,12 +287,7 @@ country_event = {
 				}
 				change_culture = mongol
 			}
-			change_tag = KHA
 			add_prestige = 25
-			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
-			}
 		}
 	}
 	option = { # reorganize the tribes

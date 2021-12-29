@@ -2,7 +2,7 @@ estate_gc_noble_levies = {
 	icon = privilege_raise_host
 	max_absolutism = -5
 	loyalty = 0.10
-	influence = 0.30
+	influence = 0.20
 	cooldown_years = 10
 	on_cooldown_expires = { 
 			country_event = { id = gecko.8 }
