@@ -1,7 +1,7 @@
 GC_Ethiopia_Mechanic = {
 
 	has_devotion = yes
-	heir = no
+	heir = yes
 	queen = no
     religion = yes
 	rulers_can_be_generals = yes
@@ -37,5 +37,6 @@ gc_ethiopian_theocracy_reform = { #tier 1
 		missionaries = 1
 	    devotion = 1
 		land_morale = 0.10
+		monthly_heir_claim_increase = 0.05
 	}
 }

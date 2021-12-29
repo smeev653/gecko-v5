@@ -89,13 +89,13 @@
  gc_eth_events.3.d:0 "The Coptic Faith has reformed into a Religion where the Emperor is also the Head of the State."
  gc_eth_events.3.a:0 "Sent by God"
 
- gc_eth_events.4.title:0 "New Leader Elected!"
- gc_eth_events.4.desc:0 "Now that your time as a Mortal comes to an end, you must chose your Heir."
- gc_eth_events.4.a:0 "The Administrator"
- gc_eth_events.4.b:0 "The Diplomat"
- gc_eth_events.4.c:0 "The Militarist"
- gc_eth_events.4.d:0 "The Strategist"
- gc_eth_events.4.e:0 "The Tactician"
+ gc_eth_events.4.title:0 "Divine Election"
+ gc_eth_events.4.desc:0 "The Time for an Election has come. You must decide on a capable Heir. \n God believes in ..."
+ gc_eth_events.4.a:0 "... The Administrator"
+ gc_eth_events.4.b:0 "... The Diplomat"
+ gc_eth_events.4.c:0 "... The Militarist"
+ gc_eth_events.4.d:0 "... The Strategist"
+ gc_eth_events.4.e:0 "... The Tactician"
 
  #Timurids 
 
