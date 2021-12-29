@@ -50,6 +50,11 @@
  gecko_recruit_military_advisor_title:0 "Recruit Military Advisor"
  gecko_recruit_military_advisor_desc:0 ""
 
+ #gecko critial events
+ GC_infantry_leader_cooldown_tooltip:0 "Infantry Leader"
+ GC_cavalry_leader_cooldown_tooltip:0 "Cavalry Leader"
+ GC_arty_officer_cooldown_tooltip:0 "Arty Officer"
+
  #Germans
  gc_form_ngf_title:0 "Unite North Germany"
  gc_form_ngf_desc:0 ""

@@ -9,7 +9,8 @@ country_event = { #Arty Officer
     trigger = {
 		gc_arty_officer = 3
 		NOT = { has_country_modifier = gc_arty_officer_delayed }
-		NOT = { has_country_flag = gc_arty_officer_flag }
+		#NOT = { has_country_flag = gc_arty_officer_flag }
+		NOT = { has_country_modifier = gc_arty_officer_cooldown }
 	}
 
     mean_time_to_happen = {
@@ -53,7 +54,12 @@ country_event = { #Arty Officer
 			name = "gc_arty_officer_modifier"
 			duration = 2190
 		}
-        set_country_flag = gc_arty_officer_flag
+		add_country_modifier = { 
+			name = gc_arty_officer_cooldown
+			duration = 36500
+			hidden = yes
+		}
+        #set_country_flag = gc_arty_officer_flag
     }
 
     option = { # His reputation will reach further than our borders
@@ -64,11 +70,14 @@ country_event = { #Arty Officer
 			name = "gc_arty_officer_modifier"
 			duration = 2190
 		}
-        set_country_flag = gc_arty_officer_flag
+		add_country_modifier = { 
+			name = gc_arty_officer_cooldown
+			duration = 36500
+			hidden = yes
+		}
+        #set_country_flag = gc_arty_officer_flag
     }
 }
-
-
 
 country_event = { #Drill Master
     id = gc_advisor_events.2
@@ -215,7 +224,8 @@ country_event = { #infantry_leader
     trigger = {
 		infantry_leader = 3
 		NOT = { has_country_modifier = gc_infantry_leader_delayed }
-		NOT = { has_country_flag = gc_infantry_leader_flag }
+		#NOT = { has_country_flag = gc_infantry_leader_flag }
+		NOT = { has_country_modifier = gc_infantry_leader_cooldown }
 	}
 
     mean_time_to_happen = {
@@ -259,7 +269,12 @@ country_event = { #infantry_leader
 			name = "gc_infantry_leader_modifier"
 			duration = 2190
 		}
-        set_country_flag = gc_infantry_leader_flag
+		add_country_modifier = { 
+			name = gc_infantry_leader_cooldown
+			duration = 36500
+			hidden = yes
+		}
+        #set_country_flag = gc_infantry_leader_flag
     }
 
     option = { # His reputation will reach further than our borders
@@ -270,7 +285,12 @@ country_event = { #infantry_leader
 			name = "gc_infantry_leader_modifier"
 			duration = 2190
 		}
-        set_country_flag = gc_infantry_leader_flag
+		add_country_modifier = { 
+			name = gc_infantry_leader_cooldown
+			duration = 36500
+			hidden = yes
+		}
+        #set_country_flag = gc_infantry_leader_flag
     }
 }
 
@@ -283,7 +303,8 @@ country_event = { #cavalry_leader
     trigger = {
 		cavalry_leader = 3
 		NOT = { has_country_modifier = gc_cavalry_leader_delayed }
-		NOT = { has_country_flag = gc_cavalry_leader_flag }
+		#NOT = { has_country_flag = gc_cavalry_leader_flag }
+		NOT = { has_country_modifier = gc_cavalry_leader_cooldown }
 	}
 
     mean_time_to_happen = {
@@ -327,7 +348,12 @@ country_event = { #cavalry_leader
 			name = "gc_cavalry_leader_modifier"
 			duration = 2190
 		}
-        set_country_flag = gc_cavalry_leader_flag
+		add_country_modifier = { 
+			name = gc_cavalry_leader_cooldown
+			duration = 36500
+			hidden = yes
+		}
+        #set_country_flag = gc_cavalry_leader_flag
     }
 
     option = { # His reputation will reach further than our borders
@@ -338,6 +364,11 @@ country_event = { #cavalry_leader
 			name = "gc_cavalry_leader_modifier"
 			duration = 2190
 		}
-        set_country_flag = gc_cavalry_leader_flag
+		add_country_modifier = { 
+			name = gc_cavalry_leader_cooldown
+			duration = 36500
+			hidden = yes
+		}
+        #set_country_flag = gc_cavalry_leader_flag
     }
 }

@@ -128,6 +128,9 @@ gc_arty_officer_modifier = {
 	artillery_power = 0.15
 }
 
+gc_arty_officer_cooldown = {
+}
+
 gc_drill_master_delayed = {
 	drill_decay_modifier = -0.001
 }
@@ -200,10 +203,16 @@ gc_infantry_leader_modifier = {
 	infantry_power = 0.15
 }
 
+gc_infantry_leader_cooldown = {
+}
+
 gc_cavalry_leader_delayed = {
 	cavalry_power = 0.001
 }
 
 gc_cavalry_leader_modifier = {
 	cavalry_power = 0.15
+}
+
+gc_cavalry_leader_cooldown = {
 }
