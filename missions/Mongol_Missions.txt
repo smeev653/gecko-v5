@@ -1,209 +1,6 @@
 # These missions should require X provinces in [region] rather than entire regions
 
-oir_missions_1 = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		tag = OIR
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	oir_tumu_crisis = {
-		icon = mission_kowtow
-		required_missions = {  }
-		provinces_to_highlight = {
-			province_id = 1816
-		}
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = tumu_crisis_complete_tt
-				OR = {
-					has_country_flag = tumu_crisis_victory
-					owns_core_province = 1816
-				}
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					has_reform = steppe_horde
-				}
-				add_horde_unity = 25
-			}
-			add_army_tradition = 20
-		}
-	}
-}
 
-mongol_missions_1 = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			primary_culture = mongol
-			primary_culture = chahar
-			primary_culture = khalkha
-			primary_culture = oirats
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	mongols_restore_yuan = {
-		icon = mission_asian_city
-		required_missions = { mongols_unite_the_mongols }
-		position = 3
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1816
-				province_id = 2136
-				region = north_china_region
-			}
-			NOT = {
-				owned_by = ROOT
-				is_core = ROOT
-			}
-		}
-		trigger = {
-			owns_core_province = 1816
-			owns_core_province = 2136
-			num_of_owned_provinces_with = {
-				region = north_china_region
-				is_core = ROOT
-				value = 20
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					has_reform = steppe_horde
-				}
-				add_horde_unity = 25
-			}
-			xinan_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			south_china_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	mongols_reconquer_china = {
-		icon = mission_chinese_general_riding
-		required_missions = { mongols_restore_yuan }
-		provinces_to_highlight = {
-			OR = {
-				region = xinan_region
-				region = south_china_region
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				OR = {
-					region = xinan_region
-					region = south_china_region
-				}
-				value = 40
-			}
-		}
-		effect = {
-			if = {
-				limit = { is_emperor_of_china = yes }
-				add_mandate = 50
-			}
-			else = {
-				add_stability_or_adm_power = yes
-			}
-			add_adm_power = 100
-			add_dip_power = 100
-			add_mil_power = 100
-		}
-	}
-	mongols_subjugate_korea = {
-		icon = mission_asian_cannon
-		required_missions = { mongols_reconquer_china }
-		provinces_to_highlight = {
-			OR = {
-				region = korea_region
-				owned_by = KOR
-			}
-		}
-		trigger = {
-			OR = {
-				KOR = {
-					is_subject_of = ROOT
-				}
-				korea_region = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					is_emperor_of_china = yes
-				}
-				add_mandate = 20
-			}
-			add_country_modifier = {
-				name = mongol_fleet_modifier
-				duration = 7300
-			}
-			kinai_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			sanindo_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	mongols_invade_japan = {
-		icon = mission_japanese_samurai
-		required_missions = { mongols_subjugate_korea }
-		provinces_to_highlight = {
-			province_id = 1020
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			1020 = { owned_by = ROOT }
-		}
-		effect = {
-			add_country_modifier = {
-				name = "mongol_defeated_japan"
-				duration = -1
-			}
-			japan_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
 
 mongol_missions_2 = {
 	slot = 2
@@ -265,9 +62,9 @@ mongol_missions_2 = {
 		provinces_to_highlight = {
 			OR = {
 				culture = mongol
-			#culture = chahar
 				culture = khalkha
 				culture = oirats
+				culture = uyghur
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -278,10 +75,14 @@ mongol_missions_2 = {
 			}
 			num_of_owned_provinces_with = {
 				culture = khalkha
-				value = 5
+				value = 17
 			}
 			num_of_owned_provinces_with = {
 				culture = oirats
+				value = 16
+			}
+			num_of_owned_provinces_with = {
+				culture = uyghur
 				value = 5
 			}
 		}

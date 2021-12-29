@@ -3605,6 +3605,8 @@ altaic = {
 	graphical_culture = muslimgfx
 
 	mongol = {
+		country = { has_banners = 1}
+		province = { local_has_banners = 1}
 		primary = KHA
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
