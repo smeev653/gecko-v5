@@ -2440,7 +2440,7 @@ dhimmi_building_restrictions = {
 }
 
 grain_bonus_prod = {
-	local_production_efficiency = 0.75
+	local_production_efficiency = 0.5
 }
 
 wine_bonus_prod = {
