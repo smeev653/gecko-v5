@@ -52,8 +52,18 @@
  #Advisor Event modifiers
  gc_arty_officer_delayed:0 "Arty Officer Delayed"
  gc_arty_officer_modifier:0 "Excellent Artillery Officers"
+
  gc_drill_master_delayed:0 "Drill Master Delayed"
  gc_drill_master_modifier:0 "Excellent Drill Master"
+
+ gc_siege_specialist_delayed:0 "Siege Specialist Delayed"
+ gc_siege_specialist_modifier:0 "Excellent Siege Specialist"
+
+ gc_infantry_leader_delayed:0 "Infantry Leader Delayed"
+ gc_infantry_leader_modifier:0 "Excellent Infantry Leader"
+
+ gc_cavalry_leader_delayed:0 "Cavalry Leader Delayed"
+ gc_cavalry_leader_modifier:0 "Excellent Cavalry Leader"
 
  #Mamluks
  mam_slave_soldiers:0 "Gihadiya Conscription"

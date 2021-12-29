@@ -137,3 +137,207 @@ country_event = { #Drill Master
         set_country_flag = gc_drill_master_flag
     }
 }
+
+country_event = { #siege_specialist
+    id = gc_advisor_events.3
+    title = gc_advisor_events.3.t
+    desc = gc_advisor_events.3.d 
+    picture = ADVISOR_eventPicture
+
+    trigger = {
+		siege_specialist = 3
+		NOT = { has_country_modifier = gc_siege_specialist_delayed }
+		NOT = { has_country_flag = gc_siege_specialist_flag }
+	}
+
+    mean_time_to_happen = {
+		months = 60
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+
+    option = { #Perhaps another time
+        name = gc_advisor_events.3.a 
+        ai_chance = {
+			factor = 100
+		}
+        add_country_modifier = {
+			name = "gc_siege_specialist_delayed"
+			duration = 7300
+		}
+    }
+
+    option = { # His efforts will be admired throughout the nation
+        name = gc_advisor_events.3.b 
+        add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+        add_country_modifier = {
+			name = "gc_siege_specialist_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_siege_specialist_flag
+    }
+
+    option = { # His reputation will reach further than our borders
+        name = gc_advisor_events.3.c
+        add_meritocracy_effect = yes
+		add_prestige = 50
+        add_country_modifier = {
+			name = "gc_siege_specialist_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_siege_specialist_flag
+    }
+}
+
+country_event = { #infantry_leader
+    id = gc_advisor_events.4
+    title = gc_advisor_events.4.t
+    desc = gc_advisor_events.4.d 
+    picture = ADVISOR_eventPicture
+
+    trigger = {
+		infantry_leader = 3
+		NOT = { has_country_modifier = gc_infantry_leader_delayed }
+		NOT = { has_country_flag = gc_infantry_leader_flag }
+	}
+
+    mean_time_to_happen = {
+		months = 60
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+
+    option = { #Perhaps another time
+        name = gc_advisor_events.4.a 
+        ai_chance = {
+			factor = 100
+		}
+        add_country_modifier = {
+			name = "gc_infantry_leader_delayed"
+			duration = 7300
+		}
+    }
+
+    option = { # His efforts will be admired throughout the nation
+        name = gc_advisor_events.4.b 
+        add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+        add_country_modifier = {
+			name = "gc_infantry_leader_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_infantry_leader_flag
+    }
+
+    option = { # His reputation will reach further than our borders
+        name = gc_advisor_events.4.c
+        add_meritocracy_effect = yes
+		add_prestige = 50
+        add_country_modifier = {
+			name = "gc_infantry_leader_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_infantry_leader_flag
+    }
+}
+
+country_event = { #cavalry_leader
+    id = gc_advisor_events.5
+    title = gc_advisor_events.5.t
+    desc = gc_advisor_events.5.d 
+    picture = ADVISOR_eventPicture
+
+    trigger = {
+		cavalry_leader = 3
+		NOT = { has_country_modifier = gc_cavalry_leader_delayed }
+		NOT = { has_country_flag = gc_cavalry_leader_flag }
+	}
+
+    mean_time_to_happen = {
+		months = 60
+		
+		
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			innovativeness_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { innovativeness_ideas = 2 }
+		}
+	}
+
+    option = { #Perhaps another time
+        name = gc_advisor_events.5.a 
+        ai_chance = {
+			factor = 100
+		}
+        add_country_modifier = {
+			name = "gc_cavalry_leader_delayed"
+			duration = 7300
+		}
+    }
+
+    option = { # His efforts will be admired throughout the nation
+        name = gc_advisor_events.5.b 
+        add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+        add_country_modifier = {
+			name = "gc_cavalry_leader_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_cavalry_leader_flag
+    }
+
+    option = { # His reputation will reach further than our borders
+        name = gc_advisor_events.5.c
+        add_meritocracy_effect = yes
+		add_prestige = 50
+        add_country_modifier = {
+			name = "gc_cavalry_leader_modifier"
+			duration = 2190
+		}
+        set_country_flag = gc_cavalry_leader_flag
+    }
+}

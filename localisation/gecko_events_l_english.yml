@@ -44,6 +44,24 @@
  gc_advisor_events.2.b:0 "$GC_DRILL_MASTER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
  gc_advisor_events.2.c:0 "$GC_DRILL_MASTER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
 
+ gc_advisor_events.3.t:0 "$SIEGE_SPECIALIST$"
+ gc_advisor_events.3.d:0 "A Siege Specialist par excellence, $SIEGE_SPECIALIST$ has turned our pioneers into a force to be reckoned with."
+ gc_advisor_events.3.a:0 "Perhaps another Time" 
+ gc_advisor_events.3.b:0 "$SIEGE_SPECIALIST_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
+ gc_advisor_events.3.c:0 "$SIEGE_SPECIALIST_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
+
+ gc_advisor_events.4.t:0 "$INFANTRY_LEADER$"
+ gc_advisor_events.4.d:0 "An Infantry Leader par excellence, $INFANTRY_LEADER$ has turned our Infantry into clockwork automatons that don't flinch on the battlefield."
+ gc_advisor_events.4.a:0 "Perhaps another Time" 
+ gc_advisor_events.4.b:0 "$INFANTRY_LEADER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
+ gc_advisor_events.4.c:0 "$INFANTRY_LEADER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
+
+ gc_advisor_events.5.t:0 "$CAVALRY_LEADER$"
+ gc_advisor_events.5.d:0 "A Cavalry Leader par excellence, $CAVALRY_LEADER$ has turned our Cavalry into a tool of fear."
+ gc_advisor_events.5.a:0 "Perhaps another Time" 
+ gc_advisor_events.5.b:0 "$CAVALRY_LEADER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
+ gc_advisor_events.5.c:0 "$CAVALRY_LEADER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
+
  gecko.11.title:0 "Recruit Military Advisor"
  gecko.11.desc:0 "Use the state's resources to find an appropriate advisor. Scroll down for more."
  gecko.11.a:0 "Recruit Commandant"
