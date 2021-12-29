@@ -1458,7 +1458,7 @@ consolidate_power_in_doge_reform = {
 	modifiers = {
 		global_manpower = 15
 	}
-	has_term_election = no
+	has_term_election = yes
 	ai = {
 		factor = 10
 		modifier = {
