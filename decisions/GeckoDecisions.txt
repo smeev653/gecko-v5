@@ -253,11 +253,11 @@ country_decisions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = PR_commandant_decision
-				NOT = { has_country_flag = commandant }
+				NOT = { has_country_modifier = commandant_cooldown }
 			}
 			custom_trigger_tooltip = {
 				tooltip = PR_grand_captain_decision
-				NOT = { has_country_flag = grand_captain }
+				NOT = { has_country_modifier = grand_captain_cooldown }
 			}
 			always = no
 		}
