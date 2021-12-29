@@ -512,8 +512,8 @@ sicily_area = { #3 # now Eastern Sicily
 	124 126 2982 5776
 }
 
-western_sicily_area = { #3
-	125 4736 4737 5775
+western_sicily_area = {  #3
+	125 4736 4737 5775 6158 
 }
 
 central_italy_area = {   #3
