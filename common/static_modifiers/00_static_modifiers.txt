@@ -769,7 +769,7 @@ army_tradition = {
 	nobles_loyalty_modifier = 0.1
 	maratha_loyalty_modifier = 0.05
 	rajput_loyalty_modifier = 0.05
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.02
 }
 
 navy_tradition = {
@@ -1338,7 +1338,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.005625
+	yearly_army_professionalism = 0.0025
 }
 
 ##################################################################################################
