@@ -114,3 +114,7 @@
  #buildup mission
 
  gc_investment:0 "Internal Investment"
+ 
+ #arabia
+ 
+ wahabism_modifier:0 "Wahabi Scholar"

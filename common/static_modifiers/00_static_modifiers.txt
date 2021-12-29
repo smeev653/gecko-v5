@@ -1595,6 +1595,15 @@ hanafi_scholar_modifier = {
 	adm_tech_cost_modifier = -0.1
 }
 
+
+wahabism_modifier = {
+	religion = yes
+	land_morale = 0.15
+	missionaries = 1
+	tolerance_heathen = -2
+	tolerance_heretic = -3
+}
+
 hanbali_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
