@@ -184,9 +184,8 @@ country_decisions = {
 		}
 		effect = {
 			country_event  = { id = catholic_flavor.2 }
-			every_province = {
+			italy_region = {
 				limit = {
-					region = italy_region
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT

@@ -491,8 +491,8 @@ naval_supplies = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				has_terrain = forest
-				has_terrain = woods
+				#has_terrain = forest
+				#has_terrain = woods
 				has_terrain = hills
 				has_terrain = jungle
 			}

@@ -379,14 +379,15 @@ conquest_of_berlin = {
 		owner = {
 				NOT = { tag = BRA }
 				NOT = { tag = PRU }
-			}
-		OR = { 
-			tag = SWE
-			tag = HSA
-			tag = HES
-			tag = WES
-			tag = HAN
-		}	
+			
+				OR = { 
+					tag = SWE
+					tag = HSA
+					tag = HES
+					tag = WES
+					tag = HAN
+				}
+		}		
 		controlled_by = ROOT
 	}
 	land_morale = 0.05
@@ -430,26 +431,24 @@ conquest_of_saint_petersburg = {
 
 conquest_of_sarai = {
 	potential = {
-			OR = {
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}	
+		OR = {
+			culture_group = altaic
+			culture_group = tartar
+		}	
 	}
 
 	trigger = {
 		owner = {
 			OR = {
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}
+			culture_group = altaic
+			culture_group = tartar
+		}
 		}	
 		controlled_by = ROOT	
 	}
 
-	technology_cost = -0.05
-	prestige = 0.5
+	technology_cost = -0.1
+	global_tax_modifier = 0.15
 	
 	#Province scope
 	on_activation = {
@@ -616,4 +615,22 @@ my_desert = {
 		on_deactivation = {
 		
 		}
-}		
+}	
+
+gc_mongol_kurultai = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_global_flag = gc_mongol_kurultai
+	}
+	trigger = {
+		owner = {
+			OR = {
+				tag = OIR
+				tag = MGE
+			}
+		}
+	}
+	
+	horde_unity = 1
+	trade_goods_size = 5
+}	
