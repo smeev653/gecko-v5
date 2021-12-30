@@ -6,10 +6,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4049;4020;sea;1449;-1;-1;-1;-1;Comoros-Ibo
 2788;1099;sea;1446;-1;-1;-1;-1;Hafun-Suqutra
 366;347;sea;1471;-1;-1;-1;-1;Gran Canaria-Ifni
-321;2302;sea;1317;-1;-1;-1;-1;Cyprus-Icel 
+321;2302;sea;1317;-1;-1;-1;-1;Cyprus-Icel
+321;378;sea;1317;-1;-1;-1;-1;Cyprus-Trablos
 320;319;sea;1319;-1;-1;-1;-1;Rhodes-Mentesha 
-2982;126;sea;1305;-1;-1;-1;-1;Siracusa-Malta 
-115;1247;sea;1298;-1;-1;-1;-1;Pisa-Corsica
+2982;126;sea;1305;-1;-1;-1;-1;Siracusa-Malta
+4736;6158;sea;1305;-1;-1;-1;-1;Trapani-Pantelleria
+341;6158;sea;1305;-1;-1;-1;-1;Tunis-Pantelleria
+
+6048;1247;sea;1298;-1;-1;-1;-1;Pisa-Corsica
 130;4753;sea;1308;-1;-1;-1;-1;Istria-Zara
 4754;4174;sea;1310;-1;-1;-1;-1;Kotor-Durazzo
 6126;4174;sea;1310;-1;-1;-1;-1;Otranto-Durazzo

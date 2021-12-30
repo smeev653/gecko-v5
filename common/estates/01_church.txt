@@ -17,6 +17,14 @@ estate_church =
 		NOT = { government = native }
 		NOT = { is_revolutionary_republic_trigger = yes }
 		OR = {
+			NOT = { is_nomad = yes }
+			tag = CRI
+			tag = HET
+			tag = OIR
+			tag = KHA
+			tag = MGE
+		}
+		OR = {
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}

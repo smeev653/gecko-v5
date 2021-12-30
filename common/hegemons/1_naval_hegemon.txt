@@ -5,8 +5,8 @@ naval_hegemon = {
 			num_of_heavy_ship = 250
 			num_of_galley = 1000
 		}
-		naval_forcelimit = 500
-		sailors = 150000
+		#naval_forcelimit = 500
+		sailors = 50000
 		NOT = { any_other_great_power = { num_of_heavy_ship = root } }
 		NOT = { any_other_great_power = { num_of_galley = root } }
 	}

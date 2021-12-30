@@ -461,6 +461,13 @@ gc_cri_branch_3 = {
                 add_base_tax = 1
                 add_base_production = 1
             }
+			add_years_of_owned_provinces_production_income = {
+				years = 2
+				trigger = {
+					has_production_building_trigger = yes
+				}
+				custom_tooltip = INCOME_FROM_WORKSHOPS_DESC
+			}
         }
     }
 
@@ -519,10 +526,12 @@ gc_cri_branch_3 = {
             astrakhan_area = {
                 add_base_tax = 1
                 add_base_production = 1
+				add_base_manpower = 1
             }
             saratov_area = {
                 add_base_tax = 1
                 add_base_production = 1
+				add_base_manpower = 1
             }
         }
     }

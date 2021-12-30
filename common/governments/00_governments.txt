@@ -432,22 +432,26 @@ tribal = {
 		}
 		tribal_religion = {
 			reforms = {
-				religious_societies_reform
 				lip_service_reform
+				centralize_tribal_power_reform
 			}
 		}
 		tribal_modernization = {
 			reforms = {
-				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
 				decentralize_reform
 				centralize_reform
 			}
 		}
-		tribal_reformation = {
+		tribal_innovation = {
 			reforms = {
 				horde_barbaric_despoilers_reform
 				horde_tribal_unity_reform
+				religious_societies_reform
+			}
+		}
+		tribal_reformation = {
+			reforms = {		
 				tribe_becomes_monarchy_reform
 				tribe_becomes_republic_reform
 				tribe_becomes_theocracy_reform
