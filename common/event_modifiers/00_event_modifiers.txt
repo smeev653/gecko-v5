@@ -2,13 +2,13 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
-#national_bank_interest = {
-#	interest = -0.5
-#}
+national_bank_interest = {
+	interest = -0.5
+}
 
-#national_bank_inflation = {
-#	inflation_reduction = 0.05
-#}
+national_bank_inflation = {
+	inflation_reduction = 0.05
+}
 
 the_proper_old_ways = {
 	raze_power_gain = 0.20
@@ -2293,24 +2293,24 @@ church_reduction = {
 	religion = yes
 }
 
-#wallon_immigrants = {
-#	trade_goods_size = 0.2
-#}
+wallon_immigrants = {
+	trade_goods_size = 0.2
+}
 
-#swedish_military_reforms = {
-#	infantry_cost = -0.1
-#	land_morale = 0.05
-#}
+swedish_military_reforms = {
+	infantry_cost = -0.1
+	land_morale = 0.05
+}
 
-#swedish_mercenary_core = {
-#	merc_maintenance_modifier = -0.1
-#	mercenary_manpower = 0.5
-#}
+swedish_mercenary_core = {
+	merc_maintenance_modifier = -0.1
+	mercenary_manpower = 0.5
+}
 
-#swedish_naval_reforms = {
-#	heavy_ship_cost = -0.1
-#	naval_morale = 0.05
-#}
+swedish_naval_reforms = {
+	heavy_ship_cost = -0.1
+	naval_morale = 0.05
+}
 
 swedish_mercantile_reforms = {
 	global_prov_trade_power_modifier = 0.10
@@ -2440,7 +2440,7 @@ dhimmi_building_restrictions = {
 }
 
 grain_bonus_prod = {
-	local_production_efficiency = 0.5
+	local_production_efficiency = 0.75
 }
 
 wine_bonus_prod = {
@@ -4150,9 +4150,10 @@ guj_hardline_rel_policy = {
 }
 
 #Persia
-#per_abbas_advisors = {
-#	technology_cost = -0.20
-#}
+per_abbas_advisors = {
+	technology_cost = -0.20
+
+}
 
 per_political_turmoil_timer = { }
 per_political_fragmentation_timer = { }
@@ -6791,15 +6792,15 @@ pap_sistinechapel_decorated = {
 	global_missionary_strength = 0.01
 }
 
-#pap_indulgences = {
-#	global_tax_income = 5
-#}
-#pap_simony = {
-#	global_tax_income = 5
-#}
-#pap_veneration_relics = {
-#	global_tax_income = 5
-#}
+pap_indulgences = {
+	global_tax_income = 5
+}
+pap_simony = {
+	global_tax_income = 5
+}
+pap_veneration_relics = {
+	global_tax_income = 5
+}
 pap_condemn_slavery = {
 	global_tariffs = -0.05
 }
@@ -8670,11 +8671,11 @@ dissatisfied_jews = {
 }
 
 #Consort Events
-#domain_of_spouses_family = {
-#	local_autonomy = 0.1
-#	local_missionary_strength = -0.05
-#	local_unrest = -3
-#}
+domain_of_spouses_family = {
+	local_autonomy = 0.1
+	local_missionary_strength = -0.05
+	local_unrest = -3
+}
 
 angered_nobles = {
 	local_unrest = 3
@@ -9614,9 +9615,9 @@ urban_decay = {
 	local_development_cost = 0.5
 }
 
-#upkeep_of_holy_cities = {
-#	global_tax_modifier = -0.2
-#}
+upkeep_of_holy_cities = {
+	global_tax_modifier = -0.2
+}
 
 expanded_madrasah = {
 	local_development_cost = -0.15
@@ -9679,21 +9680,21 @@ good_pious_mufti_modifier = {
 	yearly_corruption = -0.05
 }
 
-#bad_sufi_modifier = {
-#	religion = yes
-#	legitimacy = 0.5
-#}
+bad_sufi_modifier = {
+	religion = yes
+	legitimacy = 0.5
+}
 
-#ok_sufi_modifier = {
-#	religion = yes
-#	legitimacy = 1
-#}
+ok_sufi_modifier = {
+	religion = yes
+	legitimacy = 1
+}
 
-#good_sufi_modifier = {
-#	religion = yes
-#	legitimacy = 1
-#	global_missionary_strength = 0.02
-#}
+good_sufi_modifier = {
+	religion = yes
+	legitimacy = 1
+	global_missionary_strength = 0.02
+}
 
 #Trade Policy Events
 
@@ -9973,10 +9974,10 @@ loyal_mamluks_in_high_positions = {
 	state_maintenance_modifier = 0.1
 }
 
-#purification_of_tax_laws = {
-#	global_tax_modifier = -0.15
-#	global_unrest = -1
-#}
+purification_of_tax_laws = {
+	global_tax_modifier = -0.15
+	global_unrest = -1
+}
 
 furusiyya = {
 	cavalry_power = 0.1
@@ -11320,14 +11321,14 @@ colony_inspired_by_revolution = {
 	liberty_desire = 30
 }
 
-#estate_cossacks_prime_herding_rights_mod = {
-#	local_tax_modifier = -0.15
-#	local_manpower_modifier = 0.25
-#}
+estate_cossacks_prime_herding_rights_mod = {
+	local_tax_modifier = -0.15
+	local_manpower_modifier = 0.25
+}
 
-#estate_cossacks_exploration_expedition_mod = {
-#	local_development_cost = -0.15
-#}
+estate_cossacks_exploration_expedition_mod = {
+	local_development_cost = -0.15
+}
 
 shortage_of_officers = {
 	army_tradition = -0.5
@@ -12134,11 +12135,11 @@ estate_burghers_hydraulic_rights_coastal_desert = {
 }
 
 estate_burghers_hydraulic_rights_steppes = {
-	local_development_cost = -0.15
+	local_development_cost = -0.1
 }
 
 estate_burghers_hydraulic_rights_savanna = {
-	local_development_cost = -0.1
+	local_development_cost = -0.075
 }
 
 estate_nobles_neighbor_raids_fort = {

@@ -1916,7 +1916,7 @@ BOH_ideas = {
 }
 
 
-ITA_ideas = { #Italian Ideas
+ITA_ideas = {
 	start = {
 		trade_efficiency = 0.20
 		reinforce_speed = 0.25
@@ -8229,10 +8229,10 @@ MRA_ideas = {
 	}
 }
 
-ROM_ideas = { #Roman Empire
+ROM_ideas = {
 	start = {
-		reinforce_speed = 0.25
-		trade_efficiency = 0.2
+		discipline = 0.05
+		legitimacy = 1
 	}
 	
 	bonus = {
@@ -8246,31 +8246,25 @@ ROM_ideas = { #Roman Empire
 	
 	pax_romana = {
 		global_unrest = -1
-		land_forcelimit_modifier = 0.25
 	}
 	legacy_of_rome = {
-		galley_cost = -0.2
-		galley_power = 0.25
+		diplomatic_reputation = 2
 	}
 	spqr = {
-		stability_cost_modifier = -0.25
-		land_morale = 0.15
+		stability_cost_modifier = -0.2
 	}
 	roman_legions = {
-		infantry_power = 0.2
-		discipline = 0.05
+		infantry_power = 0.10
+		land_forcelimit_modifier = 0.15
 	}
 	roman_architecture = {
 		production_efficiency = 0.2
-		development_cost = -0.05
 	}
 	imperial_bureaucracy = {
-		global_tax_modifier = 0.2
-		technology_cost = -0.1
+		global_tax_modifier = 0.1
 	}
 	imperium_sine_fine = {
 		core_creation = -0.20
-		num_accepted_cultures = 3
 	}
 }
 
@@ -13620,10 +13614,10 @@ RIG_ideas = {
 CRI_ideas = {
 	start = {
 		cavalry_power = 0.2
-		core_creation = -0.25
+		loot_amount = 0.25
 	}
 	bonus = {
-		trade_efficiency = 0.1
+		core_creation = -0.25
 	}
 	trigger = {
 		tag = CRI
@@ -13642,7 +13636,7 @@ CRI_ideas = {
 	}
 
 	cri_ruthenian_raids = {
-		loot_amount = 0.25
+		trade_efficiency = 0.1
 	}
 	
 	cri_free_cattle_grazing = {

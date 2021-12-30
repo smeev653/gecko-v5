@@ -135,7 +135,6 @@ ghilman_administrative_positions_reform = { #tier 6
 		qizilbash_loyalty_modifier = -0.05
 		ghilman_influence_modifier = 0.05
 		ghilman_loyalty_modifier = 0.10
-		possible_policy = 1
 	}
 	ai = {
 		factor = 1000
@@ -231,7 +230,6 @@ reform_the_janissaries_reform = { #tier 6
 	modifiers = {
 		janissary_influence_modifier = -0.10
 		janissary_loyalty_modifier = -0.10
-		possible_policy = 1
 	}
 	custom_attributes = {
 		reform_the_janissaries_privilege_interaction = yes #used for localization of estate privilege

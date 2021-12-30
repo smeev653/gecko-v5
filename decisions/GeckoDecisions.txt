@@ -112,16 +112,6 @@ country_decisions = {
 						continent = south_america
 					}
 				}
-				NOT = {
-					capital_scope = {
-						continent = asia
-					}
-				}
-				NOT = {
-					capital_scope = {
-						region = ural_region
-					}
-				}
 				NOT = { has_country_modifier = free_colonist}
 					
 			}
@@ -253,23 +243,11 @@ country_decisions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = PR_commandant_decision
-				NOT = { has_country_modifier = commandant_cooldown }
+				NOT = { has_country_flag = commandant }
 			}
 			custom_trigger_tooltip = {
 				tooltip = PR_grand_captain_decision
-				NOT = { has_country_modifier = grand_captain_cooldown }
-			}
-			custom_trigger_tooltip = { #ICA 
-				tooltip = GC_infantry_leader_cooldown_tooltip
-				NOT = { has_country_modifier = gc_infantry_leader_cooldown }
-			}
-			custom_trigger_tooltip = { #CCA 
-				tooltip = GC_cavalry_leader_cooldown_tooltip
-				NOT = { has_country_modifier = gc_cavalry_leader_cooldown }
-			}
-			custom_trigger_tooltip = { #ACA 
-				tooltip = GC_arty_officer_cooldown_tooltip
-				NOT = { has_country_modifier = gc_arty_officer_cooldown }
+				NOT = { has_country_flag = grand_captain }
 			}
 			always = no
 		}

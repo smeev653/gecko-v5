@@ -8,8 +8,8 @@
 
  ###nomad estate changes###
  estate_nomadic_tribes_steppe_devcost:0 "Settle the Steppes"
- estate_nomadic_tribes_steppe_devcost_grant_tooltip:0 "§G-15%§! Local Development Cost in all Steppe provinces"
- estate_nomadic_tribes_steppe_devcost_revoke_tooltip:0 "Removes §YSettle the Steppes§! from all owned Steppe provinces."
+ estate_nomadic_tribes_steppe_devcost_grant_tooltip:0 "§G-10%§! Local Development Cost in all Livestock provinces"
+ estate_nomadic_tribes_steppe_devcost_revoke_tooltip:0 "Removes §YSettle the Steppes§! from all owned Livestock provinces."
  estate_nomadic_tribes_share_of_the_spoils:0 "Settle the Steppe"
  estate_nomadic_tribes_chieftains_autonomy:0 "Greater Autonomy for Chieftains"
  estate_nomadic_tribes_guaranteed_leadership_in_host:0 "Guaranteed Leadership of Host"
@@ -19,7 +19,7 @@
 
 
 #mamluk privilege
- estate_gc_noble_levies:0 "Noble Levies"
+ estate_gc_noble_levies:0 "Mamluk Noble Levies"
  estate_gc_noble_levies_desc:0 " "
 
 #bunker mod merge

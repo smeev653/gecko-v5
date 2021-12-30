@@ -60,28 +60,21 @@ country_event = { #Election of new Head of the State
 	desc = gc_eth_events.4.desc
 	picture = RELIGION_eventPicture
 
-    trigger = {
-		has_reform = gc_ethiopian_theocracy_reform
-		NOT = { has_heir = yes }
-	}
-
-	mean_time_to_happen = {
-		months = 30
-	}
+    is_triggered_only = yes
 
     option = {
 		name = gc_eth_events.4.a
-        define_heir = {
+        define_ruler = {
 			dynasty = ROOT
 			culture = ROOT
 			religion = ROOT
-			age = 40
+            age = 40
 			change_adm = 2
 		}
 	}
     option = {
 		name = gc_eth_events.4.b
-        define_heir = {
+        define_ruler = {
 			dynasty = ROOT
 			culture = ROOT
 			religion = ROOT
@@ -91,7 +84,7 @@ country_event = { #Election of new Head of the State
 	}
     option = {
 		name = gc_eth_events.4.c
-        define_heir = {
+        define_ruler = {
 			dynasty = ROOT
 			culture = ROOT
 			religion = ROOT
@@ -101,7 +94,7 @@ country_event = { #Election of new Head of the State
 	}
     option = {
 		name = gc_eth_events.4.d
-        define_heir = {
+        define_ruler = {
 			dynasty = ROOT
 			culture = ROOT
 			religion = ROOT
@@ -112,7 +105,7 @@ country_event = { #Election of new Head of the State
 	}
     option = {
 		name = gc_eth_events.4.e
-        define_heir = {
+        define_ruler = {
 			dynasty = ROOT
 			culture = ROOT
 			religion = ROOT

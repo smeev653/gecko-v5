@@ -610,7 +610,6 @@ categories =  {
 			387 4279 #Tihama al yemen
 			6122
 			163 #removed from highlands
-			6158
 		}
 	}	
 	

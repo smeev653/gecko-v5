@@ -891,8 +891,6 @@ has_completed_all_reforms_trigger = {
 			has_reform = many_fingers_of_god_reform
 			has_reform = religious_permanent_revolution_reform
 			has_reform = religion_in_one_country_reform
-			has_reform = religion_in_one_country_reform
-			has_reform = gecko_noble_regiments_reform
 		}
 	}
 }
@@ -916,7 +914,6 @@ has_final_tier_reforms_trigger = {
 			has_reform = many_fingers_of_god_reform
 			has_reform = religious_permanent_revolution_reform
 			has_reform = religion_in_one_country_reform
-			has_reform = gecko_noble_regiments_reform
 		}
 	}
 }
@@ -1438,15 +1435,15 @@ is_european_trade_node_province = {
 	OR = {
 		province_id = 1293
 		province_id = 1295
-		province_id = 109
-		province_id = 118
-		province_id = 151
-		province_id = 4312
+		province_id = 1298
+		province_id = 1308
+		province_id = 137
+		province_id = 1320
 		province_id = 1322
 		province_id = 280
 		province_id = 153
 		province_id = 134
-		#province_id = 61
+		province_id = 61
 		province_id = 45
 		province_id = 1876
 		province_id = 186
@@ -1455,11 +1452,9 @@ is_european_trade_node_province = {
 		province_id = 1975
 		province_id = 1926
 		province_id = 33
-		province_id = 295
-		#province_id = 1652
-		#province_id = 1082
+		province_id = 1652
+		province_id = 1082
 		province_id = 464
-		province_id = 262
 	}
 }
 
@@ -1477,7 +1472,7 @@ is_indian_trade_node_province = {
 
 has_any_colonist_idea = {
 	OR = {
-		#has_idea = colonial_ventures
+		has_idea = colonial_ventures
 		#has_idea = additional_colonists
 		#has_idea = general_colonization_law
 		has_idea = pioneer_spirit

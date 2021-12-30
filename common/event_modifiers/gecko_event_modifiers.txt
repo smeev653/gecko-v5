@@ -125,10 +125,7 @@ gc_arty_officer_delayed = {
 }
 
 gc_arty_officer_modifier = {
-	artillery_power = 0.15
-}
-
-gc_arty_officer_cooldown = {
+	artillery_power = 0.10
 }
 
 gc_drill_master_delayed = {
@@ -186,42 +183,3 @@ my_desert = {
 gecko_hyw = {
 	infantry_power = 0.1
 }	
-
-gc_siege_specialist_delayed = {
-	siege_ability = 0.001
-}
-
-gc_siege_specialist_modifier = {
-	siege_ability = 0.2
-}
-
-gc_infantry_leader_delayed = {
-	infantry_power = 0.001
-}
-
-gc_infantry_leader_modifier = {
-	infantry_power = 0.15
-}
-
-gc_infantry_leader_cooldown = {
-}
-
-gc_cavalry_leader_delayed = {
-	cavalry_power = 0.001
-}
-
-gc_cavalry_leader_modifier = {
-	cavalry_power = 0.15
-}
-
-gc_cavalry_leader_cooldown = {
-}
-
-gc_pope_controls_roman_empire = {
-	infantry_power = 0.1
-	land_forcelimit_modifier = 0.2
-	galley_power = 0.2
-	galley_cost = -0.2
-	production_efficiency = 0.2
-	num_accepted_cultures = 3
-}

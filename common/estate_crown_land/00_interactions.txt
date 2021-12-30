@@ -65,11 +65,7 @@ interaction = {
 		modifier = {
 			factor = 0
 			technology_group = indian
-		}
-		modifier = {
-			factor = 0
-			is_nomad = yes
-		}		
+		}			
 		modifier = {
 			factor = 1.25
 			has_any_disaster = yes
@@ -299,10 +295,6 @@ interaction = {
 		modifier = {
 			factor = 0
 			technology_group = indian
-		}
-		modifier = {
-			factor = 0
-			is_nomad = yes
 		}
 		modifier = {
 			factor = 0

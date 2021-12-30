@@ -1,0 +1,13 @@
+﻿l_english:
+ 
+ PR.building_alliances.tooltip:0 "At least §Y2§! countries:\nAlliance with §Y[Root.GetName]§!.\nHave at least §Y75§! opinion of §Y[Root.GetName]§!."
+ PR_qar_missions4_reward:0 "Unlock Clergy Exploration Expeditions Estate Privilege"
+ PR_qar_missions1_desc_title:0 "Conquer Samtskhe"
+ PR_qar_missions1_desc_desc:0 "TBD"
+ PR_qar_missions2_desc_title:0 "Secure the Caucasus"
+ PR_qar_missions2_desc_desc:0 "TBD"
+ PR_qar_missions3_desc_title:0 "Into Arabia"
+ PR_qar_missions3_desc_desc:0 "TBD"
+ PR_qar_missions4_desc_title:0 "Settle the Deserts"
+ PR_qar_missions4_desc_desc:0 "TBD"
+ 

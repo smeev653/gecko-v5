@@ -18,14 +18,6 @@ estate_burghers =
 		}
 		is_colonial_nation = no
 		NOT = { has_reform = revolutionary_empire_reform }
-		OR = {
-			NOT = { is_nomad = yes }
-			tag = CRI
-			tag = HET
-			tag = OIR
-			tag = KHA
-			tag = MGE
-		}
 	}
 
 	# These scale with loyalty & power

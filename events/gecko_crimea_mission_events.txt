@@ -18,9 +18,6 @@ country_event = {
 			add_base_manpower = 4
 		}
 		add_treasury = 500
-		change_adm = 1
-		change_dip = 1
-		change_mil = 1
 	}
 }
 

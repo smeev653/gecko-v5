@@ -208,20 +208,4 @@ country_event = {
 		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
 		add_country_modifier = { name = zaidi_scholar_modifier duration = 7300 }
 	}
-	option = {
-		trigger = {
-			NOT = { 
-				religious_school = {
-					group = muslim
-					school = wahabism
-				}
-			}
-			tag = ARB
-			is_year = 1820
-		}
-		name = PR_events.2.h # Wahabism
-		adm_power_cost = 50
-		clear_religious_scholar_modifiers_effect = yes
-		custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-		add_country_modifier = { name = wahabism_modifier duration = 7300 }
 }

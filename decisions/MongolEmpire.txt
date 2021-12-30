@@ -5,12 +5,9 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			OR = { # to prevent countries that can't form a prerequisite nation from seeing this
-				#tag = YUA
+				tag = YUA
 				tag = HET
-				#tag = ILK
-				tag = OIR
-				tag = BUK
-				tag = TIM
+				tag = ILK
 				was_never_end_game_tag_trigger = yes
 			}
 			OR = {
@@ -54,12 +51,11 @@ country_decisions = {
 		}
 		allow = {
 			OR = {
-				#tag = YUA
+				tag = YUA
 				tag = HET
-				#tag = ILK
+				tag = ILK
 				tag = BUK
 				tag = TIM
-				tag = OIR
 			}
 			central_asia_region = {
 				type = all

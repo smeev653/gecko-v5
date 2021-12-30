@@ -1,19 +1,36 @@
 # Lombard Free Company
 merc_lombard_free_company = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
     home_province = 4728 # Pavia
 	#cavalry_weight = 0.2
-	#cavalry_cap = 4
+	cavalry_cap = 4
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		religion_group = christian
+		capital_scope = {
+						region = italy_region
+					}
 		OR = {
-			tag = MLO
-			tag = ITA
+			AND = {
+				NOT = {
+					capital_scope = {
+						region = italy_region
+					}
+				}
+				any_country = {
+					war_with = root
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
+			capital_scope = {
+				region = italy_region
+			}
 		}
 	}
-	cost_modifier = 0.75
 	modifier = { 
-		infantry_power = 0.15
+		infantry_power = 0.1
 	}
 }
 
@@ -22,14 +39,31 @@ merc_tuscan_free_company = {
     regiments_per_development = 0.05
     home_province = 2980 # Lucca
 	#cavalry_weight = 0.2
-	#cavalry_cap = 4
+	cavalry_cap = 4
 	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
    trigger = {
-		religion_group = christian
 		capital_scope = {
 						region = italy_region
 					}
-		NOT =  { tag = PAP }			
+		religion_group = christian
+		OR = {
+			AND = {
+				NOT = {
+					capital_scope = {
+						region = italy_region
+					}
+				}
+				any_country = {
+					war_with = root
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
+			capital_scope = {
+				region = italy_region
+			}
+		}
 	}
 	modifier = { 
 		infantry_power = 0.1
@@ -114,7 +148,7 @@ merc_knights_templar = {
 
 # Pontifical Swiss Guard
 merc_swiss_guard = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.065
 	sprites = { dlc029_pap_sprite_pack dlc040_pap_sprite_pack westerngfx_sprite_pack }
     trigger = { 
 		tag = PAP
@@ -124,7 +158,7 @@ merc_swiss_guard = {
 		}
 	}
 	modifier = {
-		infantry_power = 0.1
+		discipline = 0.1
 	}
 }
 
@@ -232,11 +266,8 @@ merc_stratioti = {
     trigger = {	
 		NOT = { has_country_modifier = hun_black_army }
 		religion_group = christian
-		OR = {
-			any_owned_province = {
-				region = balkan_region
-			}
-			tag = VEN
+		any_owned_province = {
+			region = balkan_region
 		}
 	}
 	modifier = { infantry_power = 0.1 }

@@ -13,11 +13,11 @@ country_decisions = {
 
 			culture_group = germanic
 			
-			#gecko - WIP 
-			#OR = {
-			#	tag = NGF
-			#	tag = SGF
-			#}
+			#gecko
+			OR = {
+				tag = NGF
+				tag = SGF
+			}
 		}
 		provinces_to_highlight = {
 			OR = {

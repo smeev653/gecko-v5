@@ -1349,7 +1349,7 @@ gecko_tur_events = {
 			custom_tooltip = g_naval_reform		
 		}
 	}
-	Mimar_Sinans_Great_Constructions = {
+	Mimar_Sinan's_Great_Constructions = {
 		icon = mission_golden_century
 		required_missions = {  }
 		position = 4
