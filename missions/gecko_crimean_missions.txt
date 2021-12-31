@@ -44,23 +44,23 @@ gc_cri_branch_1 = {
         trigger = {
             podolia_volhynia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			west_dniepr_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			east_dniepr_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			chernigov_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			sloboda_ukraine_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
         }
 
@@ -85,14 +85,14 @@ gc_cri_branch_1 = {
 				area = east_dniepr_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
         }
 
         trigger = {
             podolia_volhynia_area = {
 				type = all
-				owned_by = ROOT
+				country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -110,7 +110,7 @@ gc_cri_branch_1 = {
 			}
 			west_dniepr_area = {
 				type = all
-				owned_by = ROOT
+				country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -128,7 +128,7 @@ gc_cri_branch_1 = {
 			}
 			east_dniepr_area = {
 				type = all
-				owned_by = ROOT
+				country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -186,18 +186,18 @@ gc_cri_branch_2 = {
 				area = simferopol_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
         }
 
         trigger = {
 			azov_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			simferopol_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
         }
 
@@ -313,14 +313,14 @@ gc_cri_branch_2 = {
 				area = moldavia_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
         }
 
         trigger = {
             moldavia_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
         }
 
@@ -345,7 +345,7 @@ gc_cri_branch_2 = {
         trigger = {
             moldavia_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -398,7 +398,7 @@ gc_cri_branch_3 = {
         trigger = {
             crimea_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -438,7 +438,7 @@ gc_cri_branch_3 = {
         trigger = {
             simferopol_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -486,7 +486,7 @@ gc_cri_branch_3 = {
         trigger = {
             astrakhan_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -504,7 +504,7 @@ gc_cri_branch_3 = {
             }
             saratov_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
                 OR = {
                     AND = {
                         has_building = temple
@@ -609,15 +609,15 @@ gc_cri_branch_4 = {
         trigger = {
             lower_don_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
             tambov_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
             saratov_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
         }
 
@@ -642,7 +642,7 @@ gc_cri_branch_4 = {
 			}
 			NOT = {
 				AND = {
-					owned_by = ROOT
+					country_or_subject_holds = ROOT
 					is_core = ROOT
 				}
 			}
@@ -708,13 +708,13 @@ gc_cri_branch_4 = {
             OR = {
                 area = bashkiria_area
             }
-            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { country_or_subject_holds = ROOT }
         }
 
         trigger = {
             bashkiria_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
         }
 
@@ -738,33 +738,33 @@ gc_cri_branch_4 = {
 				area = astrabad_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			tabriz_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			azerbaijan_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			ardabil_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			urmia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			tabarestan_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			astrabad_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -866,25 +866,25 @@ gc_cri_branch_5 = {
                 area = circassia_area
                 area = dagestan_area
             }
-            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { country_or_subject_holds = ROOT }
         }
 
         trigger = {
             astrakhan_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
             stavropol_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
             circassia_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
             dagestan_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
         }
 
@@ -908,13 +908,13 @@ gc_cri_branch_5 = {
 		provinces_to_highlight = {
 			region = caucasia_region
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			caucasia_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -972,13 +972,13 @@ gc_cri_branch_5 = {
             OR = {
                 area = nogai_area
             }
-            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { country_or_subject_holds = ROOT }
         }
 
         trigger = {
             nogai_area = {
                 type = all
-                owned_by = ROOT
+                country_or_subject_holds = ROOT
             }
         }
 
@@ -1029,25 +1029,25 @@ gc_cri_branch_5 = {
 				area = kyzylkum_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			nogai_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			kazakhstan_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			syr_darya_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			kyzylkum_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -1101,29 +1101,29 @@ gc_cri_branch_5 = {
 				area = samarkand_area
 			}
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			transoxiana_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			khiva_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			transcaspia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			merv_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			samarkand_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -1150,13 +1150,13 @@ gc_cri_branch_5 = {
 		provinces_to_highlight = {
 			region = central_asia_region
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			central_asia_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -1181,7 +1181,7 @@ gc_cri_branch_5 = {
 		provinces_to_highlight = {
 			region = mongolia_region
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_subject_holds = ROOT
 			}
 			NOT = {
 				is_empty = yes
@@ -1195,7 +1195,7 @@ gc_cri_branch_5 = {
 					type = all
 					OR = {
 						is_empty = yes
-						country_or_non_sovereign_subject_holds = ROOT
+						country_or_subject_holds = ROOT
 					}
 				}
 			}
