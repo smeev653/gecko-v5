@@ -752,7 +752,7 @@ on_province_culture_converted_estate_privilges_effect = {
 on_province_owner_change_estate_privileges_effect = {
 ###nomadic tribes changes###
 	if = {
-		limit = { trade_goods = livestock }
+		limit = { is_terrain = steppe }
 		if = {
 			limit = {
 				owner = {
@@ -768,7 +768,7 @@ on_province_owner_change_estate_privileges_effect = {
 	}
 	else_if = {
 		limit = {
-			trade_goods = livestock
+			is_terrain = steppe
 			has_province_modifier = estate_nomadic_tribes_steppe_devcost
 			owner = {
 				NOT = { has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils }
