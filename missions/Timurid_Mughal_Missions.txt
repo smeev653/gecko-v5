@@ -312,7 +312,7 @@ tim_reconquest_khorasan = {
 		provinces_to_highlight = {
 			OR = {
 				area = mashhad_area
-				area = birjand_area
+				#area = birjand_area
 				area = sistan_area
 			}
 			NOT = { owned_by = ROOT }
@@ -323,10 +323,10 @@ tim_reconquest_khorasan = {
 				type = all
 				owned_by = ROOT
 			}
-			birjand_area = {
-				type = all
-				owned_by = ROOT
-			}
+			#birjand_area = {
+			#	type = all
+			#	owned_by = ROOT
+			#}
 			sistan_area = {
 				type = all
 				owned_by = ROOT
