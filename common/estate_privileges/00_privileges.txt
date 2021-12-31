@@ -1556,6 +1556,9 @@ smeev_mountain_dev_cost = {
 			tag = MOR
 			tag = ISF
 			tag = ARL
+			tag = OIR
+			tag = KHA
+			tag = MGE
 			} 
 		
 	}
