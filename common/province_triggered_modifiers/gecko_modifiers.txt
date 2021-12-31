@@ -215,7 +215,7 @@ conquest_of_baghdad = {
 		controlled_by = ROOT
 	}
 
-	technology_cost = -0.05
+	all_power_cost = -0.02
 	prestige = 0.5
 	
 	#Province scope
@@ -301,11 +301,13 @@ conquest_of_cairo = {
 		owner = {
 				NOT = { tag = MAM }
 				NOT = { tag = EGY }
+				NOT = { tag = ETH }
+				NOT = { tag = AKS}
 			}
 		controlled_by = ROOT	
 		}	
 
-	fire_damage = 0.10
+	infantry_power = 0.10
 	interest = -0.25
 	
 	#Province scope
@@ -545,7 +547,7 @@ conquest_of_pest = {
 	trigger = {
 		owner = {
 				NOT = { tag = HUN }
-				NOT = { tag = TUR }
+				#NOT = { tag = TUR }
 			}
 		controlled_by = ROOT	
 		}	
