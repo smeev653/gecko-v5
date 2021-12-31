@@ -778,7 +778,7 @@ printing_press = {
 		qizilbash_loyalty_modifier = 0.1
 		ghilman_loyalty_modifier = 0.1
 		janissary_loyalty_modifier = 0.1
-		mamluks_loyalty_modifier - 0.1
+		mamluks_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
 		brahmins_other_loyalty_modifier = 0.1
