@@ -296,7 +296,8 @@ spy_ideas = {
 		
 	}
 	claim_fabrication = {
-		dip_tech_cost_modifier = -0.1
+		global_manpower = 10
+		land_forcelimit = 10
 	}
 	vetting = {
 		war_taxes_cost_modifier = -1
@@ -935,8 +936,7 @@ influence_ideas = {
 		province_warscore_cost = -0.10
 	}
 	integrated_elites = {
-		global_manpower = 10
-		land_forcelimit = 10
+		dip_tech_cost_modifier = -0.1
 	}
 	inf_flexible_negotiation = {
 		center_of_trade_upgrade_cost = -0.25
