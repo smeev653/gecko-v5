@@ -59,7 +59,7 @@ swedish_empire = {
 }
 
 kaiser_of_europe = {
-	infantry_cost = -0.15
+	infantry_cost = -0.2
 }
 
 third_rome = {
@@ -127,7 +127,7 @@ france_united = {
 }
 
 caliphate_proclaimed = {
-	fire_damage = 0.10
+	fire_damage = 0.20
 }	
 
 gecko_cannon_foundries = {
@@ -267,4 +267,39 @@ increased_janissary_recruitment = {
 
 baghdad_restored = {
 	all_power_cost = -0.02
+}
+
+# Mongol missions
+
+tibetan_missionaries = {
+	global_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.5
+}
+
+mongol_religion_unity = {
+	tolerance_own = 1
+}
+
+mongol_rule_tibet = {
+	local_autonomy = -0.05
+	local_development_cost = -0.2
+}
+
+pax_mongolica = {
+	global_unrest = -3
+	stability_cost_modifier = -0.15
+	discipline = 0.05
+}
+
+mongol_european_conquest = {
+	province_warscore_cost = -0.15
+}
+
+reorganized_mongols = {
+	num_accepted_cultures = 3
+}
+
+genghis_khan_reborn = {
+	prestige = 1
+	discipline = 0.05
 }
