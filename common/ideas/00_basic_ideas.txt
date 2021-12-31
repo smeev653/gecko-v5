@@ -948,6 +948,7 @@ influence_ideas = {
 
 	tribute_system = {
 		reduced_liberty_desire = 35
+		diplomatic_annexation_cost = -0.25
 		diplomatic_upkeep = 2
 	}
 	marcher_lords = {
