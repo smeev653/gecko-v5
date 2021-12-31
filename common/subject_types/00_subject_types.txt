@@ -214,6 +214,7 @@ vassal = {
 	divert_trade = yes
 	seize_territory = yes
 	siphon_income = yes
+	conscript_general = yes
 
 	# Modifiers:
 	modifier_subject = {
@@ -250,6 +251,7 @@ march = {
 	scutage = no
 	subsidize_armies = yes
 	fortify_march = yes
+	conscript_general = yes
 	
 	send_officers = yes
 
@@ -591,7 +593,8 @@ tributary_state = {
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = yes
 	does_overlord_size_count_for_warscore_cost = no
-	can_concentrate_development = yes											
+	can_concentrate_development = yes
+	pays_overlord = 1.0	
 	
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0
@@ -622,6 +625,8 @@ tributary_state = {
 
 	# Subject Interactions:
 	# (immediate)
+	conscript_general = yes
+	contribute_to_capital = yes
 	enforce_religion = no
 	grant_core_claim = no
 	bestow_gifts = yes
@@ -630,8 +635,8 @@ tributary_state = {
 	demand_additional_tribute = yes
 	block_settlement_growth = no
 	allow_settlement_growth = no						 
-	placate_rulers = no
-	knowledge_sharing = no
+	placate_rulers = yes
+	knowledge_sharing = yes
 	divert_trade = yes
 	# (continuous)
 	embargo_rivals = no
