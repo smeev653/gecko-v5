@@ -589,7 +589,7 @@ tributary_state = {
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
-	overlord_can_fabricate_for = no
+	overlord_can_fabricate_for = yes
 	does_overlord_size_count_for_warscore_cost = no
 	can_concentrate_development = yes											
 	
@@ -632,6 +632,7 @@ tributary_state = {
 	allow_settlement_growth = no						 
 	placate_rulers = no
 	knowledge_sharing = no
+	divert_trade = yes
 	# (continuous)
 	embargo_rivals = no
 
