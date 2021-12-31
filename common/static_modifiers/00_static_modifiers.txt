@@ -553,7 +553,8 @@ base_values = {
 	merc_maintenance_modifier = 0.5
 	monthly_heir_claim_increase = 0.417
 	tolerance_of_heretics_capacity = 5
-	tolerance_of_heathens_capacity = 5	
+	tolerance_of_heathens_capacity = 5
+	yearly_army_professionalism = -0.01	
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -684,7 +685,7 @@ bankruptcy = {
 war = {
 	rr_girondists_influence = 0.15
 	#interest = -0.25
-	yearly_army_professionalism = 0.005
+	yearly_army_professionalism = 0.0025
 	monthly_fervor_increase = 1
 }
 
@@ -697,7 +698,6 @@ peace = {
 	pr_smugglers_influence = 0.1
 	interest = -0.5
 	army_tradition_decay = 0.01
-	yearly_army_professionalism = -0.005
 }
 
 unconditional_surrender = {
@@ -1342,7 +1342,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.0025
+	yearly_army_professionalism = 0.005
 }
 
 ##################################################################################################
