@@ -1215,7 +1215,7 @@ NMilitary = {
 	ARMY_DRILL_SKILL_MONTHS = 90,					-- The average number of months until you get a skill increase if drilling 100% of forcelimit. Set to 0 to disable.
 
 	COSSACKS_SHOCK_DAMAGE_BONUS = 0.1,
-	STRELTSY_FIRE_DAMAGE_BONUS = 0.1,
+	STRELTSY_FIRE_DAMAGE_BONUS = 0.15,
 	MARINE_SHOCK_DAMAGE_TAKEN = -0.25,
 	MAX_SAILOR_LACK_ATTRITION = 1,
 	SAILOR_MAINTAINANCE = 0.02,		-- of build cost.
