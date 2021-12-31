@@ -214,14 +214,7 @@ country_event = {
 	
 	option = { # Accept cooperation and conversion
 		name = "mch_missions.6.a"
-		if = {
-			limit = {
-				NOT = {
-					religion = vajrayana
-				}
-			}
-			change_religion = vajrayana
-		}
+
 		add_ruler_modifier = {
 			name = "genghis_khan_reborn"
 			duration = -1
@@ -242,7 +235,7 @@ country_event = {
 				}
 				add_province_modifier = {
 					name = "mongol_rule_tibet"
-					duration = 7300
+					duration = 36500
 				}
 			}
 		}
@@ -270,6 +263,7 @@ country_event = {
 			}
 			change_primary_culture = mongol
 			set_ruler_culture = mongol
+		}	
 			change_tag = KHA
 			if = {
 				limit = { NOT = { government_rank = 3 } }

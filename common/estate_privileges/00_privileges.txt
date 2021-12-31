@@ -1481,6 +1481,8 @@ PR_estate_clergy_exploration_expedition = {
 				tag = MOR
 				tag = BUK
 				tag = ARB
+				tag = KHA
+				tag = OIR
 			}
 			NOT = { has_estate_privilege = estate_burghers_hydraulic_rights	}
 	}

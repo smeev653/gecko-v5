@@ -774,6 +774,21 @@ age_of_absolutism = {
 				factor = 100
 			}
 		}
+		ab_manchu_banner = {
+			allow = {
+				OR = {
+					tag = OIR
+					tag = KHA
+					tag =  MGE
+				}
+			}
+			modifier = {
+				amount_of_banners = 0.5
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 		ab_improved_weaponry2 = {
 			allow = {
 				AND = {
