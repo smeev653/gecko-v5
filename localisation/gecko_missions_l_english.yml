@@ -211,11 +211,12 @@
  gc_cri_mission_14_desc:0 ""
 
  #Russia
- enserfed_peasants_title:0 "Enserfed Peasents"
+ enserfed_peasants_title:0 "Enserfed Peasants"
  enserfed_peasants_desc:0 ""
  full_serfdom_title:0 "Full Serfdom"
  full_serfdom_desc:0 ""
-
+ pomjestija_reform_title:0 "Pomjestija Reform"
+ pomjestija_reform_desc:0 "This event will grant§G 10% Land Morale§! and §G -10% Military Tech Cost§! or §G10% Trade Efficiency§! and §G25% Institution Spread§! for 25 Years."
 #high income missions
 
  cri_high_income_mission_title:0 "High Income"

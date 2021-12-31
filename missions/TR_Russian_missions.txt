@@ -1495,17 +1495,41 @@ gecko_rus_events = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = RUS
+		OR = {
+			tag = RUS
+			tag = MOS
+		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
 	
-	enserfed_peasants = {
+	pomjestija_reform = {
 		icon = mission_non-western_soldiers
 		required_missions = {  }
 		position = 6
+		trigger = {
+		is_year = 1450
+		NOT = { is_year = 1550 }
+		OR = {
+			AND = {
+				tag = MOS
+				NOT = { exists = RUS }
+			}
+			tag = RUS
+		}
+		}
+		effect = {
+			country_event = {
+				id = flavor_rus.1
+			}		
+		}
+	}
+	enserfed_peasants = {
+		icon = mission_non-western_soldiers
+		required_missions = {  }
+		position = 7
 		trigger = {
 			tag = RUS
 			is_year = 1600
@@ -1520,7 +1544,7 @@ gecko_rus_events = {
 	full_serfdom = {
 		icon = mission_non-western_soldiers
 		required_missions = { enserfed_peasants }
-		position = 7
+		position = 8
 		trigger = {
 			tag = RUS
 			is_year = 1650
