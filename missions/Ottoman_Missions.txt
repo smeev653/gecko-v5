@@ -435,20 +435,6 @@ tur_conquest_of_middle_east = {
 				}
 				add_permanent_claim = ROOT
 			}
-			cukurova_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			dulkadir_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			kastamonu_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -496,7 +482,7 @@ tur_conquest_of_middle_east = {
 	consolidate_asia_minor = {
 		icon = mission_ottoman_harem
 		required_missions = { army_reforms_of_mehemed_II }
-		position = 3
+		position = 5
 		completed_by = 1469.1.1
 		ai_weight = {
 			factor = 3
@@ -587,33 +573,6 @@ tur_conquest_of_middle_east = {
 					add_permanent_claim = ROOT
 				}
 			}
-		}
-	}
-	safeguard_eastern_anatolia = {
-		icon = mission_unite_home_region
-		required_missions = { consolidate_asia_minor }
-		position = 5
-		
-		ai_weight = {
-			factor = 6
-		}
-		ai_priority = {
-			factor = 3
-		}
-		completed_by = 1514.8.23
-		provinces_to_highlight = {
-				area = dulkadir_area
-			
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-
-			dulkadir_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
 			aleppo_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -635,6 +594,46 @@ tur_conquest_of_middle_east = {
 				}
 				add_permanent_claim = ROOT
 			}
+			cukurova_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	safeguard_eastern_anatolia = {
+		icon = mission_unite_home_region
+		required_missions = { consolidate_asia_minor }
+		position = 6	
+		
+		ai_weight = {
+			factor = 6
+		}
+		ai_priority = {
+			factor = 3
+		}
+		completed_by = 1514.8.23
+		provinces_to_highlight = {
+			OR = {
+				area = dulkadir_area
+				area = cukurova_area
+			}	
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+
+			dulkadir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cukurova_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
 			330 = {
 				if = {
 					limit = {
@@ -658,6 +657,13 @@ tur_conquest_of_middle_east = {
 				}
 				add_permanent_claim = ROOT
 			}
+			shahrizor_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	conquer_mesopotamia = {
@@ -668,6 +674,7 @@ tur_conquest_of_middle_east = {
 			OR = {
 				area = iraq_arabi_area
 				area = al_jazira_area
+				area = shahrizor_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -677,6 +684,10 @@ tur_conquest_of_middle_east = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			al_jazira_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shahrizor_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -690,6 +701,13 @@ tur_conquest_of_middle_east = {
 				add_permanent_claim = ROOT
 			}
 			basra_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			khuzestan_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -706,6 +724,7 @@ tur_conquest_of_middle_east = {
 			OR = {
 				area = basra_area
 				area = bahrain_area
+				area = khuzestan_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -718,13 +737,17 @@ tur_conquest_of_middle_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			khuzestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			408 = {
+			1335 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300
-					power = 20
+					power = 50
 					key = indian_ocean_ambition
 				}
 				add_unit_construction = {
@@ -732,73 +755,6 @@ tur_conquest_of_middle_east = {
 					type = galley
 					speed = 0.5
 					cost = 0
-				}
-				add_unit_construction = {
-					amount = 5
-					type = light_ship
-					speed = 0.5
-					cost = 0
-				}
-			}
-		}
-	}
-}
-
-tur_black_sea = {
-	slot = 4
-	potential = {
-		OR = {
-			tag = TUR
-			tag = RUM
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	
-	has_country_shield = yes
-	
-	conquer_trebizond = {
-		icon = mission_conquer_50_development
-		required_missions = { safeguard_eastern_anatolia }
-		position = 6
-		completed_by = 1461.1.1
-		provinces_to_highlight = {
-			province_id = 330
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			owns = 330
-		}
-		effect = {
-			
-			285 = {
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
-	take_kaffa = {
-		icon = mission_war_chest
-		required_missions = { conquer_trebizond }
-		completed_by = 1475.5.1
-		provinces_to_highlight = {
-			province_id = 285
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			owns = 285
-		}
-		effect = {
-			285 = {
-				add_trade_modifier = {
-					who = root
-					duration = 7300
-					power = 35
-					key = black_sea_ambition
 				}
 			}
 		}
@@ -821,7 +777,7 @@ tur_eastern_mediterrenean_missions = {
 	
 	conquer_levant = {
 		icon = mission_arabian_fort
-		required_missions = { safeguard_eastern_anatolia }
+		required_missions = { consolidate_asia_minor }
 		completed_by = 1516.8.24
 		position = 6
 		ai_weight = {
@@ -1185,7 +1141,64 @@ tur_indian_ocean = {
 	}
 	
 	has_country_shield = yes
+	conquer_kurdistan = { 
+		icon = mission_mosque
+		required_missions = { consolidate_asia_minor }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = north_kurdistan_area
+				area = erzurum_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			north_kurdistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzurum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			caucasia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 	
+	conquer_caucasia = {
+		icon = mission_non-western_soldiers
+		required_missions = { conquer_kurdistan }
+		position = 7
+		provinces_to_highlight = {
+				region = caucasia_region
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		trigger = {
+				caucasia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			caucasia_region = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_province_modifier = {
+						name = "increased_janissary_recruitment"
+						duration = 18250 }
+				}
+		}
+	}
 	conquer_hedjaz = { #Conquer Hejaz
 		icon = mission_mosque
 		required_missions = { conquer_egypt }
@@ -1264,6 +1277,7 @@ tur_indian_ocean = {
 			add_claim = 2054 #Ahmedabad
 		}
 	}
+	
 }	
 gecko_tur_events = {
 	slot = 3
@@ -1349,7 +1363,7 @@ gecko_tur_events = {
 			custom_tooltip = g_naval_reform		
 		}
 	}
-	Mimar_Sinans_Great_Constructions = {
+	Mimar_Sinan's_Great_Constructions = {
 		icon = mission_golden_century
 		required_missions = {  }
 		position = 4

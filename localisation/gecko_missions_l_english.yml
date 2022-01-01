@@ -31,6 +31,9 @@
  gecko_mam_mission_16_title:0 "Improve the Economy"
  mam_turks_defeated_title:0 "Turks Defeated"
  unlock_privilege_estate_mamluks_recruit_turkmen_tt:0 "Unlock Recruit Turkmen Privilege"
+ gc_consolidate_asia_minor_title:0 "Consolidate Asia Minor"
+ gc_conquer_mesopotamia_title:0 "Conquer Mesopotamia"
+ gc_conquer_haasa_title:0 "Conquer Haasa"
 
  gecko_mam_mission_1_desc:0 ""
  gecko_mam_mission_2_desc:0 ""
@@ -54,6 +57,9 @@
  mam_Mimar_Sinans_Great_Constructions_desc:0 "Mimar Sinan planned and oversaw the construction of countless mosques, aqueducts, bathhouses, bridges, palaces, caravanserais and schools during his half-a-century long career. His masterpieces were the Selimiye and Suleymaniye Mosques in Adrianople and Constantinople respectively."
  mam_Expansion_of_the_Royal_Bureaucracy_title:0 "Expansion of the Royal Bureaucracy"
  mam_Expansion_of_the_Royal_Bureaucracy_desc:0 "Süleyman I was probably the greatest of the Ottoman Sultans. Called Kanuni (Lawgiver), he was an unsurpassed administrator who realized that the power of the provincial Beys had to be curbed by a strong central government. Thus he struggled to promote a powerful royal bureaucracy which was not popular in all camps..."
+ gc_consolidate_asia_minor_desc:0 ""
+ gc_conquer_mesopotamia_desc:0 ""
+ gc_conquer_haasa_desc:0 ""
 
 #ottoman event missions
 
@@ -73,7 +79,10 @@
  Mimar_Sinans_Great_Constructions_desc:0 "Mimar Sinan planned and oversaw the construction of countless mosques, aqueducts, bathhouses, bridges, palaces, caravanserais and schools during his half-a-century long career. His masterpieces were the Selimiye and Suleymaniye Mosques in Adrianople and Constantinople respectively."
  Expansion_of_the_Royal_Bureaucracy_title:0 "Expansion of the Royal Bureaucracy"
  Expansion_of_the_Royal_Bureaucracy_desc:0 "Süleyman I was probably the greatest of the Ottoman Sultans. Called Kanuni (Lawgiver), he was an unsurpassed administrator who realized that the power of the provincial Beys had to be curbed by a strong central government. Thus he struggled to promote a powerful royal bureaucracy which was not popular in all camps..."
-
+ conquer_kurdistan_title:0 "Conquer Kurdistan"
+ conquer_caucasia_title:0 "Conquer Caucasia"
+ conquer_kurdistan_desc:0 ""
+ conquer_caucasia_desc:0 ""
 #Portuguese Missions
 
  gc_por_discovers_prestor_john_title:0 "Find Prester John"
