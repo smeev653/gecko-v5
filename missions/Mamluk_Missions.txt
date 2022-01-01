@@ -483,7 +483,7 @@ mam_north_missions = {
 		}
 	}
 	
-	mam_Mimar_Sinan's_Great_Constructions = {
+	mam_Mimar_Sinans_Great_Constructions = {
 		icon = mission_golden_century
 		required_missions = {  }
 		trigger = {
