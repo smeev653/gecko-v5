@@ -177,7 +177,7 @@ barracks = {
 		factor = 1
 		modifier = {
 			factor = 250
-			base_manpower = 4
+			base_manpower = 3	
 			is_state = yes
 		}
 	}
