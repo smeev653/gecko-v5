@@ -60,6 +60,7 @@ country_decisions = {
 				tag = BUK
 				tag = TIM
 				tag = OIR
+				tag = KHA
 			}
 			central_asia_region = {
 				type = all
