@@ -316,6 +316,12 @@ spy_ideas = {
 
 	ai_will_do = {
 		factor = 2
+		modifier = {
+				factor = 2000
+				overlord = {
+					has_idea_group = influence_ideas
+				}
+			}
 	}
 }
 
@@ -956,12 +962,6 @@ influence_ideas = {
 	}
 	ai_will_do = {
 		factor = 1
-			modifier = {
-				factor = 2000
-				overlord = {
-					has_idea_group = influence_ideas
-				}
-			}
 	}	
 }
 
