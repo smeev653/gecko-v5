@@ -214,7 +214,6 @@ vassal = {
 	divert_trade = yes
 	seize_territory = yes
 	siphon_income = yes
-	conscript_general = yes
 
 	# Modifiers:
 	modifier_subject = {
@@ -594,7 +593,8 @@ tributary_state = {
 	overlord_can_fabricate_for = yes
 	does_overlord_size_count_for_warscore_cost = no
 	can_concentrate_development = yes
-	pays_overlord = 1.0	
+	pays_overlord = 1.0
+	seize_territory = yes	
 	
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0
