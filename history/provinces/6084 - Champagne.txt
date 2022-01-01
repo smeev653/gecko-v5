@@ -13,6 +13,7 @@ base_manpower = 3
 capital = "Champagne"
 is_city = yes
 extra_cost = 26
+add_core = CHP
 
 discovered_by = eastern
 discovered_by = ottoman
