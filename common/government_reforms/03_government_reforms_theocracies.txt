@@ -824,10 +824,9 @@ religious_permanent_revolution_reform = {
 		}
 	}
 	effect = {
-		custom_tooltip = world_crusade_tt
 	}
 	modifiers = {
-		enforce_religion_cost = -0.4
+		yearly_army_professionalism = 0.005
 	}
 	ai = {
 		factor = 3
