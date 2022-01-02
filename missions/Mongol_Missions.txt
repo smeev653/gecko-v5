@@ -53,7 +53,7 @@ mongol_missions_2 = {
 				add_permanent_claim = ROOT
 			}
 			2190 = {
-			change_trade_goods = silk
+			change_trade_goods = chinaware
 			}
 			set_global_flag = gc_mongol_kurultai
 			custom_tooltip = mongol_kurultai_tooltip

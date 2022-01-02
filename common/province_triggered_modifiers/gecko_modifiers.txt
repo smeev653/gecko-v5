@@ -476,7 +476,7 @@ conquest_of_sarai = {
 		controlled_by = ROOT	
 	}
 
-	technology_cost = -0.1
+	technology_cost = -0.05
 	global_tax_modifier = 0.15
 	
 	#Province scope
@@ -661,6 +661,6 @@ gc_mongol_kurultai = {
 		}
 	}
 	
-	horde_unity = 1
+	technology_cost = -0.05
 	trade_goods_size = 5
 }	
