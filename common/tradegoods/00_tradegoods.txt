@@ -1920,11 +1920,7 @@ coal = {
 			development_discounting_tribal = 20
 			owner = { innovativeness = 20 }
 		}
-		provincial_institution_progress = {
-			which = enlightenment
-			value = 100
-		}
-		owner = { has_institution = enlightenment }
+		is_year = 1650
 	}
 	
 	modifier = {
