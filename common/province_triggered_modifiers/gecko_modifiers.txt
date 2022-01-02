@@ -655,8 +655,8 @@ gc_mongol_kurultai = {
 	trigger = {
 		owner = {
 			OR = {
-				tag = OIR
-				tag = MGE
+				culture_group = altaic
+				culture_group = tartar
 			}
 		}
 	}
