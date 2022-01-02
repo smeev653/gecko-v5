@@ -669,7 +669,6 @@ eng_rb_buildings_group = {
 		position = 10
 		
 		trigger = {
-			has_institution = enlightenment
 			calc_true_if = {
 				all_owned_province = {
 					OR = {
@@ -920,10 +919,8 @@ eng_rb_conquest_europe = {
 				area = pyrenees_area
 				area = poitou_area
 				area = loire_area
-				province_id = 199
-				province_id = 194
-				province_id = 195
-				province_id = 4697
+				area = cahors_area
+				area = guyenne_area			
 			}
 			NOT = { owned_by = ROOT }
 		}
