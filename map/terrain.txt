@@ -315,7 +315,7 @@ categories =  {
 		defence = 1
 		local_defensiveness = 0.35
 		local_development_cost = 0.20
-		combat_width = -0.25
+		combat_width = -0.1
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
 	
