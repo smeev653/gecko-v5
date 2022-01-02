@@ -264,7 +264,6 @@ country_event = {
 			change_primary_culture = mongol
 			set_ruler_culture = mongol
 		}	
-			change_tag = KHA
 			if = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
@@ -282,12 +281,12 @@ country_event = {
 					OR = {
 						region = mongolia_region
 						region = central_asia_region
-						region =  west_siberia_region 
+						region = west_siberia_region 
 					}
 				}
 				change_culture = mongol
 			}
-			add_prestige = 25
+			set_country_flag = reorganized_mongols
 		}
 	}
 	option = { # reorganize the tribes
