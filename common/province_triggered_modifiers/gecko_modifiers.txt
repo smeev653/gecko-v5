@@ -608,6 +608,7 @@ conquest_of_herat = {
 				tag = AFG
 				tag = MUG
 				tag = ARL
+				tag = ISF
 				tag = PER
 			}
 		}

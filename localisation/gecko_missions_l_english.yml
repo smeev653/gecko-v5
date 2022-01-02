@@ -251,3 +251,8 @@
 
  repulse_french_gank_title:0 "Defense of France"
  repulse_french_gank_desc:0 ""
+
+#arabia
+
+ARB_conquest_1_title:0 "Conquest of Mesopotamia"
+ARB_conquest_1_desc:0 "Completing this mission will grant access to the Wahabi Scholar, giving §G15% Land Morale§! but maluses to Heretic and Heathen religions."

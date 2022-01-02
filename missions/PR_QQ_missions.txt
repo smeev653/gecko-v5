@@ -264,5 +264,42 @@ QAR_conquest = {
 			}
 		}	
 	}	
+}
+
+ARB_conquest = {	
+	slot = 3
+	potential = {
+			tag = ARB
+		}
+		has_country_shield = yes
+		
+	ARB_conquest_1 = {
+		icon = mission_persian_soldiers
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = { 
+				area = basra_area
+				area = iraq_arabi_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			basra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			iraq_arabi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			set_country_flag = wahabi_trigger
+		}
+	}
 }	
-	
