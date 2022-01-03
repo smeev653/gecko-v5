@@ -491,7 +491,7 @@ TUR_ideas = {
 		global_tax_modifier = 0.20
 	}
 	tulip_period = {
-		trade_efficiency = 0.10
+		trade_efficiency = 0.15
 	}
 	humbaraci_corps = {
 		artillery_cost = -0.20
@@ -1382,7 +1382,7 @@ MAM_ideas = {
 		development_cost = -0.05
 	}
 	reform_fellah_system = {
-		production_efficiency = 0.15
+		production_efficiency = 0.10
 	}
 	mam_monopoly_ports = {
 		trade_efficiency = 0.10
