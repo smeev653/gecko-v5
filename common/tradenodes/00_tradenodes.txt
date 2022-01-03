@@ -164,6 +164,15 @@ lhasa={
 		}
 	}
 	outgoing={
+		name="samarkand"
+		path={
+			2129 2128 2074 508 
+		}
+		control={
+			4149.000000 1199.000000 
+		}
+	}
+	outgoing={
 		name="ganges_delta"
 		path={
 			562 4479 
