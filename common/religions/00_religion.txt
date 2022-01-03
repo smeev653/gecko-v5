@@ -2336,7 +2336,8 @@ pagan = {
 		color = { 25 76 217 }
 		country = {
 			land_morale = 0.1
-			global_regiment_cost = -0.2
+			movement_speed = 0.2
+			global_manpower_modifier = 0.2
 		}
 		can_have_secondary_religion = yes
 		heretic = { OLD_TENGRI }

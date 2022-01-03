@@ -259,7 +259,6 @@ lip_service_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		land_maintenance_modifier = -0.1
-		yearly_army_professionalism = 0.005
 	}
 }
 
@@ -306,6 +305,7 @@ horde_barbaric_despoilers_reform = {
 	}
 	modifiers = {
 		technology_cost = -0.1
+		yearly_army_professionalism = 0.005
 	}
 	ai = {
 		factor = 2
