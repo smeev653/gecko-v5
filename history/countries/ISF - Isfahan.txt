@@ -5,7 +5,7 @@ primary_culture = persian
 religion = shiite
 technology_group = muslim
 capital = 429 # Isfahan
-add_army_professionalism = 0.1
+add_army_professionalism = 0.11
 religious_school = jafari_school
 add_piety = -1
 
