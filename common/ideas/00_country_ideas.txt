@@ -1293,6 +1293,7 @@ HUN_ideas = {
 	}
 	found_the_black_army = {
 		discipline = 0.05
+		cavalry_cost = -0.1
 	}
 	bulwark_of_christianity = {
 		global_manpower_modifier = 0.2
@@ -13632,6 +13633,7 @@ CRI_ideas = {
 	
 	cri_allow_nogai_protectorates = {
 		global_manpower_modifier = 0.25
+		cavalry_cost = -0.1
 	}
 	cri_genghisid_legacy = {
 		land_morale = 0.1
