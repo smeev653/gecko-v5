@@ -10743,7 +10743,7 @@ bara_katra = {
 }
 
 bran_castle = {
-	start = 4128 #Királyföld
+	start = 156 #Temes
 	date = 1357.01.01
 	time = { months = 0	}
 	build_cost = 0

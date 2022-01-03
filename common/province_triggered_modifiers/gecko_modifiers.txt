@@ -489,30 +489,30 @@ conquest_of_sarai = {
 	}
 }
 
-conquest_of_isfahan = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-
-	trigger = {
-		owner = {
-		}
-		controlled_by = ROOT	
-	}	
-	
-	
-	trade_goods_size = 5
-	development_cost = -0.05
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}	
+#conquest_of_isfahan = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		owner = {
+#		}
+#		controlled_by = ROOT	
+#	}	
+#	
+#	
+#	trade_goods_size = 5
+#	development_cost = -0.05
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}	
 conquest_of_tabriz = {
 	potential = {
 		normal_or_historical_nations = yes
