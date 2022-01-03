@@ -348,8 +348,8 @@ mongol_missions_3 = {
 		required_missions = { mongols_yam }
 		provinces_to_highlight = {
 			OR = {
-				region = mongolia_region
-				region = north_china_region
+				#region = mongolia_region
+				#region = north_china_region
 				region = central_asia_region
 				region = crimea_region
 				region = persia_region
@@ -360,14 +360,14 @@ mongol_missions_3 = {
 		trigger = {
 			stability = 3
 			NOT = { average_unrest = 3 }
-			mongolia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			north_china_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#mongolia_region = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
+			#north_china_region = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			central_asia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
