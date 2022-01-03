@@ -648,7 +648,7 @@ christian = {
 		icon = 4
 		country = {
 			stability_cost_modifier = -0.1
-			tolerance_own = 1
+			global_tax_modifier = 0.2
 		}
 		province = {
 		}
@@ -715,7 +715,7 @@ christian = {
 
 			icon_pancreator = {
 				development_cost = -0.05
-				build_cost = -0.05
+				build_cost = -0.1
 				
 				allow = {
 					always = yes
@@ -726,8 +726,7 @@ christian = {
 			}
 	
 			icon_nicholas = {
-				improve_relation_modifier = 0.25
-				ae_impact = -0.1
+				production_efficiency = 0.15
 				allow = {
 					always = yes
 				}
