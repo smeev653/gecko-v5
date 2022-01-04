@@ -1291,21 +1291,52 @@ south_indian_ocean_region = {
 }
 
 south_china_sea_region = {
+	areas = {
+		java_sea_area
+		south_china_sea_area
+		celebes_sea_area
+		banda_arafura_seas_area
+	}
 }
 
 east_china_sea_region = {
+	areas = {
+		east_china_sea_area
+		philipine_sea_area
+		sea_of_japan_area
+		sea_of_okhotsk_area
+	}
 }
 
 north_west_pacific_region = {
+	areas = {
+		east_pacific_ocean_area
+	}
 }
 
 south_west_pacific_region = {
+	areas = {
+		coral_sea_area
+		tasman_sea_area
+		great_australian_bight_area
+	}
 }
 
 south_east_pacific_region = {
+	areas = {
+		south_pacific_area
+		polynesian_triangle_area
+	}
 }
 
+
 north_east_pacific_region = {
+	areas = {
+		north_pacific_area
+		north_pacific_coast_area
+		berring_sea_area
+		gulf_of_alaska_area
+	}
 }
 
 pacific_south_america_region = {
