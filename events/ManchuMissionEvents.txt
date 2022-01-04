@@ -280,7 +280,7 @@ country_event = {
 				limit = {
 					OR = {
 						region = mongolia_region
-						region = central_asia_region
+						#region = central_asia_region
 						region = west_siberia_region 
 					}
 				}
