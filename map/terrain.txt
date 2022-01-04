@@ -818,7 +818,7 @@ categories =  {
 		local_development_cost = 0.05
 		nation_designer_cost_multiplier = 0.95
 		supply_limit = 5
-		movement_speed = 0.1
+		local_friendly_movement_speed = 0.1
 	
 		terrain_override = {
 			4285 403 4287
