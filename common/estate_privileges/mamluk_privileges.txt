@@ -18,7 +18,6 @@ estate_gc_noble_levies = {
 	}
 	on_granted = {
 		create_general = {
-			add_shock = 1
 			tradition = 30
 		}
 		if = {

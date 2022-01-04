@@ -19,9 +19,7 @@ aristocracy_ideas = {
 		cavalry_cost = -0.10
 		cavalry_flanking = 1
 	}
-	local_nobility = {
-		leader_land_shock = 1
-	}
+	
 	military_traditions = {
 		mil_tech_cost_modifier  = -0.1
 	}
@@ -39,6 +37,9 @@ aristocracy_ideas = {
 	}
 	international_nobility = {
 		land_morale = 0.05
+	}
+	local_nobility = {
+		leader_land_shock = 1
 	}
 }
 
