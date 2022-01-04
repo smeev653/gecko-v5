@@ -596,8 +596,6 @@ tributary_state = {
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 	
-
-	should_quit_wars_on_activation = yes	
 	
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0
