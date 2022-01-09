@@ -169,6 +169,7 @@ MOS_ideas = {
 	start = {
 		diplomatic_upkeep = 2
 		shock_damage_received = -0.15
+		fire_damage = 0.1
 	}
 
 	bonus = {

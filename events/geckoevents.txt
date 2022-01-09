@@ -897,4 +897,44 @@ country_event = {
 		add_war_exhaustion = -20
 	}
 }
+
+country_event = {
+    id = gecko.13
+    title = gecko.13.t
+    desc = gecko.13.d
+    picture = COURT_eventPicture
+
+    trigger = {
+            tag = TRS
+        NOT = { 
+			has_country_flag = PR_discover_mongolia_flag
+		}
+    }
+	hidden = yes
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+    option = {
+		hidden_effect = {
+			set_country_flag = PR_discover_mongolia_flag
+			mongolia_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}
+			central_asia_region= {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+			west_siberia_region = {
+				ROOT = {
+								discover_province = PREV
+							}
+			}	
+		}
+	}
+}
 	

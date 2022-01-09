@@ -15,14 +15,12 @@ religious_school = hanafi_school
 		dynasty = "Timurid"
 		birth_date = 1414.1.1
 		claim = 100
-		adm = 3
+		adm = 5
 		dip = 5
 		mil = 5
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
-	add_ruler_personality = righteous_personality
-	add_ruler_personality = naive_personality
 #	heir = {
 #		name = "'Abd Allâh Mîrzâ"
 #		monarch_name = "'Abd Allâh Mîrzâ"
@@ -34,7 +32,7 @@ religious_school = hanafi_school
 #		dip = 4
 #		mil = 2
 #	}
-	add_piety = -0.5
+	add_piety = 0.5
 }
 
 #1448.3.1 -> Ulugh Beg takes Herat and reunites the core of the Timurid Empire

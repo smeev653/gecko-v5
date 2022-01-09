@@ -1684,8 +1684,16 @@ estate_cossacks_establish_the_cossack_regiments = {
 	land_share = 5
 	max_absolutism = -5
 	influence = 0.05
+	is_valid = {
+		NOT = { 
+				OR = {
+					tag = MOS
+					tag = RUS
+				}
+			}
+	}
 	can_select = {
-
+				
 	}
 	on_granted = {
 	}
@@ -5572,11 +5580,14 @@ estate_cossacks_recruit_cossack_generals = {
 	max_absolutism = -5
 	loyalty = 0.1
 	influence = 0.1
-	can_select = {
+	is_valid = {
 		OR = {
 			tag = HUN
 			tag = POL
 		}	
+	}
+	can_select = {
+		
 	}
 	penalties = {
 	}
