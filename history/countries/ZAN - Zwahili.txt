@@ -1,11 +1,11 @@
 government = monarchy
-add_government_reform = plutocratic_reform
+add_government_reform = iqta
 primary_culture = swahili
 religion = sunni
 technology_group = east_african
 unit_type = sub_saharan
 capital = 1196	# Kilwa
-add_piety = -0.25
+add_piety = 0.25
 religious_school = shafii_school
 
 1442.1.1 = { #Suleimans Uncle
@@ -13,7 +13,7 @@ religious_school = shafii_school
 		name = "Ismâ'îl"
 		dynasty = "al-Mawahib"
 		adm = 4
-		dip = 4
+		dip = 5
 		mil = 4
 	}
 }

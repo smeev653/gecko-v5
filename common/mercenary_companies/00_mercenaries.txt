@@ -518,8 +518,9 @@ merc_mesopotamian_mamluks = {
 	sprites = { dlc080_alh_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		OR = {
-			TAG = MAM
+			tag = MAM
 			tag = EGY
+			tag = TUR
 		}
 	}
     modifier = {

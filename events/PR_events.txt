@@ -218,6 +218,7 @@ country_event = {
 			}
 			tag = ARB
 			has_country_flag = wahabi_trigger
+			is_year = 1650
 		}
 		name = PR_events.2.h # Wahabism
 		adm_power_cost = 50

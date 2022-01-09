@@ -18,7 +18,7 @@ ARB_ideas = { #Arabian Empire
 		global_sailors_modifier = 0.25
 	}
 	arb_2 = { #Arabian Horsemanship
-		cavalry_cost = -0.2
+		cavalry_cost = -0.1
 		cavalry_power = 0.2
 	}
 	arb_3 = { #Bedouin Raiders
@@ -142,15 +142,16 @@ ETH_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	diplomatic_demeanor = {
-		land_morale = 0.10
-	}
+	
 	solomonid_claim = {
 		prestige = 1
 	}
 	nagusa_negast = {
 		global_trade_goods_size_modifier = 0.1
 		development_cost = -0.05
+	}
+	diplomatic_demeanor = {
+		land_morale = 0.10
 	}
 	hostile_borders = {
 		hostile_attrition = 1

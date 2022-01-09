@@ -133,7 +133,7 @@
 
  prestor_john_title:0 "Prestor John"
  prestor_john_desc:0 " "
- g_help_from_the_west:0 "This event will grant§G 10% Land Morale§! §G5% Discpline§! and §G 20% Manpower§! for 10 years."
+ g_help_from_the_west:0 "This event will grant§G 5% Land Morale§! and §G10% Manpower§! for 10 years."
 
  gc_eth_mission_1_title:0 "Prepare a Navy"
  gc_eth_mission_2_title:0 "European Ties"
@@ -255,4 +255,4 @@
 #arabia
 
 ARB_conquest_1_title:0 "Conquest of Mesopotamia"
-ARB_conquest_1_desc:0 "Completing this mission will grant access to the Wahabi Scholar, giving §G15% Land Morale§! but maluses to Heretic and Heathen religions."
+ARB_conquest_1_desc:0 "Completing this mission and §Gunlocking Military Tech 15§! will grant access to the Wahabi Scholar, giving §G15% Land Morale§! but maluses to Heretic and Heathen religions."

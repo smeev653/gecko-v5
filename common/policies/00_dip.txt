@@ -328,7 +328,7 @@ new_naval_tactis = {
 	}
 
 	technology_cost = -0.05
-	monthly_reform_progress_modifier = 0.5
+	monthly_reform_progress_modifier = 0.25
 
 	ai_will_do = {
 		factor = 1

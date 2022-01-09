@@ -3976,7 +3976,11 @@ on_leader_recruited = {
 
 # country
 on_general_recruited = {
-	add_army_professionalism = 0.0025
+	if = { 
+		limit = { full_idea_group = offensive_ideas }
+			add_army_professionalism = 0.01
+		}
+	else = {add_army_professionalism = 0.0025 }
 }
 
 # country

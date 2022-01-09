@@ -91,7 +91,7 @@ country_decisions = {
 				#has_institution = new_world_i
 			}
 			effect = {
-				add_years_of_income = -0.1
+				add_years_of_income = -0.3
 				create_conquistador = { tradition = 10 }
 				add_country_modifier = {
 				name = "hired_conquistador"

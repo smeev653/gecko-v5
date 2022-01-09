@@ -357,8 +357,178 @@ allianceaction = {
 			FROM = {
 				NOT = { 
 					OR = {
-						tag = MAM
-						tag = EGY						
+						tag = MAM					
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_mamhunally
+		potential = {
+			OR = {
+				tag = MAM
+				tag = EGY
+			}	
+			NOT = {
+				has_reform = parliamentary_reform
+				has_reform = royal_decree_reform
+				has_reform = aristocratic_court_reform
+				has_reform = general_estates_reform
+				has_reform = states_general_reform
+				has_reform = legislative_sejm
+				has_reform = integrated_sejmiks
+				has_reform = feuillant_reform
+				has_reform = two_chamber_reform
+				has_reform = imperial_decree_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = HUN					
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_hunmamally
+		potential = {
+			tag = HUN
+			NOT = {
+				has_reform = parliamentary_reform
+				has_reform = royal_decree_reform
+				has_reform = aristocratic_court_reform
+				has_reform = general_estates_reform
+				has_reform = states_general_reform
+				has_reform = legislative_sejm
+				has_reform = integrated_sejmiks
+				has_reform = feuillant_reform
+				has_reform = two_chamber_reform
+				has_reform = imperial_decree_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = MAM					
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_ottohunally
+		potential = {
+				tag = TUR
+			NOT = {
+				has_reform = parliamentary_reform
+				has_reform = royal_decree_reform
+				has_reform = aristocratic_court_reform
+				has_reform = general_estates_reform
+				has_reform = states_general_reform
+				has_reform = legislative_sejm
+				has_reform = integrated_sejmiks
+				has_reform = feuillant_reform
+				has_reform = two_chamber_reform
+				has_reform = imperial_decree_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = HUN					
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_hunottoally
+		potential = {
+			tag = HUN
+			NOT = {
+				has_reform = parliamentary_reform
+				has_reform = royal_decree_reform
+				has_reform = aristocratic_court_reform
+				has_reform = general_estates_reform
+				has_reform = states_general_reform
+				has_reform = legislative_sejm
+				has_reform = integrated_sejmiks
+				has_reform = feuillant_reform
+				has_reform = two_chamber_reform
+				has_reform = imperial_decree_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = TUR					
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_ottoethally
+		potential = {
+				tag = TUR
+			NOT = {
+				has_reform = parliamentary_reform
+				has_reform = royal_decree_reform
+				has_reform = aristocratic_court_reform
+				has_reform = general_estates_reform
+				has_reform = states_general_reform
+				has_reform = legislative_sejm
+				has_reform = integrated_sejmiks
+				has_reform = feuillant_reform
+				has_reform = two_chamber_reform
+				has_reform = imperial_decree_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = ETH					
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_ethottoally
+		potential = {
+			tag = ETH
+			NOT = {
+				has_reform = parliamentary_reform
+				has_reform = royal_decree_reform
+				has_reform = aristocratic_court_reform
+				has_reform = general_estates_reform
+				has_reform = states_general_reform
+				has_reform = legislative_sejm
+				has_reform = integrated_sejmiks
+				has_reform = feuillant_reform
+				has_reform = two_chamber_reform
+				has_reform = imperial_decree_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = TUR					
 					}
 				}
 			}

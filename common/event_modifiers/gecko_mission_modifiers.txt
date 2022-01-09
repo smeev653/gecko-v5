@@ -209,7 +209,7 @@ bng_sufi_mystic_settlers = {
 }
 
 bedouins_pacified = {
-	cavalry_cost = -0.05
+	#cavalry_cost = -0.05
 	cavalry_power = 0.05
 }
 
@@ -308,4 +308,16 @@ defense_of_france = {
 	land_morale = 0.05
 	discipline = 0.05
 	land_forcelimit_modifier = 0.1
+}
+
+eth_coptic_offense = {
+	land_morale = 0.05
+}
+
+eth_increased_gold_mining = {
+	trade_goods_size = 0.6
+}
+
+zan_conversion_of_fetishist = {
+	land_morale = 0.1
 }

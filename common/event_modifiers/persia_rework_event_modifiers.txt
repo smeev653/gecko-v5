@@ -46,7 +46,7 @@ estate_janissary_phase_modifier = {
 	
 estate_janissary_weaponry_modifier = {
 	is_janissary_modifier = yes
-	infantry_fire = 0.10
+	infantry_fire = 0.15
 }
 	
 estate_janissary_discipline_modifier = {

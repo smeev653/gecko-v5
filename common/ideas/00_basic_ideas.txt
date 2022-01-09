@@ -33,13 +33,14 @@ aristocracy_ideas = {
 		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	noble_resilience = {
-		cavalry_fire = 0.25
+		leader_land_manuever = 2
 	}
 	international_nobility = {
 		land_morale = 0.05
 	}
-	local_nobility = {
-		leader_land_shock = 1
+	noble_officers = {
+		army_tradition_decay = -0.01
+		navy_tradition_decay = -0.01
 	}
 }
 
@@ -49,10 +50,11 @@ plutocracy_ideas = {
 
 	bonus = {
 		fire_damage = 0.20
+		burghers_loyalty_modifier = 0.1
 	}
 	bill_of_rights = {
 		infantry_cost = -0.125
-		infantry_fire = 0.05
+		infantry_fire = 0.1
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
@@ -62,7 +64,7 @@ plutocracy_ideas = {
 		mercenary_discipline = 0.1
 	}
 	free_merchants = {
-		merchants = 1
+		leader_land_fire = 1
 	}
 	free_subjects = {
 		global_trade_goods_size_modifier = 0.1
@@ -202,7 +204,6 @@ innovativeness_ideas = {
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
-		
 	}
 	empiricism = {
 		innovativeness_gain = 1
@@ -382,14 +383,14 @@ offensive_ideas = {
 	}
 
 	bayonet_leaders = {
-		shock_damage = 0.1
-		fire_damage = 0.1
-	}
-	superior_firepower = {
-		leader_land_fire = 1
+		shock_damage = 0.125
+		fire_damage = 0.125
 	}
 	glorious_arms = {
 		general_cost = -0.20
+	}
+	superior_firepower = {
+		leader_land_shock = 1
 	}
 	engineer_corps = {
 		siege_ability = 0.2
@@ -439,7 +440,7 @@ defensive_ideas = {
 		land_forcelimit_modifier = 0.20
 	}
 	improved_foraging = {
-		global_manpower_modifier = 0.10
+		global_manpower_modifier = 0.15
 	}
 
 	ai_will_do = {
@@ -749,9 +750,8 @@ quality_ideas = {
 	private_to_marshal = {
 		infantry_power = 0.10
 	}
-	noble_officers = {
-		army_tradition_decay = -0.01
-		navy_tradition_decay = -0.01
+	quality_education = {
+		army_tradition = 0.5
 	}
 	naval_drill = {
 		global_regiment_recruit_speed = -0.33

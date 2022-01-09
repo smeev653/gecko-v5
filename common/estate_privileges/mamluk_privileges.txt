@@ -8,11 +8,6 @@ estate_gc_noble_levies = {
 			country_event = { id = gecko.8 }
 	}
 	is_valid = {
-		OR ={
-			tag = MAM
-			culture_group = altaic
-			culture_group = tartar
-		}
 	}
 	can_select = {
 	}
@@ -29,7 +24,7 @@ estate_gc_noble_levies = {
 			capital_scope = { 
 				add_unit_construction = {
 					type = cavalry
-					amount = 15
+					amount = 10
 					speed = 2
 					cost = 0
 				}
@@ -46,7 +41,7 @@ estate_gc_noble_levies = {
 			random_owned_province = { 
 				add_unit_construction = {
 					type = cavalry
-					amount = 15
+					amount = 10
 					speed = 2
 					cost = 0
 				}
@@ -58,7 +53,7 @@ estate_gc_noble_levies = {
 	penalties = {
 	}
 	benefits = {
-			cavalry_flanking = 1
+
 	}
 	ai_will_do = {
 		factor = 0
@@ -144,15 +139,15 @@ estate_mamluks_promote_leadership = {
 	loyalty = 0.05
 	influence = 0.1
 	can_select = {
-		army_tradition = 10
+		army_tradition = 30
 	}
 	on_granted = {
 	}
 	penalties = {
 	}
 	benefits = {
-		army_tradition_decay = -0.005
-		shock_damage = 0.1
+		cavalry_flanking = 1
+		shock_damage = 0.05
 	}
 	ai_will_do = {
 		factor = 10
