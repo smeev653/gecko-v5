@@ -8,10 +8,9 @@ estate_gc_noble_levies = {
 			country_event = { id = gecko.8 }
 	}
 	is_valid = {
-		NOT = { has_estate_privilege = estate_gc_noble_levies }
 	}
 	can_select = {
-		
+		NOT = { has_estate_privilege = estate_gc_noble_levies }
 	}
 	on_granted = {
 		create_general = {
