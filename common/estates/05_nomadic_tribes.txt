@@ -17,7 +17,7 @@ estate_nomadic_tribes = {
 					has_terrain = steppe
 				}
 			}
-			tag = ARB
+			#tag = ARB
 		}	
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }

@@ -1662,7 +1662,7 @@ has_reached_government_reform_tier = {
 				has_reform = tribe_becomes_monarchy_reform
 				has_reform = tribe_becomes_republic_reform
 				has_reform = tribe_becomes_theocracy_reform
-				has_reform = tribe_becomes_horde_reform
+				has_reform = gc_tribe_becomes_horde_reform
 				#has_reform = tribe_remain_tribal_reform
 				#Natives
 				has_reform = native_becomes_horde_reform

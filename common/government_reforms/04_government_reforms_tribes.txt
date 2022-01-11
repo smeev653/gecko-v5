@@ -39,7 +39,7 @@ steppe_horde = {
 		global_institution_spread = -0.15
 		reinforce_cost_modifier = -0.25
 		#cavalry_power = 0.1
-		movement_speed = 0.2
+		movement_speed = 0.1
 		years_of_nationalism = -5
 	}
 	ai = {
@@ -96,7 +96,6 @@ tribal_federation = {
 		years_of_nationalism = -5
 		tolerance_heretic = 2
 		tolerance_heathen = 2
-		movement_speed = 0.2
 	}
 
 	conditional = {
@@ -508,7 +507,7 @@ tribe_becomes_theocracy_reform = {
 	}
 }
 
-tribe_becomes_horde_reform = {
+gc_tribe_becomes_horde_reform = {
 	icon = "horde_riding_highlighted"
 	allow_normal_conversion = yes
 	potential = {
@@ -517,20 +516,21 @@ tribe_becomes_horde_reform = {
 		}
 	}		  
 	effect = {
-		set_country_flag = populists_in_government
-		add_government_reform = steppe_horde
-		change_unit_type = nomad_group
-		change_technology_group = nomad_group
-		custom_tooltip = STEPPE_HORDE_BENEFITS
+		#change_unit_type = nomad_group
+		#change_technology_group = nomad_group
+
 	}
 	trigger = {
-		OR = {
-			NOT = {	has_reform = steppe_horde }
-			has_reform = tribe_becomes_horde_reform
-		}
+		
 		NOT = { has_reform = great_mongol_state_reform }
 	}
+	
+	modifiers = {
+		cavalry_power = -0.30
+		infantry_power = 0.15
+		land_morale = 0.10
+	}
 	ai = {
-		factor = 0
+		factor = 200
 	}
 }

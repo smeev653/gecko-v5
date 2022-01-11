@@ -473,13 +473,14 @@ TUR_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	millets = {
-		core_creation = -0.20
-		num_accepted_cultures = 1
-	}
-
+	
 	timariot_system = {
-		cavalry_power = 0.20
+		cavalry_power = 0.15
+		cavalry_cost = -0.10
+	}
+	millets = {
+		core_creation = -0.25
+		num_accepted_cultures = 1
 	}
 	ghazi = {
 		manpower_recovery_speed = 0.15
@@ -1357,7 +1358,7 @@ JAP_ideas = {
 MAM_ideas = {
 	start = {
 		trade_steering = 0.25
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	
 	bonus = {

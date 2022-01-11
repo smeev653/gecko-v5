@@ -13,7 +13,7 @@ base_production = 5
 base_manpower = 5
 is_city = yes
 extra_cost = 8
-center_of_trade = 1
+#center_of_trade = 1
 
 add_province_triggered_modifier = gc_mongol_kurultai
 

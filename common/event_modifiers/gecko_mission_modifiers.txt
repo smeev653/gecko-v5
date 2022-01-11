@@ -106,12 +106,12 @@ beyliks_subjugated = {
 }
 
 pap_papal_swiss_guard = {
-	mercenary_discipline = 0.1
+	mercenary_discipline = 0.05
 }
 
 mlo_the_swiss_mercs = {
 	mercenary_cost = -0.1
-	mercenary_discipline = 0.10
+	mercenary_discipline = 0.05
 }
 
 prester_john_discovered = {
@@ -181,7 +181,7 @@ gecko_marathas_subdued = {
 ven_mercenaries_paid_with_land = {
 	mercenary_cost = -0.1
 	merc_maintenance_modifier = -0.2
-	mercenary_discipline = 0.1
+	mercenary_discipline = 0.05
 }
 
 ven_venture_captain_recruitment = {
@@ -297,11 +297,6 @@ mongol_european_conquest = {
 
 reorganized_mongols = {
 	num_accepted_cultures = 3
-}
-
-genghis_khan_reborn = {
-	prestige = 1
-	discipline = 0.05
 }
 
 defense_of_france = {

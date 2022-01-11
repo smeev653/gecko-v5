@@ -1,5 +1,90 @@
 namespace = tribal_succession
 
 # Tribal Succession Crisis
-
+country_event = {
+	id = tribal_succession.1
+	title = tribal_succession.1.t
+	desc = tribal_succession.1.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = tribal_federation
+		}
+		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
+		num_of_cities = 4
+		OR = {
+			NOT = { legitimacy_or_horde_unity = 50 }
+			has_regency = yes
+			has_consort_regency = yes
+		}
+	}
+	
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { stability = 1 }
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						is_state = yes
+					}
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+						win = yes
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = tribal_succession.1.a
+		trigger = {
+			NOT = { legitimacy_or_horde_unity = 50 }
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					NOT = { is_core = ROOT }
+					can_spawn_rebels = nationalist_rebels
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						NOT = { is_core = ROOT }
+						can_spawn_rebels = nationalist_rebels
+					}
+					nationalist_rebels = 1
+				}
+			}
+		}	
+	}
+	
+	option = {
+		name = tribal_succession.1.b
+		trigger = {
+			OR = {
+				has_regency = yes
+				has_consort_regency = yes		
+			}		
+		}
+		define_ruler = {
+			dynasty = ROOT #Uncles, or other relatives were by far the most likely coup-makers
+			change_ADM = 1
+			change_DIP = 2
+			change_MIL = 2
+			claim = 100
+		}
+		kill_heir = yes
+	}
+}
 	

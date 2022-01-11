@@ -18,6 +18,7 @@ historical_rival = CRI
 historical_rival = QOM
 historical_rival = KRM
 historical_rival = FRS
+historical_rival = KHI
 
 1392.1.1 = {
 	monarch = {

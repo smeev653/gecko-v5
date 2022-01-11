@@ -374,8 +374,7 @@ categories =  {
 			# 1.30
 			4750 4754
 			381 #Ajloun
-			156 #Temes 
-			4239 #Belgrade
+			
 			5777 5778
 			6135 6140 432 4334 #gc persia
 		}
@@ -721,6 +720,8 @@ categories =  {
 			#405 #smeev change
 			6113 6117 #bunker mod merge
 			6121
+			156 #Temes 
+			4239 #Belgrade
 		}
 	}
 

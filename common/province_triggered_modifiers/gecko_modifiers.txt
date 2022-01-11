@@ -235,7 +235,6 @@ conquest_of_delhi = {
 
 	trigger = {
 		owner = {
-			NOT = { tag = DLH }
 			OR = {
 				religion = sunni
 				religion = shiite
@@ -600,18 +599,6 @@ conquest_of_herat = {
 	}
 
 	trigger = {
-		owner = {
-			OR = {
-				tag = TRS
-				tag = BUK
-				tag = TIM
-				tag = AFG
-				tag = MUG
-				tag = ARL
-				tag = ISF
-				tag = PER
-			}
-		}
 		controlled_by = ROOT
 	}
 

@@ -16,7 +16,7 @@ aristocracy_ideas = {
 	
 	noble_knights = {
 		cavalry_power = 0.10
-		cavalry_cost = -0.10
+		cavalry_cost = -0.05
 		cavalry_flanking = 1
 	}
 	
@@ -760,16 +760,15 @@ quality_ideas = {
 		drill_gain_modifier = 0.33
 		drill_decay_modifier = -0.1
 	}
-	escort_ships = {
-		yearly_army_professionalism = 0.005
-	}
 	copper_bottoms = {
 		reserves_organisation = 0.25
 	}
 	massed_battery = {
 		artillery_power = 0.1
 	}
-
+	escort_ships = {
+		yearly_army_professionalism = 0.0035
+	}
 	ai_will_do = {
 		factor = 10
 		modifier = {

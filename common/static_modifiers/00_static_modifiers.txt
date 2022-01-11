@@ -678,7 +678,7 @@ bankruptcy = {
 	#technology_cost = 0.5
 	#idea_cost = 0.5
 	imperial_mandate = -0.1
-	defensiveness = -0.5
+	defensiveness = -1
 }
 
 
@@ -879,6 +879,7 @@ country_development = {
 # Multiplied by Tribal Allegiance / 100
 tribal_allegiance = {
 	land_forcelimit_modifier = 0.25
+	movement_speed = 0.2
 }
 
 # Multiplied by current Legitimacy - 50
