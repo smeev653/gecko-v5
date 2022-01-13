@@ -225,3 +225,10 @@ gc_pope_controls_roman_empire = {
 	production_efficiency = 0.2
 	num_accepted_cultures = 3
 }
+
+persia_united = {
+	interest = -1
+	inflation_reduction = 0.5
+	global_monthly_devastation = -1
+	land_morale = 0.05
+}
