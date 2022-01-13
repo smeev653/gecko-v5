@@ -11,6 +11,7 @@ change_estate_land_share = {
 	share = -20
 }
 
+
 1441.1.1 = {
 	monarch = {
 		name = "Haji I"

@@ -148,6 +148,6 @@ country_event = {
 			change_culture = crimean
 		}
 		#add_treasury = 500
-		add_manpower = 10
+		#add_manpower = 10
 	}
 }

@@ -184,6 +184,7 @@ gc_cri_branch_2 = {
             OR = {
 				area = azov_area
 				area = simferopol_area
+				area = moldavia_area
 			}
 			NOT = {
 				country_or_subject_holds = ROOT
@@ -196,6 +197,10 @@ gc_cri_branch_2 = {
 				country_or_subject_holds = ROOT
 			}
 			simferopol_area = {
+				type = all
+				country_or_subject_holds = ROOT
+			}
+			moldavia_area = {
 				type = all
 				country_or_subject_holds = ROOT
 			}
