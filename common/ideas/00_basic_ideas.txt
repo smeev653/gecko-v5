@@ -379,7 +379,7 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		recover_army_morale_speed = 0.15
+		discipline = 0.05
 	}
 
 	bayonet_leaders = {
@@ -400,12 +400,14 @@ offensive_ideas = {
 		reinforce_speed = 0.25
 		land_attrition = -0.15
 	}
+	national_conscripts = {
+		land_forcelimit_modifier = 0.10
+		recover_army_morale_speed = 0.15
+	}
 	napoleonic_warfare = {
 		artillery_power = 0.1
 	}
-	national_conscripts = {
-		discipline = 0.05
-	}
+
 	ai_will_do = {
 		factor = 2
 	}
@@ -416,7 +418,8 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		shock_damage_received = -0.15
+		global_manpower_modifier = 0.15
+		land_morale = 0.025
 	}
 
 	battlefield_commisions = {
@@ -437,10 +440,10 @@ defensive_ideas = {
 		leader_land_manuever = 1
 	}
 	supply_trains = {
-		land_forcelimit_modifier = 0.20
+		land_forcelimit_modifier = 0.15
 	}
 	improved_foraging = {
-		global_manpower_modifier = 0.15
+		shock_damage_received = -0.15
 	}
 
 	ai_will_do = {
