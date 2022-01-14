@@ -1207,7 +1207,11 @@ entrepreneur_personality = {
 		chance = {
 			modifier = {
 				factor = 1
-				DIP = 6
+				DIP = 5
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 10
 			}
 		}
 	}
@@ -1220,7 +1224,7 @@ entrepreneur_personality = {
 		chance = {
 			modifier = {
 				factor = 1
-				heir_DIP = 6
+				heir_DIP = 5
 			}
 		}
 	}
@@ -1233,7 +1237,7 @@ entrepreneur_personality = {
 		chance = {
 			modifier = {
 				factor = 1
-				consort_DIP = 6
+				consort_DIP = 5
 			}
 		}
 	}
@@ -1252,7 +1256,7 @@ entrepreneur_personality = {
 	building_budget_multiplier = 2
 	gift_chance = 65
 	
-	trade_efficiency = 0.1
+	interest = -0.25
 	nation_designer_cost = 2
 } #Opens Exceptional Year, 1 better event, 3 less bad
 

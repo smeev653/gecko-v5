@@ -399,6 +399,16 @@ renaissance = {
 			}
 		}
 		modifier = {
+			factor = 0.1
+			scale = yes
+			potential = {
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_development_30
+				development = 30
+			}
+		}
+		modifier = {
 			factor = 1
 			scale = no
 			potential = {
@@ -439,6 +449,17 @@ renaissance = {
 					area = tuscany_area
 					area = venetia_area
 				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			scale = yes
+			potential = {
+				area = thrace_area
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_thrace_area
+				area = thrace_area
 			}
 		}
 		modifier = {
