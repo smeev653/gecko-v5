@@ -5579,10 +5579,6 @@ estate_cossacks_recruit_cossack_generals = {
 	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
-		OR = {
-			tag = HUN
-			tag = POL
-		}	
 	}
 	can_select = {
 		
