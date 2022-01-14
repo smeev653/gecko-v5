@@ -2292,23 +2292,23 @@ on_thri_yearly_pulse_2 = {
 		25 = orthodox_flavor.5
 
 		# Muslim Piety Events
-		40 = muslim_piety.1
-		40 = muslim_piety.2
-		40 = muslim_piety.3
-		20 = muslim_piety.4
-		20 = muslim_piety.5
-		40 = muslim_piety.6
-		40 = muslim_piety.7
-		40 = muslim_piety.8
-		40 = muslim_piety.9
-		40 = muslim_piety.10
-		40 = muslim_piety.11
-		40 = muslim_piety.12
-		40 = muslim_piety.13
-		40 = muslim_piety.14
-		40 = muslim_piety.15
-		40 = muslim_piety.16
-		40 = muslim_piety.22
+		80 = muslim_piety.1
+		80 = muslim_piety.2
+		80 = muslim_piety.3
+		40 = muslim_piety.4
+		40 = muslim_piety.5
+		80 = muslim_piety.6
+		80 = muslim_piety.7
+		80 = muslim_piety.8
+		80 = muslim_piety.9
+		80 = muslim_piety.10
+		80 = muslim_piety.11
+		80 = muslim_piety.12
+		80 = muslim_piety.13
+		80 = muslim_piety.14
+		80 = muslim_piety.15
+		80 = muslim_piety.16
+		80 = muslim_piety.22
 		300 = 0
 	}
 }

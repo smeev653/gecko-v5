@@ -78,7 +78,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.10
+		add_piety = 0.20
 	}
 	option = {
 		name = muslim_piety.1.b #Leave them be
@@ -102,7 +102,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.10
+		add_piety = -0.20
 	}
 }
 
@@ -178,7 +178,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.10
+		add_piety = 0.20
 		add_adm_power = 10
 	}
 	option = {
@@ -203,7 +203,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.10
+		add_piety = -0.20
 		add_legitimacy = 10
 	}
 }
@@ -264,7 +264,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.15
+		add_piety = 0.3
 		add_legitimacy = 10
 	}
 	option = {
@@ -289,7 +289,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.10
+		add_piety = -0.20
 		add_yearly_manpower = 0.5
 	}
 }
@@ -373,7 +373,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.15
+		add_piety = 0.3
 	}
 	option = {
 		name = muslim_piety.5.b
@@ -397,7 +397,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.15
+		add_piety = -0.3
 	}
 }
 
@@ -482,7 +482,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.10
+		add_piety = -0.20
 		reduce_estate_church_loyalty_effect = yes
 		add_estate_dhimmi_loyalty_effect = yes
 	}
@@ -544,7 +544,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.10
+		add_piety = 0.20
 		add_estate_church_loyalty_effect = yes
 	}
 	option = {
@@ -629,7 +629,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.1
+		add_piety = 0.2
 	}
 	option = {
 		name = muslim_piety.8.b
@@ -711,7 +711,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.1
+		add_piety = 0.2
 	}
 	option = {
 		name = muslim_piety.9.b
@@ -735,7 +735,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.1
+		add_piety = -0.2
 	}
 }
 
@@ -815,7 +815,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.15
+		add_piety = -0.3
 		
 	}
 }
@@ -883,7 +883,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.1
+		add_piety = 0.2
 	}
 	option = {
 		name = muslim_piety.11.b
@@ -907,7 +907,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.1
+		add_piety = -0.2
 	}
 }
 
@@ -1007,7 +1007,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.1
+		add_piety = 0.2
 		add_prestige = 10
 	}
 	option = {
@@ -1144,7 +1144,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.1
+		add_piety = 0.2
 		event_target:popular_sufism_province = {
 			area = {
 				limit = {
@@ -1176,7 +1176,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.35
+		add_piety = -0.7
 	}
 }
 
@@ -1263,7 +1263,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.1
+		add_piety = 0.2
 		event_target:coffee_province = {
 			area = {
 				limit = {
@@ -1297,7 +1297,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.25
+		add_piety = -0.5
 	}
 }
 
@@ -1374,7 +1374,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_piety = 0.1
+		add_piety = 0.2
 		event_target:new_province = {
 			add_province_modifier = {
 				name = "sufi_orders_in_check"
@@ -1404,7 +1404,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_piety = -0.1
+		add_piety = -0.2
 		event_target:new_province = {
 			add_province_modifier = {
 				name = "sufi_order_integration"
@@ -1438,14 +1438,14 @@ country_event = {
 	option = {
 		name = muslim_piety.16.a
 		ai_chance = { factor = 100 }
-		add_piety = 0.35
+		add_piety = 0.7
 		add_estate_church_loyalty_effect = yes
 	}
 	option = {
 		name = muslim_piety.16.b
 		ai_chance = { factor = 0 }
 		reduce_estate_church_loyalty_effect = yes
-		add_piety = -0.1
+		add_piety = -0.2
 		add_country_modifier = {
 			name = "loss_of_legal_competence"
 			duration = 3650
@@ -1475,7 +1475,7 @@ country_event = {
 	
 	option = {
 		name = muslim_piety.17.a
-		add_piety = -0.10
+		add_piety = -0.2
 		remove_country_modifier = dhimmi_building_restrictions
 	}
 }
@@ -1553,7 +1553,7 @@ country_event = {
 		set_global_flag = hagia_sophia_now_mosque
 		show_ambient_object = hagia_sophia_minarets
 		hide_ambient_object = hagia_sophia
-		add_piety = 0.2
+		add_piety = 0.4
 		add_prestige = 20
 		add_years_of_income = -0.1
 		if = {
