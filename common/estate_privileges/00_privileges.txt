@@ -1111,7 +1111,7 @@ estate_church_clerical_ministers = {
 			religion_group = muslim
 		}
 		modifier = {
-			monthly_piety = 0.002
+			monthly_piety = 0.02
 		}
 	}
 	conditional_modifier = {
@@ -5591,7 +5591,7 @@ estate_cossacks_recruit_cossack_generals = {
 	}
 	benefits = {
 		army_tradition = 0.5
-		leader_land_shock = 1
+		shock_damage = 0.125
 	}
 	ai_will_do = {
 		factor = 10
