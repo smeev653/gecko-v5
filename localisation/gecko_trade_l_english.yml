@@ -11,3 +11,6 @@
  basra:0 "Arabia"
  TRADE_COMPANY_caucasus_Root_Culture_GetName:0 "[Root.Culture.GetName] Caucasus Company"
  TRADE_COMPANY_caucasus_Near_East_Trade_Company:0 "[Root.Culture.GetName] Caucasus Company"
+
+ #Germany
+ gc_south_germany_tradenode:0 "South Germany"
