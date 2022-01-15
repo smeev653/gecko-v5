@@ -1660,76 +1660,43 @@ wien={
 	outgoing={
 		name="rheinland"
 		path={
-			1770 4725 266 6101 2967 4717 4716 79 4718
+			133 64 1757 67 66 79 1876 
 		}
 		control={
-			 
+			3033.000000 1484.000000 3006.000000 1499.000000 2992.000000 1505.000000 2984.000000 1509.000000 2978.000000 1514.000000 2960.000000 1513.000000 2947.000000 1514.000000 
 		}
 	}
 	outgoing={
-		name="gc_south_germany_tradenode"
+		name="champagne"
 		path={
-			133 4709 2956 2957 2955
+			75 183
+		}
+		control={ 
+			3033.000000 1484.000000 3006.000000 1499.000000 2963.000000 1486.000000 2923.000000 1493.000000 2863.000000 1499.000000 
+		}
+	}
+	outgoing={
+		name="pest"
+		path={
+			4240 135
 		}
 		control={
-			
+			3092.000000 1474.000000 
 		}
 	}
 
-	members = {
-		73 4758 110 1768 #Tirol
-		134 4762 4761 133 1770 #Austria proper
-		128 4759 132 1863 #unterkärnten
-		6105 4724 2970 6104 #Hradecko
-		265 4237 4726 6106 # Moravia
-		266 4725 2968 6103 6102  #bohemia 
-		267 2967 1771 6101 #erzgebirge #smeev
-		1769 129 4751 #Krain
-	}
-}
-
-gc_south_germany_tradenode = {
-	location = 68
-	color = {
-		255 146 0
-	}
-	outgoing = {
-		name = "venice"
-		path = {
-			68 4712 1870 166 4740 104
-		}
-		control = {
-
-		}
-	}
-	outgoing = {
-		name = "rheinland"
-		path = {
-			70 77 78
-		}
-		control = {
-
-		}
-	}
-	outgoing = {
-		name = "champagne"
-		path = {
-			4713 74 4765 6091 189 187 6084
-		}
-		control = {
-
-		}
-	}
-	members = {
-		4712 4713 70 #West Swabia
-		68 1872 4711 1868 4710 #East Swabia
+	members={6106 6105 6104 6103 6102 6101 
+		64 65 76 128 132 133 134 1757 1770 1863 2955 2956 2957 68 1868 70 1872 73 110 1768
+		4707 4708 4709 4710 4711 4712 4713
+		4758 4759 4760 4761 4762 # Austria 1.30
+		265 4237 4726 # Moravia
 		4714 72 74 #baden #smeev
 		75 4765 1880 #alsace #smeev
 		1873 4722 1870 166 1869 #switzerland #smeev
 		165 1867 1871 4721 4720 #romandie_area #smeev
-		2955 4708 65 4707 #uppper bavaria
-		4709 4760 76 #eastern bavaria
-		64 2957 1757 2956 #lower bavaria
+		266 4724 4725 2968 2970  #bohemia #smeev
+		267 2967 1771 #erzgebirge #smeev
+		1769 129 4751
 	}
 }
 
