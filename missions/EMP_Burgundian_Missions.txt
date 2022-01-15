@@ -578,6 +578,13 @@ emp_burgundy_3 = {
 					name = "burgundy_subjects_placated"
 					duration = 5475 #15 years	
 			}
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	emp_bur_lorraine = {

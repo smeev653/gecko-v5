@@ -142,7 +142,7 @@ change_estate_land_share = {
 		manuever = 1
 		siege = 3
 		death_date = 1463.7.5
-		personality = siege_specialist_personality
+		personality = defensive_planner_personality
 	}
 }
 

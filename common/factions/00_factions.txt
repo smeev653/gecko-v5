@@ -84,9 +84,9 @@ mr_guilds =
 
 	modifier = 
 	{
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.1
 		build_cost = -0.05
-		global_tax_modifier = 0.05
+		global_tax_modifier = 0.1
 	}
 }
 

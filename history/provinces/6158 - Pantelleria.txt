@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Pantelleria
-add_core = TUN
-owner = TUN
-controller = TUN
+add_core = NAP
+owner = NAP
+controller = NAP
 culture = sicilian
 religion = catholic
 hre = no

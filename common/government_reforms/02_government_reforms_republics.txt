@@ -291,6 +291,7 @@ venice_merchants_reform = {
 		max_absolutism = -50
 		merchants = 1
 		yearly_corruption = -0.1
+		accept_vassalization_reasons = 10
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -799,8 +800,8 @@ ambrosian_republic = {
 	nation_designer_cost = 10
 	modifiers = {
 		global_tax_modifier = 0.1
-		land_morale = 0.05
-		governing_capacity = 50
+		#land_morale = 0.05
+		governing_capacity = 100
 		max_absolutism = -30
 	}
 	custom_attributes = {
@@ -1222,6 +1223,7 @@ nepotism_reform = {
 	icon = "man_and_children"
 	allow_normal_conversion = yes
 	potential = {
+		always = no
 		NOT = {
 			has_reform = pirate_republic_reform
 		}

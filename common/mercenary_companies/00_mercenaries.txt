@@ -9,11 +9,12 @@ merc_lombard_free_company = {
 		OR = {
 			tag = MLO
 			tag = ITA
+			tag = VEN
 		}
 	}
 	cost_modifier = 0.75
 	modifier = { 
-		infantry_power = 0.15
+		infantry_power = 0.10
 	}
 }
 
@@ -239,7 +240,7 @@ merc_stratioti = {
 			tag = VEN
 		}
 	}
-	modifier = { infantry_power = 0.1 }
+	modifier = { infantry_power = 0.15 }
 }
 
 

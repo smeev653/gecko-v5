@@ -95,7 +95,7 @@ emp_ven_slot_2 = {
 		trigger = {
 			112 = {
 				owned_by = ROOT
-				grown_by_development = 10
+				grown_by_development = 5
 			}
 		}
 		effect = {
@@ -240,7 +240,7 @@ emp_ven_slot_3 = {
 		position = 1
 		
 		trigger = {
-			share_of_starting_income = 1.5
+			share_of_starting_income = 1.25
 		}
 		effect = {
 			add_mil_power = 50
@@ -270,7 +270,7 @@ emp_ven_slot_3 = {
 	emp_ven_expand_the_terraferma = {
 		icon = expand_the_terraferma
 		position = 3
-		required_missions = { emp_ven_land_grants_for_free_companies emp_ven_contest_genoese_trade }
+		required_missions = { emp_ven_contest_genoese_trade }
 		
 		trigger = {
 			grown_by_states = 2

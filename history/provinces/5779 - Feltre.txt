@@ -1,7 +1,7 @@
 #5779 - Feltre
 
-owner = VEN
-controller = VEN
+owner = AQU
+controller = AQU
 culture = venetian 
 religion = catholic 
 hre = yes 
@@ -12,6 +12,7 @@ base_manpower = 2
 capital = "Feltre" 
 is_city = yes # Estimated
 add_core = VEN
+add_core = AQU
 fort_15th = yes
 
 

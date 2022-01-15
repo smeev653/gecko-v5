@@ -1,7 +1,7 @@
 # 4739 - Bergamo
 
-owner = MAN	
-controller = MAN
+owner = MLO
+controller = MLO
 culture = lombard 
 religion = catholic 
 hre = yes 
@@ -11,7 +11,6 @@ trade_goods = cloth
 base_manpower = 2  
 capital = "Bergamo" 
 is_city = yes
-add_core = MAN
 add_core = MLO
 
 

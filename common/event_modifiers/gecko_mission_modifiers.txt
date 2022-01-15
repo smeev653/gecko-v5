@@ -316,3 +316,12 @@ eth_increased_gold_mining = {
 zan_conversion_of_fetishist = {
 	land_morale = 0.1
 }
+
+berber_fury = {
+	land_morale = 0.1
+	province_warscore_cost = -0.1
+}
+
+mor_privateering = {
+	production_efficiency = 0.15
+}

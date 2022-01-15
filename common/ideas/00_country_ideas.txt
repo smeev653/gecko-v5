@@ -899,7 +899,7 @@ VRN_ideas = {
 VEN_ideas = {
 	start = {
 		trade_efficiency = 0.15
-		land_morale = 0.05
+		land_morale = 0.10
 	}
 	
 	bonus = {
@@ -13625,8 +13625,8 @@ RIG_ideas = {
 
 CRI_ideas = {
 	start = {
-		cavalry_power = 0.2
 		core_creation = -0.25
+		global_manpower_modifier = 0.25
 	}
 	bonus = {
 		trade_efficiency = 0.1
@@ -13637,7 +13637,7 @@ CRI_ideas = {
 	free = yes
 	
 	cri_allow_nogai_protectorates = {
-		global_manpower_modifier = 0.25
+		cavalry_power = 0.2
 		cavalry_cost = -0.1
 	}
 	cri_genghisid_legacy = {
@@ -13780,7 +13780,7 @@ MOR_ideas = {
 		cavalry_power = 0.15
 	}
 	bonus = {
-		hostile_attrition = 1
+		shock_damage = 0.2
 	}
 	trigger = {
 		tag = MOR
@@ -13795,7 +13795,7 @@ MOR_ideas = {
 	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
-		caravan_power = 0.5
+		merchant = 1
 	}
 	mor_fleet = {
 		galley_power = 0.2
@@ -13804,10 +13804,10 @@ MOR_ideas = {
 		production_efficiency = 0.10
 	}
 	mor_slave_soldiers = {
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.1
 	}
 	mor_curb_power_of_the_tribes = {
-		global_autonomy = -0.05
+		manpower_recovery_speed = 0.2
 	}
 }
 

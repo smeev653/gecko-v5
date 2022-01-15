@@ -98,13 +98,12 @@ change_estate_land_share = {
 		name = "Francesco I"
 		dynasty = "Sforza"
 		birth_date = 1411.9.3
-		adm = 5
-		dip = 5
-		mil = 5
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = careful_personality
-	add_ruler_personality = inspiring_leader_personality
 }
 1412.7.24 = {
 	queen = {

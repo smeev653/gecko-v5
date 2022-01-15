@@ -506,7 +506,7 @@ careful_personality = {
 	building_budget_multiplier = 2
 	gift_chance = 65
 	
-	ae_impact = -0.15
+	ae_impact = -0.2
 	nation_designer_cost = 5
 } #modifies scandal at court, 
 
@@ -1206,11 +1206,11 @@ entrepreneur_personality = {
 	
 		chance = {
 			modifier = {
-				factor = 1
+				factor = 2
 				DIP = 5
 			}
 			modifier = {
-				factor = 2
+				factor = 5
 				num_of_loans = 10
 			}
 		}
@@ -1223,8 +1223,12 @@ entrepreneur_personality = {
 	
 		chance = {
 			modifier = {
-				factor = 1
-				heir_DIP = 5
+				factor = 2
+				DIP = 5
+			}
+			modifier = {
+				factor = 5
+				num_of_loans = 10
 			}
 		}
 	}
@@ -1236,8 +1240,12 @@ entrepreneur_personality = {
 
 		chance = {
 			modifier = {
-				factor = 1
-				consort_DIP = 5
+				factor = 2
+				DIP = 5
+			}
+			modifier = {
+				factor = 5
+				num_of_loans = 10
 			}
 		}
 	}
@@ -1256,7 +1264,7 @@ entrepreneur_personality = {
 	building_budget_multiplier = 2
 	gift_chance = 65
 	
-	interest = -0.25
+	interest = -0.5
 	nation_designer_cost = 2
 } #Opens Exceptional Year, 1 better event, 3 less bad
 

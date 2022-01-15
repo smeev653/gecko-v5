@@ -71,3 +71,4 @@
  ANNEX_TOO_LOW:0 "Your vassal needs to have at least §Y+100§! opinion of you for you to be able to start an annexation."
  tooltip_development_30:0 "European 30 development province"
  tooltip_thrace_area:0 "Province in the Thrace Area"
+ military_genius_personality:0 "Military Genius"
