@@ -14,6 +14,9 @@ war_goal = {
 	add_defender = ING
 	add_defender = LBV
 	add_defender = AUG
+	add_defender = SWI
+	add_defender = KNZ
+	add_defender = TTL
 }
 # War end date
 1444.11.10 = {
@@ -24,4 +27,7 @@ war_goal = {
 	rem_defender = ING
 	rem_defender = LBV
 	rem_defender = AUG
+	rem_defender = SWI
+	rem_defender = KNZ
+	rem_defender = TTL
 }
