@@ -87,6 +87,7 @@ country_decisions = {
             OR = {
                 tag = WES
                 tag = HAB
+				tag = SWI
             }
 			culture_group = germanic
 		}
