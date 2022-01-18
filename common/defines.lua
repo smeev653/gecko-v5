@@ -57,7 +57,7 @@ NDiplomacy = {
 	DISHONORABLE_PEACE_MONTHS = 0,					-- See DISHONORABLE_PEACE_WARSCORE. Set to 0 to entirely disable the feature.
 	DISHONORABLE_PEACE_WARSCORE = 0,				-- If you have more than this amount of individual warscore, peacing out within DISHONORABLE_PEACE_MONTHS of war start counts as a dishonorable act and incurs a CALL_ALLY_DECLINE_PRESTIGE_PENALTY hit.
 
-	DAYS_TO_DECLARE_WAR = 30,						-- Days from start of game before you can DOW anyone
+	DAYS_TO_DECLARE_WAR = 5,						-- Days from start of game before you can DOW anyone
 
 	INCREASE_TRUST_COST = 10,						-- Cost in favors to increase trust
 	INCREASE_TRUST_AMOUNT = 5,						-- Amount of trust per increase
@@ -140,7 +140,7 @@ NDiplomacy = {
 	ANNUL_TREATIES_YEARS = 20,						-- Years before annul treaties expire
 	COALITION_YEARS = 5,							-- Years before coalition expire
 	GUARANTEE_YEARS = 20,							-- Years before guarantee expire
-	REVANCHISM_MONTHLY_DECAY = 0.625,			-- about 20 years to decay all of it.
+	REVANCHISM_MONTHLY_DECAY = 0.833,			-- about 20 years to decay all of it.
 	MONARCH_GOV_CHANGE_LEGITIMACY_PENALTY = 0.0,	-- Penalty(%) on the legitimacy when changing gov type to the monarchy
 	EXTEND_REGENCY_LEGITIMACY_PENALTY = 10,  		-- Penalty for extending a regency
 	EXTEND_REGENCY_IMPERIAL_AUTHORITY_PENALTY = 20, -- Penalty for extending a regency
@@ -342,7 +342,7 @@ NDiplomacy = {
 	ELECTIVE_VICTORY_PRESTIGE = 25,				-- Prestige for getting a heir from your country onto the throne of an elective nation
 	ELECTIVE_VICTORY_LEGITIMACY = 10,				-- Legitimacy for getting a heir from your country onto the throne of an elective nation
 
-	INTEGRATE_UNION_MIN_YEARS = 20,					-- Number of years before a union can be integrated
+	INTEGRATE_UNION_MIN_YEARS = 5,					-- Number of years before a union can be integrated
 	INTEGRATE_VASSAL_MIN_YEARS = 5,				-- Number of years before a vassal can be integrated
 
 	MONTHS_BEFORE_TOTAL_OCCUPATION = 12,			-- Before this many months have passed in the war, you cannot gain 100% warscore by just occupying the warleader
@@ -399,7 +399,7 @@ NDiplomacy = {
 
 	PAY_SUBJECT_DEBT_LIBERTY_DESIRE_REDUCTION = 5,	-- Amount of liberty desire the subject loses per paid loan
 
-	NUM_OF_GREAT_POWERS = 8,						-- The number of ordinary (i.e. non-leaving) Great Powers if RightsOfManDLC is enabled.
+	NUM_OF_GREAT_POWERS = 6,						-- The number of ordinary (i.e. non-leaving) Great Powers if RightsOfManDLC is enabled.
 	LEAVING_GREAT_POWER_YEARS = 5,					-- The number of years a Great Power can remain after being removed from the top (8).
 	GREAT_POWER_SUBJECT_CONTRIBUTION = 0.25,			-- Share of subjects' development that will count towards overlord's Great Power score.
 
@@ -670,7 +670,7 @@ NCountry = {
 	GREAT_PROJECT_MOVE_COST_PER_DAY = 3, --how much to move a great project for one day
 	COUNTRIES_GETTING_SCORE = 10,
 	LAND_FORCELIMIT_EXTRA_COST_FACTOR = 1.5,			-- extra expense for being above forcelimit
-	NAVAL_FORCELIMIT_EXTRA_COST_FACTOR = 0.25,			-- extra expense for being above forcelimit
+	NAVAL_FORCELIMIT_EXTRA_COST_FACTOR = 0.125,			-- extra expense for being above forcelimit
 	REPUBLICAN_TRADITION_YEARLY_INCREASE = 1,		-- how much it increases each year.
 	PIETY_PERCENTAGE_AT_NEW_RULER = 1,			-- percentage of piety kept at new ruler.
 	PIETY_INCREASE_AT_GOOD_WAR = 0,
@@ -1400,7 +1400,7 @@ NMilitary = {
 	SUPPLY_DEPOT_DURATION_MONTHS = 60,				-- Time until supply depot is removed.
 	SUPPLY_DEPOT_MIL_COST = 5,						-- Mil power cost to build a supply depot in an area.
 	RESERVE_TICK_DAMAGE = 0.03,
-	CREATE_JANISSARIES_MIL_COST = 8,				-- Cost to create janissaries (per unit)
+	CREATE_JANISSARIES_MIL_COST = 6,				-- Cost to create janissaries (per unit)
 	CREATE_CAWA_MIL_COST = 8,						-- Cost to create Cawa (per unit)
 	COSSACKS_MAXIMUM_RATIO = 1.0,					-- Maximum number of Cossacks regiments, relative to force limit
 	REVOLUTIONARY_GUARD_MAXIMUM_RATIO = 1.0,			-- Maximum number of Revolutionary Guard regiments, relative to force limit
@@ -1597,7 +1597,7 @@ NAI = {
 
 	DEBASE_THRESHOLD = 10000,-- AI will not debase if it has more gold than this.
 
-	DEVELOPMENT_CAP_BASE = 35,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
+	DEVELOPMENT_CAP_BASE = 30,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 	DEVELOPMENT_CAP_MULT = 2,
 
 	PEACE_BASE_RELUCTANCE = 0, -- AI base stubbornness to refuse peace (always applied)
