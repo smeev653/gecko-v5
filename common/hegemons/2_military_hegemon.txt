@@ -16,7 +16,7 @@ military_hegemon = {
 	scale = {
 		movement_speed = 0.1
 		land_attrition = -0.25
-		global_regiment_cost = -0.1
+		global_regiment_cost = -0.05
 		reinforce_speed = 0.25
 		siege_ability = 0.2
 	}

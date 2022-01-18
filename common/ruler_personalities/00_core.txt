@@ -1206,12 +1206,8 @@ entrepreneur_personality = {
 	
 		chance = {
 			modifier = {
-				factor = 2
+				factor = 1
 				DIP = 5
-			}
-			modifier = {
-				factor = 5
-				num_of_loans = 10
 			}
 		}
 	}
@@ -1223,12 +1219,8 @@ entrepreneur_personality = {
 	
 		chance = {
 			modifier = {
-				factor = 2
+				factor = 1
 				DIP = 5
-			}
-			modifier = {
-				factor = 5
-				num_of_loans = 10
 			}
 		}
 	}
@@ -1240,12 +1232,8 @@ entrepreneur_personality = {
 
 		chance = {
 			modifier = {
-				factor = 2
+				factor = 1
 				DIP = 5
-			}
-			modifier = {
-				factor = 5
-				num_of_loans = 10
 			}
 		}
 	}

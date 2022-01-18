@@ -327,7 +327,7 @@ new_naval_tactis = {
 		full_idea_group = maritime_ideas
 	}
 
-	technology_cost = -0.05
+	technology_cost = -0.025
 	monthly_reform_progress_modifier = 0.25
 
 	ai_will_do = {

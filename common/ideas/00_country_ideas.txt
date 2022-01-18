@@ -1016,7 +1016,7 @@ POL_ideas = {
 		cossacks_loyalty_modifier = 0.1
 	}
 	wojsko_komputoe = {
-		global_regiment_cost = -0.10
+		global_regiment_cost = -0.05
 	}
 	foreign_section = {
 		discipline = 0.05
@@ -13795,7 +13795,7 @@ MOR_ideas = {
 	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
-		merchant = 1
+		merchants = 1
 	}
 	mor_fleet = {
 		galley_power = 0.2

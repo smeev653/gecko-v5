@@ -75,6 +75,7 @@
  gecko.11.i:0 "Recruit Fortification Expert"
  gecko.11.j:0 "Recruit Quartermaster"
  gecko.11.k:0 "Recruit Artillery Officer"
+ gecko.11.l:0 "Recruit Army Organiser"
 
  #Ethiopia Mission Events
  gc_eth_events.1.t:0 "Legacy of Prester John"

@@ -33,7 +33,7 @@ fervor_trade = {
 fervor_war = {
 	cost = 5
 	effect = {
-		land_morale = 0.075
+		land_morale = 0.1
 		manpower_recovery_speed = 0.1
 	}
 	ai_will_do = {

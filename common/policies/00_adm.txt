@@ -178,7 +178,7 @@ the_espionage_act = {
 		full_idea_group = spy_ideas
 	}
 
-	technology_cost = -0.1
+	technology_cost = -0.05
 	
 	
 	ai_will_do = {
@@ -431,7 +431,7 @@ vassal_taxation_policy = {
 	}
 
 	global_tax_modifier = 0.2
-	global_regiment_cost = -0.1
+	global_regiment_cost = -0.05
 
 	ai_will_do = {
 		factor = 1
@@ -758,7 +758,7 @@ foreign_advisors = {
 		full_idea_group = innovativeness_ideas
 	}	
 	
-	technology_cost = -0.05
+	technology_cost = -0.025
 	innovativeness_gain = 0.25
 	
 	ai_will_do = {

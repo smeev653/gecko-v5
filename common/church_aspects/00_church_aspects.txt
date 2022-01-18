@@ -15,7 +15,7 @@ organised_through_bishops_aspect = {
 priests_may_marry_aspect = {
 	cost = 100
 	modifier = {
-		stability_cost_modifier = -0.25
+		stability_cost_modifier = -0.1
 	}
 	ai_will_do = {
 		factor = 10

@@ -426,7 +426,7 @@ HAN_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	han_weser_renaissance = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	han_kings_legion = {
 		fire_damage_received = -0.15

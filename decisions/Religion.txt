@@ -1725,7 +1725,7 @@ country_decisions = {
 			stability = 1
 		}
 		effect = {
-			add_prestige = -100
+			#add_prestige = -100
 			add_stability = -2
 			change_religion = sikhism
 			if = {
