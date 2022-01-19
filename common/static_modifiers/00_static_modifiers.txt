@@ -660,7 +660,7 @@ inflation = {
 }
 
 bankruptcy = {
-	interest = 0.5
+	interest = 3
 	land_morale = -0.75
 	naval_morale = -0.75
 	reinforce_speed = -0.5					#Slower reinforce
