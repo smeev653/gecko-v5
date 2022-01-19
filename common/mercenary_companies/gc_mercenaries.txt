@@ -56,7 +56,7 @@ gecko_merc_black_army_1 = {
 	}
 	cost_modifier = 0.75
 	modifier = {
-		discipline = 0.2
+		infantry_power = 0.15
 	}
 }
 
@@ -74,9 +74,10 @@ gecko_merc_black_army_2 = {
 			has_reform = black_army_reform
 			}
 	}
-	cost_modifier = 0.5
+	cost_modifier = 0.65
 	modifier = {
-		discipline = 0.2
+		infantry_power = 0.15
+		cavalry_power = 0.15
 	}
 }
 
@@ -89,5 +90,5 @@ gecko_merc_aristo_ideas = {
 	trigger = {
 		full_idea_group = aristocracy_ideas
 	}
-	cost_modifier = 0.5
+	cost_modifier = 0.75
 }

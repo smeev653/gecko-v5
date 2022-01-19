@@ -10320,7 +10320,7 @@ look_up_purbias = {
 
 look_up_purbias_upgraded = {
 	is_rajput_modifier = yes
-	discipline = 0.05
+	infantry_power = 0.1
 	fire_damage = 0.1
 }
 
