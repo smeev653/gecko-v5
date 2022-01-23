@@ -13504,7 +13504,7 @@ malta_forts = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 2
 	type = monument
 
 	build_trigger = {
@@ -13550,12 +13550,13 @@ malta_forts = {
 			factor = 500
 		}
 		province_modifiers = {
-		
+			local_defensiveness = 0.15
+			hostile_disembark_speed = 0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		
+			warscore_cost_vs_other_religion = -0.05
 		}
 		on_upgraded = {
 		}
@@ -13569,12 +13570,15 @@ malta_forts = {
 			factor = 1000
 		}
 		province_modifiers = {
-		
+			local_defensiveness = 0.25
+			local_hostile_attrition = 0.5
+			hostile_disembark_speed = 1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		
+			warscore_cost_vs_other_religion = -0.1
+			galley_power = 0.15
 		}
 		on_upgraded = {
 		}
@@ -13588,12 +13592,15 @@ malta_forts = {
 			factor = 2000
 		}
 		province_modifiers = {
-		
+			local_defensiveness = 0.5
+			local_hostile_attrition = 1
+			hostile_disembark_speed = 2
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-		
+			warscore_cost_vs_other_religion = -0.15
+			galley_power = 0.20
 		}
 		on_upgraded = {
 		}
@@ -14284,6 +14291,8 @@ royal_palace_caserta = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			prestige = 0.25
+			reform_progress_growth = 0.05
 		}
 		on_upgraded = {
 		}
@@ -14301,7 +14310,9 @@ royal_palace_caserta = {
 		area_modifier = {
 		}
 		country_modifiers = {
-
+			prestige = 0.5
+			reform_progress_growth = 0.1
+			governing_capacity = 50
 		}
 		on_upgraded = {
 		}
@@ -14319,7 +14330,9 @@ royal_palace_caserta = {
 		area_modifier = {
 		}
 		country_modifiers = {
-
+			prestige = 1
+			reform_progress_growth = 0.15
+			governing_capacity = 100
 		}
 		on_upgraded = {
 		}

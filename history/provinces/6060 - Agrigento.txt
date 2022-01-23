@@ -1,7 +1,7 @@
 #125 - Palermo
 
-owner = SIC
-controller = SIC
+owner = NAP
+controller = NAP
 culture = neapolitan
 religion = catholic 
 hre = no 
@@ -11,7 +11,7 @@ trade_goods = wine
 base_manpower = 4
 capital = "Girgenti"
 is_city = yes
-add_core = SIC
+add_core = NAP
 hre = yes
 
 
@@ -21,11 +21,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-1409.7.25 = {
-	owner = NAP
-	controller = NAP
-	add_core = NAP
-} # Martin I inherits Sicily from his son
+# Martin I inherits Sicily from his son
 1516.1.23 = {	owner = SPA
 	controller = SPA
 	add_core = SPA

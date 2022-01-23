@@ -10,6 +10,8 @@ merc_lombard_free_company = {
 			tag = MLO
 			tag = ITA
 			tag = VEN
+			tag = TTS
+			tag = SIC
 		}
 	}
 	cost_modifier = 0.75
@@ -99,7 +101,7 @@ merc_black_army_2 = {
 merc_knights_templar = {
 	regiments_per_development = 0.065
 	home_province = 379
-	cavalry_weight = 0.5
+	cavalry_weight = 1
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		custom_trigger_tooltip = {
@@ -112,7 +114,7 @@ merc_knights_templar = {
 		cavalry_power = 0.15
 		shock_damage = 0.05
 	}
-	cost_modifier = 0.5
+	cost_modifier = 0.25
 }
 
 # Pontifical Swiss Guard

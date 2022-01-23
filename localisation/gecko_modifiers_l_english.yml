@@ -48,7 +48,8 @@
  conquest_of_herat:0 "Conquest of Herat"
  gc_mongol_kurultai:0 "Annual Kurultai"
  the_motherland_calls:0 "The Motherland Calls"
-
+ gc_cagliari_copper:0 "Cagliari Copper"
+ gc_catanzaro_silk:0 "Catanzaro Silk"
 
  #Advisor Event modifiers
  gc_arty_officer_delayed:0 "Arty Officer Delayed"

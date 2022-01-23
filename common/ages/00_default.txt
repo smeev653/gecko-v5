@@ -231,6 +231,8 @@ age_of_discovery = {
 					tag = VEN
 					tag = MLO
 					tag = PAP
+					tag = SIC
+					tag = TTS
 				}
 			}	
 			modifier = {

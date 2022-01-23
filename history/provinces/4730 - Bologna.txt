@@ -1,24 +1,30 @@
-#119 - Ancona
+# 4730 - Bologna
 
-owner = URB
-controller = URB
-culture = umbrian 
+owner = BLG
+controller = BLG
+culture = romagnan 
 religion = catholic 
 hre = yes
-base_tax = 2 
-base_production = 3   
-trade_goods = paper
-base_manpower = 2    
-capital = "Ancona" 
+base_tax = 5
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Bologna"
 is_city = yes
-add_core = URB
+add_core = BLG
+
+
+
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-
-1750.1.1 = { add_core = ITA }
+1506.10.7 = { 
+	owner = PAP
+	controller = PAP
+	add_core = PAP
+}
 1805.12.26 = {
 	owner = ITA
 	controller = ITA

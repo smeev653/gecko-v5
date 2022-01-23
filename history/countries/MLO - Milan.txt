@@ -102,8 +102,8 @@ change_estate_land_share = {
 		dip = 4
 		mil = 4
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = careful_personality
+	#clear_scripted_personalities = yes
+	#add_ruler_personality = careful_personality
 }
 1412.7.24 = {
 	queen = {

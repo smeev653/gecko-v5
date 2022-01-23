@@ -256,3 +256,10 @@
 
 ARB_conquest_1_title:0 "Conquest of Mesopotamia"
 ARB_conquest_1_desc:0 "Completing this mission and §Greaching 1650§! will grant access to the Wahabi Scholar, giving §G15% Land Morale§! but maluses to Heretic and Heathen religions."
+
+#sicily
+
+gc_emp_nap_dalmatian_conquest_title:0 "Italian Conquest"
+gc_emp_nap_dalmatian_conquest_desc:0 ""
+gc_emp_nap_despot_of_epirus_title:0 "Neapolitan Conquest"
+gc_emp_nap_despot_of_epirus_desc:0 ""

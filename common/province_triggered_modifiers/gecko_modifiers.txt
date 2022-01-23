@@ -650,4 +650,39 @@ gc_mongol_kurultai = {
 	
 	#technology_cost = -0.05
 	trade_goods_size = 5
-}	
+}
+
+gc_cagliari_copper = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_global_flag = gc_cagliari_copper
+	}
+	trigger = {
+		owner = {
+			OR = {
+				culture_group = sicilian
+				culture_group = sardinian
+			}
+		}
+	}
+	trade_goods_size = 5
+	local_development_cost = -0.25
+}
+
+
+gc_catanzaro_silk = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_global_flag = gc_catanzaro_silk
+	}
+	trigger = {
+		owner = {
+			OR = {
+				culture_group = sicilian
+				culture_group = sardinian
+			}
+		}
+	}
+	trade_goods_size = 2
+	local_development_cost = -0.10
+}

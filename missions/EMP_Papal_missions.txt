@@ -24,35 +24,14 @@ emp_pap_slot_1 = {
 			
 		}
 		effect = {
-			apulia_area = {
+			siena_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			calabria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			sicily_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_sicily_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			naples_area = {
+			central_italy_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -69,10 +48,8 @@ emp_pap_slot_1 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = sicily_area
-				area = western_sicily_area
-				area = apulia_area
-				area = calabria_area
+				area = central_italy_area
+				area = siena_area
 			}
 			NOT = {
 				owned_by = ROOT
@@ -81,31 +58,29 @@ emp_pap_slot_1 = {
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 9
+				value = 5
 				OR = {
-					area = sicily_area
-					area = western_sicily_area
-					area = apulia_area
-					area = calabria_area
+					area = central_italy_area
+					area = siena_area
 				}
 			}
 		}
 		effect = {
-			corsica_sardinia_area = {
+			naples_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			liguria_area = {
+			tuscany_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			piedmont_area = {
+			apulia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -121,10 +96,48 @@ emp_pap_slot_1 = {
 		position = 3
 		
 		provinces_to_highlight = {
+			area = tuscany_area
+			
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+					area = tuscany_area
+			}
+		}
+		effect = {
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	emp_pap_island_screens = {
+		icon = mission_seize_the_isles
+		required_missions = { emp_pap_sweep_the_po }
+		position = 4
+		
+		provinces_to_highlight = {
 			OR = {
-				area = corsica_area
+				area = emilia_romagna_area
 				area = liguria_area
-				area = piedmont_area
+				#area = sicily_area
+				#area = western_sicily_area
 			}
 			NOT = {
 				owned_by = ROOT
@@ -133,11 +146,12 @@ emp_pap_slot_1 = {
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 7
+				value = 7 # out of 10
 				OR = {
-					area = corsica_area
+					area = emilia_romagna_area
 					area = liguria_area
-					area = piedmont_area
+					#area = sicily_area
+					#area = western_sicily_area
 				}
 			}
 		}
@@ -150,73 +164,6 @@ emp_pap_slot_1 = {
 				add_permanent_claim = ROOT
 			}
 			po_valley_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			#sicily_area = {
-			#	limit = {
-			#		NOT = { is_core = ROOT }
-			#		NOT = { is_permanent_claim = ROOT }
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-			#western_sicily_area = {
-			#	limit = {
-			#		NOT = { is_core = ROOT }
-			#		NOT = { is_permanent_claim = ROOT }
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-		}
-	}
-	
-	emp_pap_island_screens = {
-		icon = mission_seize_the_isles
-		required_missions = { emp_pap_sweep_the_po }
-		position = 4
-		
-		provinces_to_highlight = {
-			OR = {
-				area = lombardy_area
-				area = po_valley_area
-				#area = sicily_area
-				#area = western_sicily_area
-			}
-			NOT = {
-				owned_by = ROOT
-			}
-		}
-		
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 8 # out of 10
-				OR = {
-					area = lombardy_area
-					area = po_valley_area
-					#area = sicily_area
-					#area = western_sicily_area
-				}
-			}
-		}
-		effect = {
-			emilia_romagna_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			venetia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			tuscany_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

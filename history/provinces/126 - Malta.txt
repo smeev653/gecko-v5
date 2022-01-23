@@ -1,7 +1,7 @@
 #126 - Malta
 
-owner = ARA
-controller = ARA
+owner = KNI
+controller = KNI
 culture = maltese 
 religion = catholic 
 hre = no 
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 2
 capital = "Mdina" 
 is_city = yes
-add_core = ARA
+add_core = KNI
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

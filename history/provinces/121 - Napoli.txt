@@ -1,7 +1,7 @@
 #121 - Napoli
 
-owner = PAP
-controller = PAP
+owner = NAP
+controller = NAP
 culture = neapolitan 
 religion = catholic 
 hre = yes 
@@ -12,7 +12,7 @@ base_manpower = 6
 capital = "Napoli" 
 is_city = yes	# Estimated
 fort_15th = yes
-add_core = PAP
+add_core = NAP
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

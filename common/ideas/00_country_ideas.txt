@@ -1456,19 +1456,21 @@ SIC_ideas = {
 	
 	sic_university_of_catania = {
 		technology_cost = -0.05
+		development_cost = -0.05
 	}
 	sic_constitions_of_melfi = {
-		global_unrest = -1
-		possible_policy = 1
-	}
-	sic_noble_admirals = {
-		navy_tradition = 1
+		tolerance_heathen = 3
+		global_tax_modifier = 0.2
 	}
 	sic_greater_sicily = {
-		core_creation = -0.1
+		infantry_power = 0.1
 	}
 	sic_trade_fleet = {
-		global_ship_trade_power = 0.2
+		production_efficiency = 0.15
+	}
+	sic_noble_admirals = {
+		ship_durability = 0.1
+		leader_naval_fire = 1
 	}
 	sic_grand_navy = {
 		naval_morale = 0.15
