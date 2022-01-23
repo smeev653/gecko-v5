@@ -1258,7 +1258,7 @@ republicanism_reform = {
 		}
 	}
 	modifiers = {
-		republican_tradition = 0.2
+		republican_tradition = 0.1
 	}
 	ai = {
 		factor = 1.5
