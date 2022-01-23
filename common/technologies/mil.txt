@@ -109,7 +109,7 @@ technology = {
 	
 	#Standardised Pikes
 	supply_limit 		= 	0.5
-	infantry_shock		= 	0.10
+	infantry_shock		= 	0.15
 	cavalry_shock		= 	0.2
 
 	enable = western_men_at_arms	
@@ -151,7 +151,7 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	infantry_shock		= 	0.10
+	infantry_shock		= 	0.30
 	infantry_fire 		= 	0.20
 	
 	
@@ -222,7 +222,7 @@ technology = {
 	military_tactics 	= 	0.25
 	combat_width = 1
 	#infantry_fire = 0.15
-	infantry_shock		= 	0.20
+	#infantry_shock		= 	0.20
 }
 
 technology = {
