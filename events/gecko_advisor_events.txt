@@ -19,19 +19,19 @@ country_event = { #Arty Officer
 		
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 4
+			administrative_ideas = 4
 		}
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 6
+			administrative_ideas = 6
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 4 }
+			NOT = { administrative_ideas = 4 }
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 2 }
+			NOT = { administrative_ideas = 2 }
 		}
 	}
 
@@ -97,19 +97,19 @@ country_event = { #Drill Master
 		
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 4
+			administrative_ideas = 4
 		}
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 6
+			administrative_ideas = 6
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 4 }
+			NOT = { administrative_ideas = 4 }
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 2 }
+			NOT = { administrative_ideas = 2 }
 		}
 	}
 
@@ -165,19 +165,19 @@ country_event = { #siege_specialist
 		
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 4
+			administrative_ideas = 4
 		}
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 6
+			administrative_ideas = 6
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 4 }
+			NOT = { administrative_ideas = 4 }
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 2 }
+			NOT = { administrative_ideas = 2 }
 		}
 	}
 
@@ -234,19 +234,19 @@ country_event = { #infantry_leader
 		
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 4
+			administrative_ideas = 4
 		}
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 6
+			administrative_ideas = 6
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 4 }
+			NOT = { administrative_ideas = 4 }
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 2 }
+			NOT = { administrative_ideas = 2 }
 		}
 	}
 
@@ -313,19 +313,19 @@ country_event = { #cavalry_leader
 		
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 4
+			administrative_ideas = 4
 		}
 		modifier = {
 			factor = 0.9
-			innovativeness_ideas = 6
+			administrative_ideas = 6
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 4 }
+			NOT = { administrative_ideas = 4 }
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { innovativeness_ideas = 2 }
+			NOT = { administrative_ideas = 2 }
 		}
 	}
 
