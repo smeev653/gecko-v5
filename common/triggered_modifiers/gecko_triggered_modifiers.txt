@@ -52,9 +52,9 @@ Minor = {
         is_part_of_hre = yes
 		NOT = { is_emperor = yes }
 	}
-	advisor_cost = -0.15
+	advisor_cost = -0.2
 	advisor_pool = 1
-	ae_impact = -0.15
+	ae_impact = -0.10
 	interest = -0.5
 }
 
