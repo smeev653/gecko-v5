@@ -73,7 +73,7 @@
  mechanic_upgrade_janissary_weaponry_privilege_interaction_no: " " #intentionally empty
  mechanic_establish_auxiliary_support_system_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YEstablish Janissary Auxiliary Corps§!, which grants §G+5.0%§! Manpower Recovery Speed and §G+10.0%§! Reinforce Speed."
  mechanic_establish_auxiliary_support_system_privilege_interaction_no: " " #intentionally empty
- mechanic_reform_the_janissaries_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YReform the Janissary Corps§!, which grants §G+15%§! Infantry Combat to §YJanissary Regiments§!."
+ mechanic_reform_the_janissaries_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YReform the Janissary Corps§!, which grants §G+10%§! Discipline to §YJanissary Regiments§!."
  mechanic_reform_the_janissaries_privilege_interaction_no: " " #intentionally empty
  ######estates and loyalty/influence modifiers######
  #ghilman#
