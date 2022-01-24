@@ -888,7 +888,7 @@ administrative_ideas = {
 		interest = -0.5
 	}
 	organised_mercenary_recruitment = {
-		expand_administration_cost = -0.50
+		expand_administration_cost = -0.75
 		state_governing_cost = -0.25
 	}
 	administrative_efficiency_idea = {
