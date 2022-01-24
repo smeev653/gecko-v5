@@ -242,21 +242,23 @@ religious_ideas = {
 
 	bonus = {
 		same_culture_advisor_cost = -0.10
-		land_morale = 0.05
+		
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
 		province_warscore_cost = -0.10
 	}
 	church_attendance_duty = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.25
 	}
 	divine_supremacy = {
-		global_missionary_strength = 0.03
-		prestige_per_development_from_conversion = 0.5
+		land_morale = 0.05
+		recover_army_morale_speed = 0.10
 	}
 	missionary_schools = {
 		missionaries = 2
+		global_missionary_strength = 0.03
+		prestige_per_development_from_conversion = 0.5
 	}
 
 	devoutness = {
