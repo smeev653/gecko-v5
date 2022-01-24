@@ -2796,7 +2796,6 @@ stpeters_cathedral = {
 
 	#can we build it?
 	build_trigger = {
-		religion = catholic
 		has_owner_religion = yes
 	}
 
@@ -2812,13 +2811,11 @@ stpeters_cathedral = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		religion = catholic
 		has_owner_religion = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		religion = catholic
 		has_owner_religion = yes
 	}
 
