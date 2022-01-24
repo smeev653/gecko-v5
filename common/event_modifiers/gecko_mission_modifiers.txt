@@ -341,3 +341,8 @@ nap_barbary_pirates = {
 nap_liberty_desire = {
 	global_trade_goods_size_modifier = 0.1
 }
+
+norman_legacy = {
+	cavalry_cost = -0.15
+	cavalry_power = 0.05
+}

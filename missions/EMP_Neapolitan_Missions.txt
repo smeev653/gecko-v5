@@ -114,13 +114,7 @@ emp_naples_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			naples_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+		
 		}
 	}
 	emp_nap_italian_wars = {
@@ -222,6 +216,13 @@ emp_naples_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			sicily_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -235,6 +236,10 @@ emp_naples_3 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
 			}
 		}
 	}
@@ -258,10 +263,10 @@ emp_naples_3 = {
 				type = all
 				owned_by = ROOT
 			}
-			#calabria_area = {
-			#	type = all
-			#	owned_by = ROOT
-			#}
+			calabria_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 			5786 = {
@@ -269,14 +274,11 @@ emp_naples_3 = {
 			}
 			set_global_flag = gc_catanzaro_silk
 			add_prestige = 20
-			naples_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = "norman_legacy"
+				duration = -1
 			}
-			apulia_area = {
+			naples_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -306,7 +308,7 @@ emp_naples_3 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 6
+				value = 5
 				OR = {
 					area = corsica_sardinia_area
 					area = naples_area

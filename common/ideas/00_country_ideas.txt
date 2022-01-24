@@ -1458,13 +1458,15 @@ SIC_ideas = {
 		technology_cost = -0.05
 		development_cost = -0.05
 	}
+	sic_greater_sicily = {
+		infantry_power = 0.10
+		cavalry_power = 0.10
+	}
 	sic_constitions_of_melfi = {
 		tolerance_heathen = 3
 		global_tax_modifier = 0.2
 	}
-	sic_greater_sicily = {
-		infantry_power = 0.1
-	}
+	
 	sic_trade_fleet = {
 		production_efficiency = 0.15
 	}
