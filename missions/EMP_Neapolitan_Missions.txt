@@ -15,6 +15,18 @@ emp_naples_1 = {
 		has_dlc = "Emperor"
 	}
 	has_country_shield = yes
+	sic_high_income_mission = {
+		icon = mission_high_income
+		required_missions = {  } #None
+		position = 1
+		trigger = { share_of_starting_income = 1.5 }
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+		}
+	}
 	emp_nap_roman_relations = {
 		icon = answer_the_roman_question
 		required_missions = { emp_nap_independent_naples  }

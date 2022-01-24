@@ -869,10 +869,8 @@ administrative_ideas = {
 	bonus = {
 		advisor_cost = -0.1
 	}
-	
-	adm_adaptability = {
-		global_manpower = 10
-		land_forcelimit = 10
+	organised_mercenary_payment = {
+		production_efficiency = 0.15
 	}
 	civil_servants = {
 		monthly_splendor = 3
@@ -882,10 +880,10 @@ administrative_ideas = {
 		mercenary_cost = -0.25
 		merc_maintenance_modifier = -0.5
 	}
-	organised_mercenary_payment = {
-		production_efficiency = 0.15
+	adm_adaptability = {
+		global_manpower = 10
+		land_forcelimit = 10
 	}
-
 	bookkeeping = {
 		interest = -0.5
 	}
