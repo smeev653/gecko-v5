@@ -779,7 +779,7 @@ estate_nobles_officer_corp = {
 	penalties = {
 	}
 	benefits = {
-		general_cost = -0.15
+		general_cost = -0.10
 		army_tradition_decay = -0.005
 	}
 	ai_will_do = {
