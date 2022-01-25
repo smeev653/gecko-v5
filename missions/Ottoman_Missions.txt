@@ -1011,8 +1011,6 @@ tur_eastern_mediterrenean_missions = {
 			owns = 163
 		}
 		effect = {
-			add_claim = 122
-			add_claim = 126
 			add_claim = 142
 			naples_area = {
 						limit = {
@@ -1029,6 +1027,20 @@ tur_eastern_mediterrenean_missions = {
 						add_permanent_claim = root
 					}
 					calabria_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
+					sicily_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
+					western_sicily_area = {
 						limit = {
 							NOT = { is_claim = root }
 							NOT = { is_core = root }
