@@ -36,7 +36,7 @@ gc_ethiopian_theocracy_reform = { #tier 1
 		global_missionary_strength = 0.01
 		missionaries = 1
 	    devotion = 1
-		land_morale = 0.10
+		#land_morale = 0.10
 		monthly_heir_claim_increase = 0.05
 	}
 }
