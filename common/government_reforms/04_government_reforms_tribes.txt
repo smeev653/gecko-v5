@@ -526,7 +526,7 @@ gc_tribe_becomes_horde_reform = {
 	}
 	
 	modifiers = {
-		cavalry_power = -0.30
+		cavalry_power = -0.15
 		infantry_power = 0.15
 		land_morale = 0.10
 	}

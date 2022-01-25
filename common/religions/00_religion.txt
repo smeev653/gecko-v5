@@ -1375,7 +1375,7 @@ muslim = {
 		color = { 0 153 0 }
 		icon = 5
 		country = {
-			cavalry_power = 0.10
+			trade_efficiency = 0.10
 			heir_chance = 1.0
 		}
 		

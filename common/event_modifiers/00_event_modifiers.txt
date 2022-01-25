@@ -10337,7 +10337,7 @@ marathi_poet_saint_suppressed = {
 }
 
 bargi_giri = {
-	cavalry_power = 0.15
+	cavalry_power = 0.10
 	movement_speed = 0.15
 }
 
@@ -11178,11 +11178,11 @@ mercs_not_allowed_to_loot_morale = {
 
 elephants_in_europe_mercs = {
 	is_mercenary_modifier = yes
-	cavalry_power = 0.15
+	cavalry_power = 0.10
 }
 
 elephants_in_europe = {
-	cavalry_power = 0.15
+	cavalry_power = 0.10
 }
 
 popular_mercs_prosperity = {

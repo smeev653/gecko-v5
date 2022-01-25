@@ -10,14 +10,14 @@ estate_qizilbash =
 	# These scale with loyalty & power
 	country_modifier_happy = {
 		army_tradition = 0.5
-		cavalry_power = 0.1
+		cavalry_cost = 0.1
 	}
 	country_modifier_neutral = {
-		cavalry_power = 0.1  
+		cavalry_cost = 0.1  
 	}	
 	country_modifier_angry = {
 		army_tradition = -0.5
-		cavalry_power = -0.1
+		cavalry_cost = -0.1
 		global_unrest = 2
 	}
 	land_ownership_modifier = {

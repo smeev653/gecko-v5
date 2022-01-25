@@ -140,7 +140,7 @@ merc_knights_templar = {
 		owns = 379
 	}
 	modifier = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		shock_damage = 0.05
 	}
 	cost_modifier = 0.5

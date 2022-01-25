@@ -168,7 +168,7 @@ gecko_entrepreneural_spirit = {
 }
 
 gecko_marathas_subdued = {
-	cavalry_power = 0.1
+	cavalry_power = 0.05
 	cavalry_cost = -0.1
 }
 
@@ -204,7 +204,7 @@ bng_sufi_mystic_settlers = {
 
 bedouins_pacified = {
 	cavalry_cost = -0.05
-	cavalry_power = 0.05
+	#cavalry_power = 0.05
 }
 
 spa_rb_italian_ambition_mod = {

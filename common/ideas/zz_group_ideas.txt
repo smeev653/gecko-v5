@@ -563,7 +563,7 @@ horde_ideas = {
 		#land_attrition = -0.20 (effect taken in OIR_ideas)
 	}
 	traditions_of_the_great_khan = {
-		cavalry_power = 0.20
+		cavalry_power = 0.1
 	}
 	horse_supplies = {
 		land_maintenance_modifier = -0.05
@@ -647,7 +647,7 @@ anatolian_beyliks_ideas = {
 		global_manpower_modifier = 0.10
 	}
 	akinci_cavalry = {
-		cavalry_power = 0.15
+		cavalry_power = 0.1
 		loot_amount = 0.10
 	}
 	ghazi = {

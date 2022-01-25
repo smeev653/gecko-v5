@@ -475,7 +475,7 @@ TUR_ideas = {
 	
 	
 	timariot_system = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		cavalry_cost = -0.10
 	}
 	millets = {
@@ -1012,7 +1012,7 @@ POL_ideas = {
 		war_exhaustion = -0.02
 	}
 	winged_hussars = {
-		cavalry_power = 0.20
+		cavalry_power = 0.10
 		cossacks_loyalty_modifier = 0.1
 	}
 	wojsko_komputoe = {
@@ -1118,7 +1118,7 @@ CHI_ideas = {
 PER_ideas = {
 	start = {
 		tolerance_own = 2
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	
 	bonus = {
@@ -1277,7 +1277,7 @@ SCO_Ideas = {
 
 HUN_ideas = {
 	start = {
-		cavalry_power = 0.20
+		cavalry_power = 0.10
 		recover_army_morale_speed = 0.1
 	}
 	
@@ -1460,7 +1460,7 @@ SIC_ideas = {
 	}
 	sic_greater_sicily = {
 		infantry_power = 0.10
-		cavalry_power = 0.10
+		cavalry_power = 0.05
 	}
 	sic_constitions_of_melfi = {
 		tolerance_heathen = 3
@@ -1475,7 +1475,7 @@ SIC_ideas = {
 		leader_naval_fire = 1
 	}
 	sic_grand_navy = {
-		naval_morale = 0.15
+		naval_morale = 0.10
 	}
 	sic_sicilian_silk = {
 		global_trade_goods_size_modifier = 0.1
@@ -1524,7 +1524,7 @@ ARA_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
-		cavalry_power = 0.20
+		cavalry_power = 0.10
 	}
 	
 	bonus = {
@@ -2042,7 +2042,7 @@ MCH_ideas = {
 		legitimacy = 1
 	}	
 	link_with_the_mongol_dynasty = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	manchu_chinese_learning = {
 		mil_tech_cost_modifier = -0.1
@@ -2454,7 +2454,7 @@ LIT_ideas = {
 		production_efficiency = 0.1
 	}
 	lithuanian_hussars = {
-		cavalry_power = 0.2
+		cavalry_power = 0.1
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -2489,7 +2489,7 @@ MAR_ideas = {
 	free = yes
 	
 	tradition_of_military_service = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	forts_of_maharashtra = {
 		defensiveness = 0.20
@@ -2534,7 +2534,7 @@ TAU_ideas = {
 		global_manpower_modifier = 0.25
 	}
 	tau_elephant_battles = {
-		cavalry_power = 0.20
+		cavalry_power = 0.1
 	}
 	nat_worship = {
 		religious_unity = 0.2
@@ -2560,7 +2560,7 @@ AVA_ideas = {
 	}
 	
 	bonus = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	
 	trigger = {
@@ -2698,7 +2698,7 @@ SER_ideas = {
 		cavalry_cost = -0.1
 	}	
 	alemannic_guard = {
-		cavalry_power = 0.15
+		cavalry_power = 0.1
 	}
 	gold_mines = {
 		production_efficiency = 0.1
@@ -3201,7 +3201,7 @@ HED_ideas = {
 	}
 	
 	bonus = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	
 	trigger = {
@@ -3724,7 +3724,7 @@ KUR_ideas = {
 		prestige = 1
 	}
 	promote_the_curonian_kings = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		cavalry_cost = -0.10
 	}
 }
@@ -3945,7 +3945,7 @@ AFG_ideas = {
 	free = yes
 	
 	durrani_imperialism = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	pashtunwali = {
 		war_exhaustion_cost = -0.10
@@ -4958,7 +4958,7 @@ KAR_ideas = {
 		#uses ottoman ideas
 	}
 	karamanid_cavalry = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	kar_seize_the_opportunity = {
 		diplomats = 1
@@ -5147,7 +5147,7 @@ FIN_ideas = {
 		defensiveness = 0.15
 	}
 	hakkapelitta_fin = {
- 		cavalry_power = 0.15
+ 		cavalry_power = 0.10
 	}	
 	the_fourth_estate = {
 		production_efficiency = 0.1
@@ -5773,7 +5773,7 @@ KAZ_ideas = {
 		core_creation = -0.25
 	}
 	kaz_idea_3 = {
-		cavalry_power = 0.20
+		cavalry_power = 0.100
 	}
 	kaz_idea_4 = {
 		global_manpower_modifier = 0.25	
@@ -6092,7 +6092,7 @@ KHI_ideas = {
 	free = yes		#will be added at load.
 	
 	horde_legacy = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	deserts_of_khiva = {
 		hostile_attrition = 1
@@ -6116,7 +6116,7 @@ KHI_ideas = {
 
 BAH_ideas = {
 	start = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		army_tradition = 0.5
 	}
 
@@ -6523,7 +6523,7 @@ TRA_ideas = {
 	free = yes		#will be added at load.
 	
 	unio_trium_nationum = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	torda_salt_mines = {
 		production_efficiency = 0.1
@@ -7680,7 +7680,7 @@ ORM_ideas = {
 		global_foreign_trade_power = 0.1
 	}
 	orm_secure_trading_monopoly = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	orm_moqarrariya = {
 		stability_cost_modifier = -0.1
@@ -8986,7 +8986,7 @@ GLH_ideas = {
 		core_creation = -0.25
 	}
 	glh_tatar_traditions = {
-		cavalry_power = 0.20
+		cavalry_power = 0.15
 	}
 	glh_secure_the_trade_routes = {
 		global_prov_trade_power_modifier = 0.25
@@ -9006,7 +9006,7 @@ GLH_ideas = {
 YUA_ideas = {
 	start = {
 		global_manpower_modifier = 0.25
-		cavalry_power = 0.20
+		cavalry_power = 0.100
 	}
 	bonus = {
 		governing_capacity_modifier = 0.1
@@ -9073,7 +9073,7 @@ ANS_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	ans_dragoons_of_ansbach = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 }
 
@@ -11162,7 +11162,7 @@ TRI_ideas = {
 
 AKK_ideas = {
 	start = {
-		cavalry_power = 0.2
+		cavalry_power = 0.10
 		land_morale = 0.1
 	}
 	bonus = {
@@ -11199,7 +11199,7 @@ AKK_ideas = {
 
 KHO_ideas = {
 	start = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		land_morale = 0.1
 	}
 	bonus = {
@@ -11249,7 +11249,7 @@ TRS_ideas = {
 	free = yes
 	
 	trs_mawarannahr = {
-		cavalry_power = 0.2
+		cavalry_power = 0.10
 	}
 	trs_threshold_of_paradise = {
 		prestige = 1
@@ -11385,7 +11385,7 @@ LRI_ideas = {
 QAR_ideas = {
 	start = {
 		leader_land_shock = 1
-		cavalry_power = 0.2
+		cavalry_power = 0.10
 	}
 	bonus = {
 		leader_land_fire = 1
@@ -11657,7 +11657,7 @@ ARL_ideas = {
 	free = yes
 	
 	arl_qizilbash = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	arl_safavid_order = {
 		manpower_recovery_speed = 0.1
@@ -11737,7 +11737,7 @@ SRV_ideas = {
 		defensiveness = 0.2
 	}
 	srv_tribesmen_of_the_caucasus = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	srv_persianate_patronage = {
 		same_culture_advisor_cost = -0.2
@@ -13177,7 +13177,7 @@ DEC_ideas = {
 
 DLH_ideas = {
 	start = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		global_manpower_modifier = 0.15
 	}
 	
@@ -13229,7 +13229,7 @@ BHA_ideas = {
 	free = yes
 
 	bha_modernized_war_elephants = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	bha_united_india = {
 		num_accepted_cultures = 2
@@ -13309,7 +13309,7 @@ RJP_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	marwari_horses = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		movement_speed = 0.1
 	}
 	rjp_purbia_legacy = {
@@ -13641,7 +13641,7 @@ CRI_ideas = {
 	free = yes
 	
 	cri_allow_nogai_protectorates = {
-		cavalry_power = 0.2
+		cavalry_power = 0.10
 		cavalry_cost = -0.1
 	}
 	cri_genghisid_legacy = {
@@ -13685,7 +13685,7 @@ CHR_ideas = {
 		governing_capacity_modifier = 0.1
 	}
 	chr_cossack_regiments = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	chr_regimental_barracks = {
 		global_manpower_modifier = 0.2
@@ -13707,7 +13707,7 @@ CHR_ideas = {
 # Ilkhanate
 ILK_ideas = {
 	start = {
-		cavalry_power = 0.2
+		cavalry_power = 0.10
 		cavalry_cost = -0.15
 	}
 	bonus = {
@@ -13781,7 +13781,7 @@ SYN_ideas = {
 MOR_ideas = {
 	start = {
 		may_perform_slave_raid = yes
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	bonus = {
 		shock_damage = 0.2
@@ -14270,7 +14270,7 @@ SOO_ideas = {
 
 OIR_ideas = {
 	start = {
-		cavalry_power = 0.20
+		cavalry_power = 0.100
 		core_creation = -0.20
 	}
 	
@@ -14329,7 +14329,7 @@ KHA_ideas = {
 	free = yes
 	
 	ghostly_horses_of_the_plain = {
-		cavalry_power = 0.20
+		cavalry_power = 0.100
 	}
 	ikh_mongol_uls = {
 		ae_impact = -0.15
@@ -14355,7 +14355,7 @@ KHA_ideas = {
 
 CHG_ideas = {
 	start = {
-		cavalry_power = 0.20
+		cavalry_power = 0.100
 		harsh_treatment_cost = -0.2
 	}
 	
@@ -14495,7 +14495,7 @@ EPI_ideas = {
 		idea_cost = -0.1
 	}
 	epi_latin_knights = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	epi_trade_influences = {
 		global_trade_power = 0.1
@@ -15386,7 +15386,7 @@ SIA_ideas = {
         idea_cost = -0.1
     }
     sia_advanced_elephant_warfare = {
-        cavalry_power = 0.15
+        cavalry_power = 0.10
     }
     sia_experienced_ambassadors = {
         diplomatic_reputation = 2

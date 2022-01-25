@@ -75,7 +75,7 @@ merc_black_army = {
 	cost_modifier = 0.65
 	modifier = {
 		infantry_power = 0.15
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 }
 
@@ -93,7 +93,7 @@ merc_black_army_2 = {
 	cost_modifier = 0.65
 	modifier = {
 		infantry_power = 0.15
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 }
 
@@ -111,7 +111,7 @@ merc_knights_templar = {
 		owns = 379
 	}
 	modifier = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		shock_damage = 0.05
 	}
 	cost_modifier = 0.25
