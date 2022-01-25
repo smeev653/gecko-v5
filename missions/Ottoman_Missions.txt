@@ -1014,6 +1014,27 @@ tur_eastern_mediterrenean_missions = {
 			add_claim = 122
 			add_claim = 126
 			add_claim = 142
+			naples_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
+					apulia_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
+					calabria_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_permanent_claim = root
+					}
 			add_country_modifier = {
 				name = "mediterranean_ambition"
 				duration = 7300 #20 Years
