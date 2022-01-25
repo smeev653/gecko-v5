@@ -187,9 +187,21 @@ hab_holy_roman_ambitions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			breg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			opole_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		provinces_to_highlight = {
-			area = silesia_area
+			OR = {
+				area = silesia_area
+				area = breg_area
+				area = opole_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -593,6 +605,13 @@ hab_protect_the_balkans = {
 				}
 				add_permanent_claim = ROOT
 			}
+			carinthia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	conquer_transylvania = {
@@ -690,7 +709,7 @@ hab_italian_ambitions = {
 			factor = 5
 		}
 		
-		required_missions = { austrian_croatia }
+		required_missions = {  }
 		provinces_to_highlight = {
 			area = venetia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -709,43 +728,27 @@ hab_italian_ambitions = {
 					duration = 3650
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "Emperor"
-				}
-				if = {
-					limit = {
-						exists = MLO
-						valid_for_personal_unions_trigger = yes
-						MLO = {
-							valid_for_personal_unions_trigger = yes
-							num_of_cities = 3 #no point in taking an OPM
-							owns = 104
-						}
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = MLO
-					}
-				}
-				else = {
-					lombardy_area = {
+			lombardy_area = {
 						limit = {
 							NOT = { is_core = root }
 							NOT = { is_permanent_claim = root }
 						}
 						add_permanent_claim = root
 					}
-					po_valley_area = {
+			po_valley_area = {
 						limit = {
 							NOT = { is_core = root }
 							NOT = { is_permanent_claim = root }
 						}
 						add_permanent_claim = root
 					}
-				}
-			}
+			torino_area = {
+						limit = {
+							NOT = { is_core = root }
+							NOT = { is_permanent_claim = root }
+						}
+						add_permanent_claim = root
+					}
 		}
 	}
 }
