@@ -345,3 +345,7 @@ norman_legacy = {
 	cavalry_cost = -0.10
 	cavalry_power = 0.05
 }
+
+royal_hungary = {
+	land_morale = 0.1
+}
