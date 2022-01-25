@@ -362,21 +362,21 @@ hun_south_group = {
 							NOT = { is_claim = root }
 							NOT = { is_core = root }
 						}
-						add_claim = root
+						add_permanent_claim = root
 					}
 					apulia_area = {
 						limit = {
 							NOT = { is_claim = root }
 							NOT = { is_core = root }
 						}
-						add_claim = root
+						add_permanent_claim = root
 					}
 					calabria_area = {
 						limit = {
 							NOT = { is_claim = root }
 							NOT = { is_core = root }
 						}
-						add_claim = root
+						add_permanent_claim = root
 					}
 				
 			
