@@ -754,9 +754,11 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
-	embargo_efficiency = 0.5
-	burghers_loyalty_modifier = 0.05
-	vaisyas_loyalty_modifier = 0.05
+	embargo_efficiency = 1
+	burghers_loyalty_modifier = 0.1
+	vaisyas_loyalty_modifier = 0.1
+	trade_efficiency = 0.2
+	trade_steering = 1
 }
 
 army_tradition = {

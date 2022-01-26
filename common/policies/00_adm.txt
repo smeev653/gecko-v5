@@ -471,8 +471,8 @@ the_pioneer_policy = {
 		full_idea_group = expansion_ideas
 	}
 
-	siege_ability = 0.10
-	infantry_power = 0.10
+	discipline = 0.03
+	reinforce_speed = 0.15
 	
 	ai_will_do = {
 		factor = 0.6
@@ -533,7 +533,7 @@ the_witchcraft_act = {
 		full_idea_group = aristocracy_ideas
 	}
 	
-	cavalry_power = 0.10
+	land_morale = 0.05
 	fire_damage_received = -0.05
 
 	ai_will_do = {
@@ -779,7 +779,7 @@ vassal_integration_act = {
 		full_idea_group = administrative_ideas
 	}	
 	
-	diplomatic_annexation_cost = -0.2
+	diplomatic_annexation_cost = -0.25
 	global_own_trade_power = 0.2
 	
 	ai_will_do = {
@@ -1261,7 +1261,7 @@ the_statute_of_monopolies = {
 }
 
 taxation_with_representation = {
-	monarch_power = ADM
+	monarch_power = MIL
 	potential = {
 		has_idea_group = expansion_ideas
 		has_idea_group = plutocracy_ideas
@@ -1272,8 +1272,8 @@ taxation_with_representation = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	administrative_efficiency = 0.05
-	global_manpower_modifier = 0.1
+	land_forcelimit_modifier = 0.10
+	infantry_power = 0.10
 
 	ai_will_do = {
 		factor = 1
@@ -1401,7 +1401,7 @@ the_banking_system = {
 		full_idea_group = trade_ideas
 	}
 
-	trade_efficiency = 0.1
+	trade_efficiency = 0.15
 
 
 	ai_will_do = {

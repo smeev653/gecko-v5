@@ -26,7 +26,7 @@ privy_council_establishment_act = {
 }
 
 the_mercenary_registration_act = {
-	monarch_power = MIL
+	monarch_power = DIP
 
 	potential = {
 		has_idea_group = spy_ideas
@@ -38,7 +38,8 @@ the_mercenary_registration_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	manpower_recovery_speed = 0.20
+	reinforce_cost_modifier = -0.05
+	land_attrition = -0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -234,7 +235,8 @@ modern_siege_weapons = {
 		full_idea_group = offensive_ideas
 	}
 	
-	shock_damage_received = -0.15
+	siege_ability = 0.1
+	leader_siege = 1
 
 	ai_will_do = {
 		factor = 1
@@ -311,7 +313,8 @@ the_garrison_act = {
 		full_idea_group = quantity_ideas
 	}
 	
-	fire_damage = 0.2
+	administrative_efficiency = 0.05
+	global_manpower_modifier = 0.1
 
 	ai_will_do = {
 		factor = 1
@@ -410,7 +413,7 @@ field_priests = {
 #}
 
 local_army_organisation = {
-	monarch_power = MIL
+	monarch_power = ADM
 	potential = {
 		has_idea_group = expansion_ideas
 		has_idea_group = defensive_ideas
@@ -421,8 +424,8 @@ local_army_organisation = {
 		full_idea_group = defensive_ideas
 	}
 
-	discipline = 0.03
-	reinforce_speed = 0.15
+	global_trade_goods_size_modifier = 0.1
+	global_trade_power = 0.1
 
 	ai_will_do = {
 		factor = 1
@@ -980,7 +983,7 @@ trade_kontor_network = {
 		full_idea_group = trade_ideas
 	}
 	
-	merchants = 1
+	global_trade_goods_size_modifier = 0.1
 	placed_merchant_power = 15
 
 	ai_will_do = {

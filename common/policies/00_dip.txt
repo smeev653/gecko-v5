@@ -351,7 +351,7 @@ trade_connection_policy = {
 		full_idea_group = trade_ideas
 	}
 
-	global_foreign_trade_power = 0.30
+	global_trade_power = 0.2
 	merchants = 1
 
 	ai_will_do = {
@@ -435,7 +435,7 @@ cloth_quality_edict = {
 		full_idea_group = trade_ideas
 		full_idea_group = quality_ideas
 	}
-	trade_efficiency = 0.1
+	trade_efficiency = 0.15
 
 	ai_will_do = {
 		factor = 1.2
