@@ -103,27 +103,38 @@ Decay = {
 
 We_stand_alone = {
 	potential = {
-				is_year = 1525
+				OR = {
+					is_year = 1525
+					tag = FRA
+				}	
 				was_player = yes
-				had_recent_war = 15
 				num_of_allies = 0
 				NOT = { is_hegemon = yes }
 				revanchism = 50
-				NOT = { great_power_rank = 4 }
-				NOT = { has_won_war_against = {
-						who = PREV
-						max_years_since = 5
-					}
+				NOT = { great_power_rank = 6 }
+				had_recent_war = 15
+				OR = { is_bankrupt = yes
+					num_of_loans = 6
 				}
+				has_country_modifier = just_lost_war_timer	
 			}
 	trigger  = {
 				num_of_allies = 0
 				NOT = { is_hegemon = yes }
 				revanchism = 25
+				OR = { is_bankrupt = yes 
+					num_of_loans = 6
+				}
+				NOT = {army_professionalism = 0.85}				
 	}
 	land_morale = 0.1
+	discipline = 0.05
 	defensiveness = 0.25
 	all_power_cost  = -0.05
 	manpower_recovery_speed = 0.25
 	administrative_efficiency = 0.1
+	merc_maintenance_modifier = -0.5
+	mercenary_cost = -0.25
+	mercenary_manpower = 0.5
+	interest = -0.25
 }	

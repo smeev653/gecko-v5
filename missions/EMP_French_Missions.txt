@@ -441,6 +441,38 @@ emp_france_missions_1_b = {
 					attackers = ENG
 				}
 			}
+			AND = { 
+				is_in_war = {
+					attackers = BUR
+				}
+				is_in_war = {
+					attackers = CAS
+				}
+			}
+			AND = { 
+				is_in_war = {
+					attackers = BUR
+				}
+				is_in_war = {
+					attackers = SPA
+				}
+			}
+			AND = { 
+				is_in_war = {
+					attackers = ENG
+				}
+				is_in_war = {
+					attackers = CAS
+				}
+			}
+			AND = { 
+				is_in_war = {
+					attackers = ENG
+				}
+				is_in_war = {
+					attackers = SPA
+				}
+			}
 		}
 		}
         effect = {
