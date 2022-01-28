@@ -53,7 +53,7 @@ fervor_stability = {
 	cost = 5
 	effect = {
 		development_cost = -0.05
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.10
 	}
 	ai_will_do = {
 		factor = 1
