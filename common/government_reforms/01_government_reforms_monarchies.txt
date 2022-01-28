@@ -1761,7 +1761,7 @@ aristocratic_court_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	modifiers = {
-		yearly_army_professionalism = 0.005
+		yearly_army_professionalism = 0.0025
 	}
 	ai = {
 		factor = 1
