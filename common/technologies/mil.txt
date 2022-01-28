@@ -194,7 +194,7 @@ technology = {
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
-	cavalry_shock		=	0.8
+	cavalry_shock		=	0.4
 
 	
 	regimental_camp = yes
@@ -400,7 +400,7 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.5
 	supply_limit		= 	0.5	
 	
 	enable = maharathan_cavalry		
@@ -514,7 +514,7 @@ technology = {
 	
 	#Light Cavalry
 	
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.5
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 
@@ -693,7 +693,7 @@ technology = {
 	year = 1820
 	
 	#Rifle
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.5
 	infantry_fire		=	1.0
 	supply_limit		=	0.5
 }
