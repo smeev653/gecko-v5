@@ -1618,8 +1618,8 @@ caucasus_ideas = {
 
 ruthenian_ideas = {
 	start = {
-		land_morale = 0.1
-		global_manpower_modifier = 0.15
+		land_morale = 0.15
+		global_manpower_modifier = 0.2
 	}
 
 	bonus = {
@@ -1640,19 +1640,20 @@ ruthenian_ideas = {
 		prestige = 1
 	}
 	international_influences = {
-		tolerance_heretic = 2
+		tolerance_heretic = 3
+		tolerance_heathen = 3
 	}
 	zaporizhian_cossacs = {
-		infantry_power = 0.10
+		infantry_power = 0.15
 	}
 	east_and_west = {
-		global_trade_power = 0.2
+		global_trade_goods_size_modifier = 0.1
 	}
 	legacy_of_ancient_rus = {
-		stability_cost_modifier = -0.1
+		stability_cost_modifier = -0.15
 	}
 	reuniting_rus = {
-		years_of_nationalism = -5
+		reinforce_speed = 0.15
 	}
 	birth_of_russian_orthodoxy = {
 		manpower_recovery_speed = 0.15
