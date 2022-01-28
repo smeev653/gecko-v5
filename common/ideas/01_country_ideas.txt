@@ -9,7 +9,7 @@
 BUK_ideas = {
 	start = {
 		global_own_trade_power = 0.25
-		infantry_power = 0.10
+		infantry_power = 0.125
 	}
 	
 	bonus = {
@@ -22,7 +22,7 @@ BUK_ideas = {
 	free = yes
 	
 	BUK_the_mantle_of_the_great_khan = {
-		land_morale = 0.1
+		land_morale = 0.125
 	}
 	PR_BUK4 = {
 		production_efficiency = 0.1
