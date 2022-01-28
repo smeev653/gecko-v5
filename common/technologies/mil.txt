@@ -323,7 +323,7 @@ technology = {
 	
 	#Star Bastions
 	fort_16th = yes
-	infantry_fire		=	0.3
+	infantry_fire		=	0.4
 	
 	enable = african_hussar
 	enable = ottoman_hussar

@@ -212,7 +212,7 @@ janissary_administrative_positions_reform = { #tier 5
 	}
 	modifiers = {
 		global_tax_modifier = -0.1
-		governing_capacity_modifier = 0.1
+		governing_capacity_modifier = 0.2
 		free_adm_policy = 1
 		state_maintenance_modifier = -0.25
 		advisor_pool = 1
