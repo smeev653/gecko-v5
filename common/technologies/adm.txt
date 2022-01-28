@@ -147,6 +147,7 @@ technology = { #Scientific Experimentation
 	# Tech 14
 	year = 1583
 	
+	university = yes
 	plantations = yes
 	allowed_idea_groups	= 4
 }
