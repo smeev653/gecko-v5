@@ -194,7 +194,7 @@ technology = {
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
-	cavalry_shock		=	0.4
+	cavalry_shock		=	0.8
 
 	
 	regimental_camp = yes
