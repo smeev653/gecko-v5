@@ -1736,13 +1736,13 @@ expand_administation_modifier = {
 
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
-	stability_cost_modifier = 1.0
+	stability_cost_modifier = 0.5
 	#ae_impact = 0.5
 	improve_relation_modifier = -0.5
 	core_creation = 0.1
 	advisor_cost = 1
 	monthly_militarized_society = -1.5
-	defensiveness = -0.2
+	defensiveness = -0.4
 	
 }
 
