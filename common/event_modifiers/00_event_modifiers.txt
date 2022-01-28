@@ -3678,9 +3678,10 @@ hsa_economic_reform = {
 	advisor_cost = -0.1
 }
 hsa_military_reform = {
-	army_tradition = 0.1
-	navy_tradition = 0.1
+	army_tradition = 0.5
+	navy_tradition = 0.5
 	global_regiment_cost = -0.1
+	land_morale = 0.05
 }
 hsa_adler_ship = {
 	global_ship_cost = -0.10

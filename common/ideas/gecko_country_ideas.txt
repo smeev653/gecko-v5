@@ -520,12 +520,12 @@ BRA_ideas = {
 
 HSA_ideas = {
 	start = {
-		development_cost = -0.05
-		trade_steering = 0.15
+		trade_efficiency = 0.10
+		global_trade_power = 0.15
 	}
 	
 	bonus = {
-		trade_efficiency = 0.10
+		trade_steering = 0.33
 	}
 	
 	trigger = {
@@ -534,7 +534,7 @@ HSA_ideas = {
 	free = yes
 	
 	end_of_victual_brothers = {
-		global_trade_power = 0.15
+		production_efficiency = 0.1
 	}
 	strong_league_obligations = {
 		land_morale = 0.10
@@ -557,6 +557,7 @@ HSA_ideas = {
 	}
 	the_hansa_bank = {
 		interest = -0.5
+		development_cost = -0.05
 	}
 }
 
