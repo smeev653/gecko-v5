@@ -879,11 +879,6 @@ tur_eastern_mediterrenean_missions = {
 			OR = {
 				area = delta_area
 				area = bahari_area
-				area = said_area
-				area = vostani_area
-				area = al_wahat_area
-				area = gulf_of_arabia_area
-				area = cyrenaica_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -893,26 +888,6 @@ tur_eastern_mediterrenean_missions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			bahari_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			said_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			vostani_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			al_wahat_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gulf_of_arabia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cyrenaica_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
