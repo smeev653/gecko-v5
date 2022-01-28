@@ -103,7 +103,7 @@ recently_hired_mercs = {
 }
 
 gecko_ethiopia_highlands_and_mountains_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 alte_salzstrase = {
