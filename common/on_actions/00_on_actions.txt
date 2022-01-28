@@ -3982,7 +3982,7 @@ on_leader_recruited = {
 on_general_recruited = {
 	if = { 
 		limit = { full_idea_group = offensive_ideas }
-			add_army_professionalism = 0.01
+			add_army_professionalism = 0.005
 		}
 	else = {add_army_professionalism = 0.0025 }
 }
