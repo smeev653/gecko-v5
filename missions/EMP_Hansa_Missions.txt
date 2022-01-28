@@ -58,6 +58,7 @@ hanseatic_expansion_tree = {
 
 		effect = {
 			add_adm_power = 50
+			add_mercantilism = 10
 			25 = { # Gotland
 				if = {
 					limit = {
@@ -66,6 +67,27 @@ hanseatic_expansion_tree = {
 					}
 					add_permanent_claim = ROOT
 				}
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = ROOT
+			}
+			weser_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = ROOT
+			}
+			vorpommern_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = ROOT
 			}
 			1876 = {
 				add_trade_modifier = {
@@ -99,59 +121,31 @@ hanseatic_return_visby_tree = {
 		position = 3
 
 		provinces_to_highlight = {
-			province_id = 25 # Gotland
+			OR = {
+				area = weser_area
+				area = lower_saxony_area
+			}
 		}
 
 		trigger = {
-			OR = {
-				if = {
-					limit = {
-						has_dlc = "Res Publica"
-					}
-					owns_core_province = 25
-					25 = { has_province_modifier = trade_post_modifier }
-				}
-				else = {
-					owns_core_province = 25
-					25 = { development = 20 }
-				}
-				if = {
-					limit = {
-						has_dlc = "Mare Nostrum"
-					}
-					25 = {
-						owner = {
-							is_in_trade_league_with = HSA
-						}
-					}
-				}
-				else = {
-					25 = {
-						country_or_non_sovereign_subject_holds = root
-					}
-				}
+			weser_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 
 		effect = {
-			add_mercantilism = 5
-			310 = { # Novgorod
-				if = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = root
+			add_mercantilism = 10
+			hinter_pommern_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
-			}
-			43 = { #Danzig
-				if = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = root
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -160,42 +154,25 @@ hanseatic_return_visby_tree = {
 		required_missions = { hsa_return_visby_mission }
 
 		provinces_to_highlight = {
-			province_id = 310 # Novgorod
+			OR = {
+				area = hinter_pommern_area
+				area = vorpommern_area
+			}
 		}
 
 		trigger = {
-			OR = {
-				if = {
-					limit = {
-						has_dlc = "Res Publica"
-					}
-					owns_core_province = 310
-					310 = { has_province_modifier = trade_post_modifier }
-				}
-				else = {
-					owns_core_province = 310
-					310 = { development = 20 }
-				}
-				if = {
-					limit = {
-						has_dlc = "Mare Nostrum"
-					}
-					310 = {
-						owner = {
-							is_in_trade_league_with = HSA
-						}
-					}
-				}
-				else = {
-					310 = {
-						country_or_non_sovereign_subject_holds = root
-					}
-				}
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vorpommern_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 
 		effect = {
-			add_mercantilism = 5
+			add_mercantilism = 10
 			310 = {
 				add_trade_modifier = {
 					who = root

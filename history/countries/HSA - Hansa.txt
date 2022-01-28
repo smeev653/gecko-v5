@@ -15,9 +15,9 @@ historical_friend = RIG #Riga
 	monarch = {
 		birth_date = 1414.1.1
 		name = "Patriziat"
-		adm = 3
-		dip = 3
-		mil = 3
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 }
 

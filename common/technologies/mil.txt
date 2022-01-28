@@ -284,7 +284,7 @@ technology = {
 	
 	supply_limit 		= 	0.5
 	military_tactics	=	0.25
-	#infantry_fire = 0.2
+	infantry_fire = 0.2
 
 	enable = tofongchis_musketeer
 	enable = ge_tofongchis_musketeer	
@@ -323,7 +323,7 @@ technology = {
 	
 	#Star Bastions
 	fort_16th = yes
-	infantry_fire		=	0.4
+	infantry_fire		=	0.5
 	
 	enable = african_hussar
 	enable = ottoman_hussar
@@ -400,7 +400,6 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	0.5
 	supply_limit		= 	0.5	
 	
 	enable = maharathan_cavalry		
