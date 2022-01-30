@@ -146,6 +146,8 @@ south_german_region = {
 		erzgebirge_area
 		hradecko_area
 		moravia_area
+		berlin_area
+		lubeck_area
 	}
 }
 
