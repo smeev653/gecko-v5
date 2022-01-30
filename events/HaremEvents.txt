@@ -134,13 +134,27 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
-		define_heir = {
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+			define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			change_adm = 1
+			change_mil = 1
+			max_random_dip = 5
+			age = 15
+		}
+		}
+		else = {
+			define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			change_adm = 1
 			max_random_dip = 5
 			age = 15
 		}
+		}
+		
 	}
 	option = {	 
 		name = harem_events.1.b #Strong
@@ -158,13 +172,26 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
-		define_heir = {
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+					dynasty = original_dynasty
+					male = yes
+					change_mil = 2
+					max_random_dip = 5
+					age = 15
+				}
+		}
+		else = {
+			define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			change_mil = 1
 			max_random_dip = 5
 			age = 15
 		}
+		}
+		
 	}
 	option = {	 
 		name = harem_events.1.c #Studious
@@ -182,12 +209,25 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
-		define_heir = {
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+					dynasty = original_dynasty
+					male = yes
+					change_adm = 1
+					change_mil = 1
+					#max_random_mil = 5
+					age = 15
+				}
+		}
+		else = {
+			define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			change_adm = 1
 			max_random_mil = 5
 			age = 15
+		}
 		}
 	}
 	option = {	 
@@ -206,12 +246,24 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+					dynasty = original_dynasty
+			male = yes
+			change_mil = 2
+			max_random_adm = 5
+			age = 15
+				}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			change_mil = 1
 			max_random_adm = 5
 			age = 15
+		}
 		}
 	}
 	option = {	 
@@ -230,12 +282,25 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+					dynasty = original_dynasty
+			male = yes
+			change_mil = 1
+			change_dip = 1
+			#max_random_adm = 5
+			age = 15
+				}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			change_dip = 1
 			max_random_mil = 5
 			age = 15
+		}
 		}
 	}
 	option = {	 
@@ -254,10 +319,21 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+					dynasty = original_dynasty
+			male = yes
+			age = 15
+			change_mil = 1
+				}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			age = 15
+		}
 		}
 	}
 	option = {	 
@@ -276,12 +352,25 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			change_dip = 1
+			change_mil = 1
+			max_random_adm = 5
+			age = 15
+		}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			change_dip = 1
 			max_random_adm = 5
 			age = 15
+		}
 		}
 	}
 	option = {	 
@@ -297,10 +386,21 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			change_mil = 1
+			age = 15
+		}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			age = 15
+		}
 		}
 	}
 	option = {	 
@@ -319,6 +419,18 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			change_dip = 1
+			change_mil = 2
+			change_adm = 1
+			age = 15
+		}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
@@ -326,6 +438,7 @@ country_event = {
 			change_mil = 1
 			change_adm = 1
 			age = 15
+		}
 		}
 	}
 	option = {	 
@@ -344,10 +457,21 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			change_mil = 1
+			age = 15
+		}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
 			age = 15
+		}
 		}
 	}
 	option = {
@@ -363,6 +487,18 @@ country_event = {
 		clr_country_flag = harem_entrepreneurial_heir
 		clr_country_flag = harem_generous_heir
 		clr_country_flag = harem_fairest_heir
+		if = {
+			limit = { full_idea_group = plutocratic_ideas }
+				define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			age = 15
+			change_adm = 1
+			change_dip = 1
+			change_mil = 2
+		}
+		}
+		else = {
 		define_heir = {
 			dynasty = original_dynasty
 			male = yes
@@ -370,6 +506,7 @@ country_event = {
 			change_adm = 1
 			change_dip = 1
 			change_mil = 1
+		}
 		}
 	}
 }
