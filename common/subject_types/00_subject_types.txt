@@ -383,6 +383,7 @@ personal_union = {
 	enforce_culture = yes
 	siphon_income = yes
 	support_loyalists = yes
+	divert_trade = yes
 
 	# Modifiers:
 	modifier_overlord = {
