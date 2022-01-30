@@ -5,3 +5,25 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1534.1.1
 }
+
+#Germany
+vassal = {
+	first = UBV
+	second = SLZ
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+
+vassal = {
+	first = SWI
+	second = TTL
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+
+vassal = {
+	first = SWI
+	second = KNZ
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}

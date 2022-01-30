@@ -1,8 +1,8 @@
 #4760 - Innbaiern
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = SLZ
+controller = SLZ
+add_core = SLZ
 culture = bavarian
 religion = catholic
 base_tax = 3

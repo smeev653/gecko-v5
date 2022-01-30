@@ -4,7 +4,6 @@ country_decisions = {
     gc_form_ngf = {
 		major = yes
 		potential = {
-			always = no # disabled till further rework
 			NOT = { has_country_flag = gc_formed_ngf }
 			NOT = { exists = NGF }
             OR = {
@@ -83,12 +82,13 @@ country_decisions = {
     gc_form_sgf = {
 		major = yes
 		potential = {
-			always = no # disabled till further rework
 			NOT = { has_country_flag = gc_formed_sgf }
 			NOT = { exists = SGF }
             OR = {
                 tag = WES
                 tag = HAB
+				tag = SWI
+				tag = BAV
             }
 			culture_group = germanic
 		}
