@@ -173,7 +173,7 @@ hanseatic_return_visby_tree = {
 
 		effect = {
 			add_mercantilism = 10
-			310 = {
+			1926 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300
@@ -443,30 +443,33 @@ hanseatic_sound_toll_tree = {
 					key = hsa_north_sea
 				}
 			}
-		}
-	}
-	hsa_baltic_trade_mission = {
-		icon = mission_develop_nevas_port
-		required_missions = { hsa_seize_jutland_mission }
-		position = 4
-	
-		provinces_to_highlight = {
-			province_id = 1926 # Baltic Sea
-		}
-	
-		trigger = {
-			1926 = {
-				trade_share = {
-					country = ROOT
-					share = 30
+			eastern_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
-		}
-	
-		effect = {
-			add_country_modifier = {
-				name = "hsa_baltic_trade_modifier"
-				duration = 7300
+			northern_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			western_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			jemtland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -475,7 +478,7 @@ hanseatic_sound_toll_tree = {
 
 	hsa_subjugate_norway_mission = {
 		icon = mission_seize_north_sea_trade
-		required_missions = { hsa_baltic_trade_mission }
+		required_missions = { hsa_seize_jutland_mission }
 		position = 6
 
 		provinces_to_highlight = {
