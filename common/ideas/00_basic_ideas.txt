@@ -75,7 +75,6 @@ plutocracy_ideas = {
 	}
 	free_cities = {
 		monarch_military_power = 1
-		reelection_cost = -0.2
 	}
 }	
 horde_gov_ideas = {
