@@ -504,7 +504,16 @@ crown_colony = {
 	is_colony_subtype = yes
 	can_send_missionary_to_subject = yes	
 	count = colony
-
+	
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.25
+	manpower_bonus = 1.0
+	manpower_to_overlord = 0.25
+	naval_forcelimit_bonus = 0.5
+	naval_forcelimit_to_overlord = 0.05
+	sailors_bonus = 0.5
+	sailors_to_overlord = 0.05
+	
 	# Subject Interactions:
 	embargo_rivals = yes
 	support_loyalists =  yes
