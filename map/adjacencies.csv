@@ -154,7 +154,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4353;4352;sea;1397;-1;-1;-1;-1;Leyte-Cebu
 4351;4352;sea;1397;-1;-1;-1;-1;Buglas-Cebu
 4699;4698;sea;1312;-1;-1;-1;-1;Arta-Cephalonia
-4745;47;sea;1257;3013;1607;3012;1606;R�gen-Stralsund
+47;4745;sea;1257;-1;-1;-1;-1;Rugen-Stralsund
+1981;4745;sea;1257;-1;-1;-1;-1;Rugen-Bornholm
 2994;48;sea;1257;-1;-1;-1;-1;Wolgast-Kolberg
 2728;4846;sea;1408;-1;-1;-1;-1;Tiwi-Woolna
 1240;4934;sea;1697;-1;-1;-1;-1;Hawaii-Maui

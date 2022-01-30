@@ -210,6 +210,8 @@ fort_15th = {
 	build_trigger = {
 		OR = {
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
@@ -425,6 +427,8 @@ fort_15th = {
 				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
 			}
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
@@ -787,6 +791,8 @@ fort_16th = {
 	build_trigger = {
 		OR = {
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
@@ -1002,6 +1008,8 @@ fort_16th = {
 				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
 			}
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
@@ -1465,6 +1473,8 @@ fort_17th = {
 	build_trigger = {
 		OR = {
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
@@ -1680,6 +1690,8 @@ fort_17th = {
 				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
 			}
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
@@ -2089,6 +2101,8 @@ fort_18th = {
 	build_trigger = {
 		OR = {
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
@@ -2304,6 +2318,8 @@ fort_18th = {
 				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
 			}
 			is_capital = yes
+			province_id = 4745
+			province_id = 1981
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
