@@ -98,6 +98,7 @@ prussian_missions_main_slot = {
 				area = west_prussia_area
 				area = east_prussia_area
 				area = mittelmark_area
+				area = berlin_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -113,6 +114,10 @@ prussian_missions_main_slot = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			mittelmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			berlin_area_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

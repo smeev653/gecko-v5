@@ -372,7 +372,7 @@ emp_bav_missions_conquest = {
 				}
 			}
 			else = {
-				mittelmark_area = {
+				berlin_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT }
@@ -475,7 +475,7 @@ emp_bav_missions_conquest_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = neumark_area
-				area = mittelmark_area
+				area = berlin_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -484,7 +484,7 @@ emp_bav_missions_conquest_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			mittelmark_area = {
+			berlin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

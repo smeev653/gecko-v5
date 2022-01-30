@@ -75,6 +75,13 @@ hanseatic_expansion_tree = {
 				}
 				add_permanent_claim = ROOT
 			}
+			lubeck_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = ROOT
+			}
 			weser_area = {
 				limit = {
 					NOT = { is_core = root }

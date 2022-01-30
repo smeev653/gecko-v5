@@ -99,6 +99,13 @@ emp_bra_pru_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			berlin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	emp_brapru_connect_the_prussian_lands = {
@@ -109,6 +116,7 @@ emp_bra_pru_1 = {
 				area = west_prussia_area
 				area = east_prussia_area
 				area = mittelmark_area
+				area = berlin_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -124,6 +132,10 @@ emp_bra_pru_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			mittelmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			berlin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

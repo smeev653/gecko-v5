@@ -1807,6 +1807,13 @@ emp_burgundy_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			lubeck_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			braunschweig_area = {
 				limit = {
 					NOT = { is_core = ROOT }

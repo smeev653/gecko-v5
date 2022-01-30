@@ -1173,7 +1173,7 @@ emp_hab_german_expansion_branch_2 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					area = mittelmark_area
+					area = berlin_area
 					NOT = { country_or_non_sovereign_subject_holds = root }
 				}
 				AND = {
@@ -1188,7 +1188,7 @@ emp_hab_german_expansion_branch_2 = {
 			}
 			OR = {
 				NOT = {
-					mittelmark_area = {
+					berlin_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = root
 					}
@@ -1256,7 +1256,7 @@ emp_hab_german_expansion_branch_2 = {
 					exists = BRA
 				}
 				OR = {
-					mittelmark_area = {
+					berlin_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = root
 					}
@@ -1318,7 +1318,7 @@ emp_hab_german_expansion_branch_2 = {
 				}
 			}
 			else = {
-				mittelmark_area = {
+				berlin_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = root
 				}
