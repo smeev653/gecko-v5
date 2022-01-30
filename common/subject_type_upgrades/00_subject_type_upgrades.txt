@@ -27,6 +27,38 @@ increase_force_limit_from_colony = {
 	}
 }
 
+draft_men_from_colony = {
+	can_upgrade_trigger = {
+		is_subject_of_type = crown_colony
+		colonial_parent = {
+			adm_power = 100
+			NOT = {manpower_percentage = 0.75}
+		}
+		manpower_percentage = 0.50
+		manpower = 15
+		ai = yes
+	}
+	
+	cost = 250
+	
+	effect = {
+		colonial_parent = {
+			add_adm_power = -100
+			add_yearly_manpower = 0.5
+			add_manpower = 10
+		}
+		add_yearly_manpower = -1.75
+		add_manpower = -15
+	}
+
+	modifier_overlord = {
+	}
+
+	modifier_subject = {
+		liberty_desire = 10
+	}
+}
+
 enlarge_the_gold_fleet = {
 	can_upgrade_trigger = {
 		is_subject_of_type = crown_colony
@@ -44,7 +76,7 @@ enlarge_the_gold_fleet = {
 	}
 
 	modifier_overlord = {
-		treasure_fleet_income = 0.2
+		treasure_fleet_income = 0.05
 	}
 
 	modifier_subject = {
@@ -113,6 +145,7 @@ increase_integration_in_the_realm = {
 increase_trade_power_transfer_from_colony = {
 	can_upgrade_trigger = {
 		is_subject_of_type = private_enterprise
+		ai = yes
 		colonial_parent = {
 			adm_power = 25
 		}
@@ -127,12 +160,12 @@ increase_trade_power_transfer_from_colony = {
 	}
 
 	modifier_overlord = {
-		global_trade_power = 0.02
+		global_trade_power = 0.05
 	}
 
 	modifier_subject = {
 		liberty_desire = 10
-		global_trade_power = -0.02
+		global_trade_power = -0.05
 	}
 }
 

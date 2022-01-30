@@ -514,6 +514,7 @@ crown_colony = {
 	sailors_bonus = 0.5
 	sailors_to_overlord = 0.05
 	
+	
 	# Subject Interactions:
 	embargo_rivals = yes
 	support_loyalists =  yes
