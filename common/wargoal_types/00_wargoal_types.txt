@@ -606,7 +606,7 @@ nice_borders_cb = {
 		}
 		prov_desc = ALL_CLAIMS
 	}
-	war_name = NICE_BORDER_WAR
+	war_name = BORDER_WAR_NAME
 }
 
 take_province_nationalist = {

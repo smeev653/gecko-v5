@@ -73,3 +73,7 @@
  tooltip_thrace_area:0 "Province in the Thrace Area"
  Decay_minor:0 "Minor Decay"
  We_stand_alone:0 "We Stand Alone"
+ cb_nice_borders:0 "Border War"
+ cb_nice_borders_desc:0 ""
+ nice_borders_cb:0 "Border Claims"
+ nice_borders_cb_desc:0 ""
