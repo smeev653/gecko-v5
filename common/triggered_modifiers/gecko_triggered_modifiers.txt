@@ -40,14 +40,14 @@ Minor = {
 	potential = {
 			was_player = yes
             is_part_of_hre = yes
-            
-			NOT = {total_development = 199}
+            NOT = {is_great_power = yes}
+			NOT = {total_development = 299}
 		}
 	
 
 	trigger = {
 		
-		NOT = {total_development = 199}
+		NOT = {total_development = 299}
 		was_player = yes
         is_part_of_hre = yes
 		NOT = { is_emperor = yes }
@@ -112,20 +112,20 @@ We_stand_alone = {
 				num_of_allies = 0
 				NOT = { is_hegemon = yes }
 				revanchism = 50
-				NOT = { great_power_rank = 9 }
 				had_recent_war = 15
 				OR = { is_bankrupt = yes
 					num_of_loans = 6
 				}
 				has_country_modifier = just_lost_war_timer
 				NOT = {army_professionalism = 0.65}	
+				NOT = { is_colonial_nation = yes }	
 			}
 	trigger  = {
 				num_of_allies = 0
 				NOT = { is_hegemon = yes }
 				revanchism = 25
 				OR = { is_bankrupt = yes 
-					num_of_loans = 25
+					num_of_loans = 11
 				}			
 	}
 	land_morale = 0.1
