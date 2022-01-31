@@ -588,10 +588,9 @@ nice_borders_cb = {
 	}
 	
 	defender = {
-		badboy_factor = 1.0
+		badboy_factor = 0.75
 		prestige_factor = 1
 		peace_cost_factor = 1.0	
-		allowed_provinces_are_eligible = yes
 		allowed_provinces = {
 			OR = {
 				is_core = ROOT
