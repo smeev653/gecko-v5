@@ -151,6 +151,15 @@ cb_border_war = {
 	war_goal = take_border
 }
 
+cb_nice_borders = {
+	prerequisites = {
+		is_neighbor_of = FROM
+		claim = FROM
+	}
+
+	war_goal = nice_borders_cb
+}
+
 # Trade War (from events and others)
 cb_trade_war_triggered = {
 	valid_for_subject = no
