@@ -314,6 +314,39 @@ allianceaction = {
 			}
 		}
 	}
+	
+	condition = {
+		tooltip = gc_naples
+		potential = {
+			tag = NAP	
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			always = no
+		}
+	}
+	
+	condition = {
+		tooltip = gc_to_naples
+		potential = {
+			ai = yes
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = NAP				
+					}
+				}
+			}
+		}
+	}
+	
 	condition = {
 		tooltip = sm_tooltip_mamottoally
 		potential = {

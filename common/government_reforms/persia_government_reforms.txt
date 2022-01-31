@@ -38,6 +38,9 @@ establish_qurchi_corps_reform = { #tier 2
 		qizilbash_influence_modifier = 0.1
 		qizilbash_loyalty_modifier = 0.05
 	}
+	conditional = {
+		claim_states = yes
+	}
 	custom_attributes = {
 		qizilbash_qurchis_privilege_interaction = yes #used for localization of estate privilege
 	}
@@ -158,6 +161,9 @@ upgrade_janissary_weaponry_reform = { #tier 2
 		global_tax_modifier = 0.10
 		janissary_influence_modifier = 0.1
 		janissary_loyalty_modifier = 0.05
+	}
+	conditional = {
+		claim_states = yes
 	}
 	custom_attributes = {
 		upgrade_janissary_weaponry_privilege_interaction = yes #used for localization of estate privilege
