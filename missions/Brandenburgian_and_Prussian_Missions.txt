@@ -117,7 +117,7 @@ prussian_missions_main_slot = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			berlin_area_area = {
+			berlin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
