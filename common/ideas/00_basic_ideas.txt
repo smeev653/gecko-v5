@@ -61,7 +61,7 @@ plutocracy_ideas = {
 	}
 	tradition_of_payment = {
 		mercenary_cost = -0.2
-		mercenary_discipline = 0.1
+		mercenary_discipline = 0.05
 	}
 	free_merchants = {
 		leader_land_fire = 1

@@ -235,7 +235,7 @@ age_of_discovery = {
 				}
 			}	
 			modifier = {
-				mercenary_discipline = 0.1
+				mercenary_discipline = 0.05
 				mercenary_manpower = 0.25
 			}
 			ai_will_do = {
@@ -333,7 +333,7 @@ age_of_discovery = {
 			modifier = {
 				merc_maintenance_modifier = -0.15
 				mercenary_cost = -0.25
-				mercenary_discipline = 0.1
+				mercenary_discipline = 0.05
 				mercenary_manpower = 0.5
 			}
 			ai_will_do = {
@@ -464,7 +464,7 @@ age_of_reformation = {
 		
 		ab_mercenary_discipline = {
 			modifier = {
-				mercenary_discipline = 0.1
+				mercenary_discipline = 0.05
 			}
 			ai_will_do = {
 				factor = 10
