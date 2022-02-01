@@ -8,6 +8,7 @@ war_goal = {
 # War start date
 1443.1.1 = {
 	add_attacker = HAB
+	add_attacker = MLO
 	add_defender = UBV
 	add_defender = PSS
 	add_defender = SLZ
@@ -20,7 +21,8 @@ war_goal = {
 }
 # War end date
 1444.11.10 = {
-    	rem_attacker = HAB
+    rem_attacker = HAB
+	rem_attacker = MLO
 	rem_defender = UBV
 	rem_defender = PSS
 	rem_defender = SLZ

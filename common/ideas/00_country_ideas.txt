@@ -3033,47 +3033,6 @@ USA_ideas = {
 }
 
 
-SWI_ideas = {
-	start = {
-		merc_maintenance_modifier = -0.15
-		infantry_power = 0.1
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}
-	
-	trigger = {
-		tag = SWI
-	}
-	free = yes  #will be triggered at load
-	
-	swiss_mercenaries = {
-		mercenary_discipline = 0.05
-		mercenary_manpower = 0.5
-	}
-	swiss_tolerance = {
-		tolerance_heretic = 2
-	}
-	the_swiss_confederation = {
-		stability_cost_modifier = -0.1
-	}
-	alpine_defensiveness = {
-		fort_maintenance_modifier = -0.2
-		defensiveness = 0.25
-	}
-	oasis_of_peace_and_prosperity = {
-		development_cost = -0.1
-	}
-	haven_for_refugees = {
-		prestige = 1
-	}
-	clockwork = {
-		production_efficiency = 0.1
-	}
-}
-
-
 SON_ideas = {
 	start = {
 		infantry_power = 0.10
@@ -14663,44 +14622,6 @@ CLI_ideas = {
 	}
 }
 
-
-SWA_ideas = {
-	start = {
-		global_manpower_modifier = 0.2
-		development_cost = -0.05
-	}
-	bonus = {
-		global_prov_trade_power_modifier = 0.25
-	}
-	trigger = {
-		tag = SWA
-	}
-	free = yes
-
-	swa_decentralisation = {
-		global_tax_modifier = 0.15
-	}
-	swa_stinginess = {
-		build_cost = -0.15
-		same_culture_advisor_cost = -0.15
-	}
-	swa_barbarossas_legacy = {
-		infantry_power = 0.1
-	}
-	swa_swabian_league = {
-		diplomatic_upkeep = 2
-		diplomatic_annexation_cost = -0.15
-	}
-	swa_fugger_banks = {
-		inflation_reduction = 0.2
-	}
-	swa_hohenstaufen_emperors = {
-		prestige = 1
-	}
-	swa_free_cities = {
-		land_morale = 0.10
-	}
-}
 
 TTL_ideas = {
 	start = {

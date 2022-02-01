@@ -2,10 +2,8 @@ united_cantons_reform = {
 	icon = "united_cantons_reform"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity = -50
+		governing_capacity = 50
 		free_policy = 1
-		mercenary_manpower = 0.5
-		max_absolutism = -30
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
