@@ -609,7 +609,7 @@ NCountry = {
 	MAX_GOV_RANK = 3,									-- Max possible is 10
 
 
-	PARLIAMENT_BACKING_PERCENTAGE = 50,			-- average percent of seats backing an issue (0-100)
+	PARLIAMENT_BACKING_PERCENTAGE = 65,			-- average percent of seats backing an issue (0-100)
 	PARLIAMENT_ISSUE_DURATION = 10,				-- in years
 	PARLIAMENT_DEBATE_DURATION = 5,				-- in years
 	NUM_PARLIAMENT_ISSUES = 10,
