@@ -1703,7 +1703,7 @@ gc_south_germany_tradenode = {
 		255 146 0
 	}
 	outgoing = {
-		name = "venice"
+		name = "genua"
 		path = {
 			68 4712 1870 166 4740 104
 		}

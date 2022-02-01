@@ -4,10 +4,7 @@
 
 # These names can NOT be removed or changes, as the code uses them....
 
-################
-null_modifier = {
-}
-################
+
 
 ##########################################################################
 # Handicap Modifiers for human player
@@ -247,8 +244,6 @@ manpower = {
 	garrison_growth = 0.01					#1% increase from manpower.
 }
 
-sailors = {
-}
 
 # Caps at 600
 horde_development = {

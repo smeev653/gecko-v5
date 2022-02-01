@@ -2,6 +2,10 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+plc_polish_lithuanian_union = {
+	num_accepted_cultures = 1
+}
+
 #national_bank_interest = {
 #	interest = -0.5
 #}
@@ -983,6 +987,14 @@ dutch_india_trade_co = {
 	range = 0.25
 }
 
+scottish_india_trade_co = {
+	trade_efficiency = 0.10
+}
+
+amur_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
 
 portuguese_india_trade_co = {
 	#merchants = 1
