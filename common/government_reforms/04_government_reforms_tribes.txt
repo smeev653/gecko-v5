@@ -361,6 +361,73 @@ great_man = {
 		factor = 1
 	}
 }
+
+shaka_regime = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = shaka_regime_legacy
+	potential = {
+		OR = {
+			tag = ZUL
+			have_had_reform = shaka_regime
+		}
+	}
+	trigger = {
+		OR = {
+			tag = ZUL
+			have_had_reform = shaka_regime
+		}
+	}
+	modifiers = {
+		monarch_military_power = 2
+		global_unrest = -2
+		war_exhaustion = -0.02
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Rights of Man"
+		}
+		militarised_society = yes
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+feudal_tribe = {
+	icon = "tribal_civil_society"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = feudal_tribe_legacy
+	lock_level_when_selected = yes
+	potential = {
+	}
+	trigger = {
+	}
+	modifiers = {
+		vassal_income = 0.1
+		global_tax_modifier = 0.1
+	}
+
+	conditional = {
+		allow = { 
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
 #tribal_cultural_values
 
 martial_society_reform = {
