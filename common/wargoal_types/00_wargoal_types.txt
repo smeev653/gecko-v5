@@ -822,7 +822,6 @@ take_colony = {
 		badboy_factor = 0.25
 		prestige_factor = 0.5
 		peace_cost_factor = 1.5
-		peace_cost_factor_non_allowed_treaty = 25
 		allowed_provinces_are_eligible = yes
 		allowed_provinces = {
 			OR = {
