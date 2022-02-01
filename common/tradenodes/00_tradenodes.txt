@@ -1773,7 +1773,7 @@ rheinland={
 		4775 2972 82
 		69 86 56 2973
 		2971 1758 57 4773 #braunschweig
-		6163 6162 #gc germany
+		6163 6162 4749 4786 #gc germany
 	}
 }
 
@@ -2032,7 +2032,7 @@ lubeck={
 	}
 	members={
 		12 13 14 15 44 45 46 53 54 55 1775 1857 1874 1981 1983 1984 2996 4141 4142 4149
-		4749 4771 4772 4786
+		 4771 4772
 		47 4745 2994 1858 #vorpommern #smeev
 		48 4746 2995 #hinterpommern #smeev
 		#Scandinavia Rework
