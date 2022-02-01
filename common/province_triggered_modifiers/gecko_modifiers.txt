@@ -590,7 +590,30 @@ conquest_of_pest = {
 	
 	}
 }
+conquest_of_copenhagen = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
 
+	trigger = {
+		owner = {
+				NOT = { tag = DAN }
+			}
+		controlled_by = ROOT	
+	}	
+
+	discipline = 0.03
+	ship_durability = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
 
 
 conquest_of_herat = {
@@ -658,12 +681,6 @@ gc_cagliari_copper = {
 		has_global_flag = gc_cagliari_copper
 	}
 	trigger = {
-		owner = {
-			OR = {
-				culture_group = sicilian
-				culture_group = sardinian
-			}
-		}
 	}
 	trade_goods_size = 5
 	local_development_cost = -0.25
@@ -676,12 +693,6 @@ gc_catanzaro_silk = {
 		has_global_flag = gc_catanzaro_silk
 	}
 	trigger = {
-		owner = {
-			OR = {
-				culture_group = sicilian
-				culture_group = sardinian
-			}
-		}
 	}
 	trade_goods_size = 2
 	local_development_cost = -0.10
