@@ -14628,6 +14628,8 @@ santa_maria_del_fiore = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			monthly_splendor = 0.5
+			prestige_decay = -0.005
 		}
 		on_upgraded = {
 		}
@@ -14645,6 +14647,9 @@ santa_maria_del_fiore = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			advisor_cost = -0.1
+			monthly_splendor = 1
+			prestige_decay = -0.01
 		}
 		on_upgraded = {
 		}
@@ -14662,6 +14667,9 @@ santa_maria_del_fiore = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			advisor_cost = -0.1
+			monthly_splendor = 2
+			prestige_decay = -0.01
 		}
 		on_upgraded = {
 		}
