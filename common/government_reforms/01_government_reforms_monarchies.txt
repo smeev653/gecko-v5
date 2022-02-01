@@ -431,6 +431,7 @@ english_monarchy = {
 		legitimacy = 0.5
 		global_unrest = -1
 		max_absolutism = -30
+		vassal_income = 0.25
 	}
 
 	conditional = {
