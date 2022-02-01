@@ -116,6 +116,8 @@ north_german_region = {
 		mecklenburg_area
 		braunschweig_area
 		lusatia_area
+		berlin_area
+		lubeck_area
 	}
 }
 
@@ -146,8 +148,6 @@ south_german_region = {
 		erzgebirge_area
 		hradecko_area
 		moravia_area
-		berlin_area
-		lubeck_area
 	}
 }
 
