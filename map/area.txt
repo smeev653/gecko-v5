@@ -462,7 +462,7 @@ macaronesia_area = { #3
 # Italy					 			   #
 ########################################
 
-lombardy_area = { #5
+lombardy_area = { 6176  #5
 	104 1862 4740 6078 105
 }
 
@@ -1094,11 +1094,11 @@ inner_austria_area = { #4
 	128 132 1863 4759
 }
 
-switzerland_area = { #4
+switzerland_area = { 6175  6174  6173  6172  6170  6169  #4
 	166 1869 1870 1873 4722
 }
 
-romandie_area = { #3
+romandie_area = { 6171  #3
 	165 1867 1871 4720 4721
 }
 

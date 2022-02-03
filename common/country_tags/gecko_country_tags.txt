@@ -6,3 +6,4 @@ GZM = "countries/Great Zimbabwe.txt"
 #Gecko Germans
 NGF = "countries/NorthGermanFederation.txt"
 SGF = "countries/SouthGermanFederation.txt"
+ZGB = "countries/LeagueoftheTenJurisdictions.txt" 
