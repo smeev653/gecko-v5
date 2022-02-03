@@ -232,6 +232,7 @@ age_of_discovery = {
 					tag = PAP
 					tag = SIC
 					tag = TTS
+					tag = SWI
 				}
 			}	
 			modifier = {
