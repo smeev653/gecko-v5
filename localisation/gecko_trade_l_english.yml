@@ -12,3 +12,5 @@
  TRADE_COMPANY_caucasus_Root_Culture_GetName:0 "[Root.Culture.GetName] Caucasus Company"
  TRADE_COMPANY_caucasus_Near_East_Trade_Company:0 "[Root.Culture.GetName] Caucasus Company"
  gc_south_germany_tradenode:0 "South Germany"
+ TRADE_COMPANY_south_germany_Root_Culture_GetName:0 "[Root.Culture.GetName] South German Company"
+ TRADE_COMPANY_south_germany_Trade_Company:0 "[Root.Culture.GetName] South German Company"
