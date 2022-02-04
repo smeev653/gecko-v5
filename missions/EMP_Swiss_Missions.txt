@@ -266,9 +266,9 @@ swiss_missions_1 = {
 		icon = appease_the_estates
 		required_missions { }
 		position = 8
-		provinces_to_highlight = { province_id = 165 }
+		provinces_to_highlight = { province_id = 6169 }
 		trigger = {
-			165 = {
+			6169 = {
 				owned_by = ROOT 
 				num_of_times_improved = 5 
 				renaissance = 100 
@@ -276,7 +276,7 @@ swiss_missions_1 = {
 			}
 		}
 		effect = {
-			165 = {
+			6169 = {
 				if = {
 					limit = { 
 						NOT = { has_building = university }
@@ -564,6 +564,14 @@ swiss_missions_3 = {
 				amount = 25
 			}
 			lombardy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+			torino_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
