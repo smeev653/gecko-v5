@@ -141,24 +141,4 @@ country_event = { #The Swiss Confederation
 	}
 }
 
-country_event = {
-	id = FU_Switzerland_Events.6
-	title = FU_Switzerland_Events.6.t 
-	desc = FU_Switzerland_Events.6.d 
-	picture = fu_swiss_cheese_eventPicture 
-	
-	hidden = yes 
-	
-	trigger = {
-		tag = SWI 
-		has_country_modifier = swi_period_of_stability_modifier
-		NOT = { stability = 2 }
-	}
-	
-	option = {
-		name = FU_Switzerland_Events.6.a 
-		
-		remove_country_modifier = swi_period_of_stability_modifier
-	}
-}
 

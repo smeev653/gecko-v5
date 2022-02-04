@@ -843,8 +843,7 @@ swiss_missions_4 = {
 		effect = {
 			add_country_modifier = {
 				name = swi_period_of_stability_modifier 
-				duration = -1 
-				desc = swi_period_of_stability_tt 
+				duration = 7300
 			}
 		}
 	}
