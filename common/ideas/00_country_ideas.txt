@@ -944,7 +944,7 @@ POR_ideas = {
 	}
 	
 	bonus = {
-		fire_damage = 0.2
+		artillery_fire = 0.5
 	}
 	
 	trigger = {
@@ -976,7 +976,7 @@ POR_ideas = {
 	}
 	por_royal_military_academy = {
 		defensiveness = 0.1
-		artillery_power = 0.1
+		artillery_power = 0.15
 	}
 }
 
