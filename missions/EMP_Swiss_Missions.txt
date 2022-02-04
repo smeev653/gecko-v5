@@ -64,29 +64,48 @@ swiss_missions_1 = {
 		required_missions { swi_protect_cantons }
 		position = 2
 		provinces_to_highlight = {
-			area = switzerland_area 
-			NOT = { owned_by = ROOT }
+			OR = {
+				province_id = 4722
+				province_id = 1873
+				province_id = 6175
+			}
 		}
 		trigger = {
 			OR = {
 				TTL = { is_subject_of = ROOT }
-				switzerland_area = {
-					type = all 
-					owned_by = ROOT 
+				ZGB = { is_subject_of = ROOT }
+				4722 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				1873 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				6175 = {
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
 		effect = {
 			if = {
 				limit = {
+				 OR = {
 					TTL = { 
 						is_subject_of = ROOT 
 						NOT = { is_subject_of_type = canton } 
 					}
+					ZGB = { 
+						is_subject_of = ROOT 
+						NOT = { is_subject_of_type = canton } 
+					}
+				 }	
 				}
 				create_subject = {
 					subject_type = canton
 					subject = TTL 
+				}
+				create_subject = {
+					subject_type = canton
+					subject = ZGB
 				}
 			}
 			else = {
@@ -495,12 +514,14 @@ swiss_missions_3 = {
 			OR = { 
 				province_id = 1871 
 				province_id = 1867 
+				province_id = 6171
 			}
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
 			1871 = { owned_by = ROOT }
 			1867 = { owned_by = ROOT }
+			6171 = { owned_by = ROOT }
 		}
 		effect = {
 			add_mil_power = 50 
