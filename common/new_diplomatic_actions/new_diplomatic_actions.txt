@@ -13,7 +13,7 @@ request_canton = {
 		}
 		FROM = { NOT = { is_subject_of = ROOT } }
 		is_neighbor_of = FROM
-		NOT = { total_development = 25 }
+		FROM = { NOT = { total_development = 25 } }
 	}
 	is_allowed = {
 		FROM = {

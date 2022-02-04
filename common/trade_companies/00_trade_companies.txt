@@ -752,18 +752,14 @@ trade_company_wien = {
 	color = { 220 220 220 }
 	
 	provinces = {
-		64 65 76 128 132 133 134 1757 1770 1863 2955 2956 2957 68 1868 70 1872 73 110 1768
-		4707 4708 4709 4710 4711 4712 4713
-		4758 4759 4760 4761 4762 # Austria 1.30
+		73 4758 110 1768 #Tirol
+		134 4762 4761 133 1770 #Austria proper
+		128 4759 132 1863 #unterkärnten
+		6105 4724 2970 6104 #Hradecko
 		265 4237 4726 6106 # Moravia
-		4714 72 74 #baden #smeev
-		75 4765 1880 #alsace #smeev
-		1873 4722 1870 166 1869 #switzerland #smeev
-		165 1867 1871 4721 4720 #romandie_area #smeev
-		266 4724 4725 2968 2970 6102 #bohemia #smeev
+		266 4725 2968 6103 6102  #bohemia 
 		267 2967 1771 6101 #erzgebirge #smeev
-		129 1769 4751 #krain
-		6103 6104 6105 
+		1769 129 4751 #Krain
 	}
 	
 	# Specific

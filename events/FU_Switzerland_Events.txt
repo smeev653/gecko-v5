@@ -122,8 +122,7 @@ country_event = { #The Swiss Confederation
 	fire_only_once = yes 
 	
 	trigger = {
-		tag = SWI 
-		is_at_war = no 
+		tag = SWI  
 		current_age = age_of_discovery
 	}
 	
