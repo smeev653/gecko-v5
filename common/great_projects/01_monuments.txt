@@ -13596,8 +13596,8 @@ malta_forts = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			warscore_cost_vs_other_religion = -0.1
-			galley_power = 0.15
+			warscore_cost_vs_other_religion = -0.0075
+			galley_power = 0.05
 		}
 		on_upgraded = {
 		}
@@ -13618,8 +13618,8 @@ malta_forts = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			warscore_cost_vs_other_religion = -0.15
-			galley_power = 0.20
+			warscore_cost_vs_other_religion = -0.10
+			galley_power = 0.1
 		}
 		on_upgraded = {
 		}
