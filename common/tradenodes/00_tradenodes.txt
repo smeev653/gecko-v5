@@ -1739,6 +1739,7 @@ gc_south_germany_tradenode = {
 		2955 4708 65 4707 #uppper bavaria
 		4709 4760 76 #eastern bavaria
 		64 2957 1757 2956 #lower bavaria
+		6171 6172 6173 6174 6175 6176 6169 6170 #gc switzerland
 	}
 }
 
@@ -2187,7 +2188,7 @@ genua={
 			2903.300000 1390.000000 2850.000000 1387.000000 
 		}
 	}
-	members={6176 
+	members={
 		1298 #Sea
 		#124 125 126 2982 #sicily_area
 		115 116 2978 2980 #tuscany_area

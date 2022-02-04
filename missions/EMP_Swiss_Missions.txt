@@ -1045,16 +1045,6 @@ swiss_missions_5 = {
 				}
 			}
 			73 = { add_base_production = 2 }
-			if = {
-				limit = { has_global_flag = trade_goods_expanded_mod_active }
-				add_years_of_owned_provinces_production_income = {
-					years = 2
-					trigger = {
-						trade_goods = silver 
-					}
-					custom_tooltip = swi_income_from_silver_tt
-				}
-			}
 		}
 	}
 

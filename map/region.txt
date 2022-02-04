@@ -130,6 +130,8 @@ south_german_region = {
 		austria_proper_area
 		inner_austria_area
 		switzerland_area
+		grisons_area
+		bern_area
 		lower_bavaria_area
 		upper_bavaria_area
 		east_bavaria_area

@@ -12,6 +12,8 @@ request_canton = {
 			NOT = { is_subject = yes } 
 		}
 		FROM = { NOT = { is_subject_of = ROOT } }
+		is_neighbor_of = FROM
+		NOT = { total_development = 25 }
 	}
 	is_allowed = {
 		FROM = {
@@ -24,6 +26,7 @@ request_canton = {
 			is_subject = no 
 			NOT = { total_development = 25 }
 			technology_group = western
+			
 		}
 		
 	}
@@ -325,4 +328,5 @@ cancel_canton =  {
 		always = no
 	}
 }
+
 

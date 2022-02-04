@@ -681,6 +681,7 @@ tributary_state = {
 	}
 }
 
+
 # Completely scripted subject type (no code used). Add any number of these. Check common/new_diplomatic_actions for how to make visible in game.
 dummy =
 {

@@ -6,7 +6,7 @@ owner = ZGB
 controller = ZGB
 culture = swiss
 religion = catholic
-hre = no
+hre = yes
 base_tax = 2
 base_production = 2
 trade_goods = livestock
@@ -14,7 +14,7 @@ base_manpower = 1
 capital = "Davos"
 is_city = yes
 extra_cost = 26
-center_of_trade = 0
+
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim

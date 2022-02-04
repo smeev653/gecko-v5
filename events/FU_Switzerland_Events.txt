@@ -44,22 +44,9 @@ country_event = { #Swiss Cheese
 	option = {
 		name = FU_Switzerland_Events.2.a 
 		
-		if = {
-			limit = { has_global_flag = trade_goods_expanded_mod_active }
-			4722 = { change_trade_goods = cheese }
-			every_owned_province = {
-				limit = { trade_goods = cheese }
-				add_province_modifier = {
-					name = swi_swiss_cheese_modifier
-					duration = 9125
-				}
-				add_base_production = 1 
-			}
-		}
-		else = {
 			add_years_of_income = 2 
 			add_prestige = 25
-		}
+		
 	}
 }
 
