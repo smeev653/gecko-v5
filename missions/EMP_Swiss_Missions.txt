@@ -37,6 +37,22 @@ swiss_missions_1 = {
 				}
 				add_core = ROOT
 			}
+			bern_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_core = ROOT
+			}
+			grisons_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_core = ROOT
+			}
 			hidden_effect = {
 				clr_country_flag = swi_had_canton_event_flag
 			}

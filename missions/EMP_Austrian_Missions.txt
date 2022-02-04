@@ -1430,6 +1430,20 @@ emp_hab_western_expansion_branch = {
 				}
 				add_permanent_claim = root
 			}
+			bern_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			grisons_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
 			upper_swabia_area = {
 				limit = {
 					NOT = { is_core = root }
