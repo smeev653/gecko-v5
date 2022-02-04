@@ -14,3 +14,4 @@
  gc_south_germany_tradenode:0 "South Germany"
  TRADE_COMPANY_south_germany_Root_Culture_GetName:0 "[Root.Culture.GetName] South German Company"
  TRADE_COMPANY_south_germany_Trade_Company:0 "[Root.Culture.GetName] South German Company"
+ trade_company_south_germany:0 "South German Charter"
