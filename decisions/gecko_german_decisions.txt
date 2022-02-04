@@ -31,7 +31,7 @@ country_decisions = {
 		}
 
 		allow = {
-			adm_tech = 10
+			adm_tech = 14
             is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -89,6 +89,7 @@ country_decisions = {
                 tag = HAB
 				tag = SWI
 				tag = BAV
+				tag = SWA
             }
 			culture_group = germanic
 		}
@@ -106,7 +107,7 @@ country_decisions = {
 		}
 
 		allow = {
-			adm_tech = 10
+			adm_tech = 14
             is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
