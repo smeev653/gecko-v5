@@ -672,9 +672,9 @@ swiss_missions_3 = {
 			1869 = {
 				if = {
 					limit = {
-						NOT = { has_building = state_house }
+						NOT = { has_building = weapons }
 					}
-					add_building = state_house 
+					add_building = weapons
 				}
 			}
 			add_country_modifier = {
