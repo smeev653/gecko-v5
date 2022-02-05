@@ -38,14 +38,19 @@ empowered_subjects = {
 
 Minor = {
 	potential = {
-			was_player = yes
+	OR = {
+		OR = {
+			tag = MAL
+			tag = YAO
+			}
+		OR = {
             is_part_of_hre = yes
             NOT = {is_great_power = yes}
+		}
+	}	
 			NOT = {total_development = 299}
-			OR = {
-				tag = MAL
-				tag = YAO
-			}	
+			was_player = yes
+	
 		}
 	
 
@@ -53,15 +58,24 @@ Minor = {
 		
 		NOT = {total_development = 299}
 		was_player = yes
-        is_part_of_hre = yes
+       	OR = {
+			OR = {
+				tag = MAL
+				tag = YAO
+				}
+			OR = {
+				is_part_of_hre = yes
+				NOT = {is_great_power = yes}
+			}
+	}
 		NOT = { is_emperor = yes }
 	}
 	advisor_cost = -0.2
 	advisor_pool = 1
 	ae_impact = -0.10
-	interest = -0.5
-	global_regiment_cost = -0.1
-	build_cost = -0.1
+	interest = -0.25
+	global_regiment_cost = -0.05
+	build_cost = -0.05
 }
 
 Decay = {
