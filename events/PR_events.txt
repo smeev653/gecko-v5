@@ -18,6 +18,8 @@ country_event = {
             tag = ZAN
             tag = ETH
 			tag = MAM
+			#tag = YAO
+			tag = MAL
         }
         NOT = { 
 			has_country_flag = PR_discover_africa_flag

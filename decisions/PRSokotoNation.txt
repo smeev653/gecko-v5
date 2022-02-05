@@ -18,9 +18,9 @@ country_decisions = {
 			}
 			NOT = { exists = PR2 }
 			OR = {
-				culture_group = mande
+				tag = YAO
+				tag = MAL
 				tag = MOR
-
 			}
 			is_colonial_nation = no
 			OR = {

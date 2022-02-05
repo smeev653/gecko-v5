@@ -9,7 +9,10 @@ mali_pick_religious_direction_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}	
 	}
 	has_country_shield = yes
 
@@ -47,7 +50,10 @@ mali_choice_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 		NOT = { has_country_flag = mal_decide_for_conversion }
 		NOT = { has_country_flag = mal_decide_for_tolerance }
 	}
@@ -131,7 +137,10 @@ mali_jihad_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 		has_country_flag = mal_decide_for_conversion
 	}
 	has_country_shield = yes
@@ -180,7 +189,10 @@ mali_tolerance_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 		has_country_flag = mal_decide_for_tolerance
 	}
 	has_country_shield = yes
@@ -227,7 +239,10 @@ mali_colonization_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 	}
 	has_country_shield = yes
 
@@ -379,7 +394,10 @@ mali_trade_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 	}
 	has_country_shield = yes
 
@@ -409,7 +427,7 @@ mali_trade_slot = {
 		}
 		effect = {
 			mal_add_disaster_stability = yes
-			add_adm_power = 200
+			add_adm_power = 50
 		}
 	}
 
@@ -538,7 +556,10 @@ mali_conquest_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 	}
 	has_country_shield = yes
 
@@ -937,7 +958,10 @@ mali_empire_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 	}
 	has_country_shield = yes
 
@@ -1213,7 +1237,10 @@ mali_slot_disaster_slot = {
 	potential = {
 		has_dlc = "Origins"
 		NOT = { map_setup = map_setup_random }
-		tag = MAL
+		OR = {
+			tag = MAL
+			was_tag = MAL
+		}		
 	}
 	has_country_shield = yes
 
@@ -1302,7 +1329,7 @@ mali_slot_disaster_slot = {
 			hidden_effect = {
 				set_country_flag = mal_appeased_kaabu
 			}
-			add_mil_power = 150
+			add_mil_power = 50
 		}
 	}
 

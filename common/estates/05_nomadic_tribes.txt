@@ -9,16 +9,11 @@ estate_nomadic_tribes = {
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = pirate_republic_reform }
-		OR = {
-			is_nomad = yes
-			AND = { 
-				government = tribal
-				any_owned_province = {
-					has_terrain = steppe
-				}
-			}
+		is_nomad = yes
+		
+			
 			#tag = ARB
-		}	
+			
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }
 		NOT = { has_reform = revolutionary_empire_reform }

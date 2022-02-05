@@ -162,8 +162,7 @@ country_decisions = {
 	disband_the_janissaries = {
 		major = yes
 		potential = {
-			has_disaster = janissary_decadence
-			normal_or_historical_nations = yes
+			always = no
 		}
 		allow = {
 			has_disaster = janissary_decadence

@@ -3043,7 +3043,10 @@ SON_ideas = {
 	}
 	
 	trigger = {
-		tag = SON
+		OR = {
+			tag = SON
+			tag = YAO
+		}	
 	}
 	free = yes		#will be added at load
 
@@ -3321,12 +3324,13 @@ KON_ideas = {
 
 MAL_ideas = {
 	start = {
-		land_attrition = -0.10
+		discipline = 0.05
 		tolerance_heathen = 2
 	}
 	
 	bonus = {
 		infantry_power = 0.10
+		land_attrition = -0.15
 	}
 	
 	trigger = {
@@ -3338,14 +3342,14 @@ MAL_ideas = {
 		colonists = 1
 		range = 0.25
 	}
-	gold_of_bure = {
-		production_efficiency = 0.10
+	mandinka_warrior_spirit = {
+		infantry_power = 0.10
 	}
 	reclamation_of_land = {
 		global_manpower_modifier = 0.20
 	}
-	mandinka_warrior_spirit = {
-		discipline = 0.05
+	gold_of_bure = {
+		production_efficiency = 0.10
 	}
 	lost_fleet_of_abubukari_ii = {
 		navy_tradition = 0.5
