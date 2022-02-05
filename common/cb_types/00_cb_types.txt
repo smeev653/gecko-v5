@@ -155,6 +155,9 @@ cb_nice_borders = {
 	prerequisites = {
 		is_neighbor_of = FROM
 		claim = FROM
+		FROM = {
+			ai = no
+		}
 	}
 	
 	attacker_disabled_po = {
