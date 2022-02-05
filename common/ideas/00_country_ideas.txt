@@ -1950,7 +1950,7 @@ ITA_ideas = { #Italian Ideas
 		galley_power = 0.20
 	}
 	office_of_censor = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.2
 	}
 	italian_tax_reform = {
 		technology_cost = -0.1
@@ -1960,7 +1960,7 @@ ITA_ideas = { #Italian Ideas
 		development_cost = -0.05
 	}
 	path_to_citizenship = {
-		land_morale = 0.10
+		land_morale = 0.05
 	}
 }
 
