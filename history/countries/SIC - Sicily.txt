@@ -12,7 +12,7 @@ elector = yes
 		dynasty = "d'Aragó"
 		birth_date = 1429.11.19
 		dip = 4
-		mil = 6
+		mil = 4
 		adm = 5
 		female = yes
 	}
