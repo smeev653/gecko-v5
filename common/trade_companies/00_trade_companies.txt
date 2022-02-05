@@ -640,7 +640,7 @@ trade_company_champagne = {
 		167 168 1879 4385 #normandy_area #smeev
 		169 170 171 172 4384 #brittany_area #smeev
 		4764 4766 
-		91 93 94 1866 #wallonia_area
+	    93 94 1866 #wallonia_area
 		177 178 4389 #loire_area #smeev
 		87 88 89 1743 #picardy_area #smeev
 		6093 6092 6091 6090 6089 6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
