@@ -313,8 +313,8 @@ NGF_ideas = {
 
 SGF_ideas = {
 	start = {
-		land_forcelimit_modifier = 0.33
-		global_manpower_modifier = 0.25
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.20
 	}
 	
 	bonus = {
@@ -344,7 +344,7 @@ SGF_ideas = {
 		mercenary_cost = -0.15
 	}
 	SGF_national_idea_6 = {
-		infantry_power = 0.15
+		infantry_power = 0.10
 	}
 	SGF_national_idea_7 = {
 		advisor_cost = -0.1
