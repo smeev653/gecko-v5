@@ -607,15 +607,15 @@ east_midlands_area = { #3
 }
 
 wessex_area = { #5
-	233 234 4130 4373 4374
+	233 4130 4373 4374 6191
 }
 
 home_counties_area = { #4
-	235 236  4371 6189 
+	235 236  4371 6189 234
 }
 
 oxford_area = { 
-6191  6190   6188 237
+  6190   6188 237
 }
 
 east_anglia_area = { 6187  #3
