@@ -15,12 +15,6 @@ east_indian_trade_route = {
 				continent = asia
 			}
 		}
-		NOT = {
-			capital_scope = {
-				continent = oceania
-			}
-		}
-		
 	}
 
 	trigger = {
@@ -30,7 +24,6 @@ east_indian_trade_route = {
 		any_active_trade_node = {
 			has_merchant = ROOT
 			OR = {
-				province_id = 1361 # Straits of Johor
 				province_id = 1343 # Ganges Delta
 				province_id = 504 # Sind
 				province_id = 1340 # Comorin Cape
