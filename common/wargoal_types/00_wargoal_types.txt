@@ -532,7 +532,7 @@ take_capital_claim = {
 
 take_claim = {
 	type = take_province
-	
+
 	attacker = {
 		badboy_factor = 1.0
 		prestige_factor = 1

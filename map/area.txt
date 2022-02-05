@@ -400,16 +400,19 @@ catalonia_area = { #5
 	197 212 213 2987 2988
 }
 
-valencia_area = { #5
+valencia_area = { 6192  #5
 	220 1750 4549 4550
 }
 
 lower_andalucia_area = { #5
-	224 225 1748 1749 4548
+	224 1749 4548 6194
 }
 
-upper_andalucia_area = { #4
-	222 223 226 4546
+cordoba_area = {
+1748 225 6195
+}
+upper_andalucia_area = {    #4
+	222 223 226 4546 6193
 }
 
 castille_area = { #5
@@ -608,10 +611,14 @@ wessex_area = { #5
 }
 
 home_counties_area = { #4
-	235 236 237 4371 
+	235 236  4371 6189 
 }
 
-east_anglia_area = { #3
+oxford_area = { 
+6191  6190   6188 237
+}
+
+east_anglia_area = { 6187  #3
 	238 1860 4370
 }
 
@@ -1023,11 +1030,11 @@ south_saxony_area = { #4
 
 upper_bavaria_area = { #4
 	color = { 180 220 220 }
-	65 2955 4707 4708
+	65 2955 4707 4708 6183 6185
 }
 
 lower_bavaria_area = { #4
-	64 1757 2956 2957
+	64 1757 2956 2957 6184
 }
 
 east_bavaria_area = { #3
@@ -1062,7 +1069,7 @@ thuringia_area = { #3
 
 neumark_area = { #3
 	color = { 234 232 44 }
-	49 2969 4747
+	49 2969 4747 6179 6178
 }
 
 mittelmark_area = { #5
@@ -1077,7 +1084,7 @@ vorpommern_area = { #4
 	47 2994 4745 1858 
 }
 
-hinter_pommern_area = { #3
+hinter_pommern_area = {     6177  #3
 	48 2995 4746
 }
 
@@ -1085,13 +1092,17 @@ tirol_area = { #5
 	73 110 1768 4758
 }
 
-austria_proper_area = { #5
+austria_proper_area = {  #5
 	color = { 213 40 40 }
-	133 134 1770 4761 4762
+	 134 1770  4762 6182   6180  
 }
 
 inner_austria_area = { #4
 	128 132 1863 4759
+}
+
+outer_austria_area = {
+ 133 6186 4761
 }
 
 switzerland_area = {     #4

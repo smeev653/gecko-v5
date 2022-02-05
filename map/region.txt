@@ -150,6 +150,7 @@ south_german_region = {
 		erzgebirge_area
 		hradecko_area
 		moravia_area
+		outer_austria_area
 	}
 }
 
@@ -207,6 +208,7 @@ iberia_region = {
 		galicia_area
 		baleares_area
 		extremadura_area
+		cordoba_area
 	}
 }
 
@@ -229,6 +231,7 @@ british_isles_region = {
 		connacht_area
 		leinster_area
 		ulster_area
+		oxford_area
 	}
 }
 

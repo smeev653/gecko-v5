@@ -1694,6 +1694,7 @@ wien={
 		266 4725 2968 6103 6102  #bohemia 
 		267 2967 1771 6101 #erzgebirge #smeev
 		1769 129 4751 #Krain
+		6180 6182 6186 
 	}
 }
 
@@ -1740,6 +1741,7 @@ gc_south_germany_tradenode = {
 		4709 4760 76 #eastern bavaria
 		64 2957 1757 2956 #lower bavaria
 		6171 6172 6173 6174 6175 6176 6169 6170 #gc switzerland
+		6184 6183 6185 #gc bavaria
 	}
 }
 
@@ -1816,7 +1818,7 @@ rheinland={
 		4775 2972 82
 		69 86 56 2973
 		2971 1758 57 4773 #braunschweig
-		6163 6162 4749 4786 #gc germany
+		6163 6162 4749 4786	6179 6178 #gc germany
 	}
 }
 
@@ -2082,7 +2084,7 @@ lubeck={
 		#Denmark
 		5003 5004 5005 5006 5007
 		#4775 2972 82
-		6168 6167 6166 6165 6164 6161 6160 6159 #gc germany
+		6177 6168 6167 6166 6165 6164 6161 6160 6159 #gc germany
 	}
 }
 
@@ -2249,6 +2251,7 @@ valencia={
 		220 1750 4549 4550 #valencia_area
 		211 214 2990 4557 #aragon_area
 		333 4559 4560 # Baleares
+	    6192 #gc iberia
 	}
 }
 sevilla={
@@ -2270,6 +2273,7 @@ sevilla={
 		4546 4547 4548 4551 4552 4553 4554 4555 4556 4558
 		 368 366 4565 4787 4788 4789
 		209 210 2989 #basque_country #smeev
+		6195 6194 6193 6181 #gc iberia
 	}
 }
 bordeaux={
@@ -2366,7 +2370,7 @@ english_channel={
 		100 1931 4381 4382 #frisia_area
 		90 1744 1865 91 #flanders_area
 		4769 4770 1742
-
+		6187 6190 6189 6188 6191
 	}
 	end=yes
 }
