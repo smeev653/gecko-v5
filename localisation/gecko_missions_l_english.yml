@@ -246,7 +246,8 @@
  mos_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
  hab_high_income_mission_title:0 "High Income"
  hab_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
-
+ dlh_high_income_mission_title:0 "High Income"
+ dlh_high_income_mission_desc:0 "We must increase state income by any means necessary. Money is a requirement for any endeavor of the state, from the daily expenses of the government to the maintenance of armies to invade our enemies."
 #france
 
  repulse_french_gank_title:0 "Defense of France"
