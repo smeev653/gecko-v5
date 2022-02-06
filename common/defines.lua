@@ -1619,7 +1619,7 @@ NAI = {
 
 	DEBASE_THRESHOLD = 10000,-- AI will not debase if it has more gold than this.
 
-	DEVELOPMENT_CAP_BASE = 30,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
+	DEVELOPMENT_CAP_BASE = 20,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 	DEVELOPMENT_CAP_MULT = 1,
 
 	PEACE_BASE_RELUCTANCE = 0, -- AI base stubbornness to refuse peace (always applied)
