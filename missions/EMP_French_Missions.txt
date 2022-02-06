@@ -641,6 +641,17 @@ emp_france_missions_2 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			6089 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	emp_fra_conquer_picardy_fra = {
