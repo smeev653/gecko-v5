@@ -1047,15 +1047,15 @@ lower_swabia_area = { #3 (West Swabia)
 
 franconia_area = { #4 (Lower Franconia)
 	color = { 121 49 117 }
-	4718 4715 71 79
+	 4715 71 4711
 }
 
 upper_franconia_area = { #4
-	66 67 4716 4717
+	66 67 4717
 }
 
 upper_swabia_area = { #4 (East Swabia)
-	68 1868 4711 1872 4710
+	68 1868  1872 4710
 }
 
 northern_saxony_area = { #4 (Saxe-Altmark)
@@ -1064,7 +1064,7 @@ northern_saxony_area = { #4 (Saxe-Altmark)
 }
 
 thuringia_area = { #3
-	63 2965 4743
+	63 2965 4743 4716
 }
 
 neumark_area = { #3
@@ -1142,7 +1142,7 @@ lower_rhineland_area = { #4
 }
 
 westphalia_area = { #3 (South Westphalia)
-	82 2972 4775
+	82 2972 4775 81 1762 
 }
 
 north_westphalia_area = { #4
@@ -1150,7 +1150,7 @@ north_westphalia_area = { #4
 }
 
 hesse_area = { #5
-	81 1762 1876 4774 78
+	 1876 4774 78 4718 79
 }
 
 braunschweig_area = { #4
