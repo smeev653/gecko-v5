@@ -368,6 +368,7 @@ age_of_reformation = {
 		obj_humanism_religious = {
 			OR = {
 				full_idea_group = religious_ideas
+				full_idea_group = maritime_ideas
 			}
 		}
 		
