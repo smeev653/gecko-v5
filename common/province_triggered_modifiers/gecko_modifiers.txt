@@ -258,38 +258,38 @@ conquest_of_delhi = {
 	}
 }	
 
-conquest_of_kiev = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-				tag = MOS
-				tag = RUS
-				tag = CRI
-				tag = UKR
-				tag = POL
-				tag = PLC
-				tag = HET
-			}
-		}
-		controlled_by = ROOT
-	}
-
-	land_morale = 0.05
-	prestige = 0.5
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
+#conquest_of_kiev = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		owner = {
+#			OR = {
+#				tag = MOS
+#				tag = RUS
+#				tag = CRI
+#				tag = UKR
+#				tag = POL
+#				tag = PLC
+#				tag = HET
+#			}
+#		}
+#		controlled_by = ROOT
+#	}
+#
+#	land_morale = 0.05
+#	prestige = 0.5
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}
 
 conquest_of_cairo = {
 	potential = {
