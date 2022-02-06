@@ -314,7 +314,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = columbus_happened }
-		has_idea = quest_for_the_new_world
+		#has_idea = quest_for_the_new_world
 		OR = {
 			NOT = {
 				north_america = {
@@ -351,7 +351,7 @@ country_event = {
 			limit = {
 				NOT = { has_country_flag = turned_down_columbus }
 				religion = catholic
-				has_idea = quest_for_the_new_world
+				#has_idea = quest_for_the_new_world
 			}
 			country_event = { id = flavor_spa.1 }
 		}
@@ -1466,9 +1466,9 @@ country_event = {
 	trigger = {
 		tag = SPA
 		exists = FRA
-		is_year = 1490
+		is_year = 1460
 		NOT = { is_year = 1590 }
-		NOT = { alliance_with = FRA }
+		#NOT = { alliance_with = FRA }
 		NOT = { is_subject_of = FRA }
 		NOT = { war_with = FRA }
 		italy_region = {
@@ -2029,7 +2029,7 @@ country_event = {
 	
 	option = {		# Ok.
 		name = "flavor_spa.7.a"
-		add_stability = -1
+		#add_stability = -1
 		set_country_flag = alpujarras_revolt_happened
 		random_owned_province = {
 			limit = {
@@ -2112,7 +2112,7 @@ country_event = {
 			factor = 1
 		}
 		set_country_flag = end_of_granada
-		add_stability = -2
+		#add_stability = -2
 		every_owned_province = {
 			limit = {
 				is_core = GRA

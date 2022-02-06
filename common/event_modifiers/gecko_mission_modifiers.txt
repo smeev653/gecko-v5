@@ -213,7 +213,7 @@ bedouins_pacified = {
 }
 
 spa_rb_italian_ambition_mod = {
-	artillery_fire = 0.25
+	artillery_fire = 0.5
 	galley_power = 0.25
 }
 
