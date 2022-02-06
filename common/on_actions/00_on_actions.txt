@@ -27,7 +27,27 @@ on_startup = {
 		}
 		remove_country_modifier = tur_janissary
 	}
-
+	if = {
+		limit = {
+				OR = {
+					tag = MOR
+					tag = SON
+					tag = ZAN
+					tag = ETH
+					tag = MAM
+					#tag = YAO
+					tag = MAL
+			}
+			NOT = { 
+				has_country_flag = PR_discover_africa_flag
+			}
+		}
+		country_event = { 
+			id = PR_events.1
+			days = 2
+		}
+		set_country_flag = PR_discover_africa_flag
+	}
 	#if = {
 	#	limit = {
 	#		NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
