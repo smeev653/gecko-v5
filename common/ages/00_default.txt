@@ -196,7 +196,6 @@ age_of_discovery = {
 			allow = {
 				OR = {
 					tag = POR
-					tag = CAS
 					tag = SPA
 				}	
 			}

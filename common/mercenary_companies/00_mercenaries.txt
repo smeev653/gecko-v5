@@ -196,10 +196,12 @@ merc_hessian_jaegerkorps = {
     home_province = 1762
 	sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		NOT = { current_age = age_of_discovery }
 		OR = {
 			tag = BRA
 			tag = HES
 			tag = HSA
+			tag = SWI
 		}
 	}
 	modifier = {
@@ -515,7 +517,7 @@ merc_bukhara_band = {
 # Mesopotamian Mamluks
 merc_mesopotamian_mamluks = {
     regiments_per_development = 0.05
-    cavalry_weight = 0.6
+    cavalry_weight = 1
     #artillery_weight = 0.2
 	#cavalry_cap = 6
 	home_province = 410
@@ -536,7 +538,7 @@ merc_mesopotamian_mamluks = {
 # Nile Mamluks
 merc_nile_mamluks = {
     regiments_per_development = 0.05
-    cavalry_weight = 0.6
+    cavalry_weight = 1
     #artillery_weight = 0.2
 	#cavalry_cap = 6
     home_province = 361
@@ -562,7 +564,7 @@ merc_nile_mamluks = {
 
 merc_delhi_mamluks = {
     regiments_per_development = 0.05
-    cavalry_weight = 0.6
+    cavalry_weight = 1
     #artillery_weight = 0.2
 	#cavalry_cap = 6
     home_province = 522
@@ -578,7 +580,7 @@ merc_delhi_mamluks = {
 }
 
 merc_sekban = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
     home_province = 324
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
 	trigger = {
@@ -895,7 +897,7 @@ merc_miquelet_company = {
 
 
 merc_free_swiss_guard = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
     home_province = 165 # Bern
 	cost_modifier = 1
 	sprites = { westerngfx_sprite_pack }
@@ -1023,12 +1025,12 @@ merc_tyrolean_guard = {
 
 
 merc_swiss_canton_mercenaries = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
 	home_province = 165
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		tag = SWI
-		mission_completed = emp_swi_mercenaries
+		mission_completed = swi_reislaufer
 	}
 	cost_modifier = 0.75
 	modifier = {
