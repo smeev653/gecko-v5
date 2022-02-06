@@ -154,39 +154,16 @@ country_decisions = {
 					name = "mamluks_subjugated"
 					duration = 7300
 					}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	disband_the_janissaries = {
-		major = yes
-		potential = {
-			always = no
-		}
-		allow = {
-			has_disaster = janissary_decadence
-			if = {
-				limit = { has_dlc = "Cradle of Civilization" }
-				OR = {
-					NOT = { janissary_percentage = 0.05 }
-					NOT = { num_of_janissaries = 3 }
+			MAM = {
+				every_owned_province = {
+					limit = {
+						region = mashriq_region
+						NOT = { is_core = root }
+						NOT = { is_permanent_claim = root }
+					}
+					add_core = root
 				}
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					has_country_modifier = tur_janissary
-				}
-				remove_country_modifier = tur_janissary
-			}
-			else = {
-				set_country_flag = yoklama
-				custom_tooltip = yoklama_effect_tooltip
-			}
-			end_disaster = janissary_decadence
-			country_event = { id = janissary_decadence.100 }
+			}		
 		}
 		ai_will_do = {
 			factor = 1
