@@ -1478,6 +1478,8 @@ emp_hab_western_expansion_branch = {
 					OR = {
 						area = romandie_area
 						area = switzerland_area
+						area = bern_area
+						area = grisons_area
 					}
 					NOT = { country_or_non_sovereign_subject_holds = root }
 					ROOT = {
@@ -1487,6 +1489,8 @@ emp_hab_western_expansion_branch = {
 								OR = {
 									area = romandie_area
 									area = switzerland_area
+									area = bern_area
+									area = grisons_area
 								}
 							}
 						}
@@ -1504,6 +1508,8 @@ emp_hab_western_expansion_branch = {
 				OR = {
 					area = romandie_area
 					area = switzerland_area
+					area = bern_area
+					area = grisons_area
 				}
 			}
 			OR = {

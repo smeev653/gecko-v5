@@ -2343,7 +2343,7 @@ champagne={
 		167 168 1879 4385 #normandy_area #smeev
 		169 170 171 172 4384 #brittany_area #smeev
 		4764 4766 
-		93 94 1866 #wallonia_area
+		 94  #wallonia_area
 		177 178 4389 #loire_area #smeev
 		87 88 89 1743 #picardy_area #smeev
 		6093 6092 6091 6090 6089 6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
@@ -2368,7 +2368,7 @@ english_channel={
 		243 1860 1861 4370 4376 #east_midlands_area
 		233 234 4130 4373 4374 #wessex_area
 		235 236 237 238 4371 #home_counties_area
-		92 95 98 99 2974 #netherlands & brabant_area
+		92 95 98 99 2974 1866 93 #netherlands & brabant_area
 		96 97 4383 #holland_area
 		100 1931 4381 4382 #frisia_area
 		90 1744 1865 91 #flanders_area

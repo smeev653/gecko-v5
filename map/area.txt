@@ -364,7 +364,7 @@ orleans_area = {
 ########################################
 
 wallonia_area = {  #4
-	 93 94 1866 6090 181 
+	  94  6090 181 
 }
 
 holland_area = { #4
@@ -381,7 +381,7 @@ frisia_area = { #5
 
 brabant_area = { #3
 	color = { 118 193 153 }
-	92 1744 2974
+	92 1744 2974 1866 93
 }
 
 north_brabant_area = { #3
