@@ -368,20 +368,22 @@ take_capital_personal_union = {
 		badboy_factor = 1.0
 		prestige_factor = 1
 		peace_cost_factor = 1.0
+		allowed_provinces_are_eligible = yes
 		allowed_provinces = {
 			is_claim = ROOT
 		}
 		peace_options = {
 			po_demand_provinces
-			po_form_personal_union
+			#po_form_personal_union
 		}
 		prov_desc = ALL_CLAIMS
 	}
 	
 	defender = {
-		badboy_factor = 1.0
+		badboy_factor = 0.75
 		prestige_factor = 1
 		peace_cost_factor = 1.0	
+		allowed_provinces_are_eligible = yes
 		allowed_provinces = {
 			OR = {
 				is_claim = FROM
