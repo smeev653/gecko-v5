@@ -1,7 +1,7 @@
 #gecko merc companies
 
 gecko_independent_army_1 = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -13,7 +13,7 @@ gecko_independent_army_1 = {
 }
 
 gecko__local_independent_army_1 = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -28,7 +28,7 @@ gecko__local_independent_army_1 = {
 }
 
 gecko__local_independent_army_2 = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -42,7 +42,7 @@ gecko__local_independent_army_2 = {
 
 # Black Army (Hungary)  this one is only inf
 gecko_merc_black_army_1 = {
-	regiments_per_development = 0.1
+	regiments_per_development = 0.065
 	cavalry_weight = 0
 	cavalry_cap = 2
     artillery_weight = 0
@@ -56,13 +56,13 @@ gecko_merc_black_army_1 = {
 	}
 	cost_modifier = 0.75
 	modifier = {
-		infantry_power = 0.15
+		discipline = 0.1
 	}
 }
 
 # Black Army Hungary
 gecko_merc_black_army_2 = {
-	regiments_per_development = 0.1
+	regiments_per_development = 0.065
 	cavalry_weight = 0.6
 	cavalry_cap = 15
     artillery_weight = 0
@@ -76,14 +76,13 @@ gecko_merc_black_army_2 = {
 	}
 	cost_modifier = 0.65
 	modifier = {
-		infantry_power = 0.15
-		cavalry_power = 0.10
+		discipline = 0.1
 	}
 }
 
 #Aristo mercs
 gecko_merc_aristo_ideas = {
-	regiments_per_development = 0.1
+	regiments_per_development = 0.05
 	cavalry_weight = 1
     artillery_weight = 0
 	sprites = { easterngfx_sprite_pack }

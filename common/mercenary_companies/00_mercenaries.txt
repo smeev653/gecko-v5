@@ -40,7 +40,7 @@ merc_tuscan_free_company = {
 }
 # Morlachs (Lika)
 merc_morlachs = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
 	#cavalry_weight = 0.1
 	#artillery_weight = 0.3
 	cavalry_cap = 2
@@ -74,8 +74,7 @@ merc_black_army = {
 	}
 	cost_modifier = 0.65
 	modifier = {
-		infantry_power = 0.15
-		cavalry_power = 0.10
+		discipline = 0.1
 	}
 }
 
@@ -92,8 +91,7 @@ merc_black_army_2 = {
 	}
 	cost_modifier = 0.65
 	modifier = {
-		infantry_power = 0.15
-		cavalry_power = 0.10
+		discipline = 0.1
 	}
 }
 
@@ -580,7 +578,7 @@ merc_delhi_mamluks = {
 }
 
 merc_sekban = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
     home_province = 324
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
 	trigger = {
@@ -858,7 +856,7 @@ merc_moorish_battalion = {
 }
 
 merc_maghreb_raiders = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
 	cavalry_weight = 0.8
     #artillery_weight = 0.1
 	#cavalry_cap = 6
