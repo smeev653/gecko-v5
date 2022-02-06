@@ -1,0 +1,19 @@
+
+name = "France - Burgundy War"
+war_goal = {
+    type = take_claim
+    casus_belli = cb_conquest
+	province = 4392 
+}
+# War start date
+1443.1.1 = {
+	add_attacker = FRA
+	add_defender = BUR
+	add_defender = ENG
+}
+# War end date
+1444.11.10 = {
+    	rem_attacker = FRA
+	rem_defender = BUR
+	rem_defender = ENG
+}

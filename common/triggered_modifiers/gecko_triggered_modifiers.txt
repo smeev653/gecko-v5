@@ -129,7 +129,7 @@ We_stand_alone = {
 				was_player = yes
 				num_of_allies = 0
 				NOT = { is_hegemon = yes }
-				revanchism = 50
+				revanchism = 25
 				had_recent_war = 15
 				OR = { is_bankrupt = yes
 					num_of_loans = 6

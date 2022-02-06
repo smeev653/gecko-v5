@@ -1030,15 +1030,15 @@ south_saxony_area = { #4
 
 upper_bavaria_area = { #4
 	color = { 180 220 220 }
-	65 2955 4707 4708 6183 6185
+	65  4707 4708 6183 6185
 }
 
 lower_bavaria_area = { #4
-	64 1757 2956 2957 6184
+	 1757 2956 2957 6184 2955
 }
 
 east_bavaria_area = { #3
-	76 4760 4709
+	76 4760 4709 64
 } 
 
 lower_swabia_area = { #3 (West Swabia)
