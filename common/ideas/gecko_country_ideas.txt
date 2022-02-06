@@ -251,7 +251,7 @@ GER_ideas = {
 		discipline = 0.05
 	}
 	ger_new_hanseatics = {
-		trade_efficiency = 0.20
+		trade_efficiency = 0.15
 	}
 	ger_junkers = {
 		army_tradition = 0.5
@@ -458,7 +458,7 @@ WES_ideas = {
 		development_cost = -0.05
 	}
 	wes_taxation = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.15
 	}
 	wes_enlightenment = {
 		tolerance_heretic = 3
@@ -504,7 +504,7 @@ BRA_ideas = {
 		development_cost = -0.05
 	}
 	kammergericht = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.15
 	}
 	seat_of_the_old_emperors = {
 		diplomatic_reputation = 1
@@ -716,7 +716,7 @@ UBV_ideas = { #Munich Ideas
 		garrison_size = 0.33
 	}
 	gc_UBV_NI_7 = { #Prestigious Catholics
-		global_tax_modifier = 0.25
+		global_tax_modifier = 0.15
 	}
 }
 
@@ -750,7 +750,7 @@ BAV_ideas = {
 		papal_influence = 3
 	}
 	brewmaster_general = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.15
 	}
 	professional_army = {
 		discipline = 0.05
