@@ -63,7 +63,7 @@ Minor = {
 				tag = MAL
 				tag = YAO
 				}
-			OR = {
+			AND = {
 				is_part_of_hre = yes
 				NOT = {is_great_power = yes}
 			}
