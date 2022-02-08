@@ -586,7 +586,7 @@ georgia={ #smeev mod
 		2196 2204 4303 #samtskhe_area
 		425 2198 2199 2208 4306 #dagestan_area
 		421 4299 4305 4340 #shirvan_area
-		419 420 2202 2205 4302 #armenia_area
+		419 420 2202 2205 #armenia_area
 		6010 #circassia #smeev 
 		6139 6141
 		 }
@@ -1012,7 +1012,7 @@ constantinople={
 		323 324 2301 4307 #karaman_area #smeev
 		332 2303 4310 2308 #dulkadir_area #smeev
 		331 2305 330 #erzurum #smeev
-		418 2306 2307 4295 4296 #north_kurdistan_area
+		418 2306 2307 4295 4296 4302 #north_kurdistan_area
 		6115 6116 6117
 		}
 }
