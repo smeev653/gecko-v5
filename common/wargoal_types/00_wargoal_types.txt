@@ -262,6 +262,7 @@ defend_country_faith = {
 		po_revoke_cores
 		po_gold
 		po_concede_defeat
+		po_demand_provinces
 	}
 	
 	war_name = DOF_WAR_NAME
@@ -1200,22 +1201,49 @@ take_province_ban = {
 superiority_punitive = {
 	type = superiority
 	
-	badboy_factor = 0.1
-	prestige_factor = 1
-	peace_cost_factor = 0.75	
-	
-	allowed_provinces = {
-		is_core = ROOT
+	attacker = {
+		badboy_factor = 0.1
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+		allowed_provinces = {
+			is_core = ROOT
+		}
+		peace_options = {
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_concede_defeat
+		}
+		prov_desc = ALL_CLAIMS
 	}
 	
-	peace_options = {
-		po_release_vassals
-		po_release_annexed
-		po_return_cores
-		po_demand_provinces
-		po_revoke_cores
-		po_gold
-		po_concede_defeat
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+		allowed_provinces = {
+			OR = {
+				is_core = ROOT
+				is_claim = ROOT
+				any_neighbor_province = {
+				owned_by = ROOT
+				}
+			}
+		}
+		peace_options = {
+			po_demand_provinces
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_concede_defeat
+		}
+		prov_desc = ALL_CLAIMS
 	}
 	
 	
