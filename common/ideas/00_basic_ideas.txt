@@ -27,7 +27,7 @@ aristocracy_ideas = {
 		global_manpower_modifier = 0.25
 	}
 	local_nobility = {
-		#army_tradition_from_battle = 0.5
+		army_tradition_from_battle = 0.5
 		prestige_from_land = 1
 		nobles_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
@@ -37,6 +37,7 @@ aristocracy_ideas = {
 	}
 	international_nobility = {
 		land_morale = 0.05
+		discipline = 0.025
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
