@@ -1,6 +1,6 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Gluckstadt
-add_core = HSAs
+add_core = HSA
 owner = HSA
 controller = HSA
 culture = lower_saxon 

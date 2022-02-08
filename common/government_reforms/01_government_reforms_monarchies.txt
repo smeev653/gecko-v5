@@ -362,9 +362,6 @@ chinese_warlord = {
 		OR = {
 			AND = {
 				NOT = { primary_culture = manchu_new }
-				NOT = { primary_culture = vietnamese_new }
-				NOT = { primary_culture = korean_new }
-				NOT = { primary_culture = tibetan_new }
 			}
 			is_playing_custom_nation = yes
 		}

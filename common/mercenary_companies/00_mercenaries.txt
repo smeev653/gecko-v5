@@ -907,8 +907,8 @@ merc_free_swiss_guard = {
 					area = romandie_area
 				}
 			}
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
+			#has_country_modifier = mercenaries_to_the_standard
+			#has_country_modifier = glut_of_mercs
 		}
 		NOT = { tag = PAP }
 	}

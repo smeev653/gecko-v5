@@ -9660,7 +9660,8 @@ holy_city_jerusalem = {
 	type = monument
 
 	#can we build it?
-	
+	build_trigger = {
+	}
 
 	#what to do when it's built
 	on_built = {
@@ -10240,10 +10241,6 @@ doges_palace = {
 	}
 
 	keep_trigger = {
-		OR = {
-			tag = VEN
-			tag = ITA
-		}	
 	}
 
 	tier_0 = {

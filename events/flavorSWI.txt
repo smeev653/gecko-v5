@@ -948,7 +948,7 @@ country_event = {
 			factor = 100
 		}
 		add_prestige = 20
-		add_army_professionalism = 0.3
+		add_army_professionalism = 0.1
 		add_army_tradition = 20
 		add_country_modifier = {
 			name = mercenary_monopoly_modifier

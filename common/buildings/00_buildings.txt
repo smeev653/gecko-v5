@@ -690,11 +690,7 @@ fort_15th = {
 	influencing_fort = yes
 
 	ai_will_do = {
-		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		modifier = {
-			factor = 0
-			NOT = { adm_tech = 5 }
-		}
+		factor = 0 #Lots of logic in code instead, that multiplies with this value
 	}
 }
 

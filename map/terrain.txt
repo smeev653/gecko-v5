@@ -367,7 +367,7 @@ categories =  {
 			20 22 #Norway
 			422 2201 2198 4301 4306 #Caucasus
 			384 385 386 390 2332 2345 4280 4281 4282 #Hejaz Range
-			435 436 #Khorasan
+			435 #Khorasan
 			4348
 			4404 # Burma
 			4514 4515 4516 4517 4518 4519 4520 4521 #tibet

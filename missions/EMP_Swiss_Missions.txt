@@ -10,7 +10,7 @@ swiss_missions_1 = {
 	
 	swi_protect_cantons = {
 		icon = consolidate_switzerland
-		required_missions { }
+		required_missions = { }
 		position = 1
 		trigger = {
 			army_size_percentage = 0.9 
@@ -61,7 +61,7 @@ swiss_missions_1 = {
 	
 	swi_three_leagues = {
 		icon = integrate_the_three_leagues
-		required_missions { swi_protect_cantons }
+		required_missions = { swi_protect_cantons }
 		position = 2
 		provinces_to_highlight = {
 			OR = {
@@ -117,7 +117,7 @@ swiss_missions_1 = {
 	
 	swi_federal_diet = {
 		icon = catholic_volunteers
-		required_missions { swi_three_leagues swi_republic_geneva }
+		required_missions = { swi_three_leagues swi_republic_geneva }
 		position = 4
 		trigger = {
 			if = {
@@ -177,7 +177,7 @@ swiss_missions_1 = {
 	
 	swi_defend_alps = {
 		icon = the_alpine_wall
-		required_missions { swi_federal_diet swi_coalition_turin }
+		required_missions = { swi_federal_diet swi_coalition_turin }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -264,7 +264,7 @@ swiss_missions_1 = {
 
 	swi_university_basel = {
 		icon = appease_the_estates
-		required_missions { }
+		required_missions = { }
 		position = 8
 		provinces_to_highlight = { province_id = 6169 }
 		trigger = {
@@ -293,7 +293,7 @@ swiss_missions_1 = {
 	
 	swi_st_gallen_textiles = {
 		icon = fu_gallen_textiles
-		required_missions { swi_university_basel }
+		required_missions = { swi_university_basel }
 		position = 10
 		provinces_to_highlight = { province_id = 1870 }
 		trigger = {
@@ -321,7 +321,7 @@ swiss_missions_2 = {
 	
 	swi_republic_geneva = {
 		icon = sway_geneva
-		required_missions {
+		required_missions = {
 			swi_secure_swiss_plateau
 		}
 		position = 3
@@ -356,7 +356,7 @@ swiss_missions_2 = {
 	
 	swi_coalition_turin = {
 		icon = glory_to_turin
-		required_missions { swi_cross_gotthard_pass }
+		required_missions = { swi_cross_gotthard_pass }
 		position = 6
 		provinces_to_highlight = {
 			area = piedmont_area 
@@ -384,7 +384,7 @@ swiss_missions_2 = {
 	
 	swi_reislaufer = {
 		icon = expand_the_swiss_guard
-		required_missions {	}
+		required_missions = {	}
 		position = 8
 		trigger = {
 			num_of_hired_mercenary_companies = 1 
@@ -404,7 +404,7 @@ swiss_missions_2 = {
 	
 	swi_hintersassen_citizenship = {
 		icon = return_visby_to_the_league
-		required_missions {
+		required_missions = {
 			swi_university_basel swi_reislaufer
 		}
 		position = 9
@@ -436,7 +436,7 @@ swiss_missions_2 = {
 	
 	swi_caseus_helveticus = {
 		icon = fu_caseus_helveticus
-		required_missions {
+		required_missions = {
 			swi_hintersassen_citizenship
 		}
 		position = 10
