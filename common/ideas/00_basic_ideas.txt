@@ -226,12 +226,6 @@ innovativeness_ideas = {
 
 	ai_will_do = {
 		factor = 2
-		modifier = {
-			factor = 500
-			overlord = {
-				has_idea_group = influence_ideas
-			}
-		}
 	}	
 }
 
@@ -773,7 +767,7 @@ quality_ideas = {
 		reserves_organisation = 0.25
 	}
 	naval_drill = {
-		army_tradition_from_battle = 0.5
+		army_tradition_from_battle = 0.25
 	}
 
 	massed_battery = {
@@ -903,6 +897,15 @@ administrative_ideas = {
 	administrative_efficiency_idea = {
 		free_mil_policy = 1
 	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 1000
+			overlord = {
+				has_idea_group = influence_ideas
+			}
+		}
+	}
 }
 
 humanist_ideas = {
@@ -974,7 +977,7 @@ influence_ideas = {
 		vassal_forcelimit_bonus = 1
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}	
 }
 
