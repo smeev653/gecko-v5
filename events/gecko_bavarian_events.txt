@@ -1,0 +1,25 @@
+namespace = gc_bavarian_event
+
+country_event = { #The Unification of Bavaria
+	id = gc_bavarian_event.1
+	title = "gc_bavarian_event.1.t"
+	desc = "gc_bavarian_event.1.d"
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = gc_bavarian_event.1.a
+		
+		capital_scope = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+		}
+		add_treasury = 200
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+	}
+}

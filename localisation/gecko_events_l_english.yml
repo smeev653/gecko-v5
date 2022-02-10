@@ -106,14 +106,20 @@
 
 
  #Estate privs
-gecko.8.t:0 "Nobility Levies"
-gecko.8.d:0 "The levies previously provided by our Nobles have been put to good use. We now have an opportunity to press them for service again, however they will not like it."
-gecko.8.a:0 "Do nothing."
-gecko.8.b:0 "Seize back their influence and press them for levies again."
+ gecko.8.t:0 "Nobility Levies"
+ gecko.8.d:0 "The levies previously provided by our Nobles have been put to good use. We now have an opportunity to press them for service again, however they will not like it."
+ gecko.8.a:0 "Do nothing."
+ gecko.8.b:0 "Seize back their influence and press them for levies again."
 
-#gecko hyw
+ #gecko hyw
 
-gecko.9.t:0 "The last Bastion of English France"
-gecko.9.d:0 "Following the disaster of Arras and the tragic death of the Duke of Bedford, we are left with just our Norman possessions in France. We must hold on to these at all costs if we are to claim victory."
-gecko.9.a:0 "Once more unto the breach, dear friends, once more; Or close the wall up with our English dead."
-gecko.9_warning_tt:1 "§YEngland will lose this modifier if they lose Normandy to France§!"
+ gecko.9.t:0 "The last Bastion of English France"
+ gecko.9.d:0 "Following the disaster of Arras and the tragic death of the Duke of Bedford, we are left with just our Norman possessions in France. We must hold on to these at all costs if we are to claim victory."
+ gecko.9.a:0 "Once more unto the breach, dear friends, once more; Or close the wall up with our English dead."
+ gecko.9_warning_tt:1 "§YEngland will lose this modifier if they lose Normandy to France§!"
+
+
+ #gecko Bavaria
+ gc_bavarian_event.1.t:0 "Unification of Bavaria"
+ gc_bavarian_event.1.d:0 "The Wittelsbach in Bavaria have been united under one. We shall be a dominant power in Germany with the new found riches of our family."
+ gc_bavarian_event.1.a:0 "Gott mit uns!"
