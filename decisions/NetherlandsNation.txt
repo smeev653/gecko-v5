@@ -62,7 +62,13 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			#adm_tech = 10
+			FRA = {
+				has_won_war_against = {
+				who = BUR
+				max_years_since = 15
+				}
+			}	
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -115,49 +121,49 @@ country_decisions = {
 					move_capital_effect = yes
 				}
 			}
-#			if = {
-#				limit = {
-#					tag = BUR
-#					exists = FRA
-#				}
-#	  			france_region = {
-#					limit = {
-#						owned_by = BUR
-#					}
-#	  				remove_core = BUR
-#	  				add_core = FRA
-#	  				cede_province = FRA
-#	  			}
-#	  		}
-#			if = {
-#				limit = {
-#					tag = BUR
-#					exists = FRA
-#					BUR = {
-#						any_subject_country = {
-#							france_region = {
-#								owned_by = PREV
-#							}
-#						}
-#					}
-#				}
-#				every_subject_country = {
-#					limit = {
-#						france_region = {
-#							owned_by = PREV
-#						}
-#					}
-#					france_region = {
-#						limit = {
-#							owned_by = PREV
-#						}
-#						remove_core = BUR
-#						remove_core = PREV
-#						add_core = FRA
-#						cede_province = FRA
-#					}
-#				}
-#	  		}
+			if = {
+				limit = {
+					tag = BUR
+					exists = FRA
+				}
+	  			france_region = {
+					limit = {
+						owned_by = BUR
+					}
+	  				remove_core = BUR
+	  				add_core = FRA
+	  				cede_province = FRA
+	  			}
+	  		}
+			if = {
+				limit = {
+					tag = BUR
+					exists = FRA
+					BUR = {
+						any_subject_country = {
+							france_region = {
+								owned_by = PREV
+							}
+						}
+					}
+				}
+				every_subject_country = {
+					limit = {
+						france_region = {
+							owned_by = PREV
+						}
+					}
+					france_region = {
+						limit = {
+							owned_by = PREV
+						}
+						remove_core = BUR
+						remove_core = PREV
+						add_core = FRA
+						cede_province = FRA
+					}
+				}
+	  		}
 			change_tag = NED
 			swap_non_generic_missions = yes
 			low_countries_region = {
