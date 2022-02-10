@@ -37,7 +37,7 @@ aristocracy_ideas = {
 	}
 	international_nobility = {
 		land_morale = 0.05
-		discipline = 0.025
+		discipline = 0.03
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
@@ -61,8 +61,8 @@ plutocracy_ideas = {
 		land_morale = 0.10
 	}
 	tradition_of_payment = {
-		mercenary_cost = -0.2
-		mercenary_discipline = 0.05
+		mercenary_cost = -0.15
+		mercenary_discipline = 0.03
 	}
 	free_merchants = {
 		leader_land_fire = 1
@@ -505,7 +505,7 @@ economic_ideas = {
 		global_tax_modifier = 0.15
 	}
 	organised_construction = {
-		build_cost = -0.05
+		build_cost = -0.1
 		build_time = -0.25
 	}
 	national_bank = {
@@ -779,7 +779,7 @@ quality_ideas = {
 		artillery_power = 0.1
 	}
 	escort_ships = {
-		yearly_army_professionalism = 0.0035
+		yearly_army_professionalism = 0.005
 	}
 	ai_will_do = {
 		factor = 10
@@ -885,7 +885,7 @@ administrative_ideas = {
 		advisor_pool = 4
 	}
 	benefits_for_mercenaries = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.15
 		merc_maintenance_modifier = -0.5
 	}
 	adm_adaptability = {
@@ -893,7 +893,7 @@ administrative_ideas = {
 		land_forcelimit = 10
 	}
 	bookkeeping = {
-		interest = -0.5
+		drill_gain_modifier = 0.2
 	}
 	organised_mercenary_recruitment = {
 		expand_administration_cost = -0.75
