@@ -22,12 +22,13 @@ aristocracy_ideas = {
 	
 	military_traditions = {
 		mil_tech_cost_modifier  = -0.1
-	}
-	serfdom = {
-		global_manpower_modifier = 0.25
+	}	
+	international_nobility = {
+		land_morale = 0.05
+		discipline = 0.03
 	}
 	local_nobility = {
-		army_tradition_from_battle = 0.5
+		army_tradition_from_battle = 0.25
 		prestige_from_land = 1
 		nobles_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
@@ -35,9 +36,8 @@ aristocracy_ideas = {
 	noble_resilience = {
 		leader_land_manuever = 2
 	}
-	international_nobility = {
-		land_morale = 0.05
-		discipline = 0.03
+	serfdom = {
+		global_manpower_modifier = 0.25
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
@@ -55,24 +55,23 @@ plutocracy_ideas = {
 	}
 	bill_of_rights = {
 		infantry_cost = -0.125
-		infantry_fire = 0.1
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
+	}
+	free_subjects = {
+		global_trade_goods_size_modifier = 0.1
 	}
 	tradition_of_payment = {
 		mercenary_cost = -0.15
 		mercenary_discipline = 0.03
 	}
-	free_merchants = {
-		leader_land_fire = 1
-	}
-	free_subjects = {
-		global_trade_goods_size_modifier = 0.1
-	}
-
 	emancipation = {
 		manpower_recovery_speed = 0.2
+	}
+	free_merchants = {
+		leader_land_fire = 1
+		infantry_fire = 0.1
 	}
 	free_cities = {
 		monarch_military_power = 1
@@ -757,6 +756,7 @@ quality_ideas = {
 
 	bonus = {
 		discipline = 0.05
+		infantry_power = 0.025
 	}
 
 	private_to_marshal = {
@@ -765,9 +765,6 @@ quality_ideas = {
 	quality_education = {
 		army_tradition = 0.5
 	}
-	naval_drill = {
-		global_regiment_recruit_speed = -0.33
-	}
 	finest_of_horses = {
 		drill_gain_modifier = 0.33
 		drill_decay_modifier = -0.1
@@ -775,6 +772,10 @@ quality_ideas = {
 	copper_bottoms = {
 		reserves_organisation = 0.25
 	}
+	naval_drill = {
+		army_tradition_from_battle = 0.5
+	}
+
 	massed_battery = {
 		artillery_power = 0.1
 	}
