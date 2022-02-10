@@ -534,7 +534,7 @@ the_witchcraft_act = {
 	}
 	
 	land_morale = 0.05
-	global_tax_modifier = 0.15
+	fire_damage_received = -0.05
 
 	ai_will_do = {
 		factor = 1
@@ -1127,8 +1127,8 @@ the_licensing_of_the_press_act = {
 		full_idea_group = aristocracy_ideas
 	}
 
-	cavalry_fire = 0.20
 	land_morale = 0.05
+	global_tax_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 0.8
