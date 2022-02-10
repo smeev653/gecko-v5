@@ -1277,7 +1277,7 @@ all_nations = {
 
 subject_nation = {
 	global_tax_income = 6
-	land_forcelimit	= -3
+	#land_forcelimit	= -3
 	naval_forcelimit = -6
 	caravan_power = -0.9
 }
