@@ -10538,6 +10538,7 @@ dutch_polders = {
 		area_modifier = {
 			local_defensiveness = 0.25
 			local_monthly_devastation = -1
+			local_development_cost = -0.2
 		}
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.1

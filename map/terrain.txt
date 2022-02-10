@@ -116,7 +116,7 @@ categories =  {
 			4529 4531 # Romania
 			146 # 1.30 Greece and Bulgaria
 
-			67 4765 4769 4712 #Germany
+			67 4765  4712 #Germany
 			
 			#smeev terrain changes
 			2319 4318 4320 2317 #nile
@@ -136,6 +136,7 @@ categories =  {
 			2996 46 47 1857 1775 13 5005 4149 5006 4142 15 5007 5003 1984 5004 54 4771 55 1931 6164 6167 6166 6165 6168 #gc germany
 			6187 6188 6189 
 			6182 6180 6183 6185 6191 168 4385 237 6190
+			91 99 95 96 4770 4381 #gc netherlands
 			}		
 	}
 	
@@ -270,7 +271,7 @@ categories =  {
 			
 			2014 2665 1937 269
 			
-			99 95
+
 			1834 37 273 271 272 770 275 771 311 1960 274 34 310 1752 1959 
 			
 			40 41 1938 256 261 2424 316 317 175 173 174 194 195 190 178 184 187 
@@ -292,7 +293,7 @@ categories =  {
 			1014 1027 1819 1835 4181 4182 4184 4186 4189 #Japan
 			4127 4241 4242 4243 4251 4252 4253 4254 4260 4266 #Eastern Europe
 			240 244 4372 4377 4378 4379 4380 #Britain
-			4381 4387 4389 #France & Low Countries
+			4387 4389 #France & Low Countries
 			4541 4537 4535 2963 4544 4543 4524 # New PLC provinces
 			4555 4558 # new iberia provinces 1.28
 			# 1.29 Manchu
@@ -300,7 +301,7 @@ categories =  {
 			4697 # France 1.30
 			4713 4716 4717 4747 4749 4748 4741 4742 4743 4772 4773 4774 4775 4746 #Germany
 			128 1769 4751 #Austria
-			4766 4767 4768 4770 4786
+			4766 4767 4768 4786
 			135 #sopron #smeev 
 			6087 6090 6091 6094 6095 6096 6098 #gcfrance
 			4392 193 4764 #gcburgundy
@@ -438,7 +439,7 @@ categories =  {
 			890 891 901 903 2016 2511 2598 2602 
 			1177 2850
 			
-			71 79 96
+			71 79 
 			2728 1086
 			1859
 			1967
@@ -508,13 +509,13 @@ categories =  {
 
 		movement_cost = 1.0
 		defence = 1
-		local_development_cost = 0.1
+		local_development_cost = 0.05
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 
 		terrain_override = {
 			1860 #England
-			96 #Netherlands
+			#96 #Netherlands
 			4738 #Aquilea
 			893
 			950 #n am
@@ -531,7 +532,7 @@ categories =  {
 			4706 # 1.30 Greece and Bulgaria
 			88 #artois smeev
 			408 2311 4288 4290 #iraq marshes #smeev
-			87 235 #calais #smeev
+			87 235 4769#calais #smeev
 		}
 	}
 	
