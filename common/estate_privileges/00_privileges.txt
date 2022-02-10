@@ -7322,7 +7322,7 @@ estate_nobles_command_of_the_military = {
 		leader_cost = 0.2
 	}
 	benefits = {
-		army_tradition = 1
+		yearly_army_professionalism = 0.005
 	}
 	ai_will_do = {
 		factor = 0
