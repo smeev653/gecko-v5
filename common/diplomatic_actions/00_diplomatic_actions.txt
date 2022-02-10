@@ -308,11 +308,12 @@ allianceaction = {
 	condition = {
 		tooltip = h_tooltip_many_allies
 		potential = {
+			ai = yes
 		}
 		allow = {
 			ROOT = {
 				NOT = {
-					num_of_allies = 5
+					num_of_allies = 2
 				}
 			}
 		}
@@ -320,11 +321,12 @@ allianceaction = {
 	condition = {
 		tooltip = h_tooltip_from_many_allies
 		potential = {
+			ai = yes
 		}
 		allow = {
 			FROM = {
 				NOT = {
-					num_of_allies = 5
+					num_of_allies = 2
 				}
 			}
 		}
