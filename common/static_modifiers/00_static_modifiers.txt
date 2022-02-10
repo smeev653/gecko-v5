@@ -965,6 +965,7 @@ recovery_motivation = {
 	global_unrest = -20
 	horde_unity = 10
 	war_exhaustion = -1
+	global_autonomy = -0.3
 }
 
 militarized_society = {
