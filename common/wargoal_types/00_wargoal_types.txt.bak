@@ -1344,6 +1344,7 @@ take_province_excommunication = {
 			}
 		}
 
+
 		peace_options = {
 			po_release_vassals
 			po_release_annexed
