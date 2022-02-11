@@ -516,9 +516,7 @@ superiority_insult_mutual = {
 take_capital_personal_union = {
 	type = take_capital
 	
-	badboy_factor = 1
-	prestige_factor = 1
-	peace_cost_factor = 1
+	
 	
 	attacker = {
 		badboy_factor = 1.0
@@ -747,19 +745,32 @@ take_core = {
 take_capital_claim = {
 	type = take_capital
 	
-	badboy_factor = 1.0
-	prestige_factor = 1
-	peace_cost_factor = 1.0
+	attacker = {
+		badboy_factor = 1.0
+		prestige_factor = 1
+		peace_cost_factor = 1.0
 
-	allowed_provinces = {
-		is_claim = ROOT
+		allowed_provinces = {
+			is_claim = ROOT
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+
+		prov_desc = ALL_CLAIMS
 	}
 	
-	peace_options = {
-		po_demand_provinces
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
 	}
-	
-	prov_desc = ALL_CLAIMS
+
 	war_name = CLAIM_WAR_NAME
 }
 
