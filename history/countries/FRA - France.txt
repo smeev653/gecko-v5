@@ -87,7 +87,6 @@ change_estate_land_share = {
 		mil = 4
 	}	
 	clear_scripted_personalities = yes
-	add_ruler_personality = midas_touched_personality
 	add_ruler_personality = inspiring_leader_personality
 	
 	queen = {
