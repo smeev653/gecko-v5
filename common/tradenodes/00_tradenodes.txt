@@ -2360,7 +2360,7 @@ english_channel={
 	color={
 		220 138 57 
 	}
-	members={6203 6202 6201 6200 6199 6197 6196 
+	members={
 		1269 1270 1271 #Seas
 		241 242 4366 4369 #wales_area
 		245 4367 4368 4785 #yorkshire_area
@@ -2376,6 +2376,7 @@ english_channel={
 		6187 6190 6189 6188 6191
 		94 6090 181 #wallonia_area
 		6089 87 88 89 1743 #picardy_area #smeev
+		6203 6202 6201 6200 6199 6197 6196 
 	}
 	end=yes
 }

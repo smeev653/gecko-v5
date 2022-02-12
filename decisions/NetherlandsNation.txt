@@ -134,10 +134,7 @@ country_decisions = {
 	  				add_core = FRA
 	  				cede_province = FRA
 	  			}
-				89 = {
-					limit = {
-						owned_by = BUR
-					}
+				89 = {	
 	  				remove_core = BUR
 	  				add_core = FRA
 	  				cede_province = FRA
