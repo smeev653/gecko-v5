@@ -1117,6 +1117,13 @@ emp_bav_missions_conquer_austria = {
 				}
 				add_permanent_claim = ROOT
 			}
+			east_frisia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			holland_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }

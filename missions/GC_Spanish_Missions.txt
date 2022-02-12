@@ -1751,6 +1751,13 @@ gc_spain_5_b = {
 				}
 				add_claim = ROOT
 			}
+			east_frisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
 			holland_area = {
 				limit = {
 					NOT = { is_core = ROOT }

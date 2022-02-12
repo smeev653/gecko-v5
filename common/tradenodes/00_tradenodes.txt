@@ -2337,16 +2337,16 @@ champagne={
 	members={
 		182 183 185 4388 #ile_de_france_area
 		179 184 4776 # Orleans area
-		181 186 4390 #champagne_area
+		 186 4390 #champagne_area
 		187 188 189 #lorraine_area
 		191 192 193 1877 4392 #bourgogne_area
 		167 168 1879 4385 #normandy_area #smeev
 		169 170 171 172 4384 #brittany_area #smeev
 		4764 4766 
-		 94  #wallonia_area
+
 		177 178 4389 #loire_area #smeev
-		87 88 89 1743 #picardy_area #smeev
-		6093 6092 6091 6090 6089 6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
+
+		6093 6092 6091  6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
 	}
 }
 
@@ -2360,7 +2360,7 @@ english_channel={
 	color={
 		220 138 57 
 	}
-	members={
+	members={6203 6202 6201 6200 6199 6197 6196 
 		1269 1270 1271 #Seas
 		241 242 4366 4369 #wales_area
 		245 4367 4368 4785 #yorkshire_area
@@ -2374,6 +2374,8 @@ english_channel={
 		90 1744 1865 91 #flanders_area
 		4769 4770 1742
 		6187 6190 6189 6188 6191
+		94 6090 181 #wallonia_area
+		6089 87 88 89 1743 #picardy_area #smeev
 	}
 	end=yes
 }

@@ -794,6 +794,7 @@ merc_frisian_free_company = {
 			any_owned_province = {
 				OR = {
 					area = frisia_area
+					area = east_frisia_area
 					area = weser_area
 				}
 			}
