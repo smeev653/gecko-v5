@@ -131,13 +131,14 @@ country_decisions = {
 						owned_by = BUR
 					}
 	  				remove_core = BUR
-					remove_core = NED
 	  				add_core = FRA
 	  				cede_province = FRA
 	  			}
+				france_region = {
+	  				remove_core = BUR
+	  			}
 				89 = {	
 	  				remove_core = BUR
-					remove_core = NED
 	  				add_core = FRA
 	  				cede_province = FRA
 				}
