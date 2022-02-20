@@ -10,11 +10,13 @@ war_goal = {
 1443.1.11 = {
 	add_attacker = MOR
 	add_defender = GRA
+	add_defender = MAL
 }
 
 # Peace and end of war
 
-1444.1.1 = {
+1444.11.10 = {
 	rem_attacker = MOR
 	rem_defender = GRA
+	rem_defender = MAL
 }

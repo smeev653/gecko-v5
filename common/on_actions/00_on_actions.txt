@@ -30,12 +30,12 @@ on_startup = {
 	if = {
 		limit = {
 				OR = {
-					tag = MOR
-					tag = SON
+					#tag = MOR
+					#tag = SON
 					tag = ZAN
 					tag = ETH
 					tag = MAM
-					#tag = YAO
+					tag = YAO
 					tag = MAL
 			}
 			NOT = { 

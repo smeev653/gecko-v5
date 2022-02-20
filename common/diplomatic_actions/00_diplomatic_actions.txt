@@ -365,6 +365,38 @@ allianceaction = {
 	}
 	
 	condition = {
+		tooltip = gc_denmark
+		potential = {
+			tag = DAN	
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			always = no
+		}
+	}
+	
+	condition = {
+		tooltip = gc_to_denmark
+		potential = {
+			ai = yes
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = DAN			
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
 		tooltip = sm_tooltip_mamottoally
 		potential = {
 			OR = {

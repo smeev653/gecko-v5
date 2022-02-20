@@ -36,12 +36,6 @@ country_event = {
 								discover_province = PREV
 							}
 			}	
-			maghreb_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}		
-
 			east_africa_region = {
 				ROOT = {
 								discover_province = PREV
