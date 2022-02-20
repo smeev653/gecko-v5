@@ -11,6 +11,7 @@ war_goal = {
 	add_attacker = MOR
 	add_defender = GRA
 	add_defender = MAL
+	add_defender = YAO
 }
 
 # Peace and end of war
@@ -19,4 +20,5 @@ war_goal = {
 	rem_attacker = MOR
 	rem_defender = GRA
 	rem_defender = MAL
+	rem_defender = YAO
 }
