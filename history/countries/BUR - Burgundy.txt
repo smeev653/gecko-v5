@@ -77,7 +77,6 @@ add_army_professionalism = 0.11
 	add_ruler_personality = calm_personality
 	add_ruler_personality = well_connected_personality
 	add_ruler_personality = well_advised_personality
-	add_heir_personality = bold_fighter_personality
 }
 
 1430.1.7 = {

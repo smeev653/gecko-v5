@@ -6,10 +6,10 @@ capital = "Nancy"
 is_city = yes
 culture = burgundian
 religion = catholic
-base_tax = 5 
-base_production = 5
+base_tax = 3
+base_production = 3
 trade_goods = iron
-base_manpower = 5
+base_manpower = 2
 add_core = BUR
 center_of_trade = 2
 

@@ -1682,12 +1682,13 @@ take_capital_throne = {
 	}
 	
 	defender = {
-		badboy_factor = 0.5
+		badboy_factor = 0.25
 		prestige_factor = 1
-		peace_cost_factor = 0.75
+		peace_cost_factor = 0.5
 
 		allowed_provinces = {
 			is_core = FROM
+			is_claim = FROM
 		}
 		
 		peace_options = {

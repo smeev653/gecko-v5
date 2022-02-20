@@ -131,18 +131,20 @@ country_decisions = {
 						owned_by = BUR
 					}
 	  				remove_core = BUR
+					remove_core = NED
 	  				add_core = FRA
 	  				cede_province = FRA
 	  			}
 				89 = {	
 	  				remove_core = BUR
+					remove_core = NED
 	  				add_core = FRA
 	  				cede_province = FRA
 				}
 	  		}
 			low_countries_region = {
 				limit = { country_or_non_sovereign_subject_holds = ROOT }
-					add_base_manpower = 3
+					add_base_manpower = 1
 					add_base_production = 1
 				}
 			if = {

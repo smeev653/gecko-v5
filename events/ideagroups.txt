@@ -915,7 +915,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas	
+		has_idea_group = plutocracy_ideas
+		is_year = 1500	
 		NOT = {	has_country_modifier =  "mercenaries_to_the_standard" }
 	}
 
@@ -6665,6 +6666,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = administrative_ideas
+		is_year = 1500
 		NOT = { has_country_modifier = "glut_of_mercs" }
 	}
 

@@ -217,10 +217,8 @@ merc_bascoli = {
     home_province = 173
 	sprites = { dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
     trigger = {
-		OR = {
-			culture_group = french
-			culture_group = iberian
-		}	
+			tag = FRA
+
 		current_age = age_of_discovery
 	}
 	modifier = { 
