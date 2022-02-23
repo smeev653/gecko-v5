@@ -749,6 +749,7 @@ gc_tribe_becomes_horde_reform = {
 		NOT = { 
 			has_reform = stateless_society
 		}
+		has_reform = steppe_horde
 	}		  
 	effect = {
 		#change_unit_type = nomad_group
