@@ -396,7 +396,6 @@ chinese_warlord = {
 
 	modifiers = {
 		manpower_recovery_speed = 0.1
-		relation_with_same_religion = -100
 		governing_capacity = 100
 	}
 	

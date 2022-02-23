@@ -1,4 +1,4 @@
-government = monarchy
+government = theocracy
 add_government_reform = holy_state_reform
 technology_group = western
 religion = catholic
