@@ -7,7 +7,7 @@ technology_group = eastern
 historical_rival = TUR
 historical_rival = SER
 historical_rival = ALB
-capital = 151 # Constantinople
+capital = 145
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 
 1391.2.16 = {
