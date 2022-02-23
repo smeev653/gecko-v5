@@ -245,16 +245,10 @@ holy_state_reform = {
 	}
 	potential = {
 		OR = {
-			AND = {
-				tag = KOJ
-				NOT = { map_setup = map_setup_random }
+			tag = SIC
+			tag = TTS
+			tag = ITA
 			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = holy_state_reform
-			}
-		}
-	}
 	trigger = {
 		religion = catholic
 	}
