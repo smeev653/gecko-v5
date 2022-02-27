@@ -127,7 +127,7 @@ empire_of_hungary_reform = {
 			have_had_reform = empire_of_hungary_reform
 		}
 		tag = HUN
-		religion = catholic
+		#religion = catholic
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.15
