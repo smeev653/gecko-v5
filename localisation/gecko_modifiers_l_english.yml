@@ -113,6 +113,7 @@
 
  caliphate_proclaimed:0 "Caliphate Proclaimed"
  desc_caliphate_proclaimed:0 "Our control over the holy sites and destruction of the Mamluke Sultanate mean that we can claim the title of Caliph for the first time since the great Muslim empires."
+ defense_of_anatolia:0 "Defense of Anatolia"
 
  #Portugal
  cape_trade_established:0 "Cape City Established"

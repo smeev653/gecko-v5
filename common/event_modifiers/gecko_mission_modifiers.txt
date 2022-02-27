@@ -307,6 +307,16 @@ defense_of_france = {
 	mercenary_manpower = 0.5
 }
 
+defense_of_anatolia = {
+	land_morale = 0.05
+	discipline = 0.05
+	land_forcelimit_modifier = 0.1
+	merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.25
+	#mercenary_manpower = 0.5
+	defensiveness = 0.2
+}	
+
 eth_coptic_offense = {
 	land_morale = 0.05
 }

@@ -1387,23 +1387,36 @@ gecko_tur_events = {
 			custom_tooltip = g_constructions			
 		}
 	}
-	#Expansion_of_the_Royal_Bureaucracy = {
-	#	icon = mission_rb_monopolize_the_channel
-	#	required_missions = {  }
-	#	position = 5
-	#	trigger ={
-	#	OR ={
-	#			tag = TUR
-	#			tag = RUM
-	#		}
-	#	is_at_war = no
-	#	is_year = 1620
-	#}
-	#	effect = {
-	#		country_event = {
-	#				id = flavor_tur.3366
-	#			}
-	#		custom_tooltip = g_expansion_of_the_royal_bureaucracy
-	#	}
-	#}
+	repulse_gank = {
+        icon = mission_non-western_soldiers
+        required_missions = {  }
+		position = 5
+        trigger = {
+				NOT = {
+					is_year = 1500
+				}
+
+				AND = { 
+					is_in_war = {
+						attackers = MAM
+					}
+					is_in_war = {
+						attackers = HUN
+					}
+				}
+		}
+        effect = {
+            #define_conquistador = {
+             #   shock = 5
+              #  fire = 5
+               # manuever = 6
+                #siege = 3
+                #name = "Jean-Baptiste"
+                #}
+                add_country_modifier = {
+                name = "defense_of_anatolia"
+                duration = 3650
+                }
+            }
+        }
 }
