@@ -156,4 +156,20 @@ We_stand_alone = {
 	mercenary_cost = -0.25
 	mercenary_manpower = 0.5
 	interest = -0.25
-}	
+}
+
+HRE_backup = {	
+	potential = {
+				tag = HAB
+				NOT = {	is_year = 1500 }	
+				was_player = yes
+				NOT = { is_emperor = yes }
+			}
+	trigger  = {
+		tag = HAB
+		NOT = { is_emperor = yes }
+	}
+	global_manpower = 50
+	land_forcelimit = 50
+	global_tax_income = 36
+}
