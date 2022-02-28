@@ -1581,17 +1581,18 @@ TIM_ideas = {
 	the_mantle_of_the_great_khan = {
 		land_morale = 0.15
 	}
-	timurid_renaissance = {
-		technology_cost = -0.1
+	riches_of_the_silk_road = {
+		global_own_trade_power = 0.25
 	}
+
 	enforced_tribute = {
 		global_tax_modifier = 0.150
 	}
 	timurid_architecture = {
 		prestige_decay = -0.02
 	}
-	riches_of_the_silk_road = {
-		global_own_trade_power = 0.25
+	timurid_renaissance = {
+		technology_cost = -0.05
 	}
 	reform_the_diwan = {
 		fire_damage_received = -0.15
