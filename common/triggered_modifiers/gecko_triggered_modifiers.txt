@@ -127,7 +127,7 @@ We_stand_alone = {
 					tag = FRA
 				}	
 				was_player = yes
-				num_of_allies = 0
+				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
 				revanchism = 25
 				had_recent_war = 15
@@ -139,11 +139,11 @@ We_stand_alone = {
 				NOT = { is_colonial_nation = yes }	
 			}
 	trigger  = {
-				num_of_allies = 0
+				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
 				revanchism = 25
 				OR = { is_bankrupt = yes 
-					num_of_loans = 25
+					num_of_loans = 19
 				}			
 	}
 	land_morale = 0.1
