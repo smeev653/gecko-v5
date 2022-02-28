@@ -148,6 +148,7 @@ technology = { #Scientific Experimentation
 	year = 1583
 	
 	university = yes
+	town_hall = yes
 	plantations = yes
 	allowed_idea_groups	= 4
 }
@@ -221,7 +222,7 @@ technology = { #The Constitution
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
-	town_hall = yes
+
 }
 
 technology = { #Measuring the World

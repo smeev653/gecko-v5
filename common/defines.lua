@@ -555,10 +555,10 @@ NCountry = {
 	EMBRACE_INSTITUTION_COST = 2.5,				-- 2.5 per development (autonomy modified)
 	MAXIMUM_CONDOTTIERI = 20,					-- Base number of units you can rent out
 	CORRUPTION_COST = 0.05,						-- cost for monthly combat per development
-	STATE_MAINTENANCE_DEV_FACTOR = 0.007,		-- per dev
-	STATE_MAINTENANCE_DISTANCE_FACTOR = 0.001,	-- distance
+	STATE_MAINTENANCE_DEV_FACTOR = 0.008,		-- per dev
+	STATE_MAINTENANCE_DISTANCE_FACTOR = 0.002,	-- distance
 	STATE_MAINTENANCE_CONTINENT_FACTOR = 0.25,	-- different continet
-	STATE_MAINTENANCE_CULTURE_FACTOR = 0.25,		-- non accepted culture
+	STATE_MAINTENANCE_CULTURE_FACTOR = 0.5,		-- non accepted culture
 
 	ALLOW_ZERO_BASE_VALUES = 0,						-- Affects base tax, base manpower, and base production
 

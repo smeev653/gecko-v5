@@ -460,7 +460,7 @@ the_motherland_calls = {
 conquest_of_sarai = {
 	potential = {
 		OR = {
-			culture_group = altaic
+			tag = KHA
 			culture_group = tartar
 		}	
 	}
@@ -468,7 +468,7 @@ conquest_of_sarai = {
 	trigger = {
 		owner = {
 			OR = {
-			culture_group = altaic
+			tag = KHA
 			culture_group = tartar
 		}
 		}	
