@@ -609,8 +609,8 @@ NCountry = {
 
 	PRESTIGE_GAIN_FOR_GOV_RANK_2 = 10,			-- Prestige gained on upgrading to government rank 2
 	PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25,			-- Prestige gained on upgrading to government rank 3
-	MIN_PRESTIGE_FOR_GOV_RANK_2 = 50,			-- Required prestige to to upgrade to government rank 2
-	MIN_PRESTIGE_FOR_GOV_RANK_3 = 50,			-- Required prestige to to upgrade to government rank 3
+	MIN_PRESTIGE_FOR_GOV_RANK_2 = 1,			-- Required prestige to to upgrade to government rank 2
+	MIN_PRESTIGE_FOR_GOV_RANK_3 = 25,			-- Required prestige to to upgrade to government rank 3
 	MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 300,		-- Need at least this much development to upgrade to government rank 2
 	MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 1000,		-- Need at least this much development to upgrade to government rank 3
 
