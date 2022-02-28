@@ -275,8 +275,8 @@ country_decisions = {
 				
 				religion = shiite
 				claim = 100
-				adm = 6
-				dip = 5
+				adm = 5
+				dip = 4
 				mil = 5
 				}							
 			if = {
@@ -425,8 +425,8 @@ country_decisions = {
 				
 				religion = shiite
 				claim = 100
-				adm = 6
-				dip = 5
+				adm = 5
+				dip = 4
 				mil = 5
 				}							
 			if = {

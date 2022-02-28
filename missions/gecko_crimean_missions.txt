@@ -574,9 +574,9 @@ gc_cri_branch_3 = {
 				
 				religion = sunni
 				claim = 100
-				adm = 5
-				dip = 5
-				mil = 6
+				adm = 4
+				dip = 4
+				mil = 5
 			}
 			if = {
 				limit = { has_heir = yes }
