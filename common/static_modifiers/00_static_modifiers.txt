@@ -1735,7 +1735,7 @@ expand_administation_modifier = {
 
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
-	stability_cost_modifier = 1
+	stability_cost_modifier = 0.5
 	#ae_impact = 0.5
 	improve_relation_modifier = -0.5
 	core_creation = 0.1
