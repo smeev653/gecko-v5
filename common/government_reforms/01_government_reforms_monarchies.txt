@@ -645,7 +645,7 @@ principality = {
 			}
 		}
 	}
-	fixed_rank = 1
+	#fixed_rank = 1
 	legacy_equivalent = principality_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
