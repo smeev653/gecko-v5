@@ -1714,7 +1714,7 @@ country_event = {
 				}
 				167 = {
 					cede_province = FRA
-				}
+				}	
 			add_truce_with = FRA
 		}
 		FRA = { country_event = { id = flavor_fra.8 } }
