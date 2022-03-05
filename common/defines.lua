@@ -123,7 +123,7 @@ NDiplomacy = {
 	MAX_NUM_OF_ELECTORS = 8,						-- Maximum number of electors in the interface
 	MAX_FREE_CITIES = 12,
 	MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE = 2,		-- Limit is inclusive.
-	HRE_PRINCE_AUTHORITY_THRESHOLD = 20,			-- Threshold below which you lose IA, and above which you gain it
+	HRE_PRINCE_AUTHORITY_THRESHOLD = 25,			-- Threshold below which you lose IA, and above which you gain it
 	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.075,			-- Scales to threshold
 	HRE_FOREIGN_CONTROL_PENALTY = -0.005,			-- Each foreign-controlled province in the empire (owned or vassalised) lowers IA by this amount
 	HRE_HERETIC_PENALTY = -0.01,					-- Per heretic prince (halved by Peace of Westphalia)
@@ -384,7 +384,7 @@ NDiplomacy = {
 	GRANT_ELECTORATE_INFLUENCE = 0,					-- The amount of AI Grant Electorate gives.
 	GRANT_FREECITY_INFLUENCE = 0,					-- The amount of IA Grant Free Gity gives.
 	REMOVE_FREECITY_INFLUENCE_COST = 5,				-- The amount of IA Grant Free Gity costs.
-	IMPERIAL_CITY_IA = 0.01,						-- Monthly per imperial free city
+	IMPERIAL_CITY_IA = 0.005,						-- Monthly per imperial free city
 
 	AGITATE_FOR_LIBERTY_DESIRE = 25,				-- Liberty Desire gained due to ongoing agitation.
 	AGITATE_FOR_LIBERTY_RATE = 1,					-- Monthly rate at which Liberty Desire rises towards the maximum during agitation, or otherwise falls towards zero.
