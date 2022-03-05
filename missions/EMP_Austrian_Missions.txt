@@ -197,7 +197,7 @@ emp_hab_empire_branch = {
 			add_dip_power = 50
 			add_country_modifier = {
 				name = hab_ascendancy_in_empire
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
@@ -536,7 +536,7 @@ emp_hab_prestige_branch = {
 		icon = balance_the_estates
 		required_missions = {  }
 		trigger = {
-			crown_land_share = 30
+			crown_land_share = 0
 			if = {
 				limit = {
 					has_estate = estate_nobles
@@ -669,6 +669,26 @@ emp_hab_prestige_branch = {
 				name = hab_prosperity_windfall
 				duration = 7300
 			}
+			krain_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			inner_austria_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			outer_austria_area= {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			austria_proper_area= {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			tirol_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}			
 		}
 	}
 	
