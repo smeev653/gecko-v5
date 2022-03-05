@@ -57,6 +57,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 5528;666;sea;1370;-1;-1;-1;-1;Zhanhjing-Kiungchow China
 1017;4651;sea;1376;-1;-1;-1;-1;Suo-Tsushima Korea-Japan
 2745;4651;sea;1376;-1;-1;-1;-1;Gyeongju-Tsushima Korea-Japan
+247;4365;sea;1284;-1;-1;-1;-1;Cumbria-Mann
 333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
 4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
 6192;4560;sea;1295;-1;-1;-1;-1;Alicante-Ibiza
