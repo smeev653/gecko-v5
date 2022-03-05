@@ -155,7 +155,7 @@ emp_hab_empire_branch = {
 				OR = {
 					AND = {
 						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							value = 30
+							value = 10
 							continent = europe
 						}
 						is_part_of_hre = yes
@@ -166,6 +166,7 @@ emp_hab_empire_branch = {
 		}
 		trigger = {
 			is_emperor = yes
+			imperial_influence = 40
 			OR = {
 				hre_reform_passed = emperor_privilegia_de_non_appelando
 				AND = {
@@ -177,7 +178,7 @@ emp_hab_empire_branch = {
 								NOT = { is_subject_of = ROOT }
 								is_part_of_hre = yes
 								num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-									value = 30
+									value = 20
 									continent = europe
 								}
 							}
