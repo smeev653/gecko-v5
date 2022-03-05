@@ -160,6 +160,9 @@ emperor_reichstag_collegia = {
 	emperor = {
 		max_free_cities = 3
 	}
+	elector_per_prince = {
+		global_tax_income = 0.25
+	}
 }
 
 emperor_expand_gemeiner_pfennig = {
@@ -171,10 +174,10 @@ emperor_expand_gemeiner_pfennig = {
 		has_dlc = "Emperor"
 	}
 	emperor_per_prince = {
-		global_manpower = 0.1
+		global_manpower = 0.25
 	}
 	elector_per_prince = {
-		global_manpower = 0.2
+		global_manpower = 0.5
 	}
 	province = {
 		local_friendly_movement_speed = 0.1
