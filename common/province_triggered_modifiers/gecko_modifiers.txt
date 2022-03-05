@@ -694,6 +694,6 @@ gc_catanzaro_silk = {
 	}
 	trigger = {
 	}
-	trade_goods_size = 2
+	trade_goods_size = 5
 	local_development_cost = -0.10
 }

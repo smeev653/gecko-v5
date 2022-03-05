@@ -284,6 +284,14 @@ emp_naples_3 = {
 			5786 = {
 			change_trade_goods = silk
 			}
+			5786 = {
+				if = {
+					limit = {
+						NOT = { has_building = workshop }
+					}
+					add_building = workshop
+				}
+			}
 			set_global_flag = gc_catanzaro_silk
 			add_prestige = 20
 			add_country_modifier = {
@@ -327,9 +335,18 @@ emp_naples_3 = {
 					area = apulia_area
 				}
 			}
+			owns_core_province = 2986
 		}
 		effect = {
 			set_global_flag = gc_cagliari_copper
+			2986 = {
+				if = {
+					limit = {
+						NOT = { has_building = workshop }
+					}
+					add_building = workshop
+				}
+			}
 			lazio_area = {
 				limit = {
 					NOT = { is_core = ROOT }

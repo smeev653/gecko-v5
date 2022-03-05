@@ -16,6 +16,8 @@ elector = yes
 		adm = 5
 		female = yes
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
 }
 
 1713.4.12 = {
