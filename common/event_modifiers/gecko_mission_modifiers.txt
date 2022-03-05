@@ -1,6 +1,6 @@
 hungary_unleashed = {
-	ae_impact = -0.50
-	province_warscore_cost = -0.2
+	ae_impact = -0.2
+	province_warscore_cost = -0.1
 }
 
 rule_britannia = {
@@ -18,7 +18,7 @@ burgundy_subjects_placated = {
 }
 
 succesful_bid_for_imperial_crown = {
-	#ae_impact = -0.1
+	ae_impact = -0.2
 	province_warscore_cost = -0.1
 }
 
@@ -315,6 +315,7 @@ defense_of_anatolia = {
 	mercenary_cost = -0.25
 	#mercenary_manpower = 0.5
 	defensiveness = 0.2
+	interest = -0.5
 }	
 
 eth_coptic_offense = {

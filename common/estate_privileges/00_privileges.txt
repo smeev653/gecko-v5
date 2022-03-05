@@ -5994,15 +5994,17 @@ estate_nobles_strong_duchies = {
 					amount = 2
 					all_subject_country = {
 						OR = {
-							is_march = yes
-							is_vassal = yes
+							is_subject = yes
 						}
 					}
 				}
 			}
 		}
 		else = {
-			vassal = 2
+			OR = {
+				vassal = 2
+				canton = 2
+			}	
 		}
 
 	}
