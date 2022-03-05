@@ -25,8 +25,7 @@ emperor_reichsregiment = {
 		local_unrest = -2
 	}
 	emperor = {
-		diplomatic_reputation = 1
-		diplomats = 1
+		diplomatic_reputation = 2
 	}
 	required_reform = emperor_reichsreform
 	gui_container = mainline
@@ -150,7 +149,6 @@ emperor_landfriede = {
 
 emperor_reichstag_collegia = {
 	empire = hre
-	required_reform = emperor_perpetual_diet
 	disabled_by = emperor_hofgericht
 	gui_container = left_branch
 
@@ -243,7 +241,6 @@ emperor_hofgericht = {
 	emperor = {
 		core_creation = -0.10
 	}
-	required_reform = emperor_perpetual_diet
 	disabled_by = emperor_reichstag_collegia
 	gui_container = right_branch
 }
