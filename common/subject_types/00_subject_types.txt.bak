@@ -202,7 +202,7 @@ vassal = {
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.0
-	forcelimit_bonus = 1.0
+
 	forcelimit_to_overlord = 0.1
 
 	relative_power_class = 2
@@ -597,8 +597,8 @@ tributary_state = {
 	overlord_can_attack = yes
 	takes_diplo_slot = no
 	base_liberty_desire = -5
-	relative_power_class = 0						
-
+	relative_power_class = 1						
+	should_quit_wars_on_activation = no
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
 	uses_military_focus = no
@@ -613,8 +613,7 @@ tributary_state = {
 	does_overlord_size_count_for_warscore_cost = no
 	pays_overlord = 1.0
 	seize_territory = yes
-	forcelimit_bonus = 1.0
-	forcelimit_to_overlord = 0.1
+
 	
 	
 	liberty_desire_development_ratio = 0.175
