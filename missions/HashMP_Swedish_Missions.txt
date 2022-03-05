@@ -304,7 +304,7 @@ h_swedish_missions_2 = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			mil_tech = 12
+			mil_tech = 7
 			num_of_artillery = 10
 		}
 		effect = {
@@ -344,6 +344,10 @@ h_swedish_missions_2 = {
 				name = h_swedish_carolean_regiments
 				duration = -1
 			}
+			add_country_modifier = {
+				name = h_swedish_ga_pa_doctrine
+			duration = 5475
+		}
 			country_event = {
 				id = gecko.102
 			}
