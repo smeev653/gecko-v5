@@ -564,7 +564,10 @@ age_of_reformation = {
 
 		ab_bukhara_arty = {
 			allow = {
-				tag = BUK
+				OR = {
+					tag = BUK
+					tag = NED
+				}	
 			}
 			modifier = {
 				artillery_fire = 1

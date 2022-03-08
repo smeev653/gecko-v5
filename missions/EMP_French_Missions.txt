@@ -237,24 +237,10 @@ emp_france_missions_1 = {
 			}
 		}
 		effect = {
-			wallonia_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
-			brabant_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
-			flanders_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
+			add_country_modifier = {
+				name = "lowland_conquest"
+				duration = -1
+			}	
 		}
 	}
 }
@@ -664,6 +650,7 @@ emp_france_missions_2 = {
 				province_id = 89
 				province_id = 88
 				province_id = 1743
+				province_id = 6089
 			}
 			NOT = {
 				owned_by = ROOT
@@ -681,6 +668,9 @@ emp_france_missions_2 = {
 				owned_by = ROOT
 			}
 			1743 = {
+				owned_by = ROOT
+			}
+			6089 = {
 				owned_by = ROOT
 			}
 		}
@@ -1481,7 +1471,7 @@ emp_france_missions_4 = {
 	}
 	emp_fra_subjugate_lorraine = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { emp_fra_conquer_burgundy_area }
+		required_missions = { emp_fra_conquer_burgundy_area emp_fra_conquer_picardy_fra }
 		provinces_to_highlight = {
 			area = lorraine_area
 			NOT = {

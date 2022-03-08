@@ -337,7 +337,7 @@ NED_ideas = {
 	}
 	
 	bonus = {
-	discipline = 0.05
+		artillery_fire = 0.25
 	}
 
 	trigger = {
@@ -359,7 +359,7 @@ NED_ideas = {
 		development_cost = -0.1
 	}
 	instructie_voor_de_admiraliteiten = {
-		leader_naval_fire = 2
+		leader_naval_fire = 1
 		leader_land_fire = 1
 		naval_morale = 0.1
 	}
@@ -423,7 +423,7 @@ FRA_ideas = {
 	}
 	
 	bonus = {
-		recover_army_morale_speed = 0.1
+		discipline = 0.05
 	}	
 
 	trigger = {
@@ -437,6 +437,7 @@ FRA_ideas = {
 	}
 	elan = {
 		land_morale = 0.20
+		recover_army_morale_speed = 0.1
 	}
 	estates_general = {
 		global_tax_modifier = 0.15
@@ -445,7 +446,7 @@ FRA_ideas = {
 		heavy_ship_power = 0.1
 	}
 	vauban_fortifications = {
-		fort_maintenance_modifier = -0.2
+		defensiveness = 0.25
 	}
 	the_philosophes = {
 		technology_cost = -0.1
@@ -14490,7 +14491,7 @@ LOT_ideas = {
 		prestige_decay = -0.01
 	}
 	lot_glory_of_charlemagne = {
-		land_morale = 0.10
+		land_morale = 0.15
 		discipline = 0.05
 	}
 	lot_dutch_cities = {
