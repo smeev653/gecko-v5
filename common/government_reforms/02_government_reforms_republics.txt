@@ -1117,7 +1117,7 @@ dutch_republic = {
 	}
 
 	modifiers = {
-		artillery_fire = 1
+		artillery_fire = 99
 		global_trade_goods_size_modifier = 0.2
 		expand_administration_cost = -0.875
 		governing_capacity = 50

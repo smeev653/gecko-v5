@@ -61,23 +61,23 @@ gecko_merc_black_army_1 = {
 }
 
 # Black Army Hungary
-#gecko_merc_black_army_2 = {
-#	regiments_per_development = 0.065
-#	cavalry_weight = 0.6
-#   cavalry_cap = 15
-#    artillery_weight = 0
-#	#home_province = 153
-#	sprites = { easterngfx_sprite_pack }
-#	trigger = {
-#		OR = {
-#			has_country_modifier = hun_black_army	
-#			has_reform = black_army_reform
-#			}
-#	}
-#	cost_modifier = 0.65
-#	modifier = {
-#		discipline = 0.1
-#	}
+gecko_merc_black_army_2 = {
+	regiments_per_development = 0.065
+	cavalry_weight = 0.6
+   cavalry_cap = 15
+    artillery_weight = 0
+	#home_province = 153
+	sprites = { easterngfx_sprite_pack }
+	trigger = {
+		OR = {
+			has_country_modifier = hun_black_army	
+			has_reform = black_army_reform
+			}
+	}
+	cost_modifier = 0.65
+	modifier = {
+		discipline = 0.1
+	}
 }
 
 #Aristo mercs
