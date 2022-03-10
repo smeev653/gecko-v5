@@ -840,7 +840,7 @@ buddha_statues = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			land_attrition = -0.1
+			land_attrition = -0.05
 			global_missionary_strength = 0.01
 		}
 
@@ -870,7 +870,7 @@ buddha_statues = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			land_attrition = -0.15
+			land_attrition = -0.1
 			global_missionary_strength = 0.01
 			missionaries = 1
 		}
@@ -901,7 +901,7 @@ buddha_statues = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			land_attrition = -0.2
+			land_attrition = -0.15
 			global_missionary_strength = 0.01
 			missionaries = 1
 			idea_cost = -0.05
@@ -1561,7 +1561,7 @@ petra = {
 	move_days_per_unit_distance = 10
 	
 	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-	starting_tier = 0
+	starting_tier = 1
 	
 	#project type
 	type = monument
@@ -1690,7 +1690,8 @@ petra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			
+			diplomatic_reputation = 2
+			envoy_travel_time = -0.20
 		}
 
 		#what effects happen when this tier is achieved
@@ -1719,7 +1720,9 @@ petra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			
+			diplomatic_reputation = 1
+			envoy_travel_time = -0.25
+			vassal_forcelimit_bonus = 0.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -1735,7 +1738,7 @@ petra = {
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 2000
+			factor = 2500
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -1748,7 +1751,10 @@ petra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			
+			diplomatic_reputation = 2
+			envoy_travel_time = -0.33
+			diplomatic_upkeep = 1
+			vassal_forcelimit_bonus = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -7032,11 +7038,12 @@ pyramid_of_cheops = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_unrest = -3
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			
+			advisor_cost = -0.10
 		}
 
 		#what effects happen when this tier is achieved
@@ -7061,11 +7068,13 @@ pyramid_of_cheops = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_unrest = -3
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-						
+			advisor_cost = -0.1
+			advisor_pool = 2
 		}
 
 		#what effects happen when this tier is achieved
@@ -7090,15 +7099,18 @@ pyramid_of_cheops = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_unrest = -3
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			
+			advisor_cost = -0.1
+			advisor_pool = 3
+			yearly_corruption = -0.3
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {	
+		on_upgraded = {
 		}
 	}
 }
@@ -8558,7 +8570,7 @@ mausoleum_at_halicarnassus = {
 	move_days_per_unit_distance = 1
 	
 	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-	starting_tier = 2
+	starting_tier = 1
 	
 	#project type
 	type = monument
@@ -13669,7 +13681,7 @@ malta_forts = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			warscore_cost_vs_other_religion = -0.0075
+			warscore_cost_vs_other_religion = -0.075
 			galley_power = 0.05
 		}
 		on_upgraded = {
@@ -14314,7 +14326,8 @@ churches_lalibela = {
 		area_modifier = {
 		}
 		country_modifiers = {
-
+			global_missionary_strength = 0.005
+			prestige = 0.25
 		}
 		on_upgraded = {
 		}
@@ -14332,6 +14345,9 @@ churches_lalibela = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_missionary_strength = 0.01
+			missionary_maintenance_cost = -0.05
+			prestige = 0.5
 		}
 		on_upgraded = {
 		}
@@ -14342,13 +14358,16 @@ churches_lalibela = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 2000
+			factor = 2500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_missionary_strength = 0.02
+			missionary_maintenance_cost = -0.1
+			prestige = 1
 		}
 		on_upgraded = {
 		}
@@ -14864,6 +14883,7 @@ spiral_minaret_samarra = {
 			global_missionary_strength = 0.02
 			prestige = 0.5
 			church_loyalty_modifier = 0.1
+			technology_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -14884,6 +14904,7 @@ spiral_minaret_samarra = {
 			global_missionary_strength = 0.03
 			prestige = 1
 			church_loyalty_modifier = 0.2
+			technology_cost = -0.05
 		}
 		on_upgraded = {
 		}
