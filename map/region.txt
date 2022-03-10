@@ -376,6 +376,7 @@ mashriq_region = {
 		#trans_jordan_area
 		syrian_desert_area
 		aleppo_area
+		shahrizor_area
 	}
 }
 
@@ -408,11 +409,7 @@ persia_region = {
 		teheran_area
 		kerman_area
 		persian_gulf_coast
-		tabriz_area
-		ardabil_area
-		urmia_area
 		khuzestan_area
-		shahrizor_area
 		mogostan_area
 		birjand_area
 		astrabad_area
@@ -442,6 +439,9 @@ caucasia_region = {
 		imereti_area
 		samtskhe_area
 		kartli_kakheti_area
+		tabriz_area
+		ardabil_area
+		urmia_area
 	}
 }
 
