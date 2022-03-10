@@ -566,32 +566,32 @@ conquest_of_tabriz = {
 	
 	}
 }
-#conquest_of_samarkand = {
-#	potential = {
-#		normal_or_historical_nations = yes
-#	}
-#
-#	trigger = {
-#		owner = {
-#				NOT = { tag = TRS }
-#				NOT = { tag = BUK }
-#				NOT = { tag = TIM }
-#			}
-#		controlled_by = ROOT	
-#		}	
-#
-#	land_morale = 0.05
-#	prestige = 0.5
-#	
-#	#Province scope
-#	on_activation = {
-#	
-#	}
-#	
-#	on_deactivation = {
-#	
-#	}
-#}
+conquest_of_samarkand = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = TRS }
+				NOT = { tag = BUK }
+				NOT = { tag = TIM }
+			}
+		controlled_by = ROOT	
+		}	
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
 
 conquest_of_pest = {
 	potential = {
