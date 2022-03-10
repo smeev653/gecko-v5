@@ -2424,7 +2424,7 @@ reorganized_mongols = {
 
 genghis_khan_reborn = {
 	prestige = 1
-	horde_unity = 1
+	land_morale = 0.05
 }
 
 # Japanese Missions
