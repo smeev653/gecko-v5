@@ -126,7 +126,7 @@ france_united = {
 	fire_damage = 0.20
 }
 lowland_conquest = {
-	artillery_fire = 1
+	artillery_fire = 0.5
 	production_efficiency = 0.2
 }
 caliphate_proclaimed = {
