@@ -726,25 +726,25 @@ gc_catanzaro_silk = {
 	local_development_cost = -0.10
 }
 
-conquest_of_amsterdam = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-
-	trigger = {
-		controlled_by = ROOT
-	}
-
-
-	global_trade_power = 0.1
-	trade_efficiency = 0.1
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
+#conquest_of_amsterdam = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		controlled_by = ROOT
+#	}
+#
+#
+#	global_trade_power = 0.1
+#	trade_efficiency = 0.1
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}
