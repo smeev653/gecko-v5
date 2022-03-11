@@ -792,10 +792,10 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.33
+		land_forcelimit_modifier  = 0.4
 	}
 	mass_army = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.4
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
