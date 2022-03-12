@@ -1,7 +1,7 @@
 #1874 - Bremen
 
-owner = HSA
-controller = HSA
+owner = BRE
+controller = BRE
 culture = lower_saxon
 religion = catholic
 capital = "Bremen"
@@ -11,7 +11,8 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = HSA
+add_core = BRE
+add_claim = HSA
 fort_15th = yes
 discovered_by = eastern
 discovered_by = western
