@@ -1,8 +1,15 @@
-#Manipur
+#Mysore
 vassal = {
-	first = TAU
-	second = MLB
-	start_date = 1560.2.1
+	first = MYS
+	second = MAB
+	start_date = 1443.1.1
+	end_date = 1596.1.1
+}
+
+vassal = {
+	first = MYS
+	second = KOC
+	start_date = 1443.1.1
 	end_date = 1596.1.1
 }
 
