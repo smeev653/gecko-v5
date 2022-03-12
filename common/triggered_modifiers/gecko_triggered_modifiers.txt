@@ -160,8 +160,10 @@ We_stand_alone = {
 
 HRE_backup = {	
 	potential = {
-				tag = HAB
-				NOT = {	is_year = 1530 }	
+				OR = {
+					tag = HAB
+					was_tag = HAB
+				}
 				was_player = yes
 				NOT = { is_emperor = yes }
 			}
