@@ -242,7 +242,7 @@ empowered_junkers = {
 
 turks_defeated = {
 	global_monthly_devastation = -1
-	interest = -0.5
+	interest = -0.75
 	reduced_liberty_desire = 25
 	inflation_reduction = 0.5
 }
@@ -250,7 +250,7 @@ turks_defeated = {
 mamluks_subjugated = {
 	global_monthly_devastation = -1
 	inflation_reduction = 0.5
-	interest = -0.25
+	interest = -0.5
 }
 
 hun_supreme_black_army = {
