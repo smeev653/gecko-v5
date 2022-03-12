@@ -292,6 +292,14 @@ emp_naples_3 = {
 					add_building = workshop
 				}
 			}
+			1934 = {
+				if = {
+					limit = {
+						NOT = { has_building = fort_15th }
+					}
+					add_building = fort_15th
+				}
+			}
 			set_global_flag = gc_catanzaro_silk
 			add_prestige = 20
 			add_country_modifier = {
