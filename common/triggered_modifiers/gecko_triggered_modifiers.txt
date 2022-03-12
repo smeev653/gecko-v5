@@ -161,7 +161,7 @@ We_stand_alone = {
 HRE_backup = {	
 	potential = {
 				tag = HAB
-				NOT = {	is_year = 1500 }	
+				NOT = {	is_year = 1530 }	
 				was_player = yes
 				NOT = { is_emperor = yes }
 			}
@@ -169,7 +169,19 @@ HRE_backup = {
 		tag = HAB
 		NOT = { is_emperor = yes }
 	}
-	global_manpower = 50
-	land_forcelimit = 50
+	global_manpower = 30
+	land_forcelimit = 30
 	global_tax_income = 36
+	land_morale = 0.05
+	spy_offence = 0.1					#minor bonus on spies.
+	advisor_pool = 1
+	diplomatic_upkeep = 1
+	free_leader_pool = 1
+	prestige = 1
+	land_morale = 0.05
+	province_warscore_cost = -0.1
+	papal_influence = 1
+	ae_impact = -0.1
+	governing_capacity = 400
+	governing_capacity_modifier = 0.15
 }

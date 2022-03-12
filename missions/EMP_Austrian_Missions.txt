@@ -634,7 +634,7 @@ emp_hab_prestige_branch = {
 				ROOT = {
 					NOT = {
 						development_in_provinces = {
-							value = 180 #start:122
+							value = 150 #start:122
 							culture = austrian
 						}
 					}

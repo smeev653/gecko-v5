@@ -1056,12 +1056,13 @@ HAB_ideas = {
 		global_garrison_growth = 0.25
 		fort_maintenance_modifier = -0.10
 	}
-	fugger_banks = {
-		inflation_reduction = 0.1
-	}
 	habsburg_dominance = {
 		land_morale = 0.15
 	}
+	fugger_banks = {
+		inflation_reduction = 0.1
+	}
+
 	edict_of_restitution = {
 		global_missionary_strength = 0.02
 	}

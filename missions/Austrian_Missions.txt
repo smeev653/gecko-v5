@@ -118,9 +118,26 @@ hab_holy_roman_ambitions = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "habsburg_bohemia"
-				duration = 5475 #15 years
+			erzgebirge_area = {
+				add_province_modifier = {
+					name = "habsburg_bohemia"
+					duration = 18250
+				}
+				add_nationalism = -5
+			}
+			bohemia_area = {
+				add_province_modifier = {
+					name = "habsburg_bohemia"
+					duration = 18250
+				}
+				add_nationalism = -5
+			}
+			hradecko_area = {
+				add_province_modifier = {
+					name = "habsburg_bohemia"
+					duration = 18250
+				}
+				add_nationalism = -5
 			}
 			silesia_area = {
 				add_permanent_claim = ROOT
@@ -387,7 +404,10 @@ hab_protect_the_balkans = {
 					}
 					add_permanent_claim = ROOT
 				}
-			
+			add_country_modifier = {
+				name = "royal_hungary"
+				duration = 5475
+			}
 		}
 	}
 	austrian_hungary = {
@@ -466,10 +486,7 @@ hab_protect_the_balkans = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = {
-				name = "royal_hungary"
-				duration = 5475
-			}
+
 		}
 	}
 	austrian_croatia = {

@@ -838,6 +838,8 @@ emperor = {
 	land_morale = 0.05
 	province_warscore_cost = -0.1
 	papal_influence = 1
+	ae_impact = -0.1
+	governing_capacity_modifier = 0.15
 }
 
 states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor

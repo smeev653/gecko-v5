@@ -95,8 +95,7 @@ austrian_silesia = {
 }
 
 habsburg_bohemia = {
-	imperial_authority = 0.1
-	legitimacy = 1
+	local_development_cost = -0.15
 }
 
 austrian_empire = {
