@@ -419,7 +419,7 @@ swiss_missions_2 = {
 			num_accepted_cultures = 2 
 			if = {
 				limit = { government = republic }
-				republican_tradition = 85 
+				republican_tradition = 60 
 			}
 			else_if = {
 				limit = { government = monarchy }
