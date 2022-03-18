@@ -462,13 +462,14 @@ emp_france_missions_1_b = {
 		}
 		}
         effect = {
-            #define_conquistador = {
-             #   shock = 5
-              #  fire = 5
-               # manuever = 6
-                #siege = 3
-                #name = "Jean-Baptiste"
-                #}
+            define_general = {
+					shock = 4
+					fire = 4
+					manuever = 1
+					siege = 3
+					name = "Jean Bureau"
+                }
+
                 add_country_modifier = {
                 name = "defense_of_france"
                 duration = 3650
