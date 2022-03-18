@@ -3,6 +3,7 @@
 owner = GEN
 controller = GEN
 add_core = GEN
+add_core = MLO
 culture = ligurian
 religion = catholic
 hre = yes
