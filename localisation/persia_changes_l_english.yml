@@ -194,15 +194,7 @@
  PR_qar_missions5_desc_desc:0 ""
  PR_qar_missions6_desc_title:0 "Consolidate Yemen"
  PR_qar_missions6_desc_desc:0 ""
- #diplomatic setup
- sm_tooltip_mamottoally:0 "We cannot ally the House of Osman."
- sm_tooltip_ottomamally:0 "We cannot ally the Mamluk Sultanate."
- sm_tooltip_mamhunally:0 "We cannot ally the Kingdom of Hungary."
- sm_tooltip_hunmamally:0 "We cannot ally the Mamluk Sultanate."
- sm_tooltip_ottohunally:0 "We cannot ally the Kingdom of Hungary."
- sm_tooltip_hunottoally:0 "We cannot ally the House of Osman."
- sm_tooltip_ottoethally:0 "We cannot ally the Ethiopian Empire."
- sm_tooltip_ethottoally:0 "We cannot ally the House of Osman."
+
 
  #drillmaster
  excellent_drill:0 "Excellent Drill"

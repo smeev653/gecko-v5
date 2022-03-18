@@ -104,11 +104,36 @@ declarewar = {
 		}
 		allow = {
 				FROM = { 
-					OR = {
-						NOT = { tag = SWI }
-						NOT = { is_subject_of = SWI }
+					NOT = {
+						OR = {
+							tag = SWI
+							is_subject_of = SWI
+						}
 					}
 				}
+		}
+	}
+condition = {
+		tooltip = gc_may_not_declare_war_yet_brahsa
+		potential = {
+			OR = { 
+				 tag = HSA
+				 tag = BRA
+			}
+			NOT = { is_year = 1460 }
+			ai = no
+		}
+		allow = {
+			FROM = {
+				NOT = {
+					OR = {
+						tag = BRA
+						tag = HSA 
+						is_subject_of = BRA
+						is_subject_of = HSA
+					}
+				}
+			}
 		}
 	}	
 	condition = {

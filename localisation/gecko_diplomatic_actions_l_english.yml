@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  #diplomatic setup
   sm_tooltip_mamottoally:0 "We cannot ally the House of Osman."
   sm_tooltip_ottomamally:0 "We cannot ally the Mamluk Sultanate."
@@ -13,4 +13,5 @@ l_english:
   gc_may_not_declare_war_yet_papsic:0 "You may not declare war on this nation or their subjects until at least 1455."
   gc_may_not_declare_war_yet_mamorm:0 "You may not declare war on this nation or their subjects until at least 1460."
   gc_may_not_declare_war_yet_mormal:0 "You may not declare war on this nation or their subjects until at least 1460."
+  gc_may_not_declare_war_yet_brahsa:0 "You may not declare war on this nation or their subjects until at least 1460."
  
