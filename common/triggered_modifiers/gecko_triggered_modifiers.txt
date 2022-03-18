@@ -40,34 +40,31 @@ Minor = {
 	potential = {
 	OR = {
 		OR = {
-			tag = MAL
-			tag = YAO
-			}
-		OR = {
             is_part_of_hre = yes
             NOT = {is_great_power = yes}
 		}
 	}	
 			NOT = {total_development = 299}
-			was_player = yes
-	
+			ai = no
+			NOT = { is_emperor = yes }
 		}
 	
 
 	trigger = {
-		
-		NOT = {total_development = 299}
-		was_player = yes
-       	OR = {
-			OR = {
-				tag = MAL
-				tag = YAO
-				}
-			AND = {
-				is_part_of_hre = yes
-				NOT = {is_great_power = yes}
+		OR = {
+			NOT = {total_development = 299}
+			AND = { 
+				NOT = {total_development = 200}
+				num_of_subjects = 0
 			}
-	}
+		}	
+		ai = no
+    #  	OR = {
+	#		AND = {
+	#			is_part_of_hre = yes
+	#			NOT = {is_great_power = yes}
+	#		}
+	#}
 		NOT = { is_emperor = yes }
 	}
 	advisor_cost = -0.2
@@ -129,7 +126,7 @@ We_stand_alone = {
 				was_player = yes
 				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
-				revanchism = 25
+				revanchism = 1
 				had_recent_war = 15
 				OR = { is_bankrupt = yes
 					num_of_loans = 6
@@ -141,7 +138,7 @@ We_stand_alone = {
 	trigger  = {
 				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
-				revanchism = 25
+				revanchism = 1
 				OR = { is_bankrupt = yes 
 					num_of_loans = 19
 				}			
@@ -187,3 +184,61 @@ HRE_backup = {
 	governing_capacity = 400
 	governing_capacity_modifier = 0.15
 }
+
+#HRE_Minor_defense = {
+#	potential = {
+#			NOT  = { is_year = 1465}
+ #           is_part_of_hre = yes
+  #          NOT = {is_great_power = yes}
+	#		NOT = {total_development = 299}
+	#		ai = no
+	#		NOT = { num_of_allies = 2 }
+	#}
+#	
+#
+#	trigger = {
+#		
+#		NOT = {total_development = 299}
+#		ai = no
+#		is_part_of_hre = yes
+#		NOT = {is_great_power = yes}	
+#		NOT = { is_emperor = yes }
+#		defensive_war_with = HAB
+#	}
+#	land_morale = 0.1
+#	discipline = 0.05
+#	land_forcelimit_modifier = 0.2
+#	merc_maintenance_modifier = -0.25
+#	mercenary_cost = -0.25
+#	#mercenary_manpower = 0.5
+#	defensiveness = 0.2
+#	interest = -0.5
+#}
+
+#Hormuz_defense = {
+#	potential = {
+#			NOT  = { is_year = 1460}
+ #           NOT = {is_great_power = yes}
+	#		NOT = {total_development = 299}
+	#		ai = no
+	#		defensive_war_with = MAM
+	#		NOT = { num_of_allies = 2 }
+	#}
+	#
+#
+#	trigger = {
+#		tag = ORM
+#		NOT = {total_development = 299}
+#		ai = no
+#		NOT = {is_great_power = yes}	
+#		defensive_war_with = MAM
+#	}
+#	land_morale = 0.1
+#	discipline = 0.05
+#	land_forcelimit_modifier = 0.2
+#	merc_maintenance_modifier = -0.25
+#	mercenary_cost = -0.25
+#	#mercenary_manpower = 0.5
+#	defensiveness = 0.2
+#	interest = -0.5
+#}
