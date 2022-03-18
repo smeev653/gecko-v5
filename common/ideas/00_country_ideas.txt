@@ -332,7 +332,7 @@ CAS_ideas = {
 
 NED_ideas = {
 	start = {
-		global_sailors_modifier = 0.25
+		discipline = 0.05
 		global_manpower_modifier = 0.25
 	}
 	
@@ -361,7 +361,7 @@ NED_ideas = {
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 1
 		leader_land_fire = 1
-		naval_morale = 0.1
+		global_sailors_modifier = 0.25
 	}
 	embrace_humanism = {
 		tolerance_heretic = 3
