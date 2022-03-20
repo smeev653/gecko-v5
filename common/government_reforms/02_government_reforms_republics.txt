@@ -2052,7 +2052,7 @@ appointment_by_committee_reform = {
 	icon = "politician"
 	allow_normal_conversion = yes
 	modifiers = {
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.00375
 	}
 }
 

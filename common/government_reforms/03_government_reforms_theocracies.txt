@@ -838,7 +838,7 @@ religious_permanent_revolution_reform = {
 	effect = {
 	}
 	modifiers = {
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.00375
 	}
 	ai = {
 		factor = 3

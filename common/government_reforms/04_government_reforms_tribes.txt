@@ -540,7 +540,7 @@ horde_barbaric_despoilers_reform = {
 	}
 	modifiers = {
 		technology_cost = -0.05
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.00375
 	}
 	ai = {
 		factor = 2
