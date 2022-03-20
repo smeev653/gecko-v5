@@ -705,7 +705,7 @@ gc_cagliari_copper = {
 	}
 	trigger = {
 	}
-	trade_goods_size = 5
+	trade_goods_size = 3
 	local_development_cost = -0.25
 }
 
@@ -717,7 +717,7 @@ gc_catanzaro_silk = {
 	}
 	trigger = {
 	}
-	trade_goods_size = 5
+	trade_goods_size = 3
 	local_development_cost = -0.10
 }
 

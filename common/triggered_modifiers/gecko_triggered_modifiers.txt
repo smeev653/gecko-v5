@@ -72,7 +72,7 @@ Minor = {
 	ae_impact = -0.10
 	interest = -0.25
 	global_regiment_cost = -0.05
-	build_cost = -0.05
+	build_cost = -0.1
 }
 
 Decay = {
