@@ -426,13 +426,13 @@ polish_missions_slot_3 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				west_dniepr_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT	}
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
+				#west_dniepr_area = {
+				#	limit = {
+				#		NOT = { is_permanent_claim = ROOT	}
+				#		NOT = { is_core = ROOT	}
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
 				pripyat_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT	}
@@ -440,14 +440,14 @@ polish_missions_slot_3 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				smolensk_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT	}
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-				silesia_area = {
+				#smolensk_area = {
+				#	limit = {
+				#		NOT = { is_permanent_claim = ROOT	}
+				#		NOT = { is_core = ROOT	}
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
+			silesia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -468,6 +468,36 @@ polish_missions_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			livonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			estonia_ingria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			curonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			279 = {
+					add_core = ROOT
+				}
+			2962 = {
+					add_core = ROOT
+				}
+			4539 = {
+					add_core = ROOT
+				}				
 			}
 		}
 	}

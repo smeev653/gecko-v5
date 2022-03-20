@@ -1717,6 +1717,10 @@ country_event = {
 			claim = 100
 			culture = polish
 		}
+		create_union = LIT
+		country_event = {
+			id = flavor_pol.20
+		}
 		set_country_flag = gecko_localnoble
 		if = {
 			limit = {
@@ -1724,10 +1728,51 @@ country_event = {
 			}
 			change_statists_vs_orangists = 1
 		}
+		279 = {
+					cede_province = POL
+				}
+		2962 = {
+					cede_province = POL
+				}		
+		4539 = {
+					cede_province = POL
+				}		
+		4245 = {
+					cede_province = SMO
+				}
+		297 = {
+					cede_province = SMO
+				}
+		293 = {
+					cede_province = SMO
+				}
+		4244 = {
+					cede_province = SMO
+				}
+		4243 = {
+					cede_province = PLT
+				}
+		771 = {
+					cede_province = PLT
+				}
+		4246 = {
+					cede_province = PLT
+				}
+		292 = {
+					cede_province = PLT
+				}
 		LIT = {
-			add_opinion = {
-				who = ROOT
-				modifier = lit_denied_birthright
+			every_core_province = {
+			limit = {
+				OR = {
+					area = smolensk_area
+					area = tver_area
+					area = white_ruthenia_area
+					area = volhynia_area
+				}	
+				NOT = { owned_by = LIT }
+			}
+			remove_core = LIT
 			}
 		}
 	}
