@@ -122,8 +122,7 @@ country_decisions = {
 						region = ural_region
 					}
 				}
-				NOT = { has_country_modifier = free_colonist}
-					
+				NOT = { has_country_modifier = free_colonist}	
 			}
 
 		allow = {
@@ -374,6 +373,7 @@ country_decisions = {
 				NOT = { current_age = age_of_discovery }
 				NOT = { current_age = age_of_reformation }
 				janissary_percentage = 0.2
+				always = no
 			}
 			effect = {
 				set_country_flag = janissary_decadence

@@ -13,7 +13,7 @@ base_manpower = 2
 capital = "Arzni"
 is_city = yes
 extra_cost = 26
-
+add_province_triggered_modifier=transcaucasian_wine_valleys
 discovered_by = eastern
 discovered_by = ottoman
 discovered_by = muslim

@@ -36,6 +36,9 @@ personal_union = {}
 client_vassal = {}
 client_march = {}
 colony = {}
+crown_colony = {}
+private_enterprise = {}
+self_governing_colony = {}
 tributary_state = {}
 
 default = {
@@ -243,6 +246,7 @@ march = {
 	forcelimit_to_overlord = 0.2
 	manpower_bonus = 1.0
 	manpower_to_overlord = 0.15
+
 	is_march = yes
 	forms_trade_companies = no		   
 
@@ -368,7 +372,7 @@ personal_union = {
 	can_have_subjects_of_other_types = yes
 	can_union_break = yes
 	transfer_subjects_when_made = yes
-	can_concentrate_development = no								   
+
 
 	liberty_desire_negative_prestige = 1.0
 	military_focus = 1.5
@@ -527,7 +531,7 @@ crown_colony = {
 }
 
 private_enterprise = {
-copy_from = colony
+	copy_from = colony
 
 	change_colonial_type = yes
 	upgrade_subject_type = yes
@@ -541,7 +545,7 @@ copy_from = colony
 }
 
 self_governing_colony = {
-copy_from = colony
+	copy_from = colony
 
 	change_colonial_type = yes
 	upgrade_subject_type = yes
@@ -560,6 +564,7 @@ tributary_state = {
 	#is_free_or_tributary_trigger
 	copy_from = default
 
+
 	# Triggers:
 	is_potential_overlord = {
 		has_dlc = "Mandate of Heaven"
@@ -568,6 +573,9 @@ tributary_state = {
 		}
 		OR = {
 			has_reform = celestial_empire
+		has_government_attribute = has_tributaries
+			has_country_flag = can_create_tributaries_flag
+			has_country_flag = can_create_tributaries_flag_estate
 			is_nomad = yes
 			religion_group = eastern
 			technology_group = chinese
@@ -590,6 +598,7 @@ tributary_state = {
 	takes_diplo_slot = no
 	base_liberty_desire = -5
 	relative_power_class = 0						
+
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
 	uses_military_focus = no
@@ -680,6 +689,7 @@ tributary_state = {
 		}
 	}
 }
+
 
 # Completely scripted subject type (no code used). Add any number of these. Check common/new_diplomatic_actions for how to make visible in game.
 dummy =

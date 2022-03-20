@@ -22,12 +22,13 @@ aristocracy_ideas = {
 	
 	military_traditions = {
 		mil_tech_cost_modifier  = -0.1
-	}
-	serfdom = {
-		global_manpower_modifier = 0.25
+	}	
+	international_nobility = {
+		land_morale = 0.05
+		discipline = 0.03
 	}
 	local_nobility = {
-		#army_tradition_from_battle = 0.5
+		army_tradition_from_battle = 0.25
 		prestige_from_land = 1
 		nobles_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
@@ -35,8 +36,8 @@ aristocracy_ideas = {
 	noble_resilience = {
 		leader_land_manuever = 2
 	}
-	international_nobility = {
-		land_morale = 0.05
+	serfdom = {
+		global_manpower_modifier = 0.25
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
@@ -54,24 +55,23 @@ plutocracy_ideas = {
 	}
 	bill_of_rights = {
 		infantry_cost = -0.125
-		infantry_fire = 0.1
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
 	}
-	tradition_of_payment = {
-		mercenary_cost = -0.2
-		mercenary_discipline = 0.1
-	}
-	free_merchants = {
-		leader_land_fire = 1
-	}
 	free_subjects = {
 		global_trade_goods_size_modifier = 0.1
 	}
-
+	tradition_of_payment = {
+		mercenary_cost = -0.15
+		mercenary_discipline = 0.03
+	}
 	emancipation = {
 		manpower_recovery_speed = 0.2
+	}
+	free_merchants = {
+		leader_land_fire = 1
+		infantry_fire = 0.1
 	}
 	free_cities = {
 		monarch_military_power = 1
@@ -226,12 +226,6 @@ innovativeness_ideas = {
 
 	ai_will_do = {
 		factor = 2
-		modifier = {
-			factor = 500
-			overlord = {
-				has_idea_group = influence_ideas
-			}
-		}
 	}	
 }
 
@@ -504,7 +498,7 @@ economic_ideas = {
 		global_tax_modifier = 0.15
 	}
 	organised_construction = {
-		build_cost = -0.10
+		build_cost = -0.1
 		build_time = -0.25
 	}
 	national_bank = {
@@ -756,6 +750,7 @@ quality_ideas = {
 
 	bonus = {
 		discipline = 0.05
+		infantry_power = 0.025
 	}
 
 	private_to_marshal = {
@@ -764,9 +759,6 @@ quality_ideas = {
 	quality_education = {
 		army_tradition = 0.5
 	}
-	naval_drill = {
-		global_regiment_recruit_speed = -0.33
-	}
 	finest_of_horses = {
 		drill_gain_modifier = 0.33
 		drill_decay_modifier = -0.1
@@ -774,11 +766,15 @@ quality_ideas = {
 	copper_bottoms = {
 		reserves_organisation = 0.25
 	}
+	naval_drill = {
+		army_tradition_from_battle = 0.25
+	}
+
 	massed_battery = {
 		artillery_power = 0.1
 	}
 	escort_ships = {
-		yearly_army_professionalism = 0.0035
+		yearly_army_professionalism = 0.005
 	}
 	ai_will_do = {
 		factor = 10
@@ -796,10 +792,10 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.33
+		land_forcelimit_modifier  = 0.4
 	}
 	mass_army = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.4
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -884,7 +880,7 @@ administrative_ideas = {
 		advisor_pool = 4
 	}
 	benefits_for_mercenaries = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.15
 		merc_maintenance_modifier = -0.5
 	}
 	adm_adaptability = {
@@ -892,7 +888,7 @@ administrative_ideas = {
 		land_forcelimit = 10
 	}
 	bookkeeping = {
-		interest = -0.5
+		drill_gain_modifier = 0.2
 	}
 	organised_mercenary_recruitment = {
 		expand_administration_cost = -0.75
@@ -900,6 +896,15 @@ administrative_ideas = {
 	}
 	administrative_efficiency_idea = {
 		free_mil_policy = 1
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 1000
+			overlord = {
+				has_idea_group = influence_ideas
+			}
+		}
 	}
 }
 
@@ -972,7 +977,7 @@ influence_ideas = {
 		vassal_forcelimit_bonus = 1
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}	
 }
 

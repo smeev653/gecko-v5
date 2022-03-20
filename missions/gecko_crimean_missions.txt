@@ -30,7 +30,7 @@ gc_cri_branch_1 = {
 
         provinces_to_highlight = {
             OR = {
-				area = podolia_volhynia_area
+				#area = podolia_volhynia_area
 				area = west_dniepr_area
 				area = east_dniepr_area
 				area = chernigov_area
@@ -42,10 +42,10 @@ gc_cri_branch_1 = {
         }
 
         trigger = {
-            podolia_volhynia_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
+            #podolia_volhynia_area = {
+			#	type = all
+			#	country_or_subject_holds = ROOT
+			#}
 			west_dniepr_area = {
 				type = all
 				country_or_subject_holds = ROOT
@@ -184,7 +184,7 @@ gc_cri_branch_2 = {
             OR = {
 				area = azov_area
 				area = simferopol_area
-				area = moldavia_area
+				#area = moldavia_area
 			}
 			NOT = {
 				country_or_subject_holds = ROOT
@@ -200,10 +200,10 @@ gc_cri_branch_2 = {
 				type = all
 				country_or_subject_holds = ROOT
 			}
-			moldavia_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
+			#moldavia_area = {
+			#	type = all
+			#	country_or_subject_holds = ROOT
+			#}
         }
 
         effect = {
@@ -574,9 +574,9 @@ gc_cri_branch_3 = {
 				
 				religion = sunni
 				claim = 100
-				adm = 5
-				dip = 5
-				mil = 6
+				adm = 4
+				dip = 4
+				mil = 5
 			}
 			if = {
 				limit = { has_heir = yes }
@@ -606,7 +606,7 @@ gc_cri_branch_4 = {
         provinces_to_highlight = {
             OR = {
                 area = lower_don_area
-                area = tambov_area
+               #area = tambov_area
                 area = saratov_area
             }
         }
@@ -616,10 +616,10 @@ gc_cri_branch_4 = {
                 type = all
                 country_or_subject_holds = ROOT
             }
-            tambov_area = {
-                type = all
-                country_or_subject_holds = ROOT
-            }
+            #tambov_area = {
+            #    type = all
+            #    country_or_subject_holds = ROOT
+            #}
             saratov_area = {
                 type = all
                 country_or_subject_holds = ROOT
@@ -869,7 +869,7 @@ gc_cri_branch_5 = {
                 area = astrakhan_area
                 area = stavropol_area
                 area = circassia_area
-                area = dagestan_area
+                #area = dagestan_area
             }
             NOT = { country_or_subject_holds = ROOT }
         }
@@ -887,10 +887,10 @@ gc_cri_branch_5 = {
                 type = all
                 country_or_subject_holds = ROOT
             }
-            dagestan_area = {
-                type = all
-                country_or_subject_holds = ROOT
-            }
+            #dagestan_area = {
+            #    type = all
+            #    country_or_subject_holds = ROOT
+            #}
         }
 
         effect = {

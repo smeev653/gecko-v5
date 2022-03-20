@@ -30,6 +30,12 @@ has_mil_advisor = {
 			advisor = recruitmaster
 			advisor = fortification_expert
 			advisor = quartermaster
+			advisor = cavalry_leader
+			advisor = infantry_leader
+			advisor = siege_specialist
+			advisor = gc_inquisitor
+			advisor = gc_arty_officer
+			advisor = gc_drill_master			
 		}
 	}
 }
@@ -45,6 +51,12 @@ has_mil_advisor_2 = {
 			recruitmaster = 2
 			fortification_expert = 2
 			quartermaster = 2
+			cavalry_leader = 2
+			infantry_leader = 2
+			siege_specialist = 2
+			gc_inquisitor = 2
+			gc_arty_officer = 2
+			gc_drill_master = 2	
 		}
 	}
 }
@@ -60,6 +72,12 @@ has_mil_advisor_3 = {
 			recruitmaster = 3
 			fortification_expert = 3
 			quartermaster = 3
+			cavalry_leader = 3
+			infantry_leader = 3
+			siege_specialist = 3
+			gc_inquisitor = 3
+			gc_arty_officer = 3
+			gc_drill_master = 3
 		}
 	}
 }

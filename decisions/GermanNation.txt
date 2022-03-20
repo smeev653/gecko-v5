@@ -13,11 +13,10 @@ country_decisions = {
 
 			culture_group = germanic
 			
-			#gecko - WIP 
-			#OR = {
-			#	tag = NGF
-			#	tag = SGF
-			#}
+			OR = {
+				tag = NGF
+				tag = SGF
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -41,7 +40,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
+			adm_tech = 18
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

@@ -30,16 +30,16 @@ emp_france_missions_1 = {
 		}
 		effect = {
 			add_dip_power = 100	
-			172 = {
-				if = {
-					limit = {	
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}	
-				center_of_trade = 1
-			}
+			#172 = {
+			#	if = {
+			#		limit = {	
+			#			NOT = {
+			#				province_has_center_of_trade_of_level = 3
+			#			}
+			#		}
+			#	}	
+			#	center_of_trade = 1
+			#}
 		}
 	}
 	emp_fra_brest = {
@@ -237,24 +237,10 @@ emp_france_missions_1 = {
 			}
 		}
 		effect = {
-			wallonia_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
-			brabant_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
-			flanders_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
+			add_country_modifier = {
+				name = "lowland_conquest"
+				duration = -1
+			}	
 		}
 	}
 }
@@ -476,13 +462,14 @@ emp_france_missions_1_b = {
 		}
 		}
         effect = {
-            #define_conquistador = {
-             #   shock = 5
-              #  fire = 5
-               # manuever = 6
-                #siege = 3
-                #name = "Jean-Baptiste"
-                #}
+            define_general = {
+					shock = 4
+					fire = 4
+					manuever = 1
+					siege = 3
+					name = "Jean Bureau"
+                }
+
                 add_country_modifier = {
                 name = "defense_of_france"
                 duration = 3650
@@ -641,6 +628,17 @@ emp_france_missions_2 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			6089 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	emp_fra_conquer_picardy_fra = {
@@ -653,6 +651,7 @@ emp_france_missions_2 = {
 				province_id = 89
 				province_id = 88
 				province_id = 1743
+				province_id = 6089
 			}
 			NOT = {
 				owned_by = ROOT
@@ -670,6 +669,9 @@ emp_france_missions_2 = {
 				owned_by = ROOT
 			}
 			1743 = {
+				owned_by = ROOT
+			}
+			6089 = {
 				owned_by = ROOT
 			}
 		}
@@ -1216,6 +1218,8 @@ emp_france_missions_3 = {
 			OR = {
 				area = switzerland_area
 				area = romandie_area
+				area = bern_area
+				area = grisons_area
 				owned_by = SWI
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1231,6 +1235,14 @@ emp_france_missions_3 = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 					romandie_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					bern_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					grisons_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
@@ -1522,6 +1534,20 @@ emp_france_missions_4 = {
 				add_permanent_claim = ROOT
 			}
 			switzerland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			grisons_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

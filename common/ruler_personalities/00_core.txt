@@ -2271,7 +2271,7 @@ infertile_personality = {
 	
 	royal_marriage_acceptance = -20
 	
-	heir_chance = -0.25
+	heir_chance = -2
 	nation_designer_cost = -2
 }
 drunkard_personality = {

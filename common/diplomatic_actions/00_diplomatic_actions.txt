@@ -95,6 +95,132 @@ declarewar = {
 			FROM = { same_continent = ROOT }
 		}
 	}
+	condition = {
+		tooltip = gc_may_not_declare_war_yet_empswi
+		potential = {
+			is_emperor = yes
+			NOT = { is_year = 1465 }
+			ai = no
+		}
+		allow = {
+				FROM = { 
+					NOT = {
+						OR = {
+							tag = SWI
+							is_subject_of = SWI
+						}
+					}
+				}
+		}
+	}
+condition = {
+		tooltip = gc_may_not_declare_war_yet_brahsa
+		potential = {
+			OR = { 
+				 tag = HSA
+				 tag = BRA
+			}
+			NOT = { is_year = 1460 }
+			ai = no
+		}
+		allow = {
+			FROM = {
+				NOT = {
+					OR = {
+						tag = BRA
+						tag = HSA 
+						is_subject_of = BRA
+						is_subject_of = HSA
+					}
+				}
+			}
+		}
+	}	
+	condition = {
+		tooltip = gc_may_not_declare_war_yet_polcrimos
+		potential = {
+			OR = { 
+				 tag = POL
+				 tag = MOS
+				 tag = CRI
+			}
+			NOT = { is_year = 1460 }
+			ai = no
+		}
+		allow = {
+			FROM = {
+				NOT = {
+					OR = {
+						tag = MOS
+						tag = CRI 
+						tag = POL
+						is_subject_of = MOS
+						is_subject_of = CRI 
+						is_subject_of = POL
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = gc_may_not_declare_war_yet_papsic
+		potential = {
+			OR = { 
+				 tag = PAP
+				 tag = SIC
+			}
+			NOT = { is_year = 1455 }
+			ai = no
+		}
+		allow = {
+			FROM = {
+				NOT = {
+					OR = {
+						tag = PAP
+						tag = SIC
+						is_subject_of = PAP
+						is_subject_of = SIC
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = gc_may_not_declare_war_yet_mamorm
+		potential = {
+			tag = MAM
+			NOT = { is_year = 1460 }
+			ai = no
+		}
+		allow = {
+			FROM = { 
+				NOT = {
+					OR = {
+						tag = ORM
+						is_subject_of = ORM
+					}	
+				}
+			}	
+		}
+	}
+	condition = {
+		tooltip = gc_may_not_declare_war_yet_mormal
+		potential = {
+			tag = MOR
+			NOT = { is_year = 1460 }
+			ai = no
+		}
+		allow = {
+			FROM = { 
+				NOT = {
+					OR = {
+						tag = MAL
+						is_subject_of = MAL
+					}	
+				}
+			}
+		}
+	}
 }
 royal_marriage = {
 	condition = {
@@ -151,7 +277,7 @@ integrationaction = {
 			FROM = {
 				has_opinion = {
 					who = ROOT
-					value = 190
+					value = 100
 				}
 			}
 		}
@@ -277,8 +403,23 @@ invite_to_trade_league = {
 
 
 
-
-
+guaranteeaction = {
+	condition = {
+		tooltip = GUARANTEEINVALID
+		potential = {
+		}
+		allow = {
+			alliance_with = FROM
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			FROM = { is_at_war = no }
+		}
+	}
+}
 
 allianceaction = {
 	condition = {
@@ -293,11 +434,12 @@ allianceaction = {
 	condition = {
 		tooltip = h_tooltip_many_allies
 		potential = {
+			ai = yes
 		}
 		allow = {
 			ROOT = {
 				NOT = {
-					num_of_allies = 5
+					num_of_allies = 2
 				}
 			}
 		}
@@ -305,15 +447,81 @@ allianceaction = {
 	condition = {
 		tooltip = h_tooltip_from_many_allies
 		potential = {
+			ai = yes
 		}
 		allow = {
 			FROM = {
 				NOT = {
-					num_of_allies = 5
+					num_of_allies = 2
 				}
 			}
 		}
 	}
+	
+	condition = {
+		tooltip = gc_naples
+		potential = {
+			tag = NAP	
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			always = no
+		}
+	}
+	
+	condition = {
+		tooltip = gc_to_naples
+		potential = {
+			ai = yes
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = NAP				
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = gc_denmark
+		potential = {
+			tag = DAN	
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			always = no
+		}
+	}
+	
+	condition = {
+		tooltip = gc_to_denmark
+		potential = {
+			ai = yes
+			NOT = {
+				is_year = 1450
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = DAN			
+					}
+				}
+			}
+		}
+	}
+	
 	condition = {
 		tooltip = sm_tooltip_mamottoally
 		potential = {
@@ -575,7 +783,10 @@ support_independence_action = {
 	condition = {
 		tooltip = h_tooltip_cn_support
 		potential = {
-			is_colonial_nation = yes
+			OR = {
+				is_colonial_nation = yes
+				ai = yes
+			}	
 		}
 		allow = {
 			always = no

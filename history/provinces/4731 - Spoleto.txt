@@ -1,7 +1,7 @@
 # 4731 - Spoleto
 
-owner = SPL
-controller = SPL
+owner = PAP
+controller = PAP
 culture = umbrian 
 religion = catholic 
 hre = yes
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 1
 capital = "Spoleto" 
 is_city = yes
-add_core = SPL
+add_core = PAP
 
 discovered_by = western
 discovered_by = eastern

@@ -242,6 +242,11 @@ country_event = {
 			}
 			remove_core = ROOT
 		}
+				home_counties_area = {
+						limit = { country_or_non_sovereign_subject_holds = ROOT }
+						add_base_manpower = 2
+						add_base_tax = 2
+					}
 		FRA = {
 			add_opinion = {
 				who = ROOT

@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = piedmontese
 religion = catholic
 technology_group = western
-capital = 4665 # Asti
+capital = 6075 # Asti
 
 
 1391.1.1 = {

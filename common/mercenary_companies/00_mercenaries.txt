@@ -40,7 +40,7 @@ merc_tuscan_free_company = {
 }
 # Morlachs (Lika)
 merc_morlachs = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
 	#cavalry_weight = 0.1
 	#artillery_weight = 0.3
 	cavalry_cap = 2
@@ -74,8 +74,7 @@ merc_black_army = {
 	}
 	cost_modifier = 0.65
 	modifier = {
-		infantry_power = 0.15
-		cavalry_power = 0.10
+		discipline = 0.1
 	}
 }
 
@@ -92,8 +91,7 @@ merc_black_army_2 = {
 	}
 	cost_modifier = 0.65
 	modifier = {
-		infantry_power = 0.15
-		cavalry_power = 0.10
+		discipline = 0.1
 	}
 }
 
@@ -196,10 +194,12 @@ merc_hessian_jaegerkorps = {
     home_province = 1762
 	sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		NOT = { current_age = age_of_discovery }
 		OR = {
 			tag = BRA
 			tag = HES
 			tag = HSA
+			tag = SWI
 		}
 	}
 	modifier = {
@@ -217,10 +217,8 @@ merc_bascoli = {
     home_province = 173
 	sprites = { dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
     trigger = {
-		OR = {
-			culture_group = french
-			culture_group = iberian
-		}	
+			tag = FRA
+
 		current_age = age_of_discovery
 	}
 	modifier = { 
@@ -515,7 +513,7 @@ merc_bukhara_band = {
 # Mesopotamian Mamluks
 merc_mesopotamian_mamluks = {
     regiments_per_development = 0.05
-    cavalry_weight = 0.6
+    cavalry_weight = 1
     #artillery_weight = 0.2
 	#cavalry_cap = 6
 	home_province = 410
@@ -536,7 +534,7 @@ merc_mesopotamian_mamluks = {
 # Nile Mamluks
 merc_nile_mamluks = {
     regiments_per_development = 0.05
-    cavalry_weight = 0.6
+    cavalry_weight = 1
     #artillery_weight = 0.2
 	#cavalry_cap = 6
     home_province = 361
@@ -562,7 +560,7 @@ merc_nile_mamluks = {
 
 merc_delhi_mamluks = {
     regiments_per_development = 0.05
-    cavalry_weight = 0.6
+    cavalry_weight = 1
     #artillery_weight = 0.2
 	#cavalry_cap = 6
     home_province = 522
@@ -794,6 +792,7 @@ merc_frisian_free_company = {
 			any_owned_province = {
 				OR = {
 					area = frisia_area
+					area = east_frisia_area
 					area = weser_area
 				}
 			}
@@ -856,7 +855,7 @@ merc_moorish_battalion = {
 }
 
 merc_maghreb_raiders = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
 	cavalry_weight = 0.8
     #artillery_weight = 0.1
 	#cavalry_cap = 6
@@ -895,7 +894,7 @@ merc_miquelet_company = {
 
 
 merc_free_swiss_guard = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
     home_province = 165 # Bern
 	cost_modifier = 1
 	sprites = { westerngfx_sprite_pack }
@@ -907,8 +906,8 @@ merc_free_swiss_guard = {
 					area = romandie_area
 				}
 			}
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
+			#has_country_modifier = mercenaries_to_the_standard
+			#has_country_modifier = glut_of_mercs
 		}
 		NOT = { tag = PAP }
 	}
@@ -1010,7 +1009,7 @@ merc_gascon_musket_company = {
 merc_tyrolean_guard = {
     regiments_per_development = 0.1
     home_province = 134
-	cost_modifier = 1.25
+	cost_modifier = 0.75
 	sprites = { dlc053_hab_sprite_pack dlc029_hab_sprite_pack hab_base_sprite_pack }
     trigger = {
 		is_emperor = yes
@@ -1023,12 +1022,12 @@ merc_tyrolean_guard = {
 
 
 merc_swiss_canton_mercenaries = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
 	home_province = 165
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		tag = SWI
-		mission_completed = emp_swi_mercenaries
+		mission_completed = swi_reislaufer
 	}
 	cost_modifier = 0.75
 	modifier = {

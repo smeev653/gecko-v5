@@ -65,6 +65,7 @@ feudalism = {
 					culture = mbundu
 					culture = songhai
 					culture = mali
+					culture = bilala
 					culture = uzbehk
 					culture = khazak
 					culture = siberian

@@ -98,45 +98,23 @@ dlh_east_missions = {
 		required_missions = { }
 		completed_by = 1486.1.1
 		provinces_to_highlight = {
-			OR = {
-				area = katehar_area
-				province_id = 524
-				province_id = 2063
-				province_id = 2059
-				province_id = 4497
-				province_id = 523
-				province_id = 4495
+		
 			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
+
+		
 		trigger = {
-			katehar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			524 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2063 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2059 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4497 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			523 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4495 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			army_size_percentage = 1
+			num_of_generals = 1
 		}
 		effect = {
 			lower_doab_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			sirhind_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}

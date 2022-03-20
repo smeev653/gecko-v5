@@ -50,6 +50,9 @@
  the_motherland_calls:0 "The Motherland Calls"
  gc_cagliari_copper:0 "Cagliari Copper"
  gc_catanzaro_silk:0 "Catanzaro Silk"
+ conquest_of_copenhagen:0 "Conquest of Copenhagen"
+ conquest_of_amsterdam:0 "Conquest of Amsterdam"
+ caliph_of_cairo:0 "Seat of the Caliph of Cairo"
 
  #Advisor Event modifiers
  gc_arty_officer_delayed:0 "Arty Officer Delayed"
@@ -107,11 +110,14 @@
 
  france_united:0 "France United"
  desc_france_united:0 "We have united the French lands much to betterment of our armies"
+ lowland_conquest:0 "Conquest of Flanders"
+ desc_lowland_conquest:0 "We have re-integrated the lands of Flanders into our realm permanently. Show the rest of Europe our Elan!"
 
  #Ottoman Missions
 
  caliphate_proclaimed:0 "Caliphate Proclaimed"
  desc_caliphate_proclaimed:0 "Our control over the holy sites and destruction of the Mamluke Sultanate mean that we can claim the title of Caliph for the first time since the great Muslim empires."
+ defense_of_anatolia:0 "Defense of Anatolia"
 
  #Portugal
  cape_trade_established:0 "Cape City Established"
@@ -147,3 +153,6 @@
 
 #sicily
  norman_legacy:0 "Norman Legacy"
+
+#austria
+ HRE_backup:0 "Legacy of Emperorship"

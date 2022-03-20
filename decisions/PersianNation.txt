@@ -275,8 +275,8 @@ country_decisions = {
 				
 				religion = shiite
 				claim = 100
-				adm = 6
-				dip = 5
+				adm = 5
+				dip = 4
 				mil = 5
 				}							
 			if = {
@@ -298,7 +298,7 @@ country_decisions = {
 				}
 			add_country_modifier = {
 				name = "persia_united"
-				duration = 7300
+				duration = 1825
 			}
 			if = {
 				limit = { has_estate_privilege = estate_burghers_indebted_to_burghers }
@@ -425,8 +425,8 @@ country_decisions = {
 				
 				religion = shiite
 				claim = 100
-				adm = 6
-				dip = 5
+				adm = 5
+				dip = 4
 				mil = 5
 				}							
 			if = {
@@ -448,7 +448,7 @@ country_decisions = {
 				}
 			add_country_modifier = {
 				name = "persia_united"
-				duration = 7300
+				duration = 1825
 			}
 			if = {
 				limit = { has_estate_privilege = estate_burghers_indebted_to_burghers }

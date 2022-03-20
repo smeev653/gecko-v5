@@ -448,11 +448,15 @@ trade_company_lubeck = {
 	color = { 190 70 70 }
 	
 	provinces = {
-		12 13 14 15 44 45 46 53 54 55 1775 1857 1874 1981 1983 1984  2996 4141 4142 4149
-		4749 4771 4772 4786
+		12 13 14 15 44 45 46 53 54 55 1775 1857 1874 1981 1983 1984 2996 4141 4142 4149
+		 4771 4772
 		47 4745 2994 1858 #vorpommern #smeev
 		48 4746 2995 #hinterpommern #smeev
-		5004 5003 5007 5005 5006
+		#Scandinavia Rework
+		#Denmark
+		5003 5004 5005 5006 5007
+		#4775 2972 82
+		6177 6168 6167 6166 6165 6164 6161 6160 6159 #gc germany
 	}
 	
 	# Specific
@@ -497,11 +501,15 @@ trade_company_english_channel = {
 		243 1860 1861 4370 4376 #east_midlands_area
 		233 234 4130 4373 4374 #wessex_area
 		235 236 237 238 4371 #home_counties_area
-		92 95 98 99 2974 #netherlands & brabant_area
+		92 95 98 99 2974 1866 93 #netherlands & brabant_area
 		96 97 4383 #holland_area
 		100 1931 4381 4382 #frisia_area
-		90 1744 1865 #flanders_area
+		90 1744 1865 91 #flanders_area
 		4769 4770 1742
+		6187 6190 6189 6188 6191
+		94 6090 181 #wallonia_area
+		6089 87 88 89 1743 #picardy_area #smeev
+		6203 6202 6201 6200 6199 6197 6196 
 	}
 	
 	# Specific
@@ -545,10 +553,11 @@ trade_company_sevilla = {
 	color = { 57 160 101 }
 	
 	provinces = {
-		206 207 208 1746 215 216 231 232 1293 217 218 219 221 222 223 224 225 226 227 228 229 230 367 1745 1747 1748 1749 1851 2754 2755 2751 4150 
+		206 207 208 1746 215 216 231 232 1293 217 218 219 221 222 223 224 225 226 227 228 229 230  367 1745 1747 1748 1749  1851 2754 2755 2751 4150 
 		4546 4547 4548 4551 4552 4553 4554 4555 4556 4558
 		 368 366 4565 4787 4788 4789
 		209 210 2989 #basque_country #smeev
+		6195 6194 6193 6181 #gc iberia
 	}
 	
 	# Specific
@@ -609,6 +618,7 @@ trade_company_valencia = {
 		220 1750 4549 4550 #valencia_area
 		211 214 2990 4557 #aragon_area
 		333 4559 4560 # Baleares
+	    6192 #gc iberia
 	}
 	
 	# Specific
@@ -627,16 +637,16 @@ trade_company_champagne = {
 	provinces = {
 		182 183 185 4388 #ile_de_france_area
 		179 184 4776 # Orleans area
-		181 186 4390 #champagne_area
+		 186 4390 #champagne_area
 		187 188 189 #lorraine_area
 		191 192 193 1877 4392 #bourgogne_area
 		167 168 1879 4385 #normandy_area #smeev
 		169 170 171 172 4384 #brittany_area #smeev
 		4764 4766 
-		91 93 94 1866 #wallonia_area
+
 		177 178 4389 #loire_area #smeev
-		87 88 89 1743 #picardy_area #smeev
-		6093 6092 6091 6090 6089 6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
+
+		6093 6092 6091  6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
 	}
 	
 	# Specific
@@ -711,11 +721,17 @@ trade_company_rheinland = {
 	color = { 114 171 184 }
 	
 	provinces = {
-		56 77 78 79 80 81 82 83 84 85 86 1760 1761 1876 1878 2973 2975 2972 1762 66 67 
-		4718 4715 4716 4717 71 69
-		4767 4768 4774 4775
-		49 50 57 62 63 1758 51 60 61  1759 1763 52 58 59 2964 2965 2971 2969 2993
-		4741 4742 4743 4744 4747 4748 4773 4778
+		 78  80 81 83 84 85 1760 1876 1878 2975 1762 
+		  
+		4768 4774 
+		49 50 62 63 51 60 61 1759 1763 52 58 59 2964 2965 2969 2993
+		4741 4742 4743 4744 4747 4748 4778
+		4775 2972 82
+		69 86 56 2973
+		4716
+		2971 1758 57 4773 #braunschweig
+		6163 6162 4749 4786	6179 6178 #gc germany
+		4718 79 66 67 4717
 	}
 	
 	# Specific
@@ -750,18 +766,20 @@ trade_company_wien = {
 	color = { 220 220 220 }
 	
 	provinces = {
-		64 65 76 128 132 133 134 1757 1770 1863 2955 2956 2957 68 1868 70 1872 73 110 1768
-		4707 4708 4709 4710 4711 4712 4713
-		4758 4759 4760 4761 4762 # Austria 1.30
+		73 4758 110 1768 #Tirol
+		134 4762 4761 133 1770 #Austria proper
+		128 4759 132 1863 #unterkärnten
+		6105 4724 2970 6104 #Hradecko
 		265 4237 4726 6106 # Moravia
-		4714 72 74 #baden #smeev
-		75 4765 1880 #alsace #smeev
-		1873 4722 1870 166 1869 #switzerland #smeev
-		165 1867 1871 4721 4720 #romandie_area #smeev
-		266 4724 4725 2968 2970 6102 #bohemia #smeev
+		266 4725 2968 6103 6102  #bohemia 
 		267 2967 1771 6101 #erzgebirge #smeev
-		129 1769 4751 #krain
-		6103 6104 6105 
+		1769 129 4751 #Krain
+		6180 6182 6186 
+		6184 6183 6185 #gc bavaria
+		2955 4708 65 4707 #uppper bavaria
+		4709 4760 76 #eastern bavaria
+		64 2957 1757 2956 #lower bavaria
+		
 	}
 	
 	# Specific
@@ -888,7 +906,7 @@ trade_company_constantinople = {
 		323 324 2301 4307 #karaman_area #smeev
 		332 2303 4310 #dulkadir_area #smeev
 		331 2305 330 #erzurum #smeev
-		418 2306 2307 4295 4296 #north_kurdistan_area
+		418 2306 2307 4295 4296 4302 #north_kurdistan_area
 		2308 
 		6115 6116 6117
 	}
@@ -1248,7 +1266,7 @@ trade_company_persia = {
 		6138 6136 6135 6134 6133 6142 
 		430 2219 2223 4332  #persian_gulf_coast
 		431 2999 4327 #mogostan_area
-		6154 6153 6152 6151 6150 6149 6148 6147 6146 6145 6144 6157 6156 6155 6140
+		6154 6153 6152 6151  6149 6148 6146 6145 6144 6157 6156 6155 6140
 	}
 
 	# Specific
@@ -1270,7 +1288,7 @@ trade_company_caucasus = { #smeev mod
 		2196 2204 4303 #samtskhe_area
 		425 2198 2199 2208 4306 #dagestan_area
 		421 4299 4305 4340 #shirvan_area
-		419 420 2202 2205 4302 #armenia_area
+		419 420 2202 2205  #armenia_area
 		6010 #circassia #smeev 
 		6139 6141
 		
@@ -1283,6 +1301,31 @@ trade_company_caucasus = { #smeev mod
 		name = "TRADE_COMPANY_caucasus_Near_East_Trade_Company"
 	}
 }
+
+trade_company_south_germany = {
+	color = {
+		255 146 0
+	}
+	
+	provinces = { 
+		4712 4713 70 #West Swabia
+		68 1872 4711 1868 4710 #East Swabia
+		4714 72 74 #baden #smeev
+		75 4765 1880 #alsace #smeev
+		1873 4722 1870 166 1869 #switzerland #smeev
+		165 1867 1871 4721 4720 #romandie_area #smeev
+		4767 1761 77 4715 71
+		6171 6172 6173 6174 6175 6176 6169 6170 #gc switzerland
+	}
+	names = {
+		name = "TRADE_COMPANY_south_germany_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_south_germany_Near_East_Trade_Company"
+	}
+}
+
+
 
 trade_company_siberia = {
 	color = { 147 96 77 }

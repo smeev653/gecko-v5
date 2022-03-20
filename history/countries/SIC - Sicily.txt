@@ -1,10 +1,10 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = theocracy
+add_government_reform = holy_state_reform
 technology_group = western
 religion = catholic
 primary_culture = sicilian
 capital = 124	
-
+elector = yes
 
 1429.11.19 = {
 	monarch = { 
@@ -12,10 +12,12 @@ capital = 124
 		dynasty = "d'Aragó"
 		birth_date = 1429.11.19
 		dip = 4
-		mil = 6
+		mil = 4
 		adm = 5
 		female = yes
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
 }
 
 1713.4.12 = {

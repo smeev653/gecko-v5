@@ -103,6 +103,7 @@ andalusia_slot_1_missions = {
 					OR = {
 						area = lower_andalucia_area
 						area = upper_andalucia_area
+						area = cordoba_area
 					}
 					OR = {
 						NOT = { owned_by = ROOT }
@@ -127,6 +128,11 @@ andalusia_slot_1_missions = {
 				religion = ROOT
 			}
 			upper_andalucia_area = {
+				type = all
+				owned_by = ROOT
+				religion = ROOT
+			}
+			cordoba_area = {
 				type = all
 				owned_by = ROOT
 				religion = ROOT
@@ -402,6 +408,13 @@ granada_slot_2_missions = {
 				add_permanent_claim = ROOT
 			}
 			lower_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cordoba_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

@@ -285,17 +285,19 @@ mam_north_missions = {
 			change_adm = 1
 			change_dip = 1
 			change_mil = 1
-			anatolia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			unlock_estate_privilege = {
 				estate_privilege = estate_mamluks_recruit_turkmen
 			}
-		
+			TUR = {
+				every_owned_province = {
+					limit = {
+						region = anatolia_region
+						NOT = { is_core = root }
+						NOT = { is_permanent_claim = root }
+					}
+					add_core = root
+				}
+			}
 		}
 	}
 	gc_consolidate_asia_minor = {

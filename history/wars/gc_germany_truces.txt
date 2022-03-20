@@ -1,0 +1,35 @@
+
+name = "Austrian - Munich War"
+war_goal = {
+    type = take_claim
+    casus_belli = cb_conquest
+	province = 65 
+}
+# War start date
+1443.1.1 = {
+	add_attacker = HAB
+	add_attacker = MLO
+	add_defender = UBV
+	add_defender = PSS
+	add_defender = SLZ
+	add_defender = ING
+	add_defender = LBV
+	add_defender = AUG
+	add_defender = SWI
+	add_defender = KNZ
+	add_defender = TTL
+}
+# War end date
+1444.11.10 = {
+    rem_attacker = HAB
+	rem_attacker = MLO
+	rem_defender = UBV
+	rem_defender = PSS
+	rem_defender = SLZ
+	rem_defender = ING
+	rem_defender = LBV
+	rem_defender = AUG
+	rem_defender = SWI
+	rem_defender = KNZ
+	rem_defender = TTL
+}

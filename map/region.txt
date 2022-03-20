@@ -28,6 +28,7 @@ france_region = {
 		poitou_area
 		orleans_area
 		cahors_area
+
 	}
 }
 
@@ -61,12 +62,15 @@ scandinavia_region = {
 
 low_countries_region = {
 	areas = {
-		wallonia_area
+
 		flanders_area
 		holland_area
 		frisia_area
 		brabant_area
 		north_brabant_area
+		wallonia_area
+		picardy_area
+		east_frisia_area
 	}
 
 }
@@ -116,6 +120,8 @@ north_german_region = {
 		mecklenburg_area
 		braunschweig_area
 		lusatia_area
+		berlin_area
+		lubeck_area
 	}
 }
 
@@ -128,6 +134,8 @@ south_german_region = {
 		austria_proper_area
 		inner_austria_area
 		switzerland_area
+		grisons_area
+		bern_area
 		lower_bavaria_area
 		upper_bavaria_area
 		east_bavaria_area
@@ -146,6 +154,7 @@ south_german_region = {
 		erzgebirge_area
 		hradecko_area
 		moravia_area
+		outer_austria_area
 	}
 }
 
@@ -203,6 +212,7 @@ iberia_region = {
 		galicia_area
 		baleares_area
 		extremadura_area
+		cordoba_area
 	}
 }
 
@@ -225,6 +235,7 @@ british_isles_region = {
 		connacht_area
 		leinster_area
 		ulster_area
+		oxford_area
 	}
 }
 
@@ -365,6 +376,7 @@ mashriq_region = {
 		#trans_jordan_area
 		syrian_desert_area
 		aleppo_area
+		shahrizor_area
 	}
 }
 
@@ -397,11 +409,7 @@ persia_region = {
 		teheran_area
 		kerman_area
 		persian_gulf_coast
-		tabriz_area
-		ardabil_area
-		urmia_area
 		khuzestan_area
-		shahrizor_area
 		mogostan_area
 		birjand_area
 		astrabad_area
@@ -431,6 +439,9 @@ caucasia_region = {
 		imereti_area
 		samtskhe_area
 		kartli_kakheti_area
+		tabriz_area
+		ardabil_area
+		urmia_area
 	}
 }
 

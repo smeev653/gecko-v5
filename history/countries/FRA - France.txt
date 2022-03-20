@@ -81,13 +81,12 @@ change_estate_land_share = {
 	monarch = {
 		name = "Charles VII"
 		dynasty = "de Valois"
-		birth_date = 1403.2.22
+		birth_date = 1413.2.22
 		adm = 4
 		dip = 2
 		mil = 4
 	}	
 	clear_scripted_personalities = yes
-	add_ruler_personality = careful_personality
 	add_ruler_personality = inspiring_leader_personality
 	
 	queen = {
@@ -103,28 +102,11 @@ change_estate_land_share = {
     }
 }
 
-#1423.7.3 = {
-#	heir = {
-#		name = "Louis"
-#		monarch_name = "Louis XI"
-#		dynasty = "de Valois"
-#		birth_date = 1423.7.3
-#		death_date = 1483.8.30
-#		claim = 95
-#		adm = 4
-#		dip = 3
-#		mil = 2
-#	}
-#	clear_scripted_personalities = yes
-#	add_heir_personality = intricate_web_weaver_personality
-#	add_ruler_personality = inspiring_leader_personality
-#	add_ruler_personality = well_advised_personality
-#	add_queen_personality = zealot_personality
-#}
+
 
 #1425.1.1 = { leader = {	name = "Arthur de Richemont"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1457.9.23 } }
 
-1427.1.1 = { leader = {	name = "Jean de Dunois"		type = general	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1468.11.24 } }
+#1427.1.1 = { leader = {	name = "Jean de Dunois"		type = general	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1468.11.24 } }
 
 1429.1.1 = { leader = {	name = "Gilles de Rais"		type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1435.1.1 } }
 
@@ -132,23 +114,37 @@ change_estate_land_share = {
 
 #1435.1.1 = { leader = { name = "Jean de Xaintrailles" 	type = general	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1461.10.7 } }
 
-1439.1.1 = {
-	leader = {
-		name = "Jean Bureau"
-		type = general
-
-		fire = 4
-		shock = 4
-		manuever = 1
-		siege = 3
-		death_date = 1463.7.5
-		personality = defensive_planner_personality
+#1439.1.1 = {
+#	leader = {
+#		name = "Jean Bureau"
+#		type = general
+#
+#		fire = 4
+#		shock = 4
+#		manuever = 1
+#		siege = 3
+#		death_date = 1463.7.5
+#		personality = defensive_planner_personality
+#	}
+#}
+1443.10.2 = {
+	heir = {
+		name = "Charles"
+		monarch_name = "Charles VIII"
+		dynasty = "de Valois"
+		birth_date = 1443.10.2
+		death_date = 1498.4.7
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 6
 	}
 }
-
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_french_strong_duchies
 }
+
+
 
 1455.1.1 = { add_army_professionalism = 0.1 }
 
@@ -178,59 +174,11 @@ change_estate_land_share = {
 	add_queen_personality = calm_personality
 }
 
-1470.6.30 = {
-	heir = {
-		name = "Charles"
-		monarch_name = "Charles VIII"
-		dynasty = "de Valois"
-		birth_date = 1470.6.30
-		death_date = 1498.4.7
-		claim = 95
-		adm = 4
-		dip = 2
-		mil = 6
-	}
-}
+
 
 1475.8.29 = { set_country_flag = had_end_of_HYW_france }
 
 1477.1.6 = { add_accepted_culture = burgundian }
-
-1483.8.30 = {
-	monarch = {
-		name = "Charles VIII"
-		dynasty = "de Valois"
-		birth_date = 1470.6.30
-		adm = 4
-		dip = 2
-		mil = 6
-	}
-	heir = {
-		name = "Louis"
-		monarch_name = "Louis XII"
-		dynasty = "de Valois"
-		birth_date = 1462.6.27
-		death_date = 1515.1.1
-		claim = 95
-		adm = 5
-		dip = 3
-		mil = 2
-	}
-	queen = {
-		country_of_origin = BRI
-		name = "Anne"
-		dynasty = "de Dreux"
-		birth_date = 1477.1.25
-		death_date = 1514.1.9
-		female = yes
-		adm = 4
-		dip = 3
-		mil = 2
-	}
-	clear_scripted_personalities = yes
-	add_queen_personality = fertile_personality
-	add_heir_personality = calm_personality
-}
 
 1488.7.27 = { leader = { name = "Louis de la Trémoille"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1525.2.24 } }
 

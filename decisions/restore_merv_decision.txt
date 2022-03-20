@@ -5,7 +5,7 @@ restore_merv = {
 			OR = {
 				tag = BUK
 				tag = TIM
-				tag = TRS
+				#tag = TRS
 			}
 			owns = 445
 			NOT = { capital = 445 }
@@ -20,7 +20,7 @@ restore_merv = {
 			OR = {
 				tag = BUK
 				tag = TIM
-				tag = TRS
+				#tag = TRS
 			}
 		}
 		effect = {

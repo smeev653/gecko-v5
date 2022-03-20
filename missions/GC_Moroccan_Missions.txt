@@ -70,7 +70,7 @@ gc_morocco_1 = {
 	}
 	gc_mor_saharan_route = {
 		icon = mission_saharan_route
-		required_missions = { }
+		required_missions = { gc_mor_imperial_cities }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -944,6 +944,13 @@ gc_morocco_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			cordoba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			221 = {
 				if = {
 					limit = {
@@ -1126,6 +1133,7 @@ gc_morocco_5 = {
 		provinces_to_highlight = {
 			OR = {
 				area = lower_andalucia_area
+				area = cordoba_area
 				province_id = 221
 				province_id = 4547
 				province_id = 218
@@ -1135,6 +1143,10 @@ gc_morocco_5 = {
 		
 		trigger = {
 			lower_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cordoba_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

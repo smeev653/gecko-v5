@@ -364,28 +364,32 @@ orleans_area = {
 ########################################
 
 wallonia_area = {  #4
-	 93 94 1866 6090 181 
+	  94 6090 181 1866 93
 }
 
 holland_area = { #4
 	96 97 98 4383
 }
 
-flanders_area = {  #3
-	90 1865 4769 91
+flanders_area = {    #3
+	90  4769 91 6197 6196
 }
 
-frisia_area = { #5
-	99 100 1931 4381 4382
+frisia_area = {  #5
+	99  4381 6201 
 }
 
-brabant_area = { #3
+east_frisia_area = {
+	1931 4382 100 6202
+}
+
+brabant_area = {  #3
 	color = { 118 193 153 }
-	92 1744 2974
+	92 1744  6200 6199 1865
 }
 
-north_brabant_area = { #3
-	95 4770 1742
+north_brabant_area = {  #3
+	95 4770 1742 6203 2974
 }
 
 ########################################
@@ -400,16 +404,19 @@ catalonia_area = { #5
 	197 212 213 2987 2988
 }
 
-valencia_area = { #5
+valencia_area = { 6192  #5
 	220 1750 4549 4550
 }
 
 lower_andalucia_area = { #5
-	224 225 1748 1749 4548
+	224 1749 4548 6194
 }
 
-upper_andalucia_area = { #4
-	222 223 226 4546
+cordoba_area = {
+1748 225 6195
+}
+upper_andalucia_area = {    #4
+	222 223 226 4546 6193
 }
 
 castille_area = { #5
@@ -462,7 +469,7 @@ macaronesia_area = { #3
 # Italy					 			   #
 ########################################
 
-lombardy_area = { #5
+lombardy_area = {  #5
 	104 1862 4740 6078 105
 }
 
@@ -604,14 +611,18 @@ east_midlands_area = { #3
 }
 
 wessex_area = { #5
-	233 234 4130 4373 4374
+	233 4130 4373 4374 6191
 }
 
 home_counties_area = { #4
-	235 236 237 4371 
+	235 236  4371 6189 234
 }
 
-east_anglia_area = { #3
+oxford_area = { 
+  6190   6188 237
+}
+
+east_anglia_area = { 6187  #3
 	238 1860 4370
 }
 
@@ -1023,15 +1034,15 @@ south_saxony_area = { #4
 
 upper_bavaria_area = { #4
 	color = { 180 220 220 }
-	65 2955 4707 4708
+	65  4707 4708 6183 6185
 }
 
 lower_bavaria_area = { #4
-	64 1757 2956 2957
+	 1757 2956 2957 6184 2955
 }
 
 east_bavaria_area = { #3
-	76 4760 4709
+	76 4760 4709 64
 } 
 
 lower_swabia_area = { #3 (West Swabia)
@@ -1040,15 +1051,15 @@ lower_swabia_area = { #3 (West Swabia)
 
 franconia_area = { #4 (Lower Franconia)
 	color = { 121 49 117 }
-	4718 4715 71 79
+	 4715 71 4711
 }
 
 upper_franconia_area = { #4
-	66 67 4716 4717
+	66 67 4717
 }
 
 upper_swabia_area = { #4 (East Swabia)
-	68 1868 4711 1872
+	68 1868  1872 4710
 }
 
 northern_saxony_area = { #4 (Saxe-Altmark)
@@ -1057,45 +1068,61 @@ northern_saxony_area = { #4 (Saxe-Altmark)
 }
 
 thuringia_area = { #3
-	63 2965 4743
+	63 2965 4743 4716
 }
 
 neumark_area = { #3
 	color = { 234 232 44 }
-	49 2969 4747
+	49 2969 4747 6179 6178
 }
 
 mittelmark_area = { #5
-	50 51 1759 4748 2993
+	51 1759 4748 4749 4786
+}
+
+berlin_area = {   
+	6163 6162 50 2993
 }
 
 vorpommern_area = { #4
 	47 2994 4745 1858 
 }
 
-hinter_pommern_area = { #3
+hinter_pommern_area = {     6177  #3
 	48 2995 4746
 }
 
 tirol_area = { #5
-	73 110 1768 4710 4758
+	73 110 1768 4758
 }
 
-austria_proper_area = { #5
+austria_proper_area = {  #5
 	color = { 213 40 40 }
-	133 134 1770 4761 4762
+	 134 1770  4762 6182   6180  
 }
 
 inner_austria_area = { #4
 	128 132 1863 4759
 }
 
-switzerland_area = { #4
-	166 1869 1870 1873 4722
+outer_austria_area = {
+ 133 6186 4761
 }
 
-romandie_area = { #3
-	165 1867 1871 4720 4721
+switzerland_area = {     #4
+	166 1869 1870 6174 6173 
+}
+
+romandie_area = {  #3
+	 6171 1867 1871 4720 
+}
+
+grisons_area = {
+ 4722 1873 6176 6172 6175 
+}
+
+bern_area = {
+ 165 6169 4721 6170 
 }
 
 upper_rhineland_area = { #3 # now 'Baden'
@@ -1119,7 +1146,7 @@ lower_rhineland_area = { #4
 }
 
 westphalia_area = { #3 (South Westphalia)
-	82 2972 4775
+	82 2972 4775 81 1762 
 }
 
 north_westphalia_area = { #4
@@ -1127,7 +1154,7 @@ north_westphalia_area = { #4
 }
 
 hesse_area = { #5
-	81 1762 1876 4774 78
+	 1876 4774 78 4718 79
 }
 
 braunschweig_area = { #4
@@ -1139,15 +1166,18 @@ weser_area = { #4
 }
 
 holstein_area = { #3
-	5005 13 1775 4141 
+	5005 13 1775 4141 6166
 }
 
+lubeck_area = {
+	6168 6167 6165 6164 45
+}
 lower_saxony_area = { #4
-	44 53 1857 4772
+	44 53 1857 4772 
 }
 
-mecklenburg_area = { #5
-	45 46 2996 4749 4786
+mecklenburg_area = {   #5
+	 46 2996 6161 6160 6159
 }
 
 ########################################

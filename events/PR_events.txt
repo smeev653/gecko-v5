@@ -10,23 +10,8 @@ country_event = {
     title = "PR_events.1.t"
     desc = "PR_events.1.d"
     picture = COURT_eventPicture
-
-    trigger = {
-        OR = {
-            tag = MOR
-            tag = SON
-            tag = ZAN
-            tag = ETH
-			tag = MAM
-        }
-        NOT = { 
-			has_country_flag = PR_discover_africa_flag
-		}
-    }
-	
-    mean_time_to_happen = {
-        days = 90
-    }
+	is_triggered_only = yes
+ 
 	
     immediate = {
 		hidden_effect = {

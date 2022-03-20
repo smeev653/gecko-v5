@@ -4650,6 +4650,12 @@ refused_to_reduce_opinion_favor = {
 	yearly_decay = 5
 }
 
+refused_to_break_alliance_favor = {
+	opinion = -10
+	min = -50
+	yearly_decay = 5
+}
+
 refused_to_give_gold_for_favors = {
 	opinion = -100
 	yearly_decay = 5

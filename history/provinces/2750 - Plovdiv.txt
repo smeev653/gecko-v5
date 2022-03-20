@@ -5,13 +5,13 @@ controller = TUR
 culture = bulgarian
 religion = orthodox
 capital = "Plovdiv"
-trade_goods = grain
+trade_goods = salt
 hre = no
 base_tax = 4 
 base_production = 4
 base_manpower = 2
 is_city = yes
-fort_15th = yes
+#fort_15th = yes
 add_core = TUR
 add_core = BUL
 

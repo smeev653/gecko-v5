@@ -9,11 +9,13 @@ war_goal = {
 1443.1.1 = {
 	add_attacker = ETH
 	add_defender = MAM
+	add_defender = ORM
 }
 # War end date
 1444.11.10 = {
     	rem_attacker = ETH
 	rem_defender = MAM
+	rem_defender = ORM
 }
 
 name = "Mamluk - Otto War"

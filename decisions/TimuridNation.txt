@@ -134,8 +134,8 @@ country_decisions = {
 				religion = sunni
 				claim = 100
 				adm = 4
-				dip = 5
-				mil = 6
+				dip = 4
+				mil = 5
 				}
 			persia_region = {
 				limit = {

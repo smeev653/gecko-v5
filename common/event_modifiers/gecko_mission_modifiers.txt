@@ -1,6 +1,6 @@
 hungary_unleashed = {
-	ae_impact = -0.50
-	province_warscore_cost = -0.2
+	ae_impact = -0.2
+	province_warscore_cost = -0.1
 }
 
 rule_britannia = {
@@ -18,7 +18,7 @@ burgundy_subjects_placated = {
 }
 
 succesful_bid_for_imperial_crown = {
-	#ae_impact = -0.1
+	ae_impact = -0.2
 	province_warscore_cost = -0.1
 }
 
@@ -123,9 +123,12 @@ cape_trade_established = {
 }
 
 france_united = {
-	discipline = 0.05
+	fire_damage = 0.20
 }
-
+lowland_conquest = {
+	artillery_fire = 0.5
+	production_efficiency = 0.2
+}
 caliphate_proclaimed = {
 	fire_damage = 0.20
 }	
@@ -213,7 +216,7 @@ bedouins_pacified = {
 }
 
 spa_rb_italian_ambition_mod = {
-	artillery_fire = 0.25
+	artillery_fire = 0.5
 	galley_power = 0.25
 }
 
@@ -239,7 +242,7 @@ empowered_junkers = {
 
 turks_defeated = {
 	global_monthly_devastation = -1
-	interest = -0.5
+	interest = -0.75
 	reduced_liberty_desire = 25
 	inflation_reduction = 0.5
 }
@@ -247,11 +250,11 @@ turks_defeated = {
 mamluks_subjugated = {
 	global_monthly_devastation = -1
 	inflation_reduction = 0.5
-	interest = -0.25
+	interest = -0.5
 }
 
 hun_supreme_black_army = {
-	mercenary_discipline = 0.10
+	mercenary_discipline = 0.05
 	core_creation = -0.1
 }
 
@@ -306,6 +309,17 @@ defense_of_france = {
 	mercenary_cost = -0.25
 	mercenary_manpower = 0.5
 }
+
+defense_of_anatolia = {
+	land_morale = 0.05
+	discipline = 0.05
+	land_forcelimit_modifier = 0.1
+	merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.25
+	#mercenary_manpower = 0.5
+	defensiveness = 0.2
+	interest = -0.5
+}	
 
 eth_coptic_offense = {
 	land_morale = 0.05

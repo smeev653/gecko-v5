@@ -155,7 +155,7 @@ emp_hab_empire_branch = {
 				OR = {
 					AND = {
 						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							value = 30
+							value = 10
 							continent = europe
 						}
 						is_part_of_hre = yes
@@ -166,6 +166,7 @@ emp_hab_empire_branch = {
 		}
 		trigger = {
 			is_emperor = yes
+			imperial_influence = 40
 			OR = {
 				hre_reform_passed = emperor_privilegia_de_non_appelando
 				AND = {
@@ -177,7 +178,7 @@ emp_hab_empire_branch = {
 								NOT = { is_subject_of = ROOT }
 								is_part_of_hre = yes
 								num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-									value = 30
+									value = 20
 									continent = europe
 								}
 							}
@@ -197,7 +198,7 @@ emp_hab_empire_branch = {
 			add_dip_power = 50
 			add_country_modifier = {
 				name = hab_ascendancy_in_empire
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
@@ -536,7 +537,7 @@ emp_hab_prestige_branch = {
 		icon = balance_the_estates
 		required_missions = {  }
 		trigger = {
-			crown_land_share = 30
+			crown_land_share = 0
 			if = {
 				limit = {
 					has_estate = estate_nobles
@@ -633,7 +634,7 @@ emp_hab_prestige_branch = {
 				ROOT = {
 					NOT = {
 						development_in_provinces = {
-							value = 180 #start:122
+							value = 150 #start:122
 							culture = austrian
 						}
 					}
@@ -669,6 +670,26 @@ emp_hab_prestige_branch = {
 				name = hab_prosperity_windfall
 				duration = 7300
 			}
+			krain_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			inner_austria_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			outer_austria_area= {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			austria_proper_area= {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}
+			tirol_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+					add_base_manpower = 1
+				}			
 		}
 	}
 	
@@ -1173,7 +1194,7 @@ emp_hab_german_expansion_branch_2 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					area = mittelmark_area
+					area = berlin_area
 					NOT = { country_or_non_sovereign_subject_holds = root }
 				}
 				AND = {
@@ -1188,7 +1209,7 @@ emp_hab_german_expansion_branch_2 = {
 			}
 			OR = {
 				NOT = {
-					mittelmark_area = {
+					berlin_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = root
 					}
@@ -1256,7 +1277,7 @@ emp_hab_german_expansion_branch_2 = {
 					exists = BRA
 				}
 				OR = {
-					mittelmark_area = {
+					berlin_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = root
 					}
@@ -1318,7 +1339,7 @@ emp_hab_german_expansion_branch_2 = {
 				}
 			}
 			else = {
-				mittelmark_area = {
+				berlin_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = root
 				}
@@ -1430,6 +1451,20 @@ emp_hab_western_expansion_branch = {
 				}
 				add_permanent_claim = root
 			}
+			bern_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			grisons_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
 			upper_swabia_area = {
 				limit = {
 					NOT = { is_core = root }
@@ -1464,6 +1499,8 @@ emp_hab_western_expansion_branch = {
 					OR = {
 						area = romandie_area
 						area = switzerland_area
+						area = bern_area
+						area = grisons_area
 					}
 					NOT = { country_or_non_sovereign_subject_holds = root }
 					ROOT = {
@@ -1473,6 +1510,8 @@ emp_hab_western_expansion_branch = {
 								OR = {
 									area = romandie_area
 									area = switzerland_area
+									area = bern_area
+									area = grisons_area
 								}
 							}
 						}
@@ -1490,6 +1529,8 @@ emp_hab_western_expansion_branch = {
 				OR = {
 					area = romandie_area
 					area = switzerland_area
+					area = bern_area
+					area = grisons_area
 				}
 			}
 			OR = {

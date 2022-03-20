@@ -17,7 +17,7 @@ silk_road_empire = { #tier 1
 		
 	}
 	government_abilities = {
-		feudal_theocracy_mechanic
+		tribal_federation_mechanic
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -127,7 +127,7 @@ empire_of_hungary_reform = {
 			have_had_reform = empire_of_hungary_reform
 		}
 		tag = HUN
-		religion = catholic
+		#religion = catholic
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.15

@@ -336,6 +336,7 @@ gc_spain_2 = {
 			OR = {
 				area = upper_andalucia_area
 				area = lower_andalucia_area
+				area = cordoba_area
 			}
 			NOT = { culture = ROOT }
 		}
@@ -348,6 +349,10 @@ gc_spain_2 = {
 			lower_andalucia_area = {
 				type = all
 				culture = ROOT
+			}
+			cordoba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -1424,6 +1429,13 @@ gc_spain_4_b = {
 					}
 					add_permanent_claim = ROOT
 				}
+				oxford_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 				east_anglia_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -1467,6 +1479,7 @@ gc_spain_4_b = {
 				area = east_midlands_area
 				area = west_midlands_area
 				area = yorkshire_area
+				area = oxford_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1493,6 +1506,10 @@ gc_spain_4_b = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			yorkshire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oxford_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1732,6 +1749,13 @@ gc_spain_5_b = {
 				add_claim = ROOT
 			}
 			frisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			east_frisia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

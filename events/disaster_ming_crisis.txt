@@ -670,3 +670,90 @@ country_event = {
 		}
 	}
 }
+
+# Ming falls apart!
+country_event = {
+	id = ming_crisis.11
+	title = "ming_crisis.11.t"
+	desc = "ming_crisis.11.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			superregion = china_superregion
+			any_core_country = {
+				NOT = { tag = ROOT }
+				NOT = { tag = CSH }
+				NOT = { tag = WUU }
+				NOT = { tag = YUE }
+				exists = no
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					superregion = china_superregion
+					any_core_country = {
+						NOT = { tag = ROOT }
+						NOT = { tag = CSH }
+						NOT = { tag = WUU }
+						NOT = { tag = YUE }
+						exists = no
+					}
+				}
+				save_event_target_as = ming_disaster_nationalist_province
+				random_core_country = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { tag = CSH }
+						NOT = { tag = WUU }
+						NOT = { tag = YUE }
+						exists = no
+					}
+					save_event_target_as = ming_disaster_new_tag
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ming_crisis.11.a
+		ai_chance = { factor = 1 }
+		add_mandate = 5
+		event_target:ming_disaster_new_tag = {
+			event_target:ming_disaster_nationalist_province = {
+				spawn_rebels = {
+					type = nationalist_rebels
+					friend = PREV
+					size = 5
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ming_crisis.11.a
+		ai_chance = { factor = 1 }
+		add_mandate = -5
+		event_target:ming_disaster_nationalist_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_local_autonomy = 10
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

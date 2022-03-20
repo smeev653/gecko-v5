@@ -517,13 +517,13 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = gecko.102.a
-		add_country_modifier = {
-			name = h_swedish_ga_pa_doctrine
-			duration = 5475
-		}
-	}
+	#option = {
+	#	name = gecko.102.a
+	#	add_country_modifier = {
+	#		name = h_swedish_ga_pa_doctrine
+	#		duration = 5475
+	#	}
+	#}
 	
 	option = {
 		name = gecko.102.b

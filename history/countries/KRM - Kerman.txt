@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = persian
 religion = shiite
 technology_group = muslim
-capital = 432 # Kerman
+capital = 2220
 religious_school = ismaili_school
 
 1504.1.1 = {

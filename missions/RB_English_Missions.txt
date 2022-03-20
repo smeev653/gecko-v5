@@ -50,6 +50,9 @@ eng_british_naval_conq = {
 			226 = {
 				add_permanent_claim = ROOT
 			}
+			5004 = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }
@@ -71,14 +74,14 @@ eng_rb_gibraltar = {
 	}
 	has_country_shield = yes
 	
-	eng_rb_take_gibraltar = {
+	gc_eng_rb_take_gibraltar = {
 		icon = mission_rb_take_gibraltar
 		required_missions = { eng_mighty_navy }
 		completed_by = 1713.4.11
 		position = 2
 		
 		provinces_to_highlight = {
-			province_id = 226
+			province_id = 5004
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -96,7 +99,7 @@ eng_rb_gibraltar = {
 		}
 		
 		trigger = {
-			226 = {
+			5004 = {
 				owned_by = ROOT
 			}
 		}
@@ -106,10 +109,8 @@ eng_rb_gibraltar = {
 				name = "eng_rb_gibraltar_mod"
 				duration = 5475
 			}
-			4559 = {
-				add_permanent_claim = ROOT
-			}
-			corsica_sardinia_area = {
+			
+			denmark_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -139,7 +140,7 @@ eng_rb_islands_med = {
 	
 	eng_rb_take_baleares = {
 		icon = mission_rb_increase_our_reach
-		required_missions = { eng_rb_take_gibraltar }
+		required_missions = {  }
 		position = 3
 		
 		provinces_to_highlight = {

@@ -77,8 +77,8 @@ conquest_of_constantinople = {
 	}
 
 
-	land_morale = 0.05
-	prestige = 0.5
+	infantry_power = 0.10
+	global_tax_modifier = 0.05
 	
 	#Province scope
 	on_activation = {
@@ -97,12 +97,7 @@ conquest_of_paris = {
 
 	trigger = {
 		owner = {
-			OR = {
-				tag = BUR
-				tag = ENG
-				tag = GBR
-				tag = LOT
-			}
+			NOT = { tag = FRA }
 		}
 		controlled_by = ROOT
 	}
@@ -258,38 +253,38 @@ conquest_of_delhi = {
 	}
 }	
 
-conquest_of_kiev = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-				tag = MOS
-				tag = RUS
-				tag = CRI
-				tag = UKR
-				tag = POL
-				tag = PLC
-				tag = HET
-			}
-		}
-		controlled_by = ROOT
-	}
-
-	land_morale = 0.05
-	prestige = 0.5
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
+#conquest_of_kiev = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		owner = {
+#			OR = {
+#				tag = MOS
+#				tag = RUS
+#				tag = CRI
+#				tag = UKR
+#				tag = POL
+#				tag = PLC
+#				tag = HET
+#			}
+#		}
+#		controlled_by = ROOT
+#	}
+#
+#	land_morale = 0.05
+#	prestige = 0.5
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}
 
 conquest_of_cairo = {
 	potential = {
@@ -319,6 +314,34 @@ conquest_of_cairo = {
 	}
 }
 
+caliph_of_cairo = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+				tag = MAM 
+				tag = EGY 
+				tag = TUR 
+				}
+			}
+		controlled_by = ROOT	
+		}	
+
+	land_morale = 0.025
+	years_of_nationalism = -5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
 conquest_of_fez = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -460,7 +483,7 @@ the_motherland_calls = {
 conquest_of_sarai = {
 	potential = {
 		OR = {
-			culture_group = altaic
+			tag = KHA
 			culture_group = tartar
 		}	
 	}
@@ -468,7 +491,7 @@ conquest_of_sarai = {
 	trigger = {
 		owner = {
 			OR = {
-			culture_group = altaic
+			tag = KHA
 			culture_group = tartar
 		}
 		}	
@@ -538,32 +561,32 @@ conquest_of_tabriz = {
 	
 	}
 }
-#conquest_of_samarkand = {
-#	potential = {
-#		normal_or_historical_nations = yes
-#	}
-#
-#	trigger = {
-#		owner = {
-#				NOT = { tag = TRS }
-#				NOT = { tag = BUK }
-#				NOT = { tag = TIM }
-#			}
-#		controlled_by = ROOT	
-#		}	
-#
-#	land_morale = 0.05
-#	prestige = 0.5
-#	
-#	#Province scope
-#	on_activation = {
-#	
-#	}
-#	
-#	on_deactivation = {
-#	
-#	}
-#}
+conquest_of_samarkand = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = TRS }
+				NOT = { tag = BUK }
+				NOT = { tag = TIM }
+			}
+		controlled_by = ROOT	
+		}	
+
+	land_morale = 0.05
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
 
 conquest_of_pest = {
 	potential = {
@@ -590,7 +613,30 @@ conquest_of_pest = {
 	
 	}
 }
+conquest_of_copenhagen = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
 
+	trigger = {
+		owner = {
+				NOT = { tag = DAN }
+			}
+		controlled_by = ROOT	
+	}	
+
+	discipline = 0.03
+	ship_durability = 0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
 
 
 conquest_of_herat = {
@@ -658,12 +704,6 @@ gc_cagliari_copper = {
 		has_global_flag = gc_cagliari_copper
 	}
 	trigger = {
-		owner = {
-			OR = {
-				culture_group = sicilian
-				culture_group = sardinian
-			}
-		}
 	}
 	trade_goods_size = 5
 	local_development_cost = -0.25
@@ -676,13 +716,30 @@ gc_catanzaro_silk = {
 		has_global_flag = gc_catanzaro_silk
 	}
 	trigger = {
-		owner = {
-			OR = {
-				culture_group = sicilian
-				culture_group = sardinian
-			}
-		}
 	}
-	trade_goods_size = 2
+	trade_goods_size = 5
 	local_development_cost = -0.10
 }
+
+#conquest_of_amsterdam = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	trigger = {
+#		controlled_by = ROOT
+#	}
+#
+#
+#	global_trade_power = 0.1
+#	trade_efficiency = 0.1
+#	
+#	#Province scope
+#	on_activation = {
+#	
+#	}
+#	
+#	on_deactivation = {
+#	
+#	}
+#}

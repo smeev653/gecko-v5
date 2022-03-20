@@ -1,0 +1,17 @@
+﻿l_english:
+ #diplomatic setup
+  sm_tooltip_mamottoally:0 "We cannot ally the House of Osman."
+  sm_tooltip_ottomamally:0 "We cannot ally the Mamluk Sultanate."
+  sm_tooltip_mamhunally:0 "We cannot ally the Kingdom of Hungary."
+  sm_tooltip_hunmamally:0 "We cannot ally the Mamluk Sultanate."
+  sm_tooltip_ottohunally:0 "We cannot ally the Kingdom of Hungary."
+  sm_tooltip_hunottoally:0 "We cannot ally the House of Osman."
+  sm_tooltip_ottoethally:0 "We cannot ally the Ethiopian Empire."
+  sm_tooltip_ethottoally:0 "We cannot ally the House of Osman."
+  gc_may_not_declare_war_yet_empswi:0 "You may not declare war on the Swiss Confederation or it's subjects until at least 1465."
+  gc_may_not_declare_war_yet_polcrimos:0 "You may not declare war on this nation or their subjects until at least 1460."
+  gc_may_not_declare_war_yet_papsic:0 "You may not declare war on this nation or their subjects until at least 1455."
+  gc_may_not_declare_war_yet_mamorm:0 "You may not declare war on this nation or their subjects until at least 1460."
+  gc_may_not_declare_war_yet_mormal:0 "You may not declare war on this nation or their subjects until at least 1460."
+  gc_may_not_declare_war_yet_brahsa:0 "You may not declare war on this nation or their subjects until at least 1460."
+ 

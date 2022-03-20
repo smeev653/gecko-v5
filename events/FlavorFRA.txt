@@ -117,8 +117,8 @@ country_event = {
 
 	option = {			# Time to build a stronger nation
 		name = "flavor_fra.EVTOPTA3104"
-		add_stability_or_adm_power = yes
-		add_adm_power = 50
+		#add_stability_or_adm_power = yes
+		add_adm_power = 175
 	}
 }
 
@@ -1665,15 +1665,14 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		always = no
 		tag = ENG
 		is_subject = no
 		exists = FRA
 		NOT = { alliance_with = FRA }
 		NOT = { war_with = FRA }
 		NOT = { is_year = 1450 }
-		NOT = { truce_with = FRA }
-		177 = {
+		#NOT = { truce_with = FRA }
+		1879 = {
 			OR = {
 				owned_by = ENG
 				owner = {
@@ -1684,7 +1683,7 @@ country_event = {
 		FRA = {
 			is_subject = no
 		}
-		is_year = 1445
+		is_year = 1444
 	}
 	
 	mean_time_to_happen = {
@@ -1697,14 +1696,30 @@ country_event = {
 			factor = 25
 		}
 		tooltip = {
-			177 = {
-				cede_province = FRA
-			}
+				1879 = {
+					cede_province = FRA
+					hidden_effect = { add_local_autonomy = -90 }
+				}
+				4385 = {
+					cede_province = FRA
+				}
+				168 = {
+					cede_province = FRA
+				}
+				6081 = {
+					cede_province = FRA
+				}
+				6082 = {
+					cede_province = FRA 
+				}
+				167 = {
+					cede_province = FRA
+				}	
 			add_truce_with = FRA
 		}
 		FRA = { country_event = { id = flavor_fra.8 } }
-		add_prestige = -10
-		add_stability = -1
+		#add_prestige = -10
+		#add_stability = -1
 		set_country_flag = rb_gave_up_maine
 	}
 	option = {
@@ -1755,16 +1770,16 @@ country_event = {
 				casus_belli = cb_restore_personal_union
 			}
 		}
-		177 = {
-			change_controller = FRA
-		}
+		#177 = {
+		#	change_controller = FRA
+		#}
 	}
 	option = {
 		name = "flavor_fra.7.b" #Unpopular but preserves the peace?
 		ai_chance = {
 			factor = 1
 		}
-		add_prestige = -10
+		#add_prestige = -10
 		FROM = {
 			add_truce_with = ROOT
 		}
@@ -1810,9 +1825,29 @@ country_event = {
 			}
 		}
 		add_truce_with = FROM
-		177 = {
+		1879 = {
 			cede_province = FRA
-			hidden_effect = { add_local_autonomy = -50 }
+			hidden_effect = { add_local_autonomy = -90 }
+		}
+		4385 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -90 }
+		}
+		168 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -90 }
+		}
+		6081 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -90 }
+		}
+		6082 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -90 }
+		}
+		167 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -90 }
 		}
 	}
 }

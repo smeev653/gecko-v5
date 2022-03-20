@@ -132,19 +132,19 @@ eng_british_conquest_ire = {
 		trigger = {
 			munster_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			connacht_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			ulster_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			leinster_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
@@ -183,10 +183,8 @@ eng_british_conquest_scotland = {
 				area = lowlands_area
 				province_id = 250
 				province_id = 4363
-				province_id = 4364
 				province_id = 252
 				province_id = 4110
-				province_id = 253
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -198,16 +196,11 @@ eng_british_conquest_scotland = {
 			4363 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			4364 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+
 			252 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			4110 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			253 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			lowlands_area = {
@@ -237,6 +230,20 @@ eng_british_conquest_scotland = {
 				}
 				370 = {add_claim = ROOT }
 				371 = {add_claim = ROOT }
+				western_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+				eastern_norway = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 			}
 		}
 	

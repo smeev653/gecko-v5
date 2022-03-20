@@ -37,6 +37,9 @@ NGame = {
 
 NDiplomacy = {
 
+	--RIVAL_TRUST_EQUILIBRIUM = 30,
+	--NORMAL_TRUST_EQUILIBRIUM = 50,
+	--SUBJECT_TRUST_EQUILIBRIUM = 70,
 	MIN_MONTHLY_COST_FOR_INFLUENCE_NATION = 2.084,
 	ESTATE_DISLIKE_ALLIANCE_ON_VC = -0.2,
 	HEGEMONY_LOST_DAYS = 7300,
@@ -52,6 +55,14 @@ NDiplomacy = {
 
 	PRESS_SAILORS_FRACTION = 0.2,
 
+	--DEMAND_UNLAWFUL_TERRITORY_BASE_DESIRE = 100,
+	--DEMAND_UNLAWFUL_TERRITORY_DEPENDENCY_DESIRE = -100,
+	--DEMAND_UNLAWFUL_TERRITORY_ALLIANCE_DESIRE = -80,
+	--DEMAND_UNLAWFUL_TERRITORY_TARGET_AT_WAR_DESIRE = 0,
+	--DEMAND_UNLAWFUL_TERRITORY_RIVALRY_DESIRE = 100,
+	--DEMAND_UNLAWFUL_TERRITORY_DESIRE_OPINION_MODIFIER = -1,
+	--DEMAND_UNLAWFUL_TERRITORY_DESIRE_TRUST_MODIFIER = -1,
+	--DEMAND_UNLAWFUL_TERRITORY_DESIRE_AE_MODIFIER = -1,
 
 	TREASURE_FLEET_OPINION_HIT = -25,				-- Opinion hit from pirating trasure flet max (scaled by gold pirated / 50).
 	DISHONORABLE_PEACE_MONTHS = 0,					-- See DISHONORABLE_PEACE_WARSCORE. Set to 0 to entirely disable the feature.
@@ -107,16 +118,16 @@ NDiplomacy = {
 	OVEREXTENSTION_POLL_BASE = 365,				-- days between at lower.
 	OVEREXTENSTION_POLL_CHANGE = 0.05,				-- each % reduces with this.
 	RIVAL_PEACE_COST_REDUCTION = -0.33,
-	MAX_PEACE_TREATY_COST = 50,					-- in diplo power
-	DESIRED_NUM_OF_ELECTORS = 7,
+	MAX_PEACE_TREATY_COST = 100,					-- in diplo power
+	DESIRED_NUM_OF_ELECTORS = 5,
 	MAX_NUM_OF_ELECTORS = 8,						-- Maximum number of electors in the interface
-	MAX_FREE_CITIES = 12,
+	MAX_FREE_CITIES = 13,
 	MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE = 2,		-- Limit is inclusive.
-	HRE_PRINCE_AUTHORITY_THRESHOLD = 25,			-- Threshold below which you lose IA, and above which you gain it
+	HRE_PRINCE_AUTHORITY_THRESHOLD = 15,			-- Threshold below which you lose IA, and above which you gain it
 	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.075,			-- Scales to threshold
 	HRE_FOREIGN_CONTROL_PENALTY = -0.005,			-- Each foreign-controlled province in the empire (owned or vassalised) lowers IA by this amount
 	HRE_HERETIC_PENALTY = -0.01,					-- Per heretic prince (halved by Peace of Westphalia)
-	LACK_OF_ELECTORS_HIT = -0.1,					-- Also applied to vassalized electors
+	LACK_OF_ELECTORS_HIT = -0.05,					-- Also applied to vassalized electors
 	JOIN_HRE_DEVELOPMENT_CAP_VASSAL = 200,			-- Max cap of development of vassals to join the empire
 	IMPERIAL_REFORM_COST = 50,						-- Minium Cost of enacting a new reform.
 	CELESTIAL_EMPIRE_REFORM_COST = 70,				-- Mandate cost of enacting a new reform for the Emperor of China.
@@ -223,8 +234,8 @@ NDiplomacy = {
 	AE_PRIMITIVES = -0.75, -- less AE from primitives
 
 	-- Peace Option Effects, base values for the winner. The loser gets the inverse.
-	PO_DEMAND_PROVINCES_AE = 0.75, 				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
-	PO_RETURN_CORES_AE = 0.5, 					-- (Per core, only applied if returning cores to vassals of winner)
+	PO_DEMAND_PROVINCES_AE = 0.6, 				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
+	PO_RETURN_CORES_AE = 0.4, 					-- (Per core, only applied if returning cores to vassals of winner)
 	PO_FORM_PU_AE = 0.20, 							-- _DDEF_PO_FORM_PU_AE = 10, (Per development)
 	PO_CONCEDE_COLONIAL_AE = 0.2,
 	PO_BECOME_VASSAL_AE = 0.5, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
@@ -369,11 +380,11 @@ NDiplomacy = {
 	CELESTIAL_EMPIRE_MANDATE_FROM_DEFENDING = 5,	-- How much Mandate is gained when successfully defending the Emperor title.
 	CELESTIAL_EMPIRE_MANDATE_PER_5_LOANS = -0.36,	-- Yearly change of Mandate for every 5 loans.
 
-	REMOVE_ELECTORATE_INFLUENCE_COST = 10,			-- The amount of IA Remove Electorate costs.
+	REMOVE_ELECTORATE_INFLUENCE_COST = 0,			-- The amount of IA Remove Electorate costs.
 	GRANT_ELECTORATE_INFLUENCE = 0,					-- The amount of AI Grant Electorate gives.
 	GRANT_FREECITY_INFLUENCE = 0,					-- The amount of IA Grant Free Gity gives.
-	REMOVE_FREECITY_INFLUENCE_COST = 5,				-- The amount of IA Grant Free Gity costs.
-	IMPERIAL_CITY_IA = 0.005,						-- Monthly per imperial free city
+	REMOVE_FREECITY_INFLUENCE_COST = 0,				-- The amount of IA Grant Free Gity costs.
+	IMPERIAL_CITY_IA = 0.02,						-- Monthly per imperial free city
 
 	AGITATE_FOR_LIBERTY_DESIRE = 25,				-- Liberty Desire gained due to ongoing agitation.
 	AGITATE_FOR_LIBERTY_RATE = 1,					-- Monthly rate at which Liberty Desire rises towards the maximum during agitation, or otherwise falls towards zero.
@@ -443,7 +454,7 @@ NDiplomacy = {
 	KNOWLEDGE_SHARING_COST_PERCENT_MONTHLY = 10.0,
 	SCORNFUL_INSULT_PRESTIGE_COST = 5.0,
 	
-	CHANGE_COLONIAL_TYPE_COST = 1000,
+	CHANGE_COLONIAL_TYPE_COST = 500,
 
 	CHARTER_COMPANY_BASE_COST = 1000,
 	CHARTER_COMPANY_MINIMUM_COST = 100,
@@ -544,10 +555,10 @@ NCountry = {
 	EMBRACE_INSTITUTION_COST = 2.5,				-- 2.5 per development (autonomy modified)
 	MAXIMUM_CONDOTTIERI = 20,					-- Base number of units you can rent out
 	CORRUPTION_COST = 0.05,						-- cost for monthly combat per development
-	STATE_MAINTENANCE_DEV_FACTOR = 0.007,		-- per dev
-	STATE_MAINTENANCE_DISTANCE_FACTOR = 0.001,	-- distance
+	STATE_MAINTENANCE_DEV_FACTOR = 0.008,		-- per dev
+	STATE_MAINTENANCE_DISTANCE_FACTOR = 0.002,	-- distance
 	STATE_MAINTENANCE_CONTINENT_FACTOR = 0.25,	-- different continet
-	STATE_MAINTENANCE_CULTURE_FACTOR = 0.25,		-- non accepted culture
+	STATE_MAINTENANCE_CULTURE_FACTOR = 0.5,		-- non accepted culture
 
 	ALLOW_ZERO_BASE_VALUES = 0,						-- Affects base tax, base manpower, and base production
 
@@ -598,8 +609,8 @@ NCountry = {
 
 	PRESTIGE_GAIN_FOR_GOV_RANK_2 = 10,			-- Prestige gained on upgrading to government rank 2
 	PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25,			-- Prestige gained on upgrading to government rank 3
-	MIN_PRESTIGE_FOR_GOV_RANK_2 = 50,			-- Required prestige to to upgrade to government rank 2
-	MIN_PRESTIGE_FOR_GOV_RANK_3 = 50,			-- Required prestige to to upgrade to government rank 3
+	MIN_PRESTIGE_FOR_GOV_RANK_2 = 1,			-- Required prestige to to upgrade to government rank 2
+	MIN_PRESTIGE_FOR_GOV_RANK_3 = 25,			-- Required prestige to to upgrade to government rank 3
 	MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 300,		-- Need at least this much development to upgrade to government rank 2
 	MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 1000,		-- Need at least this much development to upgrade to government rank 3
 
@@ -609,7 +620,7 @@ NCountry = {
 	MAX_GOV_RANK = 3,									-- Max possible is 10
 
 
-	PARLIAMENT_BACKING_PERCENTAGE = 50,			-- average percent of seats backing an issue (0-100)
+	PARLIAMENT_BACKING_PERCENTAGE = 40,			-- average percent of seats backing an issue (0-100)
 	PARLIAMENT_ISSUE_DURATION = 10,				-- in years
 	PARLIAMENT_DEBATE_DURATION = 5,				-- in years
 	NUM_PARLIAMENT_ISSUES = 10,
@@ -643,7 +654,7 @@ NCountry = {
 	SUPPORT_OWN_HEIR_SUPPORT_BONUS = 5,
 	ELECTIVE_HEIR_CLAIM_STRENGTH = 80,
 	MAX_ACTIVE_POLICIES = 5,						-- how many active policies at once.
-	MINIMUM_POLICY_TIME = 5,						-- how many years minimum for a policy
+	MINIMUM_POLICY_TIME = 1,						-- how many years minimum for a policy
 	POLICY_COST = 1,								-- Monthly cost per policy
 	BASE_POSSIBLE_POLICIES = 3,						-- How many policies in a category a nation can have as a base
 	BASE_FREE_POLICIES = 1,							-- How many policies in a category a nation get for free
@@ -669,7 +680,7 @@ NCountry = {
 	GREAT_PROJECT_MONEY_CONSTRUCTION_BOOST_AMOUNT_IN_DAYS = 730, --how far throwing cash at the problem gets you
 	GREAT_PROJECT_MOVE_COST_PER_DAY = 3, --how much to move a great project for one day
 	COUNTRIES_GETTING_SCORE = 10,
-	LAND_FORCELIMIT_EXTRA_COST_FACTOR = 1.5,			-- extra expense for being above forcelimit
+	LAND_FORCELIMIT_EXTRA_COST_FACTOR = 2,			-- extra expense for being above forcelimit
 	NAVAL_FORCELIMIT_EXTRA_COST_FACTOR = 0.125,			-- extra expense for being above forcelimit
 	REPUBLICAN_TRADITION_YEARLY_INCREASE = 1,		-- how much it increases each year.
 	PIETY_PERCENTAGE_AT_NEW_RULER = 1,			-- percentage of piety kept at new ruler.
@@ -687,7 +698,7 @@ NCountry = {
 	CULTURE_COST_DIFF_ORIGINAL = -50,				-- Difference in cost in percent to convert to original culture.
 	CULTURE_COST_DIFF_ADJACENT = -25,				-- Difference in cost in percent to convert to adjacent culture.
 	CULTURE_COST_DIFF_PRIMARY = 0,					-- Difference in cost in percent to convert to primary culture.
-	CULTURE_MIN_DEVELOPMENT_TO_PROMOTE = 10,		-- Minimum development required to promote the culture.
+	CULTURE_MIN_DEVELOPMENT_TO_PROMOTE = 5,		-- Minimum development required to promote the culture.
 	MONARCH_DEATH_STABILITY_PENALTY = 1,			-- Stab hit on monarch death
 	MONARCH_DEATH_LEADER_STABILITY_PENALTY = 0,		-- Stab hit on monarch death when a leader
 	MONARCH_DEATH = 4, 								-- _CDEF_MONARCH_DEATH_
@@ -722,7 +733,7 @@ NCountry = {
 	PS_BUY_CONQUISTADOR = 50,
 	PS_BUY_EXPLORER = 50,
 	PS_ASSAULT = 0,
-	PS_ARTILLERY_BARRAGE = 75,
+	PS_ARTILLERY_BARRAGE = 25,
 	PS_NAVAL_BARRAGE = 15,
 	PS_ADD_TRIBAL_LAND = 100,
 	PS_ADD_TRIBAL_LAND_EXTRA_COST_PER_PROVINCE = 10,
@@ -750,7 +761,7 @@ NCountry = {
 	PS_HARSH_TREATMENT_REDUCE = 30,
 	PS_GARRISON_SORTIES = 25,
 	PS_REDUCE_WAREXHAUSTION = 75,
-	PS_FACTION_BOOST = 10,
+	PS_FACTION_BOOST = 5,
 	PS_RAISE_TARIFFS = 50,
 	PS_LOWER_TARIFFS = 25,
 	PS_RAISE_WAR_TAXES = 2,	-- Monthly Cost
@@ -852,7 +863,7 @@ NCountry = {
 	MISSION_CANCEL_CHOOSE_NEXT_DELAY = 1,			-- How many years until you can choose a new mission after a cancel
 	MONTHS_TO_CORE_MAXIMUM = 240,					-- Maximum amount of months it will take to core a province after all modifiers.
 	MONTHS_TO_CORE_MINIMUM = 6,						-- Minimum amount of months it will take to core a province after all modifiers.
-	MONTHS_TO_CORE = 24,							-- How many months it will take to core a province.
+	MONTHS_TO_CORE = 36,							-- How many months it will take to core a province.
 	MONTHS_TO_CHANGE_CULTURE = 7.5,					-- How many months it will take to change culture in a province, per development.
 	RELEASED_NATION_ARMY_SIZE = 0.5,				-- Newly released nations get an army of this size
 	STARTING_ARMY_SIZE = 0.75,						-- Percentage of force limit
@@ -929,6 +940,7 @@ NCountry = {
 	SIPHON_INCOME_FRACTION = 0.5,
 	SIPHON_INCOME_LIBERTY = 10,
 	DIVERT_TRADE_FRACTION = 1,
+	--PERCENTAGE_OF_YEARLY_INCOME_FOR_FAVOURS = 0.15,
 	MONTHS_OF_RESOURCES_FOR_FAVOURS = 6,
 	RETURN_LAND_LIBERTY_MULTIPLIER = 2.5,
 	COT_DOWNGRADE_LIBERTY_DESIRE = 10,
@@ -947,9 +959,11 @@ NCountry = {
 	SUPPORT_LOYALISTS_LIBERTY = -20,
 	SEND_OFFICERS_LIBERTY = -10,
 	DIVERT_TRADE_LIBERTY = 30,
-	PROMOTE_INVESTMENTS_TRADEPOWER = 0.5,
-	PROMOTE_INVESTMENTS_INFLATION = 0.03,
+	PROMOTE_INVESTMENTS_TRADEPOWER = 0,
+	PROMOTE_INVESTMENTS_INFLATION = 0,
 	SCUTAGE_TAX_FRACTION = 0.5,
+	--PERCENTAGE_OF_DEV_FOR_CONVERT_TRIBUTARY_TO_VASSAL = 0.4,
+	--MAX_LIBERTY_DESIRE_FOR_CONVERT_TRIBUTARY_TO_VASSAL = 50,
 	CONCENTRATE_DEVELOPMENT_DEVELOPMENT_DECREASE = 0.1,
 	PILLAGE_CAPITAL_DEVELOPMENT_DECREASE = 0.2,
 	RAZE_UNREST_DURATION = 10,						-- Years of unrest. Also used for duration of neg. opinion modifier for previous owner.
@@ -1088,7 +1102,7 @@ NCountry = {
 NEconomy = {
 	EDICTS_COST_INCREASE = 2,				-- % increase on state maintenance.
 	EDICTS_DURATION_MONTHS = 3,				-- months lastin at least.
-
+	--TRADING_CITY_TRADING_RANGE_BOOST = 0.2, 		-- percentage boost to trading range from trading cities
 
 	MIN_DIPLO_LOAN_INTEREST = 0.5,
 	MAX_DIPLO_LOAN_INTEREST = 100,
@@ -1219,7 +1233,7 @@ NMilitary = {
 	MARINE_SHOCK_DAMAGE_TAKEN = -0.25,
 	MAX_SAILOR_LACK_ATTRITION = 1,
 	SAILOR_MAINTAINANCE = 0.02,		-- of build cost.
-	BANNER_DISCIPLINE_BONUS = 0.05,
+	BANNER_DISCIPLINE_BONUS = 0.1,
 	BANNER_MANPOWER_USAGE = 1,
 	BANNER_REINFORCE_SPEED = 1,
 	BANNER_MAINTENANCE_COST = 1,
@@ -1251,7 +1265,7 @@ NMilitary = {
 	SIEGE_ATTRITION = 1,
 	SIEGE_DISEASE_IMPACT = 0.05,						-- Fraction of besieging soldiers lost in a disease outbraek
 	ARMY_ATTRITION_AT_COAST = 1,					-- How many percent attrition units take while loaded onto ships along the coast
-	ARMY_ATTRITION_AT_SEA = 5,						-- How many percent attrition units take while loaded onto ships traveling open sea
+	ARMY_ATTRITION_AT_SEA = 1,						-- How many percent attrition units take while loaded onto ships traveling open sea
 	NATIVE_FEROCITY_IMPACT = 0.05,					-- how many percentage each ferocity gives in combat bonus
 	GALLEY_BONUS_INLAND_SEA = 1.0,
 	GALLEY_BONUS_COASTAL_SEA = 0.5,
@@ -1265,7 +1279,7 @@ NMilitary = {
 	LEADER_MAINTENANCE_COST = 1,					-- how much mil power each leader costs.
 	GARRISON_SIZE = 3000, 							-- GARRISON_SIZE
 	SIEGE_FORCE_NEEDED_MULTIPLIER =  0.334,				-- x times garrison to be able to siege.
-	MAX_BREACH = 3,
+	MAX_BREACH = 1,
 	SIEGE_GARRISON_SURRENDER = 100,					-- A siege ends when there is less than 100 defenders left.
 	ASSAULT_WIDTH_LIMIT = 5,						-- how many times the garrison size that can effectively assault at the same time.
 	ASSAULT_ATTACKER_LOSS = 1.0, 					-- MDEF_ASSAULT_ATTACKER_LOSS = 10,
@@ -1289,7 +1303,7 @@ NMilitary = {
 	ARTILLERY_SPEED = 0.7, 							-- _MDEF_ARTILLERY_SPEED = 10,
 
 	INFANTRY_COST = 10.0, 							-- _MDEF_INFANTRY_COST = 10,
-	CAVALRY_COST = 30.0, 							-- _MDEF_CAVALRY_COST = 10,
+	CAVALRY_COST = 25.0, 							-- _MDEF_CAVALRY_COST = 10,
 	ARTILLERY_COST = 30.0, 							-- _MDEF_ARTILLERY_COST = 10,
 	FORTRESS_COST = 0.15,							-- base fort cost
 	HEAVY_SHIP_COST = 50, 							-- _MDEF_HEAVY_SHIP_COST = 10,
@@ -1310,7 +1324,7 @@ NMilitary = {
 	MERCENARY_BASE_COST = 10.0,					-- base cost added for a mercenary regiment
 	TRADITION_GAIN_LAND = 25,						-- Tradition gain base value from land combat.
 	TRADITION_GAIN_NAVAL = 40,						-- Tradition gain base value from naval combat.
-	CONDOTTIERI_TRADITION_BONUS = 0.5,				-- This modifies army tradition gained from fighting with condottieris
+	CONDOTTIERI_TRADITION_BONUS = 1,				-- This modifies army tradition gained from fighting with condottieris
 	FRONT_LINE_MODIFIER = 1.0, 						-- _MDEF_FRONT_LINE_MODIFIER_
 	BACK_LINE_MODIFIER = 0.5, 						-- _MDEF_BACK_LINE_MODIFIER_
 	BASE_COMBAT_WIDTH = 15.0,						-- _MDEF_BASE_COMBAT_WIDTH_
@@ -1330,6 +1344,8 @@ NMilitary = {
 	NOMAD_NON_PLAINS_SHOCK_PENALTY = -0.05, 			--
 	SUPPLYLIMIT_BASE_MULTIPLIER = 6.0, 				--
 	WAR_LENGTH_DAMAGE_MODIFIER = 0.01,				-- How much (by percentage) the damage dealt will be increased each day of the combat
+	--BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = 0.0,	-- Multiplier for morale damage taken by backrow
+	--BACK_LINE_STRENGTH_DAMAGE_TAKEN_MODIFIER = 0.0,	-- Multiplier for strength damage taken by backrow
 	MORALE_RECOVERY_SPEED = 0.15,					-- How much (by percentage) of the maximum morale that the current morale will be recovered with at a time
 	MORALE_RECOVERY_SPEED_OWN_TERRITORY = 0.05,		-- How much the recovery speed for morale will be modified if unit is in controlled territory
 	HOSTILE_TERRITORY_SPEED_MODIFIER = 0,			-- speed modifier into hostile territory
@@ -1361,7 +1377,7 @@ NMilitary = {
 	REBEL_GARRISON_GROWTH = 2,							-- Rebel garrison growth is multiplied by this value
 	RIVER_CROSSING_PENALTY = -1,						-- Dice roll penalty from river crossing
 	STRAIT_CROSSING_PENALTY = -2,						-- Dice roll penalty from strait crossing
-	SEA_LANDING_PENALTY = -2,							-- Dice roll penalty from sea invasion
+	SEA_LANDING_PENALTY = -1,							-- Dice roll penalty from sea invasion
 	MOTHBALLING_MONTHLY_DECREASE = 0.05,				-- When mothballin is turned on, the units strength will lose this much each month
 	MOTHBALLING_MINIMUM_STRENGTH = 0.25,				-- The minimum strength value the fleet will reach while mothballin
 	MIN_RECRUIT_TIME_MODIFIER = 0.2,					-- Recruit time cannot be lower than this * base
@@ -1398,7 +1414,7 @@ NMilitary = {
 	NAVAL_MISSION_REGION_MIN_PROVINCES_IN_RANGE = 5,
 	LEADER_GAIN_PERSONALITY_BASE_CHANCE = 50.0,		-- Base chance in percent for leader to gain a trait after combat (modified by tradition gained)
 	SUPPLY_DEPOT_DURATION_MONTHS = 60,				-- Time until supply depot is removed.
-	SUPPLY_DEPOT_MIL_COST = 5,						-- Mil power cost to build a supply depot in an area.
+	SUPPLY_DEPOT_MIL_COST = 0,						-- Mil power cost to build a supply depot in an area.
 	RESERVE_TICK_DAMAGE = 0.03,
 	CREATE_JANISSARIES_MIL_COST = 6,				-- Cost to create janissaries (per unit)
 	CREATE_CAWA_MIL_COST = 8,						-- Cost to create Cawa (per unit)
@@ -1407,7 +1423,7 @@ NMilitary = {
 	RAJPUT_MAXIMUM_RATIO = 1.0,						-- Maximum number of Rajput regiments, relative to force limit
 	MARINE_DISEMBARK_SPEED_BONUS = 2.0	,			-- marine disembark speed bonus
 	BASE_COST_MODIFIER = 2.0,						-- Revolutionary guards base cost is double as expensive
-	RAJPUT_BASE_COST_MODIFIER = 2,				-- Rajput base cost is double as expensive
+	RAJPUT_BASE_COST_MODIFIER = 1.5,				-- Rajput base cost is double as expensive
 	COSSACK_BASE_COST_MODIFIER = 1.5,				-- Cossack base cost is double as expensive
 	REVOLUTIONARY_GUARD_BASE_COST_MODIFIER = 2.0,	-- Revolutionary guards base cost is double as expensive
 
@@ -1442,8 +1458,8 @@ NMilitary = {
 	
 	MERCENARY_COMPANY_HIRING_COST_MONTHS = 48,		-- Initial hiring cost in months of maintenance
 	MERCENARY_COMPANY_STARTING_MORALE = 0.25,		-- Starting morale
-	MERCENARY_COMPANY_MIN_REGIMENTS = 8,			-- Minimum regiments
-	MERCENARY_COMPANY_MAX_REGIMENTS = 60,			-- Maximum regiments
+	MERCENARY_COMPANY_MIN_REGIMENTS = 4,			-- Minimum regiments
+	MERCENARY_COMPANY_MAX_REGIMENTS = 40,			-- Maximum regiments
 	MERCENARY_COMPANY_MANPOWER_PER_REGIMENT = 1.125,	-- Manpower reserve factor (multiplied by 1000 per regiment)
 	MERCENARY_COMPANY_MANPOWER_RECOVERY = 90,				-- How many months to recover mercenary manpower fully
 	MERCENARY_COMPANY_HIRED_MANPOWER_RECOVERY_MOD = 2.0,		-- How much to modify the length for manpower recovery if they are hired
@@ -1481,6 +1497,7 @@ NMilitary = {
 },
 
 NAI = {
+	--ABANDON_COLONY_SIZE_THRESHOLD = 0.7,
 	OVERLORD_VITAL_PROVINCE_CLAIM_BIAS = 500,
 	OVERLORD_INTERESTING_PROVINCE_BIAS = 250,
 	ACCEPTABLE_FRACTION_OF_INTEREST_PAYMENTS = 0.4, --of income
@@ -1493,8 +1510,10 @@ NAI = {
 	GREAT_PROJECT_DESIRE_CAPITAL_MODIFIER = 10,
 	GREAT_PROJECT_DESIRE_CAPITAL_BASE = 10,
 	GREAT_PROJECT_DESIRE_CAPITAL_AREA_MODIFIER = 10,
-	ACCEPTABLE_BALANCE_DEFAULT = 1.4, --AI wants this advantage to enter battles typically. (There are some exceptions, e.g. offensives.)
+	ACCEPTABLE_BALANCE_DEFAULT = 1.2, --AI wants this advantage to enter battles typically. (There are some exceptions, e.g. offensives.)
 	ACCEPTABLE_BALANCE_FRIEND_IN_COMBAT = 0.75,
+	--ACCEPTABLE_BALANCE_MULT_FRIEND_IN_COMBAT = 0.8,
+	--ACCEPTABLE_BALANCE_MULT_OFFENSIVE = 0.85, -- Unless friend in combat is already applied
 	EDICT_VALUE_THRESHOLD = 120, -- The higher this value, the less the AI will use Edicts
 	EDICT_VALUE_THRESHOLD_MULTIPLY_DEFICIT = 10, -- Change to above threshold in case of running deficit
 	EDICT_VALUE_THRESHOLD_MULTIPLY_LOW_INCOME = 3, -- Change to above threshold in case of low income
@@ -1535,7 +1554,8 @@ NAI = {
 	HRE_FORCE_JOIN_DESIRE_PER_MISSING_PRINCE = 3.0, --Multiplicative factor per HRE missing prince for the purpose of calculating the desire of use the force join HRE treaty.
 	HRE_FORCE_JOIN_BASE_DESIRE = 5.0, --Base desire for force join HRE treaty.
 	ONLY_INFANTRY_MERCS = 1, --Set to 0 to let AI hire artillery and cavalry mercenaries.
-	FORT_MAINTENANCE_CHEAT = 0, -- Set to 0 to disable AI fort maintenance cheating. Warning: Will make AI suck.
+	FORT_MAINTENANCE_CHEAT = 0, -- Set to 0 to disable AI fort maintenance cheating. Warning: Will make in vanilla, but no longer
+	--FORT_MOTHBALL_SAFETY_DISTANCE = 5, -- How far from the border AI will mothball forts
 	AI_USES_HISTORICAL_IDEA_GROUPS = 0, -- If set to 0, ai will use ai_will_do instead of historical ideagroups when picking ideagroups (ai never uses historical ideagroups in custom/random setup)
 	AI_CONVERT_CULTURES = 1, -- If set to 0, AI will not convert cultures
 	VASSAL_FABRICATE_CLAIMS = 1, -- If set to 1, subjects will use fabricate claims on foreign powers
@@ -1546,15 +1566,15 @@ NAI = {
 	MIN_INCOME_FOR_SUBSIDIES = -1, -- Minimum monthly income for AI to want to spend some on subsidies
 	PS_SHORT_TERM_POOL = 10, -- Max power AI will store in its short-term spending pool
 	AGGRESSIVENESS = 5000, -- Base chance (out of 10000) of AI being willing to start a war each diplomatic tick (~1.5 times a month)
-	AGGRESSIVENESS_BONUS_EASY_WAR = 2, -- Added to aggressiveness if the war is against a weak or particularily hated enemy
+	AGGRESSIVENESS_BONUS_EASY_WAR = 300, -- Added to aggressiveness if the war is against a weak or particularily hated enemy
 	MISSION_PICK_CHANCE = 100, -- Monthly chance of AI picking a mission if it lacks one (of 100)
 	TRADE_INTEREST_THRESHOLD = 3, -- Number of merchants required to be a nation with trade interest
 	DEFICIT_SPENDING_MIN_MONTHS = 1, -- AI must have at least this many monthly deficits of savings to be willing to deficit spend
 	DEFICIT_SPENDING_MIN_MONTHS_PEACETIME = 1, -- Same as DEFICIT_SPENDING_MIN_MONTHS, but during peacetime, no rebels and no war exhaustion
-	BIGSHIP_FRACTION = 0.1,	-- The proportion of big ships in an AI navy of light ships and big ships (for coastal sea countries, this fraction is mostly galleys)
-	ARTILLERY_FRACTION = 0.1, 	-- Ratio of artillery to infantry AI will build
+	BIGSHIP_FRACTION = 0.4,	-- The proportion of big ships in an AI navy of light ships and big ships (for coastal sea countries, this fraction is mostly galleys)
+	ARTILLERY_FRACTION = 0.35, 	-- Ratio of artillery to infantry AI will build
 	FORCE_COMPOSITION_CHANGE_TECH_LEVEL = 11, -- Tech level at which AI will double its artillery fraction
-	TRANSPORT_FRACTION = 0.2, -- Max fraction of naval forcelimit that should be transports
+	TRANSPORT_FRACTION = 0.5, -- Max fraction of naval forcelimit that should be transports
 	INCOME_SAVINGS_FRACTION = -1, -- AI will reserve this amount of their surplus for long-term savings
 	OVER_FORCELIMIT_AVOIDANCE_FACTOR = 0.1, -- The higher this number is, the less willing the AI will be to exceed forcelimits
 	MILITARISE_FORT_BUDGET_FACTOR = 0.1, --if the country should militarise, multiply fort budget priority by this
@@ -1563,10 +1583,15 @@ NAI = {
 	EXTRA_SURPLUS_WHEN_NEEDING_BUILDINGS = 0.05, -- AI will aim for having at least this fraction of their income as additional surplus when they need buildings
 	MAX_SAVINGS = -1, -- AI will keep a maximum of this * their monthly income in long-term savings
 	ADVISOR_BUDGET_FRACTION = 0.9, -- AI will spend a maximum of this fraction of monthly income on advisor maintenance
-	STATE_MAINTENANCE_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this fraction of monthly income on state maintenance
+	--ADVISOR_BUDGET_FRACTION_MAX = 0.5, -- AI will spend a maximum of this fraction of monthly income on advisor maintenance
+	--ADVISOR_BUDGET_FRACTION_MIN = 0.33, -- AI will spend a minimum of this fraction of monthly income on advisor maintenance
+	--ADVISOR_BUDGET_FRACTION_MERITOCRACY_MAX = 0.5, -- If the AI has meritocracy enabled
+	--ADVISOR_BUDGET_FRACTION_MERITOCRACY_MIN = 0.25, -- If the AI has meritocracy enabled
+	--ADVISOR_BUDGET_THRESHOLD = 1.25, -- The AI will only hire an advisor if it can afford this much maintenance increase (+25%)
+	STATE_MAINTENANCE_BUDGET_FRACTION = 0.15, -- AI will spend a maximum of this fraction of monthly income on state maintenance
 	CORRUPTION_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this fraction of monthly income on rooting out corruption
 	COLONY_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this amount of monthly ducats for colonies.
-	ARMY_BUDGET_FRACTION = 0.6, -- AI will spend a maximum of this fraction of monthly income on army maintenance (based off wartime costs)
+	ARMY_BUDGET_FRACTION = 1, -- AI will spend a maximum of this fraction of monthly income on army maintenance (based off wartime costs)
 	NAVY_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this fraction of monthly income on navy maintenance (based off wartime costs)
 	FORT_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this fraction of monthly income on forts
 	REGIMENTS_PER_GENERAL = 15, -- AI will want one general for every this number of regiments (will not exceed free leader pool)
@@ -1587,6 +1612,7 @@ NAI = {
 	CALL_IN_ALLIES_POWER_RATIO = 4.0, -- AI will only call in allies in an offensive war if their military power ratio to the enemy is less than this
 	POWERFUL_ALLY_PENALTY = 50,	-- Penalty on alliance for them already having a powerful ally if much stronger
 	RIVAL_ALLIANCE_PENALTY = 50, -- Penalty on alliance chance for being allied to rivals
+	--ENEMY_ALLIANCE_PENALTY = 25, -- Penalty on alliance chance for being allied to enemies
 	REVOLUTION_EMBRACE_MAX_ABSOLUTISM = 49, -- AI will not consider embracing the revolution (unless a disaster happens) if their absolutism if over this value
 	BASE_CAN_MAKE_CORE_DESIRE_TO_RETURN_PROVINCE = 10, --score to add to desire to keep province rather than returning it to someone or creating a trading city if you can core it straight away
 	BASE_CAN_MAKE_CORE_IN_AREA_DESIRE_TO_RETURN_PROVINCE = 8, --score to add to desire to keep province rather than returning it to someone or creating a trading city if you can core it soon
@@ -1597,7 +1623,7 @@ NAI = {
 
 	DEBASE_THRESHOLD = 10000,-- AI will not debase if it has more gold than this.
 
-	DEVELOPMENT_CAP_BASE = 30,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
+	DEVELOPMENT_CAP_BASE = 20,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 	DEVELOPMENT_CAP_MULT = 1,
 
 	PEACE_BASE_RELUCTANCE = 0, -- AI base stubbornness to refuse peace (always applied)
@@ -1736,6 +1762,10 @@ NAI = {
 	DIPLOMATIC_ACTION_LIBERTY_DESIRE_CHANGE_SUBJECT_TYPE_MODIFIER = 0.1, -- how much of an impact liberty desire causes to the AI wanting to change subject type
 	DIPLOMATIC_ACTION_BREAK_SCORE = 30, -- AI must score a diplomatic action less than this to break it off
 	DIPLOMATIC_ACTION_PERSONALITY_MULT = 1.5, -- How much more the AI values a diplomatic action if it suits their personality (improve relations for diplomat, etc)
+
+	--CONVERT_TRIBUTARY_TO_VASSAL_AI_DESIRE_BASE = 20,
+	--CONVERT_TRIBUTARY_TO_VASSAL_AI_DESIRE_PREPARING_FOR_WAR_SCORE = 30,
+	--CONVERT_TRIBUTARY_TO_VASSAL_AI_DESIRE_WANTS_LAND_SCORE = 30,
 
 	DIPLOMATIC_ACTION_TRADE_FAVORS_FOR_GOLD_BASE_SCORE = 50,
 	DIPLOMATIC_ACTION_TRADE_FAVORS_FOR_GOLD_PREPARING_FOR_WAR_SCORE = 100,
@@ -1881,6 +1911,9 @@ NAI = {
 	MARRIAGE_DESIRE_TOO_MANY_RELATIONS = -50,				-- AI desire/acceptance for royal marriange when it has or will get too many relations. Multiplies with number of relations above limit.
 	GUARANTEE_DESIRE_TOO_MANY_RELATIONS = -50,				-- AI desire for guaranteeing when it has or will get too many relations. Multiplies with number of relations above limit.
 	
+	-- AI parameters for not considering diplomacy with all other countries every day (for performance)
+	--FOREIGN_MINISTER_IGNORE_DISTANCE_BASE = 8,
+	--FOREIGN_MINISTER_BASE_PROVINCE_COUNT = 2,
 	
 	DIPLOMATIC_ACTION_CURRY_FAVORS_DEVELOPMENT_FACTOR = 0.2, 
 	DIPLOMATIC_ACTION_CURRY_FAVORS_ALLIANCE_FACTOR = 4, 
@@ -1903,6 +1936,7 @@ NAI = {
 	DANGEROUS_ESTATE_INFLUENCE_BUFFER = 5.0,					-- AI will assign estates up to ESTATE_DANGER_THRESHOLD minus this (See ai_territory_modifier)
 	ADVISOR_MIN_SKILL_RELUCTANT_FIRE = 1,						-- AI will be reuluctant to fire advisors with skill above this (due to prior investment)
 	ADVISOR_PROMOTION_AGE_CUTOFF = 40,							-- AI will not promote advisors above this age
+	--FIRE_ADVISOR_LOAN_REQUIREMENT = 5,							-- AI will not fire advisors until it has this many loans
 	MIN_FORCE_LIMIT_SHARE_REGION_ASSIGN = 0.10,					-- AI will only assign armies larger that this to a region
 	MAX_ARMIES_NEW_REGION_ASSIGN_ALGORITHM = 12,				-- Max. amount of armies to use in new region assignment algorithm (fall back to old one)
 	MAX_TASKS_NEW_REGION_ASSIGN_ALGORITHM = 100,				-- Max. amount of tasks to use in new region assignment algorithm (fall back to old one)
@@ -1912,6 +1946,19 @@ NAI = {
 	INVASION_ARMY_LOOKUP_INTERVAL_ON_FAILURE = 15,				-- If AI fails to find an army for an invasion it will try again in this number of days
 	CHARTER_COMPANY_BASE_RELUCTANCE = -3,						-- Base reluctance to giving away provinces in charter company diplo action
 	CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE = 3,				-- How much development needed to add one reluctance
+	--CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE_MULTIPLIER = 1.5,	-- How much development multiplied by to provide resistance
+	--CHARTER_COMPANY_GREAT_PROJECT_VALUE_RELUCTANCE = 0.1,		-- Great Project value * this = reluctance
+	--CHARTER_COMPANY_RESTRICTED_REGION_BASE = 50,
+	--CHARTER_COMPANY_RESTRICTED_REGION_LESS_DEVELOPMENT_PENALTY = 20,
+	--CHARTER_COMPANY_RESTRICTED_REGION_LESS_INSTITUTIONS_PENALTY = 50,
+	--CHARTER_COMPANY_SWEETENER_PERCENTAGE_MULTIPLIER = 100,
+	--CHARTER_COMPANY_ALLIANCE_BONUS = 50,
+	--CHARTER_COMPANY_DIPLO_REP_MULTIPLIER = 2,
+	--CHARTER_COMPANY_OPINION_MULTIPLIER = 0.25,
+	--CHARTER_COMPANY_THREATENED_PENALTY = 100,
+	--CHARTER_COMPANY_NON_TRADE_LEAGUE_MEMBER_PENALTY = 50,
+	--CHARTER_COMPANY_EMPIRE_PENALTY = 100,
+	--CHARTER_COMPANY_RIVAL_PENALTY = 100,
 	WAR_WARSCORE_TO_JOIN = -100,								-- Minimum warscore for the AI to join a call for arms
 	WAR_MIN_WARSCORE_TO_JOIN = -25,								-- Starting warscore for the AI to join a call for arms
 	ARMY_DISTANCE_SCORE_IMPACT = 0.5,							-- Army <-> province distance impact on province evaluation
@@ -1939,21 +1986,51 @@ NAI = {
 	APPOINT_CARDINAL_CAN_INTEGRATE = 150,					-- AI scoring for appoint cardinals is increased by this if they can integrate/annex the target and inherit the cardinals
 	ESTATE_PRIVILEGE_REVOKE_THRESHOLD = 5.1,
 	ESTATE_PRIVILEGE_GRANT_THRESHOLD = 0,
+	--ESTATE_PRIVILEGE_LAST_PENALTY = 3,							-- The GRANT and REVOKE thresholds are moved up by this much for the final slot
 	ESTATE_INTERACTION_THRESHOLD = 49.9,
 	ESTATE_MAX_WANTED_INFLUENCE = 73.0,
 	ESTATE_MIN_WANTED_CROWNLAND = 0,
 	ESTATE_MAX_PRIVILEDGES = 4,
 	MIN_SCORE_TO_CONCENTRATE_DEVELOPMENT = 1.5,
+	-- # AI unit strength evaluation
+	-- How important is morale? We estimate M^1.32 (compared to Discipline's D^2), which we approximate with the following taylor expansion:
+	--MORALE_STRENGTH_FACTOR_TAYLOR_ORIGIN = 4,
+	--MORALE_STRENGTH_FACTOR_POW0 = 6.233,
+	--MORALE_STRENGTH_FACTOR_POW1 = 2.057,
+	--MORALE_STRENGTH_FACTOR_POW2 = 0.082,
+	-- How important are damage modifiers that don't affect morale (e.g. Fire damage (received))?
+	-- Note: We set the morale exponent to 1.32, vs 2 for discipline (which affects both casualties and morale),
+	-- so for consistency the combined exponent of the damage modifiers (dealt and received) should be (2 - 1.32), giving the exponent (2 - 1.32)/2 = 0.34 per modifier.
+	-- We estimate X^0.34 (where X=1+mod) with the following taylor expansion:
+	--DAMAGE_STRENGTH_FACTOR_TAYLOR_ORIGIN = 1,
+	--DAMAGE_STRENGTH_FACTOR_POW0 = 1,
+	--DAMAGE_STRENGTH_FACTOR_POW1 = 0.34,
+	--DAMAGE_STRENGTH_FACTOR_POW2 = -0.112,
+	-- Because it is different for each regiment, we can't afford to go through the regular code path to look up drill modifiers, so we simplify
+	-- Taking the 0.34 exponent from above, we get:
+	-- drill_impact_factor = ( (1+0.1*drill)/(1-0.25*drill) )^0.34, which we estimate with taylor expansion:
+	--DRILL_STRENGTH_FACTOR_TAYLOR_ORIGIN = 0.5,
+	--DRILL_STRENGTH_FACTOR_POW0 = 1.064,
+	--DRILL_STRENGTH_FACTOR_POW1 = 0.138,
+	--DRILL_STRENGTH_FACTOR_POW2 = 0.022,
+	-- How important are combat pips? We think a permanent +1 dice modifier is worth a troop count factor of approximately 17/13 = (7.5+1)/(7.5-1)
+	-- But pips only apply sometimes, and we cannot afford to compute fractional exponents
+	-- So we estimate fire_phase_modifier = COMBAT_PIP_IMPORTANCE ^ ( FIRE_PIP_MULT * ( offensive_fire + defensive_fire ) + MORALE_PIP_MULT * ( offensive_morale + defensive_morale ) )
+	-- (and similar for shock)
+	--COMBAT_PIP_IMPORTANCE = 1.04573, -- = (17/13)^(1/6)
+	--FIRE_PIP_MULT = 3, -- This means having one of each fire pip applies a modifier of 17/13 to the fire phase estimate, as desired (since it's equivalent to +1 dice modifier)
+	--SHOCK_PIP_MULT = 3, -- Ditto
+	--MORALE_PIP_MULT = 2, -- Morale pips are counted in both phases, but only applies to morale damage, which we guesstimate to be worth twice as much as casualties (=2/3, or ~1.32/2, of total)
 },
 
 NAIEconomy = {
 	BUDGETING_ADJUSTMENT_STEP = 0.1,							-- Amount in percent to increase/decrease spending on budget posts when adjusting due to surplus/deficit
 	REBEL_THREAT_MILITARIZE_THRESHOLD = 0.5,					-- Above what rebel threat should the AI militarize (i.e. focus spending on armies)
 	MILITARY_FOCUS_DEFAULT = 1.5,
-	MILITARY_FOCUS_LOWER_BOUND = 0.0,
+	MILITARY_FOCUS_LOWER_BOUND = 1,
 	MILITARY_FOCUS_UPPER_BOUND = 2.0,
 	ARMY_FRACTION_MILITARIZE = 1.5,
-	ARMY_FRACTION_PEACEFUL = 0.9,
+	ARMY_FRACTION_PEACEFUL = 1.5,
 	ARMY_FRACTION_MILITARIST = 1.5,
 	NAVY_FRACTION_PEACEFUL = 1.25,
 	NAVY_FRACTION_CAPITALIST = 1.25,
@@ -1962,10 +2039,13 @@ NAIEconomy = {
 	FORT_FRACTION_CAPITALIST = 0.3,
 	MISSIONARY_FRACTION = 0.15,
 	STATE_MAINTENANCE_FRACTION = 0.1,
+	--BASE_SAVINGS_PRIORITY = 0.5,
+	--BASE_SAVINGS_PRIORITY_WARTIME = 0.0,
 	LOAN_REPAYMENT_SAVINGS_PRIORITY = 1,
 	LOAN_REPAYMENT_SAVINGS_PRIORITY_WARTIME = -1,
 	SUBSIDY_PRIORITY_CONSIDERATION_THRESHOLD = 50.0,
 	SUBSIDY_DESIRE_TO_PRIORITY_RATIO = 0.05,
+	--SUBSIDY_MAX_BUDGET_FRACTION = 0.05,
 },
 
 NGraphics = {
@@ -2141,6 +2221,13 @@ NGraphics = {
 	MAPMODE_RELIGIOUS_LEAGUE_HERETIC_RELIGION_G = 0.0,
 	MAPMODE_RELIGIOUS_LEAGUE_HERETIC_RELIGION_B = 0.5,
 
+	--MAPMODE_RELIGIOUS_LEAGUE_RELIGION_LEADER_R = 0.2,
+	--MAPMODE_RELIGIOUS_LEAGUE_RELIGION_LEADER_G = 0.7,
+	--MAPMODE_RELIGIOUS_LEAGUE_RELIGION_LEADER_B = 0.2,
+
+	--MAPMODE_RELIGIOUS_LEAGUE_HERETIC_RELIGION_LEADER_R = 0.2,
+	--MAPMODE_RELIGIOUS_LEAGUE_HERETIC_RELIGION_LEADER_G = 0.2,
+	--MAPMODE_RELIGIOUS_LEAGUE_HERETIC_RELIGION_LEADER_B = 0.7,
 	MAPMODE_PERPETUAL_DIET_LOCATION_R = 0.2,
 	MAPMODE_PERPETUAL_DIET_LOCATION_G = 0.8,
 	MAPMODE_PERPETUAL_DIET_LOCATION_B = 0.8,
@@ -2449,7 +2536,7 @@ NGovernment = {
 	RUSSIAN_ABILITY_OPRICHNINA_AI_THRESHOLD = 0.85, -- AI will use ability when revolt risk is 90%, or when they have full power
 	RUSSIAN_ABILITY_OPRICHNINA_CHANGE = -0.3,
 	RUSSIAN_ABILITY_STRELTSY_WE_CHANGE = -2,
-	RUSSIAN_ABILITY_STRELTSY_SPAWN_SIZE = 0.1,
+	RUSSIAN_ABILITY_STRELTSY_SPAWN_SIZE = 0.2,
 
 	IQTA_POLICY_COOLDOWN_YEARS = 20,
 	EFFICIENT_FARMING_DUCAT_MULTIPLIER = 2,
@@ -2479,6 +2566,8 @@ NGovernment = {
 	GOVERNMENT_REFORM_HISTORIC_AUTONOMY = 0.25,
 	GOVERNMENT_REFORM_CHANGE_PROGRESS_COST = 25.0,
 	GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 20.0,
+	--CENTRALIZE_STATE_ADM_COST = 50,
+	--EXPAND_INFRASTRUCTURE_ADM_COST = 50,
 	CENTRALIZE_STATE_STATE_COST_LIMIT = 10.0,
 	CENTRALIZE_STATE_REDUCTION = 20.0,
 	CENTRALIZE_STATE_YEARS = 1,
