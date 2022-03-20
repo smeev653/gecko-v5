@@ -132,25 +132,24 @@ swabian_group_1 = {
 				area = upper_rhineland_area
 				area = alsace_area
 			}
-			NOT = { owner = { primary_culture = swabian } }
 		}
 		
 		trigger = {
 			lower_swabia_area = {
 				type = all
-				owner = { primary_culture = swabian }
+				country_or_non_sovereign_subject_holds = ROOT	
 			}
 			upper_swabia_area = {
 				type = all
-				owner = { primary_culture = swabian }
+				country_or_non_sovereign_subject_holds = ROOT	
 			}
 			upper_rhineland_area = {
 				type = all
-				owner = { primary_culture = swabian }
+				country_or_non_sovereign_subject_holds = ROOT	
 			}
 			alsace_area = {
 				type = all
-				owner = { primary_culture = swabian }
+				country_or_non_sovereign_subject_holds = ROOT	
 			}
 		}
 		
