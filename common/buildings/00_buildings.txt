@@ -193,6 +193,7 @@ shipyard = {
 		naval_forcelimit = 2
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
+		land_forcelimit = 0.5
 	}
 	
 	on_obsolete = {
@@ -741,6 +742,7 @@ dock = {
 	}
 	modifier = {
 		local_sailors_modifier = 0.5
+		local_manpower_modifier = 0.25
 	}
 
 	on_obsolete = {
@@ -1417,6 +1419,7 @@ grand_shipyard = {
 		naval_forcelimit = 4
 		ship_recruit_speed = -0.50
 		local_ship_repair = 0.50
+		land_forcelimit = 1
 	}
 
 	on_obsolete = {
@@ -2033,6 +2036,7 @@ drydock = {
 
 	modifier = {
 		local_sailors_modifier = 1.0
+		local_manpower_modifier = 0.5
 	}
 	
 	on_obsolete = {
