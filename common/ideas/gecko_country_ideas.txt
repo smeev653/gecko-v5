@@ -655,7 +655,7 @@ SWI_ideas = {
 	free = yes  #will be triggered at load
 	
 	swiss_mercenaries = {
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.1
 		mercenary_manpower = 0.5
 	}
 	swiss_tolerance = {

@@ -76,7 +76,7 @@ gecko_merc_black_army_2 = {
 	}
 	cost_modifier = 0.65
 	modifier = {
-		discipline = 0.1
+		discipline = 0.15
 	}
 }
 
