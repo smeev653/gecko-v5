@@ -7367,6 +7367,7 @@ estate_nobles_better_integration = {
 			OR = {
 				is_subject_of_type = vassal
 				is_subject_of_type = client_vassal
+				is_subject_of_type = canton
 				is_subject_of_type = daimyo_vassal
 				is_subject_of_type = personal_union
 			}
