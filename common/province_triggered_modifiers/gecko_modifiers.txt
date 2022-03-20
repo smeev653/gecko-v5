@@ -97,12 +97,7 @@ conquest_of_paris = {
 
 	trigger = {
 		owner = {
-			OR = {
-				tag = BUR
-				tag = ENG
-				tag = GBR
-				tag = LOT
-			}
+			NOT = { tag = FRA }
 		}
 		controlled_by = ROOT
 	}
