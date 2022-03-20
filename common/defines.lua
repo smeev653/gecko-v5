@@ -1096,7 +1096,7 @@ NCountry = {
 	FEDERATION_ADVANCEMENT_COHESION_REQUIREMENT = 100.0,
 	FEDERATION_ADVANCEMENT_COHESION_COST = 80.0,
 
-	EXPAND_INFRASTRUCTURE_DEV_LIMIT = 15, 			-- How much dev you need for each improvement.
+	EXPAND_INFRASTRUCTURE_DEV_LIMIT = 10, 			-- How much dev you need for each improvement.
 },
 
 NEconomy = {
