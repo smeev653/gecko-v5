@@ -44,6 +44,8 @@ country_decisions = {
 				province_id = 2267
 				province_id = 2278
 				province_id = 1153
+				province_id = 1121
+				province_id = 1120
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -61,6 +63,8 @@ country_decisions = {
 			owns_core_province = 2267 #Tenkodogo
 			owns_core_province = 2278 #Kebbi
 			owns_core_province = 1153 #Pindinga
+			owns_core_province = 1121 
+			owns_core_province = 1120 
 		}
 		effect = {
 			change_tag = PR2

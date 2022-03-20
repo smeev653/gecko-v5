@@ -27,7 +27,7 @@ change_estate_land_share = {
 		name = "Mahmud"
 		dynasty = "Keita"
 		dip = 3
-		adm = 2
+		adm = 3
 		mil = 4
 	}
 	add_piety = -0.15
@@ -38,7 +38,7 @@ change_estate_land_share = {
 		name = "Musa III"
 		dynasty = "Keita"
 		adm = 3
-		dip = 2
+		dip = 3
 		mil = 4
 	}
 }
