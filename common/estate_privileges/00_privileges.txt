@@ -1098,13 +1098,7 @@ estate_nobles_advisors = {
 	influence = 0.1
 	loyalty = 0.05
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_nobles
-			value = 4
-			}
-		}
-		NOT = { has_estate_privilege = estate_nobles_advisors }
+		always = no
 	}
 	penalties = {
 		stability_cost_modifier = 0.05
@@ -7311,7 +7305,7 @@ estate_church_lao_animism = {
 
 estate_nobles_command_of_the_military = {
 	icon = privilege_promote_purbias
-	land_share = 10
+	land_share = 5
 	max_absolutism = -10
 	influence = 0.3
 	is_valid = {
@@ -7319,13 +7313,12 @@ estate_nobles_command_of_the_military = {
 	can_select = {
 	}
 	on_granted = {
-		custom_tooltip = estate_nobles_command_of_the_military_tt
 	}
 	penalties = {
-		leader_cost = 0.2
+		leader_cost = 0.1
 	}
 	benefits = {
-		yearly_army_professionalism = 0.005
+		yearly_army_professionalism = 0.00375
 	}
 	ai_will_do = {
 		factor = 0
