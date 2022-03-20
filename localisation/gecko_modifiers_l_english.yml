@@ -78,6 +78,7 @@
  mam_african_market:0 "African Market"
  desc_mam_african_market:0 "We have conquered the narrow passage to the Sahel. Let our traders follow the flow of trade."
  turks_defeated:0 "Turks Defeated"
+ gc_yemeni_trade_modifier:0 "Nile Control"
 
  #Ethiopia
  gecko_ethiopia_highlands_and_mountains_modifier:0 "Temper the Roof of Africa"

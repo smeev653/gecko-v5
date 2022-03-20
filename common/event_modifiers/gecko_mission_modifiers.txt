@@ -366,3 +366,7 @@ norman_legacy = {
 royal_hungary = {
 	land_morale = 0.1
 }
+
+gc_yemeni_trade_modifier = {
+	trade_efficiency = 0.1
+}

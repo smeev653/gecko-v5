@@ -185,16 +185,16 @@ QAR_conquest = {
             }
             else = { add_treasury = 200 }
 
-			if = {
-                limit = {
-                    4283 = {
-                        NOT = { province_has_center_of_trade_of_level = 2 }
-                        NOT = {    province_has_center_of_trade_of_level = 3 }
-                    }
-                }
-                4283 = { add_center_of_trade_level = 1 }
-            }
-            else = { add_treasury = 200 }
+			#if = {
+             #   limit = {
+              #      4283 = {
+               #         NOT = { province_has_center_of_trade_of_level = 2 }
+                #        NOT = {    province_has_center_of_trade_of_level = 3 }
+                 #   }
+                #}
+                #4283 = { add_center_of_trade_level = 1 }
+            #}
+            #else = { add_treasury = 200 }
 			
 			if = {
                 limit = {
