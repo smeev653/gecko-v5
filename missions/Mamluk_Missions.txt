@@ -81,14 +81,14 @@ mam_south_missions = {
 				area = yemen_area
 				area = asir_area
 				area = hadramut_area
-				province_id = 4346
+				province_id = 358
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			4346 = {
+			358 = {
 				is_strongest_trade_power = ROOT
 			}
 			tihama_al_yemen_area = {
@@ -113,10 +113,7 @@ mam_south_missions = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "yemeni_trade_modifier"
-				duration = 7300
-			}
+			add_sailors = 5000
 		}
 	}
 }
@@ -578,12 +575,17 @@ gecko_mam_branch_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = dongola_area
+				area = lower_nubia_area
 				province_id = 2797
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			dongola_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_nubia_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -597,6 +599,10 @@ gecko_mam_branch_2 = {
 			}
 			darfur_central_sahara_area = {
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "gc_yemeni_trade_modifier"
+				duration = 7300
 			}
 		}
 	}
@@ -812,10 +818,6 @@ gecko_mam_branch_3 = {
 		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
-			OR = {
-				area = lower_nubia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			army_size_percentage = 1
