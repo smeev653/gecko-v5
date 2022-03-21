@@ -1415,7 +1415,7 @@ gecko_tur_events = {
                 #}
                 add_country_modifier = {
                 name = "defense_of_anatolia"
-                duration = 3650
+                duration = 1825
                 }
             }
         }

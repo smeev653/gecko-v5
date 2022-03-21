@@ -472,7 +472,7 @@ emp_france_missions_1_b = {
 
                 add_country_modifier = {
                 name = "defense_of_france"
-                duration = 3650
+                duration = 1825
                 }
             }
         }
