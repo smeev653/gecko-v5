@@ -738,13 +738,20 @@ emp_france_missions_2 = {
 		icon = mission_italian_condottiere
 		required_missions = { emp_fra_annex_savoy }
 		provinces_to_highlight = {
-			area = lombardy_area
+			OR = {
+				area = lombardy_area
+				area = torino_area
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			lombardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			torino_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1187,6 +1194,17 @@ emp_france_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			torino_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "italian_ambition_modifier"
+				duration = 7300
+			}
 		}
 	}
 	emp_fra_annex_genoa = {
@@ -1205,10 +1223,41 @@ emp_france_missions_3 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "italian_ambition_modifier"
-				duration = 7300
+			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			siena_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
 		}
 	}
 	emp_fra_switzerland = {
@@ -1259,6 +1308,10 @@ emp_france_missions_3 = {
 			else = {
 				add_army_tradition = 20
 			}
+			add_country_modifier = {
+				name = "grand_armee"
+				duration = -1
+				}
 		}
 	}
 	emp_fra_france_discovers_the_carribean = {
@@ -1612,11 +1665,7 @@ emp_france_missions_4 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-				add_country_modifier = {
-				name = "grand_armee"
-				duration = -1
-				}	
+			}	
 		}
 		
 	}
