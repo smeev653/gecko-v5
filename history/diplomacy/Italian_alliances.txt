@@ -174,12 +174,12 @@ alliance = {
 	end_date = 1573.3.7
 }
 
-#vassal = {
-#	first = PAP
-#	second = URB
-#	start_date = 1443.1.1
-#	end_date = 1626.1.1
-#}
+vassal = {
+	first = PAP
+	second = URB
+	start_date = 1443.1.1
+	end_date = 1626.1.1
+}
 
 # Lodovico III "il Turco" ~ Barbara , dt. Johann "der Alchemist" Hohenzollern (Brandenburg)
 #royal_marriage = {

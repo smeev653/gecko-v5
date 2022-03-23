@@ -12,7 +12,7 @@ trade_goods = cloth
 base_manpower = 4
 capital = "La Spezia"
 is_city = yes
-
+add_core = MLO
 
 
 discovered_by = western
