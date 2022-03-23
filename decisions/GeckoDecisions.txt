@@ -395,13 +395,13 @@ country_decisions = {
 	
 	force_urbanisation = {
 		potential = {
-				was_player = yes
+				ai = no
 				NOT = { has_country_modifier = gc_urbanisation}
 				dip_tech = 6	
 			}
 
 		allow = {
-				was_player = yes
+				ai = no
 				is_great_power = no
 				#dip_tech = 10
 				NOT = { num_of_allies = 2 }
