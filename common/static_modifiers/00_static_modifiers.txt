@@ -686,7 +686,7 @@ bankruptcy = {
 
 war = {
 	rr_girondists_influence = 0.15
-	interest = -0.25
+	#interest = -0.25
 	yearly_army_professionalism = 0.0025
 	monthly_fervor_increase = 1
 }
@@ -698,7 +698,7 @@ peace = {
 	global_institution_spread = 0.1
 	rr_girondists_influence = -0.1
 	pr_smugglers_influence = 0.1
-	interest = -0.5
+	#interest = -0.5
 	army_tradition_decay = 0.01
 }
 
