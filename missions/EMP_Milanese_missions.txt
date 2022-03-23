@@ -67,16 +67,12 @@ emp_mlo_conquest_branch = {
 		icon = conquer_tuscany
 		required_missions = { emp_mlo_subdue_genoa }
 		provinces_to_highlight = {
-			OR = {
-				province_id = 2980
-				province_id = 115
-			}
+				area = liguria_area 
+			
 		}
 		trigger = {
-			2980 = {
-				country_or_non_sovereign_subject_holds = root
-			}
-			115 = {
+			liguria_area= {
+				type = all
 				country_or_non_sovereign_subject_holds = root
 			}
 		}

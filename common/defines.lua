@@ -224,7 +224,7 @@ NDiplomacy = {
 	AE_SAME_RELIGION = 0.5,
 	AE_SAME_RELIGION_GROUP = 0.0,
 	AE_DIFFERENT_RELIGION = -0.5,
-	AE_HRE_INTERNAL = 0.75,
+	AE_HRE_INTERNAL = 0.6,
 	AE_ATTACKER_DEVELOPMENT = 0.01,	-- +50% cap (at 1000 development)
 	AE_DEFENDER_DEVELOPMENT = 0.01,	-- -50% cap (at 1000 development)
 	AE_DISTANCE_BASE = 0.75, --0.75 per 100 distance
@@ -384,7 +384,7 @@ NDiplomacy = {
 	GRANT_ELECTORATE_INFLUENCE = 0,					-- The amount of AI Grant Electorate gives.
 	GRANT_FREECITY_INFLUENCE = 0,					-- The amount of IA Grant Free Gity gives.
 	REMOVE_FREECITY_INFLUENCE_COST = 0,				-- The amount of IA Grant Free Gity costs.
-	IMPERIAL_CITY_IA = 0.025,						-- Monthly per imperial free city
+	IMPERIAL_CITY_IA = 0.02,						-- Monthly per imperial free city
 
 	AGITATE_FOR_LIBERTY_DESIRE = 25,				-- Liberty Desire gained due to ongoing agitation.
 	AGITATE_FOR_LIBERTY_RATE = 1,					-- Monthly rate at which Liberty Desire rises towards the maximum during agitation, or otherwise falls towards zero.
@@ -1063,7 +1063,7 @@ NCountry = {
 	TRIBE_MIGRATION_DIP_COST = 0,
 	TRIBE_MIGRATION_MIL_COST = 50,
 	SIBERIAN_TRIBE_MIGRATION_BONUS = 50,
-	SIBERIAN_TRIBE_MIGRATION_COOLDOWN_YEARS = 5,INFRASTRUCTURE
+	SIBERIAN_TRIBE_MIGRATION_COOLDOWN_YEARS = 5,
 
 	TRIBE_SETTLE_ADM_COST = 50,
 	TRIBE_SETTLE_DIP_COST = 50,
