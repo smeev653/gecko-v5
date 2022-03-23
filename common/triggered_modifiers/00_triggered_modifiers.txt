@@ -290,19 +290,30 @@ catholic_rome = {
 	potential = {
 		normal_or_historical_nations = yes
 		has_discovered = 118	# Roma
-		religion = catholic
+		#religion = catholic
 		NOT = { tag = PAP }
 	}
 
 	trigger = {	
 		NOT = { overlord_of = PAP }
-		owns_or_vassal_of = 118 # Roma		
+		#owns_or_vassal_of = 118 # Roma
+		num_of_owned_provinces_with = {
+				value = 20
+				region = italy_region
+				is_core = root
+			}
 		NOT = { tag = ITA }
 		NOT = { tag = ROM }
+		NOT = { tag = VEN }
+		NOT = { tag = MLO }
+		NOT = { tag = SIC }
+		NOT = { tag = TTS }
 	}
 
 	#papal_influence = -10
-	diplomatic_reputation = -1
+	production_efficiency = 0.1
+	global_tax_modifier = 0.1
+	global_manpower_modifier = 0.1
 	#icon = 9
 }
 
