@@ -715,3 +715,4 @@ burgundian_inheritance_start_effect = {
 		}
 	}
 }
+

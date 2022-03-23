@@ -16,3 +16,16 @@ change_government_to_gc_ethiopia_Government = {
 		}
 	}
 }
+remove_steppe_devcost_ukr = {
+	if = {
+		limit = {
+			any_owned_province = { has_province_modifier = estate_nomadic_tribes_steppe_devcost }
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = estate_nomadic_tribes_steppe_devcost
+			}
+			remove_province_modifier = estate_nomadic_tribes_steppe_devcost
+		}
+	}
+}	
