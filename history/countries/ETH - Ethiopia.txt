@@ -123,48 +123,49 @@ change_estate_land_share = {
 	}
 }
 
-1430.1.1 = {
-	heir = {
-		name = "Amda Iyasus"
-		monarch_name = "Amda Iyasus"
-		dynasty = "Solomonid"
-		birth_date = 1410.1.1
-		death_date = 1434.6.2
-		claim = 95
-		adm = 2
-		dip = 1
-		mil = 2
-	}
-}
+#1430.1.1 = {
+#	heir = {
+#		name = "Amda Iyasus"
+#		monarch_name = "Amda Iyasus"
+#		dynasty = "Solomonid"
+#		birth_date = 1410.1.1
+#		death_date = 1434.6.2
+#		claim = 95
+#		adm = 2
+#		dip = 1
+#		mil = 2
+#	}
+#}
 
-1433.1.1 = {
-	monarch = {
-		name = "Amda Iyasus"
-		dynasty = "Solomonid"
-		adm = 2
-		dip = 1
-		mil = 2
-	}
-}
+#1433.1.1 = {
+#	monarch = {
+#		name = "Amda Iyasus"
+#		dynasty = "Solomonid"
+#		adm = 2
+#		dip = 1
+#		mil = 2
+#	}
+#}
 
-1433.1.1 = {
-	heir = {
-		name = "Zar'a Quastantînôs"
-		monarch_name = "Zar'a Quastantînôs III"
-		dynasty = "Solomonid"
-		birth_date = 1410.1.1
-		death_date = 1468.9.7
-		claim = 95
-		adm = 6
-		dip = 5
-		mil = 5
-	}
-}
+#1433.1.1 = {
+#	heir = {
+#		name = "Zar'a Quastantînôs"
+#		monarch_name = "Zar'a Quastantînôs III"
+#		dynasty = "Solomonid"
+#		birth_date = 1410.1.1
+#		death_date = 1468.9.7
+#		claim = 95
+#		adm = 6
+#		dip = 5
+#		mil = 5
+#	}
+#}
 
 1434.6.2 = {
 	monarch = {
 		name = "Zara Yakob"
 		dynasty = "Solomonid"
+		birth_date = 1410.1.1
 		adm = 6
 		dip = 5
 		mil = 5
