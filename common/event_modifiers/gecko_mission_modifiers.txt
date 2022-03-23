@@ -43,7 +43,7 @@ fra_into_germany = {
 }
 
 grand_armee = {
-	land_forcelimit_modifier = 0.20
+	land_forcelimit_modifier = 0.15
 	}
 	
 angevin_supremacy = {
@@ -124,14 +124,14 @@ cape_trade_established = {
 }
 
 france_united = {
-	fire_damage = 0.20
+	fire_damage = 0.10
 }
 lowland_conquest = {
 	artillery_fire = 0.5
 	production_efficiency = 0.2
 }
 caliphate_proclaimed = {
-	fire_damage = 0.20
+	fire_damage = 0.10
 }	
 
 gecko_cannon_foundries = {

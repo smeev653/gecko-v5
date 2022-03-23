@@ -11,7 +11,10 @@ empowered_subjects = {
 				has_idea = tribute_system
 				was_player = yes 
 			}
-		is_march = yes
+		OR = {	
+			is_march = yes
+			is_subject_of_type = canton
+		}
 		NOT = { is_colonial_nation = yes }	
 		NOT = { is_lesser_in_union = yes }	
 	}
@@ -167,6 +170,7 @@ HRE_backup = {
 	trigger  = {
 		tag = HAB
 		NOT = { is_emperor = yes }
+		ai = no
 	}
 	global_manpower = 30
 	land_forcelimit = 30
