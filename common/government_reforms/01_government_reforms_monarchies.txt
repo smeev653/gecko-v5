@@ -570,6 +570,10 @@ prussian_monarchy = {
 				have_had_reform = prussian_monarchy
 			}
 			AND = {
+				tag = NGF
+				have_had_reform = prussian_monarchy
+			}
+			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = prussian_monarchy
 			}
