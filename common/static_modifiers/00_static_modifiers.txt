@@ -661,6 +661,7 @@ inflation = {
 	mercenary_cost = 0.02					#1% for each inflation step
 	mercenary_discipline = -0.005
 	fort_maintenance_modifier = 0.01		#1% for each inflation step
+	great_project_upgrade_cost = 0.02
 }
 
 bankruptcy = {
