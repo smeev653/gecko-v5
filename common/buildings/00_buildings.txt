@@ -2014,7 +2014,7 @@ town_hall = {
 	modifier = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
-		local_governing_cost = -0.5
+		local_governing_cost = -0.375
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.50
 		}
@@ -2828,7 +2828,8 @@ impressment_offices = {
 	}
 
 	modifier = {
-		local_sailors = 250
+		local_sailors = 750
+		local_manpower = 0.5
 		ship_recruit_speed = -0.1
 		local_ship_cost = -0.05
 	}
@@ -2889,11 +2890,10 @@ state_house = {
 
 	modifier = {
 		statewide_governing_cost = -0.2
-		min_local_autonomy = -5
+		local_tax_modifier = 2
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2
-		min_local_autonomy = -5
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
