@@ -890,7 +890,8 @@ administrative_ideas = {
 	}
 	organised_mercenary_recruitment = {
 		expand_administration_cost = -0.75
-		state_governing_cost = -0.25
+		statewide_governing_cost = -0.25
+		state_maintenance_modifier = -0.25
 	}
 	administrative_efficiency_idea = {
 		free_mil_policy = 1

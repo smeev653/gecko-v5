@@ -28,6 +28,7 @@
  gc_african_corridor:0 "Trans-Saharan Corridor"
  War_chest:0 "War Chest"
  War_chest_late:0 "War Chest"
+ consolidated_russia:0 "Rus Consolidation"
 
  #Province Triggered Modifiers
  conquest_of_constantinople:0 "Conquest of Constantinople"
