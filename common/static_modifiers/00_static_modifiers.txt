@@ -1764,6 +1764,7 @@ over_governing_capacity_modifier = {
 	monthly_militarized_society = -2
 	defensiveness = -0.35
 	state_maintenance_modifier = 1.5
+	reinforce_speed = -0.35
 }
 
 
