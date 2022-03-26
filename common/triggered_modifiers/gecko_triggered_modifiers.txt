@@ -219,30 +219,45 @@ HRE_backup = {
 #	interest = -0.5
 #}
 
-#Hormuz_defense = {
-#	potential = {
-#			NOT  = { is_year = 1460}
- #           NOT = {is_great_power = yes}
-	#		NOT = {total_development = 299}
-	#		ai = no
-	#		defensive_war_with = MAM
-	#		NOT = { num_of_allies = 2 }
-	#}
-	#
-#
-#	trigger = {
-#		tag = ORM
-#		NOT = {total_development = 299}
-#		ai = no
-#		NOT = {is_great_power = yes}	
-#		defensive_war_with = MAM
-#	}
-#	land_morale = 0.1
-#	discipline = 0.05
-#	land_forcelimit_modifier = 0.2
-#	merc_maintenance_modifier = -0.25
-#	mercenary_cost = -0.25
-#	#mercenary_manpower = 0.5
-#	defensiveness = 0.2
-#	interest = -0.5
-#}
+War_chest = {
+	potential = {
+		NOT  = { is_year = 1510}
+	}
+
+
+	trigger = {
+		ai = no
+		treasury = 1000
+		NOT = { corruption = 1 }
+		NOT = { num_of_loans = 1 }
+		is_at_war = yes
+		land_maintenance = 1
+		army_size_percentage = 0.9
+	}
+	land_morale = 0.1
+	land_forcelimit_modifier = 0.2
+	mercenary_manpower = 0.25
+	war_exhaustion = -0.05
+
+}
+
+War_chest_late = {
+	potential = {
+		NOT  = { is_year = 1610}
+		is_year = 1510
+	}
+
+	trigger = {
+		ai = no
+		treasury = 2000
+		NOT = { corruption = 1 }
+		NOT = { num_of_loans = 1 }
+		is_at_war = yes
+		land_maintenance = 1
+		army_size_percentage = 0.9
+	}
+	land_morale = 0.1
+	land_forcelimit_modifier = 0.2
+	mercenary_manpower = 0.25
+	war_exhaustion = -0.05
+}
