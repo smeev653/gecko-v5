@@ -1780,11 +1780,13 @@ expanded_infrastructure = {
 	allowed_num_of_manufactories = 1
 	local_governing_cost_increase = 10
 	local_governing_cost = 1.0
+	local_manpower_modifier = 0.2
 }
 
 centralize_state = {
 	statewide_governing_cost = -0.25
 	local_prosperity_growth = 0.1
+	local_manpower_modifier = 0.1
 	local_state_maintenance_modifier = -0.2
 	picture = "centralize_state"
 }
