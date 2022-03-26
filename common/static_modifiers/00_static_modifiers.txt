@@ -340,7 +340,7 @@ territory_core = {
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
 	min_local_autonomy = 90
-	local_governing_cost = -0.75
+	local_governing_cost = -0.25
 }
 
 territory_non_core = {
@@ -1027,13 +1027,14 @@ luck = {
 over_extension = {
 	global_foreign_trade_power = -1.0
 	stability_cost_modifier = 0.5
-	#mercenary_cost = 0.5
+	mercenary_cost = 0.5
 	diplomatic_reputation = -2
 	improve_relation_modifier = -0.5
 	global_unrest = 5
 	bureaucrats_influence = 0.5
 	mr_guilds_influence = 0.5
-	#yearly_corruption = 0.5
+	yearly_corruption = 0.5
+	state_maintenance_modifier = 0.5
 }
 
 prestige = {
@@ -1758,7 +1759,7 @@ over_governing_capacity_modifier = {
 	stability_cost_modifier = 0.5
 	#ae_impact = 0.5
 	improve_relation_modifier = -0.5
-	core_creation = 0.1
+	core_creation = 0.2
 	advisor_cost = 1
 	monthly_militarized_society = -2
 	defensiveness = -0.35

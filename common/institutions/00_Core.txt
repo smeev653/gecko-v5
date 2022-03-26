@@ -790,7 +790,7 @@ printing_press = {
 	
 
 	bonus = {
-		stability_cost_modifier = -0.20
+		stability_cost_modifier = -0.10
 		burghers_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		nobles_loyalty_modifier = 0.1
