@@ -2155,10 +2155,19 @@ strengthen_executive_powers_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	potential = { 
-		is_revolutionary = no 
+		is_colonial_nation = yes
+	}
+	trigger = {
+		has_reform = colonial_government
 	}
 	modifiers = {
-		max_absolutism = 25
+		land_forcelimit_modifier = 0.125
+		development_cost = -0.125
+		manpower_recovery_speed = 0.125
+		sailors_recovery_speed = 0.125
+		global_manpower_modifier = 0.175
+		global_sailors_modifier = 0.25
+		sailor_maintenance_modifer = -0.1
 	}
 }
 
