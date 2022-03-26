@@ -70,7 +70,7 @@ holy_sacraments_aspect = {
 saints_accept_prayers_aspect = {
 	cost = 100
 	modifier = { 
-		land_morale = 0.05
+		land_morale = 0.075
 	}
 	ai_will_do = {
 		factor = 12
@@ -145,7 +145,7 @@ heretics_deported_aspect = {
 parish_registers_aspect = {
 	cost = 100
 	modifier = {
-		manpower_recovery_speed = 0.1
+		manpower_recovery_speed = 0.15
 	}
 	ai_will_do = {
 		factor = 10
