@@ -149,6 +149,17 @@ gecko_noble_regiments_reform = { #Noble Regiments
 	}
 }
 
+gecko_professional_army_reform = { #Noble Regiments
+	icon = "holy_state_reform"
+	allow_normal_conversion = yes
+
+	modifiers = {
+		discipline = 0.025
+		army_tradition = 0.5
+		yearly_army_professionalism = 0.0025
+	}
+}
+
 kingdom_of_god_reform = {
 	icon = "kingdom_of_god"
 	potential = {

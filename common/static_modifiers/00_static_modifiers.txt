@@ -699,7 +699,7 @@ peace = {
 	rr_girondists_influence = -0.1
 	pr_smugglers_influence = 0.1
 	#interest = -0.5
-	army_tradition_decay = 0.01
+	#army_tradition_decay = 0.01
 }
 
 unconditional_surrender = {
@@ -1360,7 +1360,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.0025
+	yearly_army_professionalism = 0.00375
 }
 
 ##################################################################################################

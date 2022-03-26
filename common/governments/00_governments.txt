@@ -120,6 +120,7 @@ monarchy = {
 				enlightened_monarchy_reform
 				become_rev_republic_reform
 				gecko_noble_regiments_reform
+				gecko_professional_army_reform
 			}
 		}
 	}
@@ -336,6 +337,7 @@ republic = {
 			reforms = {
 				landholders_reform
 				citizenry_reform
+				gecko_professional_army_reform
 				admiralty_reform
 				equal_electorate_reform
 				three_classes_reform
@@ -456,6 +458,7 @@ tribal = {
 				tribe_becomes_republic_reform
 				tribe_becomes_theocracy_reform
 				gc_tribe_becomes_horde_reform
+				gecko_professional_army_reform
 			}
 		}
 	}
@@ -503,6 +506,7 @@ theocracy = {
 			reforms = {
 				safeguard_holy_sites_reform
 				combat_heresy_reform
+				gecko_professional_army_reform
 				expel_heathens_reform
 				guru_advisors_reform
 				kingdom_of_god_reform
