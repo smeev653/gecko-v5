@@ -944,6 +944,10 @@ h_swedish_missions_5 = {
 				name = h_swedish_falun_mine_global
 				duration = 9125
 			}
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
 		}
 	}
 	##Mission End
