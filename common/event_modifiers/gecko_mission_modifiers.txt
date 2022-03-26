@@ -371,3 +371,7 @@ royal_hungary = {
 gc_yemeni_trade_modifier = {
 	trade_efficiency = 0.1
 }
+
+consolidated_russia = {
+	trade_value_modifier = 0.1
+}

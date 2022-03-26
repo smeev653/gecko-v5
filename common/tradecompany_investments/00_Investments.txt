@@ -374,7 +374,7 @@ townships = {
 	}
 	
 	company_region_modifier = {
-		trade_value_modifier = 0.05 #was 0.1
+		trade_value_modifier = 0.1 
 	}
 	
 	ai_global_worth = { factor = 0 }

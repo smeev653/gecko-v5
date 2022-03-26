@@ -462,6 +462,13 @@ tr_russia_conquest_1 = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
+			russia_region = {
+				add_province_modifier = {
+					 name = consolidated_russia
+					duration = -1
+					hidden = yes
+				}
+			}
 			ruthenia_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
