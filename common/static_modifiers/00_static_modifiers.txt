@@ -900,7 +900,7 @@ legitimacy = {
 	tolerance_heretic = 2
 	diplomatic_reputation = 4
 	vassal_income = 0.2
-	monthly_militarized_society = 0.05
+	#monthly_militarized_society = 0.05
 	max_absolutism = 20
 	nobles_loyalty_modifier = 0.1
 }
@@ -1751,9 +1751,9 @@ over_governing_capacity_modifier = {
 	improve_relation_modifier = -0.5
 	core_creation = 0.1
 	advisor_cost = 1
-	monthly_militarized_society = -1.5
+	monthly_militarized_society = -2
 	defensiveness = -0.35
-	state_maintenance_modifier = 1.25
+	state_maintenance_modifier = 1.5
 }
 
 

@@ -1047,6 +1047,7 @@ colonial_government = {
 		heavy_ship_cost = 0.2
 		trade_range_modifier = -0.75
 		transport_cost = 1000
+		siege_ability = -0.9
 	}
 
 	custom_attributes = {
