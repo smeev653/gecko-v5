@@ -27,7 +27,7 @@ defensive_planner_personality = {
 	allow = {
 		is_admiral = no
 	}
-	shock_damage_received = -0.15
+	shock_damage_received = -0.10
 }
 
 battlefield_medic_personality = {

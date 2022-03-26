@@ -73,7 +73,7 @@ the_wooden_wall = {
 		full_idea_group = defensive_ideas
 	}
 
-	fire_damage_received = -0.15
+	fire_damage_received = -0.10
 	
 	ai_will_do = {
 		factor = 0.6

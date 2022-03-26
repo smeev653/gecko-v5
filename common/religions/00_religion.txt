@@ -1366,7 +1366,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_zaidi"
 
-			shock_damage_received = -0.15
+			shock_damage_received = -0.10
 		}
 		
 	}

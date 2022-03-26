@@ -117,7 +117,7 @@ estate_qizilbash_establish_qurchis = {
 		global_tax_modifier = -0.05
 	}
 	benefits = {
-		shock_damage_received = -0.15
+		shock_damage_received = -0.10
 	}
 	ai_will_do = {					
         factor = 1000                               
