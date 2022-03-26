@@ -358,7 +358,7 @@ SGF_ideas = {
 PRU_ideas = {
 	start = {
 		army_tradition = 0.5
-		prestige = 0.01 #just so it isnt empty and people think its a bug
+		development_cost = -0.05
 	}
 	
 	bonus = {
@@ -390,8 +390,7 @@ PRU_ideas = {
 		global_regiment_recruit_speed = -0.10
 	}
 	religious_toleration = {
-		development_cost = -0.05
-		tolerance_heretic = 1
+		tolerance_heretic = 5
 	}
 }
 
