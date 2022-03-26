@@ -972,7 +972,7 @@ influence_ideas = {
 		diplomatic_upkeep = 2
 	}
 	marcher_lords = {
-		vassal_forcelimit_bonus = 1
+		vassal_forcelimit_bonus = 0.5
 	}
 	ai_will_do = {
 		factor = 0

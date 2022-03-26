@@ -800,7 +800,7 @@ guerilla_warfare = {
 	}	
 	
 	global_manpower_modifier = 0.1
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.5
 	
 	ai_will_do = {
 		factor = 0.8

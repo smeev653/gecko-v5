@@ -718,7 +718,7 @@ vassal_obligations_act = {
 	}	
 	
 	global_trade_goods_size_modifier = 0.1
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.5
 	
 	ai_will_do = {
 		factor = 1
