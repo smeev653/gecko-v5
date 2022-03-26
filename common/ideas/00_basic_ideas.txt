@@ -37,7 +37,7 @@ aristocracy_ideas = {
 		leader_land_manuever = 2
 	}
 	serfdom = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.15
 	}
 	noble_officers = {
 		army_tradition_decay = -0.01
@@ -414,7 +414,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.10
 		land_morale = 0.025
 	}
 
@@ -436,7 +436,7 @@ defensive_ideas = {
 		leader_land_manuever = 1
 	}
 	supply_trains = {
-		land_forcelimit_modifier = 0.15
+		land_forcelimit_modifier = 0.2
 	}
 	improved_foraging = {
 		shock_damage_received = -0.15
