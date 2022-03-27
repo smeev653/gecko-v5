@@ -780,7 +780,7 @@ army_tradition = {
 	maratha_loyalty_modifier = 0.05
 	rajput_loyalty_modifier = 0.05
 	yearly_army_professionalism = 0.02
-	gc_hungarian_nobles_loyalty_modifier = 0.1
+	#gc_hungarian_nobles_loyalty_modifier = 0.1
 }
 
 navy_tradition = {
@@ -910,7 +910,7 @@ legitimacy = {
 	#monthly_militarized_society = 0.05
 	max_absolutism = 20
 	nobles_loyalty_modifier = 0.1
-	gc_hungarian_nobles_loyalty_modifier = 0.1
+	#gc_hungarian_nobles_loyalty_modifier = 0.1
 }
 
 #Multiplied by current Horde Unity - 50
@@ -967,7 +967,7 @@ corruption = {
 	dhimmi_loyalty_modifier = 0.1
 	jains_loyalty_modifier = 0.1
 	rajput_loyalty_modifier = 0.1
-	gc_hungarian_nobles_loyalty_modifier = 0.1
+	#gc_hungarian_nobles_loyalty_modifier = 0.1
 
 	monthly_heir_claim_increase = 0.025							
 }
