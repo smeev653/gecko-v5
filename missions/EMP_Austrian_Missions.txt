@@ -821,26 +821,15 @@ emp_hab_minorities_branch = {
 					OR = {
 						area = slovakia_area
 						area = transdanubia_area
-						area = alfold_area
-					}
-					OR = {
-						NOT = { owned_by = root }
-						NOT = { unrest = 1 }
-						NOT = { nationalism = 1 }
-						NOT = { local_autonomy = 1 }
 					}
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
-								value = 12 #out of 14
+								value = 10 #out of 14
 								OR = {
 									area = slovakia_area
 									area = transdanubia_area
-									area = alfold_area
 								}
-								NOT = { unrest = 1 }
-								NOT = { nationalism = 1 }
-								NOT = { local_autonomy = 1 }
 							}
 						}
 					}
@@ -865,15 +854,11 @@ emp_hab_minorities_branch = {
 			owns_core_province = 153
 			owns_core_province = 1772
 			num_of_owned_provinces_with = {
-				value = 12 #out of 14
+				value = 10 #out of 14
 				OR = {
 					area = slovakia_area
 					area = transdanubia_area
-					area = alfold_area
 				}
-				NOT = { unrest = 1 }
-				NOT = { nationalism = 1 }
-				NOT = { local_autonomy = 1 }
 			}
 		}
 		effect = {
@@ -938,12 +923,7 @@ emp_hab_minorities_branch = {
 				area = hradecko_area
 				area = moravia_area
 				area = slovakia_area
-				area = transylvania_area
-				area = southern_transylvania_area
-				area = alfold_area
 				area = transdanubia_area
-				area = slavonia_area
-				area = croatia_area
 				area = carinthia_area
 				area = venetia_area
 				area = tirol_area
@@ -991,27 +971,7 @@ emp_hab_minorities_branch = {
 					type = all 
 					owned_by = ROOT
 				}
-				transylvania_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				southern_transylvania_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				alfold_area = {
-					type = all 
-					owned_by = ROOT
-				}
 				transdanubia_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				slavonia_area = {
-					type = all 
-					owned_by = ROOT
-				}
-				croatia_area = {
 					type = all 
 					owned_by = ROOT
 				}

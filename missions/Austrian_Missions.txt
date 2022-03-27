@@ -444,16 +444,14 @@ hab_protect_the_balkans = {
 			OR = {
 				area = slovakia_area
 				area = transdanubia_area
-				area = alfold_area
 			}
 			NOT = {
 				ROOT = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 11 #out of 14
+						value = 10 #out of 14
 						OR = {
 							area = slovakia_area
 							area = transdanubia_area
-							area = alfold_area
 						}
 					}
 				}
@@ -462,11 +460,10 @@ hab_protect_the_balkans = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 11 #out of 14
+				value = 10 #out of 14
 				OR = {
 					area = slovakia_area
 					area = transdanubia_area
-					area = alfold_area
 				}
 			}
 		}
