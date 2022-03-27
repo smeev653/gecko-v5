@@ -785,7 +785,7 @@ AHU_ideas = {
 		global_garrison_growth = 0.25
 		fort_maintenance_modifier = -0.10
 	}
-	habsburg_dominance = {
+	gc_AHU_NI_3 = {
 		land_morale = 0.15
 		infantry_power = 0.15
 	}
