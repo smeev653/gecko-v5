@@ -98,11 +98,11 @@ christian = {
 				third_concession = {
 					harsh = {
 						relation_with_heretics = -20
-						manpower_in_true_faith_provinces  = 0.2
+						manpower_in_true_faith_provinces  = 0.15
 					}	
 					concilatory = {
 						relation_with_heretics = 10
-						global_manpower_modifier = 0.2
+						global_manpower_modifier = 0.10
 					}
 				}
 				fourth_concession = {
