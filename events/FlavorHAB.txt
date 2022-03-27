@@ -2147,13 +2147,28 @@ country_event = {
 	option = {# Yes
 		name = flavor_hab.20.A
 		add_government_reform = austrian_dual_monarchy
+		change_tag = AHU
+		if = {
+			limit = { NOT = { government_rank = 3 } }
+			set_government_rank = 3
+		}
+		country_event = {
+			id = ideagroups.1
+		}
+		add_prestige = 50
 		ai_chance = {
-			factor = 1
+			factor = 1000
 		}
 	}
-	
-	option = {# No
-		name = flavor_hab.20.B
+
+	option = { #We may not abandon our German roots
+		name = flavor_hab.20.gc
+		add_government_reform = austrian_dual_monarchy
+		if = {
+			limit = { NOT = { government_rank = 3 } }
+			set_government_rank = 3
+		}
+		add_prestige = 25
 		add_country_modifier = {
 			name = hab_tolerant_society
 			duration = -1

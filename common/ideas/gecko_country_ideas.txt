@@ -767,7 +767,7 @@ AHU_ideas = {
 	}
 	
 	bonus = {
-		heir_chance = 0.50
+		global_manpower_modifier = 0.2
 	}
 	
 	trigger = {
@@ -787,6 +787,7 @@ AHU_ideas = {
 	}
 	habsburg_dominance = {
 		land_morale = 0.15
+		infantry_power = 0.15
 	}
 	fugger_banks = {
 		inflation_reduction = 0.1
