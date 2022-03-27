@@ -15768,7 +15768,7 @@ ulm_minster_great_project = {
 		}
 		province_modifiers = {
 		}
-		area_modifier = {
+		area_modifier = {local_development_cost = -0.05
 		}
 		country_modifiers = {
 	
@@ -15786,7 +15786,7 @@ ulm_minster_great_project = {
 		}
 		province_modifiers = {
 		}
-		area_modifier = {
+		area_modifier = {local_development_cost = -0.1
 		}
 		country_modifiers = {
 	
@@ -15804,7 +15804,7 @@ ulm_minster_great_project = {
 		}
 		province_modifiers = {
 		}
-		area_modifier = {
+		area_modifier = {local_development_cost = -0.2
 		}
 		country_modifiers = {
 			free_city_imperial_authority = 0.2
@@ -17223,7 +17223,7 @@ gme_regensburg_stone_bridge = {
 			province_trade_power_modifier = 0.1
         	local_development_cost = -0.05
 		}
-		area_modifier = { }
+		area_modifier = {local_development_cost = -0.05 }
 		country_modifiers = { }
 		on_upgraded = { }
 	}
@@ -17235,7 +17235,7 @@ gme_regensburg_stone_bridge = {
 			local_development_cost = -0.1
 			local_institution_spread = 0.1	
 		}
-		area_modifier = { }
+		area_modifier = {local_development_cost = -0.1 }
 		country_modifiers = { }
 		on_upgraded = { }
 	}
@@ -17249,7 +17249,7 @@ gme_regensburg_stone_bridge = {
 			local_prosperity_growth = 1
 			local_monthly_devastation = -0.1
 		}
-		area_modifier = { }
+		area_modifier = {local_development_cost = -0.2 }
 		country_modifiers = { }
 		on_upgraded = { }
 	}
@@ -17505,7 +17505,7 @@ gme_munich_neuschwanstein_castle = {
 			local_prosperity_growth = 1
 		}
 		area_modifier = {
-			local_development_cost = -0.10
+			local_development_cost = -0.2
 		}
 		country_modifiers = {
 			governing_capacity_modifier = 0.15
