@@ -1124,7 +1124,7 @@ estate_nobles_right_of_counsel = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 		modifier = {
 			factor = 0
 			is_absolutism_active = yes
@@ -1478,8 +1478,10 @@ estate_church_clerical_oversight = {
 	influence = 0.1
 	
 	penalties = {
+		global_manpower_modifier = -0.1
 	}
 	benefits = {
+		global_tax_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -1738,8 +1740,10 @@ estate_burghers_free_enterprise = {
 	loyalty = 0.1
 	influence = 0.1
 	penalties = {
+		global_manpower_modifier = -0.1
 	}
 	benefits = {
+		global_trade_goods_size_modifier  = 0.05
 	}
 	ai_will_do = {
 		factor = 1000
