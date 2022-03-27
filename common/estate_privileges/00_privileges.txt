@@ -5957,7 +5957,7 @@ estate_nobles_junker_primacy = {
 	penalties = {
 	}
 	benefits = {
-		monthly_militarized_society = 0.20
+		monthly_militarized_society = 0.10
 	}
 	ai_will_do = {
 		factor = 1

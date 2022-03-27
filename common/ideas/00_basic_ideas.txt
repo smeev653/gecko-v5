@@ -57,7 +57,7 @@ plutocracy_ideas = {
 		infantry_cost = -0.125
 	}
 	abolished_serfdom = {
-		land_morale = 0.125
+		land_morale = 0.10
 	}
 	free_subjects = {
 		global_trade_goods_size_modifier = 0.1
