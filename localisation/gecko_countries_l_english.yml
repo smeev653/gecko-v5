@@ -16,6 +16,8 @@
   SGF_ADJ:0 "South German"
   ZGB:0 "Ten Jurisdictions"
   ZGB_ADJ:0 "Ten Jurisdictions"
+  AHU:0 "Habsburg Empire"
+  AHU_ADJ:0 "Austrian"
   #Italy
   GC_EMPIRE_OF_GOD:0 "Empire of God"
   GC_EMPIRE_OF_GOD_ADJ:0 "Heavenly"

@@ -4,7 +4,10 @@ hab_holy_roman_ambitions = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHU
+		}
 	}
 	has_country_shield = yes
 	
@@ -361,7 +364,10 @@ hab_protect_the_balkans = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHU
+		}
 	}
 	has_country_shield = yes
 	
@@ -647,7 +653,10 @@ hab_italian_ambitions = {
 	ai = yes
 	
 	potential = {
-		tag = HAB
+		OR = {
+			tag = HAB
+			tag = AHU
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	
