@@ -1478,7 +1478,7 @@ estate_church_clerical_oversight = {
 	influence = 0.1
 	
 	penalties = {
-		global_manpower_modifier = -0.1
+		global_manpower_modifier = -0.05
 	}
 	benefits = {
 		global_tax_modifier = 0.1

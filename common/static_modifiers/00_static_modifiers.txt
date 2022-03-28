@@ -1089,9 +1089,9 @@ inverse_republican_tradition = {
 	rr_jacobins_influence = -0.1
 	burghers_loyalty_modifier = -0.05
 	vaisyas_loyalty_modifier = -0.05
-	land_morale = -0.05
-	all_power_cost = 0.05
-	global_trade_goods_size_modifier = -0.2
+	#land_morale = -0.05
+	#all_power_cost = 0.05
+	#global_trade_goods_size_modifier = -0.2
 }
 
 ########################################
