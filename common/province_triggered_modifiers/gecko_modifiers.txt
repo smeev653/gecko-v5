@@ -405,15 +405,6 @@ conquest_of_berlin = {
 	trigger = {
 		owner = {
 				NOT = { tag = BRA }
-				NOT = { tag = PRU }
-			
-				OR = { 
-					tag = SWE
-					tag = HSA
-					tag = HES
-					tag = WES
-					tag = HAN
-				}
 		}		
 		controlled_by = ROOT
 	}
