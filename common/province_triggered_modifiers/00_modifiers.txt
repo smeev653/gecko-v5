@@ -210,6 +210,7 @@ coptic_alexandria = {
 		owner = {
 			religion = coptic
 		}
+		controlled_by = ROOT
 	}
 	
 	prestige = 0.5
@@ -369,6 +370,7 @@ hindu_varanasi = {
 		owner = {
 			religion = hinduism
 		}
+		controlled_by = ROOT
 	}
 	
 	prestige = 0.5
@@ -494,6 +496,7 @@ sikh_amritsar = {
 		owner = {
 			religion = sikhism
 		}
+		controlled_by = ROOT
 		religion = sikhism
 	}
 	
@@ -592,6 +595,7 @@ alandalus_returns = {
 		owner = {
 			religion_group = muslim
 		}
+		controlled_by = ROOT
 	}
 	
 	prestige = 0.5
@@ -688,6 +692,7 @@ mil_vatican_library = {
 		owner = {
 			tag = PAP
 		}
+		controlled_by = ROOT
 	}
 	
 	mil_tech_cost_modifier = -0.05

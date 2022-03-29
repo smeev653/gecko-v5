@@ -4,6 +4,7 @@ transcaucasian_wine_valleys = {
 	}
 
 	trigger = {
+		controlled_by = ROOT
 	}
 
 	trade_goods_size= 1
@@ -28,6 +29,7 @@ kaffa_slave_market = {
 		owner = {
 			TAG = CRI
 		}
+		controlled_by = ROOT
 	}
 
 	trade_goods_size= 5
@@ -49,6 +51,7 @@ the_upper_nile = {
 	}
 
 	trigger = {
+		controlled_by = ROOT
 	}
 
 	trade_goods_size= 1
@@ -666,6 +669,7 @@ my_desert = {
 		}
 
 		trigger = {
+			controlled_by = ROOT
 		}
 
 		trade_goods_size= 1
@@ -692,6 +696,7 @@ gc_mongol_kurultai = {
 				culture_group = tartar
 			}
 		}
+		controlled_by = ROOT
 	}
 	
 	#technology_cost = -0.05
@@ -703,7 +708,7 @@ gc_cagliari_copper = {
 		normal_or_historical_nations = yes
 		has_global_flag = gc_cagliari_copper
 	}
-	trigger = {
+	trigger = {controlled_by = ROOT
 	}
 	trade_goods_size = 3
 	local_development_cost = -0.25
@@ -715,7 +720,7 @@ gc_catanzaro_silk = {
 		normal_or_historical_nations = yes
 		has_global_flag = gc_catanzaro_silk
 	}
-	trigger = {
+	trigger = {controlled_by = ROOT
 	}
 	trade_goods_size = 3
 	local_development_cost = -0.10
