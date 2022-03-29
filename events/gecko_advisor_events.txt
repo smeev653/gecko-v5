@@ -157,6 +157,7 @@ country_event = { #siege_specialist
 		siege_specialist = 3
 		NOT = { has_country_modifier = gc_siege_specialist_delayed }
 		NOT = { has_country_flag = gc_siege_specialist_flag }
+		is_year = 1460
 	}
 
     mean_time_to_happen = {
@@ -226,6 +227,7 @@ country_event = { #infantry_leader
 		NOT = { has_country_modifier = gc_infantry_leader_delayed }
 		#NOT = { has_country_flag = gc_infantry_leader_flag }
 		NOT = { has_country_modifier = gc_infantry_leader_cooldown }
+		is_year = 1460
 	}
 
     mean_time_to_happen = {
@@ -305,6 +307,7 @@ country_event = { #cavalry_leader
 		NOT = { has_country_modifier = gc_cavalry_leader_delayed }
 		#NOT = { has_country_flag = gc_cavalry_leader_flag }
 		NOT = { has_country_modifier = gc_cavalry_leader_cooldown }
+		is_year = 1460
 	}
 
     mean_time_to_happen = {

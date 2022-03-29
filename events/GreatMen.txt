@@ -141,6 +141,7 @@ country_event = {
 	trigger = {
 		army_reformer = 3
 		NOT = { has_country_flag = army_reformer }
+		is_year = 1460
 	}
 	
 	mean_time_to_happen = {
@@ -986,6 +987,7 @@ country_event = {
 		grand_captain = 3
 		NOT = { has_country_modifier = PR_grand_captain_cooldown }
 		NOT = { has_country_modifier = grand_captain_cooldown }
+		is_year = 1460
 	}
 	
 	mean_time_to_happen = {
@@ -1150,6 +1152,7 @@ country_event = {
 		commandant = 3
 		NOT = { has_country_modifier = PR_commandant_cooldown }
 		NOT = { has_country_modifier = commandant_cooldown }
+		is_year = 1460
 	}
 	
 	mean_time_to_happen = {
