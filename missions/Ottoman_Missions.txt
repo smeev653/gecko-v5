@@ -1348,7 +1348,6 @@ gecko_tur_events = {
 				tag = RUM
 			}
 		is_year = 1500
-		is_at_war = no
 		any_owned_province = {
 			has_port = yes
 		}
