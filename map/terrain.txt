@@ -128,7 +128,7 @@ categories =  {
 			105
 			4729
 			6078 6075 6045 6046 6047 6048 6049 6051 6052 6053 6124 # gcitaly
-			6081 6082 6085 6086 6092 6093 6083 #gcfrance
+			6081 6082 6085 6086 6092 6093 6083 6084  #gcfrance
 			6099 6100
 			6102 6103 6108 6109 6101 1771 2970 6104 #gcbohemia
 			254 #poznan #smeev
@@ -305,7 +305,7 @@ categories =  {
 			135 #sopron #smeev 
 			6087 6090 6091 6094 6095 6096 6098 #gcfrance
 			4392 193 4764 #gcburgundy
-			6084 #gcfrance
+			#gcfrance
 			6112 #gcbohemia
 			6159 6160 6161 6162 6163 6177 6178 6179 #gc germany
 			6201 6203 6200 #gc netherlands
@@ -533,7 +533,7 @@ categories =  {
 			4706 # 1.30 Greece and Bulgaria
 			88 #artois smeev
 			408 2311 4288 4290 #iraq marshes #smeev
-			87 235 #calais #smeev
+			87 235 1743 #calais #smeev
 		}
 	}
 	

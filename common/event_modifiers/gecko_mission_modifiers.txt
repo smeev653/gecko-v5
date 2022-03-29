@@ -15,6 +15,7 @@ rule_britannia = {
 
 burgundy_subjects_placated = {
 	reduced_liberty_desire = 50
+	vassal_forcelimit_bonus = 1
 }
 
 succesful_bid_for_imperial_crown = {

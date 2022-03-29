@@ -636,7 +636,7 @@ emp_burgundy_3 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 93
-				province_id = 1878
+				#province_id = 1878
 				province_id = 2974
 				province_id = 1742
 				province_id = 6200
@@ -648,9 +648,9 @@ emp_burgundy_3 = {
 			93 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1878 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#1878 = {
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			2974 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -682,6 +682,7 @@ emp_burgundy_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_mil_power = 100
 		}
 	}
 	
@@ -699,12 +700,15 @@ emp_burgundy_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			east_frisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		
 		effect = {
 			add_prestige = 20
-			add_mil_power = 100
-			1975 = {
+			1269 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300
@@ -712,6 +716,7 @@ emp_burgundy_3 = {
 					key = bur_channel_ambition
 				}
 			}
+			add_adm_power = 150
 		}
 	}
 	

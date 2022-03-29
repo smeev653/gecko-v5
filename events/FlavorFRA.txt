@@ -1683,7 +1683,7 @@ country_event = {
 		FRA = {
 			is_subject = no
 		}
-		is_year = 1444
+		is_year = 1445
 	}
 	
 	mean_time_to_happen = {
@@ -1714,7 +1714,11 @@ country_event = {
 				}
 				167 = {
 					cede_province = FRA
-				}	
+				}
+				87 = {
+				cede_province = BUR
+				hidden_effect = { add_local_autonomy = -90 }
+			}				
 			add_truce_with = FRA
 		}
 		FRA = { country_event = { id = flavor_fra.8 } }
@@ -1825,6 +1829,7 @@ country_event = {
 			}
 		}
 		add_truce_with = FROM
+		add_truce_with = BUR
 		1879 = {
 			cede_province = FRA
 			hidden_effect = { add_local_autonomy = -90 }
@@ -1847,6 +1852,10 @@ country_event = {
 		}
 		167 = {
 			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -90 }
+		}
+		87 = {
+			cede_province = BUR
 			hidden_effect = { add_local_autonomy = -90 }
 		}
 	}

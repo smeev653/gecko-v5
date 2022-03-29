@@ -18,6 +18,7 @@ base_production = 5
 trade_goods = grain
 base_manpower = 2
 add_core = HAI
+fort_15th = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

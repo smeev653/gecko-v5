@@ -3268,8 +3268,9 @@ bur_lowlands_secured_mod = {
 }
 
 bur_realm_united_mod = {
-	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
 	local_autonomy = -0.05
+	trade_goods_size_modifier = 0.2
 }
 
 bur_prestigious_duchy_mod = {
