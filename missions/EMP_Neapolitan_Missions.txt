@@ -22,8 +22,8 @@ emp_naples_1 = {
 		trigger = { share_of_starting_income = 1.5 }
 		effect = {
 			add_country_modifier = {
-				name = "growing_economy"
-				duration = 9125 #25 years
+				name = "norman_resurgence"
+				duration = 1825 
 			}
 		}
 	}
