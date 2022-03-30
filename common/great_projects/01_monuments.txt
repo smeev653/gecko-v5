@@ -4063,7 +4063,7 @@ the_great_wall_of_china = {
 
 ambras_castle = {
 	# province it starts in
-	start = 73
+	start = 134
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1564.01.01
@@ -4441,7 +4441,7 @@ mesa_verde = {
 
 taj_mahal = {
 	# province it starts in
-	start = 524
+	start = 522
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1632 
@@ -5229,7 +5229,7 @@ bagan_temples = {
 
 ait_benhaddou = {
 	# province it starts in
-	start = 2467
+	start = 343
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1050.01.01 #Almoravid Period
@@ -12862,7 +12862,7 @@ holy_city_kairouan = {
 }
 
 imam_hussein_al-abbas = {
-	start = 409 #Karbala
+	start = 410 #Karbala
 	date = 680.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -14298,7 +14298,7 @@ rila_monasteries = {
 }
 
 churches_lalibela = {
-	start = 2769 #Lasta
+	start = 2762 #Lasta
 	date = 1137.01.01
 	time = { months = 0	}
 	build_cost = 0
