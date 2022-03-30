@@ -512,10 +512,6 @@ emp_hun_bohemia_austria_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = {
-				name = "hungary_unleashed"
-				duration = 5475 #15 years
-			}
 		}
 	}
 	

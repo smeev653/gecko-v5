@@ -40,6 +40,11 @@ change_estate_land_share = {
 	}
 }
 
+1444.11.10 = { add_country_modifier = {
+				name = "hungary_unleashed"
+				duration = 5475 #15 years
+			}
+}
 # Personal union with Habsburg under Ladislaus the Posthumous 1452-1457
 1452.1.1 = {
 	monarch = {

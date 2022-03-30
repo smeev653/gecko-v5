@@ -248,10 +248,6 @@ emp_naples_3 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = "norman_resurgence"
-				duration = 3650
 			}	
 		}
 	}

@@ -24,8 +24,8 @@ succesful_bid_for_imperial_crown = {
 }
 
 norman_resurgence = {
-	ae_impact = -0.2
-	province_warscore_cost = -0.2
+	ae_impact = -0.3
+	province_warscore_cost = -0.3
 	land_morale = 0.05
 }
 
