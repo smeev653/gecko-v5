@@ -54,6 +54,7 @@ Minor = {
 	
 
 	trigger = {
+		is_at_war = no
 		OR = {
 			NOT = {total_development = 299}
 			AND = { 
@@ -70,12 +71,14 @@ Minor = {
 	#}
 		NOT = { is_emperor = yes }
 	}
-	advisor_cost = -0.2
+	advisor_cost = -0.25
 	advisor_pool = 1
-	ae_impact = -0.10
 	interest = -0.25
-	global_regiment_cost = -0.05
+	global_regiment_cost = -0.1
 	build_cost = -0.1
+	all_power_cost = -0.025
+	global_autonomy = -0.05
+	monthly_reform_progress_modifier = 0.1
 }
 
 Decay = {
@@ -241,23 +244,49 @@ War_chest = {
 
 }
 
-#War_chest_late = {
-#	potential = {
-#		NOT  = { is_year = 1610}
-#		is_year = 1510
-#	}
-#
-#	trigger = {
-#		ai = no
-#		treasury = 2000
-#		NOT = { corruption = 1 }
-#		NOT = { num_of_loans = 1 }
-#		is_at_war = yes
-#		land_maintenance = 1
-#		army_size_percentage = 0.9
-#	}
-#	land_morale = 0.1
-#	land_forcelimit_modifier = 0.2
-#	mercenary_manpower = 0.25
-#	war_exhaustion = -0.05
-#}
+Peace_of_Italy = {
+	potential = {
+		NOT  = { is_year = 1550}
+		OR = {
+			tag = MLO
+			tag = VEN
+			tag = PAP
+			tag = SIC
+			tag = TTS
+			tag = ITA
+			tag = ROM
+		}
+	}
+
+	trigger = {
+		italy_region = {
+			owner = { culture_group = latin }
+		}
+		is_at_war = no
+		MLO = { ai = no }
+		VEN = { ai = no }
+		PAP = { ai = no }
+		SIC = { ai = no }
+		NOT = {	
+			italy_region = {
+					owner = {
+						OR = {
+						  culture_group = germanic
+						  culture_group = french
+						  culture_group = iberian
+						  culture_group = carpathian
+						  culture_group = maghrebi
+						  culture_group = turko_semitic 
+						  }
+					}
+			}											
+		}			
+	}
+	all_power_cost = -0.025
+	build_cost = -0.05
+	production_efficiency = 0.1
+	global_tax_modifier = 0.1
+	global_manpower_modifier = 0.1
+	global_autonomy = -0.05
+	monthly_reform_progress_modifier = 0.1
+}
