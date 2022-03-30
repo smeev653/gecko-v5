@@ -54,6 +54,7 @@ Minor = {
 	
 
 	trigger = {
+		NOT  = { is_year = 1500}
 		is_at_war = no
 		OR = {
 			NOT = {total_development = 299}
@@ -246,7 +247,7 @@ War_chest = {
 
 Peace_of_Italy = {
 	potential = {
-		NOT  = { is_year = 1550}
+		NOT  = { is_year = 1500}
 		OR = {
 			tag = MLO
 			tag = VEN
