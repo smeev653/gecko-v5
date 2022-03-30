@@ -1,7 +1,7 @@
 #6053 - Caserta
 
-owner = PAP
-controller = PAP
+owner = NAP
+controller = NAP
 culture = neapolitan 
 religion = catholic 
 hre = no 
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 2 
 capital = "Caserta" 
 is_city = yes	# Estimated
-add_core = PAP
+add_core = NAP
 hre = yes
 discovered_by = western
 discovered_by = eastern

@@ -1,7 +1,7 @@
 # 4733 - Molise
 
-owner = PAP
-controller = PAP
+owner = NAP
+controller = NAP
 culture = neapolitan 
 religion = catholic 
 hre = yes 
@@ -11,7 +11,7 @@ trade_goods = paper
 base_manpower = 2
 capital = "Campobasso"
 is_city = yes
-add_core = PAP
+add_core = NAP
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
