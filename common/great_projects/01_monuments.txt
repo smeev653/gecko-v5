@@ -9138,7 +9138,7 @@ versailles = {
 
 el_escorial = {
 	# province it starts in
-	start = 217
+	start = 2754
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1444.01.01 #1584.01.01
@@ -10910,7 +10910,7 @@ bara_katra = {
 }
 
 bran_castle = {
-	start = 156 #Temes
+	start = 4128 #Temes
 	date = 1357.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -11926,7 +11926,7 @@ erdene_zuu = {
 }
 
 etchimiadzin_cathedral = {
-	start = 419 #Yerevan
+	start = 422 #Yerevan
 	date = 301.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -14158,7 +14158,7 @@ qhapaq_nam = {
 }
 
 rila_monasteries = {
-	start = 4703 #Kostendil
+	start = 1766 #Kostendil
 	date = 927.01.01
 	time = { months = 0	}
 	build_cost = 0
