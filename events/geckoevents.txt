@@ -733,7 +733,7 @@ country_event = {
 			capital_scope = { 
 				spawn_rebels = {
 						type = tribal_rebels
-						size = 2
+						size = 1
 					}
 			}
 			remove_estate_privilege = estate_gc_noble_levies
@@ -749,7 +749,7 @@ country_event = {
 			capital_scope = { 
 				spawn_rebels = {
 						type = noble_rebels
-						size = 2
+						size = 1
 					}
 			}
 			remove_estate_privilege = estate_gc_noble_levies
