@@ -292,6 +292,7 @@ catholic_rome = {
 		has_discovered = 118	# Roma
 		#religion = catholic
 		NOT = { tag = PAP }
+		NOT  = { is_year = 1550}
 	}
 
 	trigger = {	
