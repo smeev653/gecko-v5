@@ -417,10 +417,10 @@ defensive_ideas = {
 		global_manpower_modifier = 0.10
 		land_morale = 0.025
 	}
-
-	battlefield_commisions = {
-		army_tradition = 0.5	
+	improved_foraging = {
+		shock_damage_received = -0.15
 	}
+	
 	military_drill = {
 		land_morale = 0.125
 	}
@@ -438,8 +438,8 @@ defensive_ideas = {
 	supply_trains = {
 		land_forcelimit_modifier = 0.2
 	}
-	improved_foraging = {
-		shock_damage_received = -0.15
+	battlefield_commisions = {
+		army_tradition = 1	
 	}
 
 	ai_will_do = {
