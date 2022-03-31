@@ -5,7 +5,7 @@ estate_gc_noble_levies = {
 	influence = 0.20
 	cooldown_years = 10
 	on_cooldown_expires = { 
-			country_event = { id = gecko.8 }
+		country_event = { id = gecko.8 }
 	}
 	is_valid = {
 	}

@@ -133,6 +133,14 @@ gc_estate_hungarian_nobles = {
 	
 	privileges = {
 		gc_hungarian_nobles_privilege_1
+		gc_hungarian_nobles_privilege_2
+		gc_hungarian_nobles_privilege_3
+		gc_hungarian_nobles_privilege_4
+		gc_hungarian_nobles_privilege_5
+		gc_hungarian_nobles_privilege_6
+		gc_hungarian_nobles_privilege_7
+		gc_hungarian_nobles_privilege_8
+		gc_hungarian_nobles_privilege_9
 	}
 
 	agendas = {
