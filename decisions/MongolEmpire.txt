@@ -33,16 +33,11 @@ country_decisions = {
 						}
 						region = central_asia_region
 						region = crimea_region
-						province_id = 1816
-						province_id = 1821
-						province_id = 667
 					}
 					NOT = { owned_by = ROOT }
 				}
 				AND = {
 					OR = {
-						region = khorasan_region
-						region = persia_region
 						province_id = 295
 						province_id = 280
 					}
@@ -70,14 +65,6 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}	
-			khorasan_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			persia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			295 = { country_or_non_sovereign_subject_holds = ROOT }
 			280 = { country_or_non_sovereign_subject_holds = ROOT }
 			is_at_war = no
