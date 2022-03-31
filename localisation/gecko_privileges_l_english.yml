@@ -40,7 +40,7 @@
  EST_VAL_VERY_LOW_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising less than 10% of the total Army: §Y$VAL$%§!"
  EST_VAL_HIGH_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 50% of the total Army: §G$VAL$§!"
  EST_VAL_MEDIUM_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 25% of the total Army: §G$VAL$§!"
- EST_VAL_VERY_LOW_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising less than 10% of the total Army: §R$VAL$§!"^
+ EST_VAL_VERY_LOW_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising less than 10% of the total Army: §R$VAL$§!"
 
 
  #Hungarian Nobles Estate
