@@ -106,7 +106,7 @@ conquest_of_paris = {
 	}
 
 	discipline = 0.03
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -133,7 +133,7 @@ conquest_of_vienna = {
 	}
 
 	land_morale = 0.05
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -181,7 +181,7 @@ conquest_of_jerusalem = {
 	}
 
 	missionaries = 1
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -214,7 +214,7 @@ conquest_of_baghdad = {
 	}
 
 	all_power_cost = -0.02
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -244,7 +244,7 @@ conquest_of_delhi = {
 
 
 	land_morale = 0.05
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -359,7 +359,7 @@ conquest_of_fez = {
 		}	
 
 	land_morale = 0.05
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -385,7 +385,7 @@ conquest_of_london = {
 		}	
 
 	land_morale = 0.05
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -409,7 +409,7 @@ conquest_of_berlin = {
 		controlled_by = ROOT
 	}
 	land_morale = 0.05
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -435,7 +435,7 @@ conquest_of_saint_petersburg = {
 	}	
 
 	discipline = 0.03
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -544,7 +544,7 @@ conquest_of_tabriz = {
 		}	
 
 	discipline = 0.03
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -569,8 +569,7 @@ conquest_of_samarkand = {
 		controlled_by = ROOT	
 		}	
 
-	land_morale = 0.05
-	prestige = 0.5
+	discipline = 0.03
 	
 	#Province scope
 	on_activation = {
@@ -596,7 +595,7 @@ conquest_of_pest = {
 		}	
 
 	discipline = 0.03
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
@@ -643,7 +642,7 @@ conquest_of_herat = {
 	}
 
 	infantry_power = 0.1
-	prestige = 0.5
+ 
 	
 	#Province scope
 	on_activation = {
