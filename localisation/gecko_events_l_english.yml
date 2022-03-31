@@ -135,3 +135,8 @@
  gecko.1000.d:0 "The levies previously provided by the Hungarian Nobles have been put to good use. We now have an opportunity to press them for service again, however they will not like it."
  gecko.1000.a:0 "Do nothing."
  gecko.1000.b:0 "Seize back their influence and press them for levies again."
+
+ #Gecko Hungary
+ gc_hungary_event.1.t:0 "The Bulwark of Christianity"
+ gc_hungary_event.1.d:0 "As the principal defenders of Christendom against the Muslim threat, we have come to be known as the Bulwark of Christianity. By demonstrating our ability to match anything the infidel can throw at us, we can ensure that this title is thoroughly deserved."
+ gc_hungary_event.1.a:0 "Deus Vult"

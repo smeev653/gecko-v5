@@ -1,0 +1,16 @@
+namespace = gc_hungary_event
+
+country_event = {
+	id = gc_hungary_event.1
+	title = gc_hungary_event.1.t
+	desc = gc_hungary_event.1.d
+	picture = MAMLUK_WARRIORS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gc_hungary_event.1.a
+        override_country_name = GREAT_HUNGARY
+        add_government_reform = gc_greater_hungary_reform
+	}
+}

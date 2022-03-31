@@ -165,3 +165,7 @@
 
  catholic_rome:0 "Italian Ambition"
  desc_catholic_rome:1 ""
+
+ #Hungary
+ gc_hungary_anatolian_conquest:0 "Conquest of Anatolia"
+ gc_hungary_conquest_of_jerusalem:0 "Conquest of Jerusalem"

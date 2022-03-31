@@ -278,3 +278,56 @@ gc_eng_rb_take_gibraltar_desc:0 ""
 
 gc_son_take_djenne_title:0 "Conquer Zazzau"
 gc_son_take_djenne_desc:0 ""
+
+#Hungary
+
+GREAT_HUNGARY:0 "Greater Hungary"
+GREAT_HUNGARY_ADJ:0 "Greater Hungarian"
+
+gc_hungary_mission_1_title:0 "A new Bloodline"
+gc_hungary_mission_1_desc:0 ""
+
+gc_hungary_mission_2_title:0 "Stabilize the Economy"
+gc_hungary_mission_2_desc:0 ""
+
+gc_hungary_mission_3_title:0 "Reform the Army"
+gc_hungary_mission_3_desc:0 ""
+
+gc_hungary_mission_4_title:0 "The future of Hungary"
+gc_hungary_mission_4_desc:0 "§R§ Choose carefully, this will bind us to one path. §W"
+
+gc_hungary_mission_5_title:0 "Prepare the Fleet"
+gc_hungary_mission_5_desc:0 ""
+
+gc_hungary_mission_6_title:0 "Foothold in Anatolia"
+gc_hungary_mission_6_desc:0 ""
+
+gc_hungary_mission_7_title:0 "Prepare Crusade"
+gc_hungary_mission_7_desc:0 ""
+
+gc_hungary_mission_8_title:0 "Control Anatolia"
+gc_hungary_mission_8_desc:0 ""
+
+gc_hungary_mission_9_title:0 "Anatolian Threat"
+gc_hungary_mission_9_desc:0 ""
+
+gc_hungary_mission_10_title:0 "Secure Bulgaria"
+gc_hungary_mission_10_desc:0 ""
+
+gc_hungary_mission_11_title:0 "Secure Macedon"
+gc_hungary_mission_11_desc:0 ""
+
+gc_hungary_mission_12_title:0 "Secure Greece"
+gc_hungary_mission_12_desc:0 ""
+
+gc_hungary_mission_13_title:0 "Secure Greek Islands"
+gc_hungary_mission_13_desc:0 ""
+
+gc_hungary_mission_14_title:0 "Free Jerusalem"
+gc_hungary_mission_14_desc:0 ""
+
+gc_hungary_mission_15_title:0 "Dominate Black Sea"
+gc_hungary_mission_15_desc:0 ""
+
+gc_hungary_mission_16_title:0 "Conquer Crimea"
+gc_hungary_mission_16_desc:0 ""
