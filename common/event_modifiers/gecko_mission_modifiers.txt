@@ -281,18 +281,17 @@ baghdad_restored = {
 
 # Mongol missions
 
+mongol_religion_unity = {
+	global_tax_modifier = 0.1
+}
+
 tibetan_missionaries = {
-	global_missionary_strength = 0.03
+	tolerance_heathen = 3
 	missionary_maintenance_cost = -0.5
 }
-
-mongol_religion_unity = {
-	tolerance_own = 1
-}
-
 mongol_rule_tibet = {
 	local_autonomy = -0.05
-	local_development_cost = -0.2
+	local_development_cost = -0.25
 }
 
 pax_mongolica = {

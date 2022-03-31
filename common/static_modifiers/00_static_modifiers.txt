@@ -919,7 +919,7 @@ horde_unity = {
 	discipline = 0.1
 	nomadic_tribes_loyalty_modifier = 0.2
 	vassal_income = 0.4
-	tolerance_heathen = 3
+	tolerance_heathen = 4
 	tolerance_heretic = 2
 	tolerance_own = 2
 }

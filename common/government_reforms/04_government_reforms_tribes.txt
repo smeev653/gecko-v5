@@ -65,6 +65,7 @@ great_mongol_state_reform = {
 	raze_province = yes				
 	modifiers = {
 		horde_unity = 2
+		land_morale = 0.1
 		global_manpower_modifier = 0.2
 		land_forcelimit_modifier = 0.2
 		loot_amount = 0.50
