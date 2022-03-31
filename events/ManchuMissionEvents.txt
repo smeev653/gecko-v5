@@ -215,10 +215,7 @@ country_event = {
 	option = { # Accept cooperation and conversion
 		name = "mch_missions.6.a"
 
-		add_ruler_modifier = {
-			name = "genghis_khan_reborn"
-			duration = -1
-		}
+		
 		add_country_modifier = {
 			name = "tibetan_missionaries"
 			duration = -1
