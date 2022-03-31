@@ -923,7 +923,10 @@ emp_hab_minorities_branch = {
 				area = hradecko_area
 				area = moravia_area
 				area = slovakia_area
-				area = transdanubia_area
+				province_id = 135
+				province_id = 4240
+				province_id = 1864
+				province_id = 6099
 				area = carinthia_area
 				area = venetia_area
 				area = tirol_area
@@ -971,8 +974,16 @@ emp_hab_minorities_branch = {
 					type = all 
 					owned_by = ROOT
 				}
-				transdanubia_area = {
-					type = all 
+				135 = {
+					owned_by = ROOT
+				}
+				4240 = {
+					owned_by = ROOT
+				}
+				1864 = {
+					owned_by = ROOT
+				}
+				6099 = {
 					owned_by = ROOT
 				}
 				carinthia_area = {
