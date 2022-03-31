@@ -51,7 +51,7 @@
  gc_hungarian_nobles_influence_modifier:0 "Hungarian Nobility Influence"
 
  gc_hungarian_nobles_privilege_1:0 "Integrate Hungarian Cavalry"
- gc_hungarian_nobles_privilege_1_desc:0 "The Noble Cavalry of the Hungarian Nobility will join our ranks."^
+ gc_hungarian_nobles_privilege_1_desc:0 "The Noble Cavalry of the Hungarian Nobility will join our ranks."
 
  gc_hungarian_nobles_privilege_2:0 "Hungarian Noble Levies"
  gc_hungarian_nobles_privilege_2_desc:0 ""
