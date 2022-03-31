@@ -304,6 +304,11 @@ mongol_european_conquest = {
 	province_warscore_cost = -0.15
 }
 
+genghis_khan_reborn = {
+	prestige = 1
+	land_morale = 0.05
+}
+
 reorganized_mongols = {
 	num_accepted_cultures = 3
 }

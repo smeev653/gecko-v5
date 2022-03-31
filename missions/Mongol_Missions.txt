@@ -285,6 +285,10 @@ mongol_missions_3 = {
 			}
 		}
 		effect = {
+			add_ruler_modifier = {
+			name = "genghis_khan_reborn"
+			duration = -1
+		}
 			country_event = { id = mch_missions.6 }
 			tibet_region = {
 				add_province_modifier = {
