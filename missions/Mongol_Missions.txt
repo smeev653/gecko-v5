@@ -159,7 +159,28 @@ mongol_missions_2 = {
 					}
 				}
 				change_culture = mongol
-			}	
+			}
+			mongolia_region = {
+				add_province_modifier = {
+					 name = mongol_consolidation
+					duration = -1
+					hidden = yes
+				}
+			}
+			central_asia_region = {
+				add_province_modifier = {
+					 name = mongol_consolidation
+					duration = -1
+					hidden = yes
+				}
+			}
+			west_siberia_region  = {
+				add_province_modifier = {
+					 name = mongol_consolidation
+					duration = -1
+					hidden = yes
+				}
+			}
 		}
 	}
 	mongols_persia = {
@@ -265,6 +286,13 @@ mongol_missions_3 = {
 		}
 		effect = {
 			country_event = { id = mch_missions.6 }
+			tibet_region = {
+				add_province_modifier = {
+					 name = mongol_consolidation
+					duration = -1
+					hidden = yes
+				}
+			}
 		}
 	}
 	mongols_religion_mission = {
@@ -315,7 +343,14 @@ mongol_missions_3 = {
 						region = crimea_region
 				}
 				change_culture = mongol
-			}	
+			}
+			crimea_region = {
+				add_province_modifier = {
+					 name = mongol_consolidation
+					duration = -1
+					hidden = yes
+				}
+			}
 		}
 	}
 	mongols_yam = {

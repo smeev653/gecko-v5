@@ -383,3 +383,7 @@ gc_yemeni_trade_modifier = {
 consolidated_russia = {
 	trade_value_modifier = 0.1
 }
+
+mongol_consolidation = {
+	trade_value_modifier = 0.1
+}
