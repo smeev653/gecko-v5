@@ -1963,7 +1963,7 @@ estate_cossacks_cossack_self_governance = {
 
 estate_cossacks_establish_the_cossack_regiments = {
 	icon = privilege_raise_host
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	influence = 0.05
 	is_valid = {
@@ -7328,7 +7328,7 @@ estate_nobles_command_of_the_military = {
 	icon = privilege_promote_purbias
 	land_share = 5
 	max_absolutism = -10
-	influence = 0.3
+	influence = 0.1
 	is_valid = {
 	}
 	can_select = {
