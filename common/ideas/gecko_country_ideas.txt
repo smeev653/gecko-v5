@@ -804,3 +804,40 @@ AHU_ideas = {
 		discipline = 0.05
 	}
 }
+
+EOH_ideas = {
+	start = {
+		cavalry_power = 0.2
+		land_morale = 0.1
+	}
+	bonus = {
+		army_tradition_decay = -0.01
+	}
+	trigger = {
+		tag = EOH
+	}
+	free = yes		#will be added at load.
+	
+	reformed_coinage = {
+		global_tax_modifier = 0.15
+	}
+	found_the_black_army = {
+		discipline = 0.05
+		cavalry_cost = -0.1
+	}
+	bulwark_of_christianity = {
+		global_manpower_modifier = 0.2
+	}
+	hun_renaissanse_knowledge = {
+		technology_cost = -0.1
+	}
+	curtailed_peasantry = {
+		production_efficiency = 0.1
+	}
+	strengthened_towns = {
+		global_own_trade_power = 0.25
+	}
+	hungarian_estates_general = {
+		country_military_power = 1
+	}
+}

@@ -244,3 +244,16 @@ gc_hungary_conquest_of_jerusalem = {
 	missionaries = 1
 	global_missionary_strength = 0.02
 }
+
+gc_hungary_italian_domination = {
+	trade_efficiency = 0.1
+}
+
+gc_hungary_conquest_of_rome = {
+	papal_influence = 2
+	tolerance_own = 2
+}
+
+gc_hungary_conquest_of_poland = {
+	num_accepted_cultures = 2
+}

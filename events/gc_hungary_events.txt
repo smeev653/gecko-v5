@@ -1,5 +1,6 @@
 namespace = gc_hungary_event
 
+#The Bulwark of Christianity
 country_event = {
 	id = gc_hungary_event.1
 	title = gc_hungary_event.1.t
@@ -12,5 +13,56 @@ country_event = {
 		name = gc_hungary_event.1.a
         override_country_name = GREAT_HUNGARY
         add_government_reform = gc_greater_hungary_reform
+	}
+}
+
+#The future of Hungary
+country_event = {
+	id = gc_hungary_event.2
+	title = gc_hungary_event.2.t
+	desc = gc_hungary_event.2.d
+	picture = MAMLUK_WARRIORS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gc_hungary_event.2.a
+        set_country_flag = gc_hungary_going_for_gh
+		hidden_effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+	option = {
+		name = gc_hungary_event.2.b
+        set_country_flag = gc_hungary_going_for_eoh
+		hidden_effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+country_event = {
+	id = gc_hungary_event.3
+	title = gc_hungary_event.3.t
+	desc = gc_hungary_event.3.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {# 
+		gc_hungary_event.3.a
+		add_government_reform = empire_of_hungary_reform
+		change_tag = EOH
+		if = {
+			limit = { NOT = { government_rank = 3 } }
+			set_government_rank = 3
+		}
+		country_event = {
+			id = ideagroups.1
+		}
+		add_prestige = 50
+		ai_chance = {
+			factor = 1000
+		}
 	}
 }

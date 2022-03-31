@@ -106,3 +106,8 @@
   AHU_ideas_bonus:0 "Habsburg Ambitions"
   gc_AHU_NI_3:0 "Habsburg Dominance"
   gc_AHU_NI_3_desc:0 "War is an extension of Diplomacy."
+
+  #Empire of Hungary
+  EOH_ideas:0 "Empire of Hungary Ideas"
+  EOH_ideas_start:0 "Hungarian Traditions"
+  EOH_ideas_bonus:0 "Hungarian Ambitions"

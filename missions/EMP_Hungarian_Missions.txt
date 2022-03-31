@@ -260,7 +260,7 @@ gc_hungary_branch_3 = {
 
         }
         trigger = {
-            #has_regency = no
+            has_regency = no
         }
         effect = {
             add_stability = 1
@@ -275,7 +275,7 @@ gc_hungary_branch_3 = {
             
         }
         trigger = {
-           # monthly_income = 24
+           monthly_income = 24
         }
         effect = {
             add_treasury = 100
@@ -290,7 +290,7 @@ gc_hungary_branch_3 = {
             
         }
         trigger = {
-           # army_size = 40
+           army_size = 40
         }
         effect = {
             add_manpower = 10
@@ -306,14 +306,12 @@ gc_hungary_branch_3 = {
             
         }
         trigger = {
-            #is_year = 1465
+            is_year = 1465
         }
         effect = {
-            set_country_flag = gc_hungary_going_for_gh
-            #set_country_flag =
-            hidden_effect = {
-				swap_non_generic_missions = yes
-			}
+            country_event = { #The future of Hungary
+                id = gc_hungary_event.2
+            }
         }
     }
 }
@@ -674,6 +672,7 @@ gc_hungary_gh_branch_3 = {
 		effect = {
 			add_adm_power = 100
 			add_prestige = 50
+            add_treasury = 1000
 			add_country_modifier = {
 				name = "hun_constantinople"
 				duration = 7300
@@ -1074,3 +1073,846 @@ gc_hungary_gh_branch_5 = {
 }
 
 #Empire of Hungary Path
+
+gc_hungary_eoh_branch_1 = {
+    slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+            tag = HUN
+        }
+        has_country_flag = gc_hungary_going_for_eoh
+	}
+	has_country_shield = yes
+
+    gc_hungary_mission_17 = {
+        icon = assert_our_sovereignty
+        required_missions = { gc_hungary_mission_21 }
+        position = 6
+        provinces_to_highlight = {
+            OR = {
+                area = carinthia_area 
+                area = venetia_area
+            }
+            NOT = { owned_by = ROOT }
+        }
+        trigger = {
+            carinthia_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            venetia_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            po_valley_area = {
+                add_permanent_claim = ROOT
+            }
+            emilia_romagna_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_18 = {
+        icon = confront_the_lombards
+        required_missions = { gc_hungary_mission_17 }
+        position = 7
+        provinces_to_highlight = {
+            OR = {
+                area = po_valley_area
+                area = emilia_romagna_area
+            }
+            NOT = { owned_by = ROOT }
+        }
+        trigger = {
+            po_valley_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            emilia_romagna_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            lombardy_area = {
+                add_permanent_claim = ROOT
+            }
+            tuscany_area = {
+                add_permanent_claim = ROOT
+            }
+            siena_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_19 = {
+        icon = all_roads_lead_to_milan
+        required_missions = { gc_hungary_mission_18 }
+        position = 8
+        provinces_to_highlight = {
+            OR = {
+                area = lombardy_area
+                area = tuscany_area
+                area = siena_area
+            }
+            NOT = { owns_or_non_sovereign_subject_of = ROOT }
+        }
+        trigger = {
+            lombardy_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            tuscany_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            siena_area = {
+                type = all 
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            liguria_area = {
+                add_permanent_claim = ROOT
+            }
+            torino_area = {
+                add_permanent_claim = ROOT
+            }
+            piedmont_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_20 = {
+        icon = complete_the_risorgimento
+        required_missions = { gc_hungary_mission_19 }
+        position = 9
+        provinces_to_highlight = {
+            OR = {
+                area = liguria_area
+                area = torino_area
+                area = piedmont_area
+            }
+            NOT = { owns_or_non_sovereign_subject_of = ROOT }
+        }
+        trigger = {
+            liguria_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            torino_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            piedmont_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = gc_hungary_italian_domination
+                duration = -1
+            }
+        }
+    }
+}
+
+gc_hungary_eoh_branch_2 = {
+    slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+            tag = HUN
+        }
+        has_country_flag = gc_hungary_going_for_eoh
+	}
+	has_country_shield = yes
+
+    gc_hungary_mission_21 = {
+        icon = mission_unite_home_region
+        required_missions = { gc_hungary_mission_4 }
+        position = 5
+        provinces_to_highlight = {
+            area = east_adriatic_coast_area
+        }
+        trigger = {
+            east_adriatic_coast_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            carinthia_area = {
+                add_permanent_claim = ROOT
+            }
+            venetia_area = {
+                add_permanent_claim = ROOT
+            }
+            4174 = {
+                add_permanent_claim = ROOT
+            }
+            6126 = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_22 = {
+        icon = adriatic_access
+        required_missions = { gc_hungary_mission_21 }
+        position = 6
+        provinces_to_highlight = {
+            OR = {
+                province_id = 6126
+                province_id = 4174
+            }
+            NOT = { owns_or_non_sovereign_subject_of = ROOT }
+        }
+        trigger = {
+            6126 = {
+                owns_or_non_sovereign_subject_of = ROOT 
+            }
+            4174 = {
+                owns_or_non_sovereign_subject_of = ROOT 
+            }
+        }
+        effect = {
+            apulia_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_23 = {
+        icon = dalmatian_conquest
+        required_missions = { gc_hungary_mission_22 }
+        position = 7
+        provinces_to_highlight = {
+            area = apulia_area 
+            NOT = { owns_or_non_sovereign_subject_of = ROOT }
+        }
+        trigger = {
+            apulia_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            calabria_area = {
+                add_permanent_claim = ROOT
+            }
+            naples_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_24 = {
+        icon = italian_riches
+        required_missions = { gc_hungary_mission_23 }
+        position = 8
+        provinces_to_highlight = {
+            OR = {
+                area = calabria_area
+                area = naples_area
+            }
+            NOT = { owns_or_non_sovereign_subject_of = ROOT }
+        }
+        trigger = {
+            calabria_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            naples_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            central_italy_area = {
+                add_permanent_claim = ROOT
+            }
+            lazio_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_25 = {
+        icon = answer_the_roman_question
+        required_missions = { gc_hungary_mission_24 }
+        position = 9
+        provinces_to_highlight = {
+            OR = {
+                area = central_italy_area
+                area = lazio_area
+            }
+            NOT = { owns_or_non_sovereign_subject_of = ROOT }
+        }
+        trigger = {
+            central_italy_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            lazio_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            add_prestige = 100
+            add_country_modifier = {
+                name = gc_hungary_conquest_of_rome
+                duration = -1
+            }
+        }
+    }
+}
+
+gc_hungary_eoh_branch_3 = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+            tag = HUN
+        }
+        has_country_flag = gc_hungary_going_for_eoh
+	}
+	has_country_shield = yes
+
+    gc_hungary_mission_26 = {
+        icon = humiliate_austria
+        required_missions = { gc_hungary_mission_4 gc_hungary_mission_31 }
+        position = 5
+        provinces_to_highlight = {
+            province_id = 134
+        }
+        trigger = {
+            134 = {
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            add_prestige = 50
+            austria_proper_area = {
+                add_permanent_claim = ROOT
+            }
+            outer_austria_area = {
+                add_permanent_claim = ROOT
+            }
+            inner_austria_area = {
+                add_permanent_claim = ROOT
+            }
+            krain_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_27 = {
+        icon = end_the_habsburgs
+        required_missions = { gc_hungary_mission_26 }
+        position = 5
+        provinces_to_highlight = {
+            OR = {
+                area = austria_proper_area
+                area = outer_austria_area
+                area = inner_austria_area
+                area = krain_area
+            }
+            NOT = {
+                owned_by = ROOT
+            }
+        }
+        trigger = {
+            austria_proper_area = {
+                type = all
+                owned_by = ROOT
+            }
+            outer_austria_area = {
+                type = all
+                owned_by = ROOT
+            }
+            inner_austria_area = {
+                type = all
+                owned_by = ROOT
+            }
+            krain_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            add_manpower = 10
+            add_treasury = 500
+            tirol_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_28 = {
+        icon = claim_tirol
+        required_missions = { gc_hungary_mission_27 }
+        position = 6
+        provinces_to_highlight = {
+            area = tirol_area 
+            NOT = {
+                owned_by = ROOT
+            }
+        }
+        trigger = {
+            tirol_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            tirol_area = {
+                add_base_production = 2
+                add_local_autonomy = -50
+            }
+        }
+    }
+
+    
+    gc_hungary_mission_30 = {
+        icon = fortify_malta
+        required_missions = { gc_hungary_mission_24 }
+        position = 9
+        provinces_to_highlight = {
+            OR = {
+                area = sicily_area
+                area = western_sicily_area
+            }
+            NOT = {
+                owned_by = ROOT
+            }
+        }
+        trigger = {
+            western_sicily_area = {
+                type = all
+                owned_by = ROOT
+            }
+            sicily_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            add_adm_power = 100
+            add_sailors = 2500
+        }
+    }
+}
+
+gc_hungary_eoh_branch_4 = {
+    slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+            tag = HUN
+        }
+        has_country_flag = gc_hungary_going_for_eoh
+	}
+	has_country_shield = yes
+
+    gc_hungary_mission_29 = {
+        icon = conquer_austria
+        required_missions = {  }
+        position = 3
+        provinces_to_highlight = {
+            province_id = 134
+        }
+        trigger = {
+            OR = {
+                NOT = { exists = HAB }
+                is_rival = HAB
+                war_with = HAB
+                has_spy_network_in = {
+                    who = HAB
+                    value = 50
+                }
+            }
+        }
+        effect = {
+            134 = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_31 = {
+        icon = mission_impaled_soldies
+        required_missions = { gc_hungary_mission_29 }
+        position = 4
+        provinces_to_highlight = {
+            province_id = 134
+        }
+        trigger = {
+            controls = 134
+        }
+        effect = {
+            add_treasury = 250
+            add_mil_power = 50
+            moravia_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_32 = {
+        icon = mission_landsknecht_soldier
+        required_missions = { gc_hungary_mission_31 }
+        position = 5
+        provinces_to_highlight = {
+            area = moravia_area
+            NOT = { owned_by = ROOT }
+        }
+        trigger = {
+            moravia_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            hradecko_area = {
+                add_permanent_claim = ROOT
+            }
+            bohemia_area = {
+                add_permanent_claim = ROOT
+            }
+            erzgebirge_area = {
+                add_permanent_claim = ROOT
+            }
+            opole_area = {
+                add_permanent_claim = ROOT
+            }
+            breg_area = {
+                add_permanent_claim = ROOT
+            }
+            silesia_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_33 = {
+        icon = mission_monarch_in_throne_room
+        required_missions = { gc_hungary_mission_32 }
+        position = 6
+        provinces_to_highlight = {
+            OR = {
+                area = hradecko_area
+                area = bohemia_area
+                area = erzgebirge_area
+            }
+            NOT = { owned_by = ROOT }
+        }
+        trigger = {
+            hradecko_area = {
+                type = all
+                owned_by = ROOT
+            }
+            bohemia_area = {
+                type = all
+                owned_by = ROOT
+            }
+            erzgebirge_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            hradecko_area = {
+                add_base_production = 1
+                add_local_autonomy = -50
+            }
+            bohemia_area = {
+                add_base_production = 1
+                add_local_autonomy = -50
+            }
+            erzgebirge_area = {
+                add_base_production = 1
+                add_local_autonomy = -50
+            }
+        }
+    }
+
+    gc_hungary_mission_35 = {
+        icon = mission_empire
+        required_missions = { gc_hungary_mission_27 gc_hungary_mission_33 }
+        position = 7
+        provinces_to_highlight = {
+            OR = {
+                area = hradecko_area
+                area = bohemia_area
+                area = erzgebirge_area
+                area = moravia_area
+                area = austria_proper_area
+                area = outer_austria_area
+                area = inner_austria_area
+                area = krain_area
+                area = opole_area
+                area = breg_area
+                area = silesia_area
+                area = tirol_area
+            }
+            NOT = { owned_by = ROOT }
+        }
+        trigger = {
+            total_development = 1000
+            custom_trigger_tooltip = {
+                tooltip = gc_hungary_eoh_requirements_tooltip
+                hradecko_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                bohemia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                erzgebirge_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                moravia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                austria_proper_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                outer_austria_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                inner_austria_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                krain_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                opole_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                breg_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                silesia_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+                tirol_area = {
+                    type = all
+                    owned_by = ROOT
+                }
+            }
+        }
+        effect = {
+            country_event = { #The Hungarian Empire
+                id = gc_hungary_event.3
+            }
+            east_bavaria_area = {
+                add_permanent_claim = ROOT
+            }
+            lower_bavaria_area = {
+                add_permanent_claim = ROOT
+            }
+            upper_bavaria_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_36 = {
+        icon = mission_have_two_subjects
+        required_missions = { gc_hungary_mission_35 }
+        position = 8
+        provinces_to_highlight = {
+            OR = {
+                area = east_bavaria_area
+                area = lower_bavaria_area
+                area = upper_bavaria_area
+            }
+            NOT = {
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        trigger = {
+            east_bavaria_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            lower_bavaria_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+            upper_bavaria_area = {
+                type = all
+                owns_or_non_sovereign_subject_of = ROOT
+            }
+        }
+        effect = {
+            add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+        }
+    }
+}
+
+gc_hungary_eoh_branch_5 = {
+    slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+            tag = HUN
+        }
+        has_country_flag = gc_hungary_going_for_eoh
+	}
+	has_country_shield = yes
+
+    gc_hungary_mission_37 = {
+        icon = bohemian_borderlands
+        required_missions = { gc_hungary_mission_32 }
+        position = 6
+        provinces_to_highlight = {
+            OR = {
+                area = opole_area
+                area = breg_area
+                area = silesia_area
+            }
+            NOT = { owned_by = ROOT }
+        }
+        trigger = {
+            opole_area = {
+                type = all
+                owned_by = ROOT 
+            }
+            breg_area = {
+                type = all
+                owned_by = ROOT
+            }
+            silesia_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            malopolska_area = {
+                add_permanent_claim = ROOT
+            }
+            sandomierz_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_38 = {
+        icon = mission_break_the_tatar_yoke
+        required_missions = { gc_hungary_mission_37 }
+        position = 7
+        provinces_to_highlight = {
+            OR = {
+                area = malopolska_area 
+                area = sandomierz_area
+            }
+            NOT = {
+                owned_by = ROOT
+            }
+        }
+        trigger = {
+            malopolska_area = {
+                type = all
+                owned_by = ROOT
+            }
+            sandomierz_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            mazovia_area = {
+                add_permanent_claim = ROOT
+            }
+            central_poland_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_39 = {
+        icon = mission_cossack_cavalry
+        required_missions = { gc_hungary_mission_38 }
+        position = 8
+        provinces_to_highlight = {
+            OR = {
+                area = mazovia_area 
+                area = central_poland_area
+            }
+            NOT = {
+                owned_by = ROOT
+            }
+        }
+        trigger = {
+            mazovia_area = {
+                type = all
+                owned_by = ROOT
+            }
+            central_poland_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            add_adm_power = 100
+            add_prestige = 50
+            red_ruthenia_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    gc_hungary_mission_40 = {
+        icon = mission_reclaim_lost_territory
+        required_missions = { gc_hungary_mission_39 }
+        position = 9
+        provinces_to_highlight = {
+            OR = {
+                area = red_ruthenia_area 
+            }
+            NOT = {
+                owned_by = ROOT
+            }
+        }
+        trigger = {
+            red_ruthenia_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = gc_hungary_conquest_of_poland
+                duration = -1
+            }
+        }
+    }
+}
