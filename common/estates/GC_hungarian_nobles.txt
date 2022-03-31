@@ -1,5 +1,5 @@
 gc_estate_hungarian_nobles = {
-	icon = 2
+	icon = 14
 
 	# If true, country will get estate
 	trigger = {
