@@ -327,6 +327,7 @@ defense_of_anatolia = {
 	#mercenary_manpower = 0.5
 	defensiveness = 0.2
 	interest = -0.5
+	global_tax_modifier = 0.1
 }	
 
 eth_coptic_offense = {

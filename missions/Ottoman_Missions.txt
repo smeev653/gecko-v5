@@ -1406,26 +1406,35 @@ gecko_tur_events = {
 		position = 5
         trigger = {
 				NOT = {
-					is_year = 1500
+					is_year = 1480
 				}
-
-				AND = { 
-					is_in_war = {
-						attackers = MAM
+				OR = {
+					AND = {
+						is_in_war = {
+							attackers = HUN
+						}
+						is_in_war = {
+							defenders = MAM
+						}
 					}
-					is_in_war = {
-						attackers = HUN
+					AND = {
+						is_in_war = {
+							attackers = HUN
+						}
+						is_in_war = {
+							attackers = MAM
+						}
 					}
-				}
+				}	
 		}
         effect = {
-            #define_conquistador = {
-             #   shock = 5
-              #  fire = 5
-               # manuever = 6
-                #siege = 3
-                #name = "Jean-Baptiste"
-                #}
+            define_general = {
+                shock = 5
+                fire = 5
+                manuever = 5
+                siege = 0
+                name = "Skanderbeg"
+                }
                 add_country_modifier = {
                 name = "defense_of_anatolia"
                 duration = 1825
