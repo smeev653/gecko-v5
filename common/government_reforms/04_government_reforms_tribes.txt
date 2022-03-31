@@ -752,8 +752,8 @@ gc_tribe_becomes_horde_reform = {
 		has_reform = steppe_horde
 	}		  
 	effect = {
-		#change_unit_type = nomad_group
-		#change_technology_group = nomad_group
+		change_technology_group = eastern
+		change_unit_type = eastern
 
 	}
 	trigger = {
