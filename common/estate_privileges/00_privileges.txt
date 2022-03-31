@@ -1459,7 +1459,7 @@ estate_church_negative_piety_privilege = {
 	penalties = {
 	}
 	benefits = {
-		monthly_piety = -0.002
+		monthly_piety = -0.02
 	}
 	ai_will_do = {
 		factor = 10
