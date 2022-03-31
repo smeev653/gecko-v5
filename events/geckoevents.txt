@@ -381,6 +381,104 @@ country_event = { #Mughal Ruler Failsafe
 	}
 }
 
+country_event = { #Mongolia Ruler Failsafe
+	id = gecko.14
+	title = gecko.14.t
+	desc = gecko.14.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = KHA
+			tag = OIR
+		}	
+		NOT = { has_ruler = "Esen" }
+		NOT = { is_year = 1490 }
+		is_free_or_tributary_trigger = yes
+	}
+
+	 immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				save_event_target_as = gecko_kha_pretenders
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_kha_nobles
+			}
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					is_capital = no
+				}
+				save_event_target_as = gecko_kha_nobles2
+			}
+		}
+	 }
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = gecko.14.a
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		define_ruler = {
+			culture = ROOT
+			religion = ROOT
+			adm = 5
+			dip = 4
+			mil = 6
+			age = 34
+			claim = 20
+		}
+		event_target:gecko_kha_nobles = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		event_target:gecko_kha_nobles2 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = gecko.14.b
+		add_legitimacy = 20
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		event_target:gecko_kha_pretenders = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+}
+
 # Empire of Hungary
 country_event = {
 	id = gecko.5

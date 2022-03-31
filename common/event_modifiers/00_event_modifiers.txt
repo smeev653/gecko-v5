@@ -6450,7 +6450,7 @@ black_shamanism_modifier = {
 }
 
 yellow_shamanism_modifier = {
-	tolerance_heathen = 2
+	tolerance_heathen = 3
 	religion = yes
 }
 

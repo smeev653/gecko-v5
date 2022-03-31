@@ -262,7 +262,6 @@ mongol_missions_3 = {
 				region = tibet_region
 				value = 10
 			}
-			677 = { owned_by = ROOT }
 		}
 		effect = {
 			country_event = { id = mch_missions.6 }

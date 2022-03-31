@@ -221,7 +221,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = "tibetan_missionaries"
-			duration = 18250
+			duration = -1
 		}
 	}
 	option = { # Rule Tibet by force
@@ -238,6 +238,10 @@ country_event = {
 					duration = 36500
 				}
 			}
+			add_country_modifier = {
+			name = "tibetan_missionaries"
+			duration = -1
+		}
 		}
 	}
 }

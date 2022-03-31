@@ -2386,7 +2386,7 @@ mch_combat_modifier = {
 # Mongol missions
 
 tibetan_missionaries = {
-	global_missionary_strength = 0.03
+	tolerance_heathen = 3
 	missionary_maintenance_cost = -0.5
 }
 
