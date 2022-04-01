@@ -21,7 +21,12 @@ national_focus = MIL
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 }
-
+1443.1.1 = {
+	add_country_modifier = {
+			name = swedish_mercenary_core
+			duration = -1
+	}
+}
 1457.2.25 = { government = republic
 add_government_reform = noble_elite_reform
 set_legacy_government = noble_republic }

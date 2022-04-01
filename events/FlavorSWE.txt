@@ -431,16 +431,6 @@ country_event = {
 		}
 		add_innovativeness_small_effect = yes
 	}
-	option = {		# Mercenary Core
-		name = "flavor_swe.EVTOPTB3228"
-		ai_chance = { factor = 5 }
-		add_army_professionalism = 0.05
-		add_country_modifier = {
-			name = swedish_mercenary_core
-			duration = -1
-		}
-		add_innovativeness_small_effect = yes
-	}
 	option = {		# Naval Expansion
 		name = "flavor_swe.EVTOPTC3228"
 		ai_chance = { factor = 15 }

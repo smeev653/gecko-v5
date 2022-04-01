@@ -54,7 +54,7 @@ h_swedish_falun_mine_global = {
 
 
 h_swedish_dalarna_state_local_2 = {
-	local_development_cost = -0.05
+	local_development_cost = -0.1
 }
 
 h_swedish_lutheran_support = {
