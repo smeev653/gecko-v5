@@ -1474,8 +1474,7 @@ estate_church_clerical_oversight = {
 	ai_will_do = {
 		factor = 10
 		modifier = {
-			factor = 0
-			is_absolutism_active = yes
+			factor = 100
 		}
 	}
 }
@@ -3138,7 +3137,7 @@ estate_burghers_patronage_of_the_arts = {
 		}
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 100
 	}
 }
 
@@ -3155,7 +3154,7 @@ estate_vaisyas_patronage_of_the_arts = {
 		prestige = 0.5
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 100
 	}
 }
 
@@ -7198,7 +7197,7 @@ estate_church_influence_temples = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 	}
 }
 
@@ -7314,7 +7313,7 @@ estate_church_lao_animism = {
 
 estate_nobles_command_of_the_military = {
 	icon = privilege_promote_purbias
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -10
 	influence = 0.1
 	is_valid = {
@@ -7330,7 +7329,7 @@ estate_nobles_command_of_the_military = {
 		yearly_army_professionalism = 0.00375
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 100
 	}
 }
 
