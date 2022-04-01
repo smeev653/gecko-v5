@@ -569,8 +569,22 @@ ai_nation = {
 	country_diplomatic_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	country_military_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	burghers_loyalty_modifier = 0.1
-	nobles_loyalty_modifier = 0.1
-	church_loyalty_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
+		cossacks_loyalty_modifier = 0.1
+		nomadic_tribes_loyalty_modifier = 0.1
+		dhimmi_loyalty_modifier = 0.1
+		jains_loyalty_modifier = 0.1
+		qizilbash_loyalty_modifier = 0.1
+		ghilman_loyalty_modifier = 0.1
+		janissary_loyalty_modifier = 0.1
+		mamluks_loyalty_modifier = 0.1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_muslim_loyalty_modifier = 0.1
+		brahmins_other_loyalty_modifier = 0.1
+		maratha_loyalty_modifier = 0.1
+		vaisyas_loyalty_modifier = 0.1
 }
 
 
