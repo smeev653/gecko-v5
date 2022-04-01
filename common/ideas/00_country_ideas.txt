@@ -1159,7 +1159,7 @@ PER_ideas = {
 BUR_Ideas = {
 	start = {
 		land_morale = 0.1
-		diplomatic_upkeep = 1
+		num_accepted_cultures = 1
 	}
 	
 	bonus = {

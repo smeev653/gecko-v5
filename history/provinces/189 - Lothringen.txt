@@ -7,9 +7,9 @@ is_city = yes
 culture = burgundian
 religion = catholic
 base_tax = 3
-base_production = 3
+base_production = 6
 trade_goods = iron
-base_manpower = 2
+base_manpower = 3
 add_core = BUR
 center_of_trade = 2
 

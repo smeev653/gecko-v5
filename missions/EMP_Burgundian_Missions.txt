@@ -457,16 +457,6 @@ emp_burgundy_2 = {
 			}
 		}
 		trigger = {
-			OR = {
-				AND = {
-					is_year = 1650
-					NOT = { has_disaster = dutch_revolt_disaster }
-				}
-				custom_trigger_tooltip = {
-					tooltip = emp_bur_dutch_revolt_has_happened
-					has_country_flag = had_dutch_revolt
-				}
-			}
 			low_countries_region = {
 				type = all
 				owned_by = root
