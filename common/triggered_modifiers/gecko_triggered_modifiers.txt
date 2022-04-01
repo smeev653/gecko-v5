@@ -301,3 +301,43 @@ too_many_subjects = {
 	vassal_income = -0.25
 	reduced_liberty_desire = -40
 }
+
+Defense_of_Persia = {
+	potential = {
+		NOT  = { is_year = 1500}
+		OR = {
+			tag = ARL
+			tag = ISF
+			tag = PER
+		}
+	}
+	
+
+	trigger = {
+		OR = {
+			NOT = { total_development = TUR }
+			NOT = { total_development = MAM }
+		}
+		OR = {
+				tag = ARL
+				tag = ISF
+				tag = PER
+			}
+			OR = {
+				defensive_war_with = TUR
+				defensive_war_with = MAM
+			}	
+	}
+	global_tax_income = 60
+	land_forcelimit = 20
+	land_morale = 0.1
+	discipline = 0.05
+	merc_maintenance_modifier = -0.5
+	mercenary_cost = -0.5
+	mercenary_manpower = 0.5
+	defensiveness = 0.33
+	interest = -1
+	global_tax_modifier = 0.1
+	production_efficiency = 0.1
+	global_manpower_modifier = 0.1
+}
