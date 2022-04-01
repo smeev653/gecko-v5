@@ -294,6 +294,13 @@ gc_hungary_branch_3 = {
         }
         effect = {
             add_manpower = 10
+            define_general = {
+				name = "Bathory Istvan"
+				shock = 4
+				fire = 3
+				manuever = 3
+				siege = 1
+			}
         }
     }
 

@@ -50,7 +50,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { 
-		id = gc_hungary_event.3.a
+		name = gc_hungary_event.3.a
 		add_government_reform = empire_of_hungary_reform
 		change_tag = EOH
 		if = {
