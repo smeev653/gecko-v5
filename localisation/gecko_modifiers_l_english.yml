@@ -172,3 +172,6 @@
  gc_hungary_italian_domination:0 "North Italian Domination"
  gc_hungary_conquest_of_rome:0 "Protector of Rome"
  gc_hungary_conquest_of_poland:0 "Integration of West Slavic Culture"
+
+#Burgundy
+lowland_integration:0 "Lowland Integration"

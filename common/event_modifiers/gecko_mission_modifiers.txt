@@ -322,6 +322,18 @@ defense_of_france = {
 	mercenary_manpower = 0.5
 }
 
+defense_of_burgundy = {
+	land_morale = 0.05
+	discipline = 0.05
+	land_forcelimit_modifier = 0.1
+	merc_maintenance_modifier = -0.5
+	mercenary_cost = -0.25
+	mercenary_manpower = 0.5
+	interest = -0.5
+	global_tax_modifier = 0.1
+	defensiveness = 0.2
+}
+
 defense_of_anatolia = {
 	land_morale = 0.05
 	discipline = 0.05
@@ -390,4 +402,8 @@ consolidated_russia = {
 
 mongol_consolidation = {
 	trade_value_modifier = 0.1
+}
+
+lowland_integration = {
+	diplomatic_annexation_cost = -0.2
 }

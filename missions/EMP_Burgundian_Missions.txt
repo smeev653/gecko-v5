@@ -50,6 +50,10 @@ emp_burgundy_1 = {
 			4719 = {
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = "lowland_integration"
+				duration = "7300"
+			}
 		}
 	}
 	emp_bur_romandie = {
@@ -251,6 +255,36 @@ emp_burgundy_1 = {
 			}
 		}
 	}
+	repulse_gank_bur = {
+        icon = conquer_burgundy
+        required_missions = {  }
+
+        trigger = {
+			NOT = {
+				is_year = 1500
+			}
+			is_in_war = {
+				attackers = ENG
+			}
+			revanchism = 25
+			
+		
+		}
+        effect = {
+            define_general = {
+					shock = 4
+					fire = 4
+					manuever = 1
+					siege = 3
+					name = "Charles I"
+                }
+
+                add_country_modifier = {
+                name = "defense_of_burgundy"
+                duration = 1825
+                }
+            }
+        }
 }
 
 emp_lotharingia_1 = {
