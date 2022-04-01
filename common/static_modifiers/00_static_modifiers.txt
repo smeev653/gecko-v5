@@ -568,6 +568,9 @@ ai_nation = {
 	country_admin_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	country_diplomatic_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	country_military_power = 1 #temporary solution until 1.33 ai advisor use is fixed
+	burghers_loyalty_modifier = 0.1
+	nobles_loyalty_modifier = 0.1
+	church_loyalty_modifier = 0.1
 }
 
 
