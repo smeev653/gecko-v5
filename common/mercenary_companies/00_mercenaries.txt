@@ -54,6 +54,7 @@ merc_morlachs = {
 			}
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
+			has_country_modifier = swedish_mercenary_core
 		}
 	}
 	modifier = { shock_damage_received = -0.1 }
@@ -170,8 +171,6 @@ merc_reislaufer = {
 				OR = {
 					region = south_german_region
 					region = north_german_region
-					region = italy_region
-					region = france_region
 				}
 			}
 			has_country_modifier = swedish_mercenary_core
@@ -200,6 +199,7 @@ merc_hessian_jaegerkorps = {
 			tag = HES
 			tag = HSA
 			tag = SWI
+			has_country_modifier = swedish_mercenary_core
 		}
 	}
 	modifier = {
@@ -217,7 +217,11 @@ merc_bascoli = {
     home_province = 173
 	sprites = { dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
     trigger = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BUR
+				tag = LOT
+			}	
 
 		current_age = age_of_discovery
 	}
@@ -270,6 +274,7 @@ merc_gallowglasses = {
 			}
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
+			has_country_modifier = swedish_mercenary_core
 		}
 		custom_trigger_tooltip = {
 			tooltip = no_new_mercs_tt
@@ -369,8 +374,6 @@ merc_flemish_company = {
 					region = south_german_region
 					region = north_german_region
 					region = low_countries_region
-					region = british_isles_region
-					region = france_region
 				}
 			}
 			any_owned_province = {
@@ -378,6 +381,7 @@ merc_flemish_company = {
 			}
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
+			has_country_modifier = swedish_mercenary_core
 		}
 	}
 	modifier = {
@@ -735,14 +739,17 @@ merc_novgorod_company = {
 	sprites = { dlc020_nov_sprite_pack rus_base_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		NOT = { has_country_modifier = hun_black_army }
-		any_owned_province = {
-			OR = {
-				region = poland_region
-				region = baltic_region
-				region = ruthenia_region
-				region = russia_region
+		OR = {
+			has_country_modifier = swedish_mercenary_core
+			any_owned_province = {
+				OR = {
+					region = poland_region
+					region = baltic_region
+					region = ruthenia_region
+					region = russia_region
+				}
 			}
-		}	
+		}
 	}
     modifier = { shock_damage_received = -0.15 }
 }
@@ -765,11 +772,14 @@ merc_lithuanian_company = {
     home_province = 272 # Vilnius
 	sprites = { dlc003_lit_sprite_pack dlc074_lit_sprite_pack easterngfx_sprite_pack }
 	trigger = {
-		any_owned_province = {
-			OR = {
-				region = poland_region
-				region = baltic_region
-				region = ruthenia_region
+		OR = {
+			has_country_modifier = swedish_mercenary_core
+			any_owned_province = {
+				OR = {
+					region = poland_region
+					region = baltic_region
+					region = ruthenia_region
+				}
 			}
 		}
 	}
@@ -808,7 +818,7 @@ merc_frisian_free_company = {
 }
 
 merc_finnish_company = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
     #artillery_weight = 0.1
     home_province = 28 # Nyland
 	sprites = { swe_base_sprite_pack westerngfx_sprite_pack }
@@ -908,6 +918,7 @@ merc_free_swiss_guard = {
 			}
 			#has_country_modifier = mercenaries_to_the_standard
 			#has_country_modifier = glut_of_mercs
+			has_country_modifier = swedish_mercenary_core
 		}
 		NOT = { tag = PAP }
 	}
@@ -936,6 +947,7 @@ merc_independent_cossack_host = {
 			}
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
+			has_country_modifier = swedish_mercenary_core
 		}
 	}
     modifier = { cavalry_power = 0.1}
