@@ -7197,7 +7197,7 @@ estate_church_influence_temples = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 100
 	}
 }
 
@@ -7315,7 +7315,8 @@ estate_nobles_command_of_the_military = {
 	icon = privilege_promote_purbias
 	#land_share = 5
 	max_absolutism = -10
-	influence = 0.1
+	loyalty = 0.1
+	influence = 0.2
 	is_valid = {
 	}
 	can_select = {
