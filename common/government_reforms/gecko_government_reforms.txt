@@ -126,7 +126,10 @@ empire_of_hungary_reform = {
 			has_reform = empire_of_hungary_reform
 			have_had_reform = empire_of_hungary_reform
 		}
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+		}
 		#religion = catholic
 	}
 	modifiers = {
