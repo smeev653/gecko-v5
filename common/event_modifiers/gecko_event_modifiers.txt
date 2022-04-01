@@ -257,3 +257,6 @@ gc_hungary_conquest_of_rome = {
 gc_hungary_conquest_of_poland = {
 	num_accepted_cultures = 2
 }
+critical_province = {
+	local_warscore_cost_modifier = 1
+}
