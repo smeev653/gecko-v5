@@ -541,6 +541,7 @@ country_decisions = {
        }
 		allow = {
         adm_power = 50
+		ai = no
 		}
 		effect = {
 			country_event = {
