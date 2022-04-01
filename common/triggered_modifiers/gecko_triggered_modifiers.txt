@@ -294,7 +294,7 @@ too_many_subjects = {
 	}
 	
 	trigger = {
-			vassal = 5
+			vassal = 6
 			NOT = { has_idea_group = influence_ideas }
 	}		
 	vassal_forcelimit_bonus = -1
