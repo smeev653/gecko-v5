@@ -767,6 +767,83 @@ swiss_missions_4 = {
 				}
 				add_base_production = 2
 			}
+			switzerland_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			grisons_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			bern_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			romandie_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			alsace_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			baden_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			lower_swabia_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			upper_swabia_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			upper_rhineland_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			palatinate_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
+			franconia_area = {
+				add_province_modifier = {
+					 name = swabian_trade
+					duration = -1
+					hidden = yes
+				}
+			}
 		}
 	}
 	

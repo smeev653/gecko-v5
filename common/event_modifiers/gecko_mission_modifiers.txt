@@ -407,3 +407,7 @@ mongol_consolidation = {
 lowland_integration = {
 	diplomatic_annexation_cost = -0.2
 }
+
+swabian_trade  = {
+	trade_value_modifier = 0.2
+}
