@@ -1,0 +1,23 @@
+name = "Delhi-Afghan War"
+war_goal = {
+    type = take_claim
+    casus_belli = cb_conquest
+	province = 522
+}
+# War start date
+1443.1.1 = {
+	add_attacker = DLH
+	add_defender = AFG
+	add_defender = MER
+	add_defender = MYS
+	add_defender = BNG
+	
+}
+# War end date
+1444.11.10 = {
+    rem_attacker = DLH
+	rem_defender = AFG
+	rem_defender = MER
+	rem_defender = MYS
+	rem_defender = BNG
+}
