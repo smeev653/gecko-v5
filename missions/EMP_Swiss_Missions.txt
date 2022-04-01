@@ -802,13 +802,6 @@ swiss_missions_4 = {
 					hidden = yes
 				}
 			}
-			baden_area = {
-				add_province_modifier = {
-					 name = swabian_trade
-					duration = -1
-					hidden = yes
-				}
-			}
 			lower_swabia_area = {
 				add_province_modifier = {
 					 name = swabian_trade

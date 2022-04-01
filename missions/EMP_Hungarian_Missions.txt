@@ -758,10 +758,10 @@ gc_hungary_gh_branch_3 = {
         effect = {
             add_treasury = 250
             add_mil_power = 50
-            anatolia_region = {
-                NOT = { owns_or_non_sovereign_subject_of = ROOT }
+             NOT = { anatolia_region = {
+                { owns_or_non_sovereign_subject_of = ROOT }
                 add_permanent_claim = ROOT
-            }
+            } }
         }
     }
 
