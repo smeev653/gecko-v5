@@ -59,7 +59,6 @@ monarchy = {
 			reforms = {
 				centralize_reform
 				decentralize_reform
-				empire_of_hungary_reform #smeev
 				sidhi_recruitment
 				council_of_the_indies_reform
 				penal_colonies_reform
