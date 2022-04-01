@@ -31,12 +31,12 @@ vassal = {
 }
 
 # Munich and Passau
-vassal = {
-	first = UBV
-	second = PSS
-	start_date = 1444.1.1
-	end_date = 1503.11.30
-}
+#vassal = {
+#	first = UBV
+#	second = PSS
+#	start_date = 1444.1.1
+#	end_date = 1503.11.30
+#}
 
 # Bavaria and Passau
 vassal = {

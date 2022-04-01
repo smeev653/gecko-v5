@@ -332,15 +332,15 @@ dof_refused_join_war = {
 	yearly_decay = 5
 }
 answered_call_to_empire_elector = {
-	opinion = 100
+	opinion = 200
 	yearly_decay = 3
-	max = 100
+	max = 200
 }
 
 answered_call_to_empire = {
-	opinion = 50
+	opinion = 200
 	yearly_decay = 3
-	max = 50
+	max = 200
 }
 
 claimed_throne_of_imperial = {
