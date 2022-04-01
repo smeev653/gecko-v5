@@ -291,3 +291,17 @@ Peace_of_Italy = {
 	global_autonomy = -0.05
 	monthly_reform_progress_modifier = 0.075
 }
+
+too_many_subjects = {
+	potential = {
+			vassal = 4
+	}
+	
+	trigger = {
+			vassal = 5
+			NOT = { has_idea_group = influence_ideas }
+	}		
+	vassal_forcelimit_bonus = -1
+	vassal_income = -0.5
+	reduced_liberty_desire = -10
+}
