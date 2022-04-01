@@ -244,21 +244,13 @@ mam_north_missions = {
 		icon = mission_non-western_soldiers
 		required_missions = { mam_subjugate_beyliks }
 		provinces_to_highlight = {
-			OR = {
-				province_id = 316
-				province_id = 2296
-				province_id = 2298
-				province_id = 318
-				province_id = 1848
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+				province_id = 151
 		}
 		trigger = {
 			151 = {
 				controlled_by = MAM
 			}
+			is_at_war = yes
 		}
 		effect = {
 			add_country_modifier = {
