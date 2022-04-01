@@ -34,6 +34,8 @@ monarchy = {
 				mughal_government #smeev
 				silk_road_empire #smeev
 				gc_imperial_spain_reform
+				empire_of_hungary_reform
+				gc_greater_hungary_reform
 			}
 		}
 		hereditary_vs_nobility = {

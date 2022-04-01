@@ -1041,4 +1041,39 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = gecko.1000
+	title = gecko.1000.t
+	desc = {
+		trigger = { has_estate_privilege = gc_hungarian_nobles_privilege_2 }
+		desc = gecko.1000.d
+	}
+	picture = MAMLUK_WARRIORS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gecko.1000.a
+	}
+	option = {
+		name = gecko.1000.b
+		if = {
+			limit = {
+				has_estate = gc_estate_hungarian_nobles
+			}
+			add_estate_loyalty = {
+				estate = gc_estate_hungarian_nobles
+				loyalty = -30
+			}
+			capital_scope = { 
+				spawn_rebels = {
+					type = noble_rebels
+					size = 1
+				}
+			}
+			remove_estate_privilege = gc_hungarian_nobles_privilege_2
+		}		
+	}
+}
 	

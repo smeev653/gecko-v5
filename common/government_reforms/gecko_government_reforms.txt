@@ -126,11 +126,36 @@ empire_of_hungary_reform = {
 			has_reform = empire_of_hungary_reform
 			have_had_reform = empire_of_hungary_reform
 		}
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+		}
 		#religion = catholic
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.15
+		prestige = 1
+		devotion = 1
+		land_morale = 0.1
+	}
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	fixed_rank = 3
+}
+
+#From the Greater Hungary Path
+gc_greater_hungary_reform = {
+	icon = "holy_state_reform"
+	potential = {
+		OR = {
+			has_reform = gc_greater_hungary_reform
+			have_had_reform = gc_greater_hungary_reform
+		}
+		tag = HUN
+		religion = catholic
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.2
 		prestige = 1
 		devotion = 1
 		land_morale = 0.1

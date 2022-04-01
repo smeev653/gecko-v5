@@ -165,3 +165,10 @@
 
  catholic_rome:0 "Italian Ambition"
  desc_catholic_rome:1 ""
+
+ #Hungary
+ gc_hungary_anatolian_conquest:0 "Conquest of Anatolia"
+ gc_hungary_conquest_of_jerusalem:0 "Conquest of Jerusalem"
+ gc_hungary_italian_domination:0 "North Italian Domination"
+ gc_hungary_conquest_of_rome:0 "Protector of Rome"
+ gc_hungary_conquest_of_poland:0 "Integration of West Slavic Culture"

@@ -278,3 +278,133 @@ gc_eng_rb_take_gibraltar_desc:0 ""
 
 gc_son_take_djenne_title:0 "Conquer Zazzau"
 gc_son_take_djenne_desc:0 ""
+
+#Hungary
+
+gc_hungary_eoh_requirements_tooltip:0 "Directly controls all of Bohemia, Austria and Silesia."
+
+GREAT_HUNGARY:0 "Greater Hungary"
+GREAT_HUNGARY_ADJ:0 "Greater Hungarian"
+
+gc_hungary_mission_1_title:0 "A new Bloodline"
+gc_hungary_mission_1_desc:0 ""
+
+gc_hungary_mission_2_title:0 "Stabilize the Economy"
+gc_hungary_mission_2_desc:0 ""
+
+gc_hungary_mission_3_title:0 "Reform the Army"
+gc_hungary_mission_3_desc:0 ""
+
+gc_hungary_mission_4_title:0 "The future of Hungary"
+gc_hungary_mission_4_desc:0 "§R§ Choose carefully, this will bind us to one path. §W"
+
+gc_hungary_mission_5_title:0 "Prepare the Fleet"
+gc_hungary_mission_5_desc:0 ""
+
+gc_hungary_mission_6_title:0 "Foothold in Anatolia"
+gc_hungary_mission_6_desc:0 ""
+
+gc_hungary_mission_7_title:0 "Prepare Crusade"
+gc_hungary_mission_7_desc:0 ""
+
+gc_hungary_mission_8_title:0 "Control Anatolia"
+gc_hungary_mission_8_desc:0 ""
+
+gc_hungary_mission_9_title:0 "Anatolian Threat"
+gc_hungary_mission_9_desc:0 ""
+
+gc_hungary_mission_10_title:0 "Secure Bulgaria"
+gc_hungary_mission_10_desc:0 ""
+
+gc_hungary_mission_11_title:0 "Secure Macedon"
+gc_hungary_mission_11_desc:0 ""
+
+gc_hungary_mission_12_title:0 "Secure Greece"
+gc_hungary_mission_12_desc:0 ""
+
+gc_hungary_mission_13_title:0 "Secure Greek Islands"
+gc_hungary_mission_13_desc:0 ""
+
+gc_hungary_mission_14_title:0 "Free Jerusalem"
+gc_hungary_mission_14_desc:0 ""
+
+gc_hungary_mission_15_title:0 "Dominate Black Sea"
+gc_hungary_mission_15_desc:0 ""
+
+gc_hungary_mission_16_title:0 "Conquer Crimea"
+gc_hungary_mission_16_desc:0 ""
+
+gc_hungary_mission_17_title:0 "Interfere in Italy"
+gc_hungary_mission_17_desc:0 ""
+
+gc_hungary_mission_18_title:0 "Push Inland"
+gc_hungary_mission_18_desc:0 ""
+
+gc_hungary_mission_19_title:0 "Subjugate Milan"
+gc_hungary_mission_19_desc:0 ""
+
+gc_hungary_mission_20_title:0 "Consolidate the West"
+gc_hungary_mission_20_desc:0 ""
+
+gc_hungary_mission_21_title:0 "Seize Dalmatia"
+gc_hungary_mission_21_desc:0 ""
+
+gc_hungary_mission_22_title:0 "Italian foothold"
+gc_hungary_mission_22_desc:0 ""
+
+gc_hungary_mission_23_title:0 "Expand the frontier"
+gc_hungary_mission_23_desc:0 ""
+
+gc_hungary_mission_24_title:0 "Control Napels"
+gc_hungary_mission_24_desc:0 ""
+
+gc_hungary_mission_25_title:0 "March on Rome"
+gc_hungary_mission_25_desc:0 ""
+
+gc_hungary_mission_26_title:0 "Seize Vienna"
+gc_hungary_mission_26_desc:0 ""
+
+gc_hungary_mission_27_title:0 "Dominate Austria"
+gc_hungary_mission_27_desc:0 ""
+
+gc_hungary_mission_28_title:0 "Conquest of Tirol"
+gc_hungary_mission_28_desc:0 ""
+
+gc_hungary_mission_29_title:0 "The Austrian Menace"
+gc_hungary_mission_29_desc:0 ""
+
+gc_hungary_mission_30_title:0 "Conquest of Sicily"
+gc_hungary_mission_30_desc:0 ""
+
+gc_hungary_mission_31_title:0 "Raid on Vienna"
+gc_hungary_mission_31_desc:0 ""
+
+gc_hungary_mission_32_title:0 "Bohemian Entrance"
+gc_hungary_mission_32_desc:0 ""
+
+gc_hungary_mission_33_title:0 "The Bohemian Crown"
+gc_hungary_mission_33_desc:0 ""
+
+gc_hungary_mission_34_title:0 ""
+gc_hungary_mission_34_desc:0 ""
+
+gc_hungary_mission_35_title:0 "Empire of Hungary"
+gc_hungary_mission_35_desc:0 ""
+
+gc_hungary_mission_36_title:0 "Subjugate the Bavarians"
+gc_hungary_mission_36_desc:0 ""
+
+gc_hungary_mission_37_title:0 "Conquest of Silesia"
+gc_hungary_mission_37_desc:0 ""
+
+gc_hungary_mission_38_title:0 "Weaken Poland"
+gc_hungary_mission_38_desc:0 ""
+
+gc_hungary_mission_39_title:0 "March on Warsaw"
+gc_hungary_mission_39_desc:0 ""
+
+gc_hungary_mission_40_title:0 "Free Red Ruthenia"
+gc_hungary_mission_40_desc:0 ""
+
+
+

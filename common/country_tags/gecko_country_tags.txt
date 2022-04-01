@@ -8,3 +8,6 @@ NGF = "countries/NorthGermanFederation.txt"
 SGF = "countries/SouthGermanFederation.txt"
 ZGB = "countries/LeagueoftheTenJurisdictions.txt" 
 AHU = "countries/HabsburgEmpire.txt"
+
+#Gecko
+EOH = "countries/EmpireOfHungary.txt"
