@@ -31,6 +31,7 @@
  consolidated_russia:0 "Rus Consolidation"
  mongol_consolidation:0 "Mongol Consolidation"
  norman_resurgence:0 "Norman Resurgence"
+ Defense_of_Europe::0 "Defense of Europe"
 
  #Province Triggered Modifiers
  conquest_of_constantinople:0 "Conquest of Constantinople"

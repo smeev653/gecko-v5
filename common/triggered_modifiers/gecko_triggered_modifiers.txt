@@ -341,3 +341,21 @@ Defense_of_Persia = {
 	production_efficiency = 0.1
 	global_manpower_modifier = 0.1
 }
+
+Defense_of_Europe = {
+	potential = {
+		capital_scope = { continent = europe }
+	}
+
+	trigger = {
+		134 = {
+			owned_by = TUR
+		}
+		war_with = TUR
+		land_maintenance = 1
+		army_size_percentage = 0.9
+	}
+	land_morale = 0.1
+	discipline = 0.025
+	regiment_cost = -0.1
+}

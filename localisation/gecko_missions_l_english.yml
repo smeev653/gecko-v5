@@ -286,16 +286,16 @@ gc_hungary_eoh_requirements_tooltip:0 "Directly controls all of Bohemia, Austria
 GREAT_HUNGARY:0 "Greater Hungary"
 GREAT_HUNGARY_ADJ:0 "Greater Hungarian"
 
-gc_hungary_mission_1_title:0 "A new Bloodline"
+gc_hungary_mission_1_title:0 "A New Bloodline"
 gc_hungary_mission_1_desc:0 ""
 
-gc_hungary_mission_2_title:0 "Stabilize the Economy"
+gc_hungary_mission_2_title:0 "Stabilize The Economy"
 gc_hungary_mission_2_desc:0 ""
 
-gc_hungary_mission_3_title:0 "Reform the Army"
+gc_hungary_mission_3_title:0 "Reform The Army"
 gc_hungary_mission_3_desc:0 ""
 
-gc_hungary_mission_4_title:0 "The future of Hungary"
+gc_hungary_mission_4_title:0 "The Future of Hungary"
 gc_hungary_mission_4_desc:0 "§R§ Choose carefully, this will bind us to one path. §W"
 
 gc_hungary_mission_5_title:0 "Prepare the Fleet"
