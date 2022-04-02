@@ -132,7 +132,7 @@ conquest_of_vienna = {
 		controlled_by = ROOT
 	}
 
-	land_morale = 0.05
+	discipline = 0.03
  
 	
 	#Province scope
@@ -358,7 +358,7 @@ conquest_of_fez = {
 		controlled_by = ROOT	
 		}	
 
-	land_morale = 0.05
+	discipline = 0.03
  
 	
 	#Province scope
@@ -594,7 +594,7 @@ conquest_of_pest = {
 		controlled_by = ROOT	
 		}	
 
-	discipline = 0.03
+	land_morale = 0.05
  
 	
 	#Province scope
