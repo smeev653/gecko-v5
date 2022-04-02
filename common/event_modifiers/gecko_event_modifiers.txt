@@ -231,6 +231,7 @@ persia_united = {
 	inflation_reduction = 0.5
 	global_monthly_devastation = -1
 	land_morale = 0.05
+	core_creation = -0.25
 }
 
 gc_hungary_anatolian_conquest = {

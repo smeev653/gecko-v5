@@ -232,7 +232,7 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
-				add_core = PER
+				add_permanent_claim = PER
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -281,7 +281,7 @@ country_decisions = {
 				}
 			add_country_modifier = {
 				name = "persia_united"
-				duration = 1825
+				duration = 5475
 			}
 			if = {
 				limit = { has_estate_privilege = estate_burghers_indebted_to_burghers }
@@ -371,7 +371,7 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
-				add_core = PER
+				add_permanent_claim = PER
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -420,7 +420,7 @@ country_decisions = {
 				}
 			add_country_modifier = {
 				name = "persia_united"
-				duration = 1825
+				duration = 5475
 			}
 			if = {
 				limit = { has_estate_privilege = estate_burghers_indebted_to_burghers }

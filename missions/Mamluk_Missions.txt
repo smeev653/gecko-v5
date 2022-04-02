@@ -255,7 +255,9 @@ mam_north_missions = {
 					owned_by = MAM
 				}
 				151 = {
-					owned_by = HUN
+					NOT = {
+						owned_by = TUR
+					}
 				}
 			}
 			is_at_war = yes
