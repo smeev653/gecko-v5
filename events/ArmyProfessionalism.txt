@@ -88,7 +88,7 @@ country_event = {
 				years_of_income = 0.5
 			}
 		}
-		add_army_professionalism = 0.05
+		add_army_professionalism = 0.1
 		add_years_of_income = -0.25
 		FROM = {
 			province_event = { id = army_professionalism_events.2 }
