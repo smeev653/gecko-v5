@@ -60,6 +60,13 @@ per_western_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ardabil_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -90,31 +97,31 @@ per_western_branch = {
 			kartli_kakheti_area = {
 				add_province_modifier = {
 					name = caucasus_integration
-					duration = 18250
+					duration = 36500
 				}
 			}
 			samtskhe_area = {
 				add_province_modifier = {
 					name = caucasus_integration
-					duration = 18250
+					duration = 36500
 				}
 			}
 			imereti_area = {
 				add_province_modifier = {
 					name = caucasus_integration
-					duration = 18250
+					duration = 36500
 				}
 			}
 			shirvan_area = {
 				add_province_modifier = {
 					name = caucasus_integration
-					duration = 18250
+					duration = 36500
 				}
 			}
 			armenia_area = {
 				add_province_modifier = {
 					name = caucasus_integration
-					duration = 18250
+					duration = 36500
 				}
 			}
 			iraq_e_ajam_area = {

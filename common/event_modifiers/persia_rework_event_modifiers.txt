@@ -46,7 +46,7 @@ estate_janissary_phase_modifier = {
 	
 estate_janissary_weaponry_modifier = {
 	is_janissary_modifier = yes
-	infantry_fire = 0.15
+	infantry_fire = 0.10
 }
 	
 estate_janissary_discipline_modifier = {
@@ -65,14 +65,14 @@ estate_nomadic_tribes_steppe_devcost = {
 }
 
 force_janissaries_to_undergo_yoklama = {
-	land_morale = 0.15
+	land_morale = 0.2
 }
 # Persian Missions
 
 caucasus_integration = {
 	local_unrest = -2
 	local_autonomy = -0.05
-	local_development_cost = -0.15
+	local_development_cost = -0.25
 }
 
 ######event changes######

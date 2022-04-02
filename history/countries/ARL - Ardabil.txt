@@ -9,6 +9,7 @@ capital = 416
 government_rank = 1
 add_army_professionalism = 0.11
 religious_school = jafari_school
+national_focus = ADM
 
 1443.1.1 = {
 	monarch = {
