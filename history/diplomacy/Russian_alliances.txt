@@ -31,12 +31,12 @@ vassal = {
 }
 
 # Muscovy and Rostov
-vassal = {
-	first = MOS
-	second = RSO
-	start_date = 1444.1.1
-	end_date = 1474.1.1
-}
+#vassal = {
+#	first = MOS
+#	second = RSO
+#	start_date = 1444.1.1
+#	end_date = 1474.1.1
+#}
 
 # Russian vassal - Qasim khanate
 vassal = {
