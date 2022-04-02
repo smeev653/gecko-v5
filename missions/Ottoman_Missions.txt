@@ -301,7 +301,7 @@ tur_conquerors_of_the_near_east = {
 		effect = {
 			add_country_modifier = {
 				name = "kaiser_of_europe"
-				duration = -1
+				duration = 36500
 			}
 		}
 	}	
