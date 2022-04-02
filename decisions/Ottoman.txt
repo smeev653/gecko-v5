@@ -143,9 +143,14 @@ country_decisions = {
 		allow = {
 			is_at_war = yes
 			religion_group = muslim
-			361 = {
-				controlled_by = TUR	
-			}			
+			OR = { 
+				361 = {
+					controlled_by = TUR	
+				}
+				361 = {
+					owned_by = TUR	
+				}	
+			}	
 		}
 		effect = {
 			set_country_flag = subjugated_mamluks

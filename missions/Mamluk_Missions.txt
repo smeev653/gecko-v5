@@ -247,8 +247,16 @@ mam_north_missions = {
 				province_id = 151
 		}
 		trigger = {
-			151 = {
-				controlled_by = MAM
+			OR = {
+				151 = {
+					controlled_by = MAM
+				}
+				151 = {
+					owned_by = MAM
+				}
+				151 = {
+					owned_by = HUN
+				}
 			}
 			is_at_war = yes
 		}

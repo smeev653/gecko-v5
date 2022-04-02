@@ -200,8 +200,13 @@ country_decisions = {
 			is_nomad = no
 			#is_at_war = no
 			NOT = { exists = PER }
-			416 = {
-				controlled_by = ISF	
+			OR = {
+				416 = {
+					controlled_by = ISF	
+				}
+				416 = {
+					owned_by = ISF	
+				}
 			}
 		}
 		effect = {
@@ -334,8 +339,13 @@ country_decisions = {
 			is_nomad = no
 			#is_at_war = no
 			NOT = { exists = PER }
-			429 = {
-				controlled_by = ARL
+			OR = {
+				429 = {
+					controlled_by = ARL
+				}
+				429 = {
+					owned_by = ARL
+				}
 			}
 		}
 		effect = {
