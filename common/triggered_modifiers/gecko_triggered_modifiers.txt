@@ -236,7 +236,7 @@ War_chest = {
 		NOT = { num_of_loans = 1 }
 		is_at_war = yes
 		land_maintenance = 1
-		army_size_percentage = 0.9
+		army_size_percentage = 0.65
 	}
 	land_morale = 0.1
 	land_forcelimit_modifier = 0.2
@@ -357,5 +357,5 @@ Defense_of_Europe = {
 	}
 	land_morale = 0.1
 	discipline = 0.025
-	regiment_cost = -0.1
+	global_regiment_cost = -0.1
 }

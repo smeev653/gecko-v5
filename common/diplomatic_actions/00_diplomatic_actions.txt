@@ -96,132 +96,171 @@ declarewar = {
 		}
 	}
 	condition = {
-		tooltip = gc_may_not_declare_war_yet_empswi
+		tooltip = gc_may_not_declare_war_yet
 		potential = {
-			is_emperor = yes
-			NOT = { is_year = 1465 }
 			ai = no
+			NOT = { is_year = 1455 }
 		}
 		allow = {
 				FROM = { 
 					NOT = {
 						OR = {
-							tag = SWI
-							is_subject_of = SWI
+							ai = no
+							is_subject_of = FROM
 						}
+					
 					}
 				}
-		}
-	}
-condition = {
-		tooltip = gc_may_not_declare_war_yet_brahsa
-		potential = {
-			OR = { 
-				 tag = HSA
-				 tag = BRA
-			}
-			NOT = { is_year = 1460 }
-			ai = no
-		}
-		allow = {
-			FROM = {
-				NOT = {
-					OR = {
-						tag = BRA
-						tag = HSA 
-						is_subject_of = BRA
-						is_subject_of = HSA
-					}
-				}
-			}
 		}
 	}	
-	condition = {
-		tooltip = gc_may_not_declare_war_yet_polcrimos
-		potential = {
-			OR = { 
-				 tag = POL
-				 tag = MOS
-				 tag = CRI
-			}
-			NOT = { is_year = 1460 }
-			ai = no
-		}
-		allow = {
-			FROM = {
-				NOT = {
-					OR = {
-						tag = MOS
-						tag = CRI 
-						tag = POL
-						is_subject_of = MOS
-						is_subject_of = CRI 
-						is_subject_of = POL
-					}
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = gc_may_not_declare_war_yet_papsic
-		potential = {
-			OR = { 
-				 tag = PAP
-				 tag = SIC
-			}
-			NOT = { is_year = 1455 }
-			ai = no
-		}
-		allow = {
-			FROM = {
-				NOT = {
-					OR = {
-						tag = PAP
-						tag = SIC
-						is_subject_of = PAP
-						is_subject_of = SIC
-					}
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = gc_may_not_declare_war_yet_mamorm
-		potential = {
-			tag = MAM
-			NOT = { is_year = 1460 }
-			ai = no
-		}
-		allow = {
-			FROM = { 
-				NOT = {
-					OR = {
-						tag = ORM
-						is_subject_of = ORM
-					}	
-				}
-			}	
-		}
-	}
-	condition = {
-		tooltip = gc_may_not_declare_war_yet_mormal
-		potential = {
-			tag = MOR
-			NOT = { is_year = 1460 }
-			ai = no
-		}
-		allow = {
-			FROM = { 
-				NOT = {
-					OR = {
-						tag = MAL
-						is_subject_of = MAL
-					}	
-				}
-			}
-		}
-	}
+	#condition = {
+	#	tooltip = gc_may_not_declare_war_yet_empswi
+	#	potential = {
+	#		is_emperor = yes
+	#		NOT = { is_year = 1465 }
+	#		ai = no
+	#	}
+	#	allow = {
+	#			FROM = { 
+	#				NOT = {
+	#					OR = {
+	#						tag = SWI
+	#						is_subject_of = SWI
+	#					}
+	#				}
+	#			}
+	#	}
+	#}
+	#condition = {
+	#	tooltip = gc_may_not_declare_war_yet_brahsa
+	#	potential = {
+	#		OR = { 
+	#			 tag = HSA
+	#			 tag = BRA
+	#		}
+	#		NOT = { is_year = 1460 }
+	#		ai = no
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			NOT = {
+	#				OR = {
+	#					tag = BRA
+	#					tag = HSA 
+	#					is_subject_of = BRA
+	#					is_subject_of = HSA
+	#				}
+	#			}
+	#		}
+	#	}
+	#}	
+	#condition = {
+	#	tooltip = gc_may_not_declare_war_yet_polcrimos
+	#	potential = {
+	#		OR = { 
+	#			 tag = POL
+	#			 tag = MOS
+	#			 tag = CRI
+	#		}
+	#		NOT = { is_year = 1460 }
+	#		ai = no
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			NOT = {
+	#				OR = {
+	#					tag = MOS
+	#					tag = CRI 
+	#					tag = POL
+	#					is_subject_of = MOS
+	#					is_subject_of = CRI 
+	#					is_subject_of = POL
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
+	#condition = {
+	#	tooltip = gc_may_not_declare_war_yet_papsic
+	#	potential = {
+	#		OR = { 
+	#			 tag = PAP
+	#			 tag = SIC
+	#		}
+	#		NOT = { is_year = 1455 }
+	#		ai = no
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			NOT = {
+	#				OR = {
+	#					tag = PAP
+	#					tag = SIC
+	#					is_subject_of = PAP
+	#					is_subject_of = SIC
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
+	#condition = {
+	#	tooltip = gc_may_not_declare_war_yet_mamorm
+	#	potential = {
+	#		tag = MAM
+	#		NOT = { is_year = 1460 }
+	#		ai = no
+	#	}
+	#	allow = {
+	#		FROM = { 
+	#			NOT = {
+	#				OR = {
+	#					tag = ORM
+	#					is_subject_of = ORM
+	#				}	
+	#			}
+	#		}	
+	#	}
+	#}
+	#condition = {
+	#	tooltip = gc_may_not_declare_war_yet_mormal
+	#	potential = {
+	#		tag = MOR
+	#		NOT = { is_year = 1460 }
+	#		ai = no
+	#	}
+	#	allow = {
+	#		FROM = { 
+	#			NOT = {
+	#				OR = {
+	#					tag = MAL
+	#					is_subject_of = MAL
+	#				}	
+	#			}
+	#		}
+	#	}
+	#}
 }
+	
+threaten_war = {
+	condition = {
+		tooltip = gc_may_not_declare_war_yet
+		potential = {
+			ai = no
+			NOT = { is_year = 1455 }
+		}
+		allow = {
+				FROM = { 
+					NOT = {
+						OR = {
+							ai = no
+							is_subject_of = FROM
+						}
+					
+					}
+				}
+		}
+	}
+}	
 royal_marriage = {
 	condition = {
 		tooltip = MARWAR
