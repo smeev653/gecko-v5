@@ -881,9 +881,9 @@ allianceaction = {
 		potential = {
 			tag = CRI
 			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+				has_reform = retain_tribal_hierarchy_reform
+				has_reform = decentralize_reform
+				centralize_reform
 			}
 		}	
 		allow = {
@@ -922,9 +922,9 @@ allianceaction = {
 		potential = {
 			tag = CRI
 			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+				has_reform = retain_tribal_hierarchy_reform
+				has_reform = decentralize_reform
+				centralize_reform
 			}
 		}	
 		allow = {
