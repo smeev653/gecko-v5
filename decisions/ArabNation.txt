@@ -47,8 +47,8 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = asir_area
-				area = tihama_al_yemen_area
+				#area = asir_area
+				#area = tihama_al_yemen_area
 				area = upper_yemen_area
 				area = yemen_area
 				province_id = 402
@@ -68,8 +68,8 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no			
-			asir_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
-			tihama_al_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			#asir_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
+			#tihama_al_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			upper_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			owns_core_province = 402
