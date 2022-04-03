@@ -141,12 +141,12 @@
  gc_hungary_event.1.d:0 "As the principal defenders of Christendom against the Muslim threat, we have come to be known as the Bulwark of Christianity. By demonstrating our ability to match anything the infidel can throw at us, we can ensure that this title is thoroughly deserved."
  gc_hungary_event.1.a:0 "Deus Vult"
 
- gc_hungary_event.2.t:0 "The future of Hungary"
- gc_hungary_event.2.d:0 "You must decide on the biggest Question Hungary has ever faced. Do we turn on our well trusted allies in the West and follow our ambition of creating a Hungarian Empire, or do we pursue the path we were born for?"
- gc_hungary_event.2.a:0 "We will continue the Crusades."
- gc_hungary_event.2.b:0 "We will turn on our Allies."
+ gc_hungary_event.2.t:0 "The Future of Hungary"
+ gc_hungary_event.2.d:0 "You must decide on the biggest question Hungary has ever faced. Do we press our claims to the thrones of Europe, or do we take on the burden of removing the Turk from Europe?"
+ gc_hungary_event.2.a:0 "Varna will be forgotten."
+ gc_hungary_event.2.b:0 "Press our claims in Europe."
 
  gc_hungary_event.3.t:0 "The Empire of Hungary"
- gc_hungary_event.3.d:0 "We have proven our right to rule several times. It is us who should be the dominant power of central europe."
+ gc_hungary_event.3.d:0 "We have proven our right to rule several times. It is us who should be the dominant power of Central Europe."
  gc_hungary_event.3.a:0 "We will take our rightful place."
 

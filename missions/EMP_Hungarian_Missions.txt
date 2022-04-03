@@ -142,7 +142,7 @@ gc_hungary_branch_2 = {
 
     emp_hun_corviana_library = {
 		icon = bibliotheca_corviana
-		required_missions = { emp_hun_improve_economy emp_hun_fund_monasteries }
+		required_missions = { emp_hun_fund_monasteries }
         position = 2
 		trigger = {
 			has_institution = renaissance
@@ -260,7 +260,7 @@ gc_hungary_branch_3 = {
 
         }
         trigger = {
-            has_regency = no
+              is_year = 1445
         }
         effect = {
             add_stability = 1
@@ -290,17 +290,18 @@ gc_hungary_branch_3 = {
             
         }
         trigger = {
-           army_size = 40
+           army_size = 25
         }
         effect = {
-            add_manpower = 10
+            add_manpower = 20
             define_general = {
 				name = "Bathory Istvan"
 				shock = 4
-				fire = 3
-				manuever = 3
+				fire = 4
+				manuever = 4
 				siege = 1
 			}
+			country_event = { ID = flavor_hun.20 }
         }
     }
 
@@ -313,7 +314,7 @@ gc_hungary_branch_3 = {
             
         }
         trigger = {
-            is_year = 1465
+            is_year = 1450
         }
         effect = {
             country_event = { #The future of Hungary
@@ -370,7 +371,7 @@ gc_hungary_branch_4 = {
 		}
 		
 		effect = {
-			add_dip_power = 100
+			add_adm_power = 150
 			serbia_area = {
 				add_province_modifier = {
 					name = "hun_moldavia_mod"
@@ -558,6 +559,7 @@ gc_hungary_branch_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_adm_power = 150
 		}
 	}
 
@@ -1286,10 +1288,10 @@ gc_hungary_eoh_branch_2 = {
         }
         trigger = {
             6126 = {
-                owns_or_non_sovereign_subject_of = ROOT 
+                owned_by = ROOT
             }
             4174 = {
-                owns_or_non_sovereign_subject_of = ROOT 
+               owned_by = ROOT
             }
         }
         effect = {

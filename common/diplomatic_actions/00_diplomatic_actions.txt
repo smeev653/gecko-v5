@@ -99,7 +99,7 @@ declarewar = {
 		tooltip = gc_may_not_declare_war_yet
 		potential = {
 			ai = no
-			NOT = { is_year = 1455 }
+			NOT = { is_year = 1450 }
 		}
 		allow = {
 				FROM = { 
@@ -246,7 +246,7 @@ threaten_war = {
 		tooltip = gc_may_not_declare_war_yet
 		potential = {
 			ai = no
-			NOT = { is_year = 1455 }
+			NOT = { is_year = 1450 }
 		}
 		allow = {
 				FROM = { 

@@ -10,10 +10,12 @@ war_goal = {
 	add_attacker = CRI
 	add_defender = POL
 	add_defender = MOS
-}
+	add_defender = IME
+	}
 # War end date
 1444.11.10 = {
     	rem_attacker = CRI
 	rem_defender = POL
 	rem_defender = MOS
+	rem_defender = IME
 }
