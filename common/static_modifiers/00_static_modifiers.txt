@@ -1788,6 +1788,8 @@ over_governing_capacity_modifier = {
 	defensiveness = -0.35
 	state_maintenance_modifier = 1.5
 	reinforce_speed = -0.35
+	reform_progress_growth = -1
+	embracement_cost = 1
 }
 
 
