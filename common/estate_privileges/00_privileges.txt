@@ -5978,12 +5978,6 @@ estate_nobles_strong_duchies = {
 			canton = 1
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
-		NOT = {
-			AND = {
-				tag = FRA
-				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
-			}
-		}
 	}
 	can_select = {
 		if = {
