@@ -187,8 +187,7 @@ the_espionage_act = {
 }
 
 manueline_architecture = {
-	monarch_power = ADM
-
+	monarch_power = MIL
 	potential = {
 		has_idea_group = aristocracy_ideas
 		has_idea_group = expansion_ideas
