@@ -278,7 +278,7 @@ gc_hungary_branch_3 = {
            monthly_income = 24
         }
         effect = {
-            add_treasury = 100
+            add_years_of_income = 0.5
         }
     }
 
@@ -681,7 +681,7 @@ gc_hungary_gh_branch_3 = {
 		effect = {
 			add_adm_power = 100
 			add_prestige = 50
-            add_treasury = 1000
+            add_years_of_income = 1
 			add_country_modifier = {
 				name = "hun_constantinople"
 				duration = 7300
@@ -765,7 +765,7 @@ gc_hungary_gh_branch_3 = {
             navy_size_percentage = 0.9
         }
         effect = {
-            add_treasury = 250
+            add_years_of_income = 0.5
             add_mil_power = 50
              NOT = { anatolia_region = {
                 { owns_or_non_sovereign_subject_of = ROOT }
@@ -987,7 +987,7 @@ gc_hungary_gh_branch_4 = {
                 type = all
                 owned_by = ROOT
             }
-            eastern_mediterrenean_area = {
+            eastern_mediterrenean_islands_area = {
                 type = all
                 owned_by = ROOT
             }
@@ -1463,7 +1463,7 @@ gc_hungary_eoh_branch_3 = {
         }
         effect = {
             add_manpower = 10
-            add_treasury = 500
+            add_years_of_income = 0.5
             tirol_area = {
                 add_permanent_claim = ROOT
             }
@@ -1573,7 +1573,7 @@ gc_hungary_eoh_branch_4 = {
             controls = 134
         }
         effect = {
-            add_treasury = 250
+            add_years_of_income = 0.5
             add_mil_power = 50
             moravia_area = {
                 add_permanent_claim = ROOT
