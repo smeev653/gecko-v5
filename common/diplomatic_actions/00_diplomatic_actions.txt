@@ -855,6 +855,129 @@ allianceaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = sm_tooltip_moscrially
+		potential = {
+				tag = MOS
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = CRI				
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_crimosally
+		potential = {
+			tag = CRI
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = MOS			
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = sm_tooltip_polcrially
+		potential = {
+				tag = POL
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = CRI				
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_cripolally
+		potential = {
+			tag = CRI
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = POL			
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = sm_tooltip_muspolally
+		potential = {
+				tag = MOS
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = POL				
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_polmosally
+		potential = {
+			tag = POL
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = MOS			
+					}
+				}
+			}
+		}
+	}
 }	
 ask_for_march = {
 	condition = {
