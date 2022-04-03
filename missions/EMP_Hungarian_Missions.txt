@@ -767,10 +767,13 @@ gc_hungary_gh_branch_3 = {
         effect = {
             add_years_of_income = 0.5
             add_mil_power = 50
-             NOT = { anatolia_region = {
-                { owns_or_non_sovereign_subject_of = ROOT }
+            anatolia_region = {
+                limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
                 add_permanent_claim = ROOT
-            } }
+            }
         }
     }
 
