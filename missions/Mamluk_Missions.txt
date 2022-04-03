@@ -34,41 +34,41 @@ mam_south_missions = {
 		}
 		effect = {
 			country_event = { id = flavor_mam.23 }
-			tihama_al_yemen_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			upper_yemen_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			yemen_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			asir_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			hadramut_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			#tihama_al_yemen_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			#upper_yemen_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			#yemen_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			#asir_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			#hadramut_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
 		}
 	}
 	mam_yemeni_trade = {
