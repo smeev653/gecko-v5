@@ -981,7 +981,7 @@ gc_hungary_gh_branch_4 = {
         provinces_to_highlight = {
             OR = {
                 area = aegean_archipelago_area
-                area = eastern_mediterrenean_area
+                area = eastern_mediterrenean_islands_area
             }
             NOT = { owned_by = ROOT }
         }
