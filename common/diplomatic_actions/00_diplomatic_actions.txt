@@ -883,7 +883,7 @@ allianceaction = {
 			NOT = {
 				has_reform = retain_tribal_hierarchy_reform
 				has_reform = decentralize_reform
-				centralize_reform
+				has_reform = centralize_reform
 			}
 		}	
 		allow = {
@@ -924,7 +924,7 @@ allianceaction = {
 			NOT = {
 				has_reform = retain_tribal_hierarchy_reform
 				has_reform = decentralize_reform
-				centralize_reform
+				has_reform = centralize_reform
 			}
 		}	
 		allow = {
