@@ -440,7 +440,7 @@ emp_burgundy_2 = {
 				limit = { owned_by = root }
 				add_province_modifier = {
 					name = bur_realm_united_mod
-					duration = 7300
+					duration = 5475
 				}
 			}
 		}
@@ -659,11 +659,8 @@ emp_burgundy_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 93
-				#province_id = 1878
-				province_id = 2974
-				province_id = 1742
-				province_id = 6200
+				area = frisia_area
+				area = east_frisia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
