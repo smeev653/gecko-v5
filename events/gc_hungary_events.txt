@@ -37,7 +37,6 @@ country_event = {
         set_country_flag = gc_hungary_going_for_eoh
 		hidden_effect = {
 			swap_non_generic_missions = yes
-			add_truce_with = TUR
 		}
 	}
 }

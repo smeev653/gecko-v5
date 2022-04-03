@@ -94,12 +94,6 @@ on_startup = {
 	#		set_country_flag = ayu_monarch_flag
 	#	}
 	#}
-	if = {
-		limit = {
-			tag = UKR
-		}
-		remove_steppe_devcost_ukr = yes
-	} #################REMOVE THIS AFTER THE GAME#######################
 }
 
 # country
