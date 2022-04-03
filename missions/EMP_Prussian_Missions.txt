@@ -558,7 +558,7 @@ emp_bra_pru_3 = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 15
+				value = 25
 				region = north_german_region
 			}
 		}
