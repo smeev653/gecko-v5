@@ -11,7 +11,6 @@ historical_rival = QOM
 historical_rival = KRM
 historical_rival = SIS
 historical_rival = AFG
-historical_rival = TRS
 historical_rival = BAL
 historical_rival = NOG
 historical_rival = KAZ
