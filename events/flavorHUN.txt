@@ -1403,7 +1403,7 @@ country_event = {
 	
 	option = {
 		name = flavor_hun.20.a
-		add_years_of_income = -0.75
+		add_years_of_income = -0.25
 		add_country_modifier = {
 			name = "hun_frontier_fortresses"
 			duration = 10950

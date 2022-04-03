@@ -11007,6 +11007,7 @@ bran_castle = {
 		}
 		area_modifier = {
 			local_defensiveness = 0.25
+			local_hostile_attrition = 1
 		}
 		country_modifiers = {
 			rival_border_fort_maintenance = -0.3
