@@ -569,16 +569,9 @@ allianceaction = {
 				tag = EGY
 			}	
 			NOT = {
-				has_reform = parliamentary_reform
-				has_reform = royal_decree_reform
-				has_reform = aristocratic_court_reform
-				has_reform = general_estates_reform
-				has_reform = states_general_reform
-				has_reform = legislative_sejm
-				has_reform = integrated_sejmiks
-				has_reform = feuillant_reform
-				has_reform = two_chamber_reform
-				has_reform = imperial_decree_reform
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
 			}
 		}	
 		allow = {
@@ -619,16 +612,9 @@ allianceaction = {
 				tag = EGY
 			}	
 			NOT = {
-				has_reform = parliamentary_reform
-				has_reform = royal_decree_reform
-				has_reform = aristocratic_court_reform
-				has_reform = general_estates_reform
-				has_reform = states_general_reform
-				has_reform = legislative_sejm
-				has_reform = integrated_sejmiks
-				has_reform = feuillant_reform
-				has_reform = two_chamber_reform
-				has_reform = imperial_decree_reform
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
 			}
 		}	
 		allow = {
@@ -647,16 +633,9 @@ allianceaction = {
 		potential = {
 			tag = HUN
 			NOT = {
-				has_reform = parliamentary_reform
-				has_reform = royal_decree_reform
-				has_reform = aristocratic_court_reform
-				has_reform = general_estates_reform
-				has_reform = states_general_reform
-				has_reform = legislative_sejm
-				has_reform = integrated_sejmiks
-				has_reform = feuillant_reform
-				has_reform = two_chamber_reform
-				has_reform = imperial_decree_reform
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
 			}
 		}	
 		allow = {
@@ -675,16 +654,9 @@ allianceaction = {
 		potential = {
 				tag = TUR
 			NOT = {
-				has_reform = parliamentary_reform
-				has_reform = royal_decree_reform
-				has_reform = aristocratic_court_reform
-				has_reform = general_estates_reform
-				has_reform = states_general_reform
-				has_reform = legislative_sejm
-				has_reform = integrated_sejmiks
-				has_reform = feuillant_reform
-				has_reform = two_chamber_reform
-				has_reform = imperial_decree_reform
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
 			}
 		}	
 		allow = {
@@ -703,16 +675,9 @@ allianceaction = {
 		potential = {
 			tag = HUN
 			NOT = {
-				has_reform = parliamentary_reform
-				has_reform = royal_decree_reform
-				has_reform = aristocratic_court_reform
-				has_reform = general_estates_reform
-				has_reform = states_general_reform
-				has_reform = legislative_sejm
-				has_reform = integrated_sejmiks
-				has_reform = feuillant_reform
-				has_reform = two_chamber_reform
-				has_reform = imperial_decree_reform
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
 			}
 		}	
 		allow = {
@@ -731,16 +696,9 @@ allianceaction = {
 		potential = {
 				tag = TUR
 			NOT = {
-				has_reform = parliamentary_reform
-				has_reform = royal_decree_reform
-				has_reform = aristocratic_court_reform
-				has_reform = general_estates_reform
-				has_reform = states_general_reform
-				has_reform = legislative_sejm
-				has_reform = integrated_sejmiks
-				has_reform = feuillant_reform
-				has_reform = two_chamber_reform
-				has_reform = imperial_decree_reform
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
 			}
 		}	
 		allow = {
@@ -759,16 +717,9 @@ allianceaction = {
 		potential = {
 			tag = ETH
 			NOT = {
-				has_reform = parliamentary_reform
-				has_reform = royal_decree_reform
-				has_reform = aristocratic_court_reform
-				has_reform = general_estates_reform
-				has_reform = states_general_reform
-				has_reform = legislative_sejm
-				has_reform = integrated_sejmiks
-				has_reform = feuillant_reform
-				has_reform = two_chamber_reform
-				has_reform = imperial_decree_reform
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
 			}
 		}	
 		allow = {
@@ -776,6 +727,129 @@ allianceaction = {
 				NOT = { 
 					OR = {
 						tag = TUR					
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = sm_tooltip_fraengally
+		potential = {
+				tag = FRA
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = ENG				
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_engfraally
+		potential = {
+			tag = ENG
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = FRA				
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = sm_tooltip_fraburally
+		potential = {
+				tag = FRA
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = BUR				
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_burfraally
+		potential = {
+			tag = BUR
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = FRA				
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = sm_tooltip_burengally
+		potential = {
+				tag = BUR
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = ENG				
+					}
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = sm_tooltip_engburally
+		potential = {
+			tag = ENG
+			NOT = {
+				has_reform = clergy_in_administration_reform
+				has_reform = of_noble_bearing_reform
+				has_reform = meritocratic_focus_reform
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = BUR				
 					}
 				}
 			}
