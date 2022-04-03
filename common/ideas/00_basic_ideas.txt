@@ -11,7 +11,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.10
 	}
 	
 	noble_knights = {

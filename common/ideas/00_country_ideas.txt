@@ -1597,7 +1597,7 @@ TIM_ideas = {
 		technology_cost = -0.05
 	}
 	reform_the_diwan = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.10
  	}
 }
 
@@ -14166,7 +14166,7 @@ ADU_ideas = {
 	free = yes        #will be added at load.
     
 	adu_stand_against_the_reconquista = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.10
 	}
 	adu_taifa_adminstration = {
 		technology_cost = -0.1

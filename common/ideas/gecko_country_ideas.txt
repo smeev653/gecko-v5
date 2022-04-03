@@ -105,7 +105,7 @@ GZM_ideas = { #Great Zimbabwe Empire
 		discipline = 0.05
 	}
 	GZM_empowering_the_rozwi = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.10
 	}
 	GZM_4 = {
 		infantry_shock = 0.25
@@ -429,7 +429,7 @@ HAN_ideas = {
 		development_cost = -0.05
 	}
 	han_kings_legion = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.10
 	}
 }
 
