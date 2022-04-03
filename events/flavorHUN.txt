@@ -1129,7 +1129,7 @@ country_event = {
 		has_regency = no
 		OR = {
 			has_country_flag = hun_had_mercenaries_in_slovakia
-			is_year = 1455
+			is_year = 1450
 		}
 		NOT = { is_year = 1500 }
 	}
