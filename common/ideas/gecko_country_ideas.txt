@@ -633,7 +633,7 @@ SWA_ideas = {
 		prestige = 1
 	}
 	swa_free_cities = {
-		land_morale = 0.10
+		land_morale = 0.15
 	}
 }
 
