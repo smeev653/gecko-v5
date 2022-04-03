@@ -31,7 +31,7 @@ gc_cri_branch_1 = {
         provinces_to_highlight = {
             OR = {
 				#area = podolia_volhynia_area
-				area = west_dniepr_area
+				#area = west_dniepr_area
 				area = east_dniepr_area
 				area = chernigov_area
 				area = sloboda_ukraine_area
@@ -46,10 +46,10 @@ gc_cri_branch_1 = {
 			#	type = all
 			#	country_or_subject_holds = ROOT
 			#}
-			west_dniepr_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
+			#west_dniepr_area = {
+			#	type = all
+			#	country_or_subject_holds = ROOT
+			#}
 			east_dniepr_area = {
 				type = all
 				country_or_subject_holds = ROOT
@@ -108,24 +108,24 @@ gc_cri_branch_1 = {
                     }
                 }
 			}
-			west_dniepr_area = {
-				type = all
-				country_or_subject_holds = ROOT
-                OR = {
-                    AND = {
-                        has_building = temple
-                        has_building = workshop
-                    }
-                    AND = {
-                        has_building = barracks
-                        has_building = workshop
-                    }
-                    AND = {
-                        has_building = barracks
-                        has_building = temple
-                    }
-                }
-			}
+			#west_dniepr_area = {
+			#	type = all
+			#	country_or_subject_holds = ROOT
+            #    OR = {
+              #      AND = {
+             #           has_building = temple
+              #          has_building = workshop
+               #     }
+                #    AND = {
+                 #       has_building = barracks
+                  #      has_building = workshop
+                   # }
+                    #AND = {
+                     #   has_building = barracks
+                      #  has_building = temple
+                    #}
+                #}
+			#}
 			east_dniepr_area = {
 				type = all
 				country_or_subject_holds = ROOT
