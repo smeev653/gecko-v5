@@ -5865,7 +5865,7 @@ estate_cossacks_recruit_cossack_generals = {
 	penalties = {
 	}
 	benefits = {
-		shock_damage = 0.10
+		shock_damage_received = -0.10
 	}
 	ai_will_do = {
 		factor = 10
