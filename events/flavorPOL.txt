@@ -347,7 +347,11 @@ country_event = {
 				tag = POL
 				NOT = { exists = PLC }
 			}
-			tag = PLC
+			OR = {
+				tag = PLC
+				tag = HUN
+				tag = EOH
+			}	
 		}
 		religion_group = christian
 		exists = TUR
