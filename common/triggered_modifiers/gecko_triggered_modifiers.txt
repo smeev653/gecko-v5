@@ -381,8 +381,10 @@ Defense_of_Europe = {
 		}
 		defensive_war_with = TUR
 		land_maintenance = 1
-		army_size_percentage = 0.9
+		army_size_percentage = 0.65
 	}
 	land_morale = 0.1
 	global_regiment_cost = -0.1
+	land_forcelimit_modifier = 0.25
+	war_exhaustion = -0.05
 }
