@@ -384,6 +384,5 @@ Defense_of_Europe = {
 		army_size_percentage = 0.9
 	}
 	land_morale = 0.1
-	discipline = 0.025
 	global_regiment_cost = -0.1
 }
