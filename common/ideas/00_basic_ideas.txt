@@ -199,7 +199,7 @@ innovativeness_ideas = {
 	category = ADM
 
 	bonus = {
-		free_mil_policy = 1
+		free_mil_policy = 2
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
@@ -208,19 +208,20 @@ innovativeness_ideas = {
 		innovativeness_gain = 1
 	}
 	patron_of_art  = {
-		monthly_reform_progress_modifier = 0.25
+		monarch_lifespan = 0.2
 	}
 	dynamic_court = {
-		idea_cost = -0.05
+		idea_cost = -0.1
 	}
 	print_culture = {
-		mercenary_manpower = 0.25
+		reserves_organisation = 0.15
 	}
 	optimism = {
 		war_exhaustion = -0.05
 	}
 	formalized_officer_corps = {
 		free_leader_pool = 2
+		leader_cost = -0.1
 	}
 
 	ai_will_do = {
@@ -874,12 +875,13 @@ administrative_ideas = {
 		production_efficiency = 0.15
 	}
 	civil_servants = {
-		monthly_splendor = 3
+		reform_progress_growth = 0.5
 		advisor_pool = 4
 	}
 	benefits_for_mercenaries = {
 		mercenary_cost = -0.15
 		merc_maintenance_modifier = -0.5
+		mercenary_manpower = 0.25
 	}
 	adm_adaptability = {
 		global_manpower = 10
