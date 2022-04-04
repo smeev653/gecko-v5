@@ -875,7 +875,7 @@ administrative_ideas = {
 		production_efficiency = 0.15
 	}
 	civil_servants = {
-		reform_progress_growth = 0.5
+		reform_progress_growth = 0.25
 		advisor_pool = 4
 	}
 	benefits_for_mercenaries = {
