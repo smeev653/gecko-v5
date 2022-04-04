@@ -2014,7 +2014,7 @@ town_hall = {
 	modifier = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
-		local_governing_cost = -0.3
+		local_governing_cost = -0.35
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.50
 		}
