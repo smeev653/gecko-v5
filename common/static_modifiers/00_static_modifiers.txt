@@ -1229,7 +1229,7 @@ in_golden_era = {
 
 absolutism = {
 	administrative_efficiency = 0.4
-	land_morale = 0.05
+	land_morale = 0.1
 	core_decay_on_your_own = -0.5
 }
 
