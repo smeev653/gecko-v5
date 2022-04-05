@@ -155,8 +155,8 @@ combat_heresy_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	modifiers = {
-		land_morale = 0.1
-	}
+		land_morale = 0.075
+		possible_policy = 1	}
 }
 
 expel_heathens_reform = {
