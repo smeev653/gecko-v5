@@ -17,7 +17,7 @@ make_canton = {
 	warscore_cap = -1 
 	requires_demand_independence = yes 
 	is_make_subject = yes 
-	requires_is_allowed = no 
+	requires_is_allowed = yes
 	
 	is_visible = { 
 		can_be_overlord = canton
@@ -26,7 +26,7 @@ make_canton = {
 				all_subject_country = {
 					is_subject_of_type = canton
 				}
-				amount = 6
+				amount = 4
 			}
 		}
 	}

@@ -658,10 +658,12 @@ take_capital_conquest = {
 		
 		allowed_provinces = {
 			is_claim = ROOT
+			
 		}
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 	
@@ -672,6 +674,7 @@ take_capital_conquest = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -684,7 +687,7 @@ take_core = {
 	attacker = {
 		badboy_factor = 0.25
 		prestige_factor = 1
-		peace_cost_factor = 0.75
+		peace_cost_factor = 0.5
 
 		allowed_provinces = {
 			is_core = ROOT
@@ -693,6 +696,7 @@ take_core = {
 		peace_options = {
 			po_demand_provinces
 			po_return_cores
+			make_canton
 		}
 		
 		prov_desc = ALL_CORES
@@ -701,7 +705,7 @@ take_core = {
 	defender = {
 		badboy_factor = 0.25
 		prestige_factor = 1
-		peace_cost_factor = 0.75
+		peace_cost_factor = 0.5
 
 		allowed_provinces = {
 			is_core = FROM
@@ -710,6 +714,7 @@ take_core = {
 		peace_options = {
 			po_demand_provinces
 			po_return_cores
+			make_canton
 		}
 		
 		prov_desc = ALL_CORES	
@@ -842,6 +847,7 @@ take_province_nationalist = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -859,6 +865,7 @@ take_province_nationalist = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -883,6 +890,7 @@ take_capital_imperial = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_COUNTRIES
@@ -901,6 +909,7 @@ take_capital_imperial = {
 		
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		
 		country_desc = ALL_COUNTRIES
@@ -1340,6 +1349,7 @@ take_province_excommunication = {
 			po_become_vassal
 			po_gold
 			po_concede_defeat
+			make_canton
 		}
 		prov_desc = ALL_CGROUP_PROVS
 	}
@@ -1353,6 +1363,7 @@ take_province_excommunication = {
 
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 	}
 
@@ -2002,13 +2013,12 @@ humiliate_rotw = {
 		peace_cost_factor = 1
 		
 		allowed_provinces = {
-			always = no
+			always = yes
 		}
 		
 		allowed_provinces_are_eligible = yes
 		
 		peace_options = {
-			po_demand_provinces
 			po_revoke_cores
 			po_release_vassals
 			po_release_annexed
