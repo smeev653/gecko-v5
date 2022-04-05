@@ -891,8 +891,8 @@ administrative_ideas = {
 		drill_gain_modifier = 0.2
 	}
 	organised_mercenary_recruitment = {
-		expand_administration_cost = -0.75
-		governing_cost = -0.3
+		expand_administration_cost = -0.5
+		governing_cost = -0.15
 		state_maintenance_modifier = -0.25
 	}
 	administrative_efficiency_idea = {
