@@ -512,7 +512,7 @@ crown_colony = {
 	count = colony
 	
 	forcelimit_bonus = 1.0
-	forcelimit_to_overlord = 0.25
+	forcelimit_to_overlord = 0.20
 	manpower_bonus = 1.0
 	manpower_to_overlord = 0.25
 	naval_forcelimit_bonus = 0.5
