@@ -3,7 +3,7 @@ military_hegemon = {
 		is_great_power = yes
 		army_size = 1000
 		NOT = { any_other_great_power = { army_size = root } }
-		manpower = 250
+		#manpower = 250
 	}
 	
 	base = {
