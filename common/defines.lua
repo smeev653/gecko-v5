@@ -276,7 +276,7 @@ NDiplomacy = {
 	PO_END_RIVALRY_PRESTIGE = 5,
 
 	PEACE_COST_PRIMITIVE_NERF = 0.75,				-- war score cost multiplier vs primitives
-	PEACE_COST_DEMAND_PROVINCE = 1,					-- Demand a province (scales by province wealth, also used for annex)
+	PEACE_COST_DEMAND_PROVINCE = 1.1,					-- Demand a province (scales by province wealth, also used for annex)
 	PEACE_COST_CONCEDE_PROVINCE = 1,				-- Demand colonial area province concession.
 	PEACE_COST_BECOME_VASSAL = 0.8,					-- Vassalize a country (scales by province wealth)
 	PEACE_COST_PILLAGE_CAPITAL = 1,					-- Pillage a capital state's dev (scales by province wealth)
@@ -1590,7 +1590,7 @@ NAI = {
 	--ADVISOR_BUDGET_THRESHOLD = 1.25, -- The AI will only hire an advisor if it can afford this much maintenance increase (+25%)
 	STATE_MAINTENANCE_BUDGET_FRACTION = 0.15, -- AI will spend a maximum of this fraction of monthly income on state maintenance
 	CORRUPTION_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this fraction of monthly income on rooting out corruption
-	COLONY_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this amount of monthly ducats for colonies.
+	COLONY_BUDGET_FRACTION = 0.3, -- AI will spend a maximum of this amount of monthly ducats for colonies.
 	ARMY_BUDGET_FRACTION = 1, -- AI will spend a maximum of this fraction of monthly income on army maintenance (based off wartime costs)
 	NAVY_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this fraction of monthly income on navy maintenance (based off wartime costs)
 	FORT_BUDGET_FRACTION = 0.1, -- AI will spend a maximum of this fraction of monthly income on forts
