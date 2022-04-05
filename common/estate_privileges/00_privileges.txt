@@ -1083,7 +1083,7 @@ estate_nobles_levies = {
 		}
 	}
 	modifier_by_land_ownership = {
-		global_tax_modifier = -0.10
+		global_tax_modifier = -0.05
 		global_manpower_modifier = 0.25
 	}
 	penalties = {
@@ -2677,8 +2677,8 @@ estate_maratha_levies = {
 		NOT = { religion_group = muslim }
 	}
 	modifier_by_land_ownership = {
-		#global_tax_modifier = -0.25
-		global_manpower_modifier = 0.5
+		global_tax_modifier = -0.05
+		global_manpower_modifier = 0.25
 	}
 
 	penalties = {
