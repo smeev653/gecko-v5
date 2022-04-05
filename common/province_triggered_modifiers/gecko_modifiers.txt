@@ -101,8 +101,15 @@ conquest_of_paris = {
 	trigger = {
 		owner = {
 			NOT = { tag = FRA }
+			NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 		}
 		controlled_by = ROOT
+		
 	}
 
 	discipline = 0.03
@@ -128,7 +135,14 @@ conquest_of_vienna = {
 			NOT = { tag = HAB }
 			NOT = { tag = POL }
 			NOT = { tag = PLC }
+			NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 		}
+		
 		controlled_by = ROOT
 	}
 
@@ -354,9 +368,16 @@ conquest_of_fez = {
 		owner = {
 				NOT = { tag = MOR }
 				NOT = { tag = ADU }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 			}
 		controlled_by = ROOT	
-		}	
+		}
+				
 
 	discipline = 0.03
  
@@ -429,12 +450,12 @@ conquest_of_saint_petersburg = {
 	trigger = {
 		owner = {
 				NOT = { tag = MOS }
-				NOT = { tag = RUS }
+				NOT = { tag = RUS }	
 			}
 		controlled_by = ROOT	
 	}	
 
-	discipline = 0.03
+	vassal_income = 0.25
  
 	
 	#Province scope
@@ -532,6 +553,11 @@ conquest_of_sarai = {
 conquest_of_tabriz = {
 	potential = {
 		normal_or_historical_nations = yes
+		OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}
 	}
 
 	trigger = {
@@ -539,7 +565,14 @@ conquest_of_tabriz = {
 				NOT = { tag = ARL }
 				NOT = { tag = PER }
 				NOT = { tag = ISF }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 			}
+			
 		controlled_by = ROOT	
 		}	
 
@@ -565,9 +598,15 @@ conquest_of_samarkand = {
 				NOT = { tag = TRS }
 				NOT = { tag = BUK }
 				NOT = { tag = TIM }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}	
 			}
 		controlled_by = ROOT	
-		}	
+	}	
 
 	discipline = 0.03
 	
@@ -614,8 +653,15 @@ conquest_of_copenhagen = {
 	trigger = {
 		owner = {
 				NOT = { tag = DAN }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 			}
-		controlled_by = ROOT	
+		controlled_by = ROOT
+		
 	}	
 
 	discipline = 0.03
@@ -635,10 +681,22 @@ conquest_of_copenhagen = {
 conquest_of_herat = {
 	potential = {
 		normal_or_historical_nations = yes
+		OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = tengri_pagan_reformed
+			}
 	}
 
 	trigger = {
 		controlled_by = ROOT
+		OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+				religion = tengri_pagan_reformed
+			}
 	}
 
 	infantry_power = 0.1
