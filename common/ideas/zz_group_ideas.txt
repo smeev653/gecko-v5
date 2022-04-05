@@ -1582,7 +1582,7 @@ caucasus_ideas = {
 ruthenian_ideas = {
 	start = {
 		land_morale = 0.10
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2
 	}
 
 	bonus = {

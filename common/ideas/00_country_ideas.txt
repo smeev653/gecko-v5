@@ -480,7 +480,7 @@ TUR_ideas = {
 	}
 	millets = {
 		core_creation = -0.25
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2
 	}
 	ghazi = {
 		manpower_recovery_speed = 0.15
@@ -985,7 +985,7 @@ POR_ideas = {
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2
 	}
 	
 	bonus = {
@@ -1159,7 +1159,7 @@ PER_ideas = {
 BUR_Ideas = {
 	start = {
 		land_morale = 0.1
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2
 	}
 	
 	bonus = {
