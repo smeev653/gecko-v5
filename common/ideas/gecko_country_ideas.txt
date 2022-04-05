@@ -78,7 +78,7 @@ EGY_ideas = { #Egyptian Empire
 		trade_efficiency = 0.10
 	}
 	egy_7 = {
-		global_trade_goods_size_modifier = 0.10
+		discipline = 0.05
 	}
 }	
 
