@@ -7,7 +7,7 @@ add_accepted_culture = pontic_greek
 add_accepted_culture = greek
 religion = catholic
 technology_group = western
-capital = 2992	# Genova
+capital = 101	# Genova
 
 
 1394.1.1 = {
