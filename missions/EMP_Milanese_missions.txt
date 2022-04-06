@@ -67,13 +67,22 @@ emp_mlo_conquest_branch = {
 		icon = conquer_tuscany
 		required_missions = { emp_mlo_subdue_genoa }
 		provinces_to_highlight = {
+			OR = {
+			 province_id = 2992
+			  province_id = 101
+			   province_id = 6046
+			}	
 				area = liguria_area 
-			
 		}
 		trigger = {
-			liguria_area= {
-				type = all
-				country_or_non_sovereign_subject_holds = root
+			2992 = {
+				owned_by = ROOT
+			}
+			101 = {
+				owned_by = ROOT
+			}
+			6046 = {
+				owned_by = ROOT
 			}
 		}
 		
@@ -92,6 +101,15 @@ emp_mlo_conquest_branch = {
 					}
 				}
 			}
+			if = {
+                limit = {
+                    101 = {
+                        NOT = { province_has_center_of_trade_of_level = 3 }
+                    }
+                }
+                101 = { add_center_of_trade_level = 1 }
+            }
+            else = { add_treasury = 1000 }
 			piedmont_area = {
 				limit = {
 					NOT = { is_core = root }
