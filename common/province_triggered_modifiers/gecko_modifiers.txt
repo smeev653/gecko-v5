@@ -75,6 +75,10 @@ conquest_of_constantinople = {
 	trigger = {
 		owner = {
 			NOT = { tag = TUR }
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		controlled_by = ROOT
 	}
@@ -107,6 +111,11 @@ conquest_of_paris = {
 					value = 0.30
 					}
 				}
+			ile_de_france_area	= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+				
 		}
 		controlled_by = ROOT
 		
@@ -141,6 +150,10 @@ conquest_of_vienna = {
 					value = 0.30
 					}
 				}
+			austria_proper_area	= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
 		}
 		
 		controlled_by = ROOT
@@ -222,7 +235,11 @@ conquest_of_baghdad = {
 				religion = sunni
 				religion = shiite
 				religion = ibadi
-			}	
+			}
+			iraq_arabi_area	= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		controlled_by = ROOT
 	}
@@ -251,7 +268,11 @@ conquest_of_delhi = {
 				religion = sunni
 				religion = shiite
 				religion = ibadi
-			}	
+			}
+			upper_doab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		controlled_by = ROOT
 	}
@@ -314,6 +335,10 @@ conquest_of_cairo = {
 				NOT = { tag = EGY }
 				NOT = { tag = ETH }
 				NOT = { tag = AKS}
+				bahari_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		controlled_by = ROOT	
 		}	
@@ -374,6 +399,11 @@ conquest_of_fez = {
 					value = 0.30
 					}
 				}
+				marrekesh_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				
 			}
 		controlled_by = ROOT	
 		}
@@ -401,6 +431,10 @@ conquest_of_london = {
 		owner = {
 				NOT = { tag = ENG }
 				NOT = { tag = GBR }
+				home_counties_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		controlled_by = ROOT	
 		}	
@@ -426,6 +460,11 @@ conquest_of_berlin = {
 	trigger = {
 		owner = {
 				NOT = { tag = BRA }
+				NOT = { tag = PRU }
+			berlin_area	 = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 		}		
 		controlled_by = ROOT
 	}
@@ -449,8 +488,10 @@ conquest_of_saint_petersburg = {
 
 	trigger = {
 		owner = {
-				NOT = { tag = MOS }
-				NOT = { tag = RUS }	
+				moscow_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		controlled_by = ROOT	
 	}	
@@ -508,7 +549,11 @@ conquest_of_sarai = {
 			OR = {
 			tag = KHA
 			culture_group = tartar
-		}
+			}
+			astrakhan_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 		}	
 		controlled_by = ROOT	
 	}
@@ -571,6 +616,10 @@ conquest_of_tabriz = {
 					value = 0.30
 					}
 				}
+				tabriz_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			
 		controlled_by = ROOT	
@@ -603,6 +652,10 @@ conquest_of_samarkand = {
 					which = discipline
 					value = 0.30
 					}
+				}
+				samarkand_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}	
 			}
 		controlled_by = ROOT	
@@ -629,6 +682,10 @@ conquest_of_pest = {
 		owner = {
 				NOT = { tag = HUN }
 				#NOT = { tag = TUR }
+				alfold_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
 			}
 		controlled_by = ROOT	
 		}	
@@ -658,6 +715,10 @@ conquest_of_copenhagen = {
 					which = discipline
 					value = 0.30
 					}
+				}
+				denmark_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		controlled_by = ROOT
@@ -697,6 +758,10 @@ conquest_of_herat = {
 				religion = ibadi
 				religion = tengri_pagan_reformed
 			}
+		balkh_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
 	}
 
 	infantry_power = 0.1

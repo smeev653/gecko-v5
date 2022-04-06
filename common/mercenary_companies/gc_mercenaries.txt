@@ -8,6 +8,7 @@ gecko_independent_army_1 = {
     cost_modifier = 0.75
     trigger = {
 		 total_development = 100
+		NOT = { has_country_modifier = gecko_b }
     }
     # No home province means local mercenary company
 }
@@ -22,7 +23,8 @@ gecko__local_independent_army_1 = {
 		OR = {
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
-		}	
+		}
+		NOT = { has_country_modifier = gecko_b }
     }
     # No home province means local mercenary company
 }
