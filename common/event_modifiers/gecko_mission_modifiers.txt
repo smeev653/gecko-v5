@@ -290,7 +290,7 @@ tibetan_missionaries = {
 	tolerance_heathen = 3
 	missionary_maintenance_cost = -0.5
 }
-mongol_rule_tibet = {
+gc_mongol_rule_tibet = {
 	local_autonomy = -0.05
 	local_development_cost = -0.25
 }

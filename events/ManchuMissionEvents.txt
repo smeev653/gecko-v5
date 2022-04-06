@@ -231,7 +231,7 @@ country_event = {
 					religion = vajrayana
 				}
 				add_province_modifier = {
-					name = "mongol_rule_tibet"
+					name = "gc_mongol_rule_tibet"
 					duration = 36500
 				}
 			}
