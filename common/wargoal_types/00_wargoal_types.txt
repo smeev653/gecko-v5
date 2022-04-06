@@ -761,7 +761,7 @@ take_claim = {
 	attacker = {
 		badboy_factor = 1.0
 		prestige_factor = 1
-		peace_cost_factor = 1.0
+		peace_cost_factor = 1.1
 		allowed_provinces = {
 			is_claim = ROOT
 		}
@@ -774,7 +774,7 @@ take_claim = {
 	defender = {
 		badboy_factor = 1.0
 		prestige_factor = 1
-		peace_cost_factor = 1.0	
+		peace_cost_factor = 1.1	
 		allowed_provinces = {
 			OR = {
 				is_claim = FROM
@@ -795,16 +795,18 @@ nice_borders_cb = {
 	attacker = {
 		badboy_factor = 1.0
 		prestige_factor = 1
-		peace_cost_factor = 0.9
+		peace_cost_factor = 1
 		allowed_provinces_are_eligible = yes
 		allowed_provinces = {
-			OR = {
-				is_core = ROOT
-				is_claim = ROOT
-				any_neighbor_province = {
-				owned_by = ROOT
-			}
-			}
+				OR = {
+					is_core = ROOT
+					is_claim = ROOT
+					any_neighbor_province = {
+							owned_by = ROOT
+					}
+					has_influencing_fort = yes
+					controlled_by = ROOT
+				}
 		}
 		peace_options = {
 			po_demand_provinces
@@ -813,16 +815,17 @@ nice_borders_cb = {
 	}
 	
 	defender = {
-		badboy_factor = 0.75
+		badboy_factor = 1
 		prestige_factor = 1
 		peace_cost_factor = 0.9
 		allowed_provinces = {
 			OR = {
-				is_core = ROOT
-				is_claim = ROOT
-				any_neighbor_province = {
-				owned_by = ROOT
-			}
+					is_core = ROOT
+					is_claim = ROOT
+					any_neighbor_province = {
+							owned_by = ROOT
+					}
+				}
 			}
 		}
 		peace_options = {

@@ -247,7 +247,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		tooltip = { create_vassal = CRI }
+		tooltip = { create_march = CRI }
 		CRI = {
 			country_event = { id = flavor_cri.4 }
 		}
