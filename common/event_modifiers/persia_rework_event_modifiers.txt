@@ -69,7 +69,7 @@ force_janissaries_to_undergo_yoklama = {
 }
 # Persian Missions
 
-caucasus_integration = {
+gc_caucasus_integration = {
 	local_unrest = -2
 	local_autonomy = -0.05
 	local_development_cost = -0.25

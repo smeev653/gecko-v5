@@ -183,7 +183,7 @@
  #persia
  caucasus_conquest_title:0 "Georgian Jihad"
  caucasus_conquest_desc:0 "The restless Safavid order demands we launch a grand Jihad against the upstart Georgians. Not only will this benefit our caravans, it will also allow for the blossoming slave trade to grow. Perhaps we may one day have Janissaries of our own."
- caucasus_integration:0 "Integration of the Caucasus"
+ gc_caucasus_integration:0 "Integration of the Caucasus"
  #qq
  PR_qar_missions4_reward:0 "Unlock Clergy Exploration Expeditions Estate Privilege"
  PR_qar_missions3_desc_title:0 "Into Arabia"
