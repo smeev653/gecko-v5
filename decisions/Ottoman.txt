@@ -168,7 +168,7 @@ country_decisions = {
 						NOT = { is_core = root }
 						NOT = { is_permanent_claim = root }
 					}
-					add_core = root
+					add_permanent_claim = root
 				}
 			}		
 		}
