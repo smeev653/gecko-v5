@@ -1727,7 +1727,7 @@ army_drill_modifier = { # Used by an entire army, is the average of all subunits
 janissary_regiment = {
 	recover_army_morale_speed = 0.1
 	reinforce_speed = 0.1
-	reinforce_cost_modifier = 1
+	reinforce_cost_modifier = 2
 	#shock_damage_received = -0.1
 	#fire_damage_received = -0.1
 }
@@ -1736,7 +1736,7 @@ cawa_regiment = {
 	infantry_power = 0.1
 	drill_decay_modifier = -0.1
 	drill_gain_modifier = 0.25
-	reinforce_cost_modifier = 0.5
+	#reinforce_cost_modifier = 0.5
 }
 
 revolutionary_guard_regiment = {
