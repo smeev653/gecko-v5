@@ -175,7 +175,6 @@ technology = { #University
 	# Tech 17
 	year = 1622
 	
-	university = yes	
 	governing_capacity = 250
 	
 	administrative_efficiency = 0.1

@@ -22,6 +22,7 @@ country_event = {
 		exists = TUR
 		is_free_or_tributary_trigger = yes
 		is_year = 1448
+		NOT = { is_year = 1450 }
 		ai = yes
 		TUR = {
 			num_of_cities = ROOT

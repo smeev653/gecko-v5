@@ -389,7 +389,6 @@ country_event = {
 	major = yes
 
 	trigger = {
-		has_idea = quest_for_the_new_world
 		num_of_ports = 4
 		NOT = {
 			capital_scope = {
@@ -403,15 +402,6 @@ country_event = {
 		}
 		has_discovered = 1460 # Cape of Good Hope
 		technology_group = western
-		any_active_trade_node = {
-			has_merchant = PREV
-			OR = {
-				province_id = 1361 # Straits of Johor
-				province_id = 1343 # Ganges Delta
-				province_id = 504 # Thatta
-				province_id = 1340 # Comorin Cape
-			}
-		}
 		NOT = { has_global_flag = spice_trade_happened }
 	}
 	

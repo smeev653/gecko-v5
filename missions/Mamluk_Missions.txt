@@ -1,122 +1,4 @@
-mam_south_missions = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = MAM
-			tag = EGY
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	mam_holy_cities = {
-		icon = mission_mosque
-		required_missions = {  }
-		completed_by = 1482.6.1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 384
-				province_id = 385
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			384 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			385 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			country_event = { id = flavor_mam.23 }
-			#tihama_al_yemen_area = {
-			#	limit = {
-			#		NOT = { is_permanent_claim = ROOT	}
-			#		NOT = { is_core = ROOT	}
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-			#upper_yemen_area = {
-			#	limit = {
-			#		NOT = { is_permanent_claim = ROOT	}
-			#		NOT = { is_core = ROOT	}
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-			#yemen_area = {
-			#	limit = {
-			#		NOT = { is_permanent_claim = ROOT	}
-			#		NOT = { is_core = ROOT	}
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-			#asir_area = {
-			#	limit = {
-			#		NOT = { is_permanent_claim = ROOT	}
-			#		NOT = { is_core = ROOT	}
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-			#hadramut_area = {
-			#	limit = {
-			#		NOT = { is_permanent_claim = ROOT	}
-			#		NOT = { is_core = ROOT	}
-			#	}
-			#	add_permanent_claim = ROOT
-			#}
-		}
-	}
-	mam_yemeni_trade = {
-		icon = mission_asian_trader
-		required_missions = { mam_holy_cities }
-		provinces_to_highlight = {
-			OR = {
-				area = tihama_al_yemen_area
-				area = upper_yemen_area
-				area = yemen_area
-				area = asir_area
-				area = hadramut_area
-				province_id = 358
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			358 = {
-				is_strongest_trade_power = ROOT
-			}
-			tihama_al_yemen_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			upper_yemen_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			yemen_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			asir_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			hadramut_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_sailors = 5000
-		}
-	}
-}
+
 mam_north_missions = {
 	slot = 5
 	generic = no
@@ -180,6 +62,7 @@ mam_north_missions = {
 			OR = {
 				area = syrian_desert_area
 				area = tabuk_area
+				area = nafud_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -194,6 +77,11 @@ mam_north_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			nafud_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
 		}
 		effect = {
 			add_country_modifier = {

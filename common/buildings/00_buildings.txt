@@ -1351,7 +1351,12 @@ university = {
 		local_development_cost = -0.05
 		allowed_num_of_buildings = 1
 	}
-	
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	on_obsolete = {
 	}
 	ai_will_do = {
@@ -2612,6 +2617,12 @@ wharf = {
 		salt
 	}
 	onmap = yes
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	on_obsolete = {
 	}
 
@@ -2647,7 +2658,12 @@ weapons = {
 		iron
 	}
 	onmap = yes
-	
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 
 	ai_will_do = {
 		factor = 3000
@@ -2662,7 +2678,12 @@ textile = {
 		dyes
 	}
 	onmap = yes
-	
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	on_obsolete = {
 	}
 
@@ -2681,7 +2702,12 @@ plantations = {
 		cocoa
 	}
 	onmap = yes
-	
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	on_obsolete = {
 	}
 
@@ -2699,7 +2725,12 @@ tradecompany = {
 		incense
 	}
 	onmap = yes
-	
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	on_obsolete = {
 	}
 
@@ -2715,7 +2746,12 @@ farm_estate = {
 		wine
 	}
 	onmap = yes
-	
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	on_obsolete = {
 	}
 	
@@ -2734,7 +2770,12 @@ mills = {
 		chinaware
 	}
 	onmap = yes
-	
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	on_obsolete = {
 	}
 
@@ -2748,8 +2789,11 @@ furnace = {
 		coal
 	}
 
-	potential = {
-		has_dlc = "Rule Britannia"
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
 	}
 
 	modifier = {
@@ -2793,7 +2837,12 @@ soldier_households = {
 	    livestock
 		wine
 	}
-
+	build_trigger = {
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
+	}
 	modifier = {
 		local_manpower = 0.75
 	}
@@ -2825,6 +2874,10 @@ impressment_offices = {
 
 	build_trigger = {
 		has_port = yes
+		area_for_scope_province = {
+				type = all
+				owned_by = ROOT
+			}
 	}
 
 	modifier = {

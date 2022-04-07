@@ -286,12 +286,12 @@ vassal = {
 #	end_date = 1489.1.1
 #}
 
-vassal = { #Viceroy of the Hejaz
-	first = MAM
-	second = HED
-	start_date = 1444.1.1
-	end_date = 1517.1.1
-}
+#vassal = { #Viceroy of the Hejaz
+#	first = MAM
+#	second = HED
+#	start_date = 1444.1.1
+#	end_date = 1517.1.1
+#}
 
 vassal = { #Mamluks fall
 	first = TUR

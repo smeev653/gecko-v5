@@ -26,6 +26,13 @@ QAR_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
+			yamamah_area = {
+				limit = {
+					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	PR_qar_missions5_desc = {
@@ -221,13 +228,6 @@ QAR_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
-			yamamah_area  = {
-				limit = {
-					NOT = { is_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	PR_qar_missions4_desc = {
@@ -238,7 +238,6 @@ QAR_conquest = {
 			OR = { 
 				area = nafud_area
 				area = qasim_area
-				area = yamamah_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -250,10 +249,6 @@ QAR_conquest = {
 				owned_by = ROOT
 			}
 			qasim_area = {
-				type = all
-				owned_by = ROOT
-			}
-			yamamah_area = {
 				type = all
 				owned_by = ROOT
 			}

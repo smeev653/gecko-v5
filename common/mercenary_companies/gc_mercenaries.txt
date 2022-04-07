@@ -93,3 +93,14 @@ gecko_merc_aristo_ideas = {
 	}
 	cost_modifier = 0.5
 }
+
+gecko_hormuz_company = {
+	regiments_per_development = 0.15
+	cavalry_weight = 0
+    artillery_weight = 0
+	sprites = { easterngfx_sprite_pack }
+	trigger = {
+		tag = YEM
+	}
+	cost_modifier = 0.25
+}

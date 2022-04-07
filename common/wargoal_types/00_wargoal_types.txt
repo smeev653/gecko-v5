@@ -767,6 +767,7 @@ take_claim = {
 		}
 		peace_options = {
 			po_demand_provinces
+			make_canton
 		}
 		prov_desc = ALL_CLAIMS
 	}

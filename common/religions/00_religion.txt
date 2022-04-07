@@ -1405,7 +1405,7 @@ muslim = {
 		color = { 0 102 0 }
 		icon = 16
 		country = {
-			heir_chance = 1.0
+			tolerance_heretic = 2
 			global_trade_goods_size_modifier = 0.1
 		}
 		

@@ -18,7 +18,6 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = ENG }
 			is_emperor_of_china = no
-			tag = ORM
 				
 			is_colonial_nation = no
 			OR = {
