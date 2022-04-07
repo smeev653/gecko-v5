@@ -1071,7 +1071,7 @@ estate_nobles_levies = {
 	influence = 0.1
 	is_valid = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		#NOT = { has_reform = english_monarchy }
+		NOT = { has_reform = english_monarchy }
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
