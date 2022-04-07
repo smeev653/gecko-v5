@@ -94,6 +94,7 @@ on_startup = {
 	#		set_country_flag = ayu_monarch_flag
 	#	}
 	#}
+	gc_prosperity_effect = yes
 }
 
 # country
