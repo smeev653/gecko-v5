@@ -58,8 +58,9 @@ siege_specialist = {
 	monarch_power = MIL
 	
 	# Bonus
-	siege_ability = 0.20
-
+	siege_ability = 0.1
+	artillery_bonus_vs_fort = 1
+	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
 	chance = {
