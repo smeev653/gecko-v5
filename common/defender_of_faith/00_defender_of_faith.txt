@@ -9,6 +9,10 @@ defender_of_faith_1 = {
 		land_morale = 0.05
 		naval_morale = 0.05
 		prestige = 1
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
+		war_exhaustion = -0.03
     }
 	ai_will_do = {
 		factor = 0.1
@@ -57,6 +61,10 @@ defender_of_faith_2 = {
 		land_morale = 0.05
 		naval_morale = 0.05
 		prestige = 1
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
+		war_exhaustion = -0.03
     }
 	ai_will_do = {
 		factor = 0.2
@@ -105,6 +113,10 @@ defender_of_faith_3 = {
 		land_morale = 0.05
 		naval_morale = 0.05
 		prestige = 1
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
+		war_exhaustion = -0.03
     }
 	ai_will_do = {
 		factor = 0.5
@@ -153,6 +165,10 @@ defender_of_faith_4 = {
 		land_morale = 0.05
 		naval_morale = 0.05
 		prestige = 1
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
+		war_exhaustion = -0.03
     }
 	ai_will_do = {
 		factor = 1
@@ -200,6 +216,10 @@ defender_of_faith_5 = {
 		land_morale = 0.05
 		naval_morale = 0.05
 		prestige = 1
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
+		war_exhaustion = -0.03
     }
 	same_faith_modifier = {
 		# Applies also on the DoF
