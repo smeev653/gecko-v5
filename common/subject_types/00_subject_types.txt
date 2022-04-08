@@ -406,7 +406,7 @@ client_vassal = {
 
 	# Properties:
 	created_by_overlord = yes
-	extend_trading_range = ye
+	extend_trading_range = yes
 
 	base_liberty_desire = -25.0
 	liberty_desire_revolution = 0
@@ -457,7 +457,6 @@ colony = {
 	overlord_enforce_peace_attacking = yes
 	can_transfer_in_peace = no
 	press_sailors = yes
-	forcelimit_bonus = 1.0
 	can_concentrate_development = no							 
 	can_concentrate_development = no
 	extend_trading_range = yes

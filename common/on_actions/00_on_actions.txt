@@ -222,13 +222,14 @@ on_religion_change = {
 	}
 	events = {
 		muslim_school_events.20 #Pick School
-		#propagate_religion_events.7 #Propagated Country is now Muslim
+		propagate_religion_events.7 #Propagated Country is now Muslim
 	}
 }
 
 # country.
 on_secondary_religion_change = {
 	# Done from code: add_prestige = -50 (Define: CHANGE_SECONDARY_PRESTIGE_HIT)
+	on_secondary_religion_change_estate_privileges_effect = yes
 	every_owned_province = {
 		limit = { has_province_modifier = tengri_monastic_order }
 		remove_province_modifier = tengri_monastic_order
@@ -4041,7 +4042,6 @@ on_remove_pasha = {
 		owner = {
 			save_event_target_as = province_owner
 		}
-		remove_province_modifier = pasha_removed_modifier
 	}
 
 	area = {
@@ -4049,7 +4049,6 @@ on_remove_pasha = {
 		add_or_extend_province_modifier_effect = { MODIFIER = pasha_removed_modifier DURATION = 3650 }
 	}
 }
-
 # THIS = Province
 on_janissaries_raised = {
 }
@@ -4126,8 +4125,17 @@ on_company_chartered = {
 
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
-	events = {
-		dutch_republic.31 # States General falls under a PU
+	if = {
+		limit = {
+			FROM = {
+				has_reform = dutch_republic
+			}
+		}
+		ROOT = {
+			country_event = {
+				id = dutch_republic.31
+			}# States General falls under a PU
+		}
 	}
 }
 
