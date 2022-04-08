@@ -57,7 +57,7 @@ estate_gc_noble_levies = {
 
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 }
 
