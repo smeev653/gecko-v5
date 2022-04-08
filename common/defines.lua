@@ -1228,7 +1228,7 @@ NMilitary = {
 	ARMY_DRILL_MAX_MORALE = 0.5,
 	ARMY_DRILL_SKILL_MONTHS = 90,					-- The average number of months until you get a skill increase if drilling 100% of forcelimit. Set to 0 to disable.
 
-	COSSACKS_SHOCK_DAMAGE_BONUS = 0,
+	COSSACKS_SHOCK_DAMAGE_BONUS = 0.1,
 	STRELTSY_FIRE_DAMAGE_BONUS = 0.15,
 	MARINE_SHOCK_DAMAGE_TAKEN = -0.25,
 	MAX_SAILOR_LACK_ATTRITION = 1,
@@ -1424,7 +1424,7 @@ NMilitary = {
 	MARINE_DISEMBARK_SPEED_BONUS = 2.0	,			-- marine disembark speed bonus
 	BASE_COST_MODIFIER = 2.0,						-- Revolutionary guards base cost is double as expensive
 	RAJPUT_BASE_COST_MODIFIER = 1.5,				-- Rajput base cost is double as expensive
-	COSSACK_BASE_COST_MODIFIER = 0.5,				-- Cossack base cost is double as expensive
+	COSSACK_BASE_COST_MODIFIER = 1,				-- Cossack base cost is double as expensive
 	REVOLUTIONARY_GUARD_BASE_COST_MODIFIER = 2.0,	-- Revolutionary guards base cost is double as expensive
 
 	SPECIAL_REGIMENT_ESTATE_LOYALTY_COST = 0.0,		-- Estate loyalty cost of recruiting thei related special troops
