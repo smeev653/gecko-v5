@@ -1,7 +1,7 @@
 interaction = {
     key = sale_of_titles
     random_seed = crown_land_share
-	cooldown_months = 90
+	cooldown_months = 120
 
     trigger = {
         crown_land_share = 0.1
