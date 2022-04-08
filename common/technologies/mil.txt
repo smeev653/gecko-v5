@@ -404,7 +404,7 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	0.5
+	cavalry_shock		=	1
 	supply_limit		= 	0.5	
 	
 	enable = maharathan_cavalry		
@@ -518,7 +518,7 @@ technology = {
 	
 	#Light Cavalry
 	
-	cavalry_shock		=	0.5
+	cavalry_shock		=	1
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 
