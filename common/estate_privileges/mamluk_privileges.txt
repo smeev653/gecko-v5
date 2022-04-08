@@ -3,50 +3,29 @@ estate_gc_noble_levies = {
 	max_absolutism = -5
 	loyalty = 0.10
 	influence = 0.20
-	cooldown_years = 10
-	on_cooldown_expires = { 
-		country_event = { id = gecko.8 }
-	}
+	#cooldown_years = 10
+	#on_cooldown_expires = { 
+	#	country_event = { id = gecko.8 }
+	#}
 	is_valid = {
+		OR = {
+			cavalry_fraction = 0.1
+			num_of_cossacks = 1
+		}
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
+		cavalry_fraction = 0.1
+	}
+	mechanics = {
+		enables_cossack_regiments
+	}
+	modifier = {
+		special_unit_forcelimit = 0.33
 	}
 	on_granted = {
 		create_general = {
 			tradition = 30
-		}
-		if = {
-			limit = {
-				capital_scope = { 
-					owned_by = ROOT
-				}
-			}
-			capital_scope = { 
-				add_unit_construction = {
-					type = cavalry
-					amount = 10
-					speed = 2
-					cost = 0
-				}
-			}
-		}
-		if = {
-			limit = {
-				capital_scope = {
-					NOT = {
-						owned_by = ROOT
-					}
-				}
-			}
-			random_owned_province = { 
-				add_unit_construction = {
-					type = cavalry
-					amount = 10
-					speed = 2
-					cost = 0
-				}
-			}
 		}
 	}
 	on_revoked = {
