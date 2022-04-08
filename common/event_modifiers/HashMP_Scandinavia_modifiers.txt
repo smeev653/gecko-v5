@@ -145,7 +145,7 @@ swedish_military_reforms = {
 }
 
 swedish_mercenary_core = {
-	mercenary_discipline = 0.1
+	mercenary_discipline = 0.05
 	mercenary_cost = -0.10
 	mercenary_manpower = 0.15
 }

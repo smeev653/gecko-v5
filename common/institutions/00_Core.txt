@@ -287,7 +287,6 @@ renaissance = {
 		build_cost = -0.05
 		build_time = -0.05
 		reform_progress_growth = 0.2
-		free_leader_pool = 1
 	}
 
 	trade_company_efficiency = 0.4
@@ -543,7 +542,6 @@ new_world_i = {
 		build_cost = -0.05
 		global_autonomy = -0.05
 		development_cost = -0.05
-		free_leader_pool = 1
 	}
 
 	trade_company_efficiency = 0.6
@@ -792,7 +790,6 @@ printing_press = {
 	
 
 	bonus = {
-		free_leader_pool = 2
 		stability_cost_modifier = -0.10
 		burghers_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
@@ -1122,7 +1119,6 @@ global_trade = {
 	
 
 	bonus = {
-		free_leader_pool = 2
 		merchants = 1
 		advisor_pool = 2
 	}
@@ -1384,7 +1380,6 @@ manufactories = {
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
 		build_time = -0.15
-		free_leader_pool = 2
 	}
 
 	trade_company_efficiency = 1.25
@@ -1842,7 +1837,6 @@ enlightenment = {
 
 	bonus = {
 		culture_conversion_cost = -0.25
-		free_leader_pool = 2
 	}
 
 	trade_company_efficiency = 1.5

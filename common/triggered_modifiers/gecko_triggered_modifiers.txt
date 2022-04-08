@@ -389,7 +389,7 @@ Defense_of_Europe = {
 	war_exhaustion = -0.05
 }
 
-Using_Only_Infantry_Cossacks = {
+Using_Only_Infantry_Cossacks1 = {
 	potential = {
 		num_of_cossacks = 1
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
@@ -398,6 +398,19 @@ Using_Only_Infantry_Cossacks = {
 	trigger = {
 		num_of_cossacks = 1
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
+	}
+	global_regiment_cost = 0.25
+}
+
+Using_Only_Infantry_Cossacks2 = {
+	potential = {
+		num_of_cossacks = 1
+		cavalry_fraction = 0
+		}
+
+	trigger = {
+		num_of_cossacks = 1
+		cavalry_fraction = 0
 	}
 	global_regiment_cost = 0.25
 }
