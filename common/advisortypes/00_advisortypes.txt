@@ -305,7 +305,7 @@ army_reformer = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_morale = 0.10
+	land_morale = 0.05
 
 	skill_scaled_modifier = { meritocracy = 0.25 }	
 
