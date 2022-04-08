@@ -1278,8 +1278,9 @@ SCO_Ideas = {
 
 HUN_ideas = {
 	start = {
+		cavalry_cost = -0.1
 		cavalry_power = 0.10
-		recover_army_morale_speed = 0.1
+		no_religion_penalty = yes
 	}
 	
 	bonus = {
@@ -1296,7 +1297,7 @@ HUN_ideas = {
 	}
 	found_the_black_army = {
 		discipline = 0.05
-		cavalry_cost = -0.1
+		recover_army_morale_speed = 0.1
 	}
 	bulwark_of_christianity = {
 		global_manpower_modifier = 0.2
