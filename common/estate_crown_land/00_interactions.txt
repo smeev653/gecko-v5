@@ -175,7 +175,7 @@ interaction = {
 interaction = {
     key = seize_land
     random_seed = random
-	cooldown_months = 90
+	cooldown_months = 120
 
     trigger = {
 		hidden_trigger = { has_any_estates = yes }
