@@ -20,7 +20,7 @@ estate_gc_noble_levies = {
 		enables_cossack_regiments
 	}
 	modifier = {
-		special_unit_forcelimit = 0.33
+		special_unit_forcelimit = 0.2
 	}
 	on_granted = {
 		create_general = {

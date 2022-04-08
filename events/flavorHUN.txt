@@ -1962,48 +1962,6 @@ country_event = {
 					}
 				}
 			}
-			random_owned_province = {
-				limit = {
-					region = balkan_region
-					NOT = { has_province_flag = hun_military_frontier }
-				}
-				if = {
-					limit = {
-						OR = {
-							religion = catholic
-							religion_group = muslim
-						}
-					}
-					random_list = {
-							40 = { set_province_flag = will_be_orthodox_flag }
-							15 = { set_province_flag = will_be_reformed_flag }
-							15 = { set_province_flag = will_be_protestant_flag }
-							30 = { }
-					}
-				}
-				set_province_flag = hun_military_frontier
-			}
-			random_owned_province = {
-				limit = {
-					region = balkan_region
-					NOT = { has_province_flag = hun_military_frontier }
-				}
-				if = {
-					limit = {
-						OR = {
-							religion = catholic
-							religion_group = muslim
-						}
-					}
-					random_list = {
-							40 = { set_province_flag = will_be_orthodox_flag }
-							10 = { set_province_flag = will_be_reformed_flag }
-							10 = { set_province_flag = will_be_protestant_flag }
-							40 = { }
-					}
-				}
-				set_province_flag = hun_military_frontier
-			}
 		}
 	}
 

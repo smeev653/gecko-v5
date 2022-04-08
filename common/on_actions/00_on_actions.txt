@@ -222,14 +222,13 @@ on_religion_change = {
 	}
 	events = {
 		muslim_school_events.20 #Pick School
-		propagate_religion_events.7 #Propagated Country is now Muslim
+		#propagate_religion_events.7 #Propagated Country is now Muslim
 	}
 }
 
 # country.
 on_secondary_religion_change = {
 	# Done from code: add_prestige = -50 (Define: CHANGE_SECONDARY_PRESTIGE_HIT)
-	on_secondary_religion_change_estate_privileges_effect = yes
 	every_owned_province = {
 		limit = { has_province_modifier = tengri_monastic_order }
 		remove_province_modifier = tengri_monastic_order
