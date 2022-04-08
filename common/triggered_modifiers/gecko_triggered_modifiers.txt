@@ -392,12 +392,12 @@ Defense_of_Europe = {
 Using_Only_Infantry_Cossacks = {
 	potential = {
 		num_of_cossacks = 1
-		has_estate_privilege = estate_gc_noble_levies
+		NOT = { has_estate_privilege = estate_gc_noble_levies }
 	}
 
 	trigger = {
-		infantry_fraction = 1
 		num_of_cossacks = 1
+		NOT = { has_estate_privilege = estate_gc_noble_levies }
 	}
-	infantry_cost = 2
+	global_regiment_cost = 0.25
 }

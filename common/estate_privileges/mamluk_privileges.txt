@@ -10,7 +10,6 @@ estate_gc_noble_levies = {
 	is_valid = {
 		OR = {
 			cavalry_fraction = 0.1
-			num_of_cossacks = 1
 		}
 	}
 	can_select = {
