@@ -16973,7 +16973,7 @@ gme_parramentu_sicilianu = {
 		}
 		area_modifier = { }
 		country_modifiers = {
-			reform_progress_growth = 0.15
+			reform_progress_growth = 0.25
 			global_unrest = -1
 			all_estate_loyalty_equilibrium = 0.05
 		}
