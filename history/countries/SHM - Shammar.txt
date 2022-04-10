@@ -6,6 +6,7 @@ religion = sunni
 capital = 393 # Jabal Shammar
 religious_school = shafii_school
 historical_rival = MAM
+historical_friend = YEM
 1444.1.1 = {
 	monarch = {
 		name = "Abdullah"

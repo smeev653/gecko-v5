@@ -12,7 +12,10 @@ yem_missions_1 = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			num_of_royal_marriages = 3
+			marriage_with = HED
+			marriage_with = MDA
+			marriage_with = SHM
+			marriage_with = NAJ
 			custom_trigger_tooltip = {
 				tooltip = yem_has_had_yemeni_crisis_event
 				has_country_flag = yem_has_had_yemeni_crisis_event_flag
@@ -23,8 +26,12 @@ yem_missions_1 = {
 			add_stability_or_adm_power = yes
 			add_country_modifier = {
 				name = yem_rasulid_malik_modifier
-				duration = 5475
+				duration = 36500
 			}
+			vassalize = HED
+			vassalize = MDA
+			vassalize = SHM
+			vassalize = NAJ
 		}
 	}
 

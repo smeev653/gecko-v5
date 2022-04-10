@@ -19,7 +19,6 @@ country_event = {
 	option = {
 		name = ME_Yemen_Events.1.a 
 		
-		add_stability = -1 
 		add_legitimacy = -30 
 		add_country_modifier = {
 			name = yem_yemeni_crisis_modifier 

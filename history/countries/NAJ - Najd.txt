@@ -6,6 +6,7 @@ religion = sunni
 capital = 392 # Deraiyah
 religious_school = hanbali_school
 historical_rival = MAM
+historical_friend = YEM
 #Amirs of ad-Dar'iya
 
 1399.1.1 = {

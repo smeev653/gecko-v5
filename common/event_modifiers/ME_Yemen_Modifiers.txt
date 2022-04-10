@@ -1,5 +1,6 @@
 yem_rasulid_malik_modifier = {
-	legitimacy = 1 
+	reduced_liberty_desire = 50
+	vassal_forcelimit_bonus = 1
 }
 yem_public_hospitals_modifier = {
 	monarch_lifespan = 0.15 
@@ -22,7 +23,6 @@ yem_arabian_maritime_expeditions_modifier = {
 	transfer_trade_power_reasons = 125 
 }
 yem_kitab_al_tabsira_fi_ilm_al_nujum_modifier = {
-	development_cost = -0.15 
 	build_cost = -0.1 
 }
 yem_crossing_empty_quarter_modifier = {
