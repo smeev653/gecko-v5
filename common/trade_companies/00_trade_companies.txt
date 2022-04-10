@@ -390,23 +390,7 @@ trade_company_north_sea = {
 	color = { 117 165 188 }
 	
 	provinces = {
-		1975 1266 1280 1281 1282 1929   #Seas and Wastelands
-		248 249 251 #lowlands_area
-		246 247 4361 4362 #scottish_marches_area
-		253 4364 4365 #kingdom_of_the_isles_area
-		250 252 369 4110 4363 #highlands_area
-		375 376 4119 #connacht_area
-		373 374 4120 4379 #leinster_area
-		372 4121 4380 #ulster_area
-		4118 4377 4378 #munster_area
-		1978 1979 #subarctic_islands_area
-		370 371 #iceland_area
-		4375 244
-		#Norway
-		4143 17 5031 4144
-		4145 23 24 2752 5032 
-		5030 22 5029 5028 10
-		20 5039 21 5033 315
+		1975 1266 1280 1281 1282 1929 248 249 251 246 247 4361 4362 253 4364 4365 250 252 369 4110 4363 375 376 4119 373 374 4120 4379 372 4121 4380 4118 4377 4378 1978 1979 370 371 4375 244
 	}
 	
 	# Specific
@@ -1419,9 +1403,7 @@ trade_company_lahore = {
 		447 449 2225 #ghor_area #smeev
 		450 2227 2228 #balkh_area #smeev
 		446 #herat #smeev change
-		1968 4344 4343 #termez_area #smeev change
 		522 2060 2062 #upper_doab_area #smeev change
-		6132 6131
 	}
 	
 	# Specific
