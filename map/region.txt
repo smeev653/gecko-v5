@@ -413,6 +413,9 @@ persia_region = {
 		mogostan_area
 		birjand_area
 		astrabad_area
+		tabriz_area
+		ardabil_area
+		urmia_area
 	}
 }
 
@@ -439,9 +442,6 @@ caucasia_region = {
 		imereti_area
 		samtskhe_area
 		kartli_kakheti_area
-		tabriz_area
-		ardabil_area
-		urmia_area
 	}
 }
 
