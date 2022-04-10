@@ -419,9 +419,10 @@ defensive_ideas = {
 		global_manpower_modifier = 0.10
 		land_morale = 0.025
 	}
-	improved_foraging = {
-		shock_damage_received = -0.15
+	battlefield_commisions = {
+		army_tradition = 0.5	
 	}
+
 	
 	military_drill = {
 		land_morale = 0.125
@@ -440,8 +441,8 @@ defensive_ideas = {
 	supply_trains = {
 		land_forcelimit_modifier = 0.2
 	}
-	battlefield_commisions = {
-		army_tradition = 1	
+	improved_foraging = {
+		shock_damage_received = -0.15
 	}
 
 	ai_will_do = {
@@ -793,24 +794,27 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.4
+		special_unit_forcelimit = 0.2
 	}
 	mass_army = {
 		global_manpower_modifier = 0.4
+		mercenary_manpower = 0.5
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
 	}
 	enforced_service = {
-		global_regiment_cost = -0.05
+		land_morale = 0.05
 	}
 	the_old_and_infirm = {
-		land_maintenance_modifier = -0.1
+		global_regiment_cost = -0.1
 	}
 	camp_followers = {
-		global_supply_limit_modifier = 0.33
+		reserves_organisation = 0.33
 	}
 	garrison_conscription = {
 		free_leader_pool = 5
+		leader_cost = -0.2
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.25
