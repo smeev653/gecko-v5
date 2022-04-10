@@ -17,6 +17,7 @@ country_decisions = {
 			NOT = { tag = RUS }
 			NOT = { tag = PRU }
 			NOT = { tag = ENG }
+			tag = AKK
 			is_emperor_of_china = no
 				
 			is_colonial_nation = no
@@ -45,6 +46,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			tag = AKK
 			is_at_war = no
 			is_subject = no #Cannot even be a tributary
 			is_nomad = no
