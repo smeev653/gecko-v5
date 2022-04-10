@@ -266,7 +266,7 @@ emp_burgundy_1 = {
 			is_in_war = {
 				attackers = ENG
 			}
-			revanchism = 25
+			revanchism = 1
 			
 		
 		}
