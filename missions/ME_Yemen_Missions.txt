@@ -105,7 +105,7 @@ yem_missions_1 = {
 					has_building = stock_exchange
 				}
 			}
-			4346 = {
+			1335 = {
 				is_strongest_trade_power = ROOT
 			}
 		}

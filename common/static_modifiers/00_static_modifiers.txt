@@ -1767,9 +1767,9 @@ serfs_recieved_by_cossacks = {
 }
 
 cossacks_modifier = {
-	shock_damage_received = 0.075
-	fire_damage_received = 0.075
-	cav_to_inf_ratio = 0.25
+	shock_damage_received = -0.375
+	fire_damage_received = -0.375
+	cav_to_inf_ratio = 1.25
 }
 
 ########################################
