@@ -3,7 +3,7 @@ yem_rasulid_malik_modifier = {
 	vassal_forcelimit_bonus = 1
 }
 yem_public_hospitals_modifier = {
-	monarch_lifespan = 0.15 
+	monarch_lifespan = 0.1
 	global_unrest = -1
 	
 }
@@ -30,26 +30,26 @@ yem_crossing_empty_quarter_modifier = {
 	land_attrition = -0.2 
 }
 yem_levantine_gunpowder_modifier = {
-	artillery_fire = 1 
+	artillery_fire = 0.5
 	artillery_cost = -0.15 
 }
 yem_warriors_of_iran_modifier = {
-	cavalry_power = 0.25
+	cavalry_power = 0.1
 	cavalry_cost = -0.1
-	cav_to_inf_ratio = 0.5 
+	cav_to_inf_ratio = 0.25 
 }
 yem_rajput_royal_battalions_modifier = {
-	infantry_power = 0.15 
+	infantry_power = 0.1 
 	infantry_cost = -0.1 
 }
 yem_western_military_influences_modifier = {
-	discipline = 0.05 
-	fire_damage_received = -0.05 
-}
+	discipline = 0.025 
+	fire_damage_received = -0.1
+}	
 yem_eastern_military_organisation = {
-	global_manpower_modifier = 0.33
+	global_manpower_modifier = 0.1
 	global_regiment_cost = -0.05 
-	land_forcelimit_modifier = 0.20
+	land_forcelimit_modifier = 0.1
 }
 yem_the_enlightened_city_modifier = {
 	tolerance_own = 1 
@@ -115,7 +115,7 @@ yem_fs_modifier = {
 }
 yem_ww_modifier = {
 	advisor_pool = 1 
-	advisor_cost = -0.15 
+	advisor_cost = -0.10
 }
 yem_csics_modifier = {
 	spy_offence = 0.50
@@ -139,7 +139,7 @@ yem_architect_modifier = {
 }
 yem_ei_modifier = {
 	trade_efficiency = 0.05 
-	production_efficiency = 0.15 
+	#production_efficiency = 0.15 
 }
 yem_expansionist_modifier = { 
 	colonists = 1 
@@ -148,19 +148,17 @@ yem_expansionist_modifier = {
 }
 yem_ctbsim_modifier = {
 	free_leader_pool = 1 
-	army_tradition = 1 
+	army_tradition = 0.25
 }
 yem_nav_modifier = { 
 	heavy_ship_power = 0.1 
-	ship_durability = 0.05 
 }
 yem_quality_mercs_modifier = {
-	mercenary_discipline = 0.05 
 	mercenary_manpower = 0.20 
 }
 yem_warriors_of_islam_modifier = { 
-	shock_damage = 0.15 
-	land_morale = 0.10
+	shock_damage = 0.1 
+	land_morale = 0.05
 }
 
 	

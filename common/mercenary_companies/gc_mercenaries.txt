@@ -58,7 +58,9 @@ gecko_merc_black_army_1 = {
 	}
 	cost_modifier = 0.75
 	modifier = {
-		discipline = 0.1
+		infantry_power = 0.1
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
 	}
 }
 
@@ -78,7 +80,9 @@ gecko_merc_black_army_2 = {
 	}
 	cost_modifier = 0.35
 	modifier = {
-		discipline = 0.1
+		cavalry_power = 0.1
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
 	}
 }
 

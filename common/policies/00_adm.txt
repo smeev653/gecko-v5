@@ -493,7 +493,7 @@ land_inheritance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.1
 	mercenary_cost = -0.25
 	
 	ai_will_do = {

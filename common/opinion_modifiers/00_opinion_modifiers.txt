@@ -456,15 +456,15 @@ defended_allied_territory =
 }
 
 insulted = {
-	opinion = -50
-	yearly_decay = 5
+	opinion = -150
+	yearly_decay = 20
 	max = 0
 	months = 120
 }
 
 scornfully_insulted = {
-	opinion = -100
-	yearly_decay = 5
+	opinion = -150
+	yearly_decay = 20
 	max = 0
 	months = 120
 }

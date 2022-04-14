@@ -200,9 +200,9 @@ superiority_revolution = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5		
 		
-		required_treaty_to_take_provinces = {
-			po_spread_revolution
-		}
+	#	required_treaty_to_take_provinces = {
+	#		po_spread_revolution
+	#	}
 
 		peace_options = {
 			po_become_vassal
@@ -221,9 +221,9 @@ superiority_revolution = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5		
 	
-		required_treaty_to_take_provinces = {
-			po_dismantle_revolution
-		}
+	#	required_treaty_to_take_provinces = {
+	#		po_dismantle_revolution
+	#	}
 
 		peace_options = {
 			po_become_vassal
@@ -248,9 +248,9 @@ take_capital_revolution = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5		
 		
-		required_treaty_to_take_provinces = {
-			po_dismantle_revolution
-		}
+	#	required_treaty_to_take_provinces = {
+	#		po_dismantle_revolution
+	#	}
 
 		peace_options = {
 			po_become_vassal
@@ -270,9 +270,9 @@ take_capital_revolution = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.5		
 	
-		required_treaty_to_take_provinces = {
-			po_spread_revolution
-		}
+	#	required_treaty_to_take_provinces = {
+	#		po_spread_revolution
+	#	}
 
 		peace_options = {
 			po_become_vassal
@@ -296,9 +296,9 @@ take_capital_disloyal = {
 		prestige_factor = 2
 		peace_cost_factor = 0.5
 		
-		required_treaty_to_take_provinces = {
-			po_become_vassal
-		}
+	#	required_treaty_to_take_provinces = {
+	#		po_become_vassal
+	#	}
 
 		peace_options = {
 			po_demand_provinces
@@ -327,9 +327,9 @@ take_capital_vassalize = {
 		prestige_factor = 2
 		peace_cost_factor = 1
 
-			required_treaty_to_take_provinces = {
-			po_subjugate_vassal
-		}
+	#		required_treaty_to_take_provinces = {
+	#		po_subjugate_vassal
+	#	}
 		
 		peace_options = {
 			po_demand_provinces
@@ -516,31 +516,14 @@ superiority_insult_mutual = {
 take_capital_personal_union = {
 	type = take_capital
 	
-	attacker = {
-		badboy_factor = 1
-		prestige_factor = 1
-		peace_cost_factor = 1
-		
-		required_treaty_to_take_provinces = {
-			po_form_personal_union
-		}
-
-		peace_options = {
-			po_demand_provinces
-			po_form_personal_union
-		}
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 1
+	
+	peace_options = {
+		po_form_personal_union
 	}
 	
-	defender = {
-		badboy_factor = 1
-		prestige_factor = 1
-		peace_cost_factor = 1
-
-		peace_options = {
-			po_demand_provinces
-		}
-	}
-
 	war_name = UNION_WAR_NAME
 }
 
@@ -1704,9 +1687,9 @@ take_capital_throne = {
 			always = yes
 		}
 
-			required_treaty_to_take_provinces = {
-			po_form_personal_union
-		}
+		#	required_treaty_to_take_provinces = {
+	#		po_form_personal_union
+	#	}
 
 		peace_options = {
 			po_demand_provinces
@@ -2276,9 +2259,9 @@ take_capital_force_tributary = {
 		prestige_factor = 2
 		peace_cost_factor = 0.5
 
-		required_treaty_to_take_provinces = {
-			po_subjugate_tributary_state
-		}
+		#required_treaty_to_take_provinces = {
+		#	po_subjugate_tributary_state
+	#	}
 		
 		peace_options = {
 			po_demand_provinces
@@ -2389,10 +2372,10 @@ take_capital_vassalize_maj = {
 		prestige_factor = 1.5
 		peace_cost_factor = 0.8
 		
-		required_treaty_to_take_provinces = {
-			po_subjugate_vassal
-			po_subjugate_tributary_state
-		}
+		#required_treaty_to_take_provinces = {
+		#	po_subjugate_vassal
+	#		po_subjugate_tributary_state
+	#	}
 		
 		peace_options = {
 			po_demand_provinces
@@ -2477,9 +2460,9 @@ force_migration = {
 			}
 		}
 
-			required_treaty_to_take_provinces = {
-			po_force_migration
-		}
+		#	required_treaty_to_take_provinces = {
+		#	po_force_migration
+		#}
 
 		peace_options = {
 			po_demand_provinces

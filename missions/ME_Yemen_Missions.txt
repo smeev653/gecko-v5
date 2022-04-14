@@ -67,7 +67,7 @@ yem_missions_1 = {
 		required_missions = { yem_institute_plague_measures yem_restore_aden }
 		position = 3
 		provinces_to_highlight = {
-			province_id = 388
+			province_id = 1335
 			OR = {
 				NOT = { owned_by = ROOT }
 				AND = {

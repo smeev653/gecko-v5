@@ -567,9 +567,9 @@ ai_nation = {
 	global_tax_modifier = 0.15
 	fort_maintenance_modifier = -0.9
 	war_exhaustion = -0.5
-	#country_admin_power = 1 #temporary solution until 1.33 ai advisor use is fixed
-	#country_diplomatic_power = 1 #temporary solution until 1.33 ai advisor use is fixed
-	#country_military_power = 1 #temporary solution until 1.33 ai advisor use is fixed
+	country_admin_power = 1 #temporary solution until 1.33 ai advisor use is fixed
+	country_diplomatic_power = 1 #temporary solution until 1.33 ai advisor use is fixed
+	country_military_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	burghers_loyalty_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		nobles_loyalty_modifier = 0.1
@@ -1767,7 +1767,9 @@ serfs_recieved_by_cossacks = {
 }
 
 cossacks_modifier = {
-	shock_damage = 0.1
+	shock_damage_received = 0.075
+	fire_damage_received = 0.075
+	cav_to_inf_ratio = 0.25
 }
 
 ########################################
@@ -1827,11 +1829,11 @@ guru_teaching = {
 }
 
 #100 Land Forcelimit = 1
-land_forcelimit = {
-    free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
-}
-
+#land_forcelimit = {
+#    free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
+#}
+#
 #100 Naval Forcelimit = 1
-naval_forcelimit = {
-    free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
-}
+#naval_forcelimit = {
+#   free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
+#}

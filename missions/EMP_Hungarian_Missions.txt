@@ -903,6 +903,13 @@ gc_hungary_gh_branch_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
     }
 

@@ -335,33 +335,33 @@ Defense_of_Persia = {
 	interest = -1
 }
 
-Defense_of_Arabia = {
-	potential = {
-		NOT  = { is_year = 1470}
-		OR = {
-			tag = ORM
-			tag = ARB
-		}
-	}
-	
-
-	trigger = {
-			NOT = { total_development = MAM }
-		
-		OR = {
-				tag = ORM
-				tag = ARB
-			}
-		OR = {
-				defensive_war_with = MAM
-		}	
-	}
-	land_morale = 0.1
-	discipline = 0.05
-	merc_maintenance_modifier = -0.5
-	mercenary_cost = -0.5
-	interest = -1
-}
+#Defense_of_Arabia = {
+#	potential = {
+#		NOT  = { is_year = 1470}
+#		OR = {
+#			tag = ORM
+#			tag = ARB
+#		}
+#	}
+#	
+#
+#	trigger = {
+#			NOT = { total_development = MAM }
+#		
+#		OR = {
+#				tag = ORM
+#				tag = ARB
+#			}
+#		OR = {
+#				defensive_war_with = MAM
+#		}	
+#	}
+#	land_morale = 0.1
+#	discipline = 0.05
+#	merc_maintenance_modifier = -0.5
+#	mercenary_cost = -0.5
+#	interest = -1
+#}
 
 Defense_of_Europe = {
 	potential = {
@@ -389,15 +389,15 @@ Defense_of_Europe = {
 	war_exhaustion = -0.05
 }
 
-Enable_Heavy_Cavalry_Privilege = {
-	potential = {
-		num_of_cossacks = 1
-		NOT = { has_estate_privilege = estate_gc_noble_levies }
-	}
-
-	trigger = {
-		num_of_cossacks = 1
-		NOT = { has_estate_privilege = estate_gc_noble_levies }
-	}
-	global_regiment_cost = 0.25
-}
+#Enable_Heavy_Cavalry_Privilege = {
+#	potential = {
+#		num_of_cossacks = 1
+#		NOT = { has_estate_privilege = estate_gc_noble_levies }
+#	}
+#
+#	trigger = {
+#		num_of_cossacks = 1
+#		NOT = { has_estate_privilege = estate_gc_noble_levies }
+#	}
+#	global_regiment_cost = 0.25
+#}
