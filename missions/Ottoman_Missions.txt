@@ -1416,13 +1416,26 @@ gecko_tur_events = {
 						is_in_war = {
 							defenders = MAM
 						}
+						MAM = {
+							ai = no
+						}
+						HUN = {
+							ai = no
+						}
 					}
+
 					AND = {
 						is_in_war = {
 							attackers = HUN
 						}
 						is_in_war = {
 							attackers = MAM
+						}
+						MAM = {
+							ai = no
+						}
+						HUN = {
+							ai = no
 						}
 					}
 				}	
