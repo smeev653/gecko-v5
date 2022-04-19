@@ -62,7 +62,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			#adm_tech = 10
+			adm_tech = 10
 			revanchism = 1
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -141,7 +141,7 @@ country_decisions = {
 			low_countries_region = {
 				limit = { country_or_non_sovereign_subject_holds = ROOT }
 					add_base_manpower = 1
-					add_base_production = 2
+					add_base_production = 1
 				}
 			if = {
 				limit = {
