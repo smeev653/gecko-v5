@@ -76,9 +76,11 @@ great_mongol_state_reform = {
 		cavalry_power = 0.20
 		infantry_power = 0.15
 		movement_speed = 0.2
-		years_of_nationalism = -5
+		years_of_nationalism = -15
 		monarch_military_power = 2
 		global_trade_goods_size_modifier  = 0.2
+		development_cost = -0.05
+		governing_capacity_modifier = 0.25
 	}
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
