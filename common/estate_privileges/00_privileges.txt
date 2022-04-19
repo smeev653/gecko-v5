@@ -1764,6 +1764,7 @@ PR_estate_clergy_exploration_expedition = {
 				tag = ARB
 				tag = KHA
 				tag = OIR
+				tag = MGE
 			}
 			NOT = { has_estate_privilege = estate_burghers_hydraulic_rights	}
 	}
@@ -1840,6 +1841,7 @@ smeev_mountain_dev_cost = {
 			tag = ARL
 			tag = KHA
 			tag = PER
+			tag = MGE
 			} 
 	}
 	
