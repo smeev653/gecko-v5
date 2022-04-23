@@ -372,7 +372,7 @@ Defense_of_Europe = {
 	trigger = {
 		OR = {
 			AND = {
-				NOT  = { is_year = 1462}
+				NOT  = { is_year = 1465}
 				tag = HUN
 			}	
 			134 = {

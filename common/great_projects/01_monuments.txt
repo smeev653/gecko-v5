@@ -16196,7 +16196,6 @@ gme_constantinople_theodosian_walls = {
 		}
 		area_modifier = {
 			local_hostile_attrition = 1
-			max_attrition = 1
 			garrison_growth = 0.1
 		}
 		country_modifiers = {

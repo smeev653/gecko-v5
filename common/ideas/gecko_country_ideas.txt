@@ -1,6 +1,6 @@
 ARB_ideas = { #Arabian Empire
 	start = {
-		development_cost = -0.10
+		development_cost = -0.05
 		land_forcelimit_modifier = 0.25
 	}
 	
@@ -468,7 +468,7 @@ WES_ideas = {
 	}
 	wes_administrative_assimilation_of_rheinlanders = {
 		fire_damage = 0.10
-		same_culture_advisor_cost = -0.25
+		same_culture_advisor_cost = -0.15
 	}
 }
 
@@ -809,6 +809,7 @@ EOH_ideas = {
 	start = {
 		cavalry_power = 0.2
 		land_morale = 0.1
+		no_religion_penalty = yes
 	}
 	bonus = {
 		army_tradition_decay = -0.01

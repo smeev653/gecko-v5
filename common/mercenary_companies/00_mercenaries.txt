@@ -549,20 +549,26 @@ merc_nile_mamluks = {
     cavalry_weight = 1
     #artillery_weight = 0.2
 	#cavalry_cap = 6
-    home_province = 361
+    #home_province = 361
 	cost_modifier = 0.5
 	sprites = { dlc002_mam_sprite_pack dlc058_mam_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		NOT = { tag = MAM }
 		NOT = { was_tag = MAM }
-		capital_scope = {
-			OR = {
-				region = mashriq_region
-				region = arabia_region
-				region = egypt_region
-				region = maghreb_region
+		OR = {
+			capital_scope = {
+				OR = {
+					region = mashriq_region
+					region = arabia_region
+					region = egypt_region
+					region = maghreb_region
+				}	
 			}
-		}
+			OR = {
+					mission_completed = repulse_gank
+					mission_completed = mam_turks_defeated
+				}
+		}	
 	}
     modifier = {
         cavalry_power = 0.1
@@ -588,8 +594,9 @@ merc_delhi_mamluks = {
 }
 
 merc_sekban = {
-    regiments_per_development = 0.05
-    home_province = 324
+    regiments_per_development = 0.1
+	cost_modifier = 0.5
+    #home_province = 324
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
 	trigger = {
 		OR = {
@@ -597,7 +604,7 @@ merc_sekban = {
 			capital_scope = { region = anatolia_region }
 		}
 	}
-    modifier = { land_morale = 0.05}
+    modifier = { land_morale = 0.1}
 }
 
 merc_zanj_company = {

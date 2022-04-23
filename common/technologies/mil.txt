@@ -272,7 +272,7 @@ technology = {
 	#Matchlock Musket
 	infantry_shock		= 	0.20
 	#cavalry_fire		= 	0.5
-
+	cavalry_shock		=	0.25
 	
 	weapons = yes
 	
@@ -288,6 +288,7 @@ technology = {
 	
 	supply_limit 		= 	0.5
 	military_tactics	=	0.25
+	cavalry_shock		=	0.25
 	#infantry_fire = 0.2
 
 	enable = tofongchis_musketeer
@@ -329,6 +330,7 @@ technology = {
 	fort_16th = yes
 	infantry_fire		=	0.3
 	cavalry_fire		= 	0.25
+	cavalry_shock		=	0.25
 	enable = african_hussar
 	enable = ottoman_hussar
 	enable = french_caracolle 
@@ -366,7 +368,6 @@ technology = {
 	#Maurician Infantry
 	land_morale 		=	1.0
 	military_tactics	=	0.25
-	
 
 	
 	enable = irish_charge 
@@ -404,9 +405,9 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	1
+	#cavalry_shock		=	1
 	supply_limit		= 	0.5	
-	
+	cavalry_shock		=	0.25
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
 	enable = african_swarm
@@ -418,7 +419,7 @@ technology = {
 	
 	#Carbine
 	maneuver_value 		= 	0.25
-
+	cavalry_shock		=	0.25
 		
 	enable = swedish_gallop	
 	enable = sikh_hit_and_run
@@ -443,8 +444,9 @@ technology = {
 	
 	#Gustavian Infantry
 	military_tactics 	= 	0.25
+	cavalry_fire		=	0.25
 	supply_limit		=	0.5
-
+	cavalry_shock		=	0.25
 	fort_17th = yes
 
 	
@@ -488,7 +490,7 @@ technology = {
 	#Line Infantry
 	sprite_level = 3
 	military_tactics 	= 	0.25
-	
+	cavalry_shock		=	0.25
 	infantry_shock 		=	0.5
 }
 
@@ -497,10 +499,10 @@ technology = {
 	year = 1687
 	
 	#Cartridge	(1620)?)
-	cavalry_fire		=	0.5
+	cavalry_fire		=	0.25
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
-	
+	cavalry_shock		=	0.25
 	combat_width = 2
 	
 	conscription_center = yes
@@ -518,7 +520,7 @@ technology = {
 	
 	#Light Cavalry
 	
-	cavalry_shock		=	1
+	#cavalry_shock		=	1
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 

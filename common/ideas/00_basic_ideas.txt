@@ -40,8 +40,8 @@ aristocracy_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	noble_officers = {
-		army_tradition_decay = -0.01
-		navy_tradition_decay = -0.01
+		army_tradition_decay = -0.0075
+		navy_tradition_decay = -0.0075
 	}
 }
 
@@ -235,7 +235,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = {
-		same_culture_advisor_cost = -0.10
+		same_culture_advisor_cost = -0.15
 		
 	}
 	deus_vult = {
@@ -246,8 +246,8 @@ religious_ideas = {
 		global_tax_modifier = 0.25
 	}
 	divine_supremacy = {
-		land_morale = 0.05
-		recover_army_morale_speed = 0.10
+		land_morale = 0.025
+		recover_army_morale_speed = 0.15
 	}
 	missionary_schools = {
 		missionaries = 2

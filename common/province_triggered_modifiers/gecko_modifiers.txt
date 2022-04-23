@@ -344,7 +344,7 @@ conquest_of_cairo = {
 		}	
 
 	infantry_power = 0.10
-	interest = -0.25
+	production_efficiency = 0.05
 	
 	#Province scope
 	on_activation = {

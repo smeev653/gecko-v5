@@ -1652,20 +1652,23 @@ gc_hungary_eoh_branch_4 = {
                 type = all
                 owned_by = ROOT
             }
+			NOT = { active_imperial_incident = any }
         }
         effect = {
-            hradecko_area = {
-                add_base_production = 1
-                add_local_autonomy = -50
-            }
-            bohemia_area = {
-                add_base_production = 1
-                add_local_autonomy = -50
-            }
-            erzgebirge_area = {
-                add_base_production = 1
-                add_local_autonomy = -50
-            }
+				country_event = { id = new_flavour_hun.1 }
+				hradecko_area = {
+					add_base_production = 1
+					add_local_autonomy = -50
+				}
+				bohemia_area = {
+					add_base_production = 1
+					add_local_autonomy = -50
+				}
+				erzgebirge_area = {
+					add_base_production = 1
+					add_local_autonomy = -50
+				}
+			
         }
     }
 

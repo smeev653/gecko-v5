@@ -2940,6 +2940,10 @@ country_event = {
 				add_permanent_claim = event_target:hungary_country
 			}
 		}
+		HUN = {
+			add_treasury = 1000
+			add_manpower = 30
+		}
 
 		ai_chance = {
 			factor = 1

@@ -1270,7 +1270,7 @@ NMilitary = {
 	GALLEY_BONUS_INLAND_SEA = 1.0,
 	GALLEY_BONUS_COASTAL_SEA = 0.5,
 	GALLEY_DICE_MALLUS_HIGH_SEA = 0,				-- Malus dice roll when not fighting in inland sea.
-	INSUFFICIENT_SUPPORT = -0.25,
+	INSUFFICIENT_SUPPORT = -0.15,
 	SIEGE_MEMORY = 11,
 	SIEGE_MEMORY_SCALED = 0.5,						-- per fort level
 	SIEGE_WIN = 20,
@@ -1299,7 +1299,7 @@ NMilitary = {
 	SLAVE_RAIDS_SAILOR_FACTOR = 0.25,						--
 	SLAVE_RAIDS_DURATION = 3650,
 	INFANTRY_SPEED = 0.7, 							-- _MDEF_INFANTRY_SPEED = 10,
-	CAVALRY_SPEED = 0.7, 							-- _MDEF_CAVALRY_SPEED = 10,
+	CAVALRY_SPEED = 1, 							-- _MDEF_CAVALRY_SPEED = 10,
 	ARTILLERY_SPEED = 0.7, 							-- _MDEF_ARTILLERY_SPEED = 10,
 
 	INFANTRY_COST = 10.0, 							-- _MDEF_INFANTRY_COST = 10,
@@ -1342,11 +1342,11 @@ NMilitary = {
 	NOMAD_LOOT_TRADITION = 0.25,	 				-- _MDEF_NOMAD_LOOT_TRADITION_;Military tradition a horde gets from looting territory
 	NOMAD_PLAINS_SHOCK_BONUS = 0, 				--
 	NOMAD_NON_PLAINS_SHOCK_PENALTY = 0, 			--
-	SUPPLYLIMIT_BASE_MULTIPLIER = 6.0, 				--
+	SUPPLYLIMIT_BASE_MULTIPLIER = 8.0, 				--
 	WAR_LENGTH_DAMAGE_MODIFIER = 0.01,				-- How much (by percentage) the damage dealt will be increased each day of the combat
 	--BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = 0.0,	-- Multiplier for morale damage taken by backrow
 	--BACK_LINE_STRENGTH_DAMAGE_TAKEN_MODIFIER = 0.0,	-- Multiplier for strength damage taken by backrow
-	MORALE_RECOVERY_SPEED = 0.15,					-- How much (by percentage) of the maximum morale that the current morale will be recovered with at a time
+	MORALE_RECOVERY_SPEED = 0.10,					-- How much (by percentage) of the maximum morale that the current morale will be recovered with at a time
 	MORALE_RECOVERY_SPEED_OWN_TERRITORY = 0.05,		-- How much the recovery speed for morale will be modified if unit is in controlled territory
 	HOSTILE_TERRITORY_SPEED_MODIFIER = 0,			-- speed modifier into hostile territory
 	SHATTERED_RETREAT_SPEED_MODIFIER = 0.5,			-- How much (by percentage) the movement speed will be modified when doing a shattered retreat

@@ -1406,7 +1406,7 @@ gecko_tur_events = {
 		position = 5
         trigger = {
 				NOT = {
-					is_year = 1480
+					is_year = 1485
 				}
 				OR = {
 					AND = {
@@ -1432,6 +1432,20 @@ gecko_tur_events = {
 							attackers = MAM
 						}
 						MAM = {
+							ai = no
+						}
+						HUN = {
+							ai = no
+						}
+					}
+					AND = {
+						is_in_war = {
+							attackers = HUN
+						}
+						is_in_war = {
+							attackers = HAB
+						}
+						HAB = {
 							ai = no
 						}
 						HUN = {

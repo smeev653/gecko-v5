@@ -2029,7 +2029,7 @@ states_general_reform = {
 	}
 
 	modifiers = {
-		stability_cost_modifier = -0.1
+		#stability_cost_modifier = -0.1
 	}
 
 	ai = {

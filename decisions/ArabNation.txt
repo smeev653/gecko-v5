@@ -97,13 +97,13 @@ country_decisions = {
 				}
 				add_permanent_claim = ARB
 			}
-			egypt_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { area = lower_nubia_area }
-				}
-				add_permanent_claim = ARB
-			}
+			#egypt_region = {
+			#	limit = {
+			#		NOT = { owned_by = ROOT }
+			#		NOT = { area = lower_nubia_area }
+			#	}
+			#	add_permanent_claim = ARB
+			#}
 			arabia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -117,18 +117,18 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_arabia_flag
 			change_unit_type = gunpowder_empire
-			change_government = tribal
-			add_government_reform = tribal_federation
-			define_ruler = {
-				name = "Husayn"
-				dynasty = "ibn Ali"
-				
-				religion = sunni
-				claim = 100
-				adm = 6
-				dip = 6
-				mil = 5
-			}
+			#change_government = tribal
+			#add_government_reform = tribal_federation
+			#define_ruler = {
+			#	name = "Husayn"
+			#	dynasty = "ibn Ali"
+			#	
+			#	religion = sunni
+			#	claim = 100
+			#	adm = 6
+			#	dip = 6
+			#	mil = 5
+			#}
 			if = {
 				limit = { has_heir = yes }
 				kill_heir = {}

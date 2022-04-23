@@ -166,7 +166,7 @@ SWE_ideas = {
 MOS_ideas = {
 	start = {
 		diplomatic_upkeep = 2
-		vassal_forcelimit_bonus = 0.5
+		shock_damage_received = -0.1
 	}
 
 	bonus = {
@@ -476,6 +476,9 @@ TUR_ideas = {
 		cavalry_power = 0.10
 		cavalry_cost = -0.10
 	}
+	lawcode_of_suleiman_01 = {
+		global_tax_modifier = 0.150
+	}
 	millets = {
 		core_creation = -0.25
 		num_accepted_cultures = 2
@@ -487,9 +490,7 @@ TUR_ideas = {
 		global_ship_cost = -0.1
 		ship_durability = 0.05
 	}
-	lawcode_of_suleiman_01 = {
-		global_tax_modifier = 0.150
-	}
+
 	tulip_period = {
 		trade_efficiency = 0.15
 	}
