@@ -262,6 +262,7 @@ age_of_discovery = {
 			}
 			modifier = {
 				defensiveness = 0.25
+				gold_depletion_chance_modifier = -0.5
 			}
 			ai_will_do = {
 				factor = 10
