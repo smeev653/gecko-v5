@@ -1712,8 +1712,8 @@ country_event = {
 			factor = 25
 		}
 		define_ruler = {
-			DIP = 6
-			ADM = 6
+			DIP = 5
+			ADM = 5
 			MIL = 6
 			#max_random_adm = 6
 			#max_random_dip = 6

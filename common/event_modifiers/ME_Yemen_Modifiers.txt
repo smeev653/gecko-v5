@@ -66,7 +66,7 @@ yem_divine_islamic_practices_modifier = {
 	global_missionary_strength = 0.01 
 }
 yem_food_for_the_people_modifier = {
-	trade_goods_size_modifier = 0.25 
+	trade_goods_size_modifier = 0.20 
 	global_tax_income = 4
 }
 yem_amriya_madrasa_modifier = {

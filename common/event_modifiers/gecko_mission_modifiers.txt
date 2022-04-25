@@ -26,7 +26,7 @@ succesful_bid_for_imperial_crown = {
 norman_resurgence = {
 	ae_impact = -0.3
 	province_warscore_cost = -0.3
-	land_morale = 0.05
+	land_morale = 0.1
 }
 
 silk_road_restored = {
@@ -105,7 +105,7 @@ anatolia_eyalet = {
 at_the_gates_of_europe = {
 	prestige = 1
 	manpower_recovery_speed = 0.2
-	interest = -0.25
+	#interest = -0.25
 	build_cost = -0.05
 }
 
@@ -253,7 +253,7 @@ empowered_junkers = {
 
 turks_defeated = {
 	global_monthly_devastation = -1
-	interest = -0.75
+	global_tax_modifier = 0.1
 	reduced_liberty_desire = 25
 	inflation_reduction = 0.5
 }
@@ -262,7 +262,7 @@ mamluks_subjugated = {
 	global_monthly_devastation = -1
 	inflation_reduction = 0.5
 	reduced_liberty_desire = 25
-	interest = -0.75
+	global_tax_modifier = 0.1
 }
 
 hun_supreme_black_army = {

@@ -1694,7 +1694,7 @@ centralize_reform = {
 		}
 	}
 	modifiers = {
-		global_autonomy = -0.05
+		global_autonomy = -0.025
 	}
 }
 

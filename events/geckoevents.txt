@@ -1082,4 +1082,26 @@ country_event = {
 		}		
 	}
 }
+
+country_event = {
+    id = gecko.15
+    title = gecko.15.t
+    desc = gecko.15.d
+    picture = COURT_eventPicture
+
+    trigger = {
+            has_country_modifier = We_stand_alone
+    }
 	
+    mean_time_to_happen = {
+        months = 120
+    }
+	
+    option = {
+		name = gecko.15.a
+		add_country_modifier = {
+				name = gecko_development
+				duration = 5475
+			}
+	}
+}	

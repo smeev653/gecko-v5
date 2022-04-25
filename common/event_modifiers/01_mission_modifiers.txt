@@ -111,7 +111,7 @@ royal_hungary = {
 
 defeated_byzantine_empire = {
 	legitimacy = 1
-	global_tax_modifier = 0.15
+	global_tax_modifier = 0.10
 }
 
 ottoman_hungary = {

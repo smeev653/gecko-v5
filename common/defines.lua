@@ -339,7 +339,7 @@ NDiplomacy = {
 	DIP_PORT_FEES = 0.1,							-- DIP_PORT_FEES
 	IMPROVE_RELATION_MAX = 25,						-- IMPROVE_RELATION_MAX
 	IMPROVE_RELATION_SPEED = 1,						-- IMPROVE_RELATION_SPEED
-	STABHIT_FOR_BREAKING_ALLIANCE_IN_WAR = 0,
+	STABHIT_FOR_BREAKING_ALLIANCE_IN_WAR = 1,
 	WARGOAL_PEACE_FRACTION = 0.66,					-- Fraction of warscore you need for wargoal
 	CLAIM_PEACE_COST_DIP_FRACTION = -0.1,			-- Fraction of dipcost you pay for claims
 	CORE_PEACE_COST_DIP_FRACTION = -0.2,			-- Fraction of dipcost you pay for cores
@@ -384,7 +384,7 @@ NDiplomacy = {
 	GRANT_ELECTORATE_INFLUENCE = 0,					-- The amount of AI Grant Electorate gives.
 	GRANT_FREECITY_INFLUENCE = 0,					-- The amount of IA Grant Free Gity gives.
 	REMOVE_FREECITY_INFLUENCE_COST = 0,				-- The amount of IA Grant Free Gity costs.
-	IMPERIAL_CITY_IA = 0.02,						-- Monthly per imperial free city
+	IMPERIAL_CITY_IA = 0.01,						-- Monthly per imperial free city
 
 	AGITATE_FOR_LIBERTY_DESIRE = 25,				-- Liberty Desire gained due to ongoing agitation.
 	AGITATE_FOR_LIBERTY_RATE = 1,					-- Monthly rate at which Liberty Desire rises towards the maximum during agitation, or otherwise falls towards zero.

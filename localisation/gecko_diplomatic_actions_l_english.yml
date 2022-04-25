@@ -27,3 +27,4 @@
   sm_tooltip_cripolally:0 "We cannot ally the Kingdom of Poland."
   sm_tooltip_muspolally:0 "We cannot ally the Kingdom of Poland."
   sm_tooltip_polmosally:0 "We cannot ally the Grand Principality of Muscovy."
+  gc_truce_with_ally:0 "Recently broke alliance with this nation."

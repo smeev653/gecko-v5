@@ -292,7 +292,7 @@ country_decisions = {
 				limit = { corruption = 5 }
 				add_corruption = -10
 			}
-			add_manpower = 20
+			add_manpower = 30
 			add_treasury = 1000
 			if = {
 				limit = { stability = -3 }

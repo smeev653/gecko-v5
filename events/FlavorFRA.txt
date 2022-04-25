@@ -1670,7 +1670,6 @@ country_event = {
 		exists = FRA
 		NOT = { alliance_with = FRA }
 		NOT = { war_with = FRA }
-		NOT = { is_year = 1450 }
 		#NOT = { truce_with = FRA }
 		1879 = {
 			OR = {

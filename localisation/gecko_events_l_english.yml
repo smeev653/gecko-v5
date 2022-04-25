@@ -34,7 +34,9 @@
  gecko.7.d:0 "Our previous ruler was taken from us far too soon. Luckily for us, his cousin shares many of the same talents and ambitions as his relative and has expressed his desire to continue the legacy of our late monarch. However, it will greatly upset the nobility if we bypass the tradition succession laws.."
  gecko.7.a:0 "Abdicate in favour of the late ruler's cousin."
  gecko.7.b:0 "Execute this traitor!"
-
+ gecko.15.t:0 "Internal Development"
+ gecko.15.d:0 "Focus on internal development for the next 15 years."
+ gecko.15.a:0 "Ok."
  #Advisor Events
  gc_advisor_events.1.t:0 "$GC_ARTY_OFFICER$"
  gc_advisor_events.1.d:0 "An Artillery Officer par excellence, $GC_ARTY_OFFICER$ has turned our Artillery Crews into clockwork automatons that don't fail on the battlefield."

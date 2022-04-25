@@ -14,7 +14,7 @@ yem_missions_1 = {
 		trigger = {
 			marriage_with = HED
 			marriage_with = MDA
-			marriage_with = SHM
+			#marriage_with = SHM
 			marriage_with = NAJ
 			custom_trigger_tooltip = {
 				tooltip = yem_has_had_yemeni_crisis_event
@@ -30,7 +30,7 @@ yem_missions_1 = {
 			}
 			vassalize = HED
 			vassalize = MDA
-			vassalize = SHM
+			#vassalize = SHM
 			vassalize = NAJ
 		}
 	}

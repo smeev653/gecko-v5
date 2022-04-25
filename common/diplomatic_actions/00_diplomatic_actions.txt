@@ -95,6 +95,7 @@ declarewar = {
 			FROM = { same_continent = ROOT }
 		}
 	}
+
 	condition = {
 		tooltip = gc_may_not_declare_war_yet
 		potential = {
@@ -496,7 +497,71 @@ allianceaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = gc_truce_with_ally
+		potential = {
+			#ai = no
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					has_opinion_modifier = {
+						modifier = break_alliance_war
+						who = FROM
+					}
+				}
+			}	
+		}
+	}
+	condition = {
+		tooltip = gc_truce_with_ally
+		potential = {
+			#ai = no
+		}
+		allow = {
+			FROM = {
+				NOT = { 
+					has_opinion_modifier = {
+						modifier = break_alliance_war
+						who = ROOT
+					}
+				}
+			}	
+		}
+	}
+	condition = {
+		tooltip = gc_truce_with_ally
+		potential = {
+			#ai = no
+		}
+		allow = {
+			FROM = {
+				NOT = { 
+					has_opinion_modifier = {
+						modifier = break_alliance
+						who = ROOT
+					}
+				}
+			}	
+		}
 	
+	condition = {
+		tooltip = gc_truce_with_ally
+		potential = {
+			#ai = no
+		}
+		allow = {
+			ROOT = {
+				NOT = { 
+					has_opinion_modifier = {
+						modifier = break_alliance
+						who = FROM
+					}
+				}
+			}	
+		}
+	}
+	break_alliance
 	condition = {
 		tooltip = gc_naples
 		potential = {

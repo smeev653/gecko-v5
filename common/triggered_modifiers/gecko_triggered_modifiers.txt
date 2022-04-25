@@ -126,38 +126,42 @@ Decay = {
 
 We_stand_alone = {
 	potential = {
-				OR = {
-					is_year = 1525
-					tag = FRA
-				}	
+				#OR = {
+				#	is_year = 1525
+				#	tag = FRA
+				#}	
 				was_player = yes
 				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
-				revanchism = 1
+				is_year = 1460
 				had_recent_war = 15
-				OR = { is_bankrupt = yes
-					num_of_loans = 6
-				}
-				has_country_modifier = just_lost_war_timer
 				NOT = {army_professionalism = 0.65}	
 				NOT = { is_colonial_nation = yes }	
 			}
 	trigger  = {
+		OR = {
+				great_power_rank = 4
+				 is_great_power = no
+				}
 				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
-				revanchism = 1
-				OR = { is_bankrupt = yes 
-					num_of_loans = 19
-				}			
+				#revanchism = 1
+				had_recent_war = 10			
 	}
-	land_morale = 0.1
-	discipline = 0.05
-	defensiveness = 0.25
-	all_power_cost  = -0.05
-	manpower_recovery_speed = 0.2
-	administrative_efficiency = 0.1
-	merc_maintenance_modifier = -0.25
-	mercenary_cost = -0.25
+	land_morale = 0.05
+	discipline = 0.025
+	manpower_recovery_speed = 0.1
+	global_manpower_modifier = 0.1
+	#global_tax_modifier = 0.1
+	#production_efficiency = 0.1
+	global_prosperity_growth = 0.5
+	fort_maintenance_modifier = -0.10
+	land_forcelimit_modifier = 0.10
+	mercenary_manpower = 0.10
+	#army_tradition_decay = -0.005
+	#administrative_efficiency = 0.05
+	#merc_maintenance_modifier = -0.25
+	#mercenary_cost = -0.25
 	#mercenary_manpower = 0.5
 	#interest = -0.25
 }
@@ -225,13 +229,12 @@ HRE_backup = {
 
 War_chest = {
 	potential = {
-		NOT  = { is_year = 1510}
 	}
 
 
 	trigger = {
 		ai = no
-		treasury = 1000
+		years_of_income = 2
 		NOT = { corruption = 1 }
 		NOT = { num_of_loans = 1 }
 		is_at_war = yes
@@ -251,7 +254,6 @@ Peace_of_Italy = {
 		OR = {
 			tag = MLO
 			tag = VEN
-			tag = PAP
 			tag = SIC
 			tag = TTS
 			tag = ITA

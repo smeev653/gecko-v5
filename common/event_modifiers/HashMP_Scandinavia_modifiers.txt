@@ -26,11 +26,11 @@ h_swedish_innovative_warfare = {
 }
 
 h_swedish_adolphus_legacy = {
-	reinforce_speed = 0.2
+	reinforce_speed = 0.15
 }
 
 h_swedish_carolean_regiments = {
-	infantry_power = 0.10
+	infantry_power = 0.05
 }
 
 h_swedish_ga_pa_doctrine = {
