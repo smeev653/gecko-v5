@@ -154,8 +154,11 @@ emperor_reichstag_collegia = {
 	emperor = {
 		max_free_cities = 3
 	}
-	elector_per_prince = {
-		global_tax_income = 0.5
+	emperor_per_prince = {
+		global_tax_income = 1.5
+	}
+	elector = {
+		advisor_cost = -0.1
 	}
 }
 
@@ -168,7 +171,7 @@ emperor_expand_gemeiner_pfennig = {
 		has_dlc = "Emperor"
 	}
 	emperor_per_prince = {
-		global_manpower = 0.25
+		global_manpower = 1
 	}
 	elector_per_prince = {
 		global_manpower = 1
@@ -190,7 +193,7 @@ emperor_rechenschaft = {
 		imperial_authority = 0.01
 	}
 	emperor = {
-		imperial_mercenary_cost = -0.25
+		vassal_income = 0.25
 	}
 	province = {
 		local_production_efficiency = 0.1
@@ -209,8 +212,11 @@ emperor_geteilte_macht = {
 	on_effect = {
 		custom_tooltip = GETEILTE_MACHT_EFFECT
 	}
-	elector_per_prince = {
-		global_tax_income = 0.5
+	emperor = {
+		vassal_forcelimit_bonus = 0.25
+	}
+	all = {
+		technology_cost = -0.05
 	}
 	province = {
 		local_development_cost = -0.05
@@ -224,6 +230,9 @@ emperor_reichskrieg = {
 
 	potential = {
 		has_dlc = "Emperor"
+	}
+	all = {
+		land_morale = 0.05
 	}
 	province = {
 		local_manpower_modifier = 0.25
