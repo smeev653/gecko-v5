@@ -20,7 +20,7 @@ ARB_ideas = { #Arabian Empire
 	arb_2 = { #Arabian Horsemanship
 		cavalry_cost = -0.1
 		infantry_power = 0.05
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	arb_3 = { #Bedouin Raiders
 		hostile_attrition = 1
@@ -412,7 +412,7 @@ HAN_ideas = {
 		land_morale = 0.10
 	}
 	han_hanoverian_chancery = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		cavalry_cost = -0.1
 	}
 	han_shutzenfest = {

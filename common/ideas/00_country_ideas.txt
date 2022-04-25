@@ -430,7 +430,7 @@ FRA_ideas = {
 	free = yes		#will be added at load.
 	
 	french_language_in_all_courts = {
-		cavalry_power = 0.1
+		cavalry_power = 0.15
 		cavalry_cost = -0.1
 	}
 	elan = {
@@ -473,7 +473,7 @@ TUR_ideas = {
 	
 	
 	timariot_system = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		cavalry_cost = -0.10
 	}
 	lawcode_of_suleiman_01 = {
@@ -1011,7 +1011,7 @@ POL_ideas = {
 		war_exhaustion = -0.02
 	}
 	winged_hussars = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		cossacks_loyalty_modifier = 0.1
 	}
 	wojsko_komputoe = {
@@ -1118,7 +1118,7 @@ CHI_ideas = {
 PER_ideas = {
 	start = {
 		tolerance_own = 2
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	
 	bonus = {
@@ -1278,7 +1278,7 @@ SCO_Ideas = {
 HUN_ideas = {
 	start = {
 		cavalry_cost = -0.1
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		no_religion_penalty = yes
 	}
 	
@@ -1359,7 +1359,7 @@ JAP_ideas = {
 MAM_ideas = {
 	start = {
 		trade_steering = 0.25
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	
 	bonus = {
@@ -1461,7 +1461,7 @@ SIC_ideas = {
 
 	sic_greater_sicily = {
 		infantry_power = 0.10
-		cavalry_power = 0.05
+		cavalry_power = 0.15
 	}
 	sic_university_of_catania = {
 		technology_cost = -0.05
@@ -1524,7 +1524,7 @@ ARA_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	
 	bonus = {
@@ -3909,7 +3909,7 @@ AFG_ideas = {
 	free = yes
 	
 	durrani_imperialism = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	pashtunwali = {
 		war_exhaustion_cost = -0.10
@@ -11126,7 +11126,7 @@ TRI_ideas = {
 
 AKK_ideas = {
 	start = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		land_morale = 0.1
 	}
 	bonus = {
@@ -11213,7 +11213,7 @@ TRS_ideas = {
 	free = yes
 	
 	trs_mawarannahr = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	trs_threshold_of_paradise = {
 		prestige = 1
@@ -11621,7 +11621,7 @@ ARL_ideas = {
 	free = yes
 	
 	arl_qizilbash = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	arl_safavid_order = {
 		manpower_recovery_speed = 0.1
@@ -13141,7 +13141,7 @@ DEC_ideas = {
 
 DLH_ideas = {
 	start = {
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 		global_manpower_modifier = 0.15
 	}
 	
@@ -13745,7 +13745,7 @@ SYN_ideas = {
 MOR_ideas = {
 	start = {
 		may_perform_slave_raid = yes
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	bonus = {
 		shock_damage = 0.2
