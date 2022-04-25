@@ -258,7 +258,11 @@ age_of_discovery = {
 
 		ab_hungary_fort_defense = {
 			allow = {
-				tag = HUN
+				OR = {
+					tag = HUN
+					tag = ETH
+					tag = ZAN
+				}	
 			}
 			modifier = {
 				defensiveness = 0.25
