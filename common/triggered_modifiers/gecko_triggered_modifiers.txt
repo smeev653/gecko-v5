@@ -365,6 +365,7 @@ African_Slave_Trade = {
 			continent = africa
 			trade_goods = slaves
 		}
+		NOT = { technology_group = western }
 	}
 
 	trigger = {

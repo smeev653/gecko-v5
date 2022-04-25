@@ -249,7 +249,7 @@ age_of_discovery = {
 						tag = PR2
 				}	
 				modifier = {
-					technology_cost = -0.10
+					technology_cost = -0.05
 				}
 				ai_will_do = {
 					factor = 100
@@ -292,7 +292,7 @@ age_of_discovery = {
 				tag = TIM
 			}
 			modifier = {
-				technology_cost = -0.05
+				technology_cost = -0.025
 				idea_cost = -0.1
 			}
 			ai_will_do = {
