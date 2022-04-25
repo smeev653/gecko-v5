@@ -99,10 +99,17 @@ just_personality = {
 		}
 	}
 
-	easy_war_chance_multiplier = 0.5
-	fair_fights = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	global_unrest = -2
 	nation_designer_cost = 2
@@ -156,9 +163,17 @@ righteous_personality = {
 		
 	}
 	
-	easy_war_chance_multiplier = 0.75
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	legitimacy = 1
 	republican_tradition = 0.5
@@ -220,10 +235,17 @@ tolerant_personality = {
 	
 	tolerance_heretic = 3
 	tolerance_heathen = 3
-	wants_ecumenical_council = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
-	nation_designer_cost = 2
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 }
 
 kind_hearted_personality = {
@@ -340,9 +362,17 @@ free_thinker_personality = {
 	chance = {
 	}
 	
-	knowledge_sharing = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	idea_cost = -0.1
 	nation_designer_cost = 2
 } #1 easier event, 1 better event
@@ -393,9 +423,17 @@ well_connected_personality = {
 		}
 	}
 	
-	other_ai_help_us_multiplier = 2
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	advisor_cost = -0.15
 	
 	nation_designer_cost = 2
@@ -439,10 +477,17 @@ calm_personality = {
 	chance = {
 	}
 	
-	war_chance_multiplier = 0.5
-	easy_war_chance_multiplier = 0.75
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	stability_cost_modifier = -0.15
 	nation_designer_cost = 2
@@ -501,10 +546,17 @@ careful_personality = {
 		
 	}
 	
-	war_chance_multiplier = 0.4
-	enemy_strength_multiplier = 1.2
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	ae_impact = -0.2
 	nation_designer_cost = 5
@@ -557,9 +609,17 @@ secretive_personality = {
 		
 	}
 	
-	wants_condottieri = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	global_spy_defence = 0.25
 	nation_designer_cost = 2
@@ -622,9 +682,17 @@ intricate_web_weaver_personality = {
 	chance = {
 	}
 	
-	wants_condottieri = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	spy_offence = 0.3
 	nation_designer_cost = 2
@@ -683,9 +751,17 @@ fertile_personality = {
 	chance = {
 	}
 	
-	royal_marriage_acceptance = 20
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	heir_chance = 0.5
 	nation_designer_cost = 2
@@ -726,9 +802,17 @@ well_advised_personality = {
 	chance = {
 	}
 	
-	war_chance_multiplier = 0.6
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	advisor_pool = 2
 	nation_designer_cost = 2
@@ -789,8 +873,17 @@ benevolent_personality = {
 		}
 	}
 	
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	reduced_liberty_desire = 15
 	nation_designer_cost = 2
@@ -853,13 +946,17 @@ zealot_personality = {
 		
 	}
 	
-	different_religion_war_multiplier = 2
-	heretic_ally_acceptance = -1000
-	heathen_ally_acceptance = -1000
-	wants_heathen_land = yes
-	wants_heretic_land = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	global_missionary_strength = 0.02
 	nation_designer_cost = 2
@@ -954,9 +1051,17 @@ lawgiver_personality = {
 		
 	}
 	
-	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	global_autonomy = -0.05
 	nation_designer_cost = 5
 } #2 easier events
@@ -1024,10 +1129,17 @@ midas_touched_personality = {
 		
 	}
 	
-	wants_gold = yes
-	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	global_tax_modifier = 0.15 
 	nation_designer_cost = 2
@@ -1085,9 +1197,17 @@ incorruptible_personality = {
 		
 	}
 	
-	wants_avoid_debase = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	yearly_corruption = -0.1
 	nation_designer_cost = 2
@@ -1140,8 +1260,17 @@ architectural_visionary_personality = {
 	chance = {
 	}
 	
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	build_cost = -0.1
 	nation_designer_cost = 2
@@ -1190,9 +1319,17 @@ scholar_personality = {
 	
 	custom_ai_explanation = "AI_RULER_SPEND_UNLOCK_INSTIT"
 	
-	knowledge_sharing = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	technology_cost = -0.05
 	nation_designer_cost = 5
@@ -1249,8 +1386,17 @@ entrepreneur_personality = {
 		}
 	}
 	
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	interest = -0.5
 	nation_designer_cost = 2
@@ -1294,9 +1440,17 @@ industrious_personality = {
 		}
 	}
 	
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
-	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	global_trade_goods_size_modifier = 0.1
 	nation_designer_cost = 2
@@ -1364,7 +1518,17 @@ expansionist_personality = {
 		}
 	}
 	
-	wants_colonies = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	global_colonial_growth = 15
 	nation_designer_cost = 2
@@ -1430,9 +1594,17 @@ charismatic_negotiator_personality = {
 	chance = {
 	}
 	
-	other_ai_peace_term_bonus = 10
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	diplomatic_reputation = 2
 	nation_designer_cost = 2
 } #1 easier event, 2 better events
@@ -1498,9 +1670,17 @@ silver_tongue_personality = {
 		
 	}
 	
-	other_ai_war_chance_multiplier = 0.5
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	improve_relation_modifier = 0.2
 	nation_designer_cost = 2
 } #2 easier events, 3 better events
@@ -1558,13 +1738,17 @@ conqueror_personality = {
 		
 	}
 	years_of_nationalism = -10
-	nation_designer_cost = 2
-	
-	easy_war_chance_multiplier = 2
-	war_chance_multiplier = 1.75
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
-	wants_land = yes
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yeses
 	
 	chance = {
 		
@@ -1626,9 +1810,17 @@ tactical_genius_personality = {
 	chance = {
 	}
 	
-	easy_war_chance_multiplier = 1.4
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	leader_land_manuever = 1
 	nation_designer_cost = 2
@@ -1686,9 +1878,17 @@ bold_fighter_personality = {
 	chance = {
 	}
 	
-	enemy_strength_multiplier = 0.85
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	leader_land_shock = 1
 	nation_designer_cost = 2
@@ -1734,11 +1934,17 @@ strict_personality = {
 	chance = {
 	}
 	
-	wants_avoid_debase = yes
-	wants_avoid_loans = yes
-	wants_ecumenical_council = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	discipline = 0.025
 
@@ -1853,10 +2059,17 @@ martial_educator_personality = {
 	chance = {
 	}
 	
-	easy_war_chance_multiplier = 1.2
-	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	army_tradition_decay = -0.01
 	nation_designer_cost = 2
@@ -1914,10 +2127,17 @@ navigator_personality = {
 	chance = {
 	}
 	
-	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
-	wants_explorers = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	ship_durability = 0.1
 	nation_designer_cost = 2
@@ -1970,9 +2190,17 @@ fierce_negotiator_personality = {
 	chance = {
 		
 	}
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
 	building_budget_multiplier = 2
 	gift_chance = 65
-	#peace_desire = -10
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	merc_maintenance_modifier = -0.25
 	nation_designer_cost = 2
@@ -2269,7 +2497,17 @@ infertile_personality = {
 		
 	}
 	
-	royal_marriage_acceptance = -20
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	heir_chance = -2
 	nation_designer_cost = -2

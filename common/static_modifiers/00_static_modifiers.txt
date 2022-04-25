@@ -567,6 +567,7 @@ ai_nation = {
 	fort_maintenance_modifier = -0.9
 	war_exhaustion = -0.5
 	cav_to_inf_ratio = 0.5
+	global_supply_limit_modifier = 0.25
 	country_admin_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	country_diplomatic_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	country_military_power = 1 #temporary solution until 1.33 ai advisor use is fixed
