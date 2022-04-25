@@ -126,7 +126,7 @@ mlo_the_swiss_mercs = {
 }
 
 prester_john_discovered = {
-	infantry_power = 0.1
+	infantry_power = 0.15
 }
 
 cape_trade_established = {
