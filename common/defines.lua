@@ -1971,7 +1971,7 @@ NAI = {
 	BUY_INDULGENCE_RIVAL_AI_DESIRE = -1,						-- AI desire for buy indulgence if curia controller rivaled it, multiplied by budget/cost
 	BUY_INDULGENCE_EXCOM_AI_DESIRE = -1,						-- AI desire for buy indulgence if it's excommunicated, multiplied by budget/cost
 	APPOINT_CARDINAL_CORRUPTION_THRESHOLD = 0,					-- Upper bound to the corruption the Papal State should have before appoint cardinals in its own land
-	APPOINT_CARDINAL_IN_OWNED_LAND_AI_DESIRE = 0.2,				-- AI scoring for appoint cardinals in owned land, multiplied by budget/cost
+	APPOINT_CARDINAL_IN_OWNED_LAND_AI_DESIRE = 0.01,				-- AI scoring for appoint cardinals in owned land, multiplied by budget/cost
 	UPGRADE_CENTER_OF_TRADE_BASE_AI_DESIRE = 50.0,				-- AI scoring for upgrade centers of trade, multiplied by budget/cost
 	UPGRADE_CENTER_OF_TRADE_AI_POWER_DESIRE = 5.0,				-- AI scoring for upgrade centers of trade, division on the amount of trade power AI has in node
 	RECRUIT_ADVISOR_BASE_AI_DESIRE = 10000,						-- AI scoring for redruiting advisors, multiplied by budget/cost
@@ -1981,8 +1981,8 @@ NAI = {
 	REPAY_LOAN_BASE_AI_DESIRE = 1,							-- AI scoring for repaying loans, multiplied by (MAX(budget - other loans, 0) * number_of_loans)/cost
 	-- Used for the diplomatic action
 	APPOINT_CARDINAL_SHARE_OF_TREASURY = 0.1,					-- Share of treasury upper bound to the cost of appoint cardinal for the Papal State to appoint cardinals in its own land
-	APPOINT_CARDINAL_WANTS_BEFRIEND = 25,						-- AI scoring for appoint cardinals is increased by this if they have an attitude with 'befriend' desire
-	APPOINT_CARDINAL_WANTS_ALLY = 50,							-- AI scoring for appoint cardinals is increased by this if they have an attitude with 'ally' desire
+	APPOINT_CARDINAL_WANTS_BEFRIEND = 200,						-- AI scoring for appoint cardinals is increased by this if they have an attitude with 'befriend' desire
+	APPOINT_CARDINAL_WANTS_ALLY = 200,							-- AI scoring for appoint cardinals is increased by this if they have an attitude with 'ally' desire
 	APPOINT_CARDINAL_CAN_INTEGRATE = 150,					-- AI scoring for appoint cardinals is increased by this if they can integrate/annex the target and inherit the cardinals
 	ESTATE_PRIVILEGE_REVOKE_THRESHOLD = 5.1,
 	ESTATE_PRIVILEGE_GRANT_THRESHOLD = 0,
@@ -2403,7 +2403,7 @@ NReligion = {
 
 	YEARLY_PAPAL_INFLUENCE_CATHOLIC = 0.5,						-- The amount of yearly papal influence you receive each year for being catholic
 	YEARLY_PAPAL_INFLUENCE_PER_CARDINAL = 0.5,					-- The amount of yearly papal influence you receive each year for each cardinal you have active
-	YEARLY_POPE_INVESTED_INFLUENCE_PER_CARDINAL = 0.1,			-- The amount of investment Papal state gets towards becoming Papal controller for each cardinal that exists
+	YEARLY_POPE_INVESTED_INFLUENCE_PER_CARDINAL = 0.05,			-- The amount of investment Papal state gets towards becoming Papal controller for each cardinal that exists
 	MAX_PAPAL_INFLUENCE = 200.0,								-- The maximum stored amount of papal influence for each country.
 	REFORM_DESIRE_PER_YEAR = 0.005,								-- Increase of reform descire for each year.
 	MINIMUM_DEVELOPMENT_ALLOWED = 10.0,								-- You will need a higher development than this for your province to be eligible for cardinal
@@ -2461,7 +2461,7 @@ NReligion = {
 	BUY_INDULGENCE_TREASURY_CONTRIBUTION = 1,				-- Amount of the cost of Buy Indulgence that goes in the Curia Treasury
 	APPOINT_CARDINAL_INFLUENCE = 5.0,						-- Invested Influence given by appointing a cardinal
 	APPOINT_CARDINAL_CORRUPTION = 0.1,						-- Corruption gained by the Papal State when appointing cardinals in its own land
-	APPOINT_CARDINAL_INFLUENCE_PAPAL_STATE = 0.75,			-- Yearly passive influence gained by cardinals in Papal States
+	APPOINT_CARDINAL_INFLUENCE_PAPAL_STATE = 0.25,			-- Yearly passive influence gained by cardinals in Papal States
 	-- Appoint cardinal cost formula:
 	APPOINT_CARDINAL_TOTAL_FACTOR = 2,						-- Factor to the number of total cardinals for the cost formula
 	APPOINT_CARDINAL_COUNTRY_FACTOR = 20,					-- Factor to the number of cardinals in the target country for the cost formula
