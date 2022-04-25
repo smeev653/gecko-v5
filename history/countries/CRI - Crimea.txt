@@ -22,8 +22,6 @@ change_estate_land_share = {
 		mil = 5
 	}
 	add_piety = 0.2
-	clear_scripted_personalities = yes
-	add_ruler_personality = bold_fighter_personality
 	
 }
 
