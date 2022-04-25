@@ -289,6 +289,68 @@ Peace_of_Italy = {
 	monthly_reform_progress_modifier = 0.075
 }
 
+Control_African_Slave_Trade = {
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 1
+			continent = africa
+			trade_goods = slaves
+		}
+	}
+
+	trigger = {
+		owns_all_provinces = {
+			continent = africa
+			trade_goods = slaves
+		}		
+	}
+	global_manpower_modifier = 0.25
+	infantry_power = 0.2
+	discipline = 0.05
+	land_morale = 0.1
+	land_forcelimit_modifier = 0.25
+}
+
+African_Gold_Monopoly = {
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 1
+			continent = africa
+			trade_goods = gold
+		}
+	}
+
+	trigger = {
+		owns_all_provinces = {
+			continent = africa
+			trade_goods = gold
+		}		
+	}
+	global_trade_goods_size_modifier = 0.2
+	gold_depletion_chance_modifier = -0.5
+	global_prosperity_growth  = 0.1
+	development_cost = -0.1
+}
+
+African_Slave_Trade = {
+	potential = {
+		num_of_owned_provinces_with = {
+			value = 1
+			continent = africa
+			trade_goods = slaves
+		}
+	}
+
+	trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			continent = africa
+			trade_goods = slaves
+		}		
+	}
+	mil_tech_cost_modifier = -0.1
+	infantry_power = 0.1
+}
 too_many_subjects = {
 	potential = {
 			vassal = 4
