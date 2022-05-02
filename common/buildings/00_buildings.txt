@@ -722,7 +722,7 @@ courthouse = {
 	modifier = {
 		local_state_maintenance_modifier = -0.125
 		local_autonomy = -0.1
-		local_governing_cost = -0.15
+		local_governing_cost = -0.175
 		local_friendly_movement_speed = 0.1
 		allowed_num_of_buildings = 1
 	}
@@ -2017,7 +2017,7 @@ town_hall = {
 	make_obsolete = courthouse
 
 	modifier = {
-		local_state_maintenance_modifier = -0.5
+		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.2
 		local_governing_cost = -0.35
 		allowed_num_of_buildings = 1

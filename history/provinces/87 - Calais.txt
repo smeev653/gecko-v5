@@ -19,7 +19,7 @@ discovered_by = ottoman
 fort_15th = yes
 is_city = yes
 extra_cost = 8
-center_of_trade = 1
+#center_of_trade = 1
 
 1459.1.1 = { unrest = 7 } # War of the Roses in England
 1459.11.1 = { revolt = { type = pretender_rebels size = 2 } controller = REB } # Yorkist control over Calais

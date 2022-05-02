@@ -3392,10 +3392,10 @@ ven_political_monopolist = {
 	diplomatic_upkeep = 1
 }
 
-ven_la_francocrazia = {
-	prestige_from_naval = 1
-	galley_cost = -0.1
-}
+#ven_la_francocrazia = {
+#	prestige_from_naval = 1
+#	galley_cost = -0.1
+#}
 
 ven_genoese_humiliation = {
 	trade_steering = 0.2

@@ -256,6 +256,7 @@ SPA_ideas = {
 	
 	bonus = {
 		artillery_fire = 0.5
+		cawa_cost_modifier = -0.2
 	}
 	
 	trigger = {
@@ -303,7 +304,7 @@ CAS_ideas = {
 	}
 	free = yes		#will be added at load.
 	the_reconquista = {
-		army_tradition_decay = -0.01
+		discipline = 0.05
 	}
 	spanish_inquisition = {
 		global_missionary_strength = 0.02
@@ -347,11 +348,11 @@ NED_ideas = {
 	free = yes		#will be added at load.
 	
 	amsterdam_wisselbank = {
-		interest = -0.5
+		interest = -0.25
 	}
 	dutch_trading_spirit = {
 		merchants = 1
-		trade_efficiency = 0.15
+		trade_efficiency = 0.1
 	}
 	polders = {
 		development_cost = -0.1
@@ -8934,7 +8935,7 @@ GLH_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	bonus = {
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 	trigger = {
 		OR = {
@@ -8951,7 +8952,7 @@ GLH_ideas = {
 		core_creation = -0.25
 	}
 	glh_tatar_traditions = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 	}
 	glh_secure_the_trade_routes = {
 		global_prov_trade_power_modifier = 0.25
@@ -13609,20 +13610,18 @@ CRI_ideas = {
 		cavalry_power = 0.10
 		cavalry_cost = -0.1
 	}
-	cri_genghisid_legacy = {
-		land_morale = 0.1
-	}
 	cri_slavers = {
 		global_own_trade_power = 0.25
 		tolerance_heathen = 3
 	}
-
-	cri_ruthenian_raids = {
-		loot_amount = 0.25
-	}
-	
 	cri_free_cattle_grazing = {
 		production_efficiency = 0.1
+	}
+	cri_genghisid_legacy = {
+		land_morale = 0.1
+	}
+	cri_ruthenian_raids = {
+		loot_amount = 0.25
 	}
 	cri_settle_the_steppes = {
 		build_cost = -0.1
@@ -14258,19 +14257,19 @@ OIR_ideas = {
 	life_of_steppe_warrior = { #also used in Horde ideas, KHA_ideas
 		land_attrition = -0.20
 	}
-	the_four_oirats = {
-		horde_unity = 1
-		legitimacy = 1
-	}
 	todo_besheg_script = {
 		technology_cost = -0.05
 	}
-	OIR_great_khans_legacy = {
-		ae_impact = -0.15
-	}
 	defiance_of_the_dzungars = {
-		discipline = 0.05
+		land_morale = 0.1
 		manpower_recovery_speed = 0.15
+	}
+	OIR_great_khans_legacy = {
+		development_cost = -0.1
+	}
+	the_four_oirats = {
+		horde_unity = 1
+		legitimacy = 1
 	}
 	glory_of_conquest = { #also used in Horde ideas, KHA_ideas and CHG_ideas
 		global_manpower_modifier = 0.20

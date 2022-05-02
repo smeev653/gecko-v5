@@ -95,6 +95,7 @@ technology = { #Courthouse
 	year = 1505
 	courthouse = yes
 	governing_capacity = 100
+	state_house = yes
 
 }
 
@@ -132,7 +133,6 @@ technology = { #Early Modern Administration
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
 	governing_capacity = 200
-	state_house = yes
 }
 
 technology = { #Improved Drainage

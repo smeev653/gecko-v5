@@ -1748,7 +1748,7 @@ conqueror_personality = {
 	underestimate_ae = yes
 	wants_condottieri = yes
 	wants_avoid_debase = yes
-	wants_land = yeses
+	wants_land = yes
 	
 	chance = {
 		

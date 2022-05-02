@@ -416,6 +416,8 @@ persia_region = {
 		tabriz_area
 		ardabil_area
 		urmia_area
+		makran_area
+		kalat_area
 	}
 }
 
@@ -426,8 +428,6 @@ khorasan_region = {
 		kabulistan_area
 		ghor_area
 		sistan_area
-		makran_area
-		kalat_area
 		mashhad_area
 	}
 }

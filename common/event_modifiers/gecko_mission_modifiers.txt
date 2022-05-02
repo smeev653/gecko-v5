@@ -213,8 +213,8 @@ ven_urban_renewal = {
 }
 
 ven_la_francocrazia = {
-	naval_forcelimit_modifier = 0.5
-	galley_power = 0.25
+	naval_morale = 0.1
+	land_morale = 0.05
 }
 
 bng_sufi_mystic_settlers = {
@@ -355,7 +355,7 @@ eth_coptic_offense = {
 }
 
 eth_increased_gold_mining = {
-	trade_goods_size = 0.6
+	trade_goods_size = 1
 }
 
 zan_conversion_of_fetishist = {
@@ -401,6 +401,10 @@ gc_yemeni_trade_modifier = {
 }
 
 consolidated_russia = {
+	trade_value_modifier = 0.1
+}
+
+iberian_trade = {
 	trade_value_modifier = 0.1
 }
 

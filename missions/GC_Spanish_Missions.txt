@@ -670,10 +670,6 @@ gc_spain_3 = {
 		}
 
 		effect = {
-			add_country_modifier = {
-				name = "spa_rb_morale"
-				duration = 5475
-			}
 			upper_andalucia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -734,8 +730,29 @@ gc_spain_3 = {
 
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag
+			add_country_modifier = {
+				name = "spa_rb_morale"
+				duration = 5475
+			}
 			country_event = {
 				id = flavor_spa.8
+			}
+			if = {
+				limit = {
+					226 = {
+						NOT = {
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+						}
+					}
+				}
+				226 = {
+					add_building = fort_15th
+				}
 			}
 		}
 	}
@@ -1149,6 +1166,14 @@ gc_spain_4 = {
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
+				}
+				add_mil_power = 150
+				iberia_region = {
+					add_province_modifier = {
+						 name = iberian_trade
+						duration = -1
+						hidden = yes
+					}
 				}
 			}
 			else = {

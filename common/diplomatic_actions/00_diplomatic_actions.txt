@@ -85,6 +85,20 @@
 # ask_for_tributary_state_action
 # knowledge_sharing
 
+#callaction = {
+#	condition = {
+#			tooltip = mid_war
+#				potential = {
+#					#ai = no
+#				}
+#				allow = {
+#					ROOT = {
+#							war_score = -49
+#							}
+#					}
+##				}
+#}
+
 declarewar = {
 	condition = {
 		tooltip = h_tooltip_cn_declarewar
@@ -462,6 +476,7 @@ guaranteeaction = {
 }
 
 allianceaction = {
+
 	condition = {
 		tooltip = h_tooltip_cn_ally
 		potential = {
@@ -500,7 +515,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			#ai = no
+			ai = no
 		}
 		allow = {
 			ROOT = {
@@ -516,7 +531,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			#ai = no
+			ai = no
 		}
 		allow = {
 			FROM = {
@@ -532,7 +547,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			#ai = no
+			ai = no
 		}
 		allow = {
 			FROM = {
@@ -544,11 +559,11 @@ allianceaction = {
 				}
 			}	
 		}
-	
+	}
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			#ai = no
+			ai = no
 		}
 		allow = {
 			ROOT = {
@@ -561,7 +576,6 @@ allianceaction = {
 			}	
 		}
 	}
-	break_alliance
 	condition = {
 		tooltip = gc_naples
 		potential = {

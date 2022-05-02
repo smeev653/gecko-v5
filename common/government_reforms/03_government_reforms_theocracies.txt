@@ -80,7 +80,7 @@ internal_mission_reform = {
 	icon = "clergyman"
 	allow_normal_conversion = yes
 	modifiers = {
-		tolerance_own = 2
+		governing_capacity = 100
 	}
 	conditional = {
 		claim_states = yes
@@ -194,7 +194,8 @@ subservient_administrators_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes
 	modifiers = {
-		yearly_corruption = -0.1
+		governing_capacity_modifier = 0.1
+		monthly_reform_progress_modifier = -0.1
 	}
 }
 
@@ -202,7 +203,8 @@ religious_administrators_reform = {
 	icon = "paper_with_seal_3"
 	allow_normal_conversion = yes
 	modifiers = {
-		stability_cost_modifier = -0.1
+		monthly_reform_progress_modifier = 0.1
+		governing_capacity_modifier = -0.1
 	}
 }
 

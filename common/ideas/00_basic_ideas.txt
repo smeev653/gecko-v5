@@ -794,7 +794,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.4
-		special_unit_forcelimit = 0.2
+		special_unit_forcelimit = 0.1
 	}
 	mass_army = {
 		global_manpower_modifier = 0.4

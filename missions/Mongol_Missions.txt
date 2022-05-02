@@ -228,6 +228,15 @@ mongol_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = persia_region
+						region = khorasan_region
+					}
+				}
+				change_culture = mongol
+			}
 		}
 	}
 	mongols_anatolia = {
@@ -359,7 +368,7 @@ mongol_missions_3 = {
 	}
 	mongols_yam = {
 		icon = mission_market_place_with_asian_traders
-		required_missions = { mongols_tatars }
+		required_missions = { mongols_tatars mongols_persia }
 		provinces_to_highlight = {
 			OR = {
 				region = khorasan_region

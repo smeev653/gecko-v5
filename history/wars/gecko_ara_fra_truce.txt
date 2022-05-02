@@ -9,9 +9,13 @@ war_goal = {
 1443.1.1 = {
 	add_attacker = FRA
 	add_defender = ARA
+	add_defender = VAL
+	add_defender = CAT
 }
 # War end date
 1444.11.10 = {
     	rem_attacker = FRA
 	rem_defender = ARA
+	rem_defender = VAL
+	rem_defender = CAT
 }

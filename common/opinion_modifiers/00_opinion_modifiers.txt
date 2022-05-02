@@ -518,7 +518,7 @@ honored_alliance = {
 }
 
 break_alliance = {
-	opinion = -5
+	opinion = -10
 	yearly_decay = 1
 }
 
