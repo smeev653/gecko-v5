@@ -41,7 +41,7 @@ country_decisions = {
 			OR = {
 				province_id = 507
 				province_id = 2075
-				province_id = 522
+				#province_id = 522
 				province_id = 524
 			}
 			OR = {
@@ -59,7 +59,7 @@ country_decisions = {
 				owns_core_province = 2075 #Sirhind
 				owns_core_province = 524 #Agra
 			}
-			owns_core_province = 522 #Delhi
+			#owns_core_province = 522 #Delhi
 		}
 		effect = {
 			change_tag = MUG
@@ -90,7 +90,7 @@ country_decisions = {
 				
 				religion = sunni
 				claim = 100
-				adm = 3
+				adm = 4
 				dip = 5
 				mil = 6
 				}
