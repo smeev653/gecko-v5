@@ -12,7 +12,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 2370
-				province_id = 476			
+				#province_id = 476			
 				province_id = 440 
 				province_id = 2362 
 				province_id = 1973 
@@ -22,10 +22,16 @@ country_decisions = {
 				province_id = 454
 				province_id = 1967 
 				province_id = 458
-				province_id = 460 
-				province_id = 457 
-				province_id = 2356 
-				province_id = 2364
+				province_id = 443 
+				#province_id = 457 
+				#province_id = 2356 
+				province_id = 439
+				province_id = 4325
+				province_id = 4325
+				province_id = 2221
+				province_id = 4326
+				province_id = 2235
+				province_id = 2236
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -33,7 +39,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			#adm_tech = 10
 			has_institution = feudalism
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -47,11 +53,16 @@ country_decisions = {
 			owns_core_province = 454
 			owns_core_province = 1967 
 			owns_core_province = 458
-			owns_core_province = 460 
-			owns_core_province = 457 
-			owns_core_province = 2356 
-			owns_core_province = 2364
-			owns_core_province = 476		
+			owns_core_province = 443
+			#owns_core_province = 457 
+			#owns_core_province = 2356 
+			owns_core_province = 439
+			owns_core_province = 4325
+			owns_core_province = 2221
+			owns_core_province = 4326
+			owns_core_province = 2235
+			owns_core_province = 2236
+			#owns_core_province = 476		
 			NOT = { 
 				overlord_of = SIB
 			}
@@ -84,7 +95,13 @@ country_decisions = {
 			add_permanent_claim = 1967 #Khujand
 			add_permanent_claim = 1973 #Urgench
 			add_permanent_claim = 2363 #Khujand
-			central_asia_region = {
+			khorasan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BUK
+			}
+			persia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

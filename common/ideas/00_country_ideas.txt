@@ -14270,6 +14270,7 @@ OIR_ideas = {
 	the_four_oirats = {
 		horde_unity = 1
 		legitimacy = 1
+		envoy_travel_time = -0.33
 	}
 	glory_of_conquest = { #also used in Horde ideas, KHA_ideas and CHG_ideas
 		global_manpower_modifier = 0.20

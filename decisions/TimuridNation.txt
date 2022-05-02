@@ -79,7 +79,7 @@ country_decisions = {
 				#province_id = 429
 				#province_id = 2213
 				#province_id = 2218
-				province_id = 465
+				#province_id = 465
 				province_id = 446
 				#province_id = 451
 				province_id = 445
@@ -98,9 +98,9 @@ country_decisions = {
 			AND = {
 					owns_core_province = 446	# Herat
 					owns_core_province = 445	# Merv
-					owns_core_province = 465	# Nogai
+					#owns_core_province = 465	# Nogai
 				}
-			army_size = 60	
+			army_size = 40	
 		}
 		effect = {
 			454 = {
@@ -127,16 +127,6 @@ country_decisions = {
 			#add_government_reform = tribal_federation
 			#change_technology_group = gunpowder_empire
 			change_unit_type = gunpowder_empire
-			define_ruler = {
-				name = "Abu Sa'id"
-				dynasty = "Timurid"
-				
-				religion = sunni
-				claim = 100
-				adm = 4
-				dip = 4
-				mil = 5
-				}
 			persia_region = {
 				limit = {
 					NOT = { owned_by = TIM }

@@ -61,14 +61,14 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-			#crimea_region = {
-			#	type = all
-			#	owned_by = ROOT
-			#}
-			khorasan_region	= {
+			crimea_region = {
 				type = all
 				owned_by = ROOT
 			}
+			#khorasan_region	= {
+			#	type = all
+			#	owned_by = ROOT
+			#}
 			295 = { country_or_non_sovereign_subject_holds = ROOT }
 			280 = { country_or_non_sovereign_subject_holds = ROOT }
 			is_at_war = no

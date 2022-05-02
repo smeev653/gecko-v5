@@ -1,7 +1,7 @@
 # 2349 - Kizil-Su
 
-owner = KHI
-controller = KHI
+owner = TRS
+controller = TRS
 culture = turkmeni
 religion = sunni
 capital = "Kizil-Su"
@@ -12,7 +12,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 #add_core = TIM
-add_core = KHI
+add_core = TRS
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian

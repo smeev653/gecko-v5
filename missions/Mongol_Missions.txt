@@ -368,13 +368,11 @@ mongol_missions_3 = {
 	}
 	mongols_yam = {
 		icon = mission_market_place_with_asian_traders
-		required_missions = { mongols_tatars mongols_persia }
+		required_missions = { mongols_tatars }
 		provinces_to_highlight = {
 			OR = {
-				region = khorasan_region
 				region = central_asia_region
 				region = mongolia_region
-				region = north_china_region
 			}
 			province_has_center_of_trade_of_level = 1
 		}

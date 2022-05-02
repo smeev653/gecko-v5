@@ -244,7 +244,7 @@ War_chest = {
 	land_forcelimit_modifier = 0.2
 	mercenary_manpower = 0.25
 	war_exhaustion = -0.05
-	land_maintenance = -0.1
+	land_maintenance_modifier = -0.1
 	reinforce_speed = 0.1
 }
 
@@ -497,6 +497,39 @@ Defense_of_Europe = {
 		army_size_percentage = 0.65
 	}
 	land_morale = 0.1
+	global_regiment_cost = -0.1
+	land_forcelimit_modifier = 0.25
+	war_exhaustion = -0.05
+}
+
+Defense_of_the_Rus = {
+	potential = {
+		OR = {
+			tag = MOS
+			tag = RUS
+		}	
+		ai = no
+		NOT  = { is_year = 1510}
+	}
+
+	trigger = {
+		OR = {
+			tag = MOS
+			tag = RUS
+		}
+		OR = {
+			defensive_war_with = KHA
+			defensive_war_with = CRI
+			defensive_war_with = TRS
+			defensive_war_with = TIM
+			defensive_war_with = BUK
+			defensive_war_with = PER
+		}
+		land_maintenance = 1
+		army_size_percentage = 0.65
+	}
+	land_morale = 0.1
+	shock_damage_recieved = -0.1
 	global_regiment_cost = -0.1
 	land_forcelimit_modifier = 0.25
 	war_exhaustion = -0.05

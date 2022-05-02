@@ -13,6 +13,7 @@ country_event = {
 		OR = {
 			has_reform = steppe_horde
 			has_reform = tribal_federation
+			has_reform = great_mongol_state_reform
 		}
 		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
 		num_of_cities = 4
@@ -80,7 +81,7 @@ country_event = {
 		define_ruler = {
 			dynasty = ROOT #Uncles, or other relatives were by far the most likely coup-makers
 			change_ADM = 1
-			change_DIP = 2
+			change_DIP = 1
 			change_MIL = 2
 			claim = 100
 		}

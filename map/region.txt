@@ -429,6 +429,11 @@ khorasan_region = {
 		ghor_area
 		sistan_area
 		mashhad_area
+		termez_area
+		samarkand_area
+		transoxiana_area
+		transcaspia_area
+		khiva_area
 	}
 }
 
@@ -637,11 +642,11 @@ kongo_region = {
 central_asia_region = {
 	areas = {
 		nogai_area
-		transcaspia_area
-		transoxiana_area
+		
+		
 		kazakhstan_area
 		balchasj_area
-		khiva_area
+		
 		ferghana_area
 		jetysuu_area
 		arys_area
@@ -651,8 +656,6 @@ central_asia_region = {
 		tarim_basin_area
 		shanshan_area
 		kyzylkum_area
-		termez_area
-		samarkand_area
 	}
 }
 

@@ -80,4 +80,3 @@
  gc_naples:0 "Naples may not make alliances."
  gc_denmark:0 "Denmark may not make alliances."
  GUARANTEEINVALID:0 "You may not guarantee a nation unless you have an alliance and §Y+100§! Relations with them."
- gc_order:0 §G"Only effective in the Iberia region"§!
