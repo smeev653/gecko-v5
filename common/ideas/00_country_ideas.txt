@@ -11128,7 +11128,7 @@ TRI_ideas = {
 
 AKK_ideas = {
 	start = {
-		cavalry_power = 0.15
+		land_forcelimit_modifier = 0.25
 		land_morale = 0.1
 	}
 	bonus = {
@@ -11138,14 +11138,14 @@ AKK_ideas = {
 		tag = AKK
 	}
 	free = yes
-	
+	akk_unite_the_federation = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.2
+	}
 	akk_white_sheep = {
 		leader_land_shock = 1
 	}
-	akk_unite_the_federation = {
-		yearly_tribal_allegiance = 1
-		cavalry_cost = -0.2
-	}
+
 	akk_turko_iranian_bureaucracy = {
 		core_creation = -0.2
 	}

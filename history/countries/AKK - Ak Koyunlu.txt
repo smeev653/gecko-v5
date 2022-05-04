@@ -4,7 +4,7 @@ primary_culture = turkish
 add_accepted_culture = kurdish
 add_accepted_culture = armenian
 religion = sunni
-technology_group = muslim
+technology_group = ottoman
 capital = 411
 religious_school = hanafi_school
 historical_rival = RAM
@@ -65,14 +65,15 @@ historical_rival = DUL
 	monarch = {
 		name = "Uzun Hasan"
 		dynasty = "Aq Qoyunlu"
-		birth_date = 1423.1.6
+		birth_date = 1433.1.6
 		adm = 4
 		dip = 5
 		mil = 6
 		leader = {	name = "Uzun Hasan"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0 }
 	}
-	add_ruler_personality = bold_fighter_personality
 	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_piety = 1
 }
 
 1453.1.1 = {
