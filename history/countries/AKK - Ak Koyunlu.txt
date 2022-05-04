@@ -6,10 +6,13 @@ add_accepted_culture = armenian
 religion = sunni
 technology_group = ottoman
 capital = 411
-religious_school = hanafi_school
+religious_school = jafari_school
 historical_rival = RAM
 historical_rival = DUL
-
+historical_rival = CND
+historical_rival = KAR
+historical_rival = TUR
+historical_rival = MAM
 1396.1.1 = {
 	monarch = {
 		name = "Qara Yülüq Osman"

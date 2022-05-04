@@ -1459,11 +1459,7 @@ estate_church_negative_piety_privilege = {
 		monthly_piety = -0.02
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
+		factor = 0
 	}
 }
 
@@ -3118,10 +3114,10 @@ estate_burghers_patronage_of_the_arts = {
 	influence = 0.05
 	
 	penalties = {
-		global_tax_modifier = -0.05
+		#global_tax_modifier = -0.05
 	}
 	benefits = {
-		prestige = 0.5
+		prestige = 0.25
 	}
 	on_granted = {
 		if = {
@@ -7423,7 +7419,7 @@ estate_church_religious_diplomats = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0	#The privilege is a little bit too niche to be really usable for the AI
+		factor = 100	#The privilege is a little bit too niche to be really usable for the AI
 	}
 }
 
