@@ -46,9 +46,11 @@ national_focus = ADM
 		dip = 3
 		mil = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
 }
 
-1430.1.1 = { leader = {	name = "Dmitry Shemiaka"	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1453.1.1 } }
+1443.1.1 = { leader = {	name = "Dmitry Shemiaka"	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1453.1.1 } }
 
 1433.1.1 = {
 	queen = {

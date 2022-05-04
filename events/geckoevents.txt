@@ -1091,6 +1091,9 @@ country_event = {
 
     trigger = {
             has_country_modifier = We_stand_alone
+			NOT = {
+				has_country_modifier = gecko_development
+			}	
     }
 	
     mean_time_to_happen = {

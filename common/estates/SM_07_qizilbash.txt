@@ -13,7 +13,7 @@ estate_qizilbash =
 		cavalry_cost = -0.1
 	}
 	country_modifier_neutral = {
-		cavalry_cost = 0.1  
+		cavalry_cost = -0.1  
 	}	
 	country_modifier_angry = {
 		army_tradition = -0.5

@@ -438,7 +438,7 @@ doab={
 	#	}
 	#}
 	outgoing={
-		name="lahore"
+		name="lahore_trade"
 		path={
 			522 2062 4411
 		}
@@ -645,7 +645,7 @@ persia={
 		}
 	}
 	outgoing={
-		name="lahore"
+		name="lahore_trade"
 		path={
 			578 451 450 446 2221 2235 2214 
 		}
@@ -703,7 +703,7 @@ persia={
 		576 577 2068 #kalat_area
 	}
 }
-lahore={
+lahore_trade={
 	location=454
 	color={
 		63 150 30 

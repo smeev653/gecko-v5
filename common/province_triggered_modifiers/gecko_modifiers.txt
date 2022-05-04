@@ -497,7 +497,7 @@ conquest_of_saint_petersburg = {
 	}	
 
 	vassal_income = 0.25
- 
+	vassal_forcelimit_bonus = 0.5
 	
 	#Province scope
 	on_activation = {

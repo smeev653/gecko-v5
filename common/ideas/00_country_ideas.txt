@@ -181,17 +181,17 @@ MOS_ideas = {
 	gatherers_of_tribute = {
 		global_tax_modifier = 0.15
 	}
+	pomestnoe_voisko = {
+		land_morale = 0.10
+	}
 	zasechnaya_cherta = {
 		fort_maintenance_modifier = -0.20
 	}
-	
 	seat_of_metropolitan_bishop  = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
 	}
-	pomestnoe_voisko = {
-		land_morale = 0.10
-	}
+
 	strength_of_the_boyars = {
 		stability_cost_modifier = -0.2
  	}

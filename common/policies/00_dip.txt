@@ -288,8 +288,7 @@ naval_infrastructure_act = {
 	}
 
 
-	min_autonomy_in_territories = -0.05
-	governing_capacity_modifier = 0.20
+	min_autonomy_in_territories = -0.15
 	
 	ai_will_do = {
 		factor = 1

@@ -1403,7 +1403,7 @@ trade_company_lhasa = {
 	}
 }
 
-trade_company_lahore = {
+trade_company_lahore_trade = {
 	color = { 63 150 30 }
 	
 	provinces = {
@@ -1425,10 +1425,10 @@ trade_company_lahore = {
 	# Specific
 	# Generic
 	names = {
-		name = "TRADE_COMPANY_LAHORE_Root_Culture_GetName"
+		name = "TRADE_COMPANY_LAHORE_trade_Root_Culture_GetName"
 	}
 	names = {
-		name = "TRADE_COMPANY_LAHORE_Asia_Trade_Company"
+		name = "TRADE_COMPANY_LAHORE_trade_Asia_Trade_Company"
 	}
 }
 

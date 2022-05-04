@@ -311,6 +311,7 @@ age_of_discovery = {
 			}	
 			modifier = {
 				production_efficiency = 0.2
+				land_forcelimit_modifier = 0.2
 			}
 			ai_will_do = {
 				factor = 10
@@ -576,7 +577,7 @@ age_of_reformation = {
 				}	
 			}
 			modifier = {
-				artillery_fire = 1
+				artillery_bonus_vs_fort = 3
 			}
 			ai_will_do = {
 				factor = 100
@@ -787,7 +788,7 @@ age_of_absolutism = {
 				OR = {
 					tag = OIR
 					tag = KHA
-					tag =  MGE
+					tag = MGE
 				}
 			}
 			modifier = {
@@ -980,7 +981,10 @@ age_of_revolutions = {
 		}
 		ab_austria_rep = {
 			allow = {
-				tag = HAB
+				OR = {
+					tag = HAB
+					tag = AHU
+					}
 			}
 			modifier = {
 				artillery_power = 0.15

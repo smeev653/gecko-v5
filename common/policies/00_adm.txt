@@ -316,7 +316,7 @@ public_welfare_act = {
 }
 
 the_spy_discovery_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 
 	potential = {
@@ -329,7 +329,8 @@ the_spy_discovery_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	reinforce_speed = 0.25
+	reinforce_speed = 0.15
+	land_morale = 0.05
 
 	ai_will_do = {
 		factor = 0.6 #Keep in mind lower stab cost is probably pretty weak given this costs ADM...
