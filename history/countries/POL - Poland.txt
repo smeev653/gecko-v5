@@ -17,9 +17,9 @@ add_accepted_culture = ruthenian
 1444.11.11 = {
 	monarch = {
 		name = "(Interregnum)"
-		adm = 6
-		mil = 6
-		dip = 6
+		adm = 5
+		mil = 4
+		dip = 5
 		regent = yes
 	}
 }

@@ -152,8 +152,8 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	infantry_shock		= 	0.30
-	infantry_fire 		= 	0.20
+	infantry_shock		= 	0.15
+	infantry_fire 		= 	0.10
 	cavalry_shock		=	0.25
 	
 	barracks = yes
@@ -187,7 +187,8 @@ technology = {
 	artillery_fire 		= 	1
 	artillery_shock 	=	0.05
 	military_tactics 	= 	0.25
-	
+	infantry_shock		= 	0.15
+	infantry_fire 		= 	0.10
 	regimental_camp = yes
 }
 
@@ -198,8 +199,6 @@ technology = {
 	#Pike and Shot
 	infantry_fire		= 	0.25
 	cavalry_shock		=	0.25
-
-	
 
 }
 
@@ -288,7 +287,7 @@ technology = {
 	
 	supply_limit 		= 	0.5
 	military_tactics	=	0.25
-	cavalry_shock		=	0.25
+	#cavalry_shock		=	0.25
 	#infantry_fire = 0.2
 
 	enable = tofongchis_musketeer
@@ -407,7 +406,7 @@ technology = {
 	
 	#cavalry_shock		=	1
 	supply_limit		= 	0.5	
-	cavalry_shock		=	0.25
+	cavalry_shock		=	0.5
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
 	enable = african_swarm
