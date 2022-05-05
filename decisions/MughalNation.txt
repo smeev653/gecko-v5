@@ -63,14 +63,14 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MUG
-			522 = {
+			507 = {
 				move_capital_effect = yes
 			}
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			change_primary_culture = kanauji
 			set_government_rank = 3
-			522 = {
+			507 = {
 			 	add_base_tax = 1
 				add_base_production = 1
 			 	add_base_manpower = 1

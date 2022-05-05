@@ -220,6 +220,9 @@ tr_russia_conquest_1 = {
 			army_size_percentage = 1
 		}
 		effect = {
+			2444 = {
+				add_core = ROOT
+			}	
 			novgorod_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}

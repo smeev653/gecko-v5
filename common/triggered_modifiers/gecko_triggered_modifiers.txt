@@ -407,7 +407,7 @@ too_many_subjects = {
 	}
 	
 	trigger = {
-			vassal = 6
+			vassal = 7
 			NOT = { has_idea_group = influence_ideas }
 	}		
 	vassal_forcelimit_bonus = -1
@@ -417,7 +417,7 @@ too_many_subjects = {
 
 Defense_of_Persia = {
 	potential = {
-		NOT  = { is_year = 1530}
+		NOT  = { is_year = 1510}
 		OR = {
 			tag = ARL
 			tag = ISF
@@ -439,9 +439,11 @@ Defense_of_Persia = {
 			OR = {
 				defensive_war_with = TUR
 				defensive_war_with = MAM
-			}	
+			}
+		land_maintenance = 1
+		army_size_percentage = 0.65			
 	}
-	land_morale = 0.15
+	land_morale = 0.10
 	discipline = 0.05
 	mercenary_manpower = 0.25
 	defensiveness = 0.25
@@ -487,7 +489,7 @@ Defense_of_Europe = {
 	trigger = {
 		OR = {
 			AND = {
-				NOT  = { is_year = 1465}
+				NOT  = { is_year = 1510}
 				tag = HUN
 			}	
 			134 = {
@@ -498,10 +500,12 @@ Defense_of_Europe = {
 		land_maintenance = 1
 		army_size_percentage = 0.65
 	}
-	land_morale = 0.1
+	land_morale = 0.10
+	discipline = 0.05
+	mercenary_manpower = 0.25
+	garrison_size = 0.5
 	global_regiment_cost = -0.1
 	land_forcelimit_modifier = 0.25
-	war_exhaustion = -0.05
 }
 
 Defense_of_the_Rus = {
