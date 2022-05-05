@@ -61,8 +61,8 @@ country_event = { #Poland Ruler Failsafe
 			culture = ROOT
 			religion = ROOT
 			adm = 5
-			dip = 5
-			mil = 6
+			dip = 4
+			mil = 5
 			age = 34
 			claim = 20
 		}
@@ -444,8 +444,8 @@ country_event = { #Mongolia Ruler Failsafe
 			culture = ROOT
 			religion = ROOT
 			adm = 5
-			dip = 4
-			mil = 6
+			dip = 5
+			mil = 5
 			age = 34
 			claim = 20
 		}

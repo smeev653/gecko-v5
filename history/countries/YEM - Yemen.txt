@@ -128,7 +128,7 @@ mercantilism = 25
 		name = "Yusuf II"
 		dynasty = "Rasulid"
 		adm = 4
-		dip = 6
+		dip = 3
 		mil = 5
 	}
 }

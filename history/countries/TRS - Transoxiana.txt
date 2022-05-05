@@ -15,8 +15,8 @@ religious_school = hanafi_school
 		dynasty = "Timurid"
 		birth_date = 1414.1.1
 		claim = 100
-		adm = 5
-		dip = 5
+		adm = 4
+		dip = 4
 		mil = 5
 	}
 	clear_scripted_personalities = yes

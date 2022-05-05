@@ -526,15 +526,13 @@ Defense_of_the_Rus = {
 			defensive_war_with = TIM
 			defensive_war_with = BUK
 			defensive_war_with = PER
+			defensive_war_with = TUR
 		}
 		land_maintenance = 1
 		army_size_percentage = 0.65
 	}
-	land_morale = 0.1
 	shock_damage_received = -0.1
-	global_regiment_cost = -0.1
-	land_forcelimit_modifier = 0.25
-	war_exhaustion = -0.05
+	war_exhaustion = -0.1
 }
 
 Ahead_of_time = {
