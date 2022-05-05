@@ -12820,7 +12820,7 @@ holy_city_kairouan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety = -0.001
+			#monthly_piety = -0.001
 			idea_cost = -0.025
 		}
 		on_upgraded = {
@@ -12839,7 +12839,7 @@ holy_city_kairouan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety = -0.002
+			#monthly_piety = -0.002
 			tolerance_own = 0.5
 			idea_cost = -0.05
 		}
@@ -12859,7 +12859,7 @@ holy_city_kairouan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety = -0.003
+			#monthly_piety = -0.003
 			tolerance_own = 1
 			idea_cost = -0.1
 		}
@@ -12931,7 +12931,7 @@ imam_hussein_al-abbas = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety = -0.001
+			#monthly_piety = -0.001
 			global_heretic_missionary_strength = 0.01
 		}
 		on_upgraded = {
@@ -12950,7 +12950,7 @@ imam_hussein_al-abbas = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety = -0.002
+			#monthly_piety = -0.002
 			global_heretic_missionary_strength = 0.02
 			church_loyalty_modifier = 0.05
 		}
@@ -12970,7 +12970,7 @@ imam_hussein_al-abbas = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety = -0.003
+			#monthly_piety = -0.003
 			global_heretic_missionary_strength = 0.03
 			church_loyalty_modifier = 0.1
 		}
