@@ -16245,7 +16245,7 @@ gme_alkarak_castle = {
 			local_manpower_modifier = 0.10
 		}
 		area_modifier = {
-			local_unrest = -1
+			local_manpower_modifier = 0.25
 		}
 		country_modifiers = { }
 		on_upgraded = { }
@@ -16321,7 +16321,9 @@ gme_aleppo_citadel = {
 			local_governing_cost = -0.20
 			garrison_growth = 0.25
 		}
-		area_modifier = { }
+		area_modifier = {
+			local_manpower_modifier = 0.25
+		}
 		country_modifiers = { }
 		on_upgraded = { }
 	}
@@ -16385,7 +16387,9 @@ gme_damascus_al_azem_palace = {
 			local_state_maintenance_modifier = -0.25
 			statewide_governing_cost = -0.25
 		}
-		area_modifier = { }
+		area_modifier = {
+			local_development_cost = -0.15
+		}
 		country_modifiers = {
 			prestige = 0.5
 			legitimacy = 0.5
@@ -16593,7 +16597,7 @@ gme_tripoli_citadel = {
 			statewide_governing_cost = -0.25
 		}
 		area_modifier = {
-			local_autonomy = -0.05
+			local_manpower_modifier = 0.25
 		}
 		country_modifiers = { }
 		on_upgraded = { }
@@ -16884,7 +16888,7 @@ gme_port_de_moon = {
 			ship_recruit_speed = -0.25
 		}
 		country_modifiers = {
-			naval_forcelimit_modifier = 0.05
+			navy_tradition = 0.5
 		}
 		on_upgraded = { }
 	}
@@ -16900,7 +16904,7 @@ gme_port_de_moon = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.1
-		 	naval_forcelimit_modifier = 0.1
+		 	navy_tradition = 1
 		}
 		on_upgraded = { }
 	}
