@@ -6,10 +6,7 @@ primary_culture = crimean
 capital = 284	# Crimea
 religious_school = maliki_school
 national_focus = MIL
-change_estate_land_share = {
-	estate = estate_dhimmi
-	share = -20
-}
+
 
 
 1441.1.1 = {
