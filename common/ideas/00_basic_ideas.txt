@@ -230,7 +230,6 @@ innovativeness_ideas = {
 	}
 	dynamic_court = {
 		idea_cost = -0.1
-		reform_progress_growth = 0.25
 	}
 	print_culture = {
 		all_power_cost = -0.0375
