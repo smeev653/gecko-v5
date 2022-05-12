@@ -534,7 +534,7 @@ country_decisions = {
 		}
 	}
 	gecko_recruit_military_advisor = {
-		major = no
+		major = yes
 		potential = {
 			is_year = 1445
 			ai = no
