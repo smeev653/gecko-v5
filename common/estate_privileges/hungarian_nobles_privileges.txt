@@ -121,7 +121,7 @@ gc_hungarian_nobles_privilege_5 = {
 	land_share = 0
 	benefits = {
 		general_cost = -0.05
-		army_tradition_decay = -0.025
+		army_tradition_decay = -0.0025
 	}
 }
 
