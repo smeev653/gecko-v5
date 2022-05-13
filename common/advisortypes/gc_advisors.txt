@@ -3,7 +3,7 @@ gc_drill_master = {
 	
 	# Bonus
 	drill_gain_modifier = 0.35
-
+	drill_decay_modifier = -0.25
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
 	chance = {
