@@ -977,7 +977,7 @@ influence_ideas = {
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
-		vassal_income = 0.25
+		vassal_income = 0.15
 	}
 	additional_loyalist_recruitment = {
 		province_warscore_cost = -0.10

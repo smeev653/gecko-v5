@@ -4921,8 +4921,8 @@ vassals_feel_safe = {
 }
 
 firm_hand = {
-	vassal_income = 0.25
-	vassal_forcelimit_bonus = 1
+	vassal_income = 0.1
+	vassal_forcelimit_bonus = 0.5
 }
 
 emissary_authority = {
