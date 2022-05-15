@@ -99,6 +99,20 @@ can_make_core = {
 }
 
 can_make_state = {
+	condition = {
+		tooltip = "gecko_state"
+			potential = {
+				FROM = {
+						ai = no
+				}	
+			}
+			allow = {
+				area_for_scope_province = {
+					type = all
+					owned_by = PREV
+				}
+			}
+		}
 }
 
 can_abandon_state = {
