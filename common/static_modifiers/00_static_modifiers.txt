@@ -332,7 +332,7 @@ colonial_core = {
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
 	min_local_autonomy = 50
-	local_governing_cost = -0.5
+	local_governing_cost = -0.25
 }									 		  
 territory_core = {
 	local_tax_modifier = 0.75				#90% more in a core
