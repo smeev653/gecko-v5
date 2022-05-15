@@ -1790,8 +1790,8 @@ on_bi_yearly_pulse_4 = {
 		80 = espionage_events.9
 
 		#Reign of Terror
-		150 = french_revolution.302
-		100 = french_revolution.303
+		#150 = french_revolution.302
+		#100 = french_revolution.303
 		
 		# Papacy events
 		100 = papacy_events.6
@@ -2042,18 +2042,18 @@ on_thri_yearly_pulse = {
 		100 = devotion_events.218
 		100 = devotion_events.219
 		#Center of Revolution - post-spawn (higher weighting than others as they are only relevant briefly)
-		200 = center_of_revolution.1
-		150 = center_of_revolution.2
-		200 = center_of_revolution.3
-		200 = center_of_revolution.8
-		250 = center_of_revolution.9
-		250 = center_of_revolution.10
-		200 = center_of_revolution.12
+		#200 = center_of_revolution.1
+		#150 = center_of_revolution.2
+		#200 = center_of_revolution.3
+		#200 = center_of_revolution.8
+		#250 = center_of_revolution.9
+		#250 = center_of_revolution.10
+		#200 = center_of_revolution.12
 		#Center of Revolution - pre-spawn
-		100 = center_of_revolution.2000
-		100 = center_of_revolution.2002
-		100 = center_of_revolution.2003
-		100 = center_of_revolution.2010
+		#100 = center_of_revolution.2000
+		#100 = center_of_revolution.2002
+		#100 = center_of_revolution.2003
+		#100 = center_of_revolution.2010
 
 		1000 = 0
 	}

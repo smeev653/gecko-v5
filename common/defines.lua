@@ -1621,7 +1621,7 @@ NAI = {
 	GOVERNING_CAPACITY_REFORM_BIAS_IF_NEEDED = 100,
 	DANGEROUS_OVEREXTENSION_PERCENTAGE = 0.1,
 
-	DEBASE_THRESHOLD = 10000,-- AI will not debase if it has more gold than this.
+	DEBASE_THRESHOLD = -1,-- AI will not debase if it has more gold than this.
 
 	DEVELOPMENT_CAP_BASE = 20,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 	DEVELOPMENT_CAP_MULT = 1,
