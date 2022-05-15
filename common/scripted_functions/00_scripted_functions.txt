@@ -37,6 +37,16 @@ can_reduce_inflation = {
 }
 
 can_declare_bankruptcy = {
+	condition = {
+			potential = {
+				FROM = {
+						ai = yes
+				}	
+			}
+			allow = {
+				always = no
+			}
+		}
 }
 
 can_release_colonial_nation = {
