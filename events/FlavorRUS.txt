@@ -2494,7 +2494,6 @@ country_event = {
 				hidden = yes
 			}
 		}
-		enact_revolution_effect = yes
 
 		random_list = {
 			25 = {
