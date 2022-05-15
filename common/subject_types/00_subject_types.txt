@@ -591,7 +591,7 @@ tributary_state = {
 	diplomacy_subject_sprite = GFX_diplomacy_amtributary
 
 	# Properties:
-	transfer_trade_power = no
+	can_be_annexed = yes
 	can_fight_independence_war = no
 	joins_overlords_wars = no
 	joins_colonial_wars = no
@@ -600,19 +600,18 @@ tributary_state = {
 	takes_diplo_slot = no
 	base_liberty_desire = -5
 	relative_power_class = 1						
-
-	should_quit_wars_on_activation = no
+	should_quit_wars_on_activation = yes
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
 	uses_military_focus = no
 	overlord_protects_external = yes
-	counts_for_borders = yes
+	counts_for_borders = no
 	can_use_claims = yes
 	share_rebel_popup = no
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
-	overlord_can_fabricate_for = yes
+	overlord_can_fabricate_for = no
 	does_overlord_size_count_for_warscore_cost = no
 	pays_overlord = 1.0
 	seize_territory = yes
