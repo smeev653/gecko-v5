@@ -140,7 +140,7 @@ We_stand_alone = {
 				NOT = { is_hegemon = yes }
 				#revanchism = 1
 				had_recent_war = 5
-			
+				NOT = { is_lacking_institutions = yes }
 	}
 	land_morale = 0.05
 	discipline = 0.025
@@ -268,6 +268,7 @@ Peace_of_Italy = {
 			owner = { culture_group = latin }
 		}
 		is_at_war = no
+		NOT = { is_lacking_institutions = yes }
 		NOT = {	
 			italy_region = {
 					owner = {
@@ -283,7 +284,7 @@ Peace_of_Italy = {
 			}											
 		}			
 	}
-	all_power_cost = -0.075
+	all_power_cost = -0.025
 	build_cost = -0.05
 	production_efficiency = 0.1
 	global_tax_modifier = 0.1
@@ -364,11 +365,6 @@ African_Gold = {
 
 African_Slave_Trade = {
 	potential = {
-		num_of_owned_provinces_with = {
-			value = 1
-			continent = africa
-			trade_goods = slaves
-		}
 		NOT = { technology_group = western }
 	}
 
@@ -385,11 +381,6 @@ African_Slave_Trade = {
 
 African_Slave_Trade_Western = {
 	potential = {
-		num_of_owned_provinces_with = {
-			value = 1
-			continent = africa
-			trade_goods = slaves
-		}
 		technology_group = western 
 	}
 
@@ -544,5 +535,6 @@ Ahead_of_time = {
 	trigger = {
 		NOT = { is_lacking_institutions = yes }
 	}
-	monthly_reform_progress_modifier = 0.1
+	monthly_reform_progress_modifier = 0.25
+	all_power_cost = -0.025
 }

@@ -480,7 +480,7 @@ NCountry = {
 	CLEAR_PROVINCE_FLAGS_ON_CLEAR_OWNER = 1,	 	--set to 0 to avoid clearing province flags when a province's owner is set to none (modder request)
 	CLEAR_PROVINCE_SAVED_NAMES_ON_CLEAR_OWNER = 1, 	--set to 0 to avoid clearing province saved names when a province's owner is set to none (modder request)
 	CREATE_LEADER_FROM_CONSORT_PRESTIGE_COST = 10,
-	EXPLOIT_ADM_INCOME = 60,	-- months of income
+	EXPLOIT_ADM_INCOME = 75,	-- months of income
 	EXPLOIT_DIP_SAILORS = 6,
 	EXPLOIT_MIL_MANPOWER = 6,
 	EXPLOIT_COOLDOWN_MONTHS = 240,
@@ -2253,7 +2253,7 @@ NGui = {
 },
 
 NEngine = {
-	EVENT_PROCESS_OFFSET = 20, 						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
+	EVENT_PROCESS_OFFSET = 100, 						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
 	TRIGGER_PROFILING_SAMPLING_RATE = 1000,			-- Sampling rate for trigger profiling (Every nth call is recorded)
 },
 
