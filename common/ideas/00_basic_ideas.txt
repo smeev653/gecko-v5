@@ -737,7 +737,7 @@ maritime_ideas = {
 	}
 
 	merchant_traditions = {
-		stability_cost_modifier = -0.15
+		stability_cost_modifier = -0.10
 	}
 	sea_hawks = {
 		min_autonomy_in_territories = -0.25

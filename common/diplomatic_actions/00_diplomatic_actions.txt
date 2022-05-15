@@ -109,7 +109,15 @@ declarewar = {
 			FROM = { same_continent = ROOT }
 		}
 	}
-
+	condition = {
+		tooltip = gecko_stability
+		potential = {
+			ai = no
+		}
+		allow = {
+			stability = 0
+		}
+	}
 	condition = {
 		tooltip = gc_may_not_declare_war_yet
 		potential = {
