@@ -112,7 +112,6 @@ declarewar = {
 	condition = {
 		tooltip = gecko_stability
 		potential = {
-			ai = no
 		}
 		allow = {
 			stability = 0

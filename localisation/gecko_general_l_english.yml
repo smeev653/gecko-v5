@@ -81,3 +81,4 @@
  gc_denmark:0 "Denmark may not make alliances."
  GUARANTEEINVALID:0 "You may not guarantee a nation unless you have an alliance and §Y+100§! Relations with them."
  gecko_state:0 "You must own all provinces in the state to full core."
+ gecko_stability:0 "Stability must be at least 0 to Declare War."
