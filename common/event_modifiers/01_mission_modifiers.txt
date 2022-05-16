@@ -111,7 +111,7 @@ royal_hungary = {
 
 defeated_byzantine_empire = {
 	legitimacy = 1
-	global_tax_modifier = 0.10
+	global_tax_modifier = 0.15
 }
 
 ottoman_hungary = {
@@ -2932,7 +2932,7 @@ hun_hungary_poland = {
 #}
 
 hun_strong_economy = {
-	land_forcelimit_modifier = 0.15
+	land_forcelimit_modifier = 0.05
 	build_cost = -0.1
 }
 

@@ -731,6 +731,7 @@ mamluk_government = {
 			have_had_reform = mamluk_government
 		}
 	}
+	lock_level_when_selected = yes
 	legacy_equivalent = mamluk_government_legacy
 	queen = no
 
