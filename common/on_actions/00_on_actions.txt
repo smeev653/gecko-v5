@@ -3393,7 +3393,6 @@ on_province_owner_change = {
 	events = {
 		japan.1
 	}
-	X_full_state_prosperity_effect = yes
 	if = {
 		limit = {
 			OR = {
@@ -3838,6 +3837,7 @@ on_create_vassal = {
 		add_government_reform = pope_reform
 		adopt_reform_progress = FROM
 	}
+	X_full_state_prosperity_effect
 }
 
 # ROOT = Country establishing it
@@ -3919,6 +3919,7 @@ on_country_released = {
 			change_religion = FROM
 		}
 	}
+	X_full_state_prosperity_effect
 }
 
 # ROOT = province, FROM = country

@@ -119,7 +119,12 @@ can_make_state = {
 			allow = {
 				area_for_scope_province = {
 					type = all
-					owned_by = PREV
+					OR = {
+						owned_by = root
+						owner = {
+							is_subject_of = root
+						}
+					}
 				}
 			}
 		}

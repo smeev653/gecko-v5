@@ -948,7 +948,7 @@ tambov_area = { #3
 }
 
 saratov_area = { #3
-	303 2418 2419
+	6015 303 2418 2419
 }
 
 ###Crimea Expansion###
@@ -980,10 +980,10 @@ circassia_area = { #5
 	463 2201 2195 2197 6010
 }
 stavropol_area = { #5
-	6011 6012 2417 6013 2416 
+	6011 6012 2416 468
 }
 astrakhan_area = { #5
-	464 466 468 6014 6015
+	464 466  6014  6013 2417 
 }
 
 lower_don_area = { #5
