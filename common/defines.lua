@@ -107,7 +107,7 @@ NDiplomacy = {
 	PEACE_IMPACT_DIP_SCORE = 0.25,
 	PEACE_IMPACT_MIL_SCORE = 0.25,
 
-	AUTONOMY_WARSCORE_COST_MODIFIER = 0.33,			-- How much autonomy reduces score by (at 1, 50% autonomy = 50% reduction)
+	AUTONOMY_WARSCORE_COST_MODIFIER = 0.4,			-- How much autonomy reduces score by (at 1, 50% autonomy = 50% reduction)
 	GREAT_PROJECT_WARSCORE_COST_MODIFIER = 0,	-- How much each great project multiplies a war score cost by (so 1 GP adds 33%, 2 add 66% etc)
 
 	NUM_POSSIBLE_RIVALS = 3,
@@ -1121,7 +1121,7 @@ NEconomy = {
 	TRADE_POWER_HOME_BONUS = 0.2,
 	TRADE_POWER_HOME_BONUS_MAX = 1,
 	AUTONOMY_AT_DIPLO_ANNEX = 30,					-- Autonomy added when diplo-annexing
-	AUTONOMY_AT_CONQUEST = 60,						-- Autonomy added at conquest
+	AUTONOMY_AT_CONQUEST = 50,						-- Autonomy added at conquest
 	AUTONOMY_AT_CONQUEST_CLAIM = 40,				-- Autonomy added at conquest if you have a claim
 	AUTONOMY_AT_CONQUEST_CORE = 0,					-- Autonomy added at conquest if you have a core
 	COLONY_MIN_AUTONOMY = 75,						-- Colonial cores always have at least this much autonomy
