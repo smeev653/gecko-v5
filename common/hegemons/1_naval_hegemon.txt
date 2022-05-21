@@ -36,7 +36,7 @@ naval_hegemon = {
 	max = {
 		own_coast_naval_combat_bonus = 1.0
 		all_power_cost = -0.1
-		backrow_artillery_damage = 0.20
+		backrow_artillery_damage = 0.15
 	}
 	
 }

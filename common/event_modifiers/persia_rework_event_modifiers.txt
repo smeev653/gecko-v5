@@ -20,7 +20,7 @@ transcaucasian_wine_valleys = {
 	
 ######estate changes######
 estate_qizilbash_levies_mod = {
-	local_manpower_modifier = 0.2
+	local_manpower_modifier = 0.15
 	}
 
 estate_ghilman_discipline_modifier = {
@@ -30,7 +30,7 @@ estate_ghilman_discipline_modifier = {
 
 estate_ghilman_morale_modifier = {
 	is_janissary_modifier = yes
-	infantry_power = 0.10
+	land_morale = 0.05
 }
 
 estate_qizilbash_officers_modifier = {
@@ -51,7 +51,7 @@ estate_janissary_weaponry_modifier = {
 	
 estate_janissary_discipline_modifier = {
 	is_janissary_modifier = yes
-	discipline = 0.1
+	discipline = 0.05
 }
 
 estate_janissary_auxiliaries_modifier = {

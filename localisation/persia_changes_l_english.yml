@@ -62,9 +62,9 @@
  mechanic_qizilbash_qurchis_privilege_interaction_no: " " #intentionally empty
  mechanic_qizilbash_discipline_looting_interaction_yes: "Enables the Qizilbash Estate Privilege §YEnforced Discipline§!, which grants §G+2.5%§! Discipline and §R-90%§! Looting Efficiency.\n"
  mechanic_qizilbash_discipline_looting_interaction_no: " " #intentionally empty
- mechanic_qizilbash_officer_interaction_yes: "Enables the Qizilbash Estate Privilege §YQizilbash in Officer Corps§!, which gives the Qizilbash control of the Office of the Tufangchi-bashi, and §G+10%§! Siege Ability."
+ mechanic_qizilbash_officer_interaction_yes: "Enables the Qizilbash Estate Privilege §YQizilbash in Officer Corps§!, which gives the Qizilbash control of the Office of the Tufangchi-bashi, §G+10%§! Fire Damamage and §G+10%§! Siege Ability."
  mechanic_qizilbash_officer_interaction_no: " " #intentionally empty
- mechanic_ghilman_morale_interaction_yes: "Enables the Ghilman Estate Privilege §YReform the Ghilman Corps§!, which grants §G+10%§! Infantry Combat on Janissaries."
+ mechanic_ghilman_morale_interaction_yes: "Enables the Ghilman Estate Privilege §YReform the Ghilman Corps§!, which grants §G+5%§! Land Morale on Janissaries."
  mechanic_ghilman_morale_interaction_no: " " #intentionally empty
  #ottomans#
  mechanic_enables_janissary_estate_yes: "Janissaries Estate becomes available."
@@ -73,7 +73,7 @@
  mechanic_upgrade_janissary_weaponry_privilege_interaction_no: " " #intentionally empty
  mechanic_establish_auxiliary_support_system_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YEstablish Janissary Auxiliary Corps§!, which grants §G+5.0%§! Manpower Recovery Speed and §G+10.0%§! Reinforce Speed."
  mechanic_establish_auxiliary_support_system_privilege_interaction_no: " " #intentionally empty
- mechanic_reform_the_janissaries_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YReform the Janissary Corps§!, which grants §G+10%§! Discipline to §YJanissary Regiments§!."
+ mechanic_reform_the_janissaries_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YReform the Janissary Corps§!, which grants §G+5%§! Discipline to §YJanissary Regiments§!."
  mechanic_reform_the_janissaries_privilege_interaction_no: " " #intentionally empty
  ######estates and loyalty/influence modifiers######
  #ghilman#
@@ -120,7 +120,7 @@
  #estate_qizilbash_levies
  estate_qizilbash_levies:0 "Qizilbash Levies"
  estate_qizilbash_levies_desc:0 "If the reward of land is offered, the Turkoman Tribes will be more than willing to serve as the backbone of our armies."
- estate_qizilbash_levies_effect_tooltip:0 "Every owned province of §YTurkoman Tribe§! culture gains §Y'Qizilbash Levies'§!, giving the following effects:\nLocal Manpower Modifier: §G+20.0%§!"
+ estate_qizilbash_levies_effect_tooltip:0 "Every owned province of §YTurkoman Tribe§! culture gains §Y'Qizilbash Levies'§!, giving the following effects:\nLocal Manpower Modifier: §G+15.0%§!"
  estate_qizilbash_levies_revoke_effect_tooltip:0 "The modifier §Y'Qizilbash Levies'§! is removed from all owned §YTurkoman Tribe§! provinces."
  estate_qizilbash_levies_mod: "Qizilbash Levies"
  desc_estate_qizilbash_levies_mod:0 "The state has increased its conscription of the Turkoman Tribes."

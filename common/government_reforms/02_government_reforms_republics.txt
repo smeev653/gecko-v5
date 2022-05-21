@@ -1744,8 +1744,8 @@ broaden_executive_powers_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
 	modifiers = {
-		monthly_reform_progress_modifier = 0.1
-		governing_capacity_modifier = -0.1
+		monthly_reform_progress_modifier = 0.05
+		governing_capacity_modifier = -0.05
 	}
 	ai = {
 		factor = 1
@@ -1756,8 +1756,8 @@ devolution_of_powers_reform = {
 	icon = "generic_people"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity_modifier = 0.1
-		monthly_reform_progress_modifier = -0.1
+		governing_capacity_modifier = 0.05
+		monthly_reform_progress_modifier = -0.05
 	}
 	ai = {
 		factor = 1.5

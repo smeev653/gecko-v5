@@ -164,7 +164,7 @@ ETH_ideas = {
 	}
 	eth_expansionist_policy = {
 		build_cost = -0.1
-		governing_capacity_modifier = 0.2
+		governing_capacity_modifier = 0.1
 	}
 	eth_reformed_armies = {
 		land_maintenance_modifier = -0.05
@@ -307,7 +307,7 @@ NGF_ideas = {
 		naval_morale = 0.1
 	}
 	NGF_national_idea_7 = {
-		trade_efficiency = 0.15
+		trade_efficiency = 0.10
 	}
 }
 

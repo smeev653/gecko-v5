@@ -132,7 +132,8 @@ horse_artillery = {
 		full_idea_group = offensive_ideas
 		full_idea_group = economic_ideas
 	}
-	artillery_power = 0.15
+	artillery_power = 0.10
+	artillery_cost = -0.15
 
 	ai_will_do = {
 		factor = 1

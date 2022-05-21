@@ -1821,8 +1821,8 @@ clergy_in_administration_reform = {
 		}
 	}
 	modifiers = {
-		monthly_reform_progress_modifier = 0.1
-		governing_capacity_modifier = -0.1
+		monthly_reform_progress_modifier = 0.05
+		governing_capacity_modifier = -0.05
 	}
 	ai = {
 		factor = 1
@@ -1869,8 +1869,8 @@ of_noble_bearing_reform = {
 		}
 	}
 	modifiers = {
-		governing_capacity_modifier = 0.1
-		monthly_reform_progress_modifier = -0.1
+		governing_capacity_modifier = 0.05
+		monthly_reform_progress_modifier = -0.05
 	}
 	ai = {
 		factor = 1

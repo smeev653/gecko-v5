@@ -3016,7 +3016,7 @@ stpeters_cathedral = {
 			curia_powers_cost = -0.2
 			church_power_modifier = 0.2
 			monthly_fervor_increase = 0.5		
-			idea_cost = -0.05
+			idea_cost = -0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -3055,7 +3055,7 @@ stpeters_cathedral = {
 			curia_powers_cost = -0.35
 			church_power_modifier = 0.33
 			monthly_fervor_increase = 1	
-			idea_cost = -0.1
+			idea_cost = -0.05
 			church_influence_modifier = 0.1
 		}
 
@@ -11212,7 +11212,7 @@ buda_castle = {
 		country_modifiers = {
 			global_institution_spread = 0.2
 			technology_cost = -0.025
-			idea_cost = -0.05
+			idea_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -11233,7 +11233,7 @@ buda_castle = {
 		country_modifiers = {
 			global_institution_spread = 0.3
 			technology_cost = -0.05
-			idea_cost = -0.1
+			idea_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -12841,7 +12841,7 @@ holy_city_kairouan = {
 		country_modifiers = {
 			#monthly_piety = -0.002
 			tolerance_own = 0.5
-			idea_cost = -0.05
+			idea_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -12861,7 +12861,7 @@ holy_city_kairouan = {
 		country_modifiers = {
 			#monthly_piety = -0.003
 			tolerance_own = 1
-			idea_cost = -0.1
+			idea_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -17504,7 +17504,7 @@ gme_munich_neuschwanstein_castle = {
 			local_development_cost = -0.10
 		}
 		country_modifiers = {
-			governing_capacity_modifier = 0.10
+			governing_capacity_modifier = 0.075
 		}
 		on_upgraded = { }
 	}
@@ -17518,7 +17518,7 @@ gme_munich_neuschwanstein_castle = {
 			local_development_cost = -0.2
 		}
 		country_modifiers = {
-			governing_capacity_modifier = 0.15
+			governing_capacity_modifier = 0.10
 			monarch_admin_power = 1
 		}
 		on_upgraded = { }

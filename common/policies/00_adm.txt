@@ -593,7 +593,8 @@ the_education_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	backrow_artillery_damage = 0.15
+	backrow_artillery_damage = 0.10
+	artillery_cost = -0.15
 
 	ai_will_do = {
 		factor = 0.8
@@ -1402,7 +1403,7 @@ the_banking_system = {
 		full_idea_group = trade_ideas
 	}
 
-	trade_efficiency = 0.15
+	trade_efficiency = 0.10
 
 
 	ai_will_do = {

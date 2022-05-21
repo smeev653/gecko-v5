@@ -503,8 +503,8 @@ lip_service_reform = {
 	icon = "tribal_lip_service"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity_modifier = -0.1
-		monthly_reform_progress_modifier = 0.1
+		governing_capacity_modifier = -0.05
+		monthly_reform_progress_modifier = 0.05
 	}
 }
 
@@ -534,8 +534,8 @@ centralize_tribal_power_reform = {
 	icon = "tribal_centralize_power"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity_modifier = 0.1
-		monthly_reform_progress_modifier = -0.1
+		governing_capacity_modifier = 0.05
+		monthly_reform_progress_modifier = -0.05
 	}
 }
 
