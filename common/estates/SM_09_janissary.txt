@@ -22,7 +22,26 @@ estate_janissary = {
 	land_ownership_modifier = {
 		janissary_loyalty_modifier = 0.2
 	}
-
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+	}
 	# Influence modifiers
 	base_influence = 0
 	
@@ -36,6 +55,7 @@ estate_janissary = {
 	estate_janissary_auxiliaries
 	estate_janissary_reform_the_janissaries
 	}
-	
+	agendas = {
+	}
 	influence_from_dev_modifier = 1.0
 }

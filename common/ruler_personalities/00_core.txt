@@ -246,6 +246,8 @@ tolerant_personality = {
 	wants_condottieri = yes
 	wants_avoid_debase = yes
 	wants_land = yes
+
+	nation_designer_cost = 2
 }
 
 kind_hearted_personality = {
@@ -1749,7 +1751,7 @@ conqueror_personality = {
 	wants_condottieri = yes
 	wants_avoid_debase = yes
 	wants_land = yes
-	
+	nation_designer_cost = 2
 	chance = {
 		
 	}

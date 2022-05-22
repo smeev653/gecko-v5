@@ -105,7 +105,7 @@ country_decisions = {
 			change_unit_type = eastern
 			add_government_reform = tsardom
 			change_estate_land_share = {
-				estate = estate_tribes
+				estate = estate_nomadic_tribes
 				share = -20
 			}
 			set_country_flag = formed_ruthenia_flag

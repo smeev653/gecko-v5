@@ -844,7 +844,7 @@ country_event = {
 			}
 			tag = GBR
 		}
-		NOT = { advisor_exists = 236 }
+		#NOT = { advisor_exists = 236 }
 		OR = {
 			owns = 235		# Kent
 			owns = 236		# London
@@ -1686,7 +1686,7 @@ country_event = {
 			}
 			tag = GBR
 		}
-		NOT = { advisor_exists = 284 }
+		#NOT = { advisor_exists = 284 }
 		OR = {
 			owns = 238		# East Anglia
 			owns = 236		# London
@@ -1886,7 +1886,7 @@ country_event = {
 			}
 			tag = GBR
 		}
-		NOT = { advisor_exists = 293 }
+		#NOT = { advisor_exists = 293 }
 		owns = 236		# London
 	}
 
@@ -1944,7 +1944,7 @@ country_event = {
 			}
 			tag = GBR
 		}
-		NOT = { advisor_exists = 315 }
+		#NOT = { advisor_exists = 315 }
 		OR = {
 			owns = 235		# Kent
 			owns = 236		# London
@@ -2404,7 +2404,7 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9205 }
 		is_year = 1593
 		NOT = { is_year = 1616 }
-		NOT = { advisor_exists = 245 }
+		#NOT = { advisor_exists = 245 }
 		OR = {
 			AND = {
 				tag = ENG

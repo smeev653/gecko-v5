@@ -380,7 +380,7 @@ country_event = {
 		if = {
 			limit = { 
 				tag = SWI
-				mission_completed = emp_swi_start
+				mission_completed = swi_three_leagues
 			}
 			inherit = TTL
 		}

@@ -47,10 +47,8 @@ country_event = {
 			limit = {
 				NOT = { religion = shiite }
 				capital_scope = {
-					OR = {
 						continent = africa
-						superregion = europe_superregion
-					}
+					
 				}
 			}
 			set_religious_school = {
@@ -62,10 +60,8 @@ country_event = {
 			limit = {
 				NOT = { religion = shiite }
 				capital_scope = {
-					OR = {
 						continent = asia
-						superregion = eastern_europe_superregion
-					}
+					
 				}
 			}
 			set_religious_school = {
@@ -77,7 +73,11 @@ country_event = {
 			limit = {
 				religion = shiite
 				capital_scope = {
-					superregion = persia_superregion
+					OR = {
+					superregion = persia_region
+					superregion = khorasan_region
+					superregion = caucasia_region 
+					}
 				}
 			}
 			set_religious_school = {

@@ -1216,6 +1216,8 @@ republican_authoritarianism_reform = {
 		global_unrest = -1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1265,6 +1267,8 @@ republicanism_reform = {
 		republican_tradition = 0.1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {

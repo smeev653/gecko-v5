@@ -444,33 +444,33 @@ Defense_of_Persia = {
 	land_forcelimit_modifier = 0.25
 }
 
-Defense_of_Arabia = {
-	potential = {
-		NOT  = { is_year = 1470}
-		OR = {
-			tag = YEM
-			tag = ARB
-		}
-	}
-	
-
-	trigger = {
-			NOT = { total_development = MAM }
-		
-		OR = {
-				tag = YEM
-				tag = ARB
-			}
-		OR = {
-				defensive_war_with = MAM
-		}	
-	}
-	discipline = 0.05
-	land_morale = 0.10
-	garrison_size = 0.5
-	global_regiment_cost = -0.1
-	land_forcelimit_modifier = 0.25
-}
+#Defense_of_Arabia = {
+#	potential = {
+#		NOT  = { is_year = 1470}
+#		OR = {
+#			tag = ORM
+#			tag = ARB
+#		}
+#	}
+#	
+#
+#	trigger = {
+#			NOT = { total_development = MAM }
+#		
+#		OR = {
+#				tag = ORM
+#				tag = ARB
+#			}
+#		OR = {
+#				defensive_war_with = MAM
+#		}	
+#	}
+#	land_morale = 0.1
+#	discipline = 0.05
+#	merc_maintenance_modifier = -0.5
+#	mercenary_cost = -0.5
+#	interest = -1
+#}
 
 Defense_of_Europe = {
 	potential = {
@@ -495,7 +495,6 @@ Defense_of_Europe = {
 	land_morale = 0.10
 	garrison_size = 0.5
 	global_regiment_cost = -0.1
-	land_forcelimit_modifier = 0.1
 }
 
 Defense_of_the_Rus = {

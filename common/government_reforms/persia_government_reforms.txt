@@ -39,6 +39,8 @@ establish_qurchi_corps_reform = { #tier 2
 		qizilbash_loyalty_modifier = 0.05
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	custom_attributes = {
@@ -163,6 +165,8 @@ upgrade_janissary_weaponry_reform = { #tier 2
 		janissary_loyalty_modifier = 0.05
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	custom_attributes = {

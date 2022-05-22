@@ -490,7 +490,7 @@ english_monarchy = {
 		legitimacy = 0.5
 		global_unrest = -1
 		max_absolutism = -30
-		vassal_income = 0.1s
+		vassal_income = 0.1
 	}
 
 	conditional = {
@@ -1284,6 +1284,8 @@ enforce_privileges_reform = {
 		church_influence_modifier = -0.1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 
@@ -1309,6 +1311,8 @@ quash_noble_power_reform = {
 		rajput_exclusive_influence_modifier = -0.1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1340,6 +1344,8 @@ enforce_trader_privileges_reform = {
 		trade_efficiency = 0.05
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1370,6 +1376,8 @@ bengali_reform = {
 		trade_efficiency = 0.1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1390,6 +1398,8 @@ sufi_syncretism_reform = {
 		development_cost = -0.05
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1414,6 +1424,8 @@ poligar_reform = {
 		development_cost = -0.05
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1434,6 +1446,8 @@ khalsa_reform = {
 		land_morale = 0.05
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1615,6 +1629,8 @@ deccani_society_reform = {
 		free_dip_policy = 1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1637,6 +1653,8 @@ black_army_reform = {
 		nobles_loyalty_modifier = -0.1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1657,6 +1675,8 @@ legion_of_honor_reform = {
 		rajput_exclusive_loyalty_modifier = 0.1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {
@@ -1677,6 +1697,8 @@ imperial_nobility_reform = {
 		rajput_exclusive_influence_modifier = -0.2
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 	ai = {

@@ -36,7 +36,7 @@ country_event = {
 		add_dip_power = 100
 		if = {
 			limit = {
-				NOT = { advisor_exists = 225 }
+				#NOT = { advisor_exists = 225 }
 			}
 			define_advisor = {
 				type = philosopher
@@ -86,7 +86,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { advisor_exists = 895 }
+				#NOT = { advisor_exists = 895 }
 			}		
 			
 			define_advisor = {
@@ -130,7 +130,7 @@ country_event = {
 		add_reform_progress_small_effect = yes
 		if = {
 			limit = {
-				NOT = { advisor_exists = 905 }
+				#NOT = { advisor_exists = 905 }
 			}			
 			define_advisor = {
 				type = natural_scientist
@@ -172,7 +172,7 @@ country_event = {
 		add_mil_power = 100
 		if = {
 			limit = {
-				NOT = { advisor_exists = 887 }
+				#NOT = { advisor_exists = 887 }
 			}			
 			define_advisor = {
 				type = navigator
@@ -652,8 +652,8 @@ country_event = {
 		NOT = {
 			is_year = 1620
 		}
-		NOT = { advisor_exists = 893 }
-		NOT = { is_advisor_employed = 893 }
+		#NOT = { advisor_exists = 893 }
+		#NOT = { is_advisor_employed = 893 }
 		owns = 97
 	}
 	
@@ -1500,7 +1500,7 @@ country_event = {
 		add_prestige = 5
 		if = {
 			limit = {
-				NOT = { advisor_exists = 922 }
+				#NOT = { advisor_exists = 922 }
 			}
 			define_advisor = {
 				type = philosopher

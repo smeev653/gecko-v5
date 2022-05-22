@@ -837,26 +837,6 @@ promised_land_modifier = {
 	church_loyalty_modifier = 0.1
 }
 
-kongo_cardinal_modifier = {
-	potential = {
-		owner = {
-			mission_completed = kon_gain_cardinal
-		}
-	}
-	trigger = {
-		religion = catholic
-		has_owner_religion = yes
-		owner = {
-			capital_scope = {
-				continent = africa
-			}
-		}
-	}
-	local_tax_modifier = 0.25
-	church_loyalty_modifier = 0.1
-	tolerance_own = 1
-	papal_influence = 1
-}
 
 ajuuran_place_of_istunka = {
 	potential = {

@@ -83,6 +83,8 @@ internal_mission_reform = {
 		governing_capacity = 100
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 }
@@ -94,6 +96,8 @@ external_mission_reform = {
 		manpower_recovery_speed = 0.1
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 }
@@ -113,6 +117,8 @@ mission_to_civilize_reform = {
 		native_uprising_chance = -0.5
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 }
@@ -137,6 +143,8 @@ mission_to_kill_pirates_reform = {
 		capture_ship_chance = 0.33
 	}
 	conditional = {
+		allow = {
+		}
 		claim_states = yes
 	}
 }

@@ -1540,55 +1540,55 @@ on_bi_yearly_pulse = {
 		150 = institution_events.72
 
 	#Personality Events
-		50 = personality_events.10 #Just Dilema
-		50 = personality_events.11 #A righteous King
-		50 = personality_events.12 #A Righteous Republican Ruler
-		50 = personality_events.13
-		50 = personality_events.14
-		50 = personality_events.15
-		50 = personality_events.16
-		50 = personality_events.17
-		50 = personality_events.18
-		50 = personality_events.19
-		50 = personality_events.20
-		50 = personality_events.21
-		50 = personality_events.22
-		50 = personality_events.23
-		50 = personality_events.24
-		50 = personality_events.25
-		50 = personality_events.26
-		50 = personality_events.27
-		50 = personality_events.28
-		50 = personality_events.29
-		50 = personality_events.30
-		50 = personality_events.31
-		50 = personality_events.32
-		50 = personality_events.33
-		50 = personality_events.34
-		50 = personality_events.35
-		50 = personality_events.36
-		50 = personality_events.37
-		50 = personality_events.38
-		50 = personality_events.39
-		50 = personality_events.40
-		50 = personality_events.41
-		50 = personality_events.42
-		50 = personality_events.43
-		50 = personality_events.44
-		50 = personality_events.45
-		50 = personality_events.46
-		50 = personality_events.47
-		50 = personality_events.48
-		50 = personality_events.49
-		50 = personality_events.50
-		50 = personality_events.51
-		50 = personality_events.52
-		50 = personality_events.53
-		50 = personality_events.54
-		50 = personality_events.55
-		50 = personality_events.56
-		50 = personality_events.57
-		50 = personality_events.58
+		0 = personality_events.10 #Just Dilema
+		0 = personality_events.11 #A righteous King
+		0 = personality_events.12 #A Righteous Republican Ruler
+		0 = personality_events.13
+		0 = personality_events.14
+		0 = personality_events.15
+		0 = personality_events.16
+		0 = personality_events.17
+		0 = personality_events.18
+		0 = personality_events.19
+		0 = personality_events.20
+		0 = personality_events.21
+		0 = personality_events.22
+		0 = personality_events.23
+		0 = personality_events.24
+		0 = personality_events.25
+		0 = personality_events.26
+		0 = personality_events.27
+		0 = personality_events.28
+		0 = personality_events.29
+		0 = personality_events.30
+		0 = personality_events.31
+		0 = personality_events.32
+		0 = personality_events.33
+		0 = personality_events.34
+		0 = personality_events.35
+		0 = personality_events.36
+		0 = personality_events.37
+		0 = personality_events.38
+		0 = personality_events.39
+		0 = personality_events.40
+		0 = personality_events.41
+		0 = personality_events.42
+		0 = personality_events.43
+		0 = personality_events.44
+		0 = personality_events.45
+		0 = personality_events.46
+		0 = personality_events.47
+		0 = personality_events.48
+		0 = personality_events.49
+		0 = personality_events.50
+		0 = personality_events.51
+		0 = personality_events.52
+		0 = personality_events.53
+		0 = personality_events.54
+		0 = personality_events.55
+		0 = personality_events.56
+		0 = personality_events.57
+		0 = personality_events.58
 
 		# Trade League Events
 		100 = trade_league.1
@@ -3499,34 +3499,6 @@ on_province_owner_change = {
 		add_province_modifier = {
 			name = estate_church_united_faith_and_culture
 			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			owner = {
-				NOT = { culture_group = ROOT }
-				has_owner_accepted_culture = no
-				has_estate_privilege = estate_church_one_faith_one_culture
-			}
-			NOT = { has_province_modifier = estate_church_false_culture }
-		}
-		add_province_modifier = {
-			name = estate_church_false_culture
-			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			owner = {
-				has_country_modifier = son_fetishism_as_secondary_religion
-			}
-			religion = shamanism
-			NOT = { has_province_modifier = son_fetishism_as_secondary_religion_province }
-		}
-		add_province_modifier = {
-			name = son_fetishism_as_secondary_religion_province
-			duration = -1
-			desc = son_fetishism_as_secondary_religion_province_desc
 		}
 	}
 	

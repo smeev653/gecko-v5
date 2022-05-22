@@ -4673,7 +4673,7 @@
  PW_CENTER_OF_TRADE:0 "Trade Node"
  PW_VALUE_OF_TRADE:0 "Total value of trade"
  tut_1b_39:0 "To the right of the province view, by the coins, is the provinces economic output. Below that is the provinces main resource and production. All produced resources are sent to a Trade Node where any nation may send merchants to compete for a share of the profit. Clicking on the Trade Node button takes you to the Trade Node subview."
- tut_miss_19_task:0 "Send a merchant to the Trade Node in $province$"
+ tut_miss_19_task:0 "Send a merchant to the Trade Node in $PROVINCE$"
  tut_miss_19_hint:0 "To send a merchant to a Trade Node, click on a province that sends its produce to that node, then click on the button to access the Trade Node view. Merchants are sent through clicking on the send-button with a merchant icon."
  tut_miss_22_hint:0 "To get a monopoly in a Trade Node you need to get six merchants into the Trade Node."
  MODIFIER_LOCAL_COT_GRAVITY:0 "Local Trade Node Appeal"

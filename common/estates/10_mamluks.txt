@@ -13,9 +13,6 @@ estate_mamluks = {
 				any_owned_province = {
 					culture = al_misr_arabic
 				}
-				NOT = {
-					has_country_flag = curtailed_mamluks
-				}
 			}
 		}
 		NOT = { has_government_attribute = is_merchant_republic }
@@ -57,7 +54,6 @@ estate_mamluks = {
 		factor = 1
 		modifier = {
 			factor = 1.5
-			tag = MAM
 			culture_group = owner
 			religion_group = owner
 		}

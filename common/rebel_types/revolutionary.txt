@@ -75,11 +75,7 @@ revolutionary_rebels = {
 			owner = {
 				has_disaster = aspiration_for_liberty
 			}
-		}
-		modifier = {
-			factor = 5.0
-			owner = { has_disaster = revolution }
-		}		
+		}	
 		
 
 		modifier = {

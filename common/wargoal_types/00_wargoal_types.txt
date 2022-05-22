@@ -516,12 +516,31 @@ superiority_insult_mutual = {
 take_capital_personal_union = {
 	type = take_capital
 	
-	badboy_factor = 1
-	prestige_factor = 1
-	peace_cost_factor = 1
+		attacker = 	{
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_form_personal_union
+		}
+	}
 	
-	peace_options = {
-		po_form_personal_union
+	defender = 	{
+		badboy_factor = 0.25
+		prestige_factor = 1
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			is_core = FROM
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+		}
+		
+		prov_desc = ALL_CORES	
 	}
 	
 	war_name = UNION_WAR_NAME
@@ -1107,7 +1126,7 @@ take_colony = {
 		badboy_factor = 0.25
 		prestige_factor = 0.5
 		peace_cost_factor = 1.5
-		peace_cost_factor_non_allowed_treaty = 25
+		#peace_cost_factor_non_allowed_treaty = 25
 		allowed_provinces_are_eligible = yes
 		allowed_provinces = {
 			OR = {

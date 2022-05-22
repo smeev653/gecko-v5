@@ -23,7 +23,26 @@ estate_qizilbash =
 	land_ownership_modifier = {
 		qizilbash_loyalty_modifier = 0.2 #this is % of estateland = loyalty (i.e., 10 crownland owned by them = 2% loyalty)
 	}
-	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+	}
 	#Influence
 	base_influence = 0
 	influence_from_dev_modifier = 1.0 #seems to be influence_from_estateland = estateland*float/2. (i.e., 10 crownland owned by them, influence_from_dev_modifier = 0.5, then influence = 10*.25=2.5)
@@ -62,6 +81,8 @@ estate_qizilbash =
 		estate_qizilbash_establish_qurchis
 		estate_qizilbash_officer_corps
 		estate_qizilbash_disciplined_enforced
+	}
+	agendas = {
 	}
 	color = { 255 000 000 }
 }
