@@ -549,6 +549,54 @@ country_decisions = {
 			}
 		}
 	}
+	gecko_debt = {
+		major = yes
+		potential = {
+			is_year = 1445
+			ai = no
+			is_bankrupt = no
+			NOT = { has_country_flag = gecko_tackle_debt }
+			NOT = { has_country_modifier = gecko_debt_tackled_2 }
+			NOT = { has_country_modifier = gecko_tackle_debt_timer }
+       }
+		allow = {
+			ai = no
+			num_of_loans = 10
+		}
+		effect = {
+			set_country_flag = gecko_tackle_debt
+			add_country_modifier = {
+				name = "gecko_tackle_debt_timer"
+				duration = 5475
+				hidden = yes
+			} 
+			add_country_modifier = {
+				name = "gecko_debt_tackled"
+				duration = -1
+			}
+		}
+	}
+	gecko_debt_2 = {
+		major = yes
+		potential = {
+			is_year = 1445
+			ai = no
+			is_bankrupt = no
+			has_country_flag = gecko_tackle_debt
+       }
+		allow = {
+			ai = no
+		}
+		effect = {
+			clr_country_flag = gecko_tackle_debt
+			remove_country_modifier = gecko_debt_tackled
+			
+			add_country_modifier = {
+				name = "gecko_debt_tackled_2"
+				duration = 912
+			}
+		}
+	}
 }			
 
 		

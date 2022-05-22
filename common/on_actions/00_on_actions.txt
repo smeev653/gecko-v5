@@ -823,6 +823,18 @@ on_bankruptcy = {
  events = {
 		 gecko.12
 	}
+	if = {
+			limit = { has_country_modifier =  gecko_debt_tackled }
+				remove_country_modifier =  gecko_debt_tackled
+		}
+	if = {
+			limit = { has_country_modifier =  gecko_debt_tackled_2 }
+				remove_country_modifier =  gecko_debt_tackled_2
+		}	
+	if = {
+			limit = { has_country_modifier =  gecko_tackle_debt_timer  }
+				remove_country_modifier =  gecko_tackle_debt_timer 
+		}	
 }
 
 # country (country annexing, root = target)

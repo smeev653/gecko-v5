@@ -49,6 +49,10 @@
  h_found_riyadh_desc:0 "With the construction of the walled oases, the Najd has become the center of our empire in all but name. Let us construct a new capital for Arabia in Kharj. It will take the name 'Riyadh', after the gardens of the local oases."
  gecko_recruit_military_advisor_title:0 "Recruit Military Advisor"
  gecko_recruit_military_advisor_desc:0 ""
+ gecko_debt_title:0 "Tackle the National Debt"
+ gecko_debt_desc:0 "Attempt to lessen the debt burden faced by our country. This will stand down our armies for the duration."
+ gecko_debt_2_title:0 "Cease Debt Repayments"
+ gecko_debt_2_desc:0 "Refocus our economy away from debt repayments."
 
  #gecko critial events
  GC_infantry_leader_cooldown_tooltip:0 "Infantry Leader"
