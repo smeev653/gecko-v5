@@ -1353,7 +1353,7 @@ cukurova_area = { #3
 }
 
 aleppo_area = { #4
-	377 1849 2313 4298 6114
+	377 1849 2313 6114
 }
 
 syria_area = { #4
@@ -1370,7 +1370,7 @@ palestine_area = { #3
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 4310 2308
+	332 2303 4310 2308 4298
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
