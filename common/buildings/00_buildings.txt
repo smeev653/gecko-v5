@@ -1361,14 +1361,9 @@ university = {
 	}
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	on_obsolete = {
 	}
@@ -2640,14 +2635,9 @@ wharf = {
 	onmap = yes
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	on_obsolete = {
 	}
@@ -2686,14 +2676,9 @@ weapons = {
 	onmap = yes
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 
 	ai_will_do = {
@@ -2711,14 +2696,9 @@ textile = {
 	onmap = yes
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	on_obsolete = {
 	}
@@ -2740,14 +2720,9 @@ plantations = {
 	onmap = yes
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	on_obsolete = {
 	}
@@ -2768,14 +2743,9 @@ tradecompany = {
 	onmap = yes
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	on_obsolete = {
 	}
@@ -2794,14 +2764,9 @@ farm_estate = {
 	onmap = yes
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	on_obsolete = {
 	}
@@ -2823,14 +2788,9 @@ mills = {
 	onmap = yes
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	on_obsolete = {
 	}
@@ -2847,14 +2807,9 @@ furnace = {
 
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 
 	modifier = {
@@ -2900,14 +2855,9 @@ soldier_households = {
 	}
 	build_trigger = {
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 	modifier = {
 		local_manpower = 0.75
@@ -2941,14 +2891,9 @@ impressment_offices = {
 	build_trigger = {
 		has_port = yes
 		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
+				type = all
+				owned_by = ROOT
+			}
 	}
 
 	modifier = {
@@ -2986,13 +2931,8 @@ state_house = {
 	build_trigger = {
 		NOT = {
 			area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
+				owner = {
+					tag = ROOT
 				}
 				OR = {
 					has_building = state_house
