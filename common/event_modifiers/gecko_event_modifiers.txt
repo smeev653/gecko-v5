@@ -290,7 +290,7 @@ gecko_development = {
 
 gecko_debt_tackled = {
 	land_maintenance_modifier = -1
-	interest = -1
+	interest = -1.25
 	global_regiment_recruit_speed = 1
 	land_morale = -0.75
 	naval_morale = -0.75
@@ -309,6 +309,7 @@ gecko_debt_tackled_2 = {
 	land_morale = -0.1
 	reinforce_speed = -0.25
 	global_regiment_recruit_speed = 0.25
+	mercenary_manpower = -0.5
 }
 
 gecko_tackle_debt_timer = {
