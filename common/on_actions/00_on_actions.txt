@@ -1267,6 +1267,7 @@ on_dismantle_revolution = {
 
 # province
 on_adm_development = {
+	develop_adm = yes
 }
 
 # province

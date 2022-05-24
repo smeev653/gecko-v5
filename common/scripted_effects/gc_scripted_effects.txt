@@ -28,4 +28,11 @@ remove_steppe_devcost_ukr = {
 			remove_province_modifier = estate_nomadic_tribes_steppe_devcost
 		}
 	}
+}
+
+develop_adm = {
+	random = {
+		chance = 25
+		add_base_tax = 1
+	}
 }	
