@@ -17582,7 +17582,9 @@ gme_sopron_eszterhaza = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 2000 }
 		province_modifiers = { }
-		area_modifier = { }
+		area_modifier = { 
+			local_tax_modifier = 0.20
+		}
 		country_modifiers = {
 			diplomatic_reputation = 1
 			advisor_cost = -0.10
@@ -17658,7 +17660,9 @@ gme_pest_basilica_estergom = {
 		province_modifiers = {
 			local_tax_modifier = 0.20
 		}
-		area_modifier = { }
+		area_modifier = {
+			local_tax_modifier = 0.20	
+		}
 		country_modifiers = {
 			church_loyalty_modifier = 0.1
 			tolerance_own = 1

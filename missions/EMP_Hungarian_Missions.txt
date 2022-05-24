@@ -264,6 +264,23 @@ gc_hungary_branch_3 = {
         }
         effect = {
             add_stability = 1
+			add_prestige = 20
+			moravia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			opole_area = {
+                add_permanent_claim = ROOT
+            }
+            breg_area = {
+                add_permanent_claim = ROOT
+            }
+            silesia_area = {
+                add_permanent_claim = ROOT
+            }
         }
     }
 
@@ -958,15 +975,15 @@ gc_hungary_gh_branch_4 = {
         trigger = {
             northern_greece_area = {
                 type = all 
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             XMP_central_greece_area = {
                 type = all 
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             morea_area = {
                 type = all 
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -995,11 +1012,11 @@ gc_hungary_gh_branch_4 = {
         trigger = {
             aegean_archipelago_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             eastern_mediterrenean_islands_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1081,7 +1098,7 @@ gc_hungary_gh_branch_5 = {
             6000 = { owned_by = ROOT }
             crimea_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1266,7 +1283,7 @@ gc_hungary_eoh_branch_2 = {
         trigger = {
             east_adriatic_coast_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1456,19 +1473,19 @@ gc_hungary_eoh_branch_3 = {
         trigger = {
             austria_proper_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             outer_austria_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             inner_austria_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             krain_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1515,17 +1532,17 @@ gc_hungary_eoh_branch_3 = {
                 area = western_sicily_area
             }
             NOT = {
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         trigger = {
             western_sicily_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             sicily_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1585,15 +1602,13 @@ gc_hungary_eoh_branch_4 = {
         effect = {
             add_years_of_income = 0.5
             add_mil_power = 50
-            moravia_area = {
-                add_permanent_claim = ROOT
-            }
+            
         }
     }
 
     gc_hungary_mission_32 = {
         icon = mission_landsknecht_soldier
-        required_missions = { gc_hungary_mission_31 }
+        required_missions = { }
         position = 5
         provinces_to_highlight = {
             area = moravia_area
@@ -1602,10 +1617,15 @@ gc_hungary_eoh_branch_4 = {
         trigger = {
             moravia_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
+			add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = BOH
+				}
             hradecko_area = {
                 add_permanent_claim = ROOT
             }
@@ -1640,34 +1660,30 @@ gc_hungary_eoh_branch_4 = {
             NOT = { owned_by = ROOT }
         }
         trigger = {
-            hradecko_area = {
-                type = all
-                owned_by = ROOT
-            }
-            bohemia_area = {
-                type = all
-                owned_by = ROOT
-            }
-            erzgebirge_area = {
-                type = all
-                owned_by = ROOT
-            }
-			NOT = { active_imperial_incident = any }
-        }
+			OR = {
+				AND = { 
+					hradecko_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					bohemia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					erzgebirge_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				BOH = {
+					is_subject_of_type = personal_union
+				}			
+			}
+		NOT = { active_imperial_incident = any }
+		}
         effect = {
 				country_event = { id = new_flavour_hun.1 }
-				hradecko_area = {
-					add_base_production = 1
-					add_local_autonomy = -50
-				}
-				bohemia_area = {
-					add_base_production = 1
-					add_local_autonomy = -50
-				}
-				erzgebirge_area = {
-					add_base_production = 1
-					add_local_autonomy = -50
-				}
+
 			
         }
     }
@@ -1751,6 +1767,30 @@ gc_hungary_eoh_branch_4 = {
             country_event = { #The Hungarian Empire
                 id = gc_hungary_event.3
             }
+			hradecko_area = {
+					add_base_production = 1
+					add_local_autonomy = -50
+				}
+			bohemia_area = {
+					add_base_production = 1
+					add_local_autonomy = -50
+				}
+			erzgebirge_area = {
+					add_base_production = 1
+					add_local_autonomy = -50
+				}
+			austria_proper_area = {
+					add_base_manpower = 1
+					add_local_autonomy = -50
+				}
+			outer_austria_area = {
+					add_base_manpower = 1
+					add_local_autonomy = -50
+				}
+			inner_austria_area = {
+					add_base_manpower = 1
+					add_local_autonomy = -50
+				}	
             east_bavaria_area = {
                 add_permanent_claim = ROOT
             }
@@ -1826,15 +1866,15 @@ gc_hungary_eoh_branch_5 = {
         trigger = {
             opole_area = {
                 type = all
-                owned_by = ROOT 
+                country_or_non_sovereign_subject_holds = ROOT 
             }
             breg_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             silesia_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1863,11 +1903,11 @@ gc_hungary_eoh_branch_5 = {
         trigger = {
             malopolska_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             sandomierz_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1890,17 +1930,17 @@ gc_hungary_eoh_branch_5 = {
                 area = central_poland_area
             }
             NOT = {
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         trigger = {
             mazovia_area = {
                 type = all
-                owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
             }
             central_poland_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
@@ -1921,13 +1961,13 @@ gc_hungary_eoh_branch_5 = {
                 area = red_ruthenia_area 
             }
             NOT = {
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         trigger = {
             red_ruthenia_area = {
                 type = all
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {

@@ -808,6 +808,7 @@ AHU_ideas = {
 EOH_ideas = {
 	start = {
 		cavalry_power = 0.2
+		cavalry_cost = -0.1
 		land_morale = 0.1
 		no_religion_penalty = yes
 	}
@@ -824,7 +825,7 @@ EOH_ideas = {
 	}
 	found_the_black_army = {
 		discipline = 0.05
-		cavalry_cost = -0.1
+		recover_army_morale_speed = 0.1
 	}
 	bulwark_of_christianity = {
 		global_manpower_modifier = 0.2
