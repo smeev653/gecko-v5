@@ -40,8 +40,8 @@ aristocracy_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	noble_officers = {
-		army_tradition_decay = -0.0075
-		navy_tradition_decay = -0.0075
+		army_tradition_decay = -0.005
+		navy_tradition_decay = -0.005
 	}
 }
 
