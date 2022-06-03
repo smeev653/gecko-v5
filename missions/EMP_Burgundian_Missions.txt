@@ -1352,19 +1352,6 @@ emp_burgundy_4 = {
 				}
 				FRA = { country_event = { id = new_flavour_bur.7 } }
 			}
-			tooltip = {
-				every_country = {
-					limit = {
-						is_subject_of = FRA
-						capital_scope = {
-							region = france_region
-						}
-						liberty_desire = 50
-					}
-					hidden_effect = { FRA = { free_vassal = prev } }
-					ROOT = { vassalize = prev }
-				}
-			}
 		}
 	}
 	
