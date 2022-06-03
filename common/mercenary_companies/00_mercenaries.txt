@@ -589,7 +589,7 @@ merc_delhi_mamluks = {
 	cost_modifier = 0.25
 	sprites = { dlh_base_sprite_pack }
 	trigger = { 
-		religion_group = muslim
+		tag = DLH
 	}
     modifier = {
 		  cavalry_power = 0.1
