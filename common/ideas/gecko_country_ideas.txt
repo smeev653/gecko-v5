@@ -14,7 +14,6 @@ ARB_ideas = { #Arabian Empire
 	free = yes
 	
 	arb_1 = { #Indian Ocean Trade
-		trade_steering = 0.25
 		trade_efficiency = 0.1
 	}
 	arb_2 = { #Arabian Horsemanship
