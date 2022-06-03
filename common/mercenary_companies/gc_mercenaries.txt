@@ -8,7 +8,8 @@ gecko_independent_army_1 = {
     cost_modifier = 0.75
     trigger = {
 		 total_development = 100
-		NOT = { has_country_modifier = gecko_b }
+		 is_year = 1470
+		 NOT = { has_country_modifier = gecko_b }
     }
     # No home province means local mercenary company
 }

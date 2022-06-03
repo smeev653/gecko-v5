@@ -936,10 +936,11 @@ merc_free_swiss_guard = {
 			#has_country_modifier = glut_of_mercs
 			has_country_modifier = swedish_mercenary_core
 		}
-		NOT = { tag = PAP }
+		NOT = { tag = SWI }
+		NOT = { has_country_modifier = gecko_b }
 	}
 	modifier = {
-        discipline = 0.1
+        discipline = 0.05
 	}
 }
 merc_independent_cossack_host = {
@@ -1060,6 +1061,6 @@ merc_swiss_canton_mercenaries = {
 	}
 	cost_modifier = 0.75
 	modifier = {
-		discipline = 0.1
+		discipline = 0.05
 	}
 }
