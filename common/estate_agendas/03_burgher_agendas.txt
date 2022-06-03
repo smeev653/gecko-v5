@@ -89,13 +89,165 @@ estate_burghers_fire_advisor = {
 #Pay off loans
 estate_burghers_pay_off_loans = {
 	can_select = {
-		num_of_loans = 5
+		num_of_loans = 10
 		is_bankrupt = no
 	}
 	selection_weight = {
 		factor = 2
 		modifier = {
-			factor = 0.5
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 20
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 25
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 30
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 35
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 40
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 45
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 50
+		}
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+	task_requirements = {
+		NOT = { num_of_loans = 36 }
+		hidden_trigger = {
+			is_bankrupt = no
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = gecko_ipa
+			duration = 3650
+		}
+		generate_scaled_advisor_of_type_and_religion_effect = {
+			type = treasurer
+			religion = root
+			discount = yes
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_burghers
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+estate_burghers_pay_off_loans_2 = {
+	can_select = {
+		num_of_loans = 10
+		is_bankrupt = no
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 20
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 25
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 30
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 35
+		}
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+	task_requirements = {
+		NOT = { num_of_loans = 21 }
+		hidden_trigger = {
+			is_bankrupt = no
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = gecko_ipa
+			duration = 3650
+		}
+		generate_scaled_advisor_of_type_and_religion_effect = {
+			type = treasurer
+			religion = root
+			discount = yes
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_burghers
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+estate_burghers_pay_off_loans_3 = {
+	can_select = {
+		num_of_loans = 10
+		is_bankrupt = no
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 0
 			is_at_war = yes
 		}
 		modifier = {
@@ -115,7 +267,7 @@ estate_burghers_pay_off_loans = {
 		is_bankrupt = yes
 	}
 	task_requirements = {
-		NOT = { num_of_loans = 1 }
+		NOT = { num_of_loans = 11 }
 		hidden_trigger = {
 			is_bankrupt = no
 		}
@@ -124,6 +276,10 @@ estate_burghers_pay_off_loans = {
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 10
+		}
+		add_country_modifier = {
+			name = gecko_ipa
+			duration = 3650
 		}
 		generate_scaled_advisor_of_type_and_religion_effect = {
 			type = treasurer

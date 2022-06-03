@@ -217,6 +217,7 @@ estate_burghers =
 		estate_burghers_commercial_board_of_advice
 		estate_burghers_new_world_charter
 		estate_burghers_indebted_to_burghers
+		estate_burghers_indebted_to_burghers_2
 		estate_burghers_free_enterprise
 		estate_burghers_the_great_privilege
 		estate_burghers_exclusive_trade_rights
@@ -244,6 +245,8 @@ estate_burghers =
 		estate_burghers_build_university_in_y
 		estate_burghers_build_manufactory_in_y
 		estate_burghers_pay_off_loans
+		estate_burghers_pay_off_loans_2
+		estate_burghers_pay_off_loans_3
 		estate_burghers_restore_republican_tradition
 		estate_burghers_restore_currency
 		estate_burghers_recovery_from_hyperinflation

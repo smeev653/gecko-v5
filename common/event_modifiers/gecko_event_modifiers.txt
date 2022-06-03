@@ -291,6 +291,8 @@ gecko_development = {
 gecko_debt_tackled = {
 	land_maintenance_modifier = -1
 	interest = -1.25
+	inflation_action_cost = -0.25
+	inflation_reduction = 1
 	global_regiment_recruit_speed = 1
 	land_morale = -0.75
 	naval_morale = -0.75
@@ -313,4 +315,8 @@ gecko_debt_tackled_2 = {
 }
 
 gecko_tackle_debt_timer = {
+}
+
+gecko_ipa = {
+	interest = -1
 }

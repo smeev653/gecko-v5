@@ -36,3 +36,15 @@ develop_adm = {
 		add_base_tax = 1
 	}
 }	
+
+gecko_ipa_effect = {
+	if = {
+		limit = {
+			NOT = { num_of_loans = 1 }
+		}
+		remove_country_modifier = gecko_ipa
+		remove_country_modifier = gecko_debt_tackled
+		remove_country_modifier = gecko_debt_tackled_2
+		remove_country_modifier = gecko_tackle_debt_timer
+	}
+}

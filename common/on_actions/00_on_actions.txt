@@ -834,7 +834,11 @@ on_bankruptcy = {
 	if = {
 			limit = { has_country_modifier =  gecko_tackle_debt_timer  }
 				remove_country_modifier =  gecko_tackle_debt_timer 
-		}	
+		}
+	if = {
+			limit = { has_country_modifier =  gecko_ipa  }
+				remove_country_modifier =  gecko_ipa
+		}
 }
 
 # country (country annexing, root = target)
@@ -3965,6 +3969,7 @@ on_trade_good_changed = {
 # this = country
 on_loan_repaid = {
 	on_loan_repaid_estate_privileges_effect = yes
+	gecko_ipa_effect = yes
 }
 
 # this = country

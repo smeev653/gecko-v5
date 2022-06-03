@@ -312,8 +312,8 @@ spy_ideas = {
 		
 	}
 	claim_fabrication = {
-		global_manpower = 10
-		land_forcelimit = 10
+		global_manpower = 15
+		land_forcelimit = 15
 	}
 	vetting = {
 		war_taxes_cost_modifier = -1
@@ -892,13 +892,13 @@ administrative_ideas = {
 	category = ADM
 
 	bonus = {
-		advisor_cost = -0.1
+		country_admin_power = 1
 	}
 	organised_mercenary_payment = {
 		production_efficiency = 0.15
 	}
 	civil_servants = {
-		reform_progress_growth = 0.25
+		reform_progress_growth = 0.5
 		advisor_pool = 4
 	}
 	benefits_for_mercenaries = {
@@ -907,11 +907,11 @@ administrative_ideas = {
 		mercenary_manpower = 0.25
 	}
 	adm_adaptability = {
-		global_manpower = 10
-		land_forcelimit = 10
+		global_manpower = 15
+		land_forcelimit = 15
 	}
 	bookkeeping = {
-		drill_gain_modifier = 0.2
+		advisor_cost = -0.1
 	}
 	organised_mercenary_recruitment = {
 		expand_administration_cost = -0.5
