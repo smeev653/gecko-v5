@@ -62,7 +62,7 @@
  mechanic_qizilbash_qurchis_privilege_interaction_no: " " #intentionally empty
  mechanic_qizilbash_discipline_looting_interaction_yes: "Enables the Qizilbash Estate Privilege §YEnforced Discipline§!, which grants §G+2.5%§! Discipline and §R-90%§! Looting Efficiency.\n"
  mechanic_qizilbash_discipline_looting_interaction_no: " " #intentionally empty
- mechanic_qizilbash_officer_interaction_yes: "Enables the Qizilbash Estate Privilege §YQizilbash in Officer Corps§!, which gives the Qizilbash control of the Office of the Tufangchi-bashi, §G+10%§! Fire Damamage and §G+10%§! Siege Ability."
+ mechanic_qizilbash_officer_interaction_yes: "Enables the Qizilbash Estate Privilege §YQizilbash in Officer Corps§!, which gives the Qizilbash control of the Office of the Tufangchi-bashi and §G+10%§! Fire Damage."
  mechanic_qizilbash_officer_interaction_no: " " #intentionally empty
  mechanic_ghilman_morale_interaction_yes: "Enables the Ghilman Estate Privilege §YReform the Ghilman Corps§!, which grants §G+5%§! Land Morale on Janissaries."
  mechanic_ghilman_morale_interaction_no: " " #intentionally empty

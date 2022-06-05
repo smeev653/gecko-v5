@@ -195,7 +195,7 @@ gc_siege_specialist_delayed = {
 }
 
 gc_siege_specialist_modifier = {
-	siege_ability = 0.2
+	siege_ability = 0.15
 }
 
 gc_infantry_leader_delayed = {

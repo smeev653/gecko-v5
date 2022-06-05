@@ -366,7 +366,7 @@ NED_ideas = {
 		tolerance_heretic = 3
 	}
 	army_sappers = {
-		siege_ability = 0.20
+		siege_ability = 0.15
 	}
 	platoon_fire = {
 		fire_damage = 0.2

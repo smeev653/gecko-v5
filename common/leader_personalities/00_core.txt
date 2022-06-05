@@ -78,7 +78,7 @@ siege_specialist_personality = {
 		is_admiral = no
 		artillery_fraction = 0.01 # "any cannons"
 	}
-	siege_ability = 0.15
+	siege_ability = 0.10
 }
 
 cannoneer_personality = {

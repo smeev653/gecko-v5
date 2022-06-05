@@ -407,7 +407,7 @@ offensive_ideas = {
 		leader_land_shock = 1
 	}
 	engineer_corps = {
-		siege_ability = 0.2
+		siege_ability = 0.1
 		#artillery_bonus_vs_fort = 1
 	}
 	grand_army = {

@@ -34,7 +34,7 @@ estate_ghilman_morale_modifier = {
 }
 
 estate_qizilbash_officers_modifier = {
-	siege_ability = 0.10
+	#siege_ability = 0.10
 	fire_damage = 0.10
 }
 
