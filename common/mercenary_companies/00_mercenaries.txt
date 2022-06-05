@@ -1070,7 +1070,6 @@ merc_swiss_canton_mercenaries = {
 	home_province = 165
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-		tag = SWI
 		mission_completed = swi_reislaufer
 	}
 	cost_modifier = 0.75

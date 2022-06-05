@@ -11,10 +11,8 @@ empowered_subjects = {
 				has_idea = tribute_system
 				was_player = yes 
 			}
-		OR = {	
 			is_march = yes
-			is_subject_of_type = canton
-		}
+		
 		NOT = { is_colonial_nation = yes }	
 		NOT = { is_lesser_in_union = yes }	
 	}
@@ -401,6 +399,19 @@ too_many_subjects = {
 	trigger = {
 			vassal = 6
 			NOT = { has_idea_group = influence_ideas }
+	}		
+	vassal_forcelimit_bonus = -1
+	vassal_income = -0.15
+	reduced_liberty_desire = -40
+}
+
+too_many_subjects_influence = {
+	potential = {
+	}
+	
+	trigger = {
+			num_of_subjects = 9
+			has_idea_group = influence_ideas 
 	}		
 	vassal_forcelimit_bonus = -1
 	vassal_income = -0.15
