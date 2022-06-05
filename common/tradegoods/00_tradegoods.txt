@@ -276,7 +276,7 @@ fish = {
 		global_sailors_modifier = 0.25
 	}
 	province = {
-		local_sailors = 250
+		local_manpower = 0.25
 	}
 	chance = {
 		factor = 20
