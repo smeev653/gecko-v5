@@ -48,6 +48,7 @@ merc_morlachs = {
     trigger = {
 		NOT = { has_country_modifier = hun_black_army }
 		religion_group = christian
+		is_year = 1530
 		OR = {
 			any_owned_province = {
 				region = balkan_region
@@ -623,6 +624,7 @@ merc_zanj_company = {
 			any_owned_province = {
 				OR = {
 					region = east_africa_region
+					region = horn_of_africa_region
 					area = mogadishu_area
 				}
 			}
@@ -647,6 +649,7 @@ merc_madagascar_company = {
 				OR = {
 					region = east_africa_region
 					region = south_africa_region
+					region = horn_of_africa_region
 				}
 			}
 			any_owned_province = {
@@ -688,7 +691,7 @@ merc_asafo_company = {
    #cavalry_weight = 0
     #artillery_weight = 0.2
 	cavalry_cap = 6
-    home_province = 2255
+    home_province = 2278
 	#cost_modifier = 1.1
 	sprites = { dlc062_msi_sprite_pack africangfx_sprite_pack }
 	trigger = {
@@ -707,7 +710,7 @@ merc_asafo_company = {
 merc_nubian_company = {
     regiments_per_development = 0.05
     #artillery_weight = 0.2
-    home_province = 2798
+    home_province = 2274
 	sprites = { dlc057_nub_sprite_pack africangfx_sprite_pack }
 	trigger = {
 		OR = {
@@ -795,7 +798,7 @@ merc_crimean_company = {
 			OR = {
 					region = balkan_region
 					region = egypt_region
-					region = pontic_steppe_region
+					region = crimea_region
 				}
 		}		
 	}
@@ -946,6 +949,7 @@ merc_free_swiss_guard = {
 	sprites = { westerngfx_sprite_pack }
     trigger = { 
 		OR = {
+			capital_scope = { superregion = europe_superregion }
 			any_owned_province = {
 				OR = {
 					area = switzerland_area
@@ -957,6 +961,7 @@ merc_free_swiss_guard = {
 			has_country_modifier = swedish_mercenary_core
 		}
 		NOT = { tag = SWI }
+		
 		NOT = { has_country_modifier = gecko_b }
 	}
 	modifier = {
@@ -1027,7 +1032,10 @@ merc_great_lakes_free_warriors = {
 	trigger = {
 		OR = {
 			any_owned_province = {
-				region = central_africa_region
+				OR = {
+					region = central_africa_region
+					region = horn_of_africa_region
+					}
 			}
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
@@ -1071,6 +1079,7 @@ merc_swiss_canton_mercenaries = {
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		mission_completed = swi_reislaufer
+		tag = SWI
 	}
 	cost_modifier = 0.75
 	modifier = {

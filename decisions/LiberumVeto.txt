@@ -4,12 +4,17 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_flag = librium_veto }
 			NOT = { colony = 1 }
+			NOT = { is_emperor = yes }
+			ai = no
 		}
 		allow = {
 			NOT = {total_development = 299}
 			is_at_war = yes
 			war_exhaustion = 5
 			num_of_cities = 6
+			is_in_war = {
+							defenders = ROOT
+						}
 		}
 		effect = {
 			set_country_flag = librium_veto
