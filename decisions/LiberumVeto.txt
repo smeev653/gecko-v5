@@ -8,18 +8,20 @@ country_decisions = {
 			ai = no
 		}
 		allow = {
-			NOT = {total_development = 299}
-			is_at_war = yes
 			war_exhaustion = 5
 			num_of_cities = 6
 			is_in_war = {
 							defenders = ROOT
 						}
+			any_province = {
+					is_capital_of = root
+					NOT = { controlled_by = ROOT }
+				}
 		}
 		effect = {
 			set_country_flag = librium_veto
 			add_war_exhaustion = -10
-			add_army_tradition = 30
+			add_army_tradition = 15
 			add_mil_power = 100
 			random_owned_province = {
 				limit = { controlled_by = ROOT  }
