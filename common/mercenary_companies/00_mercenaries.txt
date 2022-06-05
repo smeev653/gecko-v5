@@ -48,6 +48,7 @@ merc_morlachs = {
 	sprites = { easterngfx_sprite_pack }
     trigger = {
 		NOT = { has_country_modifier = hun_black_army }
+		religion_group = christian
 		OR = {
 			any_owned_province = {
 				region = balkan_region
@@ -272,6 +273,7 @@ merc_gallowglasses = {
 		OR = {
 			capital_scope = { region = british_isles_region }
 			any_owned_province = {
+				
 				OR = {
 					area = kingdom_of_the_isles_area
 					area = munster_area
@@ -284,6 +286,7 @@ merc_gallowglasses = {
 			has_country_modifier = glut_of_mercs
 			has_country_modifier = swedish_mercenary_core
 		}
+		is_year = 1470
 		custom_trigger_tooltip = {
 			tooltip = no_new_mercs_tt
 			NOT = { has_global_flag = new_european_mercs }
@@ -735,6 +738,13 @@ merc_royal_circassian_guards = {
 	trigger = {  
 		religion_group = muslim
 		government = monarchy
+		any_owned_province = {
+			OR = {
+					region = balkan_region
+					region = egypt_region
+					region = caucasia_region
+				}
+		}
 	}
     modifier = {
 		infantry_power = 0.1
@@ -782,6 +792,13 @@ merc_crimean_company = {
 			religion_group = muslim
 			religion = tengri_pagan_reformed
 		}
+		any_owned_province = {
+			OR = {
+					region = balkan_region
+					region = egypt_region
+					region = pontic_steppe_region
+				}
+		}		
 	}
     modifier = { }
 }
@@ -959,13 +976,7 @@ merc_independent_cossack_host = {
 		NOT = { has_country_modifier = hun_black_army }
 		OR = {
 			has_estate = estate_cossacks
-			has_reform = cossacks_reform
-			any_neighbor_country = {
-				OR = {
-					has_estate = estate_cossacks
-					has_reform = cossacks_reform
-				}
-			}
+			has_estate = estate_nomadic_tribes
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
 			has_country_modifier = swedish_mercenary_core
