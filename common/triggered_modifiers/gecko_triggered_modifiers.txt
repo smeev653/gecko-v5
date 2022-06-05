@@ -57,7 +57,7 @@ Minor = {
 			NOT = {total_development = 299}
 			AND = { 
 				NOT = {total_development = 200}
-				num_of_subjects = 0
+				num_of_subjects = 1
 			}
 		}	
 		ai = no
