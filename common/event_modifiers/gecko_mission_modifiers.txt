@@ -214,7 +214,7 @@ ven_urban_renewal = {
 
 ven_la_francocrazia = {
 	naval_morale = 0.1
-	land_morale = 0.05
+	trade_efficiency = 0.05
 }
 
 bng_sufi_mystic_settlers = {

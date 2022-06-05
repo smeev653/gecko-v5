@@ -9,7 +9,6 @@ merc_lombard_free_company = {
 		OR = {
 			tag = MLO
 			tag = ITA
-			tag = VEN
 			tag = TTS
 			tag = SIC
 		}
@@ -22,7 +21,7 @@ merc_lombard_free_company = {
 
 # Tuscan Free Company
 merc_tuscan_free_company = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
     home_province = 2980 # Lucca
 	#cavalry_weight = 0.2
 	#cavalry_cap = 4
