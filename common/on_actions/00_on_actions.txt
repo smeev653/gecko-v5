@@ -832,10 +832,6 @@ on_bankruptcy = {
 				remove_country_modifier =  gecko_debt_tackled_2
 		}	
 	if = {
-			limit = { has_country_modifier =  gecko_tackle_debt_timer  }
-				remove_country_modifier =  gecko_tackle_debt_timer 
-		}
-	if = {
 			limit = { has_country_modifier =  gecko_ipa  }
 				remove_country_modifier =  gecko_ipa
 		}
