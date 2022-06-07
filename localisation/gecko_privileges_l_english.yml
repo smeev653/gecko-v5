@@ -78,4 +78,4 @@
  gc_hungarian_nobles_privilege_9_desc:0 ""
  estate_burghers_indebted_to_burghers_2:0 "Further Indebted to the Burghers"
  estate_burghers_indebted_to_burghers_2_desc:0 ""
- estate_burghers_indebted_to_burghers_effect_2_tooltip:2 "Take §Y10§! five-year loans at §Y1.0%§! interest. The privilege will be removed automatically when repaid."
+ estate_burghers_indebted_to_burghers_effect_2_tooltip:2 "Take §Y10§! five-year loans at §Y2.5%§! interest. The privilege will be removed automatically when repaid."

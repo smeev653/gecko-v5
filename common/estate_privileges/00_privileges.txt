@@ -1728,9 +1728,9 @@ estate_burghers_indebted_to_burghers_2 = {
     max_absolutism = -5
     loyalty = 0.05
     influence = 0.05
-	is_valid = {
-		 is_at_war = no
-		 num_of_loans = 20 
+	can_select = {
+		num_of_loans = 20 
+		is_at_war = no
 	}
     on_granted = {
         custom_tooltip = estate_burghers_indebted_to_burghers_effect_2_tooltip
@@ -1740,6 +1740,31 @@ estate_burghers_indebted_to_burghers_2 = {
         }
         hidden_effect = {
             add_loan = {
+                fixed_interest = 2.5
+                duration = 60
+                estate_loan = yes
+            }
+			add_loan = {
+                fixed_interest = 2.5
+                duration = 60
+                estate_loan = yes
+            }
+			add_loan = {
+                fixed_interest = 2.5
+                duration = 60
+                estate_loan = yes
+            }
+			add_loan = {
+                fixed_interest = 2.5
+                duration = 60
+                estate_loan = yes
+            }
+			add_loan = {
+                fixed_interest = 2.5
+                duration = 60
+                estate_loan = yes
+            }
+			add_loan = {
                 fixed_interest = 2.5
                 duration = 60
                 estate_loan = yes
