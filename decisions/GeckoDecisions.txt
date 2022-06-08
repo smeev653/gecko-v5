@@ -584,10 +584,10 @@ country_decisions = {
 			ai = no
 			is_bankrupt = no
 			has_country_flag = gecko_tackle_debt
-			had_global_flag = {
-				flag = gecko_tackle_debt_timer_2
-				days = 30
-			}
+			#had_global_flag = {
+			#	flag = gecko_tackle_debt_timer_2
+			#	days = 30
+			#}
        }
 		allow = {
 			NOT = { years_of_income = 1.0 }
