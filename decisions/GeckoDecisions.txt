@@ -586,7 +586,7 @@ country_decisions = {
 			has_country_flag = gecko_tackle_debt
 			had_global_flag = {
 				flag = gecko_tackle_debt_timer_2
-				days = 365
+				days = 30
 			}
        }
 		allow = {
