@@ -583,7 +583,6 @@ country_decisions = {
 			is_year = 1445
 			ai = no
 			is_bankrupt = no
-			is_at_war = no
 			has_country_flag = gecko_tackle_debt
 			had_global_flag = {
 				flag = gecko_tackle_debt_timer_2
