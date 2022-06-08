@@ -48,3 +48,13 @@ gecko_ipa_effect = {
 		remove_country_modifier = gecko_tackle_debt_timer
 	}
 }
+
+gecko_ipa_timer_effect = {
+	if = {
+		limit = {
+			 num_of_loans = 1 
+	}	
+		clr_country_flag = gecko_tackle_debt_timer_2
+		set_country_flag = gecko_tackle_debt_timer_2
+	}
+}

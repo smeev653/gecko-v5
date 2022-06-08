@@ -565,7 +565,7 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = gecko_tackle_debt
-			set_global_flag = gecko_tackle_debt_timer_2
+			set_country_flag = gecko_tackle_debt_timer_2
 			add_country_modifier = {
 				name = "gecko_tackle_debt_timer"
 				duration = 3650
@@ -588,14 +588,14 @@ country_decisions = {
 		allow = {
 			NOT = { years_of_income = 1.0 }
 			is_in_deficit = no
-			had_global_flag = {
+			had_country_flag = {
 				flag = gecko_tackle_debt_timer_2
 				days = 30
 			}
 		}
 		effect = {
 			clr_country_flag = gecko_tackle_debt
-			clr_global_flag = gecko_tackle_debt_timer_2
+			clr_country_flag = gecko_tackle_debt_timer_2
 			remove_country_modifier = gecko_debt_tackled
 			
 			add_country_modifier = {
