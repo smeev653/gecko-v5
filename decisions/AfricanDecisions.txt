@@ -80,6 +80,19 @@ country_decisions = {
 			OR = {
 				2475 = { is_empty = yes }
 				2474 = { is_empty = yes }
+				5829 = { is_empty = yes }
+				5820 = { is_empty = yes }
+				5819 = { is_empty = yes }
+				5823 = { is_empty = yes }
+				5817 = { is_empty = yes }
+				5818 = { is_empty = yes }
+				5822 = { is_empty = yes }
+				5828 = { is_empty = yes }
+				5821 = { is_empty = yes }
+				5816 = { is_empty = yes }
+				5815 = { is_empty = yes }
+				5814 = { is_empty = yes }
+				5813 = { is_empty = yes }
 			}
 		}
 		effect = {
