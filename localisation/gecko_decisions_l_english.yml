@@ -53,7 +53,8 @@
  gecko_debt_desc:0 "Attempt to lessen the debt burden faced by our country. This will stand down our armies for the duration."
  gecko_debt_2_title:0 "Cease Debt Repayments"
  gecko_debt_2_desc:0 "Refocus our economy away from debt repayments."
-
+ splendor_mercs_title:0 "Enlist Mercenaries"
+ splendor_mercs_desc:0 "Due to our splendor, we can attract mercenaries previous unavailable to us."
  #gecko critial events
  GC_infantry_leader_cooldown_tooltip:0 "Infantry Leader"
  GC_cavalry_leader_cooldown_tooltip:0 "Cavalry Leader"

@@ -261,7 +261,7 @@ superior_fortification_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	fire_damage_received = -0.05
+	fire_damage_received = -0.1
 	shock_damage_received = -0.1
 
 	ai_will_do = {
@@ -315,8 +315,8 @@ the_garrison_act = {
 		full_idea_group = quantity_ideas
 	}
 	
-	administrative_efficiency = 0.05
-	global_manpower_modifier = 0.1
+	shock_damage_received = -0.1
+	shock_damage = 0.2
 
 	ai_will_do = {
 		factor = 1

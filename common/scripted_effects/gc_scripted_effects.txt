@@ -49,12 +49,38 @@ gecko_ipa_effect = {
 	}
 }
 
-gecko_ipa_timer_effect = {
-	if = {
-		limit = {
-			 num_of_loans = 1 
-	}	
-		clr_country_flag = gecko_tackle_debt_timer_2
-		set_country_flag = gecko_tackle_debt_timer_2
-	}
+gecko_occupation_effect = {
+		if = {
+			limit = {
+				ai = no
+				any_owned_province = {
+					has_province_modifier = gecko_occupation 
+					is_core = owner
+					controlled_by = owner
+				}	
+			}
+			remove_province_modifier = gecko_occupation
+		}
+		if = {
+			limit = {
+				ai = no
+				any_owned_province = {
+					has_province_flag = gecko_occupation
+					is_core = owner
+					controlled_by = owner
+				}
+			}
+			clr_province_flag = gecko_occupation
+		}
+		if = {
+			limit = {
+				ai = no
+				any_owned_province = {
+					has_province_flag = gecko_occupation_core
+					is_core = owner
+					controlled_by = owner
+				}
+			}
+			clr_province_flag = gecko_occupation_core
+		}
 }

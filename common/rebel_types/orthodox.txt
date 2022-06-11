@@ -145,18 +145,18 @@ orthodox_rebels = {
 					duration = 730
 				}
 			}
-			if = {
-				limit = {
-					NOT = { religion = orthodox }
-					is_reformation_center = no
-					NOT = { owner = { religion = orthodox } }
-				}
-				change_religion = orthodox
-				add_province_modifier = {
-					name = "forced_conversion"
-					duration = 730
-				}
-			}
+			#if = {
+			#	limit = {
+			#		NOT = { religion = orthodox }
+			#		is_reformation_center = no
+			#		NOT = { owner = { religion = orthodox } }
+			#	}
+			#	change_religion = orthodox
+			#	add_province_modifier = {
+			#		name = "forced_conversion"
+			#		duration = 730
+			#	}
+			#}
 		}
 		owner = {
 			change_estate_land_share = {
@@ -169,10 +169,9 @@ orthodox_rebels = {
 	
 	# Country scope
 	can_negotiate_trigger = {
-		OR = {
-			religion_group = christian
+			#religion_group = christian
 			dominant_religion = orthodox
-		}
+		
 	}
 	
 	# Country scope

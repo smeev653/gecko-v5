@@ -604,6 +604,41 @@ country_decisions = {
 			}
 		}
 	}
+	splendor_mercs = {
+		major = yes
+		potential = {
+				NOT = { has_country_modifier = mercs_bought }
+				is_bankrupt = no
+				ai = no
+				is_colonial_nation = no 
+			}
+
+		allow = {
+				splendor = 200
+		}
+		effect = {
+			add_splendor = -200
+			capital_scope = {
+				ROOT = {
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+					mercenary_infantry = PREV
+				}	
+			}
+			add_country_modifier = {
+				name = "mercs_bought"
+				duration = 9125
+				hidden = yes
+				}
+	}
+		}
 }			
 
 		

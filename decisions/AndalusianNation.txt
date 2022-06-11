@@ -25,10 +25,7 @@ country_decisions = {
 					ai = no
 				}
 			}
-			OR = {
-				primary_culture = andalucian
-				culture_group = maghrebi
-			}
+			tag = MOR
 			religion_group = muslim
 			OR = {
 				ai = no

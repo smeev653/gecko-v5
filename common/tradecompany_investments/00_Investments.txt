@@ -103,7 +103,7 @@ company_warehouse = {
 	cost = 200.0
 
 	company_province_area_modifier = {
-		province_trade_power_value = 2
+		province_trade_power_value = 4
 	}
 
 	area_modifier = {
@@ -124,7 +124,7 @@ company_depot = {
 	cost = 400.0
 
 	company_province_area_modifier = {
-		province_trade_power_value = 4
+		province_trade_power_value = 8
 	}
 
 	area_modifier = {
@@ -334,7 +334,7 @@ townships = {
 	
 	sprite = "GFX_investment_townships"
 	
-	cost = 1000.0
+	cost =  500
 			
 	allow = {
 		NOT = {
@@ -374,7 +374,7 @@ townships = {
 	}
 	
 	company_region_modifier = {
-		trade_value_modifier = 0.1 
+		trade_value_modifier = 0.05
 	}
 	
 	ai_global_worth = { factor = 0 }

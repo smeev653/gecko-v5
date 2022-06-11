@@ -822,7 +822,7 @@ quantity_ideas = {
 		manpower_recovery_speed = 0.20
 	}
 	enforced_service = {
-		land_morale = 0.025
+		land_morale = 0.05
 	}
 	the_old_and_infirm = {
 		global_regiment_cost = -0.1

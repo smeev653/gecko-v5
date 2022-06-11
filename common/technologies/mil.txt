@@ -187,8 +187,9 @@ technology = {
 	artillery_fire 		= 	1
 	artillery_shock 	=	0.05
 	military_tactics 	= 	0.25
-	infantry_shock		= 	0.15
-	infantry_fire 		= 	0.10
+	#infantry_shock		= 	0.15
+	#infantry_fire 		= 	0.10
+	cavalry_shock		=	0.25
 	regimental_camp = yes
 }
 

@@ -115,7 +115,7 @@ reforms_of_abbas_i_reform = { #tier 5
 		qizilbash_loyalty_modifier = -0.1
 		ghilman_loyalty_modifier = 0.05
 		ghilman_influence_modifier = 0.10
-		yearly_army_professionalism = 0.00375
+		yearly_army_professionalism= 0.00250
 	}
 	custom_attributes = {
 		qizilbash_discipline_looting_interaction = yes #used for localization of estate privilege
@@ -228,7 +228,7 @@ janissary_administrative_positions_reform = { #tier 5
 		advisor_pool = 1
 		janissary_influence_modifier = 0.1
 		janissary_loyalty_modifier = 0.05
-		yearly_army_professionalism = 0.00375
+		yearly_army_professionalism= 0.00250
 	}
 	ai = {
 		factor = 1000

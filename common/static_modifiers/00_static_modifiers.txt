@@ -189,26 +189,14 @@ severe_winter = {
 }
 
 mild_monsoon = {
-	local_hostile_attrition = 0.5
-	local_hostile_movement_speed = -0.20
-	local_friendly_movement_speed = -0.20
-
 	picture = "monsoon_mild"
 }
 
 normal_monsoon = {
-	local_hostile_attrition = 1
-	local_hostile_movement_speed = -0.25
-	local_friendly_movement_speed = -0.25
-
 	picture = "monsoon_normal"
 }
 
 severe_monsoon = {
-	local_hostile_attrition = 1.5
-	local_hostile_movement_speed = -0.50
-	local_friendly_movement_speed = -0.50
-
 	picture = "monsoon_severe"
 }
 
@@ -264,7 +252,7 @@ development = {
 	local_missionary_strength = -0.001
 	land_forcelimit	= 0.1			# special case, affected by autonomy
 	naval_forcelimit = 0.1			# special case, affected by autonomy & set to 0 by code if not port
-	local_sailors = 60			# special case, affected by autonomy & set to 0 by code if not port
+	local_sailors = 120			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.2
 	local_amount_of_banners = 0.066
 	local_amount_of_cawa = 0.1
@@ -297,10 +285,7 @@ patriarch_authority_global = {
 }
 
 pasha_state = {
-	local_state_maintenance_modifier = -0.5
-	local_unrest = -2
-	local_tax_modifier = -0.1
-	
+
 }
 
 colony_level = {
@@ -393,7 +378,7 @@ occupied = {
 	local_manpower_modifier = -0.75
 	local_sailors_modifier = -0.75
 	local_institution_spread = -0.1
-	local_autonomy = 0.05
+	local_autonomy = 0.1
 	local_monthly_devastation = 0.2
 }
 
@@ -921,7 +906,7 @@ country_development = {
 
 # Multiplied by Tribal Allegiance / 100
 tribal_allegiance = {
-	land_forcelimit_modifier = 0.25
+	land_forcelimit_modifier = 0.2
 	movement_speed = 0.1
 }
 
@@ -1162,7 +1147,7 @@ total_occupation = {
 }
 
 total_blockaded = {
-	war_exhaustion = 0.10					#increases exhaustion.
+	war_exhaustion = 0.15					#increases exhaustion.
 }
 
 uncontested_cores = {
@@ -1175,7 +1160,7 @@ num_objectives_fullfilled = {
 }
 
 production_leader = {
-	trade_goods_size_modifier = 0.10
+	trade_value_modifier = 0.1
 }
 
 
@@ -1231,7 +1216,7 @@ in_golden_era = {
 	land_morale = 0.1
 	naval_morale = 0.1
 	max_absolutism = 5
-	max_revolutionary_zeal = 10
+	#max_revolutionary_zeal = 10
 }
 
 absolutism = {
@@ -1384,15 +1369,7 @@ autonomy_decreased = {
 }
 
 revolution_target = {
-	global_manpower_modifier = 0.10
-	land_morale = 0.10
-	war_exhaustion = -0.15
-	unjustified_demands = -0.5
-	land_maintenance_modifier = -0.15
-	naval_maintenance_modifier = -0.15
-	land_forcelimit_modifier = 0.4
-	naval_forcelimit_modifier = 0.4
-	papal_influence = -100
+
 }
 
 dishonoured_alliance =  {
@@ -1630,7 +1607,7 @@ lenient_taxation_modifier = {
 }
 
 train_horsemanship_modifier = {
-	land_morale = 0.10
+	land_morale = 0.05
 }
 
 promote_culture_in_government_modifier = {
@@ -1774,8 +1751,8 @@ serfs_recieved_by_cossacks = {
 }
 
 cossacks_modifier = {
-	shock_damage_received = -0.375
-	fire_damage_received = -0.375
+	shock_damage_received = -0.8
+	fire_damage_received = -0.8
 	#cav_to_inf_ratio = 1.25
 }
 

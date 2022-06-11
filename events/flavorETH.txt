@@ -1065,45 +1065,7 @@ country_event = {
 # written by Ogulcan Yildirim
 ########################################
 
-#The many troubles of the Negusa Nagast
-country_event = {
-	id = flavor_eth.29
-	title = flavor_eth.29.t
-	desc = flavor_eth.29.desc
-	picture = NEGUSA_NAGAST_eventPicture
-	
-	trigger = {
-		has_dlc = "Origins"
-		has_mission = eth_reform_the_negusa_government
-		NOT = { has_country_modifier = eth_negusa_nagast_issues }
-		has_reform = negusa_nagast
-		NOT = { has_country_flag = has_negusa_event }
-		NOT = { mission_completed = eth_reform_the_negusa_government }
-	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	immediate = {
-		hidden_effect = { set_country_flag = has_negusa_event }
-	}
-
-	option = {
-		name = flavor_eth.29.a
-		add_country_modifier = {
-			name = eth_negusa_nagast_issues
-			duration = -1
-		}
-		hidden_effect = {
-			clr_country_flag = has_negusa_event
-		}
-
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
 
 #Permanent Cities for Ethiopia
 country_event = {

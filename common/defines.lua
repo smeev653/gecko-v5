@@ -1096,7 +1096,7 @@ NCountry = {
 	FEDERATION_ADVANCEMENT_COHESION_REQUIREMENT = 100.0,
 	FEDERATION_ADVANCEMENT_COHESION_COST = 80.0,
 
-	EXPAND_INFRASTRUCTURE_DEV_LIMIT = 10, 			-- How much dev you need for each improvement.
+	EXPAND_INFRASTRUCTURE_DEV_LIMIT = 15, 			-- How much dev you need for each improvement.
 },
 
 NEconomy = {
@@ -1114,7 +1114,7 @@ NEconomy = {
 	DEBASE_MONTHS_PER_CHARGE = 12,					-- Amount of months used for one debase charge.
 	DEBASE_MAX_CORRUPTION = 10,						-- Above this level of corruption, you won't be able to Debase Currency.
 	DEBASE_ADDED_CORRUPTION = 2,					-- This amount of corruption added per standard sized bank loan worth of currency.
-	GOLD_MINE_SIZE = 40,							-- Base income from gold mines
+	GOLD_MINE_SIZE = 30,							-- Base income from gold mines
 	GOLD_MINE_DEPLETION_THRESHOLD = 1,				-- Gold mines above production level or above can be depleted
 	GOLD_MINE_DEPLETION_CHANCE = 0.1,					-- Chance of gold mine being depleted (yearly, per production above threshold)
 	GOLD_MINE_SIZE_PRIMITIVES = 4,					-- Gold income for very slow techgroups
@@ -1206,7 +1206,7 @@ NEconomy = {
 	COT_DOWNGRADE_PRESTIGE_COST = 0,				-- Cost in prestige to downgrade a Center of Trade.
 	MAX_LD_FOR_CONSTRUCT_IN_SUBJECT = 50,			-- Maximum liberty desire at which an overlord can recruit regiments and build ships in a subject's glorious lands.
 	CONSTRUCT_IN_SUBJECT_TIME_MULTIPLIER = 1.25,
-	BANK_LOAN_DURATION = 120,						-- Default bank loan duration in months
+	BANK_LOAN_DURATION = 60,						-- Default bank loan duration in months
 	MIN_NEW_CACHED_STARTING_INCOME = 1.0,			-- Minimum historic starting income for newly created/released countries
 	EXPELLED_MINORITY_DEV_BONUS_FACTOR = 0.2,		-- Bonus development on minority expulsion completion, multiplied by origin province development
 	EXPELLING_MINORITY_COLONIST_COST_FACTOR =  0.5,	-- Colonist maintenance cost factor when expelling minority
@@ -1295,7 +1295,7 @@ NMilitary = {
 	MAX_MANPOWER = 10, 								-- years in mp pool
 	MIN_MONTHLY_MANPOWER = 0.2,						-- 100 men/month is minimum
 	MAX_SAILORS = 10, 								-- years in mp pool
-	MIN_MONTHLY_SAILORS = 5,						-- 5 sailors/month is minimum
+	MIN_MONTHLY_SAILORS = 10,						-- 5 sailors/month is minimum
 	SLAVE_RAIDS_SAILOR_FACTOR = 0.25,						--
 	SLAVE_RAIDS_DURATION = 3650,
 	INFANTRY_SPEED = 0.7, 							-- _MDEF_INFANTRY_SPEED = 10,
@@ -2253,7 +2253,7 @@ NGui = {
 },
 
 NEngine = {
-	EVENT_PROCESS_OFFSET = 100, 						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
+	EVENT_PROCESS_OFFSET = 20, 						-- Events are checked every X day per character or province (1 is ideal, but CPU heavy)
 	TRIGGER_PROFILING_SAMPLING_RATE = 1000,			-- Sampling rate for trigger profiling (Every nth call is recorded)
 },
 
@@ -2404,7 +2404,7 @@ NReligion = {
 	YEARLY_PAPAL_INFLUENCE_CATHOLIC = 0.5,						-- The amount of yearly papal influence you receive each year for being catholic
 	YEARLY_PAPAL_INFLUENCE_PER_CARDINAL = 0.5,					-- The amount of yearly papal influence you receive each year for each cardinal you have active
 	YEARLY_POPE_INVESTED_INFLUENCE_PER_CARDINAL = 0,			-- The amount of investment Papal state gets towards becoming Papal controller for each cardinal that exists
-	MAX_PAPAL_INFLUENCE = 200.0,								-- The maximum stored amount of papal influence for each country.
+	MAX_PAPAL_INFLUENCE = 999,								-- The maximum stored amount of papal influence for each country.
 	REFORM_DESIRE_PER_YEAR = 0.005,								-- Increase of reform descire for each year.
 	MINIMUM_DEVELOPMENT_ALLOWED = 10.0,								-- You will need a higher development than this for your province to be eligible for cardinal
 	COUNTRY_DEVELOPMENT_DIVIDER = 200.0,							-- When a cardinal is chosen the formula is diving a countrys development by this number.
@@ -2455,8 +2455,8 @@ NReligion = {
 	PAPAL_TITHE_YEARLY_LEVEL_4 = 1500,						-- Level of threshold for yearly curia tithe visual state
 	CALL_ECUMENICAL_COUNCIL_COST = 100,						-- Cost in years-of-income
 	CALL_ECUMENICAL_COUNCIL_TREASURY_CONTRIBUTION = 1,	-- Amount of the cost of the Call for Ecumenical Council that goes in the Curia Treasury
-	BUY_INDULGENCE_COST = 1,								-- Cost in years-of-income
-	BUY_INDULGENCE_COST_EXCOMMUNICATE_MULTIPLIER = 2.0,		-- Multiplicative factor for excommunicated countries
+	BUY_INDULGENCE_COST = 0.5,								-- Cost in years-of-income
+	BUY_INDULGENCE_COST_EXCOMMUNICATE_MULTIPLIER = 1,		-- Multiplicative factor for excommunicated countries
 	BUY_INDULGENCE_DURATION = 5,							-- Duration of the indulgence effect in numbers of years (Opinion modifier has is own decay defined)
 	BUY_INDULGENCE_TREASURY_CONTRIBUTION = 1,				-- Amount of the cost of Buy Indulgence that goes in the Curia Treasury
 	APPOINT_CARDINAL_INFLUENCE = 0,						-- Invested Influence given by appointing a cardinal

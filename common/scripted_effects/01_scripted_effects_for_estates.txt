@@ -465,32 +465,6 @@ on_religion_change_estate_privileges_effect = {
 			remove_province_modifier = estate_nomadic_tribes_steppe_devcost
 		}
 	}
-	if = {
-		limit = {
-			has_estate_privilege = estate_church_one_faith_one_culture
-		}
-		every_owned_province = {
-			limit = {
-				has_province_modifier = estate_church_united_faith_and_culture
-				NOT = { religion = ROOT }
-			}
-			remove_province_modifier = estate_church_united_faith_and_culture
-		}
-		every_owned_province = {
-			limit = {				
-				NOT = { has_province_modifier = estate_church_united_faith_and_culture }
-				religion = ROOT
-				OR = {
-					culture_group = ROOT
-					has_owner_accepted_culture = yes
-				}
-			}
-			add_province_modifier = {
-				name = estate_church_united_faith_and_culture
-				duration = -1
-			}
-		}
-	}
 }
 
 on_annexed_estate_privileges_effect = {
@@ -608,30 +582,6 @@ on_province_religion_converted_estate_privileges_effect = {
 	if = {
 		limit = {
 			owner = {
-				has_estate_privilege = estate_church_brahmins_at_court
-			}
-		}
-		if = {
-			limit = {
-				religion = hinduism
-				NOT = { has_province_modifier = estate_brahmins_guaranteed_autonomy_mod }
-			}
-			add_province_modifier = {
-				name = estate_brahmins_guaranteed_autonomy_mod
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = { religion = hinduism }
-				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-			}
-			remove_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-		}
-	}
-	if = {
-		limit = {
-			owner = {
 				has_estate_privilege = estate_church_lao_animism
 			}
 		}
@@ -672,88 +622,12 @@ on_province_religion_converted_estate_privileges_effect = {
 		}
 	}
 	if = {
-		limit = {
-			owner = {
-				has_estate_privilege = estate_church_one_faith_one_culture
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					religion = ROOT
-					OR = {
-						culture_group = ROOT
-						accepted_culture = ROOT
-					}
-				}
-			}
-			add_province_modifier = {
-				name = estate_church_united_faith_and_culture
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					NOT = { culture_group = ROOT }
-					NOT = { accepted_culture = ROOT }
-				}
-			}
-			add_province_modifier = {
-				name = estate_church_false_culture
-				duration = -1
-			}
-		}
+
 	}
 }
 
 on_province_culture_converted_estate_privilges_effect = {
-	if = {
-		limit = {
-			owner = {
-				has_estate_privilege = estate_church_one_faith_one_culture
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					OR = {
-						accepted_culture = ROOT
-						culture_group = ROOT
-					}
-					religion = ROOT
-				}
-			}
-			if = {
-				limit = {
-					has_province_modifier = estate_church_false_culture
-				}
-				remove_province_modifier = estate_church_false_culture
-			}
-			add_province_modifier = {
-				name = estate_church_united_faith_and_culture
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					NOT = { culture_group = ROOT }
-					NOT = { accepted_culture = ROOT }
-				}
-			}
-			if = {
-				limit = {
-					has_province_modifier = estate_church_united_faith_and_culture
-				}
-				remove_province_modifier = estate_church_united_faith_and_culture
-			}
-			add_province_modifier = {
-				name = estate_church_false_culture
-				duration = -1
-			}
-		}
-	}
+
 }
 
 
@@ -942,18 +816,6 @@ on_province_owner_change_estate_privileges_effect = {
 				has_estate_privilege = estate_brahmins_guaranteed_autonomy
 			}
 			NOT = { religion_group = muslim }
-		}
-		add_province_modifier = {
-			name = estate_brahmins_guaranteed_autonomy_mod
-			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			owner = {
-				has_estate_privilege = estate_church_brahmins_at_court
-			}
-			religion = hinduism
 		}
 		add_province_modifier = {
 			name = estate_brahmins_guaranteed_autonomy_mod
@@ -1324,40 +1186,6 @@ on_province_owner_change_estate_privileges_effect = {
 		add_province_modifier = {
 			name = estate_maratha_levies_for_muslims_mod
 			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			owner = {
-				has_estate_privilege = estate_church_one_faith_one_culture
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					religion = ROOT
-					OR = {
-						culture_group = ROOT
-						accepted_culture = ROOT
-					}
-				}
-			}
-			add_province_modifier = {
-				name = estate_church_united_faith_and_culture
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					NOT = { culture_group = ROOT }
-					NOT = { accepted_culture = ROOT }
-				}
-			}
-			add_province_modifier = {
-				name = estate_church_false_culture
-				duration = -1
-			}
 		}
 	}
 	if = {
@@ -1876,107 +1704,13 @@ on_bi_yearly_pulse_estate_privileges_effect = {
 }
 
 on_culture_promoted_estate_privileges_effect = {
-	if = {
-		limit = {
-			has_estate_privilege = estate_church_one_faith_one_culture
-		}
-		every_owned_province = {
-			limit = {
-				has_province_modifier = estate_church_false_culture
-				OR = {
-					culture_group = ROOT
-					has_owner_accepted_culture = yes
-				}
-			}
-			remove_province_modifier = estate_church_false_culture
-			if = {
-				limit = {
-					owner = {
-						OR = {
-							religion = PREV
-							has_harmonized_with = PREV
-							secondary_religion = PREV
-						}
-					}
-				}
-				add_province_modifier = {
-					name = estate_church_united_faith_and_culture
-					duration = -1
-				}
-			}
-		}
-	}
 }
 
 on_culture_demoted_estate_privileges_effect = {
-	if = {
-		limit = {
-			has_estate_privilege = estate_church_one_faith_one_culture
-		}
-		every_owned_province = {
-			limit = {
-				OR = {
-					NOT = { has_province_modifier = estate_church_false_culture }
-					has_province_modifier = estate_church_united_faith_and_culture
-				}
-				has_owner_accepted_culture = no
-				NOT = { culture_group = ROOT }
-			}
-			add_province_modifier = {
-				name = estate_church_false_culture
-				duration = -1
-			}
-			remove_province_modifier = estate_church_united_faith_and_culture
-		}
-	}
+	
 }
 on_primary_culture_changed_privileges_effect = {
-	if = {
-		limit = {
-			has_estate_privilege = estate_church_one_faith_one_culture
-		}
-		every_owned_province = {
-			remove_province_modifier = estate_church_false_culture
-			remove_province_modifier = estate_church_united_faith_and_culture
-			if = {
-				limit = {
-					owner = {
-							religion = PREV
-					}
-					OR = {
-						has_owner_accepted_culture = yes
-						culture_group = ROOT
-					}
-				}
-				add_province_modifier = {
-					name = estate_church_united_faith_and_culture
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_province_modifier = estate_church_united_faith_and_culture
-				}
-				remove_province_modifier = estate_church_united_faith_and_culture
-			}
-			if = {
-				limit = {
-					NOT = { culture_group = ROOT }
-					has_owner_accepted_culture = no
-				}
-				add_province_modifier = {
-					name = estate_church_false_culture
-					duration = -1
-				}
-			}
-			else_if = {
-				limit = {
-					has_province_modifier = estate_church_false_culture
-				}
-				remove_province_modifier = estate_church_false_culture
-			}
-		}
-	}
+	
 }
 reapply_estate_privilege = {
 	# privilege: The privilege we want to reapply

@@ -927,7 +927,7 @@ VEN_ideas = {
 	}
 	
 	DAL_arsenal = {
-		naval_forcelimit_modifier = 0.25
+		galley_power = 0.15
 	}
 	DAL_illyria = {
 		core_creation = -0.15
@@ -1958,7 +1958,7 @@ ITA_ideas = { #Italian Ideas
 		global_tax_modifier = 0.15
 	}
 	heir_to_the_empire = {
-		development_cost = -0.05
+		development_cost = -0.1
 	}
 	path_to_citizenship = {
 		land_morale = 0.1

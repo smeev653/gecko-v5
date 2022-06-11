@@ -89,7 +89,7 @@
 #	condition = {
 #			tooltip = mid_war
 #				potential = {
-#					#ai = no
+#					ai = no
 #				}
 #				allow = {
 #					ROOT = {

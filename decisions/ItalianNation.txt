@@ -65,7 +65,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 14
+			#adm_tech = 14
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 101	# Genoa
