@@ -1002,7 +1002,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_hanbali"
 
-			ae_impact = -0.2
+			interest = -0.25
 		}
 		maliki_school = {
 			potential_invite_scholar = {
