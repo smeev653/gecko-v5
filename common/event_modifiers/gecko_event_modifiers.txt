@@ -318,7 +318,7 @@ gecko_tackle_debt_timer = {
 }
 
 gecko_ipa = {
-	interest = 0.5
+	interest = -0.5
 }
 
 gecko_occupation = {
