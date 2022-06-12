@@ -816,7 +816,7 @@ quantity_ideas = {
 	}
 	mass_army = {
 		global_manpower_modifier = 0.4
-		mercenary_manpower = 0.5
+		mercenary_manpower = 0.25
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -904,7 +904,7 @@ administrative_ideas = {
 	benefits_for_mercenaries = {
 		mercenary_cost = -0.15
 		merc_maintenance_modifier = -0.5
-		mercenary_manpower = 0.25
+		mercenary_manpower = 0.15
 	}
 	adm_adaptability = {
 		global_manpower = 15
