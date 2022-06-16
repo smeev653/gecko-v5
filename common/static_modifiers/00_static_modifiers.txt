@@ -1752,7 +1752,8 @@ serfs_recieved_by_cossacks = {
 
 cossacks_modifier = {
 	cavalry_power = 0.4
-	fire_damage_received = -0.4
+	fire_damage_received = -0.2
+	shock_damage_received = -0.2
 }
 
 ########################################
@@ -1766,7 +1767,7 @@ expand_administation_modifier = {
 
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
-	stability_cost_modifier = 0.5
+	stability_cost_modifier = 1
 	#ae_impact = 0.5
 	improve_relation_modifier = -0.5
 	core_creation = 0.4
