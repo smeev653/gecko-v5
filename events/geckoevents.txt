@@ -1171,10 +1171,10 @@ country_event = {
    trigger = {
          ai = no
 		 num_of_mercenaries = 1
-		 NOT = has_country_modifier = mercenaries_to_the_standard
-		 NOT = has_country_modifier = glut_of_mercs
+		 NOT = { has_country_modifier = mercenaries_to_the_standard }
+		 NOT = { has_country_modifier = glut_of_mercs }
    }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         days = 1
     }
@@ -1203,7 +1203,7 @@ country_event = {
 						who = ROOT
 			}
 	}
-	option = {	
+	option = {
 	}
 }
 
@@ -1217,11 +1217,15 @@ country_event = {
          ai = no
 		 num_of_mercenaries = 1
 		 OR = { 
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
-		 }	
+			has_country_modifier = mercenaries_to_the_standard 
+			has_country_modifier = glut_of_mercs 
+		}	
+		 check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}	
    }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         days = 1
     }
@@ -1249,6 +1253,74 @@ country_event = {
 						value = trigger_value:num_of_mercenaries
 						who = ROOT
 			}
+	}
+	option = {
+	}
+}
+
+country_event = {
+    id = gecko.20
+   title = gecko.20.t
+    desc = gecko.20.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 num_of_mercenaries = 1
+		 random_hired_mercenary_company = {
+				limit = {
+					has_company_manpower = 1
+					location = {
+						owned_by = ROOT
+						controlled_by = ROOT
+					}
+					NOT = { hired_for_months = 2 }
+				}
+		}
+		 check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}	
+   }
+	#hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		random_hired_mercenary_company = {
+				limit = {
+					has_company_manpower = 1
+					location = {
+						owned_by = ROOT
+						controlled_by = ROOT
+					}
+					NOT = { hired_for_months = 2 }
+				}
+				 disband_mercenary_company = THIS
+			}
+		export_to_variable = {
+					which = geckomercFL
+					value = land_forcelimit
+					who = ROOT
+			}
+			divide_variable = {
+					which = geckomercFL
+					value = 100
+			}
+			multiply_variable = {
+					which = geckomercFL
+					value = 33
+			}
+			change_variable = {
+					which = geckomercFL
+					value = 20
+			}
+			export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+			}	
 	}
 	option = {	
 	}

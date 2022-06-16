@@ -82,3 +82,9 @@ persian_nation_isfahan_title:0 "Form Persian Nation"
 persian_nation_isfahan_desc:0 ""
 persian_nation_ardabil_title:0 "Form Persian Nation"
 persian_nation_ardabil_desc:0 ""
+
+splendor_mercs_1_title:0 "Hire Extra Mercenaries"
+splendor_mercs_1_desc:0 "Allows further Mercenary recruitment to Mercenary Forcelimit."
+
+Show_Merc_limit_title:0 "Show Mercenary Forcelimit"
+Show_Merc_limit_desc:0 "This is our Mercenary Forcelimit. If we go over this, any newly created Mercenary Company will be disbanded with no refund."

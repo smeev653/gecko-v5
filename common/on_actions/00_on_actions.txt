@@ -3743,7 +3743,9 @@ on_refuse_tribute = {
 
 # country
 on_leader_recruited = {
-	#gecko_mercs = yes
+	hidden_effect = {
+		gecko_mercs = yes
+	}	
 }
 
 

@@ -13,6 +13,9 @@ country_decisions = {
 				add_years_of_income = -0.3
 				create_general = { tradition = 40 }
 				set_country_flag = sm_hire_general
+				hidden_effect = {
+					gecko_mercs = yes
+				}
 			}
 		}
 		
@@ -31,6 +34,9 @@ country_decisions = {
 				skill = 2
 				discount = yes
 				culture = variable:new_ruler_culture
+				hidden_effect = {
+					gecko_mercs = yes
+				}
 			}	
 				set_country_flag = sm_hire_recruitmaster
 			}
@@ -289,11 +295,8 @@ country_decisions = {
 					at_war_with_religious_enemy = yes
 					has_border_with_religious_enemy = yes
 					army_size_percentage = 1
-					manpower_percentage = 0.50
-					prestige = 50
-					OR = { 	advisor = commandant
-							advisor = army_reformer
-					}
+					manpower_percentage = 0.25
+					prestige = 25
 				}
 				effect = {
 					add_piety = -1
@@ -428,6 +431,7 @@ country_decisions = {
 				NOT = { has_country_modifier = PR_manpower_edict_cooldown }
 				NOT = { has_country_flag = PR_manpower_edict_activated }
 			}
+			is_year = 1450
 		}
 		allow = {
 		}
@@ -607,16 +611,14 @@ country_decisions = {
 	splendor_mercs_1 = {
 		major = yes
 		potential = {
-				always = no
+				#always = no
 				is_bankrupt = no
 				ai = no
 				is_colonial_nation = no 
 			}
 			
 		allow = {
-				#NOT = { has_country_modifier = mercs_bought }
-				#NOT = { army_size_percentage = 1 }
-				treasury = 25
+				treasury = 30
 				#splendor = 200
 				NOT = {
 					check_variable = {
@@ -626,17 +628,26 @@ country_decisions = {
 				}	
 		}
 		effect = {
-			add_treasury = -25
-			capital_scope = {
-				ROOT = {
-					mercenary_infantry = PREV
+			add_treasury = -30
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					has_owner_accepted_culture = yes
+					is_core = ROOT
+					has_siege = no
+					is_in_capital_area = yes
+					is_state = yes
+					NOT = { local_autonomy = 25 }
 				}
+				mercenary_infantry = PREV
 			}
-			export_to_variable = {
-					which = geckomercvalue
-					value = trigger_value:num_of_mercenaries
-					who = ROOT
-				}	
+			hidden_effect = {
+				export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+					}
+			}	
 			#add_splendor = -200
 			#set_country_flag = gecko_mercs_hired
 			#random_owned_province = {
@@ -734,15 +745,12 @@ country_decisions = {
 			#		mercenary_infantry = PREV
 			#	}	
 			#}
-			export_to_variable = {
+			hidden_effect = {
+				export_to_variable = {
 					which = geckomercvalue
 					value = trigger_value:num_of_mercenaries
 					who = ROOT
 				}
-			add_country_modifier = {
-				name = "mercs_bought"
-				duration = 365
-				#hidden = yes
 			}
 			#change_variable = {
 			#	which = geckomercs
@@ -765,7 +773,7 @@ country_decisions = {
 							which = geckomercFL
 						}
 			}
-			always = no
+			#always = no
 		}
 		effect = {
 		}
