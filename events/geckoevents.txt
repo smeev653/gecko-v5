@@ -1170,13 +1170,13 @@ country_event = {
 
    trigger = {
          ai = no
-		 num_of_mercenaries = 1
+		 num_of_mercenaries = 8
 		 NOT = { has_country_modifier = mercenaries_to_the_standard }
 		 NOT = { has_country_modifier = glut_of_mercs }
    }
 	hidden = yes
     mean_time_to_happen = {
-        days = 1
+        days = 5
     }
 	
 	immediate = {
@@ -1220,10 +1220,6 @@ country_event = {
 			has_country_modifier = mercenaries_to_the_standard 
 			has_country_modifier = glut_of_mercs 
 		}	
-		 check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}	
    }
 	hidden = yes
     mean_time_to_happen = {

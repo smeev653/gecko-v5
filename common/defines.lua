@@ -1415,7 +1415,7 @@ NMilitary = {
 	LEADER_GAIN_PERSONALITY_BASE_CHANCE = 50.0,		-- Base chance in percent for leader to gain a trait after combat (modified by tradition gained)
 	SUPPLY_DEPOT_DURATION_MONTHS = 60,				-- Time until supply depot is removed.
 	SUPPLY_DEPOT_MIL_COST = 0,						-- Mil power cost to build a supply depot in an area.
-	RESERVE_TICK_DAMAGE = 0.06,
+	RESERVE_TICK_DAMAGE = 0.1,
 	CREATE_JANISSARIES_MIL_COST = 5,				-- Cost to create janissaries (per unit)
 	CREATE_CAWA_MIL_COST = 5,						-- Cost to create Cawa (per unit)
 	COSSACKS_MAXIMUM_RATIO = 1.0,					-- Maximum number of Cossacks regiments, relative to force limit
@@ -1458,7 +1458,7 @@ NMilitary = {
 	
 	MERCENARY_COMPANY_HIRING_COST_MONTHS = 48,		-- Initial hiring cost in months of maintenance
 	MERCENARY_COMPANY_STARTING_MORALE = 0.25,		-- Starting morale
-	MERCENARY_COMPANY_MIN_REGIMENTS = 4,			-- Minimum regiments
+	MERCENARY_COMPANY_MIN_REGIMENTS = 8,			-- Minimum regiments
 	MERCENARY_COMPANY_MAX_REGIMENTS = 40,			-- Maximum regiments
 	MERCENARY_COMPANY_MANPOWER_PER_REGIMENT = 1.125,	-- Manpower reserve factor (multiplied by 1000 per regiment)
 	MERCENARY_COMPANY_MANPOWER_RECOVERY = 12,				-- How many months to recover mercenary manpower fully
