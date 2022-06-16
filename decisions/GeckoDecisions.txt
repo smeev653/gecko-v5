@@ -539,8 +539,8 @@ country_decisions = {
 			ai = no
        }
 		allow = {
-        adm_power = 50
-		ai = no
+			adm_power = 50
+			ai = no
 		}
 		effect = {
 			country_event = {
@@ -604,41 +604,172 @@ country_decisions = {
 			}
 		}
 	}
-	splendor_mercs = {
+	splendor_mercs_1 = {
 		major = yes
 		potential = {
-				NOT = { has_country_modifier = mercs_bought }
+				always = no
 				is_bankrupt = no
 				ai = no
 				is_colonial_nation = no 
 			}
-
+			
 		allow = {
-				splendor = 200
+				#NOT = { has_country_modifier = mercs_bought }
+				#NOT = { army_size_percentage = 1 }
+				treasury = 25
+				#splendor = 200
+				NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+				}	
 		}
 		effect = {
-			add_splendor = -200
+			add_treasury = -25
 			capital_scope = {
 				ROOT = {
 					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-				}	
+				}
 			}
+			export_to_variable = {
+					which = geckomercvalue
+					value = trigger_value:num_of_mercenaries
+					who = ROOT
+				}	
+			#add_splendor = -200
+			#set_country_flag = gecko_mercs_hired
+			#random_owned_province = {
+			#	limit = {
+			#		controlled_by = ROOT
+			#		has_owner_accepted_culture = yes
+			#		is_core = ROOT
+			#		has_siege = no
+			#		is_in_capital_area = yes
+			#		is_state = yes
+			#		NOT = { local_autonomy = 25 }
+			#	}
+			#	mercenary_infantry = PREV
+			#}
+			#capital_scope = {
+			#	ROOT = {
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#	}	
+			#}
+			#add_country_modifier = {
+			#	name = "mercs_bought"
+			#	duration = 365
+			#	#hidden = yes
+			#}
+		}
+	}
+	splendor_mercs_2 = {
+		major = yes
+		potential = {
+				always = no
+				is_bankrupt = no
+				ai = no
+				is_colonial_nation = no 
+			}
+			
+		allow = {
+				NOT = { has_country_modifier = mercs_bought }
+				NOT = { army_size_percentage = 1 }
+				treasury = 25
+				#splendor = 200
+				#NOT = {
+				#	check_variable = {
+				#		which = geckomercs
+				#		which = geckomercFL
+				#	}
+				#}
+				NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+				}	
+		}
+		effect = {
+			#add_treasury = 25
+			#capital_scope = {
+			#	ROOT = {
+			#		mercenary_infantry = PREV
+			#	}
+			#}	
+			#add_splendor = -200
+			set_country_flag = gecko_mercs_hired
+			#random_owned_province = {
+			#	limit = {
+			#		controlled_by = ROOT
+			#		has_owner_accepted_culture = yes
+			#		is_core = ROOT
+			#		has_siege = no
+			#		is_in_capital_area = yes
+			#		is_state = yes
+			#		NOT = { local_autonomy = 25 }
+			#	}
+			#	mercenary_infantry = PREV
+			#}
+			#capital_scope = {
+			#	ROOT = {
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#		mercenary_infantry = PREV
+			#	}	
+			#}
+			export_to_variable = {
+					which = geckomercvalue
+					value = trigger_value:num_of_mercenaries
+					who = ROOT
+				}
 			add_country_modifier = {
 				name = "mercs_bought"
-				duration = 9125
-				hidden = yes
-				}
-	}
+				duration = 365
+				#hidden = yes
+			}
+			#change_variable = {
+			#	which = geckomercs
+			#	value = 1
+			#}	
 		}
+	}
+	Show_Merc_limit = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+							which = geckomercvalue
+							which = geckomercFL
+						}
+			}
+			always = no
+		}
+		effect = {
+		}
+	}
 }			
 
 		

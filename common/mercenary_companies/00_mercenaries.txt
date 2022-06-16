@@ -6,6 +6,12 @@ merc_lombard_free_company = {
 	#cavalry_cap = 4
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			tag = MLO
 			tag = ITA
@@ -27,6 +33,12 @@ merc_tuscan_free_company = {
 	#cavalry_cap = 4
 	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
    trigger = {
+	 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		religion_group = christian
 		capital_scope = {
 						region = italy_region
@@ -46,6 +58,12 @@ merc_morlachs = {
     home_province = 1826
 	sprites = { easterngfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		NOT = { has_country_modifier = hun_black_army }
 		religion_group = christian
 		is_year = 1530
@@ -69,6 +87,12 @@ merc_black_army = {
 	#home_province = 153
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			has_country_modifier = hun_black_army	
 			has_reform = black_army_reform
@@ -91,6 +115,12 @@ merc_black_army_2 = {
 	#home_province = 153
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			has_country_modifier = hun_black_army	
 			has_reform = black_army_reform
@@ -112,6 +142,12 @@ merc_knights_templar = {
 	cost_modifier = 0.25
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		custom_trigger_tooltip = {
 			tooltip = templars_tt
 			has_country_flag = knights_templar_flag
@@ -129,7 +165,13 @@ merc_knights_templar = {
 merc_swiss_guard = {
     regiments_per_development = 0.05
 	sprites = { dlc029_pap_sprite_pack dlc040_pap_sprite_pack westerngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		tag = PAP
 		custom_trigger_tooltip = {
 			tooltip = swiss_guard_activated
@@ -151,6 +193,12 @@ merc_doppelsoeldner = {
     #cost_modifier = 1.25
 	sprites = { dlc061_wur_sprite_pack dlc028_wur_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -175,6 +223,12 @@ merc_reislaufer = {
 	sprites = { westerngfx_sprite_pack }
 	#cost_modifier = 1.2
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -202,6 +256,12 @@ merc_hessian_jaegerkorps = {
     home_province = 1762
 	sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		NOT = { current_age = age_of_discovery }
 		OR = {
 			tag = BRA
@@ -226,12 +286,23 @@ merc_bascoli = {
     home_province = 173
 	sprites = { dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 			OR = {
 				tag = FRA
 				tag = BUR
 				tag = LOT
 			}	
-
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		current_age = age_of_discovery
 	}
 	modifier = { 
@@ -246,6 +317,12 @@ merc_stratioti = {
     home_province = 4174
 	sprites = { easterngfx_sprite_pack }
     trigger = {	
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		NOT = { has_country_modifier = hun_black_army }
 		religion_group = christian
 		OR = {
@@ -270,6 +347,12 @@ merc_gallowglasses = {
 	#cost_modifier = 1.2
 	sprites = { dlc087_ire_sprite_pack lei_base_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { region = british_isles_region }
 			any_owned_province = {
@@ -304,7 +387,13 @@ merc_redshanks = {
     home_province = 4364
 	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack sco_base_sprite_pack westerngfx_sprite_pack }
 	#cost_modifier = 1.2
-    trigger = { 
+    trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { region = british_isles_region }
 			has_country_modifier = scottish_mercenaries
@@ -330,7 +419,13 @@ merc_scottish_guard = {
 	cavalry_cap = 2
     home_province = 252
 	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack sco_base_sprite_pack westerngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -358,7 +453,13 @@ merc_seimeni = {
     regiments_per_development = 0.05
     home_province = 157
 	sprites = { easterngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			primary_culture = romanian
 			primary_culture = transylvanian
@@ -379,6 +480,12 @@ merc_flemish_company = {
     home_province = 90
 	sprites = { dlc042_ned_sprite_pack dlc028_ned_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -409,7 +516,13 @@ merc_forlorn_hope = {
     home_province = 237 # Oxford
 	#cost_modifier = 1.2
 	sprites = { dlc049_ENG_sprite_pack dlc042_eng_sprite_pack dlc028_eng_sprite_pack eng_base_sprite_pack }
-    trigger = {	
+    trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		capital_scope = { region = british_isles_region }
 	}
 	modifier = {
@@ -428,6 +541,12 @@ merc_purbiyas = {
     home_province = 555
 	sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = {
 			OR = {
 				region = hindusthan_region
@@ -450,6 +569,12 @@ merc_gorkhalis = {
     #cost_modifier = 1.5
 	sprites = { dlc091_npl_sprite_pack indiangfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = {
 			OR = {
 				region = hindusthan_region
@@ -477,6 +602,12 @@ merc_gosains = {
     home_province = 523
 	sprites = { dlc092_jnp_sprite_pack indiangfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		religion = hinduism
 
 	}
@@ -494,6 +625,12 @@ merc_banjara_company = {
 	home_province = 514
 	sprites = { dlc091_mer_sprite_pack indiangfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = {
 			OR = {
 				region = hindusthan_region
@@ -517,6 +654,12 @@ merc_bukhara_band = {
 	home_province = 442
 	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = {
 			OR = {
 				region = persia_region
@@ -560,6 +703,12 @@ merc_nile_mamluks = {
 	cost_modifier = 0.5
 	sprites = { dlc002_mam_sprite_pack dlc058_mam_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		NOT = { tag = MAM }
 		NOT = { was_tag = MAM }
 		OR = {
@@ -606,6 +755,12 @@ merc_sekban = {
     #home_province = 324
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			tag = TUR
 			capital_scope = { region = anatolia_region }
@@ -644,6 +799,12 @@ merc_madagascar_company = {
     home_province = 1792
 	sprites = { africangfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = {
 				OR = {
@@ -672,6 +833,12 @@ merc_sahel_company = {
 	#cost_modifier = 1.1
 	sprites = { dlc062_tmb_sprite_pack africangfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = {
 			OR = {
 				region = sahel_region
@@ -695,6 +862,12 @@ merc_asafo_company = {
 	#cost_modifier = 1.1
 	sprites = { dlc062_msi_sprite_pack africangfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = {
 			OR = {
 				region = niger_region
@@ -713,6 +886,12 @@ merc_nubian_company = {
     home_province = 1220
 	sprites = { dlc057_nub_sprite_pack africangfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = {
 				OR = {
@@ -737,7 +916,13 @@ merc_royal_circassian_guards = {
     regiments_per_development = 0.05
     home_province = 463 # Circassia proper
 	sprites = { dlc047_cir_sprite_pack easterngfx_sprite_pack }
-	trigger = {  
+	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		religion_group = muslim
 		government = monarchy
 		any_owned_province = {
@@ -759,6 +944,12 @@ merc_tabarestan_company = {
     home_province = 417 # Lahijan
 	sprites = { dlc079_tab_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = { region = persia_region }
 	}
     modifier = { infantry_power = 0.1 }
@@ -769,6 +960,12 @@ merc_novgorod_company = {
     home_province = 310 # Novogorod
 	sprites = { dlc020_nov_sprite_pack rus_base_sprite_pack easterngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		NOT = { has_country_modifier = hun_black_army }
 		OR = {
 			has_country_modifier = swedish_mercenary_core
@@ -790,6 +987,12 @@ merc_crimean_company = {
     home_province = 284 # Crimea
 	sprites = { dlc047_cri_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			religion_group = muslim
 			religion = tengri_pagan_reformed
@@ -810,6 +1013,12 @@ merc_lithuanian_company = {
     home_province = 272 # Vilnius
 	sprites = { dlc003_lit_sprite_pack dlc074_lit_sprite_pack easterngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			has_country_modifier = swedish_mercenary_core
 			any_owned_province = {
@@ -830,6 +1039,12 @@ merc_frisian_free_company = {
     #cost_modifier = 1.2
 	sprites = { dlc028_ned_sprite_pack dlc042_ned_sprite_pack westerngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -861,6 +1076,12 @@ merc_finnish_company = {
     home_province = 28 # Nyland
 	sprites = { swe_base_sprite_pack westerngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { region = scandinavia_region }
 			any_owned_province = { area = finland_area }
@@ -878,6 +1099,12 @@ merc_almogavars = {
     #cost_modifier = 1.1
 	sprites = { dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		culture_group = iberian
 		current_age = age_of_discovery
 	}
@@ -890,7 +1117,13 @@ merc_moorish_battalion = {
     regiments_per_development = 0.1
     home_province = 343 # Fez
 	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
-	trigger = { 
+	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { region = maghreb_region }
 			has_country_modifier = mercenaries_to_the_standard
@@ -910,7 +1143,13 @@ merc_maghreb_raiders = {
 	cost_modifier = 0.25
     home_province = 341 # Tunis
 	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
-	trigger = { 
+	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { region = maghreb_region }
 			has_country_modifier = mercenaries_to_the_standard
@@ -928,6 +1167,12 @@ merc_miquelet_company = {
 	#cost_modifier = 1.1
 	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		capital_scope = { 
 			OR = {
 				region = iberia_region
@@ -947,7 +1192,13 @@ merc_free_swiss_guard = {
     home_province = 165 # Bern
 	cost_modifier = 1
 	sprites = { westerngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { superregion = europe_superregion }
 			any_owned_province = {
@@ -977,6 +1228,12 @@ merc_independent_cossack_host = {
 	#cavalry_cap = 6
 	sprites = { dlc047_zaz_sprite_pack easterngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		NOT = { has_country_modifier = hun_black_army }
 		OR = {
 			has_estate = estate_cossacks
@@ -997,6 +1254,12 @@ merc_kazakh_company = {
 	#cavalry_cap = 6
 	sprites = { dlc048_shy_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			capital_scope = { region = central_asia_region }
 			has_estate = estate_nomadic_tribes
@@ -1015,6 +1278,12 @@ merc_yaka_free_warriors = {
     home_province = 4085
 	sprites = { africangfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		any_owned_province = {
 			OR = {
 				region = central_africa_region
@@ -1030,6 +1299,12 @@ merc_great_lakes_free_warriors = {
     home_province = 4064
 	sprites = { africangfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			any_owned_province = {
 				OR = {
@@ -1051,6 +1326,12 @@ merc_gascon_musket_company = {
     #cost_modifier = 1.2
 	sprites = { dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
     trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		NOT = { current_age = age_of_discovery }
 	}
 	modifier = {
@@ -1078,6 +1359,12 @@ merc_swiss_canton_mercenaries = {
 	home_province = 165
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		mission_completed = swi_reislaufer
 		tag = SWI
 	}

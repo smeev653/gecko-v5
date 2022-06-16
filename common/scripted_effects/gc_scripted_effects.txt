@@ -84,3 +84,50 @@ gecko_occupation_effect = {
 			clr_province_flag = gecko_occupation_core
 		}
 }
+
+gecko_mercs = {
+	if = {
+		limit = {
+			ai = no
+		}
+		hidden_effect = {
+			export_to_variable = {
+					which = geckomercFL
+					value = land_forcelimit
+					who = ROOT
+			}
+			divide_variable = {
+					which = geckomercFL
+					value = 100
+			}
+			multiply_variable = {
+					which = geckomercFL
+					value = 33
+			}
+			change_variable = {
+					which = geckomercFL
+					value = 20
+			}
+			export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+			}
+		}	
+	}	
+}
+
+gecko_merc_count = {
+	if = {
+		limit = {
+			ai = no
+		}
+		hidden_effect = {
+			export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+			}
+		}	
+	}	
+}	

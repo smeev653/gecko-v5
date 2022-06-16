@@ -10,7 +10,7 @@ country_event = { #Poland Ruler Failsafe
 
 	trigger = {
 		tag = POL
-		NOT = { adm = 6 dip = 6 mil = 6 }
+		NOT = { adm = 5 dip = 4 mil = 5 }
 		NOT = { is_year = 1475 }
 		is_free_or_tributary_trigger = yes
 		has_country_flag = gecko_localnoble
@@ -1158,4 +1158,98 @@ province_event = {
 				 cede_province = controller 
 				 add_core = controller 
 	}	
+}
+
+
+
+country_event = {
+    id = gecko.18
+   title = gecko.18.t
+    desc = gecko.18.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 num_of_mercenaries = 1
+		 NOT = has_country_modifier = mercenaries_to_the_standard
+		 NOT = has_country_modifier = glut_of_mercs
+   }
+	#hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		export_to_variable = {
+					which = geckomercFL
+					value = land_forcelimit
+					who = ROOT
+			}
+			divide_variable = {
+					which = geckomercFL
+					value = 100
+			}
+			multiply_variable = {
+					which = geckomercFL
+					value = 33
+			}
+			change_variable = {
+					which = geckomercFL
+					value = 20
+			}
+			export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+			}
+	}
+	option = {	
+	}
+}
+
+country_event = {
+    id = gecko.19
+   title = gecko.19.t
+    desc = gecko.19.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 num_of_mercenaries = 1
+		 OR = { 
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		 }	
+   }
+	#hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		export_to_variable = {
+					which = geckomercFL
+					value = land_forcelimit
+					who = ROOT
+			}
+			divide_variable = {
+					which = geckomercFL
+					value = 100
+			}
+			multiply_variable = {
+					which = geckomercFL
+					value = 50
+			}
+			change_variable = {
+					which = geckomercFL
+					value = 20
+			}
+			export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+			}
+	}
+	option = {	
+	}
 }
