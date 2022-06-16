@@ -8,6 +8,19 @@ empowered_subjects = {
 	trigger = {
 		overlord = {
 				has_idea_group = influence_ideas
+				OR = {
+					quality_ideas = 7
+					aristocracy_ideas  = 7
+					plutocracy_ideas = 7
+					innovativeness_ideas = 7
+					religious_ideas = 7 
+					offensive_ideas = 7
+					defensive_ideas = 7
+					economic_ideas = 7
+					quantity_ideas = 7
+					expansion_ideas = 7
+					administrative_ideas = 7
+				}
 				has_idea = tribute_system
 				was_player = yes 
 			}
@@ -397,7 +410,7 @@ too_many_subjects = {
 	}
 	
 	trigger = {
-			vassal = 6
+			num_of_subjects = 6
 			NOT = { has_idea_group = influence_ideas }
 	}		
 	vassal_forcelimit_bonus = -1
@@ -410,7 +423,7 @@ too_many_subjects_influence = {
 	}
 	
 	trigger = {
-			num_of_subjects = 9
+			num_of_subjects = 7
 			has_idea_group = influence_ideas 
 	}		
 	vassal_forcelimit_bonus = -1
@@ -549,4 +562,19 @@ Ahead_of_time = {
 	monthly_reform_progress_modifier = 0.25
 	technology_cost = -0.025
 	yearly_army_professionalism = 0.002
+}
+
+Over_merc_limit = {
+	potential = {
+		ai = no
+		num_of_mercenaries = 1
+	}
+	trigger = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		
+	}
+	mercenary_discipline = -0.1
 }
