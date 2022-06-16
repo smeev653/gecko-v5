@@ -21,7 +21,7 @@ on_startup = {
 		}
 	}
 	gecko_occupation_effect = yes
-	#gecko_mercs = yes
+	gecko_mercs = yes
 	if = {
 		limit = {
 				OR = {

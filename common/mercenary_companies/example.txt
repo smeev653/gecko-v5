@@ -74,7 +74,7 @@ merc__local_grand_company = {
     cost_modifier = 0.75
     trigger = {
         total_development = 100
-		is_year = 1470
+		#is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
 		 NOT = {
 					check_variable = {
@@ -94,7 +94,7 @@ merc__local_independent_army = {
     cost_modifier = 0.75
     trigger = {
         total_development = 100
-		is_year = 1470
+		#is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
 		 NOT = {
 					check_variable = {
