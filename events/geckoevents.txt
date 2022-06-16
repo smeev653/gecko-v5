@@ -1267,22 +1267,12 @@ country_event = {
    trigger = {
          ai = no
 		 num_of_mercenaries = 1
-		 random_hired_mercenary_company = {
-				limit = {
-					has_company_manpower = 1
-					location = {
-						owned_by = ROOT
-						controlled_by = ROOT
-					}
-					NOT = { hired_for_months = 2 }
-				}
-		}
 		 check_variable = {
 						which = geckomercvalue
 						which = geckomercFL
 					}	
    }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         days = 1
     }

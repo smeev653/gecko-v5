@@ -34,9 +34,6 @@ country_decisions = {
 				skill = 2
 				discount = yes
 				culture = variable:new_ruler_culture
-				hidden_effect = {
-					gecko_mercs = yes
-				}
 			}	
 				set_country_flag = sm_hire_recruitmaster
 			}
