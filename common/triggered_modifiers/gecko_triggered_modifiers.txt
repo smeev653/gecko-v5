@@ -412,8 +412,9 @@ too_many_subjects = {
 	trigger = {
 			num_of_subjects = 6
 			NOT = { has_idea_group = influence_ideas }
+			NOT = { colony = 1 }
 	}		
-	vassal_forcelimit_bonus = -1
+	vassal_forcelimit_bonus = -2
 	vassal_income = -0.15
 	reduced_liberty_desire = -40
 }
@@ -426,7 +427,7 @@ too_many_subjects_influence = {
 			num_of_subjects = 7
 			has_idea_group = influence_ideas 
 	}		
-	vassal_forcelimit_bonus = -1
+	vassal_forcelimit_bonus = -2
 	vassal_income = -0.15
 	reduced_liberty_desire = -40
 }

@@ -28,7 +28,7 @@ request_canton = {
 			technology_group = western
 			
 		}
-		
+		NOT = { num_of_subjects = 5 }
 	}
 	on_accept = {
 		add_trust = {
