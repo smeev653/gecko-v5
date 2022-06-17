@@ -614,8 +614,8 @@ country_decisions = {
 				is_colonial_nation = no 
 			}
 			
-		allow = {
-				treasury = 30
+		allow = {				
+				treasury = 20
 				#splendor = 200
 				NOT = {
 					check_variable = {
@@ -625,7 +625,15 @@ country_decisions = {
 				}	
 		}
 		effect = {
-			add_treasury = -30
+			if = {
+				limit = {
+						NOT = { total_development = 151}
+					}
+				add_years_of_income = -0.1	
+			}
+			else = {	
+				add_treasury = -20
+			}
 			capital_scope = {
 				limit = {
 					controlled_by = ROOT

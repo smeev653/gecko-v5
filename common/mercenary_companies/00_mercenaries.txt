@@ -682,6 +682,12 @@ merc_mesopotamian_mamluks = {
 	cost_modifier = 0.5
 	sprites = { dlc080_alh_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
+		 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 		OR = {
 			tag = MAM
 			tag = EGY
