@@ -626,15 +626,10 @@ country_decisions = {
 		}
 		effect = {
 			add_treasury = -30
-			random_owned_province = {
+			capital_scope = {
 				limit = {
 					controlled_by = ROOT
-					has_owner_accepted_culture = yes
-					is_core = ROOT
 					has_siege = no
-					is_in_capital_area = yes
-					is_state = yes
-					NOT = { local_autonomy = 25 }
 				}
 				mercenary_infantry = PREV
 			}
