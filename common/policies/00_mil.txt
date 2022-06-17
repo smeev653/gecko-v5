@@ -261,8 +261,8 @@ superior_fortification_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
+	fire_damage_received = -0.05
+	reinforce_speed = 0.15
 
 	ai_will_do = {
 		factor = 1
