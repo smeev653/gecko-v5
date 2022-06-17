@@ -681,6 +681,7 @@ coastal_defence = {
 	modifier = {
 		blockade_force_required = 1
 		hostile_disembark_speed = 1.0
+		hostile_fleet_attrition = 1
 	}
 
 	ai_will_do = {
