@@ -1170,9 +1170,10 @@ country_event = {
 
    trigger = {
          ai = no
-		 num_of_mercenaries = 8
+		 num_of_mercenaries = 1
 		 NOT = { has_country_modifier = mercenaries_to_the_standard }
 		 NOT = { has_country_modifier = glut_of_mercs }
+		 NOT = { has_country_modifier = Minor}
    }
 	hidden = yes
     mean_time_to_happen = {
@@ -1218,12 +1219,13 @@ country_event = {
 		 num_of_mercenaries = 1
 		 OR = { 
 			has_country_modifier = mercenaries_to_the_standard 
-			has_country_modifier = glut_of_mercs 
+			has_country_modifier = glut_of_mercs
+			has_country_modifier = Minor
 		}	
    }
 	hidden = yes
     mean_time_to_happen = {
-        days = 1
+        days = 5
     }
 	
 	immediate = {
@@ -1238,11 +1240,11 @@ country_event = {
 			}
 			multiply_variable = {
 					which = geckomercFL
-					value = 50
+					value = 33
 			}
 			change_variable = {
 					which = geckomercFL
-					value = 20
+					value = 25
 			}
 			export_to_variable = {
 						which = geckomercvalue
@@ -1285,28 +1287,6 @@ country_event = {
 				}
 				 disband_mercenary_company = THIS
 			}
-		export_to_variable = {
-					which = geckomercFL
-					value = land_forcelimit
-					who = ROOT
-			}
-			divide_variable = {
-					which = geckomercFL
-					value = 100
-			}
-			multiply_variable = {
-					which = geckomercFL
-					value = 33
-			}
-			change_variable = {
-					which = geckomercFL
-					value = 20
-			}
-			export_to_variable = {
-						which = geckomercvalue
-						value = trigger_value:num_of_mercenaries
-						who = ROOT
-			}	
 	}
 	option = {	
 	}

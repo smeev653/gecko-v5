@@ -764,16 +764,71 @@ country_decisions = {
 			factor = 0
 		}
 		allow = {
-			NOT = {
-				check_variable = {
-							which = geckomercvalue
-							which = geckomercFL
-						}
-			}
-			#always = no
+				NOT = {
+					check_variable = {
+								which = geckomercvalue
+								which = geckomercFL
+							}
+				}
 		}
 		effect = {
-		}
+			custom_tooltip = gecko_merc_limit_tt
+				if = {
+					limit = {
+						has_country_modifier = Minor
+					}
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 33
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}	
+				}
+				else = {
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 33
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 20
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}
+				}
+		}	
 	}
 }			
 
