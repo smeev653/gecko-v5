@@ -202,10 +202,10 @@ severe_monsoon = {
 
 blockaded = {
 	regiment_recruit_speed = 0.2
-	ship_recruit_speed = 0.9
+	ship_recruit_speed = 0.25
 	local_monthly_devastation = 0.33
 	trade_goods_size_modifier = -0.25 
-	local_tax_modifier = -1
+	local_tax_modifier = -0.5
 	province_trade_power_modifier = -1
 	local_manpower_modifier = -1
 	local_sailors_modifier = -0.75
