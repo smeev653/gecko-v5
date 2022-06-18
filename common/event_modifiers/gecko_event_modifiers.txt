@@ -328,3 +328,6 @@ gecko_occupation = {
 mercs_bought = {
 
 }
+
+geckoavailablemercs = {
+}

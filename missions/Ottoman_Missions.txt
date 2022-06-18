@@ -1469,6 +1469,7 @@ gecko_tur_events = {
 			add_country_modifier = {
 					name = "geckoavailablemercs"
 					duration = 1825
+					hidden = yes
 			}
         }
 }

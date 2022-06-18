@@ -622,7 +622,11 @@ country_decisions = {
 						which = geckomercvalue
 						which = geckomercFL
 					}
-				}	
+				}
+				capital_scope = {
+						controlled_by = ROOT
+						has_siege = no
+				}
 		}
 		effect = {
 			if = {
@@ -635,10 +639,6 @@ country_decisions = {
 				add_treasury = -20
 			}
 			capital_scope = {
-				limit = {
-					controlled_by = ROOT
-					has_siege = no
-				}
 				mercenary_infantry = PREV
 			}
 			hidden_effect = {

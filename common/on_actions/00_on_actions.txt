@@ -886,6 +886,7 @@ on_bankruptcy = {
 			limit = { has_country_modifier =  gecko_ipa  }
 				remove_country_modifier =  gecko_ipa
 		}
+	gecko_mercs = yes	
 }
 
 # country (country annexing, root = target)

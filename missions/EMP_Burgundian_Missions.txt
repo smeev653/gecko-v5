@@ -288,6 +288,7 @@ emp_burgundy_1 = {
 				add_country_modifier = {
 					name = "geckoavailablemercs"
 					duration = 1825
+					hidden = yes
 			}
             }
         }

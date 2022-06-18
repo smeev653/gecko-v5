@@ -477,6 +477,7 @@ emp_france_missions_1_b = {
 				add_country_modifier = {
 					name = "geckoavailablemercs"
 					duration = 1825
+					hidden = yes
 			}
             }
         }
