@@ -1456,16 +1456,19 @@ gecko_tur_events = {
 		}
         effect = {
             define_general = {
-                shock = 5
-                fire = 5
-                manuever = 5
-                siege = 0
-                name = "Skanderbeg"
-                }
-                add_country_modifier = {
-                name = "defense_of_anatolia"
-                duration = 1825
-                }
+					shock = 5
+					fire = 5
+					manuever = 5
+					siege = 0
+					name = "Skanderbeg"
             }
+			add_country_modifier = {
+					name = "defense_of_anatolia"
+					duration = 1825
+			}
+			add_country_modifier = {
+					name = "geckoavailablemercs"
+					duration = 1825
+			}
         }
 }

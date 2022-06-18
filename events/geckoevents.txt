@@ -1198,6 +1198,10 @@ country_event = {
 					which = geckomercFL
 					value = 20
 			}
+			multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
 			export_to_variable = {
 						which = geckomercvalue
 						value = trigger_value:num_of_mercenaries
@@ -1246,6 +1250,10 @@ country_event = {
 					which = geckomercFL
 					value = 25
 			}
+			multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
 			export_to_variable = {
 						which = geckomercvalue
 						value = trigger_value:num_of_mercenaries
@@ -1287,6 +1295,69 @@ country_event = {
 				}
 				 disband_mercenary_company = THIS
 			}
+	}
+	option = {	
+	}
+}
+
+country_event = {
+    id = gecko.21
+   title = gecko.21.t
+    desc = gecko.21.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 has_country_modifier = geckoavailablemercs
+		 NOT = {
+					check_variable = {
+								which = availablegeckomercs
+								value = 2
+							}
+				}
+   }
+	#hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		set_variable = {            
+						which = availablegeckomercs
+						value = 2
+				}
+				
+	}
+	option = {	
+	}
+}
+
+country_event = {
+    id = gecko.22
+   title = gecko.22.t
+    desc = gecko.22.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 NOT = {has_country_modifier = geckoavailablemercs}
+		check_variable = {
+								which = availablegeckomercs
+								value = 2
+		}
+				
+   }
+	#hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		set_variable = {            
+						which = availablegeckomercs
+						value = 1
+				}
+				
 	}
 	option = {	
 	}

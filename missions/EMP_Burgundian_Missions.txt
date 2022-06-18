@@ -266,9 +266,11 @@ emp_burgundy_1 = {
 			is_in_war = {
 				attackers = ENG
 			}
+			OR = {
+			is_bankrupt = yes
+			num_of_loans = 20
 			revanchism = 1
-			
-		
+			}
 		}
         effect = {
             define_general = {
@@ -283,6 +285,10 @@ emp_burgundy_1 = {
                 name = "defense_of_burgundy"
                 duration = 1825
                 }
+				add_country_modifier = {
+					name = "geckoavailablemercs"
+					duration = 1825
+			}
             }
         }
 }
