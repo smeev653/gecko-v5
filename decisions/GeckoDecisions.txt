@@ -676,11 +676,11 @@ country_decisions = {
 			#		mercenary_infantry = PREV
 			#	}	
 			#}
-			#add_country_modifier = {
-			#	name = "mercs_bought"
-			#	duration = 365
-			#	#hidden = yes
-			#}
+			add_country_modifier = {
+				name = "mercs_bought"
+				duration = 3650
+				hidden = yes
+			}
 		}
 	}
 	splendor_mercs_2 = {

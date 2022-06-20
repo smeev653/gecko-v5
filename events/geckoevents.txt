@@ -1170,7 +1170,10 @@ country_event = {
 
    trigger = {
          ai = no
-		 num_of_mercenaries = 1
+		 OR = {
+			num_of_mercenaries = 1
+			has_country_modifier = mercs_bought 
+		}
 		 NOT = { has_country_modifier = mercenaries_to_the_standard }
 		 NOT = { has_country_modifier = glut_of_mercs }
 		 NOT = { has_country_modifier = Minor}
@@ -1220,7 +1223,10 @@ country_event = {
 
    trigger = {
          ai = no
-		 num_of_mercenaries = 1
+		 OR = {
+			num_of_mercenaries = 1
+			has_country_modifier = mercs_bought 
+		}
 		 OR = { 
 			has_country_modifier = mercenaries_to_the_standard 
 			has_country_modifier = glut_of_mercs
@@ -1271,8 +1277,11 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
-         ai = no
-		 num_of_mercenaries = 1
+        ai = no
+		OR = {
+			num_of_mercenaries = 1
+			has_country_modifier = mercs_bought 
+		}	
 		 check_variable = {
 						which = geckomercvalue
 						which = geckomercFL
