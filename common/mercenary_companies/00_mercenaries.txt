@@ -157,6 +157,7 @@ merc_knights_templar = {
 	modifier = {
 		cavalry_power = 0.10
 		shock_damage = 0.05
+		cav_to_inf_ratio = 1
 	}
 	cost_modifier = 0.125
 }
@@ -696,6 +697,7 @@ merc_mesopotamian_mamluks = {
 	}
     modifier = {
         cavalry_shock = 1.0
+		cav_to_inf_ratio = 1
     }
 }
 
@@ -752,6 +754,7 @@ merc_delhi_mamluks = {
     modifier = {
 		  cavalry_power = 0.1
 		   discipline = 0.025
+		   cav_to_inf_ratio = 1
 	}
 }
 
@@ -1164,6 +1167,7 @@ merc_maghreb_raiders = {
 	}
     modifier = {
 		cavalry_power = 0.1
+		cav_to_inf_ratio = 1
 	}
 }
 
@@ -1249,7 +1253,8 @@ merc_independent_cossack_host = {
 			has_country_modifier = swedish_mercenary_core
 		}
 	}
-    modifier = { cavalry_power = 0.1}
+    modifier = { cavalry_power = 0.1
+	cav_to_inf_ratio = 1}
 }
 
 merc_kazakh_company = {
@@ -1276,7 +1281,7 @@ merc_kazakh_company = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = { }
+    modifier = {cav_to_inf_ratio = 1 }
 }
 
 merc_yaka_free_warriors = {

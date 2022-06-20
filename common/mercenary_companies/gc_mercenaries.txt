@@ -114,6 +114,7 @@ gecko_merc_black_army_2 = {
 		cavalry_power = 0.1
 		fire_damage_received = -0.1
 		shock_damage_received = -0.1
+		cav_to_inf_ratio = 1
 	}
 }
 
@@ -133,6 +134,9 @@ gecko_merc_aristo_ideas = {
 		}
 	}
 	cost_modifier = 0.5
+	modifier = {
+		cav_to_inf_ratio = 1
+	}
 }
 
 gecko_hormuz_company = {
