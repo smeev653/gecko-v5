@@ -4365,7 +4365,7 @@ ven_recover_from_plague = {
 }
 
 ven_arsenal_marines = {
-	allowed_marine_fraction = 0.25
+	allowed_marine_fraction = 0.1
 }
 
 venice_ghetto = {

@@ -284,7 +284,7 @@ SPA_ideas = {
 	}
 	spa_cortes = { 
 		possible_dip_policy = 1
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.05
 	}
 	siglo_de_oro = {
 		prestige = 1

@@ -667,12 +667,10 @@ gc_morocco_3 = {
 		required_missions = { gc_mor_wattasid }
 		provinces_to_highlight = {
 			OR = {
-				area = tunisia_area
+				area = algiers_area
 				area = barbary_coast_area
-				area = ouled_nail_area
-				area = north_saharan_area
-				area = djerba_area
-				area = tripolitania_area
+				area = hautes_plaines_area
+				area = tafilalt_area
 				area = kabylia_area
 			}
 			NOT = {

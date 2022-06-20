@@ -17360,17 +17360,17 @@ gme_sagres_school_navigation = {
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		culture_group = iberian
+		#culture_group = iberian
 		has_owner_culture = yes
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = iberian
+		#culture_group = iberian
 		has_owner_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture_group = iberian
+		#culture_group = iberian
 		has_owner_culture = yes
 	}
 	keep_trigger = { }
