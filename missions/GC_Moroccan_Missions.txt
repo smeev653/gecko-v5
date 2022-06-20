@@ -876,7 +876,17 @@ gc_morocco_4 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
+	gc_mor_flagship = {
+		icon = mission_launch_a_flagship
+		required_missions = {  }
+		position = 1
+		trigger = {
+			has_flagship = yes
+		}
+		effect = {
+			add_navy_tradition = 20
+		}
+	}
 	gc_mor_ceuta = {
 		icon = mission_reconquer_ceuta
 		required_missions = { gc_mor_wattasid }

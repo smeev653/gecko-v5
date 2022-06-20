@@ -411,3 +411,7 @@ gc_hungary_mission_40_desc:0 ""
 repulse_gank_bur_title:0 "Repulse the English"
 repulse_gank_bur_desc:0 ""
 
+#morocco
+
+gc_mor_flagship_title:0 "Launch a Flagship"
+gc_mor_flagship_desc:0 ""
