@@ -631,7 +631,7 @@ country_decisions = {
 		effect = {
 			if = {
 				limit = {
-						NOT = { total_development = 151}
+						has_country_modifier = Minor
 					}
 				add_years_of_income = -0.1	
 			}

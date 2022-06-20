@@ -58,7 +58,7 @@ Minor = {
             NOT = {is_great_power = yes}
 		}
 	}	
-			NOT = {total_development = 299}
+			NOT = {total_own_and_non_tributary_subject_development = 300 }
 			ai = no
 			NOT = { is_emperor = yes }
 		}
@@ -66,13 +66,7 @@ Minor = {
 
 	trigger = {
 		NOT  = { is_year = 1500}
-		OR = {
-			NOT = {total_development = 299}
-			AND = { 
-				NOT = {total_development = 200}
-				num_of_subjects = 1
-			}
-		}	
+		NOT = {total_own_and_non_tributary_subject_development = 300 }	
 		ai = no
     #  	OR = {
 	#		AND = {
@@ -208,14 +202,18 @@ HRE_Minor_defense = {
 			NOT  = { is_year = 1470}
 			is_part_of_hre = yes
 			NOT = {is_great_power = yes}
-			NOT = {total_development = 299}
 			ai = no
 			NOT = { num_of_allies = 1 }
 	}
 	
 
 	trigger = {
-		NOT = {total_development = 299}
+				exists = HAB
+				HAB = {
+					is_emperor = yes
+				}
+				NOT = { total_own_and_non_tributary_subject_development = HAB }
+				NOT = {total_own_and_non_tributary_subject_development = 300 }
 		NOT  = { is_year = 1470}
 		ai = no
 		is_part_of_hre = yes
@@ -228,8 +226,8 @@ HRE_Minor_defense = {
 	land_forcelimit_modifier = 0.5
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.25
-	mercenary_manpower = 0.5
-	defensiveness = 0.2
+	#mercenary_manpower = 0.5
+	#defensiveness = 0.2
 	interest = -0.5
 }
 
