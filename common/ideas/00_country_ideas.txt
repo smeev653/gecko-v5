@@ -256,7 +256,7 @@ SPA_ideas = {
 	
 	bonus = {
 		artillery_fire = 0.5
-		cawa_cost_modifier = -0.2
+		cawa_cost_modifier = -0.5
 	}
 	
 	trigger = {

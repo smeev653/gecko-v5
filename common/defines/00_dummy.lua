@@ -217,6 +217,7 @@ NDefines.NMilitary.LEADER_GAIN_PERSONALITY_BASE_CHANCE = 25.0
 NDefines.NMilitary.SUPPLY_DEPOT_MIL_COST = 0
 NDefines.NMilitary.RESERVE_TICK_DAMAGE = 0.1
 NDefines.NMilitary.CREATE_JANISSARIES_MIL_COST = 5
+NDefines.NMilitary.CREATE_CAWA_MIL_COST = 10
 NDefines.NMilitary.RAJPUT_BASE_COST_MODIFIER = 1.25				-- Rajput base cost is double as expensive
 NDefines.NMilitary.COSSACK_BASE_COST_MODIFIER = 1.1
 NDefines.NMilitary.MAX_DRILL_DECAY = 0.75
