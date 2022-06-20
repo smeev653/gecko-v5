@@ -956,6 +956,9 @@ POR_ideas = {
 		range = 0.5
 		trade_range_modifier = 0.5
 	}
+	the_bandeirantes = {
+		land_morale = 0.1
+	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
 	}
@@ -964,9 +967,7 @@ POR_ideas = {
 		sunk_ship_morale_hit_recieved = -0.33
 		heavy_ship_power = 0.1
 	}
-	the_bandeirantes = {
-		land_morale = 0.1
-	}
+	
 	case_de_india = {
 		global_ship_trade_power = 0.2
 		global_trade_power = 0.1
