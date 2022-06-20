@@ -202,36 +202,58 @@ HRE_backup = {
 	#governing_capacity_modifier = 0.1
 }
 
-#HRE_Minor_defense = {
-#	potential = {
-#			NOT  = { is_year = 1465}
- #           is_part_of_hre = yes
-  #          NOT = {is_great_power = yes}
-	#		NOT = {total_development = 299}
-	#		ai = no
-	#		NOT = { num_of_allies = 2 }
-	#}
-#	
-#
-#	trigger = {
-#		
-#		NOT = {total_development = 299}
-#		ai = no
-#		is_part_of_hre = yes
-#		NOT = {is_great_power = yes}	
-#		NOT = { is_emperor = yes }
-#		defensive_war_with = HAB
-#	}
-#	land_morale = 0.1
-#	discipline = 0.05
-#	land_forcelimit_modifier = 0.2
-#	merc_maintenance_modifier = -0.25
-#	mercenary_cost = -0.25
-#	#mercenary_manpower = 0.5
-#	defensiveness = 0.2
-#	interest = -0.5
-#}
+HRE_Minor_defense = {
+	potential = {
+			NOT  = { is_year = 1470}
+			is_part_of_hre = yes
+			NOT = {is_great_power = yes}
+			NOT = {total_development = 299}
+			ai = no
+			NOT = { num_of_allies = 1 }
+	}
+	
 
+	trigger = {
+		NOT = {total_development = 299}
+		ai = no
+		is_part_of_hre = yes
+		NOT = {is_great_power = yes}	
+		NOT = { is_emperor = yes }
+		defensive_war_with = HAB
+	}
+	land_morale = 0.1
+	discipline = 0.05
+	land_forcelimit_modifier = 0.5
+	merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.25
+	mercenary_manpower = 0.5
+	defensiveness = 0.2
+	interest = -0.5
+}
+
+Rogue_Emperor = {
+	potential = {
+			NOT  = { is_year = 1470}
+			is_emperor = yes 
+			ai = no
+	}
+	
+
+	trigger = {
+		ai = no	
+		is_emperor = yes 
+		NOT  = { is_year = 1470}
+		OR = {
+			offensive_war_with = BRA
+			offensive_war_with = HES
+			offensive_war_with = SWI
+			offensive_war_with = HSA
+		}		
+	}
+	imperial_authority_value = -2
+	legitimacy = -3
+	prestige = -5
+}	
 War_chest = {
 	potential = {
 		ai = no

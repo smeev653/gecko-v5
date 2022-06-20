@@ -1308,7 +1308,10 @@ country_event = {
 
    trigger = {
          ai = no
-		 has_country_modifier = geckoavailablemercs
+		 OR = {
+			has_country_modifier = geckoavailablemercs
+			has_country_modifier = HRE_Minor_defense
+		}	
 		 NOT = {
 					check_variable = {
 								which = availablegeckomercs
@@ -1316,7 +1319,7 @@ country_event = {
 							}
 				}
    }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         days = 1
     }
@@ -1339,14 +1342,17 @@ country_event = {
 
    trigger = {
          ai = no
-		 NOT = {has_country_modifier = geckoavailablemercs}
+		 AND = {
+			NOT = {has_country_modifier = geckoavailablemercs}
+			NOT = {has_country_modifier = HRE_Minor_defense}
+		 }	
 		check_variable = {
 								which = availablegeckomercs
 								value = 2
 		}
 				
    }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         days = 1
     }
