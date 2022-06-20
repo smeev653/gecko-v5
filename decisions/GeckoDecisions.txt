@@ -626,6 +626,7 @@ country_decisions = {
 				capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
+						unit_in_battle = no
 				}
 		}
 		effect = {
