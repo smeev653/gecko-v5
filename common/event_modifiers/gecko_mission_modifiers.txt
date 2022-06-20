@@ -110,7 +110,7 @@ at_the_gates_of_europe = {
 }
 
 beyliks_subjugated = {
-	land_morale = 0.025
+	manpower_recovery_speed = 0.2
 	#discipline = 0.025
 	cavalry_cost = -0.1
 	#land_forcelimit_modifier = 0.10
@@ -420,4 +420,9 @@ lowland_integration = {
 
 swabian_trade  = {
 	trade_value_modifier = 0.2
+}
+
+turkmen_recruitment = {
+	shock_damage = 0.1
+	cavalry_cost = -0.1
 }

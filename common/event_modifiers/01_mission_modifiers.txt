@@ -843,9 +843,7 @@ yemeni_trade_modifier = {
 bedouins_pacified = {
 	global_unrest = -2
 }
-beyliks_subjugated = {
-	land_morale = 0.1
-}
+
 
 # Bohemian missions
 

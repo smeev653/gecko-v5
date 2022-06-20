@@ -119,13 +119,27 @@ mam_north_missions = {
 		}
 		trigger = {
 			war_with = TUR
+			DUL = {
+			 	is_subject_of = MAM
+			}	
 		}
 		effect = {
-			add_country_modifier = {
-				name = "beyliks_subjugated"
-				duration = 7300
+			if = {
+				limit = {
+					NOT = {is_year = 1490 }
+				}	
+				add_yearly_manpower = 1.5
+				add_country_modifier = {
+					name = "beyliks_subjugated"
+					duration = 7300
+				}
+			} 
+			else = {
+				add_country_modifier = {
+					name = "beyliks_subjugated"
+					duration = 7300
+				}
 			}
-			
 		}
 	}
 	mam_turks_defeated = {
