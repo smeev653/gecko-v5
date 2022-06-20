@@ -811,9 +811,9 @@ quantity_ideas = {
 		land_forcelimit_modifier  = 0.4
 		special_unit_forcelimit = 0.1
 	}
-	mass_army = {
-		global_manpower_modifier = 0.4
-		mercenary_manpower = 0.25
+	garrison_conscription = {
+		free_leader_pool = 5
+		leader_cost = -0.2
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -824,13 +824,14 @@ quantity_ideas = {
 	the_old_and_infirm = {
 		global_regiment_cost = -0.1
 	}
+	mass_army = {
+		global_manpower_modifier = 0.4
+		mercenary_manpower = 0.25
+	}
 	camp_followers = {
 		reserves_organisation = 0.33
 	}
-	garrison_conscription = {
-		free_leader_pool = 5
-		leader_cost = -0.2
-	}
+	
 	expanded_supply_trains = {
 		land_attrition = -0.25
 	}
