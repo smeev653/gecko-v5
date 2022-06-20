@@ -152,7 +152,7 @@ emperor_reichstag_collegia = {
 		has_dlc = "Emperor"
 	}
 	emperor = {
-		max_free_cities = 3
+		build_cost = -0.05
 	}
 	emperor_per_prince = {
 		global_tax_income = 1.5
@@ -174,7 +174,7 @@ emperor_expand_gemeiner_pfennig = {
 		global_manpower = 1
 	}
 	elector_per_prince = {
-		global_manpower = 1
+		global_manpower = 0.75
 	}
 	elector = {
 		 global_tax_income = 36
@@ -190,10 +190,10 @@ emperor_rechenschaft = {
 		has_dlc = "Emperor"
 	}
 	emperor_per_prince = {
-		imperial_authority = 0.01
+		land_forcelimit	= 1
 	}
-	emperor = {
-		vassal_income = 0.25
+	elector_per_prince = {
+		land_forcelimit	= 0.75
 	}
 	province = {
 		local_production_efficiency = 0.1
@@ -204,7 +204,7 @@ emperor_geteilte_macht = {
 	empire = hre
 	required_reform = emperor_rechenschaft
 	gui_container = left_branch
-	disables_hre_badboy_points = yes
+	#disables_hre_badboy_points = yes
 
 	potential = {
 		has_dlc = "Emperor"
@@ -213,7 +213,7 @@ emperor_geteilte_macht = {
 		custom_tooltip = GETEILTE_MACHT_EFFECT
 	}
 	emperor = {
-		vassal_forcelimit_bonus = 0.25
+		advisor_cost = -0.1
 	}
 	all = {
 		technology_cost = -0.05
@@ -279,8 +279,8 @@ emperor_erbkaisertum = {
 
 emperor_privilegia_de_non_appelando = {
 	empire = hre
-	war = yes			#this may cause a war, so special AI check needed, to not lose many.
-	discounted_from_foreign_overlord_check = yes
+	#war = yes			#this may cause a war, so special AI check needed, to not lose many.
+	#discounted_from_foreign_overlord_check = yes
 	potential = {
 		has_dlc = "Emperor"
 	}
