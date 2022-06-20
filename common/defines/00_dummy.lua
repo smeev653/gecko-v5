@@ -33,6 +33,9 @@ NDefines.NDiplomacy.DESIRED_NUM_OF_ELECTORS = 5
 NDefines.NDiplomacy.MAX_FREE_CITIES = 13
 NDefines.NDiplomacy.HRE_PRINCE_AUTHORITY_THRESHOLD = 10
 NDefines.NDiplomacy.LACK_OF_ELECTORS_HIT = -0.05
+NDefines.NDiplomacy.FABRICATE_CLAIM_COST = 10
+NDefines.NDiplomacy.FABRICATE_CLAIM_COST_MODIFIER_PER_CLAIM = 0.25
+NDefines.NDiplomacy.CLAIM_STATE_MODIFIER = 0.25
 
 NDefines.NDiplomacy.AE_HRE_INTERNAL = 0.6
 NDefines.NDiplomacy.PEACE_COST_DEMAND_PROVINCE = 1					-- Demand a province (scales by province wealth, also used for annex)
@@ -190,9 +193,15 @@ NDefines.NMilitary.ARMY_ATTRITION_AT_SEA = 1
 NDefines.NMilitary.GARRISON_SIZE = 3000 							-- GARRISON_SIZE
 NDefines.NMilitary.SIEGE_FORCE_NEEDED_MULTIPLIER =  0.334			-- x times garrison to be able to siege.
 NDefines.NMilitary.MAX_BREACH = 1
-NDefines.NMilitary.TRANSPORT_SHIP_SAILORS_COST = 20
+NDefines.NMilitary.TRANSPORT_SHIP_SAILORS_COST = 20					-- 1 = 1 men in cost.
+NDefines.NMilitary.LIGHT_SHIP_SAILORS_COST = 50					-- 1 = 1 men in cost.
+NDefines.NMilitary.GALLEY_SHIP_SAILORS_COST = 50
+NDefines.NMilitary.GALLEY_TIME = 90							-- _MDEF_GALLEY_TIME = 10,
+NDefines.NMilitary.TRANSPORT_TIME = 30				-- 1 = 1 men in cost.
 NDefines.NMilitary.MIN_MONTHLY_SAILORS = 10
-NDefines.NMilitary.MIN_MONTHLY_MANPOWER = 0.2
+NDefines.NMilitary.MIN_MONTHLY_MANPOWER = 0.2							-- _MDEF_LIGHT_SHIP_COST = 10,
+NDefines.NMilitary.GALLEY_COST = 10 								-- _MDEF_GALLEY_COST = 10,
+NDefines.NMilitary.TRANSPORT_COST = 1
 NDefines.NMilitary.FORTRESS_COST = 0.15
 NDefines.NMilitary.MERCENARY_REINFORCE_COST_MULTIPLIER = 0.25
 NDefines.NMilitary.TRADITION_GAIN_LAND = 25
