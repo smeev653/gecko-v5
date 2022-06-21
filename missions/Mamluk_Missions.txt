@@ -144,7 +144,7 @@ mam_north_missions = {
 	}
 	mam_turks_defeated = {
 		icon = mission_non-western_soldiers
-		required_missions = { mam_subjugate_beyliks }
+		required_missions = {  }
 		provinces_to_highlight = {
 				province_id = 151
 		}
