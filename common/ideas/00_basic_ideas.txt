@@ -818,15 +818,15 @@ quantity_ideas = {
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
 	}
-	enforced_service = {
-		land_morale = 0.05
-	}
 	the_old_and_infirm = {
 		global_regiment_cost = -0.1
 	}
 	mass_army = {
 		global_manpower_modifier = 0.4
 		mercenary_manpower = 0.25
+	}
+	enforced_service = {
+		land_morale = 0.05
 	}
 	camp_followers = {
 		reserves_organisation = 0.33
