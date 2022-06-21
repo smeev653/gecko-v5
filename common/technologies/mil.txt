@@ -272,7 +272,7 @@ technology = {
 	#Matchlock Musket
 	infantry_shock		= 	0.20
 	#cavalry_fire		= 	0.5
-	cavalry_shock		=	0.25
+	#cavalry_shock		=	0.25
 	
 	weapons = yes
 	
