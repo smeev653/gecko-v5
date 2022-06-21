@@ -1254,7 +1254,7 @@ country_event = {
 			}
 			change_variable = {
 					which = geckomercFL
-					value = 25
+					value = 30
 			}
 			multiply_variable = {
 								which = geckomercFL
@@ -1320,7 +1320,7 @@ country_event = {
 		 OR = {
 			has_country_modifier = geckoavailablemercs
 			has_country_modifier = HRE_Minor_defense
-		}	
+		 }	
 		 NOT = {
 					check_variable = {
 								which = availablegeckomercs
@@ -1372,6 +1372,73 @@ country_event = {
 						value = 1
 				}
 				
+	}
+	option = {	
+	}
+}
+
+country_event = {
+    id = gecko.23
+   title = gecko.23.t
+    desc = gecko.23.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 OR = {
+			 has_age_ability = ab_burgundy_merc_manpower
+			 has_age_ability = ab_hesse_mercs
+		 }	 
+		 NOT = {
+					check_variable = {
+								which = availablegeckomercs
+								value = 1.25
+							}
+				}
+   }
+	hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		set_variable = {            
+						which = availablegeckomercs
+						value = 1.25
+				}			
+	}
+	option = {	
+	}
+}
+
+country_event = {
+    id = gecko.23
+   title = gecko.23.t
+    desc = gecko.23.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 AND = {
+			NOT = { has_age_ability = ab_burgundy_merc_manpower }
+			NOT = { has_age_ability = ab_hesse_mercs }
+		}	
+					check_variable = {
+								which = availablegeckomercs
+								value = 1.25
+							}
+				
+   }
+	hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		set_variable = {            
+						which = availablegeckomercs
+						value = 1
+				}			
 	}
 	option = {	
 	}

@@ -1178,7 +1178,7 @@ BUR_Ideas = {
 		merc_maintenance_modifier = -0.15
 	}
 	bur_estates_general = {
-		mercenary_manpower = 0.5
+		mercenary_discipline = 0.05
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05

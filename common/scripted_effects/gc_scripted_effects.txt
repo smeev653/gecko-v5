@@ -107,7 +107,7 @@ gecko_mercs = {
 			}
 			change_variable = {
 					which = geckomercFL
-					value = 25
+					value = 30
 			}
 			set_variable = {            
 					which = availablegeckomercs

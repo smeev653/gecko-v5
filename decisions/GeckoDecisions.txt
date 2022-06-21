@@ -797,7 +797,7 @@ country_decisions = {
 						}
 						change_variable = {
 								which = geckomercFL
-								value = 25
+								value = 30
 						}
 						multiply_variable = {
 								which = geckomercFL
