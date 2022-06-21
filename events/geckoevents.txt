@@ -1412,9 +1412,9 @@ country_event = {
 }
 
 country_event = {
-    id = gecko.23
-   title = gecko.23.t
-    desc = gecko.23.d
+    id = gecko.24
+   title = gecko.24.t
+    desc = gecko.24.d
     picture = COURT_eventPicture
 
    trigger = {

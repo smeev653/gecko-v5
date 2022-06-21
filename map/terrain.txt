@@ -318,7 +318,7 @@ categories =  {
 			 193 4764 #gcburgundy
 			#gcfrance
 			6112 #gcbohemia
-			6159 6160 6161 6162 6163 6177 6178 6179 #gc germany
+			6159 6160 6161 6162 6163 6177 6178 6179 6204 6205 6206 6208 #gc germany
 			6201 6203 6200 #gc netherlands
 			149 #gc ottos
 		}

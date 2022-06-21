@@ -63,37 +63,37 @@ trade_company_east_africa = {
 	}
 }
 
-trade_company_west_india = {
-	color = { 135 104 85 }
-	
-	provinces = {
-		518 2058 2087 4501 4462 #mewar_area
-		513 514 2067 4506 #marwar_area
-		504 2088 4503 4504 #sindh_area
-		505 2072 4505 #northern_sindh_area
-		515 521 2052 4454 4455 #saurashtra_area
-		503 2053 4456 4480 #patan_area
-		516 2051 2054 4512 4457 #ahmedabad_area
-	}
-	
-	# Generic
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			primary_culture = english
-		}
-		name = "TRADE_COMPANY_INDIA_British_trade_company_south_india"
-	}
-	names = {
-		name = "TRADE_COMPANY_WEST_INDIA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_WEST_INDIA_India_Trade_Company"
-	}
-}
+#trade_company_west_india = {
+#	color = { 135 104 85 }
+#	
+#	provinces = {
+#		518 2058 2087 4501 4462 #mewar_area
+#		513 514 2067 4506 #marwar_area
+#		504 2088 4503 4504 #sindh_area
+#		505 2072 4505 #northern_sindh_area
+#		515 521 2052 4454 4455 #saurashtra_area
+#		503 2053 4456 4480 #patan_area
+#		516 2051 2054 4512 4457 #ahmedabad_area
+#	}
+#	
+#	# Generic
+#	names = {
+#		trigger = {
+#			OR = {
+#				tag = GBR
+#				tag = ENG
+#			}
+#			primary_culture = english
+#		}
+#		name = "TRADE_COMPANY_INDIA_British_trade_company_south_india"
+#	}
+#	names = {
+#		name = "TRADE_COMPANY_WEST_INDIA_Root_Culture_GetName"
+#	}
+#	names = {
+#		name = "TRADE_COMPANY_WEST_INDIA_India_Trade_Company"
+#	}
+#}
 
 trade_company_east_india = {
 	color = { 230 0 0 }
@@ -131,29 +131,29 @@ trade_company_east_india = {
 	}
 }
 
-trade_company_burma = {
-	color = { 135 150 0 }
-	
-	provinces = {
-		570 573 2041 #naga_hills_area
-		584 2399 581 #upper_burma_area
-		2398 580 4393 2397 #chindwin_area
-		566 571 2040 2042 4440 #assam_area
-		4394 4396 585 4395 #central_burma_area
-		583 588 2400 4397 4406 #shan_hill_area
-		587 2401 4398 #karenni_area 
-		582 2395 2396 4404 4405 #kachin_area
-		567 2091 4473 #tripura_area
-	}
-	
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_BURMA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_BURMA_India_Trade_Company"
-	}
-}
+#trade_company_burma = {
+#	color = { 135 150 0 }
+#	
+#	provinces = {
+#		570 573 2041 #naga_hills_area
+#		584 2399 581 #upper_burma_area
+#		2398 580 4393 2397 #chindwin_area
+#		566 571 2040 2042 4440 #assam_area
+#		4394 4396 585 4395 #central_burma_area
+#		583 588 2400 4397 4406 #shan_hill_area
+#		587 2401 4398 #karenni_area 
+#		582 2395 2396 4404 4405 #kachin_area
+#		567 2091 4473 #tripura_area
+#	}
+#	
+#	# Generic
+#	names = {
+#		name = "TRADE_COMPANY_BURMA_Root_Culture_GetName"
+#	}
+#	names = {
+#		name = "TRADE_COMPANY_BURMA_India_Trade_Company"
+#	}
+#}
 
 trade_company_north_india = {
 	color = { 220 150 10 }
@@ -486,7 +486,7 @@ trade_company_sevilla = {
 		4546 4547 4548 4551 4552 4553 4554 4555 4556 4558
 		 368 366 4565 4787 4788 4789
 		209 210 2989 #basque_country #smeev
-		6195 6194 6193 6181 #gc iberia
+		6195 6194 6193 6181 6209 #gc iberia
 	}
 	
 	# Specific
@@ -666,7 +666,7 @@ trade_company_rheinland = {
 		69 86 56 2973
 		4716
 		2971 1758 57 4773 #braunschweig
-		6163 6162 4749 4786	6179 6178 #gc germany
+		6163 6162 4749 4786	6179 6178 6204 6205 6207 6208  #gc germany
 		4718 79 66 67 4717
 	}
 	
@@ -1195,6 +1195,7 @@ trade_company_persia = {
 		431 2999 4327 #mogostan_area
 		6154 6153 6152 6151 6149 6148 6146 6145 6144 6157 6156 6155 6140
 		576 577 2068 #kalat_area
+		504 2088 4503 4504 505 4505 2072 #sindh_area
 	}
 
 	# Specific
@@ -1244,6 +1245,7 @@ trade_company_south_germany = {
 		165 1867 1871 4721 4720 #romandie_area #smeev
 		4767 1761 77 4715 71
 		6171 6172 6173 6174 6175 6176 6169 6170 #gc switzerland
+		6206 #gc germany
 	}
 	names = {
 		name = "TRADE_COMPANY_south_germany_Root_Culture_GetName"

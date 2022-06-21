@@ -413,7 +413,7 @@ lower_andalucia_area = { #5
 }
 
 cordoba_area = {
-1748 225 6195
+1748 225 6195 2754
 }
 upper_andalucia_area = {    #4
 	222 223 226 4546 6193
@@ -425,7 +425,7 @@ castille_area = { #5
 }
 
 toledo_area = { #5
-	219 221 2751 2754 4547
+	219 221 2751 4547 6209
 }
 
 asturias_area = { #4
@@ -1055,7 +1055,7 @@ franconia_area = { #4 (Lower Franconia)
 }
 
 upper_franconia_area = { #4
-	66 67 4717
+	66 67 4717 79
 }
 
 upper_swabia_area = { #4 (East Swabia)
@@ -1134,11 +1134,11 @@ alsace_area = { #3
 }
 
 palatinate_area = { #3
-	77 1761 4767
+	77 1761 4767 6206 
 }
 
 north_rhine_area = { #4
-	84 85 2975 83
+	84 85 2975 6205 6204
 }
 
 lower_rhineland_area = { #4
@@ -1146,19 +1146,19 @@ lower_rhineland_area = { #4
 }
 
 westphalia_area = { #3 (South Westphalia)
-	82 2972 4775 81 1762 
+	82 81 1762 6208 4774 
 }
 
 north_westphalia_area = { #4
-	56 86 2973 69
+	56 86 2973 69 2971 
 }
 
 hesse_area = { #5
-	 1876 4774 78 4718 79
+	 1876 78 4718 83 6207
 }
 
 braunschweig_area = { #4
-	57 1758 2971 4773
+	57 1758 4773 2972 4775
 }
    
 weser_area = { #4
