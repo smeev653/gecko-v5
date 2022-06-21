@@ -402,18 +402,18 @@ country_decisions = {
 
 		allow = {
 				ai = no
-				is_great_power = no
+				#is_great_power = no
 				#dip_tech = 10
 				NOT = { num_of_allies = 2 }
 				NOT = { is_colonial_nation = yes }	
-				NOT = { is_lacking_institutions = yes }
+				#NOT = { is_lacking_institutions = yes }
 				NOT = { is_subject_of_type = tributary_state }
 		}
 		effect = {
 			
 			add_country_modifier = {
 				name = "gc_urbanisation"
-				duration = 5475
+				duration = 3650
 			}
 		}
 	}
