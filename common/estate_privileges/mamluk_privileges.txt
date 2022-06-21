@@ -126,7 +126,7 @@ estate_mamluks_promote_leadership = {
 	}
 	benefits = {
 		cavalry_flanking = 1
-		shock_damage = 0.05
+		#shock_damage = 0.05
 	}
 	ai_will_do = {
 		factor = 10
