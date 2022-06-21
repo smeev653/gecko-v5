@@ -100,9 +100,7 @@ merc_black_army = {
 	}
 	cost_modifier = 0.75
 	modifier = {
-		infantry_power = 0.1
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
+		discipline = 0.1
 	}
 }
 
@@ -128,9 +126,7 @@ merc_black_army_2 = {
 	}
 	cost_modifier = 0.75
 	modifier = {
-		infantry_power = 0.1
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
+		discipline = 0.1
 	}
 }
 
