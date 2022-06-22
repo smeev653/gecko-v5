@@ -37,7 +37,25 @@ country_decisions = {
 			}	
 				set_country_flag = sm_hire_recruitmaster
 			}
-		}	
+		}
+	sm_hire_naval_reformer = {
+			potential = {
+				ai = no
+				NOT = { advisor = naval_reformer }
+			}
+			allow = {
+				ai = no
+			}
+			effect = {
+				add_years_of_income = -0.1
+				define_advisor  = { 
+					type = naval_reformer
+					skill = 1
+					discount = no
+					culture = variable:new_ruler_culture
+				}	
+			}
+		}
 	urbanisation = {
 		major = yes
 		potential = {
