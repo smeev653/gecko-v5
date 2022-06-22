@@ -3,7 +3,7 @@ the_draft = {
 	category = 1
 
 	allow = {
-		is_at_war = yes
+		is_at_war = no
 	}
 	
 	effect = {

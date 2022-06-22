@@ -53,7 +53,7 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage = 0.20
+		fire_damage = 0.15
 		burghers_loyalty_modifier = 0.1
 	}
 	bill_of_rights = {
@@ -400,8 +400,8 @@ offensive_ideas = {
 	}
 
 	bayonet_leaders = {
-		shock_damage = 0.125
-		fire_damage = 0.125
+		shock_damage = 0.10
+		fire_damage = 0.10
 	}
 	glorious_arms = {
 		general_cost = -0.10

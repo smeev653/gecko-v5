@@ -41,7 +41,7 @@ ruthless_personality = {
 	allow = {
 		is_admiral = no
 	}
-	fire_damage = 0.15
+	fire_damage = 0.10
 }
 
 inspirational_leader_general_personality = {

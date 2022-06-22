@@ -68,7 +68,7 @@ ENG_ideas = {
 		diplomatic_upkeep = 1
 	}
 	eng_red_coats = {
-		fire_damage = 0.2
+		fire_damage = 0.15
 	}
 	navigation_acts = {
 		trade_efficiency = 0.1
@@ -105,7 +105,7 @@ GBR_ideas = {
 		global_colonial_growth = 20
 	}
 	eng_red_coats = {
-		fire_damage = 0.2
+		fire_damage = 0.15
 	}
 	gbr_the_royal_society = {
 		technology_cost = -0.05
@@ -369,7 +369,7 @@ NED_ideas = {
 		siege_ability = 0.15
 	}
 	platoon_fire = {
-		fire_damage = 0.2
+		fire_damage = 0.15
 	}
 }
 
@@ -13241,7 +13241,7 @@ HIN_ideas = {
 		land_morale = 0.10
 	}
 	hin_gunpowder_empire = {
-		fire_damage = 0.20
+		fire_damage = 0.15
 	}
 	hin_sufism = {
 		global_missionary_strength = 0.02
@@ -13746,7 +13746,7 @@ MOR_ideas = {
 		cavalry_power = 0.15
 	}
 	bonus = {
-		shock_damage = 0.2
+		shock_damage = 0.15
 	}
 	trigger = {
 		tag = MOR
