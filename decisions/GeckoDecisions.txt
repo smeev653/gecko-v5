@@ -41,7 +41,7 @@ country_decisions = {
 	sm_hire_naval_reformer = {
 			potential = {
 				ai = no
-				NOT = { advisor = naval_reformer }
+				NOT = { has_country_modifier = hired_naval_reformer }
 			}
 			allow = {
 				ai = no
@@ -53,7 +53,12 @@ country_decisions = {
 					skill = 1
 					discount = no
 					culture = variable:new_ruler_culture
-				}	
+				}
+					add_country_modifier = {
+						name = "hired_naval_reformer"
+						duration = 1825
+						hidden = yes
+				}
 			}
 		}
 	urbanisation = {

@@ -30,19 +30,15 @@ domain_of_spouses_family = {
 }
 
 PR_commandant_cooldown = {
-	discipline = 0.001
 }
 
 PR_grand_captain_cooldown = {
-	land_morale = 0.001
 }
 
 gecko_armyreform_cooldown = {
-	land_morale = 0.001
 }
 
 gecko_militaryreform_cooldown = {
-	land_morale = 0.001
 }
 
 commandant_cooldown = {
@@ -52,6 +48,9 @@ grand_captain_cooldown = {
 }
 
 hired_explorer = {
+}
+
+hired_naval_reformer = {
 }
 
 hired_conquistador = {
@@ -135,7 +134,6 @@ gc_arty_officer_cooldown = {
 }
 
 gc_drill_master_delayed = {
-	drill_decay_modifier = -0.001
 }
 
 gc_drill_master_modifier = {
@@ -169,7 +167,6 @@ PR_manpower_edict_province = {
 }
 
 PR_manpower_edict_cooldown = {
-	global_manpower = 0.001
 }
 		
 
@@ -187,7 +184,6 @@ gecko_hyw = {
 }	
 
 gc_siege_specialist_delayed = {
-	siege_ability = 0.001
 }
 
 gc_siege_specialist_modifier = {
@@ -195,7 +191,6 @@ gc_siege_specialist_modifier = {
 }
 
 gc_infantry_leader_delayed = {
-	infantry_power = 0.001
 }
 
 gc_infantry_leader_modifier = {
@@ -207,7 +202,6 @@ gc_infantry_leader_cooldown = {
 }
 
 gc_cavalry_leader_delayed = {
-	cavalry_power = 0.001
 }
 
 gc_cavalry_leader_modifier = {
@@ -318,7 +312,6 @@ gecko_ipa = {
 }
 
 gecko_occupation = {
-	local_manpower_modifier = -0.01
 }
 
 mercs_bought = {
