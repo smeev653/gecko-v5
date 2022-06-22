@@ -422,6 +422,7 @@ technology = {
 	cavalry_shock		=	0.25
 		
 	enable = swedish_gallop	
+	enable = ge_swedish_gallop	
 	enable = sikh_hit_and_run
 	enable = bhonsle_infantry
 	enable = ge_bhonsle_infantry	
