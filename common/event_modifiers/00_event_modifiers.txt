@@ -1170,7 +1170,6 @@ grand_captain_boost = {
 
 army_organiser_boost = {
 	land_forcelimit_modifier = 0.2
-	mercenary_manpower = 0.1
 }
 
 commandant_boost = {
