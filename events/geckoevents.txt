@@ -1443,3 +1443,38 @@ country_event = {
 	option = {	
 	}
 }
+
+country_event = {
+    id = gecko.25
+   title = gecko.25.t
+    desc = gecko.25.d
+    picture = COURT_eventPicture
+
+   trigger = {
+      ai = no
+	  has_country_modifier = just_lost_war_timer
+	  NOT = { manpower_percentage = 0.5 }
+	  num_of_loans = 15
+	  is_at_war = no
+	  army_tradition = 30
+	  any_country = {
+						total_development = ROOT
+	  }
+	  NOT = { land_maintenance = 1 }
+	  #NOT = { num_of_allies = 1 }
+   }
+	hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		add_country_modifier = {
+				name = gecko_recovery
+				duration = 3650
+				hidden = yes
+			}
+	}
+	option = {	
+	}
+}

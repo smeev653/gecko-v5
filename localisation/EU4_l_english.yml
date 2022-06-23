@@ -592,7 +592,7 @@
  CANNOT_DECLARE_WAR_FIRST_MONTH:0 "You must wait until $DATE|Y$ to declare any wars."
  CANNOT_THREATEN_WAR_FIRST_MONTH:0 "You must wait until $DATE|Y$ to Threaten War."
  LEDGER_PLAYER:0 "Player"
- recovery_motivation:0 "Revanchism"
+ recovery_motivation:0 "Recovery"
  NO_REVANCHISM_IRO:0 "Does not have any level of Revanchism in the country."
  REVANCHISM_IRO:0 "§YRevanchism§!\n$NAME$ is currently experiencing Revanchism, which gives the following effect:\n$EFF$"
  non_core:0 "Not a Core"

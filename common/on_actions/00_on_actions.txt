@@ -348,15 +348,12 @@ on_colonial_reintegration = {
 # country
 on_peace_actor = {
 	events = {
-		usa_dlc.36				# Evacuation Day
-		native_americans.7		# Appoint Peace Chief
 	}
 }
 
 # country
 on_peace_recipient = {
 	events = {
-		native_americans.7		# Appoint Peace Chief
 	}
 }
 
