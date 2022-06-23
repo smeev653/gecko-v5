@@ -713,13 +713,13 @@ country_decisions = {
 				is_bankrupt = no
 				ai = no
 				is_colonial_nation = no 
-				
-		}	
-		allow = {
-			AND = {
+				AND = {
 					NOT = { has_country_modifier = increased_merc_recruitment }
 					NOT = { has_country_modifier = increased_merc_quality }
 				}
+		}	
+		allow = {
+			
 				NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -757,6 +757,7 @@ country_decisions = {
 				}
 		}
 		effect = {
+			custom_tooltip = gecko_merc_limit_tt
 				if = {
 					limit = {
 						has_country_modifier = Minor

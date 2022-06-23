@@ -1564,6 +1564,10 @@ country_event = {
 				add_country_modifier = {
 					name = "increased_merc_recruitment"
 					duration = 3650
+				}
+				set_variable = {            
+						which = availablegeckomercs
+						value = 1.25
 				}	
 			}
 	}
@@ -1581,7 +1585,11 @@ country_event = {
 				add_country_modifier = {
 					name = "increased_merc_quality"
 					duration = 3650
-				}	
+				}
+				set_variable = {            
+						which = availablegeckomercs
+						value = 0.75
+				}
 			}
 	}
 	option = {
