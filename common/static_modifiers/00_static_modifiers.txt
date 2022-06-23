@@ -740,7 +740,7 @@ war_exhaustion = {
 	sailors_recovery_speed = -0.01
 	siege_ability = -0.01
 	global_trade_goods_size_modifier = -0.02
-	defensiveness = -0.025
+	defensiveness = -0.0125
 }
 
 doom = {
@@ -782,7 +782,7 @@ army_tradition = {
 	recover_army_morale_speed = 0.1
 	land_morale = 0.3125
 	manpower_recovery_speed = 0.15
-	siege_ability = 0.05
+	#siege_ability = 0.05
 	temples_influence = 0.1
 	mr_aristocrats_influence = 0.1
 	rr_girondists_influence = 0.1

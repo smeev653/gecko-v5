@@ -22,7 +22,6 @@ on_startup = {
 	}
 	if = {
 		limit = {
-			ai = no
 			NOT =  {has_country_flag = gecko_mercs_set }
 		}
 		set_country_flag = gecko_mercs_set

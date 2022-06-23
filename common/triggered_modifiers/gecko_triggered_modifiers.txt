@@ -587,20 +587,19 @@ Ahead_of_time = {
 	yearly_army_professionalism = 0.002
 }
 
-#Over_merc_limit = {
-#	potential = {
-#		ai = no
-#		num_of_mercenaries = 1
-#	}
-#	trigger = {
-#				check_variable = {
-#						which = geckomercvalue
-#						which = geckomercFL
-#					}
-#		
-#	}
-#	mercenary_discipline = -0.1
-#	mercenary_cost = 0.33
-#	merc_maintenance_modifier = 0.33
-#	mercenary_manpower = -0.33
-#}
+Over_merc_limit = {
+	potential = {
+		ai = no
+		num_of_mercenaries = 1
+	}
+	trigger = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		
+	}
+	mercenary_discipline = -0.05
+	mercenary_cost = 0.33
+	merc_maintenance_modifier = 0.33
+}

@@ -660,7 +660,7 @@ country_decisions = {
 				add_years_of_income = -0.075	
 			}
 			else = {	
-				add_treasury = -10
+				add_treasury = -15
 			}
 			capital_scope = {
 				mercenary_infantry = PREV
@@ -719,7 +719,9 @@ country_decisions = {
 				}
 		}	
 		allow = {
-			
+				any_hired_mercenary_company = {
+					hired_for_months = 1
+				}
 				NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -827,6 +829,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
+			always = no
 		}
 		allow = {
 					check_variable = {
