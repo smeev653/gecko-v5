@@ -391,7 +391,7 @@ westfalian_group_3 = {
 				name = efficienct_merchants 
 				duration = 7300
 			}
-		enable_development_on_buildings_built = yes	
+		#enable_development_on_buildings_built = yes	
 		}
 	}
 	

@@ -70,6 +70,7 @@ hansa_sound_toll = {
 				}
 				add_permanent_claim = ROOT
 			}
+				enable_development_on_buildings_built = yes
 		}
 	}
 }

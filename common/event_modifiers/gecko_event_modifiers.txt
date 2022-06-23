@@ -332,3 +332,13 @@ gecko_recovery = {
 	war_exhaustion = -1
 	global_autonomy = -0.3
 }
+
+increased_merc_recruitment = {
+	is_mercenary_modifier = yes
+	land_morale = -0.15
+}
+
+increased_merc_quality = {
+	is_mercenary_modifier = yes
+	infantry_power = 0.15
+}	
