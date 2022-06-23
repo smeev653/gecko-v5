@@ -90,6 +90,7 @@ gecko_mercs = {
 		limit = {
 			ai = no
 			has_country_modifier = Minor
+			check_variable
 		}
 		hidden_effect = {
 			export_to_variable = {

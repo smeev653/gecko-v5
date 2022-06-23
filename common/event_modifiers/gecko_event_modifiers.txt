@@ -340,5 +340,11 @@ increased_merc_recruitment = {
 
 increased_merc_quality = {
 	is_mercenary_modifier = yes
-	infantry_power = 0.15
+	infantry_power = 0.10
 }	
+
+150percentavailablemercs = {
+}
+
+110percentavailablemercs = {
+}

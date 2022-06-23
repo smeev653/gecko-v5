@@ -285,11 +285,11 @@ emp_burgundy_1 = {
                 name = "defense_of_burgundy"
                 duration = 1825
                 }
-				add_country_modifier = {
-					name = "geckoavailablemercs"
-					duration = 1825
-					hidden = yes
-			}
+				#add_country_modifier = {
+				#	name = "geckoavailablemercs"
+				#	duration = 1825
+				#	hidden = yes
+				#}
             }
         }
 }

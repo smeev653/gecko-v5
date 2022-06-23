@@ -20,8 +20,19 @@ on_startup = {
 			days = 7
 		}
 	}
-	gecko_occupation_effect = yes
-	gecko_mercs = yes
+	if = {
+		limit = {
+			ai = no
+			NOT =  {has_country_flag = gecko_mercs_set }
+		}
+		set_country_flag = gecko_mercs_set
+		country_event = { 
+			id = gecko.30
+			days = 1
+		}
+	}
+	#gecko_occupation_effect = yes
+	#gecko_mercs = yes
 	if = {
 		limit = {
 				OR = {

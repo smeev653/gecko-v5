@@ -823,6 +823,22 @@ country_decisions = {
 				}
 		}	
 	}
+	debug_decision = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = {
+					check_variable = {
+								which = availablegeckomercs
+							}
+				
+		}
+		effect = {
+		}
+	}
 }			
+
+
 
 		
