@@ -5,11 +5,15 @@
  ab_timurids_tech:0 "Timurid Renaissance"
  ab_mamluks_force_limit:0 "Granary of the Mediterranean"
  ab_morocco_raids:0 "Moroccan Pirates"
+ ab_hesse_mercs:0 "Hessian Mercenaries"
+ hesse_available_mercs_tt:0 "§G+25% Available Mercenaries§!"
+ bur_available_mercs_tt:0 "§G+25% Available Mercenaries§!"
 
  #Age 2
  ab_bukhara_arty:0 "Bukharan Artillery"
  ab_arabia_speed:0 "Arabian Horses"
- ab_hesse_mercs:0 "Hessian Mercenaries"
+
  ab_improved_weaponry1:0 "Improved Weaponry"
  ab_improved_weaponry2:0 "Improved Weaponry"
  ab_improved_weaponry3:0 "Improved Weaponry"
+

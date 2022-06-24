@@ -1491,11 +1491,11 @@ gecko_tur_events = {
 					name = "defense_of_anatolia"
 					duration = 1825
 			}
-			add_country_modifier = {
-					name = "geckoavailablemercs"
-					duration = 1825
-					hidden = yes
-			}
+			#add_country_modifier = {
+			#		name = "geckoavailablemercs"
+			#		duration = 1825
+			#		hidden = yes
+			#}
 			add_yearly_manpower = 3	
         }
 }

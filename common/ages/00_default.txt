@@ -277,6 +277,9 @@ age_of_discovery = {
 			allow = {
 				tag = BUR
 			}
+			effect = {
+				custom_tooltip = bur_available_mercs_tt
+			}
 			modifier = {
 				#mercenary_manpower = 0.1
 				mercenary_cost = -0.15
@@ -337,6 +340,9 @@ age_of_discovery = {
 					tag = HES
 					tag = WES
 				}
+			}
+			effect = {
+				custom_tooltip = hesse_available_mercs_tt
 			}
 			modifier = {
 				merc_maintenance_modifier = -0.35

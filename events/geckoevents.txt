@@ -1307,37 +1307,37 @@ country_event = {
 	}
 }
 ##set available mercs to +25%####
-country_event = {
-    id = gecko.21
-   title = gecko.21.t
-    desc = gecko.21.d
-    picture = COURT_eventPicture
-
-   trigger = {
-         ai = no
-			has_country_modifier = geckoavailablemercs
-		 	
-		 NOT = {
-					check_variable = {
-								which = availablegeckomercs
-								value = 1.25
-							}
-				}
-   }
-	hidden = yes
-    mean_time_to_happen = {
-        days = 1
-    }
-	
-	immediate = {
-		set_variable = {            
-						which = availablegeckomercs
-						value = 1.25
-				}			
-	}
-	option = {	
-	}
-}
+#country_event = {
+#    id = gecko.21
+#   title = gecko.21.t
+#    desc = gecko.21.d
+#    picture = COURT_eventPicture
+#
+#  trigger = {
+#        ai = no
+#			has_country_modifier = geckoavailablemercs
+#		 	
+#		 NOT = {
+#					check_variable = {
+#								which = availablegeckomercs
+#								value = 1.25
+#							}
+#				}
+#   }
+#	hidden = yes
+#    mean_time_to_happen = {
+#        days = 1
+#    }
+#	
+#	immediate = {
+#		set_variable = {            
+#						which = availablegeckomercs
+#						value = 1.25
+#				}			
+#	}
+#	option = {	
+#	}
+#}
 ##reset available mercs to +0%####
 country_event = {
     id = gecko.22
@@ -1349,7 +1349,7 @@ country_event = {
          ai = no
 				NOT = { has_age_ability = ab_burgundy_merc_manpower }
 				NOT = { has_age_ability = ab_hesse_mercs}
-				NOT = { has_country_modifier = geckoavailablemercs}
+				#NOT = { has_country_modifier = geckoavailablemercs}
 			OR = {	
 				AND = {	
 					NOT = { has_country_modifier = increased_merc_recruitment }
