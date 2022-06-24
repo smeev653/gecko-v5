@@ -1384,63 +1384,6 @@ country_event = {
 	option = {	
 	}
 }
-##increase available mercs event with age ability option####
-country_event = {
-    id = gecko.23
-   title = gecko.23.t
-    desc = gecko.23.d
-    picture = COURT_eventPicture
-
-   trigger = {
-         ai = no
-		 OR = {
-			 has_age_ability = ab_burgundy_merc_manpower
-			 has_age_ability = ab_hesse_mercs
-			 has_country_modifier = increased_merc_recruitment
-		 }
-		 NOT = {  has_country_modifier = increased_merc_quality }
-		 NOT = {
-				check_variable = {
-								which = availablegeckomercs
-								value = 1.25
-							}
-		 
-			}
-	}		
-		hidden = yes
-	mean_time_to_happen = {
-			days = 1
-	}
-
-	immediate = {
-		if = {
-			limit = {
-			    OR = {
-					AND = {
-						 has_country_modifier = increased_merc_recruitment
-						 has_age_ability = ab_hesse_mercs
-					}
-					AND = {
-						 has_country_modifier = increased_merc_recruitment
-						 has_age_ability = ab_burgundy_merc_manpower
-					}
-				}
-			}
-			set_variable = {            
-						which = availablegeckomercs
-						value = 1.5
-				}	
-		}
-		else = {
-				set_variable = {            
-						which = availablegeckomercs
-						value = 1.25
-				}
-			}	
-	}
-	option = {	
-	}
-}
 
 ###revanchism#####
 country_event = {
@@ -1522,7 +1465,7 @@ country_event = {
 						}	
 					add_country_modifier = {
 						name = "150percentavailablemercs"
-						duration = 3700
+						duration = -1
 						hidden = yes
 					}	
 				}
@@ -1568,7 +1511,7 @@ country_event = {
 						}
 					add_country_modifier = {
 						name = "110percentavailablemercs"
-						duration = 3700
+						duration = -1
 						hidden = yes
 					}
 				}
@@ -1741,6 +1684,7 @@ country_event = {
 	option = {	
 	}
 }
+##start up event for mrecs####
 country_event = {
 	 id = gecko.30
 	title = gecko.30.t
@@ -1818,6 +1762,73 @@ country_event = {
 	}
 }
 
+##increase available mercs event with age ability option####
+country_event = {
+    id = gecko.23
+   title = gecko.23.t
+    desc = gecko.23.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+		 OR = {
+			 has_age_ability = ab_burgundy_merc_manpower
+			 has_age_ability = ab_hesse_mercs
+		}	 
+		has_country_modifier = increased_merc_recruitment
+		 
+		NOT = {  has_country_modifier = increased_merc_quality }
+		check_variable = {
+								which = availablegeckomercs
+								value = 1.25
+							}
+		NOT = {
+			check_variable = {
+								which = availablegeckomercs
+								value = 1.5
+							}
+		}	
+	}	
+		hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+		if = {
+			limit = {
+			    OR = {
+					AND = {
+						 has_country_modifier = increased_merc_recruitment
+						 has_age_ability = ab_hesse_mercs
+					}
+					AND = {
+						 has_country_modifier = increased_merc_recruitment
+						 has_age_ability = ab_burgundy_merc_manpower
+					}
+				}
+			}
+			set_variable = {            
+						which = availablegeckomercs
+						value = 1.5
+				}	
+			add_country_modifier = {
+					name = "150percentavailablemercs"
+					duration = -1
+				}
+		}
+		else = {
+				set_variable = {            
+						which = availablegeckomercs
+						value = 1.25
+				}
+			}	
+	}
+	option = {	
+	}
+}
+
+
 ##increase merc quality event with age ability option####
 country_event = {
     id = gecko.31
@@ -1827,15 +1838,18 @@ country_event = {
 
    trigger = {
          ai = no
-		 AND = {
 			OR = {
 			 has_age_ability = ab_burgundy_merc_manpower
 			 has_age_ability = ab_hesse_mercs
 			} 
 			 has_country_modifier = increased_merc_quality
-		} 
+
 		 
 		 NOT = {  has_country_modifier = increased_merc_recruitment }
+		 check_variable = {
+								which = availablegeckomercs
+								value = 0.85
+							}
 		 NOT = {
 				check_variable = {
 								which = availablegeckomercs
@@ -1866,7 +1880,11 @@ country_event = {
 			set_variable = {            
 						which = availablegeckomercs
 						value = 1.1
-				}	
+				}
+			add_country_modifier = {
+					name = "110percentavailablemercs"
+					duration = -1
+				}
 		}
 		else = {
 				set_variable = {            
@@ -1893,7 +1911,7 @@ country_event = {
 				NOT = {	has_age_ability = ab_hesse_mercs }
 			}	
 			 has_country_modifier = increased_merc_quality
-		 
+			 has_country_modifier = 110percentavailablemercs
 		 NOT = {  has_country_modifier = increased_merc_recruitment }
 			check_variable = {
 								which = availablegeckomercs
@@ -1911,7 +1929,48 @@ country_event = {
 			set_variable = {            
 						which = availablegeckomercs
 						value = 0.85
-				}	
+				}
+			remove_country_modifier = 110percentavailablemercs
+		}	
+	
+	option = {	
+	}
+}
+
+##on losing age ability with increase merc recruitment option####
+country_event = {
+    id = gecko.33
+   title = gecko.33.t
+    desc = gecko.33.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+			AND = {
+				NOT = {	has_age_ability = ab_burgundy_merc_manpower }
+				NOT = {	has_age_ability = ab_hesse_mercs }
+			}	
+			 has_country_modifier = increased_merc_recruitment
+			 has_country_modifier = 150percentavailablemercs
+		 NOT = {  has_country_modifier = increased_merc_quality }
+			check_variable = {
+								which = availablegeckomercs
+								value = 1.5
+							}
+		 
+			
+	}		
+		hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+			set_variable = {            
+						which = availablegeckomercs
+						value = 1.25
+				}
+			remove_country_modifier = 150percentavailablemercs
 		}	
 	
 	option = {	

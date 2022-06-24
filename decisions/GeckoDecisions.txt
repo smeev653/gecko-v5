@@ -638,7 +638,7 @@ country_decisions = {
 			}
 			
 		allow = {				
-				treasury = 10
+				treasury = 15
 				#splendor = 200
 				NOT = {
 					check_variable = {
@@ -776,7 +776,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL
@@ -806,7 +806,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL
@@ -841,6 +841,7 @@ country_decisions = {
 		}
 	}
 }			
+
 
 
 
