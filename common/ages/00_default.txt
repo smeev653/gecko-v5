@@ -345,9 +345,9 @@ age_of_discovery = {
 				custom_tooltip = hesse_available_mercs_tt
 			}
 			modifier = {
-				merc_maintenance_modifier = -0.35
+				merc_maintenance_modifier = -0.15
 				mercenary_cost = -0.15
-				#mercenary_discipline = 0.05
+				mercenary_discipline = 0.05
 				#mercenary_manpower = 0.25
 			}
 			ai_will_do = {
