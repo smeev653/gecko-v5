@@ -9,17 +9,17 @@ on_startup = {
 		#muslim_school_events.20 #Pick School
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
-	if = {
-		limit = {
-			tag = ENG
-			NOT =  {has_country_flag = gecko.9_fired }
-		}
-		set_country_flag = gecko.9_fired
-		country_event = { 
-			id = gecko.9
-			days = 7
-		}
-	}
+	#if = {
+	#	limit = {
+	#		tag = ENG
+	#		NOT =  {has_country_flag = gecko.9_fired }
+	#	}
+	#	set_country_flag = gecko.9_fired
+	#	country_event = { 
+	#		id = gecko.9
+	#		days = 7
+	#	}
+	#}
 	if = {
 		limit = {
 			NOT =  {has_country_flag = gecko_mercs_set }

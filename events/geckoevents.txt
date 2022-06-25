@@ -856,48 +856,48 @@ country_event = {
 }
 
 #defend normandy
-country_event = {
-	id = gecko.9
-	title = gecko.9.t
-	desc = gecko.9.d
-	picture = MILITARY_CAMP_eventPicture
+#country_event = {
+#	id = gecko.9
+#	title = gecko.9.t
+#	desc = gecko.9.d
+#	picture = MILITARY_CAMP_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "gecko.9.a"
+#		custom_tooltip = gecko.9_warning_tt
+#		
+#		add_country_modifier = {
+#			name = gecko_hyw
+#			duration = -1
+#		}
+#		add_estate_loyalty = {
+#			estate = estate_nobles
+#			loyalty = 10
+#		}
+#	}
+#}
 
-	is_triggered_only = yes
-
-	option = {
-		name = "gecko.9.a"
-		custom_tooltip = gecko.9_warning_tt
-		
-		add_country_modifier = {
-			name = gecko_hyw
-			duration = -1
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = 10
-		}
-	}
-}
-
-country_event = {
-	id = gecko.10
-	title = gecko.10.t
-	desc = gecko.10.d
-	picture = SIEGE_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = gecko.10.a
-		
-		if = {
-			limit = {
-				has_country_modifier = gecko_hyw
-			}
-			remove_country_modifier = gecko_hyw
-		}		
-	}
-}
+#country_event = {
+#	id = gecko.10
+#	title = gecko.10.t
+#	desc = gecko.10.d
+#	picture = SIEGE_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = gecko.10.a
+#		
+#		if = {
+#			limit = {
+#				has_country_modifier = gecko_hyw
+#			}
+#			remove_country_modifier = gecko_hyw
+#		}		
+#	}
+#}
 
 
 #advisors
