@@ -1804,7 +1804,7 @@ country_event = {
 	}
 }
 
-#The Great Mosque of DjennÃ©
+#The Great Mosque of Djenné
 country_event = {
 	id = flavor_mal.29
 	title = flavor_mal.29.t

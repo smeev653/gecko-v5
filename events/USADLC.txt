@@ -1,7 +1,7 @@
 ########################################
 # USA DLC Events
 #
-# written by Sara Wendel-�rtqvist
+# written by Sara Wendel-?rtqvist
 ########################################
 
 namespace = usa_dlc
@@ -3088,7 +3088,7 @@ country_event = {
 	}
 }
 
-# Adam-On�s Treaty
+# Adam-On?s Treaty
 country_event = {
 	id = usa_dlc.71
 	title = "usa_dlc.EVTNAME71"

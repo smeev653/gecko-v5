@@ -23,6 +23,7 @@ on_startup = {
 	if = {
 		limit = {
 			NOT =  {has_country_flag = gecko_mercs_set }
+			ai = no
 		}
 		set_country_flag = gecko_mercs_set
 		country_event = { 
@@ -733,7 +734,7 @@ on_new_monarch = {
 		flavor_boh.2			#Heretic Kings
 		flavor_hun.17			#Maintaining the Black Army
 		muslim_school_events.20 #No Religious School
-		flavor_fra.9000			# FranÃ§ois Villon
+		flavor_fra.9000			# François Villon
 		flavor_hsa.3		# Hansa: Tagfahrt
 	}
 	random_events = {
@@ -3753,7 +3754,20 @@ on_refuse_tribute = {
 on_leader_recruited = {
 	#hidden_effect = {
 	#	gecko_mercs = yes
-	#}	
+	#}
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT =  {has_country_flag = gecko_mercs_set }
+				ai = no
+			}
+			set_country_flag = gecko_mercs_set
+			country_event = { 
+				id = gecko.30
+				days = 1
+			}
+		}
+	}	
 }
 
 
