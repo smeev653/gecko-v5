@@ -1298,10 +1298,15 @@ country_event = {
 						owned_by = ROOT
 						controlled_by = ROOT
 					}
-					NOT = { hired_for_months = 2 }
+					NOT = { hired_for_months = 6 }
 				}
 				 disband_mercenary_company = THIS
 			}
+		export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+		}	
 	}
 	option = {	
 	}
@@ -1684,7 +1689,7 @@ country_event = {
 	option = {	
 	}
 }
-##start up event for mrecs####
+##start up event for mercs####
 country_event = {
 	 id = gecko.30
 	title = gecko.30.t
@@ -1973,6 +1978,69 @@ country_event = {
 			remove_country_modifier = 150percentavailablemercs
 		}	
 	
+	option = {	
+	}
+}
+
+## available mercs age ability ####
+country_event = {
+    id = gecko.34
+   title = gecko.34.t
+    desc = gecko.34.d
+    picture = COURT_eventPicture
+
+   trigger = {
+         ai = no
+			OR = {
+			 has_age_ability = ab_burgundy_merc_manpower
+			 has_age_ability = ab_hesse_mercs
+			} 
+			 NOT = {  has_country_modifier = increased_merc_quality }
+			NOT = {  has_country_modifier = increased_merc_recruitment }
+			NOT = { 	check_variable = {
+								which = availablegeckomercs
+								value = 1.25
+							}
+			}
+	}		
+		hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+
+			set_variable = {            
+						which = availablegeckomercs
+						value = 1.25
+				}
+
+	}
+	option = {	
+	}
+}
+###remove dev age ability#####
+country_event = {
+    id = gecko.35
+   title = gecko.35.t
+    desc = gecko.35.d
+    picture = COURT_eventPicture
+
+   trigger = {
+		has_country_flag = improve_development_on_buildings_built
+		NOT = { current_age = age_of_discovery }
+			
+	}		
+		hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+
+		clr_country_flag = improve_development_on_buildings_built
+
+	}
 	option = {	
 	}
 }

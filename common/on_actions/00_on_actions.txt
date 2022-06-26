@@ -3805,6 +3805,9 @@ on_mercenary_recruited = {
 				hidden = yes
 			}
 	}
+	FROM = {
+	
+	}
 }
 
 # THIS = One province in the state

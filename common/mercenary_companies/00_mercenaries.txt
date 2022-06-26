@@ -373,7 +373,7 @@ merc_gallowglasses = {
 		}
 	}
 	modifier = {
-        discipline = 0.1
+        discipline = 0.05
         shock_damage_received = -0.10
 	}
 }
@@ -523,9 +523,9 @@ merc_forlorn_hope = {
 		capital_scope = { region = british_isles_region }
 	}
 	modifier = {
-		reinforce_speed = -0.25
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
+		#reinforce_speed = -0.25
+		#fire_damage_received = -0.1
+		#shock_damage_received = -0.1
 		land_morale = 0.1
 	}
 }

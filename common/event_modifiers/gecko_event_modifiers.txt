@@ -348,3 +348,6 @@ increased_merc_quality = {
 
 110percentavailablemercs = {
 }
+
+gc_urbanisation_timer = {
+}

@@ -420,7 +420,8 @@ country_decisions = {
 		potential = {
 				ai = no
 				NOT = { has_country_modifier = gc_urbanisation}
-				dip_tech = 6	
+				dip_tech = 6
+				NOT = { has_country_modifier = gc_urbanisation_timer}
 			}
 
 		allow = {
@@ -433,7 +434,11 @@ country_decisions = {
 				NOT = { is_subject_of_type = tributary_state }
 		}
 		effect = {
-			
+			add_country_modifier = {
+				name = "gc_urbanisation_timer"
+				duration = 18250
+				hidden = yes
+			}
 			add_country_modifier = {
 				name = "gc_urbanisation"
 				duration = 3650
@@ -665,46 +670,69 @@ country_decisions = {
 			capital_scope = {
 				mercenary_infantry = PREV
 			}
-			hidden_effect = {
-				export_to_variable = {
-						which = geckomercvalue
-						value = trigger_value:num_of_mercenaries
-						who = ROOT
+			if = {
+					limit = {
+						has_country_modifier = Minor
 					}
-			}	
-			#add_splendor = -200
-			#set_country_flag = gecko_mercs_hired
-			#random_owned_province = {
-			#	limit = {
-			#		controlled_by = ROOT
-			#		has_owner_accepted_culture = yes
-			#		is_core = ROOT
-			#		has_siege = no
-			#		is_in_capital_area = yes
-			#		is_state = yes
-			#		NOT = { local_autonomy = 25 }
-			#	}
-			#	mercenary_infantry = PREV
-			#}
-			#capital_scope = {
-			#	ROOT = {
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#		mercenary_infantry = PREV
-			#	}	
-			#}
-			add_country_modifier = {
-				name = "mercs_bought"
-				duration = 3650
-				hidden = yes
-			}
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 30
+						}
+						multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}	
+				}
+				else = {
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 20
+						}
+						multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}
+				}
 		}
 	}
 	splendor_mercs_2 = { #increase merc FL
