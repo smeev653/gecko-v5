@@ -14,7 +14,7 @@ estate_gc_noble_levies = {
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
-		cavalry_fraction = 0.1
+		
 	}
 	mechanics = {
 		enables_cossack_regiments
