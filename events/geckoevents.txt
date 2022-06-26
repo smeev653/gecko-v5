@@ -1275,6 +1275,7 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+		always = no
         ai = no
 		OR = {
 			num_of_mercenaries = 1
