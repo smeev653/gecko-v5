@@ -4376,7 +4376,7 @@ fortezza_di_sant_andrea = {
 }
 
 ven_monte_nuovo = {
-	interest = -0.5
+	#interest = -0.5
 }
 
 ven_venetian_first = {
