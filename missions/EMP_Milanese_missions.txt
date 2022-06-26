@@ -936,7 +936,7 @@ emp_mlo_swiss_mercs_branch = {
 		provinces_to_highlight = {
 		}	
 		trigger = {
-			OR = {
+			AND = {
 				num_of_mercenaries = VEN
 				num_of_mercenaries = SIC
 			}	
