@@ -9,6 +9,7 @@ merc__local_free_company = {
     cavalry_cap = 2
     cost_modifier = 0.75
     trigger = {
+		always = no
         total_development = 201
 		NOT = {
 					check_variable = {
@@ -74,6 +75,7 @@ merc__local_grand_company = {
     cost_modifier = 0.75
     trigger = {
         total_development = 100
+			always = no
 		#is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
 		 NOT = {
@@ -94,6 +96,7 @@ merc__local_independent_army = {
     cost_modifier = 0.75
     trigger = {
         total_development = 100
+			always = no
 		#is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
 		 NOT = {

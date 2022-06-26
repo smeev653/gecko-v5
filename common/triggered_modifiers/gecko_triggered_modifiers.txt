@@ -129,7 +129,6 @@ Decay = {
 
 We_stand_alone = {
 	potential = {
-				is_year = 1460
 				ai = no	
 			}
 	trigger  = {

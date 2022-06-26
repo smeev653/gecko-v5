@@ -8,6 +8,7 @@ gecko_independent_army_1 = {
     cost_modifier = 0.75
     trigger = {
 		 NOT = { total_development = 300 }
+		 always = no
 		 #is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
 		 NOT = {
@@ -27,6 +28,7 @@ gecko__local_independent_army_1 = {
     cavalry_cap = 2
     cost_modifier = 0.75
     trigger = {
+		 always = no
 		OR = {
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
@@ -49,6 +51,7 @@ gecko__local_independent_army_2 = {
     cavalry_cap = 2
     cost_modifier = 0.75
     trigger = {
+		 always = no
 		current_age = age_of_revolutions
 		NOT = {
 					check_variable = {

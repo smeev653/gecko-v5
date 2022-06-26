@@ -19,7 +19,7 @@ merc_lombard_free_company = {
 			tag = SIC
 		}
 	}
-	cost_modifier = 0.75
+	#cost_modifier = 1
 	modifier = { 
 		infantry_power = 0.10
 	}
@@ -1349,7 +1349,7 @@ merc_gascon_musket_company = {
 merc_tyrolean_guard = {
     regiments_per_development = 0.1
     #home_province = 134
-	cost_modifier = 0.75
+	#cost_modifier = 0.75
 	sprites = { dlc053_hab_sprite_pack dlc029_hab_sprite_pack hab_base_sprite_pack }
     trigger = {
 		is_emperor = yes
