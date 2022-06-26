@@ -2936,7 +2936,7 @@ uliastai_area = {#3
 
 jetysuu_area = { #5
 	color = { 56 37 169 }
-	459 461 2125 2126 2368
+	459 2126 2368
 }
 
 kashgaria_area = { #5 #Just Kashgar & Yarkand
