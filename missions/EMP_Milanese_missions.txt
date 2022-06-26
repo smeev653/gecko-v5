@@ -934,21 +934,12 @@ emp_mlo_swiss_mercs_branch = {
 		icon = swiss_mercenaries
 		required_missions = {  }
 		provinces_to_highlight = {
-			owned_by = SWI
-			SWI = {
-				NOT = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-			}
-		}
+			
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = emp_mlo_swiss_mercs_trigger_tooltip
-				has_country_flag = emp_mlo_won_war_with_swiss_mercs
-			}
+			OR = {
+				num_of_mercenaries = VEN
+				num_of_mercenaries = SIC
+			}	
 		}
 		effect = {
 			add_country_modifier = {
