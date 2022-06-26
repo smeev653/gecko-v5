@@ -134,7 +134,7 @@ We_stand_alone = {
 			}
 	trigger  = {
 		OR = {
-				great_power_rank = 4
+				great_power_rank = 6
 				 is_great_power = no
 				}
 				any_country = {
@@ -599,6 +599,6 @@ Over_merc_limit = {
 					}
 		
 	}
-	mercenary_discipline = -0.05
+	mercenary_discipline = -0.2
 	merc_maintenance_modifier = 0.33
 }

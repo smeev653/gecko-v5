@@ -153,12 +153,11 @@ urbanisation = {
 }
 
 gc_urbanisation = {
-	all_power_cost = -0.1
+	all_power_cost = -0.05
 	build_cost = -0.1
-	build_time = -0.25
 	land_morale = -0.1
-	naval_morale = -0.1
-	discipline = -0.05			
+	naval_morale = -0.2
+	discipline = -0.1			
 }
 
 PR_manpower_edict_province = {
