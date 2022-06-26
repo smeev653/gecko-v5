@@ -207,6 +207,7 @@ NDefines.NMilitary.MIN_MONTHLY_MANPOWER = 0.2							-- _MDEF_LIGHT_SHIP_COST = 1
 NDefines.NMilitary.GALLEY_COST = 10 								-- _MDEF_GALLEY_COST = 10,
 NDefines.NMilitary.TRANSPORT_COST = 1
 NDefines.NMilitary.FORTRESS_COST = 0.15
+NDefines.NMilitary.MERCENARY_BASE_COST = 15.0
 NDefines.NMilitary.MERCENARY_REINFORCE_COST_MULTIPLIER = 0.25
 NDefines.NMilitary.TRADITION_GAIN_LAND = 25
 NDefines.NMilitary.LOOTED_SCALE = 2
@@ -242,7 +243,7 @@ NDefines.NMilitary.MERCENARY_COMPANY_STARTING_MORALE = 0.25
 NDefines.NMilitary.MERCENARY_COMPANY_MIN_REGIMENTS = 8
 NDefines.NMilitary.MERCENARY_COMPANY_ARMY_TRADITION = 15.0
 NDefines.NMilitary.MERCENARY_COMPANY_MANPOWER_PER_REGIMENT = 1.125
-NDefines.NMilitary.MERCENARY_COMPANY_MANPOWER_RECOVERY = 12				-- How many months to recover mercenary manpower fully
+NDefines.NMilitary.MERCENARY_COMPANY_MANPOWER_RECOVERY = 90				-- How many months to recover mercenary manpower fully
 NDefines.NMilitary.MERCENARY_COMPANY_HIRED_MANPOWER_RECOVERY_MOD = 1
 NDefines.NMilitary.SIEGE_BONUS_FOOD_SHORTAGE = 1
 NDefines.NMilitary.SIEGE_BONUS_WATER_SHORTAGE = 1
