@@ -900,8 +900,8 @@ administrative_ideas = {
 	}
 	benefits_for_mercenaries = {
 		mercenary_cost = -0.15
-		merc_maintenance_modifier = -0.5
-		mercenary_manpower = 0.15
+		merc_maintenance_modifier = -0.25
+		#mercenary_manpower = 0.15
 	}
 	adm_adaptability = {
 		global_manpower = 15
