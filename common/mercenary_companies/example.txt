@@ -29,12 +29,12 @@ merc__local_small_company = {
     trigger = {
         NOT = { total_development = 200 }
 		NOT = { is_emperor = yes }
-		NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
+		#NOT = {
+		#			check_variable = {
+		#				which = geckomercvalue
+		#				which = geckomercFL
+		#			}
+		#}
     }
     cost_modifier = 0.3
     modifier = {
