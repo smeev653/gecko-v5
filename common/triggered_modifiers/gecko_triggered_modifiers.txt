@@ -84,6 +84,7 @@ Minor = {
 	all_power_cost = -0.025
 	#global_autonomy = -0.05
 	monthly_reform_progress_modifier = 0.025
+	ae_impact = -0.1
 }
 
 Decay = {
