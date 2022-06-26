@@ -934,7 +934,7 @@ emp_mlo_swiss_mercs_branch = {
 		icon = swiss_mercenaries
 		required_missions = {  }
 		provinces_to_highlight = {
-			
+		}	
 		trigger = {
 			OR = {
 				num_of_mercenaries = VEN
