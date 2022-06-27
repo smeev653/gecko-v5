@@ -118,7 +118,7 @@ in_capital_state = {
 	local_governing_cost = -1.0
 	local_manpower_modifier = 0.33
 	local_tax_modifier = 0.33
-	local_development_cost = -0.05
+	#local_development_cost = -0.05
 	trade_goods_size_modifier = 0.15
 }
 
@@ -1602,7 +1602,7 @@ train_horsemanship_modifier = {
 }
 
 promote_culture_in_government_modifier = {
-	all_power_cost = -0.05
+	all_power_cost = -0.025
 }
 
 seize_clerical_holdings_modifier = {

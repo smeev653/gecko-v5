@@ -2619,7 +2619,7 @@ mlo_alpine_fortifications = {
 }
 
 mlo_lombard_renaissance = {
-	development_cost = -0.1
+	development_cost = -0.05
 	build_cost = -0.1
 }
 

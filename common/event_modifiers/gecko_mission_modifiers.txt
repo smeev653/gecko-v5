@@ -209,7 +209,7 @@ ven_genoese_humiliation = {
 }
 
 ven_urban_renewal = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ven_la_francocrazia = {

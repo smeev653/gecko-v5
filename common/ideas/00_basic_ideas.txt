@@ -240,7 +240,7 @@ innovativeness_ideas = {
 		idea_cost = -0.1
 	}
 	print_culture = {
-		all_power_cost = -0.0375
+		all_power_cost = -0.02
 	}
 	optimism = {
 		autonomy_change_time = -0.25
@@ -749,7 +749,7 @@ maritime_ideas = {
 		move_capital_cost_modifier = -0.5
 	}	
 	grand_navy = {
-		all_power_cost = -0.0375
+		all_power_cost = -0.02
 	}
 	ships_penny = {
 		advisor_pool = 2

@@ -81,7 +81,7 @@ Minor = {
 	interest = -0.25
 	global_regiment_cost = -0.1
 	build_cost = -0.05
-	all_power_cost = -0.025
+	all_power_cost = -0.02
 	#global_autonomy = -0.05
 	monthly_reform_progress_modifier = 0.025
 	ae_impact = -0.1
@@ -317,7 +317,7 @@ Peace_of_Italy = {
 			}											
 		}			
 	}
-	all_power_cost = -0.025
+	all_power_cost = -0.02
 	build_cost = -0.05
 	production_efficiency = 0.1
 	global_tax_modifier = 0.1
