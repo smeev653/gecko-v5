@@ -153,9 +153,9 @@ urbanisation = {
 }
 
 gc_urbanisation = {
-	all_power_cost = -0.05
+	all_power_cost = -0.1
 	build_cost = -0.1
-	land_morale = -0.1
+	land_morale = -0.15
 	naval_morale = -0.2
 	discipline = -0.1			
 }
