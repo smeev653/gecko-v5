@@ -6,8 +6,8 @@
  ab_mamluks_force_limit:0 "Granary of the Mediterranean"
  ab_morocco_raids:0 "Moroccan Pirates"
  ab_hesse_mercs:0 "Hessian Mercenaries"
- hesse_available_mercs_tt:0 "§G+25% Available Mercenaries§!"
- bur_available_mercs_tt:0 "§G+25% Available Mercenaries§!"
+ hesse_available_mercs_tt:0 "§G+15% Available Mercenaries§!"
+ bur_available_mercs_tt:0 "§G+15% Available Mercenaries§!"
  ab_minor_building_dev:0 "Development from Buildings"
  #Age 2
  ab_bukhara_arty:0 "Bukharan Artillery"

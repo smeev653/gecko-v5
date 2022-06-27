@@ -342,10 +342,10 @@ increased_merc_quality = {
 	infantry_power = 0.10
 }	
 
-150percentavailablemercs = {
+130percentavailablemercs = {
 }
 
-110percentavailablemercs = {
+100percentavailablemercs = {
 }
 
 gc_urbanisation_timer = {
