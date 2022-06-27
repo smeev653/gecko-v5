@@ -82,3 +82,5 @@
  GUARANTEEINVALID:0 "You may not guarantee a nation unless you have an alliance and §Y+100§! Relations with them."
  gecko_state:0 "You must own all provinces in the state to full core."
  gecko_stability:0 "Stability must be at least 0 to Declare War."
+ geckomercvalue:0 "Number of Mercenaries"
+ geckomercFL:0 "Mercenary Forcelimit"

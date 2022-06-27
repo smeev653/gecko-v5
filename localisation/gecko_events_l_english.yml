@@ -151,4 +151,8 @@
  gc_hungary_event.3.t:0 "The Empire of Hungary"
  gc_hungary_event.3.d:0 "We have proven our right to rule several times. It is us who should be the dominant power of Central Europe."
  gc_hungary_event.3.a:0 "We will take our rightful place."
-
+ gecko.28.title:0 "Modify Our Mercenary Contracts"
+ gecko.28.desc:0 "We have the opportunity to modify the type of Mercenaries we employ with differing effects."
+ gecko.28.a:0 "Increase Mercenary Recruitment"
+ gecko.28.b:0 "Increase Mercenary Quality"
+ gecko.28.c:0 "Do Nothing."

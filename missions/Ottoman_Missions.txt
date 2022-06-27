@@ -1185,12 +1185,37 @@ tur_indian_ocean = {
 			}
 		}
 		effect = {
-			caucasia_region = {
+			if = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
+					NOT = {is_year = 1490 }
+				}	
+				add_yearly_manpower = 2	
+				set_global_flag = erzincan_copper
+				add_country_modifier = {
+					name = "turkmen_recruitment"
+					duration = 5475
 				}
-				add_permanent_claim = ROOT
+				caucasia_region = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}				
+			} 
+			else = {
+				set_global_flag = erzincan_copper
+				add_country_modifier = {
+				name = "turkmen_recruitment"
+					duration = 5475
+				}	
+				caucasia_region = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT	}
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -1456,16 +1481,21 @@ gecko_tur_events = {
 		}
         effect = {
             define_general = {
-                shock = 5
-                fire = 5
-                manuever = 5
-                siege = 0
-                name = "Skanderbeg"
-                }
-                add_country_modifier = {
-                name = "defense_of_anatolia"
-                duration = 1825
-                }
+					shock = 5
+					fire = 5
+					manuever = 5
+					siege = 0
+					name = "Skanderbeg"
             }
+			add_country_modifier = {
+					name = "defense_of_anatolia"
+					duration = 1825
+			}
+			#add_country_modifier = {
+			#		name = "geckoavailablemercs"
+			#		duration = 1825
+			#		hidden = yes
+			#}
+			add_yearly_manpower = 3	
         }
 }

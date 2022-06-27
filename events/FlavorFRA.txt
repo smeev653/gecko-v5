@@ -1671,14 +1671,14 @@ country_event = {
 		NOT = { alliance_with = FRA }
 		NOT = { war_with = FRA }
 		#NOT = { truce_with = FRA }
-		1879 = {
-			OR = {
-				owned_by = ENG
-				owner = {
-					is_subject_of = ENG
-				}
-			}
-		}
+		#1879 = {
+		#	OR = {
+		#		owned_by = ENG
+		#		owner = {
+		#			is_subject_of = ENG
+		#		}
+		#	}
+		#}
 		FRA = {
 			is_subject = no
 		}
@@ -1725,88 +1725,88 @@ country_event = {
 		#add_stability = -1
 		set_country_flag = rb_gave_up_maine
 	}
-	option = {
-		name = "flavor_fra.6.b"
-		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 0
-				is_at_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_any_disaster = yes
-			}
-		}
-		custom_tooltip = flavor_fra.6.a.tt
-		FRA = { country_event = { id = flavor_fra.7 } }
-	}
+	#option = {
+	#	name = "flavor_fra.6.b"
+	#	ai_chance = {
+	#		factor = 75
+	#		modifier = {
+	#			factor = 0
+	#			is_at_war = yes
+	#		}
+	#		modifier = {
+	#			factor = 0
+	#			has_any_disaster = yes
+	#		}
+	#	}
+	#	custom_tooltip = flavor_fra.6.a.tt
+	#	FRA = { country_event = { id = flavor_fra.7 } }
+	#}
 }
 
 # The Surrender of Maine
-country_event = {
-	id = flavor_fra.7
-	title = "flavor_fra.7.t"
-	desc = "flavor_fra.7.d"
-	picture = SIEGE_eventPicture
-	
-	is_triggered_only = yes
-
-	major = yes
-	
-	option = {
-		name = "flavor_fra.7.a" #'teach them how to war' /Reversed Henry V
-		ai_chance = {
-			factor = 100 #Shouldn't take this from them really.
-			modifier = {
-				factor = 0
-				is_at_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_any_disaster = yes
-			}
-		}
-		ENG = {
-			declare_war_with_cb = {
-				who = FRA
-				casus_belli = cb_restore_personal_union
-			}
-		}
-		#177 = {
-		#	change_controller = FRA
-		#}
-	}
-	option = {
-		name = "flavor_fra.7.b" #Unpopular but preserves the peace?
-		ai_chance = {
-			factor = 1
-		}
-		#add_prestige = -10
-		FROM = {
-			add_truce_with = ROOT
-		}
-		add_truce_with = FROM
-		if = {
-			limit = { exists = PRO }
-			PRO = {
-				add_opinion = {
-					who = ROOT
-					modifier = fra_gave_up_on_maine
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -10
-			}
-		}
-	}
-}
+#country_event = {
+#	id = flavor_fra.7
+#	title = "flavor_fra.7.t"
+#	desc = "flavor_fra.7.d"
+#	picture = SIEGE_eventPicture
+#	
+#	is_triggered_only = yes
+#
+#	major = yes
+#	
+#	option = {
+#		name = "flavor_fra.7.a" #'teach them how to war' /Reversed Henry V
+#		ai_chance = {
+#			factor = 100 #Shouldn't take this from them really.
+#			modifier = {
+#				factor = 0
+#				is_at_war = yes
+#			}
+#			modifier = {
+#				factor = 0
+#				has_any_disaster = yes
+#			}
+#		}
+#		ENG = {
+#			declare_war_with_cb = {
+#				who = FRA
+#				casus_belli = cb_restore_personal_union
+#			}
+#		}
+#		#177 = {
+#		#	change_controller = FRA
+#		#}
+#	}
+#	option = {
+#		name = "flavor_fra.7.b" #Unpopular but preserves the peace?
+#		ai_chance = {
+#			factor = 1
+#		}
+#		#add_prestige = -10
+#		FROM = {
+#			add_truce_with = ROOT
+#		}
+#		add_truce_with = FROM
+#		if = {
+#			limit = { exists = PRO }
+#			PRO = {
+#				add_opinion = {
+#					who = ROOT
+#					modifier = fra_gave_up_on_maine
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				has_estate = estate_nobles
+#			}
+#			add_estate_loyalty = {
+#				estate = estate_nobles
+#				loyalty = -10
+#			}
+#		}
+#	}
+#}
 
 # The Surrender of Maine
 country_event = {

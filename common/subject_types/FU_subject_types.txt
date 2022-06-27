@@ -33,7 +33,7 @@ canton = {
 	liberty_desire_development_ratio = 0.2
 	liberty_desire_same_dynasty = -10.0
 	pays_overlord = 1.0
-	forcelimit_bonus = 1.1
+	#forcelimit_bonus = 1.1
 	forcelimit_to_overlord = 0.25
 	
 	relative_power_class = 1

@@ -8,8 +8,15 @@ gecko_independent_army_1 = {
     cost_modifier = 0.75
     trigger = {
 		 NOT = { total_development = 300 }
+		 always = no
 		 #is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
+		 NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
     }
     # No home province means local mercenary company
 }
@@ -21,11 +28,18 @@ gecko__local_independent_army_1 = {
     cavalry_cap = 2
     cost_modifier = 0.75
     trigger = {
+		 always = no
 		OR = {
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
 		}
 		NOT = { has_country_modifier = gecko_b }
+		NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
     }
     # No home province means local mercenary company
 }
@@ -37,7 +51,14 @@ gecko__local_independent_army_2 = {
     cavalry_cap = 2
     cost_modifier = 0.75
     trigger = {
+		 always = no
 		current_age = age_of_revolutions
+		NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
     }
     # No home province means local mercenary company
 }
@@ -56,12 +77,16 @@ gecko_merc_black_army_1 = {
 			has_country_modifier = hun_black_army	
 			has_reform = black_army_reform
 			}
+		NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}	
 	}
 	cost_modifier = 0.75
 	modifier = {
-		infantry_power = 0.1
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
+		discipline = 0.1
 	}
 }
 
@@ -78,40 +103,59 @@ gecko_merc_black_army_2 = {
 			has_country_modifier = hun_black_army	
 			has_reform = black_army_reform
 			}
+		NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}	
 	}
 	cost_modifier = 0.35
 	modifier = {
-		cavalry_power = 0.1
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
+		discipline = 0.1
+		cav_to_inf_ratio = 1
 	}
 }
 
 #Aristo mercs
 gecko_merc_aristo_ideas = {
 	regiments_per_development = 0.05
-	cavalry_weight = 1
     artillery_weight = 0
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
 		full_idea_group = aristocracy_ideas
+		NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 	}
 	cost_modifier = 0.5
+	modifier = {
+		cav_to_inf_ratio = 1
+	}
 }
 
 gecko_hormuz_company = {
-	regiments_per_development = 0.15
+	regiments_per_development = 0.055
 	cavalry_weight = 0
     artillery_weight = 0
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
 		tag = YEM
+		NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 	}
 	cost_modifier = 0.75
 }
 
 gc_merc_sekban = {
-    regiments_per_development = 0.1
+    regiments_per_development = 0.05
 	cost_modifier = 0.5
     #home_province = 151
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
@@ -121,7 +165,12 @@ gc_merc_sekban = {
 			mission_completed = repulse_gank
 			mission_completed = mam_turks_defeated
 		}
-		
+			 NOT = {
+				check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
 	}
     modifier = { land_morale = 0.1}
 }

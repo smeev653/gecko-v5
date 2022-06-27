@@ -13,6 +13,9 @@ country_decisions = {
 				add_years_of_income = -0.3
 				create_general = { tradition = 40 }
 				set_country_flag = sm_hire_general
+				hidden_effect = {
+					gecko_mercs = yes
+				}
 			}
 		}
 		
@@ -34,7 +37,30 @@ country_decisions = {
 			}	
 				set_country_flag = sm_hire_recruitmaster
 			}
-		}	
+		}
+	sm_hire_naval_reformer = {
+			potential = {
+				ai = no
+				NOT = { has_country_modifier = hired_naval_reformer }
+			}
+			allow = {
+				ai = no
+			}
+			effect = {
+				add_years_of_income = -0.1
+				define_advisor  = { 
+					type = naval_reformer
+					skill = 1
+					discount = no
+					culture = variable:new_ruler_culture
+				}
+					add_country_modifier = {
+						name = "hired_naval_reformer"
+						duration = 1825
+						hidden = yes
+				}
+			}
+		}
 	urbanisation = {
 		major = yes
 		potential = {
@@ -289,11 +315,8 @@ country_decisions = {
 					at_war_with_religious_enemy = yes
 					has_border_with_religious_enemy = yes
 					army_size_percentage = 1
-					manpower_percentage = 0.50
-					prestige = 50
-					OR = { 	advisor = commandant
-							advisor = army_reformer
-					}
+					manpower_percentage = 0.25
+					prestige = 25
 				}
 				effect = {
 					add_piety = -1
@@ -397,23 +420,28 @@ country_decisions = {
 		potential = {
 				ai = no
 				NOT = { has_country_modifier = gc_urbanisation}
-				dip_tech = 6	
+				dip_tech = 6
+				NOT = { has_country_modifier = gc_urbanisation_timer}
 			}
 
 		allow = {
 				ai = no
-				is_great_power = no
+				#is_great_power = no
 				#dip_tech = 10
 				NOT = { num_of_allies = 2 }
 				NOT = { is_colonial_nation = yes }	
-				NOT = { is_lacking_institutions = yes }
+				#NOT = { is_lacking_institutions = yes }
 				NOT = { is_subject_of_type = tributary_state }
 		}
 		effect = {
-			
+			add_country_modifier = {
+				name = "gc_urbanisation_timer"
+				duration = 18250
+				hidden = yes
+			}
 			add_country_modifier = {
 				name = "gc_urbanisation"
-				duration = 5475
+				duration = 3650
 			}
 		}
 	}
@@ -428,6 +456,7 @@ country_decisions = {
 				NOT = { has_country_modifier = PR_manpower_edict_cooldown }
 				NOT = { has_country_flag = PR_manpower_edict_activated }
 			}
+			is_year = 1450
 		}
 		allow = {
 		}
@@ -539,8 +568,8 @@ country_decisions = {
 			ai = no
        }
 		allow = {
-        adm_power = 50
-		ai = no
+			adm_power = 50
+			ai = no
 		}
 		effect = {
 			country_event = {
@@ -604,41 +633,244 @@ country_decisions = {
 			}
 		}
 	}
-	splendor_mercs = {
+	splendor_mercs_1 = {
 		major = yes
 		potential = {
-				NOT = { has_country_modifier = mercs_bought }
+				#always = no
 				is_bankrupt = no
 				ai = no
 				is_colonial_nation = no 
 			}
-
-		allow = {
-				splendor = 200
+			
+		allow = {				
+				treasury = 15
+				#splendor = 200
+				NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+				}
+				capital_scope = {
+						controlled_by = ROOT
+						has_siege = no
+						unit_in_battle = no
+				}
 		}
 		effect = {
-			add_splendor = -200
-			capital_scope = {
-				ROOT = {
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-					mercenary_infantry = PREV
-				}	
+			if = {
+				limit = {
+						has_country_modifier = Minor
+					}
+				add_years_of_income = -0.075	
 			}
-			add_country_modifier = {
-				name = "mercs_bought"
-				duration = 9125
-				hidden = yes
+			else = {	
+				add_treasury = -15
+			}
+			capital_scope = {
+				mercenary_infantry = PREV
+			}
+			if = {
+					limit = {
+						has_country_modifier = Minor
+					}
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 30
+						}
+						multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}	
 				}
-	}
+				else = {
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 20
+						}
+						multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}
+				}
 		}
+	}
+	splendor_mercs_2 = { #increase merc FL
+		major = yes
+		potential = {
+				is_bankrupt = no
+				ai = no
+				is_colonial_nation = no 
+				AND = {
+					NOT = { has_country_modifier = increased_merc_recruitment }
+					NOT = { has_country_modifier = increased_merc_quality }
+				}
+		}	
+		allow = {
+				any_hired_mercenary_company = {
+					hired_for_months = 1
+				}
+				NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+				}
+		}
+		effect = {
+			country_event = {
+				id = gecko.28
+			}
+			hidden_effect = {
+				export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+					}	
+			}
+		}
+	}
+	Show_Merc_limit = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+				NOT = {
+					check_variable = {
+								which = geckomercvalue
+								which = geckomercFL
+							}
+				}
+		}
+		effect = {
+			custom_tooltip = gecko_merc_limit_tt
+				if = {
+					limit = {
+						has_country_modifier = Minor
+					}
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 30
+						}
+						multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}	
+				}
+				else = {
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 20
+						}
+						multiply_variable = {
+								which = geckomercFL
+								which = availablegeckomercs
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}
+				}
+		}	
+	}
+	debug_decision = {
+		major = yes
+		potential = {
+			ai = no
+			always = no
+		}
+		allow = {
+					check_variable = {
+								which = availablegeckomercs
+							}
+				
+		}
+		effect = {
+		}
+	}
 }			
+
+
+
 
 		

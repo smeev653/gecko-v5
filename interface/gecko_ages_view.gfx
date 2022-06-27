@@ -42,6 +42,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_hessian_mercs.dds"
 	}
 	spriteType = {
+		name = "GFX_ab_minor_building_dev"
+		texturefile = "gfx/interface/ages/ab_minor_building_dev.dds"
+	}
+	spriteType = {
 		name = "GFX_ab_improved_weaponry1"
 		texturefile = "gfx/interface/ages/ab_improved_weaponry.dds"
 	}

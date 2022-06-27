@@ -1030,6 +1030,7 @@ colonial_government = {
 	}
 	legacy_equivalent = colonial_government_legacy
 	modifiers = {
+		discipline = -0.1
 		global_autonomy = -0.05
 		recover_army_morale_speed = 0.02
 		embracement_cost = -0.1
@@ -2174,6 +2175,7 @@ strengthen_executive_powers_reform = {
 		global_manpower_modifier = 0.175
 		global_sailors_modifier = 0.25
 		sailor_maintenance_modifer = -0.1
+		discipline = 0.05
 	}
 }
 

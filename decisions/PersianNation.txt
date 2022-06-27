@@ -24,8 +24,8 @@ country_decisions = {
 			NOT = { tag = BYZ }
 			NOT = { tag = ARB }
 			OR = {
-				tag = ORM
 				tag = AFG
+				tag = ARL
 			}
 			is_colonial_nation = no
 			OR = {
@@ -44,7 +44,8 @@ country_decisions = {
 				province_id = 2215		# Qazvin
 				province_id = 2218      # Shiraz
 				province_id = 4341
-				province_id = 416      
+				province_id = 416  
+				province_id = 429
 				AND = {
 					province_id = 426
 					ROOT = { NOT = { owns_core_province = 2218 } }
@@ -84,6 +85,7 @@ country_decisions = {
 			owns_core_province = 2218		# Shiraz
 			owns_core_province = 4341
 			owns_core_province = 416 
+			owns_core_province  = 429
 			OR = {		
 				owns_core_province = 432		# Kerman
 				owns_core_province = 2221		# Mashhad
@@ -138,8 +140,8 @@ country_decisions = {
 				
 				religion = shiite
 				claim = 100
-				adm = 6
-				dip = 5
+				adm = 5
+				dip = 4
 				mil = 5
 				}							
 			if = {
@@ -170,6 +172,7 @@ country_decisions = {
 	persian_nation_isfahan = {
 		major = yes
 		potential = {
+					always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_persia_flag }
@@ -307,7 +310,9 @@ country_decisions = {
 	
 	persian_nation_ardabil = {
 		major = yes
-		potential = {
+
+		potential = {	
+					always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_persia_flag }

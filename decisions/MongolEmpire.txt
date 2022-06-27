@@ -109,6 +109,7 @@ country_decisions = {
 	reunite_mongols = {
 		major = yes
 		potential = {
+			always = no
 			OR = {
 				culture_group = altaic
 				culture_group = tartar

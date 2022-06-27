@@ -25,7 +25,7 @@ religious_school = hanafi_school
 
 1432.1.1 = {
 	monarch = {
-		name = "Kï¿½chï¿½k Muhammad"
+		name = "Küchük Muhammad"
 		dynasty = "Genghisid"
 		adm = 0
 		dip = 0

@@ -104,14 +104,7 @@ add_army_professionalism = 0.11
 		adm = 3
 		dip = 3
 		mil = 4
-		leader = {
-			name = "Charles I de Bourgogne"
-			type = general
-			fire = 4	
-			shock = 4	
-			manuever = 3	
-			siege = 1
-		}
+		
 	}
 	set_heir_flag = is_charles_of_burg_flag
 }

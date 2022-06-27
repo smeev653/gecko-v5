@@ -33,6 +33,8 @@
  urbanisation_desc:0 "50 years of reduced power cost, increased goods produced and cheaper construction cost. No longer part of the normal Golden Age ability."
  sm_hire_recruitmaster_title:0 "Hire a -25% Cost Master Recruiter"
  sm_hire_recruitmaster_desc:0 "It would be wise to use the foreign expertise available to us to help bring fresh manpower into our ranks."
+ sm_hire_naval_reformer_title:0 "Hire a Naval Reformer"
+ sm_hire_naval_reformer_desc:0 "Hire a naval expert to reform our navies."
  PR_manpower_edict_title:0 "National Manpower Edict"
  PR_manpower_edict_desc:0 "Activate a manpower edict modifier in all states without an activated edict. No edicts can be applied to states with this modifier. Can be removed in 1 year."
  PR_manpower_edict_tooltip:0 "+§Y25%§! Manpower and +§R200%§! State Maintenance in all states without an active edict"
@@ -82,3 +84,17 @@ persian_nation_isfahan_title:0 "Form Persian Nation"
 persian_nation_isfahan_desc:0 ""
 persian_nation_ardabil_title:0 "Form Persian Nation"
 persian_nation_ardabil_desc:0 ""
+
+#mercs
+splendor_mercs_1_title:0 "2. Recruit Surplus Mercenaries"
+splendor_mercs_1_desc:0 "Allows further Mercenary recruitment to Mercenary Forcelimit."
+
+splendor_mercs_2_title:0 "3. Modify Our Mercenary Contracts"
+splendor_mercs_2_desc:0 "We have the opportunity to modify the type of Mercenaries we employ with differing effects..."
+
+Show_Merc_limit_title:0 "1. Show Mercenary Forcelimit"
+Show_Merc_limit_desc:0 "This is our Mercenary Forcelimit. If we go over this, any newly created Mercenary Company will be disbanded with no refund."
+gecko_merc_limit_tt:0 "Manually Update Mercenary Forcelimit"
+gecko_increased_merc_limit_tt:0 "This will §GIncrease our Available Mercenaries by +25%§!, but they will have -§R15.0% Morale§! for 10 Years."
+gecko_decreased_merc_limit_tt:0 "This will §RDecrease our Available Mercenaries by -15%§!, but they will have +§G10.0% Combat Ability§! for 10 Years."
+				

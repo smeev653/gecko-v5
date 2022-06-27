@@ -433,7 +433,7 @@ country_event = {
 	}
 }
 
-# The Duke of AlenÃ§on by Daniel Tolman
+# The Duke of Alençon by Daniel Tolman
 
 country_event = {
 	id = emp_mission_events.10

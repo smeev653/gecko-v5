@@ -1170,7 +1170,6 @@ grand_captain_boost = {
 
 army_organiser_boost = {
 	land_forcelimit_modifier = 0.2
-	mercenary_manpower = 0.1
 }
 
 commandant_boost = {
@@ -4365,7 +4364,7 @@ ven_recover_from_plague = {
 }
 
 ven_arsenal_marines = {
-	allowed_marine_fraction = 0.25
+	allowed_marine_fraction = 0.1
 }
 
 venice_ghetto = {
@@ -4377,7 +4376,7 @@ fortezza_di_sant_andrea = {
 }
 
 ven_monte_nuovo = {
-	interest = -0.5
+	#interest = -0.5
 }
 
 ven_venetian_first = {
@@ -11252,7 +11251,8 @@ just_had_revolution_bringing_someone_to_power_timer = { }
 
 wotr_rebels_resurgent = { }
 
-just_lost_war_timer = { }
+just_lost_war_timer = {
+}
 
 recent_rt_spread_revolution_to_colonies_event_timer = { }
 

@@ -402,26 +402,264 @@ fort_15th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				any_neighbor_province = {
-					owner = {
-						tag = ROOT
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
 					}
-					OR = {
-						has_building = fort_15th
-						has_construction = fort_15th
-						has_building = fort_16th
-						has_construction = fort_16th
-						has_building = fort_17th
-						has_construction = fort_17th
-						has_building = fort_18th
-						has_construction = fort_18th
-					}
-					NOT = { is_capital = yes }
-				}
+				}	
 			}
 		}
 	}
 
+keep_trigger = {
+		OR = {
+			AND = {
+				has_province_flag = PR_new_conquest_fort_delay
+				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+			}
+			is_capital = yes
+			province_id = 4735
+			province_id = 2986
+			province_id = 4745
+			province_id = 1981
+			province_id = 130
+			province_id = 4754
+			province_id = 4753
+			province_id = 4714
+			province_id = 6126
+			province_id = 6121
+			province_id = 6120
+			province_id = 6123
+			province_id = 6122
+			province_id = 1932
+			province_id = 378
+			province_id = 4736
+			province_id = 6158
+			province_id = 341
+			province_id = 6192
+			province_id = 4182
+			province_id = 87
+			province_id = 235
+			province_id = 4227
+			province_id = 14
+			province_id = 127
+			province_id = 1247
+			province_id = 12
+			province_id = 1983
+			province_id = 4149
+			province_id = 4142
+			province_id = 6
+			province_id = 2994
+			province_id = 48
+			province_id = 1
+			province_id = 1930
+			province_id = 27
+			province_id = 35
+			province_id = 39
+			province_id = 36
+			province_id = 4779
+			province_id = 316
+			province_id = 2296
+			province_id = 151
+			province_id = 249
+			province_id = 4121
+			province_id = 369
+			province_id = 253
+			province_id = 4364
+			province_id = 4110
+			province_id = 4363
+			province_id = 226
+			province_id = 1751
+			province_id = 4565
+			province_id = 366
+			province_id = 4560
+			province_id = 333
+			province_id = 4559
+			province_id = 124
+			province_id = 123
+			province_id = 2954
+			province_id = 353
+			province_id = 112
+			province_id = 1774
+			province_id = 142
+			province_id = 144
+			province_id = 4698
+			province_id = 4699
+			province_id = 1773
+			province_id = 146
+			province_id = 3003
+			province_id = 164
+			province_id = 4700
+			province_id = 2348
+			province_id = 285
+			province_id = 2447
+			province_id = 1215
+			province_id = 387
+			province_id = 396
+			province_id = 394
+			province_id = 395
+			province_id = 398
+			province_id = 2999
+			province_id = 431
+			province_id = 2890
+			province_id = 748
+			province_id = 2929
+			province_id = 2803
+			province_id = 502
+			province_id = 500
+			province_id = 499
+			province_id = 497
+			province_id = 496
+			province_id = 495
+			province_id = 494
+			province_id = 972
+			province_id = 973
+			province_id = 874
+			province_id = 2022
+			province_id = 976
+			province_id = 2587
+			province_id = 2521
+			province_id = 945
+			province_id = 911
+			province_id = 1001
+			province_id = 983
+			province_id = 982
+			province_id = 984
+			province_id = 2569
+			province_id = 2578
+			province_id = 2576
+			province_id = 981
+			province_id = 997
+			province_id = 536
+			province_id = 2100
+			province_id = 1050
+			province_id = 4658
+			province_id = 2745
+			province_id = 4651
+			province_id = 1017
+			province_id = 1818
+			province_id = 1014
+			province_id = 4186
+			province_id = 1825
+			province_id = 1820
+			province_id = 1021
+			province_id = 4193
+			province_id = 4131
+			province_id = 1852
+			province_id = 1032
+			province_id = 2159
+			province_id = 666
+			province_id = 597
+			province_id = 2686
+			province_id = 620
+			province_id = 2677
+			province_id = 659
+			province_id = 622
+			province_id = 2678
+			province_id = 623
+			province_id = 624
+			province_id = 628
+			province_id = 2692
+			province_id = 631
+			province_id = 2693
+			province_id = 632
+			province_id = 633
+			province_id = 2695
+			province_id = 2716
+			province_id = 642
+			province_id = 647
+			province_id = 646
+			province_id = 649
+			province_id = 650
+			province_id = 648
+			province_id = 4354
+			province_id = 4351
+			province_id = 4352
+			province_id = 4353
+			province_id = 4355
+			province_id = 2700
+			province_id = 4350
+			province_id = 4356
+			province_id = 654
+			province_id = 2699
+			province_id = 2738
+			province_id = 1107
+			province_id = 5004
+			province_id = 1981
+			province_id = 5003
+			province_id = 25
+			province_id = 28
+			province_id = 36
+			province_id = 1305
+			province_id = 2982
+			province_id = 145
+			province_id = 163
+			province_id = 320
+			province_id = 319
+			province_id = 321
+			province_id = 4165
+			province_id = 3
+			province_id = 2302
+			province_id = 6048
+			province_id = 347
+			province_id = 366
+			province_id = 4565
+			province_id = 4049
+			province_id = 4020
+			province_id = 4022
+			province_id = 2788
+			province_id = 1099
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = {
+							AND = {
+								has_province_flag = PR_new_conquest_fort_delay
+								NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	modifier = {
 		fort_level = 2
 	}
@@ -443,6 +681,7 @@ coastal_defence = {
 	modifier = {
 		blockade_force_required = 1
 		hostile_disembark_speed = 1.0
+		hostile_fleet_attrition = 1
 	}
 
 	ai_will_do = {
@@ -723,27 +962,264 @@ fort_16th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				any_neighbor_province = {
-					owner = {
-						tag = ROOT
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
 					}
-					OR = {
-						has_building = fort_15th
-						has_construction = fort_15th
-						has_building = fort_16th
-						has_construction = fort_16th
-						has_building = fort_17th
-						has_construction = fort_17th
-						has_building = fort_18th
-						has_construction = fort_18th
-					}
-					NOT = { is_capital = yes }
-				}
+				}	
 			}
 		}
 	}
 
-	
+	keep_trigger = {
+		OR = {
+			AND = {
+				has_province_flag = PR_new_conquest_fort_delay
+				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+			}
+			is_capital = yes
+			province_id = 4735
+			province_id = 2986
+			province_id = 4745
+			province_id = 1981
+			province_id = 130
+			province_id = 4754
+			province_id = 4753
+			province_id = 4714
+			province_id = 6126
+			province_id = 6121
+			province_id = 6120
+			province_id = 6123
+			province_id = 6122
+			province_id = 1932
+			province_id = 378
+			province_id = 4736
+			province_id = 6158
+			province_id = 341
+			province_id = 6192
+			province_id = 4182
+			province_id = 87
+			province_id = 235
+			province_id = 4227
+			province_id = 14
+			province_id = 127
+			province_id = 1247
+			province_id = 12
+			province_id = 1983
+			province_id = 4149
+			province_id = 4142
+			province_id = 6
+			province_id = 2994
+			province_id = 48
+			province_id = 1
+			province_id = 1930
+			province_id = 27
+			province_id = 35
+			province_id = 39
+			province_id = 36
+			province_id = 4779
+			province_id = 316
+			province_id = 2296
+			province_id = 151
+			province_id = 249
+			province_id = 4121
+			province_id = 369
+			province_id = 253
+			province_id = 4364
+			province_id = 4110
+			province_id = 4363
+			province_id = 226
+			province_id = 1751
+			province_id = 4565
+			province_id = 366
+			province_id = 4560
+			province_id = 333
+			province_id = 4559
+			province_id = 124
+			province_id = 123
+			province_id = 2954
+			province_id = 353
+			province_id = 112
+			province_id = 1774
+			province_id = 142
+			province_id = 144
+			province_id = 4698
+			province_id = 4699
+			province_id = 1773
+			province_id = 146
+			province_id = 3003
+			province_id = 164
+			province_id = 4700
+			province_id = 2348
+			province_id = 285
+			province_id = 2447
+			province_id = 1215
+			province_id = 387
+			province_id = 396
+			province_id = 394
+			province_id = 395
+			province_id = 398
+			province_id = 2999
+			province_id = 431
+			province_id = 2890
+			province_id = 748
+			province_id = 2929
+			province_id = 2803
+			province_id = 502
+			province_id = 500
+			province_id = 499
+			province_id = 497
+			province_id = 496
+			province_id = 495
+			province_id = 494
+			province_id = 972
+			province_id = 973
+			province_id = 874
+			province_id = 2022
+			province_id = 976
+			province_id = 2587
+			province_id = 2521
+			province_id = 945
+			province_id = 911
+			province_id = 1001
+			province_id = 983
+			province_id = 982
+			province_id = 984
+			province_id = 2569
+			province_id = 2578
+			province_id = 2576
+			province_id = 981
+			province_id = 997
+			province_id = 536
+			province_id = 2100
+			province_id = 1050
+			province_id = 4658
+			province_id = 2745
+			province_id = 4651
+			province_id = 1017
+			province_id = 1818
+			province_id = 1014
+			province_id = 4186
+			province_id = 1825
+			province_id = 1820
+			province_id = 1021
+			province_id = 4193
+			province_id = 4131
+			province_id = 1852
+			province_id = 1032
+			province_id = 2159
+			province_id = 666
+			province_id = 597
+			province_id = 2686
+			province_id = 620
+			province_id = 2677
+			province_id = 659
+			province_id = 622
+			province_id = 2678
+			province_id = 623
+			province_id = 624
+			province_id = 628
+			province_id = 2692
+			province_id = 631
+			province_id = 2693
+			province_id = 632
+			province_id = 633
+			province_id = 2695
+			province_id = 2716
+			province_id = 642
+			province_id = 647
+			province_id = 646
+			province_id = 649
+			province_id = 650
+			province_id = 648
+			province_id = 4354
+			province_id = 4351
+			province_id = 4352
+			province_id = 4353
+			province_id = 4355
+			province_id = 2700
+			province_id = 4350
+			province_id = 4356
+			province_id = 654
+			province_id = 2699
+			province_id = 2738
+			province_id = 1107
+			province_id = 5004
+			province_id = 1981
+			province_id = 5003
+			province_id = 25
+			province_id = 28
+			province_id = 36
+			province_id = 1305
+			province_id = 2982
+			province_id = 145
+			province_id = 163
+			province_id = 320
+			province_id = 319
+			province_id = 321
+			province_id = 4165
+			province_id = 3
+			province_id = 2302
+			province_id = 6048
+			province_id = 347
+			province_id = 366
+			province_id = 4565
+			province_id = 4049
+			province_id = 4020
+			province_id = 4022
+			province_id = 2788
+			province_id = 1099
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = {
+							AND = {
+								has_province_flag = PR_new_conquest_fort_delay
+								NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	modifier = {
 		fort_level = 4
 	}
@@ -1128,27 +1604,264 @@ fort_17th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				any_neighbor_province = {
-					owner = {
-						tag = ROOT
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
 					}
-					OR = {
-						has_building = fort_15th
-						has_construction = fort_15th
-						has_building = fort_16th
-						has_construction = fort_16th
-						has_building = fort_17th
-						has_construction = fort_17th
-						has_building = fort_18th
-						has_construction = fort_18th
-					}
-					NOT = { is_capital = yes }
-				}
+				}	
 			}
 		}
 	}
 
-	
+	keep_trigger = {
+		OR = {
+			AND = {
+				has_province_flag = PR_new_conquest_fort_delay
+				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+			}
+			is_capital = yes
+			province_id = 4735
+			province_id = 2986
+			province_id = 4745
+			province_id = 1981
+			province_id = 130
+			province_id = 4754
+			province_id = 4753
+			province_id = 4714
+			province_id = 6126
+			province_id = 6121
+			province_id = 6120
+			province_id = 6123
+			province_id = 6122
+			province_id = 1932
+			province_id = 378
+			province_id = 4736
+			province_id = 6158
+			province_id = 341
+			province_id = 6192
+			province_id = 4182
+			province_id = 87
+			province_id = 235
+			province_id = 4227
+			province_id = 14
+			province_id = 127
+			province_id = 1247
+			province_id = 12
+			province_id = 1983
+			province_id = 4149
+			province_id = 4142
+			province_id = 6
+			province_id = 2994
+			province_id = 48
+			province_id = 1
+			province_id = 1930
+			province_id = 27
+			province_id = 35
+			province_id = 39
+			province_id = 36
+			province_id = 4779
+			province_id = 316
+			province_id = 2296
+			province_id = 151
+			province_id = 249
+			province_id = 4121
+			province_id = 369
+			province_id = 253
+			province_id = 4364
+			province_id = 4110
+			province_id = 4363
+			province_id = 226
+			province_id = 1751
+			province_id = 4565
+			province_id = 366
+			province_id = 4560
+			province_id = 333
+			province_id = 4559
+			province_id = 124
+			province_id = 123
+			province_id = 2954
+			province_id = 353
+			province_id = 112
+			province_id = 1774
+			province_id = 142
+			province_id = 144
+			province_id = 4698
+			province_id = 4699
+			province_id = 1773
+			province_id = 146
+			province_id = 3003
+			province_id = 164
+			province_id = 4700
+			province_id = 2348
+			province_id = 285
+			province_id = 2447
+			province_id = 1215
+			province_id = 387
+			province_id = 396
+			province_id = 394
+			province_id = 395
+			province_id = 398
+			province_id = 2999
+			province_id = 431
+			province_id = 2890
+			province_id = 748
+			province_id = 2929
+			province_id = 2803
+			province_id = 502
+			province_id = 500
+			province_id = 499
+			province_id = 497
+			province_id = 496
+			province_id = 495
+			province_id = 494
+			province_id = 972
+			province_id = 973
+			province_id = 874
+			province_id = 2022
+			province_id = 976
+			province_id = 2587
+			province_id = 2521
+			province_id = 945
+			province_id = 911
+			province_id = 1001
+			province_id = 983
+			province_id = 982
+			province_id = 984
+			province_id = 2569
+			province_id = 2578
+			province_id = 2576
+			province_id = 981
+			province_id = 997
+			province_id = 536
+			province_id = 2100
+			province_id = 1050
+			province_id = 4658
+			province_id = 2745
+			province_id = 4651
+			province_id = 1017
+			province_id = 1818
+			province_id = 1014
+			province_id = 4186
+			province_id = 1825
+			province_id = 1820
+			province_id = 1021
+			province_id = 4193
+			province_id = 4131
+			province_id = 1852
+			province_id = 1032
+			province_id = 2159
+			province_id = 666
+			province_id = 597
+			province_id = 2686
+			province_id = 620
+			province_id = 2677
+			province_id = 659
+			province_id = 622
+			province_id = 2678
+			province_id = 623
+			province_id = 624
+			province_id = 628
+			province_id = 2692
+			province_id = 631
+			province_id = 2693
+			province_id = 632
+			province_id = 633
+			province_id = 2695
+			province_id = 2716
+			province_id = 642
+			province_id = 647
+			province_id = 646
+			province_id = 649
+			province_id = 650
+			province_id = 648
+			province_id = 4354
+			province_id = 4351
+			province_id = 4352
+			province_id = 4353
+			province_id = 4355
+			province_id = 2700
+			province_id = 4350
+			province_id = 4356
+			province_id = 654
+			province_id = 2699
+			province_id = 2738
+			province_id = 1107
+			province_id = 5004
+			province_id = 1981
+			province_id = 5003
+			province_id = 25
+			province_id = 28
+			province_id = 36
+			province_id = 1305
+			province_id = 2982
+			province_id = 145
+			province_id = 163
+			province_id = 320
+			province_id = 319
+			province_id = 321
+			province_id = 4165
+			province_id = 3
+			province_id = 2302
+			province_id = 6048
+			province_id = 347
+			province_id = 366
+			province_id = 4565
+			province_id = 4049
+			province_id = 4020
+			province_id = 4022
+			province_id = 2788
+			province_id = 1099
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = {
+							AND = {
+								has_province_flag = PR_new_conquest_fort_delay
+								NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 	modifier = {
 		fort_level = 6
@@ -1474,27 +2187,264 @@ fort_18th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				any_neighbor_province = {
-					owner = {
-						tag = ROOT
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
 					}
-					OR = {
-						has_building = fort_15th
-						has_construction = fort_15th
-						has_building = fort_16th
-						has_construction = fort_16th
-						has_building = fort_17th
-						has_construction = fort_17th
-						has_building = fort_18th
-						has_construction = fort_18th
-					}
-					NOT = { is_capital = yes }
-				}
+				}	
 			}
 		}
 	}
 
-	
+	keep_trigger = {
+		OR = {
+			AND = {
+				has_province_flag = PR_new_conquest_fort_delay
+				NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+			}
+			is_capital = yes
+			province_id = 4735
+			province_id = 2986
+			province_id = 4745
+			province_id = 1981
+			province_id = 130
+			province_id = 4754
+			province_id = 4753
+			province_id = 4714
+			province_id = 6126
+			province_id = 6121
+			province_id = 6120
+			province_id = 6123
+			province_id = 6122
+			province_id = 1932
+			province_id = 378
+			province_id = 4736
+			province_id = 6158
+			province_id = 341
+			province_id = 6192
+			province_id = 4182
+			province_id = 87
+			province_id = 235
+			province_id = 4227
+			province_id = 14
+			province_id = 127
+			province_id = 1247
+			province_id = 12
+			province_id = 1983
+			province_id = 4149
+			province_id = 4142
+			province_id = 6
+			province_id = 2994
+			province_id = 48
+			province_id = 1
+			province_id = 1930
+			province_id = 27
+			province_id = 35
+			province_id = 39
+			province_id = 36
+			province_id = 4779
+			province_id = 316
+			province_id = 2296
+			province_id = 151
+			province_id = 249
+			province_id = 4121
+			province_id = 369
+			province_id = 253
+			province_id = 4364
+			province_id = 4110
+			province_id = 4363
+			province_id = 226
+			province_id = 1751
+			province_id = 4565
+			province_id = 366
+			province_id = 4560
+			province_id = 333
+			province_id = 4559
+			province_id = 124
+			province_id = 123
+			province_id = 2954
+			province_id = 353
+			province_id = 112
+			province_id = 1774
+			province_id = 142
+			province_id = 144
+			province_id = 4698
+			province_id = 4699
+			province_id = 1773
+			province_id = 146
+			province_id = 3003
+			province_id = 164
+			province_id = 4700
+			province_id = 2348
+			province_id = 285
+			province_id = 2447
+			province_id = 1215
+			province_id = 387
+			province_id = 396
+			province_id = 394
+			province_id = 395
+			province_id = 398
+			province_id = 2999
+			province_id = 431
+			province_id = 2890
+			province_id = 748
+			province_id = 2929
+			province_id = 2803
+			province_id = 502
+			province_id = 500
+			province_id = 499
+			province_id = 497
+			province_id = 496
+			province_id = 495
+			province_id = 494
+			province_id = 972
+			province_id = 973
+			province_id = 874
+			province_id = 2022
+			province_id = 976
+			province_id = 2587
+			province_id = 2521
+			province_id = 945
+			province_id = 911
+			province_id = 1001
+			province_id = 983
+			province_id = 982
+			province_id = 984
+			province_id = 2569
+			province_id = 2578
+			province_id = 2576
+			province_id = 981
+			province_id = 997
+			province_id = 536
+			province_id = 2100
+			province_id = 1050
+			province_id = 4658
+			province_id = 2745
+			province_id = 4651
+			province_id = 1017
+			province_id = 1818
+			province_id = 1014
+			province_id = 4186
+			province_id = 1825
+			province_id = 1820
+			province_id = 1021
+			province_id = 4193
+			province_id = 4131
+			province_id = 1852
+			province_id = 1032
+			province_id = 2159
+			province_id = 666
+			province_id = 597
+			province_id = 2686
+			province_id = 620
+			province_id = 2677
+			province_id = 659
+			province_id = 622
+			province_id = 2678
+			province_id = 623
+			province_id = 624
+			province_id = 628
+			province_id = 2692
+			province_id = 631
+			province_id = 2693
+			province_id = 632
+			province_id = 633
+			province_id = 2695
+			province_id = 2716
+			province_id = 642
+			province_id = 647
+			province_id = 646
+			province_id = 649
+			province_id = 650
+			province_id = 648
+			province_id = 4354
+			province_id = 4351
+			province_id = 4352
+			province_id = 4353
+			province_id = 4355
+			province_id = 2700
+			province_id = 4350
+			province_id = 4356
+			province_id = 654
+			province_id = 2699
+			province_id = 2738
+			province_id = 1107
+			province_id = 5004
+			province_id = 1981
+			province_id = 5003
+			province_id = 25
+			province_id = 28
+			province_id = 36
+			province_id = 1305
+			province_id = 2982
+			province_id = 145
+			province_id = 163
+			province_id = 320
+			province_id = 319
+			province_id = 321
+			province_id = 4165
+			province_id = 3
+			province_id = 2302
+			province_id = 6048
+			province_id = 347
+			province_id = 366
+			province_id = 4565
+			province_id = 4049
+			province_id = 4020
+			province_id = 4022
+			province_id = 2788
+			province_id = 1099
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = { is_capital = yes }
+					}
+				}	
+			}
+			NOT = {
+				ROOT = {
+					any_neighbor_province = {
+						OR = {
+							has_building = fort_15th
+							has_construction = fort_15th
+							has_building = fort_16th
+							has_construction = fort_16th
+							has_building = fort_17th
+							has_construction = fort_17th
+							has_building = fort_18th
+							has_construction = fort_18th
+						}
+						NOT = {
+							AND = {
+								has_province_flag = PR_new_conquest_fort_delay
+								NOT = { had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	modifier = {
 		fort_level = 8
 	}
@@ -1829,6 +2779,20 @@ state_house = {
 	build_trigger = {
 		NOT = {
 			area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = state_house
+					has_construction = state_house
+				}
+			}
+		}
+	}
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
 				owner = {
 					tag = ROOT
 				}

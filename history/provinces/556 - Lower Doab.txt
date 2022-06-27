@@ -1,7 +1,7 @@
 #556 - Lower Doab
 
-owner = DLH
-controller = DLH
+owner = JNP
+controller = JNP
 culture = avadhi
 religion = hinduism
 capital = "Allahabad"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 2
 is_city = yes
-add_core = DLH
+add_core = JNP
 add_brahmins_or_church_effect = yes
 discovered_by = indian
 discovered_by = muslim 

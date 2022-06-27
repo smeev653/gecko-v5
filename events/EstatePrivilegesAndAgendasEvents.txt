@@ -749,6 +749,7 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		always = no
 		OR = {
 			has_estate_privilege = estate_nobles_supremacy_over_crown
 			has_estate_privilege = estate_brahmins_supremacy_over_crown
