@@ -1401,8 +1401,10 @@ country_event = {
    trigger = {
       ai = no
 	  has_country_modifier = just_lost_war_timer
+	  NOT = { has_country_modifier = gecko_recovery }
 	  NOT = { manpower_percentage = 0.5 }
 	  num_of_loans = 15
+	  revanchism = 1
 	  is_at_war = no
 	  army_tradition = 30
 	  any_country = {
@@ -2045,3 +2047,29 @@ country_event = {
 	option = {	
 	}
 }
+
+##remove revanchism#####
+country_event = {
+    id = gecko.36
+   title = gecko.36.t
+    desc = gecko.36.d
+    picture = COURT_eventPicture
+
+   trigger = {
+		has_country_modifier = gecko_recovery
+		NOT = { revanchism = 1 }
+			
+	}		
+		#hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+		remove_country_modifier  = gecko_recovery
+
+	}
+	option = {	
+	}
+}
+
