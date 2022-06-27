@@ -66,7 +66,7 @@ gecko__local_independent_army_2 = {
 
 # Black Army (Hungary)  this one is only inf
 gecko_merc_black_army_1 = {
-	regiments_per_development = 0.065
+	regiments_per_development = 0.05
 	cavalry_weight = 0
 	cavalry_cap = 2
     artillery_weight = 0
@@ -92,7 +92,7 @@ gecko_merc_black_army_1 = {
 
 # Black Army Hungary
 gecko_merc_black_army_2 = {
-	regiments_per_development = 0.065
+	regiments_per_development = 0.05
 	cavalry_weight = 1
    #cavalry_cap = 15
     artillery_weight = 0
