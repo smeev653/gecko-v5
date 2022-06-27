@@ -89,7 +89,7 @@ estate_burghers_fire_advisor = {
 #Pay off loans
 estate_burghers_pay_off_loans = {
 	can_select = {
-		num_of_loans = 40
+		num_of_loans = 10
 		is_bankrupt = no
 		NOT = { has_country_modifier = gecko_ipa }
 	}
@@ -172,7 +172,7 @@ estate_burghers_pay_off_loans = {
 
 estate_burghers_pay_off_loans_2 = {
 	can_select = {
-		num_of_loans = 25
+		num_of_loans = 10
 		is_bankrupt = no
 		NOT = { has_country_modifier = gecko_ipa }
 	}
@@ -243,7 +243,7 @@ estate_burghers_pay_off_loans_2 = {
 
 estate_burghers_pay_off_loans_3 = {
 	can_select = {
-		num_of_loans = 15
+		num_of_loans = 10
 		is_bankrupt = no
 		NOT = { has_country_modifier = gecko_ipa }
 	}

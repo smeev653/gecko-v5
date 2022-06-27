@@ -91,8 +91,6 @@ default = {
 	is_march = no
 	forms_trade_companies = yes
 	can_concentrate_development = yes
-	can_have_great_projects_moved_by_overlord = yes
-	extend_trading_range = no
 	max_government_rank = 0								# 0 means no limit
 	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
 	trust_on_start = 35									# Overlord and subject will each get this much extra trust with each other at game start
@@ -103,13 +101,13 @@ default = {
 	liberty_desire_same_dynasty = 0.0
 	liberty_desire_revolution = 30.0					# Liberty desire at 100% revolution spread in country
 	pays_overlord = 0.0									# 1.0 represents the amount payed by vassals
-	#forcelimit_bonus = 0.0								# 1.0 represents bonus from having a vassal
+	forcelimit_bonus = 0.0								# 1.0 represents bonus from having a vassal
 	forcelimit_to_overlord = 0.0						# Percent of subject FL to use as base for modifiers
-	#naval_forcelimit_bonus = 0.0						# 1.0 represents bonus from having a vassal
+	naval_forcelimit_bonus = 0.0						# 1.0 represents bonus from having a vassal
 	naval_forcelimit_to_overlord = 0.0					# Percent of subject FL to use as base for modifiers
-	#manpower_bonus = 0.0								# 1.0 represents bonus from having a vassal
+	manpower_bonus = 0.0								# 1.0 represents bonus from having a vassal
 	manpower_to_overlord = 0.0							# Percent of subject FL to use as base for modifiers
-	#sailors_bonus = 0.0									# 1.0 represents bonus from having a vassal
+	sailors_bonus = 0.0									# 1.0 represents bonus from having a vassal
 	sailors_to_overlord = 0.0																			  
 	military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
 
@@ -204,7 +202,7 @@ vassal = {
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.0
-	#forcelimit_bonus = 1.0
+	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 
 	relative_power_class = 2
@@ -246,7 +244,7 @@ march = {
 	base_liberty_desire = -15.0
 	can_be_annexed = yes
 	forcelimit_to_overlord = 0.2
-	#manpower_bonus = 1.0
+	manpower_bonus = 1.0
 	manpower_to_overlord = 0.15
 
 	is_march = yes
@@ -374,10 +372,9 @@ personal_union = {
 	can_have_subjects_of_other_types = yes
 	can_union_break = yes
 	transfer_subjects_when_made = yes
-	#forcelimit_bonus = 1.0
+	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
-	can_concentrate_development = no
-	extend_trading_range = yes
+
 
 	liberty_desire_negative_prestige = 1.0
 	military_focus = 1.5
@@ -414,7 +411,6 @@ client_vassal = {
 
 	# Properties:
 	created_by_overlord = yes
-	extend_trading_range = yes
 
 	base_liberty_desire = -25.0
 	liberty_desire_revolution = 0
@@ -433,7 +429,6 @@ client_march = {
 
 	# Properties:
 	created_by_overlord = yes
-	extend_trading_range = yes
 
 	base_liberty_desire = -40.0
 	liberty_desire_revolution = 0
@@ -465,9 +460,9 @@ colony = {
 	overlord_enforce_peace_attacking = yes
 	can_transfer_in_peace = no
 	press_sailors = yes
-	#forcelimit_bonus = 1.0
-	can_concentrate_development = no
-	extend_trading_range = yes
+	forcelimit_bonus = 1.0
+	can_concentrate_development = no							 
+	
 	liberty_desire_development_ratio = 0.1
 
 	max_government_rank = 1
@@ -478,17 +473,11 @@ colony = {
 
 	can_fight = {
 		other_overlord = colony
-		other_overlord = crown_colony
-		other_overlord = private_enterprise
-		other_overlord = self_governing_colony
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
 	can_rival = {
 		other_overlord = colony
-		other_overlord = crown_colony
-		other_overlord = private_enterprise
-		other_overlord = self_governing_colony
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
@@ -523,13 +512,13 @@ crown_colony = {
 	can_send_missionary_to_subject = yes	
 	count = colony
 	
-	#forcelimit_bonus = 1.0
+	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.20
-	#manpower_bonus = 1.0
+	manpower_bonus = 1.0
 	manpower_to_overlord = 0.25
-	#naval_forcelimit_bonus = 0.5
+	naval_forcelimit_bonus = 0.5
 	naval_forcelimit_to_overlord = 0.05
-	#sailors_bonus = 0.5
+	sailors_bonus = 0.5
 	sailors_to_overlord = 0.05
 	
 	
@@ -577,7 +566,7 @@ tributary_state = {
 	#is_subject_except_tributary_trigger
 	#is_free_or_tributary_trigger
 	copy_from = default
-	can_have_great_projects_moved_by_overlord = no
+
 
 	# Triggers:
 	is_potential_overlord = {
@@ -587,7 +576,7 @@ tributary_state = {
 		}
 		OR = {
 			has_reform = celestial_empire
-			has_government_attribute = has_tributaries
+		has_government_attribute = has_tributaries
 			has_country_flag = can_create_tributaries_flag
 			has_country_flag = can_create_tributaries_flag_estate
 			is_nomad = yes
@@ -627,7 +616,7 @@ tributary_state = {
 	does_overlord_size_count_for_warscore_cost = no
 	pays_overlord = 1.0
 	seize_territory = yes
-	#forcelimit_bonus = 1.0
+	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 	
 	

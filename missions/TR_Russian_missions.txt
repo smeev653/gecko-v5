@@ -217,7 +217,7 @@ tr_russia_conquest_1 = {
 		required_missions = {  }
 		completed_by = 1478.1.15
 		trigger = {
-			army_size_percentage = 0.75
+			army_size_percentage = 1
 		}
 		effect = {
 			2444 = {

@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Hira
-add_core = YZD
-owner = YZD
-controller = YZD
+add_core = ISF
+owner = ISF
+controller = ISF
 culture = persian
 religion = shiite
 hre = no

@@ -24,8 +24,8 @@ succesful_bid_for_imperial_crown = {
 }
 
 norman_resurgence = {
-	#ae_impact = -0.3
-	province_warscore_cost = -0.1
+	ae_impact = -0.3
+	province_warscore_cost = -0.3
 	land_morale = 0.1
 }
 
@@ -110,7 +110,7 @@ at_the_gates_of_europe = {
 }
 
 beyliks_subjugated = {
-	manpower_recovery_speed = 0.2
+	land_morale = 0.025
 	#discipline = 0.025
 	cavalry_cost = -0.1
 	#land_forcelimit_modifier = 0.10
@@ -342,14 +342,13 @@ defense_of_burgundy = {
 defense_of_anatolia = {
 	land_morale = 0.05
 	discipline = 0.05
-	land_forcelimit_modifier = 0.5
+	land_forcelimit_modifier = 0.25
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.25
 	mercenary_manpower = 0.5
-	defensiveness = 0.5
+	defensiveness = 0.2
 	interest = -0.5
 	global_tax_modifier = 0.1
-	global_monthly_devastation = -5
 }	
 
 eth_coptic_offense = {
@@ -420,9 +419,4 @@ lowland_integration = {
 
 swabian_trade  = {
 	trade_value_modifier = 0.2
-}
-
-turkmen_recruitment = {
-	shock_damage = 0.1
-	cavalry_cost = -0.1
 }

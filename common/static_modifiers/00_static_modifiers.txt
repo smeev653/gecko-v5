@@ -202,13 +202,13 @@ severe_monsoon = {
 
 blockaded = {
 	regiment_recruit_speed = 0.2
-	ship_recruit_speed = 0.25
-	local_monthly_devastation = 0.33
-	trade_goods_size_modifier = -0.25 
-	local_tax_modifier = -0.5
+	ship_recruit_speed = 0.9
+	local_monthly_devastation = 0.1
+	trade_goods_size_modifier = -0.2
+	local_tax_modifier = -0.2
 	province_trade_power_modifier = -1
-	local_manpower_modifier = -1
-	local_sailors_modifier = -0.75
+	local_manpower_modifier = -0.33
+	local_sailors_modifier = -0.33
 	local_institution_spread = -0.1
 }
 
@@ -554,7 +554,7 @@ ai_nation = {
 	yearly_corruption = -2
 	war_exhaustion = -0.5
 	cav_to_inf_ratio = 0.5
-	#siege_ability = -0.2
+	siege_ability = -0.2
 	global_supply_limit_modifier = 0.25
 	#country_admin_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	#country_diplomatic_power = 1 #temporary solution until 1.33 ai advisor use is fixed
@@ -740,7 +740,7 @@ war_exhaustion = {
 	sailors_recovery_speed = -0.01
 	siege_ability = -0.01
 	global_trade_goods_size_modifier = -0.02
-	defensiveness = -0.0125
+	defensiveness = -0.025
 }
 
 doom = {
@@ -782,7 +782,7 @@ army_tradition = {
 	recover_army_morale_speed = 0.1
 	land_morale = 0.3125
 	manpower_recovery_speed = 0.15
-	#siege_ability = 0.05
+	siege_ability = 0.05
 	temples_influence = 0.1
 	mr_aristocrats_influence = 0.1
 	rr_girondists_influence = 0.1
@@ -861,8 +861,8 @@ emperor = {
 }
 
 states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor
-	land_forcelimit	= 0.5				#each state increases forcelimit by 0.5
-	global_manpower = 0.5			#each gives 0.5 MP to the emperor.
+	land_forcelimit	= 0.75				#each state increases forcelimit by 0.5
+	global_manpower = 1			#each gives 0.5 MP to the emperor.
 }
 
 free_cities_in_hre = {							#bonuses for each free city in the HRE.. as emperor
@@ -988,6 +988,15 @@ root_out_corruption = {
 }
 
 recovery_motivation = {
+	#global_tax_modifier = 0.5
+	defensiveness = 0.15
+	manpower_recovery_speed = 0.35
+	army_tradition = 1
+	navy_tradition = 1
+	global_unrest = -20
+	horde_unity = 10
+	war_exhaustion = -1
+	global_autonomy = -0.3
 }
 
 militarized_society = {
@@ -1138,7 +1147,7 @@ total_occupation = {
 }
 
 total_blockaded = {
-	war_exhaustion = 0.3					#increases exhaustion.
+	war_exhaustion = 0.15					#increases exhaustion.
 }
 
 uncontested_cores = {
@@ -1221,8 +1230,8 @@ low_army_professionalism = {
 }
 
 high_army_professionalism = {
-	fire_damage = 0.10
-	shock_damage = 0.10
+	fire_damage = 0.15
+	shock_damage = 0.15
 	#siege_ability = 0.2
 	drill_decay_modifier = -0.5
 	reinforce_speed = 0.33
@@ -1742,9 +1751,9 @@ serfs_recieved_by_cossacks = {
 }
 
 cossacks_modifier = {
-	cavalry_power = 0.4
-	fire_damage_received = -0.2
-	shock_damage_received = -0.2
+	shock_damage_received = -0.8
+	fire_damage_received = -0.8
+	#cav_to_inf_ratio = 1.25
 }
 
 ########################################
@@ -1758,7 +1767,7 @@ expand_administation_modifier = {
 
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
-	stability_cost_modifier = 1
+	stability_cost_modifier = 0.5
 	#ae_impact = 0.5
 	improve_relation_modifier = -0.5
 	core_creation = 0.4
@@ -1806,11 +1815,11 @@ guru_teaching = {
 }
 
 #100 Land Forcelimit = 1
-land_forcelimit = {
-    free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
-}
-
+#land_forcelimit = {
+#    free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
+#}
+#
 #100 Naval Forcelimit = 1
-naval_forcelimit = {
-   free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
-}
+#naval_forcelimit = {
+#   free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
+#}

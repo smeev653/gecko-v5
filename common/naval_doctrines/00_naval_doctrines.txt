@@ -5,8 +5,7 @@ fleet_in_being =
 	}
 	
 	country_modifier = {
-		allowed_marine_fraction = 0.15
-		siege_blockade_progress = 1		
+		naval_maintenance_modifier = -0.15
 	}
 	
 	button_gfx = 1
@@ -79,7 +78,7 @@ grand_armada =
 	}
 
 	country_modifier = {
-		treasure_fleet_income = 0.1
+		treasure_fleet_income = 0.15
 	}
 
 	button_gfx = 6

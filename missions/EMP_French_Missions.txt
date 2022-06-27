@@ -474,11 +474,6 @@ emp_france_missions_1_b = {
                 name = "defense_of_france"
                 duration = 1825
                 }
-				#add_country_modifier = {
-				#	name = "geckoavailablemercs"
-				#	duration = 1825
-				#	hidden = yes
-				#}
             }
         }
 }

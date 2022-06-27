@@ -177,11 +177,10 @@ cb_nice_borders = {
 
 # Trade War (from events and others)
 cb_trade_war_triggered = {
-	prerequisites = {
-		always = no
-	}
 	valid_for_subject = no
 
+	is_triggered_only = yes
+	months = 24
 
 	war_goal = superiority_trade
 
@@ -203,9 +202,9 @@ cb_trade_war_triggered = {
 cb_trade_conflict = {
 	valid_for_subject = no
 
-	prerequisites = {
-		always = no
-	}
+	is_triggered_only = yes
+	months = 24
+
 	war_goal = blockade_ports
 
 	attacker_disabled_po = {
@@ -224,8 +223,11 @@ cb_trade_conflict = {
 }
 
 cb_trade_league_conflict = {
+	valid_for_subject = no
+
 	prerequisites = {
-		always = no
+		is_trade_league_leader = yes
+		can_justify_trade_conflict = FROM
 	}
 	months = 24
 
@@ -885,7 +887,18 @@ cb_excommunication = {
 cb_trade_war = {
 
 	prerequisites = {
-		always = no
+
+		OR = {
+			AND = {
+				trade_embargo_by = FROM
+				NOT = { FROM = { trade_embargo_by = ROOT } }
+			}
+			AND = {
+				has_government_attribute = is_merchant_republic
+				FROM = { has_government_attribute = is_merchant_republic }
+			}
+		}
+		is_revolutionary = no
 	}
 
 	war_goal = superiority_trade_mutual
@@ -909,7 +922,10 @@ cb_trade_war = {
 cb_trade_league_dispute = {
 
 	prerequisites = {
-		always = no
+		is_trade_league_leader = yes
+		NOT = { ROOT = { trade_embargo_by = FROM } }
+		ROOT = { trade_league_embargoed_by = FROM }
+		is_revolutionary = no
 	}
 
 	war_goal = superiority_trade_mutual

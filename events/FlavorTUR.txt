@@ -853,7 +853,7 @@ country_event = {
 	}
 }
 
-# K?sem Sultana
+# K�sem Sultana
 country_event = {
 	id = flavor_tur.3377
 	title = "flavor_tur.EVTNAME3377"
@@ -880,7 +880,7 @@ country_event = {
 		months = 100
 	}
 	
-	option = {		# Wed K?sem
+	option = {		# Wed K�sem
 		name = "flavor_tur.EVTOPTA3377"
 		ai_chance = { factor = 90 }
 		add_ruler_modifier = {
@@ -893,7 +893,7 @@ country_event = {
 				has_government_attribute = queen
 			}
 			define_consort = {
-				name = "K?sem Sultan"
+				name = "K�sem Sultan"
 				culture = greek
 				adm = 5
 				dip = 4
@@ -922,7 +922,7 @@ country_event = {
 	}
 }
 
-# The Murder of K?sem Sultana
+# The Murder of K�sem Sultana
 country_event = {
 	id = flavor_tur.3384
 	title = "flavor_tur.EVTNAME3384"
@@ -946,13 +946,13 @@ country_event = {
 		months = 300
 	}
 	
-	option = {		# K?sem is murdered
+	option = {		# K�sem is murdered
 		name = "flavor_tur.EVTOPTA3384"
 		remove_country_modifier = kosem_sultana
 	}
 }
 
-# The Age of the K?pr?l?s
+# The Age of the K�pr�l�s
 country_event = {
 	id = flavor_tur.3385
 	title = "flavor_tur.EVTNAME3385"
@@ -974,7 +974,7 @@ country_event = {
 		months = 100
 	}
 	
-	option = {		# Support the K?pr?l? Family
+	option = {		# Support the K�pr�l� Family
 		name = "flavor_tur.EVTOPTA3385"
 		ai_chance = { factor = 90 }
 		if = {

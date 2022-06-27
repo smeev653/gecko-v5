@@ -1079,7 +1079,6 @@ country_event = {
 	
 	trigger = {
 		army_organiser = 3
-		is_year = 1460
 		NOT = { has_country_flag = army_organiser }
 	}
 	

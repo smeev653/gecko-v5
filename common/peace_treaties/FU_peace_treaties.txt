@@ -21,6 +21,14 @@ make_canton = {
 	
 	is_visible = { 
 		can_be_overlord = canton
+		NOT = { 
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = canton
+				}
+				amount = 4
+			}
+		}
 	}
 	is_allowed = { 
 		FROM = {
@@ -28,7 +36,6 @@ make_canton = {
 				total_development = 50
 			}
 		}
-		NOT = {num_of_subjects = 5 }
 	}
 	effect = { 
 		create_subject = {

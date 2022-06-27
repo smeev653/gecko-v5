@@ -494,7 +494,7 @@ land_inheritance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.1
 	mercenary_cost = -0.25
 	
 	ai_will_do = {
@@ -720,7 +720,7 @@ vassal_obligations_act = {
 	}	
 	
 	global_trade_goods_size_modifier = 0.1
-	vassal_forcelimit_bonus = 0.25
+	vassal_forcelimit_bonus = 0.5
 	
 	ai_will_do = {
 		factor = 1

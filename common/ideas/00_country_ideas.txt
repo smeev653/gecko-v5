@@ -68,7 +68,7 @@ ENG_ideas = {
 		diplomatic_upkeep = 1
 	}
 	eng_red_coats = {
-		fire_damage = 0.15
+		fire_damage = 0.2
 	}
 	navigation_acts = {
 		trade_efficiency = 0.1
@@ -105,7 +105,7 @@ GBR_ideas = {
 		global_colonial_growth = 20
 	}
 	eng_red_coats = {
-		fire_damage = 0.15
+		fire_damage = 0.2
 	}
 	gbr_the_royal_society = {
 		technology_cost = -0.05
@@ -256,7 +256,7 @@ SPA_ideas = {
 	
 	bonus = {
 		artillery_fire = 0.5
-		cawa_cost_modifier = -0.5
+		cawa_cost_modifier = -0.2
 	}
 	
 	trigger = {
@@ -284,7 +284,7 @@ SPA_ideas = {
 	}
 	spa_cortes = { 
 		possible_dip_policy = 1
-		allowed_marine_fraction = 0.05
+		allowed_marine_fraction = 0.25
 	}
 	siglo_de_oro = {
 		prestige = 1
@@ -369,7 +369,7 @@ NED_ideas = {
 		siege_ability = 0.15
 	}
 	platoon_fire = {
-		fire_damage = 0.15
+		fire_damage = 0.2
 	}
 }
 
@@ -956,9 +956,6 @@ POR_ideas = {
 		range = 0.5
 		trade_range_modifier = 0.5
 	}
-	the_bandeirantes = {
-		land_morale = 0.1
-	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
 	}
@@ -967,7 +964,9 @@ POR_ideas = {
 		sunk_ship_morale_hit_recieved = -0.33
 		heavy_ship_power = 0.1
 	}
-	
+	the_bandeirantes = {
+		land_morale = 0.1
+	}
 	case_de_india = {
 		global_ship_trade_power = 0.2
 		global_trade_power = 0.1
@@ -1178,7 +1177,7 @@ BUR_Ideas = {
 		merc_maintenance_modifier = -0.15
 	}
 	bur_estates_general = {
-		mercenary_discipline = 0.05
+		mercenary_manpower = 0.5
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
@@ -13241,7 +13240,7 @@ HIN_ideas = {
 		land_morale = 0.10
 	}
 	hin_gunpowder_empire = {
-		fire_damage = 0.15
+		fire_damage = 0.20
 	}
 	hin_sufism = {
 		global_missionary_strength = 0.02
@@ -13746,7 +13745,7 @@ MOR_ideas = {
 		cavalry_power = 0.15
 	}
 	bonus = {
-		shock_damage = 0.15
+		shock_damage = 0.2
 	}
 	trigger = {
 		tag = MOR

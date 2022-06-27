@@ -158,9 +158,6 @@ can_move_capital = {
 	condition = {
 		tooltip = "PR_tooltip_move_capital"
 		potential = {
-			FROM = {
-				is_colonial_nation = yes
-			}
 		}
 		allow = {
 			NOT = {
@@ -179,9 +176,6 @@ can_move_trade_port = {
 	condition = {
 		tooltip = "PR_tooltip_move_capital"
 		potential = {
-			FROM = {
-				is_colonial_nation = yes
-			}
 		}
 		allow = {
 			NOT = {
