@@ -288,7 +288,7 @@ renaissance = {
 		build_time = -0.05
 		reform_progress_growth = 0.2
 		#free_leader_pool = 1
-		governing_capacity = 100
+		#governing_capacity = 100
 	}
 
 	trade_company_efficiency = 0.4
@@ -545,7 +545,7 @@ new_world_i = {
 		global_autonomy = -0.05
 		development_cost = -0.05
 		#free_leader_pool = 1
-		governing_capacity = 100
+		governing_capacity = 50
 	}
 
 	trade_company_efficiency = 0.6
@@ -813,7 +813,7 @@ printing_press = {
 		brahmins_other_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
-		governing_capacity = 100
+		governing_capacity = 50
 	}
 
 	trade_company_efficiency = 0.8
