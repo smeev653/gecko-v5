@@ -600,5 +600,5 @@ Over_merc_limit = {
 		
 	}
 	mercenary_discipline = -0.2
-	merc_maintenance_modifier = 0.33
+	merc_maintenance_modifier = 0.5
 }

@@ -2623,10 +2623,10 @@ mlo_lombard_renaissance = {
 	build_cost = -0.1
 }
 
-mlo_the_swiss_mercs = {
-	mercenary_cost = -0.1
-	mercenary_discipline = 0.05
-}
+#mlo_the_swiss_mercs = {
+#	mercenary_cost = -0.1
+#	mercenary_discipline = 0.05
+#}
 
 mlo_capital_of_italy = {
 	local_tax_modifier = 0.1
@@ -3377,10 +3377,10 @@ ven_standardized_relazioni = {
 	global_spy_defence = 0.33
 }
 
-ven_urban_renewal = {
-	local_build_time = -0.2
-	local_build_cost = -0.2
-}
+#ven_urban_renewal = {
+#	local_build_time = -0.2
+#	local_build_cost = -0.2
+#}
 
 ven_autonomous_venetian_patriarchate = {
 	tolerance_own = 1
@@ -3397,24 +3397,24 @@ ven_political_monopolist = {
 #	galley_cost = -0.1
 #}
 
-ven_genoese_humiliation = {
-	trade_steering = 0.2
-}
+#ven_genoese_humiliation = {
+#	trade_steering = 0.2
+#}
 
-ven_nothing_ventured_nothing_gained = {
-	placed_merchant_power = 10
-	trade_range_modifier = 0.25
-}
+#ven_nothing_ventured_nothing_gained = {
+#	placed_merchant_power = 10
+#	trade_range_modifier = 0.25
+#}
 
-ven_venture_captain_recruitment = {
-	land_forcelimit_modifier = 0.1
-	free_leader_pool = 1
-}
+#ven_venture_captain_recruitment = {
+#	land_forcelimit_modifier = 0.1
+#	free_leader_pool = 1
+#}
 
-ven_mercenaries_paid_with_land = {
-	mercenary_cost = -0.1
-	merc_maintenance_modifier = -0.2
-}
+#ven_mercenaries_paid_with_land = {
+#	mercenary_cost = -0.1
+#	merc_maintenance_modifier = -0.2
+#}
 
 ned_security_on_and_from_the_sea = {
 	ship_durability = 0.1
