@@ -138,7 +138,14 @@ change_estate_land_share = {
 		adm = 4
 		dip = 2
 		mil = 6
-		
+		leader = {
+			name = "Charles VIII de Valois"
+			type = general
+			fire = 4	
+			shock = 4	
+			manuever = 3	
+			siege = 1
+		}
 	}
 }
 #1444.10.1 = {

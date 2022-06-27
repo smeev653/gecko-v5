@@ -730,10 +730,10 @@ gc_spain_3 = {
 
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag
-			#add_country_modifier = {
-			#	name = "spa_rb_morale"
-			#	duration = 5475
-			#}
+			add_country_modifier = {
+				name = "spa_rb_morale"
+				duration = 5475
+			}
 			country_event = {
 				id = flavor_spa.8
 			}

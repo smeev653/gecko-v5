@@ -9,30 +9,18 @@ on_startup = {
 		#muslim_school_events.20 #Pick School
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
-	#if = {
-	#	limit = {
-	#		tag = ENG
-	#		NOT =  {has_country_flag = gecko.9_fired }
-	#	}
-	#	set_country_flag = gecko.9_fired
-	#	country_event = { 
-	#		id = gecko.9
-	#		days = 7
-	#	}
-	#}
 	if = {
 		limit = {
-			NOT =  {has_country_flag = gecko_mercs_set }
-			ai = no
+			tag = ENG
+			NOT =  {has_country_flag = gecko.9_fired }
 		}
-		set_country_flag = gecko_mercs_set
+		set_country_flag = gecko.9_fired
 		country_event = { 
-			id = gecko.30
-			days = 1
+			id = gecko.9
+			days = 7
 		}
 	}
-	#gecko_occupation_effect = yes
-	#gecko_mercs = yes
+	gecko_occupation_effect = yes
 	if = {
 		limit = {
 				OR = {
@@ -359,19 +347,21 @@ on_colonial_reintegration = {
 # country
 on_peace_actor = {
 	events = {
+		usa_dlc.36				# Evacuation Day
+		native_americans.7		# Appoint Peace Chief
 	}
 }
 
 # country
 on_peace_recipient = {
 	events = {
+		native_americans.7		# Appoint Peace Chief
 	}
 }
 
 # country
 # root = winning country, from = loser country
 on_war_won = {
-	#ROOT =  { gecko_mercs = yes }
 	ROOT = { country_event = { id = tributary_events.32 } }
 	if = {
 		limit = {
@@ -456,7 +446,6 @@ on_war_won = {
 # country
 # root = loser country, from = winner country
 on_war_lost = {
-	#ROOT = { gecko_mercs = yes }
 	ROOT = { country_event = { id = tributary_events.32 } }
 	if = {
         limit = {
@@ -484,26 +473,22 @@ on_war_lost = {
 		}
 		set_country_flag = reined_in_for_shadow_kingdom
 	}
-	ROOT = {
-		add_country_modifier = {
-			name = just_lost_war_timer
-			duration = 3650
-			hidden = yes
-		}
-	}	
+	add_country_modifier = {
+		name = just_lost_war_timer
+		duration = 3650
+		hidden = yes
+	}
 }
 
 # country
 # root = winning country, from = loser country
 on_battle_won_country = {
 	gecko_occupation_effect = yes
-	#ROOT = { gecko_mercs = yes }
 }
 
 # country
 # root = loser country, from = winner country
 on_battle_lost_country = {
-	#ROOT = { gecko_mercs = yes }
 	battle_cult_spreading_effect = yes #Scripted effect for fetishist cult mechanics.
 	random_events = {
 		90 = 0
@@ -602,7 +587,6 @@ on_battle_lost_province = {
 # country
 # root = winning country, from = location
 on_siege_won_country = {
-	#ROOT = { gecko_mercs = yes }
 	random_events = {
 		10 = army_professionalism_events.1 #City Sacked
 		100 = 0
@@ -667,7 +651,6 @@ on_siege_won_country = {
 # country
 # root = losing country, from = location
 on_siege_lost_country = {
-	#ROOT = { gecko_mercs = yes }
 	events = {
 		curia.8
 		papacy_events.5
@@ -705,7 +688,6 @@ on_great_project_constructed = {
 # OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
 # country
 on_new_monarch = {
-	#ROOT = { gecko_mercs = yes }
 	# ambrosian_republic_effect = yes
 	succession_culture_religion_effect = yes
 	sheik_ul_islam_effect = yes
@@ -736,7 +718,7 @@ on_new_monarch = {
 		flavor_boh.2			#Heretic Kings
 		flavor_hun.17			#Maintaining the Black Army
 		muslim_school_events.20 #No Religious School
-		flavor_fra.9000			# François Villon
+		flavor_fra.9000			# FranÃ§ois Villon
 		flavor_hsa.3		# Hansa: Tagfahrt
 	}
 	random_events = {
@@ -880,7 +862,6 @@ on_replace_governor = {
 
 # country
 on_bankruptcy = {
-	#ROOT = { gecko_mercs = yes }
  events = {
 		 gecko.12
 	}
@@ -896,12 +877,10 @@ on_bankruptcy = {
 			limit = { has_country_modifier =  gecko_ipa  }
 				remove_country_modifier =  gecko_ipa
 		}
-	gecko_mercs = yes	
 }
 
 # country (country annexing, root = target)
 on_diplomatic_annex = {
-	#ROOT = { gecko_mercs = yes }
 	events = {
 		610
 	}
@@ -1335,12 +1314,10 @@ on_adm_development = {
 
 # province
 on_dip_development = {
-	
 }
 
 # province
 on_mil_development = {
-	
 }
 
 on_overextension_pulse = {
@@ -1377,7 +1354,6 @@ on_siberian_pulse = {
 
 # country random events
 on_bi_yearly_pulse = {
-	#gecko_mercs = yes
 	events = {
 	}
 	random_events = {
@@ -1511,7 +1487,7 @@ on_bi_yearly_pulse = {
 		125 = culture_religion_events.23
 
 		# Old Centralisation/Decentralisation
-		0 = 806
+		100 = 806
 
 		# Mercantilism
 		100 = 6326
@@ -2246,22 +2222,22 @@ on_thri_yearly_pulse_3 = {
 on_thri_yearly_pulse_4 = {
 	random_events = {
 		#Low Mandate Events
-		0 = china_events.45
-		0 = china_events.46
-		0 = china_events.47
-		0 = china_events.48
-		0 = china_events.49
-		0 = china_events.50
-		0 = china_events.51
-		0 = china_events.52
-		0 = china_events.53
-		0 = china_events.54
-		0 = china_events.55 (triggers via neighbors)
-		0 = china_events.56
-		0 = china_events.57
-		0 = china_events.58
-		0 = china_events.59
-		0 = china_events.60
+		10 = china_events.45
+		10 = china_events.46
+		50 = china_events.47
+		10 = china_events.48
+		10 = china_events.49
+		10 = china_events.50
+		50 = china_events.51
+		10 = china_events.52
+		10 = china_events.53
+		50 = china_events.54
+		#10 = china_events.55 (triggers via neighbors)
+		10 = china_events.56
+		75 = china_events.57
+		50 = china_events.58
+		10 = china_events.59
+		50 = china_events.60
 	}
 }
 
@@ -3598,42 +3574,42 @@ on_province_owner_change = {
 
  #Gecko changes
  #gecko fort line
-	if = {
-		limit = {
-			has_province_flag = PR_new_conquest_fort_delay
-		}
-		clr_province_flag = PR_new_conquest_fort_delay
-	}
-	if = {
-		limit = {
-			fort_level = 2
-		}
-		set_province_flag = PR_new_conquest_fort_delay
-	}
-	if = { 
-		limit = {
-			any_neighbor_province = {
-					owner = {
-						tag = ROOT
-					}
-					OR = {
-						has_building = fort_15th
-						has_construction = fort_15th
-						has_building = fort_16th
-						has_construction = fort_16th
-						has_building = fort_17th
-						has_construction = fort_17th
-						has_building = fort_18th
-						has_construction = fort_18th
-					}
-					AND = {
-							has_province_flag = PR_new_conquest_fort_delay
-							had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } 
-					}
-				}
-		}
-		remove_building = fort_15th
-	}
+	#if = {
+	#	limit = {
+	#		has_province_flag = PR_new_conquest_fort_delay
+	#	}
+	#	clr_province_flag = PR_new_conquest_fort_delay
+	#}
+	#if = {
+	#	limit = {
+	#		fort_level = 2
+	#	}
+	#	set_province_flag = PR_new_conquest_fort_delay
+	#}
+	#if = { 
+	#	limit = {
+	#		any_neighbor_province = {
+	#				owner = {
+	#					tag = ROOT
+	#				}
+	#				OR = {
+	#					has_building = fort_15th
+	#					has_construction = fort_15th
+	#					has_building = fort_16th
+	#					has_construction = fort_16th
+	#					has_building = fort_17th
+	#					has_construction = fort_17th
+	#					has_building = fort_18th
+	#					has_construction = fort_18th
+	#				}
+	#				#AND = {
+	#				#		has_province_flag = PR_new_conquest_fort_delay
+	#				#		had_province_flag = { flag = PR_new_conquest_fort_delay days = 182 } 
+	#				#}
+	#			}
+	#	}
+	#	remove_building = fort_15th
+	#}
  	#removes Temper the Roof of Africa Modifier
 
 	if = { 
@@ -3662,7 +3638,6 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
-	#gecko_mercs = yes
 }
 
 # country
@@ -3754,22 +3729,7 @@ on_refuse_tribute = {
 
 # country
 on_leader_recruited = {
-	#hidden_effect = {
-	#	gecko_mercs = yes
-	#}
-	hidden_effect = {
-		if = {
-			limit = {
-				NOT =  {has_country_flag = gecko_mercs_set }
-				ai = no
-			}
-			set_country_flag = gecko_mercs_set
-			country_event = { 
-				id = gecko.30
-				days = 1
-			}
-		}
-	}	
+
 }
 
 
@@ -3796,19 +3756,13 @@ on_explorer_recruited = {
 
 # THIS = Province, FROM = Country
 on_regiment_recruited = {
+
 }
 
 # THIS = Province, FROM = Country
 on_mercenary_recruited = {
 	FROM = {
-		add_country_modifier = {
-				name = "mercs_bought"
-				duration = 3650
-				hidden = yes
-			}
-	}
-	FROM = {
-	
+		add_army_professionalism = 0
 	}
 }
 
@@ -3818,6 +3772,16 @@ on_add_pasha = {
 
 # THIS = One province in the state
 on_remove_pasha = {
+	hidden_effect = {
+		owner = {
+			save_event_target_as = province_owner
+		}
+	}
+
+	area = {
+		limit = { owned_by = event_target:province_owner }
+		add_or_extend_province_modifier_effect = { MODIFIER = pasha_removed_modifier DURATION = 3650 }
+	}
 }
 # THIS = Province
 on_janissaries_raised = {
@@ -4239,79 +4203,79 @@ on_estate_removed = {
 
 
 on_colonist_boosting_colony = {
-	hidden_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = noreligion
-					#test if colonists outnumber natives
-					variable_arithmetic_trigger = {
-						custom_tooltip = colonysize_is_larger_than_nativesize_tt
-						export_to_variable = {
-							which = vab_colonysize
-							value = trigger_value:colonysize
-						}
-						export_to_variable = {
-							which = vab_nativesize
-							value = trigger_value:native_size
-						}
-						check_variable = {
-							which = vab_colonysize
-							which = vab_nativesize
-						}
-					}
-					is_in_capital_area = yes
-					OR = {
-						continent = north_america
-						continent = south_america
-						continent = new_world
-					}
-					NOT = {
-						OR = {
-							has_dlc = "Dharma"
-							has_dlc = "Wealth of Nations"
-						}
-					}
-				}
-			}
-			change_religion = FROM
-		}
-		if = {
-			limit = {
-				OR = {
-					culture = noculture
-					#test if colonists outnumber natives
-					variable_arithmetic_trigger = {
-						custom_tooltip = colonysize_is_larger_than_nativesize_tt
-						export_to_variable = {
-							which = vab_colonysize
-							value = trigger_value:colonysize
-						}
-						export_to_variable = {
-							which = vab_nativesize
-							value = trigger_value:native_size
-						}
-						check_variable = {
-							which = vab_colonysize
-							which = vab_nativesize
-						}
-					}
-					is_in_capital_area = yes
-					OR = {
-						continent = north_america
-						continent = south_america
-						continent = new_world
-					}
-					NOT = {
-						OR = {
-							has_dlc = "Dharma"
-							has_dlc = "Wealth of Nations"
-						}
-					}
-				}
-			}
-			change_culture = FROM
-			change_original_culture = FROM
-		}
-	}
+#	hidden_effect = {
+#		if = {
+#			limit = {
+#				OR = {
+#					religion = noreligion
+#					#test if colonists outnumber natives
+#					variable_arithmetic_trigger = {
+#						custom_tooltip = colonysize_is_larger_than_nativesize_tt
+#						export_to_variable = {
+#							which = vab_colonysize
+#							value = trigger_value:colonysize
+#						}
+#						export_to_variable = {
+#							which = vab_nativesize
+#							value = trigger_value:native_size
+#						}
+#						check_variable = {
+#							which = vab_colonysize
+#							which = vab_nativesize
+#						}
+#					}
+#					is_in_capital_area = yes
+#					OR = {
+#						continent = north_america
+#						continent = south_america
+#						continent = new_world
+#					}
+#					NOT = {
+#						OR = {
+#							has_dlc = "Dharma"
+#							has_dlc = "Wealth of Nations"
+#						}
+#					}
+#				}
+#			}
+#			change_religion = FROM
+#		}
+#		if = {
+#			limit = {
+#				OR = {
+#					culture = noculture
+#					#test if colonists outnumber natives
+#					variable_arithmetic_trigger = {
+#						custom_tooltip = colonysize_is_larger_than_nativesize_tt
+#						export_to_variable = {
+#							which = vab_colonysize
+#							value = trigger_value:colonysize
+#						}
+#						export_to_variable = {
+#							which = vab_nativesize
+#							value = trigger_value:native_size
+#						}
+#						check_variable = {
+#							which = vab_colonysize
+#							which = vab_nativesize
+#						}
+#					}
+#					is_in_capital_area = yes
+#					OR = {
+#						continent = north_america
+#						continent = south_america
+#						continent = new_world
+#					}
+#					NOT = {
+#						OR = {
+#							has_dlc = "Dharma"
+#							has_dlc = "Wealth of Nations"
+#						}
+#					}
+#				}
+#			}
+#			change_culture = FROM
+#			change_original_culture = FROM
+#		}
+#	}
 }

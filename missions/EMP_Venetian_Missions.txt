@@ -698,6 +698,8 @@ emp_ven_slot_5 = {
 		provinces_to_highlight = {
 			OR = {
 				trade_company_region = trade_company_east_india
+				trade_company_region = trade_company_coromandel
+				trade_company_region = trade_company_west_india
 			}
 			is_sea = no
 			NOT = { owned_by = ROOT }
@@ -706,11 +708,20 @@ emp_ven_slot_5 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = emp_ven_this_mythical_realm_tt
+				OR = {
 					trade_company_east_india = { 
 						owned_by = ROOT
 						is_city = yes
 					}
-				
+					trade_company_coromandel = {
+						owned_by = ROOT
+						is_city = yes
+					}
+					trade_company_west_india = {
+						owned_by = ROOT
+						is_city = yes
+					}
+				}
 			}
 		}
 		effect = {
@@ -736,6 +747,9 @@ emp_ven_slot_5 = {
 				
 				amount = 10
 				}
+			1340 = { # Coromandel
+				is_strongest_trade_power = ROOT
+			}
 			1343 = { # Bengal
 				is_strongest_trade_power = ROOT
 			}

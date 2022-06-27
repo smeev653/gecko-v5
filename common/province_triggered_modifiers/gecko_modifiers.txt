@@ -827,16 +827,6 @@ gc_cagliari_copper = {
 	local_development_cost = -0.25
 }
 
-erzincan_copper = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_global_flag = erzincan_copper
-	}
-	trigger = {controlled_by = ROOT
-	}
-	trade_goods_size = 3
-	local_development_cost = -0.25
-}
 
 gc_catanzaro_silk = {
 	potential = {
