@@ -5567,7 +5567,7 @@ estate_nobles_golden_liberty = {
 	penalties = {
 	}
 	benefits = {
-		global_manpower_modifier = 0.5
+		global_manpower_modifier = 0.25
 	}
 	mechanics = {
 		exempt_from_seize_land
