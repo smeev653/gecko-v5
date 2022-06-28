@@ -132,7 +132,7 @@ technology = { #Early Modern Administration
 	
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
-	governing_capacity = 200
+	governing_capacity = 100
 }
 
 technology = { #Improved Drainage

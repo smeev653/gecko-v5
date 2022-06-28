@@ -3,7 +3,7 @@ republic_mechanic = {
 	republican_name = yes
 	royal_marriage = no
 	republic = yes
-	duration = 4
+	duration = 5
 	has_term_election = yes
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -1506,7 +1506,7 @@ consolidate_power_in_cities_reform = {
 		global_foreign_trade_power = 0.20
 	}
 	has_term_election = yes
-	duration = 3
+	duration = 4
 	ai = {
 		factor = 10
 		modifier = {

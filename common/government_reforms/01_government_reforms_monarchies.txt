@@ -2018,7 +2018,7 @@ royal_decree_reform = {
 		is_revolutionary = no
 	}
 	modifiers = {
-		development_cost = -0.05
+		diplomatic_reputation = 3
 	}
 	ai = {
 		factor = 1
