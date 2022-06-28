@@ -402,8 +402,10 @@ fort_15th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
-					any_neighbor_province = {
+				any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -415,7 +417,6 @@ fort_15th = {
 							has_construction = fort_18th
 						}
 						NOT = { is_capital = yes }
-					}
 				}	
 			}
 		}
@@ -620,8 +621,10 @@ keep_trigger = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
-					any_neighbor_province = {
+				any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -633,12 +636,14 @@ keep_trigger = {
 							has_construction = fort_18th
 						}
 						NOT = { is_capital = yes }
-					}
 				}	
 			}
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+					
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -656,7 +661,6 @@ keep_trigger = {
 							}
 						}
 					}
-				}
 			}
 		}
 	}
@@ -962,8 +966,10 @@ fort_16th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -976,7 +982,7 @@ fort_16th = {
 						}
 						NOT = { is_capital = yes }
 					}
-				}	
+					
 			}
 		}
 	}
@@ -1180,8 +1186,10 @@ fort_16th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+						tag = ROOT
+					}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -1194,11 +1202,13 @@ fort_16th = {
 						}
 						NOT = { is_capital = yes }
 					}
-				}	
+					
 			}
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+						tag = ROOT
+					}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -1216,7 +1226,7 @@ fort_16th = {
 							}
 						}
 					}
-				}
+				
 			}
 		}
 	}
@@ -1604,8 +1614,10 @@ fort_17th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -1618,7 +1630,6 @@ fort_17th = {
 						}
 						NOT = { is_capital = yes }
 					}
-				}	
 			}
 		}
 	}
@@ -1822,8 +1833,10 @@ fort_17th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -1836,11 +1849,14 @@ fort_17th = {
 						}
 						NOT = { is_capital = yes }
 					}
-				}	
+					
 			}
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -1858,7 +1874,6 @@ fort_17th = {
 							}
 						}
 					}
-				}
 			}
 		}
 	}
@@ -2187,8 +2202,10 @@ fort_18th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+					}	
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -2200,8 +2217,7 @@ fort_18th = {
 							has_construction = fort_18th
 						}
 						NOT = { is_capital = yes }
-					}
-				}	
+					}	
 			}
 		}
 	}
@@ -2405,8 +2421,10 @@ fort_18th = {
 			province_id = 2788
 			province_id = 1099
 			NOT = {
-				ROOT = {
 					any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
 						OR = {
 							has_building = fort_15th
 							has_construction = fort_15th
@@ -2419,7 +2437,6 @@ fort_18th = {
 						}
 						NOT = { is_capital = yes }
 					}
-				}	
 			}
 			NOT = {
 				ROOT = {
