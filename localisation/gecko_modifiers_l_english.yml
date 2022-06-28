@@ -85,6 +85,7 @@
  desc_mam_african_market:0 "We have conquered the narrow passage to the Sahel. Let our traders follow the flow of trade."
  turks_defeated:0 "Turks Defeated"
  gc_yemeni_trade_modifier:0 "Nile Control"
+ gc_beyliks_subjugated:0 "Beyliks Subjugated"
 
  #Ethiopia
  gecko_ethiopia_highlands_and_mountains_modifier:0 "Temper the Roof of Africa"
@@ -139,6 +140,7 @@
  #buildup mission
 
  gc_investment:0 "Internal Investment"
+ gc_growing_economy:0 "Growing Economy"
  
  #arabia
  
@@ -168,6 +170,7 @@
 
  catholic_rome:0 "Italian Ambition"
  desc_catholic_rome:1 ""
+ gc_habsburg_bohemia:0 "Habsburg Bohemia"
 
  #Hungary
  gc_hungary_anatolian_conquest:0 "Conquest of Anatolia"
@@ -175,10 +178,12 @@
  gc_hungary_italian_domination:0 "North Italian Domination"
  gc_hungary_conquest_of_rome:0 "Protector of Rome"
  gc_hungary_conquest_of_poland:0 "Integration of West Slavic Culture"
+ gc_hun_strong_economy:0 "Strong Economy"
 
 #Burgundy
 lowland_integration:0 "Lowland Integration"
 defense_of_burgundy:0 "Repulse the English"
+gc_bur_realm_united_mod:0 "United Realm"
 
 #Swiss
 swabian_trade:0 "Swabian Trade"
@@ -217,3 +222,16 @@ gecko_recovery:0 "Revanchism"
 increased_merc_recruitment:0 "Increased Mercenary Recruitment"
 increased_merc_quality:0 "Increased Mercenary Quality"
 Over_merc_limit:0 "Over Mercenary Forcelimit"
+
+#venice
+
+gc_ven_urban_renewal:0 "Urban Renewal"
+gc_ven_venture_captain_recruitment:0 "Venture-Captain Recruitment"
+gc_ven_mercenaries_paid_with_land:0 "Mercenaries Receive Land Grants"
+gc_ven_genoese_humiliation:0 "Genoese Humiliation"
+gc_mediterranean_ambition:0 "Mediterranean Ambition"
+gc_ven_la_francocrazia:0 "La Francocrazia"
+
+#milan
+
+gc_mlo_lombard_renaissance:0 "Lombard Renaissance"

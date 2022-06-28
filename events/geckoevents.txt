@@ -1919,7 +1919,7 @@ country_event = {
 				NOT = {	has_age_ability = ab_hesse_mercs }
 			}	
 			 has_country_modifier = increased_merc_quality
-			 has_country_modifier = 110percentavailablemercs
+			 has_country_modifier = 100percentavailablemercs
 		 NOT = {  has_country_modifier = increased_merc_recruitment }
 			check_variable = {
 								which = availablegeckomercs
@@ -2060,7 +2060,7 @@ country_event = {
 		NOT = { revanchism = 1 }
 			
 	}		
-		#hidden = yes
+		hidden = yes
 	mean_time_to_happen = {
 			days = 1
 	}

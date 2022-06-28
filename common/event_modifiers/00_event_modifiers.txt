@@ -2,10 +2,6 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
-plc_polish_lithuanian_union = {
-	num_accepted_cultures = 1
-}
-
 #national_bank_interest = {
 #	interest = -0.5
 #}
@@ -20,6 +16,11 @@ the_proper_old_ways = {
 	global_trade_goods_size_modifier = -0.25
 }
 
+#eth_mil_aid_from_portugal = {
+#	land_morale = 0.05
+#	mil_tech_cost_modifier = -0.05
+#	global_manpower_modifier = 0.05
+#}
 incompetent_fabrication = {
 	fabricate_claims_cost = 0.5
 	ae_impact = 0.05
@@ -2157,6 +2158,10 @@ kongo_estuary_modifier = {
 	picture = "estuary_icon"
 }
 
+amur_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
 # England flavor modifiers
 
 lollards = {
@@ -3161,7 +3166,7 @@ governor_de_sousa = {
 }
 
 earthquake = {
-	trade_goods_size = -0.66
+	trade_goods_size_modifier = -0.25
 	local_manpower_modifier = -0.66
 }
 
@@ -3350,6 +3355,9 @@ pol_zebrzydowski_rebellion_flag = {
 	global_trade_goods_size_modifier = -0.25
 }
 
+plc_polish_lithuanian_union = {
+	num_accepted_cultures = 1
+}
 economic_development_of_mazovia = {
 	local_development_cost = -0.1
 }
@@ -8991,28 +8999,28 @@ overlord_military_mission = {
 
 # Religions
 harmonized_vajrayana = {
-	production_efficiency = 0.05
+	production_efficiency = 0.1
 	religion = yes
 }
 
 harmonized_buddhism = { #Theravada
-	advisor_cost = -0.05
+	advisor_cost = -0.1
 	religion = yes
 }
 
 harmonized_mahayana = {
-	idea_cost = -0.07
+	idea_cost = -0.1
 	religion = yes
 }
 
 harmonized_shinto = {
-	infantry_power = 0.05
+	infantry_power = 0.1
 	religion = yes
 }
 
 # Religion Groups
 harmonized_pagan = {
-	global_unrest = -0.5
+	global_unrest = -1
 	religion = yes
 }
 
@@ -9022,25 +9030,24 @@ harmonized_jewish_group = {
 }
 
 harmonized_zoroastrian_group = {
-	trade_efficiency = 0.1
+	global_trade_goods_size_modifier = 0.1
 	religion = yes
 }
 
 harmonized_dharmic = {
-	tolerance_own = 1
+	diplomatic_reputation = 1
 	religion = yes
 }
 
 harmonized_muslim = {
-	trade_efficiency = 0.05
+	trade_efficiency = 0.1
 	religion = yes
 }
 
 harmonized_christian = {
-	stability_cost_modifier = -0.05
+	stability_cost_modifier = -0.1
 	religion = yes
 }
-
 #On the route to Harmonization:
 
 harmonization_classics_translated = {
@@ -10825,6 +10832,11 @@ warriors_do_not_read_books = {
 
 new_mandate_holder = {
 	imperial_mandate = 0.05
+	land_maintenance_modifier = -0.1
+	land_forcelimit = 20
+	manpower_recovery_speed = 0.15
+	global_tax_income = 60
+	global_monthly_devastation = -0.1
 }
 
 
@@ -11623,11 +11635,11 @@ honour_pole = {
 }
 
 travois_no_dogs = {
-	migration_cost = -0.1
+	migration_cost = 0.5
 }
 
 travois_no_horses = {
-	migration_cost = -0.1
+	migration_cost = 0.5
 }
 
 lovely_place = {

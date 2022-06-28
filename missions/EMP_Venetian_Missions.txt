@@ -100,7 +100,7 @@ emp_ven_slot_2 = {
 		}
 		effect = {
 				add_country_modifier = {
-					name = "ven_urban_renewal"
+					name = "gc_ven_urban_renewal"
 					duration = 7300
 				}
 			
@@ -245,7 +245,7 @@ emp_ven_slot_3 = {
 		effect = {
 			add_mil_power = 50
 			add_country_modifier = {
-				name = ven_venture_captain_recruitment
+				name = gc_ven_venture_captain_recruitment
 				duration = 18250
 			}
 		}
@@ -261,7 +261,7 @@ emp_ven_slot_3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = ven_mercenaries_paid_with_land
+				name = gc_ven_mercenaries_paid_with_land
 				duration = 7300
 			}
 		}
@@ -496,7 +496,7 @@ emp_ven_slot_4 = {
 		effect = {
 			add_mercantilism = 3
 			add_country_modifier = {
-				name = "ven_genoese_humiliation"
+				name = "gc_ven_genoese_humiliation"
 				duration = 3650
 			}
 			apulia_area = {
@@ -624,11 +624,11 @@ emp_ven_slot_5 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "mediterranean_ambition"
+				name = "gc_mediterranean_ambition"
 				duration = 3650
 			}
 			add_country_modifier = {
-				name = "ven_la_francocrazia"
+				name = "gc_ven_la_francocrazia"
 				duration = -1
 			}
 			delta_area = {
@@ -741,10 +741,10 @@ emp_ven_slot_5 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "ven_nothing_ventured_nothing_gained"
-				duration = 5475
-			}
+			#add_country_modifier = {
+			#	name = "ven_nothing_ventured_nothing_gained"
+			#	duration = 5475
+			#}
 		}
 	}
 }

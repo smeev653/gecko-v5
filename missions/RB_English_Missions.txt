@@ -350,7 +350,7 @@ eng_rb_stability = {
 		
 		effect = {
 			add_country_modifier = {
-				name = hun_strong_economy
+				name = gc_hun_strong_economy
 				duration = 7300
 			}
 		}

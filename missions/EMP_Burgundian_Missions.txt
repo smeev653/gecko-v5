@@ -389,7 +389,7 @@ emp_burgundy_2 = {
 		trigger = { share_of_starting_income = 1.5 }
 		effect = {
 			add_country_modifier = {
-				name = "growing_economy"
+				name = "gc_growing_economy"
 				duration = 9125 #25 years
 			}
 		}
@@ -446,7 +446,7 @@ emp_burgundy_2 = {
 			low_countries_region = {
 				limit = { owned_by = root }
 				add_province_modifier = {
-					name = bur_realm_united_mod
+					name = gc_bur_realm_united_mod
 					duration = 5475
 				}
 			}

@@ -123,21 +123,21 @@ hab_holy_roman_ambitions = {
 		effect = {
 			erzgebirge_area = {
 				add_province_modifier = {
-					name = "habsburg_bohemia"
+					name = "gc_habsburg_bohemia"
 					duration = 18250
 				}
 				add_nationalism = -5
 			}
 			bohemia_area = {
 				add_province_modifier = {
-					name = "habsburg_bohemia"
+					name = "gc_habsburg_bohemia"
 					duration = 18250
 				}
 				add_nationalism = -5
 			}
 			hradecko_area = {
 				add_province_modifier = {
-					name = "habsburg_bohemia"
+					name = "gc_habsburg_bohemia"
 					duration = 18250
 				}
 				add_nationalism = -5

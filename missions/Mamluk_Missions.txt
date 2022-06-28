@@ -130,13 +130,13 @@ mam_north_missions = {
 				}	
 				add_yearly_manpower = 1.5
 				add_country_modifier = {
-					name = "beyliks_subjugated"
+					name = "gc_beyliks_subjugated"
 					duration = 7300
 				}
 			} 
 			else = {
 				add_country_modifier = {
-					name = "beyliks_subjugated"
+					name = "gc_beyliks_subjugated"
 					duration = 7300
 				}
 			}
@@ -1100,7 +1100,7 @@ gecko_mam_branch_4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = hun_strong_economy
+				name = gc_hun_strong_economy
 				duration = 7300
 			}
 		}

@@ -181,7 +181,7 @@ east_pacific_ocean_area = {
 }
 
 polynesian_triangle_area = {
-	1692 1697 1713 1720 1721 1722 1723 1724 1725 1726 1727 1728 1729 1731 1732 1733 1735 1738 1739 
+	1692 1697 1713 1720 1721 1722  1724 1725 1726 1727 1728 1729 1731 1732 1733 1735 1738 1739 1723
 }
 
 south_pacific_area = {
@@ -2995,7 +2995,16 @@ shandong_area = { #5
 jiangsu_area = { #3
 }
 
+south_jiangsu_area = { #4
+	685 1821 1822 2145
+}
+
 anhui_area = { #3 (North Anhui)
+	1838 2143 2144
+}
+
+south_anhui_area = { #3
+	686 2146 2147
 }
 
 zhejiang_area = { #5

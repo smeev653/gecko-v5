@@ -99,7 +99,7 @@
  PROV5783:0 "Ivrea"
  PROV5785:0 "Ossola"
  PROV5786:0 "Catanzaro"
- PROV5787:0 "Piacenza"
+ #PROV5787:0 "Piacenza"
  PROV6000:0 "Kerch"
  PROV6001:0 "Kezlev"
  PROV6002:0 "Cankoy"

@@ -17,7 +17,7 @@ gc_cri_branch_1 = {
 		trigger = { share_of_starting_income = 1.5 }
 		effect = {
 			add_country_modifier = {
-				name = "growing_economy"
+				name = "gc_growing_economy"
 				duration = 9125 #25 years
 			}
 		}

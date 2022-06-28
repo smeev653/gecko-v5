@@ -120,7 +120,7 @@ declarewar = {
 	condition = {
 		tooltip = gc_may_not_declare_war_yet
 		potential = {
-			ai = no
+			ROOT = { ai = no }
 			NOT = { is_year = 1450 }
 		}
 		allow = {
@@ -267,7 +267,7 @@ threaten_war = {
 	condition = {
 		tooltip = gc_may_not_declare_war_yet
 		potential = {
-			ai = no
+			ROOT = { ai = no }
 			NOT = { is_year = 1450 }
 		}
 		allow = {
@@ -496,7 +496,7 @@ allianceaction = {
 	condition = {
 		tooltip = h_tooltip_many_allies
 		potential = {
-			ai = yes
+			ROOT = { ai = yes }
 		}
 		allow = {
 			ROOT = {
@@ -509,7 +509,7 @@ allianceaction = {
 	condition = {
 		tooltip = h_tooltip_from_many_allies
 		potential = {
-			ai = yes
+			ROOT = { ai = yes }
 		}
 		allow = {
 			FROM = {
@@ -522,7 +522,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			ai = no
+			ROOT = { ai = no }
 		}
 		allow = {
 			ROOT = {
@@ -538,7 +538,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			ai = no
+			FROM = { ai = no }
 		}
 		allow = {
 			FROM = {
@@ -554,7 +554,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			ai = no
+			FROM = { ai = no }
 		}
 		allow = {
 			FROM = {
@@ -570,7 +570,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_truce_with_ally
 		potential = {
-			ai = no
+			ROOT = { ai = no }
 		}
 		allow = {
 			ROOT = {
@@ -586,7 +586,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_naples
 		potential = {
-			tag = NAP	
+			ROOT = { tag = NAP}
 			NOT = {
 				is_year = 1450
 			}
@@ -599,7 +599,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_to_naples
 		potential = {
-			ai = yes
+			ROOT = { ai = yes }
 			NOT = {
 				is_year = 1450
 			}
@@ -618,7 +618,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_denmark
 		potential = {
-			tag = DAN	
+			ROOT = { tag = DAN}
 			NOT = {
 				is_year = 1450
 			}
@@ -631,7 +631,7 @@ allianceaction = {
 	condition = {
 		tooltip = gc_to_denmark
 		potential = {
-			ai = yes
+			ROOT = { ai = yes }
 			NOT = {
 				is_year = 1450
 			}
@@ -650,14 +650,17 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_mamottoally
 		potential = {
-			OR = {
-				tag = MAM
-				tag = EGY
-			}	
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+			ROOT = {
+				OR = {
+					tag = MAM
+					tag = EGY
+				}	
+				
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -674,10 +677,12 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_ottomamally
 		potential = {
-			AND = {
-				tag = TUR
-				has_reform = ottoman_government
-			}
+			ROOT = {
+				AND = {
+					tag = TUR
+					has_reform = ottoman_government
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -693,14 +698,17 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_mamhunally
 		potential = {
-			OR = {
-				tag = MAM
-				tag = EGY
-			}	
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+			ROOT = {
+				OR = {
+					tag = MAM
+					tag = EGY
+				}
+				
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -717,12 +725,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_hunmamally
 		potential = {
-			tag = HUN
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+				tag = HUN
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -738,11 +748,13 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_ottohunally
 		potential = {
+			ROOT = {
 				tag = TUR
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -759,12 +771,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_hunottoally
 		potential = {
-			tag = HUN
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+				tag = HUN
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -780,11 +794,13 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_ottoethally
 		potential = {
-				tag = TUR
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+			ROOT = {
+					tag = TUR
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -801,12 +817,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_ethottoally
 		potential = {
-			tag = ETH
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+				tag = ETH
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -821,11 +839,13 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_fraengally
 		potential = {
-				tag = FRA
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+			ROOT = {
+					tag = FRA
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -842,12 +862,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_engfraally
 		potential = {
-			tag = ENG
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+				tag = ENG
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -862,12 +884,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_fraburally
 		potential = {
-				tag = FRA
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+					tag = FRA
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -883,12 +907,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_burfraally
 		potential = {
-			tag = BUR
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+				tag = BUR
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -903,11 +929,13 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_burengally
 		potential = {
+			ROOT = {
 				tag = BUR
-			NOT = {
+				NOT = {
 				has_reform = clergy_in_administration_reform
 				has_reform = of_noble_bearing_reform
 				has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -924,12 +952,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_engburally
 		potential = {
-			tag = ENG
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+				tag = ENG
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -944,11 +974,13 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_moscrially
 		potential = {
+			ROOT = {
 				tag = MOS
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -965,12 +997,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_crimosally
 		potential = {
-			tag = CRI
-			NOT = {
-				has_reform = retain_tribal_hierarchy_reform
-				has_reform = decentralize_reform
-				has_reform = centralize_reform
-			}
+			ROOT = {
+				tag = CRI
+				NOT = {
+					has_reform = retain_tribal_hierarchy_reform
+					has_reform = decentralize_reform
+					has_reform = centralize_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -985,11 +1019,13 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_polcrially
 		potential = {
-				tag = POL
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+			ROOT = {
+					tag = POL
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
 			}
 		}	
 		allow = {
@@ -1006,11 +1042,13 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_cripolally
 		potential = {
-			tag = CRI
-			NOT = {
-				has_reform = retain_tribal_hierarchy_reform
-				has_reform = decentralize_reform
-				has_reform = centralize_reform
+			ROOT = {
+				tag = CRI
+				NOT = {
+					has_reform = retain_tribal_hierarchy_reform
+					has_reform = decentralize_reform
+					has_reform = centralize_reform
+				}
 			}
 		}	
 		allow = {
@@ -1026,12 +1064,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_muspolally
 		potential = {
-				tag = MOS
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+					tag = MOS
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -1047,12 +1087,14 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_polmosally
 		potential = {
-			tag = POL
-			NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
-			}
+			ROOT = {
+				tag = POL
+				NOT = {
+					has_reform = clergy_in_administration_reform
+					has_reform = of_noble_bearing_reform
+					has_reform = meritocratic_focus_reform
+				}
+			}	
 		}	
 		allow = {
 			FROM = {
@@ -1105,9 +1147,11 @@ support_independence_action = {
 	condition = {
 		tooltip = h_tooltip_cn_support
 		potential = {
-			OR = {
-				is_colonial_nation = yes
-				ai = yes
+			ROOT = {
+				OR = {
+					is_colonial_nation = yes
+					ai = yes
+				}
 			}	
 		}
 		allow = {
@@ -1120,7 +1164,9 @@ sabotage_reputation = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1131,7 +1177,9 @@ support_rebels = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1142,7 +1190,9 @@ sow_discontent = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1153,7 +1203,9 @@ study_technology = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1164,7 +1216,9 @@ agitate_for_liberty = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1175,7 +1229,9 @@ slander_merchants = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1186,7 +1242,9 @@ sabotage_recruitment = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1197,7 +1255,9 @@ corrupt_officials = {
 	condition = {
 		tooltip = h_tooltip_cn_espionage
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { same_continent = ROOT }
@@ -1208,7 +1268,9 @@ warsubsidy = {
 	condition = {
 		tooltip = h_tooltip_cn_money
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { is_colonial_nation = yes }
@@ -1217,7 +1279,9 @@ warsubsidy = {
 	condition = {
 		tooltip = h_tooltip_money_to_cn
 		potential = {
-			is_colonial_nation = no
+			ROOT = {
+				is_colonial_nation = no
+			}	
 		}
 		allow = {
 			OR = {
@@ -1232,7 +1296,9 @@ offerloan = {
 	condition = {
 		tooltip = h_tooltip_cn_money
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}
 		}
 		allow = {
 			FROM = { is_colonial_nation = yes }
@@ -1241,7 +1307,9 @@ offerloan = {
 	condition = {
 		tooltip = h_tooltip_money_to_cn
 		potential = {
-			is_colonial_nation = no
+			ROOT = {
+				is_colonial_nation = no
+			}	
 		}
 		allow = {
 			OR = {
@@ -1256,7 +1324,9 @@ giftaction = {
 	condition = {
 		tooltip = h_tooltip_cn_money
 		potential = {
-			is_colonial_nation = yes
+			ROOT = {
+				is_colonial_nation = yes
+			}	
 		}
 		allow = {
 			FROM = { is_colonial_nation = yes }
@@ -1265,7 +1335,9 @@ giftaction = {
 	condition = {
 		tooltip = h_tooltip_money_to_cn
 		potential = {
-			is_colonial_nation = no
+			ROOT = {
+				is_colonial_nation = no
+			}	
 		}
 		allow = {
 			OR = {

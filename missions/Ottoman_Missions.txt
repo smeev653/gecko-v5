@@ -24,7 +24,7 @@ tur_conquerors_of_the_near_east = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "defeated_byzantine_empire"
+				name = "gc_defeated_byzantine_empire"
 				duration = 10950
 			}
 			every_province = {
@@ -144,7 +144,7 @@ tur_conquerors_of_the_near_east = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "at_the_gates_of_europe"
+				name = "gc_at_the_gates_of_europe"
 				duration = 3650
 			}
 			bosnia_area = {
@@ -538,7 +538,7 @@ tur_conquest_of_middle_east = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "anatolia_eyalet"
+				name = "gc_anatolia_eyalet"
 				duration = 7300
 			}
 			north_kurdistan_area = {
@@ -1037,7 +1037,7 @@ tur_eastern_mediterrenean_missions = {
 						add_permanent_claim = root
 					}
 			add_country_modifier = {
-				name = "mediterranean_ambition"
+				name = "gc_mediterranean_ambition"
 				duration = 7300 #20 Years
 			}
 		}

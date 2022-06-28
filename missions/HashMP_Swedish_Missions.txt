@@ -954,7 +954,7 @@ h_swedish_missions_5 = {
 				duration = 9125
 			}
 			add_country_modifier = {
-				name = "growing_economy"
+				name = "gc_growing_economy"
 				duration = 9125 #25 years
 			}
 		}

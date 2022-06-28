@@ -68,7 +68,7 @@
  PROV_ADJ5783:0 "Ivrea"
  PROV_ADJ5785:0 "Ossola"
  PROV_ADJ5786:0 "Catanzaro"
- PROV_ADJ5787:0 "Piacenza"
+ #PROV_ADJ5787:0 "Piacenza"
  PROV_ADJ6000:0 "Kerchan"
  PROV_ADJ6001:0 "Kezlevian"
  PROV_ADJ6002:0 "Cankoyian"

@@ -597,7 +597,7 @@ country_decisions = {
 			set_country_flag = gecko_tackle_debt_timer_2
 			add_country_modifier = {
 				name = "gecko_tackle_debt_timer"
-				duration = 3650
+				duration = 5475
 				hidden = yes
 			} 
 			add_country_modifier = {

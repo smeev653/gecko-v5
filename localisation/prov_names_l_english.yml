@@ -1721,7 +1721,7 @@
  PROV1720:1 "Tharp Fault"
  PROV1721:0 "South Pacific Roaring Forties"
  PROV1722:1 "Louisville Seamount Chain"
- PROV1723:1 "Chatham Islands"
+ #PROV1723:1 "Chatham Islands"
  PROV1724:1 "Southeast Pacific"
  PROV1725:1 "Tuamotu Islands"
  PROV1726:0 "Samoa Islands"

@@ -1218,7 +1218,7 @@ emp_mlo_economy_branch = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = mlo_lombard_renaissance
+				name = gc_mlo_lombard_renaissance
 				duration = 7300
 			}
 		}
