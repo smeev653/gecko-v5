@@ -98,10 +98,7 @@ icons_images_aspect = {
 legalised_divorces_aspect = {
 	cost = 100
 	modifier = {
-		legitimacy = 0.25
-		devotion = 0.25
-		horde_unity = 0.25
-		republican_tradition = 0.1
+		interest = -0.25
 	}
 	ai_will_do = {
 		factor = 6

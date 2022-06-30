@@ -279,7 +279,7 @@ gecko_development = {
 
 gecko_debt_tackled = {
 	land_maintenance_modifier = -1
-	interest = -1
+	interest = -0.75
 	inflation_action_cost = -0.25
 	inflation_reduction = 1
 	global_regiment_recruit_speed = 1

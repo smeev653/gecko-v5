@@ -682,8 +682,7 @@ christian = {
 			}
 
 			icon_eleusa = {
-				global_unrest = -3
-				harsh_treatment_cost = -0.25
+				interest = -0.25
 				
 				allow = {
 					always = yes

@@ -70,6 +70,7 @@ promote_territorial_rights = {
 
 	modifier = {
 		development_cost = -0.05
+		interest = -0.25
 	}
 	ai_will_do = {
 		factor = 10

@@ -425,7 +425,12 @@ country_decisions = {
 
 		allow = {
 				ai = no
-				#is_great_power = no
+				great_power_rank = 6
+				 is_great_power = no
+				}
+				any_country = {
+						total_development = ROOT
+					}
 				#dip_tech = 10
 				NOT = { num_of_allies = 2 }
 				NOT = { is_colonial_nation = yes }	
