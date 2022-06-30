@@ -413,63 +413,7 @@ east_african_diplomatic_slot = {
 	#Horn Trade
 		
 	#Reverse Zheng He
-	east_africa_zheng_he = {
-		icon = mission_junk_boat
-		required_missions = {  east_africa_lion_king }
-		trigger = {
-			is_great_power = yes
-			684 = {
-				strongest_trade_power = {
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
-			}
-			1371 = {
-				strongest_trade_power = {
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
-			}
-			4233 = {
-				strongest_trade_power = {
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
-			}
-		}
-		effect = {
-			684 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 20
-					key = chinese_trade_agreement
-				}
-			}
-			1371 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 20
-					key = chinese_trade_agreement
-				}
-			}
-			4233 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 20
-					key = chinese_trade_agreement
-				}
-			}
-		}
-	}
+	
 }
 
 #Expansion Line

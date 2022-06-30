@@ -155,7 +155,6 @@ merc_knights_templar = {
 		shock_damage = 0.05
 		cav_to_inf_ratio = 1
 	}
-	cost_modifier = 0.125
 }
 
 # Pontifical Swiss Guard
@@ -725,8 +724,8 @@ merc_nile_mamluks = {
 				}	
 			}
 			OR = {
-					mission_completed = repulse_gank
-					mission_completed = mam_turks_defeated
+						mission_completed = repulse_gank
+						mission_completed = mam_turks_defeated
 				}
 		}	
 	}

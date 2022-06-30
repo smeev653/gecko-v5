@@ -321,6 +321,10 @@ mercs_bought = {
 
 }
 
+mercs_hired = {
+	local_friendly_movement_speed = -1
+}
+
 geckoavailablemercs = {
 }
 

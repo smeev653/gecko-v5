@@ -251,6 +251,7 @@ interaction = {
             loyalty = -20
             short = yes
         }
+		re_add_loyalty_from_seized_land = yes
 		custom_tooltip = seize_land_rebels_tt
 		if = {
 			limit = {

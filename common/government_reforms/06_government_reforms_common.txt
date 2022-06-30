@@ -40,11 +40,18 @@ parliamentary_reform = {
 		global_unrest = -1
 	}
 	
-	trigger = {
-		OR = {
-			NOT = { has_estate = estate_nobles }
-			crown_stronger_than_estate = { estate = estate_nobles }
-			has_reform = parliamentary_reform
+	trigger = {		
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+				has_reform = parliamentary_reform
+			}
+		}	
+		if = {
+			limit = { has_dlc = "Res Publica" }
+			NOT = { has_reform = elective_monarchy }
 		}
 		if = {
 			limit = { NOT = { has_dlc = "Mandate of Heaven" } }
@@ -87,10 +94,6 @@ parliamentary_reform = {
 	post_removed_effect = {
 		give_estate_land_share_init = { estate = estate_nobles }
 	}
-
-	custom_attributes = {
-		blocked_call_diet = yes
-	}
 }
 
 # Upgraded Indian estate reforms
@@ -130,6 +133,7 @@ governmental_purbias_register_reform = {
 	potential = {
 		has_dlc = "Dharma"
 		has_estate = estate_rajput
+		technology_group = indian
 	}
 	modifiers = {
 		recover_army_morale_speed = 0.05
@@ -180,7 +184,7 @@ governmental_purbias_register_reform = {
 # for Spain
 
 council_of_the_indies_reform = {
-	icon = "merchant_ship"
+	icon = "paper_money_map"
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Golden Century"

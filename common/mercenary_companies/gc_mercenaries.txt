@@ -10,7 +10,6 @@ gecko_independent_army_1 = {
 		 NOT = { total_development = 300 }
 		 always = no
 		 #is_year = 1470
-		 NOT = { has_country_modifier = gecko_b }
 		 NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -33,7 +32,6 @@ gecko__local_independent_army_1 = {
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
 		}
-		NOT = { has_country_modifier = gecko_b }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue

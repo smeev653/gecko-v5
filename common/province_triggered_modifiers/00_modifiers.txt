@@ -838,9 +838,6 @@ promised_land_modifier = {
 
 kongo_cardinal_modifier = {
 	potential = {
-		owner = {
-			mission_completed = kon_gain_cardinal
-		}
 	}
 	trigger = {
 		religion = catholic

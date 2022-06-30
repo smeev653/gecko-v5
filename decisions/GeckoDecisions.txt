@@ -51,7 +51,6 @@ country_decisions = {
 				define_advisor  = { 
 					type = naval_reformer
 					skill = 1
-					discount = no
 					culture = variable:new_ruler_culture
 				}
 					add_country_modifier = {
@@ -751,12 +750,12 @@ country_decisions = {
 				any_hired_mercenary_company = {
 					hired_for_months = 1
 				}
-				NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-				}
+				#NOT = {
+				#	check_variable = {
+				#		which = geckomercvalue
+				#		which = geckomercFL
+				#	}
+				#}
 		}
 		effect = {
 			country_event = {
