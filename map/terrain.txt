@@ -689,6 +689,7 @@ categories =  {
 			6139 6144 #gc persia
 			6192 6195
 			381 #Ajloun
+			6117 # sis
 		}
 	}
 
@@ -742,7 +743,7 @@ categories =  {
 			4701 4699 4780 # 1.30 Greece and Bulgaria
 			1798 1799 #smeev change
 			#405 #smeev change
-			6113 6117 #bunker mod merge
+			6113 #bunker mod merge
 			6121
 			156 #Temes 
 			4239 #Belgrade

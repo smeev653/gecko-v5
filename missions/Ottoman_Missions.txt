@@ -24,8 +24,8 @@ tur_conquerors_of_the_near_east = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "gc_defeated_byzantine_empire"
-				duration = 10950
+				name = "ottoman_naval_expansion"
+				duration = 5475
 			}
 			every_province = {
 				limit = {
@@ -68,8 +68,8 @@ tur_conquerors_of_the_near_east = {
 		completed_by = 1460.1.1
 		effect = {
 			add_country_modifier = {
-				name = "ottoman_naval_expansion"
-				duration = 5475
+				name = "gc_defeated_byzantine_empire"
+				duration = 10950
 			}
 			rascia_area = {
 				limit = {
