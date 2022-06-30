@@ -651,6 +651,11 @@ country_decisions = {
 						which = geckomercFL
 					}
 				}
+				#NOT = { 
+				#	capital_scope = {
+				#		infantry_in_province = 30
+				#	}
+				#}	
 				capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -667,9 +672,36 @@ country_decisions = {
 			else = {	
 				add_treasury = -15
 			}
-			capital_scope = {
-				mercenary_infantry = PREV
-			}
+			if = {
+				limit = {
+					NOT = { 
+						capital_scope = {
+							infantry_in_province = 35
+						}
+					}	
+				}
+				capital_scope = {
+						mercenary_infantry = PREV
+				}
+			}	
+			else = {
+				random_owned_province = {
+					limit = {
+						province_distance = {
+							who = capital
+							distance = 50
+							}
+						is_in_capital_area = yes
+						controlled_by = ROOT
+						has_siege = no
+						unit_in_battle = no
+						NOT =  { devastation = 5 }
+						is_state = yes
+						development = 10
+					}
+					mercenary_infantry = PREV
+				}
+			}			
 			if = {
 					limit = {
 						has_country_modifier = Minor

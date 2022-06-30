@@ -317,14 +317,6 @@ gecko_ipa = {
 gecko_occupation = {
 }
 
-mercs_bought = {
-
-}
-
-mercs_hired = {
-	local_friendly_movement_speed = -1
-}
-
 geckoavailablemercs = {
 }
 

@@ -3997,14 +3997,7 @@ on_regiment_recruited = {
 }
 
 # THIS = Province, FROM = Country, ROOT = Merc Unit
-on_mercenary_recruited = {
-	FROM = {
-		add_country_modifier = {
-				name = "mercs_bought"
-				duration = 3650
-				hidden = yes
-			}
-	}	
+on_mercenary_recruited = {		
 }
 
 # THIS = One province in the state
