@@ -501,7 +501,7 @@ allianceaction = {
 		allow = {
 			ROOT = {
 				NOT = {
-					num_of_allies = 2
+					num_of_allies = 1
 				}
 			}
 		}
@@ -514,7 +514,7 @@ allianceaction = {
 		allow = {
 			FROM = {
 				NOT = {
-					num_of_allies = 2
+					num_of_allies = 1
 				}
 			}
 		}
