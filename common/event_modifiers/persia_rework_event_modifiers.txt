@@ -9,11 +9,6 @@ karun_tributary_modifier = {
 	picture = "estuary_icon"
 }
 
-kaffa_slave_market = { 
-	trade_goods_size = 5.0
-	province_trade_power_value = 20
-}
-
 transcaucasian_wine_valleys = {
 	trade_goods_size = 1.0
 }

@@ -11128,6 +11128,7 @@ AKK_ideas = {
 	start = {
 		land_forcelimit_modifier = 0.25
 		land_morale = 0.1
+		yearly_tribal_allegiance = 15
 	}
 	bonus = {
 		land_maintenance_modifier = -0.05

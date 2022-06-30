@@ -175,18 +175,6 @@ conquest_of_vienna = {
 conquest_of_jerusalem = {
 	potential = {
 		normal_or_historical_nations = yes
-		OR = {
-				religion = catholic
-				religion = anglican
-				religion = protestant
-				religion = hussite
-				religion = reformed
-				religion = coptic
-				religion = orthodox
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}
 	}
 
 	trigger = {
@@ -222,11 +210,7 @@ conquest_of_jerusalem = {
 
 conquest_of_baghdad = {
 	potential = {
-			OR = {
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}	
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
@@ -364,11 +348,11 @@ caliph_of_cairo = {
 	trigger = {
 		owner = {
 			OR = {
-				tag = MAM 
-				tag = EGY 
-				tag = TUR 
-				}
+				religion = sunni
+				religion = shiite
+				religion = ibadi
 			}
+		}	
 		controlled_by = ROOT	
 		}	
 
@@ -538,17 +522,14 @@ the_motherland_calls = {
 }
 conquest_of_sarai = {
 	potential = {
-		OR = {
-			tag = KHA
-			culture_group = tartar
-		}	
+		normal_or_historical_nations = yes
 	}
 
 	trigger = {
 		owner = {
 			OR = {
-			tag = KHA
-			culture_group = tartar
+				tag = KHA
+				culture_group = tartar
 			}
 			astrakhan_area = {
 					type = all
@@ -598,15 +579,16 @@ conquest_of_sarai = {
 conquest_of_tabriz = {
 	potential = {
 		normal_or_historical_nations = yes
-		OR = {
-				religion = sunni
-				religion = shiite
-				religion = ibadi
-			}
 	}
 
 	trigger = {
+		
 		owner = {
+				OR = {
+					religion = sunni
+					religion = shiite
+					religion = ibadi
+				}
 				NOT = { tag = ARL }
 				NOT = { tag = PER }
 				NOT = { tag = ISF }
@@ -797,31 +779,34 @@ my_desert = {
 		}
 }	
 
-gc_mongol_kurultai = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_global_flag = gc_mongol_kurultai
-	}
-	trigger = {
-		owner = {
-			OR = {
-				culture_group = altaic
-				culture_group = tartar
-			}
-		}
-		controlled_by = ROOT
-	}
-	
-	#technology_cost = -0.05
-	trade_goods_size = 5
-}
+#gc_mongol_kurultai = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#		has_global_flag = gc_mongol_kurultai
+#	}
+#	trigger = {
+#		owner = {
+#			OR = {
+#				culture_group = altaic
+#				culture_group = tartar
+#			}
+#		}
+#		controlled_by = ROOT
+#	}
+#	
+#	#technology_cost = -0.05
+#	trade_goods_size = 5
+#}
 
 gc_cagliari_copper = {
 	potential = {
 		normal_or_historical_nations = yes
-		has_global_flag = gc_cagliari_copper
 	}
-	trigger = {controlled_by = ROOT
+	trigger = {
+		controlled_by = ROOT
+		owner = {
+			has_global_flag = gc_cagliari_copper
+		}
 	}
 	trade_goods_size = 3
 	local_development_cost = -0.25
@@ -829,10 +814,16 @@ gc_cagliari_copper = {
 
 erzincan_copper = {
 	potential = {
-		normal_or_historical_nations = yes
-		has_global_flag = erzincan_copper
+		normal_or_historical_nations = yes	
 	}
-	trigger = {controlled_by = ROOT
+	trigger = {
+		controlled_by = ROOT
+		owner = {
+			OR = {
+				tag = AKK
+				mission_completed = conquer_kurdistan
+			}	
+		}
 	}
 	trade_goods_size = 3
 	local_development_cost = -0.25
@@ -841,9 +832,12 @@ erzincan_copper = {
 gc_catanzaro_silk = {
 	potential = {
 		normal_or_historical_nations = yes
-		has_global_flag = gc_catanzaro_silk
 	}
-	trigger = {controlled_by = ROOT
+	trigger = {
+		owner = {
+			has_global_flag = gc_catanzaro_silk
+		}
+		controlled_by = ROOT
 	}
 	trade_goods_size = 3
 	local_development_cost = -0.10
