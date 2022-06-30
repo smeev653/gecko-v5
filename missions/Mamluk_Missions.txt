@@ -119,9 +119,7 @@ mam_north_missions = {
 		}
 		trigger = {
 			war_with = TUR
-			DUL = {
-			 	is_subject_of = MAM
-			}	
+			army_size = TUR
 		}
 		effect = {
 			if = {

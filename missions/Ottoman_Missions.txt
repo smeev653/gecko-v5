@@ -477,6 +477,20 @@ tur_conquest_of_middle_east = {
 				}
 				add_permanent_claim = ROOT
 			}
+			dulkadir_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			cukurova_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	consolidate_asia_minor = {
@@ -548,13 +562,6 @@ tur_conquest_of_middle_east = {
 				}
 				add_permanent_claim = ROOT
 			}
-			dulkadir_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			delta_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -602,13 +609,6 @@ tur_conquest_of_middle_east = {
 				add_permanent_claim = ROOT
 			}
 			palestine_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			cukurova_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -1498,4 +1498,5 @@ gecko_tur_events = {
 			#}
 			add_yearly_manpower = 3	
         }
+	}	
 }
