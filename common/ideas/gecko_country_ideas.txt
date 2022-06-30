@@ -71,13 +71,12 @@ EGY_ideas = { #Egyptian Empire
 	}
 	egy_1 = {
 		land_morale = 0.10
-		drill_gain_modifier = 0.25
 	}
 	mam_monopoly_ports = {
 		trade_efficiency = 0.10
 	}
 	egy_7 = {
-		discipline = 0.05
+		drill_gain_modifier = 0.33
 	}
 }	
 
