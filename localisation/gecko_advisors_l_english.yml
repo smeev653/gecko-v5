@@ -15,3 +15,7 @@
  infantry_leader_desc:0 "Rage my soldiers!"
  cavalry_leader:0 "Cavalry Leader"
  cavalry_leader_desc:0 "Chaaaaaaaaaaaaarge!"
+#drillmaster
+ excellent_drill:0 "Excellent Drill"
+ drillmaster_events.1.t:0 "$DRILLMASTER$"
+ drillmaster_events.1.d:0 "One of our advisors, $DRILLMASTER$ has drilled our men to the pitch of military efficiency. Like a coiled spring we cannot maintain this high level for too long. Still, for a while our armies will stand where lesser men would run."

@@ -415,3 +415,20 @@ repulse_gank_bur_desc:0 ""
 
 gc_mor_flagship_title:0 "Launch a Flagship"
 gc_mor_flagship_desc:0 ""
+
+ #qq
+ PR_qar_missions4_reward:0 "Unlock Clergy Exploration Expeditions Estate Privilege"
+ PR_qar_missions3_desc_title:0 "Into Arabia"
+ PR_qar_missions3_desc_desc:0 ""
+ PR_qar_missions4_desc_title:0 "Settle the Deserts"
+ PR_qar_missions4_desc_desc:0 ""
+ PR_qar_missions5_desc_title:0 "Follow the Coast"
+ PR_qar_missions5_desc_desc:0 ""
+ PR_qar_missions6_desc_title:0 "Consolidate Yemen"
+ PR_qar_missions6_desc_desc:0 ""
+
+#mission tree
+ #persia
+ caucasus_conquest_title:0 "Georgian Jihad"
+ caucasus_conquest_desc:0 "The restless Safavid order demands we launch a grand Jihad against the upstart Georgians. Not only will this benefit our caravans, it will also allow for the blossoming slave trade to grow. Perhaps we may one day have Janissaries of our own."
+ gc_caucasus_integration:0 "Integration of the Caucasus"

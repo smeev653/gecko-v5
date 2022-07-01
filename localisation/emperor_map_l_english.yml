@@ -85,7 +85,7 @@
  PROV_ADJ4730:0 "Bolognese"
  PROV4731:0 "Spoleto"
  PROV_ADJ4731:0 "Spoletini"
- PROV4732:0 "Terracina"
+ #PROV4732:0 "Terracina"
  PROV_ADJ4732:0 "Terracinan"
  PROV4733:0 "Molise"
  PROV_ADJ4733:0 "Molisan"

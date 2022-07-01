@@ -2649,7 +2649,7 @@
  flavor_bur.EVTNAME10:0 "Netherlands Declare Independence!"
  flavor_bur.EVTDESC10:0 "After years of subjugation and alleged injustices forced on them by what is perceived as a foreign rule, our provinces in the Low Countries have signed an act of adjuration, renouncing their oath to [Root.GetName] and declared Independence!"
  flavor_bur.EVTOPTA10:0 "How dare they?!"
- flavor_bur.EVTOPTB10: "In the name of Oranje, open the gate!"
+ flavor_bur.EVTOPTB10:0 "In the name of Oranje, open the gate!"
  flavor_bur.EVTNAME11:0 "Dutch Mobilization"
  flavor_bur.EVTDESC11:0 "National fervor is sweeping across the lands of the newly formed Dutch Republic! A strong army and navy have swiftly been gathered to repel those who try to infringe on our newly won freedom!"
  flavor_bur.EVTNAME12:0 "Dutch Claims"

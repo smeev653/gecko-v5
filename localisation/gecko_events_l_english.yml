@@ -156,3 +156,12 @@
  gecko.28.a:0 "Increase Mercenary Recruitment"
  gecko.28.b:0 "Increase Mercenary Quality"
  gecko.28.c:0 "Do Nothing."
+
+ 
+ #crimea events
+ gecko_crimea_mission.1.t:0 "Dominance over the Tatar Steppe"
+ gecko_crimea_mission.1.d:0 "The last remnants of the §YGolden Horde§! are dead. With the great cities of Sarai and Astrakhan under our control and their treasures under our safekeeping, we proclaim our hegemony over the steppes."
+ gecko_crimea_mission.1.a:0 "Now to press our claim to the east..."
+ gecko_crimea_mission.2.t:0 "Settle the Crimea"
+ gecko_crimea_mission.2.d:0 "With full control over the Crimean penisular and its lucrative slave trade, we have the resources to settle and make Crimea our yurt."
+ gecko_crimea_mission.2.a:0 "The future is bright."

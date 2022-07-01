@@ -97,4 +97,16 @@ Show_Merc_limit_desc:0 "This is our Mercenary Forcelimit. If we go over this, an
 gecko_merc_limit_tt:0 "Manually Update Mercenary Forcelimit"
 gecko_increased_merc_limit_tt:0 "This will §GIncrease our Available Mercenaries by +15%§!, but they will have -§R15.0% Morale§! for 10 Years."
 gecko_decreased_merc_limit_tt:0 "This will §RDecrease our Available Mercenaries by -15%§!, but they will have +§G10.0% Combat Ability§! for 10 Years."
-				
+
+#arabia decision
+ arab_nation_majors_title:0 "Form Arabia"
+ arab_nation_majors_desc:0 "For hundreds of years the Arabs have been divided, but we remember when the Prophet Muhammad, peace be upon him, organized all of us into one ummah, a community of the faithful that transcended tribal affiliation. Today we have overcome disunity and regained the oneness that triumphed in the day of the Prophet and united Arabia!"
+ edict_devastation_edict:0 "Reduce Devastation"
+ #hire general
+ sm_hire_general_title:0 "Recruit Foreign General"
+ sm_hire_general_desc:0 "Our nobility is producing an underwhelming amount of promising generals. Perhaps we should look to hiring a foreign general for a fee.."				
+
+ #disband
+ yoklama_effect_tooltip:0 "§RThe Janissaries estate will be removed entirely and all Janissary related government reforms and privileges will be lost. However, this brings an opportunity to reform the army..§!"
+ force_janissaries_to_undergo_yoklama:0 "§YPost-Janissary Army Reform§!"
+ 
