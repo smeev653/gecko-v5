@@ -1402,16 +1402,10 @@ country_event = {
       ai = no
 	  has_country_modifier = just_lost_war_timer
 	  NOT = { has_country_modifier = gecko_recovery }
-	  NOT = { manpower_percentage = 0.25 }
-	  num_of_loans = 15
 	  revanchism = 1
-	  is_at_war = no
-	  army_tradition = 15
 	  any_country = {
 						total_development = ROOT
 	  }
-	  NOT = { land_maintenance = 1 }
-	  #NOT = { num_of_allies = 1 }
    }
 	hidden = yes
     mean_time_to_happen = {
