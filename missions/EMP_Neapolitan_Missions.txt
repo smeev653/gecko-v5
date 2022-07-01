@@ -248,7 +248,14 @@ emp_naples_3 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}	
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
 		}
 	}
 	emp_nap_two_sicilies = {
@@ -302,13 +309,7 @@ emp_naples_3 = {
 				name = "norman_legacy"
 				duration = -1
 			}
-			naples_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			
 			corsica_sardinia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
