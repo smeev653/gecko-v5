@@ -39,7 +39,7 @@ trade_company = {
 }
 
 holy_order = {
-    priority = 3
+    priority = 4
     requires_country_state = yes
     dlcs_required = {
         "Golden Century"
