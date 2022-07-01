@@ -2284,15 +2284,15 @@ west_bengal_area = { #4
 }
 
 gird_area = { #5 #Gird and Hadoti
-	525 528 740 4464 4465
+	525 4465
 }
 
 baghelkhand_area = { #3
-	2097 2098 4468
+	2097 4468
 }
 
 bundelkhand_area = { #5
-	559 2059 4459 4466 4467
+	559 2059 4466 4467
 }
 
 gondwana_area = { #5
@@ -2358,7 +2358,7 @@ jaipur_area = { #4
 }
 
 sindh_area = { #4
-	504 2088 4503 4504
+	504 4503 4504
 }
 
 northern_sindh_area = { #3
@@ -2813,7 +2813,7 @@ tunguska_area = { #5
 }
 
 central_siberia_area = { #5
-	1064 1067 1068 1070 2430
+	1068 1070
 }
 
 kara_area = { #5
