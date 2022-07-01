@@ -3,7 +3,7 @@
 add_core = MLO
 owner = MLO
 controller = MLO
-culture = lombard
+culture = swiss
 religion = catholic
 hre = yes
 base_tax = 2

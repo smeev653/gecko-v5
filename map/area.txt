@@ -2861,47 +2861,58 @@ aqmola_area = { #5
 ########################################
 
 heilongjiang_area = { #3 (West Heilongjiang)
+	724 1053 2102 4664
 } 
 
 east_heilongjiang_area = { #4
+	1049 2104 4662 4659 2103
 }
 
 central_heilongjiang_area = {#4
+	727 728 2185 4200 4660
 }
 
 cicigar_area = {
+	4218 725 4665
 }
 
 ilan_hala_area = { #5 (North Jilin Area)
+	1048 1050 4214 4216 4215
 }
 
 sakhalin_area = { #2
+	1033 4658
 }
 
 central_jilin_area = { #5
+	729 731 2105 4217 4663
 }
 
 ningguta_area = { #5
+	2107 2108 4654 4661 4653
 }
 
 furdan_area = {
+	1850 2106 2186 4655 4656
 }
 
 jilin_area = { #4 (South Jilin Area)
+	730 2110 2188 4201 2111
 }
  
 liaoning_area = { #5
+	704 726 2112 2113 4652
 }
 
 ordos_area = { #4 (Western Inner Mongolia)
-	701 
+	701 709 2191 4223 4676
 }
 eastern_mongolia = { #5
 	2109 2187 4202 4674
 }
 
 chahar_area = {
-
+722 4203 4675 4672 2115
 }
 
 inner_mongolia_area = { #5
@@ -2985,14 +2996,19 @@ ngari_area = { #3
 } #new!!
 
 hebei_area = { #4 (North Hebei)
+	703 1816 2136 4194
 }
+
 south_hebei_area = { #4
+	695 696 2137 4195
 }
 
 shandong_area = { #5
+	690 691 2138 2139 2140
 }
 
 jiangsu_area = { #3
+	2141 2142 4196
 }
 
 south_jiangsu_area = { #4
@@ -3008,54 +3024,83 @@ south_anhui_area = { #3
 }
 
 zhejiang_area = { #5
+	684 1824 2148 2149 2150
 }
 
 jiangxi_area = { #4
+	 670 683 1833 2151
 }
 
 fujian_area = { #4
+	669 1829 2152 2153
 }
 
 taiwan_area = { #3
+	738 2154 2155
 }
 
 guangdong_area = { #5
+	667 668 2156 2157 2158
 }
 
 west_guangdong_area = { #5
+	665 666 2159 2160 2161 
 }
 
 guangxi_area = { #5
+	664 1840 2162 2163 2164
 }
 
 yun_gui_area = { #5 (Yun-Gui Hinterland)
+	662 663 673 674 4199
 }
+
 yun_gui_borderland_area = { #5
+	660 661 2165 2166 2167
 }
 
 sichuan_area = { #3
+	679 680 4212
+}
+
+chuannan_area = { #4
+	675 2168 2748 4213
+}
+
+chuanbei_area = { #3
+	2169 2170 4211
 }
 
 huguang_area = { #5 (Hubei)
+	681 682 2171 2172 4197
 }
 
 hunan_area = { #4
+	671 672 2173 2174
 }
 
 henan_area = { #3 (South Henan)
+	687 2175 2176
+}
+
+north_henan_area = { #3
+	688 692 1836
 }
 
 shanxi_area = { #5
+	693 694 697 2177 2178
 }
 
 shaanxi_area = { #4
+	689 700 2179 4198
 }
 
 gansu_area = { #5 (East Gansu)
+	698 699 2180 2181 2183
 }
 
 west_gansu_area = { #4 
-	707 708 2191 4676
+	707 708 2182 2184
 }
 
 ########################################

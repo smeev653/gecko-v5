@@ -1640,13 +1640,13 @@ genua={
 			 3021.000000 1442.000000 3028.000000 1456.000000 3026.000000 1470.000000 
 		}
 	}
-	outgoing = {
-		name = "gc_south_germany_tradenode"
-		path = {
-			68 4712
+	outgoing={
+		name="gc_south_germany_tradenode"
+		path={
+			2957 2955
 		}
-		control = {
-
+		control={
+			2943.000000 1445.000000 
 		}
 	}
 	members={
@@ -1704,19 +1704,19 @@ wien={
 	outgoing={
 		name="rheinland"
 		path={
-			1770 4725 266 6101 2967 4717 4716 79 4718
+			133 64 1757 67 66 79 1876 
 		}
 		control={
-	
+			3006.000000 1510.000000 2984.000000 1525.000000 
 		}
 	}
 	outgoing={
 		name="gc_south_germany_tradenode"
 		path={
-			133 4709 2956 2957 2955
+			2957 2955 71 70 74 75 189 4766 186 
 		}
 		control={
-		 
+			2970.000000 1485.000000 
 		}
 	}
 
@@ -1753,20 +1753,20 @@ gc_south_germany_tradenode = {
 #	}
 	outgoing = {
 		name = "rheinland"
-		path = {
-			70 77 78
+		path={
+			4712 4713 70 4715 79 4774 63 
 		}
-		control = {
-
+		control={
+			2959.000000 1526.000000 
 		}
 	}
 	outgoing = {
 		name = "champagne"
-		path = {
-			4713 74 4765 6091 189 187 6084
+		path={
+			5827 1880 5842 187 5866 186 
 		}
-		control = {
-
+		control={
+			2920.000000 1475.000000 2890.000000 1490.000000 
 		}
 	}
 	members = {

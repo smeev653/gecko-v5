@@ -668,6 +668,11 @@ country_decisions = {
 				}
 		}
 		effect = {
+			add_country_modifier = {
+				name = "mercs_bought"
+				duration = 3650
+				hidden = yes
+			}
 			if = {
 				limit = {
 						has_country_modifier = Minor
