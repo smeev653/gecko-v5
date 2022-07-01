@@ -15,8 +15,8 @@ national_focus = MIL
 		dynasty = Giray
 		birth_date = 1410.1.1
 		adm = 3
-		dip = 4
-		mil = 5
+		dip = 3
+		mil = 4
 	}
 	add_piety = 0.2
 	

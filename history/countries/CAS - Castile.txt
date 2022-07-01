@@ -61,8 +61,8 @@ change_estate_land_share = {
 		dynasty = "de Trastámara"
 		birth_date = 1405.3.6
 		adm = 3
-		dip = 4
-		mil = 5
+		dip = 3
+		mil = 4
 	}
 	queen = {
 		country_of_origin = ARA
