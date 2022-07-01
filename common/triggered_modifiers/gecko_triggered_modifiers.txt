@@ -181,8 +181,8 @@ HRE_backup = {
 		tag = HAB
 		NOT = { is_emperor = yes }
 	}
-	global_manpower = 30
-	land_forcelimit = 30
+	global_manpower = 15
+	land_forcelimit = 15
 	global_tax_income = 36
 	spy_offence = 0.1					#minor bonus on spies.
 	advisor_pool = 1
@@ -199,7 +199,7 @@ HRE_backup = {
 
 HRE_Minor_defense = {
 	potential = {
-			NOT  = { is_year = 1470}
+			NOT  = { is_year = 1465}
 			is_part_of_hre = yes
 			NOT = {is_great_power = yes}
 			ai = no
@@ -214,7 +214,7 @@ HRE_Minor_defense = {
 				}
 				NOT = { total_own_and_non_tributary_subject_development = HAB }
 				NOT = {total_own_and_non_tributary_subject_development = 300 }
-		NOT  = { is_year = 1470}
+		NOT  = { is_year = 1465}
 		ai = no
 		is_part_of_hre = yes
 		NOT = {is_great_power = yes}	
@@ -233,7 +233,7 @@ HRE_Minor_defense = {
 
 Rogue_Emperor = {
 	potential = {
-			NOT  = { is_year = 1470}
+			NOT  = { is_year = 1465}
 			is_emperor = yes 
 			ai = no
 	}
@@ -242,7 +242,7 @@ Rogue_Emperor = {
 	trigger = {
 		ai = no	
 		is_emperor = yes 
-		NOT  = { is_year = 1470}
+		NOT  = { is_year = 1465}
 		OR = {
 			offensive_war_with = BRA
 			offensive_war_with = HES
@@ -456,7 +456,7 @@ too_many_subjects_influence = {
 
 Defense_of_Persia = {
 	potential = {
-		NOT  = { is_year = 1510}
+		NOT  = { is_year = 1530}
 		OR = {
 			tag = ARL
 			tag = ISF
@@ -528,14 +528,18 @@ Defense_of_Europe = {
 	trigger = {
 		OR = {
 			AND = {
-				NOT  = { is_year = 1510}
+				NOT  = { is_year = 1530}
 				tag = HUN
 			}	
 			134 = {
 				owned_by = TUR
 			}
 		}
-		defensive_war_with = TUR
+		is_in_war = {
+			attacker_leader = TUR
+			defender_leader = HUN
+			duration = 30
+		}
 		land_maintenance = 1
 		army_size_percentage = 0.65
 	}
@@ -551,7 +555,7 @@ Defense_of_the_Rus = {
 			tag = RUS
 		}	
 		ai = no
-		NOT  = { is_year = 1510}
+		NOT  = { is_year = 1530}
 	}
 
 	trigger = {
