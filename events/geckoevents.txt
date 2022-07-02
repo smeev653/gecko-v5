@@ -2071,7 +2071,7 @@ country_event = {
 	}
 }
 
-gc_mecca_agreement
+#gc_mecca_agreement
 country_event = {
     id = gecko.37
    title = gecko.37.t
@@ -2093,3 +2093,4 @@ country_event = {
 	}
 	option = {	
 	}
+}
