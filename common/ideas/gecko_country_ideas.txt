@@ -63,9 +63,6 @@ EGY_ideas = { #Egyptian Empire
 	egy_4 = { 
 		manpower_recovery_speed = 0.2
 	}
-	egy_5 = {
-		land_attrition = -0.15
-	}
 	egy_2 = {
 		reinforce_speed = 0.15
 		infantry_power = 0.05
@@ -73,6 +70,9 @@ EGY_ideas = { #Egyptian Empire
 	egy_1 = {
 		land_morale = 0.10
 		drill_gain_modifier = 0.33
+	}
+	egy_5 = {
+		land_attrition = -0.15
 	}
 	mam_monopoly_ports = {
 		trade_efficiency = 0.10
