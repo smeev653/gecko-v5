@@ -1402,7 +1402,11 @@ country_event = {
       ai = no
 	  has_country_modifier = just_lost_war_timer
 	  NOT = { has_country_modifier = gecko_recovery }
-	  revanchism = 1
+	  any_owned_province = {
+		is_looted = yes
+	  }
+	  num_of_loans = 11
+	  revanchism = 36
 	  any_country = {
 						total_development = ROOT
 	  }
@@ -2067,3 +2071,25 @@ country_event = {
 	}
 }
 
+gc_mecca_agreement
+country_event = {
+    id = gecko.37
+   title = gecko.37.t
+    desc = gecko.37.d
+    picture = COURT_eventPicture
+
+   trigger = {
+		has_country_modifier = gc_mecca_agreement
+		owns = 385
+	}		
+		hidden = yes
+	mean_time_to_happen = {
+			days = 365
+	}
+
+	immediate = {
+		remove_country_modifier  = gc_mecca_agreement
+
+	}
+	option = {	
+	}

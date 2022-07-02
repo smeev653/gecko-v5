@@ -6,8 +6,8 @@ religion = sunni
 primary_culture = hejazi_culture
 capital = 384	# Medina
 religious_school = shafii_school
-historical_friend = YEM
-historical_rival = MAM
+#historical_friend = YEM
+#historical_rival = MAM
 #Emirs of the Sharifate of Medina
 #Generally which son inherits is decided by the Mamluk Sultans
 #Sometimes picked by the citizens of Medina.

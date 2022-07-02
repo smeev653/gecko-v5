@@ -1,4 +1,146 @@
-
+mam_south_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = MAM
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	mam_holy_cities = {
+		icon = mission_mosque
+		required_missions = {  }
+		completed_by = 1482.6.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 384
+				province_id = 385
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			384 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			385 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = flavor_mam.23 }
+		}
+	}
+	mam_yemeni_trade = {
+		icon = mission_asian_trader
+		required_missions = { mam_holy_cities }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 384
+				province_id = 385
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				384 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				}
+				385 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			YEM = { mission_completed = yem_alfath_alsaalih }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gc_mecca_agreement"
+				duration = -1
+			}
+			if = {
+				limit = {
+					exists = YEM
+					NOT = {exists = ARB}
+					YEM = {ai = no}
+				}	
+				385 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+				4277 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+				2332 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+				2331 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+				4278 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+				384 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+				2329 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+				2330 = {
+					cede_province = YEM
+					add_core = YEM
+				}
+			}
+			else_if = {
+				limit = {
+					exists = ARB
+					ARB = {ai = no}
+				}
+				385 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+				4277 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+				2332 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+				2331 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+				4278 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+				384 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+				2329 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+				2330 = {
+					cede_province = ARB
+					add_core = ARB
+				}
+			}	
+		}
+	}
+}
 mam_north_missions = {
 	slot = 5
 	generic = no
@@ -294,8 +436,8 @@ mam_north_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "anatolia_eyalet"
-				duration = 7300
+				name = "caliphate_proclaimed"
+				duration = -1
 			}
 			iraq_arabi_area = {
 				limit = {
@@ -532,10 +674,6 @@ gecko_mam_branch_2 = {
 			}
 			darfur_central_sahara_area = {
 				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = "gc_yemeni_trade_modifier"
-				duration = 7300
 			}
 		}
 	}

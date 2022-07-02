@@ -13,24 +13,25 @@ ARB_ideas = { #Arabian Empire
 	}
 	free = yes
 	
+	arb_3 = { #Bedouin Raiders
+		shock_damage_received = -0.15
+	}
 	arb_1 = { #Indian Ocean Trade
 		trade_efficiency = 0.1
+	}
+	arb_5 = { #Unite the Tribes
+		manpower_recovery_speed = 0.2
 	}
 	arb_2 = { #Arabian Horsemanship
 		cavalry_cost = -0.1
 		infantry_power = 0.05
 		cavalry_power = 0.15
 	}
-	arb_3 = { #Bedouin Raiders
-		hostile_attrition = 1
-		movement_speed = 0.2
-	}
+	
 	arb_4 = { #Spreading the Prophet's Word
 		global_missionary_strength = 0.03
 	}
-	arb_5 = { #Unite the Tribes
-		manpower_recovery_speed = 0.2
-	}
+	
 	arb_6 = { #Bedouin Traders
 		trade_steering = 0.33
 	}
@@ -43,7 +44,7 @@ ARB_ideas = { #Arabian Empire
 EGY_ideas = { #Egyptian Empire
 	start = {
 		global_regiment_cost = -0.10
-		infantry_power = 0.15
+		cavalry_power = 0.15
 	}
 	
 	bonus = {
@@ -67,16 +68,17 @@ EGY_ideas = { #Egyptian Empire
 	}
 	egy_2 = {
 		reinforce_speed = 0.15
-		free_leader_pool = 3
+		infantry_power = 0.05
 	}
 	egy_1 = {
 		land_morale = 0.10
+		drill_gain_modifier = 0.33
 	}
 	mam_monopoly_ports = {
 		trade_efficiency = 0.10
 	}
 	egy_7 = {
-		drill_gain_modifier = 0.33
+		discipline = 0.05
 	}
 }	
 
@@ -144,12 +146,12 @@ ETH_ideas = {
 	solomonid_claim = {
 		prestige = 1
 	}
+	diplomatic_demeanor = {
+		land_morale = 0.10
+	}
 	nagusa_negast = {
 		global_trade_goods_size_modifier = 0.1
 		development_cost = -0.05
-	}
-	diplomatic_demeanor = {
-		land_morale = 0.10
 	}
 	hostile_borders = {
 		hostile_attrition = 1
@@ -188,6 +190,7 @@ AKS_ideas = {
 	
 	aks_stellae_builders = {
 		prestige = 1
+		development_cost = -0.05
 	}
 	
 	aks_legacy_of_king_kaleb = {
@@ -210,11 +213,12 @@ AKS_ideas = {
 	
 	aks_trade_hub = {
 		merchants = 1
-		naval_forcelimit_modifier = 0.25
+		global_trade_goods_size_modifier = 0.1
 	}
 	
 	aks_coin_minting = {
-		inflation_reduction = 0.1
+		build_cost = -0.1
+		global_tax_modifier = 0.15
 	}
 }
 

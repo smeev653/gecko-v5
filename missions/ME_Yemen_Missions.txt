@@ -12,8 +12,8 @@ yem_missions_1 = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			marriage_with = HED
-			marriage_with = MDA
+			marriage_with = DAW
+			#marriage_with = MDA
 			#marriage_with = SHM
 			marriage_with = NAJ
 			custom_trigger_tooltip = {
@@ -28,10 +28,26 @@ yem_missions_1 = {
 				name = yem_rasulid_malik_modifier
 				duration = 36500
 			}
-			vassalize = HED
-			vassalize = MDA
+			vassalize = DAW
+			#vassalize = MDA
 			#vassalize = SHM
 			vassalize = NAJ
+			#385 = {
+			#	if = {
+			#		limit = {
+			#			NOT = { has_building = fort_15th }
+			#		}
+			#		add_building = fort_15th
+			#	}
+			#}
+			392 = {
+				if = {
+					limit = {
+						NOT = { has_building = fort_15th }
+					}
+					add_building = fort_15th
+				}
+			}
 		}
 	}
 
@@ -271,6 +287,34 @@ yem_missions_2 = {
 				name = yem_arabian_maritime_expeditions_modifier
 				duration = 9125
 			}
+			mahra_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dhofar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			oman_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mascat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -355,6 +399,7 @@ yem_missions_3 = {
 				add_army_tradition = 15
 				add_yearly_manpower = 1
 			}
+			add_sailors = 5000
 		}
 	}
 
@@ -384,6 +429,14 @@ yem_missions_3 = {
 			}
 			else = {
 				add_mil_power = 50
+			}
+			390 = {
+				if = {
+					limit = {
+						NOT = { has_building = fort_15th }
+					}
+					add_building = fort_15th
+				}
 			}
 			add_power_projection = {
 				type = mission_rewards_power_projection
@@ -431,6 +484,28 @@ yem_missions_3 = {
 			add_country_modifier = {
 				name = yem_crossing_empty_quarter_modifier
 				duration = 7300
+			}
+			bahrain_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pirate_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			386 = {
+				if = {
+					limit = {
+						NOT = { has_building = fort_15th }
+					}
+					add_building = fort_15th
+				}
 			}
 		}
 	}

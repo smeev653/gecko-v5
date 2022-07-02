@@ -462,3 +462,7 @@ turkmen_recruitment = {
 	shock_damage = 0.1
 	cavalry_cost = -0.1
 }
+
+gc_mecca_agreement = {
+	land_morale = 0.1
+}

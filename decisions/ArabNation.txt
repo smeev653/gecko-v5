@@ -47,8 +47,10 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				#area = asir_area
-				#area = tihama_al_yemen_area
+				area = asir_area
+				area = qasim_area
+				area = tihama_al_yemen_area
+				area = yamamah_area
 				area = upper_yemen_area
 				area = yemen_area
 				province_id = 402
@@ -68,8 +70,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no			
-			#asir_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
-			#tihama_al_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
+			yamamah_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
+			qasim_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
+			asir_area = { type = all country_or_non_sovereign_subject_holds = ROOT   }
+			tihama_al_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			upper_yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			yemen_area = { type = all country_or_non_sovereign_subject_holds = ROOT  }
 			owns_core_province = 402
@@ -83,7 +87,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ARB
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -114,25 +118,33 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 50
+			}
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_hydraulic_rights
+			}
+			
 			add_prestige = 25
 			set_country_flag = formed_arabia_flag
 			change_unit_type = gunpowder_empire
 			#change_government = tribal
 			#add_government_reform = tribal_federation
-			#define_ruler = {
-			#	name = "Husayn"
-			#	dynasty = "ibn Ali"
-			#	
-			#	religion = sunni
-			#	claim = 100
-			#	adm = 6
-			#	dip = 6
-			#	mil = 5
-			#}
-			#if = {
-			#	limit = { has_heir = yes }
-			#	kill_heir = {}
-			#}	
+			define_ruler = {
+				name = "Husayn"
+				dynasty = "ibn Ali"
+				
+				religion = sunni
+				claim = 100
+				adm = 5
+				dip = 5
+				mil = 6
+			}
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = {}
+			}	
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

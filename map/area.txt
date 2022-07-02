@@ -1418,7 +1418,7 @@ pirate_coast_area = { #4
 }
 
 nafud_area = { #3
-	393 2338 4272
+	393 2338 2337 4272
 }
 
 tabuk_area = { #4
@@ -1464,7 +1464,7 @@ yamamah_area = { #4
 }
 
 qasim_area = { #4
-	392 2337 4273 4274
+	392  4273 4274
 }
 
 dhofar_area = { #3 (Dhofar + Masirah)
@@ -1481,7 +1481,7 @@ mascat_area = { #3 (Batinah and Muscat coast
 
 syrian_desert_area = { #3
 	color = { 219 30 57 } 
-	405 4270 4271
+	405 4270 4271 
 }
 
 ########################################

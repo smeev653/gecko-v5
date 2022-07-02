@@ -146,7 +146,7 @@
  
  #arabia
  
- wahabism_modifier:0 "Wahabi Scholar"
+
  Defense_of_Arabia:0 "Defense of Arabia"
 
  #Italy 
@@ -249,3 +249,5 @@ gc_mlo_lombard_renaissance:0 "Lombard Renaissance"
  desc_karun_tributary_modifier:0 "Controlling the important tributary of Karun strengthens our hold of the trade in the region."
  transcaucasian_wine_valleys:0 "Transcaucasian Wine Valleys"
  desc_transcaucasian_wine_valleys:0 "The fertile valleys and protective slopes of Transcaucasia have made the region home to grapevine cultivation and wine production for millennia."
+
+ gc_mecca_agreement:0 "Warriors of the Faith"
