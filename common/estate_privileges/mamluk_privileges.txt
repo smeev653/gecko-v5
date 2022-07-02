@@ -118,16 +118,24 @@ estate_mamluks_promote_leadership = {
 	loyalty = 0.05
 	influence = 0.1
 	can_select = {
-		army_tradition = 50
+		tag = EGY
+		mission_completed = gecko_mam_mission_8
 	}
 	on_granted = {
-	}
-	penalties = {
-	}
-	benefits = {
-		cavalry_flanking = 1
-		#shock_damage = 0.05
-	}
+		add_country_modifier = { 
+			name = estate_ghilman_discipline_modifier
+			duration = -1
+			}
+		}
+	can_revoke = {
+		has_country_modifier = estate_ghilman_discipline_modifier
+		}
+	on_revoked = {
+        remove_country_modifier = estate_ghilman_discipline_modifier
+            }
+	on_invalid = {
+		remove_country_modifier = estate_ghilman_discipline_modifier
+		}
 	ai_will_do = {
 		factor = 10
 		modifier = {

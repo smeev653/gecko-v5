@@ -25,8 +25,8 @@
 #bunker mod merge
  estate_mamluks_land_rights:0 "Mamluk Land Rights"
  estate_mamluks_land_rights_desc:0 "The different Mamluk factions are as greedy as they are scheming. To keep them in line they all need to have their own piece of land to operate in."
- estate_mamluks_promote_leadership:0 "Promote Mamluk Leadership"
- estate_mamluks_promote_leadership_desc:0 "There are many Mamluk factions in our realm, most of them in direct competition with one another. By promoting their most capable leaders to the highest ranks in the military, we will increase the capabilities of our armies."
+ estate_mamluks_promote_leadership:0 "Enlist Slave Soldiers"
+ estate_mamluks_promote_leadership_desc:0 ""
  estate_mamluks_recruit_turkmen:0 "Recruit Turkmen"
  estate_mamluks_recruit_turkmen_desc:0 "Let us make use of the abundance of skilled warriors in our newly conquered territories."
  estate_mamluks: "Mamluks"
