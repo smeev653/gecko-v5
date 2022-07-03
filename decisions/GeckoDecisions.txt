@@ -608,7 +608,7 @@ country_decisions = {
 				name = "gecko_debt_tackled"
 				duration = -1
 			}
-			add_years_of_income = 2
+			add_years_of_income = 1
 		}
 	}
 	gecko_debt_2 = {
