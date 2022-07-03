@@ -360,6 +360,7 @@ age_of_discovery = {
 		ab_minor_building_dev = {
 			allow = {
 				NOT = {total_own_and_non_tributary_subject_development = 300 }
+				has_country_modifier = Minor
 				NOT = { is_emperor = yes }
 				is_colonial_nation = no
 				ai = no
