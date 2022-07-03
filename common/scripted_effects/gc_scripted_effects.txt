@@ -49,46 +49,48 @@ gecko_ipa_effect = {
 	}
 }
 
-gecko_occupation_effect = {
-		if = {
-			limit = {
-				ai = no
-				any_owned_province = {
-					has_province_modifier = gecko_occupation 
-					is_core = owner
-					controlled_by = owner
-				}	
-			}
-			remove_province_modifier = gecko_occupation
-		}
-		if = {
-			limit = {
-				ai = no
-				any_owned_province = {
-					has_province_flag = gecko_occupation
-					is_core = owner
-					controlled_by = owner
-				}
-			}
-			clr_province_flag = gecko_occupation
-		}
-		if = {
-			limit = {
-				ai = no
-				any_owned_province = {
-					has_province_flag = gecko_occupation_core
-					is_core = owner
-					controlled_by = owner
-				}
-			}
-			clr_province_flag = gecko_occupation_core
-		}
-}
+#gecko_occupation_effect = {
+#		if = {
+#			limit = {
+#				ai = no
+#				any_owned_province = {
+#					has_province_modifier = gecko_occupation 
+#					is_core = owner
+#					controlled_by = owner
+#				}	
+#			}
+#			remove_province_modifier = gecko_occupation
+#		}
+#		if = {
+#			limit = {
+#				ai = no
+#				any_owned_province = {
+#					has_province_flag = gecko_occupation
+#					is_core = owner
+#					controlled_by = owner
+#				}
+#			}
+#			clr_province_flag = gecko_occupation
+#		}
+#		if = {
+#			limit = {
+#				ai = no
+#				any_owned_province = {
+#					has_province_flag = gecko_occupation_core
+#					is_core = owner
+#					controlled_by = owner
+#				}
+#			}
+#			clr_province_flag = gecko_occupation_core
+#		}
+#}
 
 gecko_mercs = {
 	if = {
 		limit = {
-			ai = no
+			ROOT = {
+				ai = no
+			}	
 			has_country_modifier = Minor
 		}
 		hidden_effect = {
@@ -155,7 +157,9 @@ gecko_mercs = {
 gecko_merc_count = {
 	if = {
 		limit = {
-			ai = no
+			ROOT = {
+				ai = no
+			}	
 		}
 		hidden_effect = {
 			export_to_variable = {

@@ -1169,9 +1169,8 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
-         ai = no
 		 OR = {
-			num_of_mercenaries = 1
+			#num_of_mercenaries = 1
 			has_country_modifier = mercs_bought 
 			has_country_modifier = increased_merc_recruitment
 			has_country_modifier = increased_merc_quality
@@ -1222,9 +1221,8 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
-         ai = no
 		 OR = {
-			num_of_mercenaries = 1
+			#num_of_mercenaries = 1
 			has_country_modifier = increased_merc_recruitment
 			has_country_modifier = increased_merc_quality
 			has_country_modifier = mercs_bought
@@ -1276,7 +1274,6 @@ country_event = {
 
    trigger = {
 		always = no
-        ai = no
 		OR = {
 			num_of_mercenaries = 1
 			has_country_modifier = mercs_bought 
@@ -1352,7 +1349,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+         ROOT = {
          ai = no
+		 }
 				NOT = { has_age_ability = ab_burgundy_merc_manpower }
 				NOT = { has_age_ability = ab_hesse_mercs}
 				#NOT = { has_country_modifier = geckoavailablemercs}
@@ -1399,7 +1398,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
-      ai = no
+     ROOT = {
+         ai = no
+		 }
 	  has_country_modifier = just_lost_war_timer
 	  NOT = { has_country_modifier = gecko_recovery }
 	  any_owned_province = {
@@ -1545,7 +1546,9 @@ country_event = {
 
    trigger = {
 	always = no
+		ROOT = {
          ai = no
+		}
 		 AND = {
 			NOT = { has_age_ability = ab_burgundy_merc_manpower }
 			NOT = { has_age_ability = ab_hesse_mercs }
@@ -1591,7 +1594,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+        ROOT = {
          ai = no
+		}
 			NOT =  { has_country_modifier = increased_merc_quality }
 			NOT = { 
 				check_variable = {
@@ -1623,7 +1628,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+         ROOT = {
          ai = no
+		}
 			NOT =  { has_country_modifier = increased_merc_quality }
 			has_country_modifier = 100percentavailablemercs
 			OR = {
@@ -1655,7 +1662,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+       ROOT = {
          ai = no
+		}
 			NOT =  { has_country_modifier = increased_merc_recruitment }
 			has_country_modifier = 130percentavailablemercs
    }
@@ -1703,7 +1712,9 @@ country_event = {
 	option = {
 				if = {
 				limit = {
-					ai = no
+					ROOT = {
+						ai = no
+					}
 					has_country_modifier = Minor
 				}
 				hidden_effect = {
@@ -1776,7 +1787,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+        ROOT = {
          ai = no
+		}
 		 OR = {
 			 has_age_ability = ab_burgundy_merc_manpower
 			 has_age_ability = ab_hesse_mercs
@@ -1843,7 +1856,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+         ROOT = {
          ai = no
+		}
 			OR = {
 			 has_age_ability = ab_burgundy_merc_manpower
 			 has_age_ability = ab_hesse_mercs
@@ -1911,7 +1926,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+         ROOT = {
          ai = no
+		}
 			AND = {
 				NOT = {	has_age_ability = ab_burgundy_merc_manpower }
 				NOT = {	has_age_ability = ab_hesse_mercs }
@@ -1951,7 +1968,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+         ROOT = {
          ai = no
+		}
 			AND = {
 				NOT = {	has_age_ability = ab_burgundy_merc_manpower }
 				NOT = {	has_age_ability = ab_hesse_mercs }
@@ -1991,7 +2010,9 @@ country_event = {
     picture = COURT_eventPicture
 
    trigger = {
+		ROOT = {
          ai = no
+		 }
 			OR = {
 			 has_age_ability = ab_burgundy_merc_manpower
 			 has_age_ability = ab_hesse_mercs

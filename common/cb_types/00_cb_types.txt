@@ -1130,7 +1130,6 @@ cb_spread_the_revolution = {
 	prerequisites = {
 		is_revolutionary = yes
 		OR = {
-			ai = no
 			capital_scope = { continent = europe }
 			is_revolution_target = yes
 		}
@@ -1210,7 +1209,9 @@ cb_humiliate_rotw = {
 		NOT = {
 			truce_with = FROM
 		}
-		ai = no
+		ROOT = {
+			ai = no
+		}	
 		is_rival = FROM
 		is_revolutionary = no
 		FROM = {
@@ -1295,7 +1296,9 @@ cb_take_mandate = {
 		is_revolutionary = no
 		
 		OR = {
-			ai = no
+			ROOT = {
+				ai = no
+			}	
 			culture_group = east_asian
 			any_owned_province = {
 				culture_group = east_asian

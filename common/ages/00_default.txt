@@ -363,7 +363,6 @@ age_of_discovery = {
 				has_country_modifier = Minor
 				NOT = { is_emperor = yes }
 				is_colonial_nation = no
-				ai = no
 			}
 			effect = {
 				enable_development_on_buildings_built = yes

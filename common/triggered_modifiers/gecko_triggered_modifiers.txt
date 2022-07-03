@@ -59,7 +59,9 @@ Minor = {
 		}
 	}	
 			NOT = {total_own_and_non_tributary_subject_development = 300 }
-			ai = no
+			ROOT = {
+				ai = no
+			}	
 			NOT = { is_emperor = yes }
 		}
 	
@@ -67,7 +69,6 @@ Minor = {
 	trigger = {
 		NOT  = { is_year = 1500}
 		NOT = {total_own_and_non_tributary_subject_development = 300 }	
-		ai = no
     #  	OR = {
 	#		AND = {
 	#			is_part_of_hre = yes
@@ -130,8 +131,10 @@ Decay = {
 
 We_stand_alone = {
 	potential = {
+			ROOT = {
 				ai = no	
-			}
+			}	
+	}
 	trigger  = {
 		is_year = 1460
 		OR = {
@@ -176,7 +179,9 @@ HRE_backup = {
 				}
 				was_player = yes
 				NOT = { is_emperor = yes }
-				ai = no
+				ROOT = {
+					ai = no	
+				}
 			}
 	trigger  = {
 		tag = HAB
@@ -203,7 +208,9 @@ HRE_Minor_defense = {
 			NOT  = { is_year = 1465}
 			is_part_of_hre = yes
 			NOT = {is_great_power = yes}
-			ai = no
+			ROOT = {
+				ai = no	
+			}
 			NOT = { num_of_allies = 1 }
 	}
 	
@@ -216,7 +223,9 @@ HRE_Minor_defense = {
 				NOT = { total_own_and_non_tributary_subject_development = HAB }
 				NOT = {total_own_and_non_tributary_subject_development = 300 }
 		NOT  = { is_year = 1465}
-		ai = no
+		ROOT = {
+				ai = no	
+			}
 		is_part_of_hre = yes
 		NOT = {is_great_power = yes}	
 		NOT = { is_emperor = yes }
@@ -236,12 +245,16 @@ Rogue_Emperor = {
 	potential = {
 			NOT  = { is_year = 1465}
 			is_emperor = yes 
-			ai = no
+			ROOT = {
+				ai = no	
+			}
 	}
 	
 
 	trigger = {
-		ai = no	
+		ROOT = {
+				ai = no	
+			}
 		is_emperor = yes 
 		NOT  = { is_year = 1465}
 		OR = {
@@ -257,7 +270,9 @@ Rogue_Emperor = {
 }	
 War_chest = {
 	potential = {
-		ai = no
+		ROOT = {
+				ai = no	
+			}
 	}
 
 
@@ -545,7 +560,9 @@ Defense_of_Arabia = {
 Defense_of_Europe = {
 	potential = {
 		capital_scope = { continent = europe }
-		ai = no
+		ROOT = {
+				ai = no	
+			}
 	}
 
 	trigger = {
@@ -577,7 +594,9 @@ Defense_of_the_Rus = {
 			tag = MOS
 			tag = RUS
 		}	
-		ai = no
+		ROOT = {
+				ai = no	
+			}
 		NOT  = { is_year = 1530}
 	}
 
@@ -604,7 +623,9 @@ Defense_of_the_Rus = {
 
 Ahead_of_time = {
 	potential = {
-		ai = no
+		ROOT = {
+				ai = no	
+			}
 	}
 	trigger = {
 		NOT = { is_lacking_institutions = yes }
@@ -616,7 +637,9 @@ Ahead_of_time = {
 
 Over_merc_limit = {
 	potential = {
-		ai = no
+		ROOT = {
+				ai = no	
+			}
 		num_of_mercenaries = 1
 	}
 	trigger = {
