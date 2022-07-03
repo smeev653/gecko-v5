@@ -3950,9 +3950,9 @@ on_refuse_tribute = {
 
 # country
 on_leader_recruited = {
-	#hidden_effect = {
-	#	gecko_mercs = yes
-	#}
+	hidden_effect = {
+		gecko_mercs = yes
+	}
 	hidden_effect = {
 		if = {
 			limit = {
@@ -3994,6 +3994,11 @@ on_explorer_recruited = {
 
 # THIS = Province, FROM = Country
 on_regiment_recruited = {
+	FROM = {
+		hidden_effect = {
+			gecko_mercs = yes
+		}
+	}	
 }
 
 # THIS = Province, FROM = Country, ROOT = Merc Unit
