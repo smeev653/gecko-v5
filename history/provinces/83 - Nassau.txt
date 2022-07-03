@@ -1,6 +1,6 @@
-owner = NSA
-controller = NSA
-add_core = NSA
+owner = HES
+controller = HES
+add_core = HES
 capital = "Wiesbaden"
 trade_goods = copper
 hre = yes
