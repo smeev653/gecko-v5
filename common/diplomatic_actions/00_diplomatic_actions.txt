@@ -1127,7 +1127,7 @@ designate_march = {
 		allow = {
 			NOT = {
 				ROOT = {
-					march = 3
+					march = 4
 				}
 			}
 		}
