@@ -922,8 +922,7 @@ VEN_ideas = {
 		infantry_power = 0.10
 	}
 	DAL_art_and_lit = {
-		global_institution_spread = 0.1
-		development_cost = -0.05
+		technology_cost = -0.05
 	}
 	
 	DAL_arsenal = {
@@ -1461,7 +1460,6 @@ SIC_ideas = {
 	}
 	sic_university_of_catania = {
 		technology_cost = -0.05
-		development_cost = -0.05
 	}
 	sic_trade_fleet = {
 		production_efficiency = 0.10
@@ -1622,7 +1620,7 @@ MLO_ideas = {
 		technology_cost = -0.05
 	}
 	lowered_power_of_barons = {
-		development_cost = -0.05
+		global_autonomy = -0.05
 	}
 	age_of_condottieri = {
 		merc_maintenance_modifier = -0.15
@@ -2855,8 +2853,7 @@ DAL_ideas = {
 		num_accepted_cultures = 2
 	}
 	DAL_art_and_lit = {
-		global_institution_spread = 0.1
-		development_cost = -0.05
+		technology_cost = -0.05
 	}
 	DAL_independent_army = {
 		infantry_power = 0.10
