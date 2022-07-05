@@ -417,7 +417,7 @@ country_decisions = {
 	
 	force_urbanisation = {
 		potential = {
-				ai = no
+				always = no
 				NOT = { has_country_modifier = gc_urbanisation}
 				dip_tech = 6
 				NOT = { has_country_modifier = gc_urbanisation_timer}
@@ -648,7 +648,7 @@ country_decisions = {
 			}
 			
 		allow = {				
-				treasury = 15
+				treasury = 25
 				#splendor = 200
 				NOT = {
 					check_variable = {
@@ -680,7 +680,7 @@ country_decisions = {
 				add_years_of_income = -0.075	
 			}
 			else = {	
-				add_treasury = -15
+				add_treasury = -25
 			}
 			if = {
 				limit = {

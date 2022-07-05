@@ -1094,7 +1094,7 @@ country_event = {
 				has_country_modifier = gecko_development
 			}	
     }
-	hidden = yes
+	#hidden = yes
     mean_time_to_happen = {
         months = 120
     }
@@ -1179,7 +1179,7 @@ country_event = {
    }
 	hidden = yes
     mean_time_to_happen = {
-        days = 5
+        months = 1
     }
 	
 	immediate = {
@@ -1231,7 +1231,7 @@ country_event = {
    }
 	hidden = yes
     mean_time_to_happen = {
-        days = 5
+         months = 1
     }
 	
 	immediate = {

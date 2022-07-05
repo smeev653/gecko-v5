@@ -143,6 +143,8 @@ NDefines.NCountry.PILLAGE_CAPITAL_DEVELOPMENT_DECREASE = 0.2
 NDefines.NCountry.PILLAGE_CAPITAL_MAX_DEV_PILLAGED = 6
 NDefines.NCountry.SCUTAGE_TAX_FRACTION = 0.25
 NDefines.NCountry.INNOVATIVENESS_AHEAD_OF_TIME_BONUS = 0.005
+NDefines.NCountry.INNOVATIVENESS_FIRST_REACHED_TECH_LEVEL = 2.0  -- Innovativeness bonus to first country (or countries) to reach a certain tech level.
+NDefines.NCountry.INNOVATIVENESS_FIRST_PICKED_IDEA = 1.0			-- Innovativeness bonus to first country (or countries) to pick an idea.
 NDefines.NCountry.SETTLEMENT_GROWTH_DEVELOPMENT_INCREASE = 0 -- How much development may increase per year if a colonist is working on Settlement Growth.
 NDefines.NCountry.SETTLMENT_GROWTH_CHANCE_MULTIPLIER = 2
 NDefines.NCountry.RAZE_PROVINCE_DEVELOPMENT_DECREASE = 0.1
@@ -207,7 +209,7 @@ NDefines.NMilitary.MIN_MONTHLY_MANPOWER = 0.2							-- _MDEF_LIGHT_SHIP_COST = 1
 NDefines.NMilitary.GALLEY_COST = 10 								-- _MDEF_GALLEY_COST = 10,
 NDefines.NMilitary.TRANSPORT_COST = 1
 NDefines.NMilitary.FORTRESS_COST = 0.15
-NDefines.NMilitary.MERCENARY_BASE_COST = 15.0
+NDefines.NMilitary.MERCENARY_BASE_COST = 25.0
 NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 25
 NDefines.NMilitary.MERCENARY_REINFORCE_COST_MULTIPLIER = 0.25
 NDefines.NMilitary.MERCENARY_COMPANY_HIRING_COST_MONTHS = 36
@@ -235,7 +237,7 @@ NDefines.NMilitary.RESERVE_TICK_DAMAGE = 0.1
 NDefines.NMilitary.CREATE_JANISSARIES_MIL_COST = 5
 NDefines.NMilitary.CREATE_CAWA_MIL_COST = 10
 NDefines.NMilitary.RAJPUT_BASE_COST_MODIFIER = 1.25				-- Rajput base cost is double as expensive
-NDefines.NMilitary.COSSACK_BASE_COST_MODIFIER = 1.1
+NDefines.NMilitary.COSSACK_BASE_COST_MODIFIER = 1.25
 NDefines.NMilitary.MAX_DRILL_DECAY = 0.75
 NDefines.NMilitary.BANNER_USES_CONSTRUCTION = 1
 NDefines.NMilitary.JANISSARIES_USES_CONSTRUCTION = 1
