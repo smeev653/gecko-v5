@@ -118,6 +118,7 @@ gecko_merc_black_army_2 = {
 #Aristo mercs
 gecko_merc_aristo_ideas = {
 	regiments_per_development = 0.05
+	cavalry_weight = 1
     artillery_weight = 0
 	sprites = { easterngfx_sprite_pack }
 	trigger = {

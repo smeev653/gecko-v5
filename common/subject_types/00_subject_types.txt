@@ -604,19 +604,22 @@ tributary_state = {
 
 	# Properties:
 	can_be_annexed = yes
+	has_power_projection = no
+	gets_help_with_rebels = yes
+	forms_trade_companies = no
+	military_focus = 1.5	
 	can_fight_independence_war = no
 	joins_overlords_wars = no
 	joins_colonial_wars = no
 	is_voluntary = yes
 	overlord_can_attack = yes
 	takes_diplo_slot = no
-	base_liberty_desire = -5
+	base_liberty_desire = -10
 	relative_power_class = 1						
 	should_quit_wars_on_activation = yes
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
-	uses_military_focus = no
-	overlord_protects_external = yes
+	overlord_protects_external = no
 	counts_for_borders = no
 	can_use_claims = yes
 	share_rebel_popup = no
@@ -638,22 +641,22 @@ tributary_state = {
 	subject_opinion_modifier = is_tributary
 	
 	can_fight = {
-		independent_nations = yes
+		independent_nations = no
 		same_overlord = tributary_state
 		other_overlord = all
 	}
 	can_rival = {
-		independent_nations = yes
+		independent_nations = no
 		same_overlord = tributary_state
 		other_overlord = all
 	}
 	can_ally = {
-		independent_nations = yes
+		independent_nations = no
 		same_overlord = tributary_state
 		other_overlord = all
 	}
 	can_marry = {
-		independent_nations = yes
+		independent_nations = no
 		same_overlord = tributary_state
 		other_overlord = all
 	}

@@ -54,7 +54,10 @@ mam_south_missions = {
 				country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
-			YEM = { mission_completed = yem_alfath_alsaalih }
+			OR = {
+				YEM = { mission_completed = yem_alfath_alsaalih }
+				ARB = { mission_completed = yem_alfath_alsaalih }
+			}
 		}
 		effect = {
 			add_country_modifier = {

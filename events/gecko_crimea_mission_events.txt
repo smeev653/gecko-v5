@@ -107,6 +107,14 @@ country_event = {
 			add_base_production = 1
 			add_base_manpower = 1
 		}
+		283 = {
+			if = {
+					limit = {
+						NOT = { has_building = fort_15th }
+					}
+					add_building = fort_15th
+				}
+		}		
 		6009 = {
 			add_base_tax = 1
 			add_base_production = 1
@@ -122,6 +130,12 @@ country_event = {
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
+			if = {
+					limit = {
+						NOT = { has_building = fort_15th }
+					}
+					add_building = fort_15th
+				}
 		}
 		285 = { #Cafa
 			add_base_tax = 1

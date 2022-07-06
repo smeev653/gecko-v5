@@ -480,8 +480,8 @@ conquest_of_saint_petersburg = {
 		controlled_by = ROOT	
 	}	
 
-	vassal_income = 0.25
-	vassal_forcelimit_bonus = 0.5
+	vassal_income = 0.1
+	vassal_forcelimit_bonus = 0.25
 	
 	#Province scope
 	on_activation = {

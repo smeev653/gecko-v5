@@ -1170,19 +1170,24 @@ country_event = {
 
    trigger = {
 		 OR = {
-			#num_of_mercenaries = 1
 			has_country_modifier = mercs_bought 
 			has_country_modifier = increased_merc_recruitment
 			has_country_modifier = increased_merc_quality
 		}
+			had_country_flag = {
+            flag = gecko_merc_flag
+            days = 30
+        }
 		 NOT = { has_country_modifier = Minor}
    }
 	hidden = yes
     mean_time_to_happen = {
-        months = 1
+        days = 1
     }
 	
 	immediate = {
+		clr_country_flag = gecko_merc_flag
+
 		export_to_variable = {
 					which = geckomercFL
 					value = land_forcelimit
@@ -1210,6 +1215,9 @@ country_event = {
 						who = ROOT
 			}
 	}
+	  after = {
+        set_country_flag = gecko_merc_flag
+    }
 	option = {
 	}
 }
@@ -1222,19 +1230,25 @@ country_event = {
 
    trigger = {
 		 OR = {
-			#num_of_mercenaries = 1
 			has_country_modifier = increased_merc_recruitment
 			has_country_modifier = increased_merc_quality
 			has_country_modifier = mercs_bought
 		}
+		 had_country_flag = {
+            flag = gecko_merc_flag
+            days = 30
+        }
+    
 		has_country_modifier = Minor	
    }
 	hidden = yes
-    mean_time_to_happen = {
-         months = 1
+   mean_time_to_happen = {
+        days = 1
     }
 	
 	immediate = {
+		clr_country_flag = gecko_merc_flag
+
 		export_to_variable = {
 					which = geckomercFL
 					value = land_forcelimit
@@ -1262,6 +1276,9 @@ country_event = {
 						who = ROOT
 			}
 	}
+	  after = {
+        set_country_flag = gecko_merc_flag
+    }
 	option = {
 	}
 }
