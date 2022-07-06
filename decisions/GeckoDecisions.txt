@@ -673,6 +673,7 @@ country_decisions = {
 				duration = 3650
 				hidden = yes
 			}
+			set_country_flag = gecko_merc_flag
 			if = {
 				limit = {
 						has_country_modifier = Minor
@@ -682,36 +683,21 @@ country_decisions = {
 			else = {	
 				add_treasury = -25
 			}
-			if = {
-				limit = {
-					NOT = { 
-						capital_scope = {
-							infantry_in_province = 35
-						}
-					}	
-				}
+			
+					
 				capital_scope = {
-						mercenary_infantry = PREV
-				}
-			}	
-			else = {
-				random_owned_province = {
-					limit = {
-						province_distance = {
-							who = capital
-							distance = 50
-							}
-						is_in_capital_area = yes
-						controlled_by = ROOT
-						has_siege = no
-						unit_in_battle = no
-						NOT =  { devastation = 5 }
-						is_state = yes
-						development = 10
+					mercenary_infantry = PREV	
+					every_neighbor_province	= {
+						limit = {
+							owned_by = ROOT 
+						}
+						add_province_modifier = {
+							name = "merc_recruited"
+							duration = 30
+						}
 					}
-					mercenary_infantry = PREV
 				}
-			}			
+			
 			if = {
 					limit = {
 						has_country_modifier = Minor
@@ -908,6 +894,7 @@ country_decisions = {
 				
 		}
 		effect = {
+			set_global_flag = eoc_vassalize_tributaries
 		}
 	}
 }			
