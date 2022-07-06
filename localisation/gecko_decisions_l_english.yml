@@ -85,6 +85,17 @@ persian_nation_isfahan_desc:0 ""
 persian_nation_ardabil_title:0 "Form Persian Nation"
 persian_nation_ardabil_desc:0 ""
 
+#hungary
+
+gc_hungary_swap_path_1_title:0 "Change the direction of our Country"
+gc_hungary_swap_path_1_desc:0 "This will allow us to pursue our claims in Europe. However we will abandon our interests in Anatolia."
+
+gc_hungary_swap_path_2_title:0 "Change the direction of our Country"
+gc_hungary_swap_path_2_desc:0 "This will allow us to pursue our interests in Anatolia. However we will abandon our claims in Europe."
+
+gc_hungary_change_paths_1_tooltip:0 "This will allow us to pursue our claims in Europe. However we will abandon our interests in Anatolia."
+gc_hungary_change_paths_2_tooltip:0 "This will allow us to pursue our interests in Anatolia. However we will abandon our claims in Europe."
+
 #mercs
 splendor_mercs_1_title:0 "2. Recruit Surplus Mercenaries"
 splendor_mercs_1_desc:0 "Allows further Mercenary recruitment to Mercenary Forcelimit."
