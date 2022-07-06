@@ -1591,7 +1591,7 @@ estate_nobles_vassalise_vulnerable_country = {
 			NOT = { is_subject_of = root }
 			NOT = { overlord_of = root }
 			NOT = { alliance_with = root }
-
+			NOT = { historical_rival_with = root } #Should prevent historical rivals
 			NOT = { ROOT = { truce_with = prev } }
 			NOT = {
 				has_opinion = {
