@@ -444,7 +444,7 @@ age_of_reformation = {
 			}
 		}
 		obj_unify_culture = {	
-			land_forcelimit = 150
+			land_forcelimit = 200
 		}
 	}	
 	
