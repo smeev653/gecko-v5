@@ -101,14 +101,14 @@ splendor_mercs_1_title:0 "2. Recruit Surplus Mercenaries"
 splendor_mercs_1_desc:0 "Allows further Mercenary recruitment to Mercenary Forcelimit."
 
 splendor_mercs_2_title:0 "3. Hire Further Mercenaries"
-splendor_mercs_2_desc:0 "We can hire large amounts of Mercenaries if we currently have none."
+splendor_mercs_2_desc:0 "Hire Mercenaries in bulk."
 
 Show_Merc_limit_title:0 "1. Show Mercenary Forcelimit"
 Show_Merc_limit_desc:0 "This is our Mercenary Forcelimit. If we go over this, any newly created Mercenary Company will be disbanded with no refund."
 gecko_merc_limit_tt:0 "Manually Update Mercenary Forcelimit"
 gecko_increased_merc_limit_tt:0 "This will §GIncrease our Available Mercenaries by +15%§!, but they will have -§R15.0% Morale§! for 10 Years."
 gecko_decreased_merc_limit_tt:0 "This will §RDecrease our Available Mercenaries by -15%§!, but they will have +§G10.0% Combat Ability§! for 10 Years."
-trigger_value:num_of_mercenaries:0 "Number Of Mercenaries"
+
 
 #arabia decision
  arab_nation_majors_title:0 "Form Arabia"

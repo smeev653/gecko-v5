@@ -775,19 +775,25 @@ country_decisions = {
 				NOT = {has_country_modifier = merc_spawn_timer}
 			}	
 		allow = {
-				NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
-				
-				#splendor = 200
+				treasury = 25
 				NOT = {
 					check_variable = {
 						which = geckomercvalue
 						which = geckomercFL
 					}
-				}
+				}		
+				NOT = {
+					capital_scope = {
+						infantry_in_province = 1
+					}
+				}	
+				#splendor = 200
+				#NOT = {
+				#	check_variable = {
+				#		which = geckomercvalue
+				#		which = geckomercFL
+				#	}
+				#}
 				#NOT = { 
 				#	capital_scope = {
 				#		infantry_in_province = 30

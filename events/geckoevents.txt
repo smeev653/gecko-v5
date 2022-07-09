@@ -2149,11 +2149,7 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+				
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2180,6 +2176,7 @@ country_event = {
 							duration = 60
 						}
 					}
+				save_event_target_as = mercs_spawned
 			}
 			if = {
 				limit = {
@@ -2190,8 +2187,11 @@ country_event = {
 			else = {	
 				add_treasury = -125
 			}
-		
-		
+			add_country_modifier = {
+				name = "5_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}	
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2208,11 +2208,7 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+					
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2255,7 +2251,11 @@ country_event = {
 			else = {	
 				add_treasury = -250
 			}
-		
+			add_country_modifier = {
+				name = "10_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2272,11 +2272,7 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+					
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2323,7 +2319,11 @@ country_event = {
 			else = {	
 				add_treasury = -375
 			}
-		
+			add_country_modifier = {
+				name = "15_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2340,11 +2340,7 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+				
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2396,7 +2392,11 @@ country_event = {
 			else = {	
 				add_treasury = -500
 			}
-		
+			add_country_modifier = {
+				name = "20_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2413,11 +2413,7 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+					
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2474,7 +2470,11 @@ country_event = {
 			else = {	
 				add_treasury = -625
 			}
-		
+			add_country_modifier = {
+				name = "25_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2491,11 +2491,7 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+					
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2556,7 +2552,11 @@ country_event = {
 			else = {	
 				add_treasury = -750
 			}
-		
+			add_country_modifier = {
+				name = "30_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2572,11 +2572,7 @@ country_event = {
 							which = geckomercFL
 							value = 35
 						}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}				
+							
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2648,7 +2644,11 @@ country_event = {
 			else = {	
 				add_treasury = -875
 			}
-		
+			add_country_modifier = {
+				name = "35_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2664,10 +2664,7 @@ country_event = {
 							which = geckomercFL
 							value = 40
 						}
-						NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
+						
 				}	
 			capital_scope = {
 						controlled_by = ROOT
@@ -2745,7 +2742,11 @@ country_event = {
 			else = {	
 				add_treasury = -1000
 			}
-		
+			add_country_modifier = {
+				name = "40_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2753,7 +2754,7 @@ country_event = {
 						who = ROOT
 					}
 			}
-	}
+	
 	option = {
 		name = gecko.39.i #45 mercs
 		trigger = {
@@ -2761,11 +2762,7 @@ country_event = {
 							which = geckomercFL
 							value = 45
 						}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+					
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2847,7 +2844,11 @@ country_event = {
 			else = {	
 				add_treasury = -1125
 			}
-		
+			add_country_modifier = {
+				name = "45_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2863,11 +2864,7 @@ country_event = {
 							which = geckomercFL
 							value = 50
 						}
-			NOT = {check_variable = {
-							which = trigger_value:num_of_mercenaries
-							value = 1
-						}
-				}		
+					
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2953,7 +2950,11 @@ country_event = {
 			else = {	
 				add_treasury = -1250
 			}  
-		
+			add_country_modifier = {
+				name = "50_mercs_spawned"
+				duration = 60
+				hidden = yes
+			}
 			hidden_effect = {
 				export_to_variable = {
 						which = geckomercvalue
@@ -2969,3 +2970,60 @@ country_event = {
 		remove_country_modifier = merc_spawn_timer
 	}
 }
+
+######remove excess mercs########
+
+country_event = {
+    id = gecko.40
+   title = gecko.40.t
+    desc = gecko.40.d
+	picture = COURT_eventPicture
+
+   trigger = {
+		OR = {
+			has_country_modifier = 5_mercs_spawned
+			has_country_modifier = 10_mercs_spawned
+			has_country_modifier = 15_mercs_spawned
+			has_country_modifier = 20_mercs_spawned
+			has_country_modifier = 25_mercs_spawned
+			has_country_modifier = 30_mercs_spawned
+			has_country_modifier = 35_mercs_spawned
+			has_country_modifier = 40_mercs_spawned
+			has_country_modifier = 45_mercs_spawned
+			has_country_modifier = 50_mercs_spawned
+		}
+		check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+		}
+	}		
+	hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+		capital_scope = {
+			kill_units = {
+				who = controller
+				type = infantry
+				amount = 1
+			}
+		}
+		add_province_modifier = {
+							name = "merc_recruited"
+							duration = 60
+						}
+		if = {
+				limit = {
+						has_country_modifier = Minor
+					}
+				add_years_of_income = 0.075	
+			}
+			else = {	
+				add_treasury = 25
+			}
+	}
+	option = {	
+	}
+}	
