@@ -22,19 +22,19 @@ merc__local_free_company = {
 }
 
 merc__local_small_company = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
     trigger = {
         NOT = { total_development = 200 }
 		NOT = { is_emperor = yes }
-		#NOT = {
-		#			check_variable = {
-		#				which = geckomercvalue
-		#				which = geckomercFL
-		#			}
-		#}
+		NOT = {
+					check_variable = {
+						which = geckomercvalue
+						which = geckomercFL
+					}
+		}
     }
     cost_modifier = 0.3
     modifier = {
@@ -46,7 +46,7 @@ merc__local_small_company = {
 }
 
 merc__local_free_city_company = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -68,7 +68,7 @@ merc__local_free_city_company = {
 }
 
 merc__local_grand_company = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -89,7 +89,7 @@ merc__local_grand_company = {
 }
 
 merc__local_independent_army = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
