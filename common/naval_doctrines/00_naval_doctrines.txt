@@ -5,7 +5,7 @@ fleet_in_being =
 	}
 	
 	country_modifier = {
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.1
 		siege_blockade_progress = 1		
 	}
 	
