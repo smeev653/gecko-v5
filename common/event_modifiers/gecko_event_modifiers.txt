@@ -358,23 +358,5 @@ gc_urbanisation_timer = {
 
 merc_spawn_timer= {
 }
-5_mercs_spawned = {
-}
-10_mercs_spawned = {
-}
-15_mercs_spawned = {
-}
-20_mercs_spawned = {
-}
-25_mercs_spawned = {
-}
-30_mercs_spawned = {
-}
-35_mercs_spawned = {
-}
-40_mercs_spawned = {
-}
-45_mercs_spawned = {
-}
-50_mercs_spawned = {
+mercs_spawned = {
 }

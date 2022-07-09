@@ -781,11 +781,13 @@ country_decisions = {
 						which = geckomercvalue
 						which = geckomercFL
 					}
-				}		
-				NOT = {
-					capital_scope = {
-						infantry_in_province = 1
-					}
+				}
+				capital_scope = {	
+					NOT = {
+						num_of_units_in_province = {
+						amount = 1
+						}
+					}	
 				}	
 				#splendor = 200
 				#NOT = {
