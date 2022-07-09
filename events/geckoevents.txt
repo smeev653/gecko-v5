@@ -2149,10 +2149,11 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}		
+							value = 1
+						}
+				}		
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2166,7 +2167,7 @@ country_event = {
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
-					mercenary_infantry = PREV
+
 					every_neighbor_province	= {
 						limit = {
 						 OR = {
@@ -2207,10 +2208,11 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}		
+							value = 1
+						}
+				}		
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2229,7 +2231,7 @@ country_event = {
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
-					mercenary_infantry = PREV
+
 
 					every_neighbor_province	= {
 						limit = {
@@ -2270,10 +2272,11 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}		
+							value = 1
+						}
+				}		
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2282,7 +2285,6 @@ country_event = {
 					}
 		}
 		capital_scope = {
-					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
@@ -2338,10 +2340,11 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}		
+							value = 1
+						}
+				}		
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2350,7 +2353,6 @@ country_event = {
 					}
 		}
 		capital_scope = {
-					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
@@ -2411,10 +2413,11 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}		
+							value = 1
+						}
+				}		
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2423,7 +2426,6 @@ country_event = {
 					}
 		}
 		capital_scope = {
-					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
@@ -2489,10 +2491,11 @@ country_event = {
 						has_siege = no
 						unit_in_battle = no
 				}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}		
+							value = 1
+						}
+				}		
 			NOT = {
 						check_variable = {
 							which = geckomercvalue
@@ -2501,7 +2504,6 @@ country_event = {
 					}
 		}
 		capital_scope = {
-					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
@@ -2570,10 +2572,11 @@ country_event = {
 							which = geckomercFL
 							value = 35
 						}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}				
+							value = 1
+						}
+				}				
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2622,7 +2625,7 @@ country_event = {
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
-					mercenary_infantry = PREV
+
 					every_neighbor_province	= {
 						limit = {
 						 OR = {
@@ -2661,10 +2664,11 @@ country_event = {
 							which = geckomercFL
 							value = 40
 						}
-						check_variable = {
+						NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}	
+							value = 1
+						}
+				}	
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2678,7 +2682,6 @@ country_event = {
 					}
 		}
 		capital_scope = {
-					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
@@ -2758,10 +2761,11 @@ country_event = {
 							which = geckomercFL
 							value = 45
 						}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}			
+							value = 1
+						}
+				}		
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2775,7 +2779,6 @@ country_event = {
 					}
 		}
 		capital_scope = {
-					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
@@ -2860,10 +2863,11 @@ country_event = {
 							which = geckomercFL
 							value = 50
 						}
-			check_variable = {
+			NOT = {check_variable = {
 							which = trigger_value:num_of_mercenaries
-							value = 0
-						}			
+							value = 1
+						}
+				}		
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2877,7 +2881,6 @@ country_event = {
 					}
 		}
 		capital_scope = {
-					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
 					mercenary_infantry = PREV
@@ -2949,7 +2952,7 @@ country_event = {
 			}
 			else = {	
 				add_treasury = -1250
-			}
+			}  
 		
 			hidden_effect = {
 				export_to_variable = {

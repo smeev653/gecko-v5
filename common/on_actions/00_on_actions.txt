@@ -4005,11 +4005,9 @@ on_mercenary_recruited = {
 				limit = {
 					ai = no
 				}
-				#country_event = {id = gecko.19 days = 10}
-				set_country_flag = gecko_merc_flag
 				add_country_modifier = {
 					name = "mercs_bought"
-					duration = 5475
+					duration = -1
 					hidden = yes
 				}
 			}

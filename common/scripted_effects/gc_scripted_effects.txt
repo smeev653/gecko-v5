@@ -122,7 +122,12 @@ gecko_mercs = {
 			}
 		}	
 	}
-	else = {
+	else_if = {
+		limit = {
+			ROOT = {
+				ai = no
+			}	
+		}
 		hidden_effect = {
 			export_to_variable = {
 					which = geckomercFL
