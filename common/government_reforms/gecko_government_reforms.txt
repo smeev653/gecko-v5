@@ -139,7 +139,6 @@ empire_of_hungary_reform = {
 		land_morale = 0.1
 	}
 	allow_normal_conversion = yes
-	lock_level_when_selected = yes
 	fixed_rank = 3
 }
 
@@ -151,7 +150,10 @@ gc_greater_hungary_reform = {
 			has_reform = gc_greater_hungary_reform
 			have_had_reform = gc_greater_hungary_reform
 		}
-		tag = HUN
+		OR = {
+			tag = HUN
+			tag = EOH
+		}
 		religion = catholic
 	}
 	modifiers = {
@@ -161,7 +163,6 @@ gc_greater_hungary_reform = {
 		land_morale = 0.1
 	}
 	allow_normal_conversion = yes
-	lock_level_when_selected = yes
 	fixed_rank = 3
 }
 

@@ -5,6 +5,7 @@ gc_hungary_branch_1 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
 	}
 	has_country_shield = yes
@@ -122,6 +123,7 @@ gc_hungary_branch_2 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
 	}
 	has_country_shield = yes
@@ -248,6 +250,7 @@ gc_hungary_branch_3 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
 	}
 	has_country_shield = yes
@@ -312,7 +315,7 @@ gc_hungary_branch_3 = {
         effect = {
             add_manpower = 20
             define_general = {
-				name = "Pál Kinizsi"
+				name = "Pï¿½l Kinizsi"
 				shock = 4
 				fire = 4
 				manuever = 4
@@ -348,6 +351,7 @@ gc_hungary_branch_4 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
 	}
 	has_country_shield = yes
@@ -433,6 +437,7 @@ gc_hungary_branch_5 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
 	}
 	has_country_shield = yes
@@ -620,6 +625,7 @@ gc_hungary_gh_branch_2 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_gh
 	}
@@ -672,6 +678,7 @@ gc_hungary_gh_branch_3 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_gh
 	}
@@ -824,6 +831,7 @@ gc_hungary_gh_branch_4 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_gh
 	}
@@ -1055,6 +1063,7 @@ gc_hungary_gh_branch_5 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_gh
 	}
@@ -1117,6 +1126,7 @@ gc_hungary_eoh_branch_1 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_eoh
 	}
@@ -1268,6 +1278,7 @@ gc_hungary_eoh_branch_2 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_eoh
 	}
@@ -1421,6 +1432,7 @@ gc_hungary_eoh_branch_3 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_eoh
 	}
@@ -1559,6 +1571,7 @@ gc_hungary_eoh_branch_4 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_eoh
 	}
@@ -1846,6 +1859,7 @@ gc_hungary_eoh_branch_5 = {
 	potential = {
 		OR = {
             tag = HUN
+            tag = EOH
         }
         has_country_flag = gc_hungary_going_for_eoh
 	}
