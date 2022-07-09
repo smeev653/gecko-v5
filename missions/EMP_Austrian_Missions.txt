@@ -161,7 +161,7 @@ emp_hab_empire_branch = {
 				OR = {
 					AND = {
 						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							value = 10
+							value = 20
 							continent = europe
 						}
 						is_part_of_hre = yes
@@ -192,7 +192,7 @@ emp_hab_empire_branch = {
 					}
 					calc_true_if = {
 						desc = emp_hab_no_one_to_threaten_us_trigger2_tooltip
-						amount = 10
+						amount = 20
 						all_country = {
 							has_reform = free_city
 						}
