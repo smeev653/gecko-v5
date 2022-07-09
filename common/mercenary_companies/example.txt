@@ -11,6 +11,7 @@ merc__local_free_company = {
     trigger = {
 		always = no
         total_development = 201
+		NOT = {has_country_modifier = merc_spawn_timer }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -27,6 +28,7 @@ merc__local_small_company = {
     artillery_weight = 0.0
     cavalry_cap = 2
     trigger = {
+		NOT = {has_country_modifier = merc_spawn_timer }
         NOT = { total_development = 200 }
 		NOT = { is_emperor = yes }
 		NOT = {
@@ -51,6 +53,7 @@ merc__local_free_city_company = {
     artillery_weight = 0.0
     cavalry_cap = 2
     trigger = {
+		NOT = {has_country_modifier = merc_spawn_timer }
 		 NOT = {
 				check_variable = {
 						which = geckomercvalue
@@ -78,6 +81,7 @@ merc__local_grand_company = {
 			always = no
 		#is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
+		 NOT = {has_country_modifier = merc_spawn_timer }
 		 NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -99,6 +103,7 @@ merc__local_independent_army = {
 			always = no
 		#is_year = 1470
 		 NOT = { has_country_modifier = gecko_b }
+		 NOT = {has_country_modifier = merc_spawn_timer }
 		 NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -115,6 +120,7 @@ merc_local_all_female_company = {
     artillery_weight = 0.0
     cavalry_cap = 2
 	trigger = {
+		NOT = {has_country_modifier = merc_spawn_timer }
 		 NOT = {
 				check_variable = {
 						which = geckomercvalue
@@ -137,6 +143,7 @@ twenty_good_men = {
 	cost_modifier = 1.5
     home_province = 4365
 	trigger = {
+		NOT = {has_country_modifier = merc_spawn_timer }
 		 NOT = {
 				check_variable = {
 						which = geckomercvalue

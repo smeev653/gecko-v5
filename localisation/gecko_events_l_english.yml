@@ -151,11 +151,29 @@
  gc_hungary_event.3.t:0 "The Empire of Hungary"
  gc_hungary_event.3.d:0 "We have proven our right to rule several times. It is us who should be the dominant power of Central Europe."
  gc_hungary_event.3.a:0 "We will take our rightful place."
+
+  #mercs
  gecko.28.title:0 "Modify Our Mercenary Contracts"
  gecko.28.desc:0 "We have the opportunity to modify the type of Mercenaries we employ with differing effects."
- gecko.28.a:0 "Increase Mercenary Recruitment"
- gecko.28.b:0 "Increase Mercenary Quality"
- gecko.28.c:0 "Do Nothing."
+ gecko.28.c:0 "Increase Mercenary Recruitment"
+ gecko.28.d:0 "Increase Mercenary Quality"
+ gecko.28.e:0 "Do Nothing."
+ gecko.38.t:0 "You are over the Mercenary Forcelimit"
+ gecko.38.d:0 "You are paying +§R100%§! Mercenary Maintenance. Delete Mercenary Regiments until you are under the Mercenary Forcelimit to remove this modifier. You can view the Mercenary Forcelimit in Decisions: 1. Show Mercenary Forcelimit."
+ gecko.38.a:0 "Ok."
+ gecko.39.title:0 "Hire Mercenaries"
+ gecko.39.desc:0 ""
+ gecko.39.a:0 "Hire 5 Mercenary Regiments"
+ gecko.39.b:0 "Hire 10 Mercenary Regiments"
+ gecko.39.c:0 "Hire 15 Mercenary Regiments"
+ gecko.39.d:0 "Hire 20 Mercenary Regiments"
+ gecko.39.e:0 "Hire 25 Mercenary Regiments"
+ gecko.39.f:0 "Hire 30 Mercenary Regiments"
+ gecko.39.g:0 "Hire 35 Mercenary Regiments"
+ gecko.39.h:0 "Hire 40 Mercenary Regiments"
+ gecko.39.i:0 "Hire 45 Mercenary Regiments"
+ gecko.39.j:0 "Hire 50 Mercenary Regiments"
+ gecko.39.k:0 "Do Nothing"
 
  
  #crimea events

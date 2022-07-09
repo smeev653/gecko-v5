@@ -355,3 +355,6 @@ increased_merc_quality = {
 
 gc_urbanisation_timer = {
 }
+
+merc_spawn_timer= {
+}

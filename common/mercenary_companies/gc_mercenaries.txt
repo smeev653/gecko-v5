@@ -1,12 +1,13 @@
 #gecko merc companies
 
 gecko_independent_army_1 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
     cost_modifier = 0.75
     trigger = {
+		NOT = {has_country_modifier = merc_spawn_timer }
 		 NOT = { total_development = 300 }
 		 always = no
 		 #is_year = 1470
@@ -21,7 +22,7 @@ gecko_independent_army_1 = {
 }
 
 gecko__local_independent_army_1 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -32,6 +33,7 @@ gecko__local_independent_army_1 = {
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
 		}
+		NOT = {has_country_modifier = merc_spawn_timer }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -43,7 +45,7 @@ gecko__local_independent_army_1 = {
 }
 
 gecko__local_independent_army_2 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -51,6 +53,7 @@ gecko__local_independent_army_2 = {
     trigger = {
 		 always = no
 		current_age = age_of_revolutions
+		NOT = {has_country_modifier = merc_spawn_timer }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -75,6 +78,7 @@ gecko_merc_black_army_1 = {
 			has_country_modifier = hun_black_army	
 			has_reform = black_army_reform
 			}
+			NOT = {has_country_modifier = merc_spawn_timer }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -101,6 +105,7 @@ gecko_merc_black_army_2 = {
 			has_country_modifier = hun_black_army	
 			has_reform = black_army_reform
 			}
+			NOT = {has_country_modifier = merc_spawn_timer }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -123,6 +128,7 @@ gecko_merc_aristo_ideas = {
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
 		full_idea_group = aristocracy_ideas
+		NOT = {has_country_modifier = merc_spawn_timer }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -143,6 +149,7 @@ gecko_hormuz_company = {
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
 		tag = YEM
+		NOT = {has_country_modifier = merc_spawn_timer }
 		NOT = {
 					check_variable = {
 						which = geckomercvalue
@@ -154,7 +161,7 @@ gecko_hormuz_company = {
 }
 
 gc_merc_sekban = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.04
 	cost_modifier = 0.5
     #home_province = 151
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
@@ -164,6 +171,7 @@ gc_merc_sekban = {
 			mission_completed = repulse_gank
 			mission_completed = mam_turks_defeated
 		}
+		NOT = {has_country_modifier = merc_spawn_timer }
 			 NOT = {
 				check_variable = {
 						which = geckomercvalue
