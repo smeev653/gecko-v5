@@ -475,7 +475,7 @@ too_many_subjects_influence = {
 
 Defense_of_Persia = {
 	potential = {
-		NOT  = { is_year = 1530}
+		NOT  = { is_year = 1490}
 		OR = {
 			tag = ARL
 			tag = ISF
@@ -600,7 +600,7 @@ Defense_of_the_Rus = {
 		ROOT = {
 				ai = no	
 			}
-		NOT  = { is_year = 1530}
+		NOT  = { is_year = 1490}
 	}
 
 	trigger = {

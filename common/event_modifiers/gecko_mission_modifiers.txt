@@ -5,7 +5,7 @@ gc_growing_economy = {
 }
 
 gc_habsburg_bohemia = {
-	local_development_cost = -0.15
+	local_development_cost = -0.10
 }
 
 gc_defeated_byzantine_empire = {

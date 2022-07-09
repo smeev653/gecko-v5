@@ -231,6 +231,10 @@ emperor_reichskrieg = {
 	potential = {
 		has_dlc = "Emperor"
 	}
+	emperor = {
+		vassal_income = 0.1
+		vassal_forcelimit_bonus = 0.5
+	}
 	all = {
 		land_morale = 0.05
 	}
@@ -259,7 +263,7 @@ emperor_imperial_estates = {
 		has_dlc = "Emperor"
 	}
 	emperor = {
-		technology_cost = -0.05
+		all_power_cost = -0.05
 	}
 }
 
@@ -292,21 +296,17 @@ emperor_privilegia_de_non_appelando = {
 		advisor_cost = -0.1
 	}
 	on_effect = {
-	
-		emperor = {
-			#country_event = { id = 9073 tooltip = vassalize_empire2 }
+		if = {
+			limit = {
+				hre_religion_locked = no
+				hre_religion_treaty = no
+			}
+			set_hre_religion_treaty = yes
 		}
-		#hidden_effect = {
-		#	every_country = {
-		#		limit = {
-		#			is_part_of_hre = yes
-		#			is_emperor = no
-		#			num_of_cities = 1
-		#			NOT = { vassal_of = ROOT }
-		#		}
-		#		country_event = { id = 9074 }
-		#	}
-		#}
+		hre_inheritable = yes
+	}
+	off_effect = {
+		hre_inheritable = no
 	}
 	required_reform = emperor_erbkaisertum
 	gui_container = right_branch
