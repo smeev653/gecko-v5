@@ -260,7 +260,7 @@ NDefines.NMilitary.CAVALRY_COST = 30
 
 NDefines.NAI.ACCEPTABLE_FRACTION_OF_INTEREST_PAYMENTS = 0.4
 NDefines.NAI.ACCEPTABLE_BALANCE_DEFAULT = 1.05
-NDefines.NAI.MIN_CAV_PERCENTAGE = 20 --AI will always try to have at least this many % of their army as cav, regardless of time in the game.
+NDefines.NAI.MIN_CAV_PERCENTAGE = 0 --AI will always try to have at least this many % of their army as cav, regardless of time in the game.
 NDefines.NAI.MAX_CAV_PERCENTAGE = 100
 NDefines.NAI.DEVELOP_IN_SUBJECTS_PREFERENCE = 1
 NDefines.NAI.AI_BUY_PROVINCE_SUBJECT_MAX_OE = 150 -- % of OE (including OE from sold province) above which AI who is a subject will not buy non-core provinces (Not used if OE is at 0)
