@@ -57,8 +57,8 @@ plutocracy_ideas = {
 		burghers_loyalty_modifier = 0.1
 	}
 	bill_of_rights = {
-		infantry_cost = -0.125
-		army_tradition_from_battle = 0.15
+		infantry_cost = -0.10
+		#army_tradition_from_battle = 0.15
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
