@@ -242,7 +242,7 @@ RUS_ideas = {
 		reinforce_speed = 0.25
 	}
 	curriculum_of_the_cadet_corps = {
-		land_morale = 0.15
+		land_morale = 0.10
 		fire_damage_received = -0.10
 	}
 }
