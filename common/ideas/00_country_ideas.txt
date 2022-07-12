@@ -1439,7 +1439,7 @@ NAP_ideas = {
 SIC_ideas = {
 	start = {
 		land_morale = 0.10
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.10
 	}
 	
 	bonus = {
@@ -1465,7 +1465,7 @@ SIC_ideas = {
 		production_efficiency = 0.10
 	}
 	sic_greater_sicily = {
-		cavalry_power = 0.1
+		cavalry_power = 0.05
 	}
 	sic_noble_admirals = {
 		leader_naval_fire = 1
