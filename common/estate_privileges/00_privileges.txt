@@ -1630,7 +1630,7 @@ estate_burghers_free_enterprise = {
 		global_trade_goods_size_modifier  = 0.05
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 		modifier = {
 			factor = 0
 			is_absolutism_active = yes
@@ -1725,9 +1725,13 @@ smeev_mountain_dev_cost = {
 		OR = {
 			tag = AFG
 			tag = MUG
-			tag = MOR
 			tag = ARL
 			tag = PER
+			tag = HAB
+			tag = AHU
+			tag = SGF
+			tag = SWI
+			tag = SWA
 			} 
 	}
 	

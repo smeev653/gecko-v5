@@ -696,7 +696,7 @@ country_decisions = {
 						}
 						add_province_modifier = {
 							name = "merc_recruited"
-							duration = 90
+							duration = 60
 						}
 					}
 				}

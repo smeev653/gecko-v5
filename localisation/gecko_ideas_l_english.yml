@@ -106,7 +106,16 @@
   AHU_ideas_bonus:0 "Habsburg Ambitions"
   gc_AHU_NI_3:0 "Habsburg Dominance"
   gc_AHU_NI_3_desc:0 "War is an extension of Diplomacy."
-
+  gc_military_border:0 "Military Border"
+  gc_military_border_desc:0 ""
+  gc_imperial_ambitions:0 "Imperial Ambition"
+  gc_imperial_ambitions_desc:0 ""
+  gc_fugger_banks:0 "Fugger Banks"
+  gc_fugger_banks_desc:0 ""
+  gc_edict_of_restitution:0 "Edict of Restitution"
+  gc_edict_of_restitution_desc:0 ""
+  gc_austrian_court:0 "Austrian Court"
+  gc_austrian_court_desc:0 ""
   #Empire of Hungary
   EOH_ideas:0 "Empire of Hungary Ideas"
   EOH_ideas_start:0 "Hungarian Traditions"
