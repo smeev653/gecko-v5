@@ -17798,6 +17798,7 @@ gme_bretagne_castles = {
 		}
 		country_modifiers = {
 			prestige = 0.25
+			army_tradition = 0.25
 		}
 		on_upgraded = {
 			owner = {
@@ -17820,7 +17821,7 @@ gme_bretagne_castles = {
 		country_modifiers = {
 			prestige = 0.5
 			max_absolutism = 5
-			army_tradition = 0.25
+			army_tradition = 0.5
 		}
 		on_upgraded = {
 			owner = {
