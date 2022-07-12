@@ -36,6 +36,7 @@ monarchy = {
 				gc_imperial_spain_reform
 				empire_of_hungary_reform
 				gc_greater_hungary_reform
+				gc_french_empire
 			}
 		}
 		hereditary_vs_nobility = {

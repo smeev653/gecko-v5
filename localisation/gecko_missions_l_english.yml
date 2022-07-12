@@ -254,6 +254,9 @@
 
  repulse_french_gank_title:0 "Defense of France"
  repulse_french_gank_desc:0 ""
+ 
+ FRENCH_EMPIRE:0 "French Empire"
+ FRENCH_EMPIRE_ADJ:0 "French"
 
 #arabia
 

@@ -471,6 +471,6 @@ gc_nap_italian_wars_modifier = {
 	mercenary_discipline = 0.05
 }
 
-gc_L'Etat, c'est moi = {
+gc_Letat_cest_moi = {
 	global_manpower_modifier = 0.1
 }
