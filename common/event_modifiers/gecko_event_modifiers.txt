@@ -321,7 +321,6 @@ mercs_bought = {
 }
 merc_recruited = {
 	local_friendly_movement_speed = -2
-	is_mercenary_modifier = yes
 }
 geckoavailablemercs = {
 }
