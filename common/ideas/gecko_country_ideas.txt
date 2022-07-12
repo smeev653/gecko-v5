@@ -380,7 +380,7 @@ PRU_ideas = {
 		stability_cost_modifier = -0.2
 	}
 	army_professionalism = {
-		land_morale = 0.15
+		land_morale = 0.125
 	}
 	teutonic_legacy = {
 		development_cost = -0.05
@@ -429,10 +429,10 @@ HAN_ideas = {
 	}
 	han_shutzenfest = {
 		land_maintenance_modifier = -0.1
-		fire_damage = 0.15
+		fire_damage = 0.10
 	}
 	han_kings_legion = {
-		fire_damage_received = -0.10
+		fire_damage_received = -0.15
 	}
 }
 
@@ -636,7 +636,7 @@ SWA_ideas = {
 		prestige = 1
 	}
 	swa_free_cities = {
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 }
 
