@@ -65,8 +65,8 @@ fra_into_germany = {
 }
 
 grand_armee = {
-	land_forcelimit_modifier = 0.15
-	}
+	land_forcelimit_modifier = 0.2
+}
 	
 angevin_supremacy = {
 	global_manpower_modifier = 0.25
@@ -469,4 +469,8 @@ gc_mecca_agreement = {
 
 gc_nap_italian_wars_modifier = {
 	mercenary_discipline = 0.05
+}
+
+gc_L'Etat, c'est moi = {
+	global_manpower_modifier = 0.1
 }

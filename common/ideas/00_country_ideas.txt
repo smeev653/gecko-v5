@@ -418,7 +418,7 @@ DAN_ideas = {
 FRA_ideas = {
 	start = {
 		build_cost = -0.1
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.15
 	}
 	
 	bonus = {

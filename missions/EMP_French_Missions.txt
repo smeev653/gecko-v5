@@ -692,6 +692,10 @@ emp_france_missions_2 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			add_country_modifier = {
+				name = "gc_Letat_cest_moi"
+				duration = -1
+			}
 		}
 	}
 	emp_fra_recover_calais = {
@@ -1166,20 +1170,14 @@ emp_france_missions_3 = {
 		icon = mission_unite_home_region
 		required_missions = { emp_fra_conquer_burgundy_area }
 		provinces_to_highlight = {
-			OR = {
 				area = savoy_dauphine_area
-				area = piedmont_area
-			}
+			
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			savoy_dauphine_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			piedmont_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1206,10 +1204,6 @@ emp_france_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = {
-				name = "italian_ambition_modifier"
-				duration = 7300
-			}
 		}
 	}
 	emp_fra_annex_genoa = {
@@ -1229,6 +1223,13 @@ emp_france_missions_3 = {
 		}
 		effect = {
 			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			piedmont_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1262,7 +1263,11 @@ emp_france_missions_3 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}	
+			}
+			add_country_modifier = {
+				name = "italian_ambition_modifier"
+				duration = 7300
+			}			
 		}
 	}
 	emp_fra_switzerland = {
@@ -1526,11 +1531,15 @@ emp_france_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = "france_united"
+				duration = -1
+			}	
 		}
 	}
 	emp_fra_subjugate_lorraine = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { emp_fra_conquer_burgundy_area emp_fra_conquer_picardy_fra }
+		required_missions = { emp_fra_conquer_burgundy_area }
 		provinces_to_highlight = {
 			area = lorraine_area
 			NOT = {
@@ -1551,11 +1560,6 @@ emp_france_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		add_country_modifier = {
-				name = "france_united"
-				duration = -1
-			}	
-		}
 	}
 	emp_fra_annex_alsace = {
 		icon = mission_assemble_an_army
