@@ -145,7 +145,7 @@ emp_naples_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "nap_italian_wars_modifier"
+				name = "gc_nap_italian_wars_modifier"
 				duration = -1
 			}
 		}
