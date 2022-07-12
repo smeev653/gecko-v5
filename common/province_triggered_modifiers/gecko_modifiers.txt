@@ -79,12 +79,18 @@ conquest_of_constantinople = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			NOT = { 	
+					has_global_modifier_value = {
+					which = infantry_power
+					value = 0.4
+					}
+				}
 		}
 		controlled_by = ROOT
 	}
 
 
-	infantry_power = 0.075
+	infantry_power = 0.1
 	global_tax_modifier = 0.05
 	
 	#Province scope
@@ -323,11 +329,17 @@ conquest_of_cairo = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
+				NOT = { 	
+					has_global_modifier_value = {
+					which = infantry_power
+					value = 0.4
+					}
+				}
 			}
 		controlled_by = ROOT	
 		}	
 
-	infantry_power = 0.075
+	infantry_power = 0.1
 	production_efficiency = 0.05
 	
 	#Province scope
@@ -740,13 +752,19 @@ conquest_of_herat = {
 				religion = ibadi
 				religion = tengri_pagan_reformed
 			}
+		NOT = { 	
+					has_global_modifier_value = {
+					which = infantry_power
+					value = 0.4
+					}
+				}	
 		balkh_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}	
 	}
 
-	infantry_power = 0.075
+	infantry_power = 0.1
  
 	
 	#Province scope
