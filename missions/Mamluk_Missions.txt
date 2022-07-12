@@ -46,20 +46,44 @@ mam_south_missions = {
 			}
 		}
 		trigger = {
-			OR = {
-				384 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			if = {
+				limit = {
+					OR = {
+						YEM = {
+							ai = no
+						}	
+						ARB = {
+							ai = no
+						}
+					}	
 				}
-				385 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				}
+				OR = {
+						384 = {
+						country_or_non_sovereign_subject_holds = ROOT
+						}
+						385 = {
+						country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				OR = {
+						YEM = { mission_completed = yem_alfath_alsaalih }
+						ARB = { mission_completed = yem_alfath_alsaalih }
+					}		
 			}
-			OR = {
-				YEM = { mission_completed = yem_alfath_alsaalih }
-				ARB = { mission_completed = yem_alfath_alsaalih }
+			else = {
+				OR = {
+						384 = {
+						country_or_non_sovereign_subject_holds = ROOT
+						}
+						385 = {
+						country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				
 			}
-		}
+		}	
 		effect = {
+			custom_tooltip = gc_mecca_agreement_tt
 			add_country_modifier = {
 				name = "gc_mecca_agreement"
 				duration = -1

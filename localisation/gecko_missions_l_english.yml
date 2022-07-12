@@ -60,7 +60,7 @@
  gc_consolidate_asia_minor_desc:0 ""
  gc_conquer_mesopotamia_desc:0 ""
  gc_conquer_haasa_desc:0 ""
-
+ gc_mecca_agreement_tt:0 "We will give Yemen the custodianship of Mecca and Medina and in return, they will provide us with their finest Holy Warriors. If we renege on this agreement, we will lose this benefit."
 #ottoman event missions
 
  g_military_reforms_of_mehmet:0 "This event will grant§G 10% Infanty Combat Ability§! for 20 years."
