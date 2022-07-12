@@ -84,7 +84,7 @@ conquest_of_constantinople = {
 	}
 
 
-	infantry_power = 0.10
+	infantry_power = 0.075
 	global_tax_modifier = 0.05
 	
 	#Province scope
@@ -327,7 +327,7 @@ conquest_of_cairo = {
 		controlled_by = ROOT	
 		}	
 
-	infantry_power = 0.10
+	infantry_power = 0.075
 	production_efficiency = 0.05
 	
 	#Province scope
@@ -746,7 +746,7 @@ conquest_of_herat = {
 				}	
 	}
 
-	infantry_power = 0.1
+	infantry_power = 0.075
  
 	
 	#Province scope
