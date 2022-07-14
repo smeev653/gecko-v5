@@ -980,6 +980,11 @@ country_event = {
 		
 		add_adm_power  = -25
 		create_advisor = army_organiser	
+	}
+option = {
+		name = gecko.11.m
+		
+		#nothing
 	}	
 }
 
@@ -3029,6 +3034,9 @@ country_event = {
 	picture = COURT_eventPicture
 
    trigger = {
+			ROOT = {
+				ai = no
+			}
 			any_owned_province = {
 				has_province_modifier = "merc_recruited"
 			}	

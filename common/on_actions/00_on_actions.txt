@@ -708,6 +708,16 @@ on_siege_lost_country = {
 # province
 # root = location, from = losing country
 on_siege_won_province = {
+	if = {
+		limit = {
+			ROOT = {
+				has_province_modifier = merc_recruited
+			}
+		}
+		ROOT = {
+			remove_province_modifier = merc_recruited
+		}
+	}
 }
 
 # province
