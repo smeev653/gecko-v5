@@ -3110,7 +3110,7 @@ picture = COURT_eventPicture
 							}
 		}	
 	}	
-		#hidden = yes
+		hidden = yes
 	mean_time_to_happen = {
 			days = 1
 	}
@@ -3164,7 +3164,7 @@ picture = COURT_eventPicture
 		NOT = { has_country_modifier = We_stand_alone }
 		has_country_flag = had_we_stand_alone_mercs 					
 	}	
-		#hidden = yes
+		hidden = yes
 	mean_time_to_happen = {
 			days = 1
 	}
