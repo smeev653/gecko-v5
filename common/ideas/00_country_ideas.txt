@@ -448,7 +448,7 @@ FRA_ideas = {
 		defensiveness = 0.25
 	}
 	the_philosophes = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 	}
 	liberty_egalite_fraternity = {
 		country_military_power = 1
@@ -1302,7 +1302,7 @@ HUN_ideas = {
 		global_manpower_modifier = 0.2
 	}
 	hun_renaissanse_knowledge = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 	}
 	curtailed_peasantry = {
 		production_efficiency = 0.1
@@ -1951,7 +1951,7 @@ ITA_ideas = { #Italian Ideas
 		global_manpower_modifier = 0.2
 	}
 	italian_tax_reform = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 		global_tax_modifier = 0.15
 	}
 	heir_to_the_empire = {

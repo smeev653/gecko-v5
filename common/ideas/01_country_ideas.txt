@@ -28,7 +28,7 @@ BUK_ideas = {
 		production_efficiency = 0.1
 	}	
 	PR_BUK1 = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 		center_of_trade_upgrade_cost = -0.25
 	}
 

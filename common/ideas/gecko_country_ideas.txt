@@ -208,7 +208,7 @@ AKS_ideas = {
 	}
 	
 	aks_mediterranean_contacts = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 	}
 	
 	aks_trade_hub = {
@@ -835,7 +835,7 @@ EOH_ideas = {
 		global_manpower_modifier = 0.2
 	}
 	hun_renaissanse_knowledge = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 	}
 	curtailed_peasantry = {
 		production_efficiency = 0.1
