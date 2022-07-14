@@ -752,16 +752,19 @@ conquest_of_herat = {
 				religion = ibadi
 				religion = tengri_pagan_reformed
 			}
-		NOT = { 	
+		owner = {
+			NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
 					value = 0.4
 					}
-				}	
-		balkh_area = {
+				}
+				
+			balkh_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}	
+		}		
 	}
 
 	infantry_power = 0.1
