@@ -50,3 +50,16 @@ alliance = {
 	end_date = 1454.4.9
 }
 
+vassal = {
+	first = DLH
+	second = SRM
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+
+vassal = {
+	first = DLH
+	second = GHR
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}

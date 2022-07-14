@@ -21,12 +21,12 @@ vassal = {
 }
 
 #Ladakh
-vassal = {
-	first = AFG
-	second = LDK
-	start_date = 1443.1.1
-	end_date = 1809.1.1
-}
+#vassal = {
+#	first = AFG
+#	second = LDK
+#	start_date = 1443.1.1
+#	end_date = 1809.1.1
+#}
 
 #Patiala
 vassal = {

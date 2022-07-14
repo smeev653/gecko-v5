@@ -90,6 +90,7 @@ tim_reconquest_persia = {
 				limit = {
 					NOT = { tag = TIM }
 					NOT = { tag = TRS }
+					NOT = { tag = AFG }
 				}
 				farsistan_area = {
 					limit = {
