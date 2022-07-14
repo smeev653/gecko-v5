@@ -138,7 +138,7 @@ We_stand_alone = {
 	trigger  = {
 		is_year = 1460
 		OR = {
-				great_power_rank = 6
+				great_power_rank = 5
 				 is_great_power = no
 				}
 				any_country = {
@@ -148,7 +148,7 @@ We_stand_alone = {
 				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
 				#revanchism = 1
-				had_recent_war = 5
+				#had_recent_war = 5
 				NOT = { is_lacking_institutions = yes }
 	}
 	land_morale = 0.05
@@ -169,6 +169,7 @@ We_stand_alone = {
 	#mercenary_cost = -0.25
 	#mercenary_manpower = 0.5
 	#interest = -0.25
+	
 }
 
 HRE_backup = {	

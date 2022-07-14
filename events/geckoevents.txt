@@ -1178,7 +1178,7 @@ picture = COURT_eventPicture
 			}
 		 OR = {
 			has_country_modifier = mercs_bought 
-			has_country_modifier = increased_merc_recruitment
+			has_country_modifier = We_stand_alone
 			has_country_modifier = increased_merc_quality
 		}
 		 NOT = { has_country_modifier = Minor}
@@ -1201,7 +1201,7 @@ picture = COURT_eventPicture
 			}
 			multiply_variable = {
 					which = geckomercFL
-					value = 25
+					value = 33
 			}
 			change_variable = {
 					which = geckomercFL
@@ -1233,7 +1233,7 @@ picture = COURT_eventPicture
 				ai = no
 			}
 		 OR = {
-			has_country_modifier = increased_merc_recruitment
+			has_country_modifier = We_stand_alone
 			has_country_modifier = increased_merc_quality
 			has_country_modifier = mercs_bought
 		}
@@ -1258,7 +1258,7 @@ picture = COURT_eventPicture
 			}
 			multiply_variable = {
 					which = geckomercFL
-					value = 25
+					value = 33
 			}
 			change_variable = {
 					which = geckomercFL
@@ -1352,7 +1352,7 @@ picture = COURT_eventPicture
 				#NOT = { has_country_modifier = geckoavailablemercs}
 			OR = {	
 				AND = {	
-					NOT = { has_country_modifier = increased_merc_recruitment }
+					NOT = { has_country_modifier = We_stand_alone }
 					check_variable = {
 									which = availablegeckomercs
 									value = 1.15
@@ -1444,19 +1444,19 @@ country_event = {
 						value = trigger_value:num_of_mercenaries
 						who = ROOT
 					}
-				add_country_modifier = {
-					name = "increased_merc_recruitment"
-					duration = 3650
-				}
+				#add_country_modifier = {
+				#	name = "We_stand_alone"
+				#	duration = 3650
+				#}
 				if = {
 					limit = {
 						OR = {
 							AND = {
-								 has_country_modifier = increased_merc_recruitment
+								 has_country_modifier = We_stand_alone
 								 has_age_ability = ab_hesse_mercs
 							}
 							AND = {
-								 has_country_modifier = increased_merc_recruitment
+								 has_country_modifier = We_stand_alone
 								 has_age_ability = ab_burgundy_merc_manpower
 							}
 						}
@@ -1660,7 +1660,7 @@ picture = COURT_eventPicture
        ROOT = {
          ai = no
 		}
-			NOT =  { has_country_modifier = increased_merc_recruitment }
+			NOT =  { has_country_modifier = We_stand_alone }
 			has_country_modifier = 130percentavailablemercs
    }
 	hidden = yes
@@ -1724,7 +1724,7 @@ picture = COURT_eventPicture
 					}
 					multiply_variable = {
 							which = geckomercFL
-							value = 25
+							value = 33
 					}
 					change_variable = {
 							which = geckomercFL
@@ -1754,7 +1754,7 @@ picture = COURT_eventPicture
 					}
 					multiply_variable = {
 							which = geckomercFL
-							value = 25
+							value = 33
 					}
 					change_variable = {
 							which = geckomercFL
@@ -1789,7 +1789,7 @@ picture = COURT_eventPicture
 			 has_age_ability = ab_burgundy_merc_manpower
 			 has_age_ability = ab_hesse_mercs
 		}	 
-		has_country_modifier = increased_merc_recruitment
+		has_country_modifier = We_stand_alone
 		 
 		NOT = {  has_country_modifier = increased_merc_quality }
 		check_variable = {
@@ -1813,11 +1813,11 @@ picture = COURT_eventPicture
 			limit = {
 			    OR = {
 					AND = {
-						 has_country_modifier = increased_merc_recruitment
+						 has_country_modifier = We_stand_alone
 						 has_age_ability = ab_hesse_mercs
 					}
 					AND = {
-						 has_country_modifier = increased_merc_recruitment
+						 has_country_modifier = We_stand_alone
 						 has_age_ability = ab_burgundy_merc_manpower
 					}
 				}
@@ -1861,7 +1861,7 @@ picture = COURT_eventPicture
 			 has_country_modifier = increased_merc_quality
 
 		 
-		 NOT = {  has_country_modifier = increased_merc_recruitment }
+		 NOT = {  has_country_modifier = We_stand_alone}
 		 check_variable = {
 								which = availablegeckomercs
 								value = 0.85
@@ -1930,7 +1930,7 @@ picture = COURT_eventPicture
 			}	
 			 has_country_modifier = increased_merc_quality
 			 has_country_modifier = 100percentavailablemercs
-		 NOT = {  has_country_modifier = increased_merc_recruitment }
+		 NOT = {  has_country_modifier = We_stand_alone }
 			check_variable = {
 								which = availablegeckomercs
 								value = 1
@@ -1970,7 +1970,7 @@ picture = COURT_eventPicture
 				NOT = {	has_age_ability = ab_burgundy_merc_manpower }
 				NOT = {	has_age_ability = ab_hesse_mercs }
 			}	
-			 has_country_modifier = increased_merc_recruitment
+			 has_country_modifier = We_stand_alone
 			 has_country_modifier = 130percentavailablemercs
 		 NOT = {  has_country_modifier = increased_merc_quality }
 			check_variable = {
@@ -2013,7 +2013,7 @@ picture = COURT_eventPicture
 			 has_age_ability = ab_hesse_mercs
 			} 
 			 NOT = {  has_country_modifier = increased_merc_quality }
-			NOT = {  has_country_modifier = increased_merc_recruitment }
+			NOT = {  has_country_modifier = We_stand_alone }
 			NOT = { 	check_variable = {
 								which = availablegeckomercs
 								value = 1.15
@@ -3084,4 +3084,112 @@ country_event = {
 	}
 	option = {	
 	}
-}	
+}
+
+##we stand alone with age ability option####
+country_event = {
+    id = gecko.41
+   title = gecko.41.t
+    desc = gecko.41.d
+picture = COURT_eventPicture
+
+   trigger = {
+        ROOT = {
+         ai = no
+		}	 
+		has_country_modifier = We_stand_alone
+		 
+		check_variable = {
+								which = availablegeckomercs
+								value = 1
+							}
+		NOT = {
+			check_variable = {
+								which = availablegeckomercs
+								value = 1.15
+							}
+		}	
+	}	
+		#hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+		set_country_flag = had_we_stand_alone_mercs
+		if = {
+			limit = {
+			    OR = {
+					AND = {
+						 has_country_modifier = We_stand_alone
+						 has_age_ability = ab_hesse_mercs
+					}
+					AND = {
+						 has_country_modifier = We_stand_alone
+						 has_age_ability = ab_burgundy_merc_manpower
+					}
+				}
+			}
+			set_variable = {            
+						which = availablegeckomercs
+						value = 1.3
+				}	
+			add_country_modifier = {
+					name = "130percentavailablemercs"
+					duration = -1
+				}
+		}
+		else = {
+				set_variable = {            
+						which = availablegeckomercs
+						value = 1.15
+				}
+			}	
+	}
+	option = {	
+	}
+}
+
+##remove we stand alone avail mercs####
+country_event = {
+    id = gecko.42
+   title = gecko.42.t
+    desc = gecko.42.d
+picture = COURT_eventPicture
+
+   trigger = {
+        ROOT = {
+         ai = no
+		}	 
+		NOT = { has_country_modifier = We_stand_alone }
+		has_country_flag = had_we_stand_alone_mercs 					
+	}	
+		#hidden = yes
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+		clr_country_flag = had_we_stand_alone_mercs 
+		if = {
+			limit = {
+			    OR = {
+						 has_age_ability = ab_hesse_mercs
+						 has_age_ability = ab_burgundy_merc_manpower
+				}
+			}
+			set_variable = {            
+						which = availablegeckomercs
+						value = 1.15
+				}	
+		}
+		else = {
+				set_variable = {            
+						which = availablegeckomercs
+						value = 1
+				}
+			}	
+	}
+	option = {	
+	}
+}		
