@@ -485,7 +485,7 @@ religious_societies_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		stability_cost_modifier = -0.1
-		development_cost = -0.05
+		#development_cost = -0.05
 	}
 	ai = {
 		factor = 1

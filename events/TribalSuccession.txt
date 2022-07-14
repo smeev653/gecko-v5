@@ -82,7 +82,7 @@ country_event = {
 			dynasty = ROOT #Uncles, or other relatives were by far the most likely coup-makers
 			change_ADM = 1
 			change_DIP = 1
-			change_MIL = 2
+			change_MIL = 1
 			claim = 100
 		}
 		kill_heir = yes
