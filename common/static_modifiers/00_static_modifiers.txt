@@ -454,7 +454,7 @@ local_autonomy = {
 local_autonomy_trade_company_multiplicative = {
 	local_manpower_modifier = -1.0
 	local_sailors_modifier = -1.0
-	local_tax_modifier = -0.5
+	local_tax_modifier = -1
 	local_production_efficiency = -0.5
 	land_forcelimit_modifier = -1.0
 }

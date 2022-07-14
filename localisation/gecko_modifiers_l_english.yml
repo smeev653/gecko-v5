@@ -238,6 +238,10 @@ gc_ven_la_francocrazia:0 "La Francocrazia"
 
 gc_mlo_lombard_renaissance:0 "Lombard Renaissance"
 
+#timurid prince
+
+gc_mug_formation_hope:0 "Indian Raid"
+
 ######province modifiers######
  northern_dvina_estuary_modifier:0 "Northern Dvina Estuary"
  desc_northern_dvina_estuary_modifier:0 "Controlling the important river estuary of Northern Dvina strengthens our hold of the trade in the region."

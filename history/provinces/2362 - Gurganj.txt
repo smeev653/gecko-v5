@@ -20,9 +20,9 @@ discovered_by = indian
 
 
 1409.5.13 = { #Ulugh Beg is made Governor of Samarkand
-	owner = TRS
-	controller = TRS
-	add_core = TRS
+	owner = KHI
+	controller = KHI
+	add_core = KHI
 }
 1447.3.12 = { unrest = 8 } # Death of Shahrukh, chaotic conditions
 1448.3.1 = { #Ulugh Beg takes Herat and reunites the core of the Timurid Empire

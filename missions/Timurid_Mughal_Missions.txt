@@ -89,6 +89,7 @@ tim_reconquest_persia = {
 			if = {
 				limit = {
 					NOT = { tag = TIM }
+					NOT = { tag = TRS }
 				}
 				farsistan_area = {
 					limit = {
@@ -257,10 +258,10 @@ tim_reconquest_khorasan = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "oma_buildforces_mod"
-				duration = 5475
-			}
+			#add_country_modifier = {
+			#	name = "goma_buildforces_mod"
+			#	duration = 5475
+			#}
 			mashhad_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -426,6 +427,27 @@ tim_reconquest_transoxiana = {
 		
 		effect = {
 			transoxiana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			merv_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			transcaspia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			khiva_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -631,10 +653,10 @@ tim_reconquest_transoxiana = {
 		
 		effect = {
 			add_adm_power = 100
-			add_country_modifier = {
-				name = "tim_steppe_reconquest"
-				duration = 5475
-			}
+			#add_country_modifier = {
+			#	name = "tim_steppe_reconquest"
+			#	duration = 5475
+			#}
 		}
 	}
 	

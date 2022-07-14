@@ -474,3 +474,7 @@ gc_nap_italian_wars_modifier = {
 gc_Letat_cest_moi = {
 	global_manpower_modifier = 0.1
 }
+
+gc_mug_formation_hope = {
+	land_morale = 0.05
+}
