@@ -480,7 +480,7 @@ TUR_ideas = {
 		global_tax_modifier = 0.10
 	}
 	millets = {
-		core_creation = -0.25
+		core_creation = -0.15
 		num_accepted_cultures = 2
 	}
 	ghazi = {
@@ -1519,7 +1519,7 @@ ARA_ideas = {
 
 MUG_ideas = {
 	start = {
-		core_creation = -0.25
+		core_creation = -0.15
 		cavalry_power = 0.125
 	}
 	
@@ -1559,7 +1559,7 @@ MUG_ideas = {
 
 TIM_ideas = {
 	start = {
-		core_creation = -0.25
+		core_creation = -0.15
 		leader_land_shock = 1
 	}
 	
@@ -5729,7 +5729,7 @@ KAZ_ideas = {
 		religious_unity = 0.25
 	}
 	kaz_idea_2 = {
-		core_creation = -0.25
+		core_creation = -0.15
 	}
 	kaz_idea_3 = {
 		cavalry_power = 0.100
@@ -8942,7 +8942,7 @@ GLH_ideas = {
 		leader_land_shock = 1
 	}
 	glh_perso_mongol_administration = {
-		core_creation = -0.25
+		core_creation = -0.15
 	}
 	glh_tatar_traditions = {
 		cavalry_power = 0.125
@@ -13593,7 +13593,7 @@ CRI_ideas = {
 		global_manpower_modifier = 0.20
 	}
 	bonus = {
-		core_creation = -0.25
+		core_creation = -0.15
 	}
 	trigger = {
 		tag = CRI
@@ -14500,7 +14500,7 @@ LOT_ideas = {
 		advisor_pool = 1
 	}
 	lot_european_empire = {
-		core_creation = -0.2
+		core_creation = -0.15
 	}
 }
 
