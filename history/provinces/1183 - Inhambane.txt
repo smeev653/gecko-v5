@@ -1,5 +1,7 @@
 #1183 - Inhambane
-
+owner = SFA
+controller = SFA
+add_core = SFA
 culture = nguni
 religion = shamanism #Fetishism
 capital = "Inhambane"
