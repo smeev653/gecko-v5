@@ -3891,7 +3891,7 @@ javan_ideas = {
 AFG_ideas = {
 	start = {
 		army_tradition = 0.5
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 	
 	bonus = {
