@@ -1497,7 +1497,7 @@ administrative_divisions_reform = {
 	icon = "map"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 1

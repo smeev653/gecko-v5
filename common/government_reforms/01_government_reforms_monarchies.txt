@@ -705,7 +705,7 @@ tsardom = {
 		global_manpower_modifier = 0.1
 		yearly_absolutism = 0.5
 		global_autonomy = -0.05
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 
 	conditional = {
@@ -2126,7 +2126,7 @@ letat_cest_moi_reform = {
 	icon = "queen"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 1.5
