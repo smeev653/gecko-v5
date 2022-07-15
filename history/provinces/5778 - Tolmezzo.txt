@@ -12,7 +12,7 @@ base_manpower = 1
 capital = "Tolmezzo" 
 is_city = yes # Estimated
 add_core = VEN
-add_core = AQu
+add_core = AQU
 
 discovered_by = western
 discovered_by = eastern
