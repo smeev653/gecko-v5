@@ -1676,6 +1676,7 @@ genua={
 		120
 		6126 6125
 		6158 
+		4754 4753 136 137 #dalmatia #smeev	
 	}
 }
 wien={
@@ -2104,7 +2105,7 @@ ragusa={
 		4239 141 4176 3000 4757 #serbia #smeev
 		1827 1766 138 #rascia #smeev
 		140 4755 3002 139 1831 #bosnia #smeev
-		4754 4753 136 137 #dalmatia #smeev		
+			
 		###XMP###
 		6120 6122 6123
 		#########

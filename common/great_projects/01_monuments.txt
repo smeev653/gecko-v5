@@ -17133,7 +17133,7 @@ gme_basilica_san_marco = {
 	date = 1.01.01
 	time = { months = 0 }
 	build_cost = 2000
-	starting_tier = 1
+	starting_tier = 2
 	type = monument
 	can_be_moved = no
 	build_trigger = { }

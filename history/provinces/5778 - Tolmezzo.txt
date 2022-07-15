@@ -1,7 +1,7 @@
 #5778 - Tolmezzo
 
-owner = AQU
-controller = AQU
+owner = VEN
+controller = VEN
 culture = venetian 
 religion = catholic 
 hre = yes 
@@ -11,9 +11,8 @@ trade_goods = wine
 base_manpower = 1    
 capital = "Tolmezzo" 
 is_city = yes # Estimated
-add_core = AQU
-
-
+add_core = VEN
+add_core = AQu
 
 discovered_by = western
 discovered_by = eastern

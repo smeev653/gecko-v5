@@ -235,7 +235,7 @@ gc_ven_mercenaries_paid_with_land = {
 }
 
 gc_ven_venture_captain_recruitment = {
-	land_forcelimit_modifier = 0.05
+	land_forcelimit_modifier = 0.10
 	free_leader_pool = 3
 }
 

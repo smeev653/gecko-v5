@@ -12,7 +12,7 @@ base_manpower = 2
 capital = "Rimini" 
 is_city = yes 
 add_core = RIM
-add_core = PAP
+#add_core = PAP
 hre = yes
 
 

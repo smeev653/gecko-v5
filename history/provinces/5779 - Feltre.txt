@@ -1,7 +1,7 @@
 #5779 - Feltre
 
-owner = AQU
-controller = AQU
+owner = VEN
+controller = VEN
 culture = venetian 
 religion = catholic 
 hre = yes 

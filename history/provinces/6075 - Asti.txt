@@ -1,7 +1,7 @@
 #4282 - Asti
 
-owner = STI
-controller = STI
+owner = MLO
+controller = MLO
 culture = piedmontese
 religion = catholic
 hre = yes
@@ -11,6 +11,7 @@ trade_goods = cloth
 base_manpower = 4
 capital = "Asti"
 is_city = yes	# Estimated
+add_core = MLO
 add_core = STI
 
 

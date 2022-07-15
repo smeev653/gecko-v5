@@ -618,6 +618,7 @@ trade_company_genua = {
 		120
 		6125 6126
 		6158 
+		4754 4753 136 137 #dalmatia #smeev	
 	}
 	
 	# Specific
@@ -805,7 +806,6 @@ trade_company_ragusa = {
 		4700 164 2348 3003 #aegean_archipelago_area
 		1319 #aegean sea #smeev
 		4174 4750 143 4175 #albania #smeev
-		4754 4753 136 137 #dalmatia #smeev
 		4239 141 4176 3000 4757 #serbia #smeev
 		1827 1766 138 #rascia #smeev
 		140 4755 3002 139 1831 #bosnia #smeev

@@ -1,7 +1,7 @@
 # 4739 - Bergamo
 
-owner = MLO
-controller = MLO
+owner = VEN
+controller = VEN
 culture = lombard 
 religion = catholic 
 hre = yes 
@@ -11,8 +11,8 @@ trade_goods = cloth
 base_manpower = 2  
 capital = "Bergamo" 
 is_city = yes
-add_core = MLO
-
+add_core = VEN
+fort_15th = yes
 
 
 discovered_by = western
