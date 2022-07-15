@@ -1355,7 +1355,7 @@ picture = COURT_eventPicture
 					NOT = { has_country_modifier = We_stand_alone }
 					check_variable = {
 									which = availablegeckomercs
-									value = 1.15
+									value = 1.25
 								}
 					
 				}	
@@ -1463,7 +1463,7 @@ country_event = {
 					}
 					set_variable = {            
 								which = availablegeckomercs
-								value = 1.3
+								value = 1.4
 						}	
 					add_country_modifier = {
 						name = "130percentavailablemercs"
@@ -1563,10 +1563,11 @@ picture = COURT_eventPicture
 		if = {
 			limit = {
 				 has_country_modifier = 130percentavailablemercs
+				 has_country_modifier = We_stand_alone
 			}
 			set_variable = {            
 						which = availablegeckomercs
-						value = 1.15
+						value = 1.25
 			}
 			remove_country_modifier	= 130percentavailablemercs
 		}
@@ -1799,7 +1800,7 @@ picture = COURT_eventPicture
 		NOT = {
 			check_variable = {
 								which = availablegeckomercs
-								value = 1.3
+								value = 1.4
 							}
 		}	
 	}	
@@ -1824,7 +1825,7 @@ picture = COURT_eventPicture
 			}
 			set_variable = {            
 						which = availablegeckomercs
-						value = 1.3
+						value = 1.4
 				}	
 			add_country_modifier = {
 					name = "130percentavailablemercs"
@@ -1975,7 +1976,7 @@ picture = COURT_eventPicture
 		 NOT = {  has_country_modifier = increased_merc_quality }
 			check_variable = {
 								which = availablegeckomercs
-								value = 1.3
+								value = 1.4
 							}
 		 
 			
@@ -1988,7 +1989,7 @@ picture = COURT_eventPicture
 	immediate = {
 			set_variable = {            
 						which = availablegeckomercs
-						value = 1.15
+						value = 1.25
 				}
 			remove_country_modifier = 130percentavailablemercs
 		}	
@@ -3106,7 +3107,7 @@ picture = COURT_eventPicture
 		NOT = {
 			check_variable = {
 								which = availablegeckomercs
-								value = 1.15
+								value = 1.25
 							}
 		}	
 	}	
@@ -3132,7 +3133,7 @@ picture = COURT_eventPicture
 			}
 			set_variable = {            
 						which = availablegeckomercs
-						value = 1.3
+						value = 1.4
 				}	
 			add_country_modifier = {
 					name = "130percentavailablemercs"
@@ -3142,7 +3143,7 @@ picture = COURT_eventPicture
 		else = {
 				set_variable = {            
 						which = availablegeckomercs
-						value = 1.15
+						value = 1.25
 				}
 			}	
 	}

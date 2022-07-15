@@ -1394,11 +1394,11 @@ corrupt_officials = {
 
 scaled_trade_league_leader = { #scaled by number of members
 	trade_steering = 0.025
+	development_cost = -0.01
 }
 
 in_trade_league = {
 	global_ship_trade_power = 0.2
-	diplomatic_upkeep = -1
 }
 
 ##################################################
@@ -1761,7 +1761,7 @@ over_governing_capacity_modifier = {
 	#ae_impact = 0.5
 	improve_relation_modifier = -0.5
 	core_creation = 0.4
-	global_manpower_modifier = -0.3
+	global_manpower_modifier = -0.6
 	advisor_cost = 1
 	monthly_militarized_society = -1.5
 	defensiveness = -0.35
