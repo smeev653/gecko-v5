@@ -418,7 +418,7 @@ DAN_ideas = {
 FRA_ideas = {
 	start = {
 		build_cost = -0.1
-		global_manpower_modifier = 0.15
+		cavalry_power = 0.10
 	}
 	
 	bonus = {
@@ -431,8 +431,7 @@ FRA_ideas = {
 	free = yes		#will be added at load.
 	
 	french_language_in_all_courts = {
-		cavalry_power = 0.10
-		cavalry_cost = -0.1
+		global_manpower_modifier = 0.15
 	}
 	elan = {
 		land_morale = 0.20
@@ -1158,7 +1157,7 @@ PER_ideas = {
 
 BUR_Ideas = {
 	start = {
-		land_morale = 0.1
+		global_manpower_modifier = 0.20
 		num_accepted_cultures = 2
 	}
 	
@@ -1174,6 +1173,7 @@ BUR_Ideas = {
 		mercenary_discipline = 0.05
 	}
 	compagnies_ordonnance = {
+		land_morale = 0.1
 		merc_maintenance_modifier = -0.15
 	}
 	golden_fleece = {
@@ -1183,7 +1183,7 @@ BUR_Ideas = {
 		discipline = 0.05
 	}
 	bur_regimental_system = {
-		global_manpower_modifier = 0.20
+		merc_maintenance_modifier = -0.15
 	}
 	integrated_towns = {
 		trade_efficiency = 0.10
