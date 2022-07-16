@@ -2470,7 +2470,7 @@ estate_jains_indebted_to_jains = {
 				estate_loan = yes
 			}
 			add_loan = {
-				ffixed_interest = 2.5
+				fixed_interest = 2.5
 				duration = 60
 				estate_loan = yes
 			}

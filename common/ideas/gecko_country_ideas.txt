@@ -484,7 +484,7 @@ WES_ideas = {
 BRA_ideas = {
 	start = {
 		infantry_power = 0.10
-		monthly_militarized_society = 0.2
+		development_cost = -0.05
 	}
 	
 	bonus = {
@@ -497,10 +497,11 @@ BRA_ideas = {
 	free = yes		#will be added at load.
 	
 	northern_march = {
-		build_cost = -0.05
+		build_cost = -0.1
 	}
 	bra_pomeranian_wars = {
 		land_morale = 0.10
+		monthly_militarized_society = 0.2
 	}
 	
 	divided_estates = {
