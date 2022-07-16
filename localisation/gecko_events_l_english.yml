@@ -184,3 +184,8 @@
  gecko_crimea_mission.2.t:0 "Settle the Crimea"
  gecko_crimea_mission.2.d:0 "With full control over the Crimean penisular and its lucrative slave trade, we have the resources to settle and make Crimea our yurt."
  gecko_crimea_mission.2.a:0 "The future is bright."
+
+#trade centre
+gecko.43.t:0 "A New Center of Trade!"
+gecko.43.d:0 "After some deliberations, our merchants have successfully made $PROVINCE$ a center of trade."
+gecko.43.a:0 "Good."

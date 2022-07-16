@@ -1031,7 +1031,47 @@ country_decisions = {
 		}
 	}
 
-
+	Create_a_Trade_Hub = {
+	
+		potential = {
+			ai = no
+			has_dlc = "Dharma"
+			NOT = { has_country_modifier = trade_hub_created }
+		}
+		
+		allow = {
+			is_at_war = no
+			any_owned_province = {
+				limit = {
+					area_for_scope_province = {
+								type = all
+								NOT = {
+									province_has_center_of_trade_of_level = 1
+								}
+							}
+					development = 30
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+					NOT = {
+					province_has_center_of_trade_of_level = 1
+					}
+				}
+			}
+			NOT = { has_country_modifier = trade_hub_created }
+			treasury = 200
+			dip_power = 50
+		}
+		
+		effect = {
+			country_event = { id = gecko.43 }
+			add_treasury = -200
+			add_dip_power = -50
+		}
+		
+	}
 
 } #End of the bracket	
 

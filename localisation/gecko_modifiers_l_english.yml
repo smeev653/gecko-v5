@@ -244,6 +244,7 @@ gc_mug_formation_hope:0 "Indian Raid"
 
 berber_fury_2:0 "Berber Fury"
 gc_west_african_integration:0 "West African Integration"
+
 ######province modifiers######
  northern_dvina_estuary_modifier:0 "Northern Dvina Estuary"
  desc_northern_dvina_estuary_modifier:0 "Controlling the important river estuary of Northern Dvina strengthens our hold of the trade in the region."
@@ -260,4 +261,5 @@ gc_west_african_integration:0 "West African Integration"
  merc_recruited:0 "Travel time to these provinces is delayed until our Mercenaries can organise."
  gc_nap_italian_wars_modifier:0 "Victory in the Italian Wars"
  gc_Letat_cest_moi:0 "L'Etat, c'est moi"
- 
+ trade_hub_created_in_province:0 "Trade Hub Created in Province"
+ trade_hub_created:0 "Trade Hub Created"
