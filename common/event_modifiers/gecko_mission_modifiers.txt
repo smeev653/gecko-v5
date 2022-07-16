@@ -478,3 +478,8 @@ gc_Letat_cest_moi = {
 gc_mug_formation_hope = {
 	land_morale = 0.05
 }
+
+gc_west_african_integration = {
+	 	num_accepted_cultures = 1
+		culture_conversion_cost = -0.1
+}

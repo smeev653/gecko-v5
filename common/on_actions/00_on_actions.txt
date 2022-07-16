@@ -40,11 +40,11 @@ on_startup = {
 				OR = {
 					#tag = MOR
 					#tag = SON
-					tag = ZAN
+					#tag = ZAN
 					tag = ETH
 					tag = MAM
-					tag = YAO
-					tag = MAL
+					#tag = YAO
+					#tag = MAL
 			}
 			NOT = { 
 				has_country_flag = PR_discover_africa_flag
