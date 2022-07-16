@@ -1575,6 +1575,7 @@ estate_nobles_vassalise_vulnerable_country = {
 	can_select = {
 		is_free_or_tributary_trigger = yes
 		is_at_war = no
+		always = no
 		num_of_cities = 12
 		any_neighbor_country = {
 			NOT = { has_reform = free_city }
