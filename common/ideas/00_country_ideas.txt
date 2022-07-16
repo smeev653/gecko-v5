@@ -1951,11 +1951,10 @@ ITA_ideas = { #Italian Ideas
 		global_manpower_modifier = 0.2
 	}
 	italian_tax_reform = {
-		technology_cost = -0.05
 		global_tax_modifier = 0.15
 	}
 	heir_to_the_empire = {
-		development_cost = -0.05
+		technology_cost = -0.05
 	}
 	path_to_citizenship = {
 		land_morale = 0.1

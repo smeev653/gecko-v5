@@ -267,9 +267,9 @@ emp_burgundy_1 = {
 				attackers = ENG
 			}
 			OR = {
-			is_bankrupt = yes
-			num_of_loans = 20
-			revanchism = 1
+				is_bankrupt = yes
+				num_of_loans = 10
+				revanchism = 1
 			}
 		}
         effect = {

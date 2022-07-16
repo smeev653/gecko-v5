@@ -9954,7 +9954,7 @@ cairo_defences = {
 
 monuments_of_cairo = {
 	legitimacy = 0.5
-	local_development_cost = 0.15
+	local_development_cost = -0.15
 }
 
 bedouin_amir_al_hajj = {
