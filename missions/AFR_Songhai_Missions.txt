@@ -202,10 +202,10 @@ songhai_historical_conquest_slot = {
 			owns_or_non_sovereign_subject_of = 1132
 		}
 		effect = {
-			custom_tooltip = can_colonize_the_strait_tt
-			hidden_effect = {
-				set_country_flag = can_colonize_the_strait
-			}
+			#custom_tooltip = can_colonize_the_strait_tt
+			#hidden_effect = {
+			#	set_country_flag = can_colonize_the_strait
+			#}
 			add_permanent_claim = 2260
 			add_permanent_claim = 1131
 			add_permanent_claim = 1123
@@ -641,86 +641,86 @@ songhai_maghreb_slot = {
 	}
 
 	#Get contact with Morocco
-	son_contact_with_morocco = {
-		icon = mission_control_the_barbary_coast
-		required_missions = {
-			
-		}
-		position = 5
-		provinces_to_highlight = {
-			OR = {
-				area = western_morocco_area
-				area = southern_morocco_area
-				area = northern_morocco_area
-				area = marrekesh_area
-			}
-			NOT = { has_discovered = ROOT }
-		}
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = son_contact_with_morocco_tt
-				any_province = {
-					OR = {
-						area = western_morocco_area
-						area = southern_morocco_area
-						area = northern_morocco_area
-						area = marrekesh_area
-					}
-					has_discovered = ROOT
-				}
-			}
-		}
-		effect = {
-			sus_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			tafilalt_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			southern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			marrekesh_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
+	#son_contact_with_morocco = {
+	#	icon = mission_control_the_barbary_coast
+	#	required_missions = {
+	#		
+	#	}
+	#	position = 5
+	#	provinces_to_highlight = {
+	#		OR = {
+	#			area = western_morocco_area
+	#			area = southern_morocco_area
+	#			area = northern_morocco_area
+	#			area = marrekesh_area
+	#		}
+	#		NOT = { has_discovered = ROOT }
+	#	}
+	#	trigger = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = son_contact_with_morocco_tt
+	#			any_province = {
+	#				OR = {
+	#					area = western_morocco_area
+	#					area = southern_morocco_area
+	#					area = northern_morocco_area
+	#					area = marrekesh_area
+	#				}
+	#				has_discovered = ROOT
+	#			}
+	#		}
+	#	}
+	#	effect = {
+	#		sus_area = {
+	#			limit = {
+	#				NOT = { is_core = ROOT }
+	#				NOT = { is_permanent_claim = ROOT }
+	#			}
+	#			add_permanent_claim = ROOT
+	#		}
+	#		tafilalt_area = {
+	#			limit = {
+	#				NOT = { is_core = ROOT }
+	#				NOT = { is_permanent_claim = ROOT }
+	#			}
+	#			add_permanent_claim = ROOT
+	#		}
+	#		western_morocco_area = {
+	#			limit = {
+	#				NOT = { is_core = ROOT }
+	#				NOT = { is_permanent_claim = ROOT }
+	#			}
+	#			add_permanent_claim = ROOT
+	#		}
+	#		southern_morocco_area = {
+	#			limit = {
+	#				NOT = { is_core = ROOT }
+	#				NOT = { is_permanent_claim = ROOT }
+	#			}
+	#			add_permanent_claim = ROOT
+	#		}
+	#		northern_morocco_area = {
+	#			limit = {
+	#				NOT = { is_core = ROOT }
+	#				NOT = { is_permanent_claim = ROOT }
+	#			}
+	#			add_permanent_claim = ROOT
+	#		}
+	#		marrekesh_area = {
+	#			limit = {
+	#				NOT = { is_core = ROOT }
+	#				NOT = { is_permanent_claim = ROOT }
+	#			}
+	#			add_permanent_claim = ROOT
+	#		}
+	#	}
+	#}
 
 	#Invade Maghreb
 	son_invade_maghreb = {
 		icon = mission_pacify_the_berbers
 		required_missions = {
-			son_contact_with_morocco
+			
 		}
 		position = 6
 		provinces_to_highlight = {

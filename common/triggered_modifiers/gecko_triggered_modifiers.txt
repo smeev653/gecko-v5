@@ -418,12 +418,11 @@ African_Gold = {
 
 African_Slave_Trade = {
 	potential = {
-		NOT = { technology_group = western }
 	}
 
 	trigger = {
 		num_of_owned_provinces_with = {
-			value = 5
+			value = 10
 			continent = africa
 			trade_goods = slaves
 		}		
