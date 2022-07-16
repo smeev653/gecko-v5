@@ -367,3 +367,5 @@ trade_hub_created_in_province = {
 	local_development_cost = 0.15
 	trade_value_modifier = -0.2
 }
+trade_hub_created = {
+}
