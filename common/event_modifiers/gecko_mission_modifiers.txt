@@ -402,7 +402,10 @@ zan_conversion_of_fetishist = {
 
 berber_fury = {
 	land_morale = 0.1
-	province_warscore_cost = -0.1
+}
+
+berber_fury_2 = {
+	province_warscore_cost = -0.35
 }
 
 mor_privateering = {

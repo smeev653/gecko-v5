@@ -1370,7 +1370,7 @@ palestine_area = { #3
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 4310 2308 4298
+	332 2303 4310  4298
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
@@ -1401,7 +1401,7 @@ shahrizor_area = {	#4
 
 al_jazira_area = { #5
 	color = { 92 200 92 }
-	 411 2309 2314 407 4292
+	 2308 411 2309  407 4292
 }
 
 
@@ -1481,7 +1481,7 @@ mascat_area = { #3 (Batinah and Muscat coast
 
 syrian_desert_area = { #3
 	color = { 219 30 57 } 
-	405 4270 4271 
+	405 4270 4271 2314
 }
 
 ########################################

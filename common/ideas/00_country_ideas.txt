@@ -1577,7 +1577,7 @@ TIM_ideas = {
 	}
 	
 	the_mantle_of_the_great_khan = {
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 	riches_of_the_silk_road = {
 		global_own_trade_power = 0.25

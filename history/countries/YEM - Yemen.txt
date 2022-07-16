@@ -5,7 +5,7 @@ religion = shiite
 technology_group = muslim
 capital = 4280	# Taiz
 religious_school = shafii_school
-mercantilism = 25
+mercantilism = 10
 #Rasulids
 1377.1.1 = {
 	monarch = {

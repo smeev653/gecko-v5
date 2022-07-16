@@ -57,7 +57,7 @@ change_estate_land_share = {
 	
 	add_country_modifier = {
 		name = "berber_fury_2"
-		duration = 5475
+		duration = 1825
 	}
 }
 

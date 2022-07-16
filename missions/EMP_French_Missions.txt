@@ -1194,16 +1194,16 @@ emp_france_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}	
-			177 = {
-				if = {
-					limit = {	
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}	
-				center_of_trade = 1
-			}	
+			#177 = {
+			#	if = {
+			#		limit = {	
+			#			NOT = {
+			#				province_has_center_of_trade_of_level = 3
+			#			}
+			#		}
+			#	}	
+			#	center_of_trade = 1
+			#}	
 		}
 	}
 	emp_fra_toulon_dockyard = {
