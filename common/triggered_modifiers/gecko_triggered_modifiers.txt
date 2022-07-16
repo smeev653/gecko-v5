@@ -147,6 +147,7 @@ We_stand_alone = {
 				
 				NOT = { num_of_allies = 1 }
 				NOT = { is_hegemon = yes }
+				NOT = { is_colonial_nation = yes }	
 				#revanchism = 1
 				#had_recent_war = 5
 				NOT = { is_lacking_institutions = yes }
@@ -290,6 +291,7 @@ War_chest = {
 		years_of_income = 1.25
 		NOT = { corruption = 1 }
 		NOT = { num_of_loans = 1 }
+		NOT = { is_colonial_nation = yes }	
 		is_at_war = yes
 		land_maintenance = 1
 		army_size_percentage = 0.3
