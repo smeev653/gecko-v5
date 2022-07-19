@@ -679,6 +679,10 @@ tr_russia_exclusive_1 = {
 			}
 		}
 		trigger = {
+			AND = {
+						NOT = { current_age = age_of_discovery }
+						NOT = { current_age = age_of_reformation }
+					}
 			bulgaria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
