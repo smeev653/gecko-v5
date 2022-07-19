@@ -135,13 +135,6 @@ dlh_east_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			bihar_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	dlh_jnp_reconquest_2 = {
@@ -153,7 +146,6 @@ dlh_east_missions = {
 				area = lower_doab_area
 				area = oudh_area
 				area = purvanchal_area
-				area = bihar_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -169,10 +161,6 @@ dlh_east_missions = {
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
 			purvanchal_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			bihar_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
@@ -194,7 +182,6 @@ dlh_east_missions = {
 				area = upper_doab_area
 				area = lower_doab_area
 				area = purvanchal_area
-				area = bihar_area
 				province_id = 524
 			}
 		}
@@ -237,13 +224,6 @@ dlh_east_missions = {
 					devastation = 1
 				}
 			}
-			bihar_area = {
-				type = all
-				owned_by = ROOT
-				NOT = {
-					devastation = 1
-				}
-			}
 		}
 		effect = {
 			custom_tooltip = dlh_grand_trunk_road.tooltip
@@ -256,7 +236,6 @@ dlh_east_missions = {
 							area = upper_doab_area
 							area = lower_doab_area
 							area = purvanchal_area
-							area = bihar_area
 						}
 					}
 					add_province_modifier = {
