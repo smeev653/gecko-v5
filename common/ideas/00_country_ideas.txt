@@ -212,7 +212,7 @@ RUS_ideas = {
 	}
 
 	bonus = {
-		fire_damage = 0.15
+		fire_damage = 0.10
 	}
 
 	trigger = {
