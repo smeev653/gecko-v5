@@ -1169,57 +1169,7 @@ gc_cri_branch_5 = {
 				name = "integrating_the_steppe_peoples"
 				duration = -1
 			}
-			mongolia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
-	mission_conquer_mongolia = {
-		icon = mission_chinese_general_riding
-		required_missions = { mission_conquer_central_asia }
-		position = 2
-		provinces_to_highlight = {
-			region = mongolia_region
-			NOT = {
-				country_or_subject_holds = ROOT
-			}
-			NOT = {
-				is_empty = yes
-			}
-		}
-		trigger = {
-			owns_core_province = 2190
-			custom_trigger_tooltip = {
-				tooltip = mongol_china_mission_tooltip
-				mongolia_region = {
-					type = all
-					OR = {
-						is_empty = yes
-						country_or_subject_holds = ROOT
-					}
-				}
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					NOT = {
-						government_rank = 3
-					}
-				}
-				set_government_rank = 3
-			}
-			2190 = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
-				change_culture = ROOT
-			}
-		}
-	}
 } #End Branch 5
