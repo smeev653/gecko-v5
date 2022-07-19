@@ -791,7 +791,7 @@ AHU_ideas = {
 	}
 	gc_AHU_NI_3 = {
 		land_morale = 0.15
-		infantry_power = 0.15
+		infantry_power = 0.10
 	}
 	gc_fugger_banks = {
 		build_cost = -0.10
