@@ -86,7 +86,8 @@ kaiser_of_europe = {
 }
 
 third_rome = {
-	land_forcelimit_modifier = 0.20
+	land_forcelimit_modifier = 0.15
+	fire_damage = 0.05
 }
 
 mor_barbary_pirate_coast = {
