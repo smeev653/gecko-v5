@@ -533,7 +533,7 @@ base_values = {
 	governing_capacity = 200
 	num_accepted_cultures = 2
 	monthly_splendor = 1
-	artillery_bonus_vs_fort = 5
+	artillery_bonus_vs_fort = 4
 	cav_to_inf_ratio = 1
 	merc_maintenance_modifier = 0.5
 	monthly_heir_claim_increase = 0.208
@@ -576,6 +576,7 @@ ai_nation = {
 		brahmins_other_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
+		min_autonomy = -25
 }
 
 
@@ -897,6 +898,7 @@ num_of_marriages = {
 }
 
 num_of_provinces = {
+	land_forcelimit = -0.1
 }
 
 # Multiplied by Development
@@ -1350,12 +1352,13 @@ gov_rank_10 = {
 
 # For autonomy mechanics
 autonomy_increased = {
-	local_unrest = -10
 	picture="autonomy_increased"
+	local_autonomy = 0.1
 }
 
 autonomy_decreased = {
 	local_unrest = 10
+	local_autonomy = -0.1
 }
 
 revolution_target = {
