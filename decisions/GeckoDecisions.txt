@@ -455,6 +455,7 @@ country_decisions = {
 	PR_manpower_edict = {
 		major = yes
 		potential = {
+			always = no
 			AND = {
 				ai = no
 				NOT = { has_country_modifier = PR_manpower_edict_cooldown }
@@ -1071,7 +1072,6 @@ country_decisions = {
 		}
 		
 	}
-
 } #End of the bracket	
 
 
