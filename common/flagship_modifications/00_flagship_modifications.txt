@@ -213,7 +213,7 @@ portuguese_trade_route_map = {
         normal_or_historical_nations = yes
     }
 	modifier = {
-        trade_power_in_fleet_modifier = 2
+        #trade_power_in_fleet_modifier = 2
         naval_maintenance_flagship_modifier = 0.25
 	}
     ai_trade_score = {

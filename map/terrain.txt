@@ -148,6 +148,7 @@ categories =  {
 			6187 6188 6189 
 			6182 6180 6183 6185 6191 168 4385 237 6190
 			4769 6196 6197 6199 6202 91 99 95 96 4770 4381 #gc netherlands
+			149 1764 #gc ottos
 			}		
 	}
 	
@@ -160,7 +161,7 @@ categories =  {
 		movement_cost = 1.0
 		defence = 1
 		supply_limit = 4
-		local_development_cost = 0.2
+		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9
 		
 		terrain_override = { 
@@ -320,7 +321,8 @@ categories =  {
 			6112 #gcbohemia
 			6159 6160 6161 6162 6163 6177 6178 6179 6204 6205 6206 6208 #gc germany
 			6201 6203 6200 #gc netherlands
-			149 #gc ottos
+			2750 4703
+
 		}
 	}
 	
@@ -654,7 +656,7 @@ categories =  {
 			1748 2754
 			225
 			2297 327 2313 411 2199 2208 464 4314 2300 4308 4309 #Turkey and Caucasus
-			420 421 425 2203 2307 4307 #Caucasus
+			420 421 425 2203 2307 #Caucasus
 			428  454 442 441 1973 444 446 450 453 2213 2214 2215 2227 2228 4343 4337 #Iran, Transoxiana & Balkh
 			504 505 519 528 541 569 2031 2051 2052 2053 2054 2065 2067 2072
 			 2999
@@ -681,7 +683,6 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			2797 4319 1231 1234 2322 1220 4033 #smeev nile provinces
 			6018 6022 6030 #aba new nile provinces
-			324 #Karaman
 			1751 #Sebtah
 			226 #Gibraltar
 			6114 6115 6116 #bunker mod merge
@@ -745,10 +746,9 @@ categories =  {
 			1798 1799 #smeev change
 			#405 #smeev change
 			6113 #bunker mod merge
+			324 #Karaman
 			6121
-			156 #Temes 
-			4239 #Belgrade
-			2750 4703 4311 4312 4315 4307 4702 4705 4779 #otto terrain changes
+			 4311 4312 4315 4307 4702 4705 4779 #otto terrain changes
 		}
 	}
 
