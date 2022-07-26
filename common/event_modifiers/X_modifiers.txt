@@ -1,3 +1,110 @@
+########################################
+# General Modifiers
+########################################
 X_full_state_prosperity_pmod = {
 	local_prosperity_growth = -1
+}
+
+########################################
+# Modifiers for Venice
+########################################
+X_VEN_monopolio_adriatico_pmod = {
+	province_trade_power_modifier = 0.35
+}
+
+X_VEN_basilica_di_san_biagio_pmod = {
+	local_years_of_nationalism = -10
+	local_tax_modifier = 0.25
+}
+
+X_VEN_reduced_ottoman_meddling_cmod = {
+	global_foreign_trade_power = 0.1
+	embargo_efficiency = 0.25
+}
+
+X_VEN_armada_cmod = {
+	naval_maintenance_modifier = -0.20
+	global_sailors_modifier = 0.30
+}
+
+X_VEN_dalmatian_fortifications_pmod = {
+	local_defensiveness = 0.45
+}
+
+X_VEN_contrafossa_pmod = {
+	local_hostile_movement_speed = -0.5
+	blockade_force_required = 1
+}
+
+X_VEN_generale_da_mar_cmod = {
+	admiral_cost = -0.25
+	republican_tradition = 0.2
+}
+
+X_VEN_bulwark_of_europe_pmod = {
+	local_sailors_modifier = 1
+	local_ship_repair = 0.25
+	galley_power = 0.1
+}
+
+X_VEN_morean_development_pmod = {
+	local_development_cost = -0.1
+	local_build_cost = -0.10
+}
+
+X_VEN_renewed_viticulure_pmod = {
+	trade_goods_size_modifier = 0.50
+}
+
+X_VEN_greek_ambition_cmod = {
+	manpower_recovery_speed = 0.20
+	prestige = 1
+}
+
+X_VEN_walls_of_nicosia_pmod = {
+	local_hostile_movement_speed = -0.5
+	local_defensiveness = 0.25
+	allowed_num_of_buildings = 1
+}
+
+X_VEN_port_of_famagusta_pmod = {
+	local_ship_cost = -0.25
+	local_ship_repair = 0.2
+	placed_merchant_power = 10
+}
+
+X_VEN_cypriot_sammet_pmod = {
+	trade_goods_size = 0.5
+	trade_value_modifier = 0.15
+}
+
+X_VEN_mercantile_system_cmod = {
+	mercantilism_cost = -0.33
+}
+
+X_VEN_venetokratia_cmod = {
+	tolerance_heretic = 3
+	global_manpower_modifier = 0.1
+}
+
+X_VEN_ottomans_defeated_cmod = {
+	land_morale = 0.1
+}
+
+X_VEN_innovative_tactics_cmod = {
+	mil_tech_cost_modifier = -0.1
+}
+
+X_VEN_galilean_ballistics_cmod = {
+	artillery_fire = 1
+}
+
+X_VEN_stato_da_mar_cmod = {
+	administrative_efficiency = 0.05
+	state_maintenance_modifier = -0.10
+	land_forcelimit_modifier = 0.1
+}
+
+X_VEN_magistrato_al_sal_cmod = {
+	global_tax_modifier = 0.15
 }

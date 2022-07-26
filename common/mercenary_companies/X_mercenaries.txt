@@ -1,0 +1,21 @@
+#Stratioti
+merc_X_VEN_stratioti = {
+	sprites = { easterngfx_sprite_pack }
+    trigger = {	
+		NOT = { has_country_modifier = merc_spawn_timer }
+		NOT = {
+			check_variable = {
+				which = geckomercvalue
+				which = geckomercFL
+			}
+		}
+		mission_completed = X_VEN_mission_24
+	}
+	regiments_per_development = 0.04
+	cavalry_weight = 1
+	modifier = {
+		shock_damage = 0.50
+		movement_speed = 0.20
+		cavalry_flanking = 0.33
+	}
+}

@@ -1,0 +1,350 @@
+########################################
+# Events for Venice
+########################################
+namespace = X_VEN_events
+
+#The Balkan Latin Republic
+country_event = {
+	id = X_VEN_events.1
+	title = X_VEN_events.1.t
+	desc = X_VEN_events.1.d1
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = X_VEN_events.1.a
+		add_adm_power = 100
+		137 = {
+			if = { 
+				limit = { owned_by = ROOT }
+				add_base_tax = 1
+				if = {
+					limit = {
+						religion = catholic
+						has_owner_religion = yes
+						has_cardinal = no
+					}
+					add_cardinal = yes
+				}
+				add_latest_building = {
+					tax = yes
+					builder = ROOT
+				}
+				add_province_modifier = {
+					name = X_VEN_basilica_di_san_biagio_pmod
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.1.b
+		add_dip_power = 100
+		137 = {
+			if = { 
+				limit = { owned_by = ROOT }
+				add_base_production = 1
+				add_latest_building = {
+					trade = yes
+					builder = ROOT
+				}
+				X_center_of_trade_effect = yes
+			}
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.1.c
+		add_mil_power = 100
+		137 = {
+			if = { 
+				limit = { owned_by = ROOT }
+				add_base_manpower = 1
+				if = {
+					limit {
+						all_neighbor_province = {
+							has_fort_building_trigger = no
+						}
+					}
+					add_latest_building = {
+						fort = yes
+						builder = ROOT
+					}
+				}
+			}
+		}
+		bosnia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		rascia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		serbia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+#A Pirate Captain
+country_event = {
+	id = X_VEN_events.2
+	title = X_VEN_events.2.t
+	desc = X_VEN_events.2.d1
+	picture = PIRATES_CAPTURED_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Execute him and commandeer their ships
+		name = X_VEN_events.2.a
+		add_navy_tradition = 30
+		4754 = {
+			limit = { owned_by = ROOT }
+			custom_tooltip = X_VEN_event_2_tt
+			hidden_effect = {
+				ROOT = {
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+				}
+			}
+		}
+	}
+	
+	option = { #More captains
+		name = X_VEN_events.2.b
+		add_navy_tradition = -30
+		create_admiral = { tradition = 90 culture = albanian}
+		add_yearly_sailors = 5
+	}
+	
+	option = { #An advisor
+		name = X_VEN_events.2.c
+		define_advisor = {
+			type = naval_reformer
+			skill = 3
+			discount = yes
+			culture = albanian
+			religion = orthodox
+		}
+	}
+}
+
+#The Sovereignty of Cyprus
+country_event = {
+	id = X_VEN_events.3
+	title = X_VEN_events.3.t
+	desc = X_VEN_events.3.d1
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					owns_or_subject_of = 321
+					NOT = { tag = ROOT }
+					NOT = { tag = CYP }
+				}
+				save_event_target_as = X_previous_cyprus_controller_event_target
+			}
+		}
+	}
+	
+	option = { #At long last
+		name = X_VEN_events.3.a
+		321 = {
+			cede_province = ROOT
+			add_core = ROOT
+			X_center_of_trade_effect = yes
+		}
+		if = {
+			limit = {
+				event_target:X_previous_cyprus_controller_event_target = {
+					NOT = { tag = ROOT }
+					NOT = { tag = CYP }
+				}
+			}
+			event_target:X_previous_cyprus_controller_event_target = {
+				country_event = { id = X_VEN_events.4 days = 30 }
+			}
+		}
+	}
+	
+	option = { #Now is not the time
+		name = X_VEN_events.3.b
+		add_prestige = -5
+	}
+}
+
+#Venice Lays Claim to Cyprus
+country_event = {
+	id = X_VEN_events.4
+	title = X_VEN_events.4.t
+	desc = X_VEN_events.4.d1
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes 
+	major_trigger = {
+		OR = {
+			tag = FROM
+			tag = ROOT
+		}
+	}
+	
+	option = { #An unacceptable offense
+		ai_chance = { factor = 0 }
+		name = X_VEN_events.4.a
+		if = {
+			limit = { is_core = 321 }
+			declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_core
+				war_goal_province = 321
+			}
+		}
+		else_if = {
+			limit = {
+				321 = { 
+					OR = {
+						is_permanent_claim = ROOT
+						is_claim = ROOT
+					}
+				}
+			}
+			declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_conquest
+				war_goal_province = 321
+			}
+		}
+		else = {
+			321 = { add_claim = ROOT }
+			declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_conquest
+				war_goal_province = 321
+			}
+		}
+	}
+	
+	option = { #Peace is the best option
+		ai_chance = { factor = 100 }
+		name = X_VEN_events.4.b
+		FROM = { add_truce_with = ROOT }
+		add_truce_with = FROM
+		add_prestige = -5
+	}	
+}
+
+#Cypriot Goods
+country_event = {
+	id = X_VEN_events.5
+	title = X_VEN_events.5.t
+	desc = X_VEN_events.5.d1
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = X_VEN_events.5.a
+		321 = {
+			change_trade_goods = salt
+			add_base_tax = 5
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.b
+		321 = {
+			change_trade_goods = sugar
+			add_base_production = 5
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.c
+		321 = {
+			change_trade_goods = grain
+			add_base_manpower = 5
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.d
+		321 = {
+			change_trade_goods = silk
+			add_province_modifier = {
+				name = X_VEN_cypriot_sammet_pmod
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = X_VEN_events.5.e
+		321 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 10
+			trigger = {
+				trade_goods = wine
+			}
+			custom_tooltip = MONOPOLY_INCOME_WINE_DESC
+		}
+	}
+}
+
+#Riches of the Aegean
+country_event = {
+	id = X_VEN_events.6
+	title = X_VEN_events.6.t
+	desc = X_VEN_events.6.d1
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = X_VEN_events.6.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = balkan_region
+					region = anatolia_region
+				}
+				province_is_on_an_island = yes	
+				culture = greek
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			X_center_of_trade_effect = yes
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}

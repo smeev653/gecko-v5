@@ -322,6 +322,7 @@ merc_stratioti = {
     #home_province = 4174
 	sprites = { easterngfx_sprite_pack }
     trigger = {	
+		always = no
 		NOT = {has_country_modifier = merc_spawn_timer }
 		 NOT = {
 				check_variable = {
