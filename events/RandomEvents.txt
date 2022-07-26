@@ -12716,6 +12716,7 @@ country_event = {
 	trigger = {
 		salt = 1
 		NOT = { has_country_modifier = salt_crisis }
+		NOT = { mission_completed = X_VEN_mission_30 }
 	}
 
 
