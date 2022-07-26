@@ -1,0 +1,56 @@
+estate_gc_sipahi = {
+	icon = privilege_raise_host
+	max_absolutism = -5
+	loyalty = 0.10
+	influence = 0.20
+	cooldown_years = 10
+	on_cooldown_expires = { 
+		country_event = { id = gecko.8 }
+	}
+	is_valid = {
+		tag = TUR
+		OR = {
+			cavalry_fraction = 0.01
+		}
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_gc_sipahi }
+		NOT = { has_estate_privilege = estate_gc_noble_levies }
+	}
+	#mechanics = {
+	#	enables_cossack_regiments
+	#}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	#modifier = {
+	#	special_unit_forcelimit = 0.125
+	#}
+	on_granted = {
+		create_general = {
+			tradition = 30
+		}
+		capital_scope = {
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+		}
+	}
+	on_revoked = {
+	}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
