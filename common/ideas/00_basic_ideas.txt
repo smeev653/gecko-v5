@@ -13,12 +13,6 @@ aristocracy_ideas = {
 	bonus = {
 		fire_damage_received = -0.10
 	}
-	
-	noble_knights = {
-		cavalry_power = 0.10
-		cavalry_flanking = 1
-	}
-	
 	military_traditions = {
 		mil_tech_cost_modifier  = -0.1
 	}	
@@ -31,6 +25,10 @@ aristocracy_ideas = {
 		prestige_from_land = 1
 		nobles_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
+	}
+	noble_knights = {
+		cavalry_power = 0.10
+		cavalry_flanking = 1
 	}
 	noble_resilience = {
 		leader_land_manuever = 2
