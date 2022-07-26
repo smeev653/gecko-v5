@@ -807,9 +807,13 @@ country_event = { #Ethopian Ruler Failsafe
 country_event = {
 	id = gecko.8
 	title = gecko.8.t
-	desc = {
-		trigger = { has_estate_privilege = estate_gc_noble_levies }
-		desc = gecko.8.d
+	desc = gecko.8.d
+		trigger = {
+			OR = {
+				 has_estate_privilege = estate_gc_sipahi 
+				 has_estate_privilege = estate_gc_noble_levies
+			} 
+
 	}
 	picture = MAMLUK_WARRIORS_eventPicture
 
@@ -835,6 +839,7 @@ country_event = {
 					}
 			}
 			remove_estate_privilege = estate_gc_noble_levies
+			remove_estate_privilege = estate_gc_sipahi
 		}
 		if = {
 			limit = {
@@ -851,6 +856,7 @@ country_event = {
 					}
 			}
 			remove_estate_privilege = estate_gc_noble_levies
+			remove_estate_privilege = estate_gc_sipahi
 		}		
 	}
 }
@@ -1402,7 +1408,7 @@ picture = COURT_eventPicture
 		is_looted = yes
 	  }
 	  num_of_loans = 11
-	  revanchism = 36
+	  revanchism = 25
 	  any_country = {
 						total_development = ROOT
 	  }
