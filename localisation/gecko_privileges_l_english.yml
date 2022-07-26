@@ -25,6 +25,9 @@
  estate_gc_sipahi:0 "Promote the Timariot System"
  estate_gc_sipahi_desc:0 " "
 
+ estate_gc_expand_sipahi:0 "Expand the Timariot System"
+ estate_gc_expand_sipahi_desc:0 " "
+
 #bunker mod merge
  estate_mamluks_land_rights:0 "Mamluk Land Rights"
  estate_mamluks_land_rights_desc:0 "The different Mamluk factions are as greedy as they are scheming. To keep them in line they all need to have their own piece of land to operate in."

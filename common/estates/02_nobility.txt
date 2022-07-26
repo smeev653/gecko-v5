@@ -230,6 +230,7 @@ estate_nobles =
 		estate_nobles_junker_primacy
 		estate_nobles_command_of_the_military
 		estate_gc_sipahi
+		estate_gc_expand_sipahi
 		estate_gc_noble_levies
 		estate_nobles_strong_duchies
 		estate_nobles_golden_liberty
