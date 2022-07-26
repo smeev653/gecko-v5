@@ -67,6 +67,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = EGY
+			add_government_reform = ottoman_government 
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
