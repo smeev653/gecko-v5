@@ -684,8 +684,6 @@ west_siberia_region = {
 		yrtesh_area
 		ob_area
 		central_siberia_area
-		tunguska_area
-		irkutsk_area
 		ishim_area
 		kara_area
 		aqmola_area
