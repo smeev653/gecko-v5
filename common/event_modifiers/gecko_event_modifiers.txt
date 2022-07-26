@@ -161,8 +161,6 @@ gc_urbanisation = {
 }
 
 PR_manpower_edict_province = {
-	local_manpower_modifier = 0.25
-	local_state_maintenance_modifier = 2.0
 }
 
 PR_manpower_edict_cooldown = {
@@ -258,7 +256,7 @@ critical_province = {
 }
 
 gecko_b = {
-	inflation_action_cost = 0.40
+	#inflation_action_cost = 0.40
 	reinforce_speed = -0.15
 	reform_progress_growth = -0.5
 	army_tradition_decay = 0.005
@@ -336,6 +334,7 @@ gecko_recovery = {
 	war_exhaustion = -1
 	global_autonomy = -0.3
 	interest = -0.5
+	stability_cost_modifier = -1
 }
 
 increased_merc_recruitment = {
@@ -367,4 +366,9 @@ trade_hub_created_in_province = {
 	trade_value_modifier = -0.2
 }
 trade_hub_created = {
+}
+
+regional_conquest = {
+	local_development_cost = -0.05
+	local_build_cost = -0.05
 }
