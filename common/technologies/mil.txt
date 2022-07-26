@@ -435,7 +435,8 @@ technology = {
 	enable = ha_xoloti
 	enable = aboriginal_swarm_cav
 	enable = pacific_swarm_cav
-	
+	conscription_center = yes
+
 	combat_width = 2
 }
 
@@ -505,8 +506,6 @@ technology = {
 	artillery_fire		=	2.0
 	cavalry_shock		=	0.25
 	combat_width = 2
-	
-	conscription_center = yes
 
 	
 	enable = polish_winged_hussar	
