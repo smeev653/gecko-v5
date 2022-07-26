@@ -224,7 +224,8 @@ gecko_recovery:0 "Revanchism"
 increased_merc_recruitment:0 "Increased Mercenary Recruitment"
 increased_merc_quality:0 "Increased Mercenary Quality"
 Over_merc_limit:0 "Over Mercenary Forcelimit"
-
+streltsy_buff:0 "Streltsy Expanded"
+sipahi_buff:0 "Timariot System Expanded"
 #venice
 
 gc_ven_urban_renewal:0 "Urban Renewal"
