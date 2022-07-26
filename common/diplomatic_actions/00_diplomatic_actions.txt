@@ -449,6 +449,15 @@ request_to_join_trade_league = {
 			}
 		}
 	}
+	condition = {
+		tooltip = gc_knights
+		potential = {
+			ROOT = { tag = KNI}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 invite_to_trade_league = {
@@ -462,6 +471,36 @@ invite_to_trade_league = {
 					trade_share = {
 						country = root
 						share = 1
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = gc_knights
+		potential = {
+			ROOT = { tag = KNI}
+			NOT = {
+				is_year = 1550
+			}
+		}	
+		allow = {
+			always = no
+		}
+	}
+	
+	condition = {
+		tooltip = gc_knights
+		potential = {
+			NOT = {
+				is_year = 1550
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = KNI				
 					}
 				}
 			}
@@ -496,7 +535,38 @@ guaranteeaction = {
 			FROM = { is_at_war = no }
 		}
 	}
+	condition = {
+		tooltip = gc_knights
+		potential = {
+			ROOT = { tag = KNI}
+			NOT = {
+				is_year = 1550
+			}
+		}	
+		allow = {
+			always = no
+		}
+	}
+	
+	condition = {
+		tooltip = gc_knights
+		potential = {
+			NOT = {
+				is_year = 1550
+			}
+		}	
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = {
+						tag = KNI				
+					}
+				}
+			}
+		}
+	}
 }
+
 
 allianceaction = {
 
@@ -600,11 +670,11 @@ allianceaction = {
 		}
 	}
 	condition = {
-		tooltip = gc_naples
+		tooltip = gc_knights
 		potential = {
-			ROOT = { tag = NAP}
+			ROOT = { tag = KNI}
 			NOT = {
-				is_year = 1450
+				is_year = 1550
 			}
 		}	
 		allow = {
@@ -613,23 +683,23 @@ allianceaction = {
 	}
 	
 	condition = {
-		tooltip = gc_to_naples
+		tooltip = gc_knights
 		potential = {
-			ROOT = { ai = yes }
 			NOT = {
-				is_year = 1450
+				is_year = 1550
 			}
 		}	
 		allow = {
 			FROM = {
 				NOT = { 
 					OR = {
-						tag = NAP				
+						tag = KNI				
 					}
 				}
 			}
 		}
 	}
+	
 	
 	condition = {
 		tooltip = gc_denmark
