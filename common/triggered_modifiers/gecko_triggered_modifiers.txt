@@ -659,3 +659,21 @@ Over_merc_limit = {
 	}
 	merc_maintenance_modifier = 1
 }
+
+Knights_vassalised = {
+	potential = {
+		tag = KNI
+		KNI = {
+			is_subject = yes
+		}
+	}
+	trigger = {
+		tag = KNI
+			KNI = {
+			is_subject = yes
+		}
+	}
+	galley_power = -0.2
+	naval_forcelimit = -50
+	naval_maintenance_modifier = 0.9
+}
