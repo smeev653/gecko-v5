@@ -1,8 +1,8 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Pantelleria
-add_core = KNI
-owner = KNI
-controller = KNI
+add_core = JAI
+owner = JAI
+controller = JAI
 culture = sicilian
 religion = catholic
 hre = no
