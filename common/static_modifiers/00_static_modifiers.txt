@@ -285,7 +285,11 @@ patriarch_authority_global = {
 }
 
 pasha_state = {
-
+	local_state_maintenance_modifier = -0.5
+	local_unrest = -2
+	local_autonomy = 0.05
+	local_build_cost = 0.2
+	local_regiment_cost = 0.2
 }
 
 colony_level = {
@@ -1745,8 +1749,8 @@ serfs_recieved_by_cossacks = {
 
 cossacks_modifier = {
 	#cavalry_power = 0.4
-	fire_damage_received = -0.2
-	shock_damage_received = -0.4
+	#fire_damage_received = -0.2
+	#shock_damage_received = -0.4
 }
 
 ########################################
@@ -1792,6 +1796,7 @@ expanded_infrastructure = {
 	local_governing_cost = 1.0
 	local_manpower_modifier = 0.1
 	local_tax_modifier = 0.1
+	local_development_cost = -0.05
 }
 
 centralize_state = {
