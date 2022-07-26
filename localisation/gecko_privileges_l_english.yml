@@ -19,8 +19,11 @@
 
 
 #mamluk privilege
- estate_gc_noble_levies:0 "Recruit Heavy Cavalry"
+ estate_gc_noble_levies:0 "Recruit Cavalry Retinue"
  estate_gc_noble_levies_desc:0 " "
+ 
+ estate_gc_sipahi:0 "Promote the Timariot System"
+ estate_gc_sipahi_desc:0 " "
 
 #bunker mod merge
  estate_mamluks_land_rights:0 "Mamluk Land Rights"
