@@ -88,7 +88,6 @@ change_estate_land_share = {
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
-	add_ruler_personality = lawgiver_personality
 	
 }
 
