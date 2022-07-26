@@ -60,6 +60,7 @@ estate_gc_expand_sipahi = {
 	max_absolutism = -5
 	loyalty = 0.10
 	influence = 0.20
+	cooldown_years = 100
 	is_valid = {
 		tag = TUR
 		OR = {
@@ -74,7 +75,19 @@ estate_gc_expand_sipahi = {
 	#}
 	on_granted = {
 		create_general = {
-			tradition = 30
+			tradition = 50
+		}
+		capital_scope = {
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
 		}
 		add_country_modifier = {
 		 name = "sipahi_buff"
