@@ -7893,7 +7893,9 @@ kiev_pechersk_lavra = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-
+		280 = {
+			controlled_by = ROOT
+		}	
 	}
 
 	#can our country upgrade it?
@@ -9554,6 +9556,9 @@ kaaba = {
 	can_use_modifiers_trigger = {
 		religion_group = muslim
 		has_owner_religion = yes
+		385 = {
+			controlled_by = ROOT
+		}	
 	}
 
 	#can our country upgrade it?
