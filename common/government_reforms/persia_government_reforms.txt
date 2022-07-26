@@ -188,7 +188,7 @@ derbend_organization_reform = { #tier 3
 		global_manpower_modifier = 0.1
 		defensiveness = 0.10
 		global_autonomy = -0.025
-
+		
 		
 	}
 	ai = {

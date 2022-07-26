@@ -54,3 +54,42 @@ estate_gc_sipahi = {
 		factor = 1000
 	}
 }
+
+estate_gc_expand_sipahi = {
+	icon = privilege_raise_host
+	max_absolutism = -5
+	loyalty = 0.10
+	influence = 0.20
+	is_valid = {
+		tag = TUR
+		OR = {
+			cavalry_fraction = 0.01
+		}
+	}
+	can_select = {
+		has_government_reform = derbend_organization_reform
+	}
+	#modifier = {
+	#	special_unit_forcelimit = 0.125
+	#}
+	on_granted = {
+		create_general = {
+			tradition = 30
+		}
+		add_country_modifier = {
+		 name = "sipahi_buff"
+		 duration = -1
+		}
+		
+	}
+	on_revoked = {
+	}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}

@@ -712,7 +712,7 @@
  ESTATE_PRIVILEGE_ON_REVOKED:0 "Revoking will have the following effects:\n$EFFECT$\n"
  ESTATE_PRIVILEGE_MECHANICS_LIST:0 "The following mechanics will be available:\n$MECHANICS$\n"
  ESTATE_PRIVILEGE_MECHANICS_ENTRY:0 "$MECHANIC|Y$\n"
- enables_cossack_regiments:0 "Cossack Regiments"
+ enables_cossack_regiments:0 "Sipahi Regiments"
  enables_rajput_regiments:0 "Rajput Regiments"
  exempt_from_seize_land:0 "Exempt from Seize Land"
  ESTATE_PRIVILEGE_BENEFITS:0 "This Privilege has the following benefits:\n$MODIFIERS$\n\n"

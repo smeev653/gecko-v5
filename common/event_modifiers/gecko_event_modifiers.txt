@@ -342,6 +342,17 @@ increased_merc_recruitment = {
 	land_morale = -0.15
 }
 
+sipahi_buff = {
+	is_cossack_modifier = yes
+	cavalry_power = 0.1
+}
+
+streltsy_buff = {
+	is_streltsy_modifier = yes
+	infantry_power = 0.05
+	fire_damage = 0.05
+}
+
 increased_merc_quality = {
 	is_mercenary_modifier = yes
 	infantry_power = 0.10
