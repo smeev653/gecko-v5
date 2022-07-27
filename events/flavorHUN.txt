@@ -1127,10 +1127,8 @@ country_event = {
 			tag = EOH
 		}
 		has_regency = no
-		OR = {
-			has_country_flag = hun_had_mercenaries_in_slovakia
-			is_year = 1450
-		}
+		is_year = 1465
+		
 		NOT = { is_year = 1500 }
 	}
 	
