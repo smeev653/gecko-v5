@@ -5,7 +5,7 @@ country_decisions = {
 		potential = {
 			OR = {
 				tag = MLO
-				#tag = VEN
+				tag = VEN
 				tag = SIC
 				tag = TTS
 				}
