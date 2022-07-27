@@ -3,7 +3,11 @@ mam_south_missions = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = MAM
+		OR = {
+			tag = MAM
+			tag = EGY
+		}
+		
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
