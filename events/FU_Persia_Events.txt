@@ -280,10 +280,7 @@ country_event = { #Religious Affairs of Shah $MONARCH$
 	fire_only_once = yes 
 	
 	trigger = {
-		OR = {
-			tag = PER 
-			tag = ARL
-		}	
+		tag = PER 
 		OR = {
 			religion_group = muslim 
 			religion_group = zoroastrian_group

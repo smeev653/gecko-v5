@@ -693,7 +693,7 @@
  tur_every_coastal_province_balkan_anatolia_tt: "Every coastal province afflicted by coastal raids will receive:"
  as_long_as_they_are_a_subject_desc: "as long as they remain a subject"
  tur_beginning_of_an_era: "§MThis is the beginning of the Ottoman Era§!"
- tur_if_ade_active_civil_engineer_tt: "If §YAdvisors Expanded§! was active, we would have also received a §YCivil Engineer§! advisor"
+ tur_if_ade_active_civil_engineer_tt: ""
  tur_unlock_organized_pashas_reform_tt: "Unlocks the §YOrganized Pashas§! Government Reform"
  tur_influence_future_rewards_tt: "\nThis option will influence future missions and rewards"
  tur_every_adm_point_grants: "\nThe following modifier will scale with our Sultan's £adm£:"

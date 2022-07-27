@@ -4,10 +4,7 @@ fu_persia_missions_1 = {
 	ai = yes
 	
 	potential = {
-		OR = {
-			tag = PER
-			tag = ARL
-		}	
+			tag = PER	
 	}
 	has_country_shield = yes
 	
@@ -488,10 +485,7 @@ fu_persia_missions_1_islam = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 	}
 	has_country_shield = yes	
 	
@@ -656,10 +650,7 @@ fu_persia_missions_1_zoroastrian = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 		has_country_flag = per_chose_zoroastrianism_flag
 	}
 	has_country_shield = yes	
@@ -810,10 +801,8 @@ fu_persia_missions_2 = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
+		
 	}
 	has_country_shield = yes	
 	
@@ -1424,10 +1413,7 @@ fu_persia_missions_2_islam = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 	}
 	has_country_shield = yes		
 	
@@ -1473,10 +1459,8 @@ fu_persia_missions_2_zoroastrian = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
+
 		has_country_flag = per_chose_zoroastrianism_flag
 	}
 	has_country_shield = yes		
@@ -1651,10 +1635,7 @@ fu_persia_missions_3 = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 	}
 	has_country_shield = yes
 
@@ -2024,10 +2005,7 @@ fu_persia_missions_3_islam = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 	}
 	has_country_shield = yes	
 	
@@ -2068,10 +2046,7 @@ fu_persia_missions_3_zoroastrian = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 		has_country_flag = per_chose_zoroastrianism_flag
 	}
 	has_country_shield = yes	
@@ -2146,10 +2121,7 @@ fu_persia_missions_4 = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 	}
 	has_country_shield = yes	
 	
@@ -2693,10 +2665,7 @@ fu_persia_missions_4_islam = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 	}
 	has_country_shield = yes	
 	
@@ -2848,10 +2817,7 @@ fu_persia_missions_4_zoroastrian = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 		has_country_flag = per_chose_zoroastrianism_flag
 	}
 	has_country_shield = yes
@@ -2910,10 +2876,7 @@ fu_persia_missions_5 = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 	}
 	has_country_shield = yes
 
@@ -3541,10 +3504,7 @@ fu_persia_missions_5_islam = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 		has_country_flag = per_chose_islam_flag
 	}
 	has_country_shield = yes
@@ -3651,10 +3611,7 @@ fu_persia_missions_5_zoroastrian = {
 	ai = yes
 	
 	potential = {
-		OR = {
 			tag = PER
-			tag = ARL
-		}
 		has_country_flag = per_chose_zoroastrianism_flag
 	}
 	has_country_shield = yes	
