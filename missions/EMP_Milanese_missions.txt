@@ -863,7 +863,6 @@ milan_missions_4 = { #Made by Big Boss for Flavor Universalis
 	ai = yes 
 	potential = {
 		tag = MLO
-		if = {
 	}
 	has_country_shield = yes
 	

@@ -3110,17 +3110,8 @@ ottoman_missions_3basic = {
 		required_missions = { tur_piri_reis } 
 		position = 34 
 		provinces_to_highlight = { 
-			OR = { 
-				province_id = 543 
-				province_id = 561 
-				province_id = 4457 
-			}
-			NOT = { owned_by = ROOT } 
 		}
 		trigger = {
-			owns = 543 
-			owns = 561 
-			owns = 4457
 		}
 		effect = {
 			add_country_modifier = { 
