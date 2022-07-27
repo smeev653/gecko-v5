@@ -23,9 +23,9 @@ estate_gc_sipahi = {
 	mechanics = {
 		exempt_from_seize_land
 	}
-	#modifier = {
-	#	special_unit_forcelimit = 0.125
-	#}
+	modifier = {
+		cavalry_cost = -0.1
+	}
 	on_granted = {
 		create_general = {
 			tradition = 30
@@ -68,7 +68,7 @@ estate_gc_expand_sipahi = {
 		}
 	}
 	can_select = {
-		has_government_reform = derbend_organization_reform
+		has_reform = derbend_organization_reform
 	}
 	#modifier = {
 	#	special_unit_forcelimit = 0.125
