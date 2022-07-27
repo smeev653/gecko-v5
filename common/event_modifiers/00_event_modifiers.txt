@@ -3014,9 +3014,8 @@ hun_poorly_maintained_fortifications = {
 }
 
 hun_frontier_fortresses = {
-	defensiveness = 0.25
-	#global_tax_modifier = -0.1
-	max_attrition = 1
+	defensiveness = 0.15
+	global_tax_modifier = -0.1
 }
 
 hun_reformed_colleges = {

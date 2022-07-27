@@ -1168,13 +1168,13 @@ gc_spain_4 = {
 					add_permanent_claim = ROOT
 				}
 				add_mil_power = 150
-				iberia_region = {
-					add_province_modifier = {
-						 name = iberian_trade
-						duration = -1
-						hidden = yes
-					}
-				}
+				#iberia_region = {
+				#	add_province_modifier = {
+				#		 name = iberian_trade
+				#		duration = -1
+				#		hidden = yes
+				#	}
+				#}
 			}
 			else = {
 				sicily_area = {
