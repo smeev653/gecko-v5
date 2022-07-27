@@ -86,8 +86,7 @@ kaiser_of_europe = {
 }
 
 third_rome = {
-	land_forcelimit_modifier = 0.15
-	fire_damage = 0.05
+	land_forcelimit_modifier = 0.10
 }
 
 mor_barbary_pirate_coast = {
@@ -378,9 +377,10 @@ defense_of_burgundy = {
 
 defense_of_anatolia = {
 	land_morale = 0.05
+	naval_morale = 0.05
 	discipline = 0.05
 	land_forcelimit_modifier = 0.5
-	merc_maintenance_modifier = -0.25
+	merc_maintenance_modifier = -0.5
 	mercenary_cost = -0.25
 	mercenary_manpower = 0.5
 	defensiveness = 0.5
@@ -443,15 +443,15 @@ gc_yemeni_trade_modifier = {
 }
 
 consolidated_russia = {
-	trade_value_modifier = 0.1
+	#trade_value_modifier = 0.1
 }
 
 iberian_trade = {
-	trade_value_modifier = 0.1
+	#trade_value_modifier = 0.1
 }
 
 mongol_consolidation = {
-	trade_value_modifier = 0.1
+	#trade_value_modifier = 0.1
 }
 
 lowland_integration = {
@@ -459,7 +459,7 @@ lowland_integration = {
 }
 
 swabian_trade  = {
-	trade_value_modifier = 0.2
+	#trade_value_modifier = 0.2
 }
 
 turkmen_recruitment = {
