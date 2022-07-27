@@ -1698,9 +1698,7 @@ country_event = { #Centralizing the Empire of Osman
 		if = {		
 			limit = { 
 				has_estate = estate_mamluks 
-				NOT = { has_estate_privilege = estate_mamluks_primacy } 
 			}
-			set_estate_privilege = estate_mamluks_primacy
 			hidden_effect = { 
 				change_estate_land_share = {
 					estate = estate_mamluks

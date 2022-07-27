@@ -1,0 +1,31 @@
+
+FU_tatar_vanguard = {
+    regiments_per_development = 0.05
+	cost_modifier = 0.25
+	cavalry_weight = 1
+	artillery_weight = 0
+	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
+    trigger = { 
+		has_country_flag = tur_tatar_vanguard_flag 
+	}
+	modifier = {
+		cavalry_shock = 0.25
+		loot_amount = 0.5
+	}
+}
+
+FU_bektashi_order_janissaries = {
+    regiments_per_development = 0.025
+	cost_modifier = 0.25
+	cavalry_weight = 0
+	artillery_weight = 0
+	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
+    trigger = { 
+		has_country_flag = tur_enable_bektashi_jannisaries
+	}
+	modifier = {
+		infantry_power = 0.05
+		land_morale = 0.1
+	}
+}
+

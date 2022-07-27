@@ -456,7 +456,7 @@ country_event = {
 	}
 }
 
- The Expansion of the Royal Bureaucracy
+#The Expansion of the Royal Bureaucracy
 country_event = {
 	id = flavor_tur.3366
 	title = "flavor_tur.EVTNAME3366"
@@ -521,7 +521,7 @@ country_event = {
 	}
 }
 
- The Great Naval Reform
+#The Great Naval Reform
 country_event = {
 	id = flavor_tur.3367
 	title = "flavor_tur.EVTNAME3367"
