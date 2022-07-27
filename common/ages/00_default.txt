@@ -110,8 +110,8 @@ age_of_discovery = {
 				set_country_flag = feudal_de_jure_law
 			}
 			modifier = {
-				war_exhaustion = -0.03
-				global_autonomy = -0.025
+				war_exhaustion = -0.05
+				#global_autonomy = -0.025
 			}
 			ai_will_do = {
 				factor = 10
@@ -267,7 +267,7 @@ age_of_discovery = {
 				}	
 			}
 			modifier = {
-				defensiveness = 0.25
+				defensiveness = 0.15
 				gold_depletion_chance_modifier = -0.25
 			}
 			ai_will_do = {
