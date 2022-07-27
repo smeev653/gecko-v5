@@ -40,3 +40,35 @@ FU_elite_royal_swiss_guard = {
         discipline = 0.05
 	}
 }
+
+
+FU_baloch = {
+    regiments_per_development = 0.075
+	cost_modifier = 0.85
+	cavalry_weight = 0.2
+	artillery_weight = 0.1
+	cavalry_cap = 12
+	sprites = { muslimgfx_sprite_pack }
+    trigger = { 
+		has_country_flag = per_activate_baloch_and_pashtun_merc_flag
+	}
+	modifier = {
+        land_attrition = -0.2
+		movement_speed = 0.15
+	}
+}
+
+FU_pashtun = {
+    regiments_per_development = 0.05
+	cost_modifier = 0.775
+	cavalry_weight = 0
+	artillery_weight = 0
+	sprites = { muslimgfx_sprite_pack }
+    trigger = { 
+		has_country_flag = per_activate_baloch_and_pashtun_merc_flag
+	}
+	modifier = {
+        infantry_power = 0.05
+		land_morale = 0.05
+	}
+}

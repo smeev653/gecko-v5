@@ -11,7 +11,7 @@
  gecko_mil_vatican_library_tt:0 "§YThe Vatican Library - Military Edition§! will be established in §Y[118.GetName]§!, giving the following effects:\nMilitary Technology Cost: §G-5%§!\nDiscipline: §G+5%§!"
  conquer_habsburgs_title:0 "Conquer the Habsburgs"
  conquer_habsburgs_desc:0 "We must conquer the great city of Vienna and establish our authority as Kayser of Europe."
-
+ change_estate_land_share_5_tt: "Gain §Y5% Estate Land§! for the §YCrown§!" 
  #Mamluk & Egypt
  gecko_mam_mission_1_title:0 "West African Market"
  gecko_mam_mission_2_title:0 "Subjugate Dongola"

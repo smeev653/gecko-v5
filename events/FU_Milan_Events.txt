@@ -284,16 +284,6 @@ country_event = { #Printing Press
 			name = mlo_printing_press_modifier 
 			duration = 9125
 		}
-		if = {
-			limit = {
-				has_global_flag = advisors_expanded_mod_active
-			}
-			define_advisor = {
-				type = researcher 
-				skill = 2 
-				cost_multiplier = 0.25 
-			}
-		}
 	}	
 }
 

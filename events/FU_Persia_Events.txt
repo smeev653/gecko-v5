@@ -1,0 +1,1945 @@
+namespace = FU_Persia_Events
+
+country_event = { #Georgian Slaves in the Persian Empire
+	id = FU_Persia_Events.1
+	title = FU_Persia_Events.1.t 
+	desc = FU_Persia_Events.1.d 
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.1.a 
+		
+		if = {
+			limit = { 
+				NOT = { accepted_culture = georgian } 
+			}
+			custom_tooltip = per_accept_georgian_culture_without_slot_tt
+			hidden_effect = {
+				add_accepted_culture = georgian 
+				add_country_modifier = {
+					name = per_accepted_georgian_culture 
+					duration = -1 
+					hidden = yes 
+				}
+			}
+		}
+		custom_tooltip = per_lenient_towards_georgians_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = { culture = georgian } 
+				random_list = {
+					50 = {
+						add_base_manpower = 1 
+					}
+					50 = {
+						add_base_production = 1 
+					}
+				}
+			}
+			random_owned_area = {
+				limit = { 
+					religion = ROOT 
+					culture = ROOT 
+					owned_by = ROOT 
+				}
+				add_base_tax = 1 
+			}
+		}
+		custom_tooltip = per_impact_future_missions_tt
+		set_country_flag = per_leniency_towards_caucasians_flag
+	}
+	
+	option = {
+		name = FU_Persia_Events.1.b 
+		
+		custom_tooltip = per_change_culture_religion_in_georgian_provinces_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = georgian 
+				}
+				change_culture = ROOT 
+				change_religion = ROOT 
+				add_nationalism = -5
+			}
+		}
+		change_mil = 1 
+		add_ruler_personality = conqueror_personality
+		if = {
+			limit = {
+				has_estate = estate_nobles 
+				NOT = { mission_completed = per_curb_qizilbash_influence } 
+			}
+			add_country_modifier = {
+				name = per_assured_qizilbash_authority_modifier
+				duration = -1 
+				desc = per_until_we_complete_curb_qizilbash_influence_mission_desc
+			}
+		}
+	}
+}
+
+country_event = { #Sarkhej Roza and the City of Ahmedabad
+	id = FU_Persia_Events.2
+	title = FU_Persia_Events.2.t 
+	desc = FU_Persia_Events.2.d 
+	picture = indiangfx_GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.2.a 
+		
+		2054 = {
+			add_base_tax = 1 
+			add_base_production = 2 
+			add_base_manpower = 2 
+		}
+		2054 = {
+			if = { 
+				limit = { has_building = temple }
+				remove_building = temple 
+				add_building = cathedral 
+			}
+			add_province_modifier = { 
+				name = per_muzaffarid_centre_of_admin_modifier
+				duration = -1 
+			}
+		}
+		if = {
+			limit = { religion = zoroastrian }
+			add_prestige = 10
+		}
+	}
+}
+
+country_event = { #Hindu Influences in the Persian Court
+	id = FU_Persia_Events.3
+	title = FU_Persia_Events.3.t 
+	desc = FU_Persia_Events.3.d 
+	picture = KING_OF_FOREIGN_CUSTOMS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = { set_country_flag = per_indian_influences_flag }
+	}
+	
+	option = {
+		name = FU_Persia_Events.3.a 
+		
+		custom_tooltip = per_blend_hindu_state_tt
+		hidden_effect = {
+			change_tag = MUG
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3 
+		}
+		522 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		add_prestige = 25 
+		if = {
+			limit = {
+				NOT = { government = monarchy }
+				is_revolutionary = no
+			}
+			change_government_to_monarchy = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Dharma"
+				is_revolutionary = no
+			}
+			add_government_reform = fu_indian_sultanate_reform
+			add_government_reform = mughal_government
+		}
+		if = {
+			limit = {
+				has_dlc = "Dharma"
+				reform_level = 3
+			}
+			add_government_reform = mansabdari_reform
+		}
+		if = {
+			limit = {
+				has_dlc = "Dharma"
+				reform_level = 4
+			}
+			add_government_reform = zabt_reform
+		}
+		if = {
+			limit = {
+				has_reform = states_general_reform
+			}
+			remove_government_reform = states_general_reform
+		}
+		set_country_flag = formed_mughal_empire_flag
+		
+		if = {
+			limit = {
+				num_of_owned_provinces_with = {
+					OR = {
+						culture_group = hindusthani 
+						culture_group = western_aryan
+						culture_group = eastern_aryan
+					}
+					value = 40 
+				}
+			}
+			set_country_flag = per_blend_with_mug_ideas_flag
+			custom_tooltip = per_because_we_control_at_least_40_provinces_with_3_cultures_tt
+			country_event = { id = ideagroups.1 } 
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { dominant_culture = ROOT }
+					NOT = { dominant_religion = ROOT }
+				}
+			}
+			custom_tooltip = per_because_no_dominant_culture_or_religion_tt
+			override_country_name = FU3
+		}
+	}
+	
+	option = {
+		name = FU_Persia_Events.3.b 
+		
+		add_dip_power = 200 
+		add_stability_or_adm_power = yes 
+	}
+}
+	
+country_event = { #Military Reforms of $MONARCH$
+	id = FU_Persia_Events.4 
+	title = FU_Persia_Events.4.t 
+	desc = FU_Persia_Events.4.d 
+	picture = DISCIPLINED_SOLDIERS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.4.a 
+		
+		ai_chance = { factor = 0.4 }
+		
+		add_country_modifier = {
+			name = per_expanded_the_royal_qurci_guard_modifier
+			duration = -1 
+		}
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_army_professionalism = 0.05
+		}
+		else = { add_army_tradition = 10 }
+	}
+	
+	option = {
+		name = FU_Persia_Events.4.b 
+		
+		ai_chance = { factor = 0.3 }
+		
+		add_country_modifier = {
+			name = per_cavalry_muskets_modifier
+			duration = -1 
+		}
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_army_professionalism = 0.05
+		}
+		else = { add_army_tradition = 10 }
+	}
+	
+	option = {
+		name = FU_Persia_Events.4.c 
+		
+		ai_chance = { factor = 0.3 }
+		
+		add_country_modifier = {
+			name = per_wasp_artillery_modifier
+			duration = -1 
+		}
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_army_professionalism = 0.05
+		}
+		else = { add_army_tradition = 10 }
+	}
+}
+	
+country_event = { #Religious Affairs of Shah $MONARCH$
+	id = FU_Persia_Events.5
+	title = FU_Persia_Events.5.t 
+	desc = FU_Persia_Events.5.d 
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		OR = {
+			tag = PER 
+			tag = ARL
+		}	
+		OR = {
+			religion_group = muslim 
+			religion_group = zoroastrian_group
+		}
+	}
+	mean_time_to_happen = {
+		months = 4 
+	}
+	
+	option = {
+		name = FU_Persia_Events.5.a 
+		
+		if = {
+			limit = { 
+				NOT = { religion_group = muslim }
+			}
+			change_religion = shiite 
+			add_country_modifier = {
+				name = per_wave_of_religious_thought_modifier
+				duration = 3650
+			}
+		}
+		if = {
+			limit = { 
+				OR = { 
+					religion = sunni 
+					religion = ibadi
+				}
+			}
+			add_country_modifier = {
+				name = per_wave_of_religious_thought_modifier
+				duration = 3650
+			}
+		}
+		#if = {
+			#limit = { has_dlc = "Cradle of Civilization" }
+			#country_event = { id = ME_Hormuz_Events.4 }
+		#}
+		set_country_flag = per_chose_islam_flag
+		hidden_effect = {
+			clr_country_flag = per_chose_zoroastrianism_flag
+			swap_non_generic_missions = yes
+		}
+		custom_tooltip = per_chose_islam_missions_tt
+	}
+}
+
+country_event = {
+	id = FU_Persia_Events.6
+	title = FU_Persia_Events.6.t 
+	desc = FU_Persia_Events.6.d 
+	picture = DEBATE_REPUBLICAN_eventPicture
+	hidden = yes 
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER 
+		has_country_modifier = per_restoration_of_yasna_ceremonies_modifier
+		NOT = { 
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 3
+			}
+		}
+	}
+	
+	mean_time_to_happen = { months = 1 } 
+	
+	immediate = { remove_country_modifier = per_restoration_of_yasna_ceremonies_modifier }
+	
+	option = {
+		name = FU_Persia_Events.6.a 
+	}
+
+}
+
+country_event = { #Armenian Slaves in the Persian Empire
+	id = FU_Persia_Events.7
+	title = FU_Persia_Events.7.t 
+	desc = FU_Persia_Events.7.d 
+	picture = SOUP_KITCHEN_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.7.a 
+		
+		ai_chance = { factor = 0.75 }
+		add_country_modifier = {
+			name = per_sponsorship_of_christian_armenians_modifier 
+			duration = 9125
+		}
+		if = {
+			limit = {
+				NOT = { accepted_culture = armenian }
+			}
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_accepted_armenian_culture_modifier
+					duration = -1
+				}
+				add_accepted_culture = armenian 
+			}
+			custom_tooltip = per_accept_armenian_culture_tt 
+		}
+		custom_tooltip = per_armenian_labor_tt 
+		random_owned_area = {
+			limit = { 
+				religion = ROOT 
+				culture = ROOT
+				owned_by = ROOT 
+			}
+			add_base_production = 1  
+		}
+		custom_tooltip = per_impact_future_missions_tt
+		set_country_flag = per_spared_armenians_flag
+	}
+	
+	option = {
+		name = FU_Persia_Events.7.b 
+		
+		ai_chance = { factor = 0.25 }
+		
+		if = {
+			limit = {
+				armenia_area = {
+					type = all 
+					owned_by = ROOT
+					NOT = { culture = ROOT }
+				}
+			}
+			armenia_area = { change_culture = ROOT }
+		}
+		add_country_modifier = {
+			name = per_elitist_caste_modifier 
+			duration = 7300 
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles 
+				NOT = { mission_completed = per_curb_qizilbash_influence } 
+			}
+			add_country_modifier = {
+				name = per_ensured_armenian_qizilbash_rights_modifier 
+				duration = -1 
+				desc = per_until_we_complete_curb_qizilbash_influence_mission_desc
+			}
+		}
+	}
+}
+
+country_event = { #Victory in Chaldiran
+	id = FU_Persia_Events.8
+	title = FU_Persia_Events.8.t 
+	desc = FU_Persia_Events.8.d 
+	picture = QIZILBASH_CAVALRY_CHARGING_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.8.a 
+		
+		add_country_modifier = {
+			name = per_collapse_ottoman_empire_modifier
+			duration = -1 
+		}
+		if = {
+			limit = {
+				truce_with = TUR 
+				NOT = { 
+					TUR = { is_subject_of = ROOT }
+				}
+				NOT = { 
+					alliance_with = TUR 
+				}
+			}
+			TUR = {
+				add_country_modifier = {
+					name = per_get_fucked_modifier
+					duration = 7300 
+				}
+				if = { 
+					limit = { government_rank = 3 } 
+					set_government_rank = 2 
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = FU_Persia_Events.9
+	title = FU_Persia_Events.9.t 
+	desc = FU_Persia_Events.9.d 
+	picture = QIZILBASH_CAVALRY_CHARGING_eventPicture	
+	hidden = yes 
+	
+	trigger = {
+		tag = PER 
+		has_country_modifier = per_adherence_to_the_pillars_of_islam_modifier
+		NOT = { stability = 1 } 
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	immediate = { remove_country_modifier = per_adherence_to_the_pillars_of_islam_modifier }
+	
+	option = {	
+		name = FU_Persia_Events.9.a 
+	}
+}
+
+country_event = { #Turkmen Recruits Flock to the Banners
+	id = FU_Persia_Events.10
+	title = FU_Persia_Events.10.t 
+	desc = FU_Persia_Events.10.d 
+	picture = MAMLUK_WARRIORS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.10.a 
+		
+		
+		north_kurdistan_area = {
+			add_province_modifier = {
+				name = per_turkmen_recruits_modifier
+				duration = 9125
+			}
+			add_base_manpower = 1
+			add_local_autonomy = -10 
+			add_nationalism = -10 
+		}
+		erzurum_area = {
+			
+			add_province_modifier = {
+				name = per_turkmen_recruits_modifier
+				duration = 9125
+			}
+			add_base_manpower = 1
+			add_local_autonomy = -10 
+			add_nationalism = -10 
+		}
+		al_jazira_area = {
+			add_province_modifier = {
+				name = per_turkmen_recruits_modifier
+				duration = 9125
+			}
+			add_base_manpower = 1
+			add_local_autonomy = -10 
+			add_nationalism = -10 
+		}
+		if = {	
+			limit = { has_estate = estate_nobles }
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 15 
+			}
+		}
+	}
+}
+
+country_event = { #Al Quds as-Sharif
+	id = FU_Persia_Events.11
+	title = FU_Persia_Events.11.t 
+	desc = FU_Persia_Events.11.d 
+	picture = BYZ_JERUSALEM_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {	
+		name = FU_Persia_Events.11.a 
+		
+		add_ruler_modifier = {
+			name = per_powerful_religious_doctrine_modifier
+			duration = -1 
+		}
+		379 = {
+			add_base_tax = 3 
+			add_base_production = 3 
+			add_base_manpower = 4 
+		}
+		if = {
+			limit = { has_idea_group = humanist_ideas }
+			custom_tooltip = per_every_non_primary_religion_province_tt 
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_owner_religion = no }
+					random_list = {
+						50 = {
+							add_base_manpower = 1 
+						}
+						50 = {
+							add_base_production = 1 
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Victory in Egypt 
+	id = FU_Persia_Events.12
+	title = FU_Persia_Events.12.t 
+	desc = FU_Persia_Events.12.d 
+	picture = BIG_ARABIAN_CITY_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.12.a 
+		
+		add_country_modifier = {
+			name = per_triumph_in_cairo_modifier
+			duration = 7300 
+		}
+		add_ruler_personality = fu_legendary_conqueror_personality
+	}
+}
+
+country_event = { #Legacy of the Delhi Empire 
+	id = FU_Persia_Events.13 
+	title = FU_Persia_Events.13.t 
+	desc = FU_Persia_Events.13.d 
+	picture = 13_Maratha_Estate_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.13.a 
+		
+		add_country_modifier = {
+			name = per_guardians_of_the_grand_trunk_road_modifier 
+			duration = -1 
+		}
+		if = { 
+			limit = { has_dlc = "Leviathan" } 
+			custom_tooltip = per_can_build_red_fort_tt
+			set_country_flag = per_delhi_requirement_flag
+		}
+	}
+}
+
+country_event = { #Wealth of Bengal 
+	id = FU_Persia_Events.14
+	title = FU_Persia_Events.14.t 
+	desc = FU_Persia_Events.14.d 
+	picture = SULTAN_AND_MERCHANT_eventPicture 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.14.a 
+		
+		add_country_modifier = {
+			name = per_continental_trading_modifier
+			duration = -1 
+		}
+		add_mercantilism = 5 
+	}
+}
+
+country_event = { #The New Persian Horse
+	id = FU_Persia_Events.15
+	title = FU_Persia_Events.15.t 
+	desc = FU_Persia_Events.15.d 
+	picture = fu_horses_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {	
+		name = FU_Persia_Events.15.a 
+		
+		custom_tooltip = per_based_on_our_movement_speed_tt
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = movement_speed   
+					value = 0.3
+				}
+			}
+			custom_tooltip = per_very_swift_horses_tt
+			hidden_effect = { 
+				add_country_modifier = {
+					name = per_swift_horses_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_modifier_value = {
+					which = movement_speed   
+					value = 0.15
+				}
+			}
+			custom_tooltip = per_nimble_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_swift_horses2_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = { 
+			custom_tooltip = per_fast_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_swift_horses3_modifier 
+					duration = -1 
+				}
+			}
+		}
+		custom_tooltip = per_based_on_our_discipline_tt
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = discipline    
+					value = 0.30
+				}
+			}
+			custom_tooltip = per_iron_discipline_horses_tt 
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_mount_discipline_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = { 
+			custom_tooltip = per_disciplined_horses_tt 
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_mount_discipline2_modifier 
+					duration = -1 
+				}
+			}
+		}
+		custom_tooltip = per_based_on_horse_provinces_tt
+		if = {
+			limit = { 
+				num_of_owned_provinces_with = {
+					trade_goods = horses 
+					value = 4 
+				}
+				trading_bonus = {
+					trade_goods = horses
+					value = yes
+				}
+			}
+			custom_tooltip = per_blooming_abundance_of_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_horse_population_boom_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				num_of_owned_provinces_with = {
+					trade_goods = horses 
+					value = 3
+				}
+			}
+			custom_tooltip = per_abundance_of_horses_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_horse_population_boom2_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = {
+			custom_tooltip = per_horse_population_steady_increase_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_horse_population_boom4_modifier 
+					duration = -1 
+				}
+			}
+		}
+		custom_tooltip = per_based_on_cav_combat_ability_tt
+		if = {
+			limit = {
+				has_global_modifier_value = {
+					which = cavalry_power    
+					value = 0.6
+				}
+			}
+			custom_tooltip = per_expanded_use_of_fire_arms_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_firearm_charge_modifier 
+					duration = -1 
+				}
+			}
+		}
+		else = {
+			custom_tooltip = per_partial_use_of_fire_arms_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = per_firearm_charge2_modifier 
+					duration = -1 
+				}
+			}
+		}
+		if = {
+			limit = { 
+				OR = {	
+					any_ally = { has_estate = estate_cossacks }
+					any_subject_country = { has_estate = estate_cossacks } 
+				}
+			}
+			custom_tooltip = per_host_of_cossack_commanders_capital_tt
+			hidden_effect = {
+				capital_scope = { cossack_cavalry = ROOT }
+				capital_scope = { cossack_cavalry = ROOT }
+				capital_scope = { cossack_cavalry = ROOT }
+				capital_scope = { cossack_cavalry = ROOT }
+				capital_scope = { cossack_cavalry = ROOT }
+				capital_scope = { cossack_cavalry = ROOT }
+			}
+		}
+		if = {
+			limit = { mission_completed = per_crush_asian_tribes }
+			custom_tooltip = per_horde_expertise_tt 
+			add_country_modifier = {
+				name = per_horde_shock_tactics_modifier
+				duration = 5475 
+			}
+		}
+	}
+}
+
+country_event = { #Hidden Event to give tolerant trait
+	id = FU_Persia_Events.16
+	title = FU_Persia_Events.16.t 
+	desc = FU_Persia_Events.16.d 
+	picture = KING_OF_FOREIGN_CUSTOMS_eventPicture
+	hidden = yes 
+	is_triggered_only = yes 
+	
+	immediate = { add_ruler_personality = tolerant_personality }
+	
+	option = {	
+		name = FU_Persia_Events.16.a 
+		
+	}
+}
+
+country_event = { #The End of the Timurid Dynasty
+	id = FU_Persia_Events.17
+	title = FU_Persia_Events.17.t 
+	desc = FU_Persia_Events.17.d 
+	picture = KING_OF_FOREIGN_CUSTOMS_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.17.a 
+		
+		khorasan_region = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
+			add_province_modifier = {
+				name = per_persian_reign_modifier 
+				duration = 7300
+			}
+		}
+		custom_tooltip = per_5_random_provinces_gain_random_dev_tt
+		hidden_effect = {
+			random_owned_province = {
+				limit = { region = khorasan_region }
+				add_base_production = 1 
+			}
+			random_owned_province = {
+				limit = { region = khorasan_region }
+				add_base_production = 1 
+			}
+			random_owned_province = {
+				limit = { region = khorasan_region }
+				add_base_tax = 1 
+			}
+			random_owned_province = {
+				limit = { region = khorasan_region }
+				add_base_manpower = 1 
+			}
+			random_owned_province = {
+				limit = { region = khorasan_region }
+				add_base_manpower = 1 
+			}
+		}	
+	}
+}	
+
+country_event = { #Observatory of Ulugh Bek 
+	id = FU_Persia_Events.18
+	title = FU_Persia_Events.18.t 
+	desc = FU_Persia_Events.18.d 
+	picture = ASTRONOMER_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.18.a 
+		
+		454 = { 
+			add_base_tax = 2 
+			add_base_production = 2 
+		}
+		if = {
+			limit = { 
+				has_dlc = "Rule Britannia" 
+				454 = { has_building = university } 
+			}
+			change_innovativeness = 5 
+		}
+		else_if = {
+			limit = {
+				454 = { 
+					NOT = { has_building = university } 
+				}
+			}
+			454 = { add_building = university }
+		}
+		else = { add_adm_power = 100 } 
+	}
+}		
+
+country_event = { #Royal Poetry of the Safavid Era
+	id = FU_Persia_Events.19
+	title = FU_Persia_Events.19.t 
+	desc = FU_Persia_Events.19.d 
+	picture = BIG_BOOK_eventPicture 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.19.a 
+		
+		add_ruler_personality = patron_of_arts_personality
+		add_ruler_modifier = {
+			name = per_sponsored_the_arts_modifier
+			duration = -1 
+		}
+	}
+}
+
+country_event = { #The Two Rivers of the Fertile Crescent 
+	id = FU_Persia_Events.20
+	title = FU_Persia_Events.20.t 
+	desc = FU_Persia_Events.20.d 
+	picture = COLONIZATION_eventPicture 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.20.a 
+		
+		1335 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 50
+				key = per_persian_basra_modifier
+			}
+		}
+		add_country_modifier = {
+			name = per_trade_in_persian_gulf_modifier
+			duration = 9125
+		}
+		add_mercantilism = 1 
+	}
+	
+	option = {
+		name = FU_Persia_Events.20.b 
+		
+		trigger = {
+			custom_trigger_tooltip = { 
+				tooltip = per_spared_armenians_tt
+				has_country_flag = per_spared_armenians_flag
+			}
+		}
+		highlight = yes 
+		408 = { change_culture = armenian } 
+		1335 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 50
+				key = per_persian_basra_modifier
+			}
+		}
+		add_country_modifier = {
+			name = per_establishment_of_the_armenian_mercantile_gentry_modifier
+			duration = 9125 
+		}
+		add_mercantilism = 3 
+	}
+}
+
+country_event = {
+	id = FU_Persia_Events.21
+	title = FU_Persia_Events.21.t
+	desc = FU_Persia_Events.21.d
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FU_Persia_Events.21.a 
+		
+		ai_chance = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 0
+				NOT = { num_of_free_diplomatic_relations = 1 }
+			}
+		}
+		
+		pirate_coast_area = {
+			limit = {
+				NOT = { is_core = ORM }
+				owned_by = ROOT
+			}
+			add_core = ORM
+		}
+		mogostan_area = {
+			limit = {
+				NOT = { is_core = ORM }
+				owned_by = ROOT
+			}
+			add_core = ORM
+		}
+		mascat_area = {
+			limit = {
+				NOT = { is_core = ORM }
+				owned_by = ROOT
+			}
+			add_core = ORM
+		}
+		oman_area = {
+			limit = {
+				NOT = { is_core = ORM }
+				owned_by = ROOT
+			}
+			add_core = ORM
+		}
+		release = ORM
+		ORM = {
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+			change_religion = ROOT 
+		}
+		vassalize = ORM
+		ORM = {
+			add_country_modifier = {
+				name = per_naval_command_modifier
+				duration = -1 
+			}
+		}
+	}
+	
+	option = {
+		name = FU_Persia_Events.21.b 
+		
+		ai_chance = { factor = 0.5 }
+		
+		pirate_coast_area = {
+			add_province_modifier = {
+				name = per_kingdom_of_hormuz_province_modifier
+				duration = 7300
+			}
+		}
+		mogostan_area = {
+			add_province_modifier = {
+				name = per_kingdom_of_hormuz_province_modifier
+				duration = 7300
+			}
+		}
+		mascat_area = {
+			add_province_modifier = {
+				name = per_kingdom_of_hormuz_province_modifier
+				duration = 7300
+			}
+		}
+	}
+}
+
+country_event = { #Chinese Blue-and-White Porcelains
+	id = FU_Persia_Events.22 
+	title = FU_Persia_Events.22.t 
+	desc = FU_Persia_Events.22.d 
+	picture = IMPERIAL_SEAL_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Persia_Events.22.a 
+		
+		add_country_modifier = {
+			name = per_royal_porcelain_collection_modifier 
+			duration = 9125
+		}
+		if = {
+			limit = {
+				any_ally = {	
+					technology_group = chinese 
+					has_opinion = {
+						who = ROOT 
+						value = 150 
+					}
+				}
+			}
+			random_ally = {
+				limit = { 
+					technology_group = chinese 
+					has_opinion = {
+						who = ROOT 
+						value = 150 
+					}
+				}
+				add_country_modifier = {
+					name = per_porcelain_exports_to_the_west_modifier
+					duration = 7300
+				}
+			}
+		}
+		change_dip = 1 
+	}
+}
+
+country_event = { #Architecture of the Safavid Period
+	id = FU_Persia_Events.23 
+	title = FU_Persia_Events.23.t 
+	desc = FU_Persia_Events.23.d 
+	picture = GREAT_BUILDING_eventPicture
+	fire_only_once = yes 
+	trigger = {
+		is_year = 1470 
+		tag = PER 
+		OR = {
+			is_great_power = yes 
+			total_development = 300 
+		}
+		num_of_owned_provinces_with = {
+			OR = {
+				has_building = temple 
+				has_building = cathedral 
+				has_building = courthouse
+				has_building = town_hall
+			}
+			value = 6 
+		}
+		has_regency = no 
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = FU_Persia_Events.23.a 
+		
+		ROOT = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = temple 
+						has_building = cathedral 
+						has_building = courthouse
+						has_building = town_hall
+					}
+				}
+				add_base_tax = 1 
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = temple 
+						has_building = cathedral 
+						has_building = courthouse
+						has_building = town_hall
+					}
+				}
+				add_base_tax = 1 
+			}
+		}
+		custom_tooltip = per_architecture_events_start_here_tt
+		set_country_flag = per_architecture_flag
+		if = {
+			limit = { religion = zoroastrian }
+			custom_tooltip = per_if_3_tolerance_heathen_tt
+		}
+	}
+}
+
+country_event = { #Imamzadeh Harun-i Vilayat
+	id = FU_Persia_Events.24
+	title = FU_Persia_Events.24.t 
+	desc = FU_Persia_Events.24.d 
+	picture = BIG_ARABIAN_CITY_eventPicture 
+	fire_only_once = yes 
+	trigger = {
+		is_year = 1475 
+		tag = PER
+		has_country_flag = per_architecture_flag
+		429 = { is_capital_of = PER }
+		429 = { 
+			OR = {
+				development = 30
+				has_great_project = {
+					type = fu_isfahan_city
+					tier = 3 
+				}
+			}
+		}
+		NOT = { is_year = 1650 }
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		} 
+	}
+	
+	mean_time_to_happen = {
+		months = 72 
+	}
+	
+	option = {
+		name = FU_Persia_Events.24.a 
+		
+		429 = {
+			add_province_modifier = {
+				name = per_harun_i_vilayat_tomb_modifier
+				duration = 5475
+			}
+		}
+		add_dip_power = 25 
+	}
+}
+
+country_event = { #Masjid-i Ali
+	id = FU_Persia_Events.25 
+	title = FU_Persia_Events.25.t 
+	desc = FU_Persia_Events.25.d 
+	picture = PRAYING_eventPicture 
+	fire_only_once = yes 
+	trigger = {
+		is_year = 1480 
+		tag = PER
+		has_country_flag = per_architecture_flag
+		429 = { is_capital_of = PER }
+		429 = { 
+			OR = {
+				development = 30
+				has_great_project = {
+					type = fu_isfahan_city
+					tier = 3 
+				}
+			}
+		}
+		NOT = { is_year = 1600 } 
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1
+			}
+			religion_group = muslim 
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 60 
+	}
+	
+	option = {
+		name = FU_Persia_Events.25.a 
+		
+		add_estate_loyalty = {
+			estate = estate_church 
+			loyalty = 15 
+		}
+		add_prestige = 5 
+	}
+}
+
+country_event = { #Tomb of Amin al-Din Jibrail
+	id = FU_Persia_Events.26
+	title = FU_Persia_Events.26.t 
+	desc = FU_Persia_Events.26.d 
+	picture = ADVISOR_eventPicture 
+	fire_only_once = yes 
+	trigger = {
+		tag = PER 
+		was_tag = ARL
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		}
+		has_country_flag = per_architecture_flag
+		424 = {
+			owned_by = ROOT 
+			has_tax_building_trigger = yes
+		}
+		is_year = 1472 
+	}
+	
+	mean_time_to_happen = {
+		months = 14 
+	}
+	
+	option = {
+		name = FU_Persia_Events.26.a 
+		
+		424 = { add_base_tax = 2 }
+		add_prestige = 5 
+	}
+}
+	
+country_event = { #Jannat-sara Mosque
+	id = FU_Persia_Events.27
+	title = FU_Persia_Events.27.t 
+	desc = FU_Persia_Events.27.d 
+	picture = CULTURE_eventPicture
+	fire_only_once = yes 
+	trigger = {
+		tag = PER 
+		was_tag = ARL 
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		}
+		has_country_flag = per_architecture_flag
+		424 = {
+			owned_by = ROOT 
+			has_tax_building_trigger = yes
+		}
+		is_year = 1474 
+	}
+	
+	mean_time_to_happen = {
+		months = 6 
+	}
+	
+	option = {
+		name = FU_Persia_Events.27.a 
+		
+		424 = {
+			if = { 
+				limit = { has_building = temple } 
+				remove_building = temple 
+				add_building = cathedral 
+			}
+			else = { add_base_tax = 2 }
+		}
+		424 = { add_prosperity = 20 }
+	}
+}
+
+country_event = { #Abbas I Safavid 
+	id = FU_Persia_Events.28
+	title = FU_Persia_Events.28.t 
+	desc = FU_Persia_Events.28.d 
+	picture = HEIR_AND_FOREIGN_ADVISOR_eventPicture 
+	fire_only_once = yes 
+	trigger = {
+		tag = PER 
+		is_year = 1571 
+		NOT = { is_year = 1615 } 
+		government = monarchy 
+	}
+	
+	mean_time_to_happen = {
+		months = 24 
+	}
+	
+	option = {
+		name = FU_Persia_Events.28.a 
+		
+		kill_ruler = yes
+		define_ruler = {
+			name = "Abbas I" 
+			dynasty = ROOT 
+			claim = 95 
+			male = yes 
+			change_adm = 2 
+			change_dip = 2 
+			change_mil = 2 
+			age = 15 
+		}
+		if = {
+			limit = { has_dlc = "Rights of Man" }
+			custom_tooltip = per_abbas_architectural_visionary_tt
+			hidden_effect = { add_ruler_personality = architectural_visionary_personality }
+		}
+		set_ruler_flag = per_abbas_lives_flag 
+	}
+	
+	option = {
+		name = FU_Persia_Events.28.b 
+		
+		add_prestige = 15 
+		add_stability_or_adm_power = yes 
+	}
+}	
+
+country_event = { #Abbas I’s Expansion of Isfahan
+	id = FU_Persia_Events.29
+	title = FU_Persia_Events.29.t 
+	desc = FU_Persia_Events.29.d 
+	picture = CITY_DEVELOPMENT_eventPicture 
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER
+		has_ruler_flag = per_abbas_lives_flag
+		429 = { is_capital_of = ROOT }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = FU_Persia_Events.29.a 
+		
+		429 = {
+			if = {
+				limit = { 
+					has_dlc = "Leviathan" 
+					NOT = {
+						has_great_project = {
+							type = fu_isfahan_city 
+							tier = 3 
+						}
+					}
+				}
+				add_great_project_tier = {
+					type = fu_isfahan_city 
+					tier = 1 
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = per_urban_planning_of_shah_abbas_modifier 
+					duration = 5475 
+				}
+				add_base_manpower = 1 
+				add_base_production = 1 
+			}
+		}
+	}
+}
+
+country_event = { #Gardens of Chahar Bagh Avenue
+	id = FU_Persia_Events.30
+	title = FU_Persia_Events.30.t 
+	desc = FU_Persia_Events.30.d 
+	picture = fu_persian_garden_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER
+		has_ruler_flag = per_abbas_lives_flag
+		429 = { is_capital_of = ROOT }
+	}
+	
+	mean_time_to_happen = {
+		months = 26 
+	}
+	
+	option = {
+		name = FU_Persia_Events.30.a 
+		
+		429 = {	
+			add_province_modifier = {
+				name = per_gardens_of_chahar_bagh_modifier
+				duration = -1 
+			}
+		}
+	}
+}
+
+country_event = { #Naqsh-e Jahan Square
+	id = FU_Persia_Events.31
+	title = FU_Persia_Events.31.t 
+	desc = FU_Persia_Events.31.d 
+	picture = fu_jahan_square_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER
+		OR = {
+			mission_completed = per_worthy_capital 
+			has_ruler_flag = per_abbas_lives_flag 
+		}
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		} 
+	}
+	
+	mean_time_to_happen = {
+		months = 48 
+	}
+	
+	option = {
+		name = FU_Persia_Events.31.a 
+		
+		429 = {
+			add_province_modifier = {
+				name = per_nashq_e_jahan_square_modifier 
+				duration = 7300 
+			}
+			add_base_production = 1 
+		}
+	}
+}
+
+country_event = { #The Shah's Mosque in Isfahan
+	id = FU_Persia_Events.32 
+	title = FU_Persia_Events.32.t 
+	desc = FU_Persia_Events.32.d 
+	picture = PRAYER_IN_MOSQUE_eventPicture 
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER
+		has_ruler_flag = per_abbas_lives_flag 
+		429 = { has_tax_building_trigger = yes }
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		} 
+	}
+	
+	mean_time_to_happen = {
+		months = 48 
+	}
+	
+	option = {
+		name = FU_Persia_Events.32.a 
+		
+		429 = {
+			if = { 
+				limit = { has_building = temple } 
+				remove_building = temple 
+				add_building = cathedral 
+			}
+			else = { add_base_tax = 2 } 
+		}
+		add_prestige = 5 
+	}
+}
+
+country_event = { #Madrasa-e Khan
+	id = FU_Persia_Events.33
+	title = FU_Persia_Events.33.t 
+	desc = FU_Persia_Events.33.d 
+	picture = COURT_eventPicture 
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER
+		is_year = 1600 
+		2218 = { 
+			owned_by = PER 
+			OR = { 
+				development = 25 
+				has_building = university 
+			}
+		}
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		} 
+	}
+	
+	mean_time_to_happen = {
+		months = 120 
+	}
+	
+	option = {
+		name = FU_Persia_Events.33.a 
+		
+		if = {
+			limit = { 
+				has_dlc = "Cradle of Civilization" 
+				religion_group = muslim 
+			}
+			add_piety = 0.25 
+		}
+		2218 = {
+			if = {
+				limit = { 
+					has_building = university 
+				}
+				owner = { add_adm_power = 50 }
+			}
+			else = {
+				add_building = university 
+			}
+		}
+		define_advisor = {
+			type = natural_scientist 
+			cost_multiplier = 0.25 
+		}
+	}
+}
+
+country_event = { #Chehel Sotoun
+	id = FU_Persia_Events.34
+	title = FU_Persia_Events.34.t 
+	desc = FU_Persia_Events.34.d 
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER 
+		OR = {
+			has_ruler_flag = per_abbas_lives_flag
+			mission_completed = per_worthy_capital 
+		}
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		} 
+		429 = {
+			OR = { 
+				has_building = courthouse 
+				has_building = town_hall 
+			}
+		}
+	}
+	
+	mean_time_to_happen = {	
+		months = 120 
+	}
+	
+	option = {
+		name = FU_Persia_Events.34.a 
+		
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 20
+		}
+		if = {
+			limit = { dip = 6 } 
+			add_dip_power = 50 
+		}
+		else = { change_dip = 1 }
+	}
+}		
+	
+country_event = { #The Shah's Academy
+	id = FU_Persia_Events.35
+	title = FU_Persia_Events.35.t 
+	desc = FU_Persia_Events.35.d 
+	picture = WESTERNISATION_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		is_year = 1600 
+		tag = PER 
+		429 = { 
+			owned_by = ROOT 
+			OR = {
+				development = 50 
+				has_building = university 
+			}
+		}
+		OR = {
+			has_global_modifier_value = {
+				which = tolerance_heathen 
+				value = 1 
+			}
+			religion_group = muslim 
+		} 
+	}
+	
+	mean_time_to_happen = {
+		months = 120 
+	}
+	
+	option = {
+		name = FU_Persia_Events.35.a 
+		
+		if = {
+			limit = { 
+				has_dlc = "Rule Britannia"
+				innovativeness = 95 
+			}
+			add_adm_power = 50
+		}
+		else_if = {
+			limit = { has_dlc = "Rule Britannia" }
+			change_innovativeness = 2
+		}
+		if = {
+			limit = { 
+				has_dlc = "Rights of Man"
+				429 = { has_building = university } 
+			}
+			add_ruler_personality = scholar_personality 
+		}
+		else_if = {
+			limit = {
+				429 = { 
+					NOT = { has_building = university }
+				}
+			}
+			429 = { add_building = university }
+		}
+	}
+}			
+
+country_event = { #Safavid Painting Under Abbas I 
+	id = FU_Persia_Events.36
+	title = FU_Persia_Events.36.t 
+	desc = FU_Persia_Events.36.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER 
+		has_ruler_flag = per_abbas_lives_flag 
+		is_at_war = no 
+	}
+	
+	mean_time_to_happen = { 
+		months = 50 
+	}
+	
+	option = {
+		name = FU_Persia_Events.36.a 
+		
+		define_advisor = {
+			type = artist 
+			cost_multiplier = 0.1 
+		}
+		change_innovativeness = 1 
+	}
+}
+
+country_event = { #Shahnameh of Shah $RULER$
+	id = FU_Persia_Events.37 
+	title = FU_Persia_Events.37.t 
+	desc = FU_Persia_Events.37.d 
+	picture = BIG_BOOK_eventPicture 
+	fire_only_once = yes 
+	
+	trigger = {
+		is_year = 1482 
+		OR = {
+			tag = PER 
+			tag = ARL 
+		}
+		total_development = 200 
+	}
+	mean_time_to_happen = {
+		months = 36 
+	}
+	
+	option = {
+		name = FU_Persia_Events.37.a 
+		
+		add_ruler_modifier = {	
+			name = per_shahnameh_modifier
+			duration = -1 
+		}
+	}
+}
+
+country_event = { #Rise of the Persian Arquebus
+	id = FU_Persia_Events.38 
+	title = FU_Persia_Events.38.t 
+	desc = FU_Persia_Events.38.d 
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes 
+	trigger = {
+		is_year = 1600
+		NOT = { is_year = 1675 }
+		tag = PER 
+		mission_completed = per_reform_first_pillar
+	}
+	
+	mean_time_to_happen = {
+		months = 120 
+	}
+	
+	option = {
+		name = FU_Persia_Events.38.a 
+		
+		add_country_modifier = {
+			name = per_persian_arquebusiers_modifier
+			duration = 7300 
+		}
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_army_professionalism = 0.05 
+		}
+		else = { add_army_tradition = 10 }
+	}
+}
+
+country_event = { #The Arrival of the Shirley Brothers
+	id = FU_Persia_Events.39
+	title = FU_Persia_Events.39.t 
+	desc = FU_Persia_Events.39.d 
+	picture = GENERALS_DISCUSSING_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = PER 
+		has_ruler_flag = per_abbas_lives_flag
+		NOT = { is_year = 1628 }
+		OR = { 
+			army_professionalism = 0.6
+			army_tradition = 80 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120 
+	}
+	
+	option = {
+		name = FU_Persia_Events.39.a 
+		
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_country_modifier = {
+				name = per_shirley_reforms_the_army1_modifier
+				duration = 7300 
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = per_shirley_reforms_the_army2_modifier
+				duration = 7300 
+			}
+		}
+		define_advisor = {
+			name = "Robert Shirley"
+			culture = english 
+			religion = anglican
+			type = army_reformer
+			skill = 3 
+			cost_multiplier = 0.25
+		}
+	}
+}
+
+country_event = {
+	id = FU_Persia_Events.40
+	title = "flavor_per.EVTNAME1"
+	desc = "flavor_per.EVTDESC1"
+	picture = REFORM_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		is_year = 1490 
+		tag = PER 
+		NOT = { is_year = 1530 }
+		stability = 1 
+		adm = 5
+	}
+	
+	mean_time_to_happen = {
+		months = 60 
+	}
+	
+	option = { #Reform
+		name = "flavor_per.EVTOPTA1"
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_big_effect = yes
+		}
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		416 = { #Tabriz
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 1
+		}
+		429 = { #Isfahan
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		2215 = { #Qazvin
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		2218 = { #Shiraz
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		428 = { #Teheran
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		433 = { #Yazd
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		2213 = { #Qom
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		2212 = { #Zanjan
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}
+
+
+
+
+
+	
