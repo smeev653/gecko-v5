@@ -10,25 +10,25 @@ historical_rival = BYZ
 historical_rival = HAB
 capital = 149 # Edirne
 national_focus = MIL
-add_army_professionalism = 0.11
+add_army_professionalism = 0.15
 religious_school = hanafi_school
 
 change_estate_land_share = {
 	estate = estate_nobles
-	share = 29
+	share = 30
 }
 change_estate_land_share = {
 	estate = estate_church
 	share = -15
 }
-change_estate_land_share = {
-	estate = estate_burghers
-	share = -10
-}
+#change_estate_land_share = {
+#	estate = estate_burghers
+#	share = -10
+#}
 
 change_estate_land_share = {
 	estate = estate_dhimmi
-	share = -5
+	share = -15
 }
 
 1444.10.1 = {
@@ -59,7 +59,7 @@ change_estate_land_share = {
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
-	add_piety = 0.2
+	add_piety = 1
 }
 
 1446.1.1 = {
