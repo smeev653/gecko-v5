@@ -1468,7 +1468,7 @@ ottoman_missions_2 = {
 			}
 			custom_tooltip = tur_claim_every_cot_in_india_tt
 			hidden_effect = { 
-				india_superregion = {
+				hindusthan_region = {
 					limit = { 
 						has_port = yes 
 						province_has_center_of_trade_of_level = 1 
@@ -1495,7 +1495,7 @@ ottoman_missions_2 = {
 		trigger = {
 			OR = { 
 				any_ally = { 
-					capital_scope = { superregion = india_superregion }
+					capital_scope = { superregion = hindusthan_region }
 					has_opinion = { 
 						who = ROOT 
 						value = 150 
@@ -3102,7 +3102,7 @@ ottoman_missions_3basic = {
 			country_event = { id = FU_Ottoman_Events.43 } 
 			custom_tooltip = tur_perma_claim_indian_sregion_tt
 			hidden_effect = { 
-				india_superregion = { 
+				hindusthan_region = { 
 					limit = { 
 						has_port = yes 
 						NOT = { owned_by = ROOT } 

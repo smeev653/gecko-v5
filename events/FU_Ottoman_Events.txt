@@ -570,7 +570,7 @@ country_event = {
 		if = { 	
 			limit = { 
 				any_ally = { 
-					capital_scope = { superregion = india_superregion }
+					capital_scope = { superregion = hindusthan_region }
 					has_opinion = { 
 						who = ROOT 
 						value = 150 
@@ -583,7 +583,7 @@ country_event = {
 			}
 			random_ally = { 
 				limit = { 
-					capital_scope = { superregion = india_superregion }
+					capital_scope = { superregion = hindusthan_region }
 					has_opinion = { 
 						who = ROOT 
 						value = 150 
@@ -660,24 +660,13 @@ country_event = {
 		if = { 
 			limit = { 
 				any_owned_province = {
-					superregion = india_superregion 
+					superregion = hindusthan_region 
 					province_has_center_of_trade_of_level = 1 
 				}
 			}
 			random_owned_province = { 	
 				limit = { 	
-					superregion = india_superregion 
-					province_has_center_of_trade_of_level = 1 
-					NOT = { has_province_modifier = tur_trade_center_of_the_ottoman_empire_modifier }
-				}
-				add_province_modifier = {
-					name = tur_trade_center_of_the_ottoman_empire_modifier
-					duration = -1 
-				}
-			}
-			random_owned_province = { 	
-				limit = { 	
-					superregion = india_superregion 
+					superregion = hindusthan_region 
 					province_has_center_of_trade_of_level = 1 
 					NOT = { has_province_modifier = tur_trade_center_of_the_ottoman_empire_modifier }
 				}
@@ -688,7 +677,18 @@ country_event = {
 			}
 			random_owned_province = { 	
 				limit = { 	
-					superregion = india_superregion 
+					superregion = hindusthan_region 
+					province_has_center_of_trade_of_level = 1 
+					NOT = { has_province_modifier = tur_trade_center_of_the_ottoman_empire_modifier }
+				}
+				add_province_modifier = {
+					name = tur_trade_center_of_the_ottoman_empire_modifier
+					duration = -1 
+				}
+			}
+			random_owned_province = { 	
+				limit = { 	
+					superregion = hindusthan_region 
 					province_has_center_of_trade_of_level = 1 
 					NOT = { has_province_modifier = tur_trade_center_of_the_ottoman_empire_modifier }
 				}

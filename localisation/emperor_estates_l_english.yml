@@ -122,6 +122,8 @@
  estate_privileges_and_agendas_events.1.B:0 "We shall abolish the elective monarchy."
  estate_nobles_nieszawa_privileges:0 "The Nieszawa Privileges"
  estate_nobles_pacta_conventa:0 "Pacta Conventa"
+ estate_dhimmi_grant_liberties:0 "Grant [Root.GetDhimmiName] Liberties"
+ estate_dhimmi_grant_liberties_desc:0 "The [Root.GetDhimmiName] are a minority faction in our state with the power of the majority of the heathens within our borders. By granting them some liberties we can secure their loyalty to us."
  brahmins_hindu_loyalty_modifier:1 "[Country.GetBrahminsName] Loyalty Equilibrium"
  brahmins_muslim_loyalty_modifier:1 "[Country.GetBrahminsName] Loyalty Equilibrium"
  brahmins_other_loyalty_modifier:1 "[Country.GetBrahminsName] Loyalty Equilibrium"
