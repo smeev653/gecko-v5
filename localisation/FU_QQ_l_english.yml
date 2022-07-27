@@ -1,0 +1,140 @@
+﻿l_english:
+
+######################
+###Made by Marcus###
+######################
+
+#Missions
+ qar_white_sheeep_title: "The White Sheep" 
+ qar_white_sheeep_desc: "The Aq Qoyunlu are our small, but ferocious cousins. None amongst them being more ferocious than Uzun Hasan. We must subjugate them, lest they grow powerful enough to do the same to us."
+ qar_qom_rebellion_title: "Qom Rebellion"
+ qar_qom_rebellion_desc: "Shah Rukh is dead. The ambitious Prince Muhammad bin Baysonqor has revolted, his powerbase centred in Qom. Rebellion stirs elsewhere in Timur’s Empire, and it seems as though there would be little stopping us from marching across the Zagros mountains and seizing the rebels’ lands for ourselves."
+ qar_timurid_politics_title: "Timurid Politics" 
+ qar_timurid_politics_desc: "The descendents of Timur Gurkani fight amongst themselves like a pack of feral dogs, slaughtering each other in a contest to see who shall rule over the bones left behind. They require little persuasion from us to turn on eachother, hollow promises of support making them squabble even further. Once all is done, none shall stand strong enough to prevent us from cleaning up the mess they leave behind." 
+ qar_thalathat_abna_title: "Thalathat Abna"
+ qar_thalathat_abna_desc: "Before we make any attempts to broaden our influence in the Levant, we must first settle the matter of succession between our Sultan’s three most prominent and rebellious sons. Once our internal divisions are set aside, there is no doubt that the Black Sheep shall rise."
+ qar_khalwati_order_title: "Khalwati Order"
+ qar_khalwati_order_desc: "Now that we have conquered Shirvan, we must integrate and patronize the Khalwati Order, a sufi sect popular amongst many of our soldiers. There is no doubt that their rugged individualism will aid us in defending our northern border."  
+ qar_markets_sari_title: "Markets of Sari"
+ qar_markets_sari_desc: "The Caspian coast of Persia remains its most fertile and commercially active region, ships and caravans both docking in the important port of Sari, trading in silks, spices, and all other manner of luxury goods. The petty Shahs and Sheikhs ruling over the coastline have little hope in stopping us from seizing these important lands for ourselves." 
+ qar_alesr_al_abyad_title: "Alesr al' Abyad"
+ qar_alesr_al_abyad_desc: "We are the Masters of Persia, Iraq, Armenia, and Georgia. Though with our conquests, we have not wrought destruction onto people as previous regimes might have. Instead, our loyal subjects prosper under our Sultan’s supervision. Merchants grow fat on the trade of the silk road, and the memory of the famines left by the wake of the conquests of Timur are slowly fading, as year after year the grain surplus grows larger. Our cities grow, our coffers fill and our people cheer in support of the great Sultan who has brought them such prosperity."
+ qar_mushashaiyya_title: "Musha'sha'iyyah"
+ qar_mushashaiyya_desc: "The militant millenarians of Basra and Khuzestan have undoubtedly been a thorn in our sides, Muhammad ibn Falah stirring up unrest with his teachings. If properly harnessed, however, the Musha’sha’iyyah would make for formidable allies in our conquests." 
+ qar_unite_horse_tribes_title: "Unite the Horse Tribes" 
+ qar_unite_horse_tribes_desc: "We have subdued the Georgians, Kurds, Armenians, Musha’sha’iyyah, Safavids and Shirvanshahs. The thunder of our warhorses has been heard from Basra to Tbilisi, and none can question that our great Sultan is a man as great as those horse lords that came before him. The name of the Black Sheep shall be spoken of in histories in the same breath as the Seljuks and Mongols." 
+ qar_blue_mosque_title: "The Blue Mosque"
+ qar_blue_mosque_desc: "One of our Great Sultan’s wives, Khatun Jan Begum, has sadly passed from this life to the next. Being a generous soul, all of her wealth has been donated as a Waqf for the establishment of a Grand Mosque in Tabriz. Our Sultan, moved by her generosity, has invited architects from Baghdad to begin the construction." 
+ qar_muzafariyya_title: "Muzafariyya"
+ qar_muzafariyya_desc: "Our capital of Tabriz, nestled in the Zagros mountains, has grown to be a city of great note; one of the greatest in Persia and the Levant. Merchants from all manner of places come to purchase our fine silks, and a great many public works have been erected, the Blue Mosque being the greatest among them."
+ qar_desturi_jahan_bey_title: "Desturi Jahan Bey"
+ qar_desturi_jahan_bey_desc: "Once merely a petty confederation of various Turkomen tribes, as our power has grown as has our capability in administration. To consolidate his power, our Sultan has brought forward various reforms in governance, prime amongst them being a code of laws based on a fusion of Sharia and our Turkic Customary Law. No longer shall our sophisticated neighbours look down onto us as lawless barbarians." 
+ qar_till_northern_land_title: "Till the Northern Land"
+ qar_till_northern_land_desc: "The Caucasus Mountains serve as a formidable natural border for us to guard our lands from incursions by the Tatars and Circassians. Our current border with the Christian Georgians is precarious at best, and they would be far more useful to us as guardians of our Northern frontier." 
+ qar_bestowed_by_god_title: "Bestowed by God"
+ qar_bestowed_by_god_desc: "Baghdad was once the greatest city of the Islamic World. Some would argue, even, that it was the greatest city of the entire world. Over the last few centuries, however, Baghdad has fallen on hard times. Conquered by Seljuks, Mongols, and dozens of others. Now that Baghdad is firmly under our control, we have the opportunity to restore the city to its former glory."
+ qar_appease_emirates_title: "Appease the Emirates"
+ qar_appease_emirates_desc: "Whilst our vassals aren’t particularly unruly and would be unlikely to directly oppose us, there’s little doubt that their loyalties could very quickly change should the winds not blow in our favor. We must make sure that they love us; and failing that, that they fear us." 
+ qar_edict_collaboration_title: "Edict of Collaboration"
+ qar_edict_collaboration_desc: "Just to the north of our capital are the Armenians. Our two peoples have lived beside each other for hundreds of years now, though they chafe under our rule regardless. Should they rebel, there is no doubt we would crush them, though our Sultan believes that if we were to accept the Armenians into our administration, they would bring many of their useful skills with them, and be grateful for the opportunity to serve us." 
+ qar_deal_copts_title: "Deal with the Armenians"
+ qar_deal_copts_desc: "The Armenians are now securely a part of our state, and are no longer at risk of rebelling. One matter remains unresolved, however; the matter of their faith. We are pious Muslims, and some in our court would support bringing them into the fold of Islam. Other, more forward-thinking councillors suggest we extend privileges onto them, allowing them to practice their faith as fellow people of the book."
+ qar_pursue_religious_unity_title: "Pursue Religious Unity"
+ qar_pursue_religious_unity_desc: "We Black Sheep are Shia, followers of the Imam Isma’il ibn Jafar, though many of our subjects are not. Many are Christian, and many more still are Sunni. In truth, we are a minority in our own lands, something that must change going forward, lest we succumb to internal division." 
+ qar_quell_mashriqi_dissent_title: "Mashriqi Dissent"
+ qar_quell_mashriqi_dissent_desc: "Ever since our conquest of Baghdad, the Arabs in our lands have continually been rebellious and uncooperative with us. Baghdad and its surrounding lands have required strict governance and continual military presence in order to be kept in line, and this approach is unsustainable. We must ensure their cooperation, whether by force or persuasion." 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+#Modifiers
+ qar_important_passage_modifier: "Important Passage" 
+ qar_masters_of_the_white_sheep_modifier: "Masters of the White Sheep"
+ qar_cutthroat_diplomacy_modifier: "Cutthroat Diplomacy"
+ qar_religious_cap_persia_modifier: "Religious Capital of Persia" 
+ qar_secured_succession_modifier: "Secured Succession" 
+ qar_persian_wealth_modifier: "Persian Wealth" 
+ qar_white_era_of_the_black_sheep_modifier: "White Era of the Black Sheep" 
+ qar_teachings_of_millenarianism_modifier: "Teachings of Millenarianism"
+ qar_brothers_in_faith_modifier: "Brothers in Faith"
+ qar_conqueror_of_millenarianism_modifier: "Conquerors of Millenarianism"
+ qar_tribal_cooperation_modifer: "Tribal Cooperation"
+ qar_royal_tombs_modifier: "Royal Tombs" 
+ qar_center_of_wealth_and_affluence_modifier: "Center of Wealth & Affluence"
+ qar_provincial_reorganization_modifier: "Provincial Reorganization"
+ qar_integrated_sodrosho_banners_modifier: "Integrated the Sodrosho Banners"
+ qar_accepted_mashriqi_culture_modifier: "Accepted the Mashriqi Culture"
+ qar_accepted_mashriqi_merchants_modifier: "Accepted Mashriqi Merchants"
+ qar_accepted_armenian_culture_modifier: "Accepted the Armenian Culture"
+ qar_application_collaboration_edit_modifier: "Application of the Collaboration Edict" 
+ qar_expanded_dhimmi_rights_modifier: "Expanded Dhimmi Rights"
+ qar_spread_by_the_sword_modifier: "Spread by the Sword" 
+ qar_coptic_resurgence_modifier: "Coptic Resurgence"
+ qar_adherents_sunni_alverism_modifier: "Adherents of Sunni Alverism"
+ qar_strong_governorship_modifier: "Strong Governorship"
+ qar_religious_practices_modifier: "Enforced Religious Law"
+ qar_house_of_wisdom_modifier: "House of Wisdom"
+ 
+
+#Custom Tooltips 
+ qar_upgrade_monument_without_requirements_tt: "We will be able to use and upgrade the '§YBaku Ateshgah§!' Monument without being §YZoroastrian§!"
+ qar_as_long_as_subject_desc: "as long as @AKK remains our subject"
+ qar_had_three_brothers_event_tt: "Has had the '§YThree Brothers§!' event"
+ qar_every_province_loses_1_unrest: "Every owned province will lose §Y1§! Unrest"
+ qar_shakh_dead_tt: "§YShah Rukh§! is dead"
+ qar_until_we_form_another_nation_desc: "until we form another nation"
+ qar_accept_mashriqi_no_slot: "We will accept the §YMashriqi§! culture without taking a slot"
+ qar_direct_ownership_boons_tt: "Directly owning the aforementioned provinces will reduce their §Ydevastation§!, §Yunrest§! and §Yautonomy§!"
+ qar_accept_armenian_no_slot: "We will accept the §YArmenian§! culture without taking a slot"
+ qar_as_long_as_3_privilege_dhimmi: "as long as the §YDhimmi§! have at least §Y3§! Estate Privileges"
+ qar_every_sunni_prospers_tt: "Every §YSunni§! province we own will experience prosperity"
+ qar_every_imam_level_tt: "Every level of this advisor will increase §YUlema§! loyalty equilibrium"
+ qar_lay_claim_around_tt: "Arise, arise, Riders of the Black Sheep! We ride to war!"
+ qar_time_to_rise_tt: "The tribe of the Black Sheep lays their claim in the western parts of what used to be Tamerlane's Empire..."
+ qar_alvand_mirza_flees: "Alvand Mirza abandoned his post and joins our enemy's ranks. Shameful display!"
+ general_tooltip_2_heathen_tolerance: "Has at least §G2§! Tolerance of Heathens"
+ qar_zero_coptic_provinces_tt: "Have no §YCoptic§! provinces"
+ general_tt_baku_ateshgah: "Granted access via a mission or reward"
+ 
+#Events
+
+ FU_QQ_Events.1.t: "The Three Brothers"
+ FU_QQ_Events.1.d: "Our Sultan finds himself stuck in a precarious position with his three most prominent sons. Hasan ‘Ali, the eldest and heir apparent, has already been imprisoned and banished by his father multiple times due to his disobedience and rebellious nature. His mother and various nobles support him, however, and would certainly be likely to rebel to aid him in the event of his disinheritance.\nPir Budaq, Jahan Shah’s middle son currently serves as the governor of Baghdad, where he patronizes the arts, inviting poets and calligraphers from all around Persia and the Levant, revitalizing Baghdad’s position as a capital of the arts. He governs well, though is just as prone to disobedience as his elder brother, and with his power base in Baghdad he looms as a threat should his father decide to keep Hasan ‘Ali as his chosen heir.\nThe youngest of the three, Mirza Yusuf, is also the most obscure. He has very little influence or power in court, but enjoys the support of Pir Ali Beg, the Sultan’s amir-al-umara. Should Mirza Yusuf come to the throne, he would certainly have the support of the army, but his skill as a ruler remains unknown." 
+ FU_QQ_Events.1.a: "The throne rightfully belongs to Hasan..." 
+ FU_QQ_Events.1.b: "...but his incompetence will bring our downfall."
+ FU_QQ_Events.1.c: "The third way is the safest."
+ 
+ FU_QQ_Events.2.t: "Alvand Mirza - Governor of Mosul"
+ FU_QQ_Events.2.d: "Mosul, one of our most important cities, has recently lost its Governor, and our Sultan’s nephew, Alvand Mirza, seems to be a good choice for the position. His skill at commanding men means that he’s most certainly qualified, however Jahan Shah and others at court worry that his ties with Uzun Hasan of the Aq Qoyunlu might put his loyalty in question should we go to war with the White Sheep. Our Sultan additionally fears that the government may succumb to nepotism, should so many important roles be filled by his close family members."
+ FU_QQ_Events.2.b: "We can't allow nepotism in our government!"
+ FU_QQ_Events.2.g: "Grant him the post."
+ 
+ FU_QQ_Events.3.t: "Alvand Mirza's Flight" 
+ FU_QQ_Events.3.d: "A black day for our dynasty as our esteemed Sultan's nephew Alvand Mirza has betrayed our trust and raised his flag in rebellion! In open defiance of our authority, he has fled to Mosul where coins have been struck and prayers have been recited in his name as he calls on his follows to march towards Tabriz. While God is sure to grant us victory, his treachery casts a long shadow over our magnanimous rule and it is clear that the time to act is now." 
+ FU_QQ_Events.3.a: "That blasted coward!"
+ 
+ FU_QQ_Events.4.t: "In Search of Religious Pragmatism"
+ FU_QQ_Events.4.d: "While none doubt our commitment to the faith and protection of the righteous in the name of Hazrat Ali and the Ahl al-Bayt we rule a diverse realm of Muslims and Christians alike. As it becomes ever clearer that we will be the masters of Persia so does the need for religious pragmatism. Following the examples of our forefathers, we will prove to the diverse peoples of this land that we will protect them so that they may prosper under our banner."
+ FU_QQ_Events.4.a: "Turbulent times to test the strength of our faith..."
+ 
+ FU_QQ_Events.5.t: "Grand Library of Baghdad" 
+ FU_QQ_Events.5.d: "Baghdad is no longer the shell of its former self that the Mongol and Timurid conquests had left it, and it has once again returned to being a flourishing centre of trade and scholarly pursuits. Sponsored by our sultan, poets, scientists, calligraphers and engineers have begun contributing their works to a restored House of Wisdom, and even some texts previously thought lost have been transcribed and restored." 
+ FU_QQ_Events.5.a: "We have restored dour ancestors' wisdom!"
+
+#Advisor 
+ fu_royal_imam: "Royal Imam"
+ fu_royal_imam_desc: "In the Shi'a context, an imam is not only presented as the man of God par excellence, but as participating fully in the names, attributes, and acts that theology usually reserves for God alone. Imams have a meaning more central to belief, referring to leaders of the community."
+ 
+

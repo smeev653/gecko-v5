@@ -1,0 +1,99 @@
+arl_arsacid_legacy_modifier = {
+	cavalry_fire = 0.25
+	cavalry_flanking = 0.5
+	cav_to_inf_ratio = 0.25
+}
+arl_sassanid_legacy_modifier = {
+	cavalry_shock = 0.3	
+	cavalry_cost = -0.1
+	cav_to_inf_ratio = 0.25
+}
+arl_slave_cavalry_modifier = {
+	cavalry_cost = -0.15
+	cav_to_inf_ratio = 0.25
+    manpower_recovery_speed = 0.15
+}
+arl_advanced_cavalry_tactics_modifier = {
+	cavalry_shock = 0.3
+	cavalry_fire = 0.3
+	cavalry_cost = -0.15
+	cav_to_inf_ratio = 0.25
+}
+arl_the_caspian_lion_modifier = {
+	province_trade_power_value = 15
+}
+arl_many_caps_of_safavids_modifier = {
+	province_trade_power_value = 10 
+	local_manpower_modifier = 0.25 
+}
+arl_citadel_shahanshah_modifier = {
+	monthly_splendor = 2 
+}
+arl_citadel_persia_modifier = {
+	monthly_splendor = 1 
+}
+arl_homogenous_court_modifier = {
+	same_culture_advisor_cost = -0.2
+}
+arl_unified_majority_modifier = {
+	local_unrest = -2 
+}
+arl_accepted_persian_culture_modifier = {
+	num_accepted_cultures = 1 
+}
+arl_maintained_azerbaijani_roots_modifier = {
+	local_unrest = -2 
+	local_manpower_modifier = 0.3
+}
+arl_chinese_salt_modifier = {
+	siege_ability = 0.15
+}
+arl_persian_gunpowder_modifier = {
+	trade_goods_size = 0.5
+}
+arl_a_new_challenger_modifier = {
+	core_creation = -0.1
+}
+arl_fort_defense_18_modifier = {
+	local_defensiveness = 0.2
+}
+arl_renovations_in_the_old_capital_modifier = {
+	development_cost = -0.2
+}
+arl_prestigious_capital_modifier = {
+	prestige = 1
+	legitimacy = 1
+}
+arl_calligraphy_capital_modifier = {
+	local_development_cost = -0.3 
+}
+arl_spreading_twelver_islam_modifier = {
+	prestige_per_development_from_conversion = 0.25 
+	warscore_cost_vs_other_religion = -0.2
+}
+arl_war_of_faithful_modifier = {
+	land_morale = 0.1
+}
+arl_efficient_integrateion_modifier = {
+	core_creation = -0.1 
+}
+arl_masterful_negotiators_modifier = {
+	ae_impact = -0.2
+}
+arl_valuable_lessons_of_war_modifier = {
+	army_tradition = 1 
+}
+arl_zaidi_scripture_modifier = {
+	monthly_piety = -0.001 
+	shock_damage_received = -0.05 
+}
+arl_heart_of_zaidi_school_modifier = {
+	shock_damage = 0.05
+	monthly_piety = -0.001
+}
+arl_on_the_silk_road_modifier = {
+	local_production_efficiency = 0.15
+}
+arl_silk_road_renewal_modifier = {
+	trade_goods_size_modifier = 1
+}

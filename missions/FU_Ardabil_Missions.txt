@@ -317,19 +317,19 @@ fu_ardabil_missions_3 = {
 		required_missions = { arl_spreading_twelver_islam } 
 		position = 5
 		trigger = {
-			army_size = QAR
-			total_development = QAR
-			army_size = TIM
-			total_development = TIM
+			army_size = AFG
+			total_development = AFG
+			army_size = TRS
+			total_development = TRS
 		}
 		effect = { 
 			persia_region = {
 				limit = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 					is_empty = no
 				}
-				add_core = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -482,15 +482,6 @@ fu_ardabil_missions_5 = {
 				add_country_modifier = {
 					name = arl_zaidi_scripture_modifier
 					duration = 5475
-				}
-			}
-			if = {
-				limit = { alliance_with = KRY }
-				KRY = { 
-					set_school_opinion = {
-						who = ROOT 
-						opinion = 1
-					}
 				}
 			}
 			if = { 
