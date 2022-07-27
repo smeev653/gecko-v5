@@ -117,6 +117,7 @@ estate_dhimmi = {
 	}
 	
 	privileges = {
+		estate_dhimmi_grant_liberties
 		estate_dhimmi_land_rights
 		estate_dhimmi_lighter_dhimmi_taxes
 		estate_dhimmi_guaranteed_autonomy
@@ -124,6 +125,8 @@ estate_dhimmi = {
 		estate_dhimmi_manpower
 		estate_dhimmi_tolerance
 		estate_dhimmi_guarantee_of_traditions
+		estate_dhimmi_jewish_community
+		estate_dhimmi_millet_system
 	}
 
 	agendas = {

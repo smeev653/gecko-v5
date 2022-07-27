@@ -17889,7 +17889,7 @@ gme_basilica_san_nicola = {
 		}
 		on_upgraded = { }
 	}
-
+}
 
 gme_walls_ragusa = {
 	start = 137

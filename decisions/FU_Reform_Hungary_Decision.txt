@@ -1,0 +1,83 @@
+country_decisions = { 
+	fu_hungary_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			HUN = { exists = no } 
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				tag = FU5 
+				primary_culture = hungarian
+			}
+			religion_group = christian
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = transdanubia_area
+				province_id = 1772				
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = HUN }
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 1772	
+			transdanubia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			153 = {						
+				is_state = yes
+			}
+		}
+		effect = {
+			153 = {
+				move_capital_effect = yes
+			}
+			change_tag = HUN
+			if = { 
+				limit = { has_dlc = "Emperor" }
+				swap_non_generic_missions = yes
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+		ai_importance = 600
+	}
+}

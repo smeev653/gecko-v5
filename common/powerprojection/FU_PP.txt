@@ -1,0 +1,11 @@
+tur_greatest_power_of_europe = {
+	min = 50
+	power = 1
+	yearly_decay = 0.01
+}
+
+fra_crown_of_france = {
+	min = 10
+	power = 1
+	yearly_decay = 0.01
+}

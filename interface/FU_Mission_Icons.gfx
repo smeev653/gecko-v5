@@ -58,11 +58,11 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "fu_gallen_textiles"
-		texturefile = "gfx//interface//missions//Switzerland//fu_gallen_textiles.dds"
+		texturefile = "gfx//interface//missions//flavor_universalis//Switzerland//fu_gallen_textiles.dds"
 	}
 	spriteType = { 
 		name = "fu_caseus_helveticus"
-		texturefile = "gfx//interface//missions//Switzerland//fu_caseus_helveticus.dds"
+		texturefile = "gfx//interface//missions//flavor_universalis//Switzerland//fu_caseus_helveticus.dds"
 	}
 	spriteType = { 
 		name = "fu_board_icon"
@@ -555,5 +555,25 @@ spriteTypes = {
 	spriteType = {  
 		name = "fu_maid_orleans_2"
 		texturefile = "gfx//interface//missions//flavor_universalis//France//fu_maid_orleans_2.dds"
+	}
+	spriteType = {  
+		name = "fu_caribbean_queen"
+		texturefile = "gfx//interface//missions//flavor_universalis//Pirate//fu_caribbean_queen.dds"
+	}
+	spriteType = {  
+		name = "fu_sic_parvis_magna"
+		texturefile = "gfx//interface//missions//flavor_universalis//Pirate//fu_sic_parvis_magna.dds"
+	}
+	spriteType = {  
+		name = "fu_raid_zanzibar"
+		texturefile = "gfx//interface//missions//flavor_universalis//Pirate//fu_raid_zanzibar.dds"
+	}
+	spriteType = {  
+		name = "fu_le_panama_canal"
+		texturefile = "gfx//interface//missions//flavor_universalis//Pirate//fu_le_panama_canal.dds"
+	}
+	spriteType = {  
+		name = "fu_cigar_factory"
+		texturefile = "gfx//interface//missions//flavor_universalis//Pirate//fu_cigar_factory.dds"
 	}
 }

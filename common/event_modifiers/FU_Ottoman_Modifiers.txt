@@ -1,0 +1,537 @@
+tur_united_beyliks_modifier = {
+	stability_cost_modifier = -0.2
+	nobles_loyalty_modifier = 0.1 
+}
+tur_protection_from_raids_modifier = {
+	local_monthly_devastation = -0.05
+	local_prosperity_growth = 1 
+}
+tur_classical_era_of_the_ottoman_empire_modifier = {
+	all_power_cost = -0.05 
+	great_project_upgrade_cost = -0.1
+}
+tur_integration_in_the_ottoman_government_modifier = { 
+	local_autonomy = -0.05 
+	local_manpower_modifier = 0.15 
+}
+tur_major_resettlement_of_the_city_modifier = {
+	local_development_cost = -0.25 
+	local_great_project_upgrade_cost = -0.5
+}
+tur_jewish_community_modifier = {
+	advisor_pool = 1 
+	interest = -0.5 
+	stability_cost_modifier = 0.15 
+	church_loyalty_modifier = -0.05 
+}
+tur_embellishment_queen_cities_modifier = {
+	tolerance_own = 1 
+	church_loyalty_modifier = 0.05
+}
+tur_oriental_council_state_modifier1 = {
+	reform_progress_growth = 0.025
+}
+tur_oriental_council_state_modifier2 = {
+	reform_progress_growth = 0.05
+}
+tur_oriental_council_state_modifier3 = {
+	reform_progress_growth = 0.75
+}
+tur_oriental_council_state_modifier4 = {
+	reform_progress_growth = 0.1
+}
+tur_oriental_council_state_modifier5 = {
+	reform_progress_growth = 0.125
+}
+tur_oriental_council_state_modifier6 = {
+	reform_progress_growth = 0.15
+}
+tur_supremacy_in_the_bosphorus_modifier = { 
+	siege_blockade_progress = 1 
+	global_naval_barrage_cost = -0.5
+}
+tur_safe_commercial_patrols_modifier = {
+	global_ship_trade_power = 0.25 
+	naval_tradition_from_trade = 0.5
+}
+tur_prosperous_trade_modifier = { 
+	trade_efficiency = 0.1
+}
+tur_principality_of_cyprus_modifier = { 
+	overlord_naval_forcelimit = 10 
+}
+tur_restoration_great_capital_modifier = {
+	prestige = 0.5
+}
+tur_efficient_privateering_in_west_med_modifier = { 
+	movement_speed_in_fleet_modifier = 0.25 
+	navy_tradition = 0.5
+}
+tur_master_of_berber_tribes_modifier = {
+	capture_ship_chance = 0.25
+	naval_tradition_from_battle = 0.5
+}
+tur_military_acclimatization_modifier = {
+	land_attrition = -0.2
+}
+tur_lord_alhambra_modifier = { 
+	reduced_liberty_desire = 10 
+	diplomatic_upkeep = 1 
+}
+tur_fall_of_cairo_modifier = {
+	min_local_autonomy = 95
+	trade_value_modifier = -1
+	local_governing_cost = -1
+}
+tur_push_for_egypt_modifier = {
+	province_warscore_cost = -0.10
+	core_creation = -0.05
+}
+tur_conquest_of_egypt_modifier = {
+	global_tax_income = 36 
+}
+tur_monopoly_spice_trade_modifier = {
+	trade_efficiency = 0.1
+}
+tur_iberian_wars_modifier = { 
+	galley_power = 0.1
+	infantry_power = 0.05
+}
+tur_fall_of_cairo_modifier2 = { 
+	min_local_autonomy = 50
+	trade_value_modifier = -0.75
+	local_governing_cost = -0.25
+}
+tur_developing_mamluk_communities_modifier = { 
+	local_development_cost = -0.15 
+}
+tur_cooperation_with_mamluk_locals_modifier = { 
+	mamluks_loyalty_modifier = 0.1
+}
+tur_master_egypt_modifier = { 
+	governing_capacity_modifier = 0.1
+	advisor_cost = -0.2
+}
+tur_khalifat_rashul_allah_modifier = {
+	tolerance_own = 2 
+}
+tur_crossroads_modifier = { 
+	trade_value = 10 
+	trade_goods_size = 2 
+	local_gold_depletion_chance_modifier = -0.5
+}
+tur_east_africa_modifier = { 
+	trade_goods_size = 1 
+}
+tur_appropriated_ethiopian_wealth_modifier = { 
+	trade_value = 1 
+}
+tur_exporting_to_the_west_modifier = { 
+	global_trade_goods_size_modifier = 0.15
+}
+tur_indian_goods_modifier = {
+	monthly_splendor = 2 
+}
+tur_trade_center_of_the_ottoman_empire_modifier = { 
+	province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.25
+}
+tur_major_centre_myrrh_production_modifier = { 
+	trade_goods_size = 2 
+}
+tur_arabian_road_network_modifier = { 
+	supply_limit_modifier = 0.25
+	local_friendly_movement_speed = 0.33
+}
+tur_proper_irrigation_modifier = { 
+	local_development_cost = -0.35
+}
+tur_master_of_arabia_modifier = {
+	merchants = 1 
+	trade_steering = 0.1
+}
+tur_accepted_amhara_culture_modifier = { 
+	num_accepted_cultures = 1 
+}
+tur_coexistence_of_kanun_and_sharia_modifier = { 	
+	adm_tech_cost_modifier = -0.05 
+	monthly_piety = 0.001 
+}
+tur_merchant_court_examinations_modifier = { 
+	burghers_loyalty_modifier = 0.05
+	yearly_corruption = -0.1
+}
+tur_legendary_lawgiver_modifier = { 
+	monthly_reform_progress_modifier = 0.1
+	global_autonomy = -0.025
+}
+tur_influx_of_foreign_goods_modifier = {
+	global_trade_goods_size_modifier = 0.15 
+	build_cost = -0.1
+}
+tur_ottoman_thalassocracy_modifier = { 
+	heavy_ship_power = 0.15
+	global_ship_cost = -0.1
+}
+tur_baghdad_center_of_scholars_modifier = {
+	idea_cost = -0.05 
+}
+
+euphrates_estuary_modifier2 = {
+	province_trade_power_value = 20
+	picture = "estuary_icon"
+}
+tur_hormuz_toll_modifier = {
+	province_trade_power_value = 15
+	trade_value = 5 
+}
+tur_custodian_of_persia_modifier = { 
+	monthly_splendor = 2 
+}
+tur_increased_fabric_production_modifier = { 
+	trade_goods_size_modifier = 0.15
+}
+tur_golden_silk_modifier = {
+	trade_efficiency = 0.1
+}
+tur_tatar_vanguard_modifier = {
+	cavalry_shock = 0.25
+}
+tur_shewa_edict_modifier = { 
+	tolerance_of_heathens_capacity = 1 
+	dhimmi_loyalty_modifier = 0.05
+}
+tur_jade_techniques_of_far_east_modifier = {
+	trade_goods_size = 1 
+}
+tur_thriving_muslim_community_modifier = {
+	local_development_cost = -0.25
+	local_prosperity_growth = 1 
+	local_build_cost = -0.15	
+}
+tur_legacy_king_david_modifier = {
+	build_cost = -0.15
+}
+tur_funded_strongholds_modifier = { 
+	max_attrition = 1
+	local_defensiveness = 0.1
+}
+tur_population_relocation_modifier = { 
+	local_culture_conversion_cost = -0.5
+	local_missionary_strength = 0.05
+}
+tur_allowed_tatars_in_sipahi_modifier = { 
+	janissary_loyalty_modifier = -0.1
+	cavalry_power = 0.1
+	cavalry_cost = -0.15
+}
+tur_safeguarded_jan_privileges_modifier = {
+	janissary_loyalty_modifier = 0.05
+	janissary_influence_modifier = 0.1
+}
+tur_supremacy_over_venetians_modifier = { 
+	naval_morale = 0.1
+}
+tur_grenzen_employment_modifier = { 
+	local_development_cost = -0.2
+	local_monthly_devastation = -0.1
+}
+tur_arsenal_of_venice_modifier = {
+	ship_durability = 0.05
+	global_ship_cost = -0.1
+}
+tur_capital_of_cloth_science_modifier = { 
+	trade_goods_size = 1 
+}
+tur_capital_of_trade_modifier = { 
+	global_ship_trade_power = 0.15
+	global_trade_power = 0.05
+}
+tur_capital_of_dynasties_modifier = {
+	country_diplomatic_power = 1 
+	legitimacy = 0.5
+	devotion = 0.5
+	republican_tradition = 0.15
+}
+tur_capital_of_grain_modifier = {
+	land_attrition = -0.05
+	manpower_recovery_speed = 0.05
+}
+tur_regimental_crackdowns_modifier = {
+	global_rebel_suppression_efficiency = 0.25
+}
+tur_war_europe_modifier = { 
+	cb_on_religious_enemies = yes 
+	manpower_in_true_faith_provinces = 0.15
+}
+tur_loyal_local_nobles_modifier = { 
+	nobles_loyalty_modifier = 0.05
+}
+tur_continuation_rome_empire_modifier = { 
+	ae_impact = -0.1
+	war_exhaustion = -0.03
+}
+tur_expanded_turda_mines_modifier = { 
+	trade_goods_size_modifier = 0.25
+}
+tur_conquest_of_vienna_modifier = {
+	country_military_power = 1 
+	prestige = 0.5
+}
+tur_the_devshirme_system_modifier = { 
+	global_manpower_modifier = 0.05
+}
+tur_regulated_gold_mining_modifier = {
+	local_gold_depletion_chance_modifier = -0.2
+}
+tur_crown_of_rome_modifier = { 
+	max_absolutism = 10 
+}
+tur_legitimate_roman_empire_modifier = { 
+	num_accepted_cultures = 12 
+}
+tur_european_hegemon_modifier = { 
+	province_warscore_cost = -0.15
+}
+tur_gates_of_the_western_christianity_modifier = { 
+	recover_army_morale_speed = 0.1
+	land_morale = 0.05 
+}
+tur_jihan_on_europe_modifier = { 
+	core_creation = -0.15
+	church_loyalty_modifier = 0.1
+}
+tur_celebration_of_christian_traditions_modifier = { 
+	tolerance_of_heathens_capacity = 1 
+}
+tur_overpowered_the_hussars_modifier = { 
+	cavalry_power = 0.1
+	land_morale = 0.05
+}
+tur_sultans_palace_in_warsaw_modifier = { 
+	administrative_efficiency = 0.05
+	adm_tech_cost_modifier = -0.1
+}
+tur_functional_bureaucracy_modifier = { 
+	all_estate_loyalty_equilibrium = 0.05
+	advisor_cost = -0.1
+}
+tur_islamic_cart_and_illustr_modifier = {
+	innovativeness_gain = 0.5
+	idea_cost = -0.1
+}
+tur_islamic_cart_and_illustr_modifier2 = { 
+	innovativeness_gain = 0.25
+	idea_cost = -0.05
+}
+tur_scholarly_studies_modifier = {
+	technology_cost = -0.05
+	country_admin_power = 1 
+}
+tur_flourishing_orthodoxy_modifier = {
+	local_tax_modifier = 0.1
+	local_prosperity_growth = 0.5
+}
+tur_arch_marriage_christ_islam_modifier = { 
+	prestige_decay = -0.01 
+	build_cost = -0.1
+}
+tur_mehmed_pasha_mosque_modifier = { 
+	culture_conversion_cost = -0.15
+} 
+tur_celebration_islamic_faith_modifier = { 
+	tolerance_own = 1 
+}
+tur_dhimmi_adherence_to_the_millet_modifier = { 
+	local_development_cost = -0.05
+}
+tur_centralization_efforts_of_sultan_modifier = { 
+	core_creation = -0.1 
+	autonomy_change_time = -0.25
+}
+tur_faithful_to_tradition_modifier = { 
+	same_culture_advisor_cost = -0.25
+}
+tur_effective_pasha_modifier = { 
+	local_tax_modifier = 0.2
+	local_development_cost = -0.1 
+}
+tur_blanket_scheme_modifier = { 
+	inflation_reduction = 0.05
+	interest = -0.5
+}
+tur_acemi_oglan_modifier = { 
+	janissary_loyalty_modifier = 0.1
+	special_unit_forcelimit = 0.1
+}
+tur_excellent_janissary_recruits_modifier = {
+	land_morale = 0.05
+	is_janissary_modifier = yes 
+}
+tur_excellent_janissary_recruits2_modifier = {
+	land_morale = 0.05
+}
+tur_bektashi_janissaries_modifier = { 
+	monthly_piety = 0.0025
+	land_forcelimit_modifier = 0.1
+}
+tur_harmonization_of_legal_law_and_sharia_modifier = { 
+	monthly_reform_progress = 0.15
+	church_loyalty_modifier = 0.1
+}
+tur_organized_ortas_modifier = {
+	mil_tech_cost_modifier = -0.05
+	janissary_loyalty_modifier = 0.1
+}
+tur_yerliyya_garrison_modifier = {
+	local_defensiveness = 0.15
+	local_unrest = -1
+	local_manpower_modifier = 0.1
+}
+tur_kanuni_osmani_modifier = { 
+	administrative_efficiency = 0.05
+}
+tur_morisco_refugees_modifier = { 
+	local_development_cost = -0.1
+}
+tur_center_of_printing_knowledge_modifier = { 
+	trade_goods_size_modifier = 0.5
+}
+tur_tranquil_tulip_period_modifier = { 
+	possible_policy = 1 
+	stability_cost_modifier = -0.25
+	all_power_cost = -0.05
+}
+tur_fires_of_revolution_modifier = {
+	max_revolutionary_zeal = 10
+}
+tur_balanced_approach_modifier = { 
+	max_revolutionary_zeal = 10 
+	all_power_cost = -0.05
+	administrative_efficiency = 0.05
+}
+tur_birth_socialism_modifier = {  
+	monarch_diplomatic_power = 1 
+	monarch_military_power = 1 
+	administrative_efficiency = 0.1
+}
+tur_global_imperial_revolution_modifier = {
+	governing_capacity_modifier = 0.33
+	core_creation = -0.2
+	harsh_treatment_cost = -0.25
+}
+tur_seas_beyond_modifier = { 
+	range = 0.5
+	naval_attrition = -0.2
+}
+tur_kitab_bahriye_modifier = { 
+	colonists = 1 
+	global_colonial_growth = 25
+	range = 0.25
+}
+tur_otto_trade_post_modifier = {
+	province_trade_power_value = 10 
+	trade_value_modifier = 0.2
+}
+tur_overseas_markets_modifier = {
+	global_trade_power = 0.15
+}
+tur_pax_ottomana_modifier = { 
+	merchants = 2 
+	yearly_army_professionalism = 0.01
+	global_prosperity_growth = 1
+}
+tur_ehl-i_hiref_community_modifier = {
+	build_cost = -0.05
+	burghers_loyalty_modifier = 0.1
+	great_project_upgrade_cost = -0.1
+}
+tur_encourage_local_artisans_modifier = { 
+	build_time = -0.2
+}
+tur_trade_company_investments_committee_modifier = {
+	trade_company_investment_cost = -0.1
+	trade_efficiency = 0.05
+}
+tur_renovation_of_the_kaaba_modifier = { 
+	warscore_cost_vs_other_religion = -0.1
+}
+tur_local_education_modifier = { 
+	allowed_num_of_buildings = 1 
+}
+tur_enlightened_literacy_modern_europe_modifier = {
+	advisor_pool = 2 
+	technology_cost = -0.1
+}
+tur_studying_greek_mythos_modifier = {
+	idea_cost = -0.05
+	advisor_cost = -0.1
+}
+tur_domestic_ottoman_manufactories_modifier = { 
+	mercantilism_cost = -0.25
+	production_efficiency = 0.2
+}
+marmaris_castle_modifier = { 
+	local_defensiveness = 0.1
+	local_ship_repair = 0.15
+}
+tur_discontent_in_janissary_ranks_modifier = { 
+	discipline = -0.25
+	land_morale = -0.2
+}
+tur_discontent_in_janissary_ranks2_modifier = { 
+	discipline = -0.25
+	land_morale = -0.2
+}
+tur_supremacy_of_janissaries_modifier = { 
+	max_absolutism = -25
+	church_loyalty_modifier = -0.1
+	nobles_loyalty_modifier = -0.1
+	burghers_loyalty_modifier = -0.1
+	mil_tech_cost_modifier = 0.25
+}
+tur_military_modernization_modifier = { 
+	fire_damage = 0.05
+	drill_gain_modifier = 0.5
+}
+tur_abu_hanifa_mosque_modifier = { 
+	church_loyalty_modifier = 0.05
+	church_influence_modifier = 0.05
+	tolerance_own = 1 
+}
+tur_integration_of_the_mamluk_bureaucracy_modifier = {
+	expand_administration_cost = -0.5
+	state_governing_cost = -0.05
+}
+tur_secured_vali_ahad_modifier = {
+	stability_cost_modifier = -0.1
+	nobles_loyalty_modifier = 0.05
+}	
+tur_rebellion_line_modifier = {
+	global_unrest = 2 
+	all_estate_loyalty_equilibrium = -0.05
+}
+tur_sabotaged_bureaucracy_modifier = {
+	global_spy_defence = -0.5
+	reduced_liberty_desire = -10
+	advisor_cost = 0.25
+}
+tur_title_of_kira_modifier = { 
+	church_loyalty_modifier = -0.05
+}
+tur_reign_of_women_modifier = {
+	advisor_pool = 1
+}
+tur_reign_of_the_valide_sultan_modifier = { 
+	all_power_cost = 0.15 
+	yearly_corruption = 0.2
+	legitimacy = -1
+	all_estate_loyalty_equilibrium = -0.05
+}
+tur_opposed_valide_sultan_modifier = { 
+	global_unrest = 5 
+	all_estate_loyalty_equilibrium = 0.05
+}
+tur_early_cannons_modifier = {
+	artillery_cost = -1 
+}

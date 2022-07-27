@@ -1,0 +1,3487 @@
+namespace = FU_Ottoman_Events
+
+country_event = { #Deposing the Knightly Scurge
+	id = FU_Ottoman_Events.1
+	title = FU_Ottoman_Events.1.t 
+	desc = FU_Ottoman_Events.1.d 
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.1.a 
+		
+		custom_tooltip = tur_every_coastal_province_balkan_anatolia_tt
+		tooltip = { 
+			add_province_modifier = {
+				name = tur_protection_from_raids_modifier
+				duration = 3650 
+			}
+		}
+		hidden_effect = { 
+			every_owned_province = {
+				limit = { 
+					has_port = yes 
+					OR = { 
+						region = balkan_region 
+						region = anatolia_region 
+					}
+				}
+				add_province_modifier = {
+					name = tur_protection_from_raids_modifier
+					duration = 3650 
+				}
+			}
+		}
+		add_navy_tradition = 10 
+	}
+}
+
+country_event = { #The High Court of Cyprus
+	id = FU_Ottoman_Events.2
+	title = FU_Ottoman_Events.2.t 
+	desc = FU_Ottoman_Events.2.d 
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Ottoman_Events.2.a 
+		trigger = { 
+			CYP = { exists = no } 
+		}
+		release = CYP  
+		CYP = {
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+			change_religion = orthodox
+		}
+		create_march = CYP 
+		CYP = {
+			add_country_modifier = {
+				name = tur_principality_of_cyprus_modifier
+				duration = -1 
+				desc = as_long_as_they_are_a_subject_desc
+			}
+			hidden_effect = { 
+				change_government_reform_progress = 100
+				add_adm_power = 200
+				add_dip_power = 200
+				add_mil_power = 200 
+				add_treasury = 100				
+			}
+		}
+	}
+	
+	option = {
+		name = FU_Ottoman_Events.2.b 
+		
+		if = { 
+			limit = { 
+				321 = {
+					owner = { is_subject_of = ROOT } 
+				}
+			}
+			321 = { cede_province = ROOT } 
+		}
+		321 = { 
+			change_religion = ROOT 
+			change_culture = ROOT 
+			add_nationalism = -5
+		}
+		add_mil_power = 50 
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.2.c 
+		trigger = { 
+			CYP = { is_subject_of = ROOT } 
+		}
+		add_prestige = 10 
+		CYP = { 
+			add_historical_friend = ROOT 
+		}
+		add_historical_friend = CYP 
+	}		
+}	
+
+country_event = { #Victory for the Ottoman House 
+	id = FU_Ottoman_Events.3
+	title = FU_Ottoman_Events.3.t 
+	desc = FU_Ottoman_Events.3.d 
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.3.a 
+		
+		anatolia_region = { 
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
+			add_province_modifier = { 
+				name = tur_integration_in_the_ottoman_government_modifier
+				duration = 5475
+			}
+		}
+		if = { 
+			limit = { 
+				NOT = { mil = 6 } 
+			}
+			change_mil = 1 
+		}
+		else = { add_mil_power = 50 } 
+	}
+}
+
+country_event = { #Classical Era of the Ottoman Empire 
+	id = FU_Ottoman_Events.4
+	title = FU_Ottoman_Events.4.t 
+	desc = FU_Ottoman_Events.4.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Ottoman_Events.4.a 
+		
+		add_country_modifier = {
+			name = tur_classical_era_of_the_ottoman_empire_modifier
+			duration = 7300 
+		}
+		mashriq_region = { 
+			limit = { 
+				NOT = { owned_by = ROOT } 
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+		}
+		egypt_region = { 
+			limit = { 
+				NOT = { owned_by = ROOT } 
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+		}
+		#arabia_region = { 
+		#	limit = { 
+		#		NOT = { owned_by = ROOT } 
+		#		NOT = { is_core = ROOT } 
+		#	}
+		#	add_permanent_claim = ROOT 
+		#}
+	}
+}
+
+country_event = { #Aftermath of the Crusade
+	id = FU_Ottoman_Events.5
+	title = FU_Ottoman_Events.5.t 
+	desc = FU_Ottoman_Events.5.d 
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes 
+	trigger = { 
+		tag = TUR 
+		normal_or_historical_nations = yes 
+	}
+	major = yes 
+	major_trigger = { technology_group = western } 
+	mean_time_to_happen = { months = 1 } 
+	immediate = { 
+		hidden_effect = { 
+			151 = { remove_province_modifier = bosphorous_sound_toll } 
+		}
+	}
+	
+	option = {
+		name = FU_Ottoman_Events.5.a 
+		
+		
+		custom_tooltip = tur_beginning_of_an_era
+		set_country_flag = tur_crusade_varna_flag
+	}
+}
+
+country_event = { #Konstantiniyye, the Capital of the Empire
+	id = FU_Ottoman_Events.6
+	title =  FU_Ottoman_Events.6.t 
+	desc = FU_Ottoman_Events.6.d 
+	picture = fu_konstantiniyye_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.6.a 
+		
+		151 = {
+			add_province_modifier = { 
+				name = tur_major_resettlement_of_the_city_modifier
+				duration = 9125
+			}
+		}
+	}
+}
+
+country_event = { #The Jews of Konstantiniyye
+	id = FU_Ottoman_Events.7
+	title = FU_Ottoman_Events.7.t 
+	desc = FU_Ottoman_Events.7.d 
+	picture = PILGRIMAGE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.7.a 
+		
+		if = { 
+			limit = { has_estate = estate_dhimmi } 
+			set_estate_privilege = estate_dhimmi_jewish_community
+		}
+		else = { 
+			add_country_modifier = { 
+				name = tur_jewish_community_modifier
+				duration = 9125
+			}
+		}
+		custom_tooltip = tur_influence_future_rewards_tt
+		set_country_flag = tur_harbored_jews_flag
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.7.b 
+		
+		add_country_modifier = {
+			name = tur_embellishment_queen_cities_modifier
+			duration = 7300 
+		}
+	}
+}
+
+country_event = { #The Fate of Anatolia
+	id = FU_Ottoman_Events.8
+	title = FU_Ottoman_Events.8.t 
+	desc = FU_Ottoman_Events.8.d 
+	picture = PILGRIMAGE_eventPicture
+	fire_only_once = yes 
+	trigger = { 
+		tag = TUR 
+		normal_or_historical_nations = yes 
+	}
+	mean_time_to_happen = { months = 1 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.8.a 
+		
+		kastamonu_area = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_territorial_core = ROOT 
+		}
+		karaman_area = {
+			limit = { 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_territorial_core = ROOT 
+		}
+		2302 = { add_territorial_core = ROOT } 
+	}
+}
+
+country_event = { #The Fate of the Holy City
+	id = FU_Ottoman_Events.9
+	title = FU_Ottoman_Events.9.t 
+	desc = FU_Ottoman_Events.9.d 
+	picture = fu_jerusalem_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.9.a 
+		
+		if = { 
+			limit = { 
+				has_dlc = "Leviathan" 
+				379 = { 
+					NOT = { 
+						has_great_project = { 
+							type = holy_city_jerusalem 
+							tier = 3 
+						}
+					}
+				}
+			}
+			379 = { 
+				add_great_project_tier = {
+					type = holy_city_jerusalem  
+					tier = 1 
+				} 	
+				add_base_tax = 1 
+				add_base_production = 1 
+				add_base_manpower = 1 
+			}
+		}
+		else = {
+			379 = { 
+				add_base_tax = 3 
+				add_base_production = 3 
+				add_base_manpower = 4 
+				add_nationalism = -10 
+			}
+		}
+		if = { 
+			limit = { dip = 6 } 
+			add_dip_power = 50 
+		}
+		else = { change_dip = 1 } 
+	}
+	
+	option = { 	
+		name = FU_Ottoman_Events.9.b 
+		
+		add_government_reform = tur_custodian_holy_city_reform
+	}
+}
+
+country_event = { #Grand Entrance in Fez 
+	id = FU_Ottoman_Events.10
+	title = FU_Ottoman_Events.10.t 
+	desc = FU_Ottoman_Events.10.d 
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.10.a 
+		
+		trigger = { 
+			OR = { 
+				MOR = { is_subject_of = ROOT } 
+				MOR = { exists = no } 
+			}
+		}
+		
+		northern_morocco_area = {
+			limit = {
+				NOT = { is_core = MOR }
+			}
+			add_core = MOR
+		}
+		southern_morocco_area = {
+			limit = {
+				NOT = { is_core = MOR }
+			}
+			add_core = MOR
+		}
+		western_morocco_area = {
+			limit = {
+				NOT = { is_core = MOR }
+			}
+			add_core = MOR
+		}
+		marrekesh_area = {
+			limit = {
+				NOT = { is_core = MOR }
+			}
+			add_core = MOR
+		}
+		tafilalt_area = {
+			limit = {
+				NOT = { is_core = MOR }
+			}
+			add_core = MOR
+		}
+		sus_area = {
+			limit = {
+				NOT = { is_core = MOR }
+			}
+			add_core = MOR
+		}
+		if = { 
+			limit = { MOR = { exists = no } }
+			release = MOR  
+			create_march = MOR 
+			MOR = { change_religion = ROOT } 
+		}
+		add_country_modifier = {
+			name = tur_master_of_berber_tribes_modifier
+			duration = -1 
+			desc = as_long_as_they_are_a_subject_desc 
+		}
+		346 = { add_base_production = 3 } 
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.10.b 
+		
+		add_country_modifier = { 
+			name = tur_military_acclimatization_modifier
+			duration = 9125
+		}
+		if = { 
+			limit = { 
+				1127 = { is_empty = yes }
+			}
+			create_colony_mission_reward = {
+				province = 1127
+			}
+		}
+		else = { 
+			1127 = { add_core = ROOT }
+		}
+		sahel_region = { 
+			limit = { 
+				NOT = { owned_by = ROOT } 
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+		}
+	}
+}
+	
+country_event = { #Muslims Return in Iberia #Nature is Healing 
+	id = FU_Ottoman_Events.11
+	title = FU_Ottoman_Events.11.t 
+	desc = FU_Ottoman_Events.11.d 
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.11.a 
+		
+		trigger = { 
+			OR = { 
+				ADU = { is_subject_of = ROOT } 
+				ADU = { exists = no } 
+			}
+		}
+		
+		lower_andalucia_area = {
+			limit = {
+				NOT = { is_core = ADU }
+			}
+			add_core = ADU
+		}
+		upper_andalucia_area = {
+			limit = {
+				NOT = { is_core = ADU }
+			}
+			add_core = ADU
+		}
+		if = { 
+			limit = { ADU = { exists = no } }
+			release = ADU  
+			create_march = ADU 
+			ADU = { change_religion = ROOT } 
+		}
+		add_country_modifier = {
+			name = tur_lord_alhambra_modifier
+			duration = -1 
+			desc = as_long_as_they_are_a_subject_desc 
+		}
+		iberia_region = { 
+			limit = { 
+				NOT = { owned_by = ADU } 
+			}
+			add_core = ADU 
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.11.b 
+		
+		add_country_modifier = { 
+			name = tur_iberian_wars_modifier
+			duration = 9125
+		}
+		iberia_region = { 
+			limit = { 
+				NOT = { owned_by = ROOT } 
+				NOT = { is_core = ROOT } 
+			}
+			add_permanent_claim = ROOT 
+		}
+	}
+}	
+	
+country_event = { #The Development of Trade in Egypt 
+	id = FU_Ottoman_Events.13
+	title = FU_Ottoman_Events.13.t 
+	desc = FU_Ottoman_Events.13.d 
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.13.a 
+			delta_area = { add_base_production = 1 } 
+			bahari_area = { add_base_production = 1 } 
+		
+	}
+}
+	
+country_event = { #New Head of Ummah 
+	id = FU_Ottoman_Events.14
+	title = FU_Ottoman_Events.14.t 
+	desc = FU_Ottoman_Events.14.d 
+	picture = HAJJ_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Ottoman_Events.14.a 
+		add_country_modifier = {
+			name = tur_khalifat_rashul_allah_modifier
+			duration = -1 
+		}
+		change_adm = 1 
+		change_dip = 1 
+		change_mil = 1 
+	}
+}
+	
+country_event = { #The Rise of Kilwa Masoko
+	id = FU_Ottoman_Events.15
+	title = FU_Ottoman_Events.15.t 
+	desc = FU_Ottoman_Events.15.d 
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.15.a 
+		
+		1196 = { 
+			change_province_name = "Kilwa Masoko"
+			add_permanent_province_modifier = {
+				name = tur_crossroads_modifier
+				duration = -1 
+			}
+			add_base_tax = 1
+			add_base_production = 2 
+			add_base_manpower = 2 
+		}
+	}
+}			
+	
+
+country_event = { 
+	id = FU_Ottoman_Events.17
+	title = FU_Ottoman_Events.17.t 
+	desc = FU_Ottoman_Events.17.d 
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.17.a 
+		
+		if = { 	
+			limit = { 
+				any_ally = { 
+					capital_scope = { superregion = india_superregion }
+					has_opinion = { 
+						who = ROOT 
+						value = 150 
+					}
+					trust = { 
+						who = ROOT 
+						value = 80 
+					}
+				}
+			}
+			random_ally = { 
+				limit = { 
+					capital_scope = { superregion = india_superregion }
+					has_opinion = { 
+						who = ROOT 
+						value = 150 
+					}
+					trust = { 
+						who = ROOT 
+						value = 80 
+					}
+				}
+				add_country_modifier = {
+					name = tur_exporting_to_the_west_modifier
+					duration = 9125 
+				}
+			}
+			add_country_modifier = {
+				name = tur_indian_goods_modifier
+				duration = -1
+			}
+		}
+		if = {
+			limit = { 
+				504 = { 
+					trade_share = {
+						country = ROOT 
+						share = 30
+					}
+				}
+			}
+			504 = { 
+				add_trade_modifier = {
+					who = ROOT
+					duration = 9125
+					power = 50
+					key = STRONG_MERCHANTS
+				}
+			}
+		}
+		if = {
+			limit = { 
+				1340 = { 
+					trade_share = {
+						country = ROOT 
+						share = 30
+					}
+				}
+			}
+			1340 = { 
+				add_trade_modifier = {
+					who = ROOT
+					duration = 9125
+					power = 50
+					key = STRONG_MERCHANTS
+				}
+			}
+		}
+		if = {
+			limit = { 
+				1343 = { 
+					trade_share = {
+						country = ROOT 
+						share = 30
+					}
+				}
+			}
+			1343 = { 
+				add_trade_modifier = {
+					who = ROOT
+					duration = 9125
+					power = 50
+					key = STRONG_MERCHANTS
+				}
+			}
+		}
+		if = { 
+			limit = { 
+				any_owned_province = {
+					superregion = india_superregion 
+					province_has_center_of_trade_of_level = 1 
+				}
+			}
+			random_owned_province = { 	
+				limit = { 	
+					superregion = india_superregion 
+					province_has_center_of_trade_of_level = 1 
+					NOT = { has_province_modifier = tur_trade_center_of_the_ottoman_empire_modifier }
+				}
+				add_province_modifier = {
+					name = tur_trade_center_of_the_ottoman_empire_modifier
+					duration = -1 
+				}
+			}
+			random_owned_province = { 	
+				limit = { 	
+					superregion = india_superregion 
+					province_has_center_of_trade_of_level = 1 
+					NOT = { has_province_modifier = tur_trade_center_of_the_ottoman_empire_modifier }
+				}
+				add_province_modifier = {
+					name = tur_trade_center_of_the_ottoman_empire_modifier
+					duration = -1 
+				}
+			}
+			random_owned_province = { 	
+				limit = { 	
+					superregion = india_superregion 
+					province_has_center_of_trade_of_level = 1 
+					NOT = { has_province_modifier = tur_trade_center_of_the_ottoman_empire_modifier }
+				}
+				add_province_modifier = {
+					name = tur_trade_center_of_the_ottoman_empire_modifier
+					duration = -1 
+				}
+			}
+		}
+	}
+}	
+	
+country_event = { #Myrrh Imports for the Dhimmi
+	id = FU_Ottoman_Events.18
+	title = FU_Ottoman_Events.18.t 
+	desc = FU_Ottoman_Events.18.d 
+	picture = DIPLOMACY_eventPicture 
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.18.a 
+		
+		388 = { 
+			add_province_modifier = {
+				name = tur_major_centre_myrrh_production_modifier
+				duration = -1 
+			}
+		}	
+	}
+}
+
+country_event = { #Administrating the Horn
+	id = FU_Ottoman_Events.19
+	title = FU_Ottoman_Events.19.t 
+	desc = FU_Ottoman_Events.19.d 
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.19.a 
+		
+		horn_of_africa_region = { 
+			limit = { 
+				owned_by = ROOT 
+			}
+			change_religion = ROOT 
+			change_culture = ROOT 
+			random_list = { 
+				20 = { add_base_tax = 1 } 
+				40 = { add_base_production = 1 } 
+				40 = { add_base_manpower = 1 } 
+			} 
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.19.b 
+		
+		set_country_flag = tur_shewa_toleration_flag 
+		swap_non_generic_missions = yes 
+		if = { 
+			limit = { has_dlc = "Origins" }
+			custom_tooltip = tur_20_cawas_in_paris
+			hidden_effect = { 
+				capital_scope = { 	
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+					cawa_infantry = ROOT 
+				}
+			}
+		}
+		else = { 
+			add_army_professionalism = 0.05 
+			add_army_tradition = 10 
+		}
+	}
+}
+	
+country_event = { #The Three Court System of the Ottoman Empire	
+	id = FU_Ottoman_Events.20
+	title = FU_Ottoman_Events.20.t 
+	desc = FU_Ottoman_Events.20.d 
+	picture = DEBATE_REPUBLICAN_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.20.a 
+		
+		add_ruler_modifier = { 
+			name = tur_legendary_lawgiver_modifier 
+			duration = -1 
+		}
+		if = { 	
+			limit = { piety = 0 } 
+			add_country_modifier = {
+				name = tur_coexistence_of_kanun_and_sharia_modifier
+				duration = -1 
+				desc = until_we_complete_kanun_i_osmani_mission_desc
+			}
+		}
+		else = { 
+			add_country_modifier = {
+				name = tur_merchant_court_examinations_modifier
+				duration = -1 
+				desc = until_we_complete_kanun_i_osmani_mission_desc
+			}
+		}
+	}
+}
+
+country_event = { #The Baghdad Eyalet
+	id = FU_Ottoman_Events.21
+	title = FU_Ottoman_Events.21.t 
+	desc = FU_Ottoman_Events.21.d 
+	picture = CITY_VIEW_eventPicture 
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.21.a 
+		
+		add_country_modifier = { 
+			name = tur_baghdad_center_of_scholars_modifier
+			duration = -1 
+		}
+		if = {
+			limit = { 
+				religion_group = muslim 
+				NOT = { has_estate_privilege = estate_church_scholar_connections } 
+			} 
+			enable_baseline_invite_scholar = yes
+		}
+		else = { change_innovativeness = 5 } 
+	}
+}
+
+country_event = { #The Development of Trade in Egypt 
+	id = FU_Ottoman_Events.22
+	title = FU_Ottoman_Events.22.t 
+	desc = FU_Ottoman_Events.22.d 
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.22.a 
+			4341 = { 
+				add_base_tax = 2 
+				add_base_production = 2
+				add_base_manpower = 2 
+			}
+			add_dip_power = 100
+		
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.22.b 
+		add_years_of_income = 0.35
+		add_prestige = 15
+		if = { 
+			limit = { has_estate = estate_janissary } 
+			add_estate_loyalty = { 
+				estate = estate_janissary
+				loyalty = 10
+			}
+		}
+		else = { add_mil_power = 50 } 
+		
+	}
+}
+
+country_event = { #The Bay Toll of Hormuz
+	id = FU_Ottoman_Events.23
+	title = FU_Ottoman_Events.23.t 
+	desc = FU_Ottoman_Events.23.d 
+	picture = NAVAL_MILITARY_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.23.a 
+		
+		if = { 
+			limit = { has_dlc = "Leviathan" }
+			custom_tooltip = tur_begin_construction_hormuz_flag 
+			hidden_effect = { set_country_flag = fu_hormuz_toll_flag }
+		}
+		else = { 
+			2999 = {
+				add_province_modifier = {
+					name = tur_hormuz_toll_modifier
+					duration = -1 
+				}
+			}
+			add_mercantilism = 1
+		}
+	}
+}
+
+country_event = { #Supremacy Over the Emerald Lion
+	id = FU_Ottoman_Events.24
+	title = FU_Ottoman_Events.24.t 
+	desc = FU_Ottoman_Events.24.d 
+	picture = REVOLUTION_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.24.a 
+		
+		add_country_modifier = {
+			name = tur_custodian_of_persia_modifier
+			duration = -1 
+		}
+		if = { 
+			limit = { mil = 6 }
+			add_mil_power = 50 
+		}
+		else = { change_mil = 1 }
+		set_country_flag = 20_percent_chance_for_extra_dev
+		custom_tooltip = chance_to_gain_supplemental_dev_20_percent_tt
+		custom_tooltip = tur_per_dev_tt
+	}
+}
+
+country_event = { #Weaving Gold & Silk
+	id = FU_Ottoman_Events.25
+	title = FU_Ottoman_Events.25.t 
+	desc = FU_Ottoman_Events.25.d 
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.25.a 
+		
+		custom_tooltip = tur_25_goods_fabrics_tt
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						OR = { 
+							trade_goods = wool
+							trade_goods = cloth 
+							trade_goods = cotton 
+							trade_goods = silk
+						}
+					}
+					add_province_modifier = {
+						name = tur_increased_fabric_production_modifier
+						duration = -1 
+					}
+				}
+			}
+		
+		add_country_modifier = { 
+			name = tur_golden_silk_modifier
+			duration = -1 
+		}
+	}
+}	
+
+country_event = { #Reformation of the Sipahi 
+	id = FU_Ottoman_Events.26
+	title = FU_Ottoman_Events.26.t 
+	desc = FU_Ottoman_Events.26.d 
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.26.a 
+		
+		add_country_modifier = { 
+			name = tur_allowed_tatars_in_sipahi_modifier
+			duration = 7300
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.26.b 
+		add_country_modifier = {
+			name = tur_safeguarded_jan_privileges_modifier
+			duration = 9125
+		}
+	}
+}
+
+country_event = { #City of the Pilgrim King
+	id = FU_Ottoman_Events.27
+	title = FU_Ottoman_Events.27.t 
+	desc = FU_Ottoman_Events.27.d 
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.27.a 
+		
+		464 = { 
+			center_of_trade = 1
+			add_base_tax = 2
+			add_base_production = 2 
+			add_base_manpower = 2 
+		}
+		add_mercantilism = 2 
+	}
+}
+
+country_event = { #Travelling the Asian Trade Routes
+	id = FU_Ottoman_Events.28
+	title = FU_Ottoman_Events.28.t 
+	desc = FU_Ottoman_Events.28.d 
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.28.a 
+		
+			1764 = { 	
+				change_trade_goods = chinaware 
+				add_province_modifier = {
+					name = tur_jade_techniques_of_far_east_modifier
+					duration = -1 
+				}
+				add_base_production = 3 
+			}
+		
+	}
+}
+
+country_event = { #Christians of the Caucasus
+	id = FU_Ottoman_Events.29
+	title = FU_Ottoman_Events.29.t 
+	desc = FU_Ottoman_Events.29.d 
+	picture = LIBERUM_VETO_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.29.a 
+		
+		samtskhe_area = { 
+			add_province_modifier = {
+				name = tur_population_relocation_modifier
+				duration = 9125
+			}
+		}
+		kartli_kakheti_area = { 
+			add_province_modifier = {
+				name = tur_population_relocation_modifier
+				duration = 9125
+			}
+			add_nationalism = -10 
+			add_local_autonomy = -25
+			add_devastation = 20
+		}
+		imereti_area = { 
+			add_province_modifier = {
+				name = tur_population_relocation_modifier
+				duration = 9125
+			}
+			add_nationalism = -10 
+			add_local_autonomy = -25
+			add_devastation = 20
+		}
+		armenia_area = { 
+			add_province_modifier = {
+				name = tur_population_relocation_modifier
+				duration = 9125
+			}
+			add_nationalism = -10 
+			add_local_autonomy = -25
+			add_devastation = 20
+		}
+		custom_tooltip = tur_work_regiments_anatolia_tt
+		hidden_effect = { 
+			random_owned_area = { 
+				limit = { region = anatolia_region } 
+				add_base_manpower = 1 
+			}
+			random_owned_area = { 
+				limit = { region = anatolia_region }
+				add_base_production = 1 
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.29.b 
+		
+		add_country_modifier = { 
+			name = tur_legacy_king_david_modifier
+			duration = 10950 
+		}
+		
+		custom_tooltip = tur_every_church_gains_dev_tt
+		hidden_effect = { 
+			every_owned_province = {
+				limit = {
+					has_tax_building_trigger = yes 
+				}
+				random_list = {
+					50 = { add_base_production = 1 } 
+					50 = { add_base_manpower = 1 } 
+				}
+			}
+		}
+	}
+}		
+
+country_event = { #Christians of the Caucasus
+	id = FU_Ottoman_Events.30
+	title = FU_Ottoman_Events.30.t 
+	desc = FU_Ottoman_Events.30.d 
+	picture = LIBERUM_VETO_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.30.a 
+		
+		custom_tooltip = tur_30_dev_in_caucasus_tt
+		hidden_effect = { 
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+			random_owned_province = {
+				limit = { region = caucasia_region } 
+				random_list = {
+					50 = { add_base_manpower = 2 }
+					40 = { add_base_production = 2 }
+					10 = { add_base_tax = 3 } 
+				}
+			}
+		}
+		if = { 	
+			limit = { 
+				GEO = { is_subject_of = ROOT } 
+			}
+			add_historical_friend = GEO 
+			GEO = { add_historical_friend = ROOT } 
+			GEO = {
+				custom_tooltip = tur_every_mountain_province_tt
+				tooltip = { 
+					add_province_modifier = { 
+						name = tur_funded_strongholds_modifier
+						duration = -1 
+					}
+				}
+				hidden_effect = { 
+					every_owned_province = { 
+						limit = { has_terrain = mountain } 
+						add_province_modifier = { 
+							name = tur_funded_strongholds_modifier
+							duration = -1 
+						}
+					}
+				}
+			}
+		}
+	}
+}	
+
+country_event = { #Employing the Grenzen 
+	id = FU_Ottoman_Events.31
+	title = FU_Ottoman_Events.31.t 
+	desc = FU_Ottoman_Events.31.d 
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.31.a 
+		
+		slavonia_area = {
+			add_province_modifier = {
+				name = tur_grenzen_employment_modifier
+				duration = 7300 
+			}
+			hidden_effect = { 
+				random_list = { 
+					30 = { add_base_manpower = 1 } 
+					30 = { add_base_production = 1 } 
+					40 =  { add_base_tax = 1 } 
+				}
+			}
+		}
+		croatia_area = { 
+			add_province_modifier = {
+				name = tur_grenzen_employment_modifier
+				duration = 7300 
+			}
+			hidden_effect = { 
+				random_list = { 
+					30 = { add_base_manpower = 1 } 
+					30 = { add_base_production = 1 } 
+					40 =  { add_base_tax = 1 } 
+				}
+			}
+		}
+		bosnia_area = {
+			add_province_modifier = {
+				name = tur_grenzen_employment_modifier
+				duration = 7300 
+			}
+			hidden_effect = { 
+				random_list = { 
+					30 = { add_base_manpower = 1 } 
+					30 = { add_base_production = 1 } 
+					40 =  { add_base_tax = 1 } 
+				}
+			}
+		}
+		add_piety = 0.25
+		custom_tooltip = tur_each_area_1_random_dev
+	}
+}
+
+country_event = { #Sanjak of Albania
+	id = FU_Ottoman_Events.32
+	title = FU_Ottoman_Events.32.t 
+	desc = FU_Ottoman_Events.32.d 
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.32.a 
+		
+		custom_tooltip = tur_capable_general_joins_court_tt
+		add_country_modifier = { 
+			name = tur_loyal_local_nobles_modifier
+			duration = 7300
+		}
+		hidden_effect = { 
+			create_general = { 
+				tradition = 70 
+				add_shock = 1 
+				add_siege = 1				
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.32.b
+		
+		4750 = { change_culture = ROOT } 
+		4175 = { change_culture = ROOT }
+		4174 = { change_culture = ROOT }
+		143 = { change_culture = ROOT }
+		add_country_modifier = { 
+			name = tur_regimental_crackdowns_modifier
+			duration = 5475
+		}
+	}
+}
+
+country_event = { #Eyalets of Hungary
+	id = FU_Ottoman_Events.33
+	title = FU_Ottoman_Events.33.t 
+	desc = FU_Ottoman_Events.33.d 
+	picture = DIPLOMACY_eventPicture 
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.33.a 
+		
+		carpathia_region = { 	
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
+			add_core = FU5 
+			cede_province = FU5
+		}
+		create_march = FU5  
+		hidden_effect = { 
+			FU5 = { 
+				change_primary_culture = hungarian
+				change_government_reform_progress = 200
+				add_adm_power = 100 
+				add_dip_power = 100 
+				add_mil_power = 100 
+				if = { 
+					limit = { 
+						NOT = { prestige = -50 } 
+					}
+					add_prestige = 100
+				}
+				add_historical_friend = ROOT 
+			}
+		}
+		add_historical_friend = FU5
+		custom_tooltip = tur_half_price_merc_ap_tt
+		set_country_flag = ned_french_influences_flag
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.33.b 
+		
+		custom_tooltip = gen_tt_5_crownland_tt
+		hidden_effect = { 
+			change_estate_land_share = {
+				estate = all
+				share = -5
+			}
+		}
+		add_prestige = 15
+		carpathia_region = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT } 
+			add_local_autonomy = -25
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.33.c
+		
+		carpathia_region = { 	
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
+			add_core = FU5 
+			cede_province = FU5
+		}
+		create_march = FU5  
+		hidden_effect = { 
+			FU5 = { 
+				change_primary_culture = hungarian
+				change_government_reform_progress = 200
+				add_adm_power = 100 
+				add_dip_power = 100 
+				add_mil_power = 100 
+				if = { 
+					limit = { 
+						NOT = { prestige = -50 } 
+					}
+					add_prestige = 100
+				}
+				add_historical_friend = ROOT 
+			}
+		}
+		add_historical_friend = FU5
+		custom_tooltip = tur_half_price_merc_ap_tt
+		set_country_flag = ned_french_influences_flag
+		switch_tag = FU5
+	}
+}
+
+country_event = { #Integration of S&W 
+	id = FU_Ottoman_Events.34
+	title = FU_Ottoman_Events.34.t 
+	desc = FU_Ottoman_Events.34.d 
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.34.a 
+		if = { 
+			limit = { has_country_modifier = the_devshirme_system }
+			custom_tooltip = tur_modify_devshirme_tt
+			hidden_effect = { 
+				add_country_modifier = { 
+					name = tur_the_devshirme_system_modifier
+					duration = -1 
+					hidden = yes 
+				}
+			}
+		}
+		else = { add_army_professionalism = 0.05 } 
+		1766 = { 
+			add_province_modifier = {
+				name = tur_regulated_gold_mining_modifier
+				duration = -1 
+			}
+			add_local_autonomy = -25
+		}
+	}
+}
+
+country_event = { #The Crown of Rome 
+	id = FU_Ottoman_Events.35
+	title = FU_Ottoman_Events.35.t 
+	desc = FU_Ottoman_Events.35.d 
+	picture = MOSQUE_HAGIA_SOPHIA_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.35.a 
+		
+		override_country_name = FU6 
+		add_country_modifier = { 
+			name = tur_crown_of_rome_modifier
+			duration = -1 
+		}
+		custom_tooltip = tur_accept_all_italian_cultures_tt
+		hidden_effect = { 
+			add_country_modifier = { 
+				name = tur_legitimate_roman_empire_modifier
+				duration = -1 
+				hidden = yes 
+			}
+			add_accepted_culture = lombard
+			add_accepted_culture = tuscan
+			add_accepted_culture = sardinian
+			add_accepted_culture = romagnan
+			add_accepted_culture = ligurian
+			add_accepted_culture = venetian
+			add_accepted_culture = dalmatian
+			add_accepted_culture = neapolitan
+			add_accepted_culture = piedmontese
+			add_accepted_culture = umbrian
+			add_accepted_culture = sicilian
+			add_accepted_culture = maltese
+		}
+	}
+}
+
+country_event = { #Capital of the Western World
+	id = FU_Ottoman_Events.36
+	title = FU_Ottoman_Events.36.t 
+	desc = FU_Ottoman_Events.36.d 
+	picture = ST_PETERS_CHURCH_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.36.a 
+		
+		if = { 
+			limit = { 
+				118 = { religion_group = ROOT } 
+			}
+			add_country_modifier = { 
+				name = tur_jihan_on_europe_modifier
+				duration = 7300
+			}
+			create_general = { tradition = 100 } 
+			set_defender_of_the_faith = {
+				who = ROOT 
+			}
+		}
+		else_if = { 
+			limit = { has_dlc = "Leviathan" }
+			custom_tooltip = tur_enable_st_petes_basilica_tt
+			set_country_flag = enable_st_petes_basilica_flag
+			118 = { 
+				add_base_tax = 2 
+				add_base_production = 2
+				add_base_manpower = 2  
+			}
+		}
+		else = { 
+			change_adm = 1 
+			change_dip = 1 
+			118 = { 
+				add_base_tax = 2 
+				add_base_production = 2
+				add_base_manpower = 2  
+			}
+		}
+	}
+}
+
+country_event = { #The Collection of Byzantine Law
+	id = FU_Ottoman_Events.37
+	title = FU_Ottoman_Events.37.t 
+	desc = FU_Ottoman_Events.37.d 
+	picture = BIG_BOOK_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.37.a 
+		
+		change_government_reform_progress = 100 
+		
+		custom_tooltip = gen_tt_5_crownland_tt
+		hidden_effect = { 
+			change_estate_land_share = {
+				estate = all
+				share = -5
+			}
+		}
+	}
+}
+
+country_event = { #Millet System 
+	id = FU_Ottoman_Events.38
+	title = FU_Ottoman_Events.38.t 
+	desc = FU_Ottoman_Events.38.d 
+	picture = PAINTER_ARTIST_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.38.a 
+		
+		custom_tooltip = tur_10_dev_randomly_given_to_christian_provinces_tt
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+			random_owned_province = { 
+				limit = { religion_group = christian }
+				random_list = { 
+					35 = { add_base_tax = 1 } 
+					35 = { add_base_production = 1 } 
+					30 = { add_base_manpower = 1 } 
+				}
+			}
+		}
+		set_estate_privilege = estate_dhimmi_millet_system
+	}
+}	
+
+country_event = { #Centralizing the Empire of Osman
+	id = FU_Ottoman_Events.39
+	title = FU_Ottoman_Events.39.t 
+	desc = FU_Ottoman_Events.39.d 
+	picture = ADVISOR_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.39.a 
+		
+		add_ruler_modifier = { 
+			name = tur_centralization_efforts_of_sultan_modifier
+			duration = -1 
+		}
+		if = {		
+			limit = { 
+				has_estate = estate_mamluks 
+				NOT = { has_estate_privilege = estate_mamluks_primacy } 
+			}
+			set_estate_privilege = estate_mamluks_primacy
+			hidden_effect = { 
+				change_estate_land_share = {
+					estate = estate_mamluks
+					share = -15
+				}
+			}
+			add_adm_power = -100
+		}
+		else = { add_adm_power = 50 } 
+	}
+
+	option = { 
+		name = FU_Ottoman_Events.39.b 
+		
+		add_ruler_modifier = { 
+			name = tur_faithful_to_tradition_modifier
+			duration = -1 
+		}
+		custom_tooltip = tur_all_estates_gain_20_loyalty_tt
+		hidden_effect = { 
+			add_estate_loyalty = {
+				estate = estate_burghers 
+				loyalty = 20 
+			}
+			add_estate_loyalty = {
+				estate = estate_mamluks 
+				loyalty = 20 
+			}
+			add_estate_loyalty = {
+				estate = estate_janissary 
+				loyalty = 20 
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles 
+				loyalty = 20 
+			}
+			add_estate_loyalty = {
+				estate = estate_church 
+				loyalty = 20 
+			}
+			add_estate_loyalty = {
+				estate = estate_dhimmi 
+				loyalty = 20 
+			}
+		}
+	}
+}
+
+country_event = { #Solidifying the Ottoman Law 
+	id = FU_Ottoman_Events.40
+	title = FU_Ottoman_Events.40.t 
+	desc = FU_Ottoman_Events.40.d 
+	picture = BIG_BOOK_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.40.a 
+		trigger = { has_parliament = yes } 
+		
+		custom_tooltip = tur_unlock_new_parliament_issues_tt
+		custom_tooltip = tur_every_successful_issue_grants_25_random_pp_tt
+		set_country_flag = tur_unlock_new_parliament_issues_flag 
+		set_country_flag = issue_grants_25_random_pp_flag
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.40.b 
+		trigger = { 
+				full_idea_group = administrative_ideas 
+		}
+		add_country_modifier = { 
+			name = tur_kanuni_osmani_modifier
+			duration = -1 
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.40.c 
+		
+		custom_tooltip = tur_unlock_absolute_sultanic_law_tt
+		set_country_flag = tur_unlock_absolute_sultanic_law_flag
+		change_government_reform_progress = 50 
+	}
+}
+
+country_event = { #Mansure Army 
+	id = FU_Ottoman_Events.41
+	title = FU_Ottoman_Events.41.t 
+	desc = FU_Ottoman_Events.41.d 
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.41.a 
+		
+		set_country_flag = tur_trigger_disaster_flag
+		custom_tooltip = tur_trigger_disaster_tt
+		add_estate_loyalty = {
+			estate = estate_janissary
+			loyalty = -100
+		}
+		
+		if = { 
+			limit = { has_dlc = "Cradle of Civilization" } 
+			add_country_modifier = { 
+				name = tur_discontent_in_janissary_ranks_modifier
+				duration = -1 
+				desc = tur_until_we_complete_the_janissary_rebellion_events_tt
+			}
+		}
+		else = { 
+			add_country_modifier = { 
+				name = tur_discontent_in_janissary_ranks2_modifier
+				duration = -1 
+				desc = tur_until_we_complete_the_janissary_rebellion_events_tt
+			}
+		} 
+		
+		custom_tooltip = tur_janissary_rebellions_across_our_territories_tt
+		hidden_effect = { 
+			if = { 	
+				limit = { ai = no } 
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+			}
+			else = { 
+				random_owned_province = { 
+					limit = { 
+						controlled_by = ROOT 
+						continent = europe 
+					} 
+					fu_janissary_rebels = 3 
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.41.b 
+		
+		
+		set_country_flag = tur_janissary_autocracy_flag
+		add_government_reform = fu_janissary_autocracy
+		add_country_modifier = { 
+			name = tur_supremacy_of_janissaries_modifier 
+			duration = 18250 
+		}
+		change_estate_land_share = {
+			estate = estate_janissary 
+			share = 100 
+		}
+		add_absolutism = -100
+	}
+}
+
+country_event = { #Granadan Moriscos seek Refuge in [151.GetName]
+	id = FU_Ottoman_Events.42
+	title = FU_Ottoman_Events.42.t 
+	desc = FU_Ottoman_Events.42.d 
+	picture = PILGRIMAGE_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.42.a 
+		
+		thrace_area = {
+			add_province_modifier = {
+				name = tur_morisco_refugees_modifier
+				duration = 7300
+			}
+		}
+		define_advisor = { 
+			type = artist 
+			cost_multiplier = 0.5
+			culture = granadan 
+			religion = sunni 
+		}
+		set_country_flag = tur_accepted_moriscos_flag
+	}
+
+	option = { 
+		name = FU_Ottoman_Events.42.b 
+		
+		add_prestige = 10 
+	}
+}
+
+country_event = { #Piri Reis
+	id = FU_Ottoman_Events.43
+	title = FU_Ottoman_Events.43.t 
+	desc = FU_Ottoman_Events.43.d 
+	picture = ADVISOR_eventPicture
+	is_triggered_only = yes 
+	
+	option = {
+		name = FU_Ottoman_Events.43.a 
+		
+		define_advisor = {
+			type = fu_cartographer
+			name = "Piri Reis" 
+			skill = 3 
+			cost_multiplier = 0.25
+		}
+		custom_tooltip = ned_every_level_nav_trad_decay_tt
+		
+		if = { 
+			limit = { exploration_ideas = 1 } 
+			add_country_modifier = {
+				name = tur_kitab_bahriye_modifier
+				duration = 9125
+			}
+		}
+		else = { custom_tooltip = tur_if_quest_new_world_tt }
+	}
+}	
+
+country_event = { #Clear Bonuses
+	id = FU_Ottoman_Events.44 
+	title = FU_Ottoman_Events.44.t 
+	desc = FU_Ottoman_Events.44.d 
+	picture = WESTERNISATION_eventPicture
+	hidden = yes 
+	fire_only_once = yes
+	trigger = { 	
+		has_country_modifier = tur_efficient_privateering_in_west_med_modifier
+		NOT = { 
+			has_leader_with = {
+				siege = 6 
+				admiral = yes 
+			}
+		}
+	}
+	
+	immediate = { remove_country_modifier = tur_efficient_privateering_in_west_med_modifier } 
+	
+	option = { name = FU_Ottoman_Events.44.a } 
+}
+
+country_event = { #Clear Bonuses
+	id = FU_Ottoman_Events.45 
+	title = FU_Ottoman_Events.45.t 
+	desc = FU_Ottoman_Events.45.d 
+	picture = WESTERNISATION_eventPicture
+	hidden = yes 
+	fire_only_once = yes
+	trigger = { 	
+		has_country_modifier = tur_tatar_vanguard_modifier
+		NOT = { 
+			CRI = { is_subject_of = ROOT } 
+		}
+	}
+	
+	immediate = { remove_country_modifier = tur_tatar_vanguard_modifier } 
+	
+	option = { name = FU_Ottoman_Events.45.a } 
+}
+
+country_event = { #Clear Bonuses
+	id = FU_Ottoman_Events.46 
+	title = FU_Ottoman_Events.46.t 
+	desc = FU_Ottoman_Events.46.d 
+	picture = WESTERNISATION_eventPicture
+	hidden = yes 
+	fire_only_once = yes
+	trigger = { 	
+		has_country_modifier = tur_principality_of_cyprus_modifier
+		NOT = { 
+			CYP = { is_subject_of = ROOT } 
+		}
+	}
+	
+	immediate = { remove_country_modifier = tur_principality_of_cyprus_modifier } 
+	
+	option = { name = FU_Ottoman_Events.46.a } 
+}
+
+country_event = { #Clear Bonuses
+	id = FU_Ottoman_Events.47 
+	title = FU_Ottoman_Events.47.t 
+	desc = FU_Ottoman_Events.47.d 
+	picture = WESTERNISATION_eventPicture
+	hidden = yes 
+	fire_only_once = yes
+	trigger = { 	
+		has_country_modifier = tur_master_of_berber_tribes_modifier
+		NOT = { 
+			MOR = { is_subject_of = ROOT } 
+		}
+	}
+	
+	immediate = { remove_country_modifier = tur_master_of_berber_tribes_modifier } 
+	
+	option = { name = FU_Ottoman_Events.47.a } 
+}
+
+country_event = { #Clear Bonuses
+	id = FU_Ottoman_Events.48 
+	title = FU_Ottoman_Events.48.t 
+	desc = FU_Ottoman_Events.48.d 
+	picture = WESTERNISATION_eventPicture
+	hidden = yes 
+	fire_only_once = yes
+	trigger = { 	
+		has_country_modifier = tur_lord_alhambra_modifier
+		NOT = { 
+			ADU = { is_subject_of = ROOT } 
+		}
+	}
+	
+	immediate = { remove_country_modifier = tur_lord_alhambra_modifier } 
+	
+	option = { name = FU_Ottoman_Events.48.a } 
+}
+
+country_event = { #Clear Bonuses tur_coexistence_of_kanun_and_sharia_modifier tur_merchant_court_examinations_modifier
+	id = FU_Ottoman_Events.49 
+	title = FU_Ottoman_Events.49.t 
+	desc = FU_Ottoman_Events.49.d 
+	picture = WESTERNISATION_eventPicture
+	hidden = yes 
+	fire_only_once = yes 
+	trigger = { 	
+		has_country_modifier = tur_lord_alhambra_modifier
+		NOT = { 
+			ADU = { is_subject_of = ROOT } 
+		}
+	}
+	
+	immediate = { remove_country_modifier = tur_lord_alhambra_modifier } 
+	
+	option = { name = FU_Ottoman_Events.48.a } 
+}
+
+country_event = { #Clear Bonuses 
+	id = FU_Ottoman_Events.50 
+	title = FU_Ottoman_Events.50.t 
+	desc = FU_Ottoman_Events.50.d 
+	picture = WESTERNISATION_eventPicture
+	hidden = yes 
+	
+	trigger = { 	
+		OR = { 
+			has_country_modifier = tur_coexistence_of_kanun_and_sharia_modifier
+			has_country_modifier = tur_merchant_court_examinations_modifier
+		}
+		mission_completed = tur_kanuni_osmani
+	}
+	
+	immediate = { 
+		remove_country_modifier = tur_coexistence_of_kanun_and_sharia_modifier 
+		remove_country_modifier = tur_merchant_court_examinations_modifier
+	} 
+	
+	option = { name = FU_Ottoman_Events.50.a } 
+}
+
+country_event = { #Janissary Rebellion in the Balkans
+	id = FU_Ottoman_Events.51
+	title = FU_Ottoman_Events.51.t 
+	desc = FU_Ottoman_Events.51.d 
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		has_country_flag = tur_trigger_disaster_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = { 
+		hidden_effect = { 
+			if = { 
+				limit = { ai = no }
+				random_owned_province = { 
+					limit = { region = balkan_region } 
+					add_unrest = 10 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { region = balkan_region } 
+					add_unrest = 10 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { region = balkan_region } 
+					add_unrest = 10 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { region = balkan_region } 
+					add_unrest = 10 
+					fu_janissary_rebels = 3 
+				}
+				random_owned_province = { 
+					limit = { region = balkan_region } 
+					add_unrest = 10 
+					fu_janissary_rebels = 3 
+				}
+			}
+			else = { 
+				random_owned_province = { 
+					limit = { region = balkan_region } 
+					add_unrest = 10 
+					fu_janissary_rebels = 3 
+				}
+			}
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { ai = no } 
+				capital_scope = { 
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+				}
+				random_owned_province = { 
+					limit = {
+						continent = europe 
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+				}
+				random_owned_province = { 
+					limit = {
+						continent = europe 
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+				}
+				else = { 
+					capital_scope = { 
+						spawn_rebels = {
+							type = fu_janissary_rebels
+							size = 3
+							win = yes 
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.51.a 
+		
+		add_stability = -3 
+		set_country_flag = tur_rebellion_1_flag
+	}
+}
+
+country_event = { #Janissary Rebellion in the Balkans
+	id = FU_Ottoman_Events.52
+	title = FU_Ottoman_Events.52.t 
+	desc = FU_Ottoman_Events.52.d 
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		has_country_flag = tur_trigger_disaster_flag
+	}
+	
+	mean_time_to_happen = {
+		months = 24 
+	}
+	
+	immediate = {
+		hidden_effect = { 
+			if = { 	
+				limit = { ai = no } 
+				random_owned_province = { 
+					limit = {
+						region = anatolia_region  
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+					add_unrest = 10
+				}
+				random_owned_province = { 
+					limit = {
+						region = anatolia_region  
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+					add_unrest = 10
+				}
+				random_owned_province = { 
+					limit = {
+						region = anatolia_region  
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+					add_unrest = 10
+				}
+				random_owned_province = { 
+					limit = {
+						region = anatolia_region  
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+					add_unrest = 10
+				}
+				random_owned_province = { 
+					limit = {
+						region = anatolia_region  
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+					add_unrest = 10
+				}
+				random_owned_province = { 
+					limit = {
+						region = anatolia_region  
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+					add_unrest = 10
+				}
+				random_owned_province = { 
+					limit = {
+						region = anatolia_region  
+						controlled_by = ROOT 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+					add_unrest = 10
+				}
+			}
+			else = { 
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					add_unrest = 10 
+					fu_janissary_rebels = 3 
+				}
+			}
+		}
+		hidden_effect = { 
+			if = { 
+				limit = { ai = no } 
+				capital_scope = { 
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 4
+						win = yes 
+					}
+				}
+				else = { 
+					capital_scope = { 
+						spawn_rebels = {
+							type = fu_janissary_rebels
+							size = 3
+							win = yes 
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.52.a 
+		
+		add_stability = -3
+		anatolia_region = { 
+			limit = { owned_by = ROOT } 
+			add_devastation = 25 
+			add_unrest = 10
+		}
+		set_country_flag = tur_rebellion_2_flag
+		if = { 
+			limit = { ai = no } 
+			capital_scope = { 
+				spawn_rebels = {
+					type = fu_janissary_rebels
+					size = 4
+					win = yes 
+				}
+				spawn_rebels = {
+					type = fu_janissary_rebels
+					size = 4
+					win = yes 
+				}
+				spawn_rebels = {
+					type = fu_janissary_rebels
+					size = 4
+					win = yes 
+				}
+				spawn_rebels = {
+					type = fu_janissary_rebels
+					size = 4
+					win = yes 
+				}
+			}
+			else = { 
+				capital_scope = { 
+					spawn_rebels = {
+						type = fu_janissary_rebels
+						size = 3
+						win = yes 
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Janissary Defections
+	id = FU_Ottoman_Events.53
+	title = FU_Ottoman_Events.53.t 
+	desc = FU_Ottoman_Events.53.d 
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		has_country_flag = tur_trigger_disaster_flag 
+	}
+	
+	mean_time_to_happen = { 
+		months = 1 
+	}
+	
+	immediate = { 
+		hidden_effect = { 
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 25 
+				}
+			}
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 25 
+				}
+			}
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 25 
+				}
+			}
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 25 
+				}
+			}
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 15 
+				}
+			}
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 12 
+				}
+			}
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 25 
+				}
+			}
+			random_owned_province = { 
+				limit = { infantry_in_province = 20 } 
+				kill_units = {
+					who = owner
+					type = infantry
+					amount = 25 
+				}
+			}
+			add_yearly_manpower = -2
+		}
+		
+	}
+	
+	option = {
+		name = FU_Ottoman_Events.53.a 
+		
+		set_country_flag = tur_rebellion_3_flag
+		if = { 
+			limit = { has_dlc = "Cradle of Civilization" } 
+			add_army_professionalism = -0.25
+		}
+		add_army_tradition = -30
+		if = { 	
+			limit = { ai = no } 
+			random_owned_province = { 
+				limit = {
+					region = anatolia_region  
+					controlled_by = ROOT 
+				}
+				spawn_rebels = {
+					type = fu_janissary_rebels
+					size = 3
+					
+					win = yes 
+				}
+				add_unrest = 10
+			}
+			random_owned_province = { 
+				limit = {
+					region = anatolia_region  
+					controlled_by = ROOT 
+				}
+				spawn_rebels = {
+					type = fu_janissary_rebels
+					size = 3
+					
+					win = yes 
+				}
+				add_unrest = 10
+			}
+			add_yearly_manpower = -2
+		}
+		else = { 
+			random_owned_province = { 
+				limit = {
+					region = anatolia_region  
+					controlled_by = ROOT 
+				}
+				spawn_rebels = {
+					type = fu_janissary_rebels
+					size = 2
+					
+					win = yes 
+				}
+				add_unrest = 10
+			}
+			add_yearly_manpower = -1
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.53.b 
+		
+		set_country_flag = tur_rebellion_3_flag
+		if = { 
+			limit = { ai = no } 
+			add_years_of_income = -4 
+			add_inflation = 20
+			add_corruption = 10 
+			add_stability = -3 
+		}
+		else = { add_years_of_income = -0.35 } 
+	}
+}
+
+country_event = { #Rocket Man 
+	id = FU_Ottoman_Events.55
+	title = FU_Ottoman_Events.55.t 
+	desc = FU_Ottoman_Events.55.d 
+	picture = ADVISOR_eventPicture 
+	fire_only_once = yes 
+	
+	trigger = { 
+		tag = TUR 
+		is_year = 1620 
+		NOT = { is_year = 1700 }
+		if = { 
+			limit = { has_dlc = "Rule Britannia" }
+			innovativeness = 75 
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 120 
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.55.a 
+		
+		add_years_of_income = -1
+		random_list = { 
+			50 = { 
+				define_advisor = { 	
+					type = natural_scientist
+					name = "Legari Hasan Celebi" 
+					skill = 3 
+					cost_multiplier = 0.25
+				}
+			}
+			50 = { custom_tooltip = tur_celebi_goes_bye_bye }
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.55.b 
+		
+		add_prestige = -5
+	}
+}
+
+	
+country_event = { #Surgun Flock to [151.GetName]
+	id = FU_Ottoman_Events.58
+	title = FU_Ottoman_Events.58.t 
+	desc = FU_Ottoman_Events.58.d 
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TUR 
+		151 = { owned_by = TUR } 
+		NOT = { is_year = 1465 }
+	}
+	
+	mean_time_to_happen = { months = 65 }
+	
+	option = { 
+		name = FU_Ottoman_Events.58.a 
+		
+		151 = { 
+			add_base_production = 1 
+			add_prosperity = 25 
+		} 
+	}
+}
+	
+country_event = { #Dhimmi Religions Thrive in [151.GetName]
+	id = FU_Ottoman_Events.59
+	title = FU_Ottoman_Events.59.t 
+	desc = FU_Ottoman_Events.59.d 
+	picture = MOSQUE_HAGIA_SOPHIA_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		tag = TUR 
+		is_at_war = no 
+		151 = { is_capital_of = TUR } 
+		if = { 
+			limit = { has_estate = estate_dhimmi } 
+			estate_loyalty = { 
+				estate = estate_dhimmi 
+				loyalty = 60 
+			}
+		}
+		has_country_flag = tur_allow_patriarchate_flag
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.59.a 
+		
+		add_estate_loyalty = { 
+			estate = estate_dhimmi 
+			loyalty = 10 
+		}
+		if = { 
+			limit = { has_dlc = "Cradle of Civilization" }
+			add_piety = 0.1
+		}
+	}
+}
+
+country_event = { #Qizilbash Rebellion 
+	id = FU_Ottoman_Events.60
+	title = FU_Ottoman_Events.60.t 
+	desc = FU_Ottoman_Events.60.d 
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TUR 
+		any_rival_country = { religion = shiite } 
+		anatolia_region = { owned_by = TUR } 
+	}
+	mean_time_to_happen = { months = 120 } 
+	
+	immediate = {
+		hidden_effect = { 
+			if = { 
+				limit = { ai = yes } 
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 1 
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 2 
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 2 
+				}
+			}
+			else = {
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 3
+					shiite_rebels = 3
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 3 
+					shiite_rebels = 3
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 3
+					shiite_rebels = 3
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.60.a 
+		
+		add_stability = -1 
+	}
+}
+
+country_event = { #Sahkulu Rebellions 
+	id = FU_Ottoman_Events.61
+	title = FU_Ottoman_Events.61.t 
+	desc = FU_Ottoman_Events.61.d 
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TUR 
+		any_rival_country = { religion = shiite } 
+		anatolia_region = { owned_by = TUR } 
+	}
+	mean_time_to_happen = { months = 240 } 
+	
+	immediate = {
+		hidden_effect = { 
+			if = { 
+				limit = { ai = yes } 
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 1 
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 2 
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 2 
+				}
+			}
+			else = {
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 2
+					shiite_rebels = 3
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 1 
+					shiite_rebels = 3
+				}
+				random_owned_province = { 
+					limit = { region = anatolia_region } 
+					shiite_rebels = 1
+					shiite_rebels = 3
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.60.a 
+		
+		if = { 
+			limit = { ai = no }
+			add_stability = -1 
+		}
+		else = { add_prestige = -5 } 
+	}
+}
+
+country_event = { #the tomb of Abu Hanifa
+	id = FU_Ottoman_Events.62
+	title = FU_Ottoman_Events.62.t 
+	desc = FU_Ottoman_Events.62.d 
+	picture = DEATH_OF_HEIR_eventPicture 
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TUR 
+		is_year = 1535
+		NOT = { is_year = 1600 } 
+		religion_group = muslim 
+		410 = { country_or_non_sovereign_subject_holds = TUR } 
+	}
+	
+	mean_time_to_happen = { months = 120 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.62.a 
+		
+		if = { 
+			limit = { ai = no } 
+			add_years_of_income = -1 
+		}
+		else = { add_years_of_income = -0.1 } 
+		if = { 
+			limit = { has_dlc = "Cradle of Civilization" } 
+			add_piety = 0.25
+		}
+		410 = { add_base_tax = 3 } 
+		410 = { 
+			add_province_modifier = {
+				name = tur_abu_hanifa_mosque_modifier
+				duration = 9125
+			}
+		}
+	}
+	
+	option = {
+		name = FU_Ottoman_Events.62.b 
+		
+		if = { 
+			limit = { has_dlc = "Cradle of Civilization" } 
+			add_piety = -0.5
+		}
+		else = { add_prestige = -5 } 
+	}
+}		
+	
+country_event = { #Poor Economic Policies of [Root.Monarch.GetName]
+	id = FU_Ottoman_Events.63
+	title = FU_Ottoman_Events.63.t 
+	desc = FU_Ottoman_Events.63.d 
+	picture = ECONOMY_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TUR 
+		is_year = 1600 
+		OR = { 
+			NOT = { full_idea_group = economic_ideas } 
+			inflation = 5 
+		}
+		war_exhaustion = 5 
+		NOT = { adm = 5 } 
+	}
+	mean_time_to_happen = { months = 36 } 
+	
+	option = {
+		name = FU_Ottoman_Events.63.a 
+		
+		if = { 
+			limit = { ai = no } 
+			add_inflation = 20 
+			add_corruption = 5 
+		}
+		else = { add_inflation = 2 } 
+	}
+}
+	
+country_event = { #the Siyer-i Nebi
+	id = FU_Ottoman_Events.64
+	title = FU_Ottoman_Events.64.t 
+	desc = FU_Ottoman_Events.64.d 
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		tag = TUR 
+		is_year = 1600 
+		religion_group = muslim 
+		is_bankrupt = no 
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.64.a 
+		
+		if = { 
+			limit = { has_dlc = "Cradle of Civilization" } 
+			add_piety = 0.25
+		}
+		else = { add_adm_power = 100 } 
+		add_estate_loyalty = { 
+			estate = estate_church 
+			loyalty = 15 
+		}
+		if = { 
+			limit = { has_dlc = "Mandate of Heaven" } 
+			add_splendor = 200 
+		}
+		else = { add_dip_power = 50 } 
+	}
+}
+
+country_event = { #Islamic Epistemology in Mehmet's Era 
+	id = FU_Ottoman_Events.65
+	title = FU_Ottoman_Events.65.t 
+	desc = FU_Ottoman_Events.65.d 
+	picture = DEBATE_REPUBLICAN_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		tag = TUR 
+		NOT = { is_year = 1481 } 
+		151 = { is_capital_of = ROOT } 
+		is_at_war = no 
+		has_regency = no 
+	}
+	mean_time_to_happen = { months = 34 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.65.a 
+		
+		if = { 
+			limit = { 
+				has_dlc = "Rule Britannia" 
+				NOT = { innovativeness = 95 } 
+			}
+			change_innovativeness = 1 
+		}
+		else = { add_adm_power = 50 } 
+	}
+}
+
+country_event = { #Suleiman the Magnificent 
+	id = FU_Ottoman_Events.66 #Execute order 66!
+	title = FU_Ottoman_Events.66.t
+	desc = FU_Ottoman_Events.66.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = TUR 
+		is_year = 1520 
+		NOT = { is_year = 1600 } 
+		religion_group = muslim 
+	}
+	
+	mean_time_to_happen = { months = 36 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.66.a 
+		
+		define_heir = {
+			name = "Suleiman the Magnificent" 
+			adm = 6 
+			dip = 5 
+			mil = 6
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.66.b 
+		
+		add_prestige = 10
+		custom_tooltip = tur_suleiman_accident_tt
+	}
+}
+	
+
+country_event = { #The Ottoman Line of Succession
+	id = FU_Ottoman_Events.68
+	title = FU_Ottoman_Events.68.t 
+	desc = FU_Ottoman_Events.68.d 
+	picture = ASSASSINATION_eventPicture 
+	
+	trigger = { 
+		tag = TUR
+		has_reform = ottoman_government 
+		has_heir = yes 
+		NOT = { has_heir_flag = tur_purged_line_flag }
+	}
+	
+	mean_time_to_happen = { months = 60 } 
+	
+	option = { 		
+		name = FU_Ottoman_Events.68.a 
+		
+		ai_chance = { factor = 90 }
+		custom_tooltip = tur_killing_of_line_potential_tt
+		hidden_effect = { 
+			if = { 
+				limit = { mil = 5 }
+				random_list = { 
+					90 = { 
+						add_ruler_modifier = {
+							name = tur_secured_vali_ahad_modifier
+							duration = -1 
+						}
+					}
+					10 = {	
+						random_owned_province = {
+							limit = { 
+								continent = europe 
+								controlled_by = ROOT
+							}
+							spawn_rebels = {
+								size = 2
+								
+								type = pretender_rebels
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { mil = 4 }
+				random_list = { 
+					80 = { 
+						add_ruler_modifier = {
+							name = tur_secured_vali_ahad_modifier
+							duration = -1 
+						}
+					}
+					20 = {	
+						random_owned_province = {
+							limit = { 
+								continent = europe 
+								controlled_by = ROOT
+							}
+							spawn_rebels = {
+								size = 2
+								type = pretender_rebels
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { mil = 3 }
+				random_list = { 
+					75 = { 
+						add_ruler_modifier = {
+							name = tur_secured_vali_ahad_modifier
+							duration = -1 
+						}
+					}
+					25 = {	
+						random_owned_province = {
+							limit = { 
+								continent = europe 
+								controlled_by = ROOT
+							}
+							spawn_rebels = {
+								size = 3
+								
+								type = pretender_rebels
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { mil = 2 }
+				random_list = { 
+					65 = { 
+						add_ruler_modifier = {
+							name = tur_secured_vali_ahad_modifier
+							duration = -1 
+						}
+					}
+					35 = {	
+						random_owned_province = {
+							limit = { 
+								continent = europe 
+								controlled_by = ROOT
+							}
+							spawn_rebels = {
+								size = 3
+								
+								type = pretender_rebels
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { mil = 1 }
+				random_list = { 
+					60 = { 
+						add_ruler_modifier = {
+							name = tur_secured_vali_ahad_modifier
+							duration = -1 
+						}
+					}
+					40 = {	
+						random_owned_province = {
+							limit = { 
+								continent = europe 
+								controlled_by = ROOT
+							}
+							spawn_rebels = {
+								size = 3
+								type = pretender_rebels
+							}
+						}
+					}
+				}
+			}
+			else = {
+				random_list = { 
+					50 = { 
+						add_ruler_modifier = {
+							name = tur_secured_vali_ahad_modifier
+							duration = -1 
+						}
+					}
+					50 = {	
+						random_owned_province = {
+							limit = { 
+								continent = europe 
+								controlled_by = ROOT
+							}
+							spawn_rebels = {
+								size = 3
+								type = pretender_rebels
+							}
+							spawn_rebels = {
+								size = 3
+								type = pretender_rebels
+							}
+						}
+					}
+				}
+			}
+			random_list = { 
+				99 = { } 
+				1 = { 
+					country_event = { id = FU_Ottoman_Events.69 days = 30 random = 45 } 
+				}
+			}
+		}
+		set_heir_flag = tur_purged_line_flag
+	}
+
+	option = { 
+		name = FU_Ottoman_Events.68.b 
+		
+		ai_chance = { factor = 5 }
+		custom_tooltip = tur_the_administration_will_be_damaged_somehow
+		hidden_effect = {
+			random_list = { 
+				20 = { add_stability = -1 }
+				20 = { 
+					add_legitimacy = -20 
+					add_prestige = -20 
+				}
+				20 = {
+					add_ruler_modifier = {
+						name = tur_rebellion_line_modifier
+						duration = -1 
+					}
+				}
+				20 = { 
+					add_estate_loyalty = {
+						estate = estate_burghers 
+						loyalty = -20 
+					}
+					add_estate_loyalty = {
+						estate = estate_mamluks 
+						loyalty = -20 
+					}
+					add_estate_loyalty = {
+						estate = estate_janissary 
+						loyalty = -20 
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles 
+						loyalty = -20 
+					}
+					add_estate_loyalty = {
+						estate = estate_church 
+						loyalty = -20 
+					}
+					add_estate_loyalty = {
+						estate = estate_dhimmi 
+						loyalty = -20 
+					}
+				}
+				20 = { 
+					add_ruler_modifier = {
+						name = tur_sabotaged_bureaucracy_modifier
+						duration = -1 
+					}
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.68.c #Good shit right here 
+		
+		trigger = {
+			OR = { 
+				ruler_has_personality = kind_hearted_personality
+				ruler_has_personality = calm_personality
+				ruler_has_personality = silver_tongue_personality
+			}
+		}
+		highlight = yes 
+		
+		custom_tooltip = tur_they_go_away_peacefully_tt
+		set_heir_flag = tur_purged_line_flag
+	}
+}
+
+country_event = { #The Sadness of Those Who Live 
+	id = FU_Ottoman_Events.69 #Nice
+	title = FU_Ottoman_Events.69.t
+	desc = FU_Ottoman_Events.69.d 
+	picture = DEATH_OF_HEIR_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.69.a 
+		
+		custom_tooltip = tur_i_did_this_tt
+		kill_heir = { }  
+		add_legitimacy = -10
+	}
+}
+
+country_event = { #A Letter from the Queen-Mother
+	id = FU_Ottoman_Events.70
+	title = FU_Ottoman_Events.70.t 
+	desc = FU_Ottoman_Events.70.d 
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes 
+	
+	trigger = {
+		has_reform = ottoman_government 
+		has_regency = no 
+		has_consort = yes 
+		ruler_age = 20 
+		is_at_war = no 
+	}
+	
+	mean_time_to_happen = { months = 60 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.70.a 
+		
+		add_mil_power = -15
+		custom_tooltip = tur_she_will_appreciate_it
+		hidden_effect = { 
+			country_event = { id = FU_Ottoman_Events.72 days = 30 }
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.70.b 
+		
+		add_prestige = -5
+	}
+}
+
+country_event = { #Kira and Strongilah
+	id = FU_Ottoman_Events.71
+	title = FU_Ottoman_Events.71.t 
+	desc = FU_Ottoman_Events.71.d 
+	picture = FEAST_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		has_reform = ottoman_government 
+		has_consort = yes 
+		is_bankrupt = no 
+		consort_adm = 6 
+	}
+	mean_time_to_happen = { months = 24 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.71.a 
+		add_ruler_modifier = { 	
+			name = tur_title_of_kira_modifier
+			duration = -1 
+		}
+		define_advisor = {
+			type = trader 
+			female = yes 
+			name = "Strongilah" 
+			skill = 3
+			cost_multiplier = 0.3
+		}
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.71.b 
+		
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10 
+		}
+		add_mercantilism = 1 
+	}
+}
+
+country_event = { #Family First
+	id = FU_Ottoman_Events.72
+	title = FU_Ottoman_Events.72.t 
+	desc = FU_Ottoman_Events.72.d 
+	picture = NEW_HEIR_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = FU_Ottoman_Events.72.a 
+		
+		custom_tooltip = tur_she_appreciates_it_tt
+		add_legitimacy = 5 
+		add_prestige = 5 
+	}
+}
+
+country_event = { #Reign of Women
+	id = FU_Ottoman_Events.73
+	title = FU_Ottoman_Events.73.t 
+	desc = FU_Ottoman_Events.73.d 
+	picture = fu_reign_women_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		has_reform = ottoman_government 
+		is_year = 1550 
+		has_consort = yes 
+		consort_adm = 3 
+		consort_dip = 3 
+		consort_mil = 3 
+		NOT = { is_year = 1700 }
+		
+	}
+	
+	mean_time_to_happen = { months = 48 } 
+	
+	option = {
+		name = FU_Ottoman_Events.73.a
+		
+		add_country_modifier = { 
+			name = tur_reign_of_women_modifier
+			duration = -1 
+			desc = until_the_end_of_the_era_desc
+		}
+		custom_tooltip = tur_reign_of_women_era
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.73.b 
+		
+		add_prestige = -5 
+	}
+}
+
+country_event = { #The Height of the Reign of Women 
+	id = FU_Ottoman_Events.74
+	title = FU_Ottoman_Events.74.t 
+	desc = FU_Ottoman_Events.74.d 
+	picture = fu_harem_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+			has_reform = ottoman_government 
+		
+		had_country_flag = { flag = tur_reign_of_women_era_flag days = 9125 } 
+		has_consort = yes 
+		NOT = { legitimacy = 80 } 
+		NOT = { stability = 3 } 
+		NOT = { current_age = age_of_discovery } 
+		NOT = { current_age = age_of_reformation } 
+		is_year = 1662  
+	}
+	
+	mean_time_to_happen = { months = 240 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.74.a 
+		
+		ai_chance = { factor = 0 } 
+		add_country_modifier = { 
+			name = tur_reign_of_the_valide_sultan_modifier
+			duration = -1
+		}
+		add_legitimacy = -20 
+	}
+	
+	option = { 
+		name = FU_Ottoman_Events.74.b 
+		
+		ai_chance = { factor = 100 }
+		add_ruler_modifier = { 
+			name = tur_opposed_valide_sultan_modifier
+			duration = -1
+		}
+		if = { 
+			limit = { ai = no } 
+			random_owned_province = { 
+				limit = { continent = europe } 
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					
+					win = yes 
+				}
+			}
+			add_stability = -2 
+		}
+		else = { 
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				
+			}
+			add_stability = -1
+		}
+		remove_consort = yes 
+		custom_tooltip = tur_end_reign_of_women_tt
+		clr_country_flag = tur_reign_of_women_era_flag
+		hidden_effect = { remove_country_modifier = tur_reign_of_women_modifier }
+	}
+}
+	
+country_event = { #Hayreddin Barbarossa
+	id = FU_Ottoman_Events.75
+	title = FU_Ottoman_Events.75.t 
+	desc = FU_Ottoman_Events.75.d 
+	picture = fu_barbarossa_eventPicture
+	fire_only_once = yes 
+	
+	trigger = { 
+		tag = TUR 
+		is_year = 1500 
+		NOT = { is_year = 1545 }
+		navy_tradition = 25 
+		navy_size = 150 
+	}
+	mean_time_to_happen = { months = 120 } 
+	
+	option = { 
+		name = FU_Ottoman_Events.75.a 
+		
+		define_admiral = {
+			name = "Hayreddin Barbarossa"
+			shock = 4
+			fire = 4
+			manuever = 6
+			siege = 4
+			trait = prize_hunter_personality
+		}
+		add_navy_tradition = 10 
+	}
+}

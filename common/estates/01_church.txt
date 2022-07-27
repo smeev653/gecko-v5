@@ -193,6 +193,7 @@ estate_church =
 		estate_church_integrated_school
 		estate_church_influence_temples
 		#estate_church_brahmins_at_court
+		estate_church_scholar_connections
 	}
 
 	agendas = {

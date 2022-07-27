@@ -1,0 +1,104 @@
+#Dhimmi Privileges 
+
+estate_dhimmi_jewish_community = {
+	icon = privilege_give_money
+	max_absolutism = -5
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		has_estate_privilege = estate_dhimmi_jewish_community
+	}
+	can_select = { mission_completed = tur_queen_of_cities } 
+	on_granted = { 
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = 10
+		}
+	}
+	penalties = {
+		stability_cost_modifier = 0.1
+		church_loyalty_modifier = -0.025
+	}
+	benefits = {
+		interest = -0.25 
+		advisor_pool = 1 
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { mil = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			mil = 5
+		}
+	}
+}
+
+estate_dhimmi_millet_system = {
+	icon = privilege_dev_cost
+	max_absolutism = -5
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		has_estate_privilege = estate_dhimmi_millet_system 
+	}
+	can_select = { has_country_flag = tur_allow_millet_flag } 
+	on_granted = {
+		custom_tooltip = tur_every_heathen_province_tt
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { 
+					has_owner_religion = no 
+					NOT = { religion_group = muslim } 
+				}
+				add_province_modifier = { 
+					name = tur_dhimmi_adherence_to_the_millet_modifier
+					duration = -1 
+				}
+			}
+		}
+	}
+	on_revoked = { 
+		custom_tooltip = tur_removes_dev_cost_tt
+		hidden_effect = { 
+			every_owned_province = { 
+				limit = { has_province_modifier = tur_dhimmi_adherence_to_the_millet_modifier }
+				remove_province_modifier = tur_dhimmi_adherence_to_the_millet_modifier 
+			}
+		}
+		if = { 
+			limit = { ai = no }
+			add_stability = -1 
+		}
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		reform_progress_growth = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { mil = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			mil = 5
+		}
+	}
+}
+
+
+

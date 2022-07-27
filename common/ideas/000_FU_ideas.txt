@@ -1,0 +1,51 @@
+
+FU5_ideas = {
+	start = {
+		defensiveness = 0.25
+		land_forcelimit_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = FU5
+	}
+	free = yes
+	
+	bonus = {
+		army_tradition = 1 
+	}		
+	
+	FU5_1 = {
+		all_estate_loyalty_equilibrium = 0.1
+	}
+	FU5_2 = {
+		production_efficiency = 0.15
+		build_cost = -0.05
+	}
+	FU5_3 = {
+		merchants = 1 
+	}
+	FU5_4 = {
+		tolerance_of_heretics_capacity = 1
+		tolerance_heretic = 1
+	}
+	FU5_5 = {
+		mercenary_discipline = 0.05
+	}
+	FU5_6 = {
+		global_manpower_modifier = 0.2
+	}
+	FU5_7 = {
+		ae_impact = -0.15 
+	}
+}		
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	

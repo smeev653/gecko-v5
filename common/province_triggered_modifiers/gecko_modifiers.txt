@@ -833,22 +833,22 @@ gc_cagliari_copper = {
 	local_development_cost = -0.25
 }
 
-erzincan_copper = {
-	potential = {
-		normal_or_historical_nations = yes	
-	}
-	trigger = {
-		controlled_by = ROOT
-		owner = {
-			OR = {
-				tag = AKK
-				mission_completed = conquer_kurdistan
-			}	
-		}
-	}
-	trade_goods_size = 3
-	local_development_cost = -0.25
-}
+#erzincan_copper = {
+#	potential = {
+#		normal_or_historical_nations = yes	
+#	}
+#	trigger = {
+#		controlled_by = ROOT
+#		owner = {
+#			OR = {
+#				tag = AKK
+#				mission_completed = conquer_kurdistan
+#			}	
+#		}
+#	}
+#	trade_goods_size = 3
+#	local_development_cost = -0.25
+#}
 
 gc_catanzaro_silk = {
 	potential = {

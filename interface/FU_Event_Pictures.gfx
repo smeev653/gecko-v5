@@ -524,4 +524,29 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/fu_crying_coomer_eventPicture.dds"
 		allwaystransparent = yes
 	} 
+	spriteType = {
+		name = "big_castle_eventPicture" 
+		texturefile = "gfx/event_pictures/big_castle_eventPicture.dds"
+		allwaystransparent = yes
+	} 
+	spriteType = {
+		name = "fu_pirate_empress_eventPicture" 
+		texturefile = "gfx/event_pictures/fu_pirate_empress_eventPicture.dds"
+		allwaystransparent = yes
+	} 
+	spriteType = {
+		name = "fu_anne_bonny_eventPicture" 
+		texturefile = "gfx/event_pictures/fu_anne_bonny_eventPicture.dds"
+		allwaystransparent = yes
+	} 
+	spriteType = {
+		name = "fu_jack2_eventPicture" 
+		texturefile = "gfx/event_pictures/fu_jack2_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "fu_jack1_eventPicture" 
+		texturefile = "gfx/event_pictures/fu_jack1_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }

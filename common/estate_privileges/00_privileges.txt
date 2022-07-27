@@ -1,3 +1,39 @@
+###MUSLIM PRIVILEGES###
+#Privilege to remove adm cost of scholars
+estate_church_scholar_connections = {
+	icon = privilege_recruit_minister
+	max_absolutism = -5
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		religion_group = muslim
+		has_dlc = "Cradle of Civilization"
+		always = no
+	}
+	can_select = {
+	}
+	on_granted = {
+		disable_scholar_cost = yes
+	}
+	on_revoked = {
+		enable_scholar_cost = yes
+	}
+	on_invalid = {
+		enable_scholar_cost = yes
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
 estate_church_one_faith_one_culture = {
 	icon = privilege_one_faith_one_culture
 	max_absolutism = -5
@@ -7777,5 +7813,21 @@ estate_nobles_tribe_centralization = {
 	}
 	ai_will_do = {
 		factor = 1000
+	}
+}
+
+estate_dhimmi_grant_liberties = {
+	icon = privilege_tolerance_heathen
+	max_absolutism = -10
+	influence = 0.1
+	loyalty = 0.1
+	is_valid = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1
 	}
 }

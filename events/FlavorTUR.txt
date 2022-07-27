@@ -121,9 +121,18 @@ country_event = {
 	desc = "flavor_tur.EVTDESC3354"
 	picture = REFORM_eventPicture
 	
+	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger ={
+		tag = TUR
+		is_year = 1450
+		NOT = { is_year = 1550 }
+		MIL = 3
+	}
 	
+	mean_time_to_happen = {
+		months = 300
+	}	
 	
 	option = {		# Great Army Reform
 		name = "flavor_tur.EVTOPTA3354"
@@ -158,9 +167,18 @@ country_event = {
 	desc = "flavor_tur.EVTDESC3357"
 	picture = UNIVERSITY_eventPicture
 	
-
-	is_triggered_only = yes
 	
+	fire_only_once = yes
+
+	trigger ={
+		tag = TUR
+		has_idea = timariot_system
+		has_country_modifier = the_devshirme_system
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}	
 	
 	option = {		# Found the Enderun
 		name = "flavor_tur.EVTOPTA3357"
@@ -438,16 +456,26 @@ country_event = {
 	}
 }
 
-# The Expansion of the Royal Bureaucracy
+ The Expansion of the Royal Bureaucracy
 country_event = {
 	id = flavor_tur.3366
 	title = "flavor_tur.EVTNAME3366"
 	desc = "flavor_tur.EVTDESC3366"
 	picture = COURT_eventPicture
 
-	is_triggered_only = yes
+
+	fire_only_once = yes
 	
+	trigger ={
+		tag = TUR
+		is_at_war = no
+		is_year = 1520
+		NOT = { is_year = 1566 }
+	}
 	
+	mean_time_to_happen = {
+		months = 25
+	}	
 	option = {		# Expand the Royal Bureaucracy
 		name = "flavor_tur.EVTOPTA3366"
 		ai_chance = {
@@ -493,7 +521,7 @@ country_event = {
 	}
 }
 
-# The Great Naval Reform
+ The Great Naval Reform
 country_event = {
 	id = flavor_tur.3367
 	title = "flavor_tur.EVTNAME3367"
@@ -502,8 +530,20 @@ country_event = {
 	
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger ={
+		tag = TUR
+		is_year = 1500
+		NOT = { is_year = 1520 }
+		is_at_war = no
+		any_owned_province = {
+			has_port = yes
+		}
+    }
 	
+	mean_time_to_happen = {
+		months = 25
+	}
+		
 	option = {		# Build the Imperial Halic Shipyard
 		name = "flavor_tur.EVTOPTA3367"
 		ai_chance = {
