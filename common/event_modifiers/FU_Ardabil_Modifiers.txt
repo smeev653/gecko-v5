@@ -1,16 +1,13 @@
 arl_arsacid_legacy_modifier = {
 	cavalry_fire = 0.25
 	cavalry_flanking = 0.5
-	cav_to_inf_ratio = 0.25
 }
 arl_sassanid_legacy_modifier = {
-	cavalry_shock = 0.3	
+	cavalry_shock = 0.25	
 	cavalry_cost = -0.1
-	cav_to_inf_ratio = 0.25
 }
 arl_slave_cavalry_modifier = {
 	cavalry_cost = -0.15
-	cav_to_inf_ratio = 0.25
     manpower_recovery_speed = 0.15
 }
 arl_advanced_cavalry_tactics_modifier = {

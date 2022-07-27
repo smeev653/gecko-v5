@@ -129,7 +129,6 @@ per_collapse_ottoman_empire_modifier = {
 	core_creation = -0.1
 }
 per_get_fucked_modifier = { 
-	governing_capacity_modifier = -0.5
 	global_unrest = 3 
 	prestige = -1 
 }
