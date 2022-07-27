@@ -984,17 +984,11 @@ ottoman_missions_1 = {
 			151 = { owned_by = ROOT } 
 		}
 		effect = { 
-			if = { 
-				limit = { has_dlc = "Leviathan" } 
-				custom_tooltip = tur_gain_access_to_acemi_oglan_academy_tt
-				set_country_flag = tur_gain_access_to_acemi_oglan_academy_flag 
-			}
-			else = { 
 				add_country_modifier = { 
 					name = tur_acemi_oglan_modifier
 					duration = 9125
 				}
-			}
+			
 		}
 	}
 	
