@@ -33,7 +33,6 @@ country_decisions = {
 				type = recruitmaster
 				skill = 2
 				discount = yes
-				culture = variable:new_ruler_culture
 			}	
 				set_country_flag = sm_hire_recruitmaster
 			}
@@ -51,7 +50,6 @@ country_decisions = {
 				define_advisor  = { 
 					type = naval_reformer
 					skill = 1
-					culture = variable:new_ruler_culture
 				}
 					add_country_modifier = {
 						name = "hired_naval_reformer"
