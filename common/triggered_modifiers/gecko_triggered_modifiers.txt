@@ -574,18 +574,12 @@ Defense_of_Europe = {
 		NOT = {
 			tag = TUR
 		}
-		OR = {
-			AND = {
-				NOT  = { is_year = 1490}
-				tag = HUN
-			}	
-			134 = {
+		134 = {
 				owned_by = TUR
 			}
-		}
+		
 		is_in_war = {
 			attacker_leader = TUR
-			defender_leader = HUN
 			duration = 30
 		}
 		land_maintenance = 1
@@ -657,7 +651,7 @@ Over_merc_limit = {
 					}
 		
 	}
-	merc_maintenance_modifier = 1
+	merc_maintenance_modifier = 1.5
 }
 
 Knights_vassalised = {
