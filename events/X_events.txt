@@ -112,7 +112,6 @@ country_event = {
 		name = X_VEN_events.2.a
 		add_navy_tradition = 30
 		4754 = {
-			limit = { owned_by = ROOT }
 			custom_tooltip = X_VEN_event_2_tt
 			hidden_effect = {
 				ROOT = {

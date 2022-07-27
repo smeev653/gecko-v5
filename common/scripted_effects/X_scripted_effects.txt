@@ -1,0 +1,24 @@
+X_center_of_trade_effect = {
+	if = {
+		limit = {
+			NOT = { province_has_center_of_trade_of_level = 1 }
+		}
+		center_of_trade = 1
+	}
+	else_if = {
+		limit = {
+			NOT = { province_has_center_of_trade_of_level = 2 }
+		}
+		add_center_of_trade_level = 1
+	}
+	else_if = {
+		limit = {
+			province_has_center_of_trade_of_level = 2
+			NOT = { province_has_center_of_trade_of_level = 3 }
+		}
+		owner = { add_treasury = 200 }
+	}
+	else = {
+		owner = { add_treasury = 1000 }
+	}
+}

@@ -121,10 +121,6 @@ X_VEN_slot_1 = {
 		effect = {
 			add_navy_tradition = 15
 			4698 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			142 = {
@@ -1647,10 +1643,6 @@ X_VEN_slot_5 = {
 		}
 		effect = {
 			321 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
