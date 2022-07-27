@@ -465,7 +465,7 @@ WES_ideas = {
 		global_tax_modifier = 0.15
 	}
 	wes_enlightenment = {
-		fort_maintenance_modifier = -0.2
+		defensiveness = 0.1
 	}
 	wes_cities_of_the_rhineland = {
 		global_prov_trade_power_modifier = 0.25
@@ -591,7 +591,7 @@ HES_ideas = {
 		land_forcelimit_modifier = 0.15
 	}
 	welcome_reformers = {
-		fort_maintenance_modifier = -0.15
+		defensiveness = 0.1
 	}
 	let_in_religious_emigrants = {
 		global_tax_modifier = 0.15
@@ -787,11 +787,11 @@ AHU_ideas = {
 	}
 	gc_military_border = {
 		garrison_size = 0.25
-		fort_maintenance_modifier = -0.10
+		defensiveness = 0.2
 	}
 	gc_AHU_NI_3 = {
 		land_morale = 0.15
-		infantry_power = 0.10
+		infantry_power = 0.15
 	}
 	gc_fugger_banks = {
 		build_cost = -0.10

@@ -229,7 +229,7 @@ RUS_ideas = {
 	}
 	russian_artillery_yard = {
 		artillery_cost = -0.2
-		backrow_artillery_damage = 0.10
+		#backrow_artillery_damage = 0.10
 	}
 	gatherers_of_tribute = {
 		global_tax_modifier = 0.15
@@ -479,8 +479,8 @@ TUR_ideas = {
 		global_tax_modifier = 0.10
 	}
 	millets = {
+		num_accepted_cultures = 4
 		core_creation = -0.15
-		num_accepted_cultures = 2
 	}
 	ghazi = {
 		manpower_recovery_speed = 0.15
@@ -1053,7 +1053,7 @@ HAB_ideas = {
 	}
 	military_border = {
 		global_garrison_growth = 0.25
-		fort_maintenance_modifier = -0.10
+		defensiveness = 0.15
 	}
 	habsburg_dominance = {
 		land_morale = 0.15
@@ -3235,8 +3235,11 @@ NPL_ideas = {
 
 KNI_ideas = {
 	start = {
-		discipline = 0.05
-		trade_efficiency = 0.1
+		may_perform_slave_raid = yes
+		galley_power = 0.2
+		naval_forcelimit = 50
+		naval_maintenance_modifier = -0.9
+		liberty_desire = 1000
 	}
 	
 	bonus = {
@@ -3251,6 +3254,9 @@ KNI_ideas = {
 	defense_of_the_faith = {
 		defensiveness = 0.25
 	}
+	scourge_of_the_corsairs = {
+		naval_morale = 0.1
+	}
 	assistance_to_the_suffering = {
 		manpower_recovery_speed = 0.15
 	}
@@ -3258,15 +3264,12 @@ KNI_ideas = {
 		diplomatic_upkeep = 1
 	}
 	reconquista_of_the_sea = {
-		galley_power = 0.2
 		capture_ship_chance = 0.15
 	}
 	ecumenical_defenders_of_christendom = {
 		global_unrest = -2
 	}
-	scourge_of_the_corsairs = {
-		naval_forcelimit_modifier = 0.5
-	}
+	
 	crusader_tradition = {
 		army_tradition = 0.5
 	}
@@ -15714,7 +15717,7 @@ OYO_ideas = {
 
 GZI_ideas = {
 	start = {
-		fort_maintenance_modifier = -0.1
+		defensiveness = 0.1
 		land_morale = 0.1
 	}
 
