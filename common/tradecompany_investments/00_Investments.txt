@@ -374,7 +374,7 @@ townships = {
 	}
 	
 	company_region_modifier = {
-		trade_value_modifier = 0.05
+		province_trade_power_modifier = 0.05
 	}
 	
 	ai_global_worth = { factor = 0 }
