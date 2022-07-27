@@ -1,0 +1,198 @@
+patron_of_arts_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	innovativeness_gain = 0.5
+	idea_cost = -0.05 
+	nation_designer_cost = 5
+}
+
+fu_absolutist_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	administrative_efficiency = 0.05 
+	nation_designer_cost = 10
+}
+
+fu_legendary_statesman_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	diplomatic_reputation = 2 
+	stability_cost_to_declare_war = -1
+	nation_designer_cost = 10
+}
+
+fu_legendary_conqueror_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	years_of_nationalism = -10
+	land_morale = 0.05
+	nation_designer_cost = 10
+}	
+
+fu_legendary_entrepreneur_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	trade_efficiency = 0.15
+	global_trade_goods_size_modifier = 0.05
+	nation_designer_cost = 10
+}
+
+fu_maid_of_orleans_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	land_morale = 0.1
+	global_missionary_strength = 0.02
+	nation_designer_cost = 50
+}
+
+fu_legendary_privateer_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	privateer_efficiency = 0.5
+	naval_morale = 0.1
+	nation_designer_cost = 20
+}
+
+fu_reformist_personality = {
+	
+	ruler_allow = {
+		allow = {
+			always = no 
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			always = no 
+		}
+	}
+	
+	monthly_reform_progress_modifier = 0.25
+	
+	nation_designer_cost = 5
+}

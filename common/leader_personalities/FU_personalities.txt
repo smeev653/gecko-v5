@@ -1,0 +1,6 @@
+fu_ambusher_personality = {
+	allow = {
+		always = no 
+	}
+	shock_damage = 0.1
+}

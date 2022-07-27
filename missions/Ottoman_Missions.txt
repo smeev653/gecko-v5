@@ -1210,21 +1210,11 @@ ottoman_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
-			custom_trigger_tooltip = { 
-				tooltip = tur_all_anatolia_except_the_islands
 				anatolia_region = { 
 					type = all 
-					OR = {
-						province_id = 321
-						province_id = 320
-						province_id = 2348
-						province_id = 4700
-						province_id = 3003 
-						province_id = 164
-						country_or_non_sovereign_subject_holds = ROOT 
-					}
+					country_or_non_sovereign_subject_holds = ROOT 
 				}
-			}
+			
 		}
 		effect = { 
 			country_event = { id = FU_Ottoman_Events.3 } 

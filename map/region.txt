@@ -314,6 +314,8 @@ balkan_region = {
 		silistria_area
 		slavonia_area
 		XMP_central_greece_area
+		eastern_mediterrenean_islands_area
+		aegean_archipelago_area
 	}
 }
 
@@ -392,9 +394,7 @@ anatolia_region = {
 		dulkadir_area
 		cukurova_area
 		ankara_area
-		aegean_archipelago_area
 		germiyan_area
-		eastern_mediterrenean_islands_area
 	}
 }
 
