@@ -886,12 +886,6 @@ country_event = { #The Bay Toll of Hormuz
 	option = { 
 		name = FU_Ottoman_Events.23.a 
 		
-		if = { 
-			limit = { has_dlc = "Leviathan" }
-			custom_tooltip = tur_begin_construction_hormuz_flag 
-			hidden_effect = { set_country_flag = fu_hormuz_toll_flag }
-		}
-		else = { 
 			2999 = {
 				add_province_modifier = {
 					name = tur_hormuz_toll_modifier
@@ -899,7 +893,7 @@ country_event = { #The Bay Toll of Hormuz
 				}
 			}
 			add_mercantilism = 1
-		}
+		
 	}
 }
 
