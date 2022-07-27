@@ -2295,3 +2295,32 @@ become_rev_republic_reform = {
 		factor = 0
 	}
 }
+
+musa_rule = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = musa_rule_legacy
+	potential = {
+		OR = {
+			tag = MAL
+			have_had_reform = musa_rule
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MAL
+			have_had_reform = musa_rule
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+		stability_cost_modifier = -0.05
+		legitimacy = 0.5
+	}
+
+	ai = {
+		factor = 1
+	}
+}

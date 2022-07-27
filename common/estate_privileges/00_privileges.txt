@@ -1,98 +1,357 @@
-#estate_church_one_faith_one_culture = {
-#	icon = privilege_one_faith_one_culture
-#	max_absolutism = -5
-#	influence = 0.3
-#	loyalty = 0.1
-#	land_share = 5
-#	is_valid = {
-#		always = no
-#	}
-#	can_select = {
-#	}
-#	
-#	
-#	penalties = {
-#		tolerance_heathen = -2
-#		tolerance_heretic = -2
-#	}
-#	benefits = {
-#		global_missionary_strength = 0.01
-#	}
-#
-#}
-#estate_church_brahmins_at_court = {
-#	icon = privilege_seek_support_of_brahmins
-#	can_select = {
-#		if = {
-#			limit = {
-#				has_mission = mnd_khm_religion
-#			}
-#			mission_completed = mnd_khm_religion
-#		}
-#		else_if = {
-#			limit = {
-#				has_mission = mnd_khm_religion
-#			}
-#			mission_completed = mnd_siam_devaraja
-#		}
-#		else = {
-#			has_estate_privilege = estate_church_brahmins_at_court
-#		}
-#		religion_group = eastern
-#	}
-#	is_valid = {
-#		always = no
-#	}
-#	on_granted = {
-#		custom_tooltip = estate_brahmins_guaranteed_autonomy_effect_tooltip
-#	}
-#	on_granted_province = {
-#		if = {
-#			limit = {
-#				religion = hinduism
-#			}
-#			add_province_modifier = {
-#				name = estate_brahmins_guaranteed_autonomy_mod
-#				duration = -1
-#			}
-#		}
-#		else_if = {
-#			limit = {
-#				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-#			}
-#			remove_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-#		}
-#	}
-#	on_revoked = {
-#		custom_tooltip = estate_brahmins_guaranteed_autonomy_revoke_effect_tooltip
-#	}
-#	on_revoked_province = {
-#		if = {
-#			limit = {
-#				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-#			}
-#			remove_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-#		}
-#	}
-#	on_invalid = {
-#		custom_tooltip = estate_brahmins_guaranteed_autonomy_revoke_effect_tooltip
-#	}
-#	on_invalid_province = {
-#		if = {
-#			limit = {
-#				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-#			}
-#			remove_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-#		}
-#	}
-#	penalties = {
-#	}
-#	benefits = {
-#	}
-#	ai_will_do = {
-#		factor = 1000
-#	}
-#}
+estate_church_one_faith_one_culture = {
+	icon = privilege_one_faith_one_culture
+	max_absolutism = -5
+	influence = 0.2
+	loyalty = 0.1
+	land_share = 5
+	is_valid = {
+		always = no
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = estate_church_one_faith_one_culture_gta
+		custom_tooltip = estate_church_one_faith_one_culture_gtb
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					religion = ROOT
+					AND = {
+						religion = THIS
+						owner = {
+							has_harmonized_with = PREV
+						}
+					}
+					AND = {
+						religion = THIS
+						owner = {
+							secondary_religion = PREV
+						}
+					}
+				}
+				OR = {
+					has_owner_accepted_culture = yes
+					culture_group = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_united_faith_and_culture
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_united_faith_and_culture
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		if = {
+			limit = {
+				NOT = { culture_group = ROOT }
+				has_owner_accepted_culture = no
+			}
+			add_province_modifier = {
+				name = estate_church_false_culture
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_one_faith_one_culture_rta
+		custom_tooltip = estate_church_one_faith_one_culture_rtb
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_united_faith_and_culture
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_one_faith_one_culture_rta
+		custom_tooltip = estate_church_one_faith_one_culture_rtb
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_united_faith_and_culture
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	penalties = {
+		tolerance_heathen = -2
+		tolerance_heretic = -2
+	}
+	benefits = {
+		global_missionary_strength = 0.01
+	}
+	cooldown_years = 15
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { dominant_religion = ROOT }
+		}
+		modifier = {
+			factor = 0
+			NOT = { dominant_culture = ROOT }
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = confucianism }
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = confucianism }
+		}
+		modifier = {
+			factor = 100
+			NOT = { average_autonomy = 15 }
+			dominant_religion = ROOT
+			dominant_culture = ROOT
+		}
+		modifier = {
+			factor = 0.1
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_brahmins_one_faith_one_culture = {
+	icon = privilege_one_faith_one_culture
+	max_absolutism = -5
+	influence = 0.25
+	loyalty = 0.1
+	land_share = 5
+	is_valid = {
+		always = no
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = estate_church_one_faith_one_culture_gta
+		custom_tooltip = estate_church_one_faith_one_culture_gtb
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					religion = ROOT
+					AND = {
+						religion = THIS
+						owner = {
+							has_harmonized_with = PREV
+						}
+					}
+					AND = {
+						religion = THIS
+						owner = {
+							secondary_religion = PREV
+						}
+					}
+				}
+				OR = {
+					has_owner_accepted_culture = yes
+					culture_group = ROOT
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_united_faith_and_culture
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_united_faith_and_culture
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		if = {
+			limit = {
+				NOT = { culture_group = ROOT }
+				has_owner_accepted_culture = no
+			}
+			add_province_modifier = {
+				name = estate_church_false_culture
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_one_faith_one_culture_rta
+		custom_tooltip = estate_church_one_faith_one_culture_rtb
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_united_faith_and_culture
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_one_faith_one_culture_rta
+		custom_tooltip = estate_church_one_faith_one_culture_rtb
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_united_faith_and_culture
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	penalties = {
+		tolerance_heathen = -2
+		tolerance_heretic = -2
+	}
+	benefits = {
+		global_missionary_strength = 0.01
+	}
+	cooldown_years = 15
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { dominant_religion = ROOT }
+		}
+		modifier = {
+			factor = 0
+			NOT = { dominant_culture = ROOT }
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = confucianism }
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = confucianism }
+		}
+		modifier = {
+			factor = 100
+			NOT = { average_autonomy = 15 }
+			dominant_religion = ROOT
+			dominant_culture = ROOT
+		}
+		modifier = {
+			factor = 0.1
+			is_absolutism_active = yes
+		}
+	}
+}
+estate_church_brahmins_at_court = {
+	icon = privilege_seek_support_of_brahmins
+	can_select = {
+		if = {
+			limit = {
+				has_mission = mnd_khm_religion
+			}
+			mission_completed = mnd_khm_religion
+		}
+		else_if = {
+			limit = {
+				has_mission = mnd_khm_religion
+			}
+			mission_completed = mnd_siam_devaraja
+		}
+		else = {
+			has_estate_privilege = estate_church_brahmins_at_court
+		}
+		religion_group = eastern
+	}
+	is_valid = {
+		always = no
+	}
+	on_granted = {
+		custom_tooltip = estate_brahmins_guaranteed_autonomy_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				religion = hinduism
+			}
+			add_province_modifier = {
+				name = estate_brahmins_guaranteed_autonomy_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_brahmins_guaranteed_autonomy_revoke_effect_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_brahmins_guaranteed_autonomy_revoke_effect_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
 estate_brahmins_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
@@ -1367,6 +1626,7 @@ estate_church_enforced_one_faith = {
 		any_owned_province = {
 			NOT = { religion = root }
 		}
+		always = no
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }
