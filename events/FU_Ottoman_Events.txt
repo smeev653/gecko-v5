@@ -885,7 +885,6 @@ country_event = { #The Bay Toll of Hormuz
 	
 	option = { 
 		name = FU_Ottoman_Events.23.a 
-		
 			2999 = {
 				add_province_modifier = {
 					name = tur_hormuz_toll_modifier
