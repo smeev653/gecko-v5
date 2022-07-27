@@ -63,8 +63,8 @@
  gc_mecca_agreement_tt:0 "We will give Yemen the custodianship of Mecca and Medina and in return, they will provide us with their finest Holy Warriors. If we renege on this agreement, we will lose this benefit."
 #ottoman event missions
 
- g_military_reforms_of_mehmet:0 "This event will grant§G 10% Infanty Combat Ability§! for 20 years."
- g_enderun_academy:0 "This event gives the choice of §G2.5% Discipline§! or §G10% Cavalry Combat Ability§! for 20 years."
+ g_military_reforms_of_mehmet:0 "This event will grant§G 10% Infanty Combat Ability§! until the current ruler dies."
+ g_enderun_academy:0 "This event gives the choice of §G2.5% Discipline§! or §G10% Cavalry Combat Ability§! until the current ruler dies."
  g_naval_reform:0 "This event gives §G-5% Ship Cost§! until the end of the game."
  g_constructions:0 "This event gives §G-10% Development Cost§! and §G-10% Construction Cost§! until the current ruler dies."
  g_expansion_of_the_royal_bureaucracy:0 "This event gives §G-10% Tech and Idea Cost§! and §G+10% Tax Modifier§! for the next 40 years."

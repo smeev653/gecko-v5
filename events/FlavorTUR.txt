@@ -131,7 +131,6 @@ country_event = {
 		add_army_professionalism = 0.02
 		add_ruler_modifier = {
 			name = tur_army_reform
-			duration = 3650
 		}
 	}
 	option = {		# Reform Army and Navy
@@ -140,7 +139,6 @@ country_event = {
 		add_army_professionalism = 0.02
 		add_ruler_modifier = {
 			name = tur_army_and_navy_reform
-			duration = 3650
 		}
 	}
 	option = {		# Great Navy Reform
@@ -149,7 +147,6 @@ country_event = {
 		add_army_professionalism = 0.02
 		add_ruler_modifier = {
 			name = tur_navy_reform
-			duration = 3650
 		}
 	}
 }
@@ -171,7 +168,6 @@ country_event = {
 		add_army_professionalism = 0.02
 		add_ruler_modifier = {
 			name = enderun_academy
-			duration = 3650
 		}
 		
 	}
@@ -180,7 +176,6 @@ country_event = {
 		add_army_professionalism = 0.02
 		add_ruler_modifier = {
 			name = expanded_timariot_system
-			duration = 3650
 		}		
 	}
 }

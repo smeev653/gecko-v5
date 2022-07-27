@@ -1461,6 +1461,20 @@ gecko_tur_events = {
 					}
 					AND = {
 						is_in_war = {
+							defenders = HUN
+						}
+						is_in_war = {
+							attackers = MAM
+						}
+						MAM = {
+							ai = no
+						}
+						HUN = {
+							ai = no
+						}
+					}
+					AND = {
+						is_in_war = {
 							attackers = HUN
 						}
 						is_in_war = {
@@ -1470,6 +1484,34 @@ gecko_tur_events = {
 							ai = no
 						}
 						HUN = {
+							ai = no
+						}
+					}
+					AND = {
+						is_in_war = {
+							attackers = HUN
+						}
+						is_in_war = {
+							attackers = VEN
+						}
+						VEN = {
+							ai = no
+						}
+						HUN = {
+							ai = no
+						}
+					}
+					AND = {
+						is_in_war = {
+							defenders = MAM
+						}
+						is_in_war = {
+							attackers = VEN
+						}
+						VEN = {
+							ai = no
+						}
+						MAM = {
 							ai = no
 						}
 					}
@@ -1485,14 +1527,14 @@ gecko_tur_events = {
             }
 			add_country_modifier = {
 					name = "defense_of_anatolia"
-					duration = 1825
+					duration = 730
 			}
-			#add_country_modifier = {
-			#		name = "geckoavailablemercs"
-			#		duration = 1825
-			#		hidden = yes
-			#}
-			add_yearly_manpower = 3	
+			add_country_modifier = {
+					name = "geckoavailablemercs"
+					duration = 730
+					hidden = yes
+			}
+			add_yearly_manpower = 5	
         }
 	}	
 }
