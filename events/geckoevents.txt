@@ -10,7 +10,7 @@ country_event = { #Poland Ruler Failsafe
 
 	trigger = {
 		tag = POL
-		NOT = { adm = 5 dip = 4 mil = 5 }
+		NOT = { adm = 5 dip = 4 mil = 6 }
 		NOT = { is_year = 1475 }
 		is_free_or_tributary_trigger = yes
 		has_country_flag = gecko_localnoble
@@ -62,7 +62,7 @@ country_event = { #Poland Ruler Failsafe
 			religion = ROOT
 			adm = 5
 			dip = 4
-			mil = 5
+			mil = 6
 			age = 34
 			claim = 20
 		}
@@ -1311,37 +1311,37 @@ picture = COURT_eventPicture
 	}
 }
 ##set available mercs to +25%####
-#country_event = {
-#    id = gecko.21
-#   title = gecko.21.t
-#    desc = gecko.21.d
-#    picture = COURT_eventPicture
-#
-#  trigger = {
-#        ai = no
-#			has_country_modifier = geckoavailablemercs
-#		 	
-#		 NOT = {
-#					check_variable = {
-#								which = availablegeckomercs
-#								value = 1.25
-#							}
-#				}
-#   }
-#	hidden = yes
-#    mean_time_to_happen = {
-#        days = 1
-#    }
-#	
-#	immediate = {
-#		set_variable = {            
-#						which = availablegeckomercs
-#						value = 1.25
-#				}			
-#	}
-#	option = {	
-#	}
-#}
+country_event = {
+    id = gecko.21
+   title = gecko.21.t
+    desc = gecko.21.d
+    picture = COURT_eventPicture
+
+  trigger = {
+        ai = no
+			has_country_modifier = geckoavailablemercs
+		 	
+		 NOT = {
+					check_variable = {
+								which = availablegeckomercs
+								value = 1.25
+							}
+				}
+   }
+	hidden = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		set_variable = {            
+						which = availablegeckomercs
+						value = 1.25
+				}			
+	}
+	option = {	
+	}
+}
 ##reset available mercs to +0%####
 country_event = {
     id = gecko.22
