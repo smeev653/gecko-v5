@@ -691,26 +691,32 @@ country_event = {
 	fire_only_once = yes
 
 	
-	trigger ={
-		OR ={
+trigger = {
+		OR = { 
+			AND = {
 				tag = TUR
-				tag = RUM
+				is_at_war = no
+				
+				owns = 361 # Cairo
+				owns = 358 # Alexandria
+				owns = 382 # Damascus
+				owns = 379 # Jerusalem
+				
+				religion_group = muslim
+				any_owned_province = {
+					province_id = 361		# Cairo
+				}
 			}
-		is_at_war = no
-		
-		owns = 361 # Cairo
-		owns = 358 # Alexandria
-		owns = 382 # Damascus
-		owns = 379 # Jerusalem
-		
-		religion_group = muslim
-		any_owned_province = {
-			province_id = 361		# Cairo
+			mission_completed = tur_two_sanctuaries  #FU Addition
 		}
 	}
 	
 	mean_time_to_happen = {
 		months = 36
+modifier = {
+			factor = 0.01
+			mission_completed = tur_two_sanctuaries #FU Addition
+		}
 	}
 	
 
@@ -720,6 +726,10 @@ country_event = {
 		add_prestige = 25
 		add_legitimacy = 25
 		add_piety = 0.25
+add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 15 
+		}
 	}
 }
 
@@ -928,7 +938,7 @@ country_event = {
 				has_government_attribute = queen
 			}
 			define_consort = {
-				name = "K?sem Sultan"
+				name = "Kösem Sultan"
 				culture = greek
 				adm = 5
 				dip = 4
@@ -957,7 +967,7 @@ country_event = {
 	}
 }
 
-# The Murder of K?sem Sultana
+# The Murder of Kösem Sultana
 country_event = {
 	id = flavor_tur.3384
 	title = "flavor_tur.EVTNAME3384"
@@ -1580,6 +1590,10 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 120
+	modifier = {
+			factor = 0.01
+			mission_completed = tur_fate_patriarchate
+		}
 	}
 	
 	
@@ -1598,6 +1612,7 @@ country_event = {
 				modifier = allows_the_patriarchate
 			}
 		}
+	set_country_flag = tur_allow_patriarchate_flag
 	}
 	option = {		# Close down the Patriarchate and confiscate its properties
 		name = "flavor_tur.EVTOPTB3750"
@@ -1624,6 +1639,7 @@ country_event = {
 				modifier = closed_down_the_patriarchate
 			}
 		}
+	set_country_flag = tur_abolish_patriarchate_flag
 	}
 }
 
