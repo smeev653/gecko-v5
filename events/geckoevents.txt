@@ -1355,8 +1355,7 @@ picture = COURT_eventPicture
 		 }
 				NOT = { has_age_ability = ab_burgundy_merc_manpower }
 				NOT = { has_age_ability = ab_hesse_mercs}
-				#NOT = { has_country_modifier = geckoavailablemercs}
-			OR = {	
+				NOT = { has_country_modifier = geckoavailablemercs}
 				AND = {	
 					NOT = { has_country_modifier = We_stand_alone }
 					check_variable = {
@@ -1365,16 +1364,7 @@ picture = COURT_eventPicture
 								}
 					
 				}	
-				AND = {	
-					NOT = { has_country_modifier = increased_merc_quality }	
-					NOT = {	
-						check_variable = {
-									which = availablegeckomercs
-									value = 1
-								}
-							}
-				}
-			}	
+				
    }
 	hidden = yes
     mean_time_to_happen = {

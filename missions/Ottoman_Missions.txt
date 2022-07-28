@@ -1179,6 +1179,48 @@ ottoman_missions_2 = {
 							ai = no
 						}
 					}
+					AND = {
+						is_in_war = {
+							defenders = HUN
+						}
+						is_in_war = {
+							attackers = MAM
+						}
+						MAM = {
+							ai = no
+						}
+						HUN = {
+							ai = no
+						}
+					}
+					AND = {
+						is_in_war = {
+							attackers = HUN
+						}
+						is_in_war = {
+							attackers = VEN
+						}
+						VEN = {
+							ai = no
+						}
+						HUN = {
+							ai = no
+						}
+					}
+					AND = {
+						is_in_war = {
+							defenders = MAM
+						}
+						is_in_war = {
+							attackers = VEN
+						}
+						VEN = {
+							ai = no
+						}
+						MAM = {
+							ai = no
+						}
+					}
 				}	
 		}
         effect = {
@@ -1193,11 +1235,11 @@ ottoman_missions_2 = {
 					name = "defense_of_anatolia"
 					duration = 1825
 			}
-			#add_country_modifier = {
-			#		name = "geckoavailablemercs"
-			#		duration = 1825
-			#		hidden = yes
-			#}
+			add_country_modifier = {
+					name = "geckoavailablemercs"
+					duration = 1825
+					hidden = yes
+			}
 			add_yearly_manpower = 3	
         }
 	}
