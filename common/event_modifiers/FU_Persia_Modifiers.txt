@@ -13,7 +13,6 @@ per_assured_qizilbash_authority_modifier = {
 }
 per_adyghe_beauty_modifier = {
 	heir_chance = 0.25
-	monthly_heir_claim_increase_modifier = 0.1
 }
 per_servitude_to_the_qizilbash_modifier = {
 	local_manpower_modifier = 0.25
@@ -25,7 +24,7 @@ per_campaign_in_india_modifier = {
 }
 per_campaign_in_india2_modifier = {
 	ae_impact = -0.15
-	siege_ability = 0.15
+	siege_ability = 0.1
 }
 per_pureblood_iranian_mercenaries_modifier = {
 	mercenary_discipline = 0.05
@@ -73,7 +72,7 @@ per_expanded_the_royal_qurci_guard_modifier = {
 	army_tradition = 0.5 
 }
 per_modernized_gunpowder_artillery_modifier = {
-	siege_ability = 0.15 
+	siege_ability = 0.1
 }
 per_islamic_celebrations_modifier = {
 	global_tax_modifier = 0.15
@@ -396,7 +395,7 @@ per_persian_golden_era_modifier = {
 	institution_spread_from_true_faith = 0.25
 }
 per_secured_the_hajj_and_kaaba_modifier = {
-	manpower_in_true_faith_provinces = 0.2
+	manpower_in_true_faith_provinces = 0.15
 	prestige = 1 
 }
 per_custodians_of_jerusalem_modifier = {

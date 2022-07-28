@@ -3378,13 +3378,6 @@ fu_persia_missions_5 = {
 		position = 17
 		trigger = {
 			OR = {
-				any_ally = {
-					technology_group = chinese 
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
 				num_of_owned_provinces_with = {	
 					trade_goods = chinaware
 					has_manufactory_trigger = yes 

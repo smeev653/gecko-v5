@@ -110,7 +110,7 @@ tur_cooperation_with_mamluk_locals_modifier = {
 }
 tur_master_egypt_modifier = { 
 	governing_capacity_modifier = 0.1
-	advisor_cost = -0.2
+	advisor_cost = -0.05
 }
 tur_khalifat_rashul_allah_modifier = {
 	tolerance_own = 2 
@@ -533,5 +533,5 @@ tur_opposed_valide_sultan_modifier = {
 	all_estate_loyalty_equilibrium = 0.05
 }
 tur_early_cannons_modifier = {
-	artillery_cost = -1 
+	artillery_cost = -0.5 
 }

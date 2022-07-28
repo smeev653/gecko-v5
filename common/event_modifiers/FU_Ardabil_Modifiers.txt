@@ -55,7 +55,7 @@ arl_fort_defense_18_modifier = {
 	local_defensiveness = 0.2
 }
 arl_renovations_in_the_old_capital_modifier = {
-	development_cost = -0.2
+	development_cost = -0.1
 }
 arl_prestigious_capital_modifier = {
 	prestige = 1

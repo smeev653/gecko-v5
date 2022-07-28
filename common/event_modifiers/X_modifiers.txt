@@ -108,3 +108,22 @@ X_VEN_stato_da_mar_cmod = {
 X_VEN_magistrato_al_sal_cmod = {
 	global_tax_modifier = 0.15
 }
+
+X_VEN_preservation_of_classics_cmod = {
+	technology_cost = -0.1
+	idea_cost = -0.05
+}
+
+X_VEN_cretan_literature_cmod = {
+	dip_tech_cost_modifier = -0.1
+	monthly_splendor = 1
+}
+
+X_VEN_center_of_greek_arts_pmod = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.3
+}
+
+X_VEN_new_advisement_cmod = {
+	advisor_cost = -0.10
+}

@@ -435,3 +435,8 @@ gc_mor_flagship_desc:0 ""
  caucasus_conquest_title:0 "Georgian Jihad"
  caucasus_conquest_desc:0 "The restless Safavid order demands we launch a grand Jihad against the upstart Georgians. Not only will this benefit our caravans, it will also allow for the blossoming slave trade to grow. Perhaps we may one day have Janissaries of our own."
  gc_caucasus_integration:0 "Integration of the Caucasus"
+
+#venice
+
+ gc_emp_ven_aldine_monopoly_title:0 "Internal Investment"
+ gc_emp_ven_aldine_monopoly_desc:0 ""
