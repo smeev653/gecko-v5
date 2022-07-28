@@ -643,6 +643,10 @@ h_swedish_missions_3 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = "swe_baltic_trade_hegemony_modifier"
+				duration = 10950
+			}
 			west_prussia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}

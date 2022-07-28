@@ -1,0 +1,325 @@
+﻿l_english:
+
+ #Missions 
+ swe_crown_of_norway_title: "Crown of Norway" 
+ swe_crown_of_norway_desc: "For far too long have our brothers and sisters enjoyed independence from the Swedish crown. As the fires of revolution light up and we unshackle ourselves from our Danish overlords, the matter of the Norwegian crown becomes of grave importance to us. Securing it under our authority would only further expand our influence and assist future endeavours." 
+ swe_stabilize_realm_title: "Stabilize the Realm" 
+ swe_stabilize_realm_desc: "Wars can be profitable and good for expansion and defence against bloodthirsty neighbours. However, our people yearn the taste of a simple and quiet life. To that end we must strive to restore the balance of peace across the realm in order to solidify our rule."
+ swe_sail_westwards_title: "Sail Westwards" 
+ swe_sail_westwards_desc: "The ancestors of great legend and prestige once tamed the great sea. It is time for us to prove worthy of carrying their names and sail westwards into uncharted waters and exciting adventure." 
+ swe_forefathers_land_title:"Forefathers Land" 
+ swe_forefathers_land_desc: "Sailing to the New World is no easy task. Taming it, is even harder. This new continent is full of extravagant riches and new people. It is up to us to settle the northern lands and extract their wealth, encouraging the transatlantic emigration." 
+ swe_uppsala_university_title: "Uppsala University" 
+ swe_uppsala_university_desc: "Education in the era of Renaissance is no simple matter. Should we wish to remain in the forefront of technological innovation, substantial investment is of utmost importance." 
+ swe_attract_foreign_talent_title: "Attract Foreign Talent" 
+ swe_attract_foreign_talent_desc: "The employment of a full royal court of advisors, coupled with the cultivation of renaissance thinking is pivotal in the attraction of new talent and expertise in our ranks." 
+ swe_lund_university_title: "Academia Carolina"
+ swe_lund_university_desc: "The success of previous educational establishments is no secret in our realm. To expand them is no wishful task as it involves both the monetary supplement for such endeavours as well as the de facto prosperity of the local people. After all, no poor soul would opt for education when their houses aren't in order."
+ swe_literary_publications_title: "Literary Publications" 
+ swe_literary_publications_desc: "To accumulate expertise in our court is one thing, to cultivate genius and publish literary achievements is another. In order to further the prestige of our country and glorify our history, we need to fund our literary excursions as best we can." 
+ swe_befrielsekriget_title: "Befrielsekriget" 
+ swe_befrielsekriget_desc: "The time has come for the people of Sweden to unshackle themselves. Let the braves march on under our coat of arms and signal the beginning of a new era, the beginning of a new Sweden!" 
+ swe_break_kalmar_union_title: "Break the Kalmar Union" 
+ swe_break_kalmar_union_desc: "There was a time where the Danish crown brought authority, discipline, respect and prestige. However, Christopher's reign has proven without a doubt that Denmark is but a shadow of its former grandiose self. We shall march forward as a sovereign nation and carve our own course in history, free of overlords and petty nobles." 
+ swe_cross_the_volkhov_title: "Cross the Volkhov" 
+ swe_cross_the_volkhov_desc: "The city of Novgorod is a bastion of trade and prosperity. Despite not holding up to the splendor it enjoyed during the previous century, it remains as a vital center of trade for the region. March our troops forward across the Volkhov River and capture the city!" 
+ swe_rysslands_hjarta_title: "Rysslands Hjarta" 
+ swe_rysslands_hjarta_desc: "The so-called unifier of the Rus, is nothing but an obstacle in our pursuit of Hegemony. Gone will be the days where the Tsar will stand between us and our ambitions, once Moscow falls." 
+ swe_contest_polish_throne_title: "Contest Polish Throne" 
+ swe_contest_polish_throne_desc: "During Sigismund III Vasa, Sweden and the Polish-Lithuanian Commonwealth briefly entered a Personal Union. However, the crown of the Commonwealth has fallen from grace, overshadowed by ours. Perhaps it is time for a reunion?" 
+ swe_baltic_sea_dominion_title: "Baltic Sea Dominion" 
+ swe_baltic_sea_dominion_desc: "Our continuous successes, both in administrative and military matters, are nearing fruition in our pursuit of declaring Sweden as the effective Hegemon of the Baltic Domain, or as it is more widely known, to claim the title of Dominium Maris Baltici." 
+ swe_maintain_ducal_balance_title: "Maintain Kingly Balance" 
+ swe_maintain_ducal_balance_desc: "The internal politics of a Kingdom such as ours are no tranquil matter. Various factions, nobles, clerics and even powerful merchants strive to accumulate enough influence with our crown as a means to their ends. The Riksrag of the Estates is a valuable tool for the King to legislate, curb the power of the Estates or broker internal political deals with each Estate." 
+ swe_introduce_indelningsverket_title: "Indelningsverket"
+ swe_introduce_indelningsverket_desc: "The call to subsidise Sweden's first standing army has grown louder over the turbulent events of the 16th century. To that end, the Kings of Sweden, spearheaded by Gustav Vasa himself, came up with Sweden's allotment system. In detail, one out of every citizens signed up to serve, while the other 9 took care of him and his equipment. The state provided each soldier with ample land to cultivate and sustain himself in-between each war, resulting in an unprecedented amount of troops for a country as sparsely populated as ours." 
+ swe_carolean_infantry_title: "Carolean Infantry" 
+ swe_carolean_infantry_desc: "The struggle of Catholicism against the Protestantism and the Reformed faiths shall give birth to the ultimate soldier. By increasing the discipline and zealous fervour of our troops, coupled with tremendous steel nerves in the battlefield, our generals shall spread the name of our new standing army across the Earth." 
+ swe_revive_ledungen_title: "Revive the Ledungen" 
+ swe_revive_ledungen_desc: "Let us revive the statute of Ledungen, a form of conscription to organise coastal fleets for seasonal excursions and in defence of the realm. To that end, we shall need to greatly expand our navy and recruit local men for manpower. Perhaps if we earn the favour of the Kingdom's strongest coin brokers, they could assist in and amplify our endeavours?" 
+ swe_secure_neva_title: "Secure Neva" 
+ swe_secure_neva_desc: "The cold port of Neva lies at the banks of one of the most valuable rivers in terms of its trade value, which coincidentally shares the city's name. Securing it would not only legitimize further conquest but would also greatly expand our mercantile reach in the region." 
+ swe_campaign_prussia_title: "Campaign in Prussia" 
+ swe_campaign_prussia_desc: "We cannot attain Hegemony in the Baltic without assuring the administration of the old Teutonic cities under our banner. Danzig, Konigsberg and Memel all have tremendous value, both in terms of their trade importance as well as prestigious goals of conquest that will bring glory and fame to our royalty." 
+ swe_dominate_baltic_title: "Dominate the Baltic" 
+ swe_dominate_baltic_desc: "The trade and goods flow that marches through the markets of Krakow and Novgorod makes a brief stop in the vendors of the various Baltic cities. This is a lucrative opportunity if we wish to increase the funds of our treasury, as well as attain the Hegemonic status of the Baltic." 
+ swe_revert_agrarian_crisis_title: "Revert Agrarian Crisis"
+ swe_revert_agrarian_crisis_desc: "Constant wars, both internal and external have rendered our farmlands barren and in dire need of improvement. To that end, we need to reassure and calm the people in regards to addressing their issues, lest we risk open rebellions!"
+ swe_found_new_cities_title: "Found New Cities" 
+ swe_found_new_cities_desc: "As we grow and develop, the continuous prosperity that our glorious realm is experiencing needs to be translated in the formation of new major urban centres across the southern lands of our country. " 
+ swe_iron_fist_baltic_title: "Baltic Järnnäve"
+ swe_iron_fist_baltic_desc: "No nation can muse itself to be a Great Power without a powerful navy. That much is true for us to a greater degree, due to our geographical position in the coastal Baltic lands. To address that concern we will erect a strong fleet to protect our trade routes and facilitate further expansion." 
+ swe_invade_denmark_title: "Invade Denmark" 
+ swe_invade_denmark_desc: " Breaking the Kalmar Union was a mere first step to giving the Danes a taste of their own medicine. Their capital will serve the Swedish crown and flourish under our jurisdiction." 
+ swe_border_the_empire_title: "Border the Empire" 
+ swe_border_the_empire_desc: "The Holy Roman Empire is a major neighbour on our southern Border. We should tread carefully, as upsetting them might have dire consequences. In particular, the matter of Holstein is of grave importance to the current Emperor. Thus, we should increase our military capabilities lest we fall pray to any germanic outsider." 
+ swe_establish_kontore_title: "Establish Kontoret" 
+ swe_establish_kontore_desc: "Under the administration of the Hanseatic League, the Kontore of Lubeck spread far and wide along the coasts of northern Europe. We should strive to attain the same level of dedication in regards to mercantile matters of development." 
+ swe_rittergrut_pomerania_title: "Rittergrut of Pomerania" 
+ swe_rittergrut_pomerania_desc: "The landed nobles of Pomerania are famed for their administrative and war capabilities. By establishing our presence in the Pomeranian coast, we will be able to directly intervene in local politics and potentially earn a new staunch ally." 
+ swe_reform_tax_code_desc: "Up until the 15th century, Sweden found herself embroiled in numerous wars, internal and external. Due to the majority of the crown's funds needed in military matters, there was little attention given to cultivating a proper taxation system. Let us attempt to undo this outlook." 
+ swe_reform_tax_code_title: "Reform the Tax Code"
+ swe_metallurgical_industry_title: "Metallurgical Industry" 
+ swe_metallurgical_industry_desc: "Sweden's wealth has long been the mining of ores. As gunpowder becomes the new modus of conducting warfare, supporting our mines and exports should be our prime directive." 
+ swe_terrae_scaniae_title: "Terrae Scaniae" 
+ swe_terrae_scaniae_desc: "The provinces around Lund, formally known as Skane, have been a matter of hot debate between the council of Sweden and the monarchy of Denmark. Perhaps it is time to secure the land and oust any Danish influence?" 
+ swe_secure_peninsula_title: "Secure the Pensinsula"
+ swe_secure_peninsula_desc: "The mainland of Denmark lies just at the front door of Germany. Lush farmlands and important commercial centres, their pastures will serve as a stepping stones on our way to fulfill our Baltic dream!" 
+ swe_estonian_dominion_title: "Estonian Dominion" 
+ swe_estonian_dominion_desc: "Estonia has always been a competitor against our rulers. Oftentimes, they conducted  raids against our coast and oftentimes they would deny our merchants access. However, the balance of power has shifted to the point that, as luck would have it, they shall soon be at our mercy." 
+ swe_trade_port_riga_title: "Trade Port of Riga" 
+ swe_trade_port_riga_desc: "During the 14th century, Riga prospered as an associate of the famous Hanseatic League. However, after the League's influence waned and faded away, they were briefly a puppet of the Habsburgs under the Free City status of protections and privileges. This allowed them to flourish and develop into an important commercial centre of the Baltic, a centre that would only further increase our influence and coin on the region." 
+ swe_church_sweden_title: "Church of Sweden"
+ swe_church_sweden_desc: "Shortly after Sweden converted to Catholicism, our country became a beacon of faith in Scandinavia through our exemplary display of fervour and piety. Perhaps it would be wise to harness our faith and the clergy that populate our court, as a means to further increase the nation's strength and willpower."
+ swe_papal_authority_title: "Papal Authority" 
+ swe_papal_authority_desc: "Word of the teachings of Martin Luther have reached our realm, and with them, men of the cloth who doubt the teaching of Catholicism. The Pope demands fealty during this turbulent times, even as the Catholic institutions around Europe are shaken to their foundation. However we choose to handle the matter of faith we mustn't forget that it may leave tremendous ripples in the history books." 
+ swe_bank_of_the_realm_title: "Bank of the Realm" 
+ swe_bank_of_the_realm_desc: "As we further push the agenda of centralization and modernization, it has become apparent that we lack a centralized banking system to efficiently operate our finances and smoothly overlook the health of the economy." 
+ swe_absolutist_state_title: "Absolutist State" 
+ swe_absolutist_state_desc: "The concept of Absolutism is certainly something alien to many feudal monarchies of Europe. Despite that, we have recognized the reality that powerful estates ultimately exist only to serve themselves. To address that, we must increase all efforts to concentrate more power on the hands of our monarch while overshadowing any outside influences."  
+ 
+ 
+ #Modifiers
+ swe_stable_government_modifier: "Stable Central Government"
+ swe_exploration_focus_modifier: "Exploration Focus" 
+ swe_native_scandinavian_colonies_modifier: "Native Scandinavian Colonies"
+ swe_sweden_rise_modifier: "Sweden Rise!"
+ swe_acclimating_to_russian_winter_modifier: "Acclimated to Russian Winters"
+ swe_thrones_of_the_north_modifier: "Thrones of the North" 
+ swe_continental_ambitions_modifier: "Continental Ambitions" 
+ swe_dominium_maris_baltici_modifier: "Dominium Maris Baltici" 
+ swe_rotar_system_modifier: "Rotar System" 
+ swe_defensive_fleet_modifier: "Defensive Coastal Fleet"
+ swe_victory_in_danzig_modifier: "Victory in Danzig" 
+ swe_baltic_trade_hegemony_modifier: "Baltic Trade Hegemony" 
+ swe_urban_expansion_modifier: "Urban Expansion" 
+ swe_kungliga_flottan_modifier: "Kungliga Flottan" 
+ swe_war_preparations_modifier: "War Preperations" 
+ swe_sverige_kontor_modifier: "Sverige Kontor" 
+ swe_pomeranian_front_modifier: "Pomeranian Front" 
+ swe_simplified_tax_system_modifier: "Simplified the Tax System" 
+ swe_bar_iron_exports_modifier: "Bar Iron Exports" 
+ swe_swedish_customs_laws_modifier: "Swedish Customs & Laws" 
+ swe_industrial_port_of_swedish_empire_modifier: "Industrial Port of the Swedish Baltic Empire" 
+ swe_pious_believers_sweden_modifier: "Pious Believers of Sweden" 
+ swe_adherence_papal_law_modifier: "Adherence to Papal Law" 
+ swe_sveriges_riksbank_modifier: "Sveriges Riksbank"
+ 
+ #Fuck Missions Expanded#
+ swe_swedish_crown_authority_modifier: "Swedish Crown Authority"
+ swe_restored_the_landtag_of_pomerania_modifier: "Restored the Landtag of Pomerania" 
+ swe_increased_free_trade_modifier: "Increased Free Trade" 
+ swe_free_peasant_class_modifier: "Free Peasant Class"
+ swe_ga_pa_tactics_modifier: "Ga-Pa Tactics"
+ swe_strong_clergy_modifier: "Strong Clerical Board" 
+ swe_strong_merchant_class_modifier: "Empowered Merchant Class" 
+ swe_powerful_nobility_modifier: "Powerful Nobility Modifier" 
+ swe_prestigious_publications_modifier: "Prestigious Publications"
+ swe_gratie_veritas_naturae_modifier: "Gratie Veritas Naturae"
+ swe_swedish_east_india_hq_modifier: "Swedish East India Company Headquarters"
+ swe_civil_code_of_sweden_modifier: "Civil Code of Sweden" 
+ swe_bollhuset_theater_modifier: "Bollhuset Theater" 
+ swe_royal_academy_sciences_modifier: "Royal Academy of Sciences" 
+ swe_discoveries_of_celcius_modifier: "The Discoveries of Celcius" 
+ swe_ruling_nobility_modifier: "Ruling Nobility" 
+ swe_first_female_school_modifier: "First Female School of Sweden" 
+ swe_defender_of_the_reformation_modifier: "Defender of the Reformation"
+ swe_norwegian_shipwrights_modifier: "Norwegian Shipwrights"
+ SWE_MONOPOLIZE_NOVGOROD: "Monopolized Novgorod"
+ 
+
+
+ #Events
+ FU_Sweden_Events.1.t: "Svenska & Norska Unionen"
+ FU_Sweden_Events.1.d: "Sweden and Norway had been united under the same crown on two previous occasions: from 1319 to 1343 and again briefly from in the 15th Century  in opposition to Christian of Oldenburg who was elected king of the Kalmar Union by the Danes. During the following centuries, Norway remained united with Denmark in close union, nominally as one kingdom, but in reality reduced to the status of a mere province ruled by Danish kings from their capital, Copenhagen. \nHowever, recent developments such as the destruction of our capital and the apparent weakness of the Danish Crown have led to Sweden pressing their claim on our throne yet again." 
+ FU_Sweden_Events.1.a: "It would be wise to accept this fate."
+ FU_Sweden_Events.1.b: "We shall die free men!"
+ 
+ FU_Sweden_Events.2.t: "Sweden's First University"
+ FU_Sweden_Events.2.d: "As with most medieval universities, Uppsala University initially grew out of an ecclesiastical center. The archbishopric of Uppsala had been one of the most important sees in Sweden proper since Christianity first spread to this region in the ninth century. Uppsala had also long been a hub for regional trade, and had contained settlements dating back into the deep Middle Ages. \nAs was also the case with most medieval universities, Uppsala had initially been chartered through a papal bull. Uppsala's bull, which granted the university its corporate rights, was issued by Pope Sixtus IV in 1477, and established a number of provisions. Among the most important of these was that the university was officially given the same freedoms and privileges as the University of Bologna. This included the right to establish the four traditional faculties of theology, law (Canon Law and Roman law), medicine, and philosophy, and to award the bachelor's, master's, licentiate, and doctoral degrees. The archbishop of Uppsala was also named as the university's Chancellor, and was charged with maintaining the rights and privileges of the university and its members." 
+ FU_Sweden_Events.2.a: "Let us fund the university!" 
+ FU_Sweden_Events.2.b: "This money is best spent in clerical studies."
+ 
+ FU_Sweden_Events.3.t: "Lund Universitet" 
+ FU_Sweden_Events.3.d: "The city of Lund has a long history as a center for learning and was the ecclesiastical center and seat of the archbishop of Denmark. A cathedral school (the Katedralskolan) for the training of clergy was established in 1085 and is today Scandinavia's oldest school. \nThe university traces its roots back to 1425, when a Franciscan studium generale (a medieval university) was founded in Lund next to the Lund Cathedral (with baccalaureate degree started in 1438), making it the oldest institution of higher education in Scandinavia followed by studia generalia in Uppsala in 1477 and Copenhagen in 1479. After Sweden won Scania from Denmark in the 1658 Treaty of Roskilde, the university was founded in 1666 on the location of the old studium generale next to Lund Cathedral. \n\nAfter the Treaty of Roskilde in 1658, the Scanian lands came under the possession of the Swedish Crown, which founded the University in 1666 as a means of making Scania Swedish by educating teachers in Swedish and culturally integrate the Scania region with Sweden. The university was named Academia Carolina after Charles X Gustav of Sweden until the late 19th century when Lund University became the widespread denomination. It was the fifth university under the Swedish king, after Uppsala University (1477), the University of Tartu (1632, now in Estonia), the Academy of Åbo (1640, now in Finland), and the University of Greifswald (founded 1456; Swedish 1648–1815, now in Germany). \nThe university was at its founding granted four faculties: Law, Theological, Medicine and Philosophy. They were the cornerstones, and for more than 200 years this system was in effect. Towards the end of the 17th century, the number of students hovered around 100. Some notable professors in the early days were Samuel Pufendorf, a juridical historian; and Canutus Hahn and Kristian Papke in philosophy." 
+ FU_Sweden_Events.3.a: "Ad utrumque paratus!"
+ 
+ FU_Sweden_Events.4.t: "A Description of the Northern Peoples" 
+ FU_Sweden_Events.4.d: "The Swedish scholar and prelate, Olaus Magnus (1490-1557), last Catholic archbishop of Uppsala, lived the latter half of his life in exile. His devotion to his country and his people never faltered, nor his determination to give them a glorious place on the European cultural map by his writings. On his justly famous Carta Marina, published in Venice in 1539, he promised a fuller account of the North and its marvels. This he accomplished in January 1555 when he issued from his own press in Rome his magnificent Historia de Gentibus Septenrionalibus. This quarto volume of 815 pages, divided into 22 books and a total of 778 chapters, was lavishly illustrated with some 480 woodcuts, most of them closely relevant to the technical matters discussed by the author. The book was an immediate success, and half a dozen editions appeared in the century after Olaus’s death. It became even better known in an epitome published in Antwerp in 1558, which was also frequently reprinted and translated. This appeared in English in 1658, but it is only with the present version, complete with illustrations, that the whole work is made available to the English-reading world. It is indeed only the second full translation to appear in modern times, preceded a Swedish version published in four parts between 1909 and 1925. There is little history in the sense of chronological narrative in Olaus Magnus’s Historia. It is rightly regarded as an ethnographic essay on an encyclopaedic scale, touching on a vast variety of topics, snowflakes and sea-serpents, elks and artillery, sables and saltpetre, watermills and werewolves. Much of it was culled from ancient authorities- it was a matter of patriotic pride to identify the Swedes as the only legitimate descendants of the Goths- but much of it was derived from the author’s personal observations, especially those made on his early travels in North Sweden." 
+ FU_Sweden_Events.4.a: "I can't wait for the sequel!"
+ 
+ FU_Sweden_Events.5.t: "Riksdag of the Estates" 
+ FU_Sweden_Events.5.d: "Riksdag of the Estates is the name used for the Estates of Sweden when they were assembled. Until its dissolution in 1866, the institution was the highest authority in Sweden next to the King. It was a Diet made up of the Four Estates, which historically were the lines of division in Swedish society: \nClergy \nNobles \nBurghers \nFarmers \nThe Diet is a powerful tool and it would be wise for us to carefully navigate the internal politics of our nation. During Sweden's entire history, there have been a number of important assemblies ranging from times where the King had no power, to times where the King had all the power. \nThus, whichever authority we choose to support, let us do so while holding the good of the country in mind." 
+ FU_Sweden_Events.5.a: "Support the clerical estates."
+ FU_Sweden_Events.5.b: "Our interest lie with our merchants."
+ FU_Sweden_Events.5.c: "Let us secure the support of the nobility, instead."
+ FU_Sweden_Events.5.e: "We need not depend on the old institutions!"
+ 
+ FU_Sweden_Events.6.t: "Karoliner" 
+ FU_Sweden_Events.6.d: "Indeed, the Carolean Infantry employed new, never-before-seen tactics in the battlefield. \nAccording to army regulations of 1694 and 1701, the infantry attack operated as follows: In four ranks with gaps, a Swedish battalion would march "smoothly and slowly" towards the enemy lines, braving enemy fire that often started at a distance of approximately 100 metres. The Swedish soldiers were told not to fire until "you could see the whites in the enemies eyes", a range of roughly 50 metres. When the marching drums stopped the two rear ranks would fill the gaps within the two foremost ranks and fire a salvo, then draw their swords. The two rear ranks would then move back to their previous position, and the two foremost ranks would close the gaps in their lines, after which the battalion would resume their attack. The two foremost ranks would discharge their muskets in a final volley when they were within range to charge—a distance of roughly 20 metres. At these ranges, the powerful muskets usually felled many enemy troops, having a great physical and psychological impact on opponents. Directly after the final volley, the Caroleans charged the enemy ranks with pikes, bayonets, and rapiers. Note that the pikes were used as an offensive weapon; in close combat, they had the advantage over their foes' weapons due to their long reach. Often, complete ranks of enemies fled before physical contact was made, frightened by the long pikes and the fact that the Swedish battalions had previously calmly withstood their fire" 
+ FU_Sweden_Events.6.a: "Hakkaa päälle!"
+ 
+ FU_Sweden_Events.7.t: "The Farms of Sweden"
+ FU_Sweden_Events.7.d: "Our country is very unique in the sense that we never experienced extensive feudalism. Nobles never really got a hold of our lands as they did in other parts of Europe. However, we stand at a very important crossroads for our nation. Having survived the Agrarian Crisis we must decide whether we will grant land to the nobles or leave it be at the hands of the people."
+ FU_Sweden_Events.7.a: "The peasantry must own their lands."
+ FU_Sweden_Events.7.b: "Reaffirm the status of the nobility."
+ FU_Sweden_Events.8.t: "The Sound Dues of Sweden" 
+ FU_Sweden_Events.8.d: "Originally instituted in 1429 by King Eric of Pomerania, the Dues operated as toll stations for ships sailing towards and through the former Danish capital. With Denmark's demise, however, the Dues have fallen under our administration and thus  it is up to us to decide how best to utilize such a powerful profiteering tool." 
+ FU_Sweden_Events.8.a: "Impose new Sound Dues."
+ FU_Sweden_Events.8.b: "Let us create a market of free trade instead."
+ 
+ FU_Sweden_Events.9.t: "Holstein's Position in the Empire"
+ FU_Sweden_Events.9.d: "The Swedish army marched into Holstein, a de-facto seat Prince of the Holy Roman Empire we have sworn to uphold and protect. Despite outside pressure they refused to grant the people of the province autonomy under the Empire's authority. Perhaps it is time the head of the Holy Roman Empire intervenes directly, lest we risk the sovereignty of the Empire and our legitimacy." 
+ FU_Sweden_Events.9.a: "Demand Holstein's return!"
+ FU_Sweden_Events.9.b: "Let us delegate their entry in the Empire!"
+ 
+ FU_Sweden_Events.10.t: "Imperial Diplomacy" 
+ FU_Sweden_Events.10.d: "The Emperor has decreed that Sweden, due to its military might and proximity to the Empire, whilst maintaining a monopoly on the Baltic trade markets, shall be given the unique opportunity to join the Confederation of Germanic Princes commonly known as the Holy Roman Empire. This is of course a diplomatic move, opting to avoid potential destablization and war on the Empire's northern front." 
+ FU_Sweden_Events.10.a: "Let us join the Holy Roman Empire!"
+ FU_Sweden_Events.10.b: "Draw genitalia on the letter and send it back!"
+ 
+ FU_Sweden_Events.11.t: "Administrating the Pomeranian Coast" 
+ FU_Sweden_Events.11.d: "Various disgraced nobles of the former Duchy of Pomerania have come to our court to beg for the partial autonomy and restoration of their lands. They argue that the people of Pomerania would be far more cooperative should they be ruled under a familiar banner and coat of arms. To that end they pledge their allegience to the Swedish Crown in exchange for immediate vassalization." 
+ FU_Sweden_Events.11.a: "Restore the Duchy of Pomerania under our flag!" 
+ FU_Sweden_Events.11.b: "Bah, loot their estates!"
+ 
+ FU_Sweden_Events.12.t: "The Svenska-Livland Dominion"
+ FU_Sweden_Events.12.d: "Various disgraced nobles of the former Order of Livonia have come to our court to beg for the partial autonomy and restoration of their lands. They argue that the people of Estonia would be far more cooperative should they be ruled under a familiar banner and coat of arms. To that end they pledge their allegience to the Swedish Crown in exchange for immediate vassalization."
+ FU_Sweden_Events.12.a: "They will serve the Swedish Crown!"
+ FU_Sweden_Events.12.b: "Our lands, our rules."
+ 
+ FU_Sweden_Events.13.t: "Gustav Vasa Bible" 
+ FU_Sweden_Events.13.d: "The Gustav Vasa Bible is the common name of the Swedish Bible translation published in 1540–41. The full title is as appears on the right: Biblia / Thet är / All then Helgha Scrifft / på Swensko. The translation into English reads: "The Bible / That is / All the Holy Scripture / In Swedish". \nThe men behind the translation were Laurentius Andreae and the Petri brothers Olaus and Laurentius. Of them, Archbishop Laurentius is regarded as the main contributor. However, had the work not been commissioned by the Swedish King Gustav Vasa, who had in effect broken with the Pope in Rome in the 1520s, the work would not have been possible. \nThe Bible follows the German translation by Martin Luther from 1526 closely, not only in language, but in the fonts used and the typography as a whole. The Danish version, printed a few years earlier, also did this. \nThe Bible established the use of the Swedish language. It established a uniform spelling of words, particularly the infinitive ending -a instead of the more Danish-sounding -e, and defined the use of the vowels å, ä and ö. It did use th for /ð/, as in English, as is apparent on the title page; but this eventually changed to d." 
+ FU_Sweden_Events.13.a: "Spread the word!"
+ 
+ FU_Sweden_Events.14.t: "Gustav I Vasa" 
+ FU_Sweden_Events.14.d: "The man who became pivotal in our independence struggle, Gustav Vasa became the first Swedish King in a long line of brilliant and pioneering monarchs that propelled Sweden in the foreground of Great Power diplomacy. " 
+ FU_Sweden_Events.14.a: "The throne is his."
+ FU_Sweden_Events.14.b: "We shouldn't disturb the status quo!"
+ 
+ FU_Sweden_Events.15.t: "The Lion of the North" 
+ FU_Sweden_Events.15.d: "Originally inaugurated in 1611, Gustavus Adolphus of Sweden@SWE became known for his brilliant governance of the nation and is credited for the rise of Sweden as a great European power. During his reign, Sweden became one of the primary military forces in Europe during the Thirty Years' War, helping to determine the political and religious balance of power in Europe. He was formally and posthumously given the name Gustavus Adolphus the Great by the Riksdag of the Estates in 1634. \nHe is often regarded as one of the greatest military commanders in modern history, with use of an early form of combined arms. His contributions to Sweden's rise in power included reformation of the administrative structure. For example, he began parish registration of the population, so that the central government could more efficiently tax and conscript the people. His actions in the fields of economic reform, trade, modernization, and the creation of a modern bureaucracy were as significant as his actions in war. His domestic reforms, starting from a medieval economy and society, were the foundation for his victories in Germany as well as the creation and survival of the Swedish Empire. \nHe is widely commemorated by Protestants in Europe as the main defender of their cause during the Thirty Years' War, with multiple churches, foundations and other undertakings named after him, including the Gustav-Adolf-Werk. He became a symbol of Swedish pride."  
+ FU_Sweden_Events.15.a: "Lion come forth!"
+ FU_Sweden_Events.15.b: "We have no need for extravagancy!"
+ 
+ FU_Sweden_Events.16.t: "The Dalecarlian Rebellions"
+ FU_Sweden_Events.16.d: "Economic crisis occurred after the Swedish war of liberation because of the trade monopoly the king had granted the Hanseatic Lübeck in exchange for their support in recapturing the capital during the war. The discontent was used by two Catholic priests, former Bishop Peder Jakobsson of Västerås, a follower of Sten Sture the Younger, and Knut Mickelsson, who opposed the inclinations of Lutheranism which the king had displayed as early as the 16th Century, who stirred up the emotions against the king and for the Sture family in the province." 
+ FU_Sweden_Events.16.a: "This is madness!"
+ 
+ FU_Sweden_Events.17.t: "The Sture Murders" 
+ FU_Sweden_Events.17.d: "Rising tensions between the King and the nobility have culminated in our monarch firmly believing that the nobles were planning to usurp the throne and violently depose the current authority. Given the stresses of administrating the vast Swedish lands, the King, suspecting of imminent treason ordered the death of 5 prominent noblemen of the Sture family. Acting on madness and fear and deeply apologetic about his actions he sought the forgiveness of the Sture family who responded by demanding large sums of coin as well as land." 
+ FU_Sweden_Events.17.a: "Compensate the victims and pursue seclusion." 
+ FU_Sweden_Events.17.b: "Drive them out of our land!"
+ 
+ FU_Sweden_Events.18.t: "The Invasion of Brandenburg" 
+ FU_Sweden_Events.18.d: "Multiple successes in the Germanic front have led to the Swedish military commanders pressing higher command to push deeper towards Berlin given the undefended nature of the German capital. Pushing forward with this war may yield us with even more land deeper in Holy Roman territory while it may also trigger a defensive coalition against us which might lead to a protracted war." 
+ FU_Sweden_Events.18.a: "The time to strike is now!" 
+ FU_Sweden_Events.18.b: "We will pursue more diplomatic alternatives."
+ 
+ FU_Sweden_Events.19.t: "Swedish East India Company"
+ FU_Sweden_Events.19.d: "The Swedish East India Company (Swedish: Svenska Ostindiska Companiet or SOIC) was founded in Gothenburg, Sweden, in the 18th Century for the purpose of conducting trade with China and the Far East. The venture was inspired by the success of the Dutch East India Company and the British East India Company. This made Gothenburg a European center of trade in eastern products . The main goods were silk, tea, furniture, porcelain, precious stones and other distinctive luxury items. Trade with China saw the arrival of some new customs in Sweden. The Chinese cultural influence increased, and tea, rice, arrack and new root vegetables started appearing in Swedish homes. It grew to become the largest trading company in Sweden during the 18th century, a total of 132 expeditions were carried out with 37 different ships." 
+ FU_Sweden_Events.19.a: "Let there be profit!"
+ 
+ FU_Sweden_Events.21.t: "Expedition to Lapland" 
+ FU_Sweden_Events.21.d: "The Expedition to Lapland, the northernmost region in Sweden, by Carl Linnaeus in 1732 was an important part of his scientific career. Linnaeus departed from Uppsala and travelled clockwise around the coast of the Gulf of Bothnia over the course of six months, making major inland incursions from Umeå, Luleå and Tornio. His observations became the basis of his book Flora Lapponica (1737) in which Linnaeus’ ideas about nomenclature and classification were first used in a practical way. Linnaeus kept a journal of his expedition which was first published posthumously as an English translation called Lachesis Lapponica: A Tour in Lapland (1811). \nHe returned from his six-month-long, over 2,000 kilometres (1,200 mi) expedition on 10 October, having gathered and observed many plants, birds and rocks. Although Lapland was a region with limited biodiversity, Linnaeus described about a hundred previously undescribed plants. The details of his discoveries became the basis of his book Flora Lapponica. Linnaeus's account of the journey, Iter Lapponicum was translated into English by James Edward Smith and published in 1811 as Lachesis Lapponica: A Tour in Lapland." 
+ FU_Sweden_Events.21.a: "Nature is fascinating!"
+ 
+ FU_Sweden_Events.22.t: "Civil Code of the Swedish Realm" 
+ FU_Sweden_Events.22.d: "Administrating the Baltic lands under our jurisdiction is no easy task. To that end let us culminate our best minds in the realm on the largest legal project the country has ever seen. A legislative work that includes jursiprudence about every aspect of life in Sweden, unified and widely distributed across all provinces, closely followed and honestly practiced by judges throughout the nation!" 
+ FU_Sweden_Events.22.a: "A new era for our Baltic territories!"
+ 
+ FU_Sweden_Events.23.t: "Bollhuset Theater" 
+ FU_Sweden_Events.23.d: "Bollhuset, also called Stora Bollhuset (The Big Ball House), Bollhusteatern (Ball House Theater), and Gamla Bollhuset (Old Ball House) at various times, was the name of the first theater in Stockholm, Sweden; it was the first Swedish theater and the first real theater building in the whole of Scandinavia. The name "Bollhuset" means "The Ball House", and it was built in 1627 for ball sports and used in this way for forty years. The name Lejonkulan, however, was, in fact, the name of a different building, which was also used by the same theater in the 17th century. \nBollhuset was the scene of a long series of most important events in the history of the theater in the city and in the history of Swedish theater. Between 1667 and 1792 it was used as a theater until it was demolished in 1793; between 1737 and 1754, the first national theater was located here; in 1773–1782 the Royal Swedish Opera (and thereby also the Royal Swedish Ballet) was located here; in 1783–1792 the French theater of Stockholm was housed here; in 1787 the second national theater was re-founded in the building; and from 1788 to 1792 it was the home of the Royal Dramatic Theatre." 
+ FU_Sweden_Events.23.a: "Such an elegant display of culture and sophistication!"
+ 
+ FU_Sweden_Events.24.t: "Royal Swedish Academy of Sciences"
+ FU_Sweden_Events.24.d: "The Royal Swedish Academy of Sciences (Swedish: Kungliga Vetenskapsakademien) is one of the royal academies of Sweden. Founded on June 2, 1739, it is an independent, non-governmental scientific organization which takes special responsibility for promoting the natural sciences and mathematics and strengthen their influence in society, whilst endeavouring to promote the exchange of ideas between various disciplines. \n\nThe goals of the academy are to be a forum where researchers meet across subject boundaries, to offer a unique environment for research, and to provide support to younger researchers. Famously, the academy would later go on to host the world-renowned Nobel Prize Awards."
+ FU_Sweden_Events.24.a: "För efterkommande!"
+ 
+ FU_Sweden_Events.25.t: "Anders Celsius and the Celsius Temperature Scale"
+ FU_Sweden_Events.25.d: "In 1730, Celsius published the Nova Methodus distantiam solis a terra determinandi (New Method for Determining the Distance from the Earth to the Sun). His research also involved the study of auroral phenomena, which he conducted with his assistant Olof Hiorter, and he was the first to suggest a connection between the aurora borealis and changes in the magnetic field of the Earth.\n\nIn 1738, he published the De observationibus pro figura telluris determinanda (Observations on Determining the Shape of the Earth). Celsius's participation in the Lapland expedition won him much respect in Sweden with the government and his peers, and played a key role in generating interest from the Swedish authorities in donating the resources required to construct a new modern observatory in Uppsala." 
+ FU_Sweden_Events.25.a: "A very hot man of science!"
+ 
+ FU_Sweden_Events.26.t: "Svea Rikes Historia"
+ FU_Sweden_Events.26.d: "Olof von Dalin (29 August 1708 – 12 August 1763) was a Swedish nobleman, poet, historian and courtier. He was an influential literary figure of the Swedish Enlightenment. \n\nHis didactic epos of Svenska Friheten appeared in 1742. Hitherto, Addison and Alexander Pope had been his models. In this work he draws his inspiration from Thomson, whose poem, Liberty, he emulated. In 1742, he was made a member of the Royal Swedish Academy of Sciences. Dalin started publishing his Swedish history, Svea Rikes Historia in 1747. He would die before this work was complete.\n\nHis position at court involved him in the queen's political intrigues, and separated him to a vexatious degree from the studies wherein he had hitherto been absorbed. He held the post of Tutor to the crown prince until 1756, when he was arrested on suspicion of taking part in the attempted coup d'état that year, and was tried for his life before the diet. He was acquitted, but was forbidden to show himself at court on any pretense. This period of exile, lasting until 1761, Dalin spent in the preparation of the third volume of his great historical work, the Svea Rikes historia, that related events up to the death of King Charles IX of Sweden in 1611. The first two volumes appeared in 1746-1750; the third, in two parts, in 1760-1762." 
+ FU_Sweden_Events.26.a: "A celebrated account of our history!"
+ 
+ FU_Sweden_Events.27.t: "The December Crisis" 
+ FU_Sweden_Events.27.d: "The December Crisis, also known as Decemberkrisen,  was a political crisis which occurred in Sweden in December 1768 when the King of Sweden, demonstrated against his limited powers by refusing to sign state documents, thereby paralyzed the government and bringing about a new Riksdag of the Estates. \n\nIn December 1768, the king refused to sign state documents in protest to his limited power and on 15 December, the king formally resigned his throne in order to bring about the gathering of a new Riksdag, during which a reform to increase his capacity could be introduced. This created a difficult political situation, as he had thereby technically abdicated and the nation was in interregnum. The Hovpartiet, a political party backing the monarch, suggested that the crisis could be used to stage a coup to establish absolute monarchy. The queen opposed because she did not consider the time right for such a step and advocated negotiation with the Hats (party) and the Caps (party), but at this point, the Hovpartiet for the first time turned to the Crown Prince rather than the queen; however, the crisis could not be used for a coup because the Caps party broke an agreement." 
+ FU_Sweden_Events.27.a: "I refuse!"
+ FU_Sweden_Events.27.b: "Bend to the nobility."
+ 
+ FU_Sweden_Events.28.t: "Societetsskolan i Göteborg för Döttrar"
+ FU_Sweden_Events.d: "Societetsskolan i Göteborg för döttrar ('Society School for Daughters in Gothenburg') or simply Societetsskolan ('Society School'), was a Swedish girls' school managed by the congregation of the Moravian Church in Gothenburg from 1 November 1787 until 1857. It is referred to as the first girls' school in Sweden, because it was the first institution to provide serious academic secondary education to females. \n\nThe school is known under many different names. Because it was initially intended to serve the children of the Moravian congregation, it was called Brödraförsamlingens flickskola i Göteborg ('Girls' School of the Unity of the Brethren in Gothenburg') or Evangeliska Brödraförsamlingens flickskola i Göteborg ('Girls' School of the Unity of the Evangelical Brethren in Gothenburg'), but also, commonly, as Salsskolan ('Hall School'), because it was initially held in the prayer hall of the Moravian congregation." 
+ FU_Sweden_Events.28.a: "A great step for women across our realm!"
+ 
+ FU_Sweden_Events.29.t: "Ambitions of the Baltic Dominion"
+ FU_Sweden_Events.29.d: "For far too long have we been constrained in our path to greatness by petty nobles and pesky Danish overlords. As we shed the shackles of servitude and reclaim our independence, we will carve ourselves a new realm, more prestigious and powerful than ever."
+ FU_Sweden_Events.29.a: "And thus our saga begins!"
+ 
+ FU_Sweden_Events.30.t: "Swedish-Polish Union"
+ FU_Sweden_Events.30.d: "The Polish–Swedish union was a short-lived personal union between the Polish–Lithuanian Commonwealth, and the Kingdom of Sweden, when Sigismund III Vasa, King of Poland and Grand Duke of Lithuania, was crowned King of Sweden in 1592. In 1599, after a civil war, he lost this crown and returned to Warsaw. \n\nHowever, the recent developments in Europe accompanied with our rise to power have given way to us laying claim on the throne of our former overlord." 
+ FU_Sweden_Events.30.a: "Only good will come from this."
+ 
+ 
+ #Tooltips 
+ swe_quest_new_world_tt: "If we have unlocked the §YQuest for the New World§! Idea we will also gain an §YExplorer§! with §G60§! Tradition \nas well as §G20§! Naval Tradition"
+ swe_if_norway_is_subject_tt: "If §MNorway§! is our subject, they will also \nreceive the same §Yreward§!"
+ swe_polish_integration_tt: "The integration of our §YUnion§! will be instant if we hold on to it for §Y50§! years"
+ swe_every_province_indelningsverket_tt: "Every province that fulfills the §RCriteria§! gets \n§G1§! Base Manpower and the modifier '§YRotar System§!' until the end of the game, giving the following effects: \nLocal Manpower Modifier: §G+15%§!"  
+ swe_burgher_defensive_fleet_tt: "If we complete the mission while the §YBurghers§! have at least §G60§! Loyalty Sweden gets '§YBurgher Defensive Fleet§!'\nfor §Y25§! Years, giving the following effects: \nGlobal Sailors Modifier: §G+20%§! \nGlobal Ship Cost: §G-10%§!"
+ swe_karelia_area_tt: "If we complete the mission via owning the entire §YSouth Karelia State§! we will also be granted §G15§! Burgher Loyalty as well as §Y5 Light Ships§!"
+ swe_every_tax_province_dev_tt: "Every province with a §YChurch§! or §YCathedral§! \ngets §G1 Base Tax Development§"
+ swe_prevent_crisis_tt: "If we complete this mission before 1480, we will prevent the §RDalecarlian Rebellions§!"
+ swe_dominion_claims: "§YThe Era of Great Power is upon us!§! \n \nGrants the necessary claims to attain §MHegemony§! around the Baltic Sea and beyond!"
+ swe_apply_rewards_tt: "This reward applies only to every province that fulfills the §RCriteria§!"
+ swe_new_modification_tt: "We will gain access to the '§YWasavarvet Cannons§!' special flagship modification"
+ 
+ #Flagship modification 
+ 
+ swe_wasavarvet_cannons: "Wasevarvet Cannons"
+ swe_wasavarvet_cannons_desc: "The Vasa has been the centre of all activity at Wasavarvet, the Stockholm shipyard, for two years. Wasavarvet was not only a shipyard but also the main station for the naval forces in a country that was constantly armed for war."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -468,27 +468,27 @@ polish_missions_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			livonia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			estonia_ingria_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			curonia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			#livonia_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			#estonia_ingria_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			#curonia_area = {
+			#	limit = {
+			#		NOT = { is_permanent_claim = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
 			279 = {
 					add_core = ROOT
 				}

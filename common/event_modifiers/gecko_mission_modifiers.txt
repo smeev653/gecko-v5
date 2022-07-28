@@ -486,3 +486,8 @@ gc_west_african_integration = {
 	 	num_accepted_cultures = 1
 		culture_conversion_cost = -0.1
 }
+
+swe_baltic_trade_hegemony_modifier = {
+	trade_efficiency = 0.15 
+	mercantilism_cost = -0.2 
+}
