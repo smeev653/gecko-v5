@@ -1,4 +1,4 @@
-#namespace = FU_Monument_Events
+namespace = FU_Monument_Events
 
 
 country_event = { #Hidden event for personality addition

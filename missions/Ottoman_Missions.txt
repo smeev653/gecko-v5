@@ -3900,7 +3900,6 @@ ottoman_missions_4c = {
 				}
 				full_idea_group = innovativeness_ideas
 			}
-			is_ahead_of_time_in_specific_tech = { type = adm }
 		}
 		effect = { 
 			if = { 
@@ -4773,9 +4772,6 @@ ottoman_missions_5 = {
 				limit = { has_dlc = "Rule Britannia" } 
 				innovativeness = 100 
 			}
-			is_ahead_of_time_in_specific_tech = { type = adm }
-			is_ahead_of_time_in_specific_tech = { type = dip }
-			is_ahead_of_time_in_specific_tech = { type = mil }
 		}
 		effect = {
 			change_adm = 2 

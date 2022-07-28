@@ -197,4 +197,538 @@ regional_conquests = {
 			}	
 		}	
 	}	
+}
+
+
+add_or_upgrade_university_building = {
+	custom_tooltip = add_or_upgrade_university_building_tt
+	hidden_effect = {
+		if = {
+			limit = {
+				has_building = university
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		else = {
+			add_building = university
+		}
+	}
+}
+
+## create or add a CoT
+### create_or_add_center_of_trade_level = { level = <number> }
+create_or_add_center_of_trade_level = {
+	if = {
+		limit = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = var
+					value = $level$
+				}
+				check_variable = { which = var value = 1 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = $level$
+		}
+		else_if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+			if = {
+				limit = {
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = var
+							value = $level$
+						}
+						check_variable = { which = var value = 2 }
+					}
+				}
+				add_center_of_trade_level = 2
+			}
+			else = {
+				add_center_of_trade_level = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			add_center_of_trade_level = 1
+		}
+		else = {
+			add_base_production = 2
+		}
+	}
+	else_if = {
+		limit = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = var
+					value = $level$
+				}
+				NOT = { check_variable = { which = var value = 0 } }
+			}
+		}
+		if = {
+			limit = {
+				province_has_center_of_trade_of_level = 3
+			}
+			if = {
+				limit = {
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = var
+							value = $level$
+						}
+						check_variable = { which = var value = -1 }
+					}
+				}
+				add_center_of_trade_level = -1
+			}
+			else = {
+				add_center_of_trade_level = -2
+			}
+		}
+		else_if = {
+			limit = {
+				province_has_center_of_trade_of_level = 2
+			}
+			add_center_of_trade_level = -1
+		}
+	}
+}
+
+
+# usage:
+## has_better_tech_than = { who = PREV amount = 1 }
+has_better_tech_than = {
+	$who$ = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_BETTER_TECH_THAN_TT
+			OR = {
+				num_of_cities = $amount$ # for the tooltip
+				always = yes
+			}
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = our_tech_amount
+					value = trigger_value:adm_tech
+					who = PREV
+				}
+				export_to_variable = {
+					which = our_dip_tech_amount
+					value = trigger_value:dip_tech
+					who = PREV
+				}
+				export_to_variable = {
+					which = our_mil_tech_amount
+					value = trigger_value:mil_tech
+					who = PREV
+				}
+				change_variable = { which = our_tech_amount which = our_dip_tech_amount }
+				change_variable = { which = our_tech_amount which = our_mil_tech_amount }
+				export_to_variable = {
+					which = their_tech_amount
+					value = trigger_value:adm_tech
+				}
+				export_to_variable = {
+					which = their_dip_tech_amount
+					value = trigger_value:dip_tech
+				}
+				export_to_variable = {
+					which = their_mil_tech_amount
+					value = trigger_value:mil_tech
+				}
+				change_variable = { which = their_tech_amount which = their_dip_tech_amount }
+				change_variable = { which = their_tech_amount which = their_mil_tech_amount }
+				change_variable = { which = their_tech_amount value = $amount$ }
+				check_variable = { which = our_tech_amount which = their_tech_amount }
+			}
+		}
+	}
+}
+
+#####
+# FOR LOOP
+# Executes the $effect$ $amount$ of times.
+# for = {
+#	amount = 5
+#	effect = "
+#	random_owned_province = {
+#		add_base_tax = 1
+#	}
+#	"
+# }
+#####
+
+
+for = {
+	set_variable = {
+		which = ForLoopCounter
+		value = $amount$
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = ForLoopCounter
+				value = 1
+			}
+		}
+		$effect$
+		subtract_variable = {
+			which = ForLoopCounter
+			value = 1
+		}
+	}
+}
+
+## adds army tradition until 100 is reached and then adds the rest as mil power
+### add_prestige_or_monarch_power = { amount = <number> }
+add_army_tradition_or_mil_power = {
+	tooltip = {
+		add_army_tradition = $amount$
+	}
+	custom_tooltip = ME_ADD_ARMY_TRADITION_OR_MIL_POWER
+	hidden_effect = {
+		for = {
+			amount = $amount$
+			effect = "
+				if = {
+					limit = {
+						NOT = { army_tradition = 99.9 }
+					}
+					add_army_tradition = 1
+				}
+				else = {
+					add_mil_power = 3
+				}
+			"
+		}
+	}
+}
+
+## adds prestige until 100 is reached and then adds the rest as a random monarch power
+### add_prestige_or_monarch_power = { amount = <number> }
+add_prestige_or_monarch_power = {
+	tooltip = {
+		add_prestige = $amount$
+	}
+	custom_tooltip = ME_ADD_PRESTIGE_OR_MONARCHPOWER
+	hidden_effect = {
+		for = {
+			amount = $amount$
+			effect = "
+				if = {
+					limit = {
+						NOT = { prestige = 100 }
+					}
+					add_prestige = 1
+				}
+				else = {
+					add_adm_power = 1
+					add_dip_power = 1
+					add_mil_power = 1
+				}
+			"
+		}
+	}
 }	
+
+#####################
+# 	USAGE
+# 	pick_best_provinces = {
+#		global_trigger = "your global triggers here" OPTIONAL
+#		<example>
+#		global_trigger = "
+#		OR = {
+#			continent = europe
+#			allied_with = ROOT
+#		}"
+#		scale = your trigger type here REQUIRED
+#		<example> scale = army_size
+#		<number of provinces here> = yes (supported numbers: 1-3) REQUIRED
+#		event_target_name = "your name for event target here> REQUIRED
+#		scope = <Your scope here> (default: every_province)
+#	}
+#####################
+
+pick_best_provinces = {
+	[[scope]
+		pick_best_provinces_2 = {
+			scope = "$scope$"
+			scale = "$scale$"
+			event_target_name = "$event_target_name$"
+			global_trigger = "$global_trigger$"
+			1 = "$1$"
+			2 = "$2$"
+			3 = "$3$"
+			4 = "$4$"
+			5 = "$5$"
+			10 = "$10$"
+		}
+		set_global_flag = PICK_BEST_PROVINCES_FLAG
+	] #curses for not having an [ELSE ] or something.
+	if = {
+		limit = {
+			NOT = { has_global_flag = PICK_BEST_PROVINCES_FLAG } #This check is here to prevent the algorithm from being run again after the scoped version was executed
+		}
+		pick_best_provinces_2 = {
+			scope = " every_province "
+			scale = "$scale$"
+			event_target_name = "$event_target_name$"
+			global_trigger = "$global_trigger$"
+			1 = "$1$"
+			2 = "$2$"
+			3 = "$3$"
+			4 = "$4$"
+			5 = "$5$"
+			10 = "$10$"
+		}
+	}
+	else = { clr_global_flag = PICK_BEST_PROVINCES_FLAG }
+}
+
+pick_best_provinces_2 = {
+	hidden_effect = {
+		[[1]
+			if = {
+				limit = { always = $1$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+			}
+		]
+		[[2]
+			if = {
+				limit = { always = $2$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+			}
+		]
+		[[3]
+			if = {
+				limit = { always = $3$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+			}
+		]
+		[[4]
+			if = {
+				limit = { always = $4$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+			}
+		]
+		[[5]
+			if = {
+				limit = { always = $5$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 5
+				}
+			}
+		]
+		[[10]
+			if = {
+				limit = { always = $10$ }
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 5
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 6
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 7
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 8
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 9
+				}
+				pick_best_province = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 10
+				}
+			}
+		]
+		$scope$ = {
+			limit = {
+				has_province_flag = $event_target_name$_exclude
+			}
+			clr_province_flag = $event_target_name$_exclude
+		}
+	}
+}
+
+pick_best_province = {
+	$scope$ = {
+		limit = {
+			[[global_trigger] $global_trigger$ ]
+			NOT = { has_province_flag = $event_target_name$_exclude }
+		}
+		save_event_target_as = $event_target_name$_$number$
+	}
+	$scope$ = {
+		limit = {
+			[[global_trigger] $global_trigger$ ]
+			$scale$ = event_target:$event_target_name$_$number$
+			NOT = { has_province_flag = $event_target_name$_exclude }
+		}
+		save_event_target_as = $event_target_name$_$number$
+	}
+	event_target:$event_target_name$_$number$ = {
+		set_province_flag = $event_target_name$_exclude
+	}
+}

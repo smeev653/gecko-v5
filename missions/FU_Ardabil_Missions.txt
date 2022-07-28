@@ -252,8 +252,8 @@ fu_ardabil_missions_3 = {
 				name = arl_a_new_challenger_modifier
 				duration = 7300
 			}
-			hidden_effect = { set_country_flag = arl_a_new_challenger }
-			custom_tooltip = arl_special_cb_tt
+			#hidden_effect = { set_country_flag = arl_a_new_challenger }
+			#custom_tooltip = arl_special_cb_tt
 		}
 	}		
 	
