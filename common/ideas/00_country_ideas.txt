@@ -983,7 +983,7 @@ POR_ideas = {
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
-		num_accepted_cultures = 2
+		num_accepted_cultures = 4
 	}
 	
 	bonus = {
@@ -997,10 +997,10 @@ POL_ideas = {
 		}
 	}
 	free = yes		#will be added at load.
-	
-	folwark_system = {
-		production_efficiency = 0.1
+	foreign_section = {
+		discipline = 0.05
 	}
+	
 	peichota_wybraniecka = {
 		global_manpower_modifier = 0.20
 		infantry_power = 0.1
@@ -1016,8 +1016,8 @@ POL_ideas = {
 	wojsko_komputoe = {
 		global_regiment_cost = -0.05
 	}
-	foreign_section = {
-		discipline = 0.05
+	folwark_system = {
+		production_efficiency = 0.1
 	}
 	focus_on_field_defences = {
 		land_morale = 0.15
