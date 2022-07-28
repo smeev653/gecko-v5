@@ -1,0 +1,21 @@
+# Unify Persia Ardabil
+cb_persian_unification = {
+	valid_for_subject = no 
+
+	
+	prerequisites = {
+		tag = ARL 
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+			any_owned_province = { 
+				region = persia_region 
+			}
+		}
+		is_neighbor_of = FROM 
+		has_country_flag = arl_a_new_challenger
+		is_revolutionary = no
+		NOT = { tag = PER }
+	}
+	
+	war_goal = superiority_persian_unification
+}
