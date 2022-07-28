@@ -24,29 +24,6 @@ country_event = {
 		}
 	}
 }
-country_event = { #Hidden event for personality addition
-	id = FU_Monument_Events.2
-	title = FU_Monument_Events.2.t 
-	desc = FU_Monument_Events.2.d 
-	picture = fu_brandenburg_gate_eventPicture
-	
-	is_triggered_only = yes 
-	hidden = yes 
-	
-	immediate = {
-		if = {
-			limit = {
-				has_dlc = "Rights of Man"
-			}
-			add_ruler_personality = entrepreneur_personality
-		}
-		else = { change_dip = 1 }
-	}
-	
-	option = {
-		name = FU_Monument_Events.2.a 
-	}
-}
 country_event = { 
 	id = FU_Ardabil_Events.2
 	title = FU_Ardabil_Events.2.t 

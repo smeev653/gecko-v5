@@ -1,31 +1,5 @@
-namespace = FU_Monument_Events
+#namespace = FU_Monument_Events
 
-country_event = { #The Brandenburg Gate
-	id = FU_Monument_Events.1
-	title = FU_Monument_Events.1.t 
-	desc = FU_Monument_Events.1.d 
-	picture = fu_brandenburg_gate_eventPicture
-	
-	is_triggered_only = yes 
-	
-	option = {
-		name = FU_Monument_Events.1.a 
-		
-		if = {
-			limit = {
-				NOT = { dip = 6 }
-			}
-			change_dip = 1 
-		}
-		else = { add_dip_power = 50 }
-		
-		add_ruler_modifier = {
-			name = fu_brandenburg_gate_modifier
-			duration = -1 
-		}
-		add_absolutism = 10 
-	}
-}
 
 country_event = { #Hidden event for personality addition
 	id = FU_Monument_Events.2
