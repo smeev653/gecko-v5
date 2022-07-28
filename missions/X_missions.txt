@@ -294,7 +294,15 @@ X_VEN_slot_1 = {
 		effect = {
 			add_navy_tradition = 15
 			4698 = {
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			142 = {
 				add_province_modifier = {
@@ -318,8 +326,8 @@ X_VEN_slot_1 = {
 			OR = {
 				AND = {
 					province_id = 142
-					owned_by = ROOT
 					OR = {
+						NOT = { owned_by = ROOT }
 						has_shipyard_building_trigger = no
 						has_fort_building_trigger = no
 						NOT = { development = 10 }
@@ -327,8 +335,8 @@ X_VEN_slot_1 = {
 				}
 				AND = {
 					province_id = 4698
-					owned_by = ROOT
 					OR = {
+						NOT = { owned_by = ROOT }
 						has_shipyard_building_trigger = no
 						has_fort_building_trigger = no
 					}
@@ -713,26 +721,22 @@ X_VEN_slot_2 = {
 		}
 		
 		provinces_to_highlight = {
+			area = east_adriatic_coast_area
 			OR = {
-				AND = {
-					area = east_adriatic_coast_area
+				NOT = { culture = dalmatian }
+				ROOT = {
 					OR = {
-						NOT = { culture = dalmatian }
-						ROOT = {
-							OR = {
-								NOT = {
-									num_of_owned_provinces_with = {
-										value = 2
-										has_fort_building_trigger = yes
-										area = east_adriatic_coast_area
-									}
-								}
-								NOT = {
-									development_in_provinces = {
-										value = 45
-										area = east_adriatic_coast_area
-									}
-								}
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 2
+								has_fort_building_trigger = yes
+								area = east_adriatic_coast_area
+							}
+						}
+						NOT = {
+							development_in_provinces = {
+								value = 60
+								area = east_adriatic_coast_area
 							}
 						}
 					}
@@ -754,12 +758,36 @@ X_VEN_slot_2 = {
 				culture = dalmatian
 			}
 			development_in_provinces = {
-				value = 45
+				value = 60
 				area = east_adriatic_coast_area
 			}
 		}
 		
 		effect = {
+			if = { 
+				limit = { 
+					137 = {
+						NOT = { 
+							has_great_project = { 
+								type = gme_walls_ragusa
+								tier = 3 
+							}
+						}
+					}
+				}
+				137 = {
+					add_great_project_tier = { 
+						type = gme_walls_ragusa
+						tier = 1 
+					}
+				}
+			}
+			else = { 
+				137 = { 
+					add_base_production = 3 
+					add_base_manpower = 3 
+				}
+			}
 			custom_tooltip = X_VEN_mission_5_tt2
 			hidden_effect = {
 				east_adriatic_coast_area = {
@@ -781,29 +809,10 @@ X_VEN_slot_2 = {
 						add_base_production = 2
 						add_base_manpower = 2
 					}
-					else_if = {
-						limit = {
-							owned_by = ROOT
-							NOT = { has_building = drydock }
-						}
+					else = {
 						add_building = dock
 						add_base_production = 1
 						add_base_manpower = 1
-					}
-				}
-			}
-			custom_tooltip = X_VEN_mission_5_tt3
-			hidden_effect = {
-				east_adriatic_coast_area = {
-					if = {
-						limit = {
-							owned_by = ROOT
-							has_fort_building_trigger = yes
-						}
-						add_province_modifier = {
-							name = X_VEN_dalmatian_fortifications_pmod
-							duration = -1
-						}
 					}
 				}
 			}
@@ -995,8 +1004,7 @@ X_VEN_slot_2 = {
 					}
 				}
 			}
-		}
-		random_list = {
+			random_list = {
 				1 = {
 					145 = { change_trade_goods = silk }
 				}
@@ -1007,7 +1015,8 @@ X_VEN_slot_2 = {
 					1773 = { change_trade_goods = silk }
 				}
 			}
-		}	
+		}
+	}
 }
 
 X_VEN_slot_3 = {
@@ -1028,6 +1037,7 @@ X_VEN_slot_3 = {
 			province_id = 112
 			ROOT = {
 				OR = {
+					NOT = { owns = 112 }
 					NOT = { num_of_galley = 30 }
 					NOT = { dip_power = 100 }
 					NOT = { naval_reformer = 2 }
@@ -1036,29 +1046,44 @@ X_VEN_slot_3 = {
 		}
 		
 		trigger = {
+			owns = 112
 			num_of_galley = 30
 			dip_power = 100
 			naval_reformer = 2
 		}
 		
 		effect = {
-			112 = {
-				add_great_project_tier = {
-					type = gme_arsenale_veneziano
-					tier = 1
+			if = { 
+				limit = { 
+					112 = {
+						NOT = { 
+							has_great_project = { 
+								type = gme_arsenale_veneziano
+								tier = 3 
+							}
+						}
+					}
+				}
+				112 = {
+					add_great_project_tier = { 
+						type = gme_arsenale_veneziano
+						tier = 1 
+					}
 				}
 			}
-			add_dip_power = -100
+			else = { 
+				112 = { 
+					add_base_production = 3 
+					add_base_manpower = 3 
+				}
+			}
 			define_admiral = {
 				fire = 3
 				shock = 3
 				manuever = 4
 				siege = 2
 			}
-			add_country_modifier = {
-				name = "ven_arsenal_marines"
-				duration = -1
-			}
+			add_dip_power = -100
 			109 = {
 				if = {
 					limit = {
@@ -1446,22 +1471,20 @@ X_VEN_slot_3 = {
 			X_VEN_mission_22
 		}
 		
-provinces_to_highlight = {
+		provinces_to_highlight = {
 			is_capital_of = ROOT
 			ROOT = { is_great_power = no }
 		}
 		trigger = {
 			is_great_power = yes
-		}
-		
+		}		
 		effect = {
-			set_government_rank = 3
 			add_adm_power = 100
 			add_dip_power = 100
 			add_mil_power = 100
 			add_prestige = 50
 			add_country_modifier = {
-				name = X_VEN_stato_da_mar_cmod
+				name = X_VEN_venetian_marines_cmod
 				duration = -1
 			}
 		}
@@ -1496,43 +1519,8 @@ X_VEN_slot_4 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 2
+			add_mercantilism = 5
 			add_dip_power = 100
-				
-			
-			321 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			163 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			320 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 		}
 	}
 	
@@ -2025,7 +2013,15 @@ X_VEN_slot_5 = {
 		}
 		effect = {
 			321 = {
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -2099,6 +2095,17 @@ X_VEN_slot_5 = {
 				321 = { X_center_of_trade_effect = yes }
 			}
 			else = { country_event = { id = X_VEN_events.3 } }
+			320 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	
@@ -2192,7 +2199,7 @@ X_VEN_slot_5 = {
 					duration = -1
 				}
 			}
-	cukurova_area = {
+			cukurova_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -2201,7 +2208,7 @@ X_VEN_slot_5 = {
 			}
 		}
 	}
-#Cilician Expansion
+	#Cilician Expansion
 	X_VEN_mission_34 = {
 		icon = mission_non-western_soldiers
 		position = 5
@@ -2359,7 +2366,7 @@ X_VEN_slot_5 = {
 				culture = greek
 				religion = orthodox
 				skill = 3
-				cost_multiplier = 0.67
+				cost_multiplier = 0.25
 			}
 		}
 	

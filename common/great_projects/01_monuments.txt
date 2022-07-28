@@ -17891,69 +17891,6 @@ gme_basilica_san_nicola = {
 	}
 }
 
-gme_walls_ragusa = {
-	start = 137
-	date = 1.01.01
-	time = { months = 120 }
-	build_cost = 1000
-	starting_tier = 2
-	type = monument
-	can_be_moved = no
-	build_trigger = { }
-	on_built = { }
-	on_destroyed = { }
-	can_use_modifiers_trigger = { }
-	can_upgrade_trigger = { }
-	keep_trigger = { }
-	tier_0 = {
-		upgrade_time = { months = 0	}
-		cost_to_upgrade = {	factor = 0 }
-		province_modifiers = { }
-		area_modifier = { }
-		country_modifiers = { }
-		on_upgraded = { }
-	}
-	tier_1 = {
-		upgrade_time = { months = 120 }
-		cost_to_upgrade = { factor = 350 }
-		province_modifiers = {
-			local_defensiveness = 0.15
-			local_ship_cost = -0.05
-			naval_forcelimit = 2
-		}
-		area_modifier = { }
-		country_modifiers = { }
-		on_upgraded = { }
-	}
-	tier_2 = {
-		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 750 }
-		province_modifiers = {
-			local_defensiveness = 0.20
-			local_ship_cost = -0.10
-			blockade_force_required = 0.25
-			naval_forcelimit = 6
-		}
-		area_modifier = { }
-		country_modifiers = { }
-		on_upgraded = { }
-	}
-	tier_3 = {
-		upgrade_time = { months = 360 }
-		cost_to_upgrade = { factor = 1500 }
-		province_modifiers = {
-			local_defensiveness = 0.25
-			local_ship_cost = -0.15
-			naval_forcelimit = 8
-		}
-		area_modifier = {
-			province_trade_power_modifier = 0.25
-			blockade_force_required = 0.33
-		}
-		country_modifiers = { }
-		on_upgraded = { }
-	}
-}
 
 gme_castello_estense = {
 	start = 113
