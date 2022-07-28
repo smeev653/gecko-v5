@@ -434,10 +434,6 @@ elective_monarchy = {
 		governing_capacity = 100
 	}
 
-	conditional = {
-		allow = { has_dlc = "Res Publica" }
-		is_elective = yes
-	}
 	custom_attributes = {
 		locked_government_type = yes
 	}
