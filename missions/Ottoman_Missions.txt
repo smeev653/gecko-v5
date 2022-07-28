@@ -4115,18 +4115,8 @@ ottoman_missions_5 = {
 			if = { 
 				limit = { has_dlc = "Leviathan" } 
 				151 = { 
-					OR = {
-						has_great_project = { 
-							type = fu_bosphorus_toll
-							tier = 2
-						}
-						has_great_project = { 
-							type = fu_bosphorus_toll
-							tier = 3 
-						}
 						province_has_center_of_trade_of_level = 3 
 						base_production = 16 
-					}
 				}
 			}
 			else = { 
