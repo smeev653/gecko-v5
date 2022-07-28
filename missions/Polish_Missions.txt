@@ -509,7 +509,7 @@ polish_missions_slot_3 = {
 			OR = {
 				area = lithuania_area
 				area = minsk_area
-				area = west_dniepr_area
+				#area = west_dniepr_area
 				area = pripyat_area
 			}
 			NOT = {
@@ -525,10 +525,10 @@ polish_missions_slot_3 = {
 				type = all
 				owned_by = ROOT
 			}
-			west_dniepr_area = {
-				type = all
-				owned_by = ROOT
-			}
+			#west_dniepr_area = {
+			#	type = all
+			#	owned_by = ROOT
+			#}
 			pripyat_area = {
 				type = all
 				owned_by = ROOT
@@ -539,21 +539,6 @@ polish_missions_slot_3 = {
 				name = "integration_of_lithuania"
 				duration = 5475
 			}
-			if = {
-				limit = {
-					exists = HUN
-					valid_for_personal_unions_trigger = yes
-					HUN = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = HUN
-				}
-			}
-			else = {
 				slovakia_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -575,7 +560,6 @@ polish_missions_slot_3 = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
 		}
 	}
 	union_over_hungary_mission = {
@@ -629,7 +613,7 @@ polish_missions_slot_3 = {
 	}
 	conquer_silesia = {
 		icon = mission_conquer_5_states
-		required_missions = { union_over_hungary_mission }
+		required_missions = {  }
 		provinces_to_highlight = {
 			area = silesia_area
 			NOT = {
@@ -655,21 +639,6 @@ polish_missions_slot_3 = {
 				name = "silesia_conquered"
 				duration = 5475
 			}
-			if = {
-				limit = {
-					exists = BOH
-					valid_for_personal_unions_trigger = yes
-					BOH = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = BOH
-				}
-			}
-			else = {
 				bohemia_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -698,7 +667,6 @@ polish_missions_slot_3 = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
 		}
 	}
 	union_over_bohemia_mission = {

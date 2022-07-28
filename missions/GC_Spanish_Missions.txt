@@ -1084,21 +1084,6 @@ gc_spain_4 = {
 		}
 
 		effect = {
-			if = {
-				limit = {
-					exists = POR
-					valid_for_personal_unions_trigger = yes
-					POR = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = POR
-				}
-			}
-			else = {
 				alentejo_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -1113,7 +1098,7 @@ gc_spain_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
+			
 			if = {
 				limit = {
 					NOT = { NAP = { is_subject_of = ROOT } }
@@ -1409,37 +1394,6 @@ gc_spain_4_b = {
 				name = "spa_prepared_armada"
 				duration = 7300
 			}
-			if = {
-				limit = {
-					exists = GBR
-					valid_for_personal_unions_trigger = yes
-					GBR = {
-						valid_for_personal_unions_trigger = yes
-						NOT = { religion = ROOT }
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = GBR
-				}
-			}
-			else_if = {
-				limit = {
-					exists = ENG
-					valid_for_personal_unions_trigger = yes
-					ENG = {
-						valid_for_personal_unions_trigger = yes
-						NOT = { religion = ROOT }
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = ENG
-				}
-			}
-			else = {
 				wessex_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -1489,7 +1443,7 @@ gc_spain_4_b = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
+			
 		}
 	}
 	gc_spa_invade_england = {
@@ -1729,21 +1683,6 @@ gc_spain_5_b = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = HAB
-					valid_for_personal_unions_trigger = yes
-					HAB = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = HAB
-				}
-			}
-			else = {
 				tirol_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -1765,7 +1704,7 @@ gc_spain_5_b = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
+			
 			north_brabant_area = {
 				limit = {
 					NOT = { is_core = ROOT }

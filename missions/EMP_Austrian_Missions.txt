@@ -1086,21 +1086,6 @@ emp_hab_german_expansion_branch = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = BAV
-					valid_for_personal_unions_trigger = yes
-					BAV = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = BAV
-				}
-			}
-			else = {
 				upper_bavaria_area = {
 					limit = {
 						NOT = { is_core = root }
@@ -1123,7 +1108,7 @@ emp_hab_german_expansion_branch = {
 					add_permanent_claim = root
 				}
 			}
-		}
+		
 	}
 	
 	emp_hab_union_bayern = {
@@ -2021,35 +2006,7 @@ emp_hab_more_italy_branch = {
 		}
 		effect = {
 			add_prestige = 20
-			if = {
-				limit = {
-					exists = TTS
-					valid_for_personal_unions_trigger = yes
-					TTS = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = TTS
-				}
-			}
-			else_if = {
-				limit = {
-					exists = NAP
-					valid_for_personal_unions_trigger = yes
-					NAP = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = NAP
-				}
-			}
-			else = {
+			
 				naples_area = {
 					limit = {
 						NOT = { is_core = root }
@@ -2072,7 +2029,6 @@ emp_hab_more_italy_branch = {
 					add_permanent_claim = root
 				}
 			}
-		}
 	}
 	
 	emp_hab_naples = {
