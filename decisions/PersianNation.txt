@@ -104,6 +104,16 @@ country_decisions = {
 			}
 			set_government_rank = 3
 			if = {
+				limit = { has_country_flag = arl_sassanid_legacy_flag } 
+				custom_tooltip = per_sassanid_legacy_preserved_tt
+				add_ruler_modifier = {
+					name = per_sassanid_legacy_preserved
+					duration = -1
+				}
+				change_government_reform_progress = 50
+				clr_country_flag = arl_sassanid_legacy_flag
+			}
+			if = {
 				limit = {
 					has_reform = states_general_reform
 				}
