@@ -1341,10 +1341,7 @@ POL_Missions_3_1 = {
 					name = POL_return
 					duration = 9125
 				}
-			
-			custom_tooltip = POL_reward_if_piast
-			custom_tooltip = POL_mission_tree_will_alter
-			tooltip = {
+
 				silesia_area = { add_permanent_claim = ROOT }
 				breg_area = { add_permanent_claim = ROOT }
 				opole_area = { add_permanent_claim = ROOT }
@@ -1358,7 +1355,7 @@ POL_Missions_3_1 = {
 					name = POL_a_piast_ruler
 					duration = -1
 				}
-			}
+			
 			279 = {
 					add_core = ROOT
 				}
