@@ -6534,6 +6534,10 @@ country_event = {
 			}
 			add_reform_progress_small_effect = yes
 		}
+		custom_tooltip = add_5_crown_land_share
+		hidden_effect = {
+			take_estate_land_share_massive = { estate = all }
+		}
 		add_country_modifier = {
 			name = "centralised_state"
 			duration = 3650
