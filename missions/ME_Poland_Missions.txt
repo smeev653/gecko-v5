@@ -902,11 +902,6 @@ POL_Missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_casus_belli = {
-				target = TUR
-				type = cb_revenge_for_varna
-				months = 1200
-			}
 		}
 	}
 	
@@ -2522,9 +2517,6 @@ POL_Missions_4_2 = {
 				duration = 9125
 			}
 			add_mil_power = 50
-			
-			set_country_flag = POL_Custom_Cb_flag
-			custom_tooltip = POL_gain_cb_on_ottos
 		}
 	}
 	
