@@ -18310,7 +18310,7 @@ gme_saint_mary_basilica = {
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 2500 }
+		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
 			local_tax_modifier = 0.25
 			local_manpower_modifier = 0.15
@@ -18381,7 +18381,7 @@ gme_salt_mines_wieliczka_bochnia = {
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 2500 }
+		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
 			trade_goods_size_modifier = 0.15
 			production_efficiency = 0.15
