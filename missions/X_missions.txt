@@ -2373,7 +2373,7 @@ X_VEN_slot_5 = {
 	emp_ven_contest_genoese_trade = {
 		icon = mission_sea_battles
 		position = 8
-		required_missions = {emp_ven_expand_the_arsenal }
+		required_missions = {}
 		
 		provinces_to_highlight = {
 			OR = {

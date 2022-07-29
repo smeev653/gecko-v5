@@ -42,9 +42,7 @@ country_event = {
 			subject = PRU
 			subject_type = march
 		}
-		custom_tooltip = PRU_MARCH_GIVES_FOLLOWING_BONUSES
 		add_yearly_manpower = 1.5
-		set_country_flag = pru_march_gives_bonuses
 		PRU = {
 			set_country_flag = PRU_ducal
 			set_country_flag = has_selected_missions_PRU
@@ -118,16 +116,13 @@ country_event = {
 			}
 		}
 
-		custom_tooltip = KUR_MARCH_GIVES_FOLLOWING_BONUSES
-		add_years_of_income = 1.5
-		set_country_flag = kur_march_gives_bonuses
+		add_years_of_income = 1
 
 		create_subject = {
 			subject = KUR
 			subject_type = march
 		}
 		KUR = {
-			add_idea_group = exploration_ideas
 			set_country_flag = KUR_ducal
 			set_country_flag = has_selected_missions_KUR
 			swap_non_generic_missions = yes

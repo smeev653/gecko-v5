@@ -1013,17 +1013,6 @@ POL_Missions_2 = {
 			
 			add_navy_tradition = 10
 			set_country_flag = POL_is_POL
-			custom_tooltip = POL_special_cb_on_sweden
-			
-			1 = {
-				owner = {
-					reverse_add_casus_belli = {
-						target = ROOT
-						type = cb_poland_deluge
-						months = 1200
-					}
-				}
-			}
 		}
 	}
 	
@@ -1365,7 +1354,7 @@ POL_Missions_3_1 = {
 			4539 = {
 					add_core = ROOT
 				}				
-			}
+			
 			hidden_effect = {
 				if = {
 					limit = {
@@ -2363,17 +2352,6 @@ POL_Missions_4_2 = {
 			has_terrain = steppe
 		}
 		trigger = {
-			if = {
-				limit = {
-					has_dlc = "The Cossacks"
-				}
-				num_of_estate_agendas_completed = {
-					value = 2
-					estate = estate_cossacks
-				}
-				num_of_cossacks = 10
-			}
-			else = {
 				OR = {
 					num_of_cavalry = 10
 					cavalry_fraction = 0.2
@@ -2382,7 +2360,7 @@ POL_Missions_4_2 = {
 					which = cavalry_power
 					value = 0.15
 				}
-			}
+			
 		}
 		effect = {
 			country_event = { id = ME_Poland_Events.18 }

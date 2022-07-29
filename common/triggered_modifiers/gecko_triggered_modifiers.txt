@@ -673,3 +673,16 @@ Knights_vassalised = {
 	naval_forcelimit = -50
 	naval_maintenance_modifier = 0.9
 }
+
+POL_rawa_triggered_modifier = {
+	potential = {
+		has_country_flag = POL_recipient
+	}
+	trigger = {
+		event_target:POL_rawa_province = {
+			controlled_by = ROOT
+		}
+	}
+	
+	land_maintenance_modifier = -0.05
+}

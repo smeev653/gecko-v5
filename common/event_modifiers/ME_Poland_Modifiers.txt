@@ -341,8 +341,8 @@ POL_dissemination = {
 }
 
 POL_cossack_host = {
- 	special_unit_forcelimit = 0.05
-	cav_to_inf_ratio = 0.05
+ 	cavalry_cost = -0.05
+	cavalry_power = 0.05
 }
 
 POL_industrial_exploitation = {
