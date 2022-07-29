@@ -95,7 +95,6 @@ technology = { #Courthouse
 	year = 1505
 	courthouse = yes
 	governing_capacity = 100
-	state_house = yes
 
 }
 
@@ -105,7 +104,7 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.02
-	
+	state_house = yes
 
 }
 
