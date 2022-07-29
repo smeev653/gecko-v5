@@ -724,7 +724,7 @@ dock = {
 	}
 	modifier = {
 		local_sailors_modifier = 0.5
-		local_manpower_modifier = 0.25
+		local_manpower_modifier = 0.125
 	}
 
 	on_obsolete = {
@@ -1408,7 +1408,7 @@ training_fields = {
 	make_obsolete = barracks
 
 	modifier = {
-		local_manpower_modifier = 1
+		local_manpower_modifier = 0.9
 	}
 
 	ai_will_do = {
@@ -1969,7 +1969,7 @@ drydock = {
 
 	modifier = {
 		local_sailors_modifier = 1.0
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.25
 	}
 	
 	on_obsolete = {
@@ -2768,7 +2768,7 @@ impressment_offices = {
 
 	modifier = {
 		local_sailors = 750
-		local_manpower = 0.5
+		local_manpower = 0.375
 		ship_recruit_speed = -0.1
 		local_ship_cost = -0.05
 	}
