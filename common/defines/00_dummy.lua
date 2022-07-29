@@ -27,7 +27,7 @@ NDefines.NDiplomacy.ABANDON_UNION_PRESTIGE = 0
 NDefines.NDiplomacy.MIN_MONTHLY_COST_FOR_INFLUENCE_NATION = 2.084
 NDefines.NDiplomacy.DAYS_TO_DECLARE_WAR = 5
 NDefines.NDiplomacy.VASSALIZE_BASE_DEVELOPMENT_CAP = 300
-NDefines.NDiplomacy.AUTONOMY_WARSCORE_COST_MODIFIER = 0.4			-- How much autonomy reduces score by (at 1, 50% autonomy = 50% reduction)
+NDefines.NDiplomacy.AUTONOMY_WARSCORE_COST_MODIFIER = 0.5			-- How much autonomy reduces score by (at 1, 50% autonomy = 50% reduction)
 NDefines.NDiplomacy.GREAT_PROJECT_WARSCORE_COST_MODIFIER = 0
 NDefines.NDiplomacy.DESIRED_NUM_OF_ELECTORS = 5
 NDefines.NDiplomacy.MAX_FREE_CITIES = 13

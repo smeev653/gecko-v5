@@ -9,17 +9,6 @@ on_startup = {
 		muslim_school_events.20 #Pick School
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
-	#if = {
-	#	limit = {
-	#		tag = ENG
-	#		NOT =  {has_country_flag = gecko.9_fired }
-	#	}
-	#	set_country_flag = gecko.9_fired
-	#	country_event = { 
-	#		id = gecko.9
-	#		days = 7
-	#	}
-	#}
 	if = {
 		limit = {
 			NOT =  {has_country_flag = gecko_mercs_set }
@@ -35,6 +24,7 @@ on_startup = {
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
 	}
 	gecko_merc_count = yes
+	subject_warscore = yes
 	if = {
 		limit = {
 				OR = {
@@ -1528,12 +1518,10 @@ on_adm_development = {
 
 # province
 on_dip_development = {
-	
 }
 
 # province
 on_mil_development = {
-	
 }
 
 on_overextension_pulse = {
@@ -3858,6 +3846,23 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
+	if = { 
+		limit = {
+			owner = {
+				is_subject = yes
+				NOT = { is_colonial_nation = yes }
+				ai = yes
+				any_owned_province = {
+					NOT = { has_province_modifier = subject_warscore }
+				}
+			}			
+		}
+		add_province_modifier = {
+				name = subject_warscore
+				duration = -1
+				hidden = yes
+			}
+	}
 	#gecko_mercs = yes
 }
 
@@ -4041,6 +4046,7 @@ on_revolutionary_guard_raised = {
 }
 
 on_reform_enacted = {
+	subject_warscore = yes
 }
 
 on_reform_changed = {

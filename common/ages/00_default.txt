@@ -490,7 +490,7 @@ age_of_reformation = {
 		
 		ab_warscore_vs_religion = {
 			modifier = {
-				province_warscore_cost = -0.1
+				province_warscore_cost = -0.2
 			}
 			ai_will_do = {
 				factor = 10

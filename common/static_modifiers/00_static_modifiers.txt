@@ -1215,7 +1215,7 @@ in_golden_era = {
 }
 
 absolutism = {
-	administrative_efficiency = 0.4
+	administrative_efficiency = 0.5
 	land_morale = 0.1
 	core_decay_on_your_own = -0.5
 }
@@ -1307,6 +1307,7 @@ subject_nation = {
 	#land_forcelimit	= -3
 	naval_forcelimit = -6
 	caravan_power = -0.9
+	local_warscore_cost_modifier = -0.2
 }
 
 vassal_nation = {
