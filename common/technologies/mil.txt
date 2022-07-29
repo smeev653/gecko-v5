@@ -191,6 +191,7 @@ technology = {
 	#infantry_fire 		= 	0.10
 	cavalry_shock		=	0.25
 	regimental_camp = yes
+	armory = yes
 }
 
 technology = {

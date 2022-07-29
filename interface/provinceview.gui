@@ -6048,10 +6048,6 @@ guiTypes = {
 			spriteType = "GFX_building_upgrade_icon"
 		}
 
-
-
-
-
 		iconType = {
 			name = "defense_banner"
 			position = { x = 4 y = 291 }
@@ -6339,9 +6335,23 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000�"
+			text = "2000¤"
 		}
-
+		checkboxType = {
+			name = "build_armory"
+			position = { x = 321 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "armory_cost"
+			position = {x = 321 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
 	}
 
 	windowType =

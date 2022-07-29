@@ -902,7 +902,6 @@ num_of_marriages = {
 }
 
 num_of_provinces = {
-	land_forcelimit = -0.1
 }
 
 # Multiplied by Development

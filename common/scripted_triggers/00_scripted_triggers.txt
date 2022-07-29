@@ -1035,6 +1035,7 @@ has_forcelimit_building_trigger = {
 	OR = {
 		has_building = regimental_camp
 		has_building = conscription_center
+		has_building = armory
 	}
 }
 
