@@ -2828,7 +2828,7 @@ state_house = {
 
 	modifier = {
 		statewide_governing_cost = -0.2
-		local_tax_modifier = 1.75
+		local_tax_modifier = 1.5
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2
