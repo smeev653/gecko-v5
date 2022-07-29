@@ -37,6 +37,29 @@ develop_adm = {
 	}
 }	
 
+subject_warscore = {
+	if = { 
+		limit = {
+			is_subject = yes
+			NOT = { is_colonial_nation = yes }
+			ai = yes
+			any_owned_province = {
+				NOT = { has_province_modifier = subject_warscore }
+			}		
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { has_province_modifier = subject_warscore }
+			}
+			add_province_modifier = {
+				name = subject_warscore
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+}
+
 gecko_ipa_effect = {
 	if = {
 		limit = {
