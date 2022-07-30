@@ -1261,7 +1261,10 @@ trade_company_strong = {
 
 large_colonial_nation = {
 	merchants = 1						  
-	naval_forcelimit = 10
+	land_forcelimit = 10
+	governing_capacity_modifier = -0.05
+	liberty_desire_from_subject_development = 0.15
+	global_tariffs = -0.05
 }
 crown_colony_overlord = {
 }
