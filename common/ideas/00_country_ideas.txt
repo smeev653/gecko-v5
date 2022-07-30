@@ -1604,7 +1604,7 @@ MLO_ideas = {
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.15
 	}
 	
 	trigger = {
@@ -1944,7 +1944,7 @@ ITA_ideas = { #Italian Ideas
 	}
 	mare_nostrum = {
 		galley_cost = -0.15
-		galley_power = 0.20
+		galley_power = 0.15
 	}
 	office_of_censor = {
 		global_manpower_modifier = 0.2

@@ -204,7 +204,6 @@ milan_missions_1 = { #Made by Big Boss for Flavor Universalis
 			else = { reform_level = 3 }
 		}
 		effect = { 
-			add_government_reform = mil_secret_council
 			add_country_modifier = {
 				name = mlo_court_stability_modifier
 				duration = 9125
@@ -248,7 +247,7 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 				type = statesman 
 				culture = ligurian
 				skill = 2
-				cost_multiplier = 0.25 
+				cost_multiplier = 0.75 
 			}
 		}
 	}
@@ -732,33 +731,6 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 			add_country_modifier = {
 				name = mlo_secured_alpine_passes
 				duration = 9125
-			}
-			custom_tooltip = mlo_upgrade_forts 
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						OR = {
-							province_id = 4740
-							province_id = 103 
-							province_id = 4727
-						}
-					}
-					if = {
-						limit = { has_building = fort_17th }
-						remove_building = fort_17th
-						add_building = fort_18th
-					}
-					else_if = {
-						limit = { has_building = fort_16th }
-						remove_building = fort_16th
-						add_building = fort_17th
-					}
-					else_if = {
-						limit = { has_building = fort_15th }
-						remove_building = fort_15th
-						add_building = fort_16th
-					}
-				}
 			}
 		}
 	}
