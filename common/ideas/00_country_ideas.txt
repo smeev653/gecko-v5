@@ -1922,7 +1922,7 @@ BOH_ideas = {
 ITA_ideas = { #Italian Ideas
 	start = {
 		trade_efficiency = 0.10
-		reinforce_speed = 0.25
+		reinforce_speed = 0.15
 	}
 	
 	bonus = {
@@ -1940,7 +1940,6 @@ ITA_ideas = { #Italian Ideas
 	}
 	tradition_of_the_legion = {
 		infantry_power = 0.15
-		discipline = 0.05
 	}
 	mare_nostrum = {
 		galley_cost = -0.15
@@ -1953,7 +1952,7 @@ ITA_ideas = { #Italian Ideas
 		global_tax_modifier = 0.15
 	}
 	heir_to_the_empire = {
-		technology_cost = -0.05
+		discipline = 0.05
 	}
 	path_to_citizenship = {
 		land_morale = 0.1
