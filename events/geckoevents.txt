@@ -3247,3 +3247,60 @@ country_event = {
 		}
 	}	
 }
+
+country_event = {
+    id = gecko.44
+    title = gecko.44.t
+    desc = gecko.44.d
+picture = COURT_eventPicture
+	
+    is_triggered_only = yes
+	hidden = yes
+    option = {
+		hidden_effect = {
+			set_country_flag = subsaharan_buildings
+			sahel_region = {
+				ROOT = {
+						every_province = {
+							limit = {
+								NOT = { has_province_modifier = subsaharan_buildings }
+							}
+								add_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}
+			niger_region= {
+				ROOT = {
+						every_province = {
+							limit = {
+								NOT = { has_province_modifier = subsaharan_buildings }
+							}
+								add_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}	
+			guinea_region = {
+				ROOT = {
+						every_province = {
+							limit = {
+								NOT = { has_province_modifier = subsaharan_buildings }
+							}
+								add_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}	
+		}
+	}
+}

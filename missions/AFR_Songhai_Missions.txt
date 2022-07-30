@@ -167,6 +167,48 @@ songhai_military_slot = {
 				name = son_modern_government
 				duration = -1
 			}
+			sahel_region = {
+				ROOT = {
+						every_province = {
+							limit = {
+								has_province_modifier = subsaharan_buildings 
+							}
+								remove_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}
+			niger_region= {
+				ROOT = {
+						every_province = {
+							limit = {
+								has_province_modifier = subsaharan_buildings 
+							}
+								remove_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}	
+			guinea_region = {
+				ROOT = {
+						every_province = {
+							limit = {
+								has_province_modifier = subsaharan_buildings 
+							}
+								remove_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}
 		}
 	}
 }
@@ -377,7 +419,6 @@ songhai_historical_conquest_slot = {
 		icon = mission_mal_west_african_great_power
 		required_missions = {
 			son_invade_mali
-			son_consolidate_maghreb
 		}
 		position = 8
 		provinces_to_highlight = {
@@ -403,6 +444,48 @@ songhai_historical_conquest_slot = {
 			NOT = { great_power_rank = 4 }
 		}
 		effect = {
+			sahel_region = {
+				ROOT = {
+						every_province = {
+							limit = {
+								has_province_modifier = subsaharan_buildings 
+							}
+								remove_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}
+			niger_region= {
+				ROOT = {
+						every_province = {
+							limit = {
+								has_province_modifier = subsaharan_buildings 
+							}
+								remove_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}	
+			guinea_region = {
+				ROOT = {
+						every_province = {
+							limit = {
+								has_province_modifier = subsaharan_buildings 
+							}
+								remove_province_modifier = {
+									name = subsaharan_buildings
+									duration = -1
+									#hidden = yes
+								}
+						}
+				}
+			}
 			add_country_modifier = {
 				name = son_songhaian_empire
 				duration = -1

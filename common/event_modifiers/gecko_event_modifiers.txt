@@ -168,7 +168,7 @@ PR_manpower_edict_cooldown = {
 		
 
 gc_african_corridor = {
-	allowed_num_of_buildings = -2
+	allowed_num_of_buildings = -1
 	local_development_cost = 0.5
 }
 
@@ -387,3 +387,6 @@ regional_conquest = {
 subject_warscore = {
 	local_warscore_cost_modifier = -0.25
 }
+subsaharan_buildings = {
+	allowed_num_of_buildings = -1
+}	

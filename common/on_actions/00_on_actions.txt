@@ -11,6 +11,17 @@ on_startup = {
 	}
 	if = {
 		limit = {
+			tag = YAO
+			NOT = { is_year = 1450 }
+				NOT = { has_country_flag = subsahara_buildings }
+		}
+		country_event = { 
+			id = gecko.44
+			days = 1
+		}
+	}	
+	if = {
+		limit = {
 			NOT =  {has_country_flag = gecko_mercs_set }
 			ROOT = {
 				ai = no
@@ -21,8 +32,9 @@ on_startup = {
 			id = gecko.30
 			days = 1
 		}
+	}	
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
-	}
+	
 	gecko_merc_count = yes
 	subject_warscore = yes
 	if = {

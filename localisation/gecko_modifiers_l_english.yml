@@ -59,7 +59,7 @@
  conquest_of_copenhagen:0 "Conquest of Copenhagen"
  conquest_of_amsterdam:0 "Conquest of Amsterdam"
  caliph_of_cairo:0 "Seat of the Caliph of Cairo"
-
+ subsaharan_buildings:0 "Subsaharan Infrastructure"
  #Advisor Event modifiers
  gc_arty_officer_delayed:0 "Arty Officer Delayed"
  gc_arty_officer_modifier:0 "Excellent Artillery Officers"
