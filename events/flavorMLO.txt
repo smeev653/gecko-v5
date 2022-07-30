@@ -416,7 +416,6 @@ country_event = {
 				NOT = { is_year = 1500 }
 			}
 			mission_completed = mlo_center_of_fine_arts
-			mission_completed = lan_renaissance
 		}
 	}
 	
@@ -426,10 +425,6 @@ country_event = {
 		modifier = {
 			factor = 0.01
 			mission_completed = mlo_center_of_fine_arts
-		}
-		modifier = {
-			factor = 0.01
-			mission_completed = lan_renaissance
 		}
 	}
 	
