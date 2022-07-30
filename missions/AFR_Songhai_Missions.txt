@@ -174,9 +174,7 @@ songhai_military_slot = {
 								has_province_modifier = subsaharan_buildings 
 							}
 								remove_province_modifier = {
-									name = subsaharan_buildings
-									duration = -1
-									#hidden = yes
+									 subsaharan_buildings
 								}
 						}
 				}
@@ -188,9 +186,7 @@ songhai_military_slot = {
 								has_province_modifier = subsaharan_buildings 
 							}
 								remove_province_modifier = {
-									name = subsaharan_buildings
-									duration = -1
-									#hidden = yes
+									 subsaharan_buildings
 								}
 						}
 				}
@@ -202,9 +198,7 @@ songhai_military_slot = {
 								has_province_modifier = subsaharan_buildings 
 							}
 								remove_province_modifier = {
-									name = subsaharan_buildings
-									duration = -1
-									#hidden = yes
+									 subsaharan_buildings
 								}
 						}
 				}
@@ -451,9 +445,7 @@ songhai_historical_conquest_slot = {
 								has_province_modifier = subsaharan_buildings 
 							}
 								remove_province_modifier = {
-									name = subsaharan_buildings
-									duration = -1
-									#hidden = yes
+									 subsaharan_buildings
 								}
 						}
 				}
@@ -465,9 +457,7 @@ songhai_historical_conquest_slot = {
 								has_province_modifier = subsaharan_buildings 
 							}
 								remove_province_modifier = {
-									name = subsaharan_buildings
-									duration = -1
-									#hidden = yes
+									 subsaharan_buildings
 								}
 						}
 				}
@@ -479,9 +469,7 @@ songhai_historical_conquest_slot = {
 								has_province_modifier = subsaharan_buildings 
 							}
 								remove_province_modifier = {
-									name = subsaharan_buildings
-									duration = -1
-									#hidden = yes
+									 subsaharan_buildings
 								}
 						}
 				}
