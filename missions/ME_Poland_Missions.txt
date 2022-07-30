@@ -1333,6 +1333,7 @@ POL_Missions_3_1 = {
 				moravia_area = { add_permanent_claim = ROOT }
 				lusatia_area = { add_permanent_claim = ROOT }
 				bohemia_area = { add_permanent_claim = ROOT }
+				hradecko_area = { add_permanent_claim = ROOT }
 				neumark_area = { add_permanent_claim = ROOT }
 				hinter_pommern_area = { add_permanent_claim = ROOT }
 				add_ruler_modifier = {
@@ -1412,6 +1413,13 @@ POL_Missions_3_1 = {
 						add_permanent_claim = ROOT
 					}
 					bohemia_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					hradecko_area = {
 						limit = {
 							NOT = { is_permanent_claim = ROOT }
 							NOT = { is_core = ROOT }
@@ -2033,6 +2041,7 @@ POL_Missions_4_Jagiellon_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = bohemia_area
+				area = hradecko_area
 				area = moravia_area
 				area = silesia_area
 				area = breg_area
@@ -2050,6 +2059,7 @@ POL_Missions_4_Jagiellon_2 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = bohemia_area
+					area = hradecko_area
 					area = moravia_area
 					area = silesia_area
 					area = breg_area
@@ -2937,6 +2947,13 @@ POL_Missions_5_Jagiellon = {
 						}
 						add_permanent_claim = ROOT
 					}
+					hradecko_area = {
+						limit = {
+							NOT = { is_permanent_claim = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
 					moravia_area = {
 						limit = {
 							NOT = { is_permanent_claim = ROOT }
@@ -2992,6 +3009,7 @@ POL_Missions_5_Jagiellon = {
 			custom_tooltip = POL_reward_if_bohemia_invalid
 			tooltip = {
 				bohemia_area = { add_permanent_claim = ROOT }
+				hradecko_area = { add_permanent_claim = ROOT }
 				moravia_area = { add_permanent_claim = ROOT }
 				erzgebirge_area = { add_permanent_claim = ROOT }
 				silesia_area = { add_permanent_claim = ROOT }
