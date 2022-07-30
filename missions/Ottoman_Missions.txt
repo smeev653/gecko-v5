@@ -1951,7 +1951,7 @@ ottoman_missions_2 = {
 			is_at_war = no 
 		}
 		effect = { 
-			country_event = { id = FU_Ottoman_Events.41 } 
+			#country_event = { id = FU_Ottoman_Events.41 } 
 		}
 	}	
 }
