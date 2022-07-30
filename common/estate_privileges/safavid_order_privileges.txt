@@ -16,11 +16,6 @@ estate_safavid_order_militarised = {
 			NOT = { religion = root }
 		}
 		NOT = { has_estate_privilege = estate_church_inwards_perfection }
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_church
-			value = 4
-			}
 		}
 	}
 	on_granted = {

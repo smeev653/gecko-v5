@@ -10,8 +10,6 @@ estate_church_scholar_connections = {
 		has_dlc = "Cradle of Civilization"
 		always = no
 	}
-	can_select = {
-	}
 	on_granted = {
 		disable_scholar_cost = yes
 	}
@@ -42,8 +40,6 @@ estate_church_one_faith_one_culture = {
 	land_share = 5
 	is_valid = {
 		always = no
-	}
-	can_select = {
 	}
 	on_granted = {
 		custom_tooltip = estate_church_one_faith_one_culture_gta
@@ -394,9 +390,6 @@ estate_brahmins_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -468,9 +461,6 @@ estate_nobles_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -542,9 +532,7 @@ estate_church_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	
-	}
+
 	on_granted = {
 	}
 	penalties = {
@@ -616,10 +604,7 @@ estate_maratha_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	
 
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -691,9 +676,7 @@ estate_burghers_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
 
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -765,9 +748,7 @@ estate_vaisyas_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
 
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -839,8 +820,6 @@ estate_cossacks_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -912,9 +891,7 @@ estate_dhimmi_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
 
-			}
 	on_granted = {
 	}
 	penalties = {
@@ -986,9 +963,6 @@ estate_jains_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -1060,8 +1034,6 @@ estate_rajput_land_rights = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	can_select = {
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -1188,12 +1160,7 @@ estate_nobles_levies = {
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_nobles
-			value = 4
-			}
-		}
+		
 	}
 	on_granted = {
 		add_yearly_manpower = 1
@@ -1557,13 +1524,8 @@ estate_church_negative_piety_privilege = {
 		religion_group = muslim
 	}
 	can_select = {
-		NOT = { 
-			num_of_estate_privileges = {
-			estate = estate_church
-			value = 4
-			} 
 		}
-	}
+	
 	penalties = {
 	}
 	benefits = {
@@ -1954,11 +1916,6 @@ PR_estate_clergy_exploration_expedition = {
 	}
 	
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_church
-			value = 4
-			}
 		}
 		NOT = { has_estate_privilege = estate_burghers_hydraulic_rights	}
 	}
@@ -2054,11 +2011,7 @@ smeev_mountain_dev_cost = {
 	}
 	
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_church
-			value = 4
-			}
+
 		}	
 	}
 	penalties = {
@@ -2719,8 +2672,6 @@ estate_jains_clerical_class = {
 	loyalty = 0.1
 	max_absolutism = -10
 	influence = 0.1
-	can_select = {
-	}
 	on_granted = {
 	}
 	penalties = {
@@ -3002,11 +2953,6 @@ estate_maratha_levies_for_muslims = {
 		}
 	}
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_maratha
-			value = 4
-			}
 		}
 	}
 	penalties = {
@@ -3052,11 +2998,6 @@ estate_rajput_rajput_regiments = {
 	max_absolutism = -5
 	influence = 0.05
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_rajput
-			value = 4
-			}
 		}
 	}
 	on_granted = {
@@ -3488,9 +3429,7 @@ estate_burghers_monopoly_of_textiles = {
 			}
 		}
 	}
-	can_select = {
-		
-	}
+
 	on_granted = {
 		add_mercantilism = 1
 		add_years_of_owned_provinces_production_income = {
@@ -3646,9 +3585,6 @@ estate_burghers_monopoly_of_glass = {
 		any_owned_province = {
 			trade_goods = glass
 		}
-	}
-	can_select = {
-		
 	}
 	on_granted = {
 		add_mercantilism = 1
@@ -6706,12 +6642,6 @@ estate_brahmins_statutory_rights = {
 		}
 	}
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_brahmins
-			value = 4
-			}
-		}
 	}
 	penalties = {
 		min_autonomy = 25

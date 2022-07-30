@@ -7,12 +7,6 @@ estate_janissary_phase_base = {
 		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
 	}
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_janissary
-			value = 4
-			}
-		}
 	}
 	on_granted = {
 		add_country_modifier = { 
@@ -45,12 +39,6 @@ estate_janissary_upgrade_weaponry = {
 		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
 	}
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_janissary
-			value = 4
-			}
-		}
 	}
 	on_granted = {
 		add_country_modifier = { 
@@ -85,12 +73,6 @@ estate_janissary_reform_the_janissaries = {
 		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
 	}
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_janissary
-			value = 4
-			}
-		}
 	}
 	on_granted = {
 		add_country_modifier = { 
@@ -123,12 +105,6 @@ estate_janissary_auxiliaries = {
 		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
 	}
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_janissary
-			value = 4
-			}
-		}
 	}
 	on_granted = {
 		add_country_modifier = { 

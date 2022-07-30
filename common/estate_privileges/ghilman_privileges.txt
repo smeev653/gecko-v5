@@ -7,12 +7,6 @@ estate_ghilman_land_rights = {
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_ghilman
-			value = 4
-			}
-		}
 	}
 	on_granted = {
 	}
@@ -35,12 +29,6 @@ estate_ghilman_military_corps = {
 	influence = 0.05
 
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_ghilman
-			value = 4
-			}
-		}
 	}
 	on_granted = {
 		add_country_modifier = { 
@@ -76,12 +64,6 @@ estate_ghilman_morale = {
 		has_reform = reforms_of_abbas_i_reform
 	}
 	can_select = {
-		NOT = {
-			num_of_estate_privileges = {
-			estate = estate_ghilman
-			value = 4
-			}
-		}
 	}
 	on_granted = {
 		add_country_modifier = { 
