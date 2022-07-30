@@ -1916,7 +1916,7 @@ PR_estate_clergy_exploration_expedition = {
 	}
 	
 	can_select = {
-		}
+		
 		NOT = { has_estate_privilege = estate_burghers_hydraulic_rights	}
 	}
 	on_granted = {
@@ -2012,7 +2012,7 @@ smeev_mountain_dev_cost = {
 	
 	can_select = {
 
-		}	
+			
 	}
 	penalties = {
 	}
@@ -2953,7 +2953,7 @@ estate_maratha_levies_for_muslims = {
 		}
 	}
 	can_select = {
-		}
+		
 	}
 	penalties = {
 		nobles_loyalty_modifier = -0.05
@@ -2998,7 +2998,7 @@ estate_rajput_rajput_regiments = {
 	max_absolutism = -5
 	influence = 0.05
 	can_select = {
-		}
+		
 	}
 	on_granted = {
 	}

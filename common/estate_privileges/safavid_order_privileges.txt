@@ -16,7 +16,7 @@ estate_safavid_order_militarised = {
 			NOT = { religion = root }
 		}
 		NOT = { has_estate_privilege = estate_church_inwards_perfection }
-		}
+		
 	}
 	on_granted = {
 		custom_tooltip = estate_safavid_order_militarised_effect_tooltip
