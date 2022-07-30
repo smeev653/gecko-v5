@@ -2042,8 +2042,7 @@ picture = COURT_eventPicture
 
    trigger = {
 		has_country_flag = improve_development_on_buildings_built
-		NOT = { current_age = age_of_discovery }
-			
+		is_year = 1475
 	}		
 		hidden = yes
 	mean_time_to_happen = {
