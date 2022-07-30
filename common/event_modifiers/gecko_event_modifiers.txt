@@ -382,6 +382,7 @@ trade_hub_created = {
 regional_conquest = {
 	local_development_cost = -0.05
 	local_build_cost = -0.05
+	local_state_maintenance_modifier = -0.25
 }
 
 subject_warscore = {

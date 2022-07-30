@@ -285,6 +285,7 @@ gc_eng_rb_take_gibraltar_desc:0 ""
 
 gc_son_take_djenne_title:0 "Conquer Zazzau"
 gc_son_take_djenne_desc:0 ""
+remove_subsaharan_buildings:0 "The Subsaharan Buildings modifier will be removed from all provinces."
 
 #Hungary
 
