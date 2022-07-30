@@ -3424,7 +3424,7 @@ piedmont_north_america_area = { #3
 }
 
 carolinas_area = { #4
-    937 938 2546 2547
+    937 938 2546 2547 481
 }
 
 south_carolina_area = { #3
@@ -3879,7 +3879,7 @@ dominica_area = { #5
 }
 
 greater_antilles_area = { #4
-    487 481 491 492  493
+    487 491 492  493
 }
 
 lucayan_area = { #2
