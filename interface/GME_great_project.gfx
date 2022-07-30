@@ -665,7 +665,10 @@ spriteTypes = {
 		name = "GFX_great_project_gme_college_geneve"
 		texturefile = "gfx//interface//great_projects//GME//great_project_gme_college_geneve.dds"
 	}
-
+	spriteType = {
+		name = "GFX_great_project_gme_bundeshaus"
+		texturefile = "gfx//interface//great_projects//GME//great_project_gme_bundeshaus.dds"
+	}
 #Tibet
 	spriteType = {
 		name = "GFX_great_project_gme_padmasambhava_hidden_valley"
