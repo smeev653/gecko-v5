@@ -386,17 +386,15 @@ country_decisions = {
 				ai = no
 				tag = TUR
 				NOT = { current_age = age_of_discovery }
-				NOT = { current_age = age_of_reformation }
 				NOT = { has_country_flag = janissary_decadence }
+				NOT = { has_country_flag = yoklama }
 			}
 			allow = {
 				NOT = { current_age = age_of_discovery }
-				NOT = { current_age = age_of_reformation }
-				janissary_percentage = 0.2
-				always = no
+				NOT = { num_of_janissaries = 1 }
 			}
 			effect = {
-				set_country_flag = janissary_decadence
+				set_country_flag = yoklama
 			}
 	}
 	gc_war_taxes_notification = {

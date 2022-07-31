@@ -150,7 +150,6 @@ fu_janissary_rebels = {
 				share = 100
 			}
 		}
-		add_government_reform = fu_janissary_autocracy
 		add_absolutism = -100
 	}
 }

@@ -54,6 +54,14 @@ country_event = {
 		remove_country_modifier = strictly_enforced_janissary_discipline
 		remove_country_modifier = janissaries_disciplined
 		remove_country_modifier = janissaries_denied_reward
+		capital_scope = {
+			spawn_rebels = {
+				type = fu_janissary_rebels
+				culture = turkish
+				religion = ROOT
+				size = 3
+			}
+		}
 	}
 }
 
@@ -458,15 +466,15 @@ country_event = {
 			event_target:janissary_revolt_second_origin = {
 				spawn_rebels = {
 					size = 3
-					type = pretender_rebels
+					type = fu_janissary_rebels
 					culture = turkish
 					religion = ROOT
 				}
 			}
 			event_target:janissary_revolt_origin = {
 				spawn_rebels = {
-					size = 2
-					type = pretender_rebels
+					size = 3
+					type = fu_janissary_rebels
 					culture = turkish
 					religion = ROOT
 				}

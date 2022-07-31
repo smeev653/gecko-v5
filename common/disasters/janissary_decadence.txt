@@ -1,14 +1,25 @@
 janissary_decadence = {
 	potential = {
-		has_country_flag = janissary_decadence
+		normal_or_historical_nations = yes
+		has_reform = ottoman_government
+		NOT = { has_country_flag = had_janissary_decadence }
 	}
 
 	can_start = {
 		has_any_disaster = no
+		NOT = { current_age = age_of_discovery }
+		NOT = { stability = 0 }
+		num_of_janissaries = 50
+		janissary_percentage = 0.3
 	}
 	
 	can_stop = {
+			OR = {
 			has_any_disaster = yes
+			stability = 3
+				NOT = { janissary_percentage = 0.05 }
+					NOT = { army_size_percentage = 0.15 }
+		}
 	}
 
 	
@@ -81,10 +92,21 @@ janissary_decadence = {
 
 	
 	can_end = {
+		OR = {
 			custom_trigger_tooltip = {
 				tooltip = force_janissaries_to_undergo_yoklama
 				has_country_flag = yoklama
 			}
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = had_disaster_for_five_years
+					had_country_flag = { flag = had_janissary_decadence days = 1825 }
+				}
+				stability = 2
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = { num_of_rebel_armies = 1 }
+			}
+		}	
 		}
 
 	modifier = {
