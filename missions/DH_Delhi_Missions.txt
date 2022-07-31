@@ -173,7 +173,7 @@ dlh_east_missions = {
 	}
 	dlh_grand_trunk_road = {
 		icon = mission_the_grand_trunk_road_dlh
-		required_missions = { dlh_conquer_bengal }
+		required_missions = { }
 		position = 6
 		provinces_to_highlight = {
 			OR = {
@@ -480,7 +480,7 @@ dlh_slot_4 = {
 	}
 	dlh_conquer_rajputs = {
 		icon = mission_conquer_rajputana
-		required_missions = { dlh_conquer_malwa }
+		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
 				area = jaipur_area

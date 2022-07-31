@@ -11839,7 +11839,7 @@ monumental_pride = {
 }
 
 monument_boost = {
-	great_project_upgrade_cost = -0.25
+	great_project_upgrade_cost = -0.5
 }
 
 monument_church_of_the_people = {

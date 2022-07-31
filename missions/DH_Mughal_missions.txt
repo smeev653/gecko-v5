@@ -425,59 +425,9 @@ mug_hindustan_branch = {
 			}
 		}
 	}
-	mug_bengal_campaign = {
-		icon = mission_bengal_campaign
-		required_missions = { mug_emperor_of_hindustan }
-		provinces_to_highlight = {
-			OR = {
-				area = mithila_area
-				area = north_bengal_area
-				area = gaur_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			mithila_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			north_bengal_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gaur_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "conquest_of_bihar_and_bengal"
-				duration = 7300
-			}
-			east_bengal_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			west_bengal_area = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
 	mug_fortify_the_plains = {
 		icon = mission_fortifying_the_plain
-		required_missions = { mug_bengal_campaign }
+		required_missions = { mug_emperor_of_hindustan}
 		trigger = {
 			upper_doab_area = {
 				fort_level = 2
@@ -525,8 +475,6 @@ mug_hindustan_branch = {
 				area = upper_doab_area
 				area = lower_doab_area
 				area = purvanchal_area
-				area = gaur_area
-				area = east_bengal_area
 			}
 			OR = {
 				NOT = {
@@ -574,41 +522,11 @@ mug_hindustan_branch = {
 					devastation = 1
 				}
 			}
-			gaur_area = {
-				type = all
-				owned_by = ROOT
-				NOT = {
-					devastation = 1
-				}
-			}
-			east_bengal_area = {
-				type = all
-				owned_by = ROOT
-				NOT = {
-					devastation = 1
-				}
-			}
 		}
 		effect = {
 			# 20 years of Trade Dominance along the Grand Trunk Road.
 			add_mercantilism = 5
 			524 = {
-				add_trade_modifier = {
-					who = root
-					duration = 7300
-					power = 50
-					key = renovated_grand_trunk_road
-				}
-			}
-			1343 = {
-				add_trade_modifier = {
-					who = root
-					duration = 7300
-					power = 50
-					key = renovated_grand_trunk_road
-				}
-			}
-			507 = {
 				add_trade_modifier = {
 					who = root
 					duration = 7300
@@ -635,19 +553,12 @@ mug_sufis = {
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 2035 #Gulbarga
-				province_id = 2054 #Batwa
 				province_id = 2059 #Kalpi
-				province_id = 2066 #Nagaur
-				province_id = 2076 #Gujrat
-				province_id = 2087 #Ajmer
 				province_id = 4494 #Khairabad
 				province_id = 506 #Multan
 				province_id = 507 #Lahore
 				province_id = 510 #Sirhind
-				province_id = 545 #Daulatabad
 				province_id = 555 #Jaunpur & Zafarabad
-				province_id = 563 #Gaur & Pandua
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -669,19 +580,13 @@ mug_sufis = {
 			else = {
 				legitimacy = 100
 			}
-			owns_core_province = 2035 #Gulbarga
-			owns_core_province = 2054 #Batwa
+
 			owns_core_province = 2059 #Kalpi
-			owns_core_province = 2066 #Nagaur
-			owns_core_province = 2076 #Gujrat
-			owns_core_province = 2087 #Ajmer
 			owns_core_province = 4494 #Khairabad
 			owns_core_province = 506 #Multan
 			owns_core_province = 507 #Lahore
 			owns_core_province = 510 #Sirhind
-			owns_core_province = 545 #Daulatabad
 			owns_core_province = 555 #Jaunpur & Zafarabad
-			owns_core_province = 563 #Gaur & Pandua
 		}
 		effect = {
 			if = {
@@ -852,34 +757,14 @@ mug_rajput_branch = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				area = marwar_area
 				area = jangladesh_area
 				area = gird_area
 				area = bundelkhand_area
 				area = baghelkhand_area
-				AND = {
-					province_id = 518
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				AND = {
-					province_id = 2087
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_core_province = 518 #Chittor
-			owns_core_province = 2087 #Ajmer
-			2087 = {
-				fort_level = 2
-			}
-			marwar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			jangladesh_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -901,12 +786,6 @@ mug_rajput_branch = {
 			add_country_modifier = {
 				name = "mug_conquest_of_rajputana"
 				duration = 10950
-			}
-			2087 = {
-				add_province_modifier = {
-					name = "ajmer_subah"
-					duration = -1
-				}
 			}
 		}
 	}

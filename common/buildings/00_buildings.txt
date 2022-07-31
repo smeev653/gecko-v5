@@ -1950,6 +1950,7 @@ town_hall = {
 		local_governing_cost = -0.35
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.50
+		local_development_cost = -0.05
 		}
 
 	ai_will_do = {
