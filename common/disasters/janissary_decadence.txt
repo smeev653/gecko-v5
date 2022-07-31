@@ -111,6 +111,8 @@ janissary_decadence = {
 
 	modifier = {
 		legitimacy = -1
+		technology_cost = 0.25
+		idea_cost = 0.25
 	}
 
 	on_start = janissary_decadence.1
