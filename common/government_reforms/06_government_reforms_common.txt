@@ -133,7 +133,10 @@ governmental_purbias_register_reform = {
 	potential = {
 		has_dlc = "Dharma"
 		has_estate = estate_rajput
-		technology_group = indian
+		OR = {
+					technology_group = indian
+					tag = MUG
+		}			
 	}
 	modifiers = {
 		recover_army_morale_speed = 0.05

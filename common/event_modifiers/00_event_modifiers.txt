@@ -10341,7 +10341,6 @@ look_up_purbias = {
 look_up_purbias_upgraded = {
 	is_rajput_modifier = yes
 	infantry_power = 0.1
-	fire_damage = 0.1
 }
 
 jain_temples_built = {

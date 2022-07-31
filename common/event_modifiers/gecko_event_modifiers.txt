@@ -2,7 +2,7 @@ russian_consolidation = {
 	province_warscore_cost = -0.1
 }
 enlist_rajputs = {	
-	special_unit_forcelimit = 0.2
+	special_unit_forcelimit = 0.1
 	}
 	
 national_bank_interest = {
