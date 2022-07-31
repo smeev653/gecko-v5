@@ -106,7 +106,6 @@ country_event = {
 	option = {
 		name = FU_Milan_Events.4.a 
 		
-		custom_tooltip = mlo_unlock_sforza_reforms
 		change_government_reform_progress = 100
 		lombardy_area = { add_base_tax = 1 } 
 	}
@@ -235,7 +234,7 @@ country_event = {
 		
 		define_advisor = {
 			type = artist 
-			cost_multiplier = 0.1 
+			cost_multiplier = 0.75
 			skill = 3 
 		}
 		add_splendor = 200 
@@ -303,7 +302,7 @@ country_event = { #Milano Conservatories and Opera Houses
 			name = "Wolfgang Amadeus Mozart"
 			skill = 3
 			culture = bavarian
-			cost_multiplier = 0.25 
+			cost_multiplier = 0.75 
 		}
 	}
 }
