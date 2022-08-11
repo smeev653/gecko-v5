@@ -619,10 +619,15 @@ emp_burgundy_3 = {
 			4766 = {
 					cede_province = BUR
 				}
+			4766 = {
+					add_core = BUR
+				}	
 			187 = {
 					cede_province = BUR
 				}
-			
+			187 = {
+					add_core = BUR
+				}
 		}
 	}
 	emp_bur_lorraine = {
