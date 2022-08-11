@@ -2366,7 +2366,7 @@ X_VEN_slot_5 = {
 				culture = greek
 				religion = orthodox
 				skill = 3
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 		}
 	}

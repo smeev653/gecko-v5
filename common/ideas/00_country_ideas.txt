@@ -207,7 +207,7 @@ MOS_ideas = {
 RUS_ideas = {
 	start = {
 		core_creation = -0.15
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.2
 	}
 
 	bonus = {
@@ -8202,7 +8202,7 @@ ROM_ideas = { #Roman Empire
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.2
 	}
 	
 	trigger = {

@@ -30,7 +30,7 @@ arl_citadel_persia_modifier = {
 	monthly_splendor = 1 
 }
 arl_homogenous_court_modifier = {
-	same_culture_advisor_cost = -0.2
+	same_culture_advisor_cost = -0.1
 }
 arl_unified_majority_modifier = {
 	local_unrest = -2 

@@ -16,7 +16,7 @@ tur_integration_in_the_ottoman_government_modifier = {
 }
 tur_major_resettlement_of_the_city_modifier = {
 	local_development_cost = -0.25 
-	local_great_project_upgrade_cost = -0.5
+	local_great_project_upgrade_cost = -0.25
 }
 tur_jewish_community_modifier = {
 	advisor_pool = 1 
@@ -109,7 +109,7 @@ tur_cooperation_with_mamluk_locals_modifier = {
 	mamluks_loyalty_modifier = 0.1
 }
 tur_master_egypt_modifier = { 
-	governing_capacity_modifier = 0.1
+	governing_capacity_modifier = 0.05
 	advisor_cost = -0.05
 }
 tur_khalifat_rashul_allah_modifier = {
@@ -310,18 +310,18 @@ tur_overpowered_the_hussars_modifier = {
 }
 tur_sultans_palace_in_warsaw_modifier = { 
 	administrative_efficiency = 0.05
-	adm_tech_cost_modifier = -0.1
+	adm_tech_cost_modifier = -0.05
 }
 tur_functional_bureaucracy_modifier = { 
 	all_estate_loyalty_equilibrium = 0.05
 	advisor_cost = -0.1
 }
 tur_islamic_cart_and_illustr_modifier = {
-	innovativeness_gain = 0.5
+	innovativeness_gain = 0.25
 	idea_cost = -0.1
 }
 tur_islamic_cart_and_illustr_modifier2 = { 
-	innovativeness_gain = 0.25
+	innovativeness_gain = 0.1
 	idea_cost = -0.05
 }
 tur_scholarly_studies_modifier = {
@@ -350,7 +350,7 @@ tur_centralization_efforts_of_sultan_modifier = {
 	autonomy_change_time = -0.25
 }
 tur_faithful_to_tradition_modifier = { 
-	same_culture_advisor_cost = -0.25
+	same_culture_advisor_cost = -0.1
 }
 tur_effective_pasha_modifier = { 
 	local_tax_modifier = 0.2
@@ -400,14 +400,14 @@ tur_center_of_printing_knowledge_modifier = {
 tur_tranquil_tulip_period_modifier = { 
 	possible_policy = 1 
 	stability_cost_modifier = -0.25
-	all_power_cost = -0.05
+	all_power_cost = -0.025
 }
 tur_fires_of_revolution_modifier = {
 	max_revolutionary_zeal = 10
 }
 tur_balanced_approach_modifier = { 
 	max_revolutionary_zeal = 10 
-	all_power_cost = -0.05
+	all_power_cost = -0.025
 	administrative_efficiency = 0.05
 }
 tur_birth_socialism_modifier = {  

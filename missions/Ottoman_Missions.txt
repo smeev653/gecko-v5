@@ -652,7 +652,7 @@ ottoman_missions_1 = {
 					name = "Genadios II Scholarios" 
 					type = fu_head_of_patriarchate
 					skill = 3
-					cost_multiplier = 0.5
+					cost_multiplier = 0.75
 					culture = greek
 					religion = orthodox
 				}
@@ -702,7 +702,7 @@ ottoman_missions_1 = {
 						name = "Genadios II Scholarios"
 						type = fu_head_of_patriarchate
 						skill = 3
-						cost_multiplier = 0.5
+						cost_multiplier = 0.75
 						culture = greek
 						religion = orthodox
 					}
@@ -4664,7 +4664,7 @@ ottoman_missions_5 = {
 			define_advisor = { 
 				type = theologian
 				skill = 3 
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 		}
 	}	

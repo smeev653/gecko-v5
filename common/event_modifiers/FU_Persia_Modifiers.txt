@@ -51,7 +51,7 @@ per_king_of_kings_modifier = {
 	num_accepted_cultures = 2 
 }
 per_renowned_madrasa_of_the_persian_crown_modifier = {
-	innovativeness_gain = 0.025
+	#innovativeness_gain = 0.025
 	local_institution_spread = 0.25
 }
 per_revamped_persian_administration_modifier = {
@@ -115,7 +115,7 @@ per_accepted_armenian_culture_modifier = {
 	num_accepted_cultures = 1 
 }
 per_elitist_caste_modifier = {
-	same_culture_advisor_cost = -0.2
+	same_culture_advisor_cost = -0.1
 	culture_conversion_cost = -0.2 
 }
 per_ensured_armenian_qizilbash_rights_modifier = {
@@ -138,7 +138,7 @@ per_greater_than_tamerlane_modifier = {
 }
 per_persian_cultural_centre_of_india_modifier = {
 	culture_conversion_cost = -0.15 
-	same_culture_advisor_cost = -0.15
+	same_culture_advisor_cost = -0.10
 }
 per_elevation_of_panjabi_culture_modifier = {
 	local_build_cost = -0.15
@@ -153,7 +153,7 @@ per_land_of_purbias_modifier = {
 }
 per_patronage_of_thought_modifier = {
 	technology_cost = -0.05
-	adm_advisor_cost = -0.2 
+	adm_advisor_cost = -0.1
 }
 per_persian_illuminated_manuscript_modifier = {
 	trade_goods_size_modifier = 0.20
@@ -226,7 +226,7 @@ per_continental_trading_modifier = {
 	global_own_trade_power = 0.1 
 }
 per_splendid_court_modifier = {
-	advisor_cost = -0.2
+	advisor_cost = -0.1
 } 
 per_swift_horses_modifier = {
 	movement_speed = 0.15

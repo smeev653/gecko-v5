@@ -192,7 +192,7 @@ Ducal_KUR_missions_2 = {
 				skill = 1
 				culture = ROOT
 				religion = ROOT
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 			}
 			add_years_of_income = 1
 			overlord = {

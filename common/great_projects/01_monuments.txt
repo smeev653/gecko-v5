@@ -5739,7 +5739,7 @@ golden_temple = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.05
-			min_autonomy_in_territories = -0.1
+			min_autonomy_in_territories = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -5770,7 +5770,7 @@ golden_temple = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.1
-			min_autonomy_in_territories = -0.15
+			min_autonomy_in_territories = -0.1
 			
 		}
 
@@ -18825,7 +18825,7 @@ fu_ishtar_gate = {
 
 		country_modifiers = {
 			heir_chance = 0.5
-			expand_administration_cost = -0.5
+			expand_administration_cost = -0.15
 		}
 		
 	}
@@ -18974,7 +18974,7 @@ fu_colossus = {
 	
 	build_cost = 500
 	
-	can_be_moved = yes
+	can_be_moved = no
 	
 	move_days_per_unit_distance = 2
 	

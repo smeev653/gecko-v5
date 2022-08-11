@@ -742,7 +742,7 @@ maritime_ideas = {
 		stability_cost_modifier = -0.10
 	}
 	sea_hawks = {
-		min_autonomy_in_territories = -0.25
+		min_autonomy_in_territories = -0.15
 		move_capital_cost_modifier = -0.5
 	}	
 	grand_navy = {
@@ -807,7 +807,7 @@ quantity_ideas = {
 	category = MIL
 
 	bonus = {
-		land_forcelimit_modifier  = 0.4
+		land_forcelimit_modifier  = 0.33
 		special_unit_forcelimit = 0.1
 	}
 	garrison_conscription = {
@@ -821,7 +821,7 @@ quantity_ideas = {
 		global_regiment_cost = -0.1
 	}
 	mass_army = {
-		global_manpower_modifier = 0.4
+		global_manpower_modifier = 0.33
 		mercenary_manpower = 0.25
 	}
 	enforced_service = {

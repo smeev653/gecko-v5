@@ -128,10 +128,10 @@ coastal = {
 }
 
 seat_in_parliament = {
-	local_manpower_modifier = 0.1
+	local_manpower_modifier = 0.05
 	local_sailors_modifier = 0.05
-	local_tax_modifier = 0.1
-	local_production_efficiency = 0.1
+	local_tax_modifier = 0.05
+	local_production_efficiency = 0.05
 }
 
 non_coastal = {
@@ -220,7 +220,7 @@ provincial_tax_income = {
 }
 
 provincial_production_size = {
-	trade_goods_size = 0.2
+	trade_goods_size = 0.15
 	ship_recruit_speed = -0.01
 }
 
@@ -306,7 +306,7 @@ native_aggressiveness = {
 }
 
 core = {
-	local_tax_modifier = 0.75				#90% more in a core
+	local_tax_modifier = 0.5				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 }
@@ -316,7 +316,7 @@ non_core = {
 }
 
 colonial_core = {
-	local_tax_modifier = 0.75				#90% more in a core
+	local_tax_modifier = 0.5				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
@@ -324,7 +324,7 @@ colonial_core = {
 	local_governing_cost = -0.25
 }									 		  
 territory_core = {
-	local_tax_modifier = 0.75				#90% more in a core
+	local_tax_modifier = 0.5				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
@@ -1594,7 +1594,7 @@ supply_depot_area = {
 ########################################
 
 efficient_tax_farming_modifier = {
-	global_tax_modifier = 0.15
+	global_tax_modifier = 0.10
 }
 
 land_acquisition_modifier = {

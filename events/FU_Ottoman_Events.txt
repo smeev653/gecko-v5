@@ -1926,7 +1926,7 @@ country_event = { #Granadan Moriscos seek Refuge in [151.GetName]
 		}
 		define_advisor = { 
 			type = artist 
-			cost_multiplier = 0.5
+			cost_multiplier = 0.75
 			culture = granadan 
 			religion = sunni 
 		}
@@ -1954,7 +1954,7 @@ country_event = { #Piri Reis
 			type = fu_cartographer
 			name = "Piri Reis" 
 			skill = 3 
-			cost_multiplier = 0.25
+			cost_multiplier = 0.75
 		}
 		custom_tooltip = ned_every_level_nav_trad_decay_tt
 		
@@ -2606,7 +2606,7 @@ country_event = { #Rocket Man
 					type = natural_scientist
 					name = "Legari Hasan Celebi" 
 					skill = 3 
-					cost_multiplier = 0.25
+					cost_multiplier = 0.75
 				}
 			}
 			50 = { custom_tooltip = tur_celebi_goes_bye_bye }

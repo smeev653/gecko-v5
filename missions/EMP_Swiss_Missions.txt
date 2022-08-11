@@ -1249,7 +1249,7 @@ swiss_missions_5 = {
 					name = "Huldrych Zwingli"
 					type = theologian
 					skill = 3 
-					cost_multiplier = 0.25
+					cost_multiplier = 0.75
 				}
 			}
 			if = {
@@ -1276,7 +1276,7 @@ swiss_missions_5 = {
 				define_advisor = {
 					type = inquisitor
 					skill = 3 
-					cost_multiplier = 0.25
+					cost_multiplier = 0.75
 				}
 				add_papal_influence = 25
 			}
