@@ -174,7 +174,9 @@
  gecko.39.h:0 "Hire 40 Mercenary Regiments"
  gecko.39.i:0 "Hire 45 Mercenary Regiments"
  gecko.39.j:0 "Hire 50 Mercenary Regiments"
- gecko.39.k:0 "Do Nothing"
+ gecko.39.k:0 "Hire 100 Mercenary Regiments"
+ gecko.39.l:0 "Hire 200 Mercenary Regiments"
+ gecko.39.m:0 "Do Nothing"
 
  
  #crimea events
