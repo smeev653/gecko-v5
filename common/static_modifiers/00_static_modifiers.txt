@@ -306,7 +306,7 @@ native_aggressiveness = {
 }
 
 core = {
-	local_tax_modifier = 0.5				#90% more in a core
+	local_tax_modifier = 0.55				#90% more in a core
 	local_manpower_modifier = 0.75			#75% more in a core
 	local_sailors_modifier = 0.75
 }
@@ -551,6 +551,8 @@ ai_nation = {
 	#diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
 	#free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
 	#sailors_recovery_speed = 0.25
+	build_cost = 0.25
+	development_cost = 0.25
 	global_autonomy = -0.3
 	#global_tax_modifier = 0.15
 	fort_maintenance_modifier = -1
@@ -1160,7 +1162,7 @@ production_leader = {
 
 
 trade_company_bonus = {
-	trade_goods_size_modifier = 0.25
+	trade_goods_size_modifier = 0
 }
 
 bonus_from_merchant_republics = {
