@@ -318,7 +318,7 @@ gecko_occupation = {
 mercs_bought = {
 }
 merc_recruited = {
-	local_friendly_movement_speed = -0.9
+	local_friendly_movement_speed = -2
 }
 geckoavailablemercs = {
 }

@@ -3407,7 +3407,7 @@ country_event = {
 					}
 		}			
 				add_treasury = -5000
-		}  
+		  
 			add_country_modifier = {
 				name = "mercs_spawned"
 				duration = 365
