@@ -306,8 +306,8 @@ native_aggressiveness = {
 }
 
 core = {
-	local_tax_modifier = 0.55				#90% more in a core
-	local_manpower_modifier = 0.75			#75% more in a core
+	local_tax_modifier = 0.5				#90% more in a core
+	local_manpower_modifier = 0.5		#75% more in a core
 	local_sailors_modifier = 0.75
 }
 
@@ -317,7 +317,7 @@ non_core = {
 
 colonial_core = {
 	local_tax_modifier = 0.5				#90% more in a core
-	local_manpower_modifier = 0.75			#75% more in a core
+	local_manpower_modifier = 0.5			#75% more in a core
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
 	min_local_autonomy = 50
@@ -325,7 +325,7 @@ colonial_core = {
 }									 		  
 territory_core = {
 	local_tax_modifier = 0.5				#90% more in a core
-	local_manpower_modifier = 0.75			#75% more in a core
+	local_manpower_modifier = 0.5			#75% more in a core
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
 	min_local_autonomy = 75
