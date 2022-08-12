@@ -837,7 +837,7 @@ country_event = { #The Baghdad Eyalet
 			} 
 			enable_baseline_invite_scholar = yes
 		}
-		else = { change_innovativeness = 5 } 
+		else = { change_innovativeness = 2 } 
 	}
 }
 

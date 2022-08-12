@@ -317,7 +317,7 @@ tur_functional_bureaucracy_modifier = {
 	advisor_cost = -0.05
 }
 tur_islamic_cart_and_illustr_modifier = {
-	innovativeness_gain = 0.25
+	innovativeness_gain = 0.1
 	idea_cost = -0.1
 }
 tur_islamic_cart_and_illustr_modifier2 = { 
