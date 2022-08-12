@@ -360,29 +360,22 @@ mam_north_missions = {
 		icon = mission_non-western_soldiers
 		required_missions = {  }
 		provinces_to_highlight = {
-				province_id = 151
 		}
 		trigger = {
-			OR = {
-				151 = {
-					controlled_by = MAM
+			ROOT = {
+				has_won_war_against = {
+					who = TUR
+					max_years_since = 5
 				}
-				151 = {
-					owned_by = MAM
-				}
-				151 = {
-					NOT = {
-						owned_by = TUR
-					}
-				}
-			}
-			is_at_war = yes
+			}	
+			owns = 319
 		}
 		effect = {
 			add_country_modifier = {
 				name = "turks_defeated"
 				duration = 7300
 			}
+			add_core = 319
 			add_treasury = 1000
 			add_manpower = 30
 			change_adm = 1
