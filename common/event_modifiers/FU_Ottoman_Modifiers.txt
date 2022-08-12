@@ -314,7 +314,7 @@ tur_sultans_palace_in_warsaw_modifier = {
 }
 tur_functional_bureaucracy_modifier = { 
 	all_estate_loyalty_equilibrium = 0.05
-	advisor_cost = -0.1
+	advisor_cost = -0.05
 }
 tur_islamic_cart_and_illustr_modifier = {
 	innovativeness_gain = 0.25
@@ -465,7 +465,7 @@ tur_enlightened_literacy_modern_europe_modifier = {
 }
 tur_studying_greek_mythos_modifier = {
 	idea_cost = -0.05
-	advisor_cost = -0.1
+	advisor_cost = -0.05
 }
 tur_domestic_ottoman_manufactories_modifier = { 
 	mercantilism_cost = -0.25
