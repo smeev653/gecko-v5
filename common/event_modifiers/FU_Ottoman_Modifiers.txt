@@ -395,7 +395,7 @@ tur_morisco_refugees_modifier = {
 	local_development_cost = -0.1
 }
 tur_center_of_printing_knowledge_modifier = { 
-	trade_goods_size_modifier = 0.5
+	trade_goods_size_modifier = 0.25
 }
 tur_tranquil_tulip_period_modifier = { 
 	possible_policy = 1 

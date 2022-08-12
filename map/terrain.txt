@@ -149,6 +149,7 @@ categories =  {
 			6182 6180 6183 6185 6191 168 4385 237 6190
 			4769 6196 6197 6199 6202 91 99 95 96 4770 4381 #gc netherlands
 			149 1764 #gc ottos
+			219 6209 217 4551 2751 #spain
 			}		
 	}
 	
@@ -426,7 +427,7 @@ categories =  {
 		
 		terrain_override = {
 			2666 # North America
-			213 218 219 #Spain
+			213 218 #Spain
 			526 #India
 			417 4341 #Iran
 			2386 593 2376 2391 2394  #Sout East Asia
