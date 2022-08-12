@@ -4028,17 +4028,11 @@ ottoman_missions_4c = {
 			}
 		}
 		effect = { 
-			if = { 
-				limit = { has_dlc = "Mandate of Heaven" }
-				custom_tooltip = tur_enable_encourage_local_artisans_state_edict_tt
-			}
-			else = { 
 				add_country_modifier = { 
 					name = tur_encourage_local_artisans_modifier
 					duration = -1 
 				}
 				add_adm_power = 50 
-			}
 		}
 	}
 	
