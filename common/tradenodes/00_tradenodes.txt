@@ -641,6 +641,7 @@ aleppo={
 		415 4293 4294 #shahrizor_area
 		411 2309 2314 407 4292 #al_jazira_area
 		2334 #wasteland
+		2308
 	}
 }
 
@@ -912,7 +913,7 @@ constantinople={
 		326 4312 4313 #ankara_area
 		327 2302 #smeev
 		323 324 2301 4307 #karaman_area #smeev
-		332 2303 4310 2308 #dulkadir_area #smeev
+		332 2303 4310 #dulkadir_area #smeev
 		331 2305 330 #erzurum #smeev
 		418 2306 2307 4295 4296 4302 #north_kurdistan_area
 		6115 6116 6117
