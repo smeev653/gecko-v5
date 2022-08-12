@@ -4,8 +4,8 @@ emperor_reichsreform = {
 		has_dlc = "Emperor"
 	}
 	province = {
-		local_build_cost = -0.05
-		local_development_cost = -0.05
+		local_build_cost = -0.025
+		local_development_cost = -0.025
 	}
 	on_effect = {
 		imperial_ban_allowed = yes
@@ -219,7 +219,7 @@ emperor_geteilte_macht = {
 		technology_cost = -0.05
 	}
 	province = {
-		local_development_cost = -0.05
+		local_development_cost = -0.025
 	}
 }
 
