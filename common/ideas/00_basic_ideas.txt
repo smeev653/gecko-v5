@@ -771,7 +771,7 @@ quality_ideas = {
 
 	bonus = {
 		discipline = 0.05
-		infantry_power = 0.025
+		#infantry_power = 0.025
 	}
 
 	private_to_marshal = {
