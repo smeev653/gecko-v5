@@ -450,6 +450,7 @@ African_Slave_Trade_Western = {
 }
 too_many_subjects = {
 	potential = {
+		always = no
 	}
 	
 	trigger = {
@@ -464,6 +465,7 @@ too_many_subjects = {
 
 too_many_subjects_influence = {
 	potential = {
+		always = no
 	}
 	
 	trigger = {
