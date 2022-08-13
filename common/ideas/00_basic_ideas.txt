@@ -231,7 +231,6 @@ innovativeness_ideas = {
 	}
 	patron_of_art  = {
 		monarch_lifespan = 0.25
-		monarch_admin_power = 1
 	}
 	dynamic_court = {
 		idea_cost = -0.1
@@ -890,10 +889,11 @@ administrative_ideas = {
 	}
 	organised_mercenary_payment = {
 		production_efficiency = 0.15
+		advisor_pool = 4
 	}
 	civil_servants = {
-		reform_progress_growth = 0.5
-		advisor_pool = 4
+		reform_progress_growth = 0.25
+		monarch_admin_power = 1
 	}
 	benefits_for_mercenaries = {
 		mercenary_cost = -0.15
