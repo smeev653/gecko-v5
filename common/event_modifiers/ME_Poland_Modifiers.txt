@@ -272,7 +272,7 @@ POL_defeated_the_ottoman_empire = {
 
 POL_growing_population = {
 	global_manpower_modifier = 0.1
-	global_tax_modifier = 0.15
+	global_tax_modifier = 0.10
 }
 
 POL_sluck_sashes = {

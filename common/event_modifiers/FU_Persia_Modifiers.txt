@@ -75,7 +75,7 @@ per_modernized_gunpowder_artillery_modifier = {
 	siege_ability = 0.1
 }
 per_islamic_celebrations_modifier = {
-	global_tax_modifier = 0.15
+	global_tax_modifier = 0.10
 }
 per_magnificent_blue_mosque_of_tabriz_modifier = {
 	global_missionary_strength = 0.01 

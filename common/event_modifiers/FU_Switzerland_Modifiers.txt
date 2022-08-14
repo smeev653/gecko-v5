@@ -82,11 +82,11 @@ swi_treaty_of_stans_modifier = {
 }
 swi_signed_the_treaty_of_stans_subject_modifier = {
 	global_unrest = -1 
-	global_tax_modifier = 0.15
+	global_tax_modifier = 0.0
 }
 swi_peaceful_debate_of_ideas_modifier = {
 	idea_cost = -0.1 
-	advisor_cost = -0.15
+	advisor_cost = -0.10
 }
 swi_standarization_of_designs_modifier = {
 	global_ship_cost = -0.05
