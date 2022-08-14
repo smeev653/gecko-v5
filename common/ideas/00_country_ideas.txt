@@ -1465,6 +1465,7 @@ SIC_ideas = {
 	}
 	sic_greater_sicily = {
 		cavalry_power = 0.05
+		infantry_power = 0.1
 	}
 	sic_noble_admirals = {
 		leader_naval_fire = 1
