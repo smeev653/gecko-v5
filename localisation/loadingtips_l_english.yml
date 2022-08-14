@@ -1,6 +1,6 @@
 ﻿l_english:
  LOADING_TIP_0:0 "Don't feed the Dog."
- #LOADING_TIP_1:0 "Forming the Roman Empire will not get you laid."
+ LOADING_TIP_1:0 "Playing Gecko 7 days a week is not a replacement for therapy."
  LOADING_TIP_2:0 "Yenik broke the mod again"
  LOADING_TIP_3:0 "House Gecko sends their regards"
  LOADING_TIP_4:0 "Funni Funni?"
@@ -56,7 +56,7 @@
  LOADING_TIP_54:0 "Skill issue"
  LOADING_TIP_55:0 "Gankers get ganked"
  LOADING_TIP_56:0 "Gecko is inevitable."
- LOADING_TIP_57:0 "Playing Gecko 7 days a week is not a replacement for therapy"
+ LOADING_TIP_57:0 "You might lose a battle (or more), but still win the war.\nIt's often worth fighting on after suffering initial setbacks in a war."
  LOADING_TIP_58:0 "Constructing buildings can greatly increase the value of your provinces."
  LOADING_TIP_59:0 "The value of trade goods directly increases the production income from a province."
  LOADING_TIP_60:0 "Adding a core to a province is cheaper when you have a claim on it."
@@ -100,7 +100,6 @@
  LOADING_TIP_98:1 "Use terrain to your advantage! Place your armies so that if attacked,\nthe attacker gets river crossing or difficult terrain."
  LOADING_TIP_99:0 "An army besieging a fortress in enemy territory will be counted as the attacker in a battle when attacked, incurring terrain penalties."
  LOADING_TIP_100:0 "This game takes a long time to master, don't be surprised to be learning new things after playing a thousand hours."
- LOADING_TIP_101:0 "You might lose a battle (or more), but still win the war.\nIt's often worth fighting on after suffering initial setbacks in a war."
  
  
  
