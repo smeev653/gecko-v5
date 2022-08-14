@@ -160,7 +160,7 @@
  gecko.28.d:0 "Increase Mercenary Quality"
  gecko.28.e:0 "Do Nothing."
  gecko.38.t:0 "You are over the Mercenary Forcelimit"
- gecko.38.d:0 "You are paying +§R100%§! Mercenary Maintenance. Delete Mercenary Regiments until you are under the Mercenary Forcelimit to remove this modifier. You can view the Mercenary Forcelimit in Decisions: 1. Show Mercenary Forcelimit."
+ gecko.38.d:0 "You are paying +§R150%§! Mercenary Maintenance. Delete Mercenary Regiments until you are under the Mercenary Forcelimit to remove this modifier. You can view the Mercenary Forcelimit in Decisions: 1. Show Mercenary Forcelimit."
  gecko.38.a:0 "Ok."
  gecko.39.title:0 "Hire Mercenaries"
  gecko.39.desc:0 "Scroll down for more."
