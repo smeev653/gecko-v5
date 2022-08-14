@@ -15,10 +15,10 @@
 #}
 
 # Polish vassal
-march = {
-	first = POL
-	second = MOL
-	start_date = 1447.12.12
+vassal = {
+	first = LIT
+	second = KIE
+	start_date = 1444.1.1
 	end_date = 1497.12.31
 }
 
