@@ -255,56 +255,130 @@ gc_hungary_branch_3 = {
 	}
 	has_country_shield = yes
 
-    gc_hungary_mission_1 = {
-        icon = carolingian_empire
-        required_missions = {  }
+    hun_kremnica = {
+		icon = dominant_economy
+		required_missions = { }
 		position = 1
-        provinces_to_highlight = {
-
-        }
-        trigger = {
-              is_year = 1445
-        }
-        effect = {
-            add_stability = 1
-			add_prestige = 20
-			moravia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+		
+		trigger = {
+			154 = {
+				development = 15
 			}
-			opole_area = {
-                add_permanent_claim = ROOT
-            }
-            breg_area = {
-                add_permanent_claim = ROOT
-            }
-            silesia_area = {
-                add_permanent_claim = ROOT
-            }
-        }
-    }
+		}
+		
+		provinces_to_highlight = {
+			province_id = 154
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "hun_golden_kremnica"
+				duration = 9125
+			}
+		}
+	}
+	
+	hun_royal_towns = {
+		icon = mission_eastern_european_city
+		required_missions = { hun_kremnica }
+		position = 2
+	
+		trigger = {
+			owns = 1772
+			1772 = {
+				owned_by = ROOT 
+				development = 15
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			owns = 4795
+			4795 = {
+				owned_by = ROOT 
+				development = 15
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			owns = 4794
+			4794 = {
+				owned_by = ROOT 
+				development = 15
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			owns = 4128
+			4128 = {
+				owned_by = ROOT 
+				development = 15
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+	}
 
-    gc_hungary_mission_2 = {
-        icon = mission_high_income
-        required_missions = { gc_hungary_mission_1 }
-		position = 1
-        provinces_to_highlight = {
-            
-        }
-        trigger = {
-           monthly_income = 24
-        }
-        effect = {
-            add_years_of_income = 0.5
-        }
-    }
+	
+	provinces_to_highlight = {
+		OR = {
+		province_id = 4128
+		province_id = 4795
+		province_id = 4794
+		province_id = 1772
+		}
+	}
+	
+	effect = {
+			4128 = {
+				add_province_modifier = {
+					name = "hun_royal_town"
+					duration = -1
+				}
+			}
+			4794 = {
+				add_province_modifier = {
+					name = "hun_royal_town"
+					duration = -1
+				}
+			}
+			4795 = {
+				add_province_modifier = {
+					name = "hun_royal_town"
+					duration = -1
+				}
+			}
+			1772 = {
+				add_province_modifier = {
+					name = "hun_royal_town"
+					duration = -1
+				}
+			}
+		}
+	}
 
     gc_hungary_mission_3 = {
         icon = mission_recruit_streltsy
-        required_missions = { gc_hungary_mission_2 }
+        required_missions = { hun_royal_towns }
 		position = 1
         provinces_to_highlight = {
             

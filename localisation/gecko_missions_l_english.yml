@@ -299,7 +299,10 @@ gc_hungary_mission_1_desc:0 ""
 
 gc_hungary_mission_2_title:0 "Stabilize The Economy"
 gc_hungary_mission_2_desc:0 ""
-
+hun_kremnica_title:0 "Expand the Mint"
+ hun_kremnica_desc:0 "Kremnica Mint was established in 1328 when Kremnica was promoted to a free royal town by the Hungarian King Charles Robert of Anjou; the mint issued several kinds of coins early on, of which the most successful was its ducat. Kremnica ducats are well-known because of their good quality and are considered the hardest currency in Central Europe. We must ensure that the reputation of our mint is preserved by further developing it."
+ hun_royal_towns_title:0 "Develop Free Royal Towns"
+ hun_royal_towns_desc:0 "Many cities of Hungary were given the privileges of Free Royal Towns in order to curtail the power of nobility. Investing in their growth would ensure that the balance of power in Hungary will be preserved."
 gc_hungary_mission_3_title:0 "Reform The Army"
 gc_hungary_mission_3_desc:0 ""
 
