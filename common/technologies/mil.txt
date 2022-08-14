@@ -152,8 +152,8 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	infantry_shock		= 	0.15
-	infantry_fire 		= 	0.10
+	infantry_shock		= 	0.2
+	infantry_fire 		= 	0.20
 	cavalry_shock		=	0.25
 	
 	barracks = yes

@@ -1,6 +1,6 @@
 ﻿l_english:
  LOADING_TIP_0:0 "Don't feed the Dog."
- LOADING_TIP_1:0 "Forming the Roman Empire will not get you laid."
+ #LOADING_TIP_1:0 "Forming the Roman Empire will not get you laid."
  LOADING_TIP_2:0 "Yenik broke the mod again"
  LOADING_TIP_3:0 "House Gecko sends their regards"
  LOADING_TIP_4:0 "Funni Funni?"
@@ -11,7 +11,7 @@
  LOADING_TIP_9:0 "Do not play the country Smeev just played, 100% it is getting nerfed."
  LOADING_TIP_10:0 "We do not get paid by the Turkish government \nHowever we accept payment in Nitros"
  LOADING_TIP_11:0 "Holy BatChest"
- LOADING_TIP_12:0 "Allahbor occupied Aba's house. \nYes he is OG"
+ LOADING_TIP_12:0 "Allahbor is OG"
  LOADING_TIP_13:0 "Not biased but based"
  LOADING_TIP_14:0 "Ham Thread"
  LOADING_TIP_15:0 "I made gecko mod entirely \n-Dum Idiet"
