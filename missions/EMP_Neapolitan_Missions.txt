@@ -309,7 +309,7 @@ emp_naples_3 = {
 				name = "norman_legacy"
 				duration = -1
 			}
-			
+			remove_country_modifier = norman_resurgence
 			corsica_sardinia_area = {
 				limit = {
 					NOT = { is_core = ROOT }

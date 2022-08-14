@@ -1465,7 +1465,7 @@ SIC_ideas = {
 		production_efficiency = 0.10
 	}
 	sic_greater_sicily = {
-		cavalry_power = 0.05
+		cavalry_power = 0.025
 		infantry_power = 0.1
 	}
 	sic_noble_admirals = {

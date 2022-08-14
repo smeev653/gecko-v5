@@ -53,7 +53,7 @@ succesful_bid_for_imperial_crown = {
 
 norman_resurgence = {
 	#ae_impact = -0.3
-	province_warscore_cost = -0.1
+	province_warscore_cost = -0.5
 	land_morale = 0.1
 }
 
@@ -443,7 +443,7 @@ nap_liberty_desire = {
 
 norman_legacy = {
 	cavalry_cost = -0.10
-	cavalry_power = 0.05
+	cavalry_power = 0.1
 }
 
 royal_hungary = {
