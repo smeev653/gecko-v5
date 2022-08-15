@@ -822,6 +822,7 @@ my_desert = {
 gc_cagliari_copper = {
 	potential = {
 		normal_or_historical_nations = yes
+		always = no
 	}
 	trigger = {
 		controlled_by = ROOT
@@ -853,6 +854,7 @@ gc_cagliari_copper = {
 gc_catanzaro_silk = {
 	potential = {
 		normal_or_historical_nations = yes
+		always = no
 	}
 	trigger = {
 		owner = {

@@ -1403,6 +1403,18 @@ naples_missions_4 = {
 		required_missions = { nap_military_campaign }
 		position = 2
 		trigger = {
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			lazio_area = {
 				type = all
 				owner = {
@@ -1417,6 +1429,7 @@ naples_missions_4 = {
 					}
 				}
 			}
+			
 		}
 		effect = {
 			add_stability_or_adm_power = yes
