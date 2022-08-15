@@ -1,0 +1,5 @@
+complete_conquest_of_rome_missions = {
+	hidden_effect = {
+		complete_mission = tts_conquest_of_rome
+	}
+}
