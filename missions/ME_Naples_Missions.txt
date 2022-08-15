@@ -317,7 +317,7 @@ naples_missions_1 = {
 			}
 			#Tunis exist
 			#A maghrebi faction has taken the place of Tunis
-			else_if = {
+			if = {
 				limit = {
 					NOT = { exists = TUN }
 				}
