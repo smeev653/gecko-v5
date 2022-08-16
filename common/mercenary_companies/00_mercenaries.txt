@@ -749,7 +749,7 @@ merc_nile_mamluks = {
 			}
 			OR = {
 						mission_completed = repulse_gank
-						mission_completed = mam_turks_defeated
+						mission_completed = mamluks_break_the_ottomans
 				}
 		}	
 	}

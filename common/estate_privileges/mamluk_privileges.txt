@@ -124,7 +124,7 @@ estate_mamluks_promote_leadership = {
 	influence = 0.1
 	can_select = {
 		tag = EGY
-		mission_completed = gecko_mam_mission_8
+		mission_completed = mamluks_the_abyssinian_thorn
 	}
 	on_granted = {
 		add_country_modifier = { 

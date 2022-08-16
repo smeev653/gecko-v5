@@ -169,7 +169,7 @@ gc_merc_sekban = {
 		OR = {
 			capital_scope = { region = anatolia_region }
 			mission_completed = repulse_gank
-			mission_completed = mam_turks_defeated
+			mission_completed = mamluks_break_the_ottomans
 		}
 		NOT = {has_country_modifier = merc_spawn_timer }
 			 NOT = {

@@ -11,10 +11,9 @@ arl_slave_cavalry_modifier = {
     manpower_recovery_speed = 0.15
 }
 arl_advanced_cavalry_tactics_modifier = {
-	cavalry_shock = 0.3
-	cavalry_fire = 0.3
-	cavalry_cost = -0.15
-	cav_to_inf_ratio = 0.25
+	cavalry_shock = 0.25
+	cavalry_fire = 0.15
+	cavalry_cost = -0.10
 }
 arl_the_caspian_lion_modifier = {
 	province_trade_power_value = 15

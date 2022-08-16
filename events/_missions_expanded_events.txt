@@ -47,22 +47,6 @@ country_event = {
 	}
 
 	option = {
-		name = missions_expanded_events.2.e
-
-		ai_chance = { factor = 100 }
-		trigger = {
-			OR = {
-				national_focus = ADM
-				national_focus = DIP
-				national_focus = MIL
-			}
-		}
-
-		custom_tooltip = ME_we_will_change_to_none_focus
-		hidden_effect = { change_national_focus = none }
-	}
-
-	option = {
 		name = missions_expanded_events.2.f
 
 		ai_chance = { factor = 100 }

@@ -16,10 +16,6 @@ yem_missions_1 = {
 			#marriage_with = MDA
 			#marriage_with = SHM
 			marriage_with = NAJ
-			custom_trigger_tooltip = {
-				tooltip = yem_has_had_yemeni_crisis_event
-				has_country_flag = yem_has_had_yemeni_crisis_event_flag
-			}
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 		}
 		effect = {
@@ -376,7 +372,7 @@ yem_missions_3 = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			army_size_percentage = 0.9
+			army_size_percentage = 0.5
 			has_regency = no
 			custom_trigger_tooltip = {
 				tooltip = yem_has_had_yemeni_crisis_event
