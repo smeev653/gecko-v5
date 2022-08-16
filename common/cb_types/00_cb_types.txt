@@ -1001,7 +1001,13 @@ cb_horde_vs_civ = {
 		FROM = {
 			is_nomad = no
 		}
-		is_nomad = yes
+		###X###
+		#is_nomad = yes
+		OR = {
+			is_nomad = yes
+			is_emperor_of_china = yes
+		}
+		#######
 		is_revolutionary = no
 		FROM = {
 			ai = yes
@@ -1016,7 +1022,13 @@ cb_tribal_feud = {
 	valid_for_subject = no
 
 	prerequisites = {
-		is_nomad = yes
+		###X###
+		#is_nomad = yes
+		OR = {
+			is_nomad = yes
+			is_emperor_of_china = yes
+		}
+		#######
 		FROM = {
 			is_nomad = yes
 		}

@@ -1,13 +1,18 @@
 government = tribal
-add_government_reform = steppe_horde
+###X###
+#add_government_reform = steppe_horde
+#######
 technology_group = nomad_group
 religion = sunni
 primary_culture = crimean
 capital = 284	# Crimea
 religious_school = maliki_school
 national_focus = MIL
-
-
+###X###
+add_government_reform = X_CRI_crimean_khanate_reform
+set_government_rank = 2
+set_emperor_of_china = CRI
+#######
 
 1441.1.1 = {
 	monarch = {

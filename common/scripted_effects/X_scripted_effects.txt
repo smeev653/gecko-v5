@@ -22,3 +22,42 @@ X_center_of_trade_effect = {
 		owner = { add_treasury = 1000 }
 	}
 }
+
+X_CRI_reforms_pmod_ownership_change_effect = {
+	if = {
+		limit = {
+			has_terrain = steppe
+			owner = { is_emperor_of_china = yes }
+			has_global_flag = X_CRI_reform_3_gflag
+		}
+		if = {
+			limit = {
+				NOT = { has_province_modifier = X_CRI_reform_3_pmod }
+			}
+			add_province_modifier = {
+				name = X_CRI_reform_3_pmod
+				duration = -1
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { religion_group = owner }
+			owner = { is_emperor_of_china = yes }
+			has_global_flag = X_CRI_reform_6_gflag
+		}
+		if = {
+			limit = {
+				NOT = { has_province_modifier = X_CRI_reform_6_pmod }
+			}
+			add_province_modifier = {
+				name = X_CRI_reform_6_pmod
+				duration = -1
+			}
+		}
+	}
+	else = {
+		remove_province_modifier = X_CRI_reform_3_pmod
+		remove_province_modifier = X_CRI_reform_6_pmod
+	}
+}

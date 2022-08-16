@@ -9,8 +9,13 @@ estate_nomadic_tribes = {
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = pirate_republic_reform }
-		is_nomad = yes
-		
+		###X###
+		#is_nomad = yes
+		OR = {
+			is_nomad = yes
+			is_emperor_of_china = yes
+		}
+		#######
 			
 			#tag = ARB
 			

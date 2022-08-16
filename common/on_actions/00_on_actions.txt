@@ -1399,121 +1399,30 @@ on_annexed = {
 # When the chinese empire gets dismantled (e.g. when the emperor is annexed)
 # FROM = Emperor, ROOT = Current Nation
 on_chinese_empire_dismantled = {
-	clear_global_event_target = EmperorOfChina
-	events = {
-	}
+	###X###
+	#clear_global_event_target = EmperorOfChina
+	#events = {
+	#}
+	dismantle_empire_of_china = yes
+	#######
 }
 
 # When a nation gains the Mandate of Heaven (becomes the Emperor of China)
 # FROM = Old Emperor, ROOT = New Emperor
 on_mandate_of_heaven_gained = {
-	save_global_event_target_as = EmperorOfChina
-	if = {
-		limit = {
-			technology_group = nomad_group
-		}
-		change_technology_group = chinese
-		change_unit_type = chinese
-	}
-	if = {
-		limit = {
-			OR = {
-				NOT = { government = monarchy }
-				government = tribal
-			}
-		}
-		change_government_to_monarchy = yes
-	}
-	add_government_reform = celestial_empire
-	set_mandate = 60
-	set_meritocracy = 60
-	add_country_modifier = {
-		name = new_mandate_holder
-		duration = 9125
-	}
-	1816 = {
-		if = {
-			limit = {
-				NOT = { owned_by = root }
-				NOT = { is_core = root }
-			}
-			add_core = root
-		}
-	}
-	1821 = {
-		if = {
-			limit = {
-				NOT = { owned_by = root }
-				NOT = { is_core = root }
-			}
-			add_core = root
-		}
-	}
-	667 = {
-		if = {
-			limit = {
-				NOT = { owned_by = root }
-				NOT = { is_core = root }
-			}
-			add_core = root
-		}
-	}
-	china_superregion = {
-		limit = {
-			NOT = { is_core = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
-	if = {
-		limit = {
-			has_dlc = "Mandate of Heaven"
-		}
-		remove_faction = temples
-		remove_faction = enuchs
-		remove_faction = bureaucrats
-	}
-	if = {
-		limit = {
-			has_country_modifier = lost_mandate_of_heaven
-		}
-		remove_country_modifier = lost_mandate_of_heaven
-	}
-	country_event = { #Reforming the Bureaucracy
-		id = china_events.31
-		days = 365
-	}
-	country_event = {
-		id = china_events.32 #Records of the last Empire
-		days = 183
-	}
-	country_event = {
-		id = celestial_empire_events.2
-		days = 1825
-	}
+	###X###
+	#Removed all actions, replaced with below
+	set_mandate = 50
+	set_meritocracy = 100
+	#######
 }
 
 # When a nation loses the Mandate of Heaven
 # FROM = New Emperor, ROOT = Old Emperor
 on_mandate_of_heaven_lost = {
-	remove_government_reform = celestial_empire
-	set_government_rank = 2
-	add_country_modifier = {
-		name = lost_mandate_of_heaven
-		duration = 7300	# 20 years
-	}
-	add_stability = -2
-	china_superregion = {
-		limit = {
-			is_permanent_claim = ROOT
-		}
-		remove_claim = ROOT
-	}
-	if = {
-		limit = {
-			has_country_modifier = new_mandate_holder
-		}
-		remove_country_modifier = new_mandate_holder
-	}
+	###X###
+	#Removed all actions
+	#######
 }
 
 on_embrace_revolution = {
@@ -2215,17 +2124,9 @@ on_bi_yearly_pulse_5 = {
 		100 = flavor_jap.55
 
 
-
-		# China
-		75 = meritocracy_events.1
-		75 = meritocracy_events.2
-		75 = meritocracy_events.3
-		75 = meritocracy_events.4
-		75 = meritocracy_events.5
-		50 = china_events.11
-		25 = china_events.12
-		25 = china_events.24
-
+		###X###
+		#Removed all events
+		#######
 		2000 = 0
 	}
 }
@@ -2436,25 +2337,9 @@ on_thri_yearly_pulse_3 = {
 }
 
 on_thri_yearly_pulse_4 = {
-	random_events = {
-		#Low Mandate Events
-		0 = china_events.45
-		0 = china_events.46
-		0 = china_events.47
-		0 = china_events.48
-		0 = china_events.49
-		0 = china_events.50
-		0 = china_events.51
-		0 = china_events.52
-		0 = china_events.53
-		0 = china_events.54
-		0 = china_events.55 #(triggers via neighbors)
-		0 = china_events.56
-		0 = china_events.57
-		0 = china_events.58
-		0 = china_events.59
-		0 = china_events.60
-	}
+	###X###
+	#Removed all events
+	#######
 }
 
 on_four_year_pulse = {
@@ -3875,6 +3760,9 @@ on_province_owner_change = {
 			}
 	}
 	#gecko_mercs = yes
+	###X###
+	X_CRI_reforms_pmod_ownership_change_effect = yes
+	#######
 }
 
 # country

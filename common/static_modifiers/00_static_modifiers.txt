@@ -630,18 +630,24 @@ negative_stability = {
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
-	global_unrest = -2.5
+	###X###
+	global_unrest = -3
 	stability_cost_modifier = -0.1
-	war_exhaustion = -0.03
+	war_exhaustion = -0.1
+	all_estate_loyalty_equilibrium = 0.1
+	meritocracy = 0.5
+	#######
 }
 
 negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mandate
-	global_trade_goods_size_modifier = -0.5
-	fire_damage_received = 0.5
-	shock_damage_received = 0.5
+	###X###
+	global_trade_goods_size_modifier = -0.25
+	fire_damage_received = 0.25
+	shock_damage_received = 0.25
 	global_unrest = 5
-	mercenary_manpower = -0.5
-	global_manpower_modifier = -0.5
+	global_manpower_modifier = -0.25
+	meritocracy = -0.5
+	#######
 }
 
 lost_mandate_of_heaven = {
@@ -954,8 +960,16 @@ devotion = {
 
 # Multiplied by current meritocracy - 50
 meritocracy = {
-	global_spy_defence = 1.0
-	advisor_cost = -0.5
+	###X###
+	discipline = 0.1
+	imperial_mandate = 0.1
+	advisor_cost = -0.2
+	global_unrest = -6
+	nomadic_tribes_loyalty_modifier = 0.2
+	tolerance_heathen = 4
+	tolerance_heretic = 2
+	tolerance_own = 2
+	#######
 }
 
 # Multiplied by 50 - meritocracy

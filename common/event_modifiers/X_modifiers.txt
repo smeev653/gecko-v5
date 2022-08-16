@@ -121,3 +121,15 @@ X_VEN_venetian_marines_cmod = {
 	discipline = 0.05
 	is_marine_modifier = yes
 }
+
+########################################
+# Modifiers for Crimea
+########################################
+
+X_CRI_reform_3_pmod = {
+	local_development_cost = -0.1
+}
+
+X_CRI_reform_6_pmod = {
+	local_manpower_modifier = 0.33
+}

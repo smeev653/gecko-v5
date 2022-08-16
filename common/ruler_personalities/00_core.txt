@@ -3504,8 +3504,11 @@ humane_personality = {
 	}
 
 	allow = {
-		has_dlc = "Mandate of Heaven"
-		has_reform = celestial_empire
+		###X###
+		#has_dlc = "Mandate of Heaven"
+		#has_reform = celestial_empire
+		is_emperor_of_china = yes
+		#######
 	}
 
 	chance = {
@@ -3519,6 +3522,12 @@ humane_personality = {
 			factor = 0.5
 			meritocracy = 90
 		}
+		###X###
+		modifier = {
+			factor = 0.75
+			has_global_flag = X_CRI_reform_2_gflag
+		}
+		#######
 	}
 
 	fair_fights = yes
@@ -3610,8 +3619,11 @@ petty_personality = {
 	}
 
 	allow = {
-		has_dlc = "Mandate of Heaven"
-		has_reform = celestial_empire
+		###X###
+		#has_dlc = "Mandate of Heaven"
+		#has_reform = celestial_empire
+		is_emperor_of_china = yes
+		#######
 	}
 
 	chance = {

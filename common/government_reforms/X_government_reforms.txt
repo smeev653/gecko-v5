@@ -1,0 +1,29 @@
+X_CRI_crimean_khanate_reform = {
+	icon = "horde_riding"
+	
+	potential = { is_emperor_of_china = yes }
+	
+	allow_normal_conversion = no
+	maintain_dynasty = yes
+	queen = no
+	allow_force_tributary = no
+	lock_level_when_selected = yes
+	start_territory_to_estates = 0.5
+	has_meritocracy = yes
+	
+	modifiers = {
+		meritocracy = 0.25
+		movement_speed = 0.1
+		loot_amount = 0.25
+		years_of_nationalism = -5
+		governing_capacity = 100
+		land_forcelimit_modifier = 0.2
+		nomadic_tribes_loyalty_modifier = 0.1
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+		enables_horde_idea_group = yes
+		has_tributaries = yes
+	}
+}

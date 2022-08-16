@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_great_projects_name_bg_overlay"
+		texturefile = "gfx//interface//great_projects//great_projects_name_bg_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_great_projects_image_frame"
+		texturefile = "gfx//interface//great_projects//great_projects_image_frame.dds"
+		allwaystransparent = yes
+	}
+#Crimea
+	spriteType = {
+		name = "GFX_great_project_X_CRI_hansaray"
+		texturefile = "gfx//interface//X_great_projects//great_project_X_CRI_hansaray.dds"
+	}
+}

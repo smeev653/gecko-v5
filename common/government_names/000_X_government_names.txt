@@ -1,0 +1,17 @@
+X_CRI_crimean_khanate_government = {
+	rank = {
+		1 = X_CRI_crimean_khanate
+		2 = X_CRI_crimean_khanate
+		3 = X_CRI_crimean_khanate
+	}
+
+	ruler_male = {
+		1 = X_CRI_great_khan
+		2 = X_CRI_great_khan
+		3 = X_CRI_great_khan
+	}
+
+	trigger = {
+		has_reform = X_CRI_crimean_khanate_reform
+	}
+}

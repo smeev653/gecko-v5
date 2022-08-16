@@ -578,6 +578,11 @@ tribe_becomes_monarchy_reform = {
 		NOT = { 
 			has_reform = stateless_society
 		}
+		###X###
+		NOT = {
+			has_reform = X_CRI_crimean_khanate_reform
+		}
+		#######
 	}		  
 	effect = {
 		set_country_flag = populists_in_government
@@ -628,6 +633,11 @@ tribe_becomes_republic_reform = {
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
 	}
+	###X###
+	potential = {
+		NOT = { has_reform = X_CRI_crimean_khanate_reform }
+	}
+	#######
 	effect = {
 		set_country_flag = populists_in_government
 		lose_reforms = 4
@@ -699,6 +709,11 @@ tribe_becomes_theocracy_reform = {
 		NOT = { 
 			has_reform = stateless_society
 		}
+		###X###
+		NOT = {
+			has_reform = X_CRI_crimean_khanate_reform
+		}
+		#######
 	}		  
 	trigger = {
 		NOT = { is_lesser_in_union = yes }

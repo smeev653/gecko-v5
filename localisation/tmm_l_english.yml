@@ -1551,45 +1551,45 @@
  DIPLO_LOAN_TOTAL_INTEREST_TOO_MUCH:0 "Total interest of $INTEREST|Y$¤ exceeds $PERCENT|Y%$ of the loan amount: "
  CONVERT_TRIBUTARY_TO_VASSAL_DIPLO_ACTION:0 "Convert Tributary To Vassal"
  WE_CONVERT_TRIBUTARY_TO_VASSAL_TITLE:0 "Convert Tributary To Vassal"
- WE_CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When we use Mandate to make a country into a Vassal."
+ WE_CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When we use Legacy to make a country into a Vassal." #X
  WE_CONVERT_TRIBUTARY_TO_VASSAL_HEADER:0 "$MESSENGER$"
  WE_CONVERT_TRIBUTARY_TO_VASSAL_1:0 "Tributary Converted To Vassal"
  WE_CONVERT_TRIBUTARY_TO_VASSAL_2:0 "$MONARCHTITLE$, we have converted $RECIPIENT$ into a Vassal"
- WE_CONVERT_TRIBUTARY_TO_VASSAL_3:0 "in exchange for $MANDATE|Y$ Mandate."
+ WE_CONVERT_TRIBUTARY_TO_VASSAL_3:0 "in exchange for $MANDATE|Y$ Legacy." #X
  WE_CONVERT_TRIBUTARY_TO_VASSAL_4:0 "Our minions grow in number!"
- WE_CONVERT_TRIBUTARY_TO_VASSAL_LOG:0 "We have converted $RECIPIENT$ into a Vassal using our Mandate."
+ WE_CONVERT_TRIBUTARY_TO_VASSAL_LOG:0 "We have converted $RECIPIENT$ into a Vassal using our Legacy." #X
  WE_CONVERT_TRIBUTARY_TO_VASSAL_BTN1:0 "OK"
  WE_CONVERT_TRIBUTARY_TO_VASSAL_BTN2:0 "OK"
  WE_CONVERT_TRIBUTARY_TO_VASSAL_BTN3:0 "Go to"
  CONVERT_TRIBUTARY_TO_VASSAL_TITLE:0 "Convert Tributary To Vassal"
- CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When a country uses Mandate to make us into a Vassal."
+ CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When a country uses Legacy to make us into a Vassal." #X
  CONVERT_TRIBUTARY_TO_VASSAL_HEADER:0 "Herald from"
  CONVERT_TRIBUTARY_TO_VASSAL_1:0 "$ACTOR$"
  CONVERT_TRIBUTARY_TO_VASSAL_2:0 "$MONARCHTITLE$, the Country of $ACTOR$ has"
  CONVERT_TRIBUTARY_TO_VASSAL_3:0 "converted us into their Vassals"
- CONVERT_TRIBUTARY_TO_VASSAL_4:0 "in exchange for Mandate."
+ CONVERT_TRIBUTARY_TO_VASSAL_4:0 "in exchange for Legacy." #X
  CONVERT_TRIBUTARY_TO_VASSAL_5:0 "We are happy to help our allies!"
  CONVERT_TRIBUTARY_TO_VASSAL_LOG:0 "$ACTOR$ have converted us into their Vassals."
  CONVERT_TRIBUTARY_TO_VASSAL_BTN1:0 "OK"
  CONVERT_TRIBUTARY_TO_VASSAL_BTN2:0 "OK"
  CONVERT_TRIBUTARY_TO_VASSAL_BTN3:0 "Go to"
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_TITLE:0 "Convert Tributary To Vassal"
- OTHER_CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When a country uses Mandate to make another country into a Vassal."
+ OTHER_CONVERT_TRIBUTARY_TO_VASSAL_SETUP:0 "When a country uses Legacy to make another country into a Vassal." #X
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_HEADER:0 "Herald from"
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_1:0 "$ACTOR$"
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_2:0 "$MONARCHTITLE$, the Country of $ACTOR$ has"
- OTHER_CONVERT_TRIBUTARY_TO_VASSAL_3:0 "converted $RECIPIENT$ int their Vassal using their Mandate."
+ OTHER_CONVERT_TRIBUTARY_TO_VASSAL_3:0 "converted $RECIPIENT$ into their Vassal using their Legacy." #X
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_6:0 "They grow worryingly stronger..."
- OTHER_CONVERT_TRIBUTARY_TO_VASSAL_LOG:0 "$ACTOR$ has converted $RECIPIENT$ into their Vassals in exchange for Mandate."
+ OTHER_CONVERT_TRIBUTARY_TO_VASSAL_LOG:0 "$ACTOR$ has converted $RECIPIENT$ into their Vassals in exchange for Legacy." #X
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_BTN1:0 "OK"
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_BTN2:0 "OK"
  OTHER_CONVERT_TRIBUTARY_TO_VASSAL_BTN3:0 "Go to"
- CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_EMPEROR:0 "You are not the Celestial Emperor."
- CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_GOT_REFORM:0 "The Celestial Emperor cannot Vassalise its Tributaries until the correct decision has been made."
- CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_ENOUGH_MANDATE:0 "You do not have the $MANDATE$ Mandate required."
+ CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_EMPEROR:0 "You are not the Great Khan."
+ CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_GOT_REFORM:0 "The Great Khan cannot Vassalise its Tributaries until the correct decision has been made."
+ CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_ENOUGH_MANDATE:0 "You do not have the $MANDATE$ Legacy required." #X
  CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_TOO_MUCH_LIBERTY_DESIRE:0 "$COUNTRY$ have more than $LIBERTYDESIRE$ Liberty Desire."
- CONVERT_TRIBUTARY_TO_VASSAL_DESC2:0 "Spend $MANDATE|Y$ Mandate ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal."
- CONVERT_TRIBUTARY_TO_VASSAL_DESC:0 "We will spend $MANDATE|Y$ Mandate ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal."
+ CONVERT_TRIBUTARY_TO_VASSAL_DESC2:0 "Spend $MANDATE|Y$ Legacy ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal." #X
+ CONVERT_TRIBUTARY_TO_VASSAL_DESC:0 "We will spend $MANDATE|Y$ Legacy ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal." #X
  leader_death_reason_lost_at_sea:0 "[GetSheHeCap] died at sea after his transport ship sank."
  MODIFIER_FREE_LAND_LEADER_POOL:0 "Land Leader(s) without Upkeep"
  MODIFIER_FREE_NAVY_LEADER_POOL:0 "Navy Leader(s) without Upkeep"
