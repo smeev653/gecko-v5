@@ -1224,7 +1224,7 @@ PRU_missions_3 = {
 					skill = 3
 					culture = ROOT
 					religion = ROOT
-					cost_multiplier = 0.5
+					cost_multiplier = 0.75
 				}
 				add_country_modifier = {
 					name = PRU_scourge_of_the_west_defeated
@@ -2165,7 +2165,7 @@ PRU_missions_4 = {
 				skill = 3
 				culture = ROOT
 				religion = ROOT
-				cost_multiplier = 0.5
+				cost_multiplier = 0.75
 			}
 			custom_tooltip = PRU_space
 			custom_tooltip = PRU_YEARS_INCOME

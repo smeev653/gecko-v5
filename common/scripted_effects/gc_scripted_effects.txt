@@ -1582,3 +1582,497 @@ change_national_focus_effect = {
 		}
 	}
 }
+## breaks the alliance between current scope and who
+### break_alliance_with = { who = <scope> }
+break_alliance_with = {
+	if = {
+		limit = {
+			alliance_with = $who$
+		}
+		$who$ = {
+			custom_tooltip = BREAK_ALLIANCE_WITH_TT
+		}
+		hidden_effect = {
+			add_rival = $who$
+			remove_rival = $who$
+		}
+	}
+}
+#####################
+# 	USAGE
+# 	pick_best_tags = {
+#		global_trigger = "your global triggers here" OPTIONAL
+#		<example>
+#		global_trigger = "
+#		OR = {
+#			continent = europe
+#			allied_with = ROOT
+#		}"
+#		scale = your trigger type here REQUIRED
+#		<example>
+#		scale = army_size
+#		<number of tags here> = yes (supported numbers: 1-3) REQUIRED
+#		event_target_name = "your name for event target here> REQUIRED
+#		scope = "your scope here> OPTIONAL
+#		<example>
+#		scope = "every_neighbor_country"
+#		default is every_country
+#	}
+#####################
+
+pick_best_tags = {
+	[[scope]
+		pick_best_tags_2 = {
+			scope = $scope$
+			scale = $scale$
+			event_target_name = $event_target_name$
+			global_trigger = "$global_trigger$"
+			1 = "$1$"
+			2 = "$2$"
+			3 = "$3$"
+			4 = "$4$"
+			5 = "$5$"
+			10 = "$10$"
+		}
+		set_global_flag = PICK_BEST_TAG_FLAG
+	] #curses for not having an [ELSE ] or something.
+	if = {
+		limit = {
+			NOT = { has_global_flag = PICK_BEST_TAG_FLAG } #This check is here to prevent the algorithm from being run again after the scoped version was executed
+		}
+		pick_best_tags_2 = {
+			scope = every_country
+			scale = $scale$
+			event_target_name = $event_target_name$
+			global_trigger = "$global_trigger$"
+			1 = "$1$"
+			2 = "$2$"
+			3 = "$3$"
+			4 = "$4$"
+			5 = "$5$"
+			10 = "$10$"
+		}
+	}
+	else = { clr_global_flag = PICK_BEST_TAG_FLAG }
+}
+
+pick_best_tags_2 = {
+	hidden_effect = {
+		[[1]
+			if = {
+				limit = { always = $1$ }
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+			}
+		]
+		[[2]
+			if = {
+				limit = { always = $2$ }
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+			}
+		]
+		[[3]
+			if = {
+				limit = { always = $3$ }
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+			}
+		]
+		[[4]
+			if = {
+				limit = { always = $4$ }
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+			}
+		]
+		[[5]
+			if = {
+				limit = { always = $5$ }
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 5
+				}
+			}
+		]
+		[[10]
+			if = {
+				limit = { always = $10$ }
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 1
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 2
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 3
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 4
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 5
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 6
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 7
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 8
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 9
+				}
+				pick_best_tag = {
+					scale = "$scale$"
+					scope = $scope$
+					global_trigger = "$global_trigger$"
+					event_target_name = "$event_target_name$"
+					number = 10
+				}
+			}
+		]
+		$scope$ = {
+			limit = {
+				has_country_flag = $event_target_name$_exclude
+			}
+			clr_country_flag = $event_target_name$_exclude
+		}
+	}
+}
+
+pick_best_tag = {
+	1 = { save_event_target_as = $event_target_name$_$number$ }
+	$scope$ = {
+		limit = {
+			[[global_trigger] $global_trigger$ ]
+			$scale$ = event_target:$event_target_name$_$number$
+			NOT = { has_country_flag = $event_target_name$_exclude }
+		}
+		save_event_target_as = $event_target_name$_$number$
+	}
+	event_target:$event_target_name$_$number$ = {
+		set_country_flag = $event_target_name$_exclude
+	}
+}
+
+#####################
+# 	USAGE
+# 	pick_best_provinces = {
+#		global_trigger = "your global triggers here" OPTIONAL
+#		<example>
+#		global_trigger = "
+#		OR = {
+#			continent = europe
+#			allied_with = ROOT
+#		}"
+#		scale = your trigger type here REQUIRED
+#		<example> scale = army_size
+#		<number of provinces here> = yes (supported numbers: 1-3) REQUIRED
+#		event_target_name = "your name for event target here> REQUIRED
+#		scope = <Your scope here> (default: every_province)
+#	}
+#####################
+
+# province scope
+## add manufactory in scope
+### build_possible_manufactory_in_province = yes
+build_possible_manufactory_in_province = {
+	custom_tooltip = BUILD_MATCHING_MANUFACTORY_IN_THIS_PROVINCE
+	hidden_effect = {
+		if = {
+			limit = {
+				has_no_manufactory_trigger = yes
+			}
+			if = {
+				limit = {
+					OR = {
+						trade_goods = naval_supplies
+						trade_goods = fish
+						trade_goods = salt
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { dip_tech = 11 }
+					}
+					add_building = wharf
+				}
+				else = {
+					ROOT = { add_dip_power = 20 }
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { mil_tech = 11 }
+					}
+					add_building = weapons
+				}
+				else = {
+					ROOT = { add_mil_power = 20 }
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trade_goods = wool
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { adm_tech = 11 }
+					}
+					add_building = textile
+				}
+				else = {
+					ROOT = { add_adm_power = 20 }
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = sugar
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = cocoa
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { adm_tech = 14 }
+					}
+					add_building = plantations
+				}
+				else = {
+					ROOT = { add_adm_power = 20 }
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trade_goods = ivory
+						trade_goods = slaves
+						trade_goods = spices
+						trade_goods = fur
+						trade_goods = incense
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { dip_tech = 14 }
+					}
+					add_building = tradecompany
+				}
+				else = {
+					ROOT = { add_dip_power = 20 }
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { adm_tech = 6 }
+					}
+					add_building = farm_estate
+				}
+				else = {
+					ROOT = { add_adm_power = 20 }
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trade_goods = paper
+						trade_goods = gems
+						trade_goods = tropical_wood
+						trade_goods = glass
+						trade_goods = chinaware
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { adm_tech = 16 }
+					}
+					add_building = mills
+				}
+				else = {
+					ROOT = { add_adm_power = 20 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+					trade_goods = coal
+				}
+				if = {
+					limit = {
+						ROOT = { adm_tech = 21 }
+					}
+					add_building = furnace
+				}
+				else = {
+					ROOT = { add_adm_power = 20 }
+				}
+			}
+			else = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		else = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}

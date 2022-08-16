@@ -1,0 +1,808 @@
+namespace = ME_Rhenish_Events
+
+country_event = {
+	id = ME_Rhenish_Events.1
+	title = ME_Rhenish_Events.1.t
+	desc = ME_Rhenish_Events.1.d
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ME_Rhenish_Events.1.a" #Advisor
+
+		ai_chance = { factor = 33 }
+
+		trigger = {
+			NOT = { tag = PAL } #Gets Conrad Celtis from missions
+		}
+
+		define_advisor = {
+			type = artist
+			skill = 1
+			culture = ROOT
+			religion = ROOT
+			cost_multiplier = 0.35
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.1.b" #Great Arts
+
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = RHN_great_arts
+			duration = 10950
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.1.c"
+
+		trigger = {
+			capital_scope = {
+				NOT = { has_building = town_hall }
+			}
+		}
+
+		ai_chance = { factor = 33 }
+
+		capital_scope = {
+			if = {
+				limit = {
+					has_building = courthouse
+				}
+				remove_building = courthouse
+			}
+			add_building = town_hall
+		}
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.2
+	title = ME_Rhenish_Events.2.t
+	desc = ME_Rhenish_Events.2.d
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ME_Rhenish_Events.2.a" #Spread Knowledge
+
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = RHN_generic_spread_knowledge
+			duration = 10950
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.2.b" #War Propaganda
+
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = RHN_generic_propaganda
+			duration = 10950
+		}
+	}
+	option = {
+		name = "ME_Rhenish_Events.2.c" #Akzise
+
+		ai_chance = { factor = 33 }
+
+		add_country_modifier = {
+			name = RHN_akzise
+			duration = 10950
+		}
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.3
+	title = ME_Rhenish_Events.3.t
+	desc = ME_Rhenish_Events.3.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ME_Rhenish_Events.3.a" #Promote Faith
+
+		ai_chance = { factor = 50 }
+
+		add_country_modifier = {
+			name = RHN_promote_faith
+			duration = 1825
+		}
+
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.3.b" #Promote Tolerance
+
+		ai_chance = { factor = 50 }
+
+		add_country_modifier = {
+			name = RHN_promote_tolerance
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.4 #Sell Optics outside
+	title = ME_Rhenish_Events.4.t
+	desc = ME_Rhenish_Events.4.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		pick_best_tags = {
+			scale = "navy_size"
+			3 = yes
+			global_trigger = "capital_scope = { continent = europe }"
+			event_target_name = "Rhineland_target"
+		}
+		hidden_effect = {
+			event_target:Rhineland_target_1 = {
+				export_to_variable = {
+					which = Rhineland_years_of_income
+					value = years_of_income
+				}
+			}
+			event_target:Rhineland_target_2 = {
+				export_to_variable = {
+					which = Rhineland_years_of_income
+					value = years_of_income
+				}
+			}
+			event_target:Rhineland_target_3 = {
+				export_to_variable = {
+					which = Rhineland_years_of_income
+					value = years_of_income
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.4.a" #Offer it to first fc
+
+		ai_chance = { factor = 50 }
+
+		custom_tooltip = RHN_offer_to_sell_optics_1
+		tooltip = {
+			event_target:Rhineland_target_1 = {
+				add_country_modifier = {
+					name = RHN_hessian_optics
+					duration = 9125
+				}
+			}
+		}
+
+		event_target:Rhineland_target_1 = {
+			country_event = { id = ME_Rhenish_Events.5 }
+		}
+		custom_tooltip = RHN_if_they_deny
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.4.b" #Offer it to second fc
+
+		ai_chance = { factor = 50 }
+
+		custom_tooltip = RHN_offer_to_sell_optics_2
+		tooltip = {
+			event_target:Rhineland_target_2 = {
+				add_country_modifier = {
+					name = RHN_hessian_optics
+					duration = 9125
+				}
+			}
+		}
+
+		event_target:Rhineland_target_2 = {
+			country_event = { id = ME_Rhenish_Events.5 }
+		}
+		custom_tooltip = RHN_if_they_deny
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.4.c" #Offer it to third fc
+
+		ai_chance = { factor = 50 }
+
+		custom_tooltip = RHN_offer_to_sell_optics_3
+		tooltip = {
+			event_target:Rhineland_target_3 = {
+				add_country_modifier = {
+					name = RHN_hessian_optics
+					duration = 9125
+				}
+			}
+		}
+
+		event_target:Rhineland_target_3 = {
+			country_event = { id = ME_Rhenish_Events.5 }
+		}
+		custom_tooltip = RHN_if_they_deny
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.5 #Event to buy
+	title = ME_Rhenish_Events.5.t
+	desc = ME_Rhenish_Events.5.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			export_to_variable = {
+				which = Rhineland_years_of_income
+				value = years_of_income
+			}
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.5.a" #Offer it to first fc
+
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 0
+				FROM = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_rival
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_outraged
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -150
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_hostile
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -100
+					}
+				}
+			}
+		}
+
+		custom_tooltip = RHN_pay_ducats
+		add_country_modifier = {
+			name = RHN_hessian_optics
+			duration = 9125
+		}
+		hidden_effect = {
+			while = {
+				limit = {
+					check_variable = {
+						which = Rhineland_years_of_income
+						value = 10
+					}
+				}
+				FROM = {
+					add_treasury = 10
+				}
+				ROOT = {
+					add_treasury = -10
+				}
+				change_variable = {
+					which = Rhineland_years_of_income
+					value = -10
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = Rhineland_years_of_income
+						value = 1
+					}
+				}
+				FROM = {
+					add_treasury = 1
+				}
+				ROOT = {
+					add_treasury = -1
+				}
+				change_variable = {
+					which = Rhineland_years_of_income
+					value = -1
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = Rhineland_years_of_income
+						value = 0.1
+					}
+				}
+				FROM = {
+					add_treasury = 0.1
+				}
+				ROOT = {
+					add_treasury = -0.1
+				}
+				change_variable = {
+					which = Rhineland_years_of_income
+					value = -0.1
+				}
+			}
+			set_variable = {
+				which = Rhineland_years_of_income
+				value = 0
+			}
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.5.b" #Offer it to second fc
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				FROM = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_ally
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					who = FROM
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = Rhineland_years_of_income
+				value = 0
+			}
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+	}
+	after = {
+		every_country = {
+			limit = {
+				check_variable = {
+					which = Rhineland_years_of_income
+					value = 1
+				}
+			}
+			set_variable = {
+				which = Rhineland_years_of_income
+				value = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.6 #Zinc
+	title = ME_Rhenish_Events.6.t
+	desc = ME_Rhenish_Events.6.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ME_Rhenish_Events.6.a" #Embrace the zinc
+
+		ai_chance = { factor = 1 }
+
+			81 = { change_trade_goods = copper }
+		
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.6.b" #Screw coal!
+
+		ai_chance = { factor = 0 } #AI likes zinc.
+
+		add_years_of_owned_provinces_production_income = {
+			years = 10
+			trigger = {
+				province_id = 81
+			}
+			custom_tooltip = RHN_81_income
+		}
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.7 #Leather
+	title = ME_Rhenish_Events.7.t
+	desc = ME_Rhenish_Events.7.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+			random_owned_province = {
+				limit = {
+					trade_goods = livestock
+					has_manufactory_trigger = yes
+				}
+				save_event_target_as = leather_province
+			}
+		
+	}
+	option = {
+		name = "ME_Rhenish_Events.7.a" #Leather
+
+		ai_chance = { factor = 1 }
+
+		event_target:leather_province = {
+			add_permanent_province_modifier = {
+				name = RHN_livestock
+				duration = -1
+			}
+		}
+		custom_tooltip = RHN_every_livestock
+		
+		tooltip = {
+			add_province_modifier = {
+				name = RHN_livestock_in_demand
+				duration = 10950
+			}
+		}
+		hidden_effect = {
+				europe = {
+					limit = {
+						trade_goods = livestock
+					}
+					add_province_modifier = {
+						name = RHN_livestock_in_demand
+						duration = 10950
+					}
+				}
+			}
+		
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.8 #Early Coal
+	title = ME_Rhenish_Events.8.t
+	desc = ME_Rhenish_Events.8.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ME_Rhenish_Events.8.a" #Embrace the coal
+
+		ai_chance = { factor = 1 }
+
+		82 = {
+			set_province_flag = RHN_coal_debuff
+			change_trade_goods = coal
+				add_permanent_province_modifier = {
+					name = RHN_coal_debuff #-60% trade value 10 ducats -> 4
+					desc = RHN_until_enlightenment
+					duration = -1
+				}
+			
+		}
+		1878 = {
+			set_province_flag = RHN_coal_debuff
+			change_trade_goods = coal
+				add_permanent_province_modifier = {
+					name = RHN_coal_debuff #-60% trade value 10 ducats -> 4
+					desc = RHN_until_enlightenment
+					duration = -1
+				}
+			
+		}
+		set_country_flag = RHN_cant_get_coal
+		custom_tooltip = RHN_no_trading_in_bonus
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.8.b" #Screw coal!
+
+		ai_chance = { factor = 0 } #AI likes coal.
+
+		82 = {
+			add_country_modifier = {
+				name = RHN_coal_industry_coexisting
+				duration = 36500
+			}
+		}
+		1878 = {
+			add_country_modifier = {
+				name = RHN_coal_industry_coexisting
+				duration = 36500
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.9 #Advanced Faceting
+	title = ME_Rhenish_Events.9.t
+	desc = ME_Rhenish_Events.9.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+				random_owned_province = {
+					limit = {
+						trade_goods = gold
+						development = 30
+					}
+					save_event_target_as = diamond_province
+				}
+			
+			random_province = {
+				limit = {
+					has_province_modifier = diamond_district
+				}
+				save_event_target_as = old_diamond_province
+			}
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.9.b" #Advanced Faceting
+
+		ai_chance = { factor = 1 }
+
+		add_years_of_income = 0.5
+		add_prestige_or_monarch_power = { amount = 50 }
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.10 #Flavor Event for Cleves.
+	title = ME_Rhenish_Events.10.t
+	desc = ME_Rhenish_Events.10.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		culture_group = germanic
+	}
+
+	trigger = {
+		tag = KLE
+		government = monarchy
+		exists = BRG
+		BRG = {
+			ai = yes
+			is_at_war = no
+			government = monarchy
+			is_subject = no
+			NOT = { num_of_cities = 5 }
+		}
+		is_year = 1500
+	}
+	option = {
+		name = "ME_Rhenish_Events.10.a" #
+
+		ai_chance = { factor = 1 }
+
+		inherit = BRG
+		override_country_name = BRGKLE
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.11 #Repurposing Moselle Valley
+	title = ME_Rhenish_Events.11.t
+	desc = ME_Rhenish_Events.11.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ME_Rhenish_Events.11.a" #Embrace woodworking
+
+		ai_chance = { factor = 1 }
+
+		custom_tooltip = RHN_every_forest
+		tooltip = {
+			add_province_modifier = {
+				name = RHN_supplying_the_industry
+				duration = 10950
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+					}
+				}
+				add_province_modifier = {
+					name = RHN_supplying_the_industry
+					duration = 10950
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.11.b" #Increase Agricultural Production
+
+		ai_chance = { factor = 0.1 } #AI likes coal.
+
+		1760 = {
+			build_possible_manufactory_in_province = yes
+		}
+		80 = {
+			build_possible_manufactory_in_province = yes
+		}
+	}
+}
+
+country_event = {
+	id = ME_Rhenish_Events.12 #Site for a Bronze Bell
+	title = ME_Rhenish_Events.12.t
+	desc = ME_Rhenish_Events.12.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ME_Rhenish_Events.12.a" #Embrace woodworking
+
+		ai_chance = { factor = 1 }
+
+		capital_scope = {
+			#add_great_project = RHN_grand_bell
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.12.b" #Frankfurt
+
+		ai_chance = { factor = 2 } #
+
+		trigger = {
+			1876 = {
+				owned_by = ROOT
+			}
+		}
+
+		1876 = {
+			#add_great_project = RHN_grand_bell
+		}
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.12.c" #Aachen
+
+		ai_chance = { factor = 2 } #
+
+		trigger = {
+			1878 = {
+				owned_by = ROOT
+			}
+		}
+
+
+		1878 = {
+			#add_great_project = RHN_grand_bell
+		}
+	}
+	after = {
+		set_country_flag = RHN_bell
+	}
+}
+
+province_event = {
+	id = ME_Rhenish_Events.13 #Speed up bell
+	title = ME_Rhenish_Events.13.t
+	desc = ME_Rhenish_Events.13.d
+	picture = RELIGION_eventPicture
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	hidden = yes
+
+	trigger = {
+		has_province_flag = RHN_coal_debuff
+		trade_goods = coal
+		has_institution = enlightenment
+	}
+
+	option = {
+		name = "ME_Rhenish_Events.13.a" #Ye go ahead
+
+		ai_chance = { factor = 5 }
+
+		clr_province_flag = RHN_coal_debuff
+		remove_province_modifier = RHN_coal_debuff
+		remove_province_modifier = RHN_coal_debuff_tge
+	}
+
+}
+
