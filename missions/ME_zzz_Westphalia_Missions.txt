@@ -633,7 +633,7 @@ WES_missions_3 = {
 					type = philosopher
 					culture = francien
 					religion = ROOT
-					cost_multiplier = 0.5
+					cost_multiplier = 0.75
 					skill = 1
 				}
 			}
@@ -655,7 +655,7 @@ WES_missions_3 = {
 						type = philosopher
 						culture = francien
 						religion = ROOT
-						cost_multiplier = 0.5
+						cost_multiplier = 0.75
 						skill = 1
 					}
 				}
@@ -921,7 +921,7 @@ WES_missions_4 = {
 				skill = 2
 				culture = ROOT
 				religion = ROOT
-				cost_multiplier = 0.5
+				cost_multiplier = 0.75
 			}
 			add_army_tradition_or_mil_power = { amount = 10 }
 		}

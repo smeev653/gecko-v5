@@ -552,7 +552,7 @@ gc_cri_branch_3 = {
 
         trigger = {
             tag = CRI
-            horde_unity = 80
+            legitimacy_equivalent = 80
             is_at_war = no
 			is_free_or_tributary_trigger = yes
         }
