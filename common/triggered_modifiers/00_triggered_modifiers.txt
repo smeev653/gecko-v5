@@ -9,6 +9,7 @@
 ###########################################
 east_indian_trade_route = {
 	potential = {
+		always = no
 		num_of_ports = 1
 		NOT = {
 			capital_scope = {
@@ -320,6 +321,7 @@ catholic_rome = {
 
 papal_subjugation = {
 	potential = {
+		always = no
 		normal_or_historical_nations = yes
 		has_discovered = 118	# Roma
 		religion = catholic
@@ -338,6 +340,7 @@ papal_subjugation = {
 
 rapid_collapse_of_society = {
 	potential = {
+		always = no
 		normal_or_historical_nations = yes
 		capital_scope = {
 			OR = {
@@ -373,6 +376,7 @@ rapid_collapse_of_society = {
 ######################################
 submission_to_emperor = {
 	potential = {
+		always = no
 		has_global_flag = italians_leave_hre
 		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
 		is_part_of_hre = yes
@@ -401,6 +405,7 @@ submission_to_emperor = {
 ######################################
 counter_revolution = {
 	potential = {
+		always = no
 		revolution_target_exists = yes
 		is_revolutionary = no
 		always = no
@@ -439,6 +444,7 @@ counter_revolution = {
 ######################################
 reaction = {
 	potential = {
+		always = no
 		revolution_target_exists = yes
 		is_revolutionary = no
 		always = no
@@ -525,6 +531,7 @@ excommunication = {
 ##################################################
 pentarchy_mod = {
 	potential = {
+		always = no
 		normal_or_historical_nations = yes
 		religion = orthodox
 		OR = {
@@ -574,6 +581,7 @@ the_mandate_of_heaven = {
 
 the_mandate_of_heaven_lost = {
 	potential = {
+		always = no
 		has_reform = celestial_empire
 		NOT = { has_dlc = "Mandate of Heaven" }
 	}
@@ -593,6 +601,7 @@ the_mandate_of_heaven_lost = {
 
 lost_control_of_beijing = {
 	potential = {
+		always = no
 		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
 	}
@@ -609,6 +618,7 @@ lost_control_of_beijing = {
 
 lost_control_of_nanjing = {
 	potential = {
+		always = no
 		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
 	}
@@ -625,6 +635,7 @@ lost_control_of_nanjing = {
 
 lost_control_of_canton = {
 	potential = {
+		always = no
 		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
 	}
@@ -641,6 +652,7 @@ lost_control_of_canton = {
 
 waging_war_for_china = {
 	potential = {
+		always = no
 		has_reform = celestial_empire
 		has_dlc = "Mandate of Heaven"
 	}
@@ -736,6 +748,7 @@ hre_dominant_reformed = {
 
 synthetic_remnants = {
 	potential = {
+		always = no
 		has_global_flag = synthetics_defeated
 	}
 	trigger = {
@@ -771,6 +784,7 @@ synthetic_remnants = {
 
 great_peasants_war_triggered_modifier = {
 	potential = {
+		always = no
 		has_global_flag = great_peasants_war_flag
 		capital_scope = {
 			continent = europe
@@ -786,6 +800,7 @@ great_peasants_war_triggered_modifier = {
 
 great_peasants_war_concessions_triggered_modifier = {
 	potential = {
+		always = no
 		OR = {
 			has_global_flag = gpw_peasants_win_major
 			has_global_flag = gpw_peasants_win_minor
@@ -862,6 +877,7 @@ italian_wars_triggered_modifier = {
 
 defense_of_the_empire_modifier = {
 	potential = {
+		always = no
 		has_dlc = "Emperor"
 		OR = {
 			is_emperor = yes

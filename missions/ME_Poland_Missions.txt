@@ -351,31 +351,7 @@ POL_Missions_1 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					owns = 4525
-				}
-				4525 = {
-					tooltip = {
-						add_province_modifier = {
-							name = POL_skarb_rawski
-							duration = -1
-						}
-					}
-					province_event = { id = ME_Poland_Events.19 } #Skarb Rawski
-				}
-			}
-			else = {
-				capital_scope = {
-					tooltip = {
-						add_province_modifier = {
-							name = POL_skarb_rawski
-							duration = -1
-						}
-					}
-					province_event = { id = ME_Poland_Events.19 } #Skarb Rawski
-				}
-			}
+			add_yearly_manpower = 2
 		}
 	}
 	

@@ -74,7 +74,7 @@
  #ottomans#
  mechanic_enables_janissary_estate_yes: "Janissaries Estate becomes available."
  mechanic_enables_janissary_estate_no: " " #intentionally empty
- mechanic_upgrade_janissary_weaponry_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YUpgrade Janissary Weaponry§!, which grants §G+0.10§! Infantry Fire and §G+5%§! Combat Ability to §YJanissary Regiments§!"
+ mechanic_upgrade_janissary_weaponry_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YUpgrade Janissary Weaponry§!, which grants §G+0.10§! Infantry Fire to §YJanissary Regiments§!"
  mechanic_upgrade_janissary_weaponry_privilege_interaction_no: " " #intentionally empty
  mechanic_establish_auxiliary_support_system_privilege_interaction_yes: "Enables the Janissaries Estate Privilege §YEstablish Janissary Auxiliary Corps§!, which grants §G+5.0%§! Manpower Recovery Speed and §G+10.0%§! Reinforce Speed."
  mechanic_establish_auxiliary_support_system_privilege_interaction_no: " " #intentionally empty

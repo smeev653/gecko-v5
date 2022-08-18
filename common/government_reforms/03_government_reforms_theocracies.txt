@@ -28,7 +28,7 @@ leading_clergy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.1
 	}
 }
 
