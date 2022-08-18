@@ -1056,6 +1056,8 @@ dutch_republic = {
 		expand_administration_cost = -0.25
 		governing_capacity = 100
 		max_absolutism = -30
+		artillery_fire = 0.25
+		republican_tradition = 1
 	}
 
 	removed_effect = {
