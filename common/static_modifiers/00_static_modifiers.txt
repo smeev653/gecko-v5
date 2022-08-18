@@ -1627,7 +1627,7 @@ train_horsemanship_modifier = {
 }
 
 promote_culture_in_government_modifier = {
-	all_power_cost = -0.025
+	all_power_cost = -0.05
 }
 
 seize_clerical_holdings_modifier = {

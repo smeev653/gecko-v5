@@ -12,7 +12,7 @@ X_CRI_decree_2 = {
 	duration = 3650
 	modifier = {
 		loot_amount = 0.25
-		shock_damage = 0.1
+		shock_damage = 0.05
 	}
 }
 

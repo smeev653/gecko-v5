@@ -1773,7 +1773,7 @@ country_event = { #Solidifying the Ottoman Law
 		
 		custom_tooltip = tur_unlock_absolute_sultanic_law_tt
 		set_country_flag = tur_unlock_absolute_sultanic_law_flag
-		change_government_reform_progress = 50 
+		change_government_reform_progress = 25
 	}
 }
 

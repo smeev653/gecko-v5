@@ -2147,7 +2147,7 @@ ottoman_missions_3 = {
 			}
 		}
 		effect = { 
-			change_government_reform_progress = 50 
+			change_government_reform_progress = 25
 		}
 	}
 	

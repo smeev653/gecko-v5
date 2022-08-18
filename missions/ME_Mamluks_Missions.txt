@@ -686,14 +686,28 @@ MAM_missions_2 = {
 		required_missions = { }
 		position = 5
 		provinces_to_highlight = {
-			region = caucasia_region
+			OR = {
+				area = samtskhe_area
+				area = imereti_area
+				area = kartli_kakheti_area 
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			caucasia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			OR = {
+				samtskhe_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				imereti_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				kartli_kakheti_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}	
 		}
 		effect = {
 			add_country_modifier = {
@@ -988,7 +1002,7 @@ MAM_missions_3 = {
 	
 	mamluks_the_mamluk_caliphate = {
 		icon = mission_fatimid_caliphate
-		required_missions = { mamluks_domesticate_the_mamluks mamluks_restore_baghdad }
+		required_missions = { mamluks_restore_baghdad }
 		position = 7
 		trigger = {
 			NOT = { mission_completed = mamluks_the_mamluk_question }
@@ -1438,7 +1452,11 @@ MAM_missions_5 = {
 			army_size_percentage = 1
 		}
 		effect = {
-			add_mil_power = -50
+			add_country_modifier = {
+				name = "gc_thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+			add_mil_power = 50
 			if = {
 				limit = {
 					exists = AKK
@@ -1480,7 +1498,7 @@ MAM_missions_5 = {
 		}
 		trigger = {
 			327 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				controlled_by = ROOT
 			}
 		}
 		effect = {
@@ -1489,14 +1507,6 @@ MAM_missions_5 = {
 				duration = 7300
 			}
 			add_core = 327
-			add_treasury = 1000
-			add_manpower = 30
-			change_adm = 1
-			change_dip = 1
-			change_mil = 1
-			unlock_estate_privilege = {
-				estate_privilege = estate_mamluks_recruit_turkmen
-			}
 			erzurum_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -1555,6 +1565,14 @@ MAM_missions_5 = {
 			}
 		}
 		effect = {
+			add_treasury = 1000
+			add_manpower = 30
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			unlock_estate_privilege = {
+				estate_privilege = estate_mamluks_recruit_turkmen
+			}
 			add_country_modifier = {
 				name = mamluks_secure_our_flank_modifier
 				duration = 7300

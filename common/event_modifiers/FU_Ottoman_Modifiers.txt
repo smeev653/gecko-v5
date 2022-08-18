@@ -29,22 +29,22 @@ tur_embellishment_queen_cities_modifier = {
 	church_loyalty_modifier = 0.05
 }
 tur_oriental_council_state_modifier1 = {
-	reform_progress_growth = 0.025
+	reform_progress_growth = 0.0125
 }
 tur_oriental_council_state_modifier2 = {
-	reform_progress_growth = 0.05
+	reform_progress_growth = 0.025
 }
 tur_oriental_council_state_modifier3 = {
-	reform_progress_growth = 0.75
+	reform_progress_growth = 0.5
 }
 tur_oriental_council_state_modifier4 = {
-	reform_progress_growth = 0.1
+	reform_progress_growth = 0.75
 }
 tur_oriental_council_state_modifier5 = {
-	reform_progress_growth = 0.125
+	reform_progress_growth = 0.0075
 }
 tur_oriental_council_state_modifier6 = {
-	reform_progress_growth = 0.15
+	reform_progress_growth = 0.125
 }
 tur_supremacy_in_the_bosphorus_modifier = { 
 	siege_blockade_progress = 1 
@@ -72,7 +72,7 @@ tur_master_of_berber_tribes_modifier = {
 	naval_tradition_from_battle = 0.5
 }
 tur_military_acclimatization_modifier = {
-	land_attrition = -0.2
+	land_attrition = -0.1
 }
 tur_lord_alhambra_modifier = { 
 	reduced_liberty_desire = 10 
@@ -88,7 +88,7 @@ tur_push_for_egypt_modifier = {
 	core_creation = -0.05
 }
 tur_conquest_of_egypt_modifier = {
-	global_tax_income = 36 
+	global_tax_income = 24
 }
 tur_monopoly_spice_trade_modifier = {
 	trade_efficiency = 0.1
@@ -162,19 +162,19 @@ tur_merchant_court_examinations_modifier = {
 	yearly_corruption = -0.1
 }
 tur_legendary_lawgiver_modifier = { 
-	monthly_reform_progress_modifier = 0.1
+	monthly_reform_progress_modifier = 0.05
 	global_autonomy = -0.025
 }
 tur_influx_of_foreign_goods_modifier = {
 	global_trade_goods_size_modifier = 0.10
-	build_cost = -0.1
+	build_cost = -0.05
 }
 tur_ottoman_thalassocracy_modifier = { 
 	heavy_ship_power = 0.15
 	global_ship_cost = -0.1
 }
 tur_baghdad_center_of_scholars_modifier = {
-	idea_cost = -0.05 
+	idea_cost = -0.025 
 }
 
 euphrates_estuary_modifier2 = {
@@ -318,14 +318,14 @@ tur_functional_bureaucracy_modifier = {
 }
 tur_islamic_cart_and_illustr_modifier = {
 	innovativeness_gain = 0.1
-	idea_cost = -0.1
+	idea_cost = -0.05
 }
 tur_islamic_cart_and_illustr_modifier2 = { 
 	innovativeness_gain = 0.1
-	idea_cost = -0.05
+	idea_cost = -0.025
 }
 tur_scholarly_studies_modifier = {
-	technology_cost = -0.05
+	technology_cost = -0.025
 	country_admin_power = 1 
 }
 tur_flourishing_orthodoxy_modifier = {
@@ -334,7 +334,7 @@ tur_flourishing_orthodoxy_modifier = {
 }
 tur_arch_marriage_christ_islam_modifier = { 
 	prestige_decay = -0.01 
-	build_cost = -0.1
+	build_cost = -0.05
 }
 tur_mehmed_pasha_mosque_modifier = { 
 	culture_conversion_cost = -0.15
@@ -343,7 +343,7 @@ tur_celebration_islamic_faith_modifier = {
 	tolerance_own = 1 
 }
 tur_dhimmi_adherence_to_the_millet_modifier = { 
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 tur_centralization_efforts_of_sultan_modifier = { 
 	core_creation = -0.1 
@@ -353,8 +353,8 @@ tur_faithful_to_tradition_modifier = {
 	same_culture_advisor_cost = -0.1
 }
 tur_effective_pasha_modifier = { 
-	local_tax_modifier = 0.2
-	local_development_cost = -0.1 
+	local_tax_modifier = 0.1
+	local_development_cost = -0.05 
 }
 tur_blanket_scheme_modifier = { 
 	inflation_reduction = 0.05
@@ -362,14 +362,13 @@ tur_blanket_scheme_modifier = {
 }
 tur_acemi_oglan_modifier = { 
 	janissary_loyalty_modifier = 0.1
-	special_unit_forcelimit = 0.1
 }
 tur_excellent_janissary_recruits_modifier = {
-	land_morale = 0.05
+	land_morale = 0.025
 	is_janissary_modifier = yes 
 }
 tur_excellent_janissary_recruits2_modifier = {
-	land_morale = 0.05
+	land_morale = 0.025
 }
 tur_bektashi_janissaries_modifier = { 
 	monthly_piety = 0.0025
@@ -392,7 +391,7 @@ tur_kanuni_osmani_modifier = {
 	administrative_efficiency = 0.05
 }
 tur_morisco_refugees_modifier = { 
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 tur_center_of_printing_knowledge_modifier = { 
 	trade_goods_size_modifier = 0.25
