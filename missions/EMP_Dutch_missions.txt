@@ -1,28 +1,3 @@
-emp_ned_slot1_branch = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Emperor"
-	}
-	potential = {
-		has_dlc = "Emperor"
-		OR = {
-			tag = NED
-			tag = HOL
-			tag = FLA
-			tag = UTR
-			tag = GEL
-			tag = FRI
-			tag = BRB
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	
-}
-
 emp_ned_slot2_branch = {
 	slot = 2
 	generic = no

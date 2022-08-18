@@ -3,28 +3,7 @@ WES_Generic_Missions_1_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			tag = PAD
-			AND = {
-				OR = {
-					tag = MUN
-					tag = RVA
-					tag = LPP
-					tag = OLD
-					tag = OSN
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-					
-				}
-			}
-		}
+			tag = WES
 	}
 	has_country_shield = yes
 
@@ -104,27 +83,8 @@ WES_Generic_Missions_1_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			tag = PAD
-			AND = {
-				OR = {
-					tag = MUN
-					tag = RVA
-					tag = LPP
-					tag = OLD
-					tag = OSN
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-				}
-			}
-		}
+			tag = WES
+			
 	}
 	has_country_shield = yes
 
@@ -160,27 +120,7 @@ WES_Generic_Missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			tag = PAD
-			AND = {
-				OR = {
-					tag = MUN
-					tag = RVA
-					tag = LPP
-					tag = OLD
-					tag = OSN
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-				}
-			}
-		}
+			tag = WES
 	}
 	has_country_shield = yes
 
@@ -350,27 +290,8 @@ WES_Generic_Missions_3_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			AND = {
-				OR = {
-					tag = MUN
-					tag = OLD
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-				}
-			}
-		}
-		NOT = { was_tag = RVA }
-		NOT = { was_tag = PAD }
-		NOT = { was_tag = OSN }
-		NOT = { was_tag = LPP }
+			tag = WES
+			
 	}
 	has_country_shield = yes
 
@@ -413,27 +334,8 @@ WES_Generic_Missions_3_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			tag = PAD
-			AND = {
-				OR = {
-					tag = MUN
-					tag = RVA
-					tag = LPP
-					tag = OLD
-					tag = OSN
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-				}
-			}
-		}
+			tag = WES
+			
 	}
 	has_country_shield = yes
 
@@ -628,27 +530,8 @@ WES_Generic_Missions_4_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			AND = {
-				OR = {
-					tag = MUN
-					tag = LPP
-					tag = OLD
-					tag = OSN
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-				}
-			}
-		}
-		NOT = { was_tag = PAD }
-		NOT = { was_tag = RVA }
+			tag = WES
+			
 	}
 	has_country_shield = yes
 
@@ -699,27 +582,8 @@ WES_Generic_Missions_4_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			tag = PAD
-			AND = {
-				OR = {
-					tag = MUN
-					tag = RVA
-					tag = LPP
-					tag = OLD
-					tag = OSN
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-				}
-			}
-		}
+			tag = WES
+			
 	}
 	has_country_shield = yes
 
@@ -749,28 +613,8 @@ WES_Generic_Missions_5_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			AND = {
-				OR = {
-					tag = LPP
-					tag = OLD
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-					
-				}
-			}
-		}
-		NOT = { was_tag = RVA }
-		NOT = { was_tag = PAD }
-		NOT = { was_tag = MUN }
-		NOT = { was_tag = OSN }
+			tag = WES
+			
 	}
 	has_country_shield = yes
 
@@ -809,28 +653,8 @@ WES_Generic_Missions_5_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = CLB
-			tag = SOE
-			tag = PAD
-			AND = {
-				OR = {
-					tag = MUN
-					tag = RVA
-					tag = LPP
-					tag = OLD
-					tag = OSN
-					tag = WES
-				}
-				OR = {
-					AND = {
-						NOT = { primary_culture = hannoverian }
-						NOT = { primary_culture = hessian }
-					}
-					
-				}
-			}
-		}
+			tag = WES
+			
 	}
 	has_country_shield = yes
 
