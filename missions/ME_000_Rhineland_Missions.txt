@@ -180,7 +180,7 @@ generic_rhenish_missions_2 = {
 }
 
 generic_rhenish_missions_4 = {
-	slot = 4
+	slot = 7
 	generic = no
 	ai = yes
 	potential = {
@@ -215,7 +215,7 @@ generic_rhenish_missions_4 = {
 	rhn_generic_splendid = {
 		icon = florentine_renaissance
 		required_missions = { rhn_generic_embrace_renaissance }
-		position = 2
+		position = 8
 		trigger = {
 			has_adm_advisor = yes
 			has_dip_advisor = yes
@@ -296,7 +296,7 @@ generic_rhenish_missions_5 = {
 	rhn_generic_reformation = {
 		icon = mission_luther_theses
 		required_missions = { rhn_generic_embrace_renaissance }
-		position = 2
+		position = 8
 		trigger = {
 			OR = {
 				religion = protestant

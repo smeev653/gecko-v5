@@ -128,7 +128,7 @@ HES_Missions_3 = {
 	HES_hitzkirche = {
 		icon = standardize_relazioni
 		required_missions = { rhn_generic_fc HES_allies }
-		position = 3
+		position = 2
 		provinces_to_highlight = {
 			if = {
 				limit = { exists = MAI }
