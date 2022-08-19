@@ -31,10 +31,6 @@ MAM_missions_1 = {
 			361 = {
 				development = 30
 				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
-				OR = {
 					has_building = temple
 					has_building = cathedral
 				}
@@ -1220,119 +1216,22 @@ MAM_missions_4 = {
 				duration = 7300
 			}
 			if = {
-				NOT = { mission_completed = tur_unite_anatolian_tribes } 
-				2314 = {
-					limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				406 = {
 				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
+					mission_completed = tur_unite_anatolian_tribes 
 				}
-				4293 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				4294 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				415 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				406 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				2310 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				4291 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				410 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				409 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				2312 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					cede_province = IRQ
-				}
-				2311 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				4288 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-				408 = {
-				limit = {
-						owned_by = AKK
-						NOT = {is_year = 1475}
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
+				add_adm_power = 100
 			}
+			else = {
+				AKK = {
+					every_owned_province = {
+						limit = {
+							region = mashriq_region
+						}
+						remove_core = AKK
+						cede_province = IRQ
+					}	
+				}
+			}	
 			if = {
 				limit = {
 					exists = QAR
