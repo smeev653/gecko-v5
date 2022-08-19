@@ -1394,16 +1394,21 @@ on_annexed = {
 			set_global_flag = no_primas_germaniae
 		}
 	}
+	###X###
+	FROM = {
+		if = {
+			limit = { is_emperor_of_china = yes }
+			dismantle_empire_of_china = yes
+		}
+	}
+	#######
 }
 
 # When the chinese empire gets dismantled (e.g. when the emperor is annexed)
 # FROM = Emperor, ROOT = Current Nation
 on_chinese_empire_dismantled = {
 	###X###
-	#clear_global_event_target = EmperorOfChina
-	#events = {
-	#}
-	dismantle_empire_of_china = yes
+	#Removed all actions
 	#######
 }
 
