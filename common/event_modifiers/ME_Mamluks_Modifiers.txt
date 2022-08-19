@@ -64,7 +64,7 @@ mamluks_no_alternate_paths_modifier_2 = {
 }
 
 mamluks_beylik_loyalties_modifier = {
-	land_morale = 0.1
+	land_morale = 0.05
 	shock_damage = 0.1
 	land_maintenance_modifier = -0.05
 }
@@ -78,7 +78,7 @@ mamluks_disrupt_the_adriatic_modifier = {
 }
 
 mamluks_shear_the_white_sheep_modifier = {
-	army_tradition = 0.5
+	army_tradition = 1
 }
 
 mamluks_between_the_rivers_modifier = {
