@@ -76,7 +76,7 @@ X_CRI_reform_6 = {
 		hidden_effect = {
 			every_province = {
 				limit = { 
-					NOT = { religion_group = owner }
+					religion_group = christian
 					owner = { is_emperor_of_china = yes }
 				}
 				add_province_modifier = {

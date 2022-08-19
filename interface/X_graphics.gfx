@@ -1,4 +1,7 @@
 spriteTypes = {
+####################
+# Great Projects
+####################
 	spriteType = {
 		name = "GFX_great_projects_name_bg_overlay"
 		texturefile = "gfx//interface//great_projects//great_projects_name_bg_overlay.dds"
@@ -11,6 +14,13 @@ spriteTypes = {
 #Crimea
 	spriteType = {
 		name = "GFX_great_project_X_CRI_hansaray"
-		texturefile = "gfx//interface//X_great_projects//great_project_X_CRI_hansaray.dds"
+		texturefile = "gfx//interface//X_graphics//great_project_X_CRI_hansaray.dds"
+	}
+####################
+# Text Icons
+####################
+	spriteType = {
+		name = "GFX_text_X_imperial_mandate"
+		texturefile = "gfx//interface//X_graphics/X_imperial_mandate.dds"
 	}
 }

@@ -42,7 +42,7 @@ X_CRI_reforms_pmod_ownership_change_effect = {
 	}
 	if = {
 		limit = {
-			NOT = { religion_group = owner }
+			religion_group = christian
 			owner = { is_emperor_of_china = yes }
 			has_global_flag = X_CRI_reform_6_gflag
 		}

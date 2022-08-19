@@ -1,0 +1,19 @@
+X_CRI_cb_1 = {
+	valid_for_subject = no
+	prerequisites = {
+		religion_group = christian
+		is_neighbor_of = FROM
+		FROM = { is_emperor_of_china = yes }
+	}
+	war_goal = X_CRI_war_goal_1
+}
+
+X_CRI_cb_2 = {
+	valid_for_subject = no
+	prerequisites = {
+		is_emperor_of_china = yes
+		is_neighbor_of = FROM
+		FROM = { religion_group = christian }
+	}
+	war_goal = X_CRI_war_goal_2
+}

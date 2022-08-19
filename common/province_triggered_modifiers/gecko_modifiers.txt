@@ -27,7 +27,10 @@ kaffa_slave_market = {
 
 	trigger = {
 		owner = {
-			TAG = CRI
+			###X###
+			#TAG = CRI
+			is_emperor_of_china = yes
+			#######
 		}
 		controlled_by = ROOT
 	}
@@ -539,20 +542,26 @@ conquest_of_sarai = {
 
 	trigger = {
 		owner = {
-			OR = {
-				tag = KHA
-				culture_group = tartar
-			}
+			###X###
+			#OR = {
+			#	tag = KHA
+			#	culture_group = tartar
+			#}
+			is_emperor_of_china = yes
+			#######
 			astrakhan_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-		}	
-		controlled_by = ROOT	
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		controlled_by = ROOT
 	}
 
 	#technology_cost = -0.05
 	global_tax_modifier = 0.15
+	###X###
+	imperial_mandate = 0.1
+	#######
 	
 	#Province scope
 	on_activation = {
