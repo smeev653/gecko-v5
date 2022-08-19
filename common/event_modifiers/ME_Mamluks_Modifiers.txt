@@ -81,6 +81,10 @@ mamluks_shear_the_white_sheep_modifier = {
 	army_tradition = 1
 }
 
+mamluks_shear_the_black_sheep_modifier = {
+	core_creation  = -0.15
+}
+
 mamluks_between_the_rivers_modifier = {
 	legitimacy = 1
 	republican_tradition = 0.5

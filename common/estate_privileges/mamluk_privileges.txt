@@ -158,6 +158,7 @@ estate_mamluks_recruit_turkmen = {
 	influence = 0.1
 	is_valid = {
 		has_unlocked_estate_privilege ={ estate_privilege = estate_mamluks_recruit_turkmen }
+		tag = EGY
 	}
 	
 	can_select = {
