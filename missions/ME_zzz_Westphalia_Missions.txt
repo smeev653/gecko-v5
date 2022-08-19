@@ -1190,7 +1190,7 @@ WES_missions_5 = {
 						}
 					}
 				}
-				amount = 50
+				amount = 25
 			}
 		}
 		effect = {
