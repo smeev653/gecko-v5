@@ -2888,3 +2888,48 @@ armory = {
 		factor = 1
 	}
 }
+
+gc_bureaucracy_manufactory = {
+		manufactory = {
+			all
+		}
+		build_trigger = {
+			NOT = {
+				area_for_scope_province = {
+					owner = {
+						tag = ROOT
+					}
+					OR = {
+						has_building = gc_bureaucracy_manufactory
+						has_construction = gc_bureaucracy_manufactory
+					}
+				}
+			}
+		}
+		keep_trigger = {
+			NOT = {
+				area_for_scope_province = {
+					NOT = { province_id = root }
+					owner = {
+						tag = ROOT
+					}
+					OR = {
+						has_building = gc_bureaucracy_manufactory
+						has_construction = gc_bureaucracy_manufactory
+					}
+				}
+			}
+		}
+		modifier = {
+			allowed_num_of_buildings = 1
+		}
+		onmap = no
+		show_separate = yes # Means as a manufactory it will be shown according to the old way
+	
+		on_obsolete = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+}

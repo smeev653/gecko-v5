@@ -22,3 +22,5 @@
  PR_colonialism_cot_lvl_3_no_coast_in_country:0 "Province with level 3 Centre of Trade and no coast."
  PR_printing_press_capital_20_dev:0 "Capital with at least 20 development."
  PR_printing_press_paper:0 "Province produces paper outside of Europe."
+
+ PR_manpower_edict_province_2:0 "Provincial Manpower Edict"

@@ -86,3 +86,5 @@
  geckomercFL:0 "Mercenary Forcelimit"
  fu_toob_benadir:0 "Toob Benadir Market"
  building_armory: "Armoury"
+ building_gc_bureaucracy_manufactory:0 "Centralized Bureacraucy"
+ building_gc_bureaucracy_manufactory_desc:0 "Centralising our bureaucracy will allow us to enact more efficient state edicts."

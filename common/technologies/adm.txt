@@ -150,6 +150,7 @@ technology = { #Scientific Experimentation
 	town_hall = yes
 	plantations = yes
 	allowed_idea_groups	= 4
+	gc_bureaucracy_manufactory = yes
 }
 
 technology = { #Military Administration

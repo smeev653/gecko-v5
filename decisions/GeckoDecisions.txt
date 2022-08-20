@@ -478,13 +478,37 @@ country_decisions = {
 								has_state_edict = edict_protect_trade
 								has_state_edict = edict_religion_enforced
 								has_state_edict = edict_religious_unity
-								has_state_edict = edict_devastation_edict					
+								has_state_edict = edict_devastation_edict
+								has_state_edict = edict_encourage_development	
+
+								#New Edicts		
+								has_state_edict = gc_edict_advancement_effort_1
+								has_state_edict = gc_edict_defensive_edict_1
+								has_state_edict = gc_edict_devastation_edict_1
+								has_state_edict = gc_edict_encourage_development_1
+								has_state_edict = gc_edict_feudal_de_jure_law_1
+								has_state_edict = gc_edict_promote_military_recruitment_1
+								has_state_edict = gc_edict_protect_trade_1
+								has_state_edict = gc_edict_religious_unity_1
 							}
 						}
 					}
-					add_province_modifier = {
-						name = PR_manpower_edict_province
-						duration = -1
+					if = {
+						limit = {
+							any_province_in_state = {
+								has_building = gc_bureaucracy_manufactory
+							}
+						}
+						add_province_modifier = {
+							name = PR_manpower_edict_province_2
+							duration = -1
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = PR_manpower_edict_province
+							duration = -1
+						}
 					}
 				}
 				add_country_modifier = {
@@ -521,9 +545,13 @@ country_decisions = {
 				every_owned_province = {
 					if = {
 						limit = {
-							has_province_modifier = PR_manpower_edict_province
+							OR = {
+								has_province_modifier = PR_manpower_edict_province
+								has_province_modifier = PR_manpower_edict_province_2
+							}
 						}
 						remove_province_modifier = PR_manpower_edict_province
+						remove_province_modifier = PR_manpower_edict_province_2
 					}
 				}
 			}

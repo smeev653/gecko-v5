@@ -1,5 +1,6 @@
 spriteTypes = {
 
+	#Armory 
 	spriteType = {
 		name = "GFX_armory"
 		texturefile = "gfx//interface//buildings//latin_armory.tga"
@@ -40,4 +41,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//northamerica_armory.tga"
 		loadType = "INGAME"
 	}
-}	
+
+
+	#Centralized Bureaucracy
+
+	spriteType = {
+		name = "GFX_gc_bureaucracy_manufactory"
+		texturefile = "gfx/interface/buildings/trade_company/military_administration.dds"
+	}
+
+
+}	#End of bracket

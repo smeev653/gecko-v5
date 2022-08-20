@@ -1,6 +1,12 @@
 edict_protect_trade = {
 	potential = {
-		always = yes		#we support "potential" if modders want to have lots and just show some.
+		FROM = {
+			NOT = {
+				any_province_in_state = {
+					has_building = gc_bureaucracy_manufactory
+				}
+			}
+		}
 	}
 	
 	allow = {
@@ -15,6 +21,55 @@ edict_protect_trade = {
 	
 	modifier = {
 		province_trade_power_modifier = 0.50
+	}
+	
+	color = {  113 11 43 }
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				NOT = { province_trade_power = 25 }
+			}
+		}
+		modifier = {
+			factor = 4
+			any_province_in_state = {
+				province_trade_power = 60
+			}
+		}
+		modifier = {
+			factor = 4
+			all_province_in_state = {
+				province_trade_power = 25
+			}
+		}
+	}
+}
+
+gc_edict_protect_trade_1 = {
+	potential = {
+		FROM = {
+			any_province_in_state = {
+				has_building = gc_bureaucracy_manufactory
+			}
+		}
+	}
+	
+	allow = {
+		NOT = {
+			FROM = {
+				any_province_in_state  = {
+					has_province_modifier = PR_manpower_edict_province
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		province_trade_power_modifier = 1
 	}
 	
 	color = {  113 11 43 }

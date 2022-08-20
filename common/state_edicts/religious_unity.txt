@@ -1,6 +1,12 @@
 edict_religious_unity = {
 	potential = {
-		always = yes		#we support "potential" if modders want to have lots and just show some.
+		FROM = {
+			NOT = {
+				any_province_in_state = {
+					has_building = gc_bureaucracy_manufactory
+				}
+			}
+		}
 	}
 	
 	allow = {
@@ -15,6 +21,48 @@ edict_religious_unity = {
 	
 	modifier = {
 		local_missionary_strength = 0.01
+	}
+	
+	color = { 117 38 143 }
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				has_missionary = no
+			}
+		}
+		modifier = {
+			factor = 3
+			any_province_in_state = {
+				has_missionary = yes
+			}
+		}
+	}
+}
+
+gc_edict_religious_unity_1 = {
+	potential = {
+		FROM = {
+			any_province_in_state = {
+				has_building = gc_bureaucracy_manufactory
+			}
+		}
+	}
+	
+	allow = {
+		NOT = {
+			FROM = {
+				any_province_in_state  = {
+					has_province_modifier = PR_manpower_edict_province
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.02
 	}
 	
 	color = { 117 38 143 }

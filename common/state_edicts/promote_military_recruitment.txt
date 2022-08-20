@@ -1,6 +1,12 @@
 edict_promote_military_recruitment = {
 	potential = {
-		always = yes		#we support "potential" if modders want to have lots and just show some.
+		FROM = {
+			NOT = {
+				any_province_in_state = {
+					has_building = gc_bureaucracy_manufactory
+				}
+			}
+		}
 	}
 	
 	allow = {
@@ -15,6 +21,52 @@ edict_promote_military_recruitment = {
 	
 	modifier = {
 		local_manpower_modifier = 0.25
+	}
+	
+	color = {  188 90 27  }
+	
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			owner = {
+				manpower_percentage = 0.4
+			}
+		}
+		modifier = {
+			factor = 3
+			all_province_in_state = {
+				base_manpower = 5
+			}
+			any_province_in_state = {
+				base_manpower = 15
+			}
+		}
+	}
+}
+
+gc_edict_promote_military_recruitment_1 = {
+	potential = {
+		FROM = {
+			any_province_in_state = {
+				has_building = gc_bureaucracy_manufactory
+			}
+		}
+	}
+	
+	allow = {
+		NOT = {
+			FROM = {
+				any_province_in_state  = {
+					has_province_modifier = PR_manpower_edict_province
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		local_manpower_modifier = 0.5
 	}
 	
 	color = {  188 90 27  }

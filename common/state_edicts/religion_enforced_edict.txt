@@ -1,6 +1,11 @@
 edict_religion_enforced = {
 	potential = {
 		current_age = age_of_reformation
+		NOT = {
+			any_province_in_state = {
+				has_building = gc_bureaucracy_manufactory
+			}
+		}
 	}
 	
 	allow = {

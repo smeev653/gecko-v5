@@ -161,7 +161,11 @@ gc_urbanisation = {
 }
 
 PR_manpower_edict_province = {
-	local_manpower_modifier = 0.33
+	local_manpower_modifier = 0.25
+}
+
+PR_manpower_edict_province_2 = {
+	local_manpower_modifier = 0.50
 }
 
 PR_manpower_edict_cooldown = {
