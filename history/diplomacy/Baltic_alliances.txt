@@ -15,12 +15,12 @@
 #}
 
 # Polish vassal
-vassal = {
-	first = LIT
-	second = KIE
-	start_date = 1444.1.1
-	end_date = 1497.12.31
-}
+#vassal = {
+#	first = LIT
+#	second = KIE
+#	start_date = 1444.1.1
+#	end_date = 1497.12.31
+#}
 
 # Polish vassal
 vassal = {
