@@ -6548,6 +6548,10 @@ guiTypes = {
 			text = "2000¤"
 		}
 
+		###############################################
+		#Armory
+		###############################################
+		
 		checkboxType = {
 			name = "build_armory"
 			position = { x = 321 y = 420 }
@@ -6564,6 +6568,10 @@ guiTypes = {
 			text = "2000¤"
 		}
 
+		###############################################
+		#Centralized Bureaucracy
+		###############################################
+
 		checkboxType = {
 			name = "build_gc_bureaucracy_manufactory"
 			position = { x = 373 y = 420 }
@@ -6579,6 +6587,119 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
+
+
+		###############################################
+		#Infrastructure
+		###############################################
+		iconType = {
+			name = "infrastructure_banner"
+			position = { x = 419 y = 0 }
+			spriteType = "GFX_banner_left_4"
+		}
+		
+		iconType ={
+			name ="infrastructure_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 429 y = 3 }
+			frame = 10
+		}
+		
+		instantTextBoxType = {
+			name = "title_infrastructure"
+			position = {x = 459 y = 9 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "INFRASTRUCTURE"	
+		}
+		###############################################
+		checkboxType = {
+			name = "build_infrastructure_lvl_1"
+			position = { x = 424 y = 32 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "infrastructure_lvl_1_cost"
+			position = {x = 424 y = 82 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		###############################################
+		checkboxType = {
+			name = "build_infrastructure_lvl_2"
+			position = { x = 476 y = 32 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "infrastructure_lvl_2_cost"
+			position = {x = 476 y = 82 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		###############################################
+		checkboxType = {
+			name = "build_infrastructure_lvl_3"
+			position = { x = 528 y = 32 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "infrastructure_lvl_3_cost"
+			position = {x = 528 y = 82 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		###############################################
+		checkboxType = {
+			name = "build_infrastructure_lvl_4"
+			position = { x = 580 y = 32 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "infrastructure_lvl_4_cost"
+			position = {x = 580 y = 82 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		###############################################	
+	    iconType = {
+			name = "infrastructure_lvl_1_to_infrastructure_lvl_2"
+			position = { x = 417 y = 41 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+
+        iconType = {
+			name = "infrastructure_lvl_2_to_infrastructure_lvl_3"
+			position = { x = 467 y = 41 }
+			spriteType = "GFX_building_upgrade_icon"
+		}	
+		
+		iconType = {
+			name = "infrastructure_lvl_3_to_infrastructure_lvl_4"
+			position = { x = 517 y = 41 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+
+		###############################################
+		#Infrastructure end
+		###############################################
 
 	}
 
