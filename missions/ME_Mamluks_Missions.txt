@@ -58,11 +58,13 @@ MAM_missions_1 = {
 						add_center_of_trade_level = 2
 					}
 				}
-				add_country_modifier = {
-					name = mamluks_great_works_of_cairo_modifier
-					duration = 9125
+				add_years_of_owned_provinces_production_income = {
+					years = 5
+					trigger = {
+							trade_goods = grain
+					}
 				}
-			}
+			}	
 			361 = {
 				change_trade_goods = cloves
 				if = {

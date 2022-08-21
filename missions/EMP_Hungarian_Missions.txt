@@ -913,13 +913,11 @@ gc_hungary_gh_branch_4 = {
 
     gc_hungary_mission_9 = {
         icon = mission_non-western_soldiers
-        required_missions = { gc_hungary_mission_2 }
+        required_missions = {  }
         position = 3
-        provinces_to_highlight = {
 
-        }
         trigger = {
-            if = {
+			if = {
 				limit = {
 					TUR = {
 						any_owned_province = {
@@ -944,7 +942,7 @@ gc_hungary_gh_branch_4 = {
 				}
 			}
 			is_subject = no
-        }
+		}
         effect = {
             bulgaria_area = {
 				limit = {

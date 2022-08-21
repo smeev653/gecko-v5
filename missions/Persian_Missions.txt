@@ -1979,7 +1979,7 @@ fu_persia_missions_3 = {
 		trigger = {
 			has_global_modifier_value = {
 				which = cavalry_power  
-				value = 0.4
+				value = 0.3
 			}
 			num_of_cavalry = 50 
 			OR = { 

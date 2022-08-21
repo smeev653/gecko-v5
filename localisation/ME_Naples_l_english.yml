@@ -157,3 +157,4 @@
  NAP_OTTOMAN_DOMAIN_TOOLTIP: "§Y[Root.GetName]§! gains permanent claim on all the sea provinces owned by §Y[TUR.GetName]§! provinces in the §Y[137.GetName]§! trade node.\n"
  NAPLES_TWENTY_YEARS_PROSPERITY: "§YEvery Owned Province§! will gain §G15 Prosperity§!"
  naples_baronian_revolt_TT: "One of the following must be true:\n  The §YBaronian Revolt§! Event has not happend.\n  All the following must be true:\n	 The §YBaronian Revolt§! Event has fired\n	 Fewer rebl controlled provinces than §Y1§!\n	 Fewer rebel armies than §Y1§!"
+ PGA_PAPAL_RELATIONS_TT: "\n	Either §Y[PAP.GetName]§!, §YPapal Controller§! or the Owner of §Y[118.GetName]§!\n		Opinion of §M[Root.GetName]§! is at least §M125§! or is lower than §M-50§!"

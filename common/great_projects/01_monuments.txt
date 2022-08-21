@@ -19468,3 +19468,556 @@ gme_lanterna_genova = {
 		}
 	}
 }
+
+fu_blue_mosque = {
+	start = 416
+	
+	date = 1444.1.1  #1450s or 1460s
+	
+	time = {
+		months = 120
+	}
+	
+	build_cost = 350
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 2
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+		AND = {
+			has_owner_religion = yes 
+			religion_group = muslim 
+		}
+	}
+	
+	can_use_modifiers_trigger = {
+		AND = {
+			has_owner_religion = yes 
+			religion_group = muslim 
+		}
+	}
+
+	can_upgrade_trigger = {
+		AND = {
+			has_owner_religion = yes 
+			religion_group = muslim 
+		}
+	}
+
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 200
+		}
+
+		province_modifiers = {
+			local_tax_modifier = 0.15
+			local_build_cost = -0.1
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			yearly_tribal_allegiance = 0.25
+			legitimacy = 0.25
+		}
+		
+		on_upgraded = {
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 750
+		}
+
+		province_modifiers = {
+			local_tax_modifier = 0.25
+			local_build_cost = -0.1
+		}
+
+		area_modifier = { 
+		}
+
+		country_modifiers = {
+			yearly_tribal_allegiance = 0.3
+			legitimacy = 0.3
+		}
+		
+		on_upgraded = {
+			add_base_tax = 1 
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 360
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+
+		province_modifiers = {
+			local_tax_modifier = 0.3
+			local_build_cost = -0.15
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			yearly_tribal_allegiance = 0.3
+			legitimacy = 0.5
+		}
+		
+		on_upgraded = {
+			add_base_tax = 2
+		}
+	}
+}
+
+fu_isfahan_city = {
+	start = 429
+	
+	date = 642.5.6  #Captured by Arabs
+	
+	time = {
+		months = 120
+	}
+	
+	build_cost = 350
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 2
+	
+	starting_tier = 1
+	
+	type = monument
+
+	build_trigger = {
+		OR = {
+			429 = { is_prosperous = yes } 
+			development = 15 
+		}
+	}
+	
+	can_use_modifiers_trigger = {
+		development = 15 
+	}
+
+	can_upgrade_trigger = {
+		OR = {
+			429 = { is_prosperous = yes }  
+			development = 15 
+		}
+	}
+
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 350
+		}
+
+		province_modifiers = {
+			province_trade_power_modifier = 0.05
+			local_development_cost = -0.1
+			allowed_num_of_buildings = 1 
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+		
+		on_upgraded = {
+			add_base_production = 1 
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 750
+		}
+
+		province_modifiers = {
+			province_trade_power_modifier = 0.1
+			local_production_efficiency = 0.15
+			allowed_num_of_buildings = 1
+		}
+
+		area_modifier = { 
+		}
+
+		country_modifiers = {
+		}
+		
+		on_upgraded = {
+			add_base_production = 1
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 360
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+
+		province_modifiers = {
+			province_trade_power_modifier = 0.15
+			local_production_efficiency = 0.2
+			allowed_num_of_buildings  = 1
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			prestige_decay = -0.005
+		}
+		
+		on_upgraded = {
+			add_base_production = 1 
+		}
+	}
+}
+
+fu_library_alexandria = {
+	start = 358
+	
+	date = 288.1.1 #BC 
+	
+	time = {
+		months = 120
+	}
+	
+	build_cost = 1250
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 2
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+	}
+	
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 350
+		}
+
+		province_modifiers = {
+			institution_growth = 2.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			innovativeness_gain = 0.25
+			embracement_cost = -0.05 
+		}
+		
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 750
+		}
+
+		province_modifiers = {
+			institution_growth = 5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			embracement_cost = -0.1
+		}
+		
+		on_upgraded = {
+		}
+		
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 360
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+
+		province_modifiers = {
+			institution_growth = 5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			embracement_cost = -0.1
+			administrative_efficiency = 0.025
+		}
+		
+		on_upgraded = {
+			custom_tooltip = byz_every_paper_province_tt 
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = paper 
+						has_manufactory_trigger = yes 
+					}
+					add_base_production = 1 
+				}
+			}
+		}
+	}
+}
+
+fu_library_alexandria = {
+	start = 358
+	
+	date = 288.1.1 #BC 
+	
+	time = {
+		months = 120
+	}
+	
+	build_cost = 1250
+	
+	can_be_moved = no
+	
+	move_days_per_unit_distance = 2
+	
+	starting_tier = 0
+	
+	type = monument
+
+	build_trigger = {
+	}
+	
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		province_modifiers = {
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 350
+		}
+
+		province_modifiers = {
+			institution_growth = 2.5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			innovativeness_gain = 0.25
+			embracement_cost = -0.05 
+		}
+		
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+
+		cost_to_upgrade = {
+			factor = 750
+		}
+
+		province_modifiers = {
+			institution_growth = 5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			embracement_cost = -0.1
+		}
+		
+		on_upgraded = {
+		}
+		
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 360
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+
+		province_modifiers = {
+			institution_growth = 5
+		}
+
+		area_modifier = {
+		}
+
+		country_modifiers = {
+			innovativeness_gain = 0.5
+			embracement_cost = -0.1
+			administrative_efficiency = 0.025
+		}
+		
+		on_upgraded = {
+			custom_tooltip = byz_every_paper_province_tt 
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = paper 
+						has_manufactory_trigger = yes 
+					}
+					add_base_production = 1 
+				}
+			}
+		}
+	}
+}
