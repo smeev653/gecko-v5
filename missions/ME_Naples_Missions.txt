@@ -17,6 +17,8 @@ naples_missions_1 = {
 		trigger = {
 			OR = {
 				owns = 118
+				custom_trigger_tooltip = {
+					tooltip = PGA_PAPAL_RELATIONS_TT
 					PAP = {
 						OR = {
 							has_opinion = {
@@ -62,6 +64,7 @@ naples_missions_1 = {
 							}
 						}
 					}
+				}
 			}
 		}
 		effect = {
