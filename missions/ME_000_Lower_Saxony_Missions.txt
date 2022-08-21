@@ -75,7 +75,7 @@ HAN_gen_missions_1 = {
 					religion = ROOT
 					culture = ROOT
 					skill = 1
-					cost_multiplier = 0.5
+					cost_multiplier = 0.75
 				}
 				capital_scope = {
 					province_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
@@ -136,7 +136,7 @@ HAN_gen_missions_1 = {
 					religion = ROOT
 					type = theologian
 					skill = 2
-					cost_multiplier = 0.5
+					cost_multiplier = 0.75
 				}
 			}
 			hidden_effect = {
@@ -164,7 +164,7 @@ HAN_gen_missions_1 = {
 							religion = ROOT
 							type = theologian
 							skill = 2
-							cost_multiplier = 0.5
+							cost_multiplier = 0.75
 						}
 					}
 					set_global_flag = HAN_religion_non_catholic

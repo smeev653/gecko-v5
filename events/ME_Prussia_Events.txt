@@ -1044,7 +1044,7 @@ country_event = {
 			skill = 3
 			culture = ROOT
 			religion = ROOT
-			cost_multiplier = 0.5
+			cost_multiplier = 0.75
 		}
 		add_country_modifier = {
 			name = PRU_scourge_of_the_west_defeated
@@ -1455,7 +1455,7 @@ country_event = {
 			skill = 3
 			culture = ROOT
 			religion = ROOT
-			cost_multiplier = 0.5
+			cost_multiplier = 0.75
 		}
 	}
 }

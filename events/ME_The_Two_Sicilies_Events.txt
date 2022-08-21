@@ -202,7 +202,7 @@ country_event = {
 			name = "Egidio Timpone"
 			type = commandant
 			skill = 3
-			cost_multiplier = 0.50
+			cost_multiplier = 0.75
 			religion = catholic
 			culture = neapolitan
 		}
@@ -218,7 +218,7 @@ country_event = {
 			name = "Egidio Timpone"
 			type = artist
 			skill = 3
-			cost_multiplier = 0.50
+			cost_multiplier = 0.75
 			religion = catholic
 			culture = neapolitan
 		}
