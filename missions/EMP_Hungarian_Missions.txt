@@ -915,36 +915,20 @@ gc_hungary_gh_branch_4 = {
         icon = mission_non-western_soldiers
         required_missions = { gc_hungary_mission_2 }
         position = 3
-        provinces_to_highlight = {
 
-        }
         trigger = {
-            if = {
-				limit = {
-					TUR = {
+				TUR = {
 						any_owned_province = {
 							region = balkan_region
 						}
 					}
-				}
-				calc_true_if = {
-					desc = hun_ottoman_borders.tooltip
-					amount = 3
-					all_owned_province = {
-						fort_level = 1
-						any_neighbor_province = {
-							owned_by = TUR
-						}
-					}
-				}
-				else = {
 					any_owned_province = {
 						fort_level = 3
 					}
-				}
-			}
+				
+			
 			is_subject = no
-        }
+		}
         effect = {
             bulgaria_area = {
 				limit = {
