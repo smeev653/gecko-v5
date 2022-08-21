@@ -49,6 +49,31 @@ spriteTypes = {
 		name = "GFX_gc_bureaucracy_manufactory"
 		texturefile = "gfx/interface/buildings/trade_company/military_administration.dds"
 	}
+	
+	#Infrastructure
+	
+	spriteType = {
+		name = "GFX_infrastructure_lvl_1"
+		texturefile = "gfx//interface//buildings//infrastructure_lvl_1.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_infrastructure_lvl_2"
+		texturefile = "gfx//interface//buildings//infrastructure_lvl_2.dds"
+		loadType = "INGAME"
+	}
 
+	spriteType = {
+		name = "GFX_infrastructure_lvl_3"
+		texturefile = "gfx//interface//buildings//infrastructure_lvl_3.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_infrastructure_lvl_4"
+		texturefile = "gfx//interface//buildings//infrastructure_lvl_4.dds"
+		loadType = "INGAME"
+	}
 
 }	#End of bracket
