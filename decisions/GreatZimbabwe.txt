@@ -20,11 +20,8 @@ country_decisions = {
 					adm_tech = 10
 				}
 			}
-			OR = {
-				tag = ZAN
-				culture_group = southern_african
+			tag = ZAN
 
-			}
 
 			is_colonial_nation = no
 			OR = {
