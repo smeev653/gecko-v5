@@ -1669,9 +1669,6 @@ MAM_missions_5 = {
 			}
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_mamluks_recruit_turkmen
-			}
 			thrace_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -1812,9 +1809,6 @@ MAM_missions_5 = {
 				is_strongest_trade_power = ROOT
 			}
 			151 = {
-				is_strongest_trade_power = ROOT
-			}
-			137 = {
 				is_strongest_trade_power = ROOT
 			}
 		}

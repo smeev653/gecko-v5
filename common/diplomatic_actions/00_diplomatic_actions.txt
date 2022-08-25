@@ -815,6 +815,7 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_mamhunally
 		potential = {
+				NOT = { is_year = 1520 }
 			ROOT = {
 				OR = {
 					tag = MAM
@@ -842,6 +843,7 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_hunmamally
 		potential = {
+			NOT = { is_year = 1520 }
 			ROOT = {
 				tag = HUN
 				NOT = {
