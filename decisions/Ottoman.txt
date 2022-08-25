@@ -141,12 +141,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			ROOT = {
-				has_won_war_against = {
-					who = MAM
-					max_years_since = 5
-				}
-			}
 			owns = 2313
 			religion_group = muslim
 		}
