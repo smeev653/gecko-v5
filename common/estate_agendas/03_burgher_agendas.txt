@@ -173,6 +173,7 @@ estate_burghers_pay_off_loans = {
 estate_burghers_pay_off_loans_2 = {
 	can_select = {
 		num_of_loans = 25
+		NOT = {num_of_loans = 26}
 		is_bankrupt = no
 		NOT = { has_country_modifier = gecko_ipa }
 	}
@@ -244,6 +245,7 @@ estate_burghers_pay_off_loans_2 = {
 estate_burghers_pay_off_loans_3 = {
 	can_select = {
 		num_of_loans = 15
+		NOT = {num_of_loans = 16}
 		is_bankrupt = no
 		NOT = { has_country_modifier = gecko_ipa }
 	}
