@@ -7634,7 +7634,7 @@
  IMPERIAL_MANDATE_GAIN_DESC:0 "Gained by:\n -Having a positive Stability.\n -Having Tributary States.\n -For each State enjoying Prosperity."
  IMPERIAL_MANDATE_LOSS_DESC:1 "Lost by:\n -Devastated provinces.\n -Corruption of the State.\n -Having loans."
  CELESTIAL_EMPEROR_BENEFIT:0 "Being the §YGreat Khan§! gives the following benefits:\n" #X
- CELESTIAL_EMPEROR_BENEFIT_DESC:0 " -Bonuses from High Legacy.\n -Can enact Khanate Reforms.\n -Can Harvest the Steppe on Christian Neighbours" #X
+ CELESTIAL_EMPEROR_BENEFIT_DESC:0 " -Bonuses from High Legacy.\n -Bonuses from Tatar Unity.\n -Can enact Khanate Reforms.\n -Can Harvest the Steppe on Christian Neighbors" #X
  CELESTIAL_EMPEROR_DIPLOMATIC_ACTIONS_DESC:0 "The §YGreat Khan§! may take the following additional diplomatic actions:\n$LIST|Y$" #X
  CELESTIAL_EMPIRE_NO_DIPLOMATIC_ACTIONS:0 "None"
  CELESTIAL_EMPIRE_PAST_EMPERORS:0 "Previous Khans:"

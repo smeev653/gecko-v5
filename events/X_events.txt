@@ -347,3 +347,88 @@ country_event = {
 		}
 	}
 }
+
+########################################
+# Events for Crimea
+########################################
+namespace = X_CRI_events
+
+#Tatar Yoke Crushed
+country_event = {
+	id = X_CRI_events.1
+	title = X_CRI_events.1.t
+	desc = X_CRI_events.1.d1
+	picture = LAND_MILITARY_eventPicture #HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = X_CRI_events.1.a
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = X_CRI_era_of_peace_cmod
+			duration = 3650
+		}
+	}
+}
+
+#Taming of the Steppes
+country_event = {
+	id = X_CRI_events.2
+	title = X_CRI_events.2.t
+	desc = X_CRI_events.2.d1
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	trigger = { religion_group = christian }
+	option = {
+		name = X_CRI_events.2.a
+		custom_tooltip = X_CRI_event_2_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = PREV }
+					culture_group = tartar
+				}
+				add_permanent_claim = PREV
+			}
+		}
+		add_splendor = 200
+		add_country_modifier = {
+			name = X_CRI_tatars_crushed_cmod
+			duration = 5475
+		}
+	}
+}
+
+#Strength of the Steppe
+country_event = {
+	id = X_CRI_events.3
+	title = X_CRI_events.3.t
+	desc = X_CRI_events.3.d1
+	picture = MONGOL_BANNERS_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = X_CRI_events.3.a
+		add_country_modifier = {
+			name = X_CRI_exact_tribute_cmod
+			duration = 3650
+		}
+	}
+}
+
+#A Failed Expedition
+country_event = {
+	id = X_CRI_events.4
+	title = X_CRI_events.4.t
+	desc = X_CRI_events.4.d1
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = X_CRI_events.4.a
+		add_country_modifier = {
+			name = X_CRI_exacted_tribute_cmod
+			duration = 3650
+		}
+	}
+}

@@ -1,12 +1,12 @@
-X_CRI_peace_treaty_1 = { #Crush the Tatar Yoke
-	category = 6 
+X_CRI_peace_treaty_4 = { #Claim Legacy
+	category = 6
 	power_projection = humiliated_rival
 	power_cost_base = 1.0 
 	prestige_base = 0.1 
 	ae_base = 0.0
 	warscore_cost = {
 		all_provinces = 0.0 
-		no_provinces = 25.0
+		no_provinces = 100.0
 		owner_keeps = 0.0 
 		conquered = 0.0 
 		returned_core = 0.0 
@@ -16,8 +16,10 @@ X_CRI_peace_treaty_1 = { #Crush the Tatar Yoke
 	}
 	requires_is_allowed = yes
 	effect = {
-		FROM = { add_mandate = -50 }
-		set_country_flag = X_CRI_crushed_tatar_yoke_cflag
+		if = {
+			limit = { FROM = { is_emperor_of_china = yes } }
+			set_emperor_of_china = ROOT
+		}
 	}
 	ai_weight = { 
 		export_to_variable = {

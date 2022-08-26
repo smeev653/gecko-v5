@@ -1,5 +1,5 @@
 X_CRI_decree_1 = {
-	cost = 25
+	cost = 12.5
 	duration = 3650
 	modifier = {
 		build_cost = -0.1
@@ -8,16 +8,16 @@ X_CRI_decree_1 = {
 }
 
 X_CRI_decree_2 = {
-	cost = 25
+	cost = 12.5
 	duration = 3650
 	modifier = {
 		loot_amount = 0.25
-		shock_damage = 0.05
+		shock_damage = 0.1
 	}
 }
 
 X_CRI_decree_3 = {
-	cost = 25
+	cost = 12.5
 	duration = 3650
 	modifier = {
 		idea_cost = -0.1
@@ -25,7 +25,7 @@ X_CRI_decree_3 = {
 }
 
 X_CRI_decree_4 = {
-	cost = 25
+	cost = 12.5
 	duration = 3650
 	modifier = {
 		global_tax_modifier = 0.15
@@ -33,7 +33,7 @@ X_CRI_decree_4 = {
 }
 
 X_CRI_decree_5 = {
-	cost = 25
+	cost = 12.5
 	duration = 3650
 	modifier = {
 		core_creation = -0.15
@@ -41,7 +41,7 @@ X_CRI_decree_5 = {
 }
 
 X_CRI_decree_6 = {
-	cost = 25
+	cost = 12.5
 	duration = 3650
 	modifier = {
 		diplomatic_annexation_cost = -0.2

@@ -27,8 +27,13 @@ X_CRI_reforms_pmod_ownership_change_effect = {
 	if = {
 		limit = {
 			has_terrain = steppe
-			owner = { is_emperor_of_china = yes }
-			has_global_flag = X_CRI_reform_3_gflag
+			owner = { 
+				is_emperor_of_china = yes
+				check_variable = {
+					which = X_CRI_celestial_empire_reforms_variable
+					value = 3
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -40,11 +45,38 @@ X_CRI_reforms_pmod_ownership_change_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			OR = {
+				NOT = { has_terrain = steppe }
+				owner = {
+					OR = {
+						is_emperor_of_china = no
+						NOT = { 
+							check_variable = {
+								which = X_CRI_celestial_empire_reforms_variable
+								value = 3
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = { has_province_modifier = X_CRI_reform_3_pmod }
+			remove_province_modifier = X_CRI_reform_3_pmod
+		}
+	}
 	if = {
 		limit = {
 			religion_group = christian
-			owner = { is_emperor_of_china = yes }
-			has_global_flag = X_CRI_reform_6_gflag
+			owner = { 
+				is_emperor_of_china = yes
+				check_variable = {
+					which = X_CRI_celestial_empire_reforms_variable
+					value = 6
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -56,8 +88,5888 @@ X_CRI_reforms_pmod_ownership_change_effect = {
 			}
 		}
 	}
-	else = {
-		remove_province_modifier = X_CRI_reform_3_pmod
-		remove_province_modifier = X_CRI_reform_6_pmod
+	else_if = {
+		limit = {
+			OR = {
+				NOT = { has_terrain = steppe }
+				owner = {
+					OR = {
+						is_emperor_of_china = no
+						NOT = { 
+							check_variable = {
+								which = X_CRI_celestial_empire_reforms_variable
+								value = 6
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = { has_province_modifier = X_CRI_reform_6_pmod }
+			remove_province_modifier = X_CRI_reform_6_pmod
+		}
+	}
+}
+
+X_culture_union_effect = {
+	set_global_flag = X_$group$_culture_exists_$union$_gflag
+	[[tartar]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { astrakhani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { astrakhani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { uzbehk = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { uzbehk = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { ostyaki = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { ostyaki = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { turkmeni = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { turkmeni = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bashkir = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bashkir = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { khazak = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { khazak = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { kirgiz = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { kirgiz = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { circassian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { circassian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { dagestani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { dagestani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { crimean = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { crimean = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { kazani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { kazani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { mishary  = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { mishary = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { nogaybak = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { nogaybak = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { siberian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { siberian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[germanic]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { pommeranian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { pommeranian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { prussian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { prussian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { lower_saxon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { lower_saxon = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { hannoverian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { hannoverian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { hessian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { hessian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { saxon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { saxon = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { franconian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { franconian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { swabian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { swabian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { swiss = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { swiss = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bavarian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bavarian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { austrian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { austrian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { frisian  = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { frisian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[latin]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { lombard = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { lombard = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { tuscan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { tuscan = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { sardinian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { sardinian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { romagnan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { romagnan = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { ligurian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { ligurian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { venetian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { venetian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { dalmatian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { dalmatian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { neapolitan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { neapolitan = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { piedmontese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { piedmontese = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { umbrian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { umbrian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { sicilian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { sicilian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { maltese  = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { maltese = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[west_slavic]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { czech = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { czech = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { polish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { polish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { schlesian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { schlesian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { sorbian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { sorbian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { slovak = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { slovak = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { lithuanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { lithuanian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[east_slavic]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { russian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { russian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { novgorodian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { novgorodian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { ryazanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { ryazanian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { byelorussian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { byelorussian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { ruthenian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { ruthenian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { karelian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { karelian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[scandinavian]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { swedish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { swedish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { danish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { danish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { norwegian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { norwegian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { finnish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { finnish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { sapmi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { sapmi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { icelandic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { icelandic = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { estonian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { estonian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { latvian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { latvian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[carpathian]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { transylvanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { transylvanian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { romanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { romanian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { hungarian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { hungarian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { croatian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { croatian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { serbian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { serbian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { slovene = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { slovene = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bosnian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bosnian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bulgarian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bulgarian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { albanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { albanian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { greek = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { greek = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { pontic_greek = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { pontic_greek = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { goths = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { goths = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[iberian]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { castillian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { castillian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { mexican = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { mexican = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { platinean = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { platinean = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { leonese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { leonese = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { aragonese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { aragonese = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { catalan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { catalan = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { galician = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { galician = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { andalucian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { andalucian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { portugese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { portugese = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { brazilian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { brazilian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { basque = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { basque = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[maghrebi]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { moroccan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { moroccan = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { tunisian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { tunisian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { algerian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { algerian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { berber = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { berber = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { tuareg = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { tuareg = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[french]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { cosmopolitan_french = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { cosmopolitan_french = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { gascon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { gascon = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { normand = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { normand = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { aquitaine = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { aquitaine = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { burgundian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { burgundian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { occitain = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { occitain = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { breton = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { breton = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[lowlands]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { dutch = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { dutch = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { wallonian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { wallonian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { louisianans = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { louisianans = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { quebecois = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { quebecois = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { flemish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { flemish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[british]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { english = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { english = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { american = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { american = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { welsh = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { welsh = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { cornish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { cornish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { scottish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { scottish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { highland_scottish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { highland_scottish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[hindusthani]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { avadhi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { avadhi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bihari = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bihari = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { pahari = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { pahari = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { nepali = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { nepali = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { kanauji = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { kanauji = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { vindhyan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { vindhyan = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { panjabi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { panjabi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { sindhi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { sindhi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { rajput = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { rajput = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { kashmiri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { kashmiri = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[iranian]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { persian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { persian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { luri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { luri = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { azerbaijani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { azerbaijani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { khorasani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { khorasani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { baluchi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { baluchi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { afghani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { afghani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { kurdish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { kurdish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { mazandarani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { mazandarani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { georgian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { georgian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { armenian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { armenian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[turko_semitic]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { turkish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { turkish = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { al_misr_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { al_misr_arabic = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { al_suryah_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { al_suryah_arabic = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { al_iraqiya_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { al_iraqiya_arabic = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { gulf_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { gulf_arabic = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bedouin_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bedouin_arabic = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { mahri_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { mahri_culture = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { hejazi_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { hejazi_culture = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { omani_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { omani_culture = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { yemeni_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { yemeni_culture = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	clr_global_flag = X_$group$_culture_union_$union$_gflag
+}
+
+X_culture_exists_effect = {
+	set_global_flag = X_$group$_culture_exists_$exists$_gflag
+	[[tartar]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { astrakhani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { astrakhani = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { uzbehk = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { uzbehk = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { ostyaki = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { ostyaki = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { turkmeni = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { turkmeni = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bashkir = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bashkir = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { khazak = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { khazak = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { kirgiz = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { kirgiz = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { circassian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { circassian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { dagestani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { dagestani = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { crimean = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { crimean = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { kazani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { kazani = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { mishary = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { mishary = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { nogaybak = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { nogaybak = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { siberian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { siberian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[germanic]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { pommeranian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { pommeranian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { prussian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { prussian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { lower_saxon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { lower_saxon = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { hannoverian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { hannoverian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { hessian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { hessian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { saxon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { saxon = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { franconian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { franconian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { swabian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { swabian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { swiss = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { swiss = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bavarian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bavarian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { austrian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { austrian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { frisian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { frisian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[latin]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { lombard = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { lombard = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { tuscan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { tuscan = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { sardinian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { sardinian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { romagnan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { romagnan = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { ligurian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { ligurian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { venetian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { venetian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { dalmatian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { dalmatian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { neapolitan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { neapolitan = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { piedmontese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { piedmontese = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { umbrian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { umbrian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { sicilian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { sicilian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { maltese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { maltese = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[west_slavic]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { czech = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { czech = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { polish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { polish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { schlesian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { schlesian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { sorbian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { sorbian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { slovak = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { slovak = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { lithuanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { lithuanian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[east_slavic]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { russian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { russian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { novgorodian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { novgorodian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { ryazanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { ryazanian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { byelorussian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { byelorussian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { ruthenian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { ruthenian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { karelian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { karelian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[scandinavian]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { swedish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { swedish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { danish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { danish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { norwegian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { norwegian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { finnish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { finnish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { sapmi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { sapmi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { icelandic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { icelandic = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { estonian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { estonian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { latvian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { latvian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[carpathian]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { transylvanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { transylvanian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { romanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { romanian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { hungarian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { hungarian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { croatian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { croatian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { serbian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { serbian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { slovene = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { slovene = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bosnian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bosnian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bulgarian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bulgarian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { albanian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { albanian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { greek = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { greek = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { pontic_greek = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { pontic_greek = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { goths = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { goths = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[iberian]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { castillian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { castillian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { mexican = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { mexican = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { platinean = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { platinean = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { leonese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { leonese = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { aragonese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { aragonese = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { catalan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { catalan = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { galician = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { galician = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { andalucian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { andalucian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { portugese = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { portugese = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { brazilian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { brazilian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { basque = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { basque = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[maghrebi]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { moroccan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { moroccan = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { tunisian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { tunisian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { algerian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { algerian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { berber = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { berber = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { tuareg = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { tuareg = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[french]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { cosmopolitan_french = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { cosmopolitan_french = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { gascon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { gascon = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { normand = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { normand = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { aquitaine = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { aquitaine = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { burgundian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { burgundian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { occitain = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { occitain = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { breton = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { breton = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[lowlands]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { dutch = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { dutch = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { wallonian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { wallonian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { louisianans = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { louisianans = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { quebecois = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { quebecois = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { flemish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { flemish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[british]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { english = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { english = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { american = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { american = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { welsh = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { welsh = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { cornish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { cornish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { scottish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { scottish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { highland_scottish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { highland_scottish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[hindusthani]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { avadhi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { avadhi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bihari = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bihari = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { pahari = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { pahari = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { nepali = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { nepali = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { kanauji = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { kanauji = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { vindhyan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { vindhyan = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { panjabi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { panjabi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { sindhi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { sindhi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { rajput = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { rajput = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { kashmiri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { kashmiri = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[iranian]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { persian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { persian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { luri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { luri = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { azerbaijani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { azerbaijani = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { khorasani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { khorasani = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { baluchi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { baluchi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { afghani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { afghani = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { kurdish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { kurdish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { mazandarani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { mazandarani = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { georgian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { georgian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { armenian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { armenian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[turko_semitic]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { turkish = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { turkish = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { al_misr_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { al_misr_arabic = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { al_suryah_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { al_suryah_arabic = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { al_iraqiya_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { al_iraqiya_arabic = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { gulf_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { gulf_arabic = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bedouin_arabic = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bedouin_arabic = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { mahri_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { mahri_culture = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { hejazi_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { hejazi_culture = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { omani_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { omani_culture = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { yemeni_culture = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { yemeni_culture = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	clr_global_flag = X_$group$_culture_exists_$exists$_gflag
+}
+
+X_remove_tiered_modifier_effect = {
+	remove_country_modifier = X_$group$_culture_tier_1_cmod
+	remove_country_modifier = X_$group$_culture_tier_2_cmod
+	remove_country_modifier = X_$group$_culture_tier_3_cmod
+	remove_country_modifier = X_$group$_culture_tier_4_cmod
+	remove_country_modifier = X_$group$_culture_tier_5_cmod
+	remove_country_modifier = X_$group$_culture_tier_6_cmod
+	remove_country_modifier = X_$group$_culture_tier_7_cmod
+	remove_country_modifier = X_$group$_culture_tier_8_cmod
+	remove_country_modifier = X_$group$_culture_tier_9_cmod
+	remove_country_modifier = X_$group$_culture_tier_10_cmod
+	remove_country_modifier = X_$group$_culture_full_control_cmod
+}
+
+X_culture_control_development_effect = {
+	set_variable = {
+		which = X_$group$_control_province_development_variable
+		value = 0
+	}
+	set_variable = {
+		which = X_$group$_control_development_variable
+		value = 0
+	}
+	every_province = {
+		limit = { 
+			culture_group = $group$
+			country_or_non_sovereign_subject_holds = PREV
+		}
+		export_to_variable = {
+			which = X_$group$_control_province_development_variable
+			value = development
+		}
+		PREV = {
+			set_variable = {
+				which = X_$group$_control_province_development_variable
+				which = PREV
+			}
+			change_variable = {
+				which = X_$group$_control_development_variable
+				which = X_$group$_control_province_development_variable
+			}
+		}
+	}
+}
+
+
+X_culture_total_development_effect = {
+	set_variable = {
+		which = X_$group$_province_development_variable
+		value = 0
+	}
+	set_variable = {
+		which = X_$group$_total_development_variable
+		value = 0
+	}
+	every_province = {
+		limit = { culture_group = $group$ }
+		export_to_variable = {
+			which = X_$group$_province_development_variable
+			value = development
+		}
+		PREV = {
+			set_variable = {
+				which = X_$group$_province_development_variable
+				which = PREV
+			}
+			change_variable = {
+				which = X_$group$_total_development_variable
+				which = X_$group$_province_development_variable
+			}
+		}
+	}
+}
+
+X_culture_group_control_effect = {
+	clr_global_flag = X_$group$_control_$type$_gflag
+	set_global_flag = X_$group$_control_$type$_gflag
+	if = {
+		limit = { any_province = { culture_group = $group$ } $who$ = { exists = yes ai = no } }
+		$who$ = {
+			if = {
+				limit = { has_global_flag = X_$group$_control_union_gflag }
+				X_culture_union_effect = { $group$ = yes union = yes group = $group$ }
+				X_culture_exists_effect = { $group$ = yes exists = yes group = $group$ }
+				divide_variable = {
+					which = X_$group$_union_variable
+					which = X_$group$_exists_variable
+				}
+				set_variable = {
+					which = X_$group$_variable
+					which = X_$group$_union_variable
+				}
+			}
+			else_if = {
+				limit = { has_global_flag = X_$group$_control_development_gflag }
+				X_culture_control_development_effect = { group = $group$ }
+				X_culture_total_development_effect = { group = $group$ }
+				divide_variable = {
+					which = X_$group$_control_development_variable
+					which = X_$group$_total_development_variable
+				}
+				set_variable = {
+					which = X_$group$_variable
+					which = X_$group$_control_development_variable
+				}
+			}
+			X_remove_tiered_modifier_effect = { group = $group$ }
+			if = {
+				limit = { culture_group = $group$ NOT = { is_subject = yes } }
+				if = {
+					limit = {
+						is_variable_equal = {
+							which = X_$group$_variable
+							value = 0
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.001
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.099
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_1_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.100
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.199
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_2_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.200
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.299
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_3_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.300
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.399
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_4_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.400
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.499
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_5_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.500
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.599
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_6_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.600
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.699
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_7_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.700
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.799
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_8_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.800
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.899
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_9_cmod
+						duration = -1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = X_$group$_variable
+							value = 0.900
+						}
+						NOT = {
+							check_variable = {
+								which = X_$group$_variable
+								value = 0.999
+							}
+						}
+					}
+					add_country_modifier = {
+						name = X_$group$_culture_tier_10_cmod
+						duration = -1
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = X_$group$_culture_full_control_cmod
+						duration = -1
+					}
+				}
+				multiply_variable = { #For localization purposes because I'm dumb and can't get the % through those means atm and idk why too tired.
+					which = X_$group$_variable
+					value = 100
+				}
+			}
+		}
 	}
 }

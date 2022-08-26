@@ -1,0 +1,274 @@
+#tartar
+defined_text = {
+	name = GetXTartarCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_tartar_culture_control_union_key
+		trigger = {
+			has_global_flag = X_tartar_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_tartar_culture_control_development_key
+		trigger = {
+			has_global_flag = X_tartar_control_development_gflag
+		}
+	}
+}
+#germanic
+defined_text = {
+	name = GetXGermanicCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_germanic_culture_control_union_key
+		trigger = {
+			has_global_flag = X_germanic_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_germanic_culture_control_development_key
+		trigger = {
+			has_global_flag = X_germanic_control_development_gflag
+		}
+	}
+}
+#latin
+defined_text = {
+	name = GetXLatinCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_latin_culture_control_union_key
+		trigger = {
+			has_global_flag = X_latin_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_latin_culture_control_development_key
+		trigger = {
+			has_global_flag = X_latin_control_development_gflag
+		}
+	}
+}
+#west_slavic
+defined_text = {
+	name = GetXWestSlavicCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_west_slavic_culture_control_union_key
+		trigger = {
+			has_global_flag = X_west_slavic_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_west_slavic_culture_control_development_key
+		trigger = {
+			has_global_flag = X_west_slavic_control_development_gflag
+		}
+	}
+}
+#east_slavic
+defined_text = {
+	name = GetXEastSlavicCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_east_slavic_culture_control_union_key
+		trigger = {
+			has_global_flag = X_east_slavic_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_east_slavic_culture_control_development_key
+		trigger = {
+			has_global_flag = X_east_slavic_control_development_gflag
+		}
+	}
+}
+#scandinavian
+defined_text = {
+	name = GetXScandinavianCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_scandinavian_culture_control_union_key
+		trigger = {
+			has_global_flag = X_scandinavian_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_scandinavian_culture_control_development_key
+		trigger = {
+			has_global_flag = X_scandinavian_control_development_gflag
+		}
+	}
+}
+#carpathian
+defined_text = {
+	name = GetXCarpathianCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_carpathian_culture_control_union_key
+		trigger = {
+			has_global_flag = X_carpathian_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_carpathian_culture_control_development_key
+		trigger = {
+			has_global_flag = X_carpathian_control_development_gflag
+		}
+	}
+}
+#iberian
+defined_text = {
+	name = GetXIberianCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_iberian_culture_control_union_key
+		trigger = {
+			has_global_flag = X_iberian_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_iberian_culture_control_development_key
+		trigger = {
+			has_global_flag = X_iberian_control_development_gflag
+		}
+	}
+}
+#maghrebi
+defined_text = {
+	name = GetXMaghrebiCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_maghrebi_culture_control_union_key
+		trigger = {
+			has_global_flag = X_maghrebi_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_maghrebi_culture_control_development_key
+		trigger = {
+			has_global_flag = X_maghrebi_control_development_gflag
+		}
+	}
+}
+#french
+defined_text = {
+	name = GetXFrenchCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_french_culture_control_union_key
+		trigger = {
+			has_global_flag = X_french_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_french_culture_control_development_key
+		trigger = {
+			has_global_flag = X_french_control_development_gflag
+		}
+	}
+}
+#lowlands
+defined_text = {
+	name = GetXLowlandsCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_lowlands_culture_control_union_key
+		trigger = {
+			has_global_flag = X_lowlands_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_lowlands_culture_control_development_key
+		trigger = {
+			has_global_flag = X_lowlands_control_development_gflag
+		}
+	}
+}
+#british
+defined_text = {
+	name = GetXBritishCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_british_culture_control_union_key
+		trigger = {
+			has_global_flag = X_british_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_british_culture_control_development_key
+		trigger = {
+			has_global_flag = X_british_control_development_gflag
+		}
+	}
+}
+#hindusthani
+defined_text = {
+	name = GetXHindusthaniCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_hindusthani_culture_control_union_key
+		trigger = {
+			has_global_flag = X_hindusthani_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_hindusthani_culture_control_development_key
+		trigger = {
+			has_global_flag = X_hindusthani_control_development_gflag
+		}
+	}
+}
+#iranian
+defined_text = {
+	name = GetXIranianCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_iranian_culture_control_union_key
+		trigger = {
+			has_global_flag = X_iranian_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_iranian_culture_control_development_key
+		trigger = {
+			has_global_flag = X_iranian_control_development_gflag
+		}
+	}
+}
+#turko_semitic
+defined_text = {
+	name = GetXTurkoSemiticCultureEffect
+	random = no
+
+	text = {
+		localisation_key = X_turko_semitic_culture_control_union_key
+		trigger = {
+			has_global_flag = X_turko_semitic_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_turko_semitic_culture_control_development_key
+		trigger = {
+			has_global_flag = X_turko_semitic_control_development_gflag
+		}
+	}
+}
+
+
+
+

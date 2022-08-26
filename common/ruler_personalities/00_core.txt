@@ -3525,7 +3525,10 @@ humane_personality = {
 		###X###
 		modifier = {
 			factor = 0.75
-			has_global_flag = X_CRI_reform_2_gflag
+			check_variable = {
+				which = X_CRI_celestial_empire_reforms_variable
+				value = 2
+			}
 		}
 		#######
 	}

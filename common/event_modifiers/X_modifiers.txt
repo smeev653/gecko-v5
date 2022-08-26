@@ -133,3 +133,703 @@ X_CRI_reform_3_pmod = {
 X_CRI_reform_6_pmod = {
 	local_manpower_modifier = 0.33
 }
+
+X_CRI_era_of_peace_cmod = {
+	war_exhaustion = -0.10
+	global_monthly_devastation = -0.1
+	manpower_recovery_speed = 0.10
+	global_tax_modifier = 0.15
+}
+
+X_CRI_tatars_crushed_cmod = {
+	army_tradition = 1
+	prestige = 0.5
+	land_morale = 0.1
+}
+
+X_CRI_exact_tribute_cmod = {
+	global_tax_modifier = 0.20
+}
+
+X_CRI_exacted_tribute_cmod = {
+	global_tax_modifier = -0.20
+}
+
+########################################
+# Tiered Modifiers
+########################################
+#tartar
+X_tartar_culture_tier_1_cmod = {
+	cavalry_power = 0.010
+	imperial_mandate = 0.010
+}
+X_tartar_culture_tier_2_cmod = {
+	cavalry_power = 0.020
+	imperial_mandate = 0.020
+}
+X_tartar_culture_tier_3_cmod = {
+	cavalry_power = 0.030
+	imperial_mandate = 0.030
+}
+X_tartar_culture_tier_4_cmod = {
+	cavalry_power = 0.040
+	imperial_mandate = 0.040
+}
+X_tartar_culture_tier_5_cmod = {
+	cavalry_power = 0.050
+	imperial_mandate = 0.050
+}
+X_tartar_culture_tier_6_cmod = {
+	cavalry_power = 0.060
+	imperial_mandate = 0.060
+}
+X_tartar_culture_tier_7_cmod = {
+	cavalry_power = 0.070
+	imperial_mandate = 0.070
+}
+X_tartar_culture_tier_8_cmod = {
+	cavalry_power = 0.080
+	imperial_mandate = 0.080
+}
+X_tartar_culture_tier_9_cmod = {
+	cavalry_power = 0.090
+	imperial_mandate = 0.090
+}
+X_tartar_culture_tier_10_cmod = {
+	cavalry_power = 0.100
+	imperial_mandate = 0.100
+}
+X_tartar_culture_full_control_cmod = {
+	cavalry_power = 0.125
+	imperial_mandate = 0.200
+}
+#germanic
+X_germanic_culture_tier_1_cmod = {
+	infantry_power = 0.010
+	yearly_army_professionalism = 0.001
+}
+X_germanic_culture_tier_2_cmod = {
+	infantry_power = 0.020
+	yearly_army_professionalism = 0.002
+}
+X_germanic_culture_tier_3_cmod = {
+	infantry_power = 0.030
+	yearly_army_professionalism = 0.003
+}
+X_germanic_culture_tier_4_cmod = {
+	infantry_power = 0.040
+	yearly_army_professionalism = 0.004
+}
+X_germanic_culture_tier_5_cmod = {
+	infantry_power = 0.050
+	yearly_army_professionalism = 0.005
+}
+X_germanic_culture_tier_6_cmod = {
+	infantry_power = 0.060
+	yearly_army_professionalism = 0.006
+}
+X_germanic_culture_tier_7_cmod = {
+	infantry_power = 0.070
+	yearly_army_professionalism = 0.007
+}
+X_germanic_culture_tier_8_cmod = {
+	infantry_power = 0.080
+	yearly_army_professionalism = 0.008
+}
+X_germanic_culture_tier_9_cmod = {
+	infantry_power = 0.090
+	yearly_army_professionalism = 0.009
+}
+X_germanic_culture_tier_10_cmod = {
+	infantry_power = 0.100
+	yearly_army_professionalism = 0.010
+}
+X_germanic_culture_full_control_cmod = {
+	infantry_power = 0.125
+	yearly_army_professionalism = 0.015
+}
+#latin
+X_latin_culture_tier_1_cmod = {
+	land_morale = 0.010
+	all_power_cost = -0.002
+}
+X_latin_culture_tier_2_cmod = {
+	land_morale = 0.020
+	all_power_cost = -0.004
+}
+X_latin_culture_tier_3_cmod = {
+	land_morale = 0.030
+	all_power_cost = -0.006
+}
+X_latin_culture_tier_4_cmod = {
+	land_morale = 0.040
+	all_power_cost = -0.008
+}
+X_latin_culture_tier_5_cmod = {
+	land_morale = 0.050
+	all_power_cost = -0.010
+}
+X_latin_culture_tier_6_cmod = {
+	land_morale = 0.060
+	all_power_cost = -0.012
+}
+X_latin_culture_tier_7_cmod = {
+	land_morale = 0.070
+	all_power_cost = -0.014
+}
+X_latin_culture_tier_8_cmod = {
+	land_morale = 0.080
+	all_power_cost = -0.016
+}
+X_latin_culture_tier_9_cmod = {
+	land_morale = 0.090
+	all_power_cost = -0.018
+}
+X_latin_culture_tier_10_cmod = {
+	land_morale = 0.100
+	all_power_cost = -0.020
+}
+X_latin_culture_full_control_cmod = {
+	land_morale = 0.125
+	all_power_cost = -0.025
+}
+#west_slavic
+X_west_slavic_culture_tier_1_cmod = {
+	shock_damage_received = -0.010
+	technology_cost = -0.005
+}
+X_west_slavic_culture_tier_2_cmod = {
+	shock_damage_received = -0.020
+	technology_cost = -0.010
+}
+X_west_slavic_culture_tier_3_cmod = {
+	shock_damage_received = -0.030
+	technology_cost = -0.015
+}
+X_west_slavic_culture_tier_4_cmod = {
+	shock_damage_received = -0.040
+	technology_cost = -0.020
+}
+X_west_slavic_culture_tier_5_cmod = {
+	shock_damage_received = -0.050
+	technology_cost = -0.025
+}
+X_west_slavic_culture_tier_6_cmod = {
+	shock_damage_received = -0.060
+	technology_cost = -0.030
+}
+X_west_slavic_culture_tier_7_cmod = {
+	shock_damage_received = -0.070
+	technology_cost = -0.035
+}
+X_west_slavic_culture_tier_8_cmod = {
+	shock_damage_received = -0.080
+	technology_cost = -0.040
+}
+X_west_slavic_culture_tier_9_cmod = {
+	shock_damage_received = -0.090
+	technology_cost = -0.045
+}
+X_west_slavic_culture_tier_10_cmod = {
+	shock_damage_received = -0.100
+	technology_cost = -0.050
+}
+X_west_slavic_culture_full_control_cmod = {
+	shock_damage_received = -0.125
+	technology_cost = -0.075
+}
+#east_slavic
+X_east_slavic_culture_tier_1_cmod = {
+	land_attrition = -0.015
+	war_exhaustion = -0.010
+}
+X_east_slavic_culture_tier_2_cmod = {
+	land_attrition = -0.030
+	war_exhaustion = -0.020
+}
+X_east_slavic_culture_tier_3_cmod = {
+	land_attrition = -0.045
+	war_exhaustion = -0.030
+}
+X_east_slavic_culture_tier_4_cmod = {
+	land_attrition = -0.060
+	war_exhaustion = -0.040
+}
+X_east_slavic_culture_tier_5_cmod = {
+	land_attrition = -0.075
+	war_exhaustion = -0.050
+}
+X_east_slavic_culture_tier_6_cmod = {
+	land_attrition = -0.090
+	war_exhaustion = -0.060
+}
+X_east_slavic_culture_tier_7_cmod = {
+	land_attrition = -0.105
+	war_exhaustion = -0.070
+}
+X_east_slavic_culture_tier_8_cmod = {
+	land_attrition = -0.120
+	war_exhaustion = -0.08
+}
+X_east_slavic_culture_tier_9_cmod = {
+	land_attrition = -0.135
+	war_exhaustion = -0.090
+}
+X_east_slavic_culture_tier_10_cmod = {
+	land_attrition = -0.150
+	war_exhaustion = -0.010
+}
+X_east_slavic_culture_full_control_cmod = {
+	land_attrition = -0.200
+	war_exhaustion = -0.020
+}
+#scandinavian
+X_scandinavian_culture_tier_1_cmod = {
+	galley_power = 0.010
+	infantry_cost = -0.010
+}
+X_scandinavian_culture_tier_2_cmod = {
+	galley_power = 0.020
+	infantry_cost = -0.020
+}
+X_scandinavian_culture_tier_3_cmod = {
+	galley_power = 0.030
+	infantry_cost = -0.030
+}
+X_scandinavian_culture_tier_4_cmod = {
+	galley_power = 0.040
+	infantry_cost = -0.040
+}
+X_scandinavian_culture_tier_5_cmod = {
+	galley_power = 0.050
+	infantry_cost = -0.050
+}
+X_scandinavian_culture_tier_6_cmod = {
+	galley_power = 0.060
+	infantry_cost = -0.060
+}
+X_scandinavian_culture_tier_7_cmod = {
+	galley_power = 0.070
+	infantry_cost = -0.070
+}
+X_scandinavian_culture_tier_8_cmod = {
+	galley_power = 0.080
+	infantry_cost = -0.080
+}
+X_scandinavian_culture_tier_9_cmod = {
+	galley_power = 0.090
+	infantry_cost = -0.090
+}
+X_scandinavian_culture_tier_10_cmod = {
+	galley_power = 0.100
+	infantry_cost = -0.100
+}
+X_scandinavian_culture_full_control_cmod = {
+	galley_power = 0.125
+	infantry_cost = -0.125
+}
+#carpathian
+X_carpathian_culture_tier_1_cmod = {
+	defensiveness = 0.020
+	cavalry_cost = -0.010
+}
+X_carpathian_culture_tier_2_cmod = {
+	defensiveness = 0.040
+	cavalry_cost = -0.020
+}
+X_carpathian_culture_tier_3_cmod = {
+	defensiveness = 0.060
+	cavalry_cost = -0.030
+}
+X_carpathian_culture_tier_4_cmod = {
+	defensiveness = 0.080
+	cavalry_cost = -0.040
+}
+X_carpathian_culture_tier_5_cmod = {
+	defensiveness = 0.100
+	cavalry_cost = -0.050
+}
+X_carpathian_culture_tier_6_cmod = {
+	defensiveness = 0.120
+	cavalry_cost = -0.060
+}
+X_carpathian_culture_tier_7_cmod = {
+	defensiveness = 0.140
+	cavalry_cost = -0.070
+}
+X_carpathian_culture_tier_8_cmod = {
+	defensiveness = 0.160
+	cavalry_cost = -0.080
+}
+X_carpathian_culture_tier_9_cmod = {
+	defensiveness = 0.180
+	cavalry_cost = -0.090
+}
+X_carpathian_culture_tier_10_cmod = {
+	defensiveness = 0.200
+	cavalry_cost = -0.100
+}
+X_carpathian_culture_full_control_cmod = {
+	defensiveness = 0.250
+	cavalry_cost = -0.125
+}
+#iberian
+X_iberian_culture_tier_1_cmod = {
+	discipline = 0.003
+	naval_maintenance_modifier = -0.020
+}
+X_iberian_culture_tier_2_cmod = {
+	discipline = 0.006
+	naval_maintenance_modifier = -0.040
+}
+X_iberian_culture_tier_3_cmod = {
+	discipline = 0.009
+	naval_maintenance_modifier = -0.060
+}
+X_iberian_culture_tier_4_cmod = {
+	discipline = 0.012
+	naval_maintenance_modifier = -0.080
+}
+X_iberian_culture_tier_5_cmod = {
+	discipline = 0.015
+	naval_maintenance_modifier = -0.100
+}
+X_iberian_culture_tier_6_cmod = {
+	discipline = 0.018
+	naval_maintenance_modifier = -0.120
+}
+X_iberian_culture_tier_7_cmod = {
+	discipline = 0.021
+	naval_maintenance_modifier = -0.140
+}
+X_iberian_culture_tier_8_cmod = {
+	discipline = 0.024
+	naval_maintenance_modifier = -0.160
+}
+X_iberian_culture_tier_9_cmod = {
+	discipline = 0.027
+	naval_maintenance_modifier = -0.180
+}
+X_iberian_culture_tier_10_cmod = {
+	discipline = 0.030
+	naval_maintenance_modifier = -0.200
+}
+X_iberian_culture_full_control_cmod = {
+	discipline = 0.050
+	naval_maintenance_modifier = -0.250
+}
+#maghrebi
+X_maghrebi_culture_tier_1_cmod = {
+	shock_damage = 0.010
+	galley_cost = -0.010
+}
+X_maghrebi_culture_tier_2_cmod = {
+	shock_damage = 0.020
+	galley_cost = -0.020
+}
+X_maghrebi_culture_tier_3_cmod = {
+	shock_damage = 0.030
+	galley_cost = -0.030
+}
+X_maghrebi_culture_tier_4_cmod = {
+	shock_damage = 0.040
+	galley_cost = -0.040
+}
+X_maghrebi_culture_tier_5_cmod = {
+	shock_damage = 0.050
+	galley_cost = -0.050
+}
+X_maghrebi_culture_tier_6_cmod = {
+	shock_damage = 0.060
+	galley_cost = -0.060
+}
+X_maghrebi_culture_tier_7_cmod = {
+	shock_damage = 0.070
+	galley_cost = -0.070
+}
+X_maghrebi_culture_tier_8_cmod = {
+	shock_damage = 0.080
+	galley_cost = -0.080
+}
+X_maghrebi_culture_tier_9_cmod = {
+	shock_damage = 0.090
+	galley_cost = -0.090
+}
+X_maghrebi_culture_tier_10_cmod = {
+	shock_damage = 0.100
+	galley_cost = -0.100
+}
+X_maghrebi_culture_full_control_cmod = {
+	shock_damage = 0.125
+	galley_cost = -0.125
+}
+#french
+X_french_culture_tier_1_cmod = {
+	manpower_recovery_speed = 0.010
+	all_estate_loyalty_equilibrium = 0.005
+}
+X_french_culture_tier_2_cmod = {
+	manpower_recovery_speed = 0.020
+	all_estate_loyalty_equilibrium = 0.010
+}
+X_french_culture_tier_3_cmod = {
+	manpower_recovery_speed = 0.030
+	all_estate_loyalty_equilibrium = 0.015
+}
+X_french_culture_tier_4_cmod = {
+	manpower_recovery_speed = 0.040
+	all_estate_loyalty_equilibrium = 0.020
+}
+X_french_culture_tier_5_cmod = {
+	manpower_recovery_speed = 0.050
+	all_estate_loyalty_equilibrium = 0.025
+}
+X_french_culture_tier_6_cmod = {
+	manpower_recovery_speed = 0.060
+	all_estate_loyalty_equilibrium = 0.030
+}
+X_french_culture_tier_7_cmod = {
+	manpower_recovery_speed = 0.070
+	all_estate_loyalty_equilibrium = 0.035
+}
+X_french_culture_tier_8_cmod = {
+	manpower_recovery_speed = 0.080
+	all_estate_loyalty_equilibrium = 0.040
+}
+X_french_culture_tier_9_cmod = {
+	manpower_recovery_speed = 0.090
+	all_estate_loyalty_equilibrium = 0.045
+}
+X_french_culture_tier_10_cmod = {
+	manpower_recovery_speed = 0.100
+	all_estate_loyalty_equilibrium = 0.050
+}
+X_french_culture_full_control_cmod = {
+	manpower_recovery_speed = 0.125
+	all_estate_loyalty_equilibrium = 0.100
+}
+#lowlands
+X_lowlands_culture_tier_1_cmod = {
+	ship_durability = 0.010
+	development_cost = -0.003
+}
+X_lowlands_culture_tier_2_cmod = {
+	ship_durability = 0.020
+	development_cost = -0.006
+}
+X_lowlands_culture_tier_3_cmod = {
+	ship_durability = 0.030
+	development_cost = -0.009
+}
+X_lowlands_culture_tier_4_cmod = {
+	ship_durability = 0.040
+	development_cost = -0.012
+}
+X_lowlands_culture_tier_5_cmod = {
+	ship_durability = 0.050
+	development_cost = -0.015
+}
+X_lowlands_culture_tier_6_cmod = {
+	ship_durability = 0.060
+	development_cost = -0.018
+}
+X_lowlands_culture_tier_7_cmod = {
+	ship_durability = 0.070
+	development_cost = -0.021
+}
+X_lowlands_culture_tier_8_cmod = {
+	ship_durability = 0.080
+	development_cost = -0.024
+}
+X_lowlands_culture_tier_9_cmod = {
+	ship_durability = 0.090
+	development_cost = -0.027
+}
+X_lowlands_culture_tier_10_cmod = {
+	ship_durability = 0.100
+	development_cost = -0.030
+}
+X_lowlands_culture_full_control_cmod = {
+	ship_durability = 0.125
+	development_cost = -0.050
+}
+#british
+X_british_culture_tier_1_cmod = {
+	artillery_power = 0.010
+	heavy_ship_cost = -0.010
+}
+X_british_culture_tier_2_cmod = {
+	artillery_power = 0.020
+	heavy_ship_cost = -0.020
+}
+X_british_culture_tier_3_cmod = {
+	artillery_power = 0.030
+	heavy_ship_cost = -0.030
+}
+X_british_culture_tier_4_cmod = {
+	artillery_power = 0.040
+	heavy_ship_cost = -0.040
+}
+X_british_culture_tier_5_cmod = {
+	artillery_power = 0.050
+	heavy_ship_cost = -0.050
+}
+X_british_culture_tier_6_cmod = {
+	artillery_power = 0.060
+	heavy_ship_cost = -0.060
+}
+X_british_culture_tier_7_cmod = {
+	artillery_power = 0.070
+	heavy_ship_cost = -0.070
+}
+X_british_culture_tier_8_cmod = {
+	artillery_power = 0.080
+	heavy_ship_cost = -0.080
+}
+X_british_culture_tier_9_cmod = {
+	artillery_power = 0.090
+	heavy_ship_cost = -0.090
+}
+X_british_culture_tier_10_cmod = {
+	artillery_power = 0.100
+	heavy_ship_cost = -0.100
+}
+X_british_culture_full_control_cmod = {
+	artillery_power = 0.125
+	heavy_ship_cost = -0.125
+}
+#hindusthani
+X_hindusthani_culture_tier_1_cmod = {
+	fire_damage = 0.010
+	global_trade_goods_size_modifier = 0.005
+}
+X_hindusthani_culture_tier_2_cmod = {
+	fire_damage = 0.020
+	global_trade_goods_size_modifier = 0.010
+}
+X_hindusthani_culture_tier_3_cmod = {
+	fire_damage = 0.030
+	global_trade_goods_size_modifier = 0.015
+}
+X_hindusthani_culture_tier_4_cmod = {
+	fire_damage = 0.040
+	global_trade_goods_size_modifier = 0.020
+}
+X_hindusthani_culture_tier_5_cmod = {
+	fire_damage = 0.050
+	global_trade_goods_size_modifier = 0.025
+}
+X_hindusthani_culture_tier_6_cmod = {
+	fire_damage = 0.060
+	global_trade_goods_size_modifier = 0.030
+}
+X_hindusthani_culture_tier_7_cmod = {
+	fire_damage = 0.070
+	global_trade_goods_size_modifier = 0.035
+}
+X_hindusthani_culture_tier_8_cmod = {
+	fire_damage = 0.080
+	global_trade_goods_size_modifier = 0.040
+}
+X_hindusthani_culture_tier_9_cmod = {
+	fire_damage = 0.090
+	global_trade_goods_size_modifier = 0.045
+}
+X_hindusthani_culture_tier_10_cmod = {
+	fire_damage = 0.100
+	global_trade_goods_size_modifier = 0.050
+}
+X_hindusthani_culture_full_control_cmod = {
+	fire_damage = 0.125
+	global_trade_goods_size_modifier = 0.075
+}
+#iranian
+X_iranian_culture_tier_1_cmod = {
+	global_manpower_modifier = 0.010
+	artillery_cost = -0.015
+}
+X_iranian_culture_tier_2_cmod = {
+	global_manpower_modifier = 0.020
+	artillery_cost = -0.030
+}
+X_iranian_culture_tier_3_cmod = {
+	global_manpower_modifier = 0.030
+	artillery_cost = -0.045
+}
+X_iranian_culture_tier_4_cmod = {
+	global_manpower_modifier = 0.040
+	artillery_cost = -0.060
+}
+X_iranian_culture_tier_5_cmod = {
+	global_manpower_modifier = 0.050
+	artillery_cost = -0.075
+}
+X_iranian_culture_tier_6_cmod = {
+	global_manpower_modifier = 0.060
+	artillery_cost = -0.090
+}
+X_iranian_culture_tier_7_cmod = {
+	global_manpower_modifier = 0.070
+	artillery_cost = -0.105
+}
+X_iranian_culture_tier_8_cmod = {
+	global_manpower_modifier = 0.080
+	artillery_cost = -0.120
+}
+X_iranian_culture_tier_9_cmod = {
+	global_manpower_modifier = 0.090
+	artillery_cost = -0.135
+}
+X_iranian_culture_tier_10_cmod = {
+	global_manpower_modifier = 0.100
+	artillery_cost = -0.150
+}
+X_iranian_culture_full_control_cmod = {
+	global_manpower_modifier = 0.125
+	artillery_cost = -0.200
+}
+#turko_semitic
+X_turko_semitic_culture_tier_1_cmod = {
+	movement_speed = 0.010
+	siege_ability = 0.010
+}
+X_turko_semitic_culture_tier_2_cmod = {
+	movement_speed = 0.020
+	siege_ability = 0.020
+}
+X_turko_semitic_culture_tier_3_cmod = {
+	movement_speed = 0.030
+	siege_ability = 0.030
+}
+X_turko_semitic_culture_tier_4_cmod = {
+	movement_speed = 0.040
+	siege_ability = 0.040
+}
+X_turko_semitic_culture_tier_5_cmod = {
+	movement_speed = 0.050
+	siege_ability = 0.050
+}
+X_turko_semitic_culture_tier_6_cmod = {
+	movement_speed = 0.060
+	siege_ability = 0.060
+}
+X_turko_semitic_culture_tier_7_cmod = {
+	movement_speed = 0.070
+	siege_ability = 0.070
+}
+X_turko_semitic_culture_tier_8_cmod = {
+	movement_speed = 0.080
+	siege_ability = 0.080
+}
+X_turko_semitic_culture_tier_9_cmod = {
+	movement_speed = 0.090
+	siege_ability = 0.090
+}
+X_turko_semitic_culture_tier_10_cmod = {
+	movement_speed = 0.100
+	siege_ability = 0.100
+}
+X_turko_semitic_culture_full_control_cmod = {
+	movement_speed = 0.125
+	siege_ability = 0.125
+}

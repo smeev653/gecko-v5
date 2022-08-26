@@ -422,7 +422,7 @@ tribal = {
 		tribal_administration = {
 			reforms = {
 				###X###
-				X_CRI_crimean_khanate_reform
+				X_CRI_great_tatar_state_reform
 				#######
 				steppe_horde
 				tribal_federation

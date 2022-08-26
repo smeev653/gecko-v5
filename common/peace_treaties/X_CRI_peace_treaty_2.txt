@@ -1,12 +1,12 @@
-X_CRI_peace_treaty_2 = {
+X_CRI_peace_treaty_2 = { #Defend Legacy
 	category = 6 
-	power_projection = vassalized_rival 
+	power_projection = humiliated_rival
 	power_cost_base = 1.0 
 	prestige_base = 0.1 
-	ae_base = 0.25 
+	ae_base = 0.0 
 	warscore_cost = {
 		all_provinces = 0.0 
-		no_provinces = 25.0 
+		no_provinces = 25.0
 		owner_keeps = 0.0 
 		conquered = 0.0 
 		returned_core = 0.0 
@@ -16,66 +16,10 @@ X_CRI_peace_treaty_2 = {
 	}
 	requires_is_allowed = yes
 	effect = {
-		set_variable = {
-			which = X_CRI_variable_1
-			value = 0
-		}
-		set_variable = {
-			which = X_CRI_variable_2
-			value = 0
-		}
-		set_variable = {
-			which = X_CRI_variable_3
-			value = 0
-		}
-		export_to_variable = {
-			which = X_CRI_variable_1
-			value = total_development
-			who = FROM
-		}
-		export_to_variable = {
-			which = X_CRI_variable_2
-			value = total_development
-			who = FROM
-		}
+		add_mandate = 50
 		if = {
-			limit = {
-				check_variable = {
-					which = X_CRI_variable_1
-					value = 501
-				}
-			}
-			set_variable = {
-				which = X_CRI_variable_1
-				value = 500
-			}
-		}
-		while = {	
-			limit = {		
-				check_variable = {
-					which = X_CRI_variable_1
-					value = 1
-				}
-			}
-			add_mandate = 0.1
-			subtract_variable = {
-				which = X_CRI_variable_1
-				value = 1
-			}
-		}
-		while = {	
-			limit = {		
-				check_variable = {
-					which = X_CRI_variable_2
-					value = 1
-				}
-			}
-			add_manpower = 0.1
-			add_treasury = 1
-			subtract_variable = {
-				which = X_CRI_variable_2
-				value = 1
-			}
+			limit = { NOT = { culture_group = tartar } }
+			set_country_flag = X_CRI_defend_legacy_cflag
 		}
 	}
 	ai_weight = { 
