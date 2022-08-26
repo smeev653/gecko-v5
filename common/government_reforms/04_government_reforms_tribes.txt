@@ -579,9 +579,7 @@ tribe_becomes_monarchy_reform = {
 			has_reform = stateless_society
 		}
 		###X###
-		NOT = {
-			has_reform = X_CRI_crimean_khanate_reform
-		}
+		NOT = { has_reform = X_CRI_great_tatar_state_reform }
 		#######
 	}		  
 	effect = {
@@ -635,7 +633,7 @@ tribe_becomes_republic_reform = {
 	}
 	###X###
 	potential = {
-		NOT = { has_reform = X_CRI_crimean_khanate_reform }
+		NOT = { has_reform = X_CRI_great_tatar_state_reform }
 	}
 	#######
 	effect = {
@@ -710,9 +708,7 @@ tribe_becomes_theocracy_reform = {
 			has_reform = stateless_society
 		}
 		###X###
-		NOT = {
-			has_reform = X_CRI_crimean_khanate_reform
-		}
+		NOT = { has_reform = X_CRI_great_tatar_state_reform }
 		#######
 	}		  
 	trigger = {

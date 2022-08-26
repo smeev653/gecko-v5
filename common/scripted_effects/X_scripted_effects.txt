@@ -2884,6 +2884,744 @@ X_culture_union_effect = {
 			}
 		}
 	]
+	[[cushitic]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { somali = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { somali = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { harari = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { harari = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { afar = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { afar = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { oromo = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { oromo = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { tigray = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { tigray = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { sidamo = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { sidamo = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { amhara = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { amhara = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { nubian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { nubian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { beja = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { beja = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[southern_african]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { makua = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { makua = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { acholi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { acholi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { nguni = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { nguni = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bemba = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bemba = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { khoisan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { khoisan = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { shona = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { shona = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { madagasque = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { madagasque = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { swahili = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { swahili = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { nyasa = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { nyasa = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
+	[[mande]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { mali = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { mali = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { songhai = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { songhai = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { soninke = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { soninke = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bambara = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bambara = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bozo = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bozo = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { dyola = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { dyola = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { yorumba = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { yorumba = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { aka = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { aka = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { nupe = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { nupe = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { fon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { fon = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { mossi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { mossi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { dagomba = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { dagomba = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { hausa = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { hausa = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { kanuri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { kanuri = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { bilala = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { bilala = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { tunjur = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { tunjur = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { senegambian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { senegambian = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { fulani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { fulani = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+	]
 	clr_global_flag = X_$group$_culture_union_$union$_gflag
 }
 
@@ -5651,6 +6389,744 @@ X_culture_exists_effect = {
 		else_if = {
 			limit = { 
 				NOT = { X_culture_exists_trigger = { yemeni_culture = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[cushitic]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { somali = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { somali = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { harari = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { harari = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { afar = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { afar = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { oromo = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { oromo = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { tigray = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { tigray = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { sidamo = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { sidamo = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { amhara = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { amhara = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { nubian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { nubian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { beja = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { beja = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[southern_african]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { makua = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { makua = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { acholi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { acholi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { nguni = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { nguni = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bemba = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bemba = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { khoisan = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { khoisan = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { shona = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { shona = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { madagasque = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { madagasque = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { swahili = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { swahili = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { nyasa = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { nyasa = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+	]
+	[[mande]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { mali = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { mali = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { songhai = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { songhai = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { soninke = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { soninke = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bambara = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bambara = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bozo = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bozo = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { dyola = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { dyola = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { yorumba = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { yorumba = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { aka = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { aka = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { nupe = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { nupe = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { fon = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { fon = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { mossi = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { mossi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { dagomba = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { dagomba = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { hausa = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { hausa = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { kanuri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { kanuri = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { bilala = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { bilala = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { tunjur = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { tunjur = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { senegambian = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { senegambian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { fulani = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { fulani = yes } }
 				has_global_flag = X_$group$_culture_exists_no_gflag 
 			}
 			change_variable = {            

@@ -791,45 +791,180 @@ X_iranian_culture_full_control_cmod = {
 #turko_semitic
 X_turko_semitic_culture_tier_1_cmod = {
 	movement_speed = 0.010
-	siege_ability = 0.010
+	core_creation = 0.005
 }
 X_turko_semitic_culture_tier_2_cmod = {
 	movement_speed = 0.020
-	siege_ability = 0.020
+	core_creation = 0.010
 }
 X_turko_semitic_culture_tier_3_cmod = {
 	movement_speed = 0.030
-	siege_ability = 0.030
+	core_creation = 0.015
 }
 X_turko_semitic_culture_tier_4_cmod = {
 	movement_speed = 0.040
-	siege_ability = 0.040
+	core_creation = 0.020
 }
 X_turko_semitic_culture_tier_5_cmod = {
 	movement_speed = 0.050
-	siege_ability = 0.050
+	core_creation = 0.025
 }
 X_turko_semitic_culture_tier_6_cmod = {
 	movement_speed = 0.060
-	siege_ability = 0.060
+	core_creation = 0.030
 }
 X_turko_semitic_culture_tier_7_cmod = {
 	movement_speed = 0.070
-	siege_ability = 0.070
+	core_creation = 0.035
 }
 X_turko_semitic_culture_tier_8_cmod = {
 	movement_speed = 0.080
-	siege_ability = 0.080
+	core_creation = 0.040
 }
 X_turko_semitic_culture_tier_9_cmod = {
 	movement_speed = 0.090
-	siege_ability = 0.090
+	core_creation = 0.045
 }
 X_turko_semitic_culture_tier_10_cmod = {
 	movement_speed = 0.100
-	siege_ability = 0.100
+	core_creation = 0.050
 }
 X_turko_semitic_culture_full_control_cmod = {
 	movement_speed = 0.125
+	core_creation = 0.075
+}
+#cushitic
+X_cushitic_culture_tier_1_cmod = {
+	fire_damage_received = -0.010
+	global_missionary_strength = 0.002
+}
+X_cushitic_culture_tier_2_cmod = {
+	fire_damage_received = -0.020
+	global_missionary_strength = 0.004
+}
+X_cushitic_culture_tier_3_cmod = {
+	fire_damage_received = -0.030
+	global_missionary_strength = 0.006
+}
+X_cushitic_culture_tier_4_cmod = {
+	fire_damage_received = -0.040
+	global_missionary_strength = 0.008
+}
+X_cushitic_culture_tier_5_cmod = {
+	fire_damage_received = -0.050
+	global_missionary_strength = 0.010
+}
+X_cushitic_culture_tier_6_cmod = {
+	fire_damage_received = -0.060
+	global_missionary_strength = 0.012
+}
+X_cushitic_culture_tier_7_cmod = {
+	fire_damage_received = -0.070
+	global_missionary_strength = 0.014
+}
+X_cushitic_culture_tier_8_cmod = {
+	fire_damage_received = -0.080
+	global_missionary_strength = 0.016
+}
+X_cushitic_culture_tier_9_cmod = {
+	fire_damage_received = -0.090
+	global_missionary_strength = 0.018
+}
+X_cushitic_culture_tier_10_cmod = {
+	fire_damage_received = -0.100
+	global_missionary_strength = 0.020
+}
+X_cushitic_culture_full_control_cmod = {
+	fire_damage_received = -0.125
+	global_missionary_strength = 0.025
+}
+#southern_african
+X_southern_african_culture_tier_1_cmod = {
+	naval_morale = 0.005
+	inflation_reduction = 0.010
+}
+X_southern_african_culture_tier_2_cmod = {
+	naval_morale = 0.010
+	inflation_reduction = 0.020
+}
+X_southern_african_culture_tier_3_cmod = {
+	naval_morale = 0.015
+	inflation_reduction = 0.030
+}
+X_southern_african_culture_tier_4_cmod = {
+	naval_morale = 0.020
+	inflation_reduction = 0.040
+}
+X_southern_african_culture_tier_5_cmod = {
+	naval_morale = 0.025
+	inflation_reduction = 0.050
+}
+X_southern_african_culture_tier_6_cmod = {
+	naval_morale = 0.030
+	inflation_reduction = 0.060
+}
+X_southern_african_culture_tier_7_cmod = {
+	naval_morale = 0.035
+	inflation_reduction = 0.070
+}
+X_southern_african_culture_tier_8_cmod = {
+	naval_morale = 0.040
+	inflation_reduction = 0.080
+}
+X_southern_african_culture_tier_9_cmod = {
+	naval_morale = 0.045
+	inflation_reduction = 0.090
+}
+X_southern_african_culture_tier_10_cmod = {
+	naval_morale = 0.050
+	inflation_reduction = 0.100
+}
+X_southern_african_culture_full_control_cmod = {
+	naval_morale = 0.075
+	inflation_reduction = 0.150
+}
+#mande
+X_mande_culture_tier_1_cmod = {
+	siege_ability = 0.010
+	prestige = 0.100
+}
+X_mande_culture_tier_2_cmod = {
+	siege_ability = 0.020
+	prestige = 0.200
+}
+X_mande_culture_tier_3_cmod = {
+	siege_ability = 0.030
+	prestige = 0.300
+}
+X_mande_culture_tier_4_cmod = {
+	siege_ability = 0.040
+	prestige = 0.400
+}
+X_mande_culture_tier_5_cmod = {
+	siege_ability = 0.050
+	prestige = 0.500
+}
+X_mande_culture_tier_6_cmod = {
+	siege_ability = 0.060
+	prestige = 0.600
+}
+X_mande_culture_tier_7_cmod = {
+	siege_ability = 0.070
+	prestige = 0.700
+}
+X_mande_culture_tier_8_cmod = {
+	siege_ability = 0.080
+	prestige = 0.800
+}
+X_mande_culture_tier_9_cmod = {
+	siege_ability = 0.090
+	prestige = 0.900
+}
+X_mande_culture_tier_10_cmod = {
+	siege_ability = 0.100
+	prestige = 1.000
+}
+X_mande_culture_full_control_cmod = {
 	siege_ability = 0.125
+	prestige = 1.250
 }

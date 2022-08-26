@@ -166,6 +166,18 @@ on_startup = {
 		limit = { culture_group = turko_semitic ai = no }
 		ROOT = { X_culture_group_control_effect = { group = turko_semitic type = union who = PREV } }
 	}
+	every_country = {
+		limit = { culture_group = cushitic ai = no }
+		ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = southern_african ai = no }
+		ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = mande ai = no }
+		ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+	}
 	#######
 }
 
@@ -1585,6 +1597,27 @@ on_adm_development = {
 			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
 		}
 	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
 	#######
 }
 
@@ -1633,6 +1666,27 @@ on_dip_development = {
 			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
 		}
 	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
 	#######
 }
 
@@ -1679,6 +1733,27 @@ on_mil_development = {
 		every_country = {
 			limit = { culture_group = lowlands }
 			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
 		}
 	}
 	#######
@@ -3857,6 +3932,18 @@ on_province_culture_converted = {
 		limit = { culture_group = turko_semitic }
 		ROOT = { X_culture_group_control_effect = { group = turko_semitic type = union who = PREV } }
 	}
+	every_country = {
+		limit = { culture_group = cushitic }
+		ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = southern_african }
+		ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = mande }
+		ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+	}
 	#######
 }
 
@@ -4169,6 +4256,27 @@ on_province_owner_change = {
 			ROOT = { X_culture_group_control_effect = { group = turko_semitic type = union who = PREV } }
 		}
 	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
 	#######
 }
 
@@ -4420,6 +4528,9 @@ on_primary_culture_changed = {
 	every_country = { ROOT = { X_culture_group_control_effect = { group = hindusthani type = union who = PREV } } }
 	every_country = { ROOT = { X_culture_group_control_effect = { group = iranian type = union who = PREV } } }
 	every_country = { ROOT = { X_culture_group_control_effect = { group = turko_semitic type = union who = PREV } } }
+	every_country = { ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } } }
+	every_country = { ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } } }
+	every_country = { ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } } }
 	#######
 }
 # FROM = Previous Country, ROOT = Province
@@ -4545,6 +4656,27 @@ on_dependency_gained = {
 		ROOT = { 
 			X_culture_group_control_effect = { group = turko_semitic type = union who = PREV }
 			X_culture_group_control_effect = { group = turko_semitic type = union who = FROM }
+		}
+	}
+	if = {
+		limit = { FROM = { any_owned_province = { culture_group = cushitic } } }
+		ROOT = { 
+			X_culture_group_control_effect = { group = cushitic type = development who = PREV }
+			X_culture_group_control_effect = { group = cushitic type = development who = FROM }
+		}
+	}
+	if = {
+		limit = { FROM = { any_owned_province = { culture_group = southern_african } } }
+		ROOT = { 
+			X_culture_group_control_effect = { group = southern_african type = development who = PREV }
+			X_culture_group_control_effect = { group = southern_african type = development who = FROM }
+		}
+	}
+	if = {
+		limit = { FROM = { any_owned_province = { culture_group = mande } } }
+		ROOT = { 
+			X_culture_group_control_effect = { group = mande type = development who = PREV }
+			X_culture_group_control_effect = { group = mande type = development who = FROM }
 		}
 	}
 	#######

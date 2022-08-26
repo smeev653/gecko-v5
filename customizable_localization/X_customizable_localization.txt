@@ -268,7 +268,57 @@ defined_text = {
 		}
 	}
 }
+#cushitic
+defined_text = {
+	name = GetXCushiticCultureEffect
+	random = no
 
+	text = {
+		localisation_key = X_cushitic_culture_control_union_key
+		trigger = {
+			has_global_flag = X_cushitic_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_cushitic_culture_control_development_key
+		trigger = {
+			has_global_flag = X_cushitic_control_development_gflag
+		}
+	}
+}
+#southern_african
+defined_text = {
+	name = GetXSouthernAfricanCultureEffect
+	random = no
 
+	text = {
+		localisation_key = X_southern_african_culture_control_union_key
+		trigger = {
+			has_global_flag = X_southern_african_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_southern_african_culture_control_development_key
+		trigger = {
+			has_global_flag = X_southern_african_control_development_gflag
+		}
+	}
+}
+#mande
+defined_text = {
+	name = GetXMandeCultureEffect
+	random = no
 
-
+	text = {
+		localisation_key = X_mande_culture_control_union_key
+		trigger = {
+			has_global_flag = X_mande_control_union_gflag
+		}
+	}
+	text = {
+		localisation_key = X_mande_culture_control_development_key
+		trigger = {
+			has_global_flag = X_mande_control_development_gflag
+		}
+	}
+}
