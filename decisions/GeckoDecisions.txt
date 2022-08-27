@@ -401,7 +401,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			has_wartaxes = yes
+			AND = {
+				has_wartaxes = yes
+				NOT = {
+					has_idea = vetting
+				}
+			}
 			NOT = { current_age = age_of_discovery }
 		}
 		allow = {

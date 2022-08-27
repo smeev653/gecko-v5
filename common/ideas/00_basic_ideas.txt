@@ -323,7 +323,7 @@ spy_ideas = {
 		land_forcelimit = 15
 	}
 	vetting = {
-		war_taxes_cost_modifier = -1
+		war_taxes_cost_modifier = -1 #If you decide to move the modifier to another (Espionage idea), please do also fix the "WAR TAXES ARE ON" decision
 	}
 	agent_training = {
 		power_projection_from_insults = 1
