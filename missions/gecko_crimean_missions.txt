@@ -5,7 +5,7 @@ gc_cri_branch_1 = {
     potential = {
 		OR = {
             tag = CRI
-            tag = HET
+            tag = GLH
         }
 	}
 	has_country_shield = yes
@@ -170,7 +170,7 @@ gc_cri_branch_2 = {
     potential = {
 		OR = {
             tag = CRI
-            tag = HET
+            tag = GLH
         }
 	}
 	has_country_shield = yes
@@ -384,7 +384,7 @@ gc_cri_branch_3 = {
     potential = {
 		OR = {
             tag = CRI
-            tag = HET
+            tag = GLH
         }
 	}
 	has_country_shield = yes
@@ -540,50 +540,6 @@ gc_cri_branch_3 = {
             }
         }
     }
-
-    gc_cri_mission_9 = {
-        icon = mission_rule_ruthenia
-        required_missions = { gc_cri_mission_2 gc_cri_mission_5 gc_cri_mission_8 gc_cri_mission_12 gc_cri_mission_14 }
-		position = 4
-
-        provinces_to_highlight = {
-
-        }
-
-        trigger = {
-            tag = CRI
-            legitimacy_equivalent = 80
-            is_at_war = no
-			is_free_or_tributary_trigger = yes
-        }
-
-        effect = {
-            change_tag = HET
-			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
-			}
-			add_prestige = 25
-			set_country_flag = ASU_formed_hetmanate
-			country_event = {
-				id = ideagroups.1
-			}
-			define_ruler = {
-				name = "Tokhtamysh"
-				dynasty = "Borjigin"
-				
-				religion = sunni
-				claim = 100
-				adm = 4
-				dip = 4
-				mil = 5
-			}
-			if = {
-				limit = { has_heir = yes }
-				kill_heir = {}
-			}			
-        }
-    }
 } #End Branch 3
 
 gc_cri_branch_4 = {
@@ -593,7 +549,7 @@ gc_cri_branch_4 = {
     potential = {
 		OR = {
             tag = CRI
-            tag = HET
+            tag = GLH
         }
 	}
 	has_country_shield = yes
@@ -854,7 +810,7 @@ gc_cri_branch_5 = {
     potential = {
 		OR = {
             tag = CRI
-            tag = HET
+            tag = GLH
         }
 	}
 	has_country_shield = yes
