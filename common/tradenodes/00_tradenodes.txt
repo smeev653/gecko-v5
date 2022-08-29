@@ -882,7 +882,7 @@ cape_of_good_hope={
 
 
 constantinople={
-	location=4312
+	location=326
 	color={
 		126 203 120 
 	}
