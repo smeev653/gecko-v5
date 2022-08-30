@@ -426,6 +426,10 @@ country_decisions = {
 			NOT = { has_ruler_modifier = islamic_scholarly_centre }
 			religion_group = muslim
 			adm_tech = 8
+			###X###
+			dip = 5
+			has_regency = no
+			#######
 		}
 		allow = {
 			dip = 5
@@ -730,6 +734,9 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = house_of_worship }
 			religion_group = muslim
+			###X###
+			full_idea_group = innovativeness_ideas
+			#######
 		}
 		allow = {
 			full_idea_group = innovativeness_ideas

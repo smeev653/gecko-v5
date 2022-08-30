@@ -146,18 +146,14 @@ country_decisions = {
 					}
 				}
 				NOT = { has_country_modifier = free_colonist}	
+				###X###
+				ai = no
+				dip_tech = 6
+				#######
 			}
 
 		allow = {
-			NOT = {
-				OR = {
-					capital_scope = { region = australia_region }
-					capital_scope = { region = oceanea_region }
-				}
-			}
-			#has_institution = new_world_i
 			dip_tech = 6
-			was_player = yes
 		}
 		effect = {
 			add_country_modifier = {
@@ -186,66 +182,16 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			NOT = { has_country_flag = educate_ruler_flag }
+			NOT = { has_ruler_flag = educate_ruler_flag }
 			NOT = {
 				government = republic
 			}
+			GC_educate_ruler_trigger = yes
 		}
 		allow = {
 			custom_trigger_tooltip = {
 				tooltip = educate_ruler_tooltip
-				OR = {
-					NOT = {
-						adm = 3
-						dip = 3
-						mil = 3
-					}
-					NOT = {
-						adm = 5
-						dip = 2
-						mil = 2
-					}
-					NOT = {
-						adm = 2
-						dip = 5
-						mil = 2
-					}
-					NOT = {
-						adm = 2
-						dip = 2
-						mil = 5
-					}
-					NOT = {
-						adm = 4
-						dip = 2
-						mil = 3
-					}
-					NOT = {
-						adm = 4
-						dip = 3
-						mil = 2
-					}
-					NOT = {
-						adm = 3
-						dip = 4
-						mil = 2
-					}
-					NOT = {
-						adm = 2
-						dip = 4
-						mil = 3
-					}
-					NOT = {
-						adm = 2
-						dip = 3
-						mil = 4
-					}
-					NOT = {
-						adm = 3
-						dip = 2
-						mil = 4
-					}
-				}
+				GC_educate_ruler_trigger = yes
 			}
 		}
 		effect = {
@@ -253,7 +199,7 @@ country_decisions = {
 			change_dip = 1
 			change_mil = 1
 			add_years_of_income = -0.5
-			set_country_flag = educate_ruler_flag
+			set_ruler_flag = educate_ruler_flag
 		}
 	}
 	PR_critical_events = {
@@ -301,6 +247,9 @@ country_decisions = {
 		
 
 	prepare_for_holy_war = {	
+			###X###
+			major = yes
+			#######
 			potential = {
 					ai = no
 					religion_group = muslim
@@ -620,6 +569,9 @@ country_decisions = {
 			NOT = { has_country_flag = gecko_tackle_debt }
 			NOT = { has_country_modifier = gecko_debt_tackled_2 }
 			NOT = { has_country_modifier = gecko_tackle_debt_timer }
+			###X###
+			num_of_loans = 10
+			#######
        }
 		allow = {
 			ai = no
@@ -651,9 +603,11 @@ country_decisions = {
 		allow = {
 			NOT = { years_of_income = 1.0 }
 			is_in_deficit = no
-			had_country_flag = {
-				flag = gecko_tackle_debt_timer_2
-				days = 30
+			hidden_trigger = {
+				had_country_flag = {
+					flag = gecko_tackle_debt_timer_2
+					days = 30
+				}
 			}
 		}
 		effect = {
