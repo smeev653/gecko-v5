@@ -17,10 +17,7 @@ X_CRI_peace_treaty_2 = { #Defend Legacy
 	requires_is_allowed = yes
 	effect = {
 		add_mandate = 50
-		if = {
-			limit = { NOT = { culture_group = tartar } }
-			set_country_flag = X_CRI_defend_legacy_cflag
-		}
+		set_country_flag = X_CRI_defend_legacy_cflag
 	}
 	ai_weight = { 
 		export_to_variable = {

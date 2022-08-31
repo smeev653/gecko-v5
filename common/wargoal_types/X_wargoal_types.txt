@@ -41,6 +41,8 @@ X_CRI_war_goal_2 = { #Harvest the Steppe
 		peace_options = {
 			X_CRI_peace_treaty_3
 			po_demand_provinces
+			po_become_vassal
+			po_become_tributary_state
 		}
 		prov_desc = ALL_PROVS
 	}

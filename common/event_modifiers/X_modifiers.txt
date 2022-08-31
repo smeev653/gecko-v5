@@ -791,47 +791,47 @@ X_iranian_culture_full_control_cmod = {
 #turko_semitic
 X_turko_semitic_culture_tier_1_cmod = {
 	movement_speed = 0.010
-	core_creation = 0.005
+	core_creation = -0.005
 }
 X_turko_semitic_culture_tier_2_cmod = {
 	movement_speed = 0.020
-	core_creation = 0.010
+	core_creation = -0.010
 }
 X_turko_semitic_culture_tier_3_cmod = {
 	movement_speed = 0.030
-	core_creation = 0.015
+	core_creation = -0.015
 }
 X_turko_semitic_culture_tier_4_cmod = {
 	movement_speed = 0.040
-	core_creation = 0.020
+	core_creation = -0.020
 }
 X_turko_semitic_culture_tier_5_cmod = {
 	movement_speed = 0.050
-	core_creation = 0.025
+	core_creation = -0.025
 }
 X_turko_semitic_culture_tier_6_cmod = {
 	movement_speed = 0.060
-	core_creation = 0.030
+	core_creation = -0.030
 }
 X_turko_semitic_culture_tier_7_cmod = {
 	movement_speed = 0.070
-	core_creation = 0.035
+	core_creation = -0.035
 }
 X_turko_semitic_culture_tier_8_cmod = {
 	movement_speed = 0.080
-	core_creation = 0.040
+	core_creation = -0.040
 }
 X_turko_semitic_culture_tier_9_cmod = {
 	movement_speed = 0.090
-	core_creation = 0.045
+	core_creation = -0.045
 }
 X_turko_semitic_culture_tier_10_cmod = {
 	movement_speed = 0.100
-	core_creation = 0.050
+	core_creation = -0.050
 }
 X_turko_semitic_culture_full_control_cmod = {
 	movement_speed = 0.125
-	core_creation = 0.075
+	core_creation = -0.075
 }
 #cushitic
 X_cushitic_culture_tier_1_cmod = {
