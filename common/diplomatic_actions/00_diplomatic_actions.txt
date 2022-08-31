@@ -85,20 +85,12 @@
 # ask_for_tributary_state_action
 # knowledge_sharing
 
-
 tributary_state_action = {
 	condition = {
-		potential = {
-			ROOT = {
-				ai = yes
-			}
-		}
 		allow = {
 			always = no
-		}	
+		}
 	}
-
-
 }
 
 #callaction = {
