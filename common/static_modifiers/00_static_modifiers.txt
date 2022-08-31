@@ -646,6 +646,7 @@ negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mand
 	shock_damage_received = 0.25
 	global_unrest = 5
 	global_manpower_modifier = -0.25
+	all_estate_loyalty_equilibrium = -0.1
 	meritocracy = -1
 	#######
 }
@@ -966,7 +967,7 @@ meritocracy = {
 	advisor_cost = -0.2
 	global_unrest = -6
 	yearly_corruption = -0.2
-	nomadic_tribes_loyalty_modifier = 0.2
+	nomadic_tribes_loyalty_modifier = 0.1
 	tolerance_heathen = 4
 	tolerance_heretic = 2
 	tolerance_own = 2

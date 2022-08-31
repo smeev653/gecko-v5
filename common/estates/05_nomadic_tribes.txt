@@ -1,27 +1,13 @@
 estate_nomadic_tribes = {
 	icon = 5
-
+	color = { 50 150 50 }
+	
 	# If true, country will get estate
 	trigger = {
-		has_dlc = "The Cossacks"
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { government = native }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { has_reform = veche_republic }
-		NOT = { has_reform = pirate_republic_reform }
-		###X###
-		#is_nomad = yes
 		OR = {
 			is_nomad = yes
 			is_emperor_of_china = yes
 		}
-		#######
-			
-			#tag = ARB
-			
-		is_colonial_nation = no
-		NOT = { has_reform = celestial_empire }
-		NOT = { has_reform = revolutionary_empire_reform }
 	}
 
 	# These scale with loyalty & power
@@ -39,7 +25,8 @@ estate_nomadic_tribes = {
 	land_ownership_modifier = {
 		nomadic_tribes_loyalty_modifier = 0.2
 	}
-
+	
+	#For each province bordering another country, the neighboring provinces with the highest weights are added, until (share of land ownership * total development) is reached. From all these tries (It will do 32 of the highest weight border provinces at most), the result with the highest total sum of weights is then selected and these provinces then become the new country.
 	province_independence_weight = {
 		factor = 1
 		modifier = {
@@ -70,16 +57,14 @@ estate_nomadic_tribes = {
 	}
 
 	# Influence modifiers
-	base_influence = 20
-
-	influence_from_dev_modifier = 0.4
+	base_influence = 10
+	influence_from_dev_modifier = 1.0
 
 	privileges = {
-		estate_nobles_advisors
+		estate_nomadic_tribes_land_rights
 		estate_nobles_nobility_primacy
 		estate_nomadic_tribes_tribal_host
 		estate_nomadic_tribes_primacy_to_the_bannermen
-		#estate_nomadic_tribes_tribute #smeev change
 		estate_nomadic_tribes_share_of_the_spoils #gchorde		
 		estate_gc_noble_levies
 	}
@@ -109,6 +94,4 @@ estate_nomadic_tribes = {
 		#estate_nomadic_tribes_hire_advisor
 		#estate_nomadic_tribes_fire_advisor
 	}
-
-	color = { 50 150 50 }
 }

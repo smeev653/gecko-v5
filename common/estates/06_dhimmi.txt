@@ -18,6 +18,7 @@ estate_dhimmi = {
 		has_dlc = "The Cossacks"
 		###X###
 		is_emperor_of_china = no
+		is_nomad = no
 		#######
 		NOT = { has_estate = estate_brahmins }
 		NOT = { has_government_attribute = is_merchant_republic }
@@ -28,7 +29,6 @@ estate_dhimmi = {
 		NOT = { has_reform = cossacks_reform }
 		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = pirate_republic_reform }
-		#is_nomad = no
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }
 		religion_group = muslim
