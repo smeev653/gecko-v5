@@ -85,7 +85,7 @@ conquest_of_constantinople = {
 			NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
-					value = 0.38
+					value = 0.33
 					}
 				}
 		}
@@ -335,7 +335,7 @@ conquest_of_cairo = {
 				NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
-					value = 0.38
+					value = 0.33
 					}
 				}
 			}
@@ -765,7 +765,7 @@ conquest_of_herat = {
 			NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
-					value = 0.38
+					value = 0.33
 					}
 				}
 				
