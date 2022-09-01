@@ -82,10 +82,6 @@ HAN_gen_missions_1 = {
 				}
 			}
 			else = { #Brick Renaissance
-				add_country_modifier = {
-					name = HSA_gothic
-					duration = 9125
-				}
 				capital_scope = {
 					add_prosperity = 100
 				}
