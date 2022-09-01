@@ -93,8 +93,8 @@ cavalry_leader = {
 	monarch_power = MIL
 	
 	# Bonus
-	shock_damage = 0.125
-	fire_damage = 0.125
+	shock_damage = 0.10
+	fire_damage = 0.10
 
 
 	skill_scaled_modifier = { meritocracy = 0.25 }

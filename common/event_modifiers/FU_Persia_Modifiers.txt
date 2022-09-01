@@ -186,7 +186,7 @@ per_banner_call_to_arms_modifier = {
 }
 per_fire_temple_of_ateshgah_modifier = {
 	discipline = 0.1
-	fire_damage_received = -0.1
+	fire_damage_received = -0.05
 	fire_damage = 0.05
 	culture_conversion_cost = -0.1
 }
