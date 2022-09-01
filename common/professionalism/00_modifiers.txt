@@ -21,6 +21,7 @@ supply_depot_modifier = {
 	}
 
 	may_build_supply_depot = yes
+	reserves_organisation = 0.10
 }
 
 refill_garrison_modifier = {
@@ -34,6 +35,7 @@ refill_garrison_modifier = {
 	}
 	
 	may_refill_garrison = yes
+	reserves_organisation = 0.10
 }
 
 return_manpower_modifier = {
@@ -48,6 +50,7 @@ return_manpower_modifier = {
 	}
 
 	may_return_manpower_on_disband = yes
+	reserves_organisation = 0.10
 }
 
 general_cost_modifier = {
@@ -61,7 +64,7 @@ general_cost_modifier = {
 		always = yes
 	}
 
-	reserves_organisation = 0.5
+	reserves_organisation = 0.10
 }
 
 reserves_organisation_modifier = {

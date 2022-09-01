@@ -784,7 +784,7 @@ quality_ideas = {
 		drill_decay_modifier = -0.1
 	}
 	copper_bottoms = {
-		reserves_organisation = 0.25
+		reserves_organisation = 0.15
 	}
 	naval_drill = {
 		reinforce_speed = 0.15
@@ -827,7 +827,7 @@ quantity_ideas = {
 		land_morale = 0.05
 	}
 	camp_followers = {
-		reserves_organisation = 0.33
+		reserves_organisation = 0.15
 	}
 	
 	expanded_supply_trains = {
