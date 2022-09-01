@@ -1130,7 +1130,7 @@ PER_ideas = {
 	free = yes
 
 	the_qizilbash = {
-		manpower_in_true_faith_provinces = 0.2
+		manpower_in_true_faith_provinces = 0.15
 		#monthly_piety = -0.001
 	}
 	persian_rug_production = {

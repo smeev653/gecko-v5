@@ -268,7 +268,7 @@ religious_ideas = {
 	}
 	divine_supremacy = {
 		land_morale = 0.05
-		recover_army_morale_speed = 0.15
+		recover_army_morale_speed = 0.05
 	}
 	missionary_schools = {
 		missionaries = 2
@@ -421,7 +421,7 @@ offensive_ideas = {
 	}
 	napoleonic_warfare = {
 		artillery_power = 0.1
-		recover_army_morale_speed = 0.15
+		recover_army_morale_speed = 0.1
 	}
 
 	ai_will_do = {

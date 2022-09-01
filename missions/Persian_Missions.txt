@@ -1221,9 +1221,9 @@ fu_persia_missions_2 = {
 					limit = {
 						OR = {
 							has_building = barracks
-							has_building = regimental_camp 
+							#has_building = regimental_camp 
 							has_building = training_fields
-							has_building = conscription_center
+							#has_building = conscription_center
 						}
 					}
 					add_base_manpower = 1 

@@ -37,10 +37,10 @@ WES_Generic_Missions_1_1 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = WES_army_modifier
-				duration = 9125
-			}
+			#add_country_modifier = {
+			#	name = WES_army_modifier
+			#	duration = 9125
+			#}
 			custom_tooltip = WES_extrabonus
 			tooltip = {
 				add_yearly_manpower = 1

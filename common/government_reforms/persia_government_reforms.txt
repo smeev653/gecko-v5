@@ -135,7 +135,7 @@ ghilman_administrative_positions_reform = { #tier 6
 	}
 	modifiers = {
 		administrative_efficiency = 0.05
-		global_tax_modifier = 0.20
+		global_tax_modifier = 0.1
 		governing_capacity_modifier = 0.1
 		qizilbash_influence_modifier = -0.05
 		qizilbash_loyalty_modifier = -0.05

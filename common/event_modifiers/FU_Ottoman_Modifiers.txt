@@ -294,7 +294,7 @@ tur_european_hegemon_modifier = {
 	province_warscore_cost = -0.15
 }
 tur_gates_of_the_western_christianity_modifier = { 
-	recover_army_morale_speed = 0.1
+	recover_army_morale_speed = 0.05
 	land_morale = 0.05 
 }
 tur_jihan_on_europe_modifier = { 

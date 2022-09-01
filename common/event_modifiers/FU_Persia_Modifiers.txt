@@ -47,8 +47,8 @@ per_conquest_western_india_modifier = {
 	trade_efficiency = 0.1
 }
 per_king_of_kings_modifier = {
-	governing_capacity_modifier = 0.2
-	num_accepted_cultures = 2 
+	governing_capacity_modifier = 0.1
+	num_accepted_cultures = 1 
 }
 per_renowned_madrasa_of_the_persian_crown_modifier = {
 	#innovativeness_gain = 0.025
@@ -72,7 +72,7 @@ per_expanded_the_royal_qurci_guard_modifier = {
 	army_tradition = 0.5 
 }
 per_modernized_gunpowder_artillery_modifier = {
-	siege_ability = 0.1
+	siege_ability = 0.05
 }
 per_islamic_celebrations_modifier = {
 	global_tax_modifier = 0.10
@@ -149,7 +149,7 @@ per_accepted_panjabi_culture_modifier = {
 	num_accepted_cultures = 1 
 }
 per_land_of_purbias_modifier = {
-	fire_damage = 0.1
+	fire_damage = 0.05
 }
 per_patronage_of_thought_modifier = {
 	technology_cost = -0.05
@@ -166,7 +166,7 @@ per_healthy_administration_modifier = {
 	country_admin_power = 1 
 }
 per_abandoned_qizilbash_system_modifier = {
-	global_manpower_modifier = 0.15
+	global_manpower_modifier = 0.1
 }
 per_golam_administration_modifier = {
 	advisor_pool = 1 

@@ -158,10 +158,10 @@ WES_missions_1 = {
 		}
 		effect = {
 			add_prestige_or_monarch_power = { amount = 25 }
-			add_country_modifier = {
-				name = WES_defeated_the_southern_bastion
-				duration = 9125
-			}
+			#add_country_modifier = {
+			#	name = WES_defeated_the_southern_bastion
+			#	duration = 9125
+			#}
 		}
 	}
 
@@ -225,7 +225,7 @@ WES_missions_1 = {
 			}
 		}
 		effect = {
-			add_years_of_income = 0.5
+			add_years_of_income = 0.25
 			add_country_modifier = {
 				name = WES_manufactory_advent
 				duration = 9125
@@ -397,7 +397,7 @@ WES_missions_2 = {
 			tooltip = {
 				add_country_modifier = {
 					name = WES_more_property
-					duration = 10950
+					duration = 3650
 				}
 			}
 		}
@@ -454,7 +454,7 @@ WES_missions_2 = {
 			capital_scope = {
 				add_or_upgrade_trade_building = yes
 			}
-			add_years_of_income = 1
+			add_years_of_income = 0.25
 		}
 	}
 }
@@ -578,7 +578,7 @@ WES_missions_3 = {
 			}
 		}
 		effect = {
-			add_army_tradition_or_mil_power = { amount = 20 }
+			add_army_tradition_or_mil_power = { amount = 15 }
 			add_country_modifier = {
 				name = WES_saxon_traditions
 				duration = 5475
@@ -869,9 +869,6 @@ WES_missions_4 = {
 				name = WES_equal_opportunities
 				duration = -1
 			}
-			custom_tooltip = WES_invite_foreign_experts
-			set_country_flag = WES_experts_decision
-			#may take decision to invite foreign experts
 		}
 	}
 

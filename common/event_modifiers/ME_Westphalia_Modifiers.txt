@@ -23,12 +23,12 @@ WES_army_modifier = {
 }
 
 WES_control_regained = {
-	global_tax_modifier = 0.2
+	global_tax_modifier = 0.10
 	global_autonomy = -0.05
 }
 
 WES_tax = {
-	local_tax_modifier = 0.2
+	local_tax_modifier = 0.10
 	local_build_cost = -0.1
 }
 
@@ -165,13 +165,13 @@ WES_defeated_the_southern_bastion = {
 }
 
 WES_saxon_traditions = {
-	global_manpower_modifier = 0.1
+	#global_manpower_modifier = 0.1
 	discipline = 0.025
 }
 
 WES_soest_city_rights = {
 	diplomatic_reputation = 2
-	caravan_power = 0.3
+	caravan_power = 0.15
 }
 
 WES_conscription = {
@@ -221,7 +221,7 @@ WES_more_property = {
 }
 
 WES_centralization_modifier = {
-	state_maintenance_modifier = -02
+	state_maintenance_modifier = -0.5
 }
 
 WES_favored = {
