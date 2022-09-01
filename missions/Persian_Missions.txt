@@ -2105,7 +2105,7 @@ fu_persia_missions_3_zoroastrian = {
 		effect = {
 			define_advisor = {	
 				type = inquisitor 
-				cost_multiplier = 0.32
+				cost_multiplier = 0.75
 			}
 			add_estate_loyalty = {
 				estate = estate_church 

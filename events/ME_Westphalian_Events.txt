@@ -150,7 +150,7 @@ country_event = {
 			skill = 3
 			culture = ROOT
 			religion = ROOT
-			cost_multiplier = 0.25
+			cost_multiplier = 0.75
 		}
 		
 		add_country_modifier = {

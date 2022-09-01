@@ -1441,7 +1441,7 @@ country_event = {
 			skill = 3
 			culture = ROOT
 			religion = ROOT
-			cost_multiplier = 0.33
+			cost_multiplier = 0.75
 		}
 	}
 	option = {

@@ -1537,7 +1537,7 @@ country_event = { #Madrasa-e Khan
 		}
 		define_advisor = {
 			type = natural_scientist 
-			cost_multiplier = 0.25 
+			cost_multiplier = 0.75 
 		}
 	}
 }
@@ -1674,7 +1674,7 @@ country_event = { #Safavid Painting Under Abbas I
 		
 		define_advisor = {
 			type = artist 
-			cost_multiplier = 0.1 
+			cost_multiplier = 0.75
 		}
 		change_innovativeness = 1 
 	}
@@ -1784,7 +1784,7 @@ country_event = { #The Arrival of the Shirley Brothers
 			religion = anglican
 			type = army_reformer
 			skill = 3 
-			cost_multiplier = 0.25
+			cost_multiplier = 0.75
 		}
 	}
 }

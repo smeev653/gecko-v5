@@ -423,7 +423,7 @@ WES_pick_an_advisor = {
 																				skill = 3
 																				culture = PREV
 																				religion = PREV
-																				cost_multiplier = 0.15
+																				cost_multiplier = 0.75
 																			}
 																		}
 																	}

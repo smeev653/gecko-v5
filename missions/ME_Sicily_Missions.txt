@@ -85,7 +85,7 @@ sicily_mission_1 = {
 			define_advisor = {
 				type = theologian
 				skill = 2
-				cost_multiplier = 0.25
+				cost_multiplier = 0.75
 				culture = sicilian
 				religion = ROOT
 			}

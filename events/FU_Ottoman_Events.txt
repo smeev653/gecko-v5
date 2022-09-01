@@ -3304,7 +3304,7 @@ country_event = { #Kira and Strongilah
 			female = yes 
 			name = "Strongilah" 
 			skill = 3
-			cost_multiplier = 0.3
+			cost_multiplier = 0.75
 		}
 	}
 	
