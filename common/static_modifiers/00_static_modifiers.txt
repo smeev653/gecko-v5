@@ -635,6 +635,7 @@ positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 	stability_cost_modifier = -0.1
 	war_exhaustion = -0.1
 	all_estate_loyalty_equilibrium = 0.1
+	liberty_desire_from_subject_development = -0.50
 	meritocracy = 1
 	#######
 }
@@ -647,6 +648,7 @@ negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mand
 	global_unrest = 5
 	global_manpower_modifier = -0.25
 	all_estate_loyalty_equilibrium = -0.1
+	liberty_desire_from_subject_development = 0.50
 	meritocracy = -1
 	#######
 }

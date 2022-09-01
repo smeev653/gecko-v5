@@ -466,6 +466,7 @@ tribal = {
 				tribe_becomes_theocracy_reform
 				gc_tribe_becomes_horde_reform
 				gecko_professional_army_reform
+				gecko_noble_regiments_reform
 			}
 		}
 	}

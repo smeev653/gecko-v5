@@ -239,7 +239,7 @@
  X_CRI_reform_8_title:0 "Unite the Tatars"
  X_CRI_reform_8_emperor:0 "Unite the Tatars"
  X_CRI_reform_8_desc:0 ""
- X_CRI_reform_8_tt:0 "§WCountry changes to §Y[GLH.GetName]§!.\nIf our Government Rank is less than §YEmpire§!, the Government Rank of §Y[GLH.GetName]§! changes to §YEmpire§!.\nThe event '§YNew Traditions & Ambitions§!' happens.\n§Y[GLH.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
+ X_CRI_reform_8_tt:0 "§WCountry changes to §Y[GLH.GetName]§!.\nIf we own §Y[466.GetName]§!, then §Y[466.GetName]§! will become the new Capital.\nIf our Government Rank is less than §YEmpire§!, the Government Rank of §Y[GLH.GetName]§! changes to §YEmpire§!.\nThe event '§YNew Traditions & Ambitions§!' happens.\n§Y[GLH.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
  #Event Modifiers
  X_CRI_reform_3_pmod:0 "Steppes Development"
  desc_X_CRI_reform_3_pmod:0 ""
@@ -296,7 +296,8 @@
  #Event Tooltips
  X_CRI_event_2_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
  #Diplomatic Actions
- X_war_with_overlord_tt:0 "§RYou cannot declare on a subject of a nation, if you are already at war with that nation.§!"
+ X_declarewar_diplomatic_actions_tt:0 "§RYou cannot declare on a subject of a nation, if you are already at war with that nation.§!"
+ X_declarewar_diplomatic_actions_tt2:0 "§RTributary States can't fight their own wars.§!"
  ####################
  # Tiered Modifiers
  ####################

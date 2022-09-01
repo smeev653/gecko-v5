@@ -208,6 +208,10 @@ X_CRI_reform_8 = {
 				limit = { is_emperor_of_china = yes }
 				change_tag = GLH
 				if = {
+					limit = { owns = 466 }
+					set_capital = 466
+				}
+				if = {
 					limit = { NOT = { government_rank = 3 } }
 					set_government_rank = 3
 				}

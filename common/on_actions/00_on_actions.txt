@@ -4514,6 +4514,7 @@ on_primary_culture_changed = {
 	on_primary_culture_changed_privileges_effect = yes
 	judaism_on_culture_country_effect = yes
 	###X###
+	every_country = { ROOT = { X_culture_group_control_effect = { group = tartar type = union who = PREV } } }
 	every_country = { ROOT = { X_culture_group_control_effect = { group = germanic type = union who = PREV } } }
 	every_country = { ROOT = { X_culture_group_control_effect = { group = latin type = union who = PREV } } }
 	every_country = { ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } } }

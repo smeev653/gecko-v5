@@ -110,12 +110,23 @@ tributary_state_action = {
 declarewar = {
 	###X###
 	condition = {
-		tooltip = X_war_with_overlord_tt
+		tooltip = X_declarewar_diplomatic_actions_tt
 		allow = {
 			NOT = {
 				any_country = {
 					overlord_of = FROM
 					war_with = ROOT
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = X_declarewar_diplomatic_actions_tt2
+		allow = {
+			NOT = {
+				any_country = {
+					FROM = { is_subject_of_type_with_overlord = { who = PREV type = tributary_state } }
+					ROOT = { is_subject_of_type_with_overlord = { who = PREV type = tributary_state } }
 				}
 			}
 		}

@@ -44,7 +44,7 @@ X_CRI_decree_6 = {
 	cost = 12.5
 	duration = 3650
 	modifier = {
-		diplomatic_annexation_cost = -0.2
+		diplomatic_annexation_cost = -0.3
 		diplomatic_reputation = 2
 	}
 }
