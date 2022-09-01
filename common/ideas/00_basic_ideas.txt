@@ -65,7 +65,7 @@ plutocracy_ideas = {
 	}
 	tradition_of_payment = {
 		mercenary_cost = -0.15
-		mercenary_discipline = 0.03
+		mercenary_discipline = 0.05
 	}
 	emancipation = {
 		manpower_recovery_speed = 0.2
