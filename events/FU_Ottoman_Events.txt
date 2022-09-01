@@ -1408,37 +1408,6 @@ country_event = { #Eyalets of Hungary
 			add_local_autonomy = -25
 		}
 	}
-	
-	option = { 
-		name = FU_Ottoman_Events.33.c
-		
-		carpathia_region = { 	
-			limit = { country_or_non_sovereign_subject_holds = ROOT }
-			add_core = FU5 
-			cede_province = FU5
-		}
-		create_march = FU5  
-		hidden_effect = { 
-			FU5 = { 
-				change_primary_culture = hungarian
-				change_government_reform_progress = 200
-				add_adm_power = 100 
-				add_dip_power = 100 
-				add_mil_power = 100 
-				if = { 
-					limit = { 
-						NOT = { prestige = -50 } 
-					}
-					add_prestige = 100
-				}
-				add_historical_friend = ROOT 
-			}
-		}
-		add_historical_friend = FU5
-		custom_tooltip = tur_half_price_merc_ap_tt
-		set_country_flag = ned_french_influences_flag
-		switch_tag = FU5
-	}
 }
 
 country_event = { #Integration of S&W 
