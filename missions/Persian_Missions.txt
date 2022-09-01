@@ -2017,7 +2017,7 @@ fu_persia_missions_3_islam = {
 			is_defender_of_faith = yes 	
 				OR = {
 					full_idea_group = religious_ideas 
-					full_idea_group = humanist_ideas 
+					full_idea_group = maritime_ideas 
 				}
 			
 			OR = {
@@ -3396,23 +3396,12 @@ fu_persia_missions_5 = {
 		position = 19
 		provinces_to_highlight = { province_id = 429 } 
 		trigger = {
-			if = {
-				limit = { has_dlc = "Leviathan" }
-				429 = {
-					has_great_project = {
-						type = fu_ali_qapu
-						tier = 3 
-					}
-					owned_by = ROOT 
-				}
-			}
-			else = {
 				429 = {
 					development = 35
 					has_building = town_hall
 					owned_by = ROOT 
 				}
-			}
+			
 		}
 		effect = {
 			if = {
