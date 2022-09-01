@@ -296,7 +296,7 @@
  #Event Tooltips
  X_CRI_event_2_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
  #Diplomatic Actions
- X_declarewar_diplomatic_actions_tt:0 "§RYou cannot declare on a subject of a nation, if you are already at war with that nation.§!"
+ X_declarewar_diplomatic_actions_tt:0 "§RYou cannot declare on a tributary of a nation, if you are already at war with that nation.§!"
  X_declarewar_diplomatic_actions_tt2:0 "§RTributary States can't fight their own wars.§!"
  ####################
  # Tiered Modifiers

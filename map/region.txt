@@ -187,7 +187,6 @@ ural_region = {
 		perm_area
 		kazan_area
 		galich_area
-		saratov_area
 		kama_area
 		bashkiria_area
 		samara_area
@@ -294,6 +293,7 @@ crimea_region = {
 		simferopol_area
 		odessa_area
 		#mariupol_area
+		saratov_area
 		stavropol_area
 	}
 }
