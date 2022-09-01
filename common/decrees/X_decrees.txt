@@ -11,7 +11,7 @@ X_CRI_decree_2 = {
 	cost = 12.5
 	duration = 3650
 	modifier = {
-		loot_amount = 0.25
+		available_province_loot = 0.25
 		shock_damage = 0.1
 	}
 }

@@ -13608,7 +13608,7 @@ CRI_ideas = {
 		land_morale = 0.1
 	}
 	cri_ruthenian_raids = {
-		loot_amount = 0.25
+		available_province_loot = 0.25
 		movement_speed = 0.10
 	}
 	cri_allow_nogai_protectorates = {
