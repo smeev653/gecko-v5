@@ -175,7 +175,7 @@ country_event = {
 			CSH = {
 				declare_war_with_cb = {
 					who = root
-					casus_belli = cb_take_mandate
+					casus_belli = cb_conquest
 				}
 			}
 		}
