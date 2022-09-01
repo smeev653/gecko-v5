@@ -108,6 +108,19 @@ tributary_state_action = {
 #}
 
 declarewar = {
+	###X###
+	condition = {
+		tooltip = X_war_with_overlord_tt
+		allow = {
+			NOT = {
+				any_country = {
+					overlord_of = FROM
+					war_with = ROOT
+				}
+			}
+		}
+	}
+	#######
 	condition = {
 		tooltip = h_tooltip_cn_declarewar
 		potential = {

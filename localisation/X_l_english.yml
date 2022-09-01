@@ -295,6 +295,8 @@
  X_CRI_events.4.a:0 "Our failure exacts a heavy toll"
  #Event Tooltips
  X_CRI_event_2_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
+ #Diplomatic Actions
+ X_war_with_overlord_tt:0 "§RYou cannot declare on a subject of a nation, if you are already at war with that nation.§!"
  ####################
  # Tiered Modifiers
  ####################
