@@ -135,7 +135,7 @@ country_decisions = {
 				name = "Husayn"
 				dynasty = "ibn Ali"
 				
-				religion = sunni
+				religion = shiite
 				claim = 100
 				adm = 5
 				dip = 5
