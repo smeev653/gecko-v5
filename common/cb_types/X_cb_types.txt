@@ -22,6 +22,7 @@ X_CRI_cb_2 = { #Harvest the Steppe
 X_CRI_cb_3 = { #Claim Genghisid Legacy
 	valid_for_subject = no
 	prerequisites = {
+		ai = no
 		is_neighbor_of = FROM
 		culture_group = tartar
 		NOT = { religion_group = christian }

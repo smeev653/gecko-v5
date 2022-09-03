@@ -57,7 +57,7 @@ X_CRI_peace_treaty_3 = { #Harvest the Steppe
 					value = 1
 				}
 			}
-			add_mandate = 0.1
+			add_mandate = 0.2
 			subtract_variable = {
 				which = X_CRI_peace_treaty_3_variable_1
 				value = 1
@@ -70,8 +70,12 @@ X_CRI_peace_treaty_3 = { #Harvest the Steppe
 					value = 1
 				}
 			}
-			add_manpower = 0.05
+			add_manpower = 0.10
 			add_treasury = 2
+			FROM = {
+				add_manpower = -0.10
+				add_treasury = -2
+			}
 			subtract_variable = {
 				which = X_CRI_peace_treaty_3_variable_2
 				value = 1

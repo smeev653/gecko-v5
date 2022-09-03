@@ -276,7 +276,7 @@
  X_CRI_peace_treaty_2_desc:0 "Tradition of the Steppe's Legacy changes by §G+50.0§!£X_imperial_mandate£."
  PEACE_X_CRI_peace_treaty_3:0 "Harvest the Steppe"
  CB_ALLOWED_X_CRI_peace_treaty_3:0 "Harvest the Steppe"
- X_CRI_peace_treaty_3_desc:0 "Tradition of the Steppe's Legacy changes by §G+0.1§!£X_imperial_mandate£ per 1 development of the target nation, up to a maximum of §G+50.0§!£X_imperial_mandate£.\n- [Root.GetName] gains §G+50§!£icon_manpower£ and §Y2.0§!¤ per 1 development of the target nation."
+ X_CRI_peace_treaty_3_desc:0 "Tradition of the Steppe's Legacy changes by §G+0.2§!£X_imperial_mandate£ per 1 development of [From.GetName], up to a maximum of §G+50.0§!£X_imperial_mandate£.\n- [Root.GetName] gains §G+100§!£icon_manpower£ and §Y2.0§!¤ per 1 development of [From.GetName].\n- [From.GetName] loses §R-100§!£icon_manpower£ and §Y2.0§!¤ per 1 development of the their nation."
  PEACE_X_CRI_peace_treaty_4:0 "Claim Legacy"
  CB_ALLOWED_X_CRI_peace_treaty_4:0 "Claim Legacy"
  X_CRI_peace_treaty_4_desc:0 "Claim the Legacy of Genghis from the false Tatar pretenders!"
