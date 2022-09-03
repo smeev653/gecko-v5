@@ -111,6 +111,9 @@ declarewar = {
 	###X###
 	condition = {
 		tooltip = X_declarewar_diplomatic_actions_tt
+		potential = {
+			FROM = { is_subject_of_type = tributary_state }
+		}
 		allow = {
 			NOT = {
 				any_country = {
