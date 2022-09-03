@@ -147,7 +147,6 @@ south_german_region = {
 		romandie_area
 		palatinate_area
 		alsace_area
-		krain_area
 		
 		#gecko germany
 		bohemia_area
@@ -316,6 +315,7 @@ balkan_region = {
 		XMP_central_greece_area
 		eastern_mediterrenean_islands_area
 		aegean_archipelago_area
+		krain_area
 	}
 }
 
