@@ -1317,10 +1317,18 @@ panama = {
 		}
 	}
 	members = {
-		840 2637 2640 2662 837 838 2660 2661 2663 826 835 836 2664 2819 828 2806 824 825 827 832 2817 2812 2814 2815 822 823 2816 2818 
-		4605 4604 4607 4608 4603 4600 4601 4602 4599 4596 4595 4597 4592 4593 829
+		822 2816 4605 2818 #colombian_amazonas_area
+		2812 2814 2815 4608 #western_llanos
+		825 832 4602 4603 #bogota_area
+		824 827 2817 4600 4607 #cordillera_occidental_area
+		828 829 2806 4599 4601 #coquivacoa_area
+		835 2664 2819 4595 4596 #panama_area
+		2663 836 4597 #costa_rica_area
+		838 2660 2661 4592 #nicaragua_area
+		840 2637 2662 4593 #honduras_area
 	}
 }
+
 carribean_trade = {
 	location = 1516
 	outgoing = {
@@ -1360,12 +1368,24 @@ carribean_trade = {
 			
 		}
 	}
-	 
 	members = {
-		927 928 2534 926 2535 2536 484 485 2656 486 2654 2655 488 489 490 2658 2659 487 481 491 492 482 483 493 494 495 496 1881 497 498 499 500 501 830 2807 2813 741 831 2808 834 2805 2809 2810 2939 1516 
-		502 4626 4625 4624 4622 4623 4619 4618 4620 4621 4616 4615 4612 4613 4609 4611 4614 4610
+		927 928 2534 #north_florida_area
+		926 2535 2536 4626 4625 #florida_area
+		482 483 #lucayan_area
+		484 485 4622 4623 4624 #cuba_area
+		486 2654 2655 2656 #east_cuba_area
+		487 491 492 493 #greater_antilles_area
+		488 489 4618 4619 #hispaniola_area
+		490 2658 2659 4620 4621 #dominica_area
+		494 495 496 1881 497 #leeward_islands_area
+		498 499 500 501 502 #windward_islands_area
+		741 831 2808 4612 4616 #venezuela_area
+		2805 2809 2939 4615 #eastern_llanos
+		834 2810 2813 4613 4614 #central_llanos_area
+		830 2807 4609 4610 4611 #maracaibo_area
 	}
 }
+
 tunis = {
 	location = 341
 	color = {
@@ -1391,26 +1411,35 @@ tunis = {
 			
 	}
 	outgoing = {
-		name = "ragusa" #smeev mod
+		name = "ragusa"
 		path = {
 			1305 1307 322 317 1320 
 		}
 		control = {
 			3032.5000000 1257.500000 3168.000000 1246.500000 3203.000000 1268.000000 3204.000000 1316.000000 #smeev mod
 		}
-			
-			
 	}
 	members = {
-		355 339 340 341 350 351 352 353 354 1882 2448 2449 2450 2451 2452 2453 2454 2455 2456 2457 2458 2472 2473 2954 4566 4567
-		344 345 346 347 348 1110 2460 2464 2466 2467 2468 2469 2470 342 343 349 2459 2462 2463 336 337 338 2461 2465 # PR change
-		4564 4562 4568 # PR change
-		#gecko corridor 
-		5825 5826
-		5813 5814 5815
-		334 335 4561 1751 4563 #north morocco	
+		347 1110 2470 #southern_morocco_area
+		348 2464 2466 4568 #sus_area
+		342 345 2469 4564 #western_morocco_area
+		343 344 2467 2468 #marrekesh_area
+		334 335 1751 4563 4561 #northern_morocco_area
+		346 349 2460 #tafilalt_area
+		2459 2462 2463 #hautes_plaines_area
+		339 340 1882 #kabylia_area
+		337 2461 338 #barbary_coast_area
+		336 2465 4562 #algiers_area
+		350 351 2458 #ouled_nail_area
+		352 2450 2456 2457 2472 #north_saharan_area
+		353 2453 2954 #djerba_area
+		341 2454 2455 2473 4566 #tunisia_area
+		354 2451 2452 355 #tripolitania_area
+		2448 2449 4567 5825 5826 #fezzan_area
+		5814 5815 5813 #pr_africa_area_7
 	}
 }
+
 genua = {
 	location = 109
 	color = {
@@ -1435,21 +1464,21 @@ genua = {
 		}
 	}
 	outgoing = {
-			name = "ragusa"
-			path = {
-			1312 1319	
-			}
-			control = {
-			3168.000000 1246.500000 3203.000000 1268.000000 3204.000000 1316.000000	 
-			}
+		name = "ragusa"
+		path = {
+		1312 1319	
 		}
+		control = {
+		3168.000000 1246.500000 3203.000000 1268.000000 3204.000000 1316.000000	 
+		}
+	}
 	outgoing = {
 		name = "pest"
 		path = {
 			4752
 		}
 		control = {
-		3037.000000 1425.000000 
+			3037.000000 1425.000000 
 		}
 	}
 	outgoing = {
@@ -1458,7 +1487,7 @@ genua = {
 			132 128 1769 1308 4738
 		}
 		control = {
-			 3021.000000 1442.000000 3028.000000 1456.000000 3026.000000 1470.000000 
+			3021.000000 1442.000000 3028.000000 1456.000000 3026.000000 1470.000000 
 		}
 	}
 	outgoing = {
@@ -1471,49 +1500,34 @@ genua = {
 		}
 	}
 	members = {
-		1298 #Sea
-		#124 125 126 2982 #sicily_area
-		115 116 2978 2980 #tuscany_area
-		#123 1934 2984 #calabria_area
-		101 102 2992 #liguria_area
-		103 1875 2981 #piedmont_area
-		1247
-		4727 # also new for 1.30, but this time it's in Italy
-		#121 2983 # campania
-		104 1862 2979 4728 4740 # Lombardy
-		5781 5782 5783 5785 	#abaitaly
-		105
-		6075 6078 6045 6046 6047 #gc italy
-		106 108 111 112 113 114 130 1308 1774 4729 4730 4738
-		5779 5778 5777
-		109
-		107 4739
-		117 6048 6049
-		6124
-		2977
-		2976 4731 118
-		6050 119 6051 6052 6053 6060
-		121 2983 122 1933 2985 4733 123 1934 2984 124 126 2982 5776 125 4736 4737 5775 127 2986 4735 5780 5786
-		120
-		6126 6125
-		6158 
-		4754 4753 136 137 #dalmatia #smeev	
+		104 1862 4740 6078 105 #lombardy_area
+		115 116 2978 2980 6047 #tuscany_area
+		121 2983 6060 6053 #naples_area
+		118 4731 6052 6051 2976 #lazio_area
+		122 1933 2985 4733 #apulia_area
+		112 1774 4729 5779 6124 #venetia_area
+		4739 107 109 108 #po_valley_area
+		1875 4727 5783 103 #piedmont_area
+		101 102 2992 6046 #liguria_area
+		127 2986 4735 5780 #corsica_sardinia_area
+		124 126 2982 5776 #sicily_area
+		125 4736 4737 5775 6158 #western_sicily_area
+		119 120 6050 2977 6125 #central_italy_area
+		130 4738 5777 111 5778 #carinthia_area
+		5781 1247 5782  #corsica_area
+		106 113 114 4730 6045 #emilia_romagna_area
+		123 1934 2984 5786 #calabria_area
+		5785 2981 6075 2979 4728 #torino_area
+		117 6048 6049 #siena_area
+		136 137 4753 4754 #east_adriatic_coast_area
 	}
 }
+
 wien = {
 	location = 134
 	color = {
 		220 220 220 
 	}
-	#outgoing = {
-	#	name = "genua"
-	#	path = {
-	#		132 128 1769 1308 4738
-	#	}
-	#	control = {
-	#		3026.000000 1470.000000 3028.000000 1456.000000 3021.000000 1442.000000 
-	#	}
-	#}
 	outgoing = {
 		name = "pest"
 		path = {
@@ -1543,19 +1557,18 @@ wien = {
 	}
 
 	members = {
-		73 4758 110 1768 #Tirol
-		134 4762 4761 133 1770 #Austria proper
-		128 4759 132 1863 #unterkärnten
-		6105 4724 2970 6104 #Hradecko
-		265 4237 4726 6106 # Moravia
-		266 4725 2968 6103 6102  #bohemia 
-		267 2967 1771 6101 #erzgebirge #smeev
-		1769 129 4751 #Krain
-		6180 6182 6186 
-		6184 6183 6185 #gc bavaria
-		2955 4708 65 4707 #uppper bavaria
-		4709 4760 76 #eastern bavaria
-		64 2957 1757 2956 #lower bavaria
+		1769 4751 129 #krain_area
+		73 110 1768 4758 #tirol_area
+		128 132 1863 4759 #inner_austria_area
+		133 6186 4761 #outer_austria_area
+		134 1770 4762 6182 6180 #austria_proper_area
+		76 4760 4709 64 #east_bavaria_area
+		65 4707 4708 6183 6185 #upper_bavaria_area
+		1757 2956 2957 6184 2955 #lower_bavaria_area
+		267 1771 2967 6101 #erzgebirge_area
+		266 2968 6103 6102 4725 #bohemia_area
+		4724 6104 2970 6105 #hradecko_area
+		6106 265 4237 4726 #moravia_area
 	}
 }
 
@@ -1564,15 +1577,6 @@ gc_south_germany_tradenode = {
 	color = {
 		255 146 0
 	}
-	#outgoing = {
-	#	name = "genua"
-	#	path = {
-	#		68 4712 1870 166 4740 104
-	#	}
-	#	control = {
-#
-#		}
-#	}
 	outgoing = {
 		name = "rheinland"
 		path = {
@@ -1592,19 +1596,18 @@ gc_south_germany_tradenode = {
 		}
 	}
 	members = {
-		4712 4713 70 #West Swabia
-		68 1872 4711 1868 4710 #East Swabia
-		4714 72 74 #baden #smeev
-		75 4765 1880 #alsace #smeev
-		1873 4722 1870 166 1869 #switzerland #smeev
-		165 1867 1871 4721 4720 #romandie_area #smeev
-		4767 1761 77 4715 71
-		6171 6172 6173 6174 6175 6176 6169 6170 #gc switzerland
-		6206 #gc germany
+		6171 1867 1871 4720 #romandie_area
+		165 6169 4721 6170 #bern_area
+		166 1869 1870 6174 6173 #switzerland_area
+		4722 1873 6176 6172 6175 #grisons_area
+		68 1868 1872 4710 #upper_swabia_area
+		70 4713 4712 #lower_swabia_area
+		72 74 4714 #upper_rhineland_area
+		75 1880 4765 #alsace_area
+		77 1761 4767 6206 #palatinate_area
+		4715 71 4711 #franconia_area
 	}
 }
-
-
 
 pest = {
 	location = 153
@@ -1620,25 +1623,14 @@ pest = {
 			3169.000000 1453.000000 3203.000000 1421.000000 3220.000000 1353.000000 #dum
 		}
 	}
-	#outgoing = {
-	#	name = "genua"
-	#	path = {
-	#		4752
-	#	}
-	#	control = {
-	#	3037.000000 1425.000000 
-	#	}
-	#}
 	members = {
-		135 153 1864 4126 4240 # Transdanubia
-		155 1953 1954 4125 # Alfold
-		154 162 1318 1772 4236 # Slovakia
-		157 158 1952 4127 # Northern Transylvania
-		156 1951 4128 # Southern Transylvania
-		152 1767 4173 4756 # Slavonia
-		131 4752 1826 1828  #croatia #smeev
-		6100 6099 #gcpest
-	
+		131 1826 4752 1828 #croatia_area
+		152 4756 1767 4173 #slavonia_area
+		135 1864 4126 4240 6099 #transdanubia_area
+		155 1953 4125 6100 153 #alfold_area
+		154 162 1318 1772 4236 #slovakia_area
+		156 1951 4128 1954 #southern_transylvania_area
+		157 158 1952 4127 #transylvania_area
 	}
 }
 
@@ -1648,7 +1640,6 @@ rheinland = {
 	color = {
 		114 171 184 
 	}
-	
 	outgoing = {
 		name = "lubeck"
 		path = {
@@ -1658,7 +1649,6 @@ rheinland = {
 			2954.000000 1549.000000 2966.000000 1562.000000 2962.000000 1579.000000 2972.000000 1591.500000 
 		}
 	}
-
 	outgoing = {
 		name = "champagne"
 		path = {
@@ -1678,22 +1668,22 @@ rheinland = {
 		}
 	}
 	members = { 
-		 78  80 81 83 84 85 1760 1876 1878 2975 1762 
-		  
-		4768 4774 
-		49 50 62 63 51 60 61 1759 1763 52 58 59 2964 2965 2969 2993
-		4741 4742 4743 4744 4747 4748 4778
-		4775 2972 82
-		69 86 56 2973
-		4716
-		2971 1758 57 4773 #braunschweig
-		6163 6162 4749 4786	6179 6178 6204 6205 6207 6208  #gc germany
-		4718 79 66 67 4717
+		56 86 2973 69 2971 #north_westphalia_area
+		84 85 2975 6205 6204 #north_rhine_area
+		80 1760 1878 4768 #lower_rhineland_area
+		1876 78 4718 83 6207 #hesse_area
+		82 81 1762 6208 4774 #westphalia_area
+		57 1758 4773 2972 4775 #braunschweig_area
+		66 67 4717 79 #upper_franconia_area
+		63 2965 4743 4716 #thuringia_area
+		52 58 2964 4741 4742 #northern_saxony_area
+		59 61 4744 62 #south_saxony_area
+		60 1763 4778 #lusatia_area
+		51 1759 4748 4749 4786 #mittelmark_area
+		49 2969 4747 6179 6178 #neumark_area
+		6163 6162 50 2993 #berlin_area
 	}
 }
-
-
-
 
 chesapeake_bay = {
 	location = 1500
@@ -1728,9 +1718,25 @@ chesapeake_bay = {
 		}
 	}
 	members = {
-		2556 2557 4876 2527 1500 930 931 2537 2538 929 2539 2540 932 933 2541 2542 2543 937 2544 2545 938 2546 2547 935 936 2548 949 2011 2552 950 952 2549 2550 953 969 2553 2554 955 956 957 962 2023 965 2558 2639 967 2010 2560 966 968 2561 970 2562 2564 4874 4877 4878 4879 4880 4881 4882
+		970 2562 2564 #great_woods_area
+		966 968 2561 4874 #massachusetts_bay_area
+		967 2010 2560 #connecticut_valley_area
+		965 2558 2639 #new_york_area
+		956 957 962 2023 #delaware_valley_area
+		955 2556 2557 4876 #susquehanna_area
+		953 2553 2554 #maryland_area
+		950 952 2549 2550 4877 #chesapeake_area
+		949 2011 2548 2552 #great_valley_area
+		2544 2545 4878 #piedmont_north_america_area
+		937 938 2546 2547 481 #carolinas_area
+		932 2542 2543 #south_carolina_area
+		933 2541 4882 #south_carolina_piedmont_area
+		929 2537 2538 2539 4880 #american_georgia_area
+		930 931 2540 4881 #upper_american_georgia_area
+		935 936 2527 4879 #south_appalachia_area
 	}
 }
+
 st_lawrence = {
 	location = 1490
 	color = {
@@ -1764,11 +1770,30 @@ st_lawrence = {
 		}
 	}
 	members = {
-		996 2576 2577 2578 986 994 995 2582 2583 990 993 2584 2012 971 2013 2565 2566 2567 985 2570 2571 2572 980 981 2573 997 2574 2575 992 2579 2580 2581 2559 2563 982 983 984 2568 2569 1104 1105 1490 1804 4871 4873 4890 4891 4892 4893 4894 4895 4896 4897 4912 963 961 964
-		#hudson bay merge
-		1486 998 999 1000 1003 1004 1005 1006 1008 1009 1010 1011 1805 1806 1807 1811 1813 2004 2005 2016 2017 2018 2589 2590 2591 2592 2593 2594 2595 2596 2597 2598 2599 2600 2601 2602 2603 2511 1812 2588 1002 2006 2501 2502 2503 2510 4917 4918 4919 4920
-		1007 2015 1001 2671 991 2585 2670 988 989 2587 2586 987  
-	}	
+		1104 1105 #greenland_area
+		980 981 2573 #newfoundland_area
+		997 2574 2575 #labrador_area
+		986 994 995 2582 2583 #notre_dame_mountains_area
+		996 2576 2577 2578 2579 #cote_nord_area
+		993 2584 4895 #lower_canada_area
+		990 2012 2580 4893 #trois_rivieres_area
+		987 2586 2587 #upper_canada_area
+		992 2581 4894 #laurentian_area
+		991 1001 1007 2015 2671 #upper_ontario_area
+		989 988 2585 2670 #huronia_area
+		4890 4892 4897 #ottawa_valley_area
+		998 999 1000 1003 1004 #james_bay_area
+		1002 2588 2589 2590 2591 #inner_ontario_area
+		1005 1006 1009 2592 2594 #hudson_bay_area
+		1008 1010 1011 2593 #manitoba_area
+		961 963 964 2559 4912 #hudson_valley_area
+		969 2563 4871 #south_iroquoisia_area
+		2013 2565 4873 #maine_area
+		971 2566 2567 #eastern_maine_area
+		2570 2571 4896 #st_john_valley_area
+		983 985 2572 #upper_acadia_area
+		982 984 2568 2569 4891 #lower_acadia_area
+	}
 }
 
 north_sea = {
@@ -1804,7 +1829,15 @@ north_sea = {
 		}
 	}
 	members = {
-			1975 1266 1280 1281 1282 1929 248 249 251 246 247 4361 4362 253 4364 4365 250 252 369 4110 4363 375 376 4119 373 374 4120 4379 372 4121 4380 4118 4377 4378 1978 1979 370 371 4375 244
+		1978 1979 370 371 #subarctic_islands_area
+		250 252 369 4110 4363 #highlands_area
+		248 249 251 4361 4362 #lowlands_area
+		253 4364 4365 #kingdom_of_the_isles_area
+		372 4121 4380 #ulster_area
+		373 374 4120 4379 #leinster_area
+		375 376 4119 #connacht_area
+		4118 4377 4378 #munster_area
+		246 247 244 4375 #scottish_marches_area
 	}
 }
 
@@ -1822,7 +1855,7 @@ baltic_sea = {
 			3089.000000 1696.000000 3072.000000 1648.000000 3044.000000 1636.000000 3015.000000 1620.000000 2984.000000 1605.000000 
 		}
 	}	
-	outgoing = { #smeev mod
+	outgoing = {
 		name = "white_sea"
 		path = {
 			1926 36 34  
@@ -1833,16 +1866,26 @@ baltic_sea = {
 	}	
 	
 	members = {
-		1926 1 2 3 4 5 1985 8 9 11 18 19 25 27 28 29 31 35 37 38 39 273 1930 1935 4113 4114 4123 4152 36 1834 1842 4241
-		26 1982 4165 6 #skaneland #smeev
-		16 4164 7 4163 #gotaland #smeev
-		#Sweden Finland
-		5008 5009 5010 5011 5012 5013 5014 5015 5016 5017 5018 5019 5020 5021 5022 5023 5024 5025 5026 5027 30 4151
-		10 20 21 #northern_norway #smeev
-		23 24 2752 4145 #western_norway #smeev
-		4143 22 17 4144 #oslo #smeev
-		4153 4146 #smeev
-		315 5033 5039 5028 5029 5032 5030 5031
+		5030 5029 5028 10 22 #jemtland_area
+		31 29 5026 5025 5023 #inner_finland_area
+		28 30 5024 #nyland_area
+		9 5016 5017 5027 #soderland_area
+		5008 5011 5010 #smaland_area
+		6 26 1982 4165 #skaneland_area
+		2 3 25 5009 #gotaland_area
+		7 16 4163 4164 #vastra_gotaland_area
+		5 1985 5012 #svealand_area
+		1 1930 5014 5015 #ostra_svealand_area
+		11 18 4114 5018 #norrland_area
+		27 4123 19 5019 5020 #finland_area
+		4113 4152 5021 5022 4151 #bothnia_area
+		20 21 315 5039 5033 #northern_norway
+		17 4143 4144 5031 #eastern_norway
+		23 24 2752 4145 5032 #western_norway
+		36 1834 1842 #estonia_ingria_area
+		37 38 273 4241 #livonia_area
+		35 39 1935 #curonia_area
+		4 8 5013 #dalarna_area
 	}
 }
 
@@ -1876,68 +1919,44 @@ lubeck = {
 		}
 	}
 	members = {
-		12 13 14 15 44 45 46 53 54 55 1775 1857 1874 1981 1983 1984 2996 4141 4142 4149
-		 4771 4772
-		47 4745 2994 1858 #vorpommern #smeev
-		48 4746 2995 #hinterpommern #smeev
-		#Scandinavia Rework
-		#Denmark
-		5003 5004 5005 5006 5007
-		#4775 2972 82
-		6177 6168 6167 6166 6165 6164 6161 6160 6159 #gc germany
+		12 14 1981 1983 5004 #denmark_area
+		5007 5003 1984 4142 #jutland_area
+		5006 15 4149 #south_jutland_area
+		5005 13 1775 4141 6166 #holstein_area
+		6168 6167 6165 6164 45 #lubeck_area
+		44 53 1857 4772 #lower_saxony_area
+		46 2996 6161 6160 6159 #mecklenburg_area
+		54 55 1874 4771 #weser_area
+		47 2994 4745 1858 #vorpommern_area
+		48 2995 4746 6177 #hinter_pommern_area
 	}
 }
-
-
 
 ragusa = {
 	location = 151
-	
-	#outgoing = {
-	#	name = "genua"
-	#	path = {
-	#		136 1308 
-	#	}
-	#	control = {
-	#		3164.000000 1337.000000 3109.000000 1349.000000 3080.500000 1356.000000 3031.000000 1383.000000 
-	#	}
-	#}
+	end = yes
 	members = {
-		142 144 147 1853 3001 148
-		145 146 1773 #morea_area
-		4702 4699 4698 4701  4780 # 1.30
-		160 161 2998 4531 4532 # wallachia_area #smeev change
-		4703 1765 2746 150 2750 #bulgaria # smeev
-		159 4706 4704 #silistria #smeev
-		1764 151 4779 4705 149 #thrace #smeev
-		4700 164 2348 3003 #aegean_archipelago_area
-		1319 #aegean sea #smeev
-		4174 4750 143 4175 #albania #smeev
-		4239 141 4176 3000 4757 #serbia #smeev
-		1827 1766 138 #rascia #smeev
-		140 4755 3002 139 1831 #bosnia #smeev
-			
-		###XMP###
-		6120 6122 6123
-		#########
+		149 151 1764 4779 4705 #thrace_area
+		150 1765 2746 2750 4703 #bulgaria_area
+		4704 4706 159 #silistria_area
+		160 161 2998 4531 4532 #wallachia_area
+		164 2348 4700 6122 6123 #aegean_archipelago_area
+		146 3003 147 6120 #XMP_central_greece_area
+		142 144 4699 4698 #northern_greece_area
+		145 1773 4701 #morea_area
+		148 1853 3001 4702 4780 #macedonia_area
+		141 3000 4176 4239 4757 #serbia_area
+		138 1766 1827 #rascia_area
+		143 4174 4175 4750 #albania_area
+		139 140 1831 3002 4755 #bosnia_area
 	}
 }
-
 
 valencia = {
 	location = 1295
 	color = {
 		87 70 168 #174 142 160
 	}
-	#outgoing = {
-	#	name = "genua"
-	#	path = {
-	#		213 1296 1297
-	#	}
-	#	control = {
-	#		2893.000000 1353.500000 
-	#	}
-	#}
 	outgoing = {
 		name = "bordeaux"
 		path = {
@@ -1957,36 +1976,44 @@ valencia = {
 		}
 	}
 	members = {
-		1295
-		197 212 213 2987 2988 #catalonia_area
-		220 1750 4549 4550 #valencia_area
 		211 214 2990 4557 #aragon_area
-		333 4559 4560 # Baleares
-	    6192 #gc iberia
+		197 212 213 2987 2988 #catalonia_area
+		220 1750 4549 4550 6192 #valencia_area
+		333 4559 4560 #baleares_area
 	}
 }
+
 sevilla = {
 	location = 1293
 	color = {
 		57 160 101 
 	}
-		outgoing = {
+	outgoing = {
 		name = "bordeaux"
 		path = {
 			1745
 		}
 		control = {
-		2718.000000 1276.000000 2746.000000 1320.000000 2739.500000 1387.500000
+			2718.000000 1276.000000 2746.000000 1320.000000 2739.500000 1387.500000
 		}
 	}
 	members = {
-		206 207 208 1746 215 216 231 232 1293 217 218 219 221 222 223 224 225 226 227 228 229 230  367 1745 1747 1748 1749  1851 2754 2755 2751 4150 
-		4546 4547 4548 4551 4552 4553 4554 4555 4556 4558
-		 368 366 4565 4787 4788 4789
-		209 210 2989 #basque_country #smeev
-		6195 6194 6193 6181 6209 #gc iberia
+		224 1749 4548 6194 #lower_andalucia_area
+		1748 225 6195 2754 #cordoba_area
+		222 223 226 4546 6193 #upper_andalucia_area
+		215 217 2755 4551 4789 #castille_area
+		219 221 2751 4547 6209 #toledo_area
+		207 1745 4552 1746 #asturias_area
+		206 4554 4555 4558 #galicia_area
+		209 210 2989 #basque_country
+		208 216 4553 #leon_area
+		4788 218 1747 #extremadura_area
+		231 232 228 1851 4556 #beieras_area
+		227 229 230 4150 4787 #alentejo_area
+		366 367 368 4565 #macaronesia_area
 	}
 }
+
 bordeaux = {
 	location = 1276
 	color = {
@@ -2001,28 +2028,15 @@ bordeaux = {
 			2756.000000 1449.500000 2785.000000 1452.000000 2805.000000 1459.000000 2832.000000 1470.000000 
 		}
 	}
-	#outgoing = {
-	#	name = "genua"
-	#	path = {
-	#		201
-	#	}
-	#	control = {
-	#		2850.000000 1387.000000 2903.300000 1390.000000 
-	#	}
-	#}
-
 	members = {
-		1276 #Water 
-		190 195 199 # massif_central_area
-		194 198 4112 #guyenne_area
-		180 4111 4386 4387 #poitou_area
-		174 175 176 #pyrenees_area
-		4694 4697 4777 # new for 1.30
-		196 200 2753 4391 4695 #languedoc_area #smeev genoa remerge
-		203 204 205 4719 #savoy_dauphine_area #smeev genoa remerge
-		201 202 2991 4696  # new for 1.30 #provence_area
-		173 #labourd
-		6098 6096 6095 6094 
+		175 173 176 4694 6096 #pyrenees_area
+		200 2753 4391 4695 196 #languedoc_area
+		201 202 2991 4696 #provence_area
+		203 204 205 4719 #savoy_dauphine_area
+		190 195 199 4697 4777 #massif_central_area
+		174 6095 6094 #guyenne_area
+		180 4111 4386 4387 194 #poitou_area
+		6098 198 4112 #cahors_area
 	}
 }
 
@@ -2043,48 +2057,40 @@ champagne = {
 	}
 	
 	members = {
-		182 183 185 4388 #ile_de_france_area
-		179 184 4776 # Orleans area
-		 186 4390 #champagne_area
-		187 188 189 #lorraine_area
-		191 192 193 1877 4392 #bourgogne_area
-		167 168 1879 4385 #normandy_area #smeev
-		169 170 171 172 4384 #brittany_area #smeev
-		4764 4766 
-
-		177 178 4389 #loire_area #smeev
-
-		6093 6092 6091  6088 6087 6086 6085 6084 6083 6082 6081 #gcfrance
+		169 170 171 172 4384 #brittany_area
+		167 168 4385 6082 6081 #normandy_area
+		177 178 1879 6087 6086 #loire_area
+		184 179 4776 4389 #orleans_area
+		186 4390 182 6084 6083 #champagne_area
+		183 185 4388 6085 6088 #ile_de_france_area
+		191 1877 4392 6092 #west_burgundy_area
+		192 193 4764 6093 #bourgogne_area
+		187 188 189 4766 6091 #lorraine_area
 	}
 }
 
-
-
-
-
-
 english_channel = {
 	location = 1269
+	end = yes
 	color = {
 		220 138 57 
 	}
 	members = {
-		1269 1270 1271 #Seas
+		87 88 89 6089 1743 #picardy_area
+		94 6090 181 1866 93 #wallonia_area
+		96 97 98 4383 #holland_area
+		90 4769 91 6197 6196 #flanders_area
+		99 4381 6201 6203 #frisia_area
+		1931 4382 100 6202 #east_frisia_area
+		92 1744 6199 1865 #brabant_area
+		95 4770 1742 2974 6200 #north_brabant_area
 		241 242 4366 4369 #wales_area
 		245 4367 4368 4785 #yorkshire_area
 		239 240 4372 #west_midlands_area
-		243 1860 1861 4370 4376 #east_midlands_area
-		233 234 4130 4373 4374 #wessex_area
-		235 236 237 238 4371 #home_counties_area
-		92 95 98 99 2974 1866 93 #netherlands & brabant_area
-		96 97 4383 #holland_area
-		100 1931 4381 4382 #frisia_area
-		90 1744 1865 91 #flanders_area
-		4769 4770 1742
-		6187 6190 6189 6188 6191
-		94 6090 181 #wallonia_area
-		6089 87 88 89 1743 #picardy_area #smeev
-		6203 6202 6201 6200 6199 6197 6196 
+		243 1861 4376 #east_midlands_area
+		233 4130 4373 4374 6191 #wessex_area
+		235 236 4371 6189 234 #home_counties_area
+		6190 6188 237 #oxford_area
+		238 1860 4370 6187 #east_anglia_area
 	}
-	end = yes
 }
