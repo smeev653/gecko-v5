@@ -1504,7 +1504,7 @@ genua = {
 		115 116 2978 2980 6047 #tuscany_area
 		121 2983 6060 6053 #naples_area
 		118 4731 6052 6051 2976 #lazio_area
-		122 1933 2985 4733 #apulia_area
+		122 1933 2985 4733 6126 #apulia_area
 		112 1774 4729 5779 6124 #venetia_area
 		4739 107 109 108 #po_valley_area
 		1875 4727 5783 103 #piedmont_area
