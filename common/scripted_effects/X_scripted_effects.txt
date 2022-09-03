@@ -7246,7 +7246,7 @@ X_culture_group_control_effect = {
 			}
 			X_remove_tiered_modifier_effect = { group = $group$ }
 			if = {
-				limit = { culture_group = $group$ NOT = { is_subject = yes } }
+				limit = { culture_group = $group$ is_subject = no }
 				if = {
 					limit = {
 						is_variable_equal = {

@@ -14,7 +14,10 @@ X_CRI_cb_2 = { #Harvest the Steppe
 	prerequisites = {
 		is_emperor_of_china = yes
 		is_neighbor_of = FROM
-		FROM = { religion_group = christian }
+		FROM = { 
+			religion_group = christian
+			is_subject = no
+		}
 	}
 	war_goal = X_CRI_war_goal_2
 }
