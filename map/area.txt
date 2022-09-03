@@ -792,7 +792,7 @@ volhynia_area = { # 4
 }
 
 pripyat_area = { #4
-	 278 1941 4537 4545
+	278 1941 4537 4545
 }
 
 podlasie_area = {
@@ -800,7 +800,7 @@ podlasie_area = {
 }
 
 mazovia_area = { #4
-	256 257  1938 4525
+	256 257 1938 4525
 }
 
 central_poland_area = {
@@ -979,11 +979,13 @@ azov_area = { #5
 circassia_area = { #5
 	463 2201 2195 2197 6010
 }
+
 stavropol_area = { #5
 	6011 6012 2416 468
 }
+
 astrakhan_area = { #5
-	464 466  6014  6013 2417 
+	464 466 6014 6013 2417 
 }
 
 lower_don_area = { #5
@@ -1338,13 +1340,12 @@ ankara_area = { #3
 	326 4312 4313
 }
 
-
 kastamonu_area = { #4
 	325 328 2299 2304
 }
 
 karaman_area = { #4
-	 324 2301 4307 323
+	324 2301 4307 323
 }
 
 cukurova_area = { #3
@@ -1360,17 +1361,13 @@ syria_area = { #4
 	378 382 1855 4297 6113
 }
 
-trans_jordan_area = { #3
-	
-}
-
 palestine_area = { #3
 	379 1854 380 381 
 }
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 4310  4298
+	332 2303 4310 4298
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
@@ -1401,7 +1398,7 @@ shahrizor_area = {	#4
 
 al_jazira_area = { #5
 	color = { 92 200 92 }
-	 2308 411 2309  407 4292
+	2308 411 2309 407 4292
 }
 
 
@@ -1464,7 +1461,7 @@ yamamah_area = { #4
 }
 
 qasim_area = { #4
-	392  4273 4274
+	392 4273 4274
 }
 
 dhofar_area = { #3 (Dhofar + Masirah)
@@ -1980,7 +1977,7 @@ lower_volta_area = { #5
 }
 
 lower_niger_area = { #5
-    1144 1145 1146 1152 1153
+   1144 1145 1146 1152 1153
 }
 
 hausa_area = { #3
@@ -2024,7 +2021,7 @@ atacora_oueme_area = { #5
 }
 
 gulf_of_guinea_area = { #4
-    1151 1163 1164 1165
+   1151 1163 1164 1165
 }
 
 benin_area = { #4
@@ -2114,7 +2111,7 @@ termez_area = { #3
 }
 
 khiva_area = { #5
-	440  1973 2362 2370
+	440 1973 2362 2370
 }
 
 kabulistan_area = { #5
@@ -2127,7 +2124,7 @@ transcaspia_area = {
 }
 
 mashhad_area = { #4 - Northern Khorasan
-	 2221 2235 2236 4326 2214
+	2221 2235 2236 4326 2214
 }
 
 
@@ -2167,11 +2164,11 @@ farsistan_area = { #4
 }
 
 teheran_area = {
- 428 4337 6144 2213 6145
+	428 4337 6144 2213 6145
 }
 
-iraq_e_ajam_area = {     #5
-	 6149  6148 6146    427
+iraq_e_ajam_area = { #5
+	6149 6148 6146 427
 }
 
 azerbaijan_area = { #5 #Southern Azerbaijan
@@ -2179,11 +2176,11 @@ azerbaijan_area = { #5 #Southern Azerbaijan
 }
 
 isfahan_area = { #3
-	429  4335 6152 6153 6154
+	429 4335 6152 6153 6154
 }
 
 tabriz_area = {   #4 Central Azerbaijan
-	6136  6133 416 6134  
+	6136 6133 416 6134  
 }
 
 ardabil_area = {
@@ -2191,15 +2188,15 @@ ardabil_area = {
 }
 
 urmia_area = {
-	2207 2206 6135  4304 
+	2207 2206 6135 4304 
 }
 
-tabarestan_area = {   6155  #5
-	417 426 4339 
+tabarestan_area = { #5
+	417 426 4339 6155
 }
 
 astrabad_area = {
-	 6157 4341  6156 
+	6157 4341 6156 
 }
 
 ########################################
@@ -3203,7 +3200,7 @@ patagonian_andes = { #4
 	2863 2870 2875 2876
 }
 
-cuyo_area  = { #5
+cuyo_area = { #5
 	2843 2844 2845 2847 2877
 }
 
@@ -3231,7 +3228,7 @@ jujuy_area = { #3
 	794 2837 2839
 }
 
-chaco_area  = { #4
+chaco_area = { #4
 	790 2854 2878
 }
 
@@ -3823,7 +3820,7 @@ huasteca_area = {
 }
 
 chiapas_area = { #4
-    2635 4585 4586
+    2635 4585 4586 
 }
 
 yucatan_area = { #5
@@ -3836,10 +3833,6 @@ east_yucatan_area = { #4
 
 campeche_area = { #3
     845 2632 2650 
-}
-
-guatemala_area = { #4
-   839 841 2653 4587
 }
 
 guatemala_lowlands_area = { #5

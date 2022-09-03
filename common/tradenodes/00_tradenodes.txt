@@ -1,1617 +1,1407 @@
-
-
-zambezi={
-	location=1191
-	color={
+zambezi = {
+	location = 1191
+	inland = yes
+	color = {
 		32 164 51 
 	}
-	inland=yes
-	outgoing={
-		name="kongo"
-		path={
+	outgoing = {
+		name = "kongo"
+		path = {
 			4046 1191 1187 
 		}
-		control={
+		control = {
 			3319.139893 402.510010 3273.000000 399.000000 3231.000000 424.000000 3191.000000 456.000000 
 		}
 	}
-	outgoing={
-		name="zanzibar"
-		path={
+	outgoing = {
+		name = "zanzibar"
+		path = {
 			1192 1195 1196 
 		}
-		control={
+		control = {
 			3369.000000 358.000000 3436.000000 414.000000 3412.000000 515.000000 
 		}
 	}
-	members={
-		1184 1185 1187 1188 1189 1190 1191 2950 2951 2952 4034 4035 4036 4037 4038 4039 4040 4041 4042 4043 4044 4045 4046 4047 4048 4050 4104 4106 4108 
+	members = {
+		1184 2950 2951 2952 #zimbabwe_area
+		1185 1188 1189 #butua_area
+		4104 4106 4108 #zambia_area
+		1187 1190 1191 #lower_zambezi_area
+		4046 4047 4050 #upper_zambezi_area
+		4038 4039 4040 #shire_area
+		4034 4035 4048 #uticulo_makuana_area
+		4041 4044 4045 #ngonde_area
+		4036 4037 4043 4042 #ruvuma_area
 	}
 }
 
-patagonia={
-	location=2868
-	outgoing={
-		name="laplata"
-		path={
+patagonia = {
+	location = 2868
+	outgoing = {
+		name = "laplata"
+		path = {
 			1537 1536 
 		}
-		control={
+		control = {
 			1840.000000 159.000000 1912.000000 221.000000 
 		}
 	}
-	members={
-		2868 2876 2869 786 2873 2874 780 781 782 783 2870 2875 2863 784 787 2862 785 2867 2871 2872 
+	members = {
+		781 782 2869 #patagonia_area
+		783 2874 #southern_chile_area
+		1095 2025 #south_atlantic_islands_area
+		2863 2870 2875 2876 #patagonian_andes
+		785 2867 2871 2872 #nehuenken_area
+		780 786 2868# bahia_blanca_area
 	}
 }
 
-mexico={
-	location=852
-	color={
+mexico = {
+	location = 852
+	color = {
 		0 176 0 
 	}
-	outgoing={
-		name="carribean_trade"
-		path={
+	outgoing = {
+		name = "carribean_trade"
+		path = {
 			847 848 1510 1511 1512 1518 1516 
 		}
-		control={
+		control = {
 			1313.000000 1105.000000 1323.000000 1142.000000 1336.000000 1183.000000 1378.000000 1226.000000 1435.000000 1236.000000 1499.000000 1202.000000 1563.000000 1197.000000 1600.000000 1177.000000 1623.000000 1171.000000 1637.000000 1165.000000 
 		}
 	}
-	outgoing={
-		name="rio_grande"
-		path={
+	outgoing = {
+		name = "rio_grande"
+		path = {
 			1508 1509 2647 2646 
 		}
-		control={
+		control = {
 			 1262.000000 1165.000000 1298.000000 1179.000000 1309.000000 1233.000000 1321.000000 1291.000000
 		}
 	}
-	outgoing={
-		name="panama"
-		path={
+	outgoing = {
+		name = "panama"
+		path = {
 			1550 1549 1548 835 
 		}
-		control={
+		control = {
 			1287.000000 1087.000000 1382.000000 1072.000000 1451.000000 1020.000000 1501.000000 986.000000 1537.000000 972.000000 1562.000000 994.000000 
 		}
 	}
-	members={
-		1551 854 2617 2621 2657 851 2622 2623 2624 2643 849 2627 2645 2648 850 852 2626 2628 2644 848 2630 2631 2641 2647 844 847 2629 2646 2632 2635 2638 2649 841 842 843 2636 2653 845 2633 2650 2651 846 2634 2652 853 856 857 2615 2642 
-		4589 4594 4587 4586 4585 4588 4591 4590 4584 4582 4598 4583 4581 4571 4570 4572 4641 4573 4575 4580 4574 4579 4576 4640 4642 4643 4645 839
+	members = {
+		2634 2652 4588 4591 #east_yucatan_area
+		846 2633 2651 4590 #yucatan_area
+		842 843 2636 4589 4594 #guatemala_lowlands_area
+		845 2632 2650 #campeche_area
+		2635 4585 4586 4587 #chiapas_area
+		2630 2631 2647 #eastern_mexico_area
+		850 2628 2644 4583 4582 #puebla_area
+		848 2641 4598 #huasteca_area
+		2629 4584 #oaxaca_area
+		2646 4581 2645 #mixteca_area
+		852 2626 4570 4571 4572 #mexico_area
+		2622 2623 2624 4573 4574 #michoacan_area
+		2643 4575 4579 #tierra_caliente_area
+		2617 2621 #jalisco_area
+		853 2615 4641 4640 #guanajuato_area
+		856 4643 4645 #zacatecas_area
+		857 2642 4642 #gran_chichimeca_area
 	}
 }
 
-rio_grande={
-	location=2499
-	outgoing={
-		name="ohio"
-		path={
+rio_grande = {
+	location = 2499
+	outgoing = {
+		name = "ohio"
+		path = {
 			1508 1507 
 		}
-		control={
+		control = {
 			1338.000000 1333.000000 
 		}
 	}
-	#outgoing={
-	#	name="mexico"
-	#	path={
-	#		1508 1509 2647 2646 
-	#	}
-	#	control={
-	#		1321.000000 1291.000000 1309.000000 1233.000000 1298.000000 1179.000000 1262.000000 1165.000000 
-	#	}
-	#}
-	members={
-		863 864 2498 2618 861 2614 2619 2666 2667 858 2499 2668 880 881 2495 875 878 2493 2494 882 885 2496 2497 883 886 2500 884 887 888 2665 2669 4606 4627 4629 4628 4644 4630 4631 4632 4909 4910 4911
-		892 896 
+	members = {
+		858 2499 2614 2668 #rio_grande_area
+		861 2619 2666 2667 #northeast_mexico_area
+		2498 4628 4629 2497 #pecos_area
+		887 883 4627 4911 #texas_area
+		884 888 2665 2669 #coastal_prarie_area
+		886 2500 4909 4910 #texas_plains_area
+		892 896 #lower_plains_area
 	}
 }
 
-ohio={
-	location=2526
-	color={
+ohio = {
+	location = 2526
+	inland = yes
+	color = {
 		129 214 238 
 	}
-	inland=yes
-	outgoing={
-		name="chesapeake_bay"
-		path={
+	outgoing = {
+		name = "chesapeake_bay"
+		path = {
 			948 2011 
 		}
-		control={
+		control = {
 			1522.000000 1531.000000 
 		}
 	}
-	outgoing={
-		name="st_lawrence"
-		path={
+	outgoing = {
+		name = "st_lawrence"
+		path = {
 			946 991 
 		}
-		control={
+		control = {
 			1503.000000 1559.000000 
 		}
 	}
-	outgoing={
-		name="carribean_trade"
-		path={
+	outgoing = {
+		name = "carribean_trade"
+		path = {
 			1506 1505 1525 1516 
 		}
-		control={
+		control = {
 			1494.000000 1317.000000 1541.000000 1254.000000 1607.000000 1231.000000 
 		}
 	}
-	members={
-		910 911 2517 2518 912 913 914 915 916 917 2519 2520 944 945 2521 2522 942 943 2523 2524 946 947 948 2525 954 2555 2556 2557 951 2526 2551 939 940 941 958 959 960 961 964 4872 4875 4876 4887 4888 4889 4898 4899 4903 4904 4907 4921 4922 
-		#mississippi river merge
-		893 2014 2516 900 902 2513 2514 894 895 897 924 925 2531 2532 919 920 2528 2529 918 934 2527 899 2509 2515 889 890 2506 2507 2625 891 898 901 903 2508 2672 921 922 923 2530 2533 905 906 907 909 2007 1809 2008 2009 2504 2505 904 908 2512 1507 4883 4884 4885 4886 4900 4901 4905 4906 4908 4913 4914 4915 4916 4923
+	members = {
+		893 2014 2516 #lower_louisiana_area
+		921 922 923 2530 2533 #west_florida_area
+		919 920 2528 2529 4884 #mississippi_area
+		894 895 897 4885 4923 #mississippi_plain_area
+		924 925 2531 2532 4883 #alabama_area
+		918 934 939 4913 #choctaw_area
+		899 2509 2515 4886 #ozarks_area
+		900 902 2514 4906 #upper_louisiana_area
+		940 4887 4921 #western_kentucky_area
+		941 2526 4888 #kentucky_area
+		951 2551 4889 #appalachia_area
+		954 2555 4875 #westsylvania_area
+		958 959 960 4872 #iroquoisia_area
+		946 947 948 2525 4907 #ohio_country_area
+		942 943 2523 2524 4922 #miami_river_area
+		944 945 2521 2522 #michigan_area
+		2519 2520 4904 #southern_illinois_area
+		915 916 917 4903 #illinois_country_area
+		912 913 914 4899 #wisconsin_area
+		910 911 2517 2518 4898 #lake_superior_area
+		904 908 2512 4901 4902 #minnessota_area
+		905 2513 4900 4905 #iowa_area
 	}
 }
 
-#lhasa={
-#	location=677
-#	inland=yes
-#	outgoing={
-#		name="doab"
-#		path={
-#			2129 2128 2074 508 
-#		}
-#		control={
-#			4149.000000 1199.000000 4046.000000 1217.000000 
-#		}
-#	}
-#	outgoing={
-#		name="siberia"
-#		path={
-#			2129 2128 2074 508 
-#		}
-#		control={
-#			4149.000000 1199.000000 
-#		}
-#	}
-#	outgoing={
-#		name="ganges_delta"
-#		path={
-#			562 4479 
-#		}
-#		control={
-#			4201.000000 1131.000000 4206.000000 1106.000000 4187.000000 1090.000000 4205.000000 1073.000000 4203.000000 1058.000000 4210.000000 1047.000000 4207.000000 1038.000000 4221.000000 1026.000000 4234.000000 1003.000000 
-#		}
-#	}
-#	members={
-#		2129 2128 676 705 706 2134 4204 677 2130 4205 
-#		565 4481 4482 #bhutan_area
-#		557 2070 2071 4483 4485 #nepal_area
-#		4514 4515 4516 4517 4518 4519 4520 #new tibetan provinces
-#		2133 2135 678 2131 2132
-#	}
-#}
-
-
-#ganges_delta={
-#	location=1343
-#	outgoing={
-#		name="doab"
-#		path={
-#			1343 564 563 2044 558 2095 556 2063 
-#		}
-#		control={
-#			4184.000000 1014.000000 4186.000000 1026.000000 4182.000000 1038.000000 4187.000000 1046.000000 4178.000000 1059.000000 4162.000000 1064.000000 4151.000000 1062.000000 4130.000000 1065.000000 4106.000000 1059.000000 4076.000000 1067.000000 4056.000000 1086.000000 
-#		}
-#	}
-#	members={
-#		1343
-#		561 2081 4476 4477 #west_bengal_area
-#		564 2039 4474 4475 4478 #east_bengal_area
-#		2038 2043 #orissa_area
-#		560 2096 4450 4470 4471 #jharkhand_area
-#		562 2045 2046 4486 #north_bengal_area
-#		563 2044 4479 #gaur_area
-#		568 579 2402 #arakan_area
-#		586 590 1815 2403 4399 #lower_burma_area
-#		558 4469 4472 4489 #bihar_area
-#		2047 4484 4487 4488 #mithila_area
-#		570 573 2041 #naga_hills_area
-#		584 2399 581 #upper_burma_area
-#		2398 580 4393 2397 #chindwin_area
-#		566 571 2040 2042 4440 #assam_area
-#		4394 4396 585 4395 #central_burma_area
-#		583 588 2400 4397 4406 #shan_hill_area
-#		587 2401 4398 #karenni_area 
-#		582 2395 2396 4404 4405 #kachin_area
-#		567 2091 4473 #tripura_area
-#	}
-#}
-
-doab={
-	location=524
-	color={
+doab = {
+	location = 524
+	inland = yes
+	color = {
 		236 162 19 
 	}
-	inland=yes
-	#outgoing={
-	#	name="deccan"
-	#	path={
-	#		525 740 2057 
-	#	}
-	#	control={
-	#		4014.000000 1082.000000 4030.000000 1062.000000 4018.000000 1024.000000 3998.000000 1002.000000 3987.000000 966.000000 
-	#	}
-	#}
-	outgoing={
-		name="lahore_trade"
-		path={
+	outgoing = {
+		name = "lahore_trade"
+		path = {
 			522 2062 4411
 		}
-		control={
+		control = {
 			4021.000000 1115.000000 
 		}
 	}
-	members={
-		2061 4498 4499 #katehar_area
-		519 520 2064 4500 #jaipur_area
-		523 2094 4494 4495 4497 #oudh_area
+	members = {
 		555 2055 2095 4490 #purvanchal_area
+		2097 4468 #baghelkhand_area
+		559 2059 4466 4467 #bundelkhand_area
+		525 4465 #gird_area
 		524 556 2063 4496 #lower_doab_area
-		525 528 740 4464 4465 #gird_area
-		559 2059 4459 4466 4467 #bundelkhand_area
-		2097 2098 4468 #baghelkhand_area
+		523 2094 4494 4495 4497 #oudh_area
 		4491 4492 554 #baisi_rajya_area
 		509 511 2069 4493 #himalayan_hills_area
-		522 2060 2062 #upper_doab_area #smeev change
+		2061 4498 4499 #katehar_area
+		522 2060 2062 #upper_doab_area
+		519 520 2064 4500 #jaipur_area
+		510 2065 4411 4463 #sirhind_area
+		512 4502 4507 2066 #jangladesh_area
 		507 2075 2076 4510 4513 #lahore_area
 		506 2079 2086 4508 4509 #multan_area
 		2077 2078 4511 #sind_sagar_area
-		510 2065 4411 4463 #sirhind_area
-		512 4502 4507 2066 #jangladesh_area
 		508 2073 2074 4449 4521 #kashmir_area
-		1787 
 	}
 }
 
-
-
-
-
-
-timbuktu={
-	location=1132
-	inland=yes
-	outgoing={
-		name="tunis"
-		path={
+timbuktu = {
+	location = 1132
+	inland = yes
+	outgoing = {
+		name = "tunis"
+		path = {
 			1127 346 344 345 
 		}
-		control={
+		control = {
 			2757.000000 962.000000 2731.000000 1075.000000 2719.000000 1140.000000 2735.000000 1179.000000 2756.000000 1190.000000 2782.500000 1197.000000 2786.0000000 1226.000000 2852.000000 1259.000000 2889.000000 1253.000000 2964.000000 1257.000000
 		}
 	}
-	outgoing={
-		name="ivory_coast"
-		path={
+	outgoing = {
+		name = "ivory_coast"
+		path = {
 			2263 1135 2252 2255 2257 1466 
 		}
-		control={
+		control = {
 			2764.000000 887.000000 2769.000000 881.000000 2755.000000 822.000000 2755.000000 770.000000 2773.000000 750.000000 
 		}
 	}
-	outgoing={
-		name="katsina"
-		path={
+	outgoing = {
+		name = "katsina"
+		path = {
 			1148 2273 2269 1133 2262 1132 
 		}
-		control={
+		control = {
 			2790.000000 927.000000 2806.000000 912.000000 2852.000000 890.000000 2892.000000 894.000000  2899.000000 875.000000 
 		}
 	}
-	outgoing={
-		name="sevilla"
-		path={
+	outgoing = {
+		name = "sevilla"
+		path = {
 			1148 2273 2269 1133 2262 1132 
 		}
-		control={
+		control = {
 			2516.000000 940.000000 2548.000000 1064.000000 2617.000000 1127.000000 2641.000000 1223.000000
 		}
 	}
-	outgoing={
-		name="english_channel"
-		path={
+	outgoing = {
+		name = "english_channel"
+		path = {
 			1148 2273 2269 1133 2262 1132 
 		}
-		control={
+		control = {
 			2516.000000 940.000000 2447.000000 1068.000000 2433.000000 1258.000000 2599.000000 1456.000000 2758.000000 1507.000000 2845.000000 1549.000000 
 		}
 	}
-	outgoing={
-		name="bordeaux"
-		path={
+	outgoing = {
+		name = "bordeaux"
+		path = {
 			1148 2273 2269 1133 2262 1132 
 		}
-		control={
+		control = {
 			2516.000000 940.000000 2482.000000 1053.000000 2488.000000 1226.000000 2589.000000 1369.000000 
 		}
 	}
-	members={
-		1115 2237 2240 1122 1125 1135 1137 2265 2266 1136 2256 2267 2252 2253 2254 
-		2255 1138 2247 1120 1121 1124 1123 1131 1132 1134 1133 1142 2243 2244 2245 2246 
-		2248 2249 2250 2259 2260 2261 2262 2263 2264 2268 2269 2270 1127 1128 1129 1130 
-		2271 1140 1143 2291 2292 2295 
-		#gecko corridor
-		5800 5801 5802 5803 5804 5805 5806 5807 5808 5809 5810 5811 5812 
-		1112 1113 1116 2239 1114 2238 1117  1111 1096 
+	members = {
+		5805 5806 5809 5812 #pr_africa_area_1
+		5808 5807 5803 5811 #pr_africa_area_2
+		5804 5800 1127 5801 5802 #pr_africa_area_3
+		1128 1129 1130 2271 5810 #western_sahara_area
+		2243 2245 2246 2247 #baghena_area
+		1132 1133 2260 2262 2264 #niger_bend_area
+		1115 2237 2240 2244 #tekrur_area
+		1096 1111 #cap_verde_area
+		1112 1113 1116 2239 #jolof_area
+		1114 1117 2238 #futa_jallon_area
+		1120 1121 1124 2248 #manding_area
+		1123 1131 2249 2250 #massina_area
+		1134 2259 2261 2263 #jenne_area
+		1135 1136 1137 2265 2266 #upper_volta_area
+		1122 1125 2252 2253 #kong_area
+		1138 2254 2255 2256 2267 #lower_volta_area
+		1140 1143 2291 2292 2295 #atacora_oueme_area
+		1142 2268 2269 2270 #dendi_area
 	}
 }
 
-
-georgia={ #smeev mod
-	location=421
-		color={
+georgia = {
+	location = 421
+	color = {
 		116 0 0 
 	}
-	
-	outgoing={
-		name="astrakhan"
-		path={
+	outgoing = {
+		name = "astrakhan"
+		path = {
 			4301 4156 2201 2208 464
 		}
-		control={
+		control = {
 			3578.000000 1332.000000 3548.000000 1380.000000 3535.000000 1410.000000
 		}
 	}
-	outgoing={
-		name="persia"
-		path={
+	outgoing = {
+		name = "persia"
+		path = {
 			4341 
 		}
-		control={
+		control = {
 			 3566.000000 1291.000000 3575.500000 1273.000000 3617.000000 1257.000000 
 		}
 	}
-	outgoing={
-		name="crimea"
-		path={
+	outgoing = {
+		name = "crimea"
+		path = {
 			462 2195
 		}
-		control={
+		control = {
 			 3462.000000 1373.500000 3435.000000 1389.000000 3409.000000 1413.000000 3383.500000 1422.000000 3370.000000 1423.000000 3356.500000 1421.500000 3332.000000 1417.000000
 		}
 	}
-	#outgoing={
-	#	name="aleppo"
-	#	path={
-	#		416 4294 410 408
-	#	}
-	#	control={
-	#		3480.000000 1313.000000 3475.000000 1296.000000 3482.500000 
-	#}
-	
-	outgoing={
-		name="constantinople"
-		path={
+	outgoing = {
+		name = "constantinople"
+		path = {
 			423 330 328 151
 		}
-		control={
+		control = {
 			3501.000000 1353.000000 3429.000000 1336.000000 3385.000000 1340.000000 3332.000000 1349.000000 #3299.000000 1337.000000 #3273.000000 1339.000000
 		}
 	}
 
-	members={
-		462 1856 463 2201 2195 2197 422
-		423 2203 4301 #kartli_kakheti_area
-		2196 2204 4303 #samtskhe_area
+	members = {
+		463 2201 2195 2197 6010 #circassia_area
 		425 2198 2199 2208 4306 #dagestan_area
-		421 4299 4305 4340 #shirvan_area
-		419 420 2202 2205 #armenia_area
-		6010 #circassia #smeev 
-		6139 6141
-		 }
+		422 462 1856 #imereti_area
+		2196 2204 4303 #samtskhe_area
+		423 2203 4301 #kartli_kakheti_area
+		420 419 2202 2205 6141 #armenia_area
+		421 4299 4305 4340 6139 #shirvan_area
+	}
 }
-#samarkand={
-#	location=461
-#	inland=yes
-#	outgoing={
-#		name="astrakhan"
-#		path={
-#			442 440 443 470 465 464 
-#		}
-#		control={
-#		3610.000000 1470.000000 
-#		}
-#	}
-#	outgoing={
-#		name="siberia"
-#		path={
-#			480 478 477 1969 457 454 
-#		}
-#		control={
-#			3861.000000 1505.000000
-#		}
-#	}
-	#outgoing={
-	#	name="persia"
-	#	path={
-	#		442 441 438 437 427 426 
-	#	}
-	#	control={
-	#		3820.000000 1295.000000 3781.000000 1294.000000 3744.000000 1293.000000 3696.000000 1301.000000 3672.000000 1286.000000 3649.000000 1263.000000 
-	#	}
-	#}
-	#outgoing={
-	#	name="georgia"
-	#	path={
-	#		1326
-	#	}
-	#	control={
-	#		3660.000000 1316.000000
-	#	}
-	#}
-	#members={
-	#	   455 456  459 476 477  1969 1970 461 478 2126 2363  2368 2355 2360 2361 2358 2352 2351 2353 2359 2125  739 2124 2127 4209 4210 
-	#	   	457 2356 2364 #arys
-	#		458 1967 460  #kokand
-	#	4685
-	#	710 1786 707 711 714 719 1784 2118 2119 2123 2189 2190 2194 2182 2122 4206 4207 717 721 2116 4219 4220 720 2193 4221 713 715 2120 4208 718 2117 4222 712 2121 2192 
-	#	4673 4666 4667 723 4669 4668 4681 4683 4682 4678 4677 4680 4684 4693 #2184 708
-	#	#new added 
- 	#	2184 708 709
-	#	2191 4676
-	#	2114
-	#}
-#}
-persia={
-	location=4341
-	inland=yes
-	color={
+
+persia = {
+	location = 4341
+	inland = yes
+	color = {
 		204 119 31 
 	}
-	
-	outgoing={
-		name="basra"
-		path={
+	outgoing = {
+		name = "basra"
+		path = {
 			426 428 413 412
 		}
-		control={
+		control = {
 			3591.000000 1234.000000 3561.000000 1228.000000 3564.000000 1167.000000
 		}
 	}
-	outgoing={
-		name="lahore_trade"
-		path={
+	outgoing = {
+		name = "lahore_trade"
+		path = {
 			578 451 450 446 2221 2235 2214 
 		}
-		control={
+		control = {
 		 3668.000000 1269.000000 
 		}
 	}
-	outgoing={
-		name="astrakhan"
-		path={
+	outgoing = {
+		name = "astrakhan"
+		path = {
 			1326 421 425 2199 2208 
 		}
-		control={
+		control = {
 			3595.000000 1300.000000 3578.000000 1332.000000 3548.000000 1380.000000 3535.000000 1410.000000 
 		}
 	}
-	outgoing={
-		name="aleppo"
-		path={
+	outgoing = {
+		name = "aleppo"
+		path = {
 			426 428 413 412
 		}
-		control={
+		control = {
 			3591.000000 1234.000000
 		}
 	}		
-	#outgoing={
-	#	name="samarkand"
-	#	path={
-	#		442 441 438 437 427 426 
-	#	}
-	#	control={
-	#		 3649.000000 1263.000000 3672.000000 1286.000000  3696.000000 1301.000000 3744.000000 1293.000000 3781.000000 1294.000000  3820.000000 1295.000000
-	#	}
-	#}
-
-	members={
-		4334 #birjand_area
-		417 426 4339 4341 #tabarestan_area
-		427 428 2213 2216 4337 #iraq_e_ajam_area
-		429 433 2222 4335 4171 #isfahan_area
+	members = {
+		6142 424 6138 6140 #ardabil_area
+		6136 6133 416 6134 #tabriz_area
+		2207 2206 6135 4304 #urmia_area
 		2212 2215 4300 4338 #azerbaijan_area
-		413 414 2209 2210 #luristan_area #smeev mod
-		412 2217 4289 4290 4342 #khuzestan_area #smeev mod
-		432 2220 2234 4345 #kerman_area #smeev mod
-		416 2206 2207 4304 #tabriz_area
-		4177 4170 4172 6143 #Wasteland
-		424 #ardabil #smeev mod
-		2211 #ardalan #smeev mod
-		2218 4329 4330 4331 #farsistan_area
-		434 575 2231 2232 2233 #makran_area
-		6138 6136 6135 6134 6133 6142 
-		430 2219 2223 4332  #persian_gulf_coast
+		417 426 4339 6155 #tabarestan_area
+		413 414 2209 2210 2211 #luristan_area
+		428 4337 6144 2213 6145 #teheran_area
+		6157 4341 6156 #astrabad_area
+		412 2217 4289 4290 4342 #khuzestan_area
+		429 4335 6152 6153 6154 #isfahan_area
+		6149 6148 6146 427 #iraq_e_ajam_area
+		4334 433 2222 6151 2216 #birjand_area
+		2218 4329 4330 4331 4171 #farsistan_area
+		430 2219 2223 4332 #persian_gulf_coast
+		432 2220 2234 4345 #kerman_area
 		431 2999 4327 #mogostan_area
-		6154 6153 6152 6151 6149 6148 6146 6145 6144 6157 6156 6155 6140
+		434 575 2231 2232 2233 #makran_area
 		576 577 2068 #kalat_area
-		504 2088 4503 4504 505 4505 2072 #sindh_area
+		505 2072 4505 #northern_sindh_area
+		504 4503 4504 #sindh_area
 	}
 }
-lahore_trade={
-	location=454
-	color={
+
+lahore_trade = {
+	location = 454
+	color = {
 		63 150 30 
 	}
-	
-	#outgoing={
-	#	name="persia"
-	#	path={
-	#		578 451 450 446 2221 2235 2214 
-	#	}
-	#	control={
-	#		 3668.000000 1269.000000 
-	#	}
-	#}
-	outgoing={
-		name="astrakhan"
-		path={
+	outgoing = {
+		name = "astrakhan"
+		path = {
 			442 440 443 470 465 464 
 		}
-		control={
+		control = {
 			3824.000000 1312.000000 3774.000000 1329.000000 3728.000000 1356.000000 3682.000000 1386.000000 3657.000000 1444.000000 3610.000000 1470.000000 
 		}
 	}	
-	outgoing={
-		name="siberia"
-		path={
+	outgoing = {
+		name = "siberia"
+		path = {
 			457 476
 		}
-		control = {
-
-		}
 	}
-	
-	members={
-		1785 2200 #Wastelands
-		448 451 452 578 2226 #kabulistan_area #smeev
-		447 449 2225 #ghor_area #smeev
-		450 2227 2228 #balkh_area #smeev
-		446 #herat #smeev change
-		445	4325 2350 444 #merv
-		6132 6131 1968 4344 4343 #termez_area #smeev change
-		454 6130 6129 6128 6127 #samarkand
-		453 442 441 #bukhara
-		1973 2362 440 2370 #khiva
-		437 438 2349 439 443 #transcaspia
-		4324 435 2224 2229 2230 #sistan_area
-		2214 2221 2235 2236 4326 #mashhad_area
+	members = {
+		448 451 452 578 2226 #kabulistan_area	
+		447 449 2225 #ghor_area
+		435 2224 2229 2230 4324 #sistan_area
+		450 2227 2228 446 #balkh_area
+		2221 2235 2236 4326 2214 #mashhad_area
+		444 445 2350 4325 #merv_area
+		1968 4344 4343 6131 6132 #termez_area
+		454 6127 6128 6130 6129 #samarkand_area
+		442 453 441 #transoxiana_area
+		440 1973 2362 2370 #khiva_area
+		437 438 439 443 2349 #transcaspia_area
 	}
 }
 
-
-
-aleppo={
-	location=377
-	color={
+aleppo = {
+	location = 377
+	color = {
 		202 150 172 
 	}
-	outgoing={
-		name="constantinople"
-		path={
+	outgoing = {
+		name = "constantinople"
+		path = {
 			1317 1848 322 317 1320 
 		}
-		control={
-			3308.000000 1243.000000 3264.000000 1243.000000 #3239.500000 1253.500000 3205.500000 1316.500000 
+		control = {
+			3308.000000 1243.000000 3264.000000 1243.000000
 		}
 	}
-	outgoing={
-		name="alexandria"
-		path={
+	outgoing = {
+		name = "alexandria"
+		path = {
 			1316 1315 358 
 		}
-		control={
+		control = {
 			3353.000000 1241.000000 3335.000000 1200.000000 3284.000000 1180.000000 
 		}
 	}
-	outgoing={
-		name="basra"
-		path={
+	outgoing = {
+		name = "basra"
+		path = {
 			408 409 406 382 377 
 		}
-		control={
-			    3423.000000 1245.000000 3448.000000 1222.000000 3487.000000 1204.000000 3501.000000 1170.000000 3542.000000 1156.000000
+		control = {
+			3423.000000 1245.000000 3448.000000 1222.000000 3487.000000 1204.000000 3501.000000 1170.000000 3542.000000 1156.000000
 		}
 	}
-	#outgoing={
-	#	name="persia"
-	#	path={
-	#		426 428 413 412
-	#	}
-	#	control={
-	#		3591.000000 1234.000000
-	#	}
-	
-	members={
-		377 1849 2313 4298 #aleppo_area
-		#transjordan
+	members = {
 		379 1854 380 381 #palestine_area
-		378 382 1855 4297 #syria_area
-		6113 6114
-		405 4270 4271 #syrian_desert_area
-		408 2311 2312 4288 #basra_area
-		406 409 410 2310 4291 #iraq_arabi_area
+		405 4270 4271 2314 #syrian_desert_area
+		378 382 1855 4297 6113 #syria_area
+		377 1849 2313 6114 #aleppo_area
+		2308 411 2309 407 4292 #al_jazira_area
 		415 4293 4294 #shahrizor_area
-		411 2309 2314 407 4292 #al_jazira_area
-		2334 #wasteland
-		2308
+		406 409 410 2310 4291 #iraq_arabi_area
+		408 2311 2312 4288 #basra_area
 	}
 }
 
-basra={
-	location=1335
-	
-	
-	outgoing={ #smeev mod
-		name="alexandria" 
-		path={
+basra = {
+	location = 1335
+	outgoing = {
+		name = "alexandria" 
+		path = {
 			394 393 361 358
 		}
-		control={
+		control = {
 			3572.000000 1100.500000 3539.000000 1045.000000 3520.000000 1044.000000 3444.000000 1008.000000 3424.000000 980.000000 3399.000000 1002.000000 3329.000000 1110.500000 3317.000000 1130.000000 3286.000000 1151.000000
 		}
 	}
-	
-	#outgoing={
-	#	name="constantinople"
-	#	path={
-	#		149 1765 1766 138 137
-	#	}
-	#	control={
-	#	 3549.000000 1159.500000 3535.000000 1185.500000 3500.000000 1201.000000 3488.500000 1224.000000 3482.500000 1251.000000 3432.500000 1285.500000 3387.000000 #1314.000000 3312.000000 1318.000000
-	#	}
-	#}
-	#outgoing={
-	#	name="aleppo"
-	#	path={
-	#		408 409 406 382 377 
-	#	}
-	#	control={
-	#		   3542.000000 1156.000000 3501.000000 1170.000000 3487.000000 1204.000000 3448.000000 1222.000000 3423.000000 1245.000000
-	#	}
-	#}
-	outgoing={
-		name="gulf_of_aden"
-		path={
+	outgoing = {
+		name = "gulf_of_aden"
+		path = {
 			408 409 406 382 377 
 		}
-		control={
+		control = {
 			   3603.000000 1060.000000 3512.000000 974.000000 3509.000000 936.000000 3521.000000 863.500000
 		}
 	}
-	members={
-		1335 #Persian Gulf
-		394 395 396 2340 2347 #bahrain_area
-		393 2338 4272 #nafud_area
-		392 2337 4273 4274 #qasim_area
-		2335 2336 2339 4275 #yamamah_area
-		4276 #Wasteland
-		384 2329 2330 #medina_area #smeev
-		383 2328 4268 4269 2327 #tabuk_area #smeev
-		385 2331 2332 4277 4278 #mecca_area #smeev
-		397 398 404 2333 #pirate_coast_area
-		403 4285 4287 #oman_area
-		399 400 4286 #mascat_area
-		401 2341 2342 #dhofar_area
-		1332 1334 4347#Sea
-		402 1099 4284 #mahra_area
+	members = {
+		383 2328 4268 4269 2327 #tabuk_area
+		393 2338 2337 4272 #nafud_area
+		384 2329 2330 #medina_area
+		385 2331 2332 4277 4278 #mecca_area
+		386 391 4282 #asir_area
 		387 2346 4279 #tihama_al_yemen_area
 		390 2344 4281 #upper_yemen_area
 		388 2345 4280 #yemen_area
-		386 391 4282 #asir_area
 		389 2343 4283 #hadramut_area
-		1779		
+		402 1099 4284 #mahra_area
+		401 2341 2342 #dhofar_area
+		2335 2336 2339 4275 #yamamah_area
+		392 4273 4274 #qasim_area
+		399 400 4286 #mascat_area
+		403 4285 4287 #oman_area
+		397 398 404 2333 #pirate_coast_area
+		394 395 396 2340 2347 #bahrain_area
 	}
 }
-gulf_of_aden={
-	location=1212
-	
-	outgoing={
-		name="alexandria"
-		path={
+
+gulf_of_aden = {
+	location = 1212
+	outgoing = {
+		name = "alexandria"
+		path = {
 			1330 1329 1328 361 358 
 		}
-		control={
+		control = {
 			3370.000000 1051.000000 3329.000000 1110.000000 3317.000000 1130.000000 3284.000000 1143.000000 
 		}
 	}
-	outgoing={
-		name="ethiopia"
-		path={
+	outgoing = {
+		name = "ethiopia"
+		path = {
 			1213 1211 1212 4346 
 		}
-		control={
+		control = {
 			3454.000000 793.000000
 		}
 	}
-	outgoing={
-		name="zanzibar"
-		path={
+	outgoing = {
+		name = "zanzibar"
+		path = {
 			1446 1447 1448 
 		}
-		control={
+		control = {
 			3619.000000 810.000000 3602.000000 764.000000 3521.500000 652.000000 
 		}
 	}
-	
-	
-	members={
-		2775 2782 2783 2786 2788 2789 2790 2793 2794 2795 2024 1205 1206 1209 1212 1215 2765 2773 2792 2784 1211 2764 1331 
-		2768 #Angot
-
-		1328 1329 1330 4333 #Red Sea Area
-		4346
-		1210 1208 2778 1207 2779 #ogaden #smeev
-		2781 2776 2780 2785 #ajuuraan #smeev
+	members = {
+		1215 2764 2765 2768 #aussa_area
+		1211 1212 2773 2793 #ifat_area 
+		1207 1208 1210 2778 2779 #ogaden_area
+		1209 2786 2789 2792 2790 #somaliland_area
+		1206 2024 2783 2784 2788 #majarteen_area
+		2776 2780 2781 2785 #ajuuran_area
+		1205 2775 2782 2794 2795 #mogadishu_area
 	}
 }
 
-zanzibar={
-	location=1448
-	color={
+zanzibar = {
+	location = 1448
+	color = {
 		130 17 17 
 	}
-	outgoing={
-		name="cape_of_good_hope"
-		path={
+	outgoing = {
+		name = "cape_of_good_hope"
+		path = {
 			1449 1456 1457 1458 1459 1460 
 		}
-		control={
+		control = {
 			3492.000000 449.000000 3452.000000 374.500000 3388.000000 270.000000 3347.500000 175.000000 3233.000000 73.500000 
 		}
 	}
-	outgoing={
-		name="african_great_lakes"
-		path={
+	outgoing = {
+		name = "african_great_lakes"
+		path = {
 			1273 1202 
 		}
-		control={
+		control = {
 			  3416.000000 580.000000 3388.000000 610.000000 3351.000000 607.000000
 		}
 	}
-	members={
-		1448 788 1100 1102 1103 1183 1186 1192 1193 1194 1195 1196 1197 1198 1199 1200 1201 1202 1203 1204 1792 2796 2774 4020 4021 4022 4023 4024 4025 4026 4027 4028 4029 4030 4031 4032 4049 1101
+	members = {
+		1204 2774 2796 #northern_swahili_coast_area
+		1200 1202 1203 #mombasa_area
+		1196 1197 1198 1199 1201 #central_swahili_coast_area
+		788 1195 4049 4020 #mozambique_area
+		1183 1186 1192 #quelimane_area
+		1100 1102 1103 #mascarenes_area
+		4021 4024 4025 #betsimasaraka_area
+		4026 4028 4029 4030 #southern_madagascar
+		1792 4023 4027 #madagascar_highlands_area
+		1193 1194 4022 4031 4032 #sakalava_area
 	}
 }
 
-african_great_lakes={
-	location=4064
-	color={
+african_great_lakes = {
+	location = 4064
+	inland = yes
+	color = {
 		57 168 220 
 	}
-	inland=yes
-
-	outgoing={
-		name="kongo"
-		path={
+	outgoing = {
+		name = "kongo"
+		path = {
 			4063 4070 4099 
 		}
-		control={
+		control = {
 			3299.000000 628.000000 3287.000000 595.000000 3270.000000 574.000000 3260.000000 559.000000 3231.000000 537.000000 
 		}
 	}
-	outgoing={
-		name="ethiopia"
-		path={
+	outgoing = {
+		name = "ethiopia"
+		path = {
 			4063 4070 4099 
 		}
-		control={
+		control = {
 			3368.500000 699.000000 3371.500000 734.50000 3367.500000 750.500000 3388.000000 757.000000 3392.500000 778.500000 3383.500000 796.500000 3371.500000 826.500000
 		}
 	}
 	
-	members={
-		1273 1649 1798 1799 1925 4053 4054 4055 4056 4057 4058 4059 4060 4061 4062 4063 4064 4065 4066 4067 4068 4069 4070 4071 4072 4073 4074 4075 4076 4077 
-		4052 4051 2777 #smeev
+	members = {
+		4055 4056 4057 4058 4073 #tanzania_area
+		4070 4071 4072 4076 4077 #buha_area
+		4067 4068 4069 #rwanda_area
+		4059 4061 4063 #buzinza_area
+		4065 4074 4075 1798 #bunyoro_area
+		4062 4064 4066 #uganda_area
+		1273 1925 4053 4054 4060 #kenya_area
+		2777 4051 4052 1799 #jubba_area
 	}
 }
 
-
-kongo={
-	location=4097
-	color={
+kongo = {
+	location = 4097
+	inland = yes
+	color = {
 		171 148 148 
 	}
-	inland=yes
-	outgoing={
-		name="ivory_coast"
-		path={
+	outgoing = {
+		name = "ivory_coast"
+		path = {
 			1170 1464 
 		}
-		control={
+		control = {
 			3169.000000 587.000000 3115.000000 585.000000 3050.000000 593.000000 3007.000000 566.000000 2939.000000 618.000000 2930.000000 701.000000 
 		}
 	}
-	members={
-		798 1169 1170 1901 2948 2949 4081 4082 4083 4084 4085 4086 4087 4088 4089 4090 4091 4092 4093 4094 4095 4096 4107 4098 4100 4101 4102 4103 4097 4099 4105 4109 
+	members = {
+		798 1169 1170 1901 2949 #kongo_area
+		4081 4085 4086 4088 #lower_kasai
+		2948 4082 4084 #matamba_area
+		4083 4087 4091 4092 4093 #kasai_area
+		4089 4090 4096 #sankuru_area
+		4094 4095 4107 #chokwe_area
+		4098 4100 4101 4102 4103 #katanga_area
+		4097 4099 4105 4109 #luba_area
 	}
 }
 
-cape_of_good_hope={
-	location=1460
-	outgoing={
-		name="ivory_coast"
-		path={
+cape_of_good_hope = {
+	location = 1460
+	outgoing = {
+		name = "ivory_coast"
+		path = {
 			1461 1462 1463 1464 1465 1466 
 		}
-		control={
+		control = {
 			3032.500000 172.000000 2973.000000 355.000000 2999.000000 503.500000 2933.000000 610.000000 2916.500000 697.500000 
 		}
 	}
-#	outgoing={
-#		name="bordeaux"
-#		path={
-#			1467 1468 1470 1471 1566 1563 
-#		}
-#		control={
-#			 3032.500000 172.000000 2973.000000 355.000000 2999.000000 503.500000 2933.000000 610.000000 2916.500000 697.500000 #			 2698.000000 664.000000 2487.000000 781.000000 2482.000000 #1053.000000 2488.000000 1226.000000 2589.000000 1369.000000 
-#		}
-#	}
-#	outgoing={
-#		name="english_channel"
-#		path={
-#			1467 1468 1470 1471 1566 1563 
-#		}
-#		control={
-#			3032.500000 172.000000 2973.000000 355.000000 2999.000000 503.500000 2933.000000 610.000000 2916.500000 697.500000 #			2698.000000 664.000000 2487.000000 781.000000 2447.000000 #1068.000000 2433.000000 1258.000000 2599.000000 1456.000000 	#			 2758.000000 1507.000000 2845.000000 1549.000000 
-#		}
-#	}
-	outgoing={
-		name="sevilla"
-		path={
+	outgoing = {
+		name = "sevilla"
+		path = {
 			1467 1468 1470 1471 1566 1563 
 		}
-		control={
+		control = {
 			3032.500000 172.000000 2973.000000 355.000000 2999.000000 503.500000 2933.000000 610.000000 2916.500000 697.500000 2698.000000 664.000000 2487.000000 781.000000 2516.000000 940.000000 2548.000000 1064.000000 2617.000000 1127.000000 2641.000000 1223.000000 
 		}
 	}
-	
-	members={
-		1460 789 833 1175 1176 1177 1178 1179 1180 1181 1182 1173 1800 2856 2864 2880 4781 4782 4783 4784
-		6029 1174 6028 #aba provinces
+	members = {
+		6028 1173 6029 1174 #namibia_area
+		833 1175 1177 1179 1180 #cape_of_good_hope_area
+		1176 1178 2856 2880 2864 #south_african_plateau_area
+		4781 4782 4783 4784 #transvaal_area
+		789 1181 1182 1800 #limpopo_area
 	}
 }
 
-
-
-constantinople={
-	location=326
-	color={
+constantinople = {
+	location = 326
+	color = {
 		126 203 120 
 	}
-	outgoing={
-		name="ragusa"
-		path={
+	outgoing = {
+		name = "ragusa"
+		path = {
 			149 1765 1766 138 137 
 		}
-		control={
+		control = {
 		3254.500000 1324.500000
 		}
 	}
-	outgoing={
-		name="alexandria"
-		path={
+	outgoing = {
+		name = "alexandria"
+		path = {
 			362 363 1316 1932 318 317 1320 
 		}
-		control={
+		control = {
 			3230.000000 1294.000000 3264.000000 1243.000000 3283.500000 1193.500000
 		}
 	}
-	members={
-		1320 325 328 2299 2304 
+	members = {
+		418 2307 4295 4296 4302 #north_kurdistan_area
+		330 331 2305 2306 #erzurum_area
+		332 2303 4310 4298 #dulkadir_area
 		329 1846 2300 4314 4315 #rum_area
-		316 317 2296 #hudavendigar_area
-		322 1848 4308 4311 #germiyan_area
-		318 319 2297 2298 4309 #aydin_area
+		325 328 2299 2304 #kastamonu_area
+		6115 6116 6117 327 2302 #cukurova_area
+		324 2301 4307 323 #karaman_area
 		326 4312 4313 #ankara_area
-		327 2302 #smeev
-		323 324 2301 4307 #karaman_area #smeev
-		332 2303 4310 #dulkadir_area #smeev
-		331 2305 330 #erzurum #smeev
-		418 2306 2307 4295 4296 4302 #north_kurdistan_area
-		6115 6116 6117
-		}
+		316 317 2296 #hudavendigar_area
+		318 319 2297 2298 4309 #aydin_area
+		322 1848 4308 4311 #germiyan_area
+	}
 }
 
-novgorod={
-	location=295
-	color={
+novgorod = {
+	location = 295
+	color = {
 		97 126 37 
 	}
-	
-	outgoing={
-		name="astrakhan"
-		path={
+	outgoing = {
+		name = "astrakhan"
+		path = {
 			 310 312 308 307 306  
 		}
-		control={
+		control = {
 			 3418.000000 1617.000000 3442.000000 1576.000000 3519.000000 1545.500000 3513.500000 1523.500000 3509.000000 1514.500000  3500.500000 1491.000000
 		}
 	}
-	
-	outgoing={
-		name="white_sea"
-		path={	
-		295			 
+	outgoing = {
+		name = "white_sea"
+		path = {	
+			295			 
 		}
-		control={	
+		control = {	
 			3301.000000 1705.000000 
 		}
 	}
-	members={
+	members = {
 		294 1752 4243 4248 4249 #tver_area
-		295 4251 4252 #moscow_area
-		307 4147 4253 #vladimir_area
 		308 1753 4117 4250 #yaroslavl_area
+		307 4147 4253 #vladimir_area
+		295 4251 4252 #moscow_area
+		301 1778 4255 #ryazan_area
+		296 300 4116 #oka_area
 		1754 1956 4254 #suzdal_area
-		306 1079 1083 1957 #galich_area #smeev
-		305 1962 1972 4266 #kama_area #smeev
-		1082 2422 4264 #kazan_area #smeev
-		314 4262 4263 #vologda_area #smeev
-		1755 4129 1077 1963 1964 #perm_area #smeev
-		301 1778 4255 #ryazan_area #smeev
-		296 300 4116 #oka_area #smeev
+		314 4262 4263 #vologda_area
+		306 1079 1083 1957 #galich_area
+		1077 1755 1963 1964 4129 #perm_area
+		305 1962 1972 4266 #kama_area
+		1082 2422 4264 #kazan_area
 	}
 }
-astrakhan={
-	location=464
-	inland=yes
-	
-		outgoing={
-		name="crimea"
-		path={
+
+astrakhan = {
+	location = 464
+	inland = yes
+	outgoing = {
+		name = "crimea"
+		path = {
 			468 287 1323 
 		}
-		control={
+		control = {
 			3487.000000 1457.000000 3419.000000 1458.000000 3394.500000 1453.500000 3380.000000 1430.500000 3372.500000 1414.500000 3345.000000 1397.500000
 		}
 	}
-	
-	outgoing={
-		name="kiev"
-		path={
+	outgoing = {
+		name = "kiev"
+		path = {
 			467 299 280
 		}
-		control={
+		control = {
 			3460.000000 1472.000000 3414.000000 1550.000000 3324.000000 1523.000000
 		}
 	}
-	#	outgoing={
-	#	name="samarkand"
-	#	path={
-	#		442 440 443 470 465 464 
-	#	}
-	#	control={
-	#		   3610.000000 1470.000000 3657.000000 1444.000000 3682.000000 1386.000000 3728.000000 1356.000000 3774.000000 1329.000000 3824.000000 1312.000000
-	#	}
-	#}
-		outgoing={
-		name="siberia" #smeev mod
-		path={
+	outgoing = {
+		name = "siberia"
+		path = {
 			1062 1064 480 479 472 475 1082 
 		}
 		control = {
 			3757.000000 1558.000000
 		}
 	}	
-	members={
-		288 303 465 467 469 470 474 1971 2365 2367 2366 2409 2418 2419 472 471  466 468  
+	members = {
+		464 466 6014 6013 2417 #astrakhan_area
+		6011 6012 2416 468 #stavropol_area
+		6015 303 2418 2419 #saratov_area
+		288 467 1971 2409 6016 #lower_don_area
 		302 304 2415 #tambov_area
-		2416 2417 464 #astrakhan_area
+		473 1081 2423 #samara_area
+		469 474 2365 2367 #lower_yik_area
 		2421 4265 4267 #volga_area
-		475 1965 1966 2420 2444 #bashkiria_area
-		473 1081 2423 #samara_area	
-		6011 6012 6013 6014 6015 6016 #aba crimea provinces
+		475 1965 1966 2420 2444	#bashkiria_area
+		465 470 471 472 2366 #nogai_area
 	}
 }
-siberia={
-	location=2354
-	inland=yes
-	outgoing={
-		name="white_sea" #smeev mod
-		path={
-		1075
+
+siberia = {
+	location = 2354
+	inland = yes
+	outgoing = {
+		name = "white_sea"
+		path = {
+			1075
 		}
 		control = {
-			#3837.500000 1673.500000 
 			3686.000000 1753.000000 3575.000000 1650.000000 3503.000000 1651.000000 3427.000000 1649.000000
 		}
 	}
-	#outgoing={
-	#	name="astrakhan" #smeev mod
-	#	path={
-	#		1062 1064 480 479 472 475 1082 
-	#	}
-	#	control = {
-	#		3757.000000 1558.000000
-	#	}
-	#}
-	#outgoing={
-	#	name="samarkand"
-	#	path={
-	#		480 478 477 1969 457 454 
-	#	}
-	#	control={
-	#		3861.000000 1505.000000
-	#	}
-	#}
-	members={
-		1782 1781 1071 479 1054 1059 1061 1062 1063 1064 1067 1068 1070 480 1069 1073 1074 1080 1078 1075 1076 2357 2369 2427 2428 2429 2430 2431 2432 2433 2434 2436 2437 2442 2443 2445 1072 1780 1045 2435 1051 2441 2354 716 1065 1066 
-		1060
-		4679 4686 4687 4688 4689 4690 4691 4692
-		1055 1056 1057
-		455 456  459 476 477  1969 1970 461 478 2126 2363  2368 2355 2360 2361 2358 2352 2351 2353 2359 2125  739 2124 2127 4209 4210 
-		457 2356 2364 #arys
-		458 1967 460  #kokand
-		4685
-		710 707 711 714 719 2118 2119 2123 2189 2190 2194 2182 2122 4206 4207 717 721 2116 4219 4220 720 2193 4221 713 715 2120 4208 718 2117 4222 712 2121 2192 
-		4673 4666 4667 723 4669 4668 4681 4683 4682 4678 4677 4680 4684 4693 #2184 708
-		#new added 
- 		2184 708 709
-		2191 4676
-		2114
+	members = {
+		458 460 1967 #ferghana_area
+		457 2364 2356 #arys_area
+		459 2126 2368 #jetysuu_area
+		455 1970 2363 #kyzylkum_area
+		456 1969 2352 2361 #syr_darya_area
+		476 2351 2353 2358 2359 #kazakhstan_area
+		477 478 2355 2360 4685 #balchasj_area
+		1080 1078 1780 2427 2441 #ural_area
+		1074 1075 1076 2369 4692 #ishim_area
+		479 2354 2357 4686 4690 #aqmola_area
+		1071 2434 4687 4688 4689 #yrtesh_area
+		480 2428 2429 2433 #ob_area
+		1068 1070 #central_siberia_area
+		1069 1072 1073 2445 4691 #kara_area
 	}
 }
 	
-kiev={
-	location=280
-	outgoing={
-		name="white_sea"
-		path={
+kiev = {
+	location = 280
+	outgoing = {
+		name = "white_sea"
+		path = {
 			278 292 275 311 310 
 		}
-		control={
+		control = {
 			3260.000000 1570.000000 3296.500000 1603.000000 3290.500000 1651.000000 3300.000000 1680.000000 
 		}
 	}
-	outgoing={
-		name="krakow"
-		path={
+	outgoing = {
+		name = "krakow"
+		path = {
 			279 260 262 
 		}
-		control={
+		control = {
 			3221.000000 1531.000000 3171.000000 1539.000000 
 		}
 	}
-	outgoing={
-		name="crimea"
-		path={
+	outgoing = {
+		name = "crimea"
+		path = {
 			  280 281 282 284 
 		}
-		control={
+		control = {
 			 3290.000000 1506.000000 3297.000000 1470.000000 3307.169922 1429.410034
 		}
 	}	
-	outgoing={
-		name="baltic_sea"
-		path={
+	outgoing = {
+		name = "baltic_sea"
+		path = {
 			279
 		}
-		control={
+		control = {
 			3238.000000 1598.000000 3212.000000 1610.000000 3189.500000 1666.000000 
 		}
 	}
-	members={
-		272 279 281 770 1937 1943 2962 277 278 1941 
+	members = {
 		291 298 299 2408 #sloboda_ukraine_area
+		1945 289 4543 #chernigov_area
+		290 2407 4542 #east_dniepr_area
 		280 1942 1944 4247 #west_dniepr_area
-		289 290 1945 2407 #east_dniepr_area
-		292 771 4246 #White Ruthenia
-		276 4115 4242 #minsk_area
-		4538 4537 4536 4535 4545 4544 4540 4539 4542 4543 269
-		271 1936 4534 270 #samogitia #smeev
-		293 297 4244 4245 #smolensk_area #smeev
+		281 4540 1943 #podolia_volhynia_area
+		279 2962 4539 4538 #volhynia_area
+		278 1941 4537 4545 #pripyat_area
+		269 277 1937 #podlasie_area
+		270 271 1936 4534 #samogitia_area
+		272 770 4535 4536 #lithuania_area
+		276 4115 4242 4544 #minsk_area
+		292 771 4246 #white_ruthenia_area
+		293 297 4244 4245 #smolensk_area
 	}
 }
 
-
-laplata={
-	location=1536
-	outgoing={
-		name="brazil"
-		path={
+laplata = {
+	location = 1536
+	outgoing = {
+		name = "brazil"
+		path = {
 			1535 1534 1533 1532 1531 
 		}
-		control={
+		control = {
 			2001.000000 329.000000 2074.000000 414.000000 2144.000000 481.000000 2213.000000 579.000000 
 		}
 	}
-	members={
-		772 773 777 778 779 790 1536 1095 2025 2843 2844 2845 2846 2847 2848 2849 2850 2851 2852 2853 2854 2855 2857 2858 2859 2860 2861 2865 2866 2877 2878 2879 2884 2887 2836 791 2842
+	members = {
+		779 2860 2861 2865 2866 #southern_pampas_area
+		778 2846 2848 2849 #buenos_aires_area
+		2843 2844 2845 2847 2877 #cuyo_area
+		772 773 2850 2851 2852 #banda_oriental_area
+		790 2854 2878 #chaco_area
+		777 2853 2855 2858 2859 #misiones_area
+		2857 2879 2884 2887 #rio_grande_do_sol_area
+		791 2836 2842 #tucuman_area
 	}
 }
 
-brazil={
-	location=1531
-	outgoing={
-		name="ivory_coast"
-		path={
+brazil = {
+	location = 1531
+	outgoing = {
+		name = "ivory_coast"
+		path = {
 			1596 1597 1586 1585 1466 
 		}
-		control={
+		control = {
 			2333.000000 600.000000 2480.000000 657.000000 2624.000000 550.000000 2788.000000 549.000000 
 		}
 	}
-	outgoing={
-		name="sevilla"
-		path={
+	outgoing = {
+		name = "sevilla"
+		path = {
 			1596 1597 1586 1585 1466 
 		}
-		control={
+		control = {
 			2548.000000 1064.000000 2617.000000 1127.000000 2641.000000 1223.000000 
 		}
 	}
-	outgoing={
-		name="amazonas_node"
-		path={
+	outgoing = {
+		name = "amazonas_node"
+		path = {
 			1529 1530 1531 
 		}
-		control={
+		control = {
 			 2168.000000 834.000000 2087.000000 866.000000
 		}
 	}
-	outgoing={
-		name="tunis"
-		path={
+	outgoing = {
+		name = "tunis"
+		path = {
 			1529 1530 1531 
 		}
-		control={
+		control = {
 			 2548.000000 1064.000000 2617.000000 1127.000000  2719.000000 1140.000000 2735.000000 1179.000000 2756.000000 1190.000000 2782.500000 1197.000000 2786.0000000 1226.000000 2852.000000 1259.000000 2889.000000 1253.000000 2964.000000 1257.000000
 		}
 	}
-	members={
-		1531 750 751 753 754 755 756 757 758 759 760 761 762 763 764 765 766 768 769 2881 2885 2891 2892 2893 2894 2895 2896 2897 2898 2899 2906 2907 2908 2912 2913 2914 2915 2916 2917 2918 2919 2920 2921 2922  
+	members = {
+		768 2895 2897 #west_sao_paolo_area
+		766 769 2896 #sao_paolo_area
+		761 762 763 764 #rio_de_janeiro_area
+		765 2892 2894 2899 #minas_gerais_area
+		759 2898 2891 #diamantina_area
+		756 757 760 2914 2916 #bahia_area
+		2885 2913 2915 2917 2918 #sao_francisco_area
+		754 755 2912 2921 2922 #pernambuco_area
+		750 751 753 #ceara_area
 	}
 }
-amazonas_node={
-	location=2935
-	#outgoing={
-	#	name="brazil"
-	#	path={
-	#		1529 1530 1531 
-	#	}
-	#	#control={
-	#	#	2087.000000 866.000000 2168.000000 834.000000 
-	#	#}
-	#}
-	outgoing={
-		name="carribean_trade"
-		path={
+
+amazonas_node = {
+	location = 2935
+	outgoing = {
+		name = "carribean_trade"
+		path = {
 			1529 1528 1576 1522 1520 1519 1517 1516 
 		}
-		control={
+		control = {
 			2072.000000 888.000000 2013.000000 940.000000 2002.000000 1051.000000 1858.000000 1053.000000 1775.000000 1062.000000 1703.000000 1066.000000 1631.000000 1102.000000 
 		}
 	}
-	members={
-		1802 1803 2909 2910 2911 2929 2930 2931 2933 2934 2935 2889 2937 2938 2804 2811 742 744 747 748 749 2890 2923 2924 2926 2927 2928 745 746 2936  502 743 2803 752 2886 2925 
-		4617
+	members = {
+		752 2886 2925 #piaui_area
+		749 2923 2924 2926 2927	#maranhao_area
+		748 2890 2928 2929 #grao_para_area
+		2889 2930 2933 2934 #amazon_area
+		747 2935 2938 #amapa_area
+		745 746 2937 #suriname_area
+		742 2804 2811 2931 4617 #upper_guyana_area
+		743 744 2803 #guyana_area
 	}
 }
-ivory_coast={
-	location=1466
-	outgoing={
-		name="carribean_trade"
-		path={
+
+ivory_coast = {
+	location = 1466
+	outgoing = {
+		name = "carribean_trade"
+		path = {
 			1467 1468 1579 1577 1576 1522 1520 1519 1517 1516 
 		}
-		control={
+		control = {
 			2696.000000 657.000000 2431.000000 777.000000 2279.000000 894.000000 2168.000000 924.000000 2002.000000 1051.000000 1858.000000 1053.000000 1775.000000 1062.000000 1703.000000 1066.000000 1631.000000 1102.000000 
 		}
 	}
-	outgoing={
-		name="bordeaux"
-		path={
+	outgoing = {
+		name = "bordeaux"
+		path = {
 			1467 1468 1470 1471 1566 1563 
 		}
-		control={
+		control = {
 			2693.000000 675.000000 2498.000000 819.000000 2482.000000 1053.000000 2488.000000 1226.000000 2589.000000 1369.000000 
 		}
 	}
-	outgoing={
-		name="english_channel"
-		path={
+	outgoing = {
+		name = "english_channel"
+		path = {
 			1467 1468 1470 1471 1566 1563 
 		}
-		control={
+		control = {
 			2698.000000 664.000000 2487.000000 781.000000 2447.000000 1068.000000 2433.000000 1258.000000 2599.000000 1456.000000 2758.000000 1507.000000 2845.000000 1549.000000 
 		}
 	}
-	outgoing={
-		name="sevilla"
-		path={
+	outgoing = {
+		name = "sevilla"
+		path = {
 			1467 1468 1470 1471 1566 1563 
 		}
-		control={
+		control = {
 			2702.000000 692.000000 2568.000000 783.000000 2516.000000 940.000000 2548.000000 1064.000000 2617.000000 1127.000000 2641.000000 1223.000000 
 		}
 	}
-	outgoing={
-		name="katsina"
-		path={
+	outgoing = {
+		name = "katsina"
+		path = {
 			1467 1468 1470 1471 1566 1563 
 		}
-		control={
+		control = {
 			2888.000000 749.000000 2931.500000 791.000000
 		}
 	}
-#	outgoing={
-#		name="katsina"
-#		path={
-#			 
-#		}
-#		control={
-#			
-#		}
-	members={
-		1164 1165 1166 1793 2241 1466 1097 1098 1118 1119 1151 1163 2242 1168 1306 
-		4078 4079 4080 1126 1139 1141 2257 2258 1147 2289 2290 2294
-		 1167 1171 1172
-		#gecko
-		5831 5832 5833 5835
-		5834 5837 5836 2251 5838
-		5839 5840 5841 5843 
-		5842 5845 5844 
-		5847 5846 5848 
-		5849 5850 5851 5852
-		
-
+	members = {
+		1098 1167 1171 1172 #angola_namibia_area
+		1166 1168 4078 4079 4080 #coastal_kongo
+		5849 5850 5851 5852	#pr_africa_area_14
+		1151 1163 1164 1165 #gulf_of_guinea_area
+		5846 5847 5848 #pr_africa_area_13
+		5842 5844 5845 #pr_africa_area_12
+		5839 5840 5841 5843 #pr_africa_area_11
+		1147 2289 2290 2294 #benin_area
+		1126 1139 1141 2257 2258 #west_africa_coast_area
+		5834 5837 5836 5838 2251 #pr_africa_area_10
+		1118 1119 2241 2242 #guinea_coast_area
+		5831 5832 5833 5835 #pr_africa_area_9
+		1097 1306 #sao_tome_area
 	}
 }
 
-katsina={
-	location=1149
-	color={
+katsina = {
+	location = 1149
+	inland = yes
+	color = {
 		215 56 56 
 	}
-	inland=yes
-
-	outgoing={
-		name="tunis"
-		path={
+	outgoing = {
+		name = "tunis"
+		path = {
 			352 341 
 		}
-		control={
+		control = {
 			2931.000000 880.000000 2998.000000 950.000000 3016.000000 1000.000000 3023.000000 1066.000000 3013.000000 1188.000000  
 		}
 	}
-	outgoing={
-		name="ethiopia"
-		path={
+	outgoing = {
+		name = "ethiopia"
+		path = {
 			2800 2772 
 		}
-		control={
+		control = {
 			2997.000000 856.000000 3036.000000 845.000000 3198.000000 868.000000 
 		}
 	}
-	members={
-		1144 1146 1162 1145 1152 1153 1150 1154 1155 1156 1157 1158 1160 1161 1249 1149 
-		1148 2273 2272 2274 2275 2276 2277 2278 2279 2280 2281 2282 2283 2284 2285 2286 
-		2287 2288 2293 1159 
-		#gecko corridor
-		5816 5821 2475 
-		5818 5822 5819 5823
-		5827 2474 5828 5817
-		5820 5824 5829
-		5830
+	members = {
+		1144 1145 1146 1152 1153 #lower_niger_area
+		1161 1162 1249 2285 #adamawa_plateau_area
+		1155 2280 2281 #hausa_area
+		1150 1154 2278 2293 #zazzau_area
+		1148 1149 2279 #katsina_area
+		1157 1160 2282 2283 2284 #bornu_area
+		1158 1159 2286 2287 2288 #kanem_area
+		1156 2272 2273 2274 2276 #azbin_area
+		2275 2277 5830 #east_azbin_area
+		5827 5828 2474 5817 #pr_africa_area_8
+		5820 5824 5829 #pr_africa_area_4
+		5819 5823 5822 5818 #pr_africa_area_5
+		2475 5821 5816 #pr_africa_area_6
 	}
 }
 
-ethiopia={
-	location=2772
-	inland=yes
-	outgoing={
-		name="alexandria"
-		path={
+ethiopia = {
+	location = 2772
+	inland = yes
+	outgoing = {
+		name = "alexandria"
+		path = {
 			1232 2321 361 358 
 		}
-		control={
+		control = {
 			3325.000000 905.000000 3318.000000 1017.000000 3313.000000 1058.000000 3301.000000 1079.000000 3284.000000 1104.000000 
 		}
 	}
-	#outgoing={
-	#	name="gulf_of_aden"
-	#	path={
-	#		1213 1211 1212 4346 
-	#	}
-	#	control={
-	#		3454.000000 793.000000	3486.000000 822.000000	3567.000000 840.000000 
-	#	}
-	#}
-	members={
-		774 1217 1218 1222 2756 2757 2758 2759 2760 2761 2762 2763 2772 2791 2797 2766 2767 2769 2770 2771 1224 1213 1223 1214 1216 1221 2800 2801 2802 1229 1225 1226 1227 2798 2799 1219 2932 4033 4158
-		2323 6017 6021 #hadendoa #aba
-		1228 1220 #aba
-		6022 6018 6019 #dongola #aba
+	members = {
+		774 1219 2801 2802 2932 #darfur_central_sahara_area
+		1216 1221 2800 #kurdufan_area
+		1220 1228 6018 6019 6022 #dongola_area
+		6017 2323 6021 1229 #hadendoa_area
+		1222 1226 1225 2797 2798 #upper_nubia_area
+		1217 2799 4033 #sennar_area
+		1227 2766 2767 2771 #tigray_area
+		1214 1223 1224 2769 2772 #central_ethiopia_area
+		2762 2763 2770 #damot_area
+		2757 2758 2759 4158 #southern_ethiopia_area
+		1218 2756 2760 #hadiya_area
+		1213 2761 2791 #shewa_area
 	}
 }
 
-alexandria={
-	location=358
-	color={
+alexandria = {
+	location = 358
+	color = {
 		200 200 102 
 	}
-	outgoing={
-		name="ragusa"
-		path={
+	outgoing = {
+		name = "ragusa"
+		path = {
 			362 363 1316 1932 318 317 1320 
 		}
-		control={
+		control = {
 			3272.000000 1172.000000 3275.000000 1197.000000 3266.000000 1216.000000 3236.000000 1243.000000 3203.000000 1286.000000 3203.000000 1315.000000 3216.000000 1325.000000 
 		}
 	}
-	outgoing={
-		name="genua"
-		path={
+	outgoing = {
+		name = "genua"
+		path = {
 			1315 1318 145 1773 144 143 1310 1309 1308 
 		}
-		control={
+		control = {
 			3253.000000 1183.000000 3216.000000 1220.000000 3160.000000 1229.000000 3130.000000 1251.000000 3108.000000 1291.000000 3100.000000 1332.000000 3080.500000 1356.000000 3031.000000 1383.000000 
 		}
 	}
-	#outgoing={
-	#	name="venice"
-	#	path={
-	#		1315 1318 145 1773 144 143 1310 1309 1308 
-	#	}
-	#	control={
-	#		3253.000000 1183.000000 3216.000000 1220.000000 3160.000000 1229.000000 3130.000000 1251.000000 3108.000000 1291.000000 3100.000000 1332.000000 3080.500000 1356.000000 3031.000000 1383.000000 
-	#	}
-	#}
-	outgoing={
-		name="tunis" #smeev mod
-		path={
+	outgoing = {
+		name = "tunis"
+		path = {
 			1315 1314 1313 1305 341
 		}
-		control={
+		control = {
 			3229.000000 1164.000000 3198.000000 1162.000000 3156.000000 1182.000000 3121.000000 1178.000000 #smeev mod
 		}
 	}
-	members={
-		1234 2322 #lower_nubia_area
-		365 2315 2320 2321 #gulf_of_arabia_area
+	members = {
+		1230 1232 2324 2787 #red_sea_coast_area
+		1234 2322 6020 6030 #lower_nubia_area
 		1233 2318 4323 #al_wahat_area
-		358 362 363 #delta_area
-		361 2316 4316 4317 #bahari_area
-		359 2317 4318 #vostani_area
 		360 1231 2319 4319 4320 #said_area
+		365 2315 2320 2321 364 #gulf_of_arabia_area
+		359 2317 4318 #vostani_area
+		361 2316 4316 4317 #bahari_area
+		358 362 363 #delta_area
+		6023 6024 6025 6026 #jaghbub_area
 		356 357 2325 2326 #cyrenaica_area
-		4321 4322 #Wastelands
-		2324 1232 1230 2787 #red sea coast
-		364 #ghazzah
-		6024 6023 6025 6026 #jaghbub #aba
-		6020 6030 #lower nubia #aba
-		163 320 321
-		6121 #xmp
+		321 320 163 6121 #eastern_mediterrenean_islands_area
 	}
 }
 
-
-
-#venice={
-#	location=118
-#	color={
-#		73 152 76  
-#	}
-#	members={
-#	
-#	}
-#		
-#}
-
-
-
-
-
-crimea={
-	location=1322
-	color={
+crimea = {
+	location = 1322
+	color = {
 		59 158 125 
 	}
-	#outgoing={
-	#	name="constantinople"
-	#	path={
-	#		1322 2961 262 
-	#	}
-	#	control={
-	#		3299.000000 1350.000000
-	#	}
-	#}
-	outgoing={
-		name="krakow"
-		path={
+	outgoing = {
+		name = "krakow"
+		path = {
 			1756 1321 1320 
 		}
-		control={
+		control = {
 			3266.000000 1436.000000 3201.000000 1508.000000
 		}
 	}
-	outgoing={
-		name="ragusa"
-		path={
+	outgoing = {
+		name = "ragusa"
+		path = {
 			1322 2961 262 
 		}
-		control={
+		control = {
 			3314.000000 1403.000000 
 		}	
 	}
-	outgoing={
-		name="pest"
-		path={
+	outgoing = {
+		name = "pest"
+		path = {
 			4706 2998 4531 160 2746 156 1954 155 
 		}
-		control={
+		control = {
 			3266.000000 1430.500000 3218.000000 1466.000000 3180.000000 1456.000000 3147.000000 1475.000000
 		}
 	}
-	members={
-		1323 1322 282 1974 2406 286 287 2413 2414 284 285 2410 2447 283 2411 2412 
-		6003 6004 6002 6005 6006 6007 6008 6009 6000 6001 #aba crimea
-		268 1756 2405 4529 4530 #moldavia #smeev
+	members = {
+		268 1756 2405 4529 4530 #moldavia_area
+		282 6006 2406 6003 #odessa_area
+		283 2411 2412 6008 6007 #zaporizhia_area
+		1974 6004 6005 #yedisan_area
+		284 6001 6002 #crimea_area
+		285 2410 2447 6000 #simferopol_area
+		286 287 2413 2414 6009 #azov_area
 	}
 }
 
-krakow={
-	location=262
+krakow = {
+	location = 262
 	color = { 114  70  103 }
 	
-	outgoing={
-		name="rheinland"
-		path={
+	outgoing = {
+		name = "rheinland"
+		path = {
 			263 264 1763 
 		}
-		control={
+		control = {
 			3083.000000 1532.000000 3069.000000 1548.000000 3034.000000 1562.000000 
 		}
 	}
-	outgoing={
-		name="baltic_sea"
-		path={
+	outgoing = {
+		name = "baltic_sea"
+		path = {
 			258 255 1859 43 1927 1926 
 		}
-		control={
+		control = {
 			3097.000000 1544.000000 3089.000000 1554.000000 3095.000000 1580.000000 3096.000000 1605.000000 3118.000000 1637.000000 
 		}
 	}
-	outgoing={
-		name="lubeck"
-		path={1927
+	outgoing = {
+		name = "lubeck"
+		path = {1927
 			
 		}
-		control={
+		control = {
 			3097.000000 1544.000000 3089.000000 1554.000000 3095.000000 1580.000000 3096.000000 1605.000000 3103.500000 1625.000000  
 		}
 	}	
-	outgoing={
-		name="pest"
-		path={
+	outgoing = {
+		name = "pest"
+		path = {
 			 2960 1318
 		}
-		control={
+		control = {
 			3123.000000 1510.000000 3122.000000 1501.000000 3116.000000 1492.000000 
 		}
 	}
-	outgoing={
-		name="wien"
-		path={
+	outgoing = {
+		name = "wien"
+		path = {
 			263 4726 265 1770
 		}
-		control={
+		control = {
 			 3106.000000 1520.000000 3084.000000 1516.000000 3077.000000 1508.000000 3070.000000 1500.000000 3061.000000 1494.000000
 		}
 	}
-	members={6112 6111 6110 6109 6108 6107 
-		258 259 260 261 262 263 264 1940 256 257 1938 1939 254 255 2424 2959 2960 2961 2966 
-		4238 2963 1859 4523 4524 4526 4528 4525 4527 4533 4541
-		4723
-		43 2997 1841 #west prussia #smeev
-		2958 42 767 41 40 #east prussia #smeev
+	members = {
+		261 1940 2424 2961 4541 #red_ruthenia_area
+		262 4527 2960 #malopolska_area
+		260 2959 259 #sandomierz_area
+		256 257 1938 4525 #mazovia_area
+		258 1939 4533 #central_poland_area
+		254 4526 255 2963 #wielkopolska_area
+		4523 1859 4524 4528 #kuyavia_area
+		2997 43 1841 #west_prussia_area
+		40 41 767 2958 42 #east_prussia_area
+		2966 6112 6111 4238 #silesia_area
+		6110 6109 6108 264 #breg_area
+		263 4723 6107 #opole_area
 	}
 }
-panama={
-	location=835
-	outgoing={
-		name="carribean_trade"
-		path={
+
+panama = {
+	location = 835
+	outgoing = {
+		name = "carribean_trade"
+		path = {
 			1515 1517 1516 
 		}
-		control={
+		control = {
 			1586.000000 1044.000000 1607.000000 1125.000000 
 		}
 	}
-	members={
+	members = {
 		840 2637 2640 2662 837 838 2660 2661 2663 826 835 836 2664 2819 828 2806 824 825 827 832 2817 2812 2814 2815 822 823 2816 2818 
 		4605 4604 4607 4608 4603 4600 4601 4602 4599 4596 4595 4597 4592 4593 829
 	}
 }
-carribean_trade={
-	location=1516
-	outgoing={
-		name="chesapeake_bay"
-		path={
+carribean_trade = {
+	location = 1516
+	outgoing = {
+		name = "chesapeake_bay"
+		path = {
 			1524 1503 1502 1501 1500 
 		}
-		control={
+		control = {
 			1649.000000 1207.000000 1619.000000 1236.000000 1604.000000 1280.000000 1606.000000 1312.000000 1587.000000 1389.000000 1635.000000 1447.000000 
 		}
 	}
-	outgoing={
-		name="bordeaux"
-		path={
+	outgoing = {
+		name = "bordeaux"
+		path = {
 			488 490 1526 1575 1583 1580 1567 1563 
 		}
-		control={
+		control = {
 			1687.000000 1196.000000 1925.000000 1251.000000 2082.000000 1253.000000 2210.000000 1293.000000 2326.000000 1295.000000 2446.000000 1349.000000 
 		}
 	}
-	outgoing={
-		name="sevilla"
-		path={
+	outgoing = {
+		name = "sevilla"
+		path = {
 			488 490 1526 1575 1583 1580 1567 1563 
 		}
-		control={
+		control = {
 			1684.000000 1121.000000 1844.000000 1108.000000 1899.000000 1143.000000 2019.000000 1171.000000 2253.000000 1245.000000 2391.000000 1282.000000 2456.000000 1325.000000 
 		}
 	}
-	outgoing={
-		name="tunis"
-		path={
+	outgoing = {
+		name = "tunis"
+		path = {
 			488
 		}
-		control={
+		control = {
 			1684.000000 1121.000000 1844.000000 1108.000000 1899.000000 1143.000000 2019.000000 1171.000000 2253.000000 1245.000000 2391.000000 1282.000000 2456.000000 1325.000000 2786.0000000 1226.000000 2852.000000 1259.000000 2889.000000 1253.000000
 			
 		}
 	}
 	 
-	members={
+	members = {
 		927 928 2534 926 2535 2536 484 485 2656 486 2654 2655 488 489 490 2658 2659 487 481 491 492 482 483 493 494 495 496 1881 497 498 499 500 501 830 2807 2813 741 831 2808 834 2805 2809 2810 2939 1516 
-		4626 4625 4624 4622 4623 4619 4618 4620 4621 4616 4615 4612 4613 4609 4611 4614 4610
+		502 4626 4625 4624 4622 4623 4619 4618 4620 4621 4616 4615 4612 4613 4609 4611 4614 4610
 	}
 }
-tunis={
-	location=341
-	color={
+tunis = {
+	location = 341
+	color = {
 		110 66 12 
 	}
-	outgoing={
-		name="sevilla"
-		path={
+	outgoing = {
+		name = "sevilla"
+		path = {
 			340 339 1301 1294 1293 
 		}
-		control={
+		control = {
 			2950.000000 1288.000000 2857.500000 1284.000000 2777.500000 1247.500000
 		}
 	}
-	outgoing={
-		name="genua"
-		path={
+	outgoing = {
+		name = "genua"
+		path = {
 			1302 1300 1297 
 		}
-		control={
+		control = {
 			2971.500000 1288.000000 2967.000000 1344.000000 
 		}
 			
 	}
-	outgoing={
-		name="ragusa" #smeev mod
-		path={
+	outgoing = {
+		name = "ragusa" #smeev mod
+		path = {
 			1305 1307 322 317 1320 
 		}
-		control={
+		control = {
 			3032.5000000 1257.500000 3168.000000 1246.500000 3203.000000 1268.000000 3204.000000 1316.000000 #smeev mod
 		}
 			
 			
 	}
-	members={
+	members = {
 		355 339 340 341 350 351 352 353 354 1882 2448 2449 2450 2451 2452 2453 2454 2455 2456 2457 2458 2472 2473 2954 4566 4567
 		344 345 346 347 348 1110 2460 2464 2466 2467 2468 2469 2470 342 343 349 2459 2462 2463 336 337 338 2461 2465 # PR change
 		4564 4562 4568 # PR change
@@ -1621,66 +1411,66 @@ tunis={
 		334 335 4561 1751 4563 #north morocco	
 	}
 }
-genua={
-	location=109
-	color={
+genua = {
+	location = 109
+	color = {
 		232 36 39
 	}
-	outgoing={
-		name="valencia"
-		path={
+	outgoing = {
+		name = "valencia"
+		path = {
 			4546 223 222 221 1295
 		}
-		control={
+		control = {
 			2893.000000 1353.500000 
 		}
 	}
-	outgoing={
-		name="bordeaux"
-		path={
+	outgoing = {
+		name = "bordeaux"
+		path = {
 			201
 		}
-		control={
+		control = {
 			2903.300000 1390.000000 2850.000000 1387.000000 
 		}
 	}
-	outgoing={
-			name="ragusa"
-			path={
+	outgoing = {
+			name = "ragusa"
+			path = {
 			1312 1319	
 			}
-			control={
+			control = {
 			3168.000000 1246.500000 3203.000000 1268.000000 3204.000000 1316.000000	 
 			}
 		}
-	outgoing={
-		name="pest"
-		path={
+	outgoing = {
+		name = "pest"
+		path = {
 			4752
 		}
-		control={
+		control = {
 		3037.000000 1425.000000 
 		}
 	}
-	outgoing={
-		name="wien"
-		path={
+	outgoing = {
+		name = "wien"
+		path = {
 			132 128 1769 1308 4738
 		}
-		control={
+		control = {
 			 3021.000000 1442.000000 3028.000000 1456.000000 3026.000000 1470.000000 
 		}
 	}
-	outgoing={
-		name="gc_south_germany_tradenode"
-		path={
+	outgoing = {
+		name = "gc_south_germany_tradenode"
+		path = {
 			2957 2955
 		}
-		control={
+		control = {
 			2943.000000 1445.000000 
 		}
 	}
-	members={
+	members = {
 		1298 #Sea
 		#124 125 126 2982 #sicily_area
 		115 116 2978 2980 #tuscany_area
@@ -1710,49 +1500,49 @@ genua={
 		4754 4753 136 137 #dalmatia #smeev	
 	}
 }
-wien={
-	location=134
-	color={
+wien = {
+	location = 134
+	color = {
 		220 220 220 
 	}
-	#outgoing={
-	#	name="genua"
-	#	path={
+	#outgoing = {
+	#	name = "genua"
+	#	path = {
 	#		132 128 1769 1308 4738
 	#	}
-	#	control={
+	#	control = {
 	#		3026.000000 1470.000000 3028.000000 1456.000000 3021.000000 1442.000000 
 	#	}
 	#}
-	outgoing={
-		name="pest"
-		path={
+	outgoing = {
+		name = "pest"
+		path = {
 			4240 135
 		}
-		control={
+		control = {
 			3092.000000 1474.000000 
 		}
 	}
-	outgoing={
-		name="rheinland"
-		path={
+	outgoing = {
+		name = "rheinland"
+		path = {
 			133 64 1757 67 66 79 1876 
 		}
-		control={
+		control = {
 			3006.000000 1510.000000 2984.000000 1525.000000 
 		}
 	}
-	outgoing={
-		name="gc_south_germany_tradenode"
-		path={
+	outgoing = {
+		name = "gc_south_germany_tradenode"
+		path = {
 			2957 2955 71 70 74 75 189 4766 186 
 		}
-		control={
+		control = {
 			2970.000000 1485.000000 
 		}
 	}
 
-	members={
+	members = {
 		73 4758 110 1768 #Tirol
 		134 4762 4761 133 1770 #Austria proper
 		128 4759 132 1863 #unterkärnten
@@ -1785,19 +1575,19 @@ gc_south_germany_tradenode = {
 #	}
 	outgoing = {
 		name = "rheinland"
-		path={
+		path = {
 			4712 4713 70 4715 79 4774 63 
 		}
-		control={
+		control = {
 			2959.000000 1526.000000 
 		}
 	}
 	outgoing = {
 		name = "champagne"
-		path={
+		path = {
 			5827 1880 5842 187 5866 186 
 		}
-		control={
+		control = {
 			2920.000000 1475.000000 2890.000000 1490.000000 
 		}
 	}
@@ -1816,26 +1606,26 @@ gc_south_germany_tradenode = {
 
 
 
-pest={
-	location=153
-	color={
+pest = {
+	location = 153
+	color = {
 		172 95 81
 	}
-	outgoing={
-		name="ragusa"
-		path={
+	outgoing = {
+		name = "ragusa"
+		path = {
 			1831 3002 4755 4173 4126
 		}
-		control={
+		control = {
 			3169.000000 1453.000000 3203.000000 1421.000000 3220.000000 1353.000000 #dum
 		}
 	}
-	#outgoing={
-	#	name="genua"
-	#	path={
+	#outgoing = {
+	#	name = "genua"
+	#	path = {
 	#		4752
 	#	}
-	#	control={
+	#	control = {
 	#	3037.000000 1425.000000 
 	#	}
 	#}
@@ -1852,42 +1642,42 @@ pest={
 	}
 }
 
-rheinland={
-	location=1876
-	inland=yes
-	color={
+rheinland = {
+	location = 1876
+	inland = yes
+	color = {
 		114 171 184 
 	}
 	
-	outgoing={
-		name="lubeck"
-		path={
+	outgoing = {
+		name = "lubeck"
+		path = {
 			1762 57 53 1857 45 
 		}
-		control={
+		control = {
 			2954.000000 1549.000000 2966.000000 1562.000000 2962.000000 1579.000000 2972.000000 1591.500000 
 		}
 	}
 
-	outgoing={
-		name="champagne"
-		path={
+	outgoing = {
+		name = "champagne"
+		path = {
 			83 1760 80 188 187 186 
 		}
-		control={
+		control = {
 			2928.000000 1531.000000 2912.000000 1541.000000 2902.500000 1543.500000 2881.500000 1535.500000 
 		}
 	}
-	outgoing={
-		name="english_channel"
-		path={
+	outgoing = {
+		name = "english_channel"
+		path = {
 			83 1760  
 		}
-		control={
+		control = {
 			2928.000000 1531.000000 
 		}
 	}
-	members={ 
+	members = { 
 		 78  80 81 83 84 85 1760 1876 1878 2975 1762 
 		  
 		4768 4774 
@@ -1905,144 +1695,144 @@ rheinland={
 
 
 
-chesapeake_bay={
-	location=1500
-	color={
+chesapeake_bay = {
+	location = 1500
+	color = {
 		193 26 14 
 	}
-	outgoing={
-		name="st_lawrence"
-		path={
+	outgoing = {
+		name = "st_lawrence"
+		path = {
 			965 963 969 2012 986 1490 
 		}
-		control={
+		control = {
 			1652.000000 1564.000000 1650.000000 1588.000000 1672.000000 1621.000000 1690.000000 1656.000000 1754.000000 1702.000000 
 		}
 	}
-	outgoing={
-		name="english_channel"
-		path={
+	outgoing = {
+		name = "english_channel"
+		path = {
 			1570 1572 1582 1568 1564 1563 
 		}
-		control={
+		control = {
 			1738.000000 1507.000000 1853.000000 1376.000000 2056.000000 1373.000000 2207.000000 1463.000000 2628.000000 1499.000000 2743.000000 1513.000000 2823.000000 1532.000000 
 		}
 	}
-	outgoing={
-		name="bordeaux"
-		path={
+	outgoing = {
+		name = "bordeaux"
+		path = {
 			1570 1572 1582 1568 1564 1563 
 		}
-		control={
+		control = {
 			1738.000000 1507.000000 1853.000000 1376.000000
 		}
 	}
-	members={
-		1500 930 931 2537 2538 929 2539 2540 932 933 2541 2542 2543 937 2544 2545 938 2546 2547 935 936 2548 949 2011 2552 950 952 2549 2550 953 969 2553 2554 955 956 957 962 2023 963 965 2558 2639 967 2010 2560 966 968 2561 970 2562 2564 4874 4877 4878 4879 4880 4881 4882
+	members = {
+		2556 2557 4876 2527 1500 930 931 2537 2538 929 2539 2540 932 933 2541 2542 2543 937 2544 2545 938 2546 2547 935 936 2548 949 2011 2552 950 952 2549 2550 953 969 2553 2554 955 956 957 962 2023 965 2558 2639 967 2010 2560 966 968 2561 970 2562 2564 4874 4877 4878 4879 4880 4881 4882
 	}
 }
-st_lawrence={
-	location=1490
-	color={
+st_lawrence = {
+	location = 1490
+	color = {
 		193 192 14 
 	}
-	outgoing={
-		name="north_sea"
-		path={
+	outgoing = {
+		name = "north_sea"
+		path = {
 			1493 1496 1497 1498 1478 1476 1282 1975 
 		}
-		control={
+		control = {
 			1873.000000 1718.000000 1906.000000 1756.000000 1952.000000 1779.000000 2050.000000 1772.000000 2577.000000 1737.000000 2696.139893 1734.630005 2763.000000 1737.000000 2781.000000 1703.000000 
 		}
 	}
-	outgoing={
-		name="bordeaux"
-		path={
+	outgoing = {
+		name = "bordeaux"
+		path = {
 			1491 1494 1495 1565 1564 1479 1563 
 		}
-		control={
+		control = {
 			1870.000000 1686.000000 1923.000000 1630.000000 2041.000000 1632.000000 2178.000000 1627.000000 2364.000000 1615.000000 2525.000000 1581.000000 
 		}
 	}
-	outgoing={
-		name="lubeck"
-		path={
+	outgoing = {
+		name = "lubeck"
+		path = {
 			1493 1496 1497 1498 1478 1476 1282 1975 
 		}
-		control={
+		control = {
 			1873.000000 1718.000000 1906.000000 1756.000000 1952.000000 1779.000000 2050.000000 1772.000000 2577.000000 1737.000000 2696.139893 1734.630005 2882.000000 1665.000000 2955.000000 1690.500000 2983.000000 1670.000000 2979.000000 1645.000000 2974.000000 1637.000000 2979.000000 1627.000000 2976.000000 1618.000000 2974.000000 1612.000000 2981.000000 1606.000000 
 		}
 	}
-	members={
-		996 2576 2577 2578 986 994 995 2582 2583 990 993 2584 2012 971 2013 2565 2566 2567 985 2570 2571 2572 980 981 2573 997 2574 2575 992 2579 2580 2581 2559 2563 982 983 984 2568 2569 1104 1105 1490 1804 4871 4873 4890 4891 4892 4893 4894 4895 4896 4897 4912
+	members = {
+		996 2576 2577 2578 986 994 995 2582 2583 990 993 2584 2012 971 2013 2565 2566 2567 985 2570 2571 2572 980 981 2573 997 2574 2575 992 2579 2580 2581 2559 2563 982 983 984 2568 2569 1104 1105 1490 1804 4871 4873 4890 4891 4892 4893 4894 4895 4896 4897 4912 963 961 964
 		#hudson bay merge
-		1486 998 999 1000 1003 1004 1005 1006 1008 1009 1010 1011 1805 1806 1807 1811 1813 2004 2005 2016 2017 2018 2589 2590 2591 2592 2593 2594 2595 2596 2597 2598 2599 2600 2601 2602 2603 2511 1812 2588 1002 2006 2501 2502 2503 2510 4902 4917 4918 4919 4920
+		1486 998 999 1000 1003 1004 1005 1006 1008 1009 1010 1011 1805 1806 1807 1811 1813 2004 2005 2016 2017 2018 2589 2590 2591 2592 2593 2594 2595 2596 2597 2598 2599 2600 2601 2602 2603 2511 1812 2588 1002 2006 2501 2502 2503 2510 4917 4918 4919 4920
 		1007 2015 1001 2671 991 2585 2670 988 989 2587 2586 987  
 	}	
 }
 
-north_sea={
-	location=1975
-	color={
+north_sea = {
+	location = 1975
+	color = {
 		117 165 188 
 	}
-	outgoing={
-		name="english_channel"
-		path={
+	outgoing = {
+		name = "english_channel"
+		path = {
 			1270 236 
 		}
-		control={
+		control = {
 			2851.000000 1611.000000 
 		}
 	}
-	outgoing={
-		name="lubeck"
-		path={
+	outgoing = {
+		name = "lubeck"
+		path = {
 			1266 1267 1259 1258 45 
 		}
-		control={
+		control = {
 			2882.000000 1665.000000 2955.000000 1690.500000 2983.000000 1670.000000 2979.000000 1645.000000 2974.000000 1637.000000 2979.000000 1627.000000 2976.000000 1618.000000 2974.000000 1612.000000 2981.000000 1606.000000 
 		}
 	}
-	outgoing={
-		name="baltic_sea"
-		path={
+	outgoing = {
+		name = "baltic_sea"
+		path = {
 			1266 1267 1259 1258 45 
 		}
-		control={
+		control = {
 			2882.000000 1665.000000 2955.000000 1690.500000 2968.000000 1738.000000 3095.000000 1724.500000 
 		}
 	}
-	members={
+	members = {
 			1975 1266 1280 1281 1282 1929 248 249 251 246 247 4361 4362 253 4364 4365 250 252 369 4110 4363 375 376 4119 373 374 4120 4379 372 4121 4380 4118 4377 4378 1978 1979 370 371 4375 244
 	}
 }
 
-baltic_sea={
-	location=1926
-	color={
+baltic_sea = {
+	location = 1926
+	color = {
 		8 82 165 
 	}
-	outgoing={
-		name="lubeck"
-		path={
+	outgoing = {
+		name = "lubeck"
+		path = {
 			1255 1257 45 
 		}
-		control={
+		control = {
 			3089.000000 1696.000000 3072.000000 1648.000000 3044.000000 1636.000000 3015.000000 1620.000000 2984.000000 1605.000000 
 		}
 	}	
-	outgoing={ #smeev mod
-		name="white_sea"
-		path={
+	outgoing = { #smeev mod
+		name = "white_sea"
+		path = {
 			1926 36 34  
 		}
-		control={
+		control = {
 			3156.000000 1720.000000 3194.000000 1730.000000 3262.000000 1736.000000  
 		}
 	}	
 	
-	members={
+	members = {
 		1926 1 2 3 4 5 1985 8 9 11 18 19 25 27 28 29 31 35 37 38 39 273 1930 1935 4113 4114 4123 4152 36 1834 1842 4241
 		26 1982 4165 6 #skaneland #smeev
 		16 4164 7 4163 #gotaland #smeev
@@ -2056,46 +1846,36 @@ baltic_sea={
 	}
 }
 
-white_sea={
-	location=33
-	end=yes
-		
-	#outgoing={ #smeev mod
-	#	name="baltic_sea"
-	#	path={
-	#		34 36 1926 
-	#	}
-	#	control={
-	#		3262.000000 1736.000000 3194.000000 1730.000000 3156.000000 1720.000000 
-	#	}
-	#}
-	members={
-		1652 1777 
-		1955 4122 4256 4257 #arkhangelsk_area
-		313 1776 1958 4258 #pomor_area
-		32 309 4124 #north karelia #smeev
-		33 34 1961 #south karelia #smeev
-		274 275 1960 4148 #pskov_area #smeev 
-		310 311 1959 2749 4260 #novgorod_area #smeev
-		312 4259 4261 #beloozero_area #smeev
-		5034 5035 5036 5037 5038
+white_sea = {
+	location = 33
+	end = yes
+	members = {
+		274 275 1960 4148 #pskov_area
+		310 311 1959 2749 4260 #novgorod_area
+		33 34 1961 #karelia_area
+		32 309 4124 5037 #north_karelia
+		313 1776 1958 4258 5036 #pomor_area
+		1777 5035 5034 #laponia_area
+		312 4259 4261 #beloozero_area
+		1955 4122 4256 4257 5038 #arkhangelsk_area
 	}
 }
-lubeck={
-	location=45
-	color={
+
+lubeck = {
+	location = 45
+	color = {
 		190 70 70 
 	}
-	outgoing={
-		name="english_channel"
-		path={
+	outgoing = {
+		name = "english_channel"
+		path = {
 			1857 44 1268 1269 
 		}
-		control={
+		control = {
 			2966.000000 1599.000000 2957.000000 1596.000000 2915.000000 1602.000000 2868.000000 1576.000000 
 		}
 	}
-	members={
+	members = {
 		12 13 14 15 44 45 46 53 54 55 1775 1857 1874 1981 1983 1984 2996 4141 4142 4149
 		 4771 4772
 		47 4745 2994 1858 #vorpommern #smeev
@@ -2110,19 +1890,19 @@ lubeck={
 
 
 
-ragusa={
-	location=151
+ragusa = {
+	location = 151
 	
-	#outgoing={
-	#	name="genua"
-	#	path={
+	#outgoing = {
+	#	name = "genua"
+	#	path = {
 	#		136 1308 
 	#	}
-	#	control={
+	#	control = {
 	#		3164.000000 1337.000000 3109.000000 1349.000000 3080.500000 1356.000000 3031.000000 1383.000000 
 	#	}
 	#}
-	members={
+	members = {
 		142 144 147 1853 3001 148
 		145 146 1773 #morea_area
 		4702 4699 4698 4701  4780 # 1.30
@@ -2144,39 +1924,39 @@ ragusa={
 }
 
 
-valencia={
-	location=1295
-	color={
+valencia = {
+	location = 1295
+	color = {
 		87 70 168 #174 142 160
 	}
-	#outgoing={
-	#	name="genua"
-	#	path={
+	#outgoing = {
+	#	name = "genua"
+	#	path = {
 	#		213 1296 1297
 	#	}
-	#	control={
+	#	control = {
 	#		2893.000000 1353.500000 
 	#	}
 	#}
-	outgoing={
-		name="bordeaux"
-		path={
+	outgoing = {
+		name = "bordeaux"
+		path = {
 			1296
 		}
-		control={
+		control = {
 			2800.000000 1353.000000 2805.000000 1385.000000  
 		}
 	}
-	outgoing={
-		name="sevilla"
-		path={
+	outgoing = {
+		name = "sevilla"
+		path = {
 			4546 223 222 221 1295
 		}
-		control={
+		control = {
 			2812.000000 1300.000000 2798.000000 1275.000000 2780.000000 1258.000000 2751.000000 1257.000000 
 		}
 	}
-	members={
+	members = {
 		1295
 		197 212 213 2987 2988 #catalonia_area
 		220 1750 4549 4550 #valencia_area
@@ -2185,21 +1965,21 @@ valencia={
 	    6192 #gc iberia
 	}
 }
-sevilla={
-	location=1293
-	color={
+sevilla = {
+	location = 1293
+	color = {
 		57 160 101 
 	}
-		outgoing={
-		name="bordeaux"
-		path={
+		outgoing = {
+		name = "bordeaux"
+		path = {
 			1745
 		}
-		control={
+		control = {
 		2718.000000 1276.000000 2746.000000 1320.000000 2739.500000 1387.500000
 		}
 	}
-	members={
+	members = {
 		206 207 208 1746 215 216 231 232 1293 217 218 219 221 222 223 224 225 226 227 228 229 230  367 1745 1747 1748 1749  1851 2754 2755 2751 4150 
 		4546 4547 4548 4551 4552 4553 4554 4555 4556 4558
 		 368 366 4565 4787 4788 4789
@@ -2207,31 +1987,31 @@ sevilla={
 		6195 6194 6193 6181 6209 #gc iberia
 	}
 }
-bordeaux={
-	location=1276
-	color={
+bordeaux = {
+	location = 1276
+	color = {
 		36 132 247 
 	}
-	outgoing={
-		name="champagne"
-		path={
+	outgoing = {
+		name = "champagne"
+		path = {
 			1275 172 178 184 185 
 		}
-		control={
+		control = {
 			2756.000000 1449.500000 2785.000000 1452.000000 2805.000000 1459.000000 2832.000000 1470.000000 
 		}
 	}
-	#outgoing={
-	#	name="genua"
-	#	path={
+	#outgoing = {
+	#	name = "genua"
+	#	path = {
 	#		201
 	#	}
-	#	control={
+	#	control = {
 	#		2850.000000 1387.000000 2903.300000 1390.000000 
 	#	}
 	#}
 
-	members={
+	members = {
 		1276 #Water 
 		190 195 199 # massif_central_area
 		194 198 4112 #guyenne_area
@@ -2246,23 +2026,23 @@ bordeaux={
 	}
 }
 
-champagne={
-	location=186
-	inland=yes
-	color={
+champagne = {
+	location = 186
+	inland = yes
+	color = {
 		148  30  70
 	}
-	outgoing={
-		name="english_channel"
-		path={
+	outgoing = {
+		name = "english_channel"
+		path = {
 			181 1866 92 1744 1269 
 		}
-		control={
+		control = {
 			2862.000000 1510.000000 2858.000000 1532.000000 2865.000000 1540.000000 2871.000000 1550.000000 
 		}
 	}
 	
-	members={
+	members = {
 		182 183 185 4388 #ile_de_france_area
 		179 184 4776 # Orleans area
 		 186 4390 #champagne_area
@@ -2283,12 +2063,12 @@ champagne={
 
 
 
-english_channel={
-	location=1269
-	color={
+english_channel = {
+	location = 1269
+	color = {
 		220 138 57 
 	}
-	members={
+	members = {
 		1269 1270 1271 #Seas
 		241 242 4366 4369 #wales_area
 		245 4367 4368 4785 #yorkshire_area
@@ -2306,5 +2086,5 @@ english_channel={
 		6089 87 88 89 1743 #picardy_area #smeev
 		6203 6202 6201 6200 6199 6197 6196 
 	}
-	end=yes
+	end = yes
 }
