@@ -199,30 +199,6 @@ gecko_merc_count = {
 	}	
 }	
 
-regional_conquests = {
-	if = {
-		limit = {
-			ROOT = {
-				ai = no
-			}
-			any_country = {
-				owns_all_provinces = {
-					region = $region$ 
-					}
-			}	
-		}
-		hidden_effect = {
-			$region$ = {
-				add_province_modifier = {
-					name = "regional_conquest"
-					duration = -1
-				}
-			}	
-		}	
-	}	
-}
-
-
 add_or_upgrade_university_building = {
 	custom_tooltip = add_or_upgrade_university_building_tt
 	hidden_effect = {
