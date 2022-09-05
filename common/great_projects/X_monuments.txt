@@ -358,7 +358,7 @@ gme_basilica_san_marco = {
 # Crimea
 ####################
 X_CRI_hansaray = {
-	start = 2410 #Theodoro
+	start = 284 #Crimea
 	date = 1444.01.01
 	time = { months = 0	}
 	build_cost = 0

@@ -173,6 +173,8 @@ X_CRI_reform_7 = {
 	empire = celestial_empire
 	emperor = {
 		interest = -0.5
+		dhimmi_loyalty_modifier = 0.05
+		
 	}
 	on_effect = {
 		hidden_effect = {

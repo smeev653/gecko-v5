@@ -939,7 +939,7 @@ crimea_area = { #4
 	284 6001 6002
 }
 
-simferopol_area = { #4
+gazaria_area = { #4
 	285 2410 2447 6000
 }
 

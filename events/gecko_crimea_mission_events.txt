@@ -42,7 +42,7 @@ country_event = {
 			}
 			add_reform_progress_small_effect = yes
 		}
-		simferopol_area = {
+		gazaria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					is_city = yes
@@ -52,7 +52,7 @@ country_event = {
 		hidden_effect = {
 				every_province = {
 					limit = {
-						area = simferopol_area
+						area = gazaria_area
 					}	
 					change_culture = crimean
 				}

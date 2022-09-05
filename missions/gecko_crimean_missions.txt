@@ -183,7 +183,7 @@ gc_cri_branch_2 = {
         provinces_to_highlight = {
             OR = {
 				area = azov_area
-				area = simferopol_area
+				area = gazaria_area
 				#area = moldavia_area
 			}
 			NOT = {
@@ -196,7 +196,7 @@ gc_cri_branch_2 = {
 				type = all
 				country_or_subject_holds = ROOT
 			}
-			simferopol_area = {
+			gazaria_area = {
 				type = all
 				country_or_subject_holds = ROOT
 			}
@@ -436,12 +436,12 @@ gc_cri_branch_3 = {
 
         provinces_to_highlight = {
             OR = {
-                area = simferopol_area
+                area = gazaria_area
             }
         }
 
         trigger = {
-            simferopol_area = {
+            gazaria_area = {
                 type = all
                 country_or_subject_holds = ROOT
                 OR = {
@@ -462,7 +462,7 @@ gc_cri_branch_3 = {
         }
 
         effect = {
-            simferopol_area = {
+            gazaria_area = {
                 add_base_tax = 1
                 add_base_production = 1
             }

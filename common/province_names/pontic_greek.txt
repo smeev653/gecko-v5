@@ -1,0 +1,10 @@
+###X###
+#Crimea
+284 = { "Taurica" "Taurica" }
+285 = { "Theodosia" "Theodosia" }
+2410 = { "Theodoro" "Theodoro" }
+2447 = { "Tamatarcha" "Tamatarcha" }
+6000 = { "Bosporos" "Bospor" }
+6001 = { "Kerkinitis" "Kerkinitis" }
+6002 = { "Taphros" "Taphros" }
+#######

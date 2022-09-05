@@ -5,15 +5,13 @@ controller = CRI
 culture = crimean
 religion = sunni
 hre = no
-base_tax = 1
-base_production = 1
-trade_goods = livestock
+base_tax = 2
+base_production = 2
 base_manpower = 2
+trade_goods = livestock
 capital = "Kezlev"
 is_city = yes
 add_core = CRI
-
-
 
 discovered_by = western
 discovered_by = eastern
