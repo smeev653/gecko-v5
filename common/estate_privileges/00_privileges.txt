@@ -5559,17 +5559,16 @@ estate_brahmins_monopoly_of_wool = {
 estate_cossacks_recruit_cossack_generals = {
 	icon = privilege_conscript_cossack_elite
 	max_absolutism = -5
-	loyalty = 0.1
+	loyalty = 0.05
 	influence = 0.1
 	is_valid = {
 	}
 	can_select = {
-		
 	}
 	penalties = {
 	}
 	benefits = {
-		shock_damage_received = -0.10
+		leader_land_manuever = 1
 	}
 	ai_will_do = {
 		factor = 10

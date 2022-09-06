@@ -1,3 +1,6 @@
+####################
+# General
+####################
 X_center_of_trade_effect = {
 	if = {
 		limit = {
@@ -23,7 +26,10 @@ X_center_of_trade_effect = {
 	}
 }
 
-X_CRI_reforms_pmod_ownership_change_effect = {
+X_on_province_owner_change_pmod_effect = {
+	####################
+	# Legacy Reforms
+	####################
 	if = {
 		limit = {
 			has_terrain = steppe
@@ -110,8 +116,57 @@ X_CRI_reforms_pmod_ownership_change_effect = {
 			remove_province_modifier = X_CRI_reform_6_pmod
 		}
 	}
+	####################
+	# Estates
+	####################
+	if = {
+		limit = {
+			OR = {
+				has_terrain = steppe
+				AND = {
+					region = ruthenia_region
+					OR = {
+						has_terrain = farmlands
+						has_terrain = grasslands
+					}
+				}
+			}
+			has_fort_building_trigger = yes
+		}
+		if = {
+			limit = {
+				owner = { has_estate_privilege = X_estate_cossacks_privilege_1 }
+				NOT = { has_province_modifier = X_estate_cossacks_privilege_1_pmod }
+			}
+			add_province_modifier = {
+				name = X_estate_cossacks_privilege_1_pmod
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_terrain = steppe
+				AND = {
+					region = ruthenia_region
+					OR = {
+						has_terrain = farmlands
+						has_terrain = grasslands
+					}
+				}
+			}
+			has_fort_building_trigger = yes
+			has_province_modifier = X_estate_cossacks_privilege_1_pmod
+			owner = { NOT = { has_estate_privilege = X_estate_cossacks_privilege_1 } }
+		}
+		remove_province_modifier = X_estate_cossacks_privilege_1_pmod
+	}
 }
 
+####################
+# Cultural Unions   (No further effects listed below this except those relevant to Cultural Union mechanic)
+####################
 X_culture_union_effect = {
 	set_global_flag = X_$group$_culture_exists_$union$_gflag
 	[[tartar]

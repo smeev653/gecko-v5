@@ -624,8 +624,9 @@ Defense_of_the_Rus = {
 		land_maintenance = 1
 		army_size_percentage = 0.65
 	}
-	shock_damage_received = -0.1
+	manpower_recovery_speed = 0.10
 	war_exhaustion = -0.1
+	war_taxes_cost_modifier = -1
 }
 
 Ahead_of_time = {

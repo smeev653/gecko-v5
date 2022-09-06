@@ -1,6 +1,6 @@
 #2447 - Mantrega
 
-owner = FEI
+owner = FEO
 controller = FEO
 add_core = FEO
 culture = pontic_greek

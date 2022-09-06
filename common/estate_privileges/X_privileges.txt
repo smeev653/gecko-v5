@@ -1,0 +1,145 @@
+#####################
+# Cossacks
+#####################
+X_estate_cossacks_privilege_1 = {
+    icon = privilege_demand_more_troops
+	land_share = 5
+    loyalty = 0.05            
+    influence  = 0.1      
+	is_valid = {
+		any_owned_province = {
+			OR = {
+				has_terrain = steppe
+				AND = {
+					region = ruthenia_region
+					OR = {
+						has_terrain = farmlands
+						has_terrain = grasslands
+					}
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = X_estate_cossacks_privilege_1_on_granted_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = steppe
+						AND = {
+							region = ruthenia_region
+							OR = {
+								has_terrain = farmlands
+								has_terrain = grasslands
+							}
+						}
+					}
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = X_estate_cossacks_privilege_1_pmod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = X_estate_cossacks_privilege_1_on_revoked_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = X_estate_cossacks_privilege_1_pmod
+				}
+				remove_province_modifier = X_estate_cossacks_privilege_1_pmod
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = X_estate_cossacks_privilege_1_on_revoked_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = X_estate_cossacks_privilege_1_pmod
+				}
+				remove_province_modifier = X_estate_cossacks_privilege_1_pmod
+			}
+		}
+	}	
+    benefits = {
+		rival_border_fort_maintenance = -0.50
+		reinforce_speed = 0.20
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+X_estate_cossacks_privilege_2 = {
+    icon = privilege_supply_arms
+	land_share = 0
+    loyalty = 0.00            
+    influence  = 0.05 
+	is_valid = {
+		OR = {
+			any_subject_country = {
+				any_owned_province = {
+					OR = {
+						has_terrain = steppe
+						AND = {
+							region = ruthenia_region
+							OR = {
+								has_terrain = farmlands
+								has_terrain = grasslands
+							}
+						}
+					}
+				}
+				any_neighbor_country = {
+					OR = {
+						NOT = { religion_group = ROOT }
+						overlord = {
+							NOT = { religion_group = ROOT }
+						}
+					}
+				}
+			}
+			AND = {
+				any_owned_province = {
+					OR = {
+						has_terrain = steppe
+						AND = {
+							region = ruthenia_region
+							OR = {
+								has_terrain = farmlands
+								has_terrain = grasslands
+							}
+						}
+					}
+				}
+				any_neighbor_country = {
+					OR = {
+						NOT = { religion_group = ROOT }
+						overlord = {
+							NOT = { religion_group = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = X_estate_cossacks_privilege_2_on_granted_tt
+	}
+	on_revoked = {
+		custom_tooltip = X_estate_cossacks_privilege_2_on_revoked_tt
+	}
+	on_invalid = {
+		custom_tooltip = X_estate_cossacks_privilege_2_on_revoked_tt
+	}
+	benefits = { loot_amount = 0.25 }
+	penalties = { diplomatic_reputation = -2 }
+	ai_will_do = {
+		factor = 0
+	}
+}
