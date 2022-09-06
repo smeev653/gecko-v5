@@ -796,3 +796,129 @@ country_event = {
 		custom_tooltip = X_CRI_event_6_tt
 	}
 }
+
+#Genoa Cedes Gazaria
+country_event = {
+	id = X_CRI_events.7
+	title = X_CRI_events.7.t
+	desc = X_CRI_events.7.d1
+	picture = DIPLOMACY_SIGNING_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_emperor_of_china = yes
+		GEN = {
+			is_neighbor_of = PREV
+			OR = {
+				AND = {
+					NOT = { navy_size = TUR }
+					NOT = { army_size = TUR }
+					NOT = { monthly_income = TUR }
+				}
+				AND = {
+					NOT = { navy_size = ROOT }
+					NOT = { army_size = ROOT }
+					NOT = { monthly_income = ROOT }
+				}
+			}
+		}
+	}
+	immediate = {
+		set_country_flag = X_CRI_genoa_cedes_gazaria_cflag
+	}
+	option = {
+		name = X_CRI_events.7.a
+	}
+}
+
+#Negotiations with the Bank of Saint George
+country_event = {
+	id = X_CRI_events.8
+	title = X_CRI_events.8.t
+	desc = X_CRI_events.8.d1
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			GEN = {
+				set_variable = {
+					which = X_gazaria_development_variable
+					value = 0
+				}
+				set_variable = {
+					which = X_gazaria_total_development_variable
+					value = 0
+				}
+				every_owned_province = {
+					limit = { region = crimea_region }
+					export_to_variable = {
+						which = X_gazaria_development_variable
+						value = development
+					}
+					PREV = {
+						set_variable = {
+							which = X_gazaria_development_variable
+							which = PREV
+						}
+						change_variable = {
+							which = X_gazaria_total_development_variable
+							which = X_gazaria_development_variable
+						}
+					}
+				}
+				set_variable = {
+					which = X_gazaria_total_development_localization_variable
+					which = X_gazaria_total_development_variable
+				}
+				multiply_variable = {
+					which = X_gazaria_total_development_localization_variable
+					value = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = X_CRI_events.8.a
+		every_province = {
+			limit = { 
+				owned_by = GEN
+				region = crimea_region
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		custom_tooltip = X_CRI_event_8_tt
+		custom_tooltip = X_CRI_event_8_tt2
+		hidden_effect = {
+			286 = { X_center_of_trade_effect = yes }
+		}
+		GEN = {
+			while = {
+				limit = {		
+					check_variable = {
+						which = X_gazaria_total_development_variable
+						value = 1
+					}
+				}
+				add_treasury = 5
+				PREV = {
+					add_treasury = -5
+				}
+				subtract_variable = {
+					which = X_gazaria_total_development_variable
+					value = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = X_CRI_events.8.b
+		declare_war_with_cb = {
+			who = GEN
+			casus_belli = cb_conquest
+			war_goal_province = 285
+		}
+	}
+	after = {
+		clr_country_flag = X_CRI_genoa_cedes_gazaria_cflag
+	}
+}

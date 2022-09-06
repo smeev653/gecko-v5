@@ -321,6 +321,12 @@
  X_CRI_mission_1_desc:0 ""
  X_CRI_mission_2_title:0 "Found Bagçasaray"
  X_CRI_mission_2_desc:0 ""
+ X_CRI_mission_3_title:0 "Gazarian Deal"
+ X_CRI_mission_3_desc:0 ""
+ X_CRI_mission_4_title:0 "Last Vestige"
+ X_CRI_mission_4_desc:0 ""
+ #Mission Tooltips
+ X_CRI_mission_3_tt:0 "Event '§YGenoa Cedes Gazaria§!' has happened."
  #Events
  X_CRI_events.1.t:0 "Tatar Yoke Crushed"
  X_CRI_events.1.d1:0 ""
@@ -340,9 +346,18 @@
  X_CRI_events.6.t:0 "Palace at Bagçasaray"
  X_CRI_events.6.d1:0 ""
  X_CRI_events.6.a:0 "A Khan's palace"
+ X_CRI_events.7.t:0 "Genoa Cedes Gazaria"
+ X_CRI_events.7.d1:0 "In response to the growing Turkish threat, the Republic of Genoa has ceded sovereignty of Gazaria to the Bank of Saint George, believing them to more capable of organizing a defense against the Turks."
+ X_CRI_events.7.a:0 "A foolish decision..."
+ X_CRI_events.8.t:0 "Negotiations with the Bank of Saint George"
+ X_CRI_events.8.d1:0 ""
+ X_CRI_events.8.a:0 "A peaceful resolution"
+ X_CRI_events.8.b:0 "A preposterous proposition"
  #Event Tooltips
  X_CRI_event_2_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
  X_CRI_event_6_tt:0 "Upon being built, we gain §G+5.0§!£X_imperial_mandate£.\nIf §Y[284.GetName]§! has a §YGreat Mosque§!, gain §Y4§! Base Tax in §Y[284.GetName]§!.\nElse gain a §YGreat Mosque§! in §Y[284.GetName]§!."
+ X_CRI_event_8_tt:0 "We shall pay §Y[GEN.X_gazaria_total_development_localization_variable.GetValue]§!¤ to §Y[GEN.GetName]§! for control of their possesions in the §YPontic Steppe§!."
+ X_CRI_event_8_tt2:0 "Peacefully resolving our border tensions with §Y[GEN.GetName]§! will result in the §Y[GEN.GetAdjective]§! commercial colony of §Y[286.GetCapitalName]§! to become a center of trade in §Y[286.GetName]§!."
  #Diplomatic Actions
  X_declarewar_diplomatic_actions_tt:0 "§RYou cannot declare on a tributary of a nation, if you are already at war with that nation.§!"
  X_declarewar_diplomatic_actions_tt2:0 "§RTributary States can't fight their own wars.§!"

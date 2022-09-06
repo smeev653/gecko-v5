@@ -1,7 +1,7 @@
 #286 - Azow
 
-owner = FEO
-controller = FEO
+owner = GEN
+controller = GEN
 culture = crimean
 religion = sunni
 hre = no
@@ -12,11 +12,7 @@ base_manpower = 3
 capital = "Tana"
 is_city = yes
 add_core = CRI
-add_core = FEO
-#fort_15th = yes
-
-center_of_trade = 1
-
+add_core = GEN
 
 discovered_by = western
 discovered_by = eastern

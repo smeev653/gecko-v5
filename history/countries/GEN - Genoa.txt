@@ -9,6 +9,7 @@ religion = catholic
 technology_group = western
 capital = 101	# Genova
 
+add_truce_with = CRI
 
 1394.1.1 = {
 	monarch = {

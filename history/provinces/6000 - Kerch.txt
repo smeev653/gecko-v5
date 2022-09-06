@@ -1,7 +1,7 @@
 #6000 - Kerch
 
-owner = FEO
-controller = FEO
+owner = GEN
+controller = GEN
 culture = pontic_greek
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = salt
 base_manpower = 2
 capital = "Kerch"
 is_city = yes
-add_core = FEO
+add_core = GEN
 
 discovered_by = western
 discovered_by = eastern

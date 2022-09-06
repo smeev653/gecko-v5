@@ -1,8 +1,8 @@
 #2447 - Mantrega
 
-owner = FEO
-controller = FEO
-add_core = FEO
+owner = GEN
+controller = GEN
+add_core = GEN
 culture = pontic_greek
 religion = orthodox
 hre = no

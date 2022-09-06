@@ -161,6 +161,54 @@ gc_cri_branch_1 = {
 			}
         }
     }	
+	#Gazarian Deal
+	X_CRI_mission_3 = {
+        icon = mission_entrepot_of_india
+        required_missions = { }
+		position = 4
+		trigger = {
+			army_size_percentage = 0.75
+			1322 = {
+				trade_share = {
+					country = ROOT
+					share = 45
+				}
+			}
+			custom_trigger_tooltip = { 
+				tooltip = X_CRI_mission_3_tt
+				has_country_flag = X_CRI_genoa_cedes_gazaria_cflag 
+			}
+		}
+		effect = {
+			if = {
+				limit = { exists = GEN }
+				country_event = { id = X_CRI_events.8 }
+			}
+			else = {
+				add_treasury = 350
+			}
+		}
+	}
+	X_CRI_mission_4 = {
+        icon = a_roman_empire
+        required_missions = { X_CRI_mission_3 }
+		position = 5
+		trigger = {
+			2410 = {
+				owned_by = ROOT
+			}
+			crimea_region = {
+				type = all
+				culture_group = tartar
+			}
+		}
+		effect = {
+			gazaria_area = {
+				add_local_autonomy = -10
+				add_base_tax = 1
+			}
+		}
+	}
 } #End Branch 1
 
 gc_cri_branch_2 = {
