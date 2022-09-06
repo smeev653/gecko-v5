@@ -136,7 +136,6 @@ X_VEN_venetian_marines_cmod = {
 ########################################
 # Modifiers for Crimea
 ########################################
-
 X_CRI_reform_3_pmod = {
 	local_development_cost = -0.1
 }
@@ -166,6 +165,10 @@ X_CRI_exacted_tribute_cmod = {
 	global_tax_modifier = -0.20
 }
 
+X_CRI_qaraylar_craftsmen_pmod = {
+	local_production_efficiency = 0.35
+	local_development_cost = -0.20
+}
 ########################################
 # Tiered Modifiers
 ########################################

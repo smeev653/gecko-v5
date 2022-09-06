@@ -285,6 +285,10 @@
  desc_X_CRI_exact_tribute_cmod:0 ""
  X_CRI_exacted_tribute_cmod:0 "Exacted Tribute"
  desc_X_CRI_exacted_tribute_cmod:0 ""
+ X_CRI_qaraylar_craftsmen_pmod:0 "Qaraylar Craftsmen"
+ desc_X_CRI_qaraylar_craftsmen_pmod:0 ""
+ #Estate Modifiers
+ X_CRI_estate_dhimmi_cufut_qale_lmod:0 "Çufut Qale"
  #Casus Belli
  X_CRI_cb_1:0 "Crush the Tatar Yoke"
  X_CRI_cb_1_desc:0 ""
@@ -312,6 +316,11 @@
  PEACE_X_CRI_peace_treaty_4:0 "Claim Legacy"
  CB_ALLOWED_X_CRI_peace_treaty_4:0 "Claim Legacy"
  X_CRI_peace_treaty_4_desc:0 "Claim the Legacy of Genghis from the false Tatar pretenders!"
+ #Missions
+ X_CRI_mission_1_title:0 "Place of Forty"
+ X_CRI_mission_1_desc:0 ""
+ X_CRI_mission_2_title:0 "Found Bagçasaray"
+ X_CRI_mission_2_desc:0 ""
  #Events
  X_CRI_events.1.t:0 "Tatar Yoke Crushed"
  X_CRI_events.1.d1:0 ""
@@ -325,8 +334,15 @@
  X_CRI_events.4.t:0 "A Failed Expedition"
  X_CRI_events.4.d1:0 ""
  X_CRI_events.4.a:0 "Our failure exacts a heavy toll"
+ X_CRI_events.5.t:0 "A Jewish Fortress"
+ X_CRI_events.5.d1:0 ""
+ X_CRI_events.5.a:0 "A home for the Qaraylar and a Khan"
+ X_CRI_events.6.t:0 "Palace at Bagçasaray"
+ X_CRI_events.6.d1:0 ""
+ X_CRI_events.6.a:0 "A Khan's palace"
  #Event Tooltips
  X_CRI_event_2_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
+ X_CRI_event_6_tt:0 "Upon being built, we gain §G+5.0§!£X_imperial_mandate£.\nIf §Y[284.GetName]§! has a §YGreat Mosque§!, gain §Y4§! Base Tax in §Y[284.GetName]§!.\nElse gain a §YGreat Mosque§! in §Y[284.GetName]§!."
  #Diplomatic Actions
  X_declarewar_diplomatic_actions_tt:0 "§RYou cannot declare on a tributary of a nation, if you are already at war with that nation.§!"
  X_declarewar_diplomatic_actions_tt2:0 "§RTributary States can't fight their own wars.§!"

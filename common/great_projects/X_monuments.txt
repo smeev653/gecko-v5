@@ -359,14 +359,28 @@ gme_basilica_san_marco = {
 ####################
 X_CRI_hansaray = {
 	start = 284 #Crimea
-	date = 1444.01.01
-	time = { months = 0	}
+	date = 1532.01.01
+	time = { months = 60 }
 	build_cost = 0
 	can_be_moved = no
 	starting_tier = 0
 	type = monument
-	build_trigger = { }
-	on_built = { }
+	build_trigger = { owner = { has_country_flag = X_CRI_mission_2_completed_cflag } }
+	on_built = {
+		if = {
+			limit = { has_building = cathedral }
+			add_base_tax = 4
+		}
+		else_if = {
+			limit = { has_building = temple }
+			remove_building = temple
+			add_building = cathedral
+		}
+		else = { add_building = cathedral }
+		owner = { 
+			add_mandate = 5
+		}
+	}
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		owner = { is_emperor_of_china = yes }
@@ -388,6 +402,7 @@ X_CRI_hansaray = {
 		area_modifier = {
 			local_development_cost = -0.05
 			trade_value_modifier = 0.1
+			local_tax_modifier = 0.2
 		}
 		country_modifiers = {
 			imperial_mandate = 0.05
@@ -404,6 +419,7 @@ X_CRI_hansaray = {
 		area_modifier = { 
 			local_development_cost = -0.1
 			trade_value_modifier = 0.25
+			local_tax_modifier = 0.33
 		}
 		country_modifiers = {
 			imperial_mandate = 0.1
@@ -420,6 +436,7 @@ X_CRI_hansaray = {
 		area_modifier = {
 			local_development_cost = -0.2
 			trade_value_modifier = 0.33
+			local_tax_modifier = 0.5
 		}
 		country_modifiers = {
 			imperial_mandate = 0.2

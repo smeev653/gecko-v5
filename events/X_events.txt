@@ -676,7 +676,7 @@ country_event = {
 	id = X_CRI_events.1
 	title = X_CRI_events.1.t
 	desc = X_CRI_events.1.d1
-	picture = LAND_MILITARY_eventPicture #HORDE_ON_HORSEBACK_eventPicture
+	picture = LAND_MILITARY_eventPicture
 	is_triggered_only = yes
 
 	option = {
@@ -748,5 +748,51 @@ country_event = {
 			name = X_CRI_exacted_tribute_cmod
 			duration = 3650
 		}
+	}
+}
+
+#A Jewish Fortress
+country_event = {
+	id = X_CRI_events.5
+	title = X_CRI_events.5.t
+	desc = X_CRI_events.5.d1
+	picture = FORT_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = X_CRI_events.5.a
+		add_estate_loyalty_modifier = {
+			estate = estate_dhimmi
+			desc = X_CRI_estate_dhimmi_cufut_qale_lmod
+			loyalty = 5
+			duration = -1
+		}
+		284 = {
+			add_province_modifier = {
+				name = X_CRI_qaraylar_craftsmen_pmod
+				duration = -1
+			}
+		}
+	}
+}
+
+#Palace at Bagçasaray
+country_event = {
+	id = X_CRI_events.6
+	title = X_CRI_events.6.t
+	desc = X_CRI_events.6.d1
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = X_CRI_mission_2_completed_cflag
+	}
+	option = {
+		name = X_CRI_events.6.a
+		284 = {
+			add_great_project = {
+				type = X_CRI_hansaray
+				instant = no
+			}
+		}
+		custom_tooltip = X_CRI_event_6_tt
 	}
 }

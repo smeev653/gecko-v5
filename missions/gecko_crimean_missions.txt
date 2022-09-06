@@ -160,7 +160,7 @@ gc_cri_branch_1 = {
                 add_base_production = 1
 			}
         }
-    }
+    }	
 } #End Branch 1
 
 gc_cri_branch_2 = {
@@ -540,6 +540,78 @@ gc_cri_branch_3 = {
             }
         }
     }
+	
+	#Place of Forty
+	X_CRI_mission_1 = {
+        icon = fight_bosnian_heresies
+        required_missions = { }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 284
+		}
+		trigger = {
+			stability = 2
+			estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_dhimmi
+				loyalty = 60
+			}
+			284 = {
+				is_capital_of = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+		effect = {
+			284 = { 
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				rename_capital = "Qirq Yer"
+			}
+			country_event = { id = X_CRI_events.5 }
+		}
+	}
+	
+	#Found Bagçasaray
+	X_CRI_mission_2 = {
+        icon = public_works
+        required_missions = { X_CRI_mission_1 }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 284
+		}
+		trigger = {
+			legitimacy_equivalent = 90
+			imperial_mandate = 75
+			284 = {
+				is_capital_of = ROOT
+				is_prosperous = yes
+				development = 25
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 50
+			}
+			if = { 
+				limit = { adm = 6 } 
+				add_adm_power = 100 
+			}
+			else_if = { 
+				limit = { adm = 5 } 
+				change_adm = 1 
+				add_adm_power = 50 
+			}
+			else = { change_adm = 1 } 
+			284 = { rename_capital = "Bagçasaray" }
+			country_event = { id = X_CRI_events.6 }
+		}
+	}
 } #End Branch 3
 
 gc_cri_branch_4 = {

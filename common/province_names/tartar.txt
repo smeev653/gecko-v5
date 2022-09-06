@@ -4,5 +4,5 @@
 285 = { "Kefe" "Kefe" }
 2410 = { "Mangup" "Mangup" }
 2447 = { "Matrika" "Matrika" }
-6000 = { "Keric" "Keric" }
+6000 = { "Keriç" "Keriç" }
 #######
