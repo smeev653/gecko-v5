@@ -5,7 +5,6 @@ religion = sunni
 technology_group = nomad_group
 capital = 1082	# Kazan
 historical_rival = GOL
-historical_rival = SHY
 historical_rival = LIT
 religious_school = hanafi_school
 

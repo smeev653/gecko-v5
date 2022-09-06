@@ -42,7 +42,12 @@ alliance = {
 	start_date = 1444.1.1
 	end_date = 1454.4.9
 }
-
+alliance = {
+	first = KAZ
+	second = SHY
+	start_date = 1444.1.1
+	end_date = 1454.4.9
+}
 alliance = {
 	first = VEN
 	second = SIC
