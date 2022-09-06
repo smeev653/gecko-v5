@@ -27,7 +27,7 @@ per_campaign_in_india2_modifier = {
 	siege_ability = 0.1
 }
 per_pureblood_iranian_mercenaries_modifier = {
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.03
 	mercenary_cost = -0.05
 }
 per_crossing_hindus_river_modifier = {
@@ -60,7 +60,7 @@ per_revamped_persian_administration_modifier = {
 	country_admin_power = 1 
 }
 per_wasp_artillery_modifier = {
-	artillery_shock = 1
+	#artillery_shock = 1
 	movement_speed = 0.1
 }
 per_cavalry_muskets_modifier = {
@@ -87,7 +87,7 @@ per_preservation_of_islamic_tradition_modifier = {
 	culture_conversion_cost = -0.2
 }
 per_efficient_dhimmi_exploitation_modifier = {
-	technology_cost = -0.1 
+	technology_cost = -0.05
 	promote_culture_cost = -0.25
 }
 per_wave_of_religious_thought_modifier = {
@@ -196,7 +196,7 @@ per_militant_doctrine_of_ahura_modifier = {
 	war_exhaustion = -0.03
 }
 per_god_emperor_general_modifier = {
-	monarch_lifespan = 0.5
+	monarch_lifespan = 0.25
 }
 per_shah_of_azerbaijan_modifier = {
 	power_projection_from_insults = 0.5
@@ -210,7 +210,7 @@ per_powerful_religious_doctrine_modifier = {
 	global_missionary_strength = 0.02
 }
 per_triumph_in_cairo_modifier = {	
-	trade_efficiency = 0.15
+	trade_efficiency = 0.1
 	prestige = 1 
 }
 per_guardians_of_the_grand_trunk_road_modifier = {
@@ -317,14 +317,14 @@ per_sponsored_the_arts_modifier = {
 }
 per_centralization_reforms_of_ruler_modifier = {
 	global_autonomy = -0.075
-	build_cost = -0.1
+	build_cost = -0.05
 }
 per_expanded_capital_area_infrastructure_modifier = {
 	allowed_num_of_manufactories = 1
 }
 per_islam_reigns_modifier = {
 	warscore_cost_vs_other_religion = -0.1 
-	all_power_cost = -0.05 
+	all_power_cost = -0.025 
 }
 per_proclamation_of_twelver_islam_modifier = {
 	stability_cost_modifier = -0.2
@@ -346,8 +346,8 @@ per_trade_in_persian_gulf_modifier = {
 	trade_efficiency = 0.05 
 }
 per_establishment_of_the_armenian_mercantile_gentry_modifier = {
-	mercantilism_cost = -0.25
-	center_of_trade_upgrade_cost = -0.20 
+	mercantilism_cost = -0.15
+	center_of_trade_upgrade_cost = -0.15
 }
 per_naval_command_modifier = {	
 	navy_tradition = 1
@@ -391,7 +391,7 @@ per_grandeur_ali_qapu2_modifier = {
 	transfer_trade_power_reasons = 150 
 }
 per_persian_golden_era_modifier = {
-	all_power_cost = -0.05
+	all_power_cost = -0.025
 	institution_spread_from_true_faith = 0.25
 }
 per_secured_the_hajj_and_kaaba_modifier = {
@@ -443,5 +443,5 @@ per_shirley_reforms_the_army2_modifier = {
 	army_tradition = 0.1
 }
 per_porcelain_exports_to_the_west_modifier = {
-	trade_efficiency = 0.15
+	trade_efficiency = 0.10
 }

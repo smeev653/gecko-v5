@@ -81,7 +81,7 @@ bad_sufi_modifier = {
 }
 
 per_abbas_advisors = {
-	technology_cost = -0.20
+	technology_cost = -0.05
 	infantry_fire = 0.2
 
 }

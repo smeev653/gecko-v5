@@ -207,7 +207,7 @@ suppress_minority = {
 
 army_reform = {
 	land_morale = 0.20
-	mil_tech_cost_modifier = -0.10
+	#mil_tech_cost_modifier = -0.10
 }
 naval_reform = {
 	naval_morale = 0.20
@@ -1421,7 +1421,7 @@ florentine_school = {
 }
 
 byzantine_influx = {
-	technology_cost = -0.10
+	technology_cost = -0.05
 }
 
 epic_to_monarch = {
