@@ -409,7 +409,7 @@ offensive_ideas = {
 	}
 	engineer_corps = {
 		siege_ability = 0.1
-		#artillery_bonus_vs_fort = 1
+		#artillery_levels_available_vs_fort = 1
 	}
 	grand_army = {
 		reinforce_speed = 0.25

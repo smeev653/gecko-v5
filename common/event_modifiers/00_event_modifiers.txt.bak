@@ -992,7 +992,10 @@ scottish_india_trade_co = {
 	trade_efficiency = 0.10
 }
 
-
+amur_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
 
 portuguese_india_trade_co = {
 	#merchants = 1

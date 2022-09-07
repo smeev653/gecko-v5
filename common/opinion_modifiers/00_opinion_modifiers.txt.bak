@@ -2272,11 +2272,6 @@ anglican_evangelism_opinion = {
 	yearly_decay = 1
 }
 
-anglican_reformation_diplomacy = {
-	opinion = 50
-	max = 100
-	yearly_decay = 3
-}
 ##################################################
 # Muslim DLC
 ##################################################

@@ -1787,7 +1787,6 @@ cawa_regiment = {
 	drill_decay_modifier = -0.1
 	drill_gain_modifier = 0.25
 	#reinforce_cost_modifier = 0.5
-}	
 hussars_regiment = {
 	cavalry_shock = 1
 	morale_damage = 0.5
@@ -1916,7 +1915,7 @@ naval_forcelimit = {
    free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
 }
 
-diplomatic_reputation = {
+iplomatic_reputation = {
 }
 
 tolerance_own = {

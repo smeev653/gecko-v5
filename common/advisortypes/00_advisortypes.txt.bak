@@ -19,9 +19,18 @@ philosopher = {
 	# Bonus
 	monthly_splendor = 3
 
+	skill_scaled_modifier = { meritocracy = 0.25 }
 	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				has_country_flag = fin_fine_finances_flag 
+				has_government_attribute = republican_tradition_from_advisors
+			}
+		}
 		modifier = {
+			global_tax_modifier = 0.05
 			meritocracy = 0.25
+			republican_tradition = 0.02
 		}
 	}
 
