@@ -24,6 +24,8 @@
  X_estate_cossacks_privilege_2_pmod:0 "Cossack Raid"
  desc_X_estate_cossacks_privilege_2_pmod:0 ""
  X_estate_cossacks_sponsored_raid_lmod:0 "Sponsored Raid"
+ X_estate_burghers_privilege_1_pmod:0 "Khan's Savga"
+ desc_X_estate_burghers_privilege_1_pmod:0 ""
  #Events
  X_cossack_raid_loot_amount_zero:0 "A poor plunder"
  X_cossack_raid_loot_amount_not_zero:0 "A plentiful plunder"

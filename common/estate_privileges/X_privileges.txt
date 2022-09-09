@@ -152,7 +152,7 @@ X_estate_burghers_privilege_1 = {
     icon = privilege_monopoly_of_goods_slaves
 	land_share = 0
     loyalty = -0.05            
-    influence  = 0.00
+    influence  = 0.05
 	is_valid = {
 		any_owned_province = {
 			trade_goods = slaves
@@ -201,7 +201,7 @@ X_estate_burghers_privilege_1 = {
 	}	
     benefits = {
 		global_tax_modifier = 0.1
-		nomadic_tribes_loyalty_modifier = -0.05
+		nomadic_tribes_loyalty_modifier = -0.1
 	}
 	ai_will_do = {
 		factor = 0
