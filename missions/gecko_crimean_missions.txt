@@ -204,6 +204,12 @@ gc_cri_branch_1 = {
 				add_local_autonomy = -10
 				add_base_tax = 1
 			}
+			2410 = {
+				if = {
+					limit = { NOT = { is_core = ROOT } }
+					add_territorial_core = ROOT
+				}
+			}
 		}
 	}
 
@@ -792,6 +798,12 @@ gc_cri_branch_3 = {
 				development = 25
 				has_tax_building_trigger = yes
 			}
+		}
+		effect = {
+			284 = { 
+				rename_capital = "Bagçasaray"
+				change_trade_goods = silk
+			}
 			if = {
 				limit = { 
 					284 = { 
@@ -800,12 +812,6 @@ gc_cri_branch_3 = {
 					} 
 				}
 				set_capital = 284
-			}
-		}
-		effect = {
-			284 = { 
-				rename_capital = "Bagçasaray"
-				change_trade_goods = silk
 			}
 			country_event = { id = X_CRI_events.6 }
 		}
