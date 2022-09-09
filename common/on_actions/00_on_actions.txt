@@ -809,6 +809,27 @@ on_siege_won_country = {
 # root = losing country, from = location
 on_siege_lost_country = {
 	#ROOT = { gecko_mercs = yes }
+	###X###
+	if = {
+		limit = {
+			FROM = { 
+				province_id = 6002
+				has_province_modifier = X_CRI_trench_gate_pmod
+			}
+			OR = {
+				tag = CRI
+				tag = GLH
+				is_emperor_of_china = yes
+			}
+		}
+		crimea_area = {
+			limit = {
+				has_province_modifier = X_CRI_gateway_protected_pmod
+			}
+			remove_province_modifier = X_CRI_gateway_protected_pmod
+		}
+	}
+	#######
 	events = {
 		curia.8
 		papacy_events.5

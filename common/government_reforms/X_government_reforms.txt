@@ -10,7 +10,6 @@ X_CRI_great_tatar_state_reform = {
 	
 	allow_normal_conversion = no
 	maintain_dynasty = yes
-	queen = no
 	allow_force_tributary = no
 	lock_level_when_selected = yes
 	has_meritocracy = yes

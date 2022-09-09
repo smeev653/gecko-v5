@@ -26,6 +26,49 @@ X_center_of_trade_effect = {
 	}
 }
 
+X_improve_ruler_stats_effect = {
+	[[adm]
+		if = { 
+			limit = { adm = 6 } 
+			add_adm_power = 100 
+		}
+		else_if = { 
+			limit = { adm = 5 } 
+			change_adm = 1 
+			add_adm_power = 50 
+		}
+		else = { change_adm = 1 }
+	]
+	[[dip]
+		if = { 
+			limit = { dip = 6 } 
+			add_dip_power = 100 
+		}
+		else_if = { 
+			limit = { dip = 5 } 
+			change_dip = 1 
+			add_dip_power = 50 
+		}
+		else = { change_dip = 1 }
+	]
+	[[mil]
+		if = { 
+			limit = { mil = 6 } 
+			add_mil_power = 100 
+		}
+		else_if = { 
+			limit = { mil = 5 } 
+			change_mil = 1 
+			add_mil_power = 50 
+		}
+		else = { change_mil = 1 }
+	]
+	[[all]
+		X_improve_ruler_stats_effect = {
+			adm = yes dip = yes mil = yes 
+		}
+	]
+}
 X_on_province_owner_change_pmod_effect = {
 	####################
 	# Legacy Reforms
@@ -132,16 +175,12 @@ X_on_province_owner_change_pmod_effect = {
 				}
 			}
 			has_fort_building_trigger = yes
+			owner = { has_estate_privilege = X_estate_cossacks_privilege_1 }
+			NOT = { has_province_modifier = X_estate_cossacks_privilege_1_pmod }
 		}
-		if = {
-			limit = {
-				owner = { has_estate_privilege = X_estate_cossacks_privilege_1 }
-				NOT = { has_province_modifier = X_estate_cossacks_privilege_1_pmod }
-			}
-			add_province_modifier = {
-				name = X_estate_cossacks_privilege_1_pmod
-				duration = -1
-			}
+		add_province_modifier = {
+			name = X_estate_cossacks_privilege_1_pmod
+			duration = -1
 		}
 	}
 	else_if = {
@@ -157,10 +196,29 @@ X_on_province_owner_change_pmod_effect = {
 				}
 			}
 			has_fort_building_trigger = yes
-			has_province_modifier = X_estate_cossacks_privilege_1_pmod
 			owner = { NOT = { has_estate_privilege = X_estate_cossacks_privilege_1 } }
+			has_province_modifier = X_estate_cossacks_privilege_1_pmod
 		}
 		remove_province_modifier = X_estate_cossacks_privilege_1_pmod
+	}
+	if = {
+		limit = {
+			trade_goods = slaves
+			owner = { has_estate_privilege = X_estate_burghers_privilege_1 }
+			NOT = { has_province_modifier = X_estate_burghers_privilege_1_pmod }
+		}
+		add_province_modifier = {
+			name = X_estate_burghers_privilege_1_pmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			trade_goods = slaves
+			owner = { NOT = { has_estate_privilege = X_estate_burghers_privilege_1 } }
+			has_province_modifier = X_estate_burghers_privilege_1_pmod
+		}
+		remove_province_modifier = X_estate_burghers_privilege_1_pmod
 	}
 }
 

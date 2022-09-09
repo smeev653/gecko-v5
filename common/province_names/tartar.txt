@@ -1,9 +1,12 @@
 ###X###
 #Crimea
-284 = { "Qirim" "Qirim" }
+284 = "Qirim"
 285 = { "Kefe" "Kefe" }
 286 = { "Azaq" "Azaq" }
 2410 = { "Mangup" "Mangup" }
 2447 = { "Matrika" "Matrika" }
 6000 = { "Keriç" "Keriç" }
+6001 = { "Khazleve" "Khazleve" }
+6002 = { "Or Qapi" "Or Qapi" }
+6213 = "Qarasu" 
 #######

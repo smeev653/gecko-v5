@@ -23,4 +23,11 @@ spriteTypes = {
 		name = "GFX_text_X_imperial_mandate"
 		texturefile = "gfx//interface//X_graphics/X_imperial_mandate.dds"
 	}
+####################
+# Mission Icons
+####################
+	spriteType = {
+		name = "X_CRI_mission_crimea_khanate_icon"
+		texturefile = "gfx//interface//X_graphics//X_CRI_mission_crimean_khanate.dds"
+	}
 }

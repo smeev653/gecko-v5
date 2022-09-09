@@ -163,7 +163,7 @@ gc_cri_branch_1 = {
     }	
 	#Gazarian Deal
 	X_CRI_mission_3 = {
-        icon = mission_entrepot_of_india
+        icon = personal_diplomacy
         required_missions = { }
 		position = 4
 		trigger = {
@@ -189,6 +189,7 @@ gc_cri_branch_1 = {
 			}
 		}
 	}
+	#Last Vestige
 	X_CRI_mission_4 = {
         icon = a_roman_empire
         required_missions = { X_CRI_mission_3 }
@@ -197,15 +198,98 @@ gc_cri_branch_1 = {
 			2410 = {
 				owned_by = ROOT
 			}
-			crimea_region = {
-				type = all
-				culture_group = tartar
-			}
 		}
 		effect = {
 			gazaria_area = {
 				add_local_autonomy = -10
 				add_base_tax = 1
+			}
+		}
+	}
+
+	#Throne of the Crimea
+	X_CRI_mission_9 = {
+        icon = X_CRI_mission_crimea_khanate_icon
+        required_missions = { 
+			X_CRI_mission_4
+		}
+		position = 6
+		trigger = {
+			stability = 3
+			legitimacy_equivalent = 100
+			custom_trigger_tooltip = {
+				tooltip = X_CRI_reform_1_passed_tt
+				check_variable = {
+					which = X_CRI_celestial_empire_reforms_variable
+					value = 1
+				}
+			}
+			if = {
+				limit = { exists = GOL }	
+				OR = {
+					has_won_war_against = {
+						who = GOL
+						max_years_since = 25
+					}
+					AND = {
+						is_rival = GOL
+						army_strength = {
+							who = GOL
+							value = 2.0
+						}
+					}
+				}
+				total_own_and_non_tributary_subject_development = GOL
+			}
+			else = {
+				army_size_percentage = 1
+				owns_all_provinces = {
+					region = crimea_region
+				}
+			}
+		}
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 50
+			}
+			X_improve_ruler_stats_effect = { all = yes }
+			if = {
+				limit = { NOT = { has_completed_all_reforms_trigger = yes } }
+				add_reform_progress_small_effect = yes
+			}
+			custom_tooltip = X_CRI_mission_9_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = { region = crimea_region }
+					add_base_tax = 1
+					add_base_manpower = 1
+					if = {
+						limit = { NOT = { culture_group = ROOT } }
+						change_culture = ROOT
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 283
+						province_id = 286
+					}
+				}
+				if = {
+					limit = {
+						province_has_current_tech_fort_trigger = no 
+					}
+					add_latest_building = { fort = yes builder = ROOT }
+				}
+			}
+			crimea_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -229,33 +313,14 @@ gc_cri_branch_2 = {
 		position = 1
 
         provinces_to_highlight = {
-            OR = {
-				area = azov_area
-				area = gazaria_area
-				#area = moldavia_area
-			}
-			NOT = {
-				country_or_subject_holds = ROOT
-			}
+			is_capital_of = ROOT
         }
 
         trigger = {
-			azov_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
-			gazaria_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
-			#moldavia_area = {
-			#	type = all
-			#	country_or_subject_holds = ROOT
-			#}
+			stability = 1
         }
 
         effect = {
-            country_event = { id = gecko_crimea_mission.2 }
 			moldavia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -298,30 +363,6 @@ gc_cri_branch_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-
-            lower_don_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-            tambov_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-
-            saratov_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-
             circassia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -337,27 +378,11 @@ gc_cri_branch_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-
-            stavropol_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-
-            astrakhan_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
         }
     }
 
     gc_cri_mission_4 = {
-        icon = mission_conquer_romania
+        icon = me_mission_ottomans_seize_moldavia
         required_missions = { gc_cri_mission_3 }
 		position = 2
 
@@ -423,6 +448,128 @@ gc_cri_branch_2 = {
             }
         }
     }
+	#Port of Kezlev
+	X_CRI_mission_6 = {
+        icon = mission_arabian_sea_trade
+        required_missions = { X_CRI_mission_3 }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 6001
+		}
+		trigger = {
+			num_of_light_ship = 20
+			6001 = {
+				owned_by = ROOT
+				has_dock_building_trigger = yes
+			}
+			1322 = {
+				is_strongest_trade_power = ROOT
+			}
+			trade_goods_produced_amount = {
+				trade_goods = slaves
+				amount = 8
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+		}
+		effect = {
+			add_navy_tradition = 20
+			create_admiral = { tradition = 50 }
+			6001 = {
+				change_trade_goods = slaves
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -10
+			}
+		}
+	}
+	#Cuma Cami
+	X_CRI_mission_7 = {
+        icon = me_mission_great_mosque
+        required_missions = { X_CRI_mission_6 }
+		position = 5
+		trigger = {
+			6001 = { has_tax_building_trigger = yes }
+			if = {
+				limit = { exists = TUR }
+				OR = {
+					AND = {
+						TUR = { 
+							alliance_with = ROOT 
+							has_opinion = { 
+								who = ROOT 
+								value = 150 
+							}
+							trust = { 
+								who = ROOT 
+								value = 60 
+							} 
+						}
+					}
+					AND = {
+						natural_scientist = 3
+						years_of_income = 2.5
+					}
+				}
+			}
+			else = {
+				natural_scientist = 3
+				years_of_income = 2.5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = X_CRI_rights_of_the_khan_cmod
+				duration = -1
+			}
+			6001 = {
+				if = {
+					limit = { has_building = cathedral }
+					add_base_tax = 4
+				}
+				else_if = {
+					limit = { has_building = temple }
+					hidden_effect = { remove_building = temple }
+					add_building = cathedral
+				}
+				else = { add_building = cathedral }
+			}
+			tooltip = { add_years_of_income = -2.5 }	
+			if = {
+				limit = { exists = TUR }
+				custom_tooltip = X_CRI_mission_7_tt		
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						exists = TUR
+						TUR = { 
+							alliance_with = ROOT 
+							has_opinion = { 
+								who = ROOT 
+								value = 150 
+							}
+							trust = { 
+								who = ROOT 
+								value = 60 
+							} 
+						}
+					}
+					add_years_of_income = -1.25
+				}
+				else = {
+					add_years_of_income = -2.5
+				}
+			}
+		}
+	}
 } #End Branch 2
 
 gc_cri_branch_3 = {
@@ -607,22 +754,29 @@ gc_cri_branch_3 = {
 				estate = estate_dhimmi
 				loyalty = 60
 			}
-			284 = {
-				is_capital_of = ROOT
-				has_fort_building_trigger = yes
-			}
+			284 = { has_fort_building_trigger = yes }
 		}
 		effect = {
 			284 = { 
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				rename_capital = "Qirq Yer"
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			6213 = {
+				rename_capital = "Eski Qirim"
+			}
+			if = {
+				limit = { 
+					284 = { 
+						NOT = { is_capital_of = ROOT }
+						NOT = { tag = GLH }
+					} 
+				}
+				set_capital = 284
 			}
 			country_event = { id = X_CRI_events.5 }
 		}
 	}
-	
 	#Found Bagçasaray
 	X_CRI_mission_2 = {
         icon = public_works
@@ -632,32 +786,93 @@ gc_cri_branch_3 = {
 			province_id = 284
 		}
 		trigger = {
-			legitimacy_equivalent = 90
-			imperial_mandate = 75
 			284 = {
 				is_capital_of = ROOT
 				is_prosperous = yes
 				development = 25
 				has_tax_building_trigger = yes
 			}
+			if = {
+				limit = { 
+					284 = { 
+						NOT = { is_capital_of = ROOT }
+						NOT = { tag = GLH }
+					} 
+				}
+				set_capital = 284
+			}
 		}
 		effect = {
-			add_power_projection = {
-				type = mission_rewards_power_projection
-				amount = 50
+			284 = { 
+				rename_capital = "Bagçasaray"
+				change_trade_goods = silk
+			}
+			country_event = { id = X_CRI_events.6 }
+		}
+	}
+	#Crimean Slave Trade
+	X_CRI_mission_8 = {
+        icon = mission_entrepot_of_india
+        required_missions = { 
+			X_CRI_mission_2
+			X_CRI_mission_6
+		}
+		position = 6
+		trigger = {
+			OR = {
+				trade_goods_produced_amount = {
+					trade_goods = slaves
+					amount = 12
+				}
+				AND = {
+					trading_bonus = {
+						trade_goods = slaves
+						value = yes
+					}
+					trade_goods_produced_amount = {
+						trade_goods = slaves
+						amount = 10
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = X_CRI_mission_8_tt
+				NOT = {
+					any_country = {
+						NOT = { tag = ROOT }
+						num_of_owned_provinces_with = {
+							value = 1
+							any_trade_node_member_province = {
+								province_id = 1322
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+				years = 10
+				trigger = {
+					trade_goods = slaves
+				}
+				custom_tooltip = MONOPOLY_INCOME_SLAVES_DESC
+			}
+			6213 = {
+				change_trade_goods = slaves
+				X_center_of_trade_effect = yes
+				rename_capital = "Qarasubazar"
 			}
 			if = { 
-				limit = { adm = 6 } 
-				add_adm_power = 100 
+				limit = { 
+					has_estate = estate_nomadic_tribes
+					has_estate = estate_burghers
+				} 
+				set_estate_privilege = X_estate_burghers_privilege_1
 			}
-			else_if = { 
-				limit = { adm = 5 } 
-				change_adm = 1 
-				add_adm_power = 50 
+			else = { 
+				add_treasury = 500
 			}
-			else = { change_adm = 1 } 
-			284 = { rename_capital = "Bagçasaray" }
-			country_event = { id = X_CRI_events.6 }
 		}
 	}
 } #End Branch 3
@@ -805,6 +1020,35 @@ gc_cri_branch_4 = {
             add_mil_power = 25
         }
     }
+	#The Golden Gate
+	X_CRI_mission_5 = {
+        icon = fortress_of_belgrade 
+        required_missions = { X_CRI_mission_1 }
+		position = 5
+		trigger = {
+			6002 = {
+				owned_by = ROOT
+				province_has_current_tech_fort_trigger = yes
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			6002 = {
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = X_CRI_trench_gate_pmod
+					duration = -1
+				}
+			}
+			crimea_area = {
+				add_province_modifier = {
+					name = X_CRI_gateway_protected_pmod
+					duration = -1
+					desc = X_CRI_gateway_protected_tt
+				}
+			}
+		}
+	}
 	mission_conquer_persia_tatars = {
 		icon = mission_persian_soldiers
 		required_missions = { mission_conquer_samarkand }
