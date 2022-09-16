@@ -2,7 +2,7 @@
 #Crimea
 284 = { "Taurica" "Taurica" }
 285 = { "Theodosia" "Theodosia" }
-2410 = { "Gothia" "Doros" }
+2410 = { "Gothia" "Theodoro" }
 2447 = { "Tamatarcha" "Tamatarcha" }
 6000 = { "Bosporos" "Bospor" }
 6001 = { "Kerkinitis" "Kerkinitis" }

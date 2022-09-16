@@ -169,6 +169,25 @@ X_CRI_qaraylar_craftsmen_pmod = {
 	local_production_efficiency = 0.35
 	local_development_cost = -0.20
 }
+
+X_CRI_trench_gate_pmod = {
+	local_hostile_attrition = 2
+	local_defensiveness = 0.50
+}
+
+X_CRI_gateway_protected_pmod = {
+	local_build_cost = -0.05
+	local_development_cost = -0.05
+}
+
+X_CRI_rights_of_the_khan_cmod = {
+	imperial_mandate = 0.05
+	meritocracy = 0.25
+}
+
+X_estate_burghers_privilege_1_pmod = {
+	local_production_efficiency = 0.75
+}
 ########################################
 # Tiered Modifiers
 ########################################

@@ -167,7 +167,6 @@ russia_region = {
 		pomor_area
 		karelia_area
 		ryazan_area
-		tambov_area
 		north_karelia
 		tver_area
 		yaroslavl_area
@@ -291,9 +290,9 @@ crimea_region = {
 		azov_area
 		gazaria_area
 		odessa_area
-		#mariupol_area
 		saratov_area
 		stavropol_area
+		tambov_area
 	}
 }
 

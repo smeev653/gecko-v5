@@ -936,7 +936,7 @@ saratov_area = { #3
 ###Crimea Expansion###
 
 crimea_area = { #4
-	284 6001 6002
+	284 6001 6002 6213
 }
 
 gazaria_area = { #4

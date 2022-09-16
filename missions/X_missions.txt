@@ -1526,7 +1526,7 @@ X_VEN_slot_4 = {
 	
 	#Armada
 	X_VEN_mission_8 = {
-		icon = mission_establish_high_seas_navy
+		icon = me_mission_armada
 		position = 2
 		
 		required_missions = {
@@ -1592,7 +1592,7 @@ X_VEN_slot_4 = {
 	
 	#Oust the Knights
 	X_VEN_mission_19 = {
-		icon = mission_dominate_the_mediterranean
+		icon = me_mission_ottomans_capture_rhodes
 		position = 3
 		
 		required_missions = {
@@ -1947,7 +1947,7 @@ X_VEN_slot_5 = {
 	
 	#Gateway to the Levant
 	X_VEN_mission_7 = {
-		icon = jerusalem 
+		icon = kingdom_of_cyprus 
 		position = 1
 		
 		required_missions = { }
@@ -2028,7 +2028,7 @@ X_VEN_slot_5 = {
 	
 	#Cypriot Ambition
 	X_VEN_mission_16 = {
-		icon = kingdom_of_cyprus
+		icon = me_mission_ottomans_captured_cyprus
 		position = 2
 		
 		required_missions = {
@@ -2210,7 +2210,7 @@ X_VEN_slot_5 = {
 	}
 	#Cilician Expansion
 	X_VEN_mission_34 = {
-		icon = mission_non-western_soldiers
+		icon = me_mission_ramazan
 		position = 5
 		
 		required_missions = {
