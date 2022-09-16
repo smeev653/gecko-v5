@@ -1186,4 +1186,3 @@ colonial_placeholder_19 = {
 }
 
 #removed colonial region
-

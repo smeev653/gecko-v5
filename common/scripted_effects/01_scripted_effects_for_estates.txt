@@ -2556,3 +2556,108 @@ spawn_rebels_seize_land_switch = {
 		1 = { custom_tooltip = estate_seize_land_interaction_tooltip_1 seize_land_effect = { scale = 1 } }
 	}
 }
+# Supports the following parameters
+###########################################
+# estate_nobles
+# estate_brahmins
+# estate_burghers
+# estate_church
+# estate_cossacks
+# estate_dhimmi
+# estate_jains
+# estate_maratha
+# estate_nomadic_tribes
+# estate_rajput
+# estate_vaisyas
+# all	- disables ALL rebels from seized land
+disable_rebels_from_seize_land_for_estate = {
+	custom_tooltip = disable_rebels_from_seize_land_for_$estate$
+	hidden_effect = {
+		set_country_flag = disabled_rebels_from_seized_land_for_$estate$
+	}
+}
+
+#Estates are here ordered in "mana classes" - ADM for Clergy, DIP for Burghers, etc
+add_estate_loyalty_by_class_adm = {
+	if = {
+		limit = { has_estate = estate_church }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_dhimmi }
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_brahmins }
+		add_estate_loyalty = {
+			estate = estate_brahmins
+			loyalty = $loyalty$
+		}
+	}
+}
+add_estate_loyalty_by_class_dip = {
+	if = {
+		limit = { has_estate = estate_burghers }
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_jains }
+		add_estate_loyalty = {
+			estate = estate_jains
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_vaisyas }
+		add_estate_loyalty = {
+			estate = estate_vaisyas
+			loyalty = $loyalty$
+		}
+	}
+}
+add_estate_loyalty_by_class_mil = {
+	if = {
+		limit = { has_estate = estate_nobles }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_cossacks }
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_nomadic_tribes }
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_maratha }
+		add_estate_loyalty = {
+			estate = estate_maratha
+			loyalty = $loyalty$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_rajput }
+		add_estate_loyalty = {
+			estate = estate_rajput
+			loyalty = $loyalty$
+		}
+	}
+}
