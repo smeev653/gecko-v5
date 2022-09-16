@@ -259,11 +259,12 @@ gc_cri_branch_1 = {
 				type = mission_rewards_power_projection
 				amount = 50
 			}
-			X_improve_ruler_stats_effect = { all = yes }
 			if = {
 				limit = { NOT = { has_completed_all_reforms_trigger = yes } }
 				add_reform_progress_small_effect = yes
 			}
+			add_mandate = 10
+			X_improve_ruler_stats_effect = { all = yes }
 			custom_tooltip = X_CRI_mission_9_tt
 			hidden_effect = {
 				every_owned_province = {

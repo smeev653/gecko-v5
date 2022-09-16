@@ -357,7 +357,7 @@
  X_CRI_mission_3_tt:0 "Event '§YGenoa Cedes Gazaria§!' has happened."
  X_CRI_mission_7_tt:0 "If this mission is completed by having the required relations with §Y[TUR.GetName]§!, you lose half the money."
  X_CRI_mission_8_tt:0 "All provinces in the §YCrimea§! trade node are owned by §Y[Root.GetName]§!."
- X_CRI_mission_9_tt:0 "Every owned province gains §G1§! Base Tax and Base Manpower in the §Y[284.GetRegionName]§!.\nEvery owned province NOT of §Y[Root.Culture.GetGroupName]§! culture will become §Y[Root.Culture.GetName]§!."
+ X_CRI_mission_9_tt:0 "Every owned province in the §Y[284.GetRegionName]§! gains §G1§! Base Tax and Base Manpower.\nEvery owned province NOT of §Y[Root.Culture.GetGroupName]§! culture will become §Y[Root.Culture.GetName]§!."
  #Events
  X_CRI_events.1.t:0 "Tatar Yoke Crushed"
  X_CRI_events.1.d1:0 ""
