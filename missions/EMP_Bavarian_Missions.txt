@@ -209,9 +209,6 @@ emp_bav_missions_conquest = {
 		ai_weight = {
 			factor = 5
 		}
-		ai_priority = {
-			factor = 5
-		}
 
 		trigger = {
 			OR = {

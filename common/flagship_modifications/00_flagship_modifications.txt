@@ -33,38 +33,6 @@ mass_load_cannons = {
     }
 }
 
-#trade_route_map = {
-#    trigger = {
-#        OR = {
-#            NOT = {
-#                OR = {
-#                    tag = POR
-#                    tag = BRZ
-#                }
-#            }
-#            normal_or_historical_nations = no
-#        }
-#    }
-#	modifier = {
-#        trade_power_in_fleet_modifier = 1
-#        naval_maintenance_flagship_modifier = 0.25
-#	}
-#    ai_trade_score = {
-#        factor = 1
-#        modifier = {
-#            factor = 10
-#            has_reform = pirate_republic_reform
-#        }
-#    }
-#    ai_war_score = {
-#        factor = 1
-#        modifier = {
-#            factor = 10
-#            has_reform = pirate_republic_reform
-#        }
-#    }
-#}
-
 command_aftercastle = {
     trigger = {
         OR = {
@@ -90,8 +58,6 @@ command_aftercastle = {
 }
 
 improved_crows_nest = {
-	trigger = {
-	}
 	modifier = {
         flagship_naval_engagement_modifier = 3
         naval_maintenance_flagship_modifier = 0.5
@@ -105,8 +71,6 @@ improved_crows_nest = {
 }
 
 mortars = {
-	trigger = {
-	}
 	modifier = {
         blockade_impact_on_siege_in_fleet_modifier = 1
         naval_maintenance_flagship_modifier = 1
@@ -128,21 +92,19 @@ standardized_signal_book = {
         factor = 1
         modifier = {
             factor = 10
-            has_reform = pirate_republic_reform
+            has_government_attribute = is_pirate_republic_reform
         }
     }
     ai_war_score = {
         factor = 1
         modifier = {
             factor = 10
-            has_reform = pirate_republic_reform
+            has_government_attribute = is_pirate_republic_reform
         }
     }
 }
 
 hull_sheating = {
-	trigger = {
-	}
 	modifier = {
         flagship_durability = 0.5
         naval_maintenance_flagship_modifier = 0.5
@@ -213,7 +175,6 @@ portuguese_trade_route_map = {
         normal_or_historical_nations = yes
     }
 	modifier = {
-        #trade_power_in_fleet_modifier = 2
         naval_maintenance_flagship_modifier = 0.25
 	}
     ai_trade_score = {
@@ -346,7 +307,7 @@ portuguese_corps_of_fusiliers = {
     }
     modifier = {
         movement_speed_onto_off_boat_modifier = 0.66
-        flagship_landing_penalty = -2
+        landing_penalty = -2
         naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
@@ -459,14 +420,14 @@ spare_jolly_roger = {
 	    factor = 1
         modifier = {
             factor = 10
-            has_reform = pirate_republic_reform
+            has_government_attribute = is_pirate_republic_reform
         }
     }
     ai_war_score = {
         factor = 1
         modifier = {
             factor = 10
-            has_reform = pirate_republic_reform
+            has_government_attribute = is_pirate_republic_reform
         }
     }
 }
