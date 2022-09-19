@@ -494,7 +494,7 @@ country_event = {
 		add_stability = -2
 		add_country_modifier = {
 			name = expanded_royal_bureaucracy
-			duration = 14600
+			duration = 5475
 		}
 	}
 	option = {		# Limited reforms

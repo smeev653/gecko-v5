@@ -3898,12 +3898,12 @@ dan_sca_colonize_north_america_mission_slot_1 = {
 		position = 12
 		required_missions = { dan_colonize_the_caribbean }
 		provinces_to_highlight = {
-			colonial_region = colonial_louisiana
+			colonial_region = colonial_eastern_america
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_louisiana
+				colonial_region = colonial_eastern_america
 				value = 50
 			}
 		}

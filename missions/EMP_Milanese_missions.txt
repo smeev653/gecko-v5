@@ -551,17 +551,6 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 				}
 				if = {
 					limit = {
-						exists = GEN
-						101 = { owned_by = GEN }
-					}
-					add_casus_belli = {
-						target = GEN
-						type = cb_make_puppet
-						months = 180
-					}
-				}
-				else_if = {
-					limit = {
 						101 = { 
 							NOT = { owned_by = GEN }
 						}
