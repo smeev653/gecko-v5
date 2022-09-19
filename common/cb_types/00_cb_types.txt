@@ -1565,7 +1565,7 @@ cb_sword_of_islam = {
 #}
 
 
-cb_push_back_colonizers ={
+cb_push_back_colonizers = {
 	valid_for_subject = no
 
 	prerequisites = {

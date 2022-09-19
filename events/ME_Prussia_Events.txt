@@ -1291,27 +1291,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = ME_Prussia_Events.31.a #Ok
-		
-		ai_chance = { factor = 100 }
-		
-		trigger = {
-			exists = POL
-			PRU = {
-				ai = yes
-			}
-		}
-		custom_tooltip = BRA_get_separation_casusbelli
-		
-		hidden_effect = {
-			add_casus_belli = {
-				type = cb_liberate_prussia 
-				target = POL
-				months = -1
-			}
-		}
-	}
-	option = {
 		name = ME_Prussia_Events.31.b #Ok
 		
 		ai_chance = { factor = 100 }

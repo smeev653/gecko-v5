@@ -656,51 +656,7 @@ country_event = {
 	
 }
 
-country_event = {
-	id = ME_Poland_Events.14
-	title = ME_Poland_Events.14.t #Revenge for Varna - the main event
-	picture = MERCHANTS_TALKING_eventPicture
-	desc = ME_Poland_Events.14.d
 
-	trigger = {
-		tag = POL
-		mission_completed = POL_moldavia
-		#has_dlc = "Emperor"
-		is_in_war = {
-			casus_belli = cb_revenge_for_varna
-		}
-	}
-	
-	fire_only_once = yes
-	option = {
-		name = ME_Poland_Events.14.a 
-		
-		ai_chance = { factor = 0.5 }
-		
-		set_country_flag = POL_recipient
-		PAP = {
-			if = {
-				limit = {
-					NOT = { alliance_with = TUR }
-				}
-				country_event = { id = ME_Poland_Events.13 }
-			}
-		}
-		hidden_effect = {
-			remove_casus_belli = {
-				target = TUR
-				type = cb_revenge_for_varna
-			}
-		}
-	}
-	option = {
-		name = ME_Poland_Events.14.b
-		
-		ai_chance = { factor = 0.5 }
-		
-		add_prestige_or_monarch_power = { amount = 20 }
-	}
-}
 
 province_event = {
 	id = ME_Poland_Events.15
@@ -1691,10 +1647,6 @@ country_event = {
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 40
-			}
-			remove_casus_belli = {
-				target = event_target:POL_Peace_Recipient
-				type = cb_poland_deluge
 			}
 		}
 		clear_global_event_target = POL_Peace_Recipient
