@@ -221,7 +221,7 @@ MOS_ideas = {
 		global_tax_modifier = 0.15
 	}
 	pomestnoe_voisko = {
-		morale_damage_received = 0.15
+		morale_damage_received = -0.15
 	}
 	zasechnaya_cherta = {
 		fort_maintenance_modifier = -0.20
@@ -281,7 +281,7 @@ RUS_ideas = {
 		reinforce_speed = 0.25
 	}
 	curriculum_of_the_cadet_corps = {
-		morale_damage_received = 0.15
+		morale_damage_received = -0.15
 		fire_damage_received = -0.10
 	}
 }
@@ -1052,6 +1052,7 @@ POL_ideas = {
 	winged_hussars = {
 		cavalry_power = 0.10
 		cossacks_loyalty_modifier = 0.1
+		#can_recruit_hussars = yes
 	}
 	wojsko_komputoe = {
 		global_regiment_cost = -0.05
@@ -2492,6 +2493,7 @@ LIT_ideas = {
 	}
 	lithuanian_hussars = {
 		cavalry_power = 0.1
+		#can_recruit_hussars = yes
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -2501,7 +2503,88 @@ LIT_ideas = {
 	}
 }
 
+LIT2_ideas = {
+	start = {
+		manpower_recovery_speed = 0.15
+		tolerance_heretic = 3
+	}
+	
+	bonus = {
+		leader_land_manuever = 1
+	}
+	
+	trigger = {
+		tag = LIT
+		has_country_flag = lit_new_magdeburg_laws
+	}
+	free = yes		#will be added at load.
+	
+	warlord_dukes = {
+		leader_land_shock = 1
+	}
+	auksine_laisve = {
+		stability_cost_modifier = -0.1
+	}
+	lit_new_magdeburg_laws = {
+		development_cost = -0.1
+		global_trade_goods_size_modifier = 0.05
+	}
+	magnate_estates = {
+		production_efficiency = 0.1
+	}
+	lithuanian_hussars = {
+		cavalry_power = 0.25
+		#can_recruit_hussars = yes
+	}
+	statutes_of_lithuania = {
+		global_unrest = -2
+	}
+	lithuanian_renaissance = {
+		technology_cost = -0.05
+	}
+}
 
+PLC_LIT_ideas = {
+	start = {
+		global_manpower_modifier = 0.25
+		tolerance_heretic = 3
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = PLC 
+		primary_culture = lithuanian
+	}
+	free = yes	
+	
+	warlord_dukes = {
+		leader_land_shock = 1 
+	}
+	plc_tempered_by_neighbors = { 
+		discipline = 0.05
+	}
+	lit_new_magdeburg_laws = {
+		development_cost = -0.1
+		global_trade_goods_size_modifier = 0.05
+	}
+	reciprocal_guarantee_of_two_nations = {
+		all_estate_loyalty_equilibrium = 0.05
+		diplomatic_annexation_cost = -0.15
+	}
+	lithuanian_hussars = {
+		cavalry_power = 0.25
+		#can_recruit_hussars = yes 
+	}
+	statutes_of_lithuania = {
+		global_unrest = -2
+	}
+	lithuanian_renaissance = {
+		technology_cost = -0.05
+	}
+}
 
 MAR_ideas = {
 	start = {
