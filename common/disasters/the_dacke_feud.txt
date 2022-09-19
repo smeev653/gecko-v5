@@ -21,7 +21,6 @@ the_dacke_feud = {
 	can_start = {
 		has_any_disaster = no
 		religion = protestant
-		has_country_modifier = h_swedish_centralization
 	}
 	
 	

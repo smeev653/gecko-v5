@@ -82,17 +82,6 @@ on_startup = {
 	#		disaster = french_revolution
 	#	}
 	#}
-	##Swedish Succession
-	if = {
-		limit = {
-			tag = SWE
-			NOT = { is_year = 1445 }
-		}
-		country_event = { 
-			id = gecko.100
-			days = 7
-		} 
-	}
 	#if = {
 	#	limit = {
 	#		exists = SUK
