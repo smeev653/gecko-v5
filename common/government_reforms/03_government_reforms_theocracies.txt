@@ -806,7 +806,7 @@ partial_secularisation_reform = {
 	}
 }
 
-battle_pope_reform = {
+battle_papacy_reform = {
 	icon = "soldiers_6"
 	allow_normal_conversion = yes
 	potential = {

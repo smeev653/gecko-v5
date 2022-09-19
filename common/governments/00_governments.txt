@@ -682,7 +682,7 @@ tribal = {
 				tribe_remain_tribal_reform
 				tribe_tribal_unity
 				###Gecko###
-				gc_tribe_becomes_horde_reform
+				#gc_tribe_becomes_horde_reform
 				gecko_professional_army_reform
 				gecko_noble_regiments_reform
 			}
@@ -835,7 +835,7 @@ theocracy = {
 				hereditary_religious_leadership_reform
 				crown_leader_reform
 				proclaim_republic_reform
-				battle_pope_reform
+				battle_papacy_reform
 				conciliarism_reform
 			}
 		}

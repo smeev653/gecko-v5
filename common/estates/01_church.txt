@@ -151,7 +151,46 @@ estate_church =
 		}
 		loyalty = -20
 	}
-
+	loyalty_modifier = {
+		desc = EST_358_HOLY_SITE
+		loyalty = 5
+		trigger = {
+			has_government_attribute = active_holy_sites_improve_clergy_loyalty
+			358 = { religion = coptic has_owner_religion = yes }
+		}
+	}
+	loyalty_modifier = {
+		desc = EST_1227_HOLY_SITE
+		loyalty = 5
+		trigger = {
+			has_government_attribute = active_holy_sites_improve_clergy_loyalty
+			1227 = { religion = coptic has_owner_religion = yes }
+		}
+	}
+	loyalty_modifier = {
+		desc = EST_2313_HOLY_SITE
+		loyalty = 5
+		trigger = {
+			has_government_attribute = active_holy_sites_improve_clergy_loyalty
+			2313 = { religion = coptic has_owner_religion = yes }
+		}
+	}
+	loyalty_modifier = {
+		desc = EST_1234_HOLY_SITE
+		loyalty = 5
+		trigger = {
+			has_government_attribute = active_holy_sites_improve_clergy_loyalty
+			1234 = { religion = coptic has_owner_religion = yes }
+		}
+	}
+	loyalty_modifier = {
+		desc = EST_419_HOLY_SITE
+		loyalty = 5
+		trigger = {
+			has_government_attribute = active_holy_sites_improve_clergy_loyalty
+			419 = { religion = coptic has_owner_religion = yes }
+		}
+	}
 	contributes_to_curia_treasury = yes
 	color = { 200 150 0 }
 	
@@ -370,6 +409,12 @@ estate_church =
 		estate_church_influence_temples
 		#estate_church_brahmins_at_court
 		estate_church_scholar_connections
+		estate_church_anti_heresy_act
+		estate_church_lands_of_riga
+		estate_church_bishopric_of_dorpat
+		estate_church_bishopric_of_osel_wiek
+		estate_church_bishopric_of_courland
+		estate_church_bishopric_of_reval
 	}
 
 	agendas = {

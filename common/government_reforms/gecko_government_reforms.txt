@@ -91,33 +91,33 @@ zabt_reform = {
 	}
 }
 
-pope_reform = { #tier 1
-	icon = "papacy"
-	lock_level_when_selected = yes
-	potential = {
-			tag = PAP
-		}
-	modifiers = {
-		prestige_per_development_from_conversion = 0.33
-		#land_morale = 0.05
-		global_tax_modifier = 0.2
-		fort_maintenance_modifier = -0.2
-		reduced_liberty_desire = 25
-	}
-	rulers_can_be_generals = yes
-	heirs_can_be_generals = yes
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	icon = "papacy"
-	allow_normal_conversion = yes
-	allow_convert = no
-	monastic = yes
-	fixed_rank = 2
-	
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
+#papacy_reform = { #tier 1
+#	icon = "papacy"
+#	lock_level_when_selected = yes
+#	potential = {
+#			tag = PAP
+#		}
+#	modifiers = {
+#		prestige_per_development_from_conversion = 0.33
+#		#land_morale = 0.05
+#		global_tax_modifier = 0.2
+#		fort_maintenance_modifier = -0.2
+#		reduced_liberty_desire = 25
+#	}
+#	rulers_can_be_generals = yes
+#	heirs_can_be_generals = yes
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 10
+#	icon = "papacy"
+#	allow_normal_conversion = yes
+#	allow_convert = no
+#	monastic = yes
+#	fixed_rank = 2
+#	
+#	custom_attributes = {
+#		locked_government_type = yes
+#	}
+#}
 
 empire_of_hungary_reform = {
 	icon = "holy_state_reform"

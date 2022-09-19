@@ -1389,7 +1389,6 @@ revolution_event_can_happen_trigger = {
 #country scope, used in election events to check whether generated rulers may be female
 republic_with_female_rulers_trigger = {
 	OR = {
-		has_active_policy = mandatory_service
 		has_country_modifier = sister_suffragettes
 		has_country_modifier = mary_inheritance_reforms
 		has_reform = democratic_values_reform
@@ -1907,7 +1906,7 @@ has_reached_government_reform_tier = {
 				has_reform = hereditary_religious_leadership_reform
 				has_reform = crown_leader_reform
 				has_reform = proclaim_republic_reform
-				has_reform = battle_pope_reform
+				has_reform = battle_papacy_reform
 				has_reform = conciliarism_reform
 				#Tribes
 				has_reform = horde_barbaric_despoilers_reform
@@ -1915,7 +1914,7 @@ has_reached_government_reform_tier = {
 				has_reform = tribe_becomes_monarchy_reform
 				has_reform = tribe_becomes_republic_reform
 				has_reform = tribe_becomes_theocracy_reform
-				has_reform = gc_tribe_becomes_horde_reform
+				#has_reform = gc_tribe_becomes_horde_reform
 				#has_reform = tribe_remain_tribal_reform
 				#Natives
 				has_reform = native_becomes_horde_reform

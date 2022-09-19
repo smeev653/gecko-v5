@@ -1466,7 +1466,7 @@ country_event = {
 	trigger = {
 		has_idea_group = religious_ideas
 		NOT = { religion = jewish } #Has no heretic religions
-		NOT = { has_reform = pope_reform }
+		NOT = { has_reform = papacy_reform }
 		NOT = { has_reform = leading_clergy_reform }
 		OR = {
 			NOT = { religion = catholic }
@@ -7846,7 +7846,7 @@ country_event = {
 	trigger = {
 		has_idea_group = maritime_ideas
 		NOT = { religion = jewish } #Has no heretic religions
-		NOT = { has_reform = pope_reform }
+		NOT = { has_reform = papacy_reform }
 		NOT = { has_reform = leading_clergy_reform }
 		OR = {
 			NOT = { religion = catholic }
