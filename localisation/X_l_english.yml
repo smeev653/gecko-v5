@@ -212,11 +212,14 @@
  ####################
  # Crimea
  ####################
+ #Government
  X_CRI_great_tatar_state_reform:0 "Great Tatar State"
  X_CRI_great_tatar_state_reform_desc:0 "The Great Tatar State proclaims its rulers to be sons of Genghis Khan, who trace their legitimacy to this royal descent." 
  X_CRI_great_khan:0 "Great Khan"
  X_CRI_great_tatar_state:0 "Great Tatar State"
  X_CRI_great_tatar_state_desc:0 ""
+ CRI_parliament_name:0 "Sofa"
+ GLH_parliament_name:0 "Sofa"
  #Decrees
  X_CRI_decree_1:0 "Promote Urbanization"
  X_CRI_decree_1_title:0 "Promote Urbanization"
@@ -254,8 +257,8 @@
  X_CRI_reform_3:0 "Enhance Development"
  X_CRI_reform_3_title:0 "Enhance Development"
  X_CRI_reform_3_desc:0 ""
- X_CRI_reform_3_tt:0 "§WEvery owned province of §YSteppes§! terrain gains §Y'Steppes Development'§!, giving the following effects:\nLocal Development Cost: §G-10.0%§!§!"
- X_CRI_reform_3_tt2:0 "Remove §Y'Steppes Development'§! from every owned §YSteppes§! province."
+ X_CRI_reform_3_tt:0 "§WEvery owned province of §YSteppes§! terrain gains '§YSteppes Development§!', giving the following effects:\nLocal Development Cost: §G-10.0%§!§!"
+ X_CRI_reform_3_tt2:0 "Remove '§YSteppes Development§!' from every owned §YSteppes§! province."
  X_CRI_reform_4:0 "Organize Gerege Filing"
  X_CRI_reform_4_title:0 "Organize Gerege Filing"
  X_CRI_reform_4_emperor:0 "Organize Gerege Filing"
@@ -264,11 +267,11 @@
  X_CRI_reform_5_title:0 "Institute Qadiliq System"
  X_CRI_reform_5_emperor:0 "Institute Qadiliq System"
  X_CRI_reform_5_desc:0 ""
- X_CRI_reform_6:0 "Conscipt Christian Slaves"
- X_CRI_reform_6_title:0 "Conscipt Christian Slaves"
+ X_CRI_reform_6:0 "Appease the Mufti"
+ X_CRI_reform_6_title:0 "Appease the Mufti"
  X_CRI_reform_6_desc:0 ""
- X_CRI_reform_6_tt:0 "§WEvery owned province of §YChristian§! faith gains §Y'Heathen Slaves'§!, giving the following effects:\nLocal Manpower Modifier: §G+33.0%§!§!"
- X_CRI_reform_6_tt2:0 "Remove §Y'Heathen Slaves'§! from every owned province of §YChristian§! faith."
+ X_CRI_reform_6_tt:0 "§WEvery owned province of §YChristian§! faith gains '§YKharaj§!', giving the following effects:\nLocal Tax Modifier: §G+33.0%§!§!"
+ X_CRI_reform_6_tt2:0 "Remove '§YKharaj§!' from every owned province of §YChristian§! faith."
  X_CRI_reform_7:0 "Open Uluhane Bureaucracy"
  X_CRI_reform_7_title:0 "Open Uluhane Bureaucracy"
  X_CRI_reform_7_emperor:0 "Open Uluhane Bureaucracy"

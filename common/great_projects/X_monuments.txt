@@ -405,6 +405,7 @@ X_CRI_hansaray = {
 			local_tax_modifier = 0.2
 		}
 		country_modifiers = {
+			church_loyalty_modifier = 0.025
 			imperial_mandate = 0.05
 			meritocracy = 0.1
 		}
@@ -422,6 +423,7 @@ X_CRI_hansaray = {
 			local_tax_modifier = 0.33
 		}
 		country_modifiers = {
+			church_loyalty_modifier = 0.05
 			imperial_mandate = 0.1
 			meritocracy = 0.25
 		}
@@ -439,6 +441,7 @@ X_CRI_hansaray = {
 			local_tax_modifier = 0.5
 		}
 		country_modifiers = {
+			church_loyalty_modifier = 0.1
 			imperial_mandate = 0.2
 			meritocracy = 0.5
 		}

@@ -486,6 +486,12 @@ martial_society_reform = {
 			}
 		}
 	}
+	conditional = {
+		allow = {
+			is_emperor_of_china = yes
+		}
+		has_parliament = yes
+	}
 }
 
 civil_society_reform = {
@@ -505,6 +511,12 @@ civil_society_reform = {
 				corruption = 5
 			}
 		}
+	}
+	conditional = {
+		allow = {
+			is_emperor_of_china = yes
+		}
+		has_parliament = yes
 	}
 }
 

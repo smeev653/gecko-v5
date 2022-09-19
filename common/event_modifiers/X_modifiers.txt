@@ -141,7 +141,7 @@ X_CRI_reform_3_pmod = {
 }
 
 X_CRI_reform_6_pmod = {
-	local_manpower_modifier = 0.33
+	local_tax_modifier = 0.33
 }
 
 X_CRI_era_of_peace_cmod = {

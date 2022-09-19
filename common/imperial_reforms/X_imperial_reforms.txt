@@ -135,6 +135,10 @@ X_CRI_reform_5 = {
 
 X_CRI_reform_6 = {
 	empire = celestial_empire
+	emperor = {
+		adm_advisor_cost = -0.1
+		church_loyalty_modifier = 0.05
+	}
 	on_effect = {
 		custom_tooltip = X_CRI_reform_6_tt
 		hidden_effect = {
@@ -198,6 +202,8 @@ X_CRI_reform_8 = {
 	empire = celestial_empire
 	emperor = {
 		years_of_nationalism = -5
+		manpower_in_culture_group_provinces = 0.25
+		manpower_in_own_culture_provinces = 0.25
 	}
 	on_effect = {
 		custom_tooltip = X_CRI_reform_8_tt
