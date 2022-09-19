@@ -10823,10 +10823,6 @@ expelled_minority = {
 	local_culture_conversion_cost = 3
 }
 
-expelled_minority_home = {
-	local_missionary_strength = 0.05
-	local_culture_conversion_cost = -0.25
-}
 ##################################################
 # High American missions
 ##################################################
