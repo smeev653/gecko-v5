@@ -486,7 +486,6 @@ martial_society_reform = {
 			}
 		}
 	}
-	has_parliament = yes
 }
 
 civil_society_reform = {
@@ -507,7 +506,6 @@ civil_society_reform = {
 			}
 		}
 	}
-	has_parliament = yes
 }
 
 #Religion vs Secularization
