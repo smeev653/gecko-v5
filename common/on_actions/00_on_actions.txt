@@ -5168,3 +5168,363 @@ on_expanded_infrastructure = {
 #ROOT = province that was centralized in
 on_centralized_state = {
 }
+
+#ROOT = province
+on_adm_exploited = {
+	if = {
+		limit = { owner = { has_government_attribute = may_not_reduce_tax_on_exploitation } }
+		random = {
+			chance = 50
+			add_base_tax = 1
+		}
+	}
+	if = {
+		limit = { owner = { has_government_attribute = may_not_reduce_tax_on_own_exploitation culture_group = ROOT } }
+		random = {
+			chance = 25
+			add_base_tax = 1
+		}
+	}
+	if = {
+		limit = { owner = { has_government_attribute = may_not_reduce_tax_on_foreign_exploitation NOT = { culture_group = ROOT } } }
+		random = {
+			chance = 50
+			add_base_tax = 1
+		}
+	}
+	###X###
+	if = {
+		limit = { culture_group = tartar }
+		random_country = {
+			limit = { is_emperor_of_china = yes }
+			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = west_slavic }
+		every_country = {
+			limit = { culture_group = west_slavic }
+			ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = east_slavic }
+		every_country = {
+			limit = { culture_group = east_slavic }
+			ROOT = { X_culture_group_control_effect = { group = east_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = carpathian }
+		every_country = {
+			limit = { culture_group = carpathian }
+			ROOT = { X_culture_group_control_effect = { group = carpathian type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = maghrebi }
+		every_country = {
+			limit = { culture_group = maghrebi }
+			ROOT = { X_culture_group_control_effect = { group = maghrebi type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = lowlands }
+		every_country = {
+			limit = { culture_group = lowlands }
+			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
+	#######
+}
+on_dip_exploited = {
+	###X###
+	if = {
+		limit = { culture_group = tartar }
+		random_country = {
+			limit = { is_emperor_of_china = yes }
+			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = west_slavic }
+		every_country = {
+			limit = { culture_group = west_slavic }
+			ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = east_slavic }
+		every_country = {
+			limit = { culture_group = east_slavic }
+			ROOT = { X_culture_group_control_effect = { group = east_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = carpathian }
+		every_country = {
+			limit = { culture_group = carpathian }
+			ROOT = { X_culture_group_control_effect = { group = carpathian type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = maghrebi }
+		every_country = {
+			limit = { culture_group = maghrebi }
+			ROOT = { X_culture_group_control_effect = { group = maghrebi type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = lowlands }
+		every_country = {
+			limit = { culture_group = lowlands }
+			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
+	#######
+}
+on_mil_exploited = {
+	###X###
+	if = {
+		limit = { culture_group = tartar }
+		random_country = {
+			limit = { is_emperor_of_china = yes }
+			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = west_slavic }
+		every_country = {
+			limit = { culture_group = west_slavic }
+			ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = east_slavic }
+		every_country = {
+			limit = { culture_group = east_slavic }
+			ROOT = { X_culture_group_control_effect = { group = east_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = carpathian }
+		every_country = {
+			limit = { culture_group = carpathian }
+			ROOT = { X_culture_group_control_effect = { group = carpathian type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = maghrebi }
+		every_country = {
+			limit = { culture_group = maghrebi }
+			ROOT = { X_culture_group_control_effect = { group = maghrebi type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = lowlands }
+		every_country = {
+			limit = { culture_group = lowlands }
+			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
+	#######
+}
+
+on_raze = {
+	###X###
+	if = {
+		limit = { culture_group = tartar }
+		random_country = {
+			limit = { is_emperor_of_china = yes }
+			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = west_slavic }
+		every_country = {
+			limit = { culture_group = west_slavic }
+			ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = east_slavic }
+		every_country = {
+			limit = { culture_group = east_slavic }
+			ROOT = { X_culture_group_control_effect = { group = east_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = carpathian }
+		every_country = {
+			limit = { culture_group = carpathian }
+			ROOT = { X_culture_group_control_effect = { group = carpathian type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = maghrebi }
+		every_country = {
+			limit = { culture_group = maghrebi }
+			ROOT = { X_culture_group_control_effect = { group = maghrebi type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = lowlands }
+		every_country = {
+			limit = { culture_group = lowlands }
+			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
+	#######
+}
+
+on_concentrate_development = {
+	###X###
+	if = {
+		limit = { culture_group = tartar }
+		random_country = {
+			limit = { is_emperor_of_china = yes }
+			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = west_slavic }
+		every_country = {
+			limit = { culture_group = west_slavic }
+			ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = east_slavic }
+		every_country = {
+			limit = { culture_group = east_slavic }
+			ROOT = { X_culture_group_control_effect = { group = east_slavic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = carpathian }
+		every_country = {
+			limit = { culture_group = carpathian }
+			ROOT = { X_culture_group_control_effect = { group = carpathian type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = maghrebi }
+		every_country = {
+			limit = { culture_group = maghrebi }
+			ROOT = { X_culture_group_control_effect = { group = maghrebi type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = lowlands }
+		every_country = {
+			limit = { culture_group = lowlands }
+			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = cushitic }
+		every_country = {
+			limit = { culture_group = cushitic }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = southern_african }
+		every_country = {
+			limit = { culture_group = southern_african }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+	}
+	if = {
+		limit = { culture_group = mande }
+		every_country = {
+			limit = { culture_group = mande }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
+	#######
+}
