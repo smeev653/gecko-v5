@@ -667,7 +667,6 @@ SCA_ideas = {
 	free = yes
 	
 	sca_united_craftsman = {
-		global_allowed_num_of_buildings = 1
 		build_cost = -0.05
 	}
 	sca_unified_scandinavian = {
@@ -679,7 +678,7 @@ SCA_ideas = {
 		ship_durability = 0.05
 	}
 	sca_norwegian_marines = {
-		naval_morale = 0.2
+		naval_morale = 0.1
 	}
 	sca_finnish_hakkapeliita = {
 		cavalry_fire = 0.5
