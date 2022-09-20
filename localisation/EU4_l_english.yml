@@ -42,7 +42,7 @@
  REGCAT_mercenary:0 "Mercenaries"
  REGCAT_banner:0 "Banners"
  REGCAT_streltsy:0 "Streltsy"
- REGCAT_cossacks:0 "Heavy Cavalry"
+ REGCAT_cossacks:0 "Heavy"
  REGCAT_janissaries:0 "Janissaries"
  REGCAT_rajput:0 "Rajput"
  COSSACKS_NAME:0 "$HOME$'s $NUM$$ORDER$ Heavy Cavalry"

@@ -1809,10 +1809,11 @@ banner_regiment = {
 	regiment_manpower_usage = -0.666
 }
 streltsy_regiment = {
-    fire_damage = 0.1
+    fire_damage = 0.05
 }
 cossacks_regiment = {
     shock_damage = 0.1
+	fire_damage_received = -0.1
 }
 carolean_regiment = {
 	morale_damage = 0.1
