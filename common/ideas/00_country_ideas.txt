@@ -682,7 +682,7 @@ SCA_ideas = {
 	}
 	sca_finnish_hakkapeliita = {
 		cavalry_fire = 0.5
-		cavalry_cost = -0.15
+		#cavalry_cost = -0.15
 	}
 	sca_swedish_carolean = {
 		infantry_power = 0.2
@@ -751,8 +751,8 @@ TUR_ideas = {
 	
 	
 	timariot_system = {
-		cavalry_power = 0.10
-		cavalry_cost = -0.10
+		cavalry_power = 0.125
+		#cavalry_cost = -0.10
 	}
 	lawcode_of_suleiman_01 = {
 		global_tax_modifier = 0.10
@@ -1558,7 +1558,6 @@ SCO_Ideas = {
 
 HUN_ideas = {
 	start = {
-		cavalry_cost = -0.1
 		cavalry_power = 0.10
 		no_religion_penalty = yes
 	}
@@ -1639,8 +1638,8 @@ JAP_ideas = {
 
 MAM_ideas = {
 	start = {
-		cavalry_cost = -0.1
-		cavalry_power = 0.10
+		trade_steering = 0.25
+		cavalry_power = 0.125
 	}
 	
 	bonus = {
@@ -1855,7 +1854,6 @@ TIM_ideas = {
 	free = yes
 	unleash_the_tiger = {
 		cavalry_power = 0.125
-		cavalry_cost = -0.1
 	}
 	
 	the_mantle_of_the_great_khan = {
@@ -9233,7 +9231,6 @@ GLH_ideas = {
 	}
 	glh_tatar_traditions = {
 		cavalry_power = 0.125
-		cavalry_cost = -0.1
 	}
 	glh_secure_the_trade_routes = {
 		global_prov_trade_power_modifier = 0.25
@@ -11499,7 +11496,7 @@ TRS_ideas = {
 	free = yes
 	
 	trs_mawarannahr = {
-		cavalry_power = 0.10
+		cavalry_power = 0.125
 	}
 	trs_threshold_of_paradise = {
 		prestige = 1
