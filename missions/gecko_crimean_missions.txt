@@ -752,10 +752,6 @@ gc_cri_branch_3 = {
 			province_id = 284
 		}
 		trigger = {
-			custom_trigger_tooltip = { 
-				tooltip = X_CRI_mission_1_tt
-				has_country_flag = X_CRI_qaraylar_influx_cflag 
-			}
 			stability = 2
 			estate_loyalty = {
 				estate = estate_nomadic_tribes
@@ -785,7 +781,6 @@ gc_cri_branch_3 = {
 				}
 				set_capital = 284
 			}
-			clr_country_flag = X_CRI_qaraylar_influx_cflag
 			country_event = { id = X_CRI_events.5 }
 		}
 	}
