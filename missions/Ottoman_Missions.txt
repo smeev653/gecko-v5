@@ -3236,20 +3236,20 @@ ottoman_missions_4 = {
 		tag = TUR
 	}
 	has_country_shield = yes
-	gc_build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
-		icon = mission_build_up_to_force_limit
-		required_missions = {  } #None
-		position = 1
-		trigger = {
-			army_size_percentage = 1 #What you need to complete the mission, displayed for mission tooltip
-		}
-		effect = { #This is what you get after you finished your mission.
-			add_country_modifier = {
-				name = "gc_thriving_arms_industry"
-				duration = 9125 #25 years
-			}
-		}
-	}
+	#gc_build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
+	#	icon = mission_build_up_to_force_limit
+	#	required_missions = {  } #None
+	#	position = 1
+	#	trigger = {
+	#		army_size_percentage = 1 #What you need to complete the mission, displayed for mission tooltip
+	#	}
+	#	effect = { #This is what you get after you finished your mission.
+	#		add_country_modifier = {
+	#			name = "gc_thriving_arms_industry"
+	#			duration = 9125 #25 years
+	#		}
+	#	}
+	#}
 	tur_queen_of_cities = {
 		icon = public_works
 		required_missions = { tur_city_of_worlds_desire }

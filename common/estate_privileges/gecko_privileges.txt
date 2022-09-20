@@ -17,14 +17,15 @@ estate_gc_sipahi = {
 		NOT = { has_estate_privilege = estate_gc_sipahi }
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
 	}
-	#mechanics = {
-	#	enables_cossack_regiments
-	#}
+	mechanics = {
+		enables_cossack_regiments
+	}
 	mechanics = {
 		exempt_from_seize_land
 	}
 	modifier = {
 		cavalry_cost = -0.1
+		special_unit_forcelimit = 0.125
 	}
 	on_granted = {
 		create_general = {
