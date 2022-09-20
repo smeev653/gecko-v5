@@ -306,6 +306,8 @@
  desc_X_CRI_rights_of_the_khan_cmod:0 ""
  X_estate_nomadic_tribes_privilege_1_pmod:0 "Khan's Savga"
  desc_X_estate_nomadic_tribes_privilege_1_pmod:0 ""
+ X_CRI_qaraylar_lending_cmod:0 "Qaraylar Lending"
+ desc_X_CRI_qaraylar_lending_cmod:0 ""
  #Modifier tooltips
  X_CRI_gateway_protected_tt:0 "until §YOr Qapi§! is successfully sieged"
  #Estate Modifiers
@@ -357,6 +359,7 @@
  X_CRI_mission_9_title:0 "Throne of the Crimea"
  X_CRI_mission_9_desc:0 ""
  #Mission Tooltips
+ X_CRI_mission_1_tt:0 "Event '§YQaraylar Influx§!' has happened."
  X_CRI_mission_3_tt:0 "Event '§YGenoa Cedes Gazaria§!' has happened."
  X_CRI_mission_7_tt:0 "If this mission is completed by having the required relations with §Y[TUR.GetName]§!, you lose half the money."
  X_CRI_mission_8_tt:0 "All provinces in the §YCrimea§! trade node are owned by §Y[Root.GetName]§!."
@@ -387,6 +390,10 @@
  X_CRI_events.8.d1:0 ""
  X_CRI_events.8.a:0 "A peaceful resolution"
  X_CRI_events.8.b:0 "A preposterous proposition"
+ X_CRI_events.9.t:0 "Qaraylar Influx"
+ X_CRI_events.9.d1:0 ""
+ X_CRI_events.9.a:0 "Welcome them to our yurt"
+ X_CRI_events.9.b:0 "They will have to find another way"
  #Event Tooltips
  X_CRI_event_2_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
  X_CRI_event_6_tt:0 "Upon being built, we gain §G+5.0§!£X_imperial_mandate£.\nIf §Y[284.GetName]§! has a §YGreat Mosque§!, gain §Y4§! Base Tax in §Y[284.GetName]§!.\nElse gain a §YGreat Mosque§! in §Y[284.GetName]§!."

@@ -542,6 +542,26 @@ X_culture_union_effect = {
 		}
 		if = {
 			limit = { 
+				X_culture_union_trigger = { baltic_german = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { baltic_german = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
 				X_culture_union_trigger = { lower_saxon = yes }
 				has_global_flag = X_$group$_culture_exists_yes_gflag
 			}
@@ -4046,6 +4066,26 @@ X_culture_exists_effect = {
 		else_if = {
 			limit = { 
 				NOT = { X_culture_exists_trigger = { prussian = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { baltic_german = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { baltic_german = yes } }
 				has_global_flag = X_$group$_culture_exists_no_gflag 
 			}
 			change_variable = {            
