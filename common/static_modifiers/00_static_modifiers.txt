@@ -1204,6 +1204,8 @@ total_occupation = {
 
 total_blockaded = {
 	war_exhaustion = 0.3					#increases exhaustion.
+	global_trade_power = -0.75
+	trade_steering = -0.75
 }
 
 uncontested_cores = {
@@ -1797,7 +1799,7 @@ hussars_regiment = {
 	reinforce_speed = -0.5
 }
 marine_regiment = {
-    shock_damage_received = 0.1
+    shock_damage_received = -0.1
     regiment_disembark_speed = 2 #requires a new country modifier
 }
 banner_regiment = {
