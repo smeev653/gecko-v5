@@ -15,6 +15,7 @@ X_CRI_great_tatar_state_reform = {
 	has_meritocracy = yes
 	
 	modifiers = {
+		cav_to_inf_ratio = 0.50
 		meritocracy = 0.25
 		movement_speed = 0.1
 		available_province_loot = 0.50
