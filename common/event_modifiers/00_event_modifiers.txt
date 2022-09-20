@@ -7285,7 +7285,7 @@ dyn_newborn_daughter = {
 }
 
 organised_through_bishops_aspect_modifier = {
-	build_cost = -0.1
+	build_cost = -0.05
 }
 priests_may_marry_aspect_modifier = {
 	tolerance_own = 1 
@@ -7297,7 +7297,7 @@ holy_sacraments_aspect_modifier = {
 	morale_damage = 0.05
 }
 saints_accept_prayers_aspect_modifier = {
-	army_tradition_from_battle = 1
+	army_tradition_from_battle = 0.5
 }
 icons_images_aspect_modifier = {
 	same_culture_advisor_cost = -0.1
@@ -7315,7 +7315,7 @@ individual_creeds_aspect_modifier = {
 	advisor_pool = 2 
 }
 allow_usury_aspect_modifier = {
-	interest = -0.5
+	interest = -0.125
 }
 translated_bibles_aspect_modifier = {
 	institution_spread_from_true_faith = 0.25
