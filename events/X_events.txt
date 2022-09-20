@@ -923,6 +923,7 @@ country_event = {
 	}
 }
 
+#Qaraylar Influx
 country_event = {
 	id = X_CRI_events.9
 	title = X_CRI_events.9.t
@@ -945,9 +946,6 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		months = 12
-	}
-	immediate = {
-		set_country_flag = X_CRI_qaraylar_influx_cflag
 	}
 	option = {
 		name = X_CRI_events.9.a
