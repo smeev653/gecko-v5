@@ -2731,7 +2731,7 @@
  CELESTIAL_MANDATE:0 "Legacy" #X
  CELESTIAL_DECISIONS:0 "Khanate Reforms"
  CELESTIAL_TRIBUTARIES:0 "$NUM$ Tributaries"
- CELESTIAL_DECREES:0 "Labels" #X
+ CELESTIAL_DECREES:0 "Yarlig" #X
  CELESTIAL_CLOSE:0 "Close"
  CELESTIAL_EMPIRE:0 "Tradition of the Steppe"
  PAPACY_CARDINALS:0 "Cardinals:"
@@ -7735,7 +7735,7 @@
  CAN_SPAWN_REBELS:0 "Locally valid rebel type: "
  PROVINCIAL_REGIMENT:0 "Provincial Regiment"
  MERCENARY_REGIMENT:0 "Mercenary Regiment"
- BANNER_REGIMENT:2 "Banner Regiment\nDiscipline Bonus: $DISC|+%$\nManpower Usage: $MANPOWER|Y%$\nReinforce Speed: $REINFORCE|+%$\nMaintenance Cost: $MAINTENANCE|+%$"
+ BANNER_REGIMENT:3 "Banner Regiment\n$EFFECT$"
  GARRISON_LESS_THAN:0 "Garrison smaller than"
  GARRISON_MORE_THAN:0 "Garrison at least"
  WARSCORE_LESS_THAN:0 "In a war with a score worse than"

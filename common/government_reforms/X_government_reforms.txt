@@ -29,4 +29,7 @@ X_CRI_great_tatar_state_reform = {
 		locked_government_type = yes
 		has_tributaries = yes
 	}
+	government_abilities = {
+		tribal_federation_mechanic
+	}
 }

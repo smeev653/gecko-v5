@@ -1175,8 +1175,8 @@
  HRE_NUM_PRINCES_IMPACT:0 "There are currently §Y$CURR$§! member states in the Empire out of the §Y$NEED$§! needed to maintain legitimacy. This changes Imperial Authority by $VAL$ every month."
  LACK_OF_ELECTORS:0 "There are only §Y$CURR$§! electors in the empire, and there needs to be §Y$NEED$§! for it to function properly. Therefore the Imperial Authority is decreased by §R$VAL$§! every month."
  VASSALIZED_ELECTORS:0 "§Y$CURR$§! of the electors in the empire are subject states. Therefore the Imperial Authority is decreased by §R$VAL$§! every month."
- ENACT_DECREE_ONLY_ONE:0 "Only one label can be enacted at once, and they cannot be canceled before their end date.\n" #X
- ENACT_DECREE_NOT_EMPEROR:0 "Only the Great Khan can enact Labels." #X
+ ENACT_DECREE_ONLY_ONE:0 "Only one yarlig can be enacted at once, and they cannot be canceled before their end date.\n" #X
+ ENACT_DECREE_NOT_EMPEROR:0 "Only the Great Khan can enact Yarlig." #X
  ENACT_DECREE_ALREADY_ENACTED:0 "$DECREENAME$ already enacted. It will run out on $DATE|Y$."
  ENACT_DECREE_NOT_ENOUGH_MERITOCRACY:0 "Enacting this Decree requires $MERITOCRACYREQUIRED$ Horde Unity, you only have $CURRENTMERITOCRACY$." #X
  CAN_NOT_ENACT_REFORM_NOT_EMPEROR:0 "Only the emperor can enact reforms in the empire."

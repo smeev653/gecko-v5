@@ -163,6 +163,7 @@ NDefines.NCountry.PROMOTE_COST_MONTHS_ADVISOR_SALARY = 100.0
 NDefines.NCountry.SCRIPTED_ADVISOR_DISCOUNT = 0.75				-- Multiplier on cost for advisors scripted with discount=yes
 NDefines.NCountry.EXPAND_INFRASTRUCTURE_DEV_LIMIT = 10 
 NDefines.NCountry.ESTATE_PRIVILEGES_MAX_CONCURRENT = 5
+NDefines.NCountry.CORRUPTION_FROM_BANNERS = 5
 
 NDefines.NEconomy.EDICTS_COST_INCREASE = 1.5
 NDefines.NEconomy.EDICTS_DURATION_MONTHS = 3
@@ -195,10 +196,6 @@ NDefines.NMilitary.SLACKEN_AP_DROP = 0.1
 NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 33.3
 NDefines.NMilitary.ARMY_DRILL_SKILL_MONTHS = 90
 NDefines.NMilitary.MARINE_SHOCK_DAMAGE_TAKEN = -0.10
-NDefines.NMilitary.BANNER_MANPOWER_USAGE = 1
-NDefines.NMilitary.BANNER_REINFORCE_SPEED = 1
-NDefines.NMilitary.BANNER_MAINTENANCE_COST = 1
-NDefines.NMilitary.BANNER_STARTING_STRENGTH = 1					-- Starting strength of a banner regiment, 1.0 being full strength
 NDefines.NMilitary.CAWA_STARTING_STRENGTH = 1				-- Starting strength of a cawa regiment, 1.0 being full strength
 NDefines.NMilitary.CAWA_STARTING_MORALE = 0.25
 NDefines.NMilitary.COSSACKS_MAXIMUM_RATIO = 1					-- Maximum number of Cossacks regiments, relative to force limit
@@ -236,7 +233,7 @@ NDefines.NMilitary.DAYS_PER_PHASE = 2
 NDefines.NMilitary.COMBAT_DICE_SIDE = 7
 NDefines.NMilitary.REBEL_LEADER_POWER = 10
 NDefines.NMilitary.SEA_LANDING_PENALTY = -1
-NDefines.NMilitary.PRESTIGE_TO_TRIBAL_ALLEGIANCE_FACTOR = 6
+NDefines.NMilitary.PRESTIGE_TO_TRIBAL_ALLEGIANCE_FACTOR = 2
 NDefines.NMilitary.FORT_FLIPPING_TIME = 15
 NDefines.NMilitary.STACKWIPE_MANPOWER_RETURN_FRACTION = 0.1
 NDefines.NMilitary.NAVAL_BASE_ENGAGEMENT_WIDTH = 25
@@ -248,7 +245,7 @@ NDefines.NMilitary.CREATE_CAWA_MIL_COST = 10
 NDefines.NMilitary.RAJPUT_BASE_COST_MODIFIER = 1.25				-- Rajput base cost is double as expensive
 NDefines.NMilitary.COSSACK_BASE_COST_MODIFIER = 1
 NDefines.NMilitary.MAX_DRILL_DECAY = 0.75
-NDefines.NMilitary.BANNER_USES_CONSTRUCTION = 1
+NDefines.NMilitary.BANNER_USES_CONSTRUCTION = 0
 NDefines.NMilitary.JANISSARIES_USES_CONSTRUCTION = 1
 NDefines.NMilitary.CAWA_USES_CONSTRUCTION = 1
 NDefines.NMilitary.FLAGSHIP_REQUIRED_NAVY_SIZE_IN_SAILORS = 750
@@ -278,7 +275,7 @@ NDefines.NMilitary.HUSSARS_BASE_COST_MODIFIER = 1.0
 NDefines.NMilitary.HUSSARS_MANPOWER_COST_MODIFIER = 1.0
 NDefines.NMilitary.HUSSARS_STARTING_STRENGTH = 1.0
 NDefines.NMilitary.HUSSARS_STARTING_MORALE = 0.1
-	
+NDefines.NMilitary.BANNER_STARTING_STRENGTH = 0.1					-- Starting strength of a banner regiment, 1.0 being full strength
 
 NDefines.NAI.DIPLOMATIC_ACTION_OFFER_CONDOTTIERI_DISABLE_VERSUS_PLAYER_ENEMIES = 1
 NDefines.NAI.ACCEPTABLE_FRACTION_OF_INTEREST_PAYMENTS = 0.4
@@ -457,9 +454,16 @@ NDefines.NReligion.APPOINT_CARDINAL_INFLUENCE_PAPAL_STATE = 0
 
 NDefines.NGovernment.SELECT_HEIR_FROM_HAREM_AT_MONARCH_AGE = 20
 NDefines.NGovernment.FEUDAL_THEOCRACY_INTERACTION_COOLDOWN_YEARS = 10
-NDefines.NGovernment.YEARLY_TRIBAL_ALLEGIANCE_MAX = 0
+
+NDefines.NGovernment.TRAIN_HORSEMANSHIP_DURATION_YEARS = 10
+NDefines.NGovernment.CONSCRIPT_FROM_TRIBES_AMOUNT = 10
+NDefines.NGovernment.CONSCRIPT_FROM_TRIBES_TIME = 0.25
+NDefines.NGovernment.TRIBAL_ALLEGIANCE_MAX = 100
+NDefines.NGovernment.YEARLY_TRIBAL_ALLEGIANCE_MAX = 0.0
+NDefines.NGovernment.TRIBAL_ALLEGIANCE_HUMILIATE = 30.0 -- TA gained from doing Humiliate or Show Strength in a war.
 NDefines.NGovernment.TRIBAL_FEDERATION_ABILITY_COST = 50
-NDefines.NGovernment.TRIBAL_ALLEGIANCE_HUMILIATE = 60.0
+NDefines.NGovernment.ENLIST_GENERAL_TRADITION = 60
+
 NDefines.NGovernment.GOVERNMENT_REFORM_CHANGE_PROGRESS_COST = 25.0
 NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 20.0
 NDefines.NGovernment.CENTRALIZE_STATE_YEARS = 2.5

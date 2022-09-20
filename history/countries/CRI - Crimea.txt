@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = steppe_horde
+add_government_reform = X_CRI_great_tatar_state_reform
 technology_group = nomad_group
 religion = sunni
 primary_culture = crimean
@@ -17,9 +17,9 @@ add_truce_with = GEN
 		name = "Haji I"
 		dynasty = Giray
 		birth_date = 1410.1.1
-		adm = 3
-		dip = 3
-		mil = 4
+		adm = 4                                                          
+		dip = 5
+		mil = 5
 	}
 }
 

@@ -9042,6 +9042,7 @@ kamchatkan_g = {
 tartar	= {
 	graphical_culture = muslimgfx
 	astrakhani = {
+		province = { local_has_banners = yes}
 		primary = AST
 		dynasty_names = {
 			"Qara Chinua" "Delger Qyugun" "Arigh Gal" "Koke Erdene"	"Suren Unegen" "Tegus Enq" Qadandei Burilgigene Arighteni
@@ -9062,6 +9063,7 @@ tartar	= {
 		}
 	}
 	uzbehk = {
+		province = { local_has_banners = yes}
 		primary = SHY
 		male_names = {
 			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
@@ -9077,6 +9079,7 @@ tartar	= {
 		}
 	}
 	ostyaki = {
+		province = { local_has_banners = yes}
 		male_names = {
 			Ággi Áigesárri Áilu Ámmot Ára Árrajuoksa Ásllat Èoavvá Ahkemiella Algebaeivi Baeivi Aare Agul Ahas Aho Ahti Ahvo 
 			Alar Alo Alur Aopelg Aotõiv Arp Arvet Arvo Atko Aul Aulemb Kaur Kiur Kiurupelg Koit Kosk Kudres Susi Sutemeel Meigo 
@@ -9097,6 +9100,7 @@ tartar	= {
 		}
 	}
 	turkmeni = {
+		province = { local_has_banners = yes}
 		primary = KHI
 		dynasty_names = {
 			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
@@ -9117,6 +9121,7 @@ tartar	= {
 		}
 	}
 	bashkir = {
+		province = { local_has_banners = yes}
 		primary = BSH
 		dynasty_names = {
 			Balna Salmiianov Ravna Taiborey Vylka Kanin Maimbava Arinin Aven Tsoy
@@ -9136,6 +9141,7 @@ tartar	= {
 		}
 	}
 	khazak = {
+		province = { local_has_banners = yes}
 		primary = KZH
 		male_names = {
 			Abilghazi Abilmambet Abulay Abulkhayr Ahmat Ayshwak Arunghazi Barak Batir Bokey Bulat Burunduq 
@@ -9166,6 +9172,7 @@ tartar	= {
 		}
 	}
 	kirgiz = {
+		province = { local_has_banners = yes}
 		primary = CHG
 		male_names = {
 			Abdul-Karim Abdul-Latif Abdul-Rashîd Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Temür Buzan 
@@ -9252,6 +9259,7 @@ tartar	= {
 		"Sibirid" "Narima" "Mansi" "Khantys"
 	}
 	circassian = {
+		province = { local_has_banners = yes}
 		primary = CIR
 		male_names = {
 			Petrezok Verzacht Belzebuk Parsabok Smbat Stepanos Stephen Tachat Taniel Daniel Tatoul Tigran Tornik 
@@ -9276,6 +9284,7 @@ tartar	= {
 		}
 	}
 	dagestani = {
+		province = { local_has_banners = yes}
 		primary = GAZ
 		dynasty_names = {
 			Shamkhal Kumukh
@@ -9290,6 +9299,7 @@ tartar	= {
 		}
 	}
 	crimean = {
+		province = { local_has_banners = yes}
 		primary = CRI
 		dynasty_names = {
 			Altan Asanin Bekmambet Ziyaeddin Sarigöl Bektöre Celebicihan  Cobanzade Dägci Gaspirali Giraybay Hablemitoglu Hilmi 
@@ -9307,6 +9317,7 @@ tartar	= {
 		}
 	}
 	kazani = {
+		province = { local_has_banners = yes}
 		primary = KAZ
 		dynasty_names = {
 			Cälil Göbäydullina Nasiri Näcmetdin Nigmät Nurgäli Isxaqi Märcani Qamay "Qol-Gäli" Qursawi Tuqay Yusupow
@@ -9323,6 +9334,7 @@ tartar	= {
 		}
 	}
 	mishary = {
+		province = { local_has_banners = yes}
 		primary = GOL
 		dynasty_names = {
 			"Boke Temur" "Qutlugh Vachir" "Suren Chinua" "Delger Bayar" "Shria Gan" "Bora Chinua" Nasange Temur-chi Chinuagene 
@@ -9344,6 +9356,7 @@ tartar	= {
 		}
 	}
 	nogaybak = {
+		province = { local_has_banners = yes}
 		primary = NOG
 		dynasty_names = {
 			"Ulagan Temur" "Bora Chinua" "Suren Unegen" "Qara Erdene" 
@@ -9363,6 +9376,7 @@ tartar	= {
 		}
 	}
 	siberian = {
+		province = { local_has_banners = yes}
 		primary = SIB
 		dynasty_names = {
 			Balna Salmiianov Ravna Taiborey Vylka Kanin Maimbava Arinin Aven Tsoy

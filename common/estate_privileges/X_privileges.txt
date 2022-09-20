@@ -67,7 +67,6 @@ X_estate_cossacks_privilege_1 = {
 		}
 	}	
     benefits = {
-		rival_border_fort_maintenance = -0.50
 		reinforce_speed = 0.20
 	}
 	ai_will_do = {

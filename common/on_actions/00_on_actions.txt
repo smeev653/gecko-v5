@@ -95,8 +95,8 @@ on_startup = {
 	#}
 	###X###
 	#ai = no within these limits may be redundant as it is already in the effect, but just in case I included it here
-	random_country = {
-		limit = { is_emperor_of_china = yes ai = no }
+	every_country = {
+		limit = { culture_group = tartar ai = no }
 		ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 	}
 	every_country = {
@@ -1567,8 +1567,8 @@ on_adm_development = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
@@ -1636,8 +1636,8 @@ on_dip_development = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
@@ -1705,8 +1705,8 @@ on_mil_development = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
@@ -3882,9 +3882,9 @@ on_province_culture_converted = {
 	on_province_culture_converted_estate_privilges_effect = yes
 	judaism_on_province_culture_converted_effect = yes
 	###X###
-	random_country = {
-		limit = { is_emperor_of_china = yes }
-		ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+	every_country = {
+		limit = { culture_group = tartar }
+		ROOT = { X_culture_group_control_effect = { group = tartar type = union who = PREV } }
 	}
 	every_country = {
 		limit = { culture_group = germanic }
@@ -4166,9 +4166,9 @@ on_province_owner_change = {
 	#########################
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
-			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+		every_country = {
+			limit = { culture_group = tartar }
+			ROOT = { X_culture_group_control_effect = { group = tartar type = union who = PREV } }
 		}
 	}
 	if = {
@@ -4568,11 +4568,11 @@ on_dependency_gained = {
 	}
 	###X###
 	if = {
-		limit = { 
-			is_emperor_of_china = yes
-			FROM = { any_owned_province = { culture_group = tartar } }
+		limit = { FROM = { any_owned_province = { culture_group = tartar } } }
+		ROOT = { 
+			X_culture_group_control_effect = { group = tartar type = union who = PREV }
+			X_culture_group_control_effect = { group = tartar type = union who = FROM }
 		}
-		ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 	}
 	if = {
 		limit = { FROM = { any_owned_province = { culture_group = germanic } } }
@@ -5195,8 +5195,8 @@ on_adm_exploited = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
@@ -5262,8 +5262,8 @@ on_dip_exploited = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
@@ -5329,8 +5329,8 @@ on_mil_exploited = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
@@ -5397,8 +5397,8 @@ on_raze = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
@@ -5465,8 +5465,8 @@ on_concentrate_development = {
 	###X###
 	if = {
 		limit = { culture_group = tartar }
-		random_country = {
-			limit = { is_emperor_of_china = yes }
+		every_country = {
+			limit = { culture_group = tartar }
 			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
 		}
 	}
