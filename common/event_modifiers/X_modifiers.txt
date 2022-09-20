@@ -172,6 +172,12 @@ X_CRI_qaraylar_craftsmen_pmod = {
 	local_development_cost = -0.20
 }
 
+X_CRI_qaraylar_lending_cmod = {
+	inflation_reduction = 0.10
+	interest = -0.25
+	great_project_upgrade_cost = -0.15
+}
+
 X_CRI_trench_gate_pmod = {
 	local_hostile_attrition = 2
 	local_defensiveness = 0.50

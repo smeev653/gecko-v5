@@ -922,3 +922,72 @@ country_event = {
 		clr_country_flag = X_CRI_genoa_cedes_gazaria_cflag
 	}
 }
+
+country_event = {
+	id = X_CRI_events.9
+	title = X_CRI_events.9.t
+	desc = X_CRI_events.9.d1
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	trigger = {
+		NOT = { exists = BYZ }
+		151 = {
+			owner = {
+				NOT = { religion_group = christian }
+			}
+		}
+		OR = {
+			tag = CRI
+			tag = GLH
+		}
+		owns_or_subject_of = 284
+		owns_or_subject_of = 2410
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		set_country_flag = X_CRI_qaraylar_influx_cflag
+	}
+	option = {
+		name = X_CRI_events.9.a
+		random_country = {
+			limit = {
+				owns = 151
+			}
+			ROOT = {
+				reverse_add_opinion = { 
+					who = PREV
+					modifier = opinion_mildly_displeased 
+				}
+			}
+		}
+		add_country_modifier = {
+			name = X_CRI_qaraylar_lending_cmod
+			duration = 14600
+		}
+		284 = {
+			add_base_tax = 1
+		}
+		2410 = {
+			add_base_tax = 1
+		}
+		add_dip_power = -50
+		add_adm_power = -25
+		add_prestige = 5
+	}
+	option = {
+		name = X_CRI_events.9.b
+		151 = {
+			owner = {
+				ROOT = {
+					reverse_add_opinion = { 
+						who = PREV
+						modifier = opinion_pleased 
+					}
+				}
+			}
+		}
+		add_prestige = -15
+	}
+}

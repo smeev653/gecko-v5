@@ -17,6 +17,7 @@ X_culture_union_trigger = {
 	#germanic
 	[[pommeranian] owns_all_provinces = { culture = pommeranian } any_province = { culture = pommeranian } ]
 	[[prussian] owns_all_provinces = { culture = prussian } any_province = { culture = prussian } ]
+	[[baltic_german] owns_all_provinces = { culture = baltic_german } any_province = { culture = baltic_german } ]
 	[[lower_saxon] owns_all_provinces = { culture = lower_saxon } any_province = { culture = lower_saxon } ]
 	[[hannoverian] owns_all_provinces = { culture = hannoverian } any_province = { culture = hannoverian } ]
 	[[hessian] owns_all_provinces = { culture = hessian } any_province = { culture = hessian } ]
@@ -208,6 +209,7 @@ X_culture_exists_trigger = {
 	#germanic
 	[[pommeranian] any_province = { culture = pommeranian } ]
 	[[prussian] any_province = { culture = prussian } ]
+	[[baltic_german] any_province = { culture = baltic_german } ]
 	[[lower_saxon] any_province = { culture = lower_saxon } ]
 	[[hannoverian] any_province = { culture = hannoverian } ]
 	[[hessian] any_province = { culture = hessian } ]
