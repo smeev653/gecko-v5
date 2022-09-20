@@ -13,12 +13,12 @@ estate_gc_noble_levies = {
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
 		NOT = { has_estate_privilege = estate_gc_sipahi }
 	}
-	#mechanics = {
-	#	enables_cossack_regiments
-	#}
-	#modifier = {
-	#	special_unit_forcelimit = 0.125
-	#}
+	mechanics = {
+		enables_cossack_regiments
+	}
+	modifier = {
+		special_unit_forcelimit = 0.125
+	}
 	on_granted = {
 		create_general = {
 			tradition = 30
@@ -36,9 +36,9 @@ estate_gc_noble_levies = {
 	}
 	penalties = {
 	}
-	benefits = {
-
-	}
+	#benefits = {
+	#	can_recruit_hussars = yes
+	#}
 	ai_will_do = {
 		factor = 0
 	}
