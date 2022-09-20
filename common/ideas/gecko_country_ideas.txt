@@ -23,7 +23,6 @@ ARB_ideas = { #Arabian Empire
 		manpower_recovery_speed = 0.2
 	}
 	arb_2 = { #Arabian Horsemanship
-		cavalry_cost = -0.1
 		infantry_power = 0.05
 		cavalry_power = 0.125
 	}
@@ -416,7 +415,6 @@ HAN_ideas = {
 	}
 	han_hanoverian_chancery = {
 		cavalry_power = 0.125
-		cavalry_cost = -0.1
 	}
 	han_herrenhausen_gardens = {
 		prestige = 1
@@ -811,8 +809,7 @@ AHU_ideas = {
 
 EOH_ideas = {
 	start = {
-		cavalry_power = 0.2
-		cavalry_cost = -0.1
+		cavalry_power = 0.15
 		land_morale = 0.1
 		no_religion_penalty = yes
 	}
