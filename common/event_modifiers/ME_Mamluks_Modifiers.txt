@@ -64,7 +64,6 @@ mamluks_no_alternate_paths_modifier_2 = {
 }
 
 mamluks_beylik_loyalties_modifier = {
-	land_morale = 0.05
 	shock_damage = 0.1
 	land_maintenance_modifier = -0.05
 }

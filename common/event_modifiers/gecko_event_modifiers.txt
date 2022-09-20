@@ -353,7 +353,11 @@ sipahi_buff = {
 	is_cossack_modifier = yes
 	cavalry_power = 0.1
 }
-
+mamluk_buff = {
+	is_cossack_modifier = yes
+	fire_damage_received = -0.05
+	cavalry_power = 0.05
+}
 streltsy_buff = {
 	is_streltsy_modifier = yes
 	infantry_power = 0.05

@@ -160,6 +160,7 @@ estate_mamluks = {
 		estate_gc_noble_levies
 		estate_mamluks_promote_leadership
 		estate_mamluks_recruit_turkmen
+		estate_gc_expand_mamluks
 	}
 	
 	agendas = {

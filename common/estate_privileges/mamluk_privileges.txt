@@ -8,10 +8,14 @@ estate_gc_noble_levies = {
 		country_event = { id = gecko.8 }
 	}
 	is_valid = {
+			NOT = {tag = TUR}
+			NOT = {tag = MAM}
+			NOT = {tag = EGY}
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
 		NOT = { has_estate_privilege = estate_gc_sipahi }
+		NOT = { has_estate_privilege = estate_gc_expand_mamluks }
 	}
 	mechanics = {
 		enables_cossack_regiments
@@ -43,7 +47,57 @@ estate_gc_noble_levies = {
 		factor = 0
 	}
 }
+estate_gc_expand_mamluks = {
+	icon = privilege_raise_host
+	max_absolutism = -5
+	loyalty = 0.10
+	influence = 0.20
+	cooldown_years = 100
+	is_valid = {
+		OR = {
+			tag = MAM
+			tag = EGY
+		}	
+		OR = {
+			cavalry_fraction = 0.01
+		}
+	}
+	can_select = {
+		mission_completed = mamluks_prepare_the_mamluks_for_war
+	}
+	mechanics = {
+		enables_cossack_regiments
+	}
+	modifier = {
+		special_unit_forcelimit = 0.125
+	}
+	on_granted = {
+		create_general = {
+			tradition = 50
+		}
+		capital_scope = {
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+			cossack_cavalry = PREV
+		}
+		add_country_modifier = {
+		 name = "mamluk_buff"
+		 duration = -1
+		}
+	}
+	on_revoked = {
+	}
+	penalties = {
+	}
+	benefits = {
 
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
 estate_mamluks_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5

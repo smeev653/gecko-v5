@@ -37,11 +37,6 @@ estate_gc_sipahi = {
 			cossack_cavalry = PREV
 			cossack_cavalry = PREV
 			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
 		}
 	}
 	on_revoked = {
