@@ -547,6 +547,7 @@ republic = {
 				three_classes_reform
 				military_electorate_reform
 				rule_through_plunder_reform
+				gecko_professional_army_reform
 			}
 		}
 		office_selection = {

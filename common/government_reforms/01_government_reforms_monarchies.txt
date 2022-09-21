@@ -3019,10 +3019,10 @@ centralize_reform = {
 		allow = {
 			has_dlc = "Leviathan"
 		}
-		custom_attributes = {
-			centralize_state_no_reform_cost = yes
-			#centralize_state_development = yes
-		}
+		#custom_attributes = {
+		#	#centralize_state_no_reform_cost = yes
+		#	#centralize_state_development = yes
+		#}
 	}
 }
 
@@ -3127,10 +3127,10 @@ centralize_empire_reform = {
 		allow = {
 			has_dlc = "Leviathan"
 		}
-		custom_attributes = {
-			centralize_state_no_reform_cost = yes
-			#centralize_state_development = yes
-		}
+		#custom_attributes = {
+		#	#centralize_state_no_reform_cost = yes
+		#	#centralize_state_development = yes
+		#}
 	}
 }
 
