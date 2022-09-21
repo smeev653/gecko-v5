@@ -18373,7 +18373,7 @@ gme_salt_mines_wieliczka_bochnia = {
 		cost_to_upgrade = { factor = 350 }
 		province_modifiers = {
 			trade_goods_size_modifier = 0.10
-			production_efficiency = 0.10
+			local_production_efficiency  = 0.10
 		}
 		area_modifier = { }
 		country_modifiers = { }
@@ -18384,7 +18384,7 @@ gme_salt_mines_wieliczka_bochnia = {
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
 			trade_goods_size_modifier = 0.15
-			production_efficiency = 0.15
+			local_production_efficiency  = 0.15
 		}
 		area_modifier = { }
 		country_modifiers = { }
