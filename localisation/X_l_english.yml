@@ -313,6 +313,10 @@
  desc_X_estate_nomadic_tribes_privilege_1_pmod:0 ""
  X_CRI_qaraylar_lending_cmod:0 "Qaraylar Lending"
  desc_X_CRI_qaraylar_lending_cmod:0 ""
+ X_CRI_rex_russiae_cmod:0 "Rex Russiae"
+ desc_X_CRI_rex_russiae_cmod:0 ""
+ X_CRI_batus_tribute_cmod:0 "Batu's Tribute"
+ desc_X_CRI_batus_tribute_cmod:0 ""
  #Modifier tooltips
  X_CRI_gateway_protected_tt:0 "until §YOr Qapi§! is successfully sieged"
  #Estate Modifiers
@@ -369,7 +373,7 @@
  X_CRI_mission_11_desc:0 ""
  X_CRI_mission_12_title:0 "Conquer the Wild Fields"
  X_CRI_mission_12_desc:0 ""
- X_CRI_mission_13_title:0 "Control the Dniepr"
+ X_CRI_mission_13_title:0 "Control the Özü"
  X_CRI_mission_13_desc:0 ""
  X_CRI_mission_14_title:0 "Ruthenian Claim"
  X_CRI_mission_14_desc:0 ""
@@ -385,6 +389,8 @@
  X_CRI_mission_8_tt:0 "All provinces in the §YCrimea§! trade node are owned by §Y[Root.GetName]§!."
  X_CRI_mission_9_tt:0 "Every owned province in the §Y[284.GetRegionName]§! gains §G1§! Base Tax and Base Manpower.\nEvery owned province NOT of §Y[Root.Culture.GetGroupName]§! culture will become §Y[Root.Culture.GetName]§!."
  X_CRI_mission_12_tt:0 " provinces in the §Y[282.GetAreaName]§! area, §Y[1974.GetAreaName]§! area, §Y[283.GetAreaName]§! area, §Y[281.GetAreaName]§! area, §Y[280.GetAreaName]§! area, §Y[290.GetAreaName]§! area, and §Y[289.GetAreaName]§! area owned by §Y[Root.GetName]§! or its Subjects."
+ X_CRI_mission_13_tt:0 "   Owned by the Subject."
+ X_CRI_mission_14_tt:0 "   Owned by the Subject."
  #Events
  X_CRI_events.1.t:0 "Tatar Yoke Crushed"
  X_CRI_events.1.d1:0 ""

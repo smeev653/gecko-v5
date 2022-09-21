@@ -2943,6 +2943,7 @@ X_CRI_slot_3 = {
         required_missions = { X_CRI_mission_10 }
 		position = 4
 		trigger = {
+			always = no
 		}
 		effect = {
 		}
@@ -3004,6 +3005,7 @@ X_CRI_slot_4 = {
 				type = all
 				country_or_subject_holds = ROOT
 			}
+			always = no
 		}
 		effect = {
 		}
@@ -3017,6 +3019,7 @@ X_CRI_slot_4 = {
 		}
 		position = 4
 		trigger = {
+			always = no
 		}
 		effect = {
 		}
@@ -3027,6 +3030,7 @@ X_CRI_slot_4 = {
         required_missions = { X_CRI_mission_14 }
 		position = 5
 		trigger = {
+			always = no
 		}
 		effect = {
 		}
@@ -3085,16 +3089,119 @@ X_CRI_slot_5 = {
 			}
 		}
 		effect = {
+			red_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			volhynia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			podolia_volhynia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chernigov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	#Control the Dniepr
+	#Control the Özü
 	X_CRI_mission_13 = {
         icon = mission_advance_to_the_dnieper
         required_missions = { X_CRI_mission_12 }
 		position = 3
 		trigger = {
+			west_dniepr_area = {
+				type = all
+				country_or_subject_holds = ROOT		
+			}
+			east_dniepr_area = {
+				type = all
+				country_or_subject_holds = ROOT		
+			}
+			all_subject_country = {
+				OR = {
+					west_dniepr_area = {
+						custom_trigger_tooltip = {
+							tooltip = X_CRI_mission_13_tt
+							owned_by = THIS
+						}
+					}
+					east_dniepr_area = {
+						custom_trigger_tooltip = {
+							tooltip = X_CRI_mission_13_tt
+							owned_by = THIS
+						}
+					}
+				}
+				NOT = { liberty_desire = 50 }
+			}
 		}
 		effect = {
+			smolensk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			white_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			minsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pripyat_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			280 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 25
+					key = "Reduced Polish-Lithuanian Meddling"
+				}
+			}
 		}
 	}
 	#Ruthenian Claim
@@ -3103,10 +3210,108 @@ X_CRI_slot_5 = {
         required_missions = { X_CRI_mission_13 }
 		position = 4
 		trigger = {
-			#red ruthenia area
-			#galicia area
+			red_ruthenia_area = {
+				type = all
+				country_or_subject_holds = ROOT		
+			}
+			volhynia_area = {
+				type = all
+				country_or_subject_holds = ROOT		
+			}
+			all_subject_country = {
+				OR = {
+					red_ruthenia_area = {
+						custom_trigger_tooltip = {
+							tooltip = X_CRI_mission_14_tt
+							owned_by = THIS
+						}
+					}
+					volhynia_area = {
+						custom_trigger_tooltip = {
+							tooltip = X_CRI_mission_14_tt
+							owned_by = THIS
+						}
+					}
+				}
+				NOT = { liberty_desire = 50 }
+			}
 		}
 		effect = {
+			ruthenia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			poland_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					OR = {
+						NOT = { exists = VOL }
+						VOL = {
+							is_subject_of = ROOT 
+						}
+					}
+				}
+				every_province = {
+					limit = {
+						is_core = VOL
+					}
+					cede_province = VOL
+				}
+				create_subject = {
+					subject_type = tributary_state
+					subject = VOL
+				}
+				if = {
+					limit = {
+						2961 = { is_core = VOL }
+					}
+					2961 = { X_center_of_trade_effect = yes }
+				}
+				if = {
+					limit = {
+						2962 = { is_core = VOL }
+					}
+					2962 = { X_center_of_trade_effect = yes }
+				}
+				VOL = {
+					every_owned_province = {
+						add_base_tax = 1
+						add_base_production = 1
+						add_base_manpower = 1
+					}
+					add_country_modifier = {
+						name = X_CRI_rex_russiae_cmod
+						duration = 7300
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						owns = 2961
+					}
+					2961 = { X_center_of_trade_effect = yes }
+				}
+				if = {
+					limit = {
+						owns = 2962
+					}
+					2962 = { X_center_of_trade_effect = yes }
+				}
+				add_country_modifier = {
+					name = X_CRI_batus_tribute_cmod
+					duration = 7300
+				}
+			}
 		}
 	}
 	#Avenge the Great Troubles
@@ -3115,6 +3320,7 @@ X_CRI_slot_5 = {
         required_missions = { X_CRI_mission_14 }
 		position = 5
 		trigger = {
+			always = no
 		}
 		effect = {
 		}

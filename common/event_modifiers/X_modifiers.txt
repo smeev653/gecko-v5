@@ -197,6 +197,14 @@ X_CRI_rights_of_the_khan_cmod = {
 X_estate_burghers_privilege_1_pmod = {
 	local_production_efficiency = 0.75
 }
+
+X_CRI_rex_russiae_cmod = {
+	global_tax_income = 36
+}
+
+X_CRI_batus_tribute_cmod = {
+	vassal_income = 0.15
+}
 ########################################
 # Tiered Modifiers
 ########################################
