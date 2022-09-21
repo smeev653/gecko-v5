@@ -112,7 +112,7 @@ gc_edict_feudal_de_jure_law_1 = {
 	}
 	
 	modifier = { # OBS: Modify AI accordingly if this is changed
-		local_tax_modifier = 0.66
+		local_tax_modifier = 0.5
 	}
 	
 	color = {  116 198 240  }
