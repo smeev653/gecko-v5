@@ -4943,6 +4943,8 @@ true_mahdi = {
 
 unified_islam = {
 	land_morale = 0.1
+	all_power_cost = -0.05
+	manpower_in_true_faith_provinces = 0.1
 	global_missionary_strength = 0.02
 	tolerance_own = 2
 	tolerance_heretic = 1
