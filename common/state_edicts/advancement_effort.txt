@@ -72,7 +72,7 @@ gc_edict_advancement_effort_1 = {
 	}
 	
 	modifier = {
-		local_institution_spread = 0.66
+		local_institution_spread = 0.5
 	}
 	
 	color = { 50 173 192 }

@@ -51,7 +51,7 @@ gc_edict_defensive_edict_1 = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.30
+		local_defensiveness = 0.33
 	}
 	
 	color = {  46 114 55  }

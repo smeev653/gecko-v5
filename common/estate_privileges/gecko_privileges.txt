@@ -20,9 +20,9 @@ estate_gc_sipahi = {
 	mechanics = {
 		enables_cossack_regiments
 	}
-	mechanics = {
-		exempt_from_seize_land
-	}
+	#mechanics = {
+	#	exempt_from_seize_land
+	#}
 	modifier = {
 		cavalry_cost = -0.1
 		special_unit_forcelimit = 0.125
@@ -85,10 +85,10 @@ estate_gc_expand_sipahi = {
 			cossack_cavalry = PREV
 			cossack_cavalry = PREV
 		}
-		add_country_modifier = {
-		 name = "sipahi_buff"
-		 duration = -1
-		}
+		#add_country_modifier = {
+		# name = "sipahi_buff"
+		# duration = -1
+		#}
 		
 	}
 	on_revoked = {

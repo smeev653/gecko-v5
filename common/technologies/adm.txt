@@ -104,14 +104,14 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.01
-	state_house = yes
+	
 
 }
 
 technology = { #Modern Theocracy
 	# Tech 10
 	year = 1531
-	
+	state_house = yes
 	allowed_idea_groups = 3
 	theocratic_government = yes
 }

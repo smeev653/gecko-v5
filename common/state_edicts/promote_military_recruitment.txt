@@ -73,7 +73,7 @@ gc_edict_promote_military_recruitment_1 = {
 	}
 	
 	modifier = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.4
 	}
 	
 	color = {  188 90 27  }
