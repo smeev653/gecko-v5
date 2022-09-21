@@ -1224,16 +1224,16 @@ MAM_missions_4 = {
 				add_adm_power = 100
 			}
 			else = {
-				AKK = {
-					every_owned_province = {
-						limit = {
-							region = mashriq_region
-						}
-						remove_core = AKK
-						cede_province = IRQ
-					}	
+				every_province = {
+					limit = {
+						region = mashriq_region
+						owned_by = AKK
+						is_core = IRQ
+					}
+					remove_core = AKK
+					cede_province = IRQ
 				}
-			}	
+			}
 			if = {
 				limit = {
 					exists = QAR
