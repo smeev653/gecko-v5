@@ -85,10 +85,10 @@ estate_gc_expand_sipahi = {
 			cossack_cavalry = PREV
 			cossack_cavalry = PREV
 		}
-		add_country_modifier = {
-		 name = "sipahi_buff"
-		 duration = -1
-		}
+		#add_country_modifier = {
+		# name = "sipahi_buff"
+		# duration = -1
+		#}
 		
 	}
 	on_revoked = {
