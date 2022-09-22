@@ -398,13 +398,13 @@ army_organiser = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_forcelimit_modifier = 0.1
+	land_forcelimit_modifier = 0.075
 	#mercenary_manpower = 0.15
 	
 	skill_scaled_modifier = { 
 		modifier = { 
 			meritocracy = 0.25
-			land_forcelimit_modifier = 0.05
+			land_forcelimit_modifier = 0.025
 		} 
 	}
 
@@ -445,7 +445,7 @@ quartermaster = {
 	monarch_power = MIL
 	
 	# Bonus
-	reinforce_speed = 0.15
+	reinforce_speed = 0.05
 
 	skill_scaled_modifier = { 
 		modifier = { 
@@ -499,7 +499,7 @@ fortification_expert = {
 	monarch_power = MIL
 	
 	# Bonus
-	defensiveness = 0.15
+	defensiveness = 0.10
 	
 	skill_scaled_modifier = { 
 		modifier = { 
