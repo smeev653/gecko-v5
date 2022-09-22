@@ -3199,14 +3199,14 @@ regional_council_reform = {
 		}
 	}
 	modifiers = {
-		state_maintenance_modifier = -0.33
+		state_maintenance_modifier = -0.2
 	}
-	conditional = {
-		allow = { has_dlc = "Mandate of Heaven" }
-		custom_attributes = {
-			unlock_special_state_edicts = yes
-		}
-	}
+	#conditional = {
+	#	allow = { has_dlc = "Mandate of Heaven" }
+	#	#custom_attributes = {
+	#	#	unlock_special_state_edicts = yes
+	#	#}
+	#}
 }
 
 representation_of_the_crown_reform = {
@@ -3810,7 +3810,7 @@ letat_cest_moi_reform = {
 	icon = "letat_cest_moi"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity = 250
+		governing_capacity = 150
 	}
 	ai = {
 		factor = 1.5
@@ -3825,8 +3825,8 @@ regional_representation_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
 	modifiers = {
-		min_autonomy_in_territories = -0.05
-		core_creation = -0.05
+		min_autonomy_in_territories = -0.1
+		#core_creation = -0.05
 	}
 }
 

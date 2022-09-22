@@ -2513,8 +2513,8 @@ broaden_executive_powers_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
 	modifiers = {
-		stability_cost_modifier = -0.15
-		all_power_cost = -0.02
+		stability_cost_modifier = -0.1
+		all_power_cost = -0.01
 	}
 	ai = {
 		factor = 1
