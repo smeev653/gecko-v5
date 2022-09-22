@@ -1233,17 +1233,7 @@ MAM_missions_4 = {
 					remove_core = AKK
 					cede_province = IRQ
 				}
-			}
-			if = {
-				limit = {
-					exists = QAR
-				}
-				add_casus_belli = {
-					target = QAR
-					type = cb_border_war
-				}
-			}
-			else = {
+			}	
 				al_jazira_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -1258,7 +1248,7 @@ MAM_missions_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-			}
+			
 		}
 	}
 	
