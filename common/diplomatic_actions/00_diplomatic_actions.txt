@@ -793,9 +793,11 @@ allianceaction = {
 				}	
 				
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}	
 				}
 			}
 		}	
@@ -842,9 +844,11 @@ allianceaction = {
 				}
 				
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}
 		}	
@@ -866,9 +870,11 @@ allianceaction = {
 			ROOT = {
 				tag = HUN
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}	
 		}	
@@ -889,9 +895,11 @@ allianceaction = {
 			ROOT = {
 				tag = TUR
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}
 		}	
@@ -912,9 +920,11 @@ allianceaction = {
 			ROOT = {
 				tag = HUN
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}	
 		}	
@@ -935,9 +945,11 @@ allianceaction = {
 			ROOT = {
 					tag = TUR
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}
 		}	
@@ -958,9 +970,11 @@ allianceaction = {
 			ROOT = {
 				tag = ETH
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}	
 		}	
@@ -980,9 +994,11 @@ allianceaction = {
 			ROOT = {
 					tag = FRA
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}
 		}	
@@ -1003,9 +1019,11 @@ allianceaction = {
 			ROOT = {
 				tag = ENG
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}	
 		}	
@@ -1025,9 +1043,11 @@ allianceaction = {
 			ROOT = {
 					tag = FRA
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}	
 		}	
@@ -1048,9 +1068,11 @@ allianceaction = {
 			ROOT = {
 				tag = BUR
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}	
 		}	
@@ -1070,9 +1092,11 @@ allianceaction = {
 			ROOT = {
 				tag = BUR
 				NOT = {
-				has_reform = clergy_in_administration_reform
-				has_reform = of_noble_bearing_reform
-				has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}
 		}	
@@ -1093,9 +1117,11 @@ allianceaction = {
 			ROOT = {
 				tag = ENG
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}	
 		}	
@@ -1115,9 +1141,11 @@ allianceaction = {
 			ROOT = {
 				tag = MOS
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+					}
 				}
 			}
 		}	
@@ -1138,9 +1166,11 @@ allianceaction = {
 			ROOT = {
 				tag = CRI
 				NOT = {
-					has_reform = retain_tribal_hierarchy_reform
-					has_reform = decentralize_reform
-					has_reform = centralize_reform
+					AND = {
+						has_reform = retain_tribal_hierarchy_reform
+						has_reform = decentralize_reform
+						has_reform = centralize_reform
+					}
 				}
 			}	
 		}	
@@ -1160,9 +1190,11 @@ allianceaction = {
 			ROOT = {
 					tag = POL
 				NOT = {
+					AND = {	
 					has_reform = clergy_in_administration_reform
 					has_reform = of_noble_bearing_reform
 					has_reform = meritocratic_focus_reform
+					}
 				}
 			}
 		}	
@@ -1183,9 +1215,11 @@ allianceaction = {
 			ROOT = {
 				tag = CRI
 				NOT = {
-					has_reform = retain_tribal_hierarchy_reform
-					has_reform = decentralize_reform
-					has_reform = centralize_reform
+					AND = {
+						has_reform = retain_tribal_hierarchy_reform
+						has_reform = decentralize_reform
+						has_reform = centralize_reform
+					}
 				}
 			}
 		}	
@@ -1205,9 +1239,11 @@ allianceaction = {
 			ROOT = {
 					tag = MOS
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {	
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+						}
 				}
 			}	
 		}	
@@ -1228,9 +1264,11 @@ allianceaction = {
 			ROOT = {
 				tag = POL
 				NOT = {
-					has_reform = clergy_in_administration_reform
-					has_reform = of_noble_bearing_reform
-					has_reform = meritocratic_focus_reform
+					AND = {	
+						has_reform = clergy_in_administration_reform
+						has_reform = of_noble_bearing_reform
+						has_reform = meritocratic_focus_reform
+						}
 				}
 			}	
 		}	
