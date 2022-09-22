@@ -16,4 +16,4 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-add_province_triggered_modifier=gc_catanzaro_silk
+#add_province_triggered_modifier=gc_catanzaro_silk

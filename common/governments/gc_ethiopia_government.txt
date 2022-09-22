@@ -42,7 +42,7 @@ gc_ethiopian_government = {
 				partial_secularisation_reform
 				maintain_religious_head_reform
 				hereditary_religious_leadership_reform
-				battle_papacy_reform
+				battle_pope_reform
 				conciliarism_reform
 			}
 		}

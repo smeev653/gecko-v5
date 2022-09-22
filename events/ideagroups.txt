@@ -4122,7 +4122,27 @@ country_event = {
 #######################################
 # Maritime Ideas
 #####################################
-
+country_event = {
+	id = ideagroups.300
+	title = "EVTNAME818"
+	desc = "EVTDESC818"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = humanist_ideas	
+	}		
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTB818A"
+		add_stability = -1
+	}
+}
 # Popular Support for our Grand navy
 country_event = {
 	id = ideagroups.1000

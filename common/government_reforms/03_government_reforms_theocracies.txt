@@ -693,6 +693,7 @@ monastic_breweries_reform = {
 			primary_culture = scottish
 		}
 		any_owned_province = {
+			owned_by = ROOT
 			OR = {
 				trade_goods = wine
 				trade_goods = grain

@@ -1906,7 +1906,7 @@ has_reached_government_reform_tier = {
 				has_reform = hereditary_religious_leadership_reform
 				has_reform = crown_leader_reform
 				has_reform = proclaim_republic_reform
-				has_reform = battle_papacy_reform
+				has_reform = battle_pope_reform
 				has_reform = conciliarism_reform
 				#Tribes
 				has_reform = horde_barbaric_despoilers_reform
