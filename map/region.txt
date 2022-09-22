@@ -253,7 +253,6 @@ poland_region = {
 	areas = {
 		wielkopolska_area
 		malopolska_area
-		red_ruthenia_area
 		mazovia_area
 		silesia_area
 		opole_area
@@ -277,6 +276,7 @@ ruthenia_region = {
 		podlasie_area
 		volhynia_area
 		chernigov_area
+		red_ruthenia_area
 	}
 }
 

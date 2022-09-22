@@ -199,7 +199,7 @@ X_estate_burghers_privilege_1_pmod = {
 }
 
 X_CRI_rex_russiae_cmod = {
-	global_tax_income = 36
+	global_tax_income = 24
 }
 
 X_CRI_batus_tribute_cmod = {

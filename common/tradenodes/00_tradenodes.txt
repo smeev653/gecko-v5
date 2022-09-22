@@ -832,6 +832,7 @@ astrakhan = {
 		2421 4265 4267 #volga_area
 		475 1965 1966 2420 2444	#bashkiria_area
 		465 470 471 472 2366 #nogai_area
+		291 298 299 2408 #sloboda_ukraine_area
 	}
 }
 
@@ -937,7 +938,6 @@ kiev = {
 		}
 	}
 	members = {
-		291 298 299 2408 #sloboda_ukraine_area
 		1945 289 4543 #chernigov_area
 		290 2407 4542 #east_dniepr_area
 		280 1942 1944 4247 #west_dniepr_area
