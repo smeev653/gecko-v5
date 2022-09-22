@@ -101,8 +101,17 @@ just_personality = {
 		}
 	}
 
-	easy_war_chance_multiplier = 0.5
-	fair_fights = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	global_unrest = -2
 	nation_designer_cost = 2
@@ -1534,14 +1543,18 @@ conqueror_personality = {
 		
 	}
 	years_of_nationalism = -5
-	nation_designer_cost = 2
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
 	
-	easy_war_chance_multiplier = 2
-	war_chance_multiplier = 1.75
-	building_budget_multiplier = 0.2
-	gift_chance = -50
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
 	wants_land = yes
-	
+	nation_designer_cost = 2
 	chance = {
 		
 	}
@@ -1602,7 +1615,17 @@ tactical_genius_personality = {
 	chance = {
 	}
 	
-	easy_war_chance_multiplier = 1.4
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	leader_land_manuever = 1
 	nation_designer_cost = 2
@@ -1660,7 +1683,17 @@ bold_fighter_personality = {
 	chance = {
 	}
 	
-	enemy_strength_multiplier = 0.85
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	leader_land_shock = 1
 	nation_designer_cost = 2
@@ -1706,11 +1739,19 @@ strict_personality = {
 	chance = {
 	}
 	
-	wants_avoid_debase = yes
-	wants_avoid_loans = yes
-	wants_ecumenical_council = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
 	
-	discipline = 0.05
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
+	
+	discipline = 0.025
 
 	nation_designer_cost = 5
 } #1 easier event
@@ -1771,6 +1812,8 @@ inspiring_leader_personality = {
 	
 	chance = {
 	}
+	building_budget_multiplier = 2
+	gift_chance = 65
 	
 	land_morale = 0.05
 	nation_designer_cost = 5
@@ -1821,8 +1864,17 @@ martial_educator_personality = {
 	chance = {
 	}
 	
-	easy_war_chance_multiplier = 1.2
-	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	army_tradition_decay = -0.01
 	nation_designer_cost = 2
@@ -1880,8 +1932,17 @@ navigator_personality = {
 	chance = {
 	}
 	
-	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
-	wants_explorers = yes
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
+	
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	ship_durability = 0.1
 	nation_designer_cost = 2
@@ -1934,8 +1995,17 @@ fierce_negotiator_personality = {
 	chance = {
 		
 	}
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
 	
-	peace_desire = -10
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
 	
 	merc_maintenance_modifier = -0.25
 	nation_designer_cost = 2
@@ -1948,8 +2018,7 @@ fierce_negotiator_personality = {
 babbling_buffoon_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = { ruler_has_personality = charismatic_negotiator_personality }
-			NOT = { ruler_has_personality = silver_tongue_personality }
+			always = no
 		}
 	
 		chance = {
@@ -1975,8 +2044,7 @@ babbling_buffoon_personality = {
 
 	heir_allow = {
 		allow = {
-			NOT = { heir_has_personality = charismatic_negotiator_personality }
-			NOT = { heir_has_personality = silver_tongue_personality }
+			always = no
 		}
 	
 		chance = {
@@ -2121,7 +2189,7 @@ embezzler_personality = {
 	}
 
 	allow = {
-		
+		always = no
 	}
 	
 	chance = {
@@ -2227,19 +2295,26 @@ infertile_personality = {
 	}
 
 	allow = {
-		NOT = { has_reform = ottoman_government }
-		government = monarchy
-		NOT = { has_government_attribute = states_general_mechanic }
-		has_government_attribute = heir
+		always = no
 	}
 	
 	chance = {
 		
 	}
 	
-	royal_marriage_acceptance = -20
+	different_religion_war_multiplier = 2.5
+	war_chance_multiplier = 3.25
+	easy_war_chance_multiplier = 2.75
+	enemy_strength_multiplier = 0.8
+	building_budget_multiplier = 2
+	gift_chance = 65
 	
-	heir_chance = -0.5
+	underestimate_ae = yes
+	wants_condottieri = yes
+	wants_avoid_debase = yes
+	wants_land = yes
+	
+	heir_chance = -2
 	nation_designer_cost = -2
 }
 drunkard_personality = {
@@ -2328,7 +2403,7 @@ drunkard_personality = {
 	}
 
 	allow = {
-		
+		always = no
 	}
 	
 	chance = {
@@ -2425,9 +2500,7 @@ sinner_personality = {
 	
 	allow = {
 		OR = {
-			religion_group = christian
-			religion_group = muslim
-			religion_group = jewish_group
+			always = no
 		}
 	}
 	
@@ -2521,6 +2594,7 @@ greedy_personality = {
 	}
 	
 	allow = {
+		always = no
 	}
 	
 	chance = {
@@ -2569,8 +2643,7 @@ cruel_personality = {
 
 	ruler_allow = {
 		allow = {
-			NOT = { ruler_has_personality = just_personality }
-			NOT = { ruler_has_personality = kind_hearted_personality }
+			always = no
 		}
 	
 		chance = {
@@ -2596,8 +2669,7 @@ cruel_personality = {
 
 	heir_allow = {
 		allow = {
-			NOT = { heir_has_personality = just_personality }
-			NOT = { heir_has_personality = kind_hearted_personality }
+			always = no
 		}
 	
 		chance = {
@@ -2653,7 +2725,7 @@ cruel_personality = {
 	razing = yes
 	lower_autonomy = yes
 	
-	global_unrest = 2
+	global_unrest = 1
 	nation_designer_cost = -2
 } #4 less bad
 naive_personality = {
@@ -2751,7 +2823,7 @@ naive_personality = {
 	}
 
 	allow = {
-		
+		always = no
 	}
 	
 	chance = {
@@ -2856,6 +2928,7 @@ craven_personality = {
 	}
 	
 	allow = {
+	 always = no
 	}
 	
 	chance = {
@@ -2948,7 +3021,8 @@ loose_lips_personality = {
 		}
 	}
 
-	allow = {		
+	allow = {
+		always = no
 	}
 	
 	chance = {
@@ -3039,6 +3113,7 @@ obsessive_perfectionist_personality = {
 	}
 	
 	allow = {
+		always = no
 	}
 	
 	chance = {
@@ -3132,7 +3207,7 @@ malevolent_personality = {
 	}
 	
 	allow = {
-		
+		always = no
 	}
 	
 	chance = {
