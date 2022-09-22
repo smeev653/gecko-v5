@@ -184,8 +184,8 @@ derbend_organization_reform = { #tier 3
 		has_reform = ottoman_government
 	}
 	modifiers = {
-		global_tax_modifier = -0.10
-		global_manpower_modifier = 0.1
+		global_tax_modifier = -0.05
+		global_manpower_modifier = 0.05
 		defensiveness = 0.10
 		global_autonomy = -0.025
 		
