@@ -7055,10 +7055,6 @@ estate_church_heir_shrine = {
 		}
 		modifier = {
 			factor = 0
-			has_mission = kon_collect_cults
-		}
-		modifier = {
-			factor = 0
 			has_mission = zim_cults
 		}
 	}

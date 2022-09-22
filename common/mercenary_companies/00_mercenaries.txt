@@ -1256,7 +1256,6 @@ merc_free_swiss_guard = {
 					}
 		}
 		OR = {
-			capital_scope = { superregion = europe_superregion }
 			any_owned_province = {
 				OR = {
 					area = switzerland_area

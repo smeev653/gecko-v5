@@ -1939,108 +1939,6 @@ estate_burghers_trade_post_in_india = {
     }
 }
 
-
-#Trade post in Malacca
-estate_burghers_trade_post_in_malacca = {
-	can_select = {
-		is_at_war = no
-		capital_scope = {
-			continent = europe
-		}
-		num_of_ports = 6
-		NOT = {
-			any_owned_province = {
-				trade_company_region = trade_company_indonesia
-			}
-		}
-		any_province = {
-			trade_company_region = trade_company_indonesia
-			has_port = yes
-			range = ROOT
-			has_discovered = ROOT
-		}
-	}
-	selection_weight = {
-		factor = 2.5
-		modifier = {
-			factor = 1.5
-			num_of_colonists = 1
-		}
-		modifier = {
-			factor = 2
-			num_of_trade_companies = 2
-		}
-		modifier = {
-			factor = 2
-			num_of_strong_trade_companies = 2
-		}
-	}
-	provinces_to_highlight = {
-		trade_company_region = trade_company_indonesia
-		OR = {
-			trade_goods = spices
-			trade_goods = cloves
-		}
-		has_port = yes
-	}
-	task_requirements = {
-		any_owned_province = {
-			trade_company_region = trade_company_indonesia
-			OR = {
-				trade_goods = spices
-				trade_goods = cloves
-			}
-			has_port = yes
-		}
-	}
-	task_completed_effect = {
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 10
-		}
-		if = {
-			limit = {
-				NOT = {
-					any_owned_province = {
-						trade_company_region = trade_company_indonesia
-						OR = {
-							trade_goods = spices
-							trade_goods = cloves
-						}
-						has_port = yes
-					}
-				}
-			}
-			custom_tooltip = estate_burghers_trade_post_in_malacca_reward_tooltip
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					trade_company_region = trade_company_indonesia
-					OR = {
-						trade_goods = spices
-						trade_goods = cloves
-					}
-					has_port = yes
-				}
-				add_province_modifier = {
-					name = trade_post_in_malacca
-					duration = -1
-				}
-			}
-		}
-	}
-    failing_effect = {
-        add_estate_loyalty_modifier = {
-            estate = estate_burghers
-			desc = EST_VAL_AGENDA_DENIED
-			loyalty = -5
-			duration = 7300
-        }
-    }
-}
-
-
 #Trade post in China
 estate_burghers_trade_post_in_china = {
 	can_select = {
@@ -2208,11 +2106,9 @@ estate_burghers_spice_trade = {
 		capital_scope = {
 			continent = europe
 		}
-		any_owned_province = {
-			OR = {
+		any_owned_province = {W
 				superregion = india_superregion
-				trade_company_region = trade_company_indonesia
-			}
+			
 		}
 		NOT = { spices = 3 }
 	}

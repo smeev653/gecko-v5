@@ -1003,9 +1003,9 @@ kongo_conquest_missions_slot = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
 		}
 	}
+	
 
 	kon_greatest_power_kongo = {
 		icon = mission_kon_greatest_power_kongo
