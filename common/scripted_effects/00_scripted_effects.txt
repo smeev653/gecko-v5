@@ -1824,6 +1824,53 @@ unlock_estate = {
 	]
 }
 
+#Country effect
+##########################################################
+# Has the localization for the following estates:
+# estate_brahmins
+# estate_church
+# estate_maratha
+# estate_nobles
+# estate_burghers
+# estate_vaisyas
+# estate_cossacks
+# estate_nomadic_tribes
+# estate_dhimmi
+# estate_jains
+# estate_rajput
+##########################################################
+# Unlocks the estate without any kind of condition
+enable_estate_effect = {
+	custom_tooltip = mechanic_enables_$estate$_yes
+	hidden_effect = {
+		clr_country_flag = disables_$estate$_flag
+		set_country_flag = enables_$estate$_flag
+	}
+}
+
+#Country effect
+##########################################################
+# Has the localization for the following estates:
+# estate_brahmins
+# estate_church
+# estate_maratha
+# estate_nobles
+# estate_burghers
+# estate_vaisyas
+# estate_cossacks
+# estate_nomadic_tribes
+# estate_dhimmi
+# estate_jains
+# estate_rajput
+##########################################################
+# Locks the estate even if they would 
+disable_estate_effect = {
+	custom_tooltip = mechanic_disables_$estate$_yes
+	hidden_effect = {
+		set_country_flag = disables_$estate$_flag
+		clr_country_flag = enables_$estate$_flag
+	}
+}
 halves_parliament_bribe_costs = {
     if = {
         limit = { has_dlc = "Common Sense" }
