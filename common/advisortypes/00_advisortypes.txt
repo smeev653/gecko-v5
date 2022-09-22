@@ -212,7 +212,7 @@ naval_reformer = {
 	
 	# Bonus
 	
-	naval_morale = 0.05
+	naval_morale = 0.03
 	
 	skill_scaled_modifier = { 
 		modifier = { 
@@ -243,7 +243,7 @@ trader = {
 	monarch_power = DIP
 	
 	# Bonus
-	trade_efficiency = 0.05
+	trade_efficiency = 0.025
 	
 	skill_scaled_modifier = { 
 		modifier = { 
@@ -375,7 +375,7 @@ army_reformer = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_morale = 0.05
+	land_morale = 0.03
 
 	skill_scaled_modifier = { 
 		modifier = { 
@@ -422,7 +422,7 @@ commandant = {
 	monarch_power = MIL
 	
 	# Bonus
-	discipline = 0.03
+	discipline = 0.025
 	
 	skill_scaled_modifier = { 
 		modifier = { 
