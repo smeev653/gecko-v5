@@ -25,7 +25,7 @@ estate_gc_sipahi = {
 	#}
 	modifier = {
 		cavalry_cost = -0.1
-		special_unit_forcelimit = 0.125
+		special_unit_forcelimit = 0.1
 	}
 	on_granted = {
 		create_general = {
@@ -67,7 +67,7 @@ estate_gc_expand_sipahi = {
 		has_reform = derbend_organization_reform
 	}
 	#modifier = {
-	#	special_unit_forcelimit = 0.125
+	#	special_unit_forcelimit = 0.1
 	#}
 	on_granted = {
 		create_general = {

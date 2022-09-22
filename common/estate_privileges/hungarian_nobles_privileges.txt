@@ -89,7 +89,7 @@ gc_hungarian_nobles_privilege_3 = {
 	is_valid = {
 	}
 	modifier = {
-		special_unit_forcelimit = 0.17
+		special_unit_forcelimit = 0.1
 	}
 	penalties = {
 	}
