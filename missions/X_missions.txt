@@ -3270,19 +3270,36 @@ X_CRI_slot_5 = {
 					subject_type = tributary_state
 					subject = VOL
 				}
-				if = {
-					limit = {
-						2961 = { is_core = VOL }
-					}
-					2961 = { X_center_of_trade_effect = yes }
-				}
-				if = {
-					limit = {
-						2962 = { is_core = VOL }
-					}
-					2962 = { X_center_of_trade_effect = yes }
-				}
 				VOL = {
+					if = {
+						limit = {
+							2961 = { is_core = VOL }
+						}
+						2961 = { X_center_of_trade_effect = yes }
+					}
+					if = {
+						limit = {
+							279 = { is_core = VOL }
+						}
+						279 = { X_center_of_trade_effect = yes }
+					}
+					if = {
+						limit = {
+							261 = { is_core = VOL }
+						}
+						261 = {
+							if = {
+								limit = { has_building = cathedral }
+								add_base_tax = 3
+							}
+							else_if = {
+								limit = { has_building = temple }
+								hidden_effect = { remove_building = temple }
+								add_building = cathedral
+							}
+							else = { add_building = cathedral }
+						}
+					}
 					every_owned_province = {
 						add_base_tax = 1
 						add_base_production = 1
@@ -3297,15 +3314,32 @@ X_CRI_slot_5 = {
 			else = {
 				if = {
 					limit = {
-						owns = 2961
+						2961 = { country_or_subject_holds = ROOT }
 					}
 					2961 = { X_center_of_trade_effect = yes }
 				}
 				if = {
 					limit = {
-						owns = 2962
+						279 = { country_or_subject_holds = ROOT }
 					}
-					2962 = { X_center_of_trade_effect = yes }
+					279 = { X_center_of_trade_effect = yes }
+				}
+				if = {
+					limit = {
+						261 = { country_or_subject_holds = ROOT }
+					}
+					261 = {
+						if = {
+							limit = { has_building = cathedral }
+							add_base_tax = 3
+						}
+						else_if = {
+							limit = { has_building = temple }
+							hidden_effect = { remove_building = temple }
+							add_building = cathedral
+						}
+						else = { add_building = cathedral }
+					}
 				}
 				add_country_modifier = {
 					name = X_CRI_batus_tribute_cmod

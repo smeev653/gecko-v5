@@ -865,6 +865,48 @@ siberia = {
 	}
 }
 	
+crimea = {
+	location = 1322
+	color = {
+		59 158 125 
+	}
+	outgoing = {
+		name = "ragusa"
+		path = {
+			1322 2961 262 
+		}
+		control = {
+			3314.000000 1403.000000 
+		}	
+	}
+	outgoing = {
+		name = "kiev"
+		path = {
+			6006 1944
+		}
+		control = {
+		}	
+	}
+	outgoing = {
+		name = "pest"
+		path = {
+			4706 2998 4531 160 2746 156 1954 155 
+		}
+		control = {
+			3266.000000 1430.500000 3218.000000 1466.000000 3180.000000 1456.000000 3147.000000 1475.000000
+		}
+	}
+	members = {
+		268 1756 2405 4529 4530 #moldavia_area
+		282 6006 2406 6003 #odessa_area
+		283 2411 2412 6008 6007 #zaporizhia_area
+		1974 6004 6005 #yedisan_area
+		284 6001 6002 6213 #crimea_area
+		285 2410 2447 6000 #gazaria_area
+		286 287 2413 2414 6009 #azov_area
+	}
+}
+
 kiev = {
 	location = 280
 	outgoing = {
@@ -886,15 +928,6 @@ kiev = {
 		}
 	}
 	outgoing = {
-		name = "crimea"
-		path = {
-			  280 281 282 284 
-		}
-		control = {
-			 3290.000000 1506.000000 3297.000000 1470.000000 3307.169922 1429.410034
-		}
-	}	
-	outgoing = {
 		name = "baltic_sea"
 		path = {
 			279
@@ -912,6 +945,7 @@ kiev = {
 		279 2962 4539 4538 #volhynia_area
 		278 1941 4537 4545 #pripyat_area
 		269 277 1937 #podlasie_area
+		261 1940 2424 2961 4541 #red_ruthenia_area
 		270 271 1936 4534 #samogitia_area
 		272 770 4535 4536 #lithuania_area
 		276 4115 4242 4544 #minsk_area
@@ -1197,49 +1231,6 @@ alexandria = {
 	}
 }
 
-crimea = {
-	location = 1322
-	color = {
-		59 158 125 
-	}
-	outgoing = {
-		name = "krakow"
-		path = {
-			1756 1321 1320 
-		}
-		control = {
-			3266.000000 1436.000000 3201.000000 1508.000000
-		}
-	}
-	outgoing = {
-		name = "ragusa"
-		path = {
-			1322 2961 262 
-		}
-		control = {
-			3314.000000 1403.000000 
-		}	
-	}
-	outgoing = {
-		name = "pest"
-		path = {
-			4706 2998 4531 160 2746 156 1954 155 
-		}
-		control = {
-			3266.000000 1430.500000 3218.000000 1466.000000 3180.000000 1456.000000 3147.000000 1475.000000
-		}
-	}
-	members = {
-		268 1756 2405 4529 4530 #moldavia_area
-		282 6006 2406 6003 #odessa_area
-		283 2411 2412 6008 6007 #zaporizhia_area
-		1974 6004 6005 #yedisan_area
-		284 6001 6002 6213 #crimea_area
-		285 2410 2447 6000 #gazaria_area
-		286 287 2413 2414 6009 #azov_area
-	}
-}
-
 krakow = {
 	location = 262
 	color = { 114  70  103 }
@@ -1290,7 +1281,6 @@ krakow = {
 		}
 	}
 	members = {
-		261 1940 2424 2961 4541 #red_ruthenia_area
 		262 4527 2960 #malopolska_area
 		260 2959 259 #sandomierz_area
 		256 257 1938 4525 #mazovia_area

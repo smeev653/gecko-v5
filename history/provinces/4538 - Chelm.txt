@@ -12,6 +12,7 @@ base_manpower = 1
 capital = "Chelm"
 is_city = yes 
 add_core = POL
+add_core = VOL
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

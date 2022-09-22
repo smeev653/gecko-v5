@@ -369,7 +369,7 @@ X_CRI_hansaray = {
 	on_built = {
 		if = {
 			limit = { has_building = cathedral }
-			add_base_tax = 4
+			add_base_tax = 3
 		}
 		else_if = {
 			limit = { has_building = temple }

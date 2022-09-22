@@ -423,7 +423,7 @@
  X_CRI_events.9.b:0 "They will have to find another way"
  #Event Tooltips
  X_CRI_event_2_tt:0 "§Y[Root.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
- X_CRI_event_6_tt:0 "Upon being built, we gain §G+5.0§!£X_imperial_mandate£.\nIf §Y[284.GetName]§! has a §YGreat Mosque§!, gain §Y4§! Base Tax in §Y[284.GetName]§!.\nElse gain a §YGreat Mosque§! in §Y[284.GetName]§!."
+ X_CRI_event_6_tt:0 "Upon being built, we gain §G+5.0§!£X_imperial_mandate£.\nIf §Y[284.GetName]§! has a §YGreat Mosque§!, gain §Y3§! Base Tax in §Y[284.GetName]§!.\nElse gain a §YGreat Mosque§! in §Y[284.GetName]§!."
  X_CRI_event_8_tt:0 "We shall pay §Y[GEN.X_gazaria_total_development_localization_variable.GetValue]§!¤ to §Y[GEN.GetName]§! for control of their possesions in the §Y[284.GetRegionName]§!."
  X_CRI_event_8_tt2:0 "Peacefully resolving our border tensions with §Y[GEN.GetName]§! will result in the §Y[GEN.GetAdjective]§! commercial colony of §Y[286.GetCapitalName]§! to become a center of trade in §Y[286.GetName]§!."
  #Diplomatic Actions
