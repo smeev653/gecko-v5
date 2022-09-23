@@ -3151,9 +3151,38 @@ X_CRI_slot_4 = {
 		}
 		position = 4
 		trigger = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = X_CRI_mission_15_tt
+				NOT = {
+					any_country = {
+						NOT = { is_subject_of = ROOT }
+						unit_type = eastern
+						religion_group = christian
+						OR = {
+							any_owned_province = {
+								OR = {
+									has_terrain = steppe
+									AND = {
+										region = ruthenia_region
+										OR = {
+											has_terrain = farmlands
+											has_terrain = grasslands
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		effect = {
+			add_army_tradition = 20
+			add_army_professionalism = 0.1
+			add_country_modifier = {
+				name = X_CRI_end_of_the_cossacks_cmod
+				duration = 7300
+			}
 		}
 	}
 	#Ravage Poland
@@ -3486,9 +3515,77 @@ X_CRI_slot_5 = {
         required_missions = { X_CRI_mission_14 }
 		position = 5
 		trigger = {
-			always = no
+			if = {
+				limit = {
+					exists = LIT
+				}
+				LIT = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+						any_country = {
+							overlord_of = LIT
+							NOT = {
+								any_owned_province = {
+									region = ruthenia_region
+								}
+							}
+						}
+						NOT = {
+							any_owned_province = {
+								region = ruthenia_region
+							}
+						}
+					}
+					else = {
+						NOT = {
+							any_owned_province = {
+								region = ruthenia_region
+							}
+						}
+					}
+				}
+			}
+			else = {
+				smolensk_area = {
+					type = all
+					country_or_subject_holds = ROOT		
+				}
+				white_ruthenia_area = {
+					type = all
+					country_or_subject_holds = ROOT
+				}
+				minsk_area = {
+					type = all
+					country_or_subject_holds = ROOT		
+				}
+				pripyat_area = {
+					type = all
+					country_or_subject_holds = ROOT
+				}
+			}
 		}
 		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+			add_prestige = 20
+			lithuania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			samogitia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }

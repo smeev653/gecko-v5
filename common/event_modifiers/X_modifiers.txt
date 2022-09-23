@@ -210,6 +210,10 @@ X_CRI_through_the_zasechnaya_cherta_cmod = {
 	siege_ability = 0.20
 	movement_speed = 0.10
 }
+
+X_CRI_end_of_the_cossacks_cmod = {
+	discipline = 0.05
+}
 ########################################
 # Tiered Modifiers
 ########################################

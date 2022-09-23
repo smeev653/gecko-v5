@@ -319,6 +319,8 @@
  desc_X_CRI_batus_tribute_cmod:0 ""
  X_CRI_through_the_zasechnaya_cherta_cmod:0 "Through the Zasechnaya Cherta"
  desc_X_CRI_through_the_zasechnaya_cherta_cmod:0 ""
+ X_CRI_end_of_the_cossacks_cmod:0 "End of the Cossacks"
+ desc_X_CRI_end_of_the_cossacks_cmod:0 ""
  #Modifier tooltips
  X_CRI_gateway_protected_tt:0 "until §YOr Qapi§! is successfully sieged"
  #Estate Modifiers
@@ -394,6 +396,7 @@
  X_CRI_mission_12_tt:0 " provinces in the §Y[282.GetAreaName]§! area, §Y[1974.GetAreaName]§! area, §Y[283.GetAreaName]§! area, §Y[281.GetAreaName]§! area, §Y[280.GetAreaName]§! area, §Y[290.GetAreaName]§! area, and §Y[289.GetAreaName]§! area owned by §Y[Root.GetName]§! or its Subjects."
  X_CRI_mission_13_tt:0 "   Owned by the Subject."
  X_CRI_mission_14_tt:0 "   Owned by the Subject."
+ X_CRI_mission_15_tt:0 "No §YChristian§! country who is NOT a subject of §Y[Root.GetName]§! in the §YEastern§! technology group owns a province of §lFlatland§! terrain in the §YRuthenia§! region or §YSteppes§! terrain."
  #Events
  X_CRI_events.1.t:0 "Tatar Yoke Crushed"
  X_CRI_events.1.d1:0 ""

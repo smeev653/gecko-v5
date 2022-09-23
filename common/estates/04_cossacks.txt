@@ -48,16 +48,22 @@ estate_cossacks = {
 		is_nomad = no
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = revolutionary_empire_reform }
 		unit_type = eastern
 		religion_group = christian
-		NOT = { has_reform = revolutionary_empire_reform }
 		OR = {
-			has_estate = estate_cossacks
 			any_owned_province = {
-				has_terrain = steppe
+				OR = {
+					has_terrain = steppe
+					AND = {
+						region = ruthenia_region
+						OR = {
+							has_terrain = farmlands
+							has_terrain = grasslands
+						}
+					}
+				}
 			}
-			tag = HUN
-			tag = POL
 		}
 	}
 
