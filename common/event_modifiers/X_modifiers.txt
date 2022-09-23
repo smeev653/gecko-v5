@@ -205,6 +205,11 @@ X_CRI_rex_russiae_cmod = {
 X_CRI_batus_tribute_cmod = {
 	vassal_income = 0.15
 }
+
+X_CRI_through_the_zasechnaya_cherta_cmod = {
+	siege_ability = 0.20
+	movement_speed = 0.10
+}
 ########################################
 # Tiered Modifiers
 ########################################

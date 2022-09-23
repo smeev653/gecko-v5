@@ -2943,9 +2943,117 @@ X_CRI_slot_3 = {
         required_missions = { X_CRI_mission_10 }
 		position = 4
 		trigger = {
-			always = no
+			controls = 295
+			295 = {
+				owner = { war_with = ROOT }
+			}
 		}
 		effect = {
+			custom_tooltip = X_CRI_mission_11_tt
+			russia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			295 = {
+				add_devastation = 50
+				owner = {
+					add_prestige = -50
+					add_legitimacy = -25
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					which = X_CRI_moscow_development_variable
+					value = 0
+				}
+				set_variable = {
+					which = X_CRI_moscow_development_variable_2
+					value = 0
+				}
+				set_variable = {
+					which = X_CRI_moscow_development_to_remove_variable
+					value = 0
+				}
+				295 = {
+					export_to_variable = {
+						which = X_CRI_moscow_development_variable
+						value = development
+					}
+					export_to_variable = {
+						which = X_CRI_moscow_development_variable_2
+						value = development
+					}
+					set_variable = {
+						which = X_CRI_moscow_development_to_remove_variable
+						which = X_CRI_moscow_development_variable
+					}
+					multiply_variable = {            
+						which = X_CRI_moscow_development_to_remove_variable
+						value = 2
+					}
+					divide_variable = {            
+						which = X_CRI_moscow_development_to_remove_variable
+						value = 3
+					}
+					while = {	
+						limit = {		
+							check_variable = {
+								which = X_CRI_moscow_development_variable
+								which = X_CRI_moscow_development_to_remove_variable
+							}
+						}
+						random_list = {
+							1 = {
+								add_base_tax = -1
+							}
+							1 = {
+								add_base_production = -1
+							}
+							1 = {
+								add_base_manpower = -1
+							}
+						}
+						ROOT = {
+							random_owned_province = {
+								random_list = {
+									1 = {
+										add_base_tax = 1
+									}
+									1 = {
+										add_base_production = 1
+									}
+									1 = {
+										add_base_manpower = 1
+									}
+								}
+							}
+						}
+						subtract_variable = {
+							which = X_CRI_moscow_development_variable
+							value = 1
+						}
+					}
+					while = {	
+						limit = {		
+							check_variable = {
+								which = X_CRI_moscow_development_variable_2
+								value = 1
+							}
+						}
+						ROOT = {
+							add_manpower = 1
+							add_treasury = 20
+						}
+						subtract_variable = {
+							which = X_CRI_moscow_development_variable_2
+							value = 1
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -3027,6 +3135,10 @@ X_CRI_slot_4 = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = X_CRI_through_the_zasechnaya_cherta_cmod
+				duration = 5475
 			}
 		}
 	}
