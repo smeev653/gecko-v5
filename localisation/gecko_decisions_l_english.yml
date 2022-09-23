@@ -33,7 +33,7 @@
  urbanisation_desc:0 "50 years of reduced power cost, increased goods produced and cheaper construction cost. No longer part of the normal Golden Age ability."
  sm_hire_recruitmaster_title:0 "Hire a -25% Cost Master Recruiter"
  sm_hire_recruitmaster_desc:0 "It would be wise to use the foreign expertise available to us to help bring fresh manpower into our ranks."
- sm_hire_naval_reformer_title:0 "§L§ Hire a Naval Reformer §W"
+ sm_hire_naval_reformer_title:0 "§G§ Hire a Naval Reformer §W"
  sm_hire_naval_reformer_desc:0 "Hire a naval expert to reform our navies."
  PR_manpower_edict_title:0 "§M§ National Manpower Edict §W"
  PR_manpower_edict_desc:0 "Activate a manpower edict modifier in all states without an activated edict. No edicts can be applied to states with this modifier. Can be removed in 1 year."
