@@ -212,7 +212,7 @@ naval_reformer = {
 	
 	# Bonus
 	
-	naval_morale = 0.03
+	naval_morale = 0.05
 	
 	skill_scaled_modifier = { 
 		modifier = { 
@@ -375,7 +375,7 @@ army_reformer = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_morale = 0.03
+	land_morale = 0.05
 
 	skill_scaled_modifier = { 
 		modifier = { 
@@ -523,7 +523,7 @@ grand_captain = {
 	monarch_power = MIL
 	
 	# Bonus
-	land_maintenance_modifier = -0.05
+	land_maintenance_modifier = -0.025
 
 	skill_scaled_modifier = { 
 		modifier = { 

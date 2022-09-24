@@ -26,14 +26,14 @@ gc_arty_officer = {
 	monarch_power = MIL
 	
 	# Bonus
-	artillery_power = 0.05
-	artillery_cost = -0.05
+	artillery_power = 0.0625
+	artillery_cost = -0.0625
 
 	skill_scaled_modifier = { 
 		modifier = { 
 			meritocracy = 0.25
-			artillery_power = 0.025
-			artillery_cost = -0.025
+			artillery_power = 0.0125
+			artillery_cost = -0.0125
 		} 
 	}
 
@@ -98,13 +98,13 @@ infantry_leader = {
 	monarch_power = MIL
 	
 	# Bonus
-	shock_damage_received = -0.05
-	fire_damage_received = -0.05
+	shock_damage_received = -0.0625
+	fire_damage_received = -0.0625
 
 	skill_scaled_modifier = { 
 		modifier = { 
-			shock_damage_received = -0.025
-			fire_damage_received = -0.025
+			shock_damage_received = -0.0125
+			fire_damage_received = -0.0125
 		} 
 	}
 
@@ -121,14 +121,14 @@ cavalry_leader = {
 	monarch_power = MIL
 	
 	# Bonus
-	shock_damage = 0.05
-	fire_damage = 0.05
+	shock_damage = 0.0625
+	fire_damage = 0.0625
 
 
 	skill_scaled_modifier = { 
 		modifier = { 
-			shock_damage = 0.025
-			fire_damage = 0.025
+			shock_damage = 0.0125
+			fire_damage = 0.0125
 		} 
 	}
 
