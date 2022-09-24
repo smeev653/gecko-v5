@@ -214,6 +214,11 @@ X_CRI_through_the_zasechnaya_cherta_cmod = {
 X_CRI_end_of_the_cossacks_cmod = {
 	discipline = 0.05
 }
+
+X_CRI_ruthenian_dominance_cmod = {
+	governing_capacity_modifier = 0.25
+	vassal_income = 0.2
+}
 ########################################
 # Tiered Modifiers
 ########################################
