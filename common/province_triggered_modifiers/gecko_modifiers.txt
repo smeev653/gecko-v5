@@ -535,43 +535,6 @@ the_motherland_calls = {
 	
 	}
 }
-conquest_of_sarai = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-
-	trigger = {
-		owner = {
-			###X###
-			#OR = {
-			#	tag = KHA
-			#	culture_group = tartar
-			#}
-			is_emperor_of_china = yes
-			#######
-			astrakhan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		controlled_by = ROOT
-	}
-
-	#technology_cost = -0.05
-	global_tax_modifier = 0.15
-	###X###
-	imperial_mandate = 0.1
-	#######
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-}
 
 #conquest_of_isfahan = {
 #	potential = {

@@ -647,7 +647,7 @@ positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 	all_estate_loyalty_equilibrium = 0.1
 	liberty_desire_from_subject_development = -0.50
 	vassal_income = 0.1
-	meritocracy = 1
+	meritocracy = 0.5
 	#######
 }
 
@@ -661,7 +661,7 @@ negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mand
 	all_estate_loyalty_equilibrium = -0.1
 	liberty_desire_from_subject_development = 0.50
 	vassal_income = -0.1
-	meritocracy = -1
+	meritocracy = -0.5
 	#######
 }
 

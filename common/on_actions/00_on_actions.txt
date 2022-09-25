@@ -952,6 +952,12 @@ on_siege_lost_country = {
 			}
 			remove_province_modifier = X_CRI_gateway_protected_pmod
 		}
+		6002 = {
+			limit = {
+				has_province_modifier = X_CRI_trench_gate_pmod
+			}
+			remove_province_modifier = X_CRI_trench_gate_pmod
+		}
 	}
 	#######
 	events = {

@@ -324,7 +324,7 @@
  X_CRI_ruthenian_dominance_cmod:0 "Ruthenian Dominance"
  desc_X_CRI_ruthenian_dominance_cmod:0 ""
  #Modifier tooltips
- X_CRI_gateway_protected_tt:0 "until §YOr Qapi§! is successfully sieged"
+ X_CRI_trench_gate_tt:0 "until §YOr Qapi§! is successfully sieged"
  #Estate Modifiers
  X_CRI_estate_dhimmi_cufut_qale_lmod:0 "Çufut Qale"
  #Casus Belli

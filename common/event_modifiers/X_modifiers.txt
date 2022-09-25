@@ -169,7 +169,7 @@ X_CRI_exacted_tribute_cmod = {
 
 X_CRI_qaraylar_craftsmen_pmod = {
 	local_production_efficiency = 0.35
-	local_development_cost = -0.20
+	local_development_cost = -0.10
 }
 
 X_CRI_qaraylar_lending_cmod = {
@@ -179,8 +179,8 @@ X_CRI_qaraylar_lending_cmod = {
 }
 
 X_CRI_trench_gate_pmod = {
-	local_hostile_attrition = 2
-	local_defensiveness = 0.50
+	local_hostile_attrition = 1
+	local_defensiveness = 0.35
 	local_garrison_size = 1.0
 }
 

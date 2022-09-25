@@ -1360,7 +1360,7 @@ CHI_ideas = {
 PER_ideas = {
 	start = {
 		tolerance_own = 2
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	
 	bonus = {
@@ -1763,7 +1763,7 @@ ARA_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.15
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	
 	bonus = {
@@ -1815,7 +1815,7 @@ TIM_ideas = {
 	}
 	free = yes
 	unleash_the_tiger = {
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	
 	the_mantle_of_the_great_khan = {
@@ -9192,7 +9192,7 @@ GLH_ideas = {
 		administrative_efficiency = 0.05
 	}
 	glh_tatar_traditions = {
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	glh_secure_the_trade_routes = {
 		global_prov_trade_power_modifier = 0.25
@@ -9204,7 +9204,7 @@ GLH_ideas = {
 	}
 	glh_populating_the_steppes = {
 		development_cost = -0.05
-		build_cost = -0.1
+		build_cost = -0.05
 	}
 	glh_religious_pragmatism = {
 		tolerance_heathen = 4
@@ -11458,7 +11458,7 @@ TRS_ideas = {
 	free = yes
 	
 	trs_mawarannahr = {
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	trs_threshold_of_paradise = {
 		prestige = 1
@@ -13839,7 +13839,7 @@ RIG_ideas = {
 CRI_ideas = {
 	start = {
 		tolerance_heathen = 3
-		cavalry_power = 0.10
+		shock_damage = 0.10
 	}
 	bonus = {
 		global_manpower_modifier = 0.20
@@ -13867,7 +13867,7 @@ CRI_ideas = {
 		production_efficiency = 0.1
 	}
 	cri_settle_the_steppes = {
-		build_cost = -0.1
+		build_cost = -0.05
 	}
 	cri_despoilers = {
 		leader_land_manuever = 1

@@ -3,7 +3,6 @@ X_CRI_decree_1 = {
 	duration = 3650
 	modifier = {
 		build_cost = -0.1
-		build_time = -0.25
 	}
 }
 
