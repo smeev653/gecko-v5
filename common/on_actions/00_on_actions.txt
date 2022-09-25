@@ -706,13 +706,13 @@ on_war_lost = {
 		}
 		set_country_flag = reined_in_for_shadow_kingdom
 	}
+}
+on_main_war_lost = {
 	add_country_modifier = {
 		name = just_lost_war_timer
 		duration = 10
 		hidden = yes
 	}
-}
-on_main_war_lost = {
 }
 on_separate_war_lost = {
 }

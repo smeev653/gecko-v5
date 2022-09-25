@@ -1191,6 +1191,7 @@ picture = COURT_eventPicture
          ai = no
 		 }
 	  NOT = { has_country_modifier = gecko_recovery }
+	  has_country_modifier = just_lost_war_timer
 	  any_owned_province = {
 		is_looted = yes
 	  }
