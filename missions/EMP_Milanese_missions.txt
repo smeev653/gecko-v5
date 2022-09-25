@@ -254,7 +254,7 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 	
 	mlo_contra_de_medici = {
 		icon = conquer_tuscany
-		required_missions = { mlo_la_superba mlo_house_of_este }
+		required_missions = { mlo_la_superba }
 		position = 3 
 		provinces_to_highlight = {
 			area = tuscany_area 
@@ -485,14 +485,6 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 					}
 					add_permanent_claim = ROOT
 				}
-				po_valley_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-						is_empty = no
-					}
-					add_permanent_claim = ROOT
-				}
 				piedmont_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -509,14 +501,7 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 					}
 					add_permanent_claim = ROOT
 				}
-				emilia_romagna_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-						is_empty = no
-					}
-					add_permanent_claim = ROOT
-				}
+
 				tuscany_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -526,14 +511,6 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 					add_permanent_claim = ROOT
 				}
 				venetia_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-						is_empty = no
-					}
-					add_permanent_claim = ROOT
-				}
-				central_italy_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
@@ -862,7 +839,7 @@ milan_missions_4 = { #Made by Big Boss for Flavor Universalis
 	
 	mlo_la_serenissima = {
 		icon = secure_the_republic 
-		required_missions = { mlo_house_of_este mlo_reclaim_eastern_lands }
+		required_missions = { mlo_reclaim_eastern_lands }
 		position = 3 
 		provinces_to_highlight = { province_id = 112 } 
 		trigger = {
