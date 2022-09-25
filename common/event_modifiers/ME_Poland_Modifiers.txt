@@ -132,7 +132,7 @@ POL_knowledge_of_bibliotheca = {
 }
 
 POL_geese = {
-	same_culture_advisor_cost = -0.2
+	same_culture_advisor_cost = -0.1
 }
 
 POL_adm_adv_3 = {

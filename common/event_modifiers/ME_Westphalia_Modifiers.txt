@@ -277,6 +277,6 @@ OSN_city_of_peace = {
 }
 
 WES_significant_religious_minority = {
-	local_production_efficiency = 0.25
+	local_production_efficiency = 0.15
 	local_missionary_strength = -0.05
 }

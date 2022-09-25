@@ -8,6 +8,7 @@ janissary_decadence = {
 	can_start = {
 		has_any_disaster = no
 		NOT = { current_age = age_of_discovery }
+		NOT = { current_age = age_of_reformation}
 		NOT = { stability = 0 }
 		num_of_janissaries = 50
 		janissary_percentage = 0.3

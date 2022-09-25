@@ -676,8 +676,8 @@ chaplains_of_the_fleet = {
 		full_idea_group = maritime_ideas
 	}
 	
-	advisor_cost = -0.05
-	manpower_in_true_faith_provinces = 0.1
+	#advisor_cost = -0.05
+	manpower_in_true_faith_provinces = 0.125
 	
 	ai_will_do = {
 		factor = 1

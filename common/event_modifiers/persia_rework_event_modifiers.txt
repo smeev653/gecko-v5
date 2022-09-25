@@ -60,7 +60,7 @@ estate_nomadic_tribes_steppes_devcost = {
 }
 
 force_janissaries_to_undergo_yoklama = {
-	land_morale = 0.2
+	land_morale = 0.15
 }
 # Persian Missions
 

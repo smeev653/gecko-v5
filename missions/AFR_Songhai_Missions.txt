@@ -407,12 +407,12 @@ songhai_historical_conquest_slot = {
 			NOT = { great_power_rank = 4 }
 		}
 		effect = {
-			custom_tooltip = remove_subsaharan_buildings
-				hidden_effect = {
-					country_event = {
-						id = gecko.45
-					}
-				}
+			#custom_tooltip = remove_subsaharan_buildings
+			#	hidden_effect = {
+			#		country_event = {
+			#			id = gecko.45
+			#		}
+			#	}
 			add_country_modifier = {
 				name = son_songhaian_empire
 				duration = -1

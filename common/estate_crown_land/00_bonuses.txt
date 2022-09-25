@@ -74,7 +74,7 @@ bonus = {
         global_tax_modifier = 0.05
 		global_manpower_modifier = 0.10
 		global_trade_goods_size_modifier = 0.025
-		governing_capacity_modifier = 0.025
+		#governing_capacity_modifier = 0.025
     }
 }
 
@@ -88,7 +88,7 @@ bonus = {
         global_tax_modifier = 0.075
 		global_manpower_modifier = 0.15
 		global_trade_goods_size_modifier = 0.05
-		governing_capacity_modifier = 0.05
+		#governing_capacity_modifier = 0.05
     }
 }
 
@@ -103,7 +103,7 @@ bonus = {
 		global_manpower_modifier = 0.20
 		global_trade_goods_size_modifier = 0.075
         global_autonomy = -0.05
-		governing_capacity_modifier = 0.075
+		#governing_capacity_modifier = 0.075
     }
 }
 
@@ -118,6 +118,6 @@ bonus = {
 		global_manpower_modifier = 0.25
 		global_trade_goods_size_modifier = 0.10
         global_autonomy = -0.1
-		governing_capacity_modifier = 0.10
+		#governing_capacity_modifier = 0.10
     }
 }
