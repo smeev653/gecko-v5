@@ -406,7 +406,7 @@ African_Gold = {
 
 	trigger = {
 		num_of_owned_provinces_with = {
-			value = 5
+			value = 3
 			continent = africa
 			trade_goods = gold
 		}			
