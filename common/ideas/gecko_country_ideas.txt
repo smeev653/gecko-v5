@@ -24,7 +24,7 @@ ARB_ideas = { #Arabian Empire
 	}
 	arb_2 = { #Arabian Horsemanship
 		infantry_power = 0.05
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	
 	arb_4 = { #Spreading the Prophet's Word
@@ -43,7 +43,7 @@ ARB_ideas = { #Arabian Empire
 EGY_ideas = { #Egyptian Empire
 	start = {
 		global_regiment_cost = -0.10
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	
 	bonus = {
@@ -414,7 +414,7 @@ HAN_ideas = {
 		land_morale = 0.10
 	}
 	han_hanoverian_chancery = {
-		cavalry_power = 0.125
+		cavalry_power = 0.10
 	}
 	han_herrenhausen_gardens = {
 		prestige = 1

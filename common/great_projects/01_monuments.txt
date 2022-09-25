@@ -18397,7 +18397,7 @@ gme_salt_mines_wieliczka_bochnia = {
 			trade_goods_size = 1
 		}
 		area_modifier = {
-			production_efficiency = 0.15
+			local_production_efficiency = 0.15
 			trade_goods_size_modifier = 0.15
 		}
 		country_modifiers = { }

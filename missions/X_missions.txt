@@ -3088,13 +3088,14 @@ X_CRI_slot_4 = {
 				add_province_modifier = {
 					name = X_CRI_trench_gate_pmod
 					duration = -1
+					desc = X_CRI_trench_gate_tt
 				}
 			}
 			crimea_area = {
 				add_province_modifier = {
 					name = X_CRI_gateway_protected_pmod
 					duration = -1
-					desc = X_CRI_gateway_protected_tt
+					desc = X_CRI_trench_gate_tt
 				}
 			}
 		}
