@@ -1103,7 +1103,7 @@ if = {
 		flavor_hun.17			#Maintaining the Black Army
 		muslim_school_events.20 #No Religious School
 		flavor_fra.9000			# François Villon
-		flavor_hsa.3		# Hansa: Tagfahrt
+		#flavor_hsa.3		# Hansa: Tagfahrt
 	}
 	random_events = {
 		1000 = 0
