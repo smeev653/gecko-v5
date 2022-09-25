@@ -9,8 +9,8 @@ HES_loss_schmalkaldic_league = {
 }
 
 HES_member_of_the_league = {
-	army_tradition = 1
-	land_morale = 0.05
+	#army_tradition = 1
+	land_morale = 0.025
 }
 
 HES_mercs = {

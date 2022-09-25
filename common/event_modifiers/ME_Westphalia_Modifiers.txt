@@ -94,7 +94,7 @@ WES_reformer = {
 }
 
 WES_reform_progress = {
-	global_tax_modifier = 0.2
+	global_tax_modifier = 0.1
 	global_autonomy = -0.05
 }
 
@@ -201,7 +201,7 @@ WES_compound = {
 }
 
 WES_manufactory_advent = {
-	production_efficiency = 0.1
+	#production_efficiency = 0.1
 	global_prov_trade_power_modifier = 0.2
 }
 
@@ -277,6 +277,6 @@ OSN_city_of_peace = {
 }
 
 WES_significant_religious_minority = {
-	production_efficiency = 0.25
+	local_production_efficiency = 0.25
 	local_missionary_strength = -0.05
 }
