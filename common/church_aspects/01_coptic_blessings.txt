@@ -2,7 +2,7 @@ legitimize_government = {
 	is_blessing = yes
 
 	modifier = {
-		land_morale = 0.05
+		land_morale = 0.025
 	}
 	ai_will_do = {
 		factor = 10

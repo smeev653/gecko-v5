@@ -51,7 +51,7 @@ non_catholic_rome = {
 
 	prestige = 0.5
 	missionaries = 1
-	land_morale = 0.05
+	#land_morale = 0.05
 	
 	#Province scope
 	on_activation = {
@@ -214,7 +214,7 @@ coptic_alexandria = {
 	
 	prestige = 0.5
 	missionaries = 1
-	land_morale = 0.05
+	#land_morale = 0.05
 	
 	#Province scope
 	on_activation = {
@@ -374,7 +374,7 @@ hindu_varanasi = {
 	
 	prestige = 0.5
 	missionaries = 1
-	land_morale = 0.05
+	#land_morale = 0.05
 	
 	#Province scope
 	on_activation = {
@@ -501,7 +501,7 @@ sikh_amritsar = {
 	
 	prestige = 0.5
 	missionaries = 1
-	land_morale = 0.05
+	#land_morale = 0.05
 	
 	#Province scope
 	on_activation = {
@@ -598,7 +598,7 @@ alandalus_returns = {
 	}
 	
 	prestige = 0.5
-	land_morale = 0.05
+	#land_morale = 0.05
 	
 	on_activation = {}
 	

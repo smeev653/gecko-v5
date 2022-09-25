@@ -314,47 +314,47 @@ X_germanic_culture_full_control_cmod = {
 }
 #latin
 X_latin_culture_tier_1_cmod = {
-	land_morale = 0.010
+	land_morale = 0.005
 	all_power_cost = -0.002
 }
 X_latin_culture_tier_2_cmod = {
-	land_morale = 0.020
+	land_morale = 0.01
 	all_power_cost = -0.004
 }
 X_latin_culture_tier_3_cmod = {
-	land_morale = 0.030
+	land_morale = 0.015
 	all_power_cost = -0.006
 }
 X_latin_culture_tier_4_cmod = {
-	land_morale = 0.040
+	land_morale = 0.02
 	all_power_cost = -0.008
 }
 X_latin_culture_tier_5_cmod = {
-	land_morale = 0.050
+	land_morale = 0.025
 	all_power_cost = -0.010
 }
 X_latin_culture_tier_6_cmod = {
-	land_morale = 0.060
+	land_morale = 0.03
 	all_power_cost = -0.012
 }
 X_latin_culture_tier_7_cmod = {
-	land_morale = 0.070
+	land_morale = 0.035
 	all_power_cost = -0.014
 }
 X_latin_culture_tier_8_cmod = {
-	land_morale = 0.080
+	land_morale = 0.04
 	all_power_cost = -0.016
 }
 X_latin_culture_tier_9_cmod = {
-	land_morale = 0.090
+	land_morale = 0.045
 	all_power_cost = -0.018
 }
 X_latin_culture_tier_10_cmod = {
-	land_morale = 0.100
+	land_morale = 0.05
 	all_power_cost = -0.020
 }
 X_latin_culture_full_control_cmod = {
-	land_morale = 0.125
+	land_morale = 0.0625
 	all_power_cost = -0.025
 }
 #west_slavic

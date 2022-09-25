@@ -808,7 +808,7 @@ mercantilism = {
 
 army_tradition = {
 	recover_army_morale_speed = 0.1
-	land_morale = 0.3125
+	land_morale = 0.25
 	manpower_recovery_speed = 0.15
 	#siege_ability = 0.05
 	temples_influence = 0.1

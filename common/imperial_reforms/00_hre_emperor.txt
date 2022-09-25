@@ -236,7 +236,7 @@ emperor_reichskrieg = {
 		vassal_forcelimit_bonus = 0.5
 	}
 	all = {
-		land_morale = 0.05
+		land_morale = 0.025
 	}
 	province = {
 		local_manpower_modifier = 0.25

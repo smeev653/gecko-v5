@@ -115,7 +115,7 @@ saints_accept_prayers_aspect = {
 		}
 	}
 	modifier = { 
-		land_morale = 0.05
+		land_morale = 0.025
 	}
 	ai_will_do = {
 		factor = 12
