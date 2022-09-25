@@ -909,7 +909,7 @@ administrative_ideas = {
 	}
 	organised_mercenary_recruitment = {
 		expand_administration_cost = -0.5
-		governing_cost = -0.15
+		governing_cost = -0.1
 		state_maintenance_modifier = -0.25
 	}
 	administrative_efficiency_idea = {

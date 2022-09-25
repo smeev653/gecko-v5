@@ -512,7 +512,7 @@ head_of_the_reformed_church_reform = {
 	}
 	modifiers = {
 		church_influence_modifier = -0.05
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.10
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 0.25
 	}
@@ -883,7 +883,7 @@ secure_clergy_power_reform = {
 	}
 	modifiers = {
 		church_influence_modifier = 0.05
-		adm_advisor_cost = -0.1
+		adm_advisor_cost = -0.05
 	}
 	effect = {
 		hidden_effect = {
