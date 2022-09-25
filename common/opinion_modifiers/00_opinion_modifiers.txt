@@ -4466,10 +4466,6 @@ opinion_holstein_good = {
 	yearly_decay = 3
 }
 
-opinion_left_hre = {
-	opinion = -50
-	yearly_decay = 1
-}
 
 # Mandala opinions
 
