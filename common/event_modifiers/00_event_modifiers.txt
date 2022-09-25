@@ -206,7 +206,7 @@ suppress_minority = {
 }
 
 army_reform = {
-	land_morale = 0.20
+	land_morale = 0.10
 	#mil_tech_cost_modifier = -0.10
 }
 naval_reform = {
