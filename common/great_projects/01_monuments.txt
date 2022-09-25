@@ -19885,7 +19885,7 @@ fu_library_alexandria = {
 }
 
 falun_copper_mine = {
-	start = 8 #Dalaskogen
+	start = 4 #Dalaskogen
 	date = 1000.01.01
 	time = { months = 0	}
 	build_cost = 0
