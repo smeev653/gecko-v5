@@ -1009,9 +1009,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 3
 	}
-	immediate = { release = AST }
 	option = {
 		name = X_CRI_events.10.a
+		release = AST
 	}
 }
 
