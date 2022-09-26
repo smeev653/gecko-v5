@@ -775,7 +775,7 @@ country_event = {
 	}
 }
 
-#Palace at BagÃ§asaray
+#Palace at Bagçasaray
 country_event = {
 	id = X_CRI_events.6
 	title = X_CRI_events.6.t
@@ -987,5 +987,54 @@ country_event = {
 			}
 		}
 		add_prestige = -15
+	}
+}
+
+#Collapse of the Great Horde
+country_event = {
+	id = X_CRI_events.10
+	title = X_CRI_events.10.t
+	desc = X_CRI_events.10.d1
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		is_neighbor_of = GOL
+	}
+	trigger = {
+		NOT = { exists = AST }
+		NOT = { has_ruler = "Küchük Muhammad" }
+		tag = GOL
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	immediate = { release = AST }
+	option = {
+		name = X_CRI_events.10.a
+	}
+}
+
+#Death of Küchük Muhammad
+country_event = {
+	id = X_CRI_events.11
+	title = X_CRI_events.11.t
+	desc = X_CRI_events.11.d1
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = X_CRI_events.11.a
+		custom_tooltip = X_CRI_event_11_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = GOL
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 }

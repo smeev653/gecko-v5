@@ -812,6 +812,30 @@ if = {
 
 # #Unit Scope OnAction for Battle Lost
 on_battle_lost_unit = {
+	###X###
+    if = {
+        limit = {
+            unit_owner = {
+                tag = GOL
+				has_ruler = "Küchük Muhammad"
+            }
+            is_ruler_commanding_unit = yes
+			enemy_unit = {
+				unit_owner = {
+					ai = no
+				}
+			}
+        }
+		GOL = {
+			kill_ruler = yes
+		}
+		enemy_unit = {
+			unit_owner = {
+				country_event = { id = X_CRI_events.11 }
+			}
+		}
+    }
+	#######
 }
 
 # province
