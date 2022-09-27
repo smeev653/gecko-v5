@@ -17,8 +17,8 @@ add_truce_with = GEN
 		name = "Haji I"
 		dynasty = Giray
 		birth_date = 1410.1.1
-		adm = 4                                                          
-		dip = 5
+		adm = 5                                                         
+		dip = 4
 		mil = 5
 	}
 }

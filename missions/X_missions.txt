@@ -2570,7 +2570,7 @@ X_CRI_slot_1 = {
 		position = 3
 		trigger = {
 			stability = 3
-			legitimacy_equivalent = 100
+			legitimacy_equivalent = 75
 			custom_trigger_tooltip = {
 				tooltip = X_CRI_reform_1_passed_tt
 				check_variable = {
@@ -2597,7 +2597,8 @@ X_CRI_slot_1 = {
 			}
 			else = {
 				army_size_percentage = 1
-				owns_all_provinces = {
+				num_of_owned_provinces_with = {
+					value = 35
 					region = crimea_region
 				}
 			}

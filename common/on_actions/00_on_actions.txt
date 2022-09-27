@@ -822,18 +822,14 @@ on_battle_lost_unit = {
             is_ruler_commanding_unit = yes
 			enemy_unit = {
 				unit_owner = {
-					ai = no
+					tag = CRI
 				}
 			}
         }
 		GOL = {
 			kill_ruler = yes
 		}
-		enemy_unit = {
-			unit_owner = {
-				country_event = { id = X_CRI_events.11 }
-			}
-		}
+		CRI = { country_event = { id = X_CRI_events.11 } }
     }
 	#######
 }
