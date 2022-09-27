@@ -444,6 +444,13 @@
  X_declarewar_diplomatic_actions_tt:0 "§RYou cannot declare on a tributary of a nation, if you are already at war with that nation.§!"
  X_declarewar_diplomatic_actions_tt2:0 "§RTributary States can't fight their own wars.§!"
  ####################
+ # Russia
+ ####################
+ #Monuments
+ X_RUS_trinity_lavra:0 "Trinity Lavra"
+ X_RUS_trinity_lavra_title:0 "Trinity Lavra"
+ great_project_X_RUS_trinity_lavra:0 "Trinity Lavra"
+ ####################
  # Tiered Modifiers
  ####################
  #tartar

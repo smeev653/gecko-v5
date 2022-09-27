@@ -20,10 +20,6 @@ fort_15th = yes
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier=the_motherland_calls
-
-
-
 1450.1.1 = { discovered_by = SIB }
 1495.1.1 = { fort_15th = no fort_16th = yes } #Kremlin
 1503.4.1 = { owner = RUS controller = RUS add_core = RUS remove_core = MOS }

@@ -450,3 +450,107 @@ X_CRI_hansaray = {
 		}
 	}
 }
+
+####################
+# Russia
+####################
+X_RUS_trinity_lavra = {
+	start = 295 #Moscow
+	date = 1345.01.01
+	time = { months = 0 }
+	build_cost = 0
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+	build_trigger = { }
+	on_built = { }
+	on_destroyed = { }
+	can_use_modifiers_trigger = {
+		owner = { religion = orthodox }
+	}
+    can_upgrade_trigger = { }
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 350 }
+		province_modifiers = {
+			local_development_cost = -0.05
+			local_tax_modifier = 0.25
+		}
+		area_modifier = {
+			local_defensiveness = 0.1
+			local_institution_spread = 0.05
+		}
+		country_modifiers = {
+			idea_cost = -0.025
+			church_loyalty_modifier = 0.025
+			yearly_patriarch_authority = 0.005
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 5
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 750 }
+		province_modifiers = {
+			local_development_cost = -0.1
+			local_tax_modifier = 0.5
+		}
+		area_modifier = {
+			local_institution_spread = 0.15
+			local_defensiveness = 0.20
+		}
+		country_modifiers = {
+			idea_cost = -0.05
+			church_loyalty_modifier = 0.05
+			yearly_patriarch_authority = 0.010
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 10
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 1500 }
+		province_modifiers = {
+			local_development_cost = -0.2
+			local_tax_modifier = 1.0
+		}
+		area_modifier = {
+			local_institution_spread = 0.25
+			local_defensiveness = 0.35
+		}
+		country_modifiers = {
+			idea_cost = -0.1
+			church_loyalty_modifier = 0.1
+			yearly_patriarch_authority = 0.015
+		}
+		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 15
+				}
+			}
+		}
+	}
+}
