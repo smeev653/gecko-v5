@@ -7,6 +7,12 @@
  ####################
  # Estates
  ####################
+ #Estates
+ x_estate_streltsy:0 "Streletskaya"
+ x_estate_streltsy_desc:0 ""
+ X_estate_streltsy_loyalty_modifier:0 "Streletskaya Loyalty Equilibrium"
+ X_estate_streltsy_influence_modifier:0 "Streletskaya Influence"
+ x_estate_streltsy_ownership:0 "Streletskaya Land Ownership"
  #Privileges
  X_estate_cossacks_privilege_1:0 "Establish Cossack Border Guards"
  X_estate_cossacks_privilege_1_desc:0 ""

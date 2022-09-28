@@ -1,0 +1,16 @@
+x_estate_streltsy = {
+	modifier_definition = {
+		type = loyalty
+		key = X_estate_streltsy_loyalty_modifier
+		trigger = {
+			has_estate = x_estate_streltsy
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = X_estate_streltsy_influence_modifier
+		trigger = {
+			has_estate = x_estate_streltsy
+		}
+	}
+}
