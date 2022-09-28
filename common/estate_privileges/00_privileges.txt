@@ -3374,8 +3374,8 @@ estate_nobles_supremacy_over_crown = {
 		janissary_influence_modifier = 0.1
 		mamluks_loyalty_modifier = 0.1
 		mamluks_influence_modifier = 0.1
-		X_estate_streltsy_loyalty_modifier = 0.1
-		X_estate_streltsy_influence_modifier = 0.1
+		X_RUS_estate_streltsy_loyalty_modifier = 0.1
+		X_RUS_estate_streltsy_influence_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 1500

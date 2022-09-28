@@ -2081,7 +2081,7 @@ kremlin = {
 		country_modifiers = {
 			global_regiment_cost = -0.025
 			fire_damage = 0.025
-			X_estate_streltsy_loyalty_modifier = 0.025
+			X_RUS_estate_streltsy_loyalty_modifier = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -2113,7 +2113,7 @@ kremlin = {
 		country_modifiers = {
 			global_regiment_cost = -0.05
 			fire_damage = 0.05
-			X_estate_streltsy_loyalty_modifier = 0.05
+			X_RUS_estate_streltsy_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -2145,7 +2145,7 @@ kremlin = {
 		country_modifiers = {
 			global_regiment_cost = -0.10
 			fire_damage = 0.10
-			X_estate_streltsy_loyalty_modifier = 0.1
+			X_RUS_estate_streltsy_loyalty_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved

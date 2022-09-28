@@ -1,6 +1,25 @@
 #####################
 # Streletskaya
 #####################
+X_RUS_estate_streltsy_privilege_1 = {
+    icon = privilege_demand_more_troops
+	land_share = 5
+    loyalty = 0.1            
+    influence  = 0.1      
+	is_valid = {
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}	
+    benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
 #####################
 # Cossacks
 #####################
