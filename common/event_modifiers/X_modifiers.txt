@@ -18,9 +18,20 @@ X_estate_cossacks_privilege_2_pmod = {
 	local_production_efficiency = -0.15
 	local_manpower_modifier = -0.15
 }
-X_RUS_estate_streltsy_privilege_1_cmod = {
+X_RUS_estate_streltsy_privilege_2_cmod = {
 	is_streltsy_modifier = yes
 	shock_damage_received = -0.10
+	land_maintenance_modifier = 0.05
+}
+
+X_RUS_estate_streltsy_privilege_3_cmod = {
+	is_streltsy_modifier = yes
+	land_morale = 0.10
+	land_maintenance_modifier = 0.05
+}
+X_RUS_estate_streltsy_privilege_4_cmod = {
+	is_streltsy_modifier = yes
+	infantry_power = 0.10
 	land_maintenance_modifier = 0.05
 }
 ########################################

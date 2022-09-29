@@ -38,19 +38,75 @@ X_RUS_estate_streltsy_privilege_2 = {
 	}
 	on_granted = {
 		add_country_modifier = { 
-			name = X_RUS_estate_streltsy_privilege_1_cmod
+			name = X_RUS_estate_streltsy_privilege_2_cmod
 			duration = -1
 		}
 	}
 	can_revoke = {
-		has_country_modifier = X_RUS_estate_streltsy_privilege_1_cmod
+		has_country_modifier = X_RUS_estate_streltsy_privilege_2_cmod
 	}
 	on_revoked = {
-        remove_country_modifier = X_RUS_estate_streltsy_privilege_1_cmod
+        remove_country_modifier = X_RUS_estate_streltsy_privilege_2_cmod
     }
 	on_invalid = {
-		remove_country_modifier = X_RUS_estate_streltsy_privilege_1_cmod
+		remove_country_modifier = X_RUS_estate_streltsy_privilege_2_cmod
 	}	
+	ai_will_do = {
+		factor = 0
+	}
+}
+X_RUS_estate_streltsy_privilege_3 = {
+    icon = privilege_better_integration
+	land_share = 0
+    loyalty = -0.10          
+    influence  = 0.00
+	can_select = {
+		num_of_streltsy = 1
+	}
+	on_granted = {
+		add_country_modifier = { 
+			name = X_RUS_estate_streltsy_privilege_3_cmod
+			duration = -1
+		}
+	}
+	can_revoke = {
+		has_country_modifier = X_RUS_estate_streltsy_privilege_3_cmod
+	}
+	on_revoked = {
+        remove_country_modifier = X_RUS_estate_streltsy_privilege_3_cmod
+    }
+	on_invalid = {
+		remove_country_modifier = X_RUS_estate_streltsy_privilege_3_cmod
+	}
+	modifier_by_land_ownership = { production_efficiency = -0.20 }
+	ai_will_do = {
+		factor = 0
+	}
+}
+X_RUS_estate_streltsy_privilege_4 = {
+    icon = privilege_tolerance_heathen
+	land_share = 0
+    loyalty = 0.10          
+    influence  = 0.15
+	can_select = {
+		num_of_streltsy = 1
+	}
+	on_granted = {
+		add_country_modifier = { 
+			name = X_RUS_estate_streltsy_privilege_4_cmod
+			duration = -1
+		}
+	}
+	can_revoke = {
+		has_country_modifier = X_RUS_estate_streltsy_privilege_4_cmod
+	}
+	on_revoked = {
+        remove_country_modifier = X_RUS_estate_streltsy_privilege_4_cmod
+    }
+	on_invalid = {
+		remove_country_modifier = X_RUS_estate_streltsy_privilege_4_cmod
+	}
+	penalties = { technology_cost = 0.05 }
 	ai_will_do = {
 		factor = 0
 	}
