@@ -404,47 +404,47 @@ X_west_slavic_culture_full_control_cmod = {
 }
 #east_slavic
 X_east_slavic_culture_tier_1_cmod = {
-	land_attrition = -0.015
+	morale_damage_received = -0.005
 	war_exhaustion = -0.010
 }
 X_east_slavic_culture_tier_2_cmod = {
-	land_attrition = -0.030
+	morale_damage_received = -0.010
 	war_exhaustion = -0.020
 }
 X_east_slavic_culture_tier_3_cmod = {
-	land_attrition = -0.045
+	morale_damage_received = -0.015
 	war_exhaustion = -0.030
 }
 X_east_slavic_culture_tier_4_cmod = {
-	land_attrition = -0.060
+	morale_damage_received = -0.020
 	war_exhaustion = -0.040
 }
 X_east_slavic_culture_tier_5_cmod = {
-	land_attrition = -0.075
+	morale_damage_received = -0.025
 	war_exhaustion = -0.050
 }
 X_east_slavic_culture_tier_6_cmod = {
-	land_attrition = -0.090
+	morale_damage_received = -0.030
 	war_exhaustion = -0.060
 }
 X_east_slavic_culture_tier_7_cmod = {
-	land_attrition = -0.105
+	morale_damage_received = -0.035
 	war_exhaustion = -0.070
 }
 X_east_slavic_culture_tier_8_cmod = {
-	land_attrition = -0.120
+	morale_damage_received = -0.040
 	war_exhaustion = -0.08
 }
 X_east_slavic_culture_tier_9_cmod = {
-	land_attrition = -0.135
+	morale_damage_received = -0.045
 	war_exhaustion = -0.090
 }
 X_east_slavic_culture_tier_10_cmod = {
-	land_attrition = -0.150
+	morale_damage_received = -0.050
 	war_exhaustion = -0.010
 }
 X_east_slavic_culture_full_control_cmod = {
-	land_attrition = -0.200
+	morale_damage_received = -0.075
 	war_exhaustion = -0.020
 }
 #scandinavian
@@ -944,47 +944,47 @@ X_cushitic_culture_full_control_cmod = {
 }
 #southern_african
 X_southern_african_culture_tier_1_cmod = {
-	naval_morale = 0.005
+	land_attrition = -0.015
 	inflation_reduction = 0.010
 }
 X_southern_african_culture_tier_2_cmod = {
-	naval_morale = 0.010
+	land_attrition = -0.030
 	inflation_reduction = 0.020
 }
 X_southern_african_culture_tier_3_cmod = {
-	naval_morale = 0.015
+	land_attrition = -0.045
 	inflation_reduction = 0.030
 }
 X_southern_african_culture_tier_4_cmod = {
-	naval_morale = 0.020
+	land_attrition = -0.060
 	inflation_reduction = 0.040
 }
 X_southern_african_culture_tier_5_cmod = {
-	naval_morale = 0.025
+	land_attrition = -0.075
 	inflation_reduction = 0.050
 }
 X_southern_african_culture_tier_6_cmod = {
-	naval_morale = 0.030
+	land_attrition = -0.090
 	inflation_reduction = 0.060
 }
 X_southern_african_culture_tier_7_cmod = {
-	naval_morale = 0.035
+	land_attrition = -0.105
 	inflation_reduction = 0.070
 }
 X_southern_african_culture_tier_8_cmod = {
-	naval_morale = 0.040
+	land_attrition = -0.120
 	inflation_reduction = 0.080
 }
 X_southern_african_culture_tier_9_cmod = {
-	naval_morale = 0.045
+	land_attrition = -0.135
 	inflation_reduction = 0.090
 }
 X_southern_african_culture_tier_10_cmod = {
-	naval_morale = 0.050
+	land_attrition = -0.150
 	inflation_reduction = 0.100
 }
 X_southern_african_culture_full_control_cmod = {
-	naval_morale = 0.075
+	land_attrition = -0.200
 	inflation_reduction = 0.150
 }
 #mande

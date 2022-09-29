@@ -88,7 +88,7 @@ X_cultural_union_group_control_effect_ptmod = {
 		}
 		every_country = {
 			limit = { culture_group = turko_semitic ai = no }
-			ROOT = { X_culture_group_control_effect = { group = turko_semitic type = union who = PREV } }
+			ROOT = { X_culture_group_control_effect = { group = turko_semitic type = development who = PREV } }
 		}
 		every_country = {
 			limit = { culture_group = cushitic ai = no }
