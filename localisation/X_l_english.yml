@@ -16,6 +16,8 @@
  #Privileges
  X_RUS_estate_streltsy_privilege_1:0 "Enhance Streltsy Recruitment"
  X_RUS_estate_streltsy_privilege_1_desc:0 ""
+ X_RUS_estate_streltsy_privilege_2:0 "Establish Gulyaygorod Tactics"
+ X_RUS_estate_streltsy_privilege_2_desc:0 ""
  X_estate_cossacks_privilege_1:0 "Establish Cossack Border Guards"
  X_estate_cossacks_privilege_1_desc:0 ""
  X_estate_cossacks_privilege_2:0 "Hire Cossack Raiders"
@@ -34,6 +36,8 @@
  X_estate_burghers_privilege_1_on_granted_tt:0 "Every owned province producing §YSlaves§! gains '§YKhan's Savga§!', giving the following effects:\nLocal Production Efficiency: §G+75.0%§!"
  X_estate_burghers_privilege_1_on_revoked_tt:0 "Remove '§YKhan's Savga§!' from every owned province producing §YSlaves§!."
  #Modifiers
+ X_RUS_estate_streltsy_privilege_1_cmod:0 "Gulyaygorod Tactics"
+ desc_X_RUS_estate_streltsy_privilege_1_cmod:0 ""
  X_estate_cossacks_privilege_1_pmod:0 "Cossack Border Defense"
  desc_X_estate_cossacks_privilege_1_pmod:0 ""
  X_estate_cossacks_privilege_2_pmod:0 "Cossack Raid"

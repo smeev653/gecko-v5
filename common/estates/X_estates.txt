@@ -23,5 +23,6 @@ x_rus_estate_streltsy = {
 	influence_from_dev_modifier = 1.0
 	privileges = {
 		X_RUS_estate_streltsy_privilege_1
+		X_RUS_estate_streltsy_privilege_2
 	}
 }
