@@ -99,7 +99,7 @@ X_CRI_hansaray = {
 # Russia
 ####################
 X_RUS_trinity_lavra = {
-	start = 295 #Moscow
+	start = 295 #Moskva
 	date = 1345.01.01
 	time = { months = 0 }
 	build_cost = 0

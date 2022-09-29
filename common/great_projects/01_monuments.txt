@@ -2086,6 +2086,13 @@ kremlin = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_government_power = {
+					government_mechanic = iqta_mechanic
+					which = MIL
+					amount = 25
+				}
+			}
 		}
 	}
 
@@ -2118,6 +2125,13 @@ kremlin = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_government_power = {
+					government_mechanic = iqta_mechanic
+					which = MIL
+					amount = 50
+				}
+			}
 		}
 	}
 
@@ -2150,6 +2164,13 @@ kremlin = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_government_power = {
+					government_mechanic = iqta_mechanic
+					which = MIL
+					amount = 100
+				}
+			}
 		}
 	}
 }

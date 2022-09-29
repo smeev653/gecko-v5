@@ -1038,3 +1038,35 @@ country_event = {
 		}
 	}
 }
+
+########################################
+# Events for Russia
+########################################
+namespace = X_RUS_events
+
+#Enhanced Streltsy Recruitment
+country_event = {
+	id = X_RUS_events.1
+	title = X_RUS_events.1.t
+	desc = X_RUS_events.1.d1
+	picture = STRELTSY_MARCHING_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = X_RUS_events.1.a
+		if = {
+			limit = { has_estate_privilege = X_RUS_estate_streltsy_privilege_1 }
+			capital_scope = {
+				add_province_triggered_modifier = X_RUS_estate_streltsy_privilege_1_ptmod
+			}
+		}
+		else = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = X_RUS_estate_streltsy_privilege_1_ptmod
+				}
+				remove_province_triggered_modifier = X_RUS_estate_streltsy_privilege_1_ptmod
+			}
+		}
+	}
+}

@@ -2726,14 +2726,14 @@
  HRE_MEMBER_STAT:0 "$NUM$ Princes"
  HRE_CLOSE:0 "Close"
  HRE_MEMBER_STATES:0 "Member States"
- CELESTIAL_CELESTIAL:1 "Tradition of the Steppe"
- CELESTIAL_EMPEROR:0 "$EMPERORNAME|Y$ is the Great Khan" #X
- CELESTIAL_MANDATE:0 "Legacy" #X
- CELESTIAL_DECISIONS:0 "Khanate Reforms"
+ CELESTIAL_CELESTIAL:1 "Empire of China"
+ CELESTIAL_EMPEROR:0 "$EMPERORNAME|Y$ is the Emperor of China"
+ CELESTIAL_MANDATE:0 "Mandate"
+ CELESTIAL_DECISIONS:0 "Celestial Reforms"
  CELESTIAL_TRIBUTARIES:0 "$NUM$ Tributaries"
- CELESTIAL_DECREES:0 "Yarlig" #X
+ CELESTIAL_DECREES:0 "Decrees"
  CELESTIAL_CLOSE:0 "Close"
- CELESTIAL_EMPIRE:0 "Tradition of the Steppe"
+ CELESTIAL_EMPIRE:0 "Empire of China"
  PAPACY_CARDINALS:0 "Cardinals:"
  PAPACY_COST:0 "Cost:"
  PAPACY_CHANCE:0 "Chance:"
@@ -3571,7 +3571,7 @@
  bg_new_culture:0 "The $CULTURE$, having showed their loyalty time and time again, were accepted as full partners in our mighty nation."
  bg_lost_culture:0 "The $CULTURE$, having become increasing insignificant in our empire, were no longer seen as important to our mighty nation."
  bg_emperor:0 "In the year $YEAR$ $MONARCHTITLE$ $MONARCHNAME$ was proclaimed, dei gratia Romanorum imperator electus semper augustus"
- bg_celestial_emperor:0 "In the year $YEAR$ $MONARCHTITLE$ $MONARCHNAME$ became the Great Khan" #X
+ bg_celestial_emperor:0 "In the year $YEAR$ $MONARCHTITLE$ $MONARCHNAME$ became the Emperor of China"
  bg_elector:0 "The year of $YEAR$ saw $COUNTRY$ given the dignity of Prince Elector of the Holy Roman Empire."
  bg_war_3_1:0 "The $WARNAME$ continued in the reign of $MONARCHNAME$."
  bg_war_3_2:0 "The reign of $MONARCHNAME$ saw the continuation of the $WARNAME$."
@@ -4130,8 +4130,8 @@
  HAVE_DISCOVERED:0 "Have discovered "
  IS_EMPEROR:0 "Is the Emperor of the HRE"
  ISNT_EMPEROR:0 "Is NOT the Emperor of the HRE"
- IS_CELESTIAL_EMPEROR:0 "Is the Great Khan" #X
- ISNT_CELESTIAL_EMPEROR:0 "Is NOT the Great Khan" #X
+ IS_CELESTIAL_EMPEROR:0 "Is the Emperor of China"
+ ISNT_CELESTIAL_EMPEROR:0 "Is NOT the Emperor of China"
  ISNT_ELECTOR:0 "Is NOT an Elector"
  IS_ELECTOR:0 "Is an Elector"
  IS_FREE_CITY:0 "Is a Free City"
@@ -4204,7 +4204,7 @@
  NUM_OF_SUBJECTS:0 "Number of Subjects"
  USE_DEVOTION:0 "Uses Devotion"
  USE_LEGITIMACY:0 "Uses Legitimacy"
- USE_MERITOCRACY:0 "Uses Horde Unity" #X
+ USE_MERITOCRACY:0 "Uses Meritocracy"
  USE_HORDE_UNITY:0 "Uses Horde Unity"
  USE_REPUBLICAN_TRADITION:0 "Uses Republican Tradition"
  IMPORTANT_WAR:0 "In Important War"
@@ -7051,12 +7051,12 @@
  HRE_INFLUENCE:0 "Imperial Authority"
  IMP_INF_LESS_THAN:0 "Imperial Authority less than"
  IMP_INF_AT_LEAST:1 "Imperial Authority is at least"
- MANDATE_LESS_THAN:0 "Legacy less than" #X
- MANDATE_AT_LEAST:0 "Legacy is at least" #X
- MERITOCRACY_LESS_THAN:0 "Horde Unity less than" #X
- MERITOCRACY_AT_LEAST:0 "Horde Unity is at least" #X
- ADD_MERITOCRACY_EFFECT:0 "$DIRECTION$ $VALUE$ Horde Unity.\n" #X
- SET_MERITOCRACY_EFFECT:0 "Horde Unity is set to $VALUE|Y$\n" #X
+ MANDATE_LESS_THAN:0 "Mandate less than"
+ MANDATE_AT_LEAST:0 "Mandate is at least"
+ MERITOCRACY_LESS_THAN:0 "Meritocracy less than"
+ MERITOCRACY_AT_LEAST:0 "Meritocracy is at least"
+ ADD_MERITOCRACY_EFFECT:0 "$DIRECTION$ $VALUE$ Meritocracy.\n"
+ SET_MERITOCRACY_EFFECT:0 "Meritocracy is set to $VALUE|Y$\n"
  ADD_IMPERIAL_INFLUENCE:0 "$DIRECTION$ $VALUE$ Imperial Authority"
  TRADE_EMBARGOING:0 "Trade embargoing "
  NOT_TRADE_EMBARGOING:0 "NOT trade embargoing "
@@ -7203,9 +7203,9 @@
  centralizing_top_government_decision_desc:2 "To re-arrange the Guanzhi - bureaucratic ranks is not only to make a mere symbolic break with the incompetent dynasty who precedes us: by retuning the political structures of the Empire, our power will be concentrated and our regime will grow solid like a golden fortress with boiling moat."
  vassalize_tributaries_decision_title:0 "Elevate Tributary Relations"
  vassalize_tributaries_decision_emperor:0 "Elevate Tributary Relations"
- vassalize_tributaries_decision_desc:0 "The Great Khan is overlord over several tributary states which acknowledge our superiority. While most barbarians will remain foreign to our ideals, other tributaries strive to come closer to the greatness of Genghis Khan. It is the duty of the current Great Khan to elevate those who appease us the most." #X
- vassalize_tributaries_decision_tt:0 "The Great Khan can use Legacy to elevate a Tributary State to a direct Vassal." #X
- vassalize_tributaries_decision_ct:0 "The Great Khan can no longer elevate Tributaries to Vassals." #X
+ vassalize_tributaries_decision_desc:0 "The Celestial Empire is overlord over several tributary states which acknowledge our superiority. While most barbarians will remain foreign to our ideals, other tributaries strive to come closer to the greatness of Heaven. It is the duty of the Emperor to elevate those who appease us the most."
+ vassalize_tributaries_decision_tt:0 "The Emperor of China can use the Mandate to elevate a Tributary State to a direct Vassal."
+ vassalize_tributaries_decision_ct:0 "The Emperor of China can no longer elevate Tributaries to Vassals."
  expand_bureaucracy_decree_title:0 "Expand Palace Bureaucracy"
  expand_bureaucracy_decree_desc:0 ""
  expand_bureaucracy_decree:0 "Expanded Palace Bureaucracy"
@@ -7608,9 +7608,9 @@
  THEYATWAR:0 "We cannot do this while they are at war."
  positive_stability:0 "Positive Stability"
  negative_stability:0 "Negative Stability"
- positive_mandate:0 "Positive Legacy" #X
- negative_mandate:0 "Negative Legacy" #X
- MANDATE_GROWTH_MODIFIERS:0 "Modifiers affecting monthly §YLegacy Growth§!:" #X
+ positive_mandate:0 "Positive Mandate"
+ negative_mandate:0 "Negative Mandate"
+ MANDATE_GROWTH_MODIFIERS:0 "Modifiers affecting monthly §YMandate Growth§!:"
  MANDATE_FROM_STABILITY:0 "Stability: "
  MANDATE_FROM_PROSPERITY:0 "Prosperity: "
  MANDATE_FROM_DEVASTATION:0 "Devastation: "
@@ -7621,23 +7621,23 @@
  CELESTIAL_DECISION_NEED_EARLIER:0 "Need to enact previous Decisions before this one one can be taken."
  CELESTIAL_DECISION_ALL_ENACTED:0 "All Decisions have already been taken."
  CELESTIAL_DECISION_NONE_EXIST:0 "No Decisions exist."
- CELESTIAL_DECISION_MINIMUM_TO_ENACT:0 "Need a minimum of $MINVALUE|Y$ Legacy to take this Decision." #X
- CELESTIAL_DECISION_NOT_ENOUGH_MANDATE:0 "This Decision costs $MANDATECOST|Y$ Legacy, but you only have $CURRENTMANDATE|Y$ Legacy." #X
+ CELESTIAL_DECISION_MINIMUM_TO_ENACT:0 "Need a minimum of $MINVALUE|Y$ Mandate to take this Decision."
+ CELESTIAL_DECISION_NOT_ENOUGH_MANDATE:0 "This Decision costs $MANDATECOST|Y$ Mandate, but you only have $CURRENTMANDATE|Y$ Mandate."
  CELESTIAL_DECISION_NOT_ENOUGH_STABILITY:0 "You may not enact this reform at the moment as your country is too disorganized. This Decision costs $STABILITYCOST|Y$ Stability, and you cannot go lower than $MINIMUMSTABILITY|Y$!"
- CELESTIAL_DECISION_NOT_EMPEROR:0 "Must be the §YGreat Khan§! to enact Khanate Reforms." #X
- CURRENT_CELESTIAL_EMPEROR:0 "$RULERNAME|Y$ is the current Great Khan." #X
- CELESTIAL_EMPIRE_NO_EMPEROR:0 "The Tradition of the Steppe has not proclaimed a worthly ruler."
- IMPERIAL_MANDATE_DESC:0 "The Legacy value represents the authority of the current Great Khan. According to the Tradition of the Steppe, only those of Genghisid royal descent could claim a right to rule. Legacy can be used to enact Khanate Reforms to reform the Tradition of the Steppe." #X
- IMPERIAL_MANDATE_CURRENT_DESC:0 "Current Legacy gives the following Modifier:\n$MODIFIERDESC$" #X
- IMPERIAL_MANDATE_BONUS_DESC:0 "Legacy above §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$" #X
- IMPERIAL_MANDATE_PENALTY_DESC:0 "Legacy below §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$" #X
+ CELESTIAL_DECISION_NOT_EMPEROR:0 "Must be the §YEmperor of China§! to enact Celestial Reforms."
+ CURRENT_CELESTIAL_EMPEROR:0 "$RULERNAME|Y$ is the current Emperor of China."
+ CELESTIAL_EMPIRE_NO_EMPEROR:0 "The Empire of China is currently in an interregnum."
+ IMPERIAL_MANDATE_DESC:0 "The Mandate value represents the authority of the current Emperor. Mandate can be used to enact centralisation decisions within the Empire of China."
+ IMPERIAL_MANDATE_CURRENT_DESC:0 "Current Mandate gives the following Modifier:\n$MODIFIERDESC$"
+ IMPERIAL_MANDATE_BONUS_DESC:0 "Mandate above §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$"
+ IMPERIAL_MANDATE_PENALTY_DESC:0 "Mandate below §Y50§! gives the following Scaled Modifier:\n$MODIFIERDESC$"
  IMPERIAL_MANDATE_GAIN_DESC:0 "Gained by:\n -Having a positive Stability.\n -Having Tributary States.\n -For each State enjoying Prosperity."
  IMPERIAL_MANDATE_LOSS_DESC:1 "Lost by:\n -Devastated provinces.\n -Corruption of the State.\n -Having loans."
- CELESTIAL_EMPEROR_BENEFIT:0 "Being the §YGreat Khan§! gives the following benefits:\n" #X
- CELESTIAL_EMPEROR_BENEFIT_DESC:0 " -Bonuses from High Legacy.\n -Bonuses from Tatar Unity.\n -Can enact Khanate Reforms.\n -Can Harvest the Steppe on Christian Neighbors" #X
- CELESTIAL_EMPEROR_DIPLOMATIC_ACTIONS_DESC:0 "The §YGreat Khan§! may take the following additional diplomatic actions:\n$LIST|Y$" #X
+ CELESTIAL_EMPEROR_BENEFIT:0 "Being the §YEmperor of China§! gives the following benefits:\n"
+ CELESTIAL_EMPEROR_BENEFIT_DESC:0 " -Bonuses from High Mandate.\n -Uses Meritocracy Mechanics\n -Can enact Centralisation Decisions.\n -Permanent claims to China.\n -Casus Belli to Unite China.\n -Can Enforce Tributary on Neighbours"
+ CELESTIAL_EMPEROR_DIPLOMATIC_ACTIONS_DESC:0 "The §YEmperor of China§! may take the following additional diplomatic actions:\n$LIST|Y$"
  CELESTIAL_EMPIRE_NO_DIPLOMATIC_ACTIONS:0 "None"
- CELESTIAL_EMPIRE_PAST_EMPERORS:0 "Previous Khans:"
+ CELESTIAL_EMPIRE_PAST_EMPERORS:0 "Previous Emperors:"
  MS_BAD_VERSION:0 "Wrong version. Please download the latest patch."
  maneuver:0 "Maneuver"
  siege:0 "Siege"
@@ -8151,8 +8151,8 @@
  CONNECT_TO_SHIP_LOW_MORALE:0 "Unit has low morale."
  FE_IRONMAN_GAMENOTOK:0 "Ironman mode needs EU4 to be unmodified and validated."
  vassalize_tributary_title:0 "Elevate to Vassal"
- vassalize_tributary_tooltip:0 "Use Legacy to elevate a Tributary to a Vassal." #X
+ vassalize_tributary_tooltip:0 "Use the Mandate to elevate a Tributary to a Vassal."
  vassalize_tributary_desc:0 "§Y[From.GetName]§! will become a direct §YVassal§! of [Root.GetName]. This action will cancel ALL subject relations §Y[From.GetName]§! has.\n\nThis will cost us §Y0.4 * [From.GetName]'s Total Development§! Legacy."
- HAS_MORE_MANDATE_THAN_TRIBUTARY_HAS_DEV:0 "Have Legacy of at least of §Y0.4 of [From.GetName]'s§! Total Development" #X
+ HAS_MORE_MANDATE_THAN_TRIBUTARY_HAS_DEV:0 "Have Mandate of at least of §Y0.4 of [From.GetName]'s§! Total Development"
  conversion_variable:0 "[Root.num_converted_religion.GetValue]"
  conversion_variable_zero:0 "0"

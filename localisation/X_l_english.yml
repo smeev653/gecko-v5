@@ -14,7 +14,7 @@
  X_RUS_estate_streltsy_influence_modifier:0 "Streletskaya Influence"
  x_rus_estate_streltsy_ownership:0 "Streletskaya Land Ownership"
  #Privileges
- X_RUS_estate_streltsy_privilege_1:0 "Streltsy Privilege 1 Placeholder"
+ X_RUS_estate_streltsy_privilege_1:0 "Enhance Streltsy Recruitment"
  X_RUS_estate_streltsy_privilege_1_desc:0 ""
  X_estate_cossacks_privilege_1:0 "Establish Cossack Border Guards"
  X_estate_cossacks_privilege_1_desc:0 ""
@@ -23,6 +23,8 @@
  X_estate_burghers_privilege_1:0 "Organized Slave Markets"
  X_estate_burghers_privilege_1_desc:0 ""
  #Tooltips
+ X_RUS_estate_streltsy_privilege_1_on_granted_tt:0 "Gain §G+2§! §YStreltsy Progress§! at the start of each year."
+ X_RUS_estate_streltsy_privilege_1_on_revoked_tt:0 "No longer gain §G+2§! §YStreltsy Progress§! at the start of each year."
  X_estate_cossacks_privilege_1_on_granted_tt:0 "Every owned province of §lFlatland§! terrain in the §YRuthenia§! region or §YSteppes§! terrain with a §YFort§! gains '§YCossack Border Defense§!', giving the following effects:\nLocal Defensiveness: §G+15.0%§!\nLocal Garrison Size: §G+50.0%§!\nLocal Fort Maintenance: §G-75.0%§!"
  X_estate_cossacks_privilege_1_on_revoked_tt:0 "Remove '§YCossack Border Defense§!' from every owned province of §lFlatland§! terrain in the §YRuthenia§! region or §YSteppes§! terrain with a §YFort§!."
  X_estate_cossacks_privilege_2_on_granted_tt:0 "Cossack raiders will sporadically raid our Heathen neighbors, plundering their wealth."

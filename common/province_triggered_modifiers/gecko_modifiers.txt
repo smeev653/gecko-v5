@@ -28,7 +28,6 @@ kaffa_slave_market = {
 	trigger = {
 		owner = {
 			###X###
-			#TAG = CRI
 			is_emperor_of_china = yes
 			#######
 		}

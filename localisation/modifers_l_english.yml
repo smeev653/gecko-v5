@@ -48,7 +48,7 @@
  MODIFIER_HEIR_CHANCE:0 "Chance of New Heir"
  MODIFIER_IMPERIAL_AUTHORITY:0 "Imperial Authority Growth Modifier"
  MODIFIER_IMPERIAL_AUTHORITY_VALUE:0 "Imperial Authority Modifier"
- MODIFIER_IMPERIAL_MANDATE:1 "Legacy Growth Modifier" #X
+ MODIFIER_IMPERIAL_MANDATE:1 "Mandate Growth Modifier"
  MODIFIER_EMBARGO_EFFICIENCY:0 "Embargo Efficiency"
  MODIFIER_ADVISOR_POOL:0 "Possible Advisors"
  MODIFIER_RELIGIOUS_UNITY:0 "Religious Unity"

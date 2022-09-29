@@ -1,0 +1,21 @@
+X_RUS_estate_streltsy_privilege_1_ptmod = {
+	hidden = yes
+	potential = {
+		owner = { has_government_mechanic = russian_mechanic }
+	}
+	trigger = {
+		is_month = 0
+		NOT = { is_month = 1 }
+	}
+	on_activation = {
+		owner = {
+			add_government_power = {
+				government_mechanic = russian_mechanic
+				which = MIL
+				amount = 2
+			}
+		}
+	}
+	on_deactivation = {
+	}
+}
