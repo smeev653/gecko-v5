@@ -2088,7 +2088,7 @@ kremlin = {
 		on_upgraded = {
 			owner = {
 				add_government_power = {
-					government_mechanic = iqta_mechanic
+					government_mechanic = russian_mechanic
 					which = MIL
 					amount = 25
 				}
@@ -2127,7 +2127,7 @@ kremlin = {
 		on_upgraded = {
 			owner = {
 				add_government_power = {
-					government_mechanic = iqta_mechanic
+					government_mechanic = russian_mechanic
 					which = MIL
 					amount = 50
 				}
@@ -2166,7 +2166,7 @@ kremlin = {
 		on_upgraded = {
 			owner = {
 				add_government_power = {
-					government_mechanic = iqta_mechanic
+					government_mechanic = russian_mechanic
 					which = MIL
 					amount = 100
 				}
