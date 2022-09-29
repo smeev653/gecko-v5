@@ -163,37 +163,13 @@ country_event = {
 
 	trigger = {
 		is_great_power = yes
-		capital_scope = { continent = europe }
-		any_owned_province = {
-			trade_goods = wool
-			continent = europe
-		} 
-		OR = {
 			504 = { #Indus
 				trade_share = {
 					country = ROOT
 					share = 10
 				}
 			}
-			524 = { #Deccan
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			1340 = { #Ceylon
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			1343 = { #Bengal
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-		}
+		
 		NOT = { has_country_flag = cotton_imports }
 		NOT = { has_global_flag = cotton_imports_global }
 	}
@@ -255,38 +231,6 @@ country_event = {
 			}
 		}
 		set_country_flag = cotton_imports
-		504 = { #Indus
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
-		524 = { #Deccan
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
-		1340 = { #Ceylon
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
-		1343 = { #Bengal
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = -10
-				key = COTTON_IMPORTS_BANNED
-			}
-		}
 	}
 }
 
@@ -630,13 +574,13 @@ country_event = {
 		change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES
-			value = 0.20
+			value = 0.5
 			duration = -1
 		}
 		change_price = {
 			trade_goods = wool
 			key = NEW_DRAPERIES
-			value = -0.20
+			value = -0.5
 			duration = -1
 		}
 	}
@@ -1324,6 +1268,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		always = no
 		dip_tech = 16
 		colony = 1
 		NOT = { has_global_flag = popularization_of_tobacco_happened }
