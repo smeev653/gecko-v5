@@ -1,5 +1,5 @@
 ########################################
-# General Events
+# Estate Events
 ########################################
 namespace = X_estate_events
 #Cossack Estate Update
@@ -7,7 +7,7 @@ country_event = {
 	id = X_estate_events.1
 	title = X_estate_events.1.t
 	desc = X_estate_events.1.d1
-	picture = CITY_VIEW_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	hidden = yes
 	trigger = {
 		ROOT = {

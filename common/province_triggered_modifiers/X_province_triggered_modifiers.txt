@@ -19,3 +19,90 @@ X_RUS_estate_streltsy_privilege_1_ptmod = {
 	on_deactivation = {
 	}
 }
+
+X_cultural_union_group_control_effect_ptmod = {
+	hidden = yes
+	potential = {
+		always = yes
+	}
+	trigger = {
+		is_month = 0
+		NOT = { is_month = 1 }
+	}
+	on_activation = {
+		every_country = {
+			limit = { culture_group = tartar ai = no }
+			ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = germanic ai = no }
+			ROOT = { X_culture_group_control_effect = { group = germanic type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = latin ai = no }
+			ROOT = { X_culture_group_control_effect = { group = latin type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = west_slavic ai = no }
+			ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = east_slavic ai = no }
+			ROOT = { X_culture_group_control_effect = { group = east_slavic type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = scandinavian ai = no }
+			ROOT = { X_culture_group_control_effect = { group = scandinavian type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = carpathian ai = no }
+			ROOT = { X_culture_group_control_effect = { group = carpathian type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = iberian ai = no }
+			ROOT = { X_culture_group_control_effect = { group = iberian type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = maghrebi ai = no }
+			ROOT = { X_culture_group_control_effect = { group = maghrebi type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = french ai = no }
+			ROOT = { X_culture_group_control_effect = { group = french type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = lowlands ai = no }
+			ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = british ai = no }
+			ROOT = { X_culture_group_control_effect = { group = british type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = hindusthani ai = no }
+			ROOT = { X_culture_group_control_effect = { group = hindusthani type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = iranian ai = no }
+			ROOT = { X_culture_group_control_effect = { group = iranian type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = turko_semitic ai = no }
+			ROOT = { X_culture_group_control_effect = { group = turko_semitic type = union who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = cushitic ai = no }
+			ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = southern_african ai = no }
+			ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+		}
+		every_country = {
+			limit = { culture_group = mande ai = no }
+			ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
+		}
+	}
+	on_deactivation = {
+	}
+}
