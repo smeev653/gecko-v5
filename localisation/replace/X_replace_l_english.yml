@@ -15,7 +15,7 @@
  STR_GOV_ALREADY_MAX_MERITOCRACY:0 "Horde Unity is already at its highest!"
  ENACT_DECREE_COST_DESC:0 "This will cost us $MERITOCRACYCOST|R$ Horde Unity, and give us the following effects for $YEARS|Y$ years:\n$EFFECTS$"
  alert_can_enact_decree_delayed:0 "Your level of Horde Unity is currently high enough to be able to enact a Decree."
- RUSABIL_POOL:1 "\nWe gain §G+$GAIN$§! $NAME|Y$ at the start of each year, up to a maximum of $MAX|Y$.\nWith the §YEnhance Streltsy Recruitment§! estate privilege, this value in further increased by §G+2§!."
+ RUSABIL_POOL:1 "\nWe gain §G+$GAIN$§! $NAME|Y$ at the start of each year, up to a maximum of $MAX|Y$.\nWith the §YEnhance Streltsy Recruitment§! estate privilege, this value is further increased by §G+2§!.\nWith the §YEnd Hereditary Service§! estate privilege, this value is further reduced by §R-2§!."
  ##############################
  # diplo_reasons_l_english
  ##############################

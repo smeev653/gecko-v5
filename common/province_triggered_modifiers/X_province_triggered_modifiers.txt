@@ -1,4 +1,4 @@
-X_RUS_estate_streltsy_privilege_1_ptmod = {
+X_RUS_estate_streltsy_privilege_ptmod = {
 	hidden = yes
 	potential = {
 		owner = { has_government_mechanic = russian_mechanic }
@@ -9,10 +9,27 @@ X_RUS_estate_streltsy_privilege_1_ptmod = {
 	}
 	on_activation = {
 		owner = {
-			add_government_power = {
-				government_mechanic = russian_mechanic
-				which = MIL
-				amount = 2
+			if = {
+				limit = {
+					 has_estate_privilege = X_RUS_estate_streltsy_privilege_1
+				}
+				add_government_power = {
+					government_mechanic = russian_mechanic
+					which = MIL
+					amount = 2
+				}
+			}
+		}
+		owner = {
+			if = {
+				limit = {
+					 has_estate_privilege = X_RUS_estate_streltsy_privilege_7
+				}
+				add_government_power = {
+					government_mechanic = russian_mechanic
+					which = MIL
+					amount = -2
+				}
 			}
 		}
 	}

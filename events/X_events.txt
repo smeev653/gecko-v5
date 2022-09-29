@@ -1055,17 +1055,22 @@ country_event = {
 	option = {
 		name = X_RUS_events.1.a
 		if = {
-			limit = { has_estate_privilege = X_RUS_estate_streltsy_privilege_1 }
+			limit = { 
+				OR = {
+					has_estate_privilege = X_RUS_estate_streltsy_privilege_1
+					has_estate_privilege = X_RUS_estate_streltsy_privilege_7
+				}
+			}
 			capital_scope = {
-				add_province_triggered_modifier = X_RUS_estate_streltsy_privilege_1_ptmod
+				add_province_triggered_modifier = X_RUS_estate_streltsy_privilege_ptmod
 			}
 		}
 		else = {
 			every_owned_province = {
 				limit = {
-					has_province_modifier = X_RUS_estate_streltsy_privilege_1_ptmod
+					has_province_modifier = X_RUS_estate_streltsy_privilege_ptmod
 				}
-				remove_province_triggered_modifier = X_RUS_estate_streltsy_privilege_1_ptmod
+				remove_province_triggered_modifier = X_RUS_estate_streltsy_privilege_ptmod
 			}
 		}
 	}

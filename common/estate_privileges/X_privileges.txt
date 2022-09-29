@@ -4,25 +4,37 @@
 X_RUS_estate_streltsy_privilege_1 = {
     icon = privilege_demand_more_troops
 	land_share = 0
-    loyalty = 0.1            
-    influence  = 0.1
+    loyalty = 0.00         
+    influence  = 0.10
+	can_select = {
+		NOT = { has_estate_privilege = X_RUS_estate_streltsy_privilege_1 }
+	}
 	on_granted = {
 		custom_tooltip = X_RUS_estate_streltsy_privilege_1_on_granted_tt
 		hidden_effect = {
 			country_event = { id = X_RUS_events.1 }
 		}
+		add_country_modifier = { 
+			name = X_RUS_estate_streltsy_privilege_1_cmod
+			duration = -1
+		}
+	}
+	can_revoke = {
+		has_country_modifier = X_RUS_estate_streltsy_privilege_1_cmod
 	}
 	on_revoked = {
 		custom_tooltip = X_RUS_estate_streltsy_privilege_1_on_revoked_tt
 		hidden_effect = {
 			country_event = { id = X_RUS_events.1 }
 		}
-	}
+        remove_country_modifier = X_RUS_estate_streltsy_privilege_1_cmod
+    }
 	on_invalid = {
 		custom_tooltip = X_RUS_estate_streltsy_privilege_1_on_revoked_tt
 		hidden_effect = {
 			country_event = { id = X_RUS_events.1 }
 		}
+		remove_country_modifier = X_RUS_estate_streltsy_privilege_1_cmod
 	}
 	ai_will_do = {
 		factor = 0
@@ -33,9 +45,6 @@ X_RUS_estate_streltsy_privilege_2 = {
 	land_share = 0
     loyalty = 0.05           
     influence  = 0.05
-	can_select = {
-		num_of_streltsy = 1
-	}
 	on_granted = {
 		add_country_modifier = { 
 			name = X_RUS_estate_streltsy_privilege_2_cmod
@@ -57,16 +66,17 @@ X_RUS_estate_streltsy_privilege_2 = {
 }
 X_RUS_estate_streltsy_privilege_3 = {
     icon = privilege_better_integration
-	land_share = 0
+	land_share = -5
     loyalty = -0.10          
     influence  = 0.00
-	can_select = {
-		num_of_streltsy = 1
-	}
 	on_granted = {
 		add_country_modifier = { 
 			name = X_RUS_estate_streltsy_privilege_3_cmod
 			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = x_rus_estate_streltsy
+			loyalty = -20
 		}
 	}
 	can_revoke = {
@@ -88,9 +98,6 @@ X_RUS_estate_streltsy_privilege_4 = {
 	land_share = 0
     loyalty = 0.10          
     influence  = 0.15
-	can_select = {
-		num_of_streltsy = 1
-	}
 	on_granted = {
 		add_country_modifier = { 
 			name = X_RUS_estate_streltsy_privilege_4_cmod
@@ -107,6 +114,91 @@ X_RUS_estate_streltsy_privilege_4 = {
 		remove_country_modifier = X_RUS_estate_streltsy_privilege_4_cmod
 	}
 	penalties = { technology_cost = 0.05 }
+	ai_will_do = {
+		factor = 0
+	}
+}
+X_RUS_estate_streltsy_privilege_5 = {
+    icon = privilege_give_money
+	land_share = 0
+    loyalty = -0.05         
+    influence  = 0.05
+	on_granted = {
+		add_country_modifier = { 
+			name = X_RUS_estate_streltsy_privilege_5_cmod
+			duration = -1
+		}
+	}
+	can_revoke = {
+		has_country_modifier = X_RUS_estate_streltsy_privilege_5_cmod
+	}
+	on_revoked = {
+        remove_country_modifier = X_RUS_estate_streltsy_privilege_5_cmod
+    }
+	on_invalid = {
+		remove_country_modifier = X_RUS_estate_streltsy_privilege_5_cmod
+	}
+	benefits = { global_tax_modifier = 0.10 }
+	ai_will_do = {
+		factor = 0
+	}
+}
+X_RUS_estate_streltsy_privilege_6 = {
+    icon = privilege_grant_autonomy
+	land_share = 5
+    loyalty = 0.05         
+    influence  = 0.05
+	benefits = { governing_capacity = 100 }
+	ai_will_do = {
+		factor = 0
+	}
+}
+X_RUS_estate_streltsy_privilege_7 = {
+    icon = privilege_supply_arms
+	land_share = 0
+    loyalty = 0.00         
+    influence  = 0.10
+	can_select = {
+		NOT = { has_estate_privilege = X_RUS_estate_streltsy_privilege_1 }
+	}
+	on_granted = {
+		custom_tooltip = X_RUS_estate_streltsy_privilege_7_on_granted_tt
+		hidden_effect = {
+			country_event = { id = X_RUS_events.1 }
+		}
+		add_country_modifier = { 
+			name = X_RUS_estate_streltsy_privilege_7_cmod
+			duration = -1
+		}
+	}
+	can_revoke = {
+		has_country_modifier = X_RUS_estate_streltsy_privilege_7_cmod
+	}
+	on_revoked = {
+		custom_tooltip = X_RUS_estate_streltsy_privilege_7_on_revoked_tt
+		hidden_effect = {
+			country_event = { id = X_RUS_events.1 }
+		}
+        remove_country_modifier = X_RUS_estate_streltsy_privilege_7_cmod
+    }
+	on_invalid = {
+		custom_tooltip = X_RUS_estate_streltsy_privilege_7_on_revoked_tt
+		hidden_effect = {
+			country_event = { id = X_RUS_events.1 }
+		}
+		remove_country_modifier = X_RUS_estate_streltsy_privilege_7_cmod
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+X_RUS_estate_streltsy_privilege_8 = {
+    icon = privilege_promote_purbias
+	land_share = 0
+    loyalty = 0.05        
+    influence  = 0.10
+	benefits = { leader_land_fire = 1 }
+	penalties = { general_cost = 0.25 }
 	ai_will_do = {
 		factor = 0
 	}
