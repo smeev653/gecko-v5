@@ -98,7 +98,7 @@ cocoa = {
 # New Non-European Tradegoods
 
 silk = {
-	base_price = 3.5
+	base_price = 4
 }
 
 tropical_wood = {
