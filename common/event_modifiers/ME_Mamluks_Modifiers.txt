@@ -16,7 +16,7 @@ mamluks_library_of_alexandria_modifier = {
 }
 
 mamluks_lighthouse_of_alexandria_modifier = {
-	admiral_skill_gain_modifier = 0.01
+	#admiral_skill_gain_modifier = 0.01
 }
 
 mamluks_the_nile_breadbasket_province_modifier = {

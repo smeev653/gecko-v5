@@ -346,7 +346,6 @@ fur = {
 				region = south_africa_region
 				region = australia_region
 				region = central_africa_region
-				region = guinea_region
 				area = newfoundland_area
 			}
 		}
@@ -491,8 +490,8 @@ naval_supplies = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				#has_terrain = forest
-				#has_terrain = woods
+				has_terrain = forest
+				has_terrain = woods
 				has_terrain = hills
 				has_terrain = jungle
 			}
@@ -777,7 +776,10 @@ slaves = {
 	}
 	chance = {
 		factor = 15
-
+	modifier = {
+			factor = 0
+			holy_order = dominican_order
+		}
 		modifier = {
 			factor = 0
 			area = newfoundland_area
