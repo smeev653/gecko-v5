@@ -66,7 +66,7 @@ X_RUS_estate_streltsy_privilege_2 = {
 }
 X_RUS_estate_streltsy_privilege_3 = {
     icon = privilege_better_integration
-	land_share = -5
+	land_share = 0
     loyalty = -0.10          
     influence  = 0.00
 	on_granted = {
