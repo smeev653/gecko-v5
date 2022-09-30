@@ -379,14 +379,11 @@ WES_Generic_Missions_3_2 = {
 					}
 				}
 				define_advisor = {
-					type = muscovy_architect
+					type = artist
 					religion = ROOT
 					culture = ROOT
 					skill = 1
 					cost_multiplier = 0.75
-				}
-				capital_scope = {
-					province_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
 				}
 			}
 			else = {

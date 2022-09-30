@@ -362,7 +362,7 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 					name = mlo_holy_see_influence_modifier 
 					duration = 9125
 				}
-				add_cardinal = yes 
+				#add_cardinal = yes 
 			}
 			if = {
 				limit = {

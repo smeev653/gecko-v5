@@ -322,7 +322,7 @@ fu_persia_missions_1 = {
 				NOT = {
 					any_country = {
 						capital_scope = {
-							superregion = hindusthan_superregion
+							superregion = hindusthan_region
 						}
 						army_size = ROOT
 					}

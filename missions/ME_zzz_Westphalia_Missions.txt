@@ -631,7 +631,7 @@ WES_missions_3 = {
 			tooltip = {
 				define_advisor = {
 					type = philosopher
-					culture = francien
+					culture = cosmopolitan_french
 					religion = ROOT
 					cost_multiplier = 0.75
 					skill = 1
@@ -653,7 +653,7 @@ WES_missions_3 = {
 					}
 					define_advisor = {
 						type = philosopher
-						culture = francien
+						culture = cosmopolitan_french
 						religion = ROOT
 						cost_multiplier = 0.75
 						skill = 1

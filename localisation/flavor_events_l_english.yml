@@ -1804,7 +1804,7 @@
  flavor_fra.EVTOPTA3146:0 "361 votes for and 360 against execution."
  flavor_fra.EVTOPTB3146:0 "361 votes against and 360 for execution."
  flavor_fra.EVTNAME3147:0 "The Chouan Revolt"
- flavor_fra.EVTDESC3147:2 "Dissatisfaction at the course the Revolution has come to a head with the execution of the monarch. Many now regret overthrowing the old regime, which offered relative stability, if not liberty. Royalists in [first_province.GetName] and religious malcontents in [second_province.GetName] have united to launch a large-scale uprising against the current regime in a dastardly scheme to topple the Republic!"
+ flavor_fra.EVTDESC3147:2 ""
  flavor_fra.EVTOPTA3147:1 "We shall crush them."
  flavor_fra.EVTNAME3148:1 "Napoléon Bonaparte"
  flavor_fra.EVTDESC3148:2 "The chaos of the Revolution and threats of foreign intervention have given ambitious young officers a chance to shine - a chance that has been seized in both hands by one Napoléon Bonaparte, a Corsican artillery lieutenant. His success in several engagements have brought him to prominence. Most recently, he single-handedly quashed a monarchist uprising in [Root.Capital.GetCapitalName] by deploying the heavy cannons on the city streets, the success of this decisive action earning him the adoration of the people. Already many leaders of the Revolution look favorably upon him and are pushing for him to be elevated to high office. However, he is a man of much ambition, one who may not be content to rule as a mere [Root.Monarch.GetTitle]."

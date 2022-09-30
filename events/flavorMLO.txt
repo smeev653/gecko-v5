@@ -272,7 +272,7 @@ country_event = {
 					tag = LAN
 				}
 				is_year = 1490
-				NOT = { advisor_exists = 796 }
+				
 				government = republic
 				owns = 116
 				NOT = { is_year = 1515 }
@@ -348,10 +348,8 @@ country_event = {
 		}
 		is_year = 1513
 		NOT = { is_year = 1530 }
-		OR = {
-			is_advisor_employed = 796
-			has_country_flag = we_have_macchiavelli
-		}
+		has_country_flag = we_have_macchiavelli
+		
 	}	
 	mean_time_to_happen = {
 		months = 12
@@ -411,7 +409,7 @@ country_event = {
 		OR =  {
 			AND = {
 				is_year = 1497
-				NOT = { advisor_exists = 790 }
+				
 				owns = 104
 				NOT = { is_year = 1500 }
 			}

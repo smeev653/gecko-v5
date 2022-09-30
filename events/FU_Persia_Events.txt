@@ -154,7 +154,7 @@ country_event = { #Hindu Influences in the Persian Court
 				has_dlc = "Dharma"
 				is_revolutionary = no
 			}
-			add_government_reform = fu_indian_sultanate_reform
+			#add_government_reform = fu_indian_sultanate_reform
 			add_government_reform = mughal_government
 		}
 		if = {

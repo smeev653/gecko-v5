@@ -2121,10 +2121,6 @@ swe_internal_slot = {
 			310 = { 
 				NOT = { devastation = 1 }
 				is_state = yes
-				if = {
-					limit = { has_dlc = "Mandate of Heaven" }
-					has_state_edict = edict_centralization_effort
-				}
 			}
 		}
 		effect = {
@@ -2466,10 +2462,7 @@ swe_internal_slot = {
 			}
 		}
 		effect = {
-			unlock_merc_company = {
-				merc_company = merc_hakkapeliita_cavalry
-				free_merc = yes
-			}
+			add_mil_power = 150
 		}
 	}
 }
@@ -5075,10 +5068,6 @@ swe_sca_hakkapeliitta_slot = {
 			}
 		}
 		trigger = {
-			any_hired_mercenary_company = {
-				template = merc_hakkapeliita_cavalry
-				hired_for_months = 60
-			}
 			OR = {
 				num_of_cavalry = 50
 				has_global_modifier_value = {
@@ -5094,18 +5083,7 @@ swe_sca_hakkapeliitta_slot = {
 			}
 		}
 		effect = {
-			unlock_merc_company = {
-				merc_company = merc_large_hakkapeliita_cavalry
-				free_merc = yes
-			}
-			unlock_merc_company = {
-				merc_company = merc_guerilla_hakkapeliita_cavalry
-				free_merc = yes
-			}
-			unlock_merc_company = {
-				merc_company = merc_elite_hakkapeliita_cavalry
-				free_merc = yes
-			}
+			add_mil_power = 300
 		}
 	}
 	swe_sca_north_borderlands = {

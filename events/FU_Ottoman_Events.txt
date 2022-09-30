@@ -330,12 +330,6 @@ country_event = { #The Fate of the Holy City
 		}
 		else = { change_dip = 1 } 
 	}
-	
-	option = { 	
-		name = FU_Ottoman_Events.9.b 
-		
-		add_government_reform = tur_custodian_holy_city_reform
-	}
 }
 
 country_event = { #Grand Entrance in Fez 
@@ -1864,7 +1858,7 @@ country_event = { #Mansure Army
 		
 		
 		set_country_flag = tur_janissary_autocracy_flag
-		add_government_reform = fu_janissary_autocracy
+		#add_government_reform = fu_janissary_autocracy
 		add_country_modifier = { 
 			name = tur_supremacy_of_janissaries_modifier 
 			duration = 18250 
@@ -1896,7 +1890,6 @@ country_event = { #Granadan Moriscos seek Refuge in [151.GetName]
 		define_advisor = { 
 			type = artist 
 			cost_multiplier = 0.75
-			culture = granadan 
 			religion = sunni 
 		}
 		set_country_flag = tur_accepted_moriscos_flag
@@ -1920,7 +1913,7 @@ country_event = { #Piri Reis
 		name = FU_Ottoman_Events.43.a 
 		
 		define_advisor = {
-			type = fu_cartographer
+			type = artist
 			name = "Piri Reis" 
 			skill = 3 
 			cost_multiplier = 0.75
@@ -3401,11 +3394,6 @@ country_event = { #The Height of the Reign of Women
 			add_stability = -2 
 		}
 		else = { 
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 2
-				
-			}
 			add_stability = -1
 		}
 		remove_consort = yes 

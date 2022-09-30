@@ -650,7 +650,7 @@ ottoman_missions_1 = {
 				}
 				define_advisor = { 
 					name = "Genadios II Scholarios" 
-					type = fu_head_of_patriarchate
+					type = inquisitor
 					skill = 3
 					cost_multiplier = 0.75
 					culture = greek
@@ -700,7 +700,7 @@ ottoman_missions_1 = {
 					}
 					define_advisor = { 
 						name = "Genadios II Scholarios"
-						type = fu_head_of_patriarchate
+						type = inquisitor
 						skill = 3
 						cost_multiplier = 0.75
 						culture = greek

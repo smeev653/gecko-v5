@@ -955,13 +955,6 @@ gc_spain_3_b = {
 			2821 = {
 				add_permanent_claim = ROOT
 			}
-			guatemala_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			east_yucatan_area = {
 				limit = {
 					NOT = { is_core = ROOT }

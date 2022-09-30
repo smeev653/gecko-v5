@@ -140,45 +140,7 @@ ajuuran_asian_trade_slot = {
 			}
 		}
 		effect = {
-			custom_tooltip = aju_indian_trade_ct
-			hidden_effect = {
-				504 = {
-					every_trade_node_member_country = {
-						limit = { 504 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } }
-						country_event = { id = flavor_aju.5 }
-					}
-				}
-				507 = {
-					every_trade_node_member_country = {
-						limit = { 507 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } }
-						country_event = { id = flavor_aju.5 }
-					}
-				}
-				524 = {
-					every_trade_node_member_country = {
-						limit = { 524 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } }
-						country_event = { id = flavor_aju.5 }
-					}
-				}
-				1343 = {
-					every_trade_node_member_country = {
-						limit = { 1343 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } }
-						country_event = { id = flavor_aju.5 }
-					}
-				}
-				1948 = {
-					every_trade_node_member_country = {
-						limit = { 1948 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } }
-						country_event = { id = flavor_aju.5 }
-					}
-				}
-				1340 = {
-					every_trade_node_member_country = {
-						limit = { 1340 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } }
-						country_event = { id = flavor_aju.5 }
-					}
-				}
-			}
+			
 			add_country_modifier = {
 				name = aju_merchants_in_india
 				duration = 9125

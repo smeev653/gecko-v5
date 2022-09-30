@@ -820,7 +820,6 @@ mug_rajput_branch = {
 		icon = mission_fatehpur_sikri
 		required_missions = {
 			mug_rajput_mansabdars
-			mug_secure_hajj_ports
 		}
 		position = 4
 		provinces_to_highlight = {

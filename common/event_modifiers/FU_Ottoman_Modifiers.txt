@@ -64,7 +64,7 @@ tur_restoration_great_capital_modifier = {
 	prestige = 0.5
 }
 tur_efficient_privateering_in_west_med_modifier = { 
-	movement_speed_in_fleet_modifier = 0.25 
+	#movement_speed_in_fleet_modifier = 0.25 
 	navy_tradition = 0.5
 }
 tur_master_of_berber_tribes_modifier = {

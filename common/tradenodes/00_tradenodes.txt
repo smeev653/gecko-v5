@@ -443,6 +443,9 @@ lahore_trade = {
 		path = {
 			457 476
 		}
+		control = {
+			3824.000000 1312.000000 
+		}
 	}
 	members = {
 		448 451 452 578 2226 #kabulistan_area	
@@ -886,6 +889,7 @@ crimea = {
 			6006 1944
 		}
 		control = {
+			3266.000000 1430.500000
 		}	
 	}
 	outgoing = {

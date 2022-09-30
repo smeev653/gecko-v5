@@ -298,7 +298,7 @@ country_event = { #Milano Conservatories and Opera Houses
 		name = FU_Milan_Events.12.a 
 		
 		define_advisor = {
-			type = composer
+			type = artist
 			name = "Wolfgang Amadeus Mozart"
 			skill = 3
 			culture = bavarian

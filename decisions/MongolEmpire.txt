@@ -167,7 +167,6 @@ country_decisions = {
 				tag = MGE
 			}
 			NOT = { has_country_flag = restored_ilkhanate_decision_flag }
-			NOT = { has_mission = mission_conquer_persia_tatars }
 			NOT = { exists = ILK }
 			NOT = {
 				capital_scope = {
