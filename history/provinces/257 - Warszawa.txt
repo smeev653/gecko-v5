@@ -1,7 +1,7 @@
 #257 - Mazovia
 
-owner = POL
-controller = POL
+owner = MAZ
+controller = MAZ
 capital = "Warszawa"
 culture = polish
 religion = catholic
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = POL
+add_core = MAZ
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

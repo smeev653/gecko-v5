@@ -1315,18 +1315,7 @@ POL_Missions_3_1 = {
 				add_ruler_modifier = {
 					name = POL_a_piast_ruler
 					duration = -1
-				}
-			
-			279 = {
-					add_core = ROOT
-				}
-			2962 = {
-					add_core = ROOT
-				}
-			4539 = {
-					add_core = ROOT
-				}				
-			
+				}			
 			hidden_effect = {
 				if = {
 					limit = {

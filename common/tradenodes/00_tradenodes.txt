@@ -914,6 +914,7 @@ crimea = {
 
 kiev = {
 	location = 280
+	inland = yes
 	outgoing = {
 		name = "white_sea"
 		path = {

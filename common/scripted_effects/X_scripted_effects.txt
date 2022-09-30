@@ -1,7 +1,7 @@
 ####################
 # General
 ####################
-X_center_of_trade_effect = {
+X_center_of_trade_lvl_2_effect = {
 	if = {
 		limit = {
 			NOT = { province_has_center_of_trade_of_level = 1 }
@@ -20,6 +20,24 @@ X_center_of_trade_effect = {
 			NOT = { province_has_center_of_trade_of_level = 3 }
 		}
 		owner = { add_treasury = 200 }
+	}
+	else = {
+		owner = { add_treasury = 1000 }
+	}
+}
+
+X_center_of_trade_lvl_3_effect = {
+	if = {
+		limit = {
+			NOT = { province_has_center_of_trade_of_level = 1 }
+		}
+		center_of_trade = 1
+	}
+	else_if = {
+		limit = {
+			NOT = { province_has_center_of_trade_of_level = 3 }
+		}
+		add_center_of_trade_level = 1
 	}
 	else = {
 		owner = { add_treasury = 1000 }

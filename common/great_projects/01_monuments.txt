@@ -13292,14 +13292,16 @@ krakow_cloth_hall = {
 			factor = 350
 		}
 		province_modifiers = {
-			trade_goods_size_modifier = 0.1
+			province_trade_power_modifier = 0.25
 		}
 		area_modifier = {
+			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
-			merchants = 1
+			caravan_power = 0.10
 		}
 		on_upgraded = {
+			X_center_of_trade_lvl_3_effect = yes
 		}
 	}
 
@@ -13311,15 +13313,17 @@ krakow_cloth_hall = {
 			factor = 750
 		}
 		province_modifiers = {
+			province_trade_power_modifier = 0.50
 		}
 		area_modifier = {
-			trade_goods_size_modifier = 0.1
+			trade_goods_size_modifier = 0.15
 		}
 		country_modifiers = {
 			merchants = 1
-			global_trade_power = 0.05
+			caravan_power = 0.20
 		}
 		on_upgraded = {
+			X_center_of_trade_lvl_3_effect = yes
 		}
 	}
 
@@ -13331,15 +13335,17 @@ krakow_cloth_hall = {
 			factor = 1500
 		}
 		province_modifiers = {
+			province_trade_power_modifier = 1.0
 		}
 		area_modifier = {
 			trade_goods_size_modifier = 0.2
 		}
 		country_modifiers = {
 			merchants = 2
-			global_trade_power = 0.1
+			caravan_power = 0.30
 		}
 		on_upgraded = {
+			X_center_of_trade_lvl_3_effect = yes
 		}
 	}
 }

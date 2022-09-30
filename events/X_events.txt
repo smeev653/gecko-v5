@@ -368,7 +368,7 @@ country_event = {
 					trade = yes
 					builder = ROOT
 				}
-				X_center_of_trade_effect = yes
+				X_center_of_trade_lvl_2_effect = yes
 			}
 		}
 	}
@@ -494,7 +494,7 @@ country_event = {
 		321 = {
 			cede_province = ROOT
 			add_core = ROOT
-			X_center_of_trade_effect = yes
+			X_center_of_trade_lvl_2_effect = yes
 		}
 		if = {
 			limit = {
@@ -658,7 +658,7 @@ country_event = {
 				culture = greek
 				NOT = { province_has_center_of_trade_of_level = 1 }
 			}
-			X_center_of_trade_effect = yes
+			X_center_of_trade_lvl_2_effect = yes
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
@@ -889,7 +889,7 @@ country_event = {
 		custom_tooltip = X_CRI_event_8_tt
 		custom_tooltip = X_CRI_event_8_tt2
 		hidden_effect = {
-			286 = { X_center_of_trade_effect = yes }
+			286 = { X_center_of_trade_lvl_2_effect = yes }
 		}
 		GEN = {
 			while = {

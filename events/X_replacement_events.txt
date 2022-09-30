@@ -1,0 +1,67 @@
+########################################
+# Polish Events
+########################################
+namespace = flavor_pol
+#Election of Kasimir
+country_event = {
+	id = flavor_pol.18
+	title = flavor_pol.18.t
+	desc = flavor_pol.18.d
+	picture = LIBERUM_VETO_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		tag = POL
+		is_subject = no
+		has_regency = yes
+		LIT = {
+			exists = yes
+			is_subject = no
+			NOT = { junior_union_with = POL }
+			dynasty = "Jagiellon"
+		}
+		NOT = { is_year = 1450 }
+	}
+	immediate = {
+		set_global_flag = plc_union_outcome_flag
+	}
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.5
+			is_year = 1448
+		}
+	}
+	option = {
+		name = flavor_pol.18.a
+		define_ruler = {
+			change_adm = 3
+			change_dip = 3
+			change_mil = 4
+			claim = 100
+			dynasty = "Jagiellon"
+			culture = lithuanian
+		}
+		set_country_flag = gecko_localnoble
+		create_union = LIT
+		LIT = {
+			release = PLT
+			release = SMO
+			release = VOL
+			hidden_effect = {
+				every_core_province = {
+					limit = {
+						OR = {
+							is_core = PLT
+							is_core = SMO
+							is_core = VOL
+						}
+					}
+					remove_core = LIT
+				}
+			}
+		}
+		inherit = VOL
+	}
+	after = { country_event = { id = flavor_pol.20 } }
+}

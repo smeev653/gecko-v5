@@ -2095,7 +2095,7 @@ X_VEN_slot_5 = {
 		effect = {
 			if = {
 				limit = { owns_or_subject_of = 321 }
-				321 = { X_center_of_trade_effect = yes }
+				321 = { X_center_of_trade_lvl_2_effect = yes }
 			}
 			else = { country_event = { id = X_VEN_events.3 } }
 			320 = {
@@ -2923,7 +2923,7 @@ X_CRI_slot_3 = {
 			}
 			6213 = {
 				change_trade_goods = slaves
-				X_center_of_trade_effect = yes
+				X_center_of_trade_lvl_2_effect = yes
 				rename_capital = "Qarasubazar"
 			}
 			if = { 
@@ -3427,13 +3427,13 @@ X_CRI_slot_5 = {
 						limit = {
 							2961 = { is_core = VOL }
 						}
-						2961 = { X_center_of_trade_effect = yes }
+						2961 = { X_center_of_trade_lvl_2_effect = yes }
 					}
 					if = {
 						limit = {
 							279 = { is_core = VOL }
 						}
-						279 = { X_center_of_trade_effect = yes }
+						279 = { X_center_of_trade_lvl_2_effect = yes }
 					}
 					if = {
 						limit = {
@@ -3468,13 +3468,13 @@ X_CRI_slot_5 = {
 					limit = {
 						2961 = { country_or_subject_holds = ROOT }
 					}
-					2961 = { X_center_of_trade_effect = yes }
+					2961 = { X_center_of_trade_lvl_2_effect = yes }
 				}
 				if = {
 					limit = {
 						279 = { country_or_subject_holds = ROOT }
 					}
-					279 = { X_center_of_trade_effect = yes }
+					279 = { X_center_of_trade_lvl_2_effect = yes }
 				}
 				if = {
 					limit = {
