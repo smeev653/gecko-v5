@@ -7,29 +7,7 @@
  ####################
  # Estates
  ####################
- #Estates
- x_rus_estate_streltsy:0 "Streletskaya"
- x_rus_estate_streltsy_desc:0 ""
- X_RUS_estate_streltsy_loyalty_modifier:0 "Streletskaya Loyalty Equilibrium"
- X_RUS_estate_streltsy_influence_modifier:0 "Streletskaya Influence"
- x_rus_estate_streltsy_ownership:0 "Streletskaya Land Ownership"
  #Privileges
- X_RUS_estate_streltsy_privilege_1:0 "Enhance Streltsy Recruitment"
- X_RUS_estate_streltsy_privilege_1_desc:0 ""
- X_RUS_estate_streltsy_privilege_2:0 "Establish Gulyaygorod Tactics"
- X_RUS_estate_streltsy_privilege_2_desc:0 ""
- X_RUS_estate_streltsy_privilege_3:0 "Restrict Landed Streltsy"
- X_RUS_estate_streltsy_privilege_3_desc:0 ""
- X_RUS_estate_streltsy_privilege_4:0 "Tolerate Old Believers"
- X_RUS_estate_streltsy_privilege_4_desc:0 ""
- X_RUS_estate_streltsy_privilege_5:0 "Ease Treasury Burden"
- X_RUS_estate_streltsy_privilege_5_desc:0 ""
- X_RUS_estate_streltsy_privilege_6:0 "$ESTATE_NAME$ Land Rights"
- X_RUS_estate_streltsy_privilege_6_desc:0 ""
- X_RUS_estate_streltsy_privilege_7:0 "End Hereditary Service"
- X_RUS_estate_streltsy_privilege_7_desc:0 ""
- X_RUS_estate_streltsy_privilege_8:0 "Train Elite Streletskiye Golovy"
- X_RUS_estate_streltsy_privilege_8_desc:0 ""
  X_estate_cossacks_privilege_1:0 "Establish Cossack Border Guards"
  X_estate_cossacks_privilege_1_desc:0 ""
  X_estate_cossacks_privilege_2:0 "Hire Cossack Raiders"
@@ -37,10 +15,6 @@
  X_estate_burghers_privilege_1:0 "Organized Slave Markets"
  X_estate_burghers_privilege_1_desc:0 ""
  #Tooltips
- X_RUS_estate_streltsy_privilege_1_on_granted_tt:0 "Gain §G+2§! §YStreltsy Progress§! at the start of each year."
- X_RUS_estate_streltsy_privilege_1_on_revoked_tt:0 "No longer gain §G+2§! §YStreltsy Progress§! at the start of each year."
- X_RUS_estate_streltsy_privilege_7_on_granted_tt:0 "Gain §R-2§! §YStreltsy Progress§! at the start of each year."
- X_RUS_estate_streltsy_privilege_7_on_revoked_tt:0 "No longer gain §R-2§! §YStreltsy Progress§! at the start of each year."
  X_estate_cossacks_privilege_1_on_granted_tt:0 "Every owned province of §lFlatland§! terrain in the §YRuthenia§! region or §YSteppes§! terrain with a §YFort§! gains '§YCossack Border Defense§!', giving the following effects:\nLocal Defensiveness: §G+15.0%§!\nLocal Garrison Size: §G+50.0%§!\nLocal Fort Maintenance: §G-75.0%§!"
  X_estate_cossacks_privilege_1_on_revoked_tt:0 "Remove '§YCossack Border Defense§!' from every owned province of §lFlatland§! terrain in the §YRuthenia§! region or §YSteppes§! terrain with a §YFort§!."
  X_estate_cossacks_privilege_2_on_granted_tt:0 "Cossack raiders will sporadically raid our Heathen neighbors, plundering their wealth."
@@ -50,18 +24,6 @@
  X_estate_burghers_privilege_1_on_granted_tt:0 "Every owned province producing §YSlaves§! gains '§YKhan's Savga§!', giving the following effects:\nLocal Production Efficiency: §G+75.0%§!"
  X_estate_burghers_privilege_1_on_revoked_tt:0 "Remove '§YKhan's Savga§!' from every owned province producing §YSlaves§!."
  #Modifiers
- X_RUS_estate_streltsy_privilege_1_cmod:0 "Reduced Recruitment Standards"
- desc_X_RUS_estate_streltsy_privilege_1_cmod:0 ""
- X_RUS_estate_streltsy_privilege_2_cmod:0 "Gulyaygorod Tactics"
- desc_X_RUS_estate_streltsy_privilege_2_cmod:0 ""
- X_RUS_estate_streltsy_privilege_3_cmod:0 "Desire for Combat"
- desc_X_RUS_estate_streltsy_privilege_3_cmod:0 ""
- X_RUS_estate_streltsy_privilege_4_cmod:0 "Honored Traditions"
- desc_X_RUS_estate_streltsy_privilege_4_cmod:0 ""
- X_RUS_estate_streltsy_privilege_5_cmod:0 "Forgoed Payments"
- desc_X_RUS_estate_streltsy_privilege_5_cmod:0 ""
- X_RUS_estate_streltsy_privilege_7_cmod:0 "Elite Regiments"
- desc_X_RUS_estate_streltsy_privilege_7_cmod:0 ""
  X_estate_cossacks_privilege_1_pmod:0 "Cossack Border Defense"
  desc_X_estate_cossacks_privilege_1_pmod:0 ""
  X_estate_cossacks_privilege_2_pmod:0 "Cossack Raid"
@@ -484,10 +446,64 @@
  ####################
  # Russia
  ####################
+ #Estates
+ x_rus_estate_streltsy:0 "Streletskaya"
+ x_rus_estate_streltsy_desc:0 ""
+ X_RUS_estate_streltsy_loyalty_modifier:0 "Streletskaya Loyalty Equilibrium"
+ X_RUS_estate_streltsy_influence_modifier:0 "Streletskaya Influence"
+ x_rus_estate_streltsy_ownership:0 "Streletskaya Land Ownership"
+ #Privileges
+ X_RUS_estate_streltsy_privilege_1:0 "Enhance Streltsy Recruitment"
+ X_RUS_estate_streltsy_privilege_1_desc:0 ""
+ X_RUS_estate_streltsy_privilege_2:0 "Establish Gulyaygorod Tactics"
+ X_RUS_estate_streltsy_privilege_2_desc:0 ""
+ X_RUS_estate_streltsy_privilege_3:0 "Restrict Landed Streltsy"
+ X_RUS_estate_streltsy_privilege_3_desc:0 ""
+ X_RUS_estate_streltsy_privilege_4:0 "Tolerate Old Believers"
+ X_RUS_estate_streltsy_privilege_4_desc:0 ""
+ X_RUS_estate_streltsy_privilege_5:0 "Ease Treasury Burden"
+ X_RUS_estate_streltsy_privilege_5_desc:0 ""
+ X_RUS_estate_streltsy_privilege_6:0 "$ESTATE_NAME$ Land Rights"
+ X_RUS_estate_streltsy_privilege_6_desc:0 ""
+ X_RUS_estate_streltsy_privilege_7:0 "End Hereditary Service"
+ X_RUS_estate_streltsy_privilege_7_desc:0 ""
+ X_RUS_estate_streltsy_privilege_8:0 "Train Elite Streletskiye Golovy"
+ X_RUS_estate_streltsy_privilege_8_desc:0 ""
+ #Tooltips
+ X_RUS_estate_streltsy_privilege_1_on_granted_tt:0 "Gain §G+2§! §YStreltsy Progress§! at the start of each year."
+ X_RUS_estate_streltsy_privilege_1_on_revoked_tt:0 "No longer gain §G+2§! §YStreltsy Progress§! at the start of each year."
+ X_RUS_estate_streltsy_privilege_7_on_granted_tt:0 "Gain §R-2§! §YStreltsy Progress§! at the start of each year."
+ X_RUS_estate_streltsy_privilege_7_on_revoked_tt:0 "No longer gain §R-2§! §YStreltsy Progress§! at the start of each year."
+ #Modifiers
+ X_RUS_estate_streltsy_privilege_1_cmod:0 "Reduced Recruitment Standards"
+ desc_X_RUS_estate_streltsy_privilege_1_cmod:0 ""
+ X_RUS_estate_streltsy_privilege_2_cmod:0 "Gulyaygorod Tactics"
+ desc_X_RUS_estate_streltsy_privilege_2_cmod:0 ""
+ X_RUS_estate_streltsy_privilege_3_cmod:0 "Desire for Combat"
+ desc_X_RUS_estate_streltsy_privilege_3_cmod:0 ""
+ X_RUS_estate_streltsy_privilege_4_cmod:0 "Honored Traditions"
+ desc_X_RUS_estate_streltsy_privilege_4_cmod:0 ""
+ X_RUS_estate_streltsy_privilege_5_cmod:0 "Forgoed Payments"
+ desc_X_RUS_estate_streltsy_privilege_5_cmod:0 ""
+ X_RUS_estate_streltsy_privilege_7_cmod:0 "Elite Regiments"
+ desc_X_RUS_estate_streltsy_privilege_7_cmod:0 ""
  #Monuments
  X_RUS_trinity_lavra:0 "Trinity Lavra"
  X_RUS_trinity_lavra_title:0 "Trinity Lavra"
  great_project_X_RUS_trinity_lavra:0 "Trinity Lavra"
+ ####################
+ # Poland
+ ####################
+ #Events
+ X_POL_events.1.t:0 "Statuta Synodalia Episcoporum Wratislaviensium"
+ X_POL_events.1.d1:0 ""
+ X_POL_events.1.a:0 "A spread of ideas"
+ X_POL_events.1.b:0 "A useful tool"
+ #Modifiers
+ X_POL_polish_incunabula_cmod:0 "Polish Incunabula"
+ desc_X_POL_polish_incunabula_cmod:0 ""
+ X_POL_swidnica_beer_pmod:0 "Swidnica Beer"
+ desc_X_POL_swidnica_beer_pmod:0 ""
  ####################
  # Tiered Modifiers
  ####################

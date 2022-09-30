@@ -257,6 +257,15 @@ X_RUS_estate_streltsy_privilege_7_cmod = {
 	land_maintenance_modifier = 0.05
 }
 ########################################
+# Modifiers for Poland
+########################################
+X_POL_polish_incunabula_cmod = {
+	idea_cost = -0.05
+}
+X_POL_swidnica_beer_pmod = {
+	trade_goods_size = 1
+}
+########################################
 # Tiered Modifiers
 ########################################
 #tartar
