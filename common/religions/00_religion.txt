@@ -419,6 +419,9 @@ christian = {
 			individual_creeds_aspect
 			allow_usury_aspect
 			translated_bibles_aspect
+			justified_religious_war_aspect
+			war_preaches_aspect
+			head_of_the_church_aspect
 		}
 		aspects_name = PROTESTANT_ASPECTS
 		
@@ -669,6 +672,9 @@ christian = {
 				allow = {
 					always = yes
 				}
+	visible = {
+					always = yes
+				}
 				ai_will_do = {
 					factor = 1
 					modifier = {
@@ -686,6 +692,9 @@ christian = {
 				interest = -0.25
 				
 				allow = {
+					always = yes
+				}
+	visible = {
 					always = yes
 				}
 				ai_will_do = {
@@ -720,6 +729,9 @@ christian = {
 				allow = {
 					always = yes
 				}
+	visible = {
+					always = yes
+				}
 				ai_will_do = {
 					factor = 0
 				}
@@ -738,6 +750,9 @@ christian = {
 			icon_climacus = {
 				global_institution_spread = 0.25
 				embracement_cost = -0.2
+	visible = {
+					always = yes
+				}
 				allow = {
 					always = yes
 				}

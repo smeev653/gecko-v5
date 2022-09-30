@@ -791,33 +791,33 @@ on_province_owner_change_estate_privileges_effect = {
 		remove_province_modifier = estate_qizilbash_levies_mod
 	}
 ############################
-	if = {
-		limit = { has_terrain = steppe }
-		if = {
-			limit = {
-				owner = {
-					has_estate_privilege = estate_cossacks_prime_herding_rights
-				}
-				NOT = { has_province_modifier = estate_cossacks_prime_herding_rights_mod }
-			}
-			add_province_modifier = {
-				name = estate_cossacks_prime_herding_rights_mod
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					has_estate_privilege = estate_cossacks_exploration_expedition
-				}
-				NOT = { has_province_modifier = estate_cossacks_exploration_expedition_mod }
-			}
-			add_province_modifier = {
-				name = estate_cossacks_exploration_expedition_mod
-				duration = -1
-			}
-		}
-	}
+	#if = {
+	#	limit = { has_terrain = steppe }
+	#	if = {
+	#		limit = {
+	#			owner = {
+	#				has_estate_privilege = estate_cossacks_prime_herding_rights
+	#			}
+	#			NOT = { has_province_modifier = estate_cossacks_prime_herding_rights_mod }
+	#		}
+	#		add_province_modifier = {
+	#			name = estate_cossacks_prime_herding_rights_mod
+	#			duration = -1
+	#		}
+	#	}
+	#	if = {
+	#		limit = {
+	#			owner = {
+	#				has_estate_privilege = estate_cossacks_exploration_expedition
+	#			}
+	#			NOT = { has_province_modifier = estate_cossacks_exploration_expedition_mod }
+	#		}
+	#		add_province_modifier = {
+	#			name = estate_cossacks_exploration_expedition_mod
+	#			duration = -1
+	#		}
+	#	}
+	#}
 	else_if = {
 		limit = {
 			has_terrain = steppe

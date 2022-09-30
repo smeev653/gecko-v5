@@ -1064,10 +1064,11 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
-			region = malaya_region
-			region = indonesia_region
-			region = moluccas_region
-		}
+		OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+			}		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -1089,7 +1090,7 @@ spices = {
 coffee = {
 	color = { 0.22 0.15 0.09 }
 	modifier = {
-		technology_cost  = -0.05
+		technology_cost  = -0.025
 	}
 	province = {
 		local_institution_spread = 0.1

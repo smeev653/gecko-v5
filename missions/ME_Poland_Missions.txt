@@ -2111,7 +2111,7 @@ POL_Missions_4_Jagiellon_2 = {
 						limit = {
 							OR = {
 								culture = czech
-								culture = silesian
+								culture = schlesian
 							}
 						}
 						add_nationalism = -10
