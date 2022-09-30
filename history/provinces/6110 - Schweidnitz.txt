@@ -1,6 +1,3 @@
-latent_trade_goods = {
-	coal
-}
 
 #Schweidnitz
 add_core = GLG
