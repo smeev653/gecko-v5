@@ -1330,8 +1330,8 @@ new_world_exploitation_modifier = {
 large_colonial_nation = {
 	merchants = 1						  
 	land_forcelimit = 20
-	governing_capacity_modifier = -0.05
-	liberty_desire_from_subject_development = 0.15
+	governing_capacity = -150
+	liberty_desire_from_subject_development = 0.2
 	global_tariffs = -0.05
 }
 crown_colony_overlord = {
