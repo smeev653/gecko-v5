@@ -227,6 +227,14 @@ vassal = {
 	modifier_overlord = {
 		modifier = vassal_subject
 	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
 
 	overlord_opinion_modifier = is_vassal
 	subject_opinion_modifier = is_vassal
@@ -278,6 +286,14 @@ march = {
 		}
 		expiration_message_overlord = MARCHTOOLARGE
 		expiration_message_subject = MARCHTOOLARGEUS
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
 	}
 }
 
@@ -509,7 +525,12 @@ colony = {
 			num_of_cities = 15
 		}
 	}
-
+	modifier_subject = {
+		modifier = new_world_exploitation_modifier
+		trigger = {
+			overlord = { has_government_attribute = extra_trade_goods_for_colonial_subjects }
+		}
+	}
 	overlord_opinion_modifier = colonial_relation
 	subject_opinion_modifier = colonial_relation
 }
@@ -542,6 +563,15 @@ crown_colony = {
 	takeondebt = yes
 	block_settlement_growth = yes
 	allow_settlement_growth = yes
+	# Modifiers:
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = crown_colony_overlord
+	}
+
+	modifier_subject = {
+		modifier = crown_colony_subject
+	}
 }
 
 private_enterprise = {
@@ -556,6 +586,15 @@ private_enterprise = {
 	replace_governor = no
 	block_settlement_growth = no
 	allow_settlement_growth = no
+	# Modifiers:	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = private_enterprise_overlord
+	}
+	
+	modifier_subject = {
+		modifier = private_enterprise_subject
+	}
 }
 
 self_governing_colony = {
@@ -571,6 +610,16 @@ self_governing_colony = {
 	block_settlement_growth = no
 	allow_settlement_growth = no
 	press_sailors = no
+	
+		# Modifiers:	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = self_governing_colony_overlord
+	}
+	
+	modifier_subject = {
+		modifier = self_governing_colony_subject
+	}
 }				
 tributary_state = {
 	#If similar subject added check if it needs to be added to these scripted triggers:

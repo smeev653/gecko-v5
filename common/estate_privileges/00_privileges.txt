@@ -1757,7 +1757,10 @@ estate_burghers_indebted_to_burghers = {
     influence = 0.05
     on_granted = {
         custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
-        add_mercantilism = -1
+       if = {
+			limit = { NOT = { has_government_attribute = no_mercantilism_loss_from_privilege } }
+			add_mercantilism = -1
+		}
         tooltip = {
             add_inflation = 0.5
         }
@@ -1811,7 +1814,10 @@ estate_burghers_indebted_to_burghers_2 = {
 	}
     on_granted = {
         custom_tooltip = estate_burghers_indebted_to_burghers_effect_2_tooltip
-        add_mercantilism = -1
+        if = {
+			limit = { NOT = { has_government_attribute = no_mercantilism_loss_from_privilege } }
+			add_mercantilism = -1
+		}
         tooltip = {
             add_inflation = 0.5
         }
