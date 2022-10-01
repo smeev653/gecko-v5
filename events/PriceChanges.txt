@@ -666,7 +666,7 @@ country_event = {
 		change_price = {
 			trade_goods = salt
 			key = GREAT_FISHERIES
-			value = 0.1
+			value = 0.2
 			duration = -1
 		}
 		newfoundland_area = {
@@ -1364,7 +1364,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = INCREASED_PRINTING
-			value = 0.25
+			value = 0.2
 			duration = -1
 		}
 	}
@@ -1611,7 +1611,7 @@ country_event = {
 		change_price = {
 			trade_goods = paper
 			key = PAPER_IN_BUREAUCRACY
-			value = 0.25
+			value = 0.2
 			duration = -1
 		}
 	}
