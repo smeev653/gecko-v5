@@ -142,115 +142,6 @@ tr_arkhangelsk_2 = {
 	
 }
 
-
-tr_russia_religious_missions = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Third Rome"
-	}
-	potential = {
-		OR = {
-			tag = MOS
-			tag = RUS
-		}
-		has_dlc = "Third Rome"
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	rus_churches_mission = {
-		icon = mission_land_of_churches
-		position = 2
-		required_missions = {  }
-		provinces_to_highlight = {
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 20
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
-			}
-		}
-		effect = {
-			add_patriarch_authority = 0.1
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 10
-			}
-			if = {
-				limit = {
-					NOT = {
-						religion = orthodox
-					}
-				}
-				add_prestige = 10
-			}
-		}
-	}
-}
-
-tr_russia_exclusive_church = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Third Rome"
-	}
-	potential = {
-		OR = {
-			tag = MOS
-			tag = RUS
-		}
-		has_dlc = "Third Rome"
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	
-	rus_patriarchate_mission = {
-		icon = mission_russian_patriarchatee
-		required_missions = { rus_churches_mission }
-		position = 3
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					province_id = 151
-					owned_by = BYZ
-				}
-				AND = {
-					province_id = 295
-					NOT = {
-						owned_by = ROOT
-					}
-				}
-			}
-		}
-		trigger = {
-			NOT = { 
-				151 = { 
-					owned_by = BYZ 
-				}
-			}
-			religion = orthodox
-			295 = {
-				owned_by = ROOT
-				has_state_patriach = yes
-			}
-		}
-		effect = {
-			set_country_flag = patriarchate_mission
-			country_event = { id = flavor_rus.9 }
-			add_country_modifier = {
-				name = "russian_patriarchate"
-				duration = -1
-			}
-		}
-	}
-}
-
 tr_muscovy_conquest = {
 	slot = 1
 	generic = no
@@ -277,7 +168,7 @@ tr_muscovy_conquest = {
 	}
 	}
 
-	winter_tactics = {
+	T_RUS_winter_tactics = {
 		trigger = {
 			infantry_leader = 2
 			mil_power = 200
@@ -287,6 +178,7 @@ tr_muscovy_conquest = {
 			country_event = {id = henri_rus_larp.10}
 		}
 	}
+	
 	expand_power_in_neva = {
 	icon = mission_galleys_in_port
 	trigger = {
@@ -805,7 +697,7 @@ tr_russia_conquest_1 = {
 				}
 				
 		}
-		add_patriarch_authority = 25
+		add_patriarch_authority = 0.25
 
 	}
 		
@@ -1099,6 +991,78 @@ tr_russia_conquest_2 = {
 			}
 		}
 	}
+
+	rus_churches_mission = {
+		icon = mission_land_of_churches
+		position = 2
+		required_missions = {  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			add_patriarch_authority = 0.1
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			if = {
+				limit = {
+					NOT = {
+						religion = orthodox
+					}
+				}
+				add_prestige = 10
+			}
+		}
+	}
+	
+	rus_patriarchate_mission = {
+		icon = mission_russian_patriarchatee
+		required_missions = { rus_churches_mission }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 151
+					owned_by = BYZ
+				}
+				AND = {
+					province_id = 295
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		trigger = {
+			NOT = { 
+				151 = { 
+					owned_by = BYZ 
+				}
+			}
+			religion = orthodox
+			295 = {
+				owned_by = ROOT
+				has_state_patriach = yes
+			}
+		}
+		effect = {
+			set_country_flag = patriarchate_mission
+			country_event = { id = flavor_rus.9 }
+			add_country_modifier = {
+				name = "russian_patriarchate"
+				duration = -1
+			}
+		}
+	}
 	
 	tr_conquer_finland = {
 		icon = mission_assemble_an_army
@@ -1142,6 +1106,7 @@ tr_russia_conquest_2 = {
 	}
 	confront_the_turks = {
 		required_missions = {rebuild_ruthenia}
+		position = 6
 		trigger = {
 			is_rival = TUR
 			army_strength = {
@@ -1455,8 +1420,10 @@ tr_russia_conquest_3 = {
 			OR = {
 				AND = {
 				is_year = 1575
-				NOT = {
-					has_global_flag = great_sack_of_moscow_flag
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = great_sack_of_moscow_flag
+					}
 				}
 				}
 				AND = {

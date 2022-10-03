@@ -527,25 +527,23 @@ country_event = { #IntegrateFinnoUgric
 	
 }
 
-country_event = { #WinterTraining
+#Winter Training
+country_event = {
 	id = henri_rus_larp.10
 	title = henri_rus_larp.10.t
 	desc = henri_rus_larp.10.d
 	picture = TRIBUTE_TO_TATARS_eventPicture
     fire_only_once = yes
-	
 	is_triggered_only = yes
-	
-	
 	option = {
 		name = henri_rus_larp.10.a
-
-		set_country_flag = expanded_winter_tactics
-		
-		 	
+		custom_tooltip = T_RUS_winter_training_tt
+		hidden_effect = {
+			capital_scope = {
+				add_province_triggered_modifier = T_RUS_elite_winter_tactics_ptmod
+			}
+		}
 	}
-	
-	
 }
 
 country_event = { #BalticDomination

@@ -1,23 +1,3 @@
-elite_winter_tactics = {
-    potential = {
-        OR = {
-			tag = MOS
-            tag = RUS
-            }
-            has_country_flag = expanded_winter_tactics
-	}
-	trigger = {
-		OR = {
-            is_month = 10
-            NOT = {is_month = 3}
-
-        }
-	}
-    movement_speed = 0.10
-    shock_damage = 0.10
-    land_attrition = -0.25
-}
-
 isolationist_1 = {
     potential = {
        OR = {
