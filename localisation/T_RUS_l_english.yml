@@ -72,7 +72,7 @@
     MEexplaining.tooltip:0 "Depending on your current §GIsolation Level§! or your §RWesternization Level§! we will recieve different bonuses and options. \n\nYour current §YWesternization versus Isolation§! is [Root.GetWesternizationVSIsolationism]. \nGetting less than §Y0§! will lead to a Western Approach of the tree."
     string_WVI_progress_red:0 "§R[This.westernization_vs_isolation.GetValue]§!"
     string_WVI_progress_green:0 "§G[This.westernization_vs_isolation.GetValue]§!"
-     
+    westernization_vs_isolation:0 "Isolation versus Westernization Level"
     henri_rus_larp.1.t:0 "Support Kazani Pretenders"
     henri_rus_larp.1.d:0 "Kazan is a powerful khanate. However, it is rife with rebellion and pretenders. Our vassal Qasim Khan has strong claims to the throne, and support among some of the nobility. We must choose whether to act and support his claim and install a friendly face!"
     henri_rus_larp.1.a:0 "Support Qasim Khan"
