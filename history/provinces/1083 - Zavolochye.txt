@@ -3,7 +3,7 @@
 owner = MOS
 controller = MOS
 capital = "Yur"
-culture = russian
+culture = mari
 religion = orthodox
 trade_goods = grain
 hre = no

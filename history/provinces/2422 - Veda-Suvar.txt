@@ -2,7 +2,7 @@
 
 owner = KAZ
 controller = KAZ
-culture = kazani
+culture = chuvash
 religion = sunni
 capital = "Veda-Suvar"
 trade_goods = grain

@@ -20,7 +20,7 @@ discovered_by = AST
 discovered_by = QAS
 discovered_by = western
 discovered_by = eastern
-
+center_of_trade = 1
 
 1542.1.1 = { religion = protestant} # Unknown date
 1558.5.11 = {

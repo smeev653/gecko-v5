@@ -2,8 +2,8 @@
 
 owner = MOS
 controller = MOS
-culture = mishary
-religion = sunni
+culture = meschyora
+religion = tengri_pagan_reformed
 hre = no
 base_tax = 4 
 base_production = 4

@@ -1,0 +1,219 @@
+elite_winter_tactics = {
+    potential = {
+        OR = {
+			tag = MOS
+            tag = RUS
+            }
+            has_country_flag = expanded_winter_tactics
+	}
+	trigger = {
+		OR = {
+            is_month = 10
+            NOT = {is_month = 3}
+
+        }
+	}
+    movement_speed = 0.10
+    shock_damage = 0.10
+    land_attrition = -0.25
+}
+
+isolationist_1 = {
+    potential = {
+       OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+        check_variable = { 
+                westernization_vs_isolation 
+                value = 0
+    
+             }
+        NOT = {
+            check_variable  = { 
+                westernization_vs_isolation 
+                value = 25
+    
+             }
+        }
+		}
+    trade_efficiency = -0.05
+    technology_cost = 0.05
+    land_forcelimit_modifier = 0.15
+    global_missionary_strength = 0.01
+}
+isolationist_2 = {
+    potential = {
+        OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+			check_variable = { 
+                westernization_vs_isolation 
+                value = 25
+             }
+              NOT = {
+            check_variable  = { 
+                westernization_vs_isolation 
+                value = 50
+    
+             }
+        }
+		}
+    trade_efficiency = -0.075
+    technology_cost = 0.075
+    land_forcelimit_modifier = 0.25
+    global_missionary_strength = 0.02
+}
+isolationist_3 = {
+    potential = {
+        OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+			check_variable = { 
+                westernization_vs_isolation 
+                value = 50
+             }
+            NOT = {
+            check_variable  = { 
+                westernization_vs_isolation 
+                value = 75
+    
+             }
+        }
+		}
+    trade_efficiency = -0.1
+    technology_cost = 0.1
+    land_forcelimit_modifier = 0.25
+    infantry_power = 0.075
+    global_missionary_strength = 0.03
+}
+isolationist_4 = {
+    potential = {
+        OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+			check_variable = { 
+                westernization_vs_isolation 
+                value = 100
+             }
+            
+		}
+    trade_efficiency = -0.1
+    technology_cost = 0.1
+    global_institution_spread = -0.5
+    land_forcelimit_modifier = 0.25
+    infantry_power = 0.1
+    global_missionary_strength = 0.05
+}
+
+open_1 = {
+    potential = {
+       OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+        check_variable = { 
+                westernization_vs_isolation 
+                value = -25
+    
+             }
+        NOT = {
+            check_variable  = { 
+                westernization_vs_isolation 
+                value = 0
+    
+             }
+        }
+		}
+    trade_efficiency = 0.05
+    technology_cost = -0.05
+    global_institution_spread = 0.25
+    land_forcelimit_modifier = -0.15
+}
+open_2 = {
+    potential = {
+        OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+			check_variable = { 
+                westernization_vs_isolation 
+                value = -50
+             }
+              NOT = {
+            check_variable  = { 
+                westernization_vs_isolation 
+                value = -25
+    
+             }
+        }
+		}
+    trade_efficiency = 0.1
+    technology_cost = -0.05
+    fire_damage = 0.05
+    global_institution_spread = 0.25
+    land_forcelimit_modifier = -0.2
+}
+open_3 = {
+    potential = {
+        OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+			check_variable = { 
+                westernization_vs_isolation 
+                value = -75
+             }
+            NOT = {
+            check_variable  = { 
+                westernization_vs_isolation 
+                value = -50
+    
+             }
+        }
+		}
+    trade_efficiency = 0.15
+    technology_cost = -0.075
+    fire_damage = 0.1
+    global_institution_spread = 0.33
+    land_forcelimit_modifier = -0.2
+    land_morale = -0.025
+}
+open_4 = {
+    potential = {
+        OR = {
+        tag = MOS
+        tag = RUS
+        }
+    }
+    trigger = {
+			check_variable = { 
+                westernization_vs_isolation 
+                value = -100
+             }
+            
+		}
+    trade_efficiency = 0.2
+    technology_cost = -0.1
+    fire_damage = 0.15
+    global_institution_spread = 0.5
+    land_forcelimit_modifier = -0.25
+    land_morale = -0.05
+}
