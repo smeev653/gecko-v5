@@ -64,12 +64,6 @@ country_event = { #SteppeRaids
 	desc = henri_rus_larp.3.d
 	picture = TRIBUTE_TO_TATARS_eventPicture
     fire_only_once = yes
-	
-	immediate = { 
-		hidden_effect = {
-			set_variable = { westernization_vs_isolation = 0 }
-		}
-	}
 
 	trigger = {
 		has_dlc = "Third Rome"
@@ -428,7 +422,7 @@ country_event = { #MuscoviteTradeCompany
 				}
 			}
 		}
-		change_variable = { westernization_vs_isolation = 20 }
+		change_variable = { which = westernization_vs_isolation value = 20 }
 		
 	}
 	option = {
@@ -441,7 +435,7 @@ country_event = { #MuscoviteTradeCompany
     				loyalty = 10
     				duration = -1
 					}
-				change_variable = { westernization_vs_isolation = -20 }	
+		change_variable = { which = westernization_vs_isolation value = -20 }
 	}
 	
 }
@@ -616,7 +610,7 @@ country_event = { #BalticDomination
 			name = "open_the_baltic"
 			duration = -1
 		}
-		change_variable = { westernization_vs_isolation = 15 }
+		change_variable = { which = westernization_vs_isolation value = 15 }
 		1842 = {
 			add_province_modifier = {
 					name = narwa_strengthened
@@ -711,7 +705,7 @@ country_event = { #BalticDomination
 			name = "open_the_black_sea"
 			duration = 18262
 		}
-		change_variable = { westernization_vs_isolation = -25 }
+		change_variable = { which = westernization_vs_isolation value = -25 }
 		add_treasury = -500
 	}
 	
@@ -737,7 +731,7 @@ country_event = { #BalticDomination
 			name = "german_russian_aristocracy"
 			duration = -1
 		}
-		change_variable = { westernization_vs_isolation = -25 }
+		change_variable = { which = westernization_vs_isolation value = -25 }
 		add_patriarch_authority = -0.15
 		}
 		option = {
@@ -749,7 +743,7 @@ country_event = { #BalticDomination
 			duration = -1
 		}
 		add_patriarch_authority = 0.1
-		change_variable = { westernization_vs_isolation = 20 }
+		change_variable = { which = westernization_vs_isolation value = 20 }
 		}
 	
 	
@@ -781,7 +775,7 @@ country_event = { #LackOfPorts
 			name = "backwards_society"
 			duration = -1 
 		}
-		change_variable = { westernization_vs_isolation = 100 }
+		change_variable = { which = westernization_vs_isolation value = 100 }
 		 	
 	}
 	

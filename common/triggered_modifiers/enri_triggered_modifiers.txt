@@ -4,16 +4,28 @@ isolationist_1 = {
         tag = MOS
         tag = RUS
         }
+        check_variable = { 
+                which = westernization_vs_isolation 
+                value = 0
+    
+           }
+        NOT = {
+            check_variable  = { 
+                which = westernization_vs_isolation 
+                value = 25
+    
+             }
+        }
     }
     trigger = {
         check_variable = { 
-                westernization_vs_isolation 
+                which = westernization_vs_isolation 
                 value = 0
     
-             }
+           }
         NOT = {
             check_variable  = { 
-                westernization_vs_isolation 
+                which = westernization_vs_isolation 
                 value = 25
     
              }
@@ -30,15 +42,26 @@ isolationist_2 = {
         tag = MOS
         tag = RUS
         }
-    }
-    trigger = {
 			check_variable = { 
-                westernization_vs_isolation 
+                which = westernization_vs_isolation 
                 value = 25
              }
               NOT = {
             check_variable  = { 
-                westernization_vs_isolation 
+                which = westernization_vs_isolation 
+                value = 50
+    
+             }
+        }
+    }
+    trigger = {
+			check_variable = { 
+                which = westernization_vs_isolation 
+                value = 25
+             }
+              NOT = {
+            check_variable  = { 
+                which = westernization_vs_isolation 
                 value = 50
     
              }
@@ -55,15 +78,26 @@ isolationist_3 = {
         tag = MOS
         tag = RUS
         }
-    }
-    trigger = {
 			check_variable = { 
-                westernization_vs_isolation 
+                which = westernization_vs_isolation 
                 value = 50
              }
             NOT = {
             check_variable  = { 
-                westernization_vs_isolation 
+                which = westernization_vs_isolation 
+                value = 75
+    
+             }
+        }
+    }
+    trigger = {
+			check_variable = { 
+                which = westernization_vs_isolation 
+                value = 50
+             }
+            NOT = {
+            check_variable  = { 
+                which = westernization_vs_isolation 
                 value = 75
     
              }
@@ -81,10 +115,14 @@ isolationist_4 = {
         tag = MOS
         tag = RUS
         }
+			check_variable = { 
+               which = westernization_vs_isolation 
+                value = 100
+             }
     }
     trigger = {
 			check_variable = { 
-                westernization_vs_isolation 
+               which = westernization_vs_isolation 
                 value = 100
              }
             
@@ -103,16 +141,28 @@ open_1 = {
         tag = MOS
         tag = RUS
         }
-    }
-    trigger = {
         check_variable = { 
-                westernization_vs_isolation 
+               which = westernization_vs_isolation 
                 value = -25
     
              }
         NOT = {
             check_variable  = { 
-                westernization_vs_isolation 
+              which =  westernization_vs_isolation 
+                value = 0
+    
+             }
+        }
+    }
+    trigger = {
+        check_variable = { 
+               which = westernization_vs_isolation 
+                value = -25
+    
+             }
+        NOT = {
+            check_variable  = { 
+              which =  westernization_vs_isolation 
                 value = 0
     
              }
@@ -129,15 +179,27 @@ open_2 = {
         tag = MOS
         tag = RUS
         }
+        check_variable = { 
+               which = westernization_vs_isolation 
+                value = -25
+    
+             }
+        NOT = {
+            check_variable  = { 
+              which =  westernization_vs_isolation 
+                value = 0
+    
+             }
+        }
     }
     trigger = {
 			check_variable = { 
-                westernization_vs_isolation 
+               which = westernization_vs_isolation 
                 value = -50
              }
               NOT = {
             check_variable  = { 
-                westernization_vs_isolation 
+                which =westernization_vs_isolation 
                 value = -25
     
              }
@@ -155,15 +217,27 @@ open_3 = {
         tag = MOS
         tag = RUS
         }
+        check_variable = { 
+               which = westernization_vs_isolation 
+                value = -25
+    
+             }
+        NOT = {
+            check_variable  = { 
+              which =  westernization_vs_isolation 
+                value = 0
+    
+             }
+        }
     }
     trigger = {
 			check_variable = { 
-                westernization_vs_isolation 
+               which = westernization_vs_isolation 
                 value = -75
              }
             NOT = {
             check_variable  = { 
-                westernization_vs_isolation 
+               which = westernization_vs_isolation 
                 value = -50
     
              }
@@ -182,10 +256,29 @@ open_4 = {
         tag = MOS
         tag = RUS
         }
+        check_variable = { 
+               which = westernization_vs_isolation 
+                value = -25
+    
+             }
+        NOT = {
+            check_variable  = { 
+              which =  westernization_vs_isolation 
+                value = 0
+    
+             }
+        }
     }
     trigger = {
+            NOT = {
+            check_variable  = { 
+               which = westernization_vs_isolation 
+                value = -75
+    
+             }
+			}
 			check_variable = { 
-                westernization_vs_isolation 
+               which = westernization_vs_isolation 
                 value = -100
              }
             

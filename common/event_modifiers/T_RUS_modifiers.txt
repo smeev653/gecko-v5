@@ -193,5 +193,5 @@ russians_rule_russia = {
 backwards_society = {
     trade_efficiency = -0.15
     technology_cost = 0.05
-    land_forcelimit = 0.1
+    land_forcelimit_modifier = 0.1
 }

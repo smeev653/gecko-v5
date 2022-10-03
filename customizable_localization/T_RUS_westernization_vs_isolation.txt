@@ -4,7 +4,7 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			check_variable = { westernization_vs_isolation = 0 }
+			check_variable = { which = westernization_vs_isolation value = 0 }
 		}
 		localisation_key = string_WVI_progress_green
 	}

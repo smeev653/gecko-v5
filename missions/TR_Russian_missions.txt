@@ -161,7 +161,7 @@ tr_muscovy_conquest = {
 
 	isolationism_v_westernization = {
 	trigger = {
-		mil_tech = 25
+		always = no
 	}
 	effect = {
 		custom_tooltip = MEexplaining.tooltip
