@@ -1113,6 +1113,8 @@ country_event = {
 			subject_type = vassal
 			subject = NOV
 		}
+		NOV = { remove_historical_rival = ROOT }
+		remove_historical_rival = NOV
 		arkhangelsk_area = {
 			limit = { owned_by = NOV }
 			cede_province = ROOT
