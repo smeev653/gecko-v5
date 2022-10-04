@@ -1095,6 +1095,7 @@ country_event = {
 		name = X_RUS_events.2.a
 		custom_tooltip = X_RUS_event_2_tt
 		hidden_effect = {
+			white_peace = NOV
 			every_province = {
 				limit = { owned_by = NOV }
 				cede_province = ROOT
@@ -1109,6 +1110,9 @@ country_event = {
 	}
 	option = {
 		name = X_RUS_events.2.b
+		hidden_effect = {
+			white_peace = NOV
+		}
 		create_subject = {
 			subject_type = vassal
 			subject = NOV
