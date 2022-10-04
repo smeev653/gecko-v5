@@ -127,11 +127,11 @@ tr_arkhangelsk_2 = {
 			OR = {
 				AND = {
 				exists = ENG
-				owns_core_province = 236
+				ENG = { owns_core_province = 236 }
 				}
 				AND = {
 				exists = GBR
-				owns_core_province = 236
+				GBR = { owns_core_province = 236 }
 				}
 			}
 		}
