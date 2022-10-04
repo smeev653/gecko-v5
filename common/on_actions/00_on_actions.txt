@@ -1010,6 +1010,12 @@ on_siege_won_province = {
 # province
 # root = location, from = winning country
 on_siege_lost_province =  {
+	###X###
+	if = {
+		limit = { province_id = 310 }
+		FROM = { country_event = { id = X_RUS_events.2 } }
+	}
+	#######
 	events = {
 		war_of_the_roses.10		# Lancaster Stronghold
 		war_of_the_roses.11		# York Stronghold

@@ -487,10 +487,21 @@
  desc_X_RUS_estate_streltsy_privilege_5_cmod:0 ""
  X_RUS_estate_streltsy_privilege_7_cmod:0 "Elite Regiments"
  desc_X_RUS_estate_streltsy_privilege_7_cmod:0 ""
+ X_RUS_hanseatic_decline_pmod:0 "Hanseatic Decline"
+ desc_X_RUS_hanseatic_decline_pmod:0 ""
+ X_RUS_novgorodian_maritime_rights_cmod:0 "Novgorodian Maritime Rights"
+ desc_X_RUS_novgorodian_maritime_rights_cmod:0 ""
  #Monuments
  X_RUS_trinity_lavra:0 "Trinity Lavra"
  X_RUS_trinity_lavra_title:0 "Trinity Lavra"
  great_project_X_RUS_trinity_lavra:0 "Trinity Lavra"
+ #Events
+ X_RUS_events.2.t:0 "Capitulation of the Veche"
+ X_RUS_events.2.d1:0 "Thus did [Root.Monarch.GetTitle] [Root.Monarch.GetName] advance with all his host against his domain of Novgorod because of the rebellious spirit of its people, their pride and conversion to Latinism. With a great and overwhelming force did he occupy the entire territory of Novgorod from frontier to frontier, inflicting on every part of it the dread powers of his fire and sword."
+ X_RUS_events.2.a:0 "Even the bell"
+ X_RUS_events.2.b:0 "A deal with Marfa"
+ #Event Tooltips
+ X_RUS_event_2_tt:0 "Every owned province of §Y[NOV.GetName]§! is ceded to §Y[Root.GetName]§!, and gets '§YHanseatic Decline§!', giving the following effects:\nLocal Unrest: §R+2.00§!\nLocal Goods Produced Modifier: §R-25.0%§!"
  ####################
  # Poland
  ####################

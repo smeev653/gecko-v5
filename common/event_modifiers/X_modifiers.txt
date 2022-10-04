@@ -256,6 +256,17 @@ X_RUS_estate_streltsy_privilege_7_cmod = {
 	discipline = 0.05
 	land_maintenance_modifier = 0.05
 }
+
+X_RUS_hanseatic_decline_pmod = {
+	trade_goods_size_modifier = -0.25
+	local_unrest = 2
+}
+
+X_RUS_novgorodian_maritime_rights_cmod = {
+	trade_efficiency = 0.1
+	embargo_efficiency = 0.25
+	liberty_desire_from_subject_development = -0.35
+}
 ########################################
 # Modifiers for Poland
 ########################################

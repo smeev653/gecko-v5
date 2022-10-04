@@ -336,9 +336,8 @@ tr_russia_conquest_1 = {
 			army_size_percentage = 0.75
 		}
 		effect = {
-			2444 = {
-				add_core = ROOT
-			}	
+			create_general = { tradition = 50 }
+			add_mil_power = 50
 			novgorod_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -499,11 +498,30 @@ tr_russia_conquest_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			310 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
+			###X###
+			if = {
+				limit = {
+					310 = { 
+						NOT = { is_core = ROOT }
+					}
+					NOV = { is_subject = no }
+				}
+				add_core = 310
 			}
+			if = {
+				limit = {
+					NOV = { is_subject = no }
+				}
+				310 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			else = {
+				NOV = { add_liberty_desire = -75 }
+			}
+			#######
 		}
 	}
 	tr_consolidate_russia_mission = {
