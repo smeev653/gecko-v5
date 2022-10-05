@@ -99,7 +99,7 @@ kaiser_of_europe = {
 }
 
 third_rome = {
-	land_forcelimit_modifier = 0.10
+	land_forcelimit_modifier = 0.1
 }
 
 mor_barbary_pirate_coast = {
@@ -186,7 +186,7 @@ france_united = {
 	fire_damage = 0.10
 }
 lowland_conquest = {
-	artillery_fire = 0.5
+	naval_morale = 0.05
 	production_efficiency = 0.2
 }
 caliphate_proclaimed = {
