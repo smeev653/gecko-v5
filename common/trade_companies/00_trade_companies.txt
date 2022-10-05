@@ -410,8 +410,8 @@ trade_company_rheinland = {
 		 78  80 81 83 84 85 1760 1876 1878 2975 1762 
 		  
 		4768 4774 
-		49 50 62 63 51 60 61 1759 1763 52 58 59 2964 2965 2969 2993
-		4741 4742 4743 4744 4747 4748 4778
+		49 50 62 63 51 61 1759 52 58 59 2964 2965 2969 2993
+		4741 4742 4743 4744 4747 4748
 		4775 2972 82
 		69 86 56 2973
 		4716
@@ -437,10 +437,6 @@ trade_company_wien = {
 		73 4758 110 1768 #Tirol
 		134 4762 4761 133 1770 #Austria proper
 		128 4759 132 1863 #unterkärnten
-		6105 4724 2970 6104 #Hradecko
-		265 4237 4726 6106 # Moravia
-		266 4725 2968 6103 6102  #bohemia 
-		267 2967 1771 6101 #erzgebirge #smeev
 		1769 129 4751 #Krain
 		6180 6182 6186 
 		6184 6183 6185 #gc bavaria
@@ -460,16 +456,38 @@ trade_company_wien = {
 	}
 }
 
+trade_company_saxony = {
+	color = { 36 182 69 }
+	
+	provinces = {
+		267 1771 2967 6101 #erzgebirge_area
+		266 2968 6103 6102 4725 #bohemia_area
+		4724 6104 2970 6105 #hradecko_area
+		6106 265 4237 4726 #moravia_area
+		60 1763 4778 #lusatia_area
+		2966 6112 6111 4238 #silesia_area
+		6110 6109 6108 264 #breg_area
+		263 4723 6107 #opole_area
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_SAXONY_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_SAXONY_European_Trade_Company"
+	}
+}
+
 trade_company_krakow = {
 	color = { 108 111 86 }
 	
 	provinces = {
-		258 259 260 261 262 263 264 1940 256 257 1938 1939 254 255 2424 2959 2960 2961 2966 
-		4238 2963 1859 4523 4524 4526 4528 4525 4527 4533 4541
-		4723
+		258 259 260 261 262 1940 256 257 1938 1939 254 255 2424 2959 2960 2961
+		2963 1859 4523 4524 4526 4528 4525 4527 4533 4541
 		43 2997 1841 #west prussia #smeev
 		2958 42 767 41 40 #east prussia #smeev
-		6107 6108 6109 6111 6112 6110
 	}
 	
 	# Specific
