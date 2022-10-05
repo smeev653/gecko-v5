@@ -17,9 +17,9 @@ add_army_professionalism = 0.15
 1444.11.11 = {
 	monarch = {
 		name = "(Interregnum)"
-		adm = 6
-		mil = 6
-		dip = 4
+		adm = 0
+		mil = 0
+		dip = 0
 		regent = yes
 	}
 }
