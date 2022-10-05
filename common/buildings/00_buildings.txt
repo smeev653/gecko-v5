@@ -735,6 +735,7 @@ keep_trigger = {
 	}
 	modifier = {
 		fort_level = 2
+		global_defender_dice_roll_bonus = 1
 	}
 	onmap = yes
 	influencing_fort = yes
@@ -1339,6 +1340,7 @@ fort_16th = {
 	}
 	modifier = {
 		fort_level = 4
+		global_defender_dice_roll_bonus = 1
 	}
 
 	onmap = yes
@@ -2058,6 +2060,7 @@ fort_17th = {
 
 	modifier = {
 		fort_level = 6
+		global_defender_dice_roll_bonus = 1
 	}
 
 	onmap = yes
@@ -2679,6 +2682,7 @@ fort_18th = {
 	}
 	modifier = {
 		fort_level = 8
+		global_defender_dice_roll_bonus = 1
 	}
 
 
