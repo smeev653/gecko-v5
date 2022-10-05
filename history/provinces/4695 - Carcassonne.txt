@@ -12,7 +12,7 @@ base_manpower = 2
 add_core = FRA
 add_core = TOU
 fort_15th = yes
-
+add_local_autonomy = 30
 
 discovered_by = eastern
 discovered_by = western

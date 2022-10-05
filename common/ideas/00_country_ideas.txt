@@ -14413,7 +14413,7 @@ ADU_ideas = {
 		fire_damage_received = -0.10
 	}
 	adu_taifa_adminstration = {
-		technology_cost = -0.1
+		technology_cost = -0.05
     }
 	adu_ahl_uhl_dhimma = {
 		discipline = 0.05
