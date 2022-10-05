@@ -14,10 +14,6 @@ is_city = yes
 fort_15th = yes #Timisoara Fortress
 ramparts = yes
 
-add_permanent_province_modifier = {
-    name = critical_province
-    duration = -1
-}
 
 add_core = HUN
 discovered_by = KAZ

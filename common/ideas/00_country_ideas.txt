@@ -1419,6 +1419,7 @@ BUR_Ideas = {
 	}
 	bur_estates_general = {
 		num_accepted_cultures = 2
+		manpower_in_culture_group_provinces = 0.15
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
@@ -14716,7 +14717,7 @@ EPI_ideas = {
 LOT_ideas = {
 	start = {
 		infantry_power = 0.1
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.25
 	}
 	
 	bonus = {
@@ -14729,7 +14730,8 @@ LOT_ideas = {
 	free = yes		#will be added at load.
 	
 	bur_estates_general = {
-		mercenary_manpower = 0.5
+		num_accepted_cultures = 2
+		manpower_in_culture_group_provinces = 0.15
 	}
 	lot_legacy_of_the_carolingians = {
 		prestige_decay = -0.01

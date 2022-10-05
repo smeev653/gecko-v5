@@ -1759,7 +1759,7 @@ country_event = {
 
 	trigger = {
 		owns = 73
-		is_year = 1460
+		is_year = 1445
 		NOT = { is_year = 1820 }
 		73 = {
 			NOT = { has_province_modifier = hab_schwaz_mine }
