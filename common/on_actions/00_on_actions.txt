@@ -4205,6 +4205,36 @@ on_general_recruited = {
 			add_army_professionalism = 0.005
 		}
 	else = {add_army_professionalism = 0.0025 }
+	if = {
+		limit = { has_government_attribute = recruiting_generals_increases_nobles_loyalty }
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 2
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			add_estate_loyalty = {
+				estate = estate_maratha
+				loyalty = 2
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = 2
+			}
+		}
+	}
 }
 
 # country

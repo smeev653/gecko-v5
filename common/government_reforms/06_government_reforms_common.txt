@@ -75,7 +75,7 @@ parliamentary_reform = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
 		custom_attributes = {
-			disables_nobility = yes
+			disables_estate_nobles = yes
 			blocked_call_diet = yes
 		}
 	}
@@ -429,7 +429,6 @@ lands_for_the_monasteries_reform = {
 		yearly_patriarch_authority = 0.002
 	}
 	custom_attributes = {
-		free_religious_culture = yes
 		on_church_built_clergy_loyalty = yes
 	}
 	conditional = {
