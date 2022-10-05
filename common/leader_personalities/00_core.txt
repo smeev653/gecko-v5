@@ -27,7 +27,7 @@ defensive_planner_personality = {
 	allow = {
 		is_admiral = no
 	}
-	shock_damage_received = -0.10
+	shock_damage_received = -0.1
 }
 
 battlefield_medic_personality = {
@@ -41,14 +41,14 @@ ruthless_personality = {
 	allow = {
 		is_admiral = no
 	}
-	fire_damage = 0.10
+	fire_damage = 0.1
 }
 
 inspirational_leader_general_personality = {
 	allow = {
 		is_admiral = no
 	}
-	recover_army_morale_speed = 0.1
+	morale_damage = 0.05
 }
 
 master_of_arms_personality = {
@@ -84,7 +84,7 @@ siege_specialist_personality = {
 cannoneer_personality = {
 	allow = {
 		is_admiral = no
-		artillery_fraction = 0.2 # "any cannons"
+		artillery_fraction = 0.01 # "any cannons"
 	}
 	artillery_power = 0.1
 }

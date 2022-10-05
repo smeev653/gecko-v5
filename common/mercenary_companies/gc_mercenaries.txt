@@ -1,7 +1,7 @@
 #gecko merc companies
 
 gecko_independent_army_1 = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -22,7 +22,7 @@ gecko_independent_army_1 = {
 }
 
 gecko__local_independent_army_1 = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -45,7 +45,7 @@ gecko__local_independent_army_1 = {
 }
 
 gecko__local_independent_army_2 = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -161,7 +161,7 @@ gecko_hormuz_company = {
 }
 
 gc_merc_sekban = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
 	cost_modifier = 0.5
     #home_province = 151
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }

@@ -101,7 +101,7 @@ temple = {
 	}
 
 	on_built = {
-	if = {
+		if = {
 			limit = {
 				FROM = { has_government_attribute = on_church_built_clergy_loyalty }
 			}
@@ -121,7 +121,7 @@ temple = {
 				duration = -1
 			}
 		}
-	}
+	
 		if = {
 				limit = {
 					FROM = {
@@ -138,8 +138,8 @@ temple = {
 				type = tax
 				value = 1
 			}
-	}
 	
+	}
 	on_destroyed = {
 		if = {
 			limit = {

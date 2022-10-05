@@ -11,6 +11,8 @@ estate_gc_noble_levies = {
 			NOT = {tag = TUR}
 			NOT = {tag = MAM}
 			NOT = {tag = EGY}
+			NOT = {tag = CRI}
+			NOT = {tag = GLH}
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_gc_noble_levies }

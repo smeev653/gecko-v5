@@ -23,7 +23,7 @@ merc__local_free_company = {
 }
 
 merc__local_small_company = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -48,7 +48,7 @@ merc__local_small_company = {
 }
 
 merc__local_free_city_company = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -71,7 +71,7 @@ merc__local_free_city_company = {
 }
 
 merc__local_grand_company = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2
@@ -93,7 +93,7 @@ merc__local_grand_company = {
 }
 
 merc__local_independent_army = {
-    regiments_per_development = 0.04
+    regiments_per_development = 0.05
     cavalry_weight = 0
     artillery_weight = 0.0
     cavalry_cap = 2

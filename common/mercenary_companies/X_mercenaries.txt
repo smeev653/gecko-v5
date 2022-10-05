@@ -11,7 +11,7 @@ merc_X_VEN_stratioti = {
 		}
 		mission_completed = X_VEN_mission_24
 	}
-	regiments_per_development = 0.04
+	regiments_per_development = 0.05
 	cavalry_weight = 1
 	modifier = {
 		shock_damage = 0.50

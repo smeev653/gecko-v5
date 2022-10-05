@@ -24,7 +24,7 @@ empowered_subjects = {
 				has_idea = tribute_system
 				was_player = yes 
 			}
-			is_march = yes
+			#is_march = yes
 		
 		NOT = { is_colonial_nation = yes }	
 		NOT = { is_lesser_in_union = yes }	

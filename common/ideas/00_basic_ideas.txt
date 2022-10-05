@@ -777,7 +777,7 @@ quality_ideas = {
 		infantry_power = 0.10
 	}
 	quality_education = {
-		army_tradition = 1
+		army_tradition = 0.5
 	}
 	finest_of_horses = {
 		drill_gain_modifier = 0.33
@@ -794,7 +794,7 @@ quality_ideas = {
 		artillery_power = 0.1
 	}
 	escort_ships = {
-		yearly_army_professionalism = 0.00375
+		yearly_army_professionalism = 0.0025
 	}
 	ai_will_do = {
 		factor = 5
