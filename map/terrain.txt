@@ -46,7 +46,7 @@ categories =  {
 
 		sound_type = desert
 
-		#defence = 1
+		defence = 1
 		movement_cost = 1.0
 		supply_limit = 2		
 		local_development_cost = 0.5
@@ -160,7 +160,7 @@ categories =  {
 		sound_type = forest
 		
 		movement_cost = 1.0
-		#defence = 1
+		defence = 1
 		supply_limit = 4
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9
@@ -188,7 +188,7 @@ categories =  {
 		sound_type = mountains
 
 		movement_cost = 1.0
-		#defence = 1
+		defence = 1
 		local_defensiveness = 0.1
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.85
@@ -259,7 +259,7 @@ categories =  {
 		sound_type = forest
 
 		movement_cost = 1.0
-		#defence = 1
+		defence = 1
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9
 		supply_limit = 6
@@ -334,7 +334,7 @@ categories =  {
 		sound_type = mountains
 
 		movement_cost = 1.0
-		#defence = 1
+		defence = 1
 		local_defensiveness = 0.2
 		local_development_cost = 0.15
 		#combat_width = -0.1
@@ -486,7 +486,7 @@ categories =  {
 		sound_type = jungle
 
 		movement_cost = 1.0
-		#defence = 1
+		defence = 1
 		local_development_cost = 0.2
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
@@ -525,7 +525,7 @@ categories =  {
 		sound_type = forest
 
 		movement_cost = 1.0
-		#defence = 1
+		defence = 1
 		local_development_cost = 0.05
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
@@ -705,7 +705,7 @@ categories =  {
 		
 		supply_limit = 6
 		movement_cost = 1.0
-		#defence = 1
+		defence = 1
 		local_defensiveness = 0.1
 		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9	
