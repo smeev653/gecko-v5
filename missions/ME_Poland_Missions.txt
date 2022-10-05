@@ -1327,56 +1327,7 @@ POL_Missions_3_1 = {
 						name = POL_a_piast_ruler
 						duration = -1
 					}
-					silesia_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					breg_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					opole_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
 					slovakia_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					moravia_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					lusatia_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					bohemia_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					hradecko_area = {
 						limit = {
 							NOT = { is_permanent_claim = ROOT }
 							NOT = { is_core = ROOT }
@@ -2925,34 +2876,6 @@ POL_Missions_5_Jagiellon = {
 						}
 						add_permanent_claim = ROOT
 					}
-					silesia_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					breg_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					opole_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-					lusatia_area = {
-						limit = {
-							NOT = { is_permanent_claim = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
 				}
 			}
 			tooltip = {
@@ -2969,10 +2892,6 @@ POL_Missions_5_Jagiellon = {
 				hradecko_area = { add_permanent_claim = ROOT }
 				moravia_area = { add_permanent_claim = ROOT }
 				erzgebirge_area = { add_permanent_claim = ROOT }
-				silesia_area = { add_permanent_claim = ROOT }
-				breg_area = { add_permanent_claim = ROOT }
-				opole_area = { add_permanent_claim = ROOT }
-				lusatia_area = { add_permanent_claim = ROOT }
 			}
 		}
 	}
