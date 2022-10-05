@@ -1235,7 +1235,86 @@ alexandria = {
 		321 320 163 6121 #eastern_mediterrenean_islands_area
 	}
 }
+panama = {
+	location = 835
+	outgoing = {
+		name = "carribean_trade"
+		path = {
+			1515 1517 1516 
+		}
+		control = {
+			1586.000000 1044.000000 1607.000000 1125.000000 
+		}
+	}
+	members = {
+		822 2816 4605 2818 #colombian_amazonas_area
+		2812 2814 2815 4608 #western_llanos
+		825 832 4602 4603 #bogota_area
+		824 827 2817 4600 4607 #cordillera_occidental_area
+		828 829 2806 4599 4601 #coquivacoa_area
+		835 2664 2819 4595 4596 #panama_area
+		2663 836 4597 #costa_rica_area
+		838 2660 2661 4592 #nicaragua_area
+		840 2637 2662 4593 #honduras_area
+	}
+}
 
+carribean_trade = {
+	location = 1516
+	outgoing = {
+		name = "chesapeake_bay"
+		path = {
+			1524 1503 1502 1501 1500 
+		}
+		control = {
+			1649.000000 1207.000000 1619.000000 1236.000000 1604.000000 1280.000000 1606.000000 1312.000000 1587.000000 1389.000000 1635.000000 1447.000000 
+		}
+	}
+	outgoing = {
+		name = "bordeaux"
+		path = {
+			488 490 1526 1575 1583 1580 1567 1563 
+		}
+		control = {
+			1687.000000 1196.000000 1925.000000 1251.000000 2082.000000 1253.000000 2210.000000 1293.000000 2326.000000 1295.000000 2446.000000 1349.000000 
+		}
+	}
+	outgoing = {
+		name = "sevilla"
+		path = {
+			488 490 1526 1575 1583 1580 1567 1563 
+		}
+		control = {
+			1684.000000 1121.000000 1844.000000 1108.000000 1899.000000 1143.000000 2019.000000 1171.000000 2253.000000 1245.000000 2391.000000 1282.000000 2456.000000 1325.000000 
+		}
+	}
+	outgoing = {
+		name = "tunis"
+		path = {
+			488
+		}
+		control = {
+			1684.000000 1121.000000 1844.000000 1108.000000 1899.000000 1143.000000 2019.000000 1171.000000 2253.000000 1245.000000 2391.000000 1282.000000 2456.000000 1325.000000 2786.0000000 1226.000000 2852.000000 1259.000000 2889.000000 1253.000000
+			
+		}
+	}
+	members = {
+		927 928 2534 #north_florida_area
+		926 2535 2536 4626 4625 #florida_area
+		482 483 #lucayan_area
+		484 485 4622 4623 4624 #cuba_area
+		486 2654 2655 2656 #east_cuba_area
+		487 491 492 493 #greater_antilles_area
+		488 489 4618 4619 #hispaniola_area
+		490 2658 2659 4620 4621 #dominica_area
+		494 495 496 1881 497 #leeward_islands_area
+		498 499 500 501 502 #windward_islands_area
+		741 831 2808 4612 4616 #venezuela_area
+		2805 2809 2939 4615 #eastern_llanos
+		834 2810 2813 4613 4614 #central_llanos_area
+		830 2807 4609 4610 4611 #maracaibo_area
+	}
+}
 tunis = {
 	location = 341
 	color = {
@@ -1370,56 +1449,6 @@ genua = {
 	}
 }
 
-wien = {
-	location = 134
-	color = {
-		220 220 220 
-	}
-	outgoing = {
-		name = "rheinland"
-		path = {
-		}
-		control = {
-			3028.000 1487.000 2996.000 1499.500 2984.000 1508.000 2976.000 1515.500
-		}
-	}
-	outgoing = {
-		name = "saxony"
-		path = {
-		}
-		control = {
-			3061.000 1494.000 3041.000 1491.500 3032.000 1503.000
-		}
-	}
-	outgoing = {
-		name = "pest"
-		path = {
-		}
-		control = {
-			3074.000 1484.000
-		}
-	}
-	outgoing = {
-		name = "gc_south_germany_tradenode"
-		path = {
-		}
-		control = {
-			3009.000 1474.000 2987.000 1477.000 
-		}
-	}
-
-	members = {
-		1769 4751 129 #krain_area
-		73 110 1768 4758 #tirol_area
-		128 132 1863 4759 #inner_austria_area
-		133 6186 4761 #outer_austria_area
-		134 1770 4762 6182 6180 #austria_proper_area
-		76 4760 4709 64 #east_bavaria_area
-		65 4707 4708 6183 6185 #upper_bavaria_area
-		1757 2956 2957 6184 2955 #lower_bavaria_area
-	}
-}
-
 saxony = {
 	inland = yes
 	location = 266
@@ -1443,11 +1472,11 @@ saxony = {
 		}
 	}
 	outgoing = {
-		name="rheinland"
+		name = "wien"
 		path = {
 		}
 		control = {
-			3019.000 1543.000 2999.000 1547.000 2976.000 1532.500 
+			 3032.000 1503.000 3041.000 1491.500 3061.000 1494.000
 		}
 	}
 	members = {
@@ -1461,6 +1490,84 @@ saxony = {
 		263 4723 6107 #opole_area
 	}
 }
+gc_south_germany_tradenode = {
+	location = 1872
+	color = {
+		255 146 0
+	}
+	outgoing = {
+		name = "rheinland"
+		path = {
+		}
+		control = {
+			2943.500 1490.000 2929.000 1510.000 2933.000 1518.000
+		}
+	}
+	outgoing = {
+		name = "champagne"
+		path = {
+			165 192 4392 
+		}
+		control = {
+			2944.000 1482.000 2923.500 1458.000 2886.000 1462.000
+		}
+	}
+	outgoing = {
+		name = "wien"
+		path = {
+		}
+		control = {
+			2987.000 1477.000 3009.000 1474.000 
+		}
+	}
+	members = {
+		6171 1867 1871 4720 #romandie_area
+		165 6169 4721 6170 #bern_area
+		166 1869 1870 6174 6173 #switzerland_area
+		4722 1873 6176 6172 6175 #grisons_area
+		68 1868 1872 4710 #upper_swabia_area
+		70 4713 4712 #lower_swabia_area
+		72 74 4714 #upper_rhineland_area
+		75 1880 4765 #alsace_area
+		77 1761 4767 6206 #palatinate_area
+		4715 71 4711 #franconia_area
+	}
+}
+
+wien = {
+	location = 134
+	color = {
+		220 220 220 
+	}
+	#outgoing = {
+	#	name = "rheinland"
+	#	path = {
+	#	}
+	#	control = {
+	#		3028.000 1487.000 2996.000 1499.500 2984.000 1508.000 2976.000 1515.500
+	#	}
+	#}
+	outgoing = {
+		name = "pest"
+		path = {
+		}
+		control = {
+			3074.000 1484.000
+		}
+	}
+
+	members = {
+		1769 4751 129 #krain_area
+		73 110 1768 4758 #tirol_area
+		128 132 1863 4759 #inner_austria_area
+		133 6186 4761 #outer_austria_area
+		134 1770 4762 6182 6180 #austria_proper_area
+		76 4760 4709 64 #east_bavaria_area
+		65 4707 4708 6183 6185 #upper_bavaria_area
+		1757 2956 2957 6184 2955 #lower_bavaria_area
+	}
+}
+
 
 pest = {
 	location = 153
@@ -1494,165 +1601,6 @@ pest = {
 		157 158 1952 4127 #transylvania_area
 	}
 }
-
-krakow = {
-	location = 262
-	color = { 114  70  103 }
-	
-	outgoing = {
-		name = "rheinland"
-		path = {
-			258 254 49 50 52
-		}
-		control = {
-			3096.000 1549.000 3069.000 1563.500 3048.500 1579.000 3020.000 1573.000 2985.000 1560.000
-		}
-	}
-	outgoing = {
-		name = "baltic_sea"
-		path = {
-			257 1859 43 1927 1926 
-		}
-		control = {
-		}
-	}
-	outgoing = {
-		name = "lubeck"
-		path = {
-			257 1859 43 1927 1257 1258
-		}
-		control = {
-		}
-	}
-	members = {
-		262 4527 2960 #malopolska_area
-		260 2959 259 #sandomierz_area
-		256 257 1938 4525 #mazovia_area
-		258 1939 4533 #central_poland_area
-		254 4526 255 2963 #wielkopolska_area
-		4523 1859 4524 4528 #kuyavia_area
-		2997 43 1841 #west_prussia_area
-		40 41 767 2958 42 #east_prussia_area
-	}
-}
-
-panama = {
-	location = 835
-	outgoing = {
-		name = "carribean_trade"
-		path = {
-			1515 1517 1516 
-		}
-		control = {
-			1586.000000 1044.000000 1607.000000 1125.000000 
-		}
-	}
-	members = {
-		822 2816 4605 2818 #colombian_amazonas_area
-		2812 2814 2815 4608 #western_llanos
-		825 832 4602 4603 #bogota_area
-		824 827 2817 4600 4607 #cordillera_occidental_area
-		828 829 2806 4599 4601 #coquivacoa_area
-		835 2664 2819 4595 4596 #panama_area
-		2663 836 4597 #costa_rica_area
-		838 2660 2661 4592 #nicaragua_area
-		840 2637 2662 4593 #honduras_area
-	}
-}
-
-carribean_trade = {
-	location = 1516
-	outgoing = {
-		name = "chesapeake_bay"
-		path = {
-			1524 1503 1502 1501 1500 
-		}
-		control = {
-			1649.000000 1207.000000 1619.000000 1236.000000 1604.000000 1280.000000 1606.000000 1312.000000 1587.000000 1389.000000 1635.000000 1447.000000 
-		}
-	}
-	outgoing = {
-		name = "bordeaux"
-		path = {
-			488 490 1526 1575 1583 1580 1567 1563 
-		}
-		control = {
-			1687.000000 1196.000000 1925.000000 1251.000000 2082.000000 1253.000000 2210.000000 1293.000000 2326.000000 1295.000000 2446.000000 1349.000000 
-		}
-	}
-	outgoing = {
-		name = "sevilla"
-		path = {
-			488 490 1526 1575 1583 1580 1567 1563 
-		}
-		control = {
-			1684.000000 1121.000000 1844.000000 1108.000000 1899.000000 1143.000000 2019.000000 1171.000000 2253.000000 1245.000000 2391.000000 1282.000000 2456.000000 1325.000000 
-		}
-	}
-	outgoing = {
-		name = "tunis"
-		path = {
-			488
-		}
-		control = {
-			1684.000000 1121.000000 1844.000000 1108.000000 1899.000000 1143.000000 2019.000000 1171.000000 2253.000000 1245.000000 2391.000000 1282.000000 2456.000000 1325.000000 2786.0000000 1226.000000 2852.000000 1259.000000 2889.000000 1253.000000
-			
-		}
-	}
-	members = {
-		927 928 2534 #north_florida_area
-		926 2535 2536 4626 4625 #florida_area
-		482 483 #lucayan_area
-		484 485 4622 4623 4624 #cuba_area
-		486 2654 2655 2656 #east_cuba_area
-		487 491 492 493 #greater_antilles_area
-		488 489 4618 4619 #hispaniola_area
-		490 2658 2659 4620 4621 #dominica_area
-		494 495 496 1881 497 #leeward_islands_area
-		498 499 500 501 502 #windward_islands_area
-		741 831 2808 4612 4616 #venezuela_area
-		2805 2809 2939 4615 #eastern_llanos
-		834 2810 2813 4613 4614 #central_llanos_area
-		830 2807 4609 4610 4611 #maracaibo_area
-	}
-}
-
-gc_south_germany_tradenode = {
-	location = 1872
-	color = {
-		255 146 0
-	}
-	outgoing = {
-		name = "rheinland"
-		path = {
-		}
-		control = {
-			2943.500 1490.000 2929.000 1510.000 2933.000 1518.000
-		}
-	}
-	outgoing = {
-		name = "champagne"
-		path = {
-			165 192 4392 
-		}
-		control = {
-			2944.000 1482.000 2923.500 1458.000 2886.000 1462.000
-		}
-	}
-	members = {
-		6171 1867 1871 4720 #romandie_area
-		165 6169 4721 6170 #bern_area
-		166 1869 1870 6174 6173 #switzerland_area
-		4722 1873 6176 6172 6175 #grisons_area
-		68 1868 1872 4710 #upper_swabia_area
-		70 4713 4712 #lower_swabia_area
-		72 74 4714 #upper_rhineland_area
-		75 1880 4765 #alsace_area
-		77 1761 4767 6206 #palatinate_area
-		4715 71 4711 #franconia_area
-	}
-}
-
 rheinland = {
 	location = 1876
 	inland = yes
@@ -1684,6 +1632,14 @@ rheinland = {
 			2911.500 1537.500 2903.000 1558.000 2887.000 1561.000 2882.000 1567.000
 		}
 	}
+	outgoing = {
+		name="krakow"
+		path = {
+		}
+		control = {
+			 2985.000 1560.000 3020.000 1573.000 3048.500 1579.000 3069.000 1563.500  3096.000 1549.000
+		}
+	}
 	members = { 
 		56 86 2973 69 2971 #north_westphalia_area
 		84 85 2975 6205 6204 #north_rhine_area
@@ -1700,6 +1656,43 @@ rheinland = {
 		6163 6162 50 2993 #berlin_area
 	}
 }
+
+krakow = {
+	location = 262
+	color = { 114  70  103 }
+	
+
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+			257 1859 43 1927 1926 
+		}
+		control = {
+		}
+	}
+	outgoing = {
+		name = "lubeck"
+		path = {
+			257 1859 43 1927 1257 1258
+		}
+		control = {
+		}
+	}
+	members = {
+		262 4527 2960 #malopolska_area
+		260 2959 259 #sandomierz_area
+		256 257 1938 4525 #mazovia_area
+		258 1939 4533 #central_poland_area
+		254 4526 255 2963 #wielkopolska_area
+		4523 1859 4524 4528 #kuyavia_area
+		2997 43 1841 #west_prussia_area
+		40 41 767 2958 42 #east_prussia_area
+	}
+}
+
+
+
+
 
 chesapeake_bay = {
 	location = 1500
