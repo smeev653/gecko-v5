@@ -830,6 +830,7 @@ tr_russia_exclusive_1 = {
 	rus_romania_conquest = {
 		icon = mission_conquer_romania
 		required_missions = { tr_russia_partitions_poland_new }
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = wallachia_area
@@ -927,7 +928,7 @@ tr_russia_exclusive_1 = {
 	rus_streltsy_mission = {
 		icon = mission_recruit_streltsy
 		required_missions = { time_of_troubles_mission }
-		position = 12
+		position = 13
 		trigger = {
 			num_of_streltsy = 30
 			army_size_percentage = 1
@@ -1203,7 +1204,7 @@ tr_russia_exclusive_2 = {
 	time_of_troubles_mission = {
 		icon = mission_weather_the_troubles
 		required_missions = {  }
-		position = 11
+		position = 12
 		completed_by = 1620.1.1
 		provinces_to_highlight = {
 		}
@@ -1226,7 +1227,7 @@ tr_russia_exclusive_2 = {
 	tr_revolution_mission = {
 		icon = mission_russian_revolution
 		required_missions = { russian_abolutism_mission tr_state_manufactories }
-		position = 12
+		position = 15
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -1618,8 +1619,10 @@ tr_russia_conquest_3 = {
 			}
             NOT = {
 				AND = {
-				exists = NOG
-                development = 75
+					exists = NOG
+					NOG = {
+						development = 75
+					}	
 				}
 			}
             owns_core_province = 303
@@ -1831,7 +1834,7 @@ tr_russia_exclusive_3 = {
 	tr_prikazy_mission = {
 		icon = mission_establish_the_prikazy
 		required_missions = { time_of_troubles_mission }
-		position = 12
+		position = 13
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = tr_prikazy_mission.tooltip.1
@@ -2362,8 +2365,10 @@ gecko_rus_events = {
 	pomjestija_reform = {
 		icon = mission_non-western_soldiers
 		required_missions = {  }
+		position = 8
 		trigger = {
 		is_year = 1450
+
 		NOT = { is_year = 1550 }
 		OR = {
 			AND = {
