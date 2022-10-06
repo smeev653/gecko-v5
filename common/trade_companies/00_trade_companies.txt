@@ -484,12 +484,11 @@ trade_company_krakow = {
 	color = { 108 111 86 }
 	
 	provinces = {
-		258 259 260 261 262 1940 256 257 1938 1939 254 255 2424 2959 2960 2961
-		2963 1859 4523 4524 4526 4528 4525 4527 4533 4541
+		258 259 260 262 256 257 1938 1939 254 255 2959 2960 
+		2963 1859 4523 4524 4526 4528 4525 4527 4533
 		43 2997 1841 #west prussia #smeev
 		2958 42 767 41 40 #east prussia #smeev
 	}
-	
 	# Specific
 	# Generic
 	names = {
@@ -745,14 +744,12 @@ trade_company_kiev = {
 	
 	provinces = {
 		272 279 281 770 1937 1943 2962 277 278 1941 
-		291 298 299 2408 #sloboda_ukraine_area
 		280 1942 1944 4247 #west_dniepr_area
 		289 290 1945 2407 #east_dniepr_area
-		292 771 4246 #White Ruthenia
 		276 4115 4242 #minsk_area
 		4538 4537 4536 4535 4545 4544 4540 4539 4542 4543 269
 		271 1936 4534 270 #samogitia #smeev
-		293 297 4244 4245 #smolensk_area #smeev
+		2961 1940 2424 4541 261
 	}
 	
 	# Specific
@@ -765,6 +762,31 @@ trade_company_kiev = {
 	}
 }
 
+trade_company_kazan = {
+	color = { 202 150 172 }
+	
+	provinces = {
+		306 1079 1083 1957 #galich_area
+		2421 4265 4267 #volga_area
+		475 1965 1966 2420 2444 #bashkiria_area
+		473 1081 2423 #samara_area
+		1082 2422 4264 #kazan_area
+		305 1962 1972 4266 #kama_area
+		1755 4129 1077 1963 1964 #perm_area
+		314 4262 4263 #vologda_area
+		
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_KAZAN_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_KAZAN_Europe_Trade_Company"
+	}
+}
+
 trade_company_novgorod = {
 	color = { 97 126 37 }
 	
@@ -774,13 +796,10 @@ trade_company_novgorod = {
 		307 4147 4253 #vladimir_area
 		308 1753 4117 4250 #yaroslavl_area
 		1754 1956 4254 #suzdal_area
-		306 1079 1083 1957 #galich_area #smeev
-		305 1962 1972 4266 #kama_area #smeev
-		1082 2422 4264 #kazan_area #smeev
-		314 4262 4263 #vologda_area #smeev
-		1755 4129 1077 1963 1964 #perm_area #smeev
 		301 1778 4255 #ryazan_area #smeev
 		296 300 4116 #oka_area #smeev
+		293 297 4244 4245 #smolensk_area
+		292 771 4246 #white_ruthenia_area
 	}
 	
 	# Specific
@@ -849,10 +868,8 @@ trade_company_astrakhan = {
 		288 303 465 467 469 470 474 1971 2365 2367 2366 2409 2418 2419 472 471  466 468  
 		302 304 2415 #tambov_area
 		2416 2417 464 #astrakhan_area
-		2421 4265 4267 #volga_area
-		475 1965 1966 2420 2444 #bashkiria_area
-		473 1081 2423 #samara_area	
 		6011 6012 6013 6014 6015 6016 #aba crimea provinces
+		291 298 299 2408 #sloboda_ukraine_area
 	}
 	
 	# Specific
