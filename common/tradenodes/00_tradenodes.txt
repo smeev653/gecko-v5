@@ -441,10 +441,9 @@ lahore_trade = {
 	outgoing = {
 		name = "siberia"
 		path = {
-			457 476
 		}
 		control = {
-			3824.000000 1312.000000 
+			3873.000 1329.000
 		}
 	}
 	members = {
@@ -755,42 +754,42 @@ constantinople = {
 	}
 }
 
-novgorod = {
-	location = 295
-	color = {
-		97 126 37 
+kazan={
+	location = 1082
+	inland = yes
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3527.000 1756.000 3419.000 1721.000
+		}
+	}
+	outgoing = {
+		name = "novgorod"
+		path = {
+		}
+		control = {
+			3489.000 1650.000 3418.000 1617.000
+		}
 	}
 	outgoing = {
 		name = "astrakhan"
 		path = {
-			 310 312 308 307 306  
 		}
 		control = {
-			 3418.000000 1617.000000 3442.000000 1576.000000 3519.000000 1545.500000 3513.500000 1523.500000 3509.000000 1514.500000  3500.500000 1491.000000
+			3574.000 1613.000 3517.000 1547.000 3527.000 1477.000
 		}
 	}
-	outgoing = {
-		name = "white_sea"
-		path = {	
-			295			 
-		}
-		control = {	
-			3301.000000 1705.000000 
-		}
-	}
-	members = {
-		294 1752 4243 4248 4249 #tver_area
-		308 1753 4117 4250 #yaroslavl_area
-		307 4147 4253 #vladimir_area
-		295 4251 4252 #moscow_area
-		301 1778 4255 #ryazan_area
-		296 300 4116 #oka_area
-		1754 1956 4254 #suzdal_area
-		314 4262 4263 #vologda_area
-		306 1079 1083 1957 #galich_area
+	members={
+		473 1081 2423 #samara_area
+		2421 4265 4267 #volga_area
+		475 1965 1966 2420 2444	#bashkiria_area
 		1077 1755 1963 1964 4129 #perm_area
 		305 1962 1972 4266 #kama_area
 		1082 2422 4264 #kazan_area
+		314 4262 4263 #vologda_area
+		306 1079 1083 1957 #galich_area
 	}
 }
 
@@ -800,55 +799,56 @@ astrakhan = {
 	outgoing = {
 		name = "crimea"
 		path = {
-			468 287 1323 
 		}
 		control = {
-			3487.000000 1457.000000 3419.000000 1458.000000 3394.500000 1453.500000 3380.000000 1430.500000 3372.500000 1414.500000 3345.000000 1397.500000
+			3479.000 1437.000 3419.000000 1458.000000 3394.500000 1453.500000 3380.000000 1430.500000 3372.500000 1414.500000 3345.000000 1397.500000
+		}
+	}
+	outgoing = {
+		name = "novgorod"
+		path = {
+		}
+		control = {
+			3486.000 1495.000 3414.000 1550.000 3365.000 1589.000
 		}
 	}
 	outgoing = {
 		name = "kiev"
 		path = {
-			467 299 280
 		}
 		control = {
-			3460.000000 1472.000000 3414.000000 1550.000000 3324.000000 1523.000000
+			3487.000 1457.000 3427.000 1502.000 3376.000 1508.000
 		}
 	}
-	outgoing = {
-		name = "siberia"
-		path = {
-			1062 1064 480 479 472 475 1082 
-		}
-		control = {
-			3757.000000 1558.000000
-		}
-	}	
 	members = {
 		464 466 6014 6013 2417 #astrakhan_area
 		6011 6012 2416 468 #stavropol_area
 		6015 303 2418 2419 #saratov_area
 		288 467 1971 2409 6016 #lower_don_area
 		302 304 2415 #tambov_area
-		473 1081 2423 #samara_area
 		469 474 2365 2367 #lower_yik_area
-		2421 4265 4267 #volga_area
-		475 1965 1966 2420 2444	#bashkiria_area
 		465 470 471 472 2366 #nogai_area
 		291 298 299 2408 #sloboda_ukraine_area
 	}
 }
 
 siberia = {
-	location = 2354
+	location = 476
 	inland = yes
 	outgoing = {
-		name = "white_sea"
+		name = "kazan"
 		path = {
-			1075
 		}
 		control = {
-			3686.000000 1753.000000 3575.000000 1650.000000 3503.000000 1651.000000 3427.000000 1649.000000
+			3837.000 1673.000 3686.000 1753.000
+		}
+	}
+	outgoing = {
+		name = "astrakhan"
+		path = {
+		}
+		control = {
+			3736.000 1488.000 3613.000 1503.000
 		}
 	}
 	members = {
@@ -889,7 +889,6 @@ crimea = {
 			6006 1944
 		}
 		control = {
-			3266.000000 1430.500000
 		}	
 	}
 	outgoing = {
@@ -916,30 +915,27 @@ kiev = {
 	location = 280
 	inland = yes
 	outgoing = {
-		name = "white_sea"
+		name = "novgorod"
 		path = {
-			278 292 275 311 310 
 		}
 		control = {
-			3260.000000 1570.000000 3296.500000 1603.000000 3290.500000 1651.000000 3300.000000 1680.000000 
-		}
-	}
-	outgoing = {
-		name = "krakow"
-		path = {
-			279 260 262 
-		}
-		control = {
-			3221.000000 1531.000000 3171.000000 1539.000000 
+			3313.000 1618.000
 		}
 	}
 	outgoing = {
 		name = "baltic_sea"
 		path = {
-			279
 		}
 		control = {
-			3238.000000 1598.000000 3212.000000 1610.000000 3189.500000 1666.000000 
+			3234.000 1598.500 3206.000 1614.000 3185.500 1668.000
+		}
+	}
+	outgoing = {
+		name = "krakow"
+		path = {
+		}
+		control = {
+			3189.000 1511.500 3158.000 1543.000
 		}
 	}
 	members = {
@@ -954,8 +950,33 @@ kiev = {
 		270 271 1936 4534 #samogitia_area
 		272 770 4535 4536 #lithuania_area
 		276 4115 4242 4544 #minsk_area
-		292 771 4246 #white_ruthenia_area
+	}
+}
+
+novgorod = {
+	location = 295
+	inland = yes
+	color = {
+		97 126 37 
+	}
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3370.000 1667.000
+		}
+	}
+	members = {
+		294 1752 4243 4248 4249 #tver_area
+		308 1753 4117 4250 #yaroslavl_area
+		307 4147 4253 #vladimir_area
+		295 4251 4252 #moscow_area
+		301 1778 4255 #ryazan_area
+		296 300 4116 #oka_area
+		1754 1956 4254 #suzdal_area
 		293 297 4244 4245 #smolensk_area
+		292 771 4246 #white_ruthenia_area
 	}
 }
 
@@ -1908,7 +1929,7 @@ baltic_sea = {
 }
 
 white_sea = {
-	location = 33
+	location = 310
 	end = yes
 	members = {
 		274 275 1960 4148 #pskov_area
