@@ -20313,7 +20313,7 @@ falun_copper_mine = {
 }
 
 kronborg = {
-	start = 12 #Sjaelland
+	start = 5004 #Copenhagen
 	date = 1420.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -20366,6 +20366,8 @@ kronborg = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.15
+			province_trade_power_modifier = 0.10
+			
 		}
 		area_modifier = {
 		}
@@ -20374,7 +20376,7 @@ kronborg = {
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 1
+				add_mercantilism = 5
 			}
 		}
 	}
@@ -20388,6 +20390,7 @@ kronborg = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
+			province_trade_power_modifier = 0.20
 			local_own_coast_naval_combat_bonus = 1
 		}
 		area_modifier = {
@@ -20397,7 +20400,7 @@ kronborg = {
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 3
+				add_mercantilism = 10
 			}
 		}
 	}
@@ -20411,6 +20414,7 @@ kronborg = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
+			province_trade_power_modifier = 0.35
 			local_own_coast_naval_combat_bonus = 1
 		}
 		area_modifier = {
@@ -20420,7 +20424,7 @@ kronborg = {
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 6
+				add_mercantilism = 20
 			}
 		}
 	}

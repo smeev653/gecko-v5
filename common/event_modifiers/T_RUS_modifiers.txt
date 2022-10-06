@@ -42,6 +42,7 @@ strengthen_the_line = {
 }
 makariev_fair = {
     trade_value = 1
+	merchants = 1
     province_trade_power_modifier = 1
 }
 vyatkan_wilds = {
