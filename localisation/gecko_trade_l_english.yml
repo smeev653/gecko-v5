@@ -53,7 +53,7 @@
  bordeaux:0 "Bordeaux"
  champagne:0 "Champagne"
  english_channel:0 "English Channel"
- #Trade Companies"
+ #Trade Companies
  trade_company_south_africa:0 "South African Charter"
  TRADE_COMPANY_SOUTH_AFRICA_Root_Culture_GetName:0 "[Root.Culture.GetName] South Africa Company"
  TRADE_COMPANY_SOUTH_AFRICA_Africa_Trade_Company:0 "South Africa Trade Company"

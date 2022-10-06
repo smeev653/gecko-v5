@@ -2,8 +2,15 @@
  ####################
  # Map Changes
  ####################
+ #Provinces
  PROV6213:0 "Karasu"
  PROV6213_ADJ:0 "Karasu"
+ #Trade Nodes
+ X_vilnius_trade_node:0 "Vilnius"
+ #Trade Companies
+ trade_company_X_vilnius:0 "Daugava Charter"
+ TRADE_COMPANY_X_vilnius_Root_Culture_GetName:0 "[Root.Culture.GetName] Daugava Company"
+ TRADE_COMPANY_X_vilnius_Europe_Trade_Company:0 "Daugava Trade Company"
  ####################
  # Estates
  ####################

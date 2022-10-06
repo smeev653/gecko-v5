@@ -923,19 +923,27 @@ kiev = {
 		}
 	}
 	outgoing = {
-		name = "baltic_sea"
-		path = {
-		}
-		control = {
-			3234.000 1598.500 3206.000 1614.000 3185.500 1668.000
-		}
-	}
-	outgoing = {
 		name = "krakow"
 		path = {
 		}
 		control = {
-			3189.000 1511.500 3158.000 1543.000
+			3189.000 1511.500 3139.000 1520.000
+		}
+	}
+	outgoing = {
+		name = "X_vilnius_trade_node"
+		path = {
+		}
+		control = {
+			3238.000 1570.000 3207.000 1580.000
+		}
+	}
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3234.000 1598.500 3260.000 1632.000
 		}
 	}
 	members = {
@@ -944,12 +952,37 @@ kiev = {
 		280 1942 1944 4247 #west_dniepr_area
 		281 4540 1943 #podolia_volhynia_area
 		279 2962 4539 4538 #volhynia_area
-		278 1941 4537 4545 #pripyat_area
-		269 277 1937 #podlasie_area
+		278 1941 4545 #pripyat_area
 		261 1940 2424 2961 4541 #red_ruthenia_area
-		270 271 1936 4534 #samogitia_area
-		272 770 4535 4536 #lithuania_area
 		276 4115 4242 4544 #minsk_area
+	}
+}
+
+X_vilnius_trade_node = {
+	location = 272
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3218.000 1652.000 3249.000 1685.500
+		}
+	}
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3185.500 1668.000 
+		}
+	}
+	members = {
+		272 770 4535 4536 #lithuania_area
+		270 271 1936 4534 #samogitia_area
+		269 277 1937 4537 #podlasie_area
+		36 1834 1842 #estonia_ingria_area
+		37 38 273 4241 #livonia_area
+		35 39 1935 #curonia_area
 	}
 }
 
@@ -1695,17 +1728,25 @@ krakow = {
 	outgoing = {
 		name = "baltic_sea"
 		path = {
-			257 1859 43 1927 1926 
 		}
 		control = {
+			3133.000 1558.000 3095.000 1580.000 3096.000 1606.000 3107.000 1642.000
 		}
 	}
 	outgoing = {
 		name = "lubeck"
 		path = {
-			257 1859 43 1927 1257 1258
 		}
 		control = {
+			3133.000 1558.000 3095.000 1580.000 3068.000 1612.000
+		}
+	}
+	outgoing = {
+		name = "X_vilnius_trade_node"
+		path = {
+		}
+		control = {
+			3158.000 1543.000 3175.000 1595.000
 		}
 	}
 	members = {
@@ -1719,10 +1760,6 @@ krakow = {
 		40 41 767 2958 42 #east_prussia_area
 	}
 }
-
-
-
-
 
 chesapeake_bay = {
 	location = 1500
@@ -1921,9 +1958,6 @@ baltic_sea = {
 		20 21 315 5039 5033 #northern_norway
 		17 4143 4144 5031 #eastern_norway
 		23 24 2752 4145 5032 #western_norway
-		36 1834 1842 #estonia_ingria_area
-		37 38 273 4241 #livonia_area
-		35 39 1935 #curonia_area
 		4 8 5013 #dalarna_area
 	}
 }

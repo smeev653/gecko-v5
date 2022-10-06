@@ -160,9 +160,8 @@ trade_company_lubeck = {
 
 trade_company_baltic_sea = {
 	color = { 8 82 165 }
-	
 	provinces = {
-		1926 1 2 3 4 5 1985 8 9 11 18 19 25 27 28 29 31 35 37 38 39 273 1930 1935 4113 4114 4123 4152 36 1834 1842 4241
+		1926 1 2 3 4 5 1985 8 9 11 18 19 25 27 28 29 31 1930 4113 4114 4123 4152    
 		26 1982 4165 6 #skaneland #smeev
 		16 4164 7 4163 #gotaland #smeev
 		#Sweden Finland
@@ -739,16 +738,37 @@ trade_company_gulf_of_aden = {
 	}
 }
 
+trade_company_X_vilnius = {
+	color = { 181 95 30 }
+	
+	provinces = {
+		1937 277 269 4537
+		271 1936 4534 270 #samogitia
+		4535 4536 272 770
+		35 39 1935
+		38 37 4241 273
+		1834 1842 36
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_ASTRAKHAN_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_X_vilnius_Europe_Trade_Company"
+	}
+}
+
 trade_company_kiev = {
 	color = { 41 28 31 }
 	
 	provinces = {
-		272 279 281 770 1937 1943 2962 277 278 1941 
+		279 281 1943 2962 278 1941 
 		280 1942 1944 4247 #west_dniepr_area
 		289 290 1945 2407 #east_dniepr_area
 		276 4115 4242 #minsk_area
-		4538 4537 4536 4535 4545 4544 4540 4539 4542 4543 269
-		271 1936 4534 270 #samogitia #smeev
+		4538 4545 4544 4540 4539 4542 4543 
 		2961 1940 2424 4541 261
 	}
 	

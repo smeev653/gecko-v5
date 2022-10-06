@@ -6,14 +6,14 @@ culture = byelorussian
 religion = orthodox
 hre = no
 base_tax = 2 
-base_production = 1
-trade_goods = cloth  
+base_production = 3
+trade_goods = gems
 base_manpower = 1
 capital = "Navahrudak"
 is_city = yes
 add_core = LIT
-
-
+center_of_trade = 1
+fort_15th = yes
 
 discovered_by = western
 discovered_by = eastern
