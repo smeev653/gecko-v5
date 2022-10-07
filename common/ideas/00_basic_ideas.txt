@@ -304,7 +304,7 @@ spy_ideas = {
 	}
 
 	efficient_spies = {
-		leader_cost = -0.10
+		
 		fabricate_claims_cost = -0.25
 	}	
 	state_propaganda = {
@@ -966,7 +966,7 @@ influence_ideas = {
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
-		vassal_income = 0.1
+		leader_cost = -0.10
 	}
 	additional_loyalist_recruitment = {
 		province_warscore_cost = -0.10
@@ -983,12 +983,14 @@ influence_ideas = {
 	}
 	buffer_states = {
 		prestige = 1
+		administrative_efficiency = 0.05
 	}
 
 	tribute_system = {
 		reduced_liberty_desire = 35
 		diplomatic_annexation_cost = -0.25
 		diplomatic_upkeep = 2
+		vassal_income = 0.15
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 0.5
