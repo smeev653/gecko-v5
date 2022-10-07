@@ -1,3 +1,25 @@
+####################
+# Russia
+####################
+defined_text = {
+	name = GetXRUSIsolationVsWesternization
+	random = no
+	text = {
+		trigger = {
+			check_variable = { which = X_RUS_isolation_vs_westernization_variable value = 0 }
+		}
+		localisation_key = X_RUS_isolation
+	}
+	text = {
+		trigger = {
+		   always = yes
+		}
+		localisation_key = X_RUS_westernization
+	}
+}
+####################
+# Estates
+####################
 defined_text = {
 	name = GetXCossackLootAmount
 	random = no

@@ -1,0 +1,16 @@
+####################
+# Russia
+####################
+country_decisions = {
+	X_RUS_isolation_vs_westernization_decision = {
+		major = yes
+		potential = {
+			OR = {
+				tag = MOS
+				tag = RUS
+			}
+		}
+		allow = { always = no }
+		effect = { }
+		ai_will_do = { factor = 0 }
+}

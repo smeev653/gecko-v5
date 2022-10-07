@@ -385,7 +385,7 @@ country_event = { #MuscoviteTradeCompany
 				}
 			}
 		}
-		change_variable = { which = westernization_vs_isolation value = 20 }
+		X_RUS_change_isolation_vs_westernization_level_effect = { isolation = yes amount = 1 }
 		
 	}
 	option = {
@@ -398,9 +398,8 @@ country_event = { #MuscoviteTradeCompany
     				loyalty = 10
     				duration = -1
 					}
-		change_variable = { which = westernization_vs_isolation value = -20 }
+		X_RUS_change_isolation_vs_westernization_level_effect = { westernization = yes amount = -1 }
 	}
-	
 }
 country_event = { #IntegrateFinnoUgric
 	id = henri_rus_larp.9
@@ -576,7 +575,7 @@ country_event = { #BalticDomination
 			name = "open_the_baltic"
 			duration = -1
 		}
-		change_variable = { which = westernization_vs_isolation value = 15 }
+		X_RUS_change_isolation_vs_westernization_level_effect = { westernization = yes amount = -1 }
 		1842 = {
 			add_province_modifier = {
 					name = narwa_strengthened
@@ -671,7 +670,7 @@ country_event = { #BalticDomination
 			name = "open_the_black_sea"
 			duration = 18262
 		}
-		change_variable = { which = westernization_vs_isolation value = -25 }
+		X_RUS_change_isolation_vs_westernization_level_effect = { westernization = yes amount = -1 }
 		add_treasury = -500
 	}
 	
@@ -697,7 +696,7 @@ country_event = { #BalticDomination
 			name = "german_russian_aristocracy"
 			duration = -1
 		}
-		change_variable = { which = westernization_vs_isolation value = -25 }
+		X_RUS_change_isolation_vs_westernization_level_effect = { westernization = yes amount = -1 }
 		add_patriarch_authority = -0.15
 		}
 		option = {
@@ -709,7 +708,7 @@ country_event = { #BalticDomination
 			duration = -1
 		}
 		add_patriarch_authority = 0.1
-		change_variable = { which = westernization_vs_isolation value = 20 }
+		X_RUS_change_isolation_vs_westernization_level_effect = { isolation = yes amount = 1 }
 		}
 	
 	

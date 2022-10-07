@@ -453,6 +453,11 @@
  ####################
  # Russia
  ####################
+ #Decisions
+ X_RUS_isolation:0 "Current Isolation Level: §R[Root.X_RUS_isolation_vs_westernization_variable.GetValue]§!"
+ X_RUS_westernization:0 "Current Westernization Level: §G[Root.X_RUS_isolation_vs_westernization_variable.GetValue]§!"
+ X_RUS_isolation_vs_westernization_decision_title:0 "[Root.GetXRUSIsolationVsWesternization]"
+ X_RUS_isolation_vs_westernization_decision_desc:0 ""
  #Estates
  x_rus_estate_streltsy:0 "Streletskaya"
  x_rus_estate_streltsy_desc:0 ""
@@ -476,7 +481,7 @@
  X_RUS_estate_streltsy_privilege_7_desc:0 ""
  X_RUS_estate_streltsy_privilege_8:0 "Train Elite Streletskiye Golovy"
  X_RUS_estate_streltsy_privilege_8_desc:0 ""
- #Tooltips
+ #Estate Tooltips
  X_RUS_estate_streltsy_privilege_1_on_granted_tt:0 "Gain §G+2§! §YStreltsy Progress§! at the start of each year."
  X_RUS_estate_streltsy_privilege_1_on_revoked_tt:0 "No longer gain §G+2§! §YStreltsy Progress§! at the start of each year."
  X_RUS_estate_streltsy_privilege_7_on_granted_tt:0 "Gain §R-2§! §YStreltsy Progress§! at the start of each year."
@@ -498,6 +503,22 @@
  desc_X_RUS_hanseatic_decline_pmod:0 ""
  X_RUS_novgorodian_maritime_rights_cmod:0 "Novgorodian Maritime Rights"
  desc_X_RUS_novgorodian_maritime_rights_cmod:0 ""
+ X_RUS_isolation_1_cmod:0 "Isolation: Level 1"
+ desc_X_RUS_isolation_1_cmod:0 ""
+ X_RUS_isolation_2_cmod:0 "Isolation: Level 2"
+ desc_X_RUS_isolation_2_cmod:0 ""
+ X_RUS_isolation_3_cmod:0 "Isolation: Level 3"
+ desc_X_RUS_isolation_3_cmod:0 ""
+ X_RUS_isolation_4_cmod:0 "Isolation: Level 4"
+ desc_X_RUS_isolation_4_cmod:0 ""
+ X_RUS_westernization_1_cmod:0 "Westernization: Level 1"
+ desc_X_RUS_westernization_1_cmod:0 ""
+ X_RUS_westernization_2_cmod:0 "Westernization: Level 2"
+ desc_X_RUS_westernization_2_cmod:0 ""
+ X_RUS_westernization_3_cmod:0 "Westernization: Level 3"
+ desc_X_RUS_westernization_3_cmod:0 ""
+ X_RUS_westernization_4_cmod:0 "Westernization: Level 4"
+ desc_X_RUS_westernization_4_cmod:0 ""
  #Monuments
  X_RUS_trinity_lavra:0 "Trinity Lavra"
  X_RUS_trinity_lavra_title:0 "Trinity Lavra"
@@ -509,6 +530,11 @@
  X_RUS_events.2.b:0 "A deal with Marfa"
  #Event Tooltips
  X_RUS_event_2_tt:0 "Every owned province of §Y[NOV.GetName]§! is ceded to §Y[Root.GetName]§!, and gets '§YHanseatic Decline§!', giving the following effects:\nLocal Unrest: §R+2.00§!\nLocal Goods Produced Modifier: §R-25.0%§!"
+ #Tooltips
+ X_RUS_change_isolation_vs_westernization_increase_tt:0 "§YIncrease our Isolation Level§!."
+ X_RUS_change_isolation_vs_westernization_maximum_tt:0 "§YYou already have the maximum Isolation Level§!."
+ X_RUS_change_isolation_vs_westernization_decrease_tt:0 "§YIncrease our Westernization Level§!."
+ X_RUS_change_isolation_vs_westernization_minimum_tt:0 "§YYou already have the maximum Westernization Level§!."
  ####################
  # Poland
  ####################

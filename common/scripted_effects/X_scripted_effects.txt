@@ -223,6 +223,243 @@ X_on_province_owner_change_pmod_effect = {
 }
 
 ####################
+# Russia
+####################
+X_RUS_isolation_vs_westernization_remove_cmod_effect = {
+	if = {
+		limit = { X_RUS_has_isolation_vs_westernization_cmod = yes }
+		remove_country_modifier = X_RUS_isolation_1_cmod
+		remove_country_modifier = X_RUS_isolation_2_cmod
+		remove_country_modifier = X_RUS_isolation_3_cmod
+		remove_country_modifier = X_RUS_isolation_4_cmod
+		remove_country_modifier = X_RUS_westernization_1_cmod
+		remove_country_modifier = X_RUS_westernization_2_cmod
+		remove_country_modifier = X_RUS_westernization_3_cmod
+		remove_country_modifier = X_RUS_westernization_4_cmod
+	}
+}
+
+X_RUS_isolation_vs_westernization_change_cmod_effect = {
+	X_RUS_isolation_vs_westernization_remove_cmod_effect = yes
+	if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 4
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_isolation_4_cmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 3
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_isolation_3_cmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 2
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_isolation_2_cmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 1
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_isolation_1_cmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -1
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_westernization_1_cmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -2
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_westernization_2_cmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -3
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_westernization_3_cmod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -4
+			}
+		}
+		add_country_modifier = {
+			name = X_RUS_westernization_4_cmod
+			duration = -1
+		}
+	}
+}
+
+X_RUS_change_isolation_vs_westernization_level_effect = {
+	[[isolation]
+		if = {
+			limit = {
+				is_variable_equal = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = 4
+				}
+			}
+			custom_tooltip = X_RUS_change_isolation_vs_westernization_maximum_tt
+		}
+		else = {
+			custom_tooltip = X_RUS_change_isolation_vs_westernization_increase_tt
+		}
+	]
+	[[westernization]
+		if = {
+			limit = {
+				is_variable_equal = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = -4
+				}
+			}
+			custom_tooltip = X_RUS_change_isolation_vs_westernization_minimum_tt
+		}
+		else = {
+			custom_tooltip = X_RUS_change_isolation_vs_westernization_decrease_tt
+		}
+	]
+	hidden_effect = {
+		set_variable = { X_RUS_isolation_vs_westernization_change_variable = $amount$ }
+		if = {
+			limit = {
+				check_variable = {
+					which = X_RUS_isolation_vs_westernization_change_variable
+					value = 0
+				}
+			}
+			while = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = X_RUS_isolation_vs_westernization_variable
+							value = 4
+						}
+					}
+					NOT = {
+						is_variable_equal = {
+							which = X_RUS_isolation_vs_westernization_change_variable
+							value = 0
+						}
+					}
+				}
+				change_variable = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = 1
+				}
+				subtract_variable = {
+					which = X_RUS_isolation_vs_westernization_change_variable
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					is_variable_equal = {
+						which = X_RUS_isolation_vs_westernization_variable
+						value = 0
+					}
+				}
+				change_variable = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = 1
+				}
+			}
+		}
+		else = {
+			while = {
+				limit = {
+					NOT = {
+						is_variable_equal = {
+							which = X_RUS_isolation_vs_westernization_variable
+							value = -4
+						}
+					}
+					check_variable = {
+						which = X_RUS_isolation_vs_westernization_variable
+						value = -4
+					}
+					NOT = {
+						is_variable_equal = {
+							which = X_RUS_isolation_vs_westernization_change_variable
+							value = 0
+						}
+					}
+				}
+				subtract_variable = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = 1
+				}
+				change_variable = {
+					which = X_RUS_isolation_vs_westernization_change_variable
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					is_variable_equal = {
+						which = X_RUS_isolation_vs_westernization_variable
+						value = 0
+					}
+				}
+				subtract_variable = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = 1
+				}
+			}
+		}
+		X_RUS_isolation_vs_westernization_change_cmod_effect = yes
+	}
+}
+####################
 # Cultural Unions   (No further effects listed below this except those relevant to Cultural Union mechanic)
 ####################
 X_culture_union_effect = {

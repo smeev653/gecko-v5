@@ -159,15 +159,6 @@ tr_muscovy_conquest = {
 	}
 	has_country_shield = yes
 
-	isolationism_v_westernization = {
-	trigger = {
-		always = no
-	}
-	effect = {
-		custom_tooltip = MEexplaining.tooltip
-	}
-	}
-
 	T_RUS_winter_tactics = {
 		trigger = {
 			infantry_leader = 2

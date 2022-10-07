@@ -1,3 +1,21 @@
+####################
+# Russia
+####################
+X_RUS_has_isolation_vs_westernization_cmod = {
+	OR = {
+		has_country_modifier = X_RUS_isolation_1_cmod
+		has_country_modifier = X_RUS_isolation_2_cmod
+		has_country_modifier = X_RUS_isolation_3_cmod
+		has_country_modifier = X_RUS_isolation_4_cmod
+		has_country_modifier = X_RUS_westernization_1_cmod
+		has_country_modifier = X_RUS_westernization_2_cmod
+		has_country_modifier = X_RUS_westernization_3_cmod
+		has_country_modifier = X_RUS_westernization_4_cmod
+	}
+}
+####################
+# Cultural Unions
+####################
 X_culture_union_trigger = {
 	#tartar
 	[[astrakhani] owns_all_provinces = { culture = astrakhani } any_province = { culture = astrakhani } ]

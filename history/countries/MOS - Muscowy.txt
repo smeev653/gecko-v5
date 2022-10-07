@@ -8,8 +8,8 @@ historical_rival = NOV
 capital = 295 # Moskva
 fixed_capital = 295 # Cannot move capital away from this province & no power cost to move to it
 national_focus = ADM
-set_variable = { westernization_vs_isolation = 100 }
-
+set_variable = { X_RUS_isolation_vs_westernization_variable = 0 }
+X_RUS_change_isolation_vs_westernization_level_effect = { isolation = yes amount = 4 }
 1389.5.19 = {
 	monarch = {
 		name = "Vasiliy I"
