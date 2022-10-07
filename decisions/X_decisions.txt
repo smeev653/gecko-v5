@@ -11,7 +11,17 @@ country_decisions = {
 			}
 		}
 		allow = { always = no }
-		effect = { }
+		effect = { 
+			if = {
+				limit = {
+					is_variable_equal = {
+						which = X_RUS_isolation_vs_westernization_variable
+						value = 4
+					}
+				}
+				custom_tooltip = X_RUS_change_isolation_vs_westernization_maximum_tt
+			}
+		}
 		ai_will_do = { factor = 0 }
 	}
 }

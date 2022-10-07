@@ -457,6 +457,24 @@ X_RUS_change_isolation_vs_westernization_level_effect = {
 			}
 		}
 		X_RUS_isolation_vs_westernization_change_cmod_effect = yes
+		set_variable = {
+			which = X_RUS_isolation_vs_westernization_localization_variable
+			which = X_RUS_isolation_vs_westernization_variable
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = X_RUS_isolation_vs_westernization_variable
+						value = 0
+					}
+				}
+			}
+			multiply_variable = {
+				which = X_RUS_isolation_vs_westernization_localization_variable
+				value = -1
+			}
+		}
 	}
 }
 ####################

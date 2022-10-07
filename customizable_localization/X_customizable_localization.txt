@@ -17,6 +17,83 @@ defined_text = {
 		localisation_key = X_RUS_westernization
 	}
 }
+
+defined_text = {
+	name = GetXRUSIsolationVsWesternizationEffects
+	random = no
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 4
+			}
+		}
+		localisation_key = X_RUS_isolation_4_cmod_effects
+	}
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 3
+			}
+		}
+		localisation_key = X_RUS_isolation_3_cmod_effects
+	}
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 2
+			}
+		}
+		localisation_key = X_RUS_isolation_2_cmod_effects
+	}
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = 1
+			}
+		}
+		localisation_key = X_RUS_isolation_1_cmod_effects
+	}
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -1
+			}
+		}
+		localisation_key = X_RUS_westernization_1_cmod_effects
+	}
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -2
+			}
+		}
+		localisation_key = X_RUS_westernization_2_cmod_effects
+	}
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -3
+			}
+		}
+		localisation_key = X_RUS_westernization_3_cmod_effects
+	}
+	text = {
+		trigger = {
+			is_variable_equal = {
+				which = X_RUS_isolation_vs_westernization_variable
+				value = -4
+			}
+		}
+		localisation_key = X_RUS_westernization_4_cmod_effects
+	}
+}
 ####################
 # Estates
 ####################
