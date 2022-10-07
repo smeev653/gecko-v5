@@ -1,7 +1,7 @@
 #301 - Ryazan
 
-owner = MOS  
-controller = MOS  
+owner = RYA  
+controller =RYA  
 culture = ryazanian
 religion = orthodox
 hre = no
@@ -12,7 +12,7 @@ base_manpower = 3
 capital = "Pereyaslavl-Ryazansky"
 is_city = yes
 fort_15th = yes
-add_core = MOS  
+add_core = RYA  
 discovered_by = eastern
 discovered_by = western
 discovered_by = GOL

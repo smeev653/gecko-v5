@@ -1,7 +1,7 @@
 #4255 - Pronsk
 
-owner = MOS
-controller = MOS
+owner = RYA
+controller = RYA
 culture = ryazanian
 religion = orthodox
 hre = no
@@ -11,7 +11,7 @@ trade_goods = iron
 base_manpower = 2
 capital = "Pronsk"
 is_city = yes
-add_core = MOS
+add_core = RYA
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman

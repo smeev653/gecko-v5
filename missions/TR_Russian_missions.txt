@@ -1254,7 +1254,24 @@ tr_russia_conquest_3 = {
 	break_the_tatar_yoke = {
 		icon = mission_cossack_cavalry
 		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = ryazan_area
+				area = oka_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
+			ryazan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			oka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
 			mil_tech = 4
 			has_spy_network_in = {
 				who = GOL
