@@ -443,7 +443,8 @@ defensive_ideas = {
 
 	
 	military_drill = {
-		morale_damage_received = -0.125
+		morale_damage = 0.10
+		land_morale = 0.1
 	}
 	defensive_mentality = {
 		defensiveness = 0.33
