@@ -13,4 +13,5 @@ country_decisions = {
 		allow = { always = no }
 		effect = { }
 		ai_will_do = { factor = 0 }
+	}
 }
