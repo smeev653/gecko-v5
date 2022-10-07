@@ -135,17 +135,17 @@ change_estate_land_share = {
 	}
 }
 
-1439.1.1 = {
-	leader = { 
-		name = "Ludovico Sforza"       	
-		type = general	
-		
-			shock = 5
-			fire = 3
-			manuever = 4
-			siege = 2
-	}
-}
+#1439.1.1 = {
+#	leader = { 
+#		name = "Ludovico Sforza"       	
+#		type = general	
+#		
+#			shock = 5
+#			fire = 3
+#			manuever = 4
+#			siege = 2
+#	}
+#}
 
 1447.8.13 = {
 	government = republic

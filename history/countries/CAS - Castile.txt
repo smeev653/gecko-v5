@@ -77,7 +77,7 @@ change_estate_land_share = {
 	}
 }
 
-1422.1.1 = { leader = {	name = "Álvaro de Luna"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.6.2 } }
+#1422.1.1 = { leader = {	name = "Álvaro de Luna"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.6.2 } }
 
 
 

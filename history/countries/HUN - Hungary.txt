@@ -28,7 +28,7 @@ unlock_estate_privilege = {
 }
 
 
-1437.1.1 = { leader = {	name = "János Hunyadi"         	type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1445.1.1 } }
+#1437.1.1 = { leader = {	name = "János Hunyadi"         	type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1445.1.1 } }
 
 # Personal union with Habsburg under Albrecht II 1437-39
 # Personal union with Poland under Wladyslaw III 1439-44
