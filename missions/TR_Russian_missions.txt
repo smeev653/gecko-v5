@@ -1593,26 +1593,24 @@ tr_russia_conquest_3 = {
 		required_missions = {conquer_the_crimeans}
         icon = mission_cossack_cavalry
         trigger = {
-            total_development = 600
-			custom_trigger_tooltip = {
-				tooltip = destroy_the_khanates_tooltip
-				NOT = {
-					any_country = {
-						capital_scope = {
-							region = russia_region
-                            region = crimea_region
-                            region = ural_region 
-						}
-						total_development = 75
+			
+			ROOT = {
+				total_development = 600
+			}	
+			#custom_trigger_tooltip = {
+				#tooltip = destroy_the_khanates_tooltip
+				
+					all_neighbor_country = {
 						culture_group = tartar
+						NOT = {total_development = 75}
 					}
-				}
-			}
+				
+			#}
             NOT = {
 				AND = {
 					exists = NOG
 					NOG = {
-						development = 75
+						total_development = 75
 					}	
 				}
 			}

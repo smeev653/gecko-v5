@@ -957,73 +957,8 @@ kiev = {
 		276 4115 4242 4544 #minsk_area
 	}
 }
-krakow = {
-	location = 262
-	color = { 114  70  103 }
-	
 
-	outgoing = {
-		name = "baltic_sea"
-		path = {
-		}
-		control = {
-			3133.000 1558.000 3095.000 1580.000 3096.000 1606.000 3107.000 1642.000
-		}
-	}
-	outgoing = {
-		name = "lubeck"
-		path = {
-		}
-		control = {
-			3133.000 1558.000 3095.000 1580.000 3068.000 1612.000
-		}
-	}
-	outgoing = {
-		name = "X_vilnius_trade_node"
-		path = {
-		}
-		control = {
-			3158.000 1543.000 3175.000 1595.000
-		}
-	}
-	members = {
-		262 4527 2960 #malopolska_area
-		260 2959 259 #sandomierz_area
-		256 257 1938 4525 #mazovia_area
-		258 1939 4533 #central_poland_area
-		254 4526 255 2963 #wielkopolska_area
-		4523 1859 4524 4528 #kuyavia_area
-		2997 43 1841 #west_prussia_area
-		40 41 767 2958 42 #east_prussia_area
-	}
-}
-X_vilnius_trade_node = {
-	location = 272
-	outgoing = {
-		name = "white_sea"
-		path = {
-		}
-		control = {
-			3218.000 1652.000 3249.000 1685.500
-		}
-	}
-	outgoing = {
-		name = "baltic_sea"
-		path = {
-		}
-		control = {
-			3185.500 1668.000 3157.500 1684.500 3141.500 1684.500
-		}
-	}
-	members = {
-		272 770 4535 4536 #lithuania_area
-		270 271 1936 4534 #samogitia_area
-		269 277 1937 4537 #podlasie_area
-		36 1834 1842 #estonia_ingria_area
-		37 38 273 4241 #livonia_area
-		35 39 1935 #curonia_area
-	}
-}
+
 
 novgorod = {
 	location = 295
@@ -1542,47 +1477,7 @@ genua = {
 	}
 }
 
-saxony = {
-	inland = yes
-	location = 266
-	color = {
-		36 182 69 
-	}
-	outgoing = {
-		name="krakow"
-		path = {
-		}
-		control = {
-			3034.000 1526.000 3075.500 1544.500
-		}
-	}
-	outgoing = {
-		name="pest"
-		path = {
-		}
-		control = {
-			3039.000 1521.000 3057.000 1508.000 3086.000 1513.000 
-		}
-	}
-	outgoing = {
-		name = "wien"
-		path = {
-		}
-		control = {
-			 3032.000 1503.000 3041.000 1491.500 3061.000 1494.000
-		}
-	}
-	members = {
-		267 1771 2967 6101 #erzgebirge_area
-		266 2968 6103 6102 4725 #bohemia_area
-		4724 6104 2970 6105 #hradecko_area
-		6106 265 4237 4726 #moravia_area
-		60 1763 4778 #lusatia_area
-		2966 6112 6111 4238 #silesia_area
-		6110 6109 6108 264 #breg_area
-		263 4723 6107 #opole_area
-	}
-}
+
 gc_south_germany_tradenode = {
 	location = 1872
 	color = {
@@ -1698,7 +1593,47 @@ rheinland = {
 		6163 6162 50 2993 #berlin_area
 	}
 }
-
+saxony = {
+	inland = yes
+	location = 266
+	color = {
+		36 182 69 
+	}
+	outgoing = {
+		name="krakow"
+		path = {
+		}
+		control = {
+			3034.000 1526.000 3075.500 1544.500
+		}
+	}
+	outgoing = {
+		name="pest"
+		path = {
+		}
+		control = {
+			3039.000 1521.000 3057.000 1508.000 3086.000 1513.000 
+		}
+	}
+	outgoing = {
+		name = "wien"
+		path = {
+		}
+		control = {
+			 3032.000 1503.000 3041.000 1491.500 3061.000 1494.000
+		}
+	}
+	members = {
+		267 1771 2967 6101 #erzgebirge_area
+		266 2968 6103 6102 4725 #bohemia_area
+		4724 6104 2970 6105 #hradecko_area
+		6106 265 4237 4726 #moravia_area
+		60 1763 4778 #lusatia_area
+		2966 6112 6111 4238 #silesia_area
+		6110 6109 6108 264 #breg_area
+		263 4723 6107 #opole_area
+	}
+}
 wien = {
 	location = 134
 	color = {
@@ -1759,8 +1694,73 @@ pest = {
 	}
 }
 
+krakow = {
+	location = 262
+	color = { 114  70  103 }
+	
 
-
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3133.000 1558.000 3095.000 1580.000 3096.000 1606.000 3107.000 1642.000
+		}
+	}
+	outgoing = {
+		name = "lubeck"
+		path = {
+		}
+		control = {
+			3133.000 1558.000 3095.000 1580.000 3068.000 1612.000
+		}
+	}
+	outgoing = {
+		name = "X_vilnius_trade_node"
+		path = {
+		}
+		control = {
+			3158.000 1543.000 3175.000 1595.000
+		}
+	}
+	members = {
+		262 4527 2960 #malopolska_area
+		260 2959 259 #sandomierz_area
+		256 257 1938 4525 #mazovia_area
+		258 1939 4533 #central_poland_area
+		254 4526 255 2963 #wielkopolska_area
+		4523 1859 4524 4528 #kuyavia_area
+		2997 43 1841 #west_prussia_area
+		40 41 767 2958 42 #east_prussia_area
+	}
+}
+X_vilnius_trade_node = {
+	location = 272
+	outgoing = {
+		name = "white_sea"
+		path = {
+		}
+		control = {
+			3218.000 1652.000 3249.000 1685.500
+		}
+	}
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3185.500 1668.000 3157.500 1684.500 3141.500 1684.500
+		}
+	}
+	members = {
+		272 770 4535 4536 #lithuania_area
+		270 271 1936 4534 #samogitia_area
+		269 277 1937 4537 #podlasie_area
+		36 1834 1842 #estonia_ingria_area
+		37 38 273 4241 #livonia_area
+		35 39 1935 #curonia_area
+	}
+}
 chesapeake_bay = {
 	location = 1500
 	color = {
