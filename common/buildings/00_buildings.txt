@@ -735,7 +735,9 @@ keep_trigger = {
 	}
 	modifier = {
 		fort_level = 2
+		own_territory_dice_roll_bonus = 1
 	}
+	
 	onmap = yes
 	influencing_fort = yes
 
@@ -1339,6 +1341,7 @@ fort_16th = {
 	}
 	modifier = {
 		fort_level = 4
+		own_territory_dice_roll_bonus = 1
 	}
 
 	onmap = yes
@@ -2058,6 +2061,7 @@ fort_17th = {
 
 	modifier = {
 		fort_level = 6
+		own_territory_dice_roll_bonus = 1
 	}
 
 	onmap = yes
@@ -2679,6 +2683,7 @@ fort_18th = {
 	}
 	modifier = {
 		fort_level = 8
+		own_territory_dice_roll_bonus = 1
 	}
 
 
