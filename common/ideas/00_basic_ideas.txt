@@ -807,7 +807,7 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
-		special_unit_forcelimit = 0.1
+		#special_unit_forcelimit = 0.1
 	}
 	garrison_conscription = {
 		free_leader_pool = 5
