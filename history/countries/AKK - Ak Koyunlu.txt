@@ -80,7 +80,7 @@ historical_friend = ARL
 		adm = 4
 		dip = 5
 		mil = 6
-		leader = {	name = "Uzun Hasan"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0 }
+		#leader = {	name = "Uzun Hasan"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
