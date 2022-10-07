@@ -753,7 +753,42 @@ constantinople = {
 		322 1848 4308 4311 #germiyan_area
 	}
 }
-
+siberia = {
+	location = 476
+	inland = yes
+	outgoing = {
+		name = "kazan"
+		path = {
+		}
+		control = {
+			3837.000 1673.000 3686.000 1753.000
+		}
+	}
+	outgoing = {
+		name = "astrakhan"
+		path = {
+		}
+		control = {
+			3736.000 1488.000 3613.000 1503.000
+		}
+	}
+	members = {
+		458 460 1967 #ferghana_area
+		457 2364 2356 #arys_area
+		459 2126 2368 #jetysuu_area
+		455 1970 2363 #kyzylkum_area
+		456 1969 2352 2361 #syr_darya_area
+		476 2351 2353 2358 2359 #kazakhstan_area
+		477 478 2355 2360 4685 #balchasj_area
+		1080 1078 1780 2427 2441 #ural_area
+		1074 1075 1076 2369 4692 #ishim_area
+		479 2354 2357 4686 4690 #aqmola_area
+		1071 2434 4687 4688 4689 #yrtesh_area
+		480 2428 2429 2433 #ob_area
+		1068 1070 #central_siberia_area
+		1069 1072 1073 2445 4691 #kara_area
+	}
+}
 kazan={
 	location = 1082
 	inland = yes
@@ -832,42 +867,7 @@ astrakhan = {
 	}
 }
 
-siberia = {
-	location = 476
-	inland = yes
-	outgoing = {
-		name = "kazan"
-		path = {
-		}
-		control = {
-			3837.000 1673.000 3686.000 1753.000
-		}
-	}
-	outgoing = {
-		name = "astrakhan"
-		path = {
-		}
-		control = {
-			3736.000 1488.000 3613.000 1503.000
-		}
-	}
-	members = {
-		458 460 1967 #ferghana_area
-		457 2364 2356 #arys_area
-		459 2126 2368 #jetysuu_area
-		455 1970 2363 #kyzylkum_area
-		456 1969 2352 2361 #syr_darya_area
-		476 2351 2353 2358 2359 #kazakhstan_area
-		477 478 2355 2360 4685 #balchasj_area
-		1080 1078 1780 2427 2441 #ural_area
-		1074 1075 1076 2369 4692 #ishim_area
-		479 2354 2357 4686 4690 #aqmola_area
-		1071 2434 4687 4688 4689 #yrtesh_area
-		480 2428 2429 2433 #ob_area
-		1068 1070 #central_siberia_area
-		1069 1072 1073 2445 4691 #kara_area
-	}
-}
+
 	
 crimea = {
 	location = 1322
@@ -957,7 +957,46 @@ kiev = {
 		276 4115 4242 4544 #minsk_area
 	}
 }
+krakow = {
+	location = 262
+	color = { 114  70  103 }
+	
 
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3133.000 1558.000 3095.000 1580.000 3096.000 1606.000 3107.000 1642.000
+		}
+	}
+	outgoing = {
+		name = "lubeck"
+		path = {
+		}
+		control = {
+			3133.000 1558.000 3095.000 1580.000 3068.000 1612.000
+		}
+	}
+	outgoing = {
+		name = "X_vilnius_trade_node"
+		path = {
+		}
+		control = {
+			3158.000 1543.000 3175.000 1595.000
+		}
+	}
+	members = {
+		262 4527 2960 #malopolska_area
+		260 2959 259 #sandomierz_area
+		256 257 1938 4525 #mazovia_area
+		258 1939 4533 #central_poland_area
+		254 4526 255 2963 #wielkopolska_area
+		4523 1859 4524 4528 #kuyavia_area
+		2997 43 1841 #west_prussia_area
+		40 41 767 2958 42 #east_prussia_area
+	}
+}
 X_vilnius_trade_node = {
 	location = 272
 	outgoing = {
@@ -1720,46 +1759,7 @@ pest = {
 	}
 }
 
-krakow = {
-	location = 262
-	color = { 114  70  103 }
-	
 
-	outgoing = {
-		name = "baltic_sea"
-		path = {
-		}
-		control = {
-			3133.000 1558.000 3095.000 1580.000 3096.000 1606.000 3107.000 1642.000
-		}
-	}
-	outgoing = {
-		name = "lubeck"
-		path = {
-		}
-		control = {
-			3133.000 1558.000 3095.000 1580.000 3068.000 1612.000
-		}
-	}
-	outgoing = {
-		name = "X_vilnius_trade_node"
-		path = {
-		}
-		control = {
-			3158.000 1543.000 3175.000 1595.000
-		}
-	}
-	members = {
-		262 4527 2960 #malopolska_area
-		260 2959 259 #sandomierz_area
-		256 257 1938 4525 #mazovia_area
-		258 1939 4533 #central_poland_area
-		254 4526 255 2963 #wielkopolska_area
-		4523 1859 4524 4528 #kuyavia_area
-		2997 43 1841 #west_prussia_area
-		40 41 767 2958 42 #east_prussia_area
-	}
-}
 
 chesapeake_bay = {
 	location = 1500
@@ -1862,7 +1862,35 @@ st_lawrence = {
 		982 984 2568 2569 4891 #lower_acadia_area
 	}
 }
-
+white_sea = {
+	location = 310
+	outgoing = {
+		name = "baltic_sea"
+		path = {
+		}
+		control = {
+			3262.000000 1736.000000 3194.000000 1730.000000 3156.000000 1720.000000
+		}
+	}
+	outgoing={
+		name="north_sea"
+		path={
+		}
+		control={
+			3306.000 1729.000 3385.000 1743.000 3484.000 1800.000 3434.000 1850.000 3412.000 1867.000 3453.000000 1897.000000 3447.000000 1948.000000 3339.000000 1992.000000 3187.000000 2034.000000 3076.000000 1993.000000 2987.000000 1944.000000 2942.000000 1864.000000 2862.000000 1790.000000 2868.000000 1711.000000 2847.000000 1660.000000 
+		}
+	}
+	members = {
+		274 275 1960 4148 #pskov_area
+		310 311 1959 2749 4260 #novgorod_area
+		33 34 1961 #karelia_area
+		32 309 4124 5037 #north_karelia
+		313 1776 1958 4258 5036 #pomor_area
+		1777 5035 5034 #laponia_area
+		312 4259 4261 #beloozero_area
+		1955 4122 4256 4257 5038 #arkhangelsk_area
+	}
+}
 north_sea = {
 	location = 1975
 	color = {
@@ -1944,35 +1972,7 @@ baltic_sea = {
 	}
 }
 
-white_sea = {
-	location = 310
-	outgoing = {
-		name = "baltic_sea"
-		path = {
-		}
-		control = {
-			3262.000000 1736.000000 3194.000000 1730.000000 3156.000000 1720.000000
-		}
-	}
-	outgoing={
-		name="north_sea"
-		path={
-		}
-		control={
-			3306.000 1729.000 3385.000 1743.000 3484.000 1800.000 3434.000 1850.000 3412.000 1867.000 3453.000000 1897.000000 3447.000000 1948.000000 3339.000000 1992.000000 3187.000000 2034.000000 3076.000000 1993.000000 2987.000000 1944.000000 2942.000000 1864.000000 2862.000000 1790.000000 2868.000000 1711.000000 2847.000000 1660.000000 
-		}
-	}
-	members = {
-		274 275 1960 4148 #pskov_area
-		310 311 1959 2749 4260 #novgorod_area
-		33 34 1961 #karelia_area
-		32 309 4124 5037 #north_karelia
-		313 1776 1958 4258 5036 #pomor_area
-		1777 5035 5034 #laponia_area
-		312 4259 4261 #beloozero_area
-		1955 4122 4256 4257 5038 #arkhangelsk_area
-	}
-}
+
 
 lubeck = {
 	location = 45
