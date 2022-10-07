@@ -1139,6 +1139,96 @@ country_event = {
 		}
 	}
 }
+
+#Societal Change
+country_event = {
+	id = X_RUS_events.3
+	title = X_RUS_events.3.t
+	desc = X_RUS_events.3.d1
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = X_RUS_events.3.a
+		trigger = {
+			NOT = {
+				is_variable_equal = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = 4
+				}
+			}
+		}
+		X_RUS_change_isolation_vs_westernization_level_effect = { isolation = yes amount = 1 }
+		add_stability = -2
+		add_navy_tradition = -20
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 20
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 20
+		}
+		add_estate_loyalty = {
+			estate = x_rus_estate_streltsy
+			loyalty = 20
+		}
+		add_country_modifier = {
+			name = X_RUS_forced_isolation_cmod
+			duration = 7300
+		}
+		if = {
+			limit = { has_country_flag = X_RUS_isolation_vs_westernization_decision_cflag }
+			clr_country_flag = X_RUS_isolation_vs_westernization_decision_cflag
+		}
+		set_country_flag = X_RUS_isolation_vs_westernization_decision_cflag
+	}
+	option = {
+		name = X_RUS_events.3.b
+		trigger = {
+			NOT = {
+				is_variable_equal = {
+					which = X_RUS_isolation_vs_westernization_variable
+					value = -4
+				}
+			}
+		}
+		X_RUS_change_isolation_vs_westernization_level_effect = { westernization = yes amount = -1 }
+		add_stability = -2
+		add_navy_tradition = 20
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 20
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -20
+		}
+		add_estate_loyalty = {
+			estate = x_rus_estate_streltsy
+			loyalty = -20
+		}
+		add_country_modifier = {
+			name = X_RUS_forced_westernization_cmod
+			duration = 7300
+		}
+		if = {
+			limit = { has_country_flag = X_RUS_isolation_vs_westernization_decision_cflag }
+			clr_country_flag = X_RUS_isolation_vs_westernization_decision_cflag
+		}
+		set_country_flag = X_RUS_isolation_vs_westernization_decision_cflag
+	}
+	option = {
+		name = X_RUS_events.3.c
+	}
+}
 ########################################
 # Events for Poland
 ########################################

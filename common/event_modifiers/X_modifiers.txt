@@ -339,6 +339,18 @@ X_RUS_westernization_4_cmod = {
     global_institution_spread = 0.5
     land_forcelimit_modifier = -0.25
 }
+
+X_RUS_forced_isolation_cmod = {
+	global_unrest = 3
+	global_trade_power = -0.1
+	legitimacy = 1
+}
+
+X_RUS_forced_westernization_cmod = {
+	global_unrest = 3
+	global_trade_power = 0.1
+	legitimacy = -1
+}
 ########################################
 # Modifiers for Poland
 ########################################
