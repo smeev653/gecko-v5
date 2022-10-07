@@ -533,7 +533,7 @@ economic_ideas = {
 		global_autonomy = -0.05
 	}
 	nationalistic_enthusiasm = {
-		global_regiment_cost = -0.05
+		land_maintenance_modifier = -0.05
 	}
 	smithian_economics = {
 		production_efficiency = 0.1
