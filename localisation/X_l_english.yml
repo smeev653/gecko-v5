@@ -1,7 +1,8 @@
 ﻿l_english:
  ####################
- # Map Changes
+ # General
  ####################
+ X_center_of_trade_effect_tt:0 "Add the equivalent Center of Trade upgrade cost to your treasury."
  #Provinces
  PROV6213:0 "Karasu"
  PROV6213_ADJ:0 "Karasu"
@@ -11,9 +12,6 @@
  trade_company_X_vilnius:0 "Daugava Charter"
  TRADE_COMPANY_X_vilnius_Root_Culture_GetName:0 "[Root.Culture.GetName] Daugava Company"
  TRADE_COMPANY_X_vilnius_Europe_Trade_Company:0 "Daugava Trade Company"
- ####################
- # Estates
- ####################
  #Privileges
  X_estate_cossacks_privilege_1:0 "Establish Cossack Border Guards"
  X_estate_cossacks_privilege_1_desc:0 ""
@@ -21,7 +19,7 @@
  X_estate_cossacks_privilege_2_desc:0 ""
  X_estate_burghers_privilege_1:0 "Organized Slave Markets"
  X_estate_burghers_privilege_1_desc:0 ""
- #Tooltips
+ #Estate Tooltips
  X_estate_cossacks_privilege_1_on_granted_tt:0 "Every owned province of §lFlatland§! terrain in the §YRuthenia§! region or §YSteppes§! terrain with a §YFort§! gets '§YCossack Border Defense§!', giving the following effects:\nLocal Defensiveness: §G+15.0%§!\nLocal Garrison Size: §G+50.0%§!\nLocal Fort Maintenance: §G-75.0%§!"
  X_estate_cossacks_privilege_1_on_revoked_tt:0 "Remove '§YCossack Border Defense§!' from every owned province of §lFlatland§! terrain in the §YRuthenia§! region or §YSteppes§! terrain with a §YFort§!."
  X_estate_cossacks_privilege_2_on_granted_tt:0 "Cossack raiders will sporadically raid our Heathen neighbors, plundering their wealth."

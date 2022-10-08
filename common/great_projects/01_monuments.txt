@@ -13302,7 +13302,7 @@ krakow_cloth_hall = {
 			caravan_power = 0.10
 		}
 		on_upgraded = {
-			X_center_of_trade_lvl_3_effect = yes
+			X_center_of_trade_effect = { cost_equivalency_max_lvl_3 = yes }
 		}
 	}
 
@@ -13324,7 +13324,7 @@ krakow_cloth_hall = {
 			caravan_power = 0.20
 		}
 		on_upgraded = {
-			X_center_of_trade_lvl_3_effect = yes
+			X_center_of_trade_effect = { cost_equivalency_max_lvl_3 = yes }
 		}
 	}
 
@@ -13346,7 +13346,7 @@ krakow_cloth_hall = {
 			caravan_power = 0.30
 		}
 		on_upgraded = {
-			X_center_of_trade_lvl_3_effect = yes
+			X_center_of_trade_effect = { cost_equivalency_max_lvl_3 = yes }
 		}
 	}
 }

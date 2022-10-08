@@ -24,10 +24,6 @@ X_CRI_peace_treaty_3 = { #Harvest the Steppe
 			which = X_CRI_peace_treaty_3_variable_2
 			value = 0
 		}
-		set_variable = {
-			which = X_CRI_peace_treaty_3_variable_3
-			value = 0
-		}
 		export_to_variable = {
 			which = X_CRI_peace_treaty_3_variable_1
 			value = total_development
@@ -50,36 +46,22 @@ X_CRI_peace_treaty_3 = { #Harvest the Steppe
 				value = 500
 			}
 		}
-		while = {	
-			limit = {		
-				check_variable = {
-					which = X_CRI_peace_treaty_3_variable_1
-					value = 1
-				}
-			}
-			add_mandate = 0.2
-			subtract_variable = {
-				which = X_CRI_peace_treaty_3_variable_1
-				value = 1
-			}
+		for_variable_amount = {
+			variable = X_CRI_peace_treaty_3_variable_1
+			effect = "
+				add_mandate = 0.2
+			"
 		}
-		while = {	
-			limit = {		
-				check_variable = {
-					which = X_CRI_peace_treaty_3_variable_2
-					value = 1
+		for_variable_amount = {
+			variable = X_CRI_peace_treaty_3_variable_2
+			effect = "
+				add_manpower = 0.10
+				add_treasury = 2
+				FROM = {
+					add_manpower = -0.10
+					add_treasury = -2
 				}
-			}
-			add_manpower = 0.10
-			add_treasury = 2
-			FROM = {
-				add_manpower = -0.10
-				add_treasury = -2
-			}
-			subtract_variable = {
-				which = X_CRI_peace_treaty_3_variable_2
-				value = 1
-			}
+			"
 		}
 	}
 	ai_weight = { 
