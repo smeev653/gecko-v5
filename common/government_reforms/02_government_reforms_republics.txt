@@ -3458,7 +3458,11 @@ strengthen_executive_powers_reform = {
 		is_colonial_nation = yes
 	}
 	trigger = {
-		has_reform = colonial_government
+		OR = {
+			has_reform = crown_colony_government 
+			has_reform = private_enterprise_colony_government 
+			has_reform = self_governing_colony_government 
+		}	
 	}	
 	modifiers = {
 		#land_morale = 0.05

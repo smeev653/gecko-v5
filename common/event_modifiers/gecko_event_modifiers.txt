@@ -340,7 +340,7 @@ gecko_recovery = {
 	war_exhaustion = -1
 	global_autonomy = -0.3
 	interest = -0.5
-	stability_cost_modifier = -0.5
+	stability_cost_modifier = -0.25
 }
 
 increased_merc_recruitment = {
