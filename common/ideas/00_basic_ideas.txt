@@ -761,8 +761,9 @@ maritime_ideas = {
 	merchant_marine = {
 		global_trade_goods_size_modifier = 0.075
 	}
-	
-	
+	ai_will_do = {
+		factor = 2
+	}
 }
 
 

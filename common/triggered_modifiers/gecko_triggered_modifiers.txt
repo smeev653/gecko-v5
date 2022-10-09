@@ -25,7 +25,7 @@ empowered_subjects = {
 				was_player = yes 
 			}
 			#is_march = yes
-		
+		NOT = { total_development = 201 }	
 		NOT = { is_colonial_nation = yes }	
 		NOT = { is_lesser_in_union = yes }	
 	}
