@@ -3897,7 +3897,7 @@ deified_monarchy_reform = {
 	icon = "divine_guidance_reform"
 	allow_normal_conversion = yes
 	modifiers = {
-		warscore_cost_vs_other_religion = -0.05
+		warscore_cost_vs_other_religion = -0.1
 		tolerance_own = 1
 	}
 	ai = {
