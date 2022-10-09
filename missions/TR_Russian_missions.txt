@@ -2043,139 +2043,140 @@ tr_siberia_missions = {
 			dip_power = 200
 		}
 		effect = {
-		if = {
-				limit = {
-					exists = KAZ
+			if = {
+					limit = {
+						exists = KAZ
+					}
+				KAZ = {
+					305 = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+					}	
+					4266 = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+					}
+					1972 = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+								}			
+					2444 = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+								}
+					475 = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+								}			
+					2419 = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+								}
+					304 = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+								}
+					samara_area = {
+						if = {
+							limit = {
+								exists = MOS
+							}
+								cede_province = MOS
+						}
+						else = {
+							limit = {
+								exists = RUS
+							}
+							cede_province =  RUS
+						}
+								}
+						kill_ruler = yes
+						define_ruler = {
+							name = "Muhammad Amin"
+							dynasty = "Genghisid"
+							adm = 0
+							dip = 2
+							mil = 4
+							age = 20
+							}
+							add_historical_rival = MOS
+						}
+						add_dip_power = -200
 				}
-			KAZ = {
-				305 = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-				}	
-				4266 = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-				}
-				1972 = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-							}			
-				2444 = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-							}
-				475 = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-							}			
-				2419 = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-							}
-				304 = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-							}
-				samara_area = {
-					if = {
-						limit = {
-							exists = MOS
-						}
-							cede_province = MOS
-					}
-					else = {
-						limit = {
-							exists = RUS
-						}
-						cede_province =  RUS
-					}
-							}
-					kill_ruler = yes
-					define_ruler = {
-						name = "Muhammad Amin"
-						dynasty = "Genghisid"
-						adm = 0
-						dip = 2
-						mil = 4
-						age = 20
-						}
-						add_historical_rival = MOS
-					}
-					add_dip_power = -200
+			else = {
+				add_adm_power = 200
 			}
-		else = {
-			add_adm_power = 200
-		}
+		}	
 	}
 
 	end_the_kazani_revolt = {
