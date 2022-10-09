@@ -1273,10 +1273,22 @@ tr_russia_conquest_3 = {
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
 			mil_tech = 4
-			has_spy_network_in = {
-				who = GOL
-				value = 25
+			if = {
+				limit = {
+					exists = GOL
+				}
+					has_spy_network_in = {
+						who = GOL
+						value = 25
+				}	
 			}
+			else = {
+				OR = {
+					is_rival = CRI
+					is_rival = GLH
+				}	
+			}
+			
 		}
 		effect = {
 			4255 = {
@@ -1322,28 +1334,28 @@ tr_russia_conquest_3 = {
 		required_missions = { break_the_tatar_yoke }
 		trigger = {
 			OR  = {
-			war_score_against = {
-				who = GOL
-				value = 75
-			}
-			AND ={
-			tambov_area = {
-				type = all
-				owned_by = ROOT
-			}
-			sloboda_ukraine_area = {
-				type = all
-				owned_by = ROOT
-			}
-			saratov_area = {
-				type = all
-				owned_by = ROOT
-			}
-          	lower_don_area = {
-				type = all
-				owned_by = ROOT
-			}
-			}
+				war_score_against = {
+					who = GOL
+					value = 75
+				}
+				AND ={
+					tambov_area = {
+						type = all
+						owned_by = ROOT
+					}
+					sloboda_ukraine_area = {
+						type = all
+						owned_by = ROOT
+					}
+					saratov_area = {
+						type = all
+						owned_by = ROOT
+					}
+					lower_don_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
 			}
 		}
 		effect = {
@@ -2002,73 +2014,168 @@ tr_siberia_missions = {
 		icon = mission_cossack_cavalry
 		required_missions = { militarize_the_border }
 		trigger = {
-			OR = {
-			KAZ = {
-				is_subject_of = ROOT
-			}
-			kazan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			volga_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			kama_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			samara_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			}
+			if = {
+				limit = {
+					exists = KAZ
+				}
+					KAZ = {
+					is_subject_of = ROOT
+					}
+				}
+				else = {
+					kazan_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					volga_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					kama_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					samara_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}	
 			dip_power = 200
 		}
 		effect = {
-			KAZ = {
-			305 = {
-    			cede_province = MOS
-						}
-			4266 = {
-    			cede_province = MOS
-						}
-			1972 = {
-    			cede_province = MOS
-						}			
-			2444 = {
-    			cede_province = MOS
-						}
-			475 = {
-    			cede_province = MOS
-						}			
-			2419 = {
-    			cede_province = MOS
-						}
-			304 = {
-    			cede_province = MOS
-						}
-			samara_area = {
-    			cede_province = MOS
-						}
-				kill_ruler = yes
-				define_ruler = {
-    				name = "Muhammad Amin"
-					dynasty = "Genghisid"
-					adm = 0
-					dip = 2
-					mil = 4
-   					age = 20
-					}
-					add_historical_rival = MOS
+		if = {
+				limit = {
+					exists = KAZ
 				}
-				add_dip_power = -200
-				
-				
-				
-
+			KAZ = {
+				305 = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+				}	
+				4266 = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+				}
+				1972 = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+							}			
+				2444 = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+							}
+				475 = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+							}			
+				2419 = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+							}
+				304 = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+							}
+				samara_area = {
+					if = {
+						limit = {
+							exists = MOS
+						}
+							cede_province = MOS
+					}
+					else = {
+						limit = {
+							exists = RUS
+						}
+						cede_province =  RUS
+					}
+							}
+					kill_ruler = yes
+					define_ruler = {
+						name = "Muhammad Amin"
+						dynasty = "Genghisid"
+						adm = 0
+						dip = 2
+						mil = 4
+						age = 20
+						}
+						add_historical_rival = MOS
+					}
+					add_dip_power = -200
+			}
+		else = {
+			add_adm_power = 200
 		}
-			
 	}
 
 	end_the_kazani_revolt = {
