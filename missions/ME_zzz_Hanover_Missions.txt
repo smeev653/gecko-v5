@@ -264,7 +264,7 @@ HAN_missions_2 = {
 			}
 		}
 		effect = {
-			country_event = { id = ME_Hannover_Events.1 }
+			#country_event = { id = ME_Hannover_Events.1 }
 			add_army_tradition_or_mil_power = { amount = 15 }
 			hinter_pommern_area = {
 				limit = {
