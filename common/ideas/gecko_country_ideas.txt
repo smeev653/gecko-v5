@@ -84,7 +84,7 @@ EGY_ideas = { #Egyptian Empire
 GZM_ideas = { #Great Zimbabwe Empire
 	start = {
 		land_morale = 0.10
-		infantry_cost = -0.2
+		infantry_cost = -0.1
 	}
 	
 	bonus = {
