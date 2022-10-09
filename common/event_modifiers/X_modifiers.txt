@@ -1,10 +1,4 @@
 ########################################
-# General Modifiers
-########################################
-X_full_state_prosperity_pmod = {
-	local_prosperity_growth = -1
-}
-########################################
 # Estate Modifiers
 ########################################
 X_estate_cossacks_privilege_1_pmod = {

@@ -2,7 +2,9 @@
  ####################
  # General
  ####################
+ #Tooltips
  X_center_of_trade_effect_tt:0 "Add the equivalent Center of Trade upgrade cost to your treasury."
+ X_flatland_terrain_trigger_tt:0 "Province(s) is §lFlatland§! terrain."
  #Provinces
  PROV6213:0 "Karasu"
  PROV6213_ADJ:0 "Karasu"

@@ -3186,10 +3186,7 @@ X_CRI_slot_4 = {
 									has_terrain = steppe
 									AND = {
 										region = ruthenia_region
-										OR = {
-											has_terrain = farmlands
-											has_terrain = grasslands
-										}
+										X_flatland_terrain_trigger = yes
 									}
 								}
 							}
