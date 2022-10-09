@@ -962,7 +962,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		monarch_diplomatic_power = 1
+		reduced_stab_impacts = yes
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
@@ -982,7 +982,7 @@ influence_ideas = {
 		monthly_favor_modifier = 0.2
 	}
 	buffer_states = {
-		prestige = 1
+		monarch_diplomatic_power = 1
 	}
 
 	tribute_system = {
@@ -992,7 +992,7 @@ influence_ideas = {
 		vassal_income = 0.15
 	}
 	marcher_lords = {
-		vassal_forcelimit_bonus = 0.5
+		vassal_forcelimit_bonus = 1
 	}
 	ai_will_do = {
 		factor = 0
