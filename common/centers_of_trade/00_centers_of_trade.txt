@@ -24,10 +24,11 @@ world_port = {
     province_modifiers = {
         province_trade_power_value = 20
         local_institution_spread = 0.3
+		trade_value = 1
     }
     state_modifiers = {
         local_development_cost = -0.1
-        local_sailors_modifier = 1
+        local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
     }
     global_modifiers = {
@@ -40,6 +41,7 @@ emporium = {
     type = inland
     province_modifiers = {
         province_trade_power_value = 5
+		local_development_cost = -0.025
     }
 }
 
@@ -60,9 +62,10 @@ world_trade_center = {
     province_modifiers = {
         province_trade_power_value = 20
         local_institution_spread = 0.3
+		trade_value = 1
     }
     state_modifiers = {
-        local_development_cost = -0.1
+        local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
     }

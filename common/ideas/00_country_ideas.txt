@@ -8454,7 +8454,7 @@ ROM_ideas = { #Roman Empire
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.5
 	}
 	
 	trigger = {
@@ -8464,7 +8464,7 @@ ROM_ideas = { #Roman Empire
 	
 	pax_romana = {
 		global_unrest = -1
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.33
 	}
 	legacy_of_rome = {
 		galley_cost = -0.2
@@ -8472,7 +8472,7 @@ ROM_ideas = { #Roman Empire
 	}
 	spqr = {
 		stability_cost_modifier = -0.25
-		land_morale = 0.15
+		land_morale = 0.2
 	}
 	roman_legions = {
 		infantry_power = 0.2

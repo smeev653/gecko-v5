@@ -72,9 +72,10 @@ bonus = {
     modifier = {
         max_absolutism = 10
         global_tax_modifier = 0.05
-		global_manpower_modifier = 0.10
+		#global_manpower_modifier = 0.10
 		global_trade_goods_size_modifier = 0.025
 		 reform_progress_growth = 0.1
+		 development_cost = -0.025
     }
 }
 
@@ -86,9 +87,10 @@ bonus = {
         max_absolutism = 15
         yearly_absolutism = 1
         global_tax_modifier = 0.075
-		global_manpower_modifier = 0.15
+		#global_manpower_modifier = 0.15
 		global_trade_goods_size_modifier = 0.05
 		reform_progress_growth = 0.2
+		development_cost = -0.0375
     }
 }
 
@@ -100,9 +102,10 @@ bonus = {
         max_absolutism = 20
         yearly_absolutism = 2.5
         global_tax_modifier = 0.1
-		global_manpower_modifier = 0.20
+		#global_manpower_modifier = 0.20
 		global_trade_goods_size_modifier = 0.075
         global_autonomy = -0.05
+		development_cost = -0.05
 		reform_progress_growth = 0.4
     }
 }
@@ -115,9 +118,10 @@ bonus = {
         max_absolutism = 25
         yearly_absolutism = 5
         global_tax_modifier = 0.15
-		global_manpower_modifier = 0.25
+		#global_manpower_modifier = 0.25
 		global_trade_goods_size_modifier = 0.10
         global_autonomy = -0.1
 		reform_progress_growth = 0.5
+		development_cost = -0.075
     }
 }

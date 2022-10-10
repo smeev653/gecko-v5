@@ -417,7 +417,7 @@ devastation = {
 }
 
 prosperity = {
-	local_manpower_modifier = 0.10
+	local_manpower_modifier = 0.15
 	trade_goods_size_modifier = 0.05
 	local_autonomy = -0.05
 }
@@ -724,8 +724,9 @@ bankruptcy = {
 	imperial_mandate = -0.1
 	defensiveness = -0.75
 	stability_cost_modifier = 0.25
-	build_cost = 0.2
+	#build_cost = 0.2
 	great_project_upgrade_cost = 0.5
+	can_not_build_buildings = yes
 }
 
 
@@ -1884,10 +1885,10 @@ over_governing_capacity_modifier = {
 	#ae_impact = 0.5
 	improve_relation_modifier = -0.5
 	#core_creation = 0.4
-	global_manpower_modifier = -0.6
+	global_manpower_modifier = -0.8
 	advisor_cost = 1
 	monthly_militarized_society = -1.5
-	administrative_efficiency = -0.5
+	administrative_efficiency = -0.25
 	defensiveness = -0.35
 	state_maintenance_modifier = 1.5
 	reinforce_speed = -0.35
@@ -1911,16 +1912,16 @@ expanded_infrastructure = {
 	allowed_num_of_manufactories = 1
 	local_governing_cost_increase = 5
 	local_governing_cost = 1.0
-	#local_manpower_modifier = 0.1
+	local_manpower_modifier = 0.15
 	local_tax_modifier = 0.1
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 centralize_state = {
 	statewide_governing_cost = -0.25
 	local_prosperity_growth = 0.1
-	#local_manpower_modifier = 0.1
-	local_state_maintenance_modifier = -0.2
+	#local_manpower_modifier = 0.15
+	local_state_maintenance_modifier = -0.15
 	picture = "centralize_state"
 }
 
