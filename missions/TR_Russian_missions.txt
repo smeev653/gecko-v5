@@ -1484,6 +1484,15 @@ tr_russia_conquest_3 = {
 				name = "defeat_the_raids"
 				duration = 7300
 			}
+			russia_region = {
+				every_province = {
+							limit = {
+								has_province_modifier = steppe_raids
+							}
+								remove_province_modifier = steppe_raids
+								
+						}
+			}
 			azov_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}

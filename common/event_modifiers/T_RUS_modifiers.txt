@@ -53,11 +53,11 @@ vyatkan_wilds = {
 
 raiding_repreeve_kazan = {
     local_development_cost = -0.05
-    trade_goods_size_modifier = 0.075
+    trade_goods_size_modifier = 0.05
 }
 raiding_repreeve_gol = {
     local_development_cost = -0.05
-    trade_goods_size_modifier = 0.075
+    trade_goods_size_modifier = 0.05
 }
 
 great_kazani_revolt = {
