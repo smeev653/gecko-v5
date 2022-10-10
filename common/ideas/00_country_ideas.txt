@@ -1214,7 +1214,7 @@ POR_ideas = {
 		global_trade_power = 0.1
 	}
 	royal_absolutism = {
-		build_cost = -0.15
+		build_cost = -0.10
 		development_cost = -0.05
 	}
 	por_royal_military_academy = {
@@ -15940,7 +15940,7 @@ GZI_ideas = {
 	free = yes
 	
 	gzi_stone_masonry = {
-		build_cost = -0.15
+		build_cost = -0.10
 		great_project_upgrade_cost = -0.1
 	}
 	gzi_ivory_trade = {

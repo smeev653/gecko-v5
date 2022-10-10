@@ -274,7 +274,7 @@ GER_ideas = {
 
 NGF_ideas = {
 	start = {
-		build_cost = -0.15
+		build_cost = -0.10
 		development_cost = -0.05
 	}
 	

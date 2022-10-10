@@ -822,7 +822,8 @@ weapon_quality_standards = {
 		full_idea_group = quality_ideas
 	}
 	
-	build_cost = -0.15
+	build_cost = -0.10
+	global_trade_goods_size_modifier = 0.025
 	
 	ai_will_do = {
 		factor = 2

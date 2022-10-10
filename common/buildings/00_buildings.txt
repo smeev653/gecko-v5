@@ -33,6 +33,7 @@ marketplace = {
 
 	modifier = {
 		province_trade_power_modifier = 0.5
+		local_development_cost = -0.025
 	}
 	on_built = {
 		add_development_from_building = {
@@ -61,6 +62,7 @@ workshop = {
 	time = 12
 	modifier = {
 		local_production_efficiency = 0.5
+		local_development_cost = -0.025
 	}
 	on_built = {
 		add_development_from_building = {
@@ -98,6 +100,7 @@ temple = {
 	modifier = {
 		local_tax_modifier = 0.4
 		local_missionary_strength = 0.01
+		local_development_cost = -0.025
 	}
 
 	on_built = {
@@ -186,7 +189,8 @@ barracks = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_manpower_modifier = 0.4
+		local_manpower_modifier = 0.5
+		local_development_cost = -0.025
 	}
 	on_built = {
 		add_development_from_building = {
@@ -772,7 +776,7 @@ courthouse = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_state_maintenance_modifier = -0.125
+		local_state_maintenance_modifier = -0.1
 		local_autonomy = -0.1
 		local_governing_cost = -0.175
 		local_friendly_movement_speed = 0.1
@@ -810,6 +814,7 @@ regimental_camp = {
 	time = 12
 	modifier = {
 		land_forcelimit = 1
+		local_development_cost = -0.025
 	}
 
 	on_built = {
@@ -1383,6 +1388,7 @@ cathedral = {
 	modifier = {
 		local_missionary_strength = 0.03
 		local_tax_modifier = 1
+		local_development_cost = -0.025
 	}
 	on_built = {
 		if = {
@@ -1452,10 +1458,10 @@ cathedral = {
 
 
 university = {
-	cost = 75
+	cost = 50
 	time = 12
 	modifier = {
-		local_development_cost = -0.05
+		local_development_cost = -0.025
 		allowed_num_of_buildings = 1
 	}
 	build_trigger = {
@@ -1508,6 +1514,7 @@ trade_depot = {
 
 	modifier = {
 		province_trade_power_modifier = 1
+		local_development_cost = -0.025
 	}	
 	on_obsolete = {
 	}
@@ -1547,7 +1554,8 @@ training_fields = {
 	make_obsolete = barracks
 
 	modifier = {
-		local_manpower_modifier = 0.8
+		local_manpower_modifier = 1
+		local_development_cost = -0.025
 	}
 
 	ai_will_do = {
@@ -2086,6 +2094,7 @@ stock_exchange = {
 
 	modifier = {
 		province_trade_power_modifier = 1.25
+		local_development_cost = -0.025
 	}	
 
 
@@ -2101,6 +2110,7 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		local_production_efficiency = 1
+		local_development_cost = -0.025
 	}
 
 	on_obsolete = {
@@ -2122,12 +2132,12 @@ town_hall = {
 	make_obsolete = courthouse
 
 	modifier = {
-		local_state_maintenance_modifier = -0.25
+		local_state_maintenance_modifier = -0.2
 		local_autonomy = -0.2
 		local_governing_cost = -0.35
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.50
-		local_development_cost = -0.05
+		local_development_cost = -0.025
 		}
 
 	ai_will_do = {
@@ -2167,6 +2177,7 @@ conscription_center = {
 
 	modifier = {
 		land_forcelimit = 2
+		local_development_cost = -0.025
 	}
 
 	ai_will_do = {
@@ -2706,6 +2717,7 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 0.8
+		local_development_cost = -0.025
 	}
 }
 
@@ -2939,6 +2951,7 @@ furnace = {
 
 	modifier = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
+		local_development_cost = -0.025
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2979,21 +2992,37 @@ soldier_households = {
 		wine
 	}
 	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = ROOT
 				}
+				OR = {
+					has_building = soldier_households
+					has_construction = soldier_households
+				}
+			}
+		}
+	}
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = soldier_households
+					has_construction = soldier_households
+				}
+			}
+		}
 	}
 	modifier = {
-		local_manpower = 0.5
-	}
+			local_manpower_modifier = 1
+    }
 	bonus_modifier = {
-		local_manpower = 0.5
+		local_manpower_modifier = 2
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -3033,7 +3062,6 @@ impressment_offices = {
 
 	modifier = {
 		local_sailors = 750
-		local_manpower = 0.375
 		ship_recruit_speed = -0.1
 		local_ship_cost = -0.05
 	}
@@ -3094,6 +3122,7 @@ state_house = {
 	modifier = {
 		statewide_governing_cost = -0.2
 		local_tax_modifier = 1.5
+		local_development_cost = -0.025
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2
@@ -3144,6 +3173,7 @@ armory = {
 	}
 	modifier = {
 		land_forcelimit = 5
+		local_development_cost = -0.025
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -3188,6 +3218,7 @@ gc_bureaucracy_manufactory = {
 		}
 		modifier = {
 			allowed_num_of_buildings = 1
+			local_development_cost = -0.025
 		}
 		onmap = no
 		show_separate = yes # Means as a manufactory it will be shown according to the old way

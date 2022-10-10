@@ -16,7 +16,7 @@ economic_hegemon = {
 		global_trade_goods_size_modifier = 0.25
 		min_autonomy_in_territories = -0.1
 		governing_capacity_modifier = 0.1
-		build_cost = -0.25
+		build_cost = -0.15
 	}
 	
 	max = {
