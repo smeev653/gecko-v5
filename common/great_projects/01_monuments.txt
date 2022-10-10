@@ -13514,7 +13514,7 @@ malbork_castle = {
 			factor = 350
 		}
 		province_modifiers = {
-			local_defensiveness = 0.5
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 			local_autonomy = -0.025
@@ -13537,7 +13537,7 @@ malbork_castle = {
 			factor = 750
 		}
 		province_modifiers = {
-			local_defensiveness = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 			local_autonomy = -0.05
@@ -13572,6 +13572,17 @@ malbork_castle = {
 			garrison_size = 0.25
 		}
 		on_upgraded = {
+			owner = {
+				every_owned_province = {
+					limit = {
+						trade_goods = gems
+					}
+					add_province_modifier = {
+						name = X_POL_amber_monopoly_pmod
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 }
