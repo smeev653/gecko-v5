@@ -65,6 +65,7 @@ general_cost_modifier = {
 	}
 
 	reserves_organisation = 0.10
+	yearly_army_professionalism = 0.01
 }
 
 reserves_organisation_modifier = {

@@ -854,10 +854,13 @@ theocracy = {
 		divine_cause = {
 			reforms = {
 				safeguard_holy_sites_reform
-				combat_heresy_reform
+				#combat_heresy_reform
 				expel_heathens_reform
 				guru_advisors_reform
 				pursuit_of_knowledge_reform
+				###Gecko###
+				gecko_noble_regiments_reform
+				gecko_professional_army_reform
 			}
 		}
 		separation_of_power_theocracy = {

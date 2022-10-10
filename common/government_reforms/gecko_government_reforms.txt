@@ -169,21 +169,27 @@ gc_greater_hungary_reform = {
 gecko_noble_regiments_reform = { #Noble Regiments
 	icon = "soldiers_6"
 	allow_normal_conversion = yes
-
+	
 	modifiers = {
 		land_morale = 0.075
 		possible_policy = 1
+	}
+	conditional = {
+		allow_carolean = yes
 	}
 }
 
 gecko_professional_army_reform = { #Noble Regiments
 	icon = "holy_state_reform"
 	allow_normal_conversion = yes
-
+	
 	modifiers = {
 		discipline = 0.025
 		army_tradition = 0.5
 		yearly_army_professionalism = 0.0025
+	}
+	conditional = {
+		allow_carolean = yes
 	}
 }
 

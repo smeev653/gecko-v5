@@ -57,6 +57,8 @@
  gecko_debt_2_desc:0 "Refocus our economy away from debt repayments."
  splendor_mercs_title:0 "Enlist Mercenaries"
  splendor_mercs_desc:0 "Due to our splendor, we can attract mercenaries previous unavailable to us."
+ establish_imperial_guard_title:0 "Reform the Imperial Guard"
+ establish_imperial_guard_desc:0 ""
  #gecko critial events
  GC_infantry_leader_cooldown_tooltip:0 "Infantry Leader"
  GC_cavalry_leader_cooldown_tooltip:0 "Cavalry Leader"

@@ -9616,11 +9616,11 @@ reassessement_provinces = {
 
 gunpowder_core = {
 	drill_gain_modifier = 0.4
-	land_maintenance_modifier = 0.15
+	land_maintenance_modifier = 0.10
 }
 
 standardized_uniforms_modifier = {
-	drill_gain_modifier = 0.4
+	drill_gain_modifier = 0.5
 	land_maintenance_modifier = 0.1
 }
 
