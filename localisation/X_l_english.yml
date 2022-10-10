@@ -567,6 +567,8 @@
  desc_X_POL_polish_incunabula_cmod:0 ""
  X_POL_swidnica_beer_pmod:0 "Swidnica Beer"
  desc_X_POL_swidnica_beer_pmod:0 ""
+ X_POL_amber_monopoly_pmod:0 "Amber Monopoly"
+ desc_X_POL_amber_monopoly_pmod:0 ""
  ####################
  # Tiered Modifiers
  ####################

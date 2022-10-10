@@ -354,6 +354,10 @@ X_POL_polish_incunabula_cmod = {
 X_POL_swidnica_beer_pmod = {
 	trade_goods_size = 1
 }
+X_POL_amber_monopoly_pmod = {
+	province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.50
+}
 ########################################
 # Tiered Modifiers
 ########################################

@@ -84,6 +84,7 @@ POL_return = {
 	republican_tradition = 1
 	horde_unity = 1
 	devotion = 1
+	ae_impact = -0.2
 }
 
 POL_a_piast_ruler = {
