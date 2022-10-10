@@ -715,32 +715,32 @@ country_event = { #BalticDomination
 	
 }
 
-country_event = { #LackOfPorts
-	id = henri_rus_larp.16
-	title = henri_rus_larp.16.t
-	desc = henri_rus_larp.16.d
-	picture = TRIBUTE_TO_TATARS_eventPicture
-    fire_only_once = yes
-	
-	trigger = {
-		has_dlc = "Third Rome"
-		tag = MOS
-		religion_group = christian
-		
-	}
-	
-	
-	mean_time_to_happen = {
-		days = 100
-	}
-	
-	option = {
-		name = henri_rus_larp.16.a
-		add_country_modifier ={
-			name = "backwards_society"
-			duration = -1 
-		} 	
-	}
-	
-	
-}
+#country_event = { #LackOfPorts
+#	id = henri_rus_larp.16
+#	title = henri_rus_larp.16.t
+#	desc = henri_rus_larp.16.d
+#picture = TRIBUTE_TO_TATARS_eventPicture
+#   fire_only_once = yes
+#	
+#	trigger = {
+#		has_dlc = "Third Rome"
+#		tag = MOS
+#		religion_group = christian
+#		
+#	}
+#	
+#	
+#	mean_time_to_happen = {
+#		days = 100
+#	}
+#	
+#	option = {
+#		name = henri_rus_larp.16.a
+#		add_country_modifier ={
+#			name = "backwards_society"
+#			duration = -1 
+#		} 	
+#	}
+#	
+#	
+#}
