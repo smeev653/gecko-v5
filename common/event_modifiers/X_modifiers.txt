@@ -220,24 +220,24 @@ X_CRI_ruthenian_dominance_cmod = {
 X_RUS_estate_streltsy_privilege_1_cmod = {
 	is_streltsy_modifier = yes
 	discipline = -0.05
-	land_maintenance_modifier = -0.05
+	land_maintenance_modifier = -0.1
 }
 
 X_RUS_estate_streltsy_privilege_2_cmod = {
 	is_streltsy_modifier = yes
 	shock_damage_received = -0.10
-	land_maintenance_modifier = 0.05
+	land_maintenance_modifier = 0.1
 }
 
 X_RUS_estate_streltsy_privilege_3_cmod = {
 	is_streltsy_modifier = yes
 	land_morale = 0.10
-	land_maintenance_modifier = 0.05
+	land_maintenance_modifier = 0.1
 }
 X_RUS_estate_streltsy_privilege_4_cmod = {
 	is_streltsy_modifier = yes
 	infantry_power = 0.10
-	land_maintenance_modifier = 0.05
+	land_maintenance_modifier = 0.1
 }
 
 X_RUS_estate_streltsy_privilege_5_cmod = {
@@ -248,7 +248,7 @@ X_RUS_estate_streltsy_privilege_5_cmod = {
 X_RUS_estate_streltsy_privilege_7_cmod = {
 	is_streltsy_modifier = yes
 	discipline = 0.05
-	land_maintenance_modifier = 0.05
+	land_maintenance_modifier = 0.1
 }
 
 X_RUS_hanseatic_decline_pmod = {
@@ -264,7 +264,7 @@ X_RUS_novgorodian_maritime_rights_cmod = {
 
 X_RUS_isolation_1_cmod = {
     trade_efficiency = -0.075
-    technology_cost = 0.075
+    technology_cost = 0.025
     global_institution_spread = -0.125
     manpower_in_own_culture_provinces = 0.10
 	manpower_in_culture_group_provinces = 0.10
@@ -274,7 +274,7 @@ X_RUS_isolation_1_cmod = {
 
 X_RUS_isolation_2_cmod = {
     trade_efficiency = -0.1
-    technology_cost = 0.1
+    technology_cost = 0.005
     global_institution_spread = -0.25
     manpower_in_own_culture_provinces = 0.15
 	manpower_in_culture_group_provinces = 0.15
@@ -284,7 +284,7 @@ X_RUS_isolation_2_cmod = {
 
 X_RUS_isolation_3_cmod = {
     trade_efficiency = -0.125
-    technology_cost = 0.125
+    technology_cost = 0.0075
     global_institution_spread = -0.375
     manpower_in_own_culture_provinces = 0.20
 	manpower_in_culture_group_provinces = 0.20
@@ -294,7 +294,7 @@ X_RUS_isolation_3_cmod = {
 
 X_RUS_isolation_4_cmod = {
     trade_efficiency = -0.15
-    technology_cost = 0.15
+    technology_cost = 0.10
     global_institution_spread = -0.5
     manpower_in_own_culture_provinces = 0.25
 	manpower_in_culture_group_provinces = 0.25

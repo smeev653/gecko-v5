@@ -632,9 +632,9 @@ country_event = { #QasimKhanate
 		name = henri_rus_larp.13.b
 		define_general = {
 		name = "Qasim Moxammet"
-    	shock = 4
-    	fire = 4
-    	manuever = 4
+    	shock = 3
+    	fire = 3
+    	manuever = 3
     	siege = 1
 		}
 		add_prestige = 25
