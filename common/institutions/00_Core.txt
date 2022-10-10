@@ -545,7 +545,7 @@ new_world_i = {
 		global_autonomy = -0.05
 		#development_cost = -0.05
 		#free_leader_pool = 1
-		governing_capacity = 100
+		#governing_capacity = 100
 	}
 
 	trade_company_efficiency = 0.6
@@ -814,7 +814,7 @@ printing_press = {
 		brahmins_other_loyalty_modifier = 0.1
 		maratha_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
-		governing_capacity = 50
+		#governing_capacity = 50
 	}
 
 	trade_company_efficiency = 0.8
@@ -1129,7 +1129,7 @@ global_trade = {
 		#free_leader_pool = 2
 		merchants = 1
 		advisor_pool = 2
-		governing_capacity = 100
+		#governing_capacity = 100
 	}
 
 	trade_company_efficiency = 1.0
@@ -1390,7 +1390,7 @@ manufactories = {
 		global_trade_goods_size_modifier = 0.1
 		build_time = -0.15
 		#free_leader_pool = 2
-		governing_capacity = 100
+		#governing_capacity = 100
 	}
 
 	trade_company_efficiency = 1.25
@@ -1849,7 +1849,7 @@ enlightenment = {
 	bonus = {
 		culture_conversion_cost = -0.25
 		#free_leader_pool = 2
-		governing_capacity = 100
+		#governing_capacity = 100
 	}
 
 	trade_company_efficiency = 1.5
@@ -2201,7 +2201,7 @@ industrialization = {
 	bonus = {
 		global_manpower_modifier = 0.25
 		global_tax_modifier = 0.15
-		governing_capacity = 100
+		#governing_capacity = 100
 	}
 
 	historical_start_date = 1750.1.1
