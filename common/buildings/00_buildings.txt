@@ -281,9 +281,6 @@ fort_15th = {
 	cost = 100
 	time = 30
 	on_built = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 14 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -319,11 +316,6 @@ fort_15th = {
 			}
 		}
 	}
-	on_destroyed = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
-	}
 	build_trigger = {
 		OR = {
 			is_capital = yes
@@ -334,7 +326,6 @@ fort_15th = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
@@ -554,7 +545,6 @@ keep_trigger = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
@@ -903,9 +893,6 @@ fort_16th = {
 	time = 30
 	make_obsolete = fort_15th
 	on_built = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -941,11 +928,6 @@ fort_16th = {
 			}
 		}
 	}
-	on_destroyed = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
-	}
 	build_trigger = {
 		OR = {
 			is_capital = yes
@@ -957,7 +939,6 @@ fort_16th = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
@@ -1178,7 +1159,6 @@ fort_16th = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
@@ -1685,9 +1665,6 @@ fort_17th = {
 	make_obsolete = fort_16th
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -1723,11 +1700,6 @@ fort_17th = {
 			}
 		}
 	}
-	on_destroyed = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
-	}
 	build_trigger = {
 		OR = {
 			is_capital = yes
@@ -1739,7 +1711,6 @@ fort_17th = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
@@ -1959,7 +1930,6 @@ fort_17th = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
@@ -2375,9 +2345,6 @@ fort_18th = {
 
 	make_obsolete = fort_17th
 		on_built = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
 		if = {
 			limit = {
 				FROM = { has_government_attribute = on_fort_built_nobles_loyalty }
@@ -2413,11 +2380,6 @@ fort_18th = {
 			}
 		}
 	}
-	on_destroyed = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
-		#######
-	}
 	build_trigger = {
 		OR = {
 			is_capital = yes
@@ -2428,7 +2390,6 @@ fort_18th = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
@@ -2647,7 +2608,6 @@ fort_18th = {
 			province_id = 130
 			province_id = 4754
 			province_id = 4753
-			province_id = 4714
 			province_id = 6126
 			province_id = 6121
 			province_id = 6120
