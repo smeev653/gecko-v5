@@ -1292,7 +1292,7 @@ HAB_ideas = {
 	free = yes		#will be added at load.
 
 	imperial_ambitions = {
-		imperial_authority = 0.1
+		infantry_power = 0.1
 		diplomatic_annexation_cost = -0.15
 	}
 	military_border = {
