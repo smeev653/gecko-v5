@@ -142,6 +142,7 @@ monarchy = {
 				strengthen_clergy_reform
 				curtail_clergy_power_reform
 				secure_clergy_power_reform
+				gecko_building_dev
 				maintain_clergy_balance_of_power_reform
 				separate_clergy_from_state_affairs_reform
 				restoration_of_clergy_reform
@@ -457,6 +458,7 @@ republic = {
 				strengthen_clergy_reform
 				curtail_clergy_power_reform
 				secure_clergy_power_reform
+				gecko_building_dev
 				maintain_clergy_balance_of_power_reform
 				separate_clergy_from_state_affairs_reform
 				cult_of_reason_reform
@@ -670,6 +672,7 @@ tribal = {
 			reforms = {
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
+				gecko_building_dev
 			}
 		}
 		tribal_reformation = {
@@ -814,6 +817,7 @@ theocracy = {
 				strengthen_clergy_reform
 				curtail_clergy_power_reform
 				secure_clergy_power_reform
+				gecko_building_dev
 				maintain_clergy_balance_of_power_reform
 			}
 		}
