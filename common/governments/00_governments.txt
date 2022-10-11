@@ -147,8 +147,7 @@ monarchy = {
 				restoration_of_clergy_reform
 				cult_of_reason_reform
 				secularization_of_the_state_reform
-				###Gecko###
-				gecko_building_dev
+
 			}
 		}
 		growth_of_administration = {
@@ -201,6 +200,8 @@ monarchy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
+				###Gecko###
+				gecko_building_dev
 			}
 		}
 		legitimation_of_power = {
@@ -459,7 +460,7 @@ republic = {
 				strengthen_clergy_reform
 				curtail_clergy_power_reform
 				secure_clergy_power_reform
-				gecko_building_dev
+				
 				maintain_clergy_balance_of_power_reform
 				separate_clergy_from_state_affairs_reform
 				cult_of_reason_reform
@@ -511,6 +512,8 @@ republic = {
 				master_smugglers_reform
 				cutthroat_approach_reform
 				empowered_quartermasters_reform
+				##gecko##
+				gecko_building_dev
 			}
 		}
 		consolidation_of_power_category = {
@@ -818,7 +821,7 @@ theocracy = {
 				strengthen_clergy_reform
 				curtail_clergy_power_reform
 				secure_clergy_power_reform
-				gecko_building_dev
+				
 				maintain_clergy_balance_of_power_reform
 			}
 		}
@@ -854,6 +857,8 @@ theocracy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
+				##gecko##
+				gecko_building_dev
 			}
 		}
 		divine_cause = {

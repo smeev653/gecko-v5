@@ -169,7 +169,11 @@ gc_greater_hungary_reform = {
 gecko_noble_regiments_reform = { #Noble Regiments
 	icon = "soldiers_6"
 	allow_normal_conversion = yes
-	
+	potential = {
+		NOT = { has_reform = crown_colony_government }
+		NOT = { has_reform = private_enterprise_colony_government }
+		NOT = { has_reform = self_governing_colony_government }
+	}
 	modifiers = {
 		land_morale = 0.075
 		possible_policy = 1
@@ -182,7 +186,11 @@ gecko_noble_regiments_reform = { #Noble Regiments
 gecko_professional_army_reform = { #Noble Regiments
 	icon = "holy_state_reform"
 	allow_normal_conversion = yes
-	
+	potential = {
+		NOT = { has_reform = crown_colony_government }
+		NOT = { has_reform = private_enterprise_colony_government }
+		NOT = { has_reform = self_governing_colony_government }
+	}
 	modifiers = {
 		discipline = 0.025
 		army_tradition = 0.5
@@ -237,7 +245,7 @@ gc_french_empire = { #tier 1
 }
 
 gecko_building_dev = {
-	icon = "warrior_monks_reform"
+	icon = "paper_money_map"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -246,8 +254,8 @@ gecko_building_dev = {
 		}
 	}
 	modifiers = {
-		church_influence_modifier = 0.05
-		adm_advisor_cost = -0.05
+		all_estate_loyalty_equilibrium = -0.05
+		build_cost = -0.05
 	}
 	effect = {
 		hidden_effect = {
