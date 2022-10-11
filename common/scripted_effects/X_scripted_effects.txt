@@ -278,6 +278,9 @@ X_local_building_development_cost_effect = {
 				X_remove_local_building_development_tiered_modifier_effect = yes
 			}
 		}
+		else = {
+			X_remove_local_building_development_tiered_modifier_effect = yes
+		}
 	}
 }
 
