@@ -304,7 +304,6 @@ fort_15th = {
 	time = 30
 	on_built = {
 		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
@@ -346,8 +345,6 @@ fort_15th = {
 		}
 	}
 	on_destroyed = {
-		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		###X###
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
@@ -986,7 +983,6 @@ fort_16th = {
 	make_obsolete = fort_15th
 	on_built = {
 		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
@@ -1029,7 +1025,6 @@ fort_16th = {
 	}
 	on_destroyed = {
 		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
@@ -1819,7 +1814,6 @@ fort_17th = {
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
@@ -1862,7 +1856,6 @@ fort_17th = {
 	}
 	on_destroyed = {
 		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
@@ -2545,7 +2538,6 @@ fort_18th = {
 	make_obsolete = fort_17th
 		on_built = {
 		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
@@ -2588,7 +2580,6 @@ fort_18th = {
 	}
 	on_destroyed = {
 		###X###
-		X_on_province_owner_change_pmod_effect = yes
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
