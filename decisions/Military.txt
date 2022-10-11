@@ -106,6 +106,7 @@ country_decisions = {
 	}
 	establish_imperial_guard = {
 		potential = {
+			always = no
 			NOT = {has_country_flag = imperial_guard_activated }
 			has_dlc = "Cradle of Civilization"
 			#NOT = { has_country_modifier = gunpowder_core }

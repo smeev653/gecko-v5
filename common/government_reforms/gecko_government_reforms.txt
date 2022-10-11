@@ -234,4 +234,66 @@ gc_french_empire = { #tier 1
 	}
 	allow_normal_conversion = yes
 	fixed_rank = 3
+}
+
+gecko_building_dev = {
+	#icon = "warrior_monks_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		always = no
+	}
+	modifiers = {
+		church_influence_modifier = 0.05
+		adm_advisor_cost = -0.05
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_tax_building_trigger = yes
+						has_trade_building_trigger = yes
+						has_production_building_trigger = yes
+						has_manpower_building_trigger = yes
+						has_forcelimit_building_trigger = yes
+						has_building = town_hall
+						has_building = wharf
+						has_building = weapons
+						has_building = textile
+						has_building = tradecompany
+						has_building = farm_estate
+						has_building = mills
+						has_building = plantations
+						has_building = soldier_households
+						has_building = state_house
+					}	
+				}
+				add_province_modifier = {
+					name = local_investment
+					duration = -1
+				}
+			}
+		}
+	}
+	post_removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = local_investment
+				}
+				remove_province_modifier = local_investment
+			}
+		}
+	}
+	custom_attributes = {
+		building_dev = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
 }	

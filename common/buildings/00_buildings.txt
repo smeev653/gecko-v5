@@ -33,13 +33,21 @@ marketplace = {
 
 	modifier = {
 		province_trade_power_modifier = 0.5
-		local_development_cost = -0.025
 	}
 	on_built = {
 		add_development_from_building = {
 			building = marketplace
 			type = production
 			value = 1
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
 		}
 	}
 	on_destroyed = {
@@ -48,6 +56,7 @@ marketplace = {
 			type = production
 			value = 1
 		}
+		remove_province_modifier = local_investment
 	}
 	on_obsolete = {
 	}
@@ -62,13 +71,21 @@ workshop = {
 	time = 12
 	modifier = {
 		local_production_efficiency = 0.5
-		local_development_cost = -0.025
 	}
 	on_built = {
 		add_development_from_building = {
 			building = workshop
 			type = production
 			value = 1
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
 		}
 	}
 	on_destroyed = {
@@ -77,6 +94,7 @@ workshop = {
 			type = production
 			value = 1
 		}
+		remove_province_modifier = local_investment
 	}
 	on_obsolete = {
 	}
@@ -100,7 +118,7 @@ temple = {
 	modifier = {
 		local_tax_modifier = 0.4
 		local_missionary_strength = 0.01
-		local_development_cost = -0.025
+		
 	}
 
 	on_built = {
@@ -124,7 +142,15 @@ temple = {
 				duration = -1
 			}
 		}
-	
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
 		if = {
 				limit = {
 					FROM = {
@@ -156,6 +182,7 @@ temple = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		remove_province_modifier = local_investment
 		if = {
 			limit = {
 				FROM = {
@@ -190,13 +217,22 @@ barracks = {
 	time = 12
 	modifier = {
 		local_manpower_modifier = 0.5
-		local_development_cost = -0.025
+		
 	}
 	on_built = {
 		add_development_from_building = {
 			building = barracks
 			type = manpower
 			value = 1
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
 		}
 	}
 	on_destroyed = {
@@ -205,6 +241,7 @@ barracks = {
 			type = manpower
 			value = 1
 		}
+		remove_province_modifier = local_investment
 	}
 	on_obsolete = {
 	}
@@ -790,7 +827,7 @@ courthouse = {
 		local_friendly_movement_speed = 0.1
 		allowed_num_of_buildings = 1
 	}
-
+	
 	on_obsolete = {
 	}
 	ai_will_do = {
@@ -822,7 +859,7 @@ regimental_camp = {
 	time = 12
 	modifier = {
 		land_forcelimit = 1
-		local_development_cost = -0.025
+		
 	}
 
 	on_built = {
@@ -831,6 +868,15 @@ regimental_camp = {
 			type = manpower
 			value = 1
 		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -838,6 +884,7 @@ regimental_camp = {
 			type = manpower
 			value = 1
 		}
+		remove_province_modifier = local_investment
 	}
 	on_obsolete = {
 	}
@@ -1404,7 +1451,7 @@ cathedral = {
 	modifier = {
 		local_missionary_strength = 0.03
 		local_tax_modifier = 1
-		local_development_cost = -0.025
+		
 	}
 	on_built = {
 		if = {
@@ -1416,6 +1463,15 @@ cathedral = {
 					estate = estate_church
 					loyalty = 5
 				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
 			}
 		}
 		if = {
@@ -1453,6 +1509,7 @@ cathedral = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		remove_province_modifier = local_investment
 		if = {
 			limit = {
 				FROM = {
@@ -1477,7 +1534,7 @@ university = {
 	cost = 50
 	time = 12
 	modifier = {
-		local_development_cost = -0.025
+		
 		allowed_num_of_buildings = 1
 	}
 	build_trigger = {
@@ -1486,6 +1543,20 @@ university = {
 				owned_by = ROOT
 			}
 	}
+	on_built = {
+		if = {
+				limit = {
+					FROM = { has_government_attribute = building_dev }
+				}
+				add_province_modifier = {
+					name = local_investment
+					duration = -1
+				}
+			}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
+	}	
 	on_obsolete = {
 	}
 	ai_will_do = {
@@ -1530,7 +1601,21 @@ trade_depot = {
 
 	modifier = {
 		province_trade_power_modifier = 1
-		local_development_cost = -0.025
+		
+	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
 	}	
 	on_obsolete = {
 	}
@@ -1571,9 +1656,22 @@ training_fields = {
 
 	modifier = {
 		local_manpower_modifier = 1
-		local_development_cost = -0.025
+		
 	}
-
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
+	}
 	ai_will_do = {
 		factor = 250
 	}
@@ -2118,10 +2216,22 @@ stock_exchange = {
 
 	modifier = {
 		province_trade_power_modifier = 1.25
-		local_development_cost = -0.025
+		
 	}	
-
-
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
+	}
 	ai_will_do = {
 		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
 	}
@@ -2134,9 +2244,22 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		local_production_efficiency = 1
-		local_development_cost = -0.025
+		
 	}
-
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
+	}
 	on_obsolete = {
 	}
 	allow_in_gold_provinces = no
@@ -2161,9 +2284,22 @@ town_hall = {
 		local_governing_cost = -0.35
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.50
-		local_development_cost = -0.025
+		
 		}
-
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
+	}
 	ai_will_do = {
 		factor = 250
 	}
@@ -2201,9 +2337,22 @@ conscription_center = {
 
 	modifier = {
 		land_forcelimit = 2
-		local_development_cost = -0.025
+		
 	}
-
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
+	}
 	ai_will_do = {
 		factor = 250
 		modifier = {
@@ -2749,7 +2898,21 @@ manufactory = {
 	time = 60
 	modifier = {
 		trade_goods_size = 0.8
-		local_development_cost = -0.025
+		
+	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
 	}
 }
 
@@ -2983,7 +3146,7 @@ furnace = {
 
 	modifier = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
-		local_development_cost = -0.025
+		
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -3055,6 +3218,20 @@ soldier_households = {
     }
 	bonus_modifier = {
 		local_manpower_modifier = 2
+	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -3154,7 +3331,21 @@ state_house = {
 	modifier = {
 		statewide_governing_cost = -0.2
 		local_tax_modifier = 1.5
-		local_development_cost = -0.025
+		
+	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2
@@ -3203,9 +3394,23 @@ armory = {
 			}
 		}
 	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = { has_government_attribute = building_dev }
+			}
+			add_province_modifier = {
+				name = local_investment
+				duration = -1
+			}
+		}
+	}
+	on_destroyed = {
+		remove_province_modifier = local_investment
+	}
 	modifier = {
 		land_forcelimit = 5
-		local_development_cost = -0.025
+		
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -3248,9 +3453,23 @@ gc_bureaucracy_manufactory = {
 				}
 			}
 		}
+		on_built = {
+			if = {
+				limit = {
+					FROM = { has_government_attribute = building_dev }
+				}
+				add_province_modifier = {
+					name = local_investment
+					duration = -1
+				}
+			}
+		}
+		on_destroyed = {
+			remove_province_modifier = local_investment
+		}
 		modifier = {
 			allowed_num_of_buildings = 1
-			local_development_cost = -0.025
+			
 		}
 		onmap = no
 		show_separate = yes # Means as a manufactory it will be shown according to the old way
