@@ -482,14 +482,8 @@ tr_russia_conquest_1 = {
 			}
 		}
 		effect = {
-			russia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			###X###
+			X_improve_ruler_stats_effect = { adm = yes adm_amount = 1 }
 			if = {
 				limit = {
 					310 = { 
@@ -513,6 +507,13 @@ tr_russia_conquest_1 = {
 				NOV = { add_liberty_desire = -75 }
 			}
 			#######
+			russia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	tr_consolidate_russia_mission = {
