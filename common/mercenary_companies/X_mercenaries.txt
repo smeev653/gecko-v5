@@ -3,12 +3,6 @@ merc_X_VEN_stratioti = {
 	sprites = { easterngfx_sprite_pack }
     trigger = {	
 		NOT = { has_country_modifier = merc_spawn_timer }
-		NOT = {
-			check_variable = {
-				which = geckomercvalue
-				which = geckomercFL
-			}
-		}
 		mission_completed = X_VEN_mission_24
 	}
 	regiments_per_development = 0.05

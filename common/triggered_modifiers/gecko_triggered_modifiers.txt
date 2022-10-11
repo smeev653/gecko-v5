@@ -659,6 +659,7 @@ Over_merc_limit = {
 		
 	}
 	merc_maintenance_modifier = 1.5
+	mercenary_manpower = -1
 }
 
 Knights_vassalised = {

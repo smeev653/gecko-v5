@@ -11,12 +11,6 @@ gecko_independent_army_1 = {
 		 NOT = { total_development = 300 }
 		 always = no
 		 #is_year = 1470
-		 NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
     }
     # No home province means local mercenary company
 }
@@ -34,12 +28,6 @@ gecko__local_independent_army_1 = {
 			current_age = age_of_revolutions
 		}
 		NOT = {has_country_modifier = merc_spawn_timer }
-		NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
     }
     # No home province means local mercenary company
 }
@@ -54,12 +42,6 @@ gecko__local_independent_army_2 = {
 		 always = no
 		current_age = age_of_revolutions
 		NOT = {has_country_modifier = merc_spawn_timer }
-		NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
     }
     # No home province means local mercenary company
 }
@@ -79,12 +61,6 @@ gecko_merc_black_army_1 = {
 			has_reform = black_army_reform
 			}
 			NOT = {has_country_modifier = merc_spawn_timer }
-		NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}	
 	}
 	cost_modifier = 0.75
 	modifier = {
@@ -105,13 +81,7 @@ gecko_merc_black_army_2 = {
 			has_country_modifier = hun_black_army	
 			has_reform = black_army_reform
 			}
-			NOT = {has_country_modifier = merc_spawn_timer }
-		NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}	
+			NOT = {has_country_modifier = merc_spawn_timer }	
 	}
 	cost_modifier = 0.35
 	modifier = {
@@ -129,12 +99,6 @@ gecko_merc_aristo_ideas = {
 	trigger = {
 		full_idea_group = aristocracy_ideas
 		NOT = {has_country_modifier = merc_spawn_timer }
-		NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
 	}
 	cost_modifier = 0.5
 	modifier = {
@@ -150,12 +114,7 @@ gecko_hormuz_company = {
 	trigger = {
 		tag = YEM
 		NOT = {has_country_modifier = merc_spawn_timer }
-		NOT = {
-					check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
+
 	}
 	cost_modifier = 0.75
 }
@@ -172,12 +131,7 @@ gc_merc_sekban = {
 			mission_completed = mamluks_break_the_ottomans
 		}
 		NOT = {has_country_modifier = merc_spawn_timer }
-			 NOT = {
-				check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
+
 	}
     modifier = { land_morale = 0.1}
 }
