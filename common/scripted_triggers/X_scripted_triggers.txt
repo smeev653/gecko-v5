@@ -1,6 +1,157 @@
 ####################
 # General
 ####################
+X_has_local_building_development_tiered_modifier_trigger = {
+	OR = {
+		has_province_modifier = X_local_building_development_tier_1_pmod
+		has_province_modifier = X_local_building_development_tier_2_pmod
+		has_province_modifier = X_local_building_development_tier_3_pmod
+		has_province_modifier = X_local_building_development_tier_4_pmod
+		has_province_modifier = X_local_building_development_tier_5_pmod
+		has_province_modifier = X_local_building_development_tier_6_pmod
+		has_province_modifier = X_local_building_development_tier_7_pmod
+		has_province_modifier = X_local_building_development_tier_8_pmod
+		has_province_modifier = X_local_building_development_tier_9_pmod
+		has_province_modifier = X_local_building_development_tier_10_pmod
+		has_province_modifier = X_local_building_development_tier_11_pmod
+		has_province_modifier = X_local_building_development_tier_12_pmod
+	}
+}
+X_has_latest_building_trigger = {
+	[[trade]
+		OR = {
+			AND = {
+				$builder$ = { dip_tech = 22 }
+				has_building = stock_exchange
+			}
+			AND = {
+				$builder$ = { dip_tech = 17 }
+				has_building = trade_depot
+			}
+			AND = {
+				$builder$ = { NOT = { dip_tech = 17 } }
+				has_building = marketplace
+			}
+		}
+	]
+	[[government]
+		OR = {
+			AND = {
+				$builder$ = { adm_tech = 22 }
+				has_building = town_hall
+			}
+			AND = {
+				$builder$ = { NOT = { adm_tech = 22 } }
+				has_building = courthouse
+			}
+		}
+	]
+	[[production]
+		OR = {
+			AND = {
+				$builder$ = { adm_tech = 24 }
+				has_building = counting_house
+			}
+			AND = {
+				$builder$ = { NOT = { adm_tech = 24 } }
+				has_building = workshop
+			}
+		}
+	]
+	[[tax]
+		OR = {
+			AND = {
+				$builder$ = { adm_tech = 19 }
+				has_building = cathedral
+			}
+			AND = {
+				$builder$ = { NOT = { adm_tech = 19 } }
+				has_building = temple
+			}
+		}
+	]
+	[[manpower]
+		OR = {
+			AND = {
+				$builder$ = { mil_tech = 16 }
+				has_building = training_fields
+			}
+			AND = {
+				$builder$ = { NOT = { mil_tech = 16 } }
+				has_building = barracks
+			}
+		}
+	]
+	[[sailors]
+		OR = {
+			AND = {
+				$builder$ = { dip_tech = 19 }
+				has_building = drydock
+			}
+			AND = {
+				$builder$ = { NOT = { dip_tech = 19 } }
+				has_building = dock
+			}
+		}
+	]
+	[[army_forcelimit]
+		OR = {
+			AND = {
+				$builder$ = { mil_tech = 18 }
+				has_building = conscription_center
+			}
+			AND = {
+				$builder$ = { NOT = { mil_tech = 18 } }
+				has_building = regimental_camp
+			}
+		}
+	]
+	[[navy_forcelimit]
+		OR = {
+			AND = {
+				$builder$ = { dip_tech = 24 }
+				has_building = grand_shipyard
+			}
+			AND = {
+				$builder$ = { NOT = { dip_tech = 24 } }
+				has_building = shipyard
+			}
+		}
+	]
+	[[coastal]
+		OR = {
+			AND = {
+				$builder$ = { dip_tech = 12 }
+				has_building = naval_battery
+			}
+			AND = {
+				$builder$ = { NOT = { dip_tech = 12 } }
+				has_building = coastal_defence
+			}
+		}
+	]
+	[[fort]
+		OR = {
+			AND = {
+				$builder$ = { mil_tech = 24 }
+				has_building = fort_18th
+			}
+			AND = {
+				$builder$ = { mil_tech = 19 }
+				has_building = fort_17th
+			}
+			AND = {
+				$builder$ = { mil_tech = 14 }
+				has_building = fort_16th
+			}
+			AND = {
+				$builder$ = { NOT = { mil_tech = 14 } }
+				has_building = fort_15th
+			}
+		}
+	]
+}
+
 X_flatland_terrain_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = X_flatland_terrain_trigger_tt
@@ -17,16 +168,18 @@ X_flatland_terrain_trigger = {
 ####################
 # Russia
 ####################
-X_RUS_has_isolation_vs_westernization_cmod = {
-	OR = {
-		has_country_modifier = X_RUS_isolation_1_cmod
-		has_country_modifier = X_RUS_isolation_2_cmod
-		has_country_modifier = X_RUS_isolation_3_cmod
-		has_country_modifier = X_RUS_isolation_4_cmod
-		has_country_modifier = X_RUS_westernization_1_cmod
-		has_country_modifier = X_RUS_westernization_2_cmod
-		has_country_modifier = X_RUS_westernization_3_cmod
-		has_country_modifier = X_RUS_westernization_4_cmod
+X_RUS_has_isolation_vs_westernization_modifier_trigger = {
+	$who$ = {
+		OR = {
+			has_country_modifier = X_RUS_isolation_1_cmod
+			has_country_modifier = X_RUS_isolation_2_cmod
+			has_country_modifier = X_RUS_isolation_3_cmod
+			has_country_modifier = X_RUS_isolation_4_cmod
+			has_country_modifier = X_RUS_westernization_1_cmod
+			has_country_modifier = X_RUS_westernization_2_cmod
+			has_country_modifier = X_RUS_westernization_3_cmod
+			has_country_modifier = X_RUS_westernization_4_cmod
+		}
 	}
 }
 ####################
