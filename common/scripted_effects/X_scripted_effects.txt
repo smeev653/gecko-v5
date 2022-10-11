@@ -304,8 +304,10 @@ X_on_province_owner_change_pmod_effect = {
 					}
 				}
 			}
-			has_fort_building_trigger = yes
-			owner = { NOT = { has_estate_privilege = X_estate_cossacks_privilege_1 } }
+			OR = {
+				has_fort_building_trigger = no
+				owner = { NOT = { has_estate_privilege = X_estate_cossacks_privilege_1 } }
+			}
 			has_province_modifier = X_estate_cossacks_privilege_1_pmod
 		}
 		remove_province_modifier = X_estate_cossacks_privilege_1_pmod
