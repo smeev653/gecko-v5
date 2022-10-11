@@ -1277,7 +1277,7 @@ HAB_ideas = {
 	}
 	
 	bonus = {
-		heir_chance = 0.50
+		infantry_power = 0.1
 	}
 	
 	trigger = {
@@ -1292,7 +1292,7 @@ HAB_ideas = {
 	free = yes		#will be added at load.
 
 	imperial_ambitions = {
-		infantry_power = 0.1
+		imperial_authority = 0.1
 		diplomatic_annexation_cost = -0.15
 	}
 	military_border = {
