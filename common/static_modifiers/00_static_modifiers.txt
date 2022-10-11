@@ -1917,6 +1917,7 @@ expanded_infrastructure = {
 	local_manpower_modifier = 0.15
 	local_tax_modifier = 0.1
 	local_development_cost = -0.025
+	land_forcelimit = 1
 }
 
 centralize_state = {
