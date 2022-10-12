@@ -36,9 +36,10 @@
  ######goverment reforms######
  #government reforms
  #common
- gecko_building_dev:0 "Invest in the Provinces"
- gecko_building_dev_desc:0 "Buildings give a small amount of local development cost."
- mechanic_building_dev_yes:0 "Each building in a province gives -1% Local Development Cost."
+ gecko_building_dev:0 "Promote Local Investiture"
+ gecko_building_dev_desc:0 "Latest buildings with add Local Development Cost to our provinces."
+ mechanic_building_dev_yes:0 "Every latest building in a province gives '§YLocal Investment§!', adding §G-1.0%§! Local Development Cost per building."
+ mechanic_building_dev_no:0 ""
  #persia#
  persian_theocracy:0 "Persian Theocracy"
  persian_theocracy_desc:0 "After declaring our lands to be a bastion of Shi'ism, we must now launch a vigorous campaign to convert those who would oppose the true faith, ridding our kingdom of the Sunni population by either persuasion or force. Political and religious power will remain completely intertwined, and encapsulated in the person of the Shah."
