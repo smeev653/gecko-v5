@@ -1,3 +1,6 @@
+########################################
+# General Modifiers
+########################################
 X_local_building_development_tier_1_pmod = {
 	local_development_cost = -0.01
 }
@@ -320,7 +323,7 @@ X_RUS_isolation_2_cmod = {
 
 X_RUS_isolation_3_cmod = {
     trade_efficiency = -0.125
-    technology_cost = 0.0075
+    technology_cost = 0.075
     global_institution_spread = -0.375
     manpower_in_own_culture_provinces = 0.20
 	manpower_in_culture_group_provinces = 0.20
