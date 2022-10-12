@@ -2418,7 +2418,7 @@ add_latest_building = {
 	]
 	[[government]
 		if = {
-			limit = { $builder$ = { adm_tech = 22 } }
+			limit = { $builder$ = { adm_tech = 14 } }
 			add_building = town_hall
 		}
 		else = {
@@ -2463,7 +2463,7 @@ add_latest_building = {
 	]
 	[[army_forcelimit]
 		if = {
-			limit = { $builder$ = { mil_tech = 22 } }
+			limit = { $builder$ = { mil_tech = 18 } }
 			add_building = conscription_center
 		}
 		else = {

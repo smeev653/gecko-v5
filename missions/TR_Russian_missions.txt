@@ -716,36 +716,21 @@ tr_russia_conquest_1 = {
 	polish_decline = {
 		required_missions = {rebuild_ruthenia}
 		trigger = {
-			
 			army_strength = {
-			who = POL
-			value = 2
-				}
-			
+				who = POL
+				value = 2
+			}
 			monthly_income = POL
-			
 			OR = {
-			num_of_owned_provinces_with = {
-				value = 20
-				region = ruthenia_region
-				has_building = barracks
-			}
-			num_of_owned_provinces_with = {
-				value = 20
-				region = ruthenia_region
-				has_building = training_fields
+				num_of_owned_provinces_with = {
+					value = 20
+					region = ruthenia_region
+					X_has_latest_building_trigger = { army_forcelimit = yes builder = ROOT }
 				}
-			}
-			OR = {
-			num_of_owned_provinces_with = {
-				value = 20
-				region = ruthenia_region
-				has_building = regimental_camp
-			}
-			num_of_owned_provinces_with = {
-				value = 20
-				region = ruthenia_region
-				has_building = conscription_center
+				num_of_owned_provinces_with = {
+					value = 20
+					region = ruthenia_region
+					X_has_latest_building_trigger = { manpower = yes builder = ROOT }
 				}
 			}
 		}
@@ -1292,8 +1277,11 @@ tr_russia_conquest_3 = {
 			
 		}
 		effect = {
-			4255 = {
-				add_building = fort_15th
+			if = {
+				limit = { owns = 4255 }
+				4255 = {
+					add_latest_building = { fort = yes builder = ROOT }
+				}
 			}
 			add_country_modifier = {
 					name = "prepare_for_warGOL"
@@ -1360,10 +1348,6 @@ tr_russia_conquest_3 = {
 			}
 		}
 		effect = {
-			GOL = {
-			release = AST
-			}
-			add_truce_with = AST
 			add_country_modifier = {
 					name = "annex_GOL"
 					duration = 3600
