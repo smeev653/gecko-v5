@@ -37,7 +37,7 @@
  #government reforms
  #common
  gecko_building_dev:0 "Promote Local Investiture"
- gecko_building_dev_desc:0 "Latest buildings with add Local Development Cost to our provinces."
+ gecko_building_dev_desc:0 "Latest buildings will add Local Development Cost to our provinces."
  mechanic_building_dev_yes:0 "Every latest building in a province gives '§YLocal Investment§!', adding §G-1.0%§! Local Development Cost per building."
  mechanic_building_dev_no:0 ""
  #persia#
