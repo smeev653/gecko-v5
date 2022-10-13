@@ -16491,6 +16491,7 @@ gme_constantinople_theodosian_walls = {
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
 			local_defensiveness = 0.25
+			local_defender_dice_roll_bonus = 1
 		}
 		area_modifier = {
 			local_hostile_attrition = 1
