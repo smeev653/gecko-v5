@@ -401,6 +401,14 @@ X_POL_amber_monopoly_pmod = {
 	province_trade_power_modifier = 0.25
 	trade_value_modifier = 0.50
 }
+X_POL_saint_johns_blood_pmod = {
+	local_production_efficiency = 0.45
+}
+X_POL_silesian_raids_pmod = {
+	local_monthly_devastation = 0.1
+	local_tax_modifier = -0.2
+	local_production_efficiency = -0.2
+}
 ########################################
 # Tiered Modifiers
 ########################################

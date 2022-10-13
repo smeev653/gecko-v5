@@ -584,6 +584,10 @@
  desc_X_POL_swidnica_beer_pmod:0 ""
  X_POL_amber_monopoly_pmod:0 "Amber Monopoly"
  desc_X_POL_amber_monopoly_pmod:0 ""
+ X_POL_saint_johns_blood_pmod:0 "Exports of Saint John's Blood"
+ desc_X_POL_saint_johns_blood_pmod:0 ""
+ X_POL_silesian_raids_pmod:0 "Silesian Raids"
+ desc_X_POL_silesian_raids_pmod:0 ""
  ####################
  # Tiered Modifiers
  ####################
