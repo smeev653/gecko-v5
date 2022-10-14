@@ -3466,7 +3466,7 @@ ramparts = {
 	
 	build_trigger = {
 		NOT = {
-				any_neighbor_province = {
+				any_province  = {
 						owner = {
 							tag = ROOT
 						}
@@ -3477,6 +3477,17 @@ ramparts = {
 				}	
 			}
 		NOT = { province_id	= 151 }
+		NOT = {
+				any_province  = {
+						owner = {
+							is_subject_of = ROOT
+						}
+						OR = {
+							has_building = ramparts
+							has_construction = ramparts
+						}
+				}
+		}	
 	}
 	keep_trigger = {
 			NOT = {
@@ -3490,7 +3501,7 @@ ramparts = {
 	
 			}
 			NOT = {
-				any_neighbor_province = {
+				any_province  = {
 						owner = {
 							tag = ROOT
 						}
