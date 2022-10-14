@@ -501,13 +501,13 @@ BRA_ideas = {
 		land_morale = 0.10
 		monthly_militarized_society = 0.2
 	}
-	
-	divided_estates = {
-		garrison_size = 0.15
-	}
 	kammergericht = {
 		global_tax_modifier = 0.15
 	}
+	divided_estates = {
+		garrison_size = 0.15
+	}
+	
 	seat_of_the_old_emperors = {
 		diplomatic_reputation = 1
 		imperial_authority_value = 0.1
