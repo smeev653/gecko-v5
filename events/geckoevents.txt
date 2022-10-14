@@ -1946,13 +1946,6 @@ country_event = {
 	option = {
 		name = gecko.39.a #5 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2011,13 +2004,7 @@ country_event = {
 	option = {
 		name = gecko.39.b #10 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+			
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2082,13 +2069,7 @@ country_event = {
 	option = {
 		name = gecko.39.c #15 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+	
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2157,13 +2138,7 @@ country_event = {
 	option = {
 		name = gecko.39.d #20 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+			
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2237,13 +2212,7 @@ country_event = {
 	option = {
 		name = gecko.39.e #25 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+	
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2322,13 +2291,7 @@ country_event = {
 	option = {
 		name = gecko.39.f #30 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+			
 			capital_scope = {
 						controlled_by = ROOT
 						has_siege = no
@@ -2411,13 +2374,7 @@ country_event = {
 	option = {
 		name = gecko.39.g #35 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+			
 			check_variable = {
 							which = geckomercFL
 							value = 35
@@ -2510,13 +2467,7 @@ country_event = {
 	option = {
 		name = gecko.39.h #40 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+			
 			check_variable = {
 							which = geckomercFL
 							value = 40
@@ -2615,11 +2566,7 @@ country_event = {
 	option = {
 		name = gecko.39.i #45 mercs
 		trigger = {
-			NOT = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
+			
 			check_variable = {
 							which = geckomercFL
 							value = 45
@@ -2722,13 +2669,7 @@ country_event = {
 	option = {
 		name = gecko.39.j #50 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+			
 			check_variable = {
 							which = geckomercFL
 							value = 50
@@ -2835,13 +2776,7 @@ country_event = {
 	option = {
 		name = gecko.39.k #100 mercs
 		trigger = {
-			NOT = {
-					capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}
-				}
+			
 			check_variable = {
 							which = geckomercFL
 							value = 50
@@ -2991,13 +2926,7 @@ country_event = {
 	option = {
 		name = gecko.39.l #200 mercs
 		trigger = {
-			NOT = {
-				capital_scope = {
-					num_of_units_in_province = {
-					amount = 1
-					}
-				}	
-			}
+			
 			check_variable = {
 							which = geckomercFL
 							value = 50
