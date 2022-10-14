@@ -215,7 +215,7 @@ X_CRI_qaraylar_lending_cmod = {
 X_CRI_trench_gate_pmod = {
 	local_hostile_attrition = 1
 	local_defensiveness = 0.35
-	local_garrison_size = 1.0
+	local_defender_dice_roll_bonus = 1
 }
 
 X_CRI_gateway_protected_pmod = {

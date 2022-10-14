@@ -3465,52 +3465,64 @@ ramparts = {
 	}
 	
 	build_trigger = {
-		NOT = {
-				any_province  = {
-						owner = {
-							tag = ROOT
+		owner = {
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_subjects_with = {
+							value = 1
+							OR = {
+								has_building = ramparts
+								has_construction = ramparts
+							}
 						}
-						OR = {
-							has_building = ramparts
-							has_construction = ramparts
-						}
-				}	
-			}
-		NOT = { province_id	= 151 }
-		NOT = {
-				any_province  = {
-						owner = {
-							is_subject_of = ROOT
-						}
-						OR = {
-							has_building = ramparts
-							has_construction = ramparts
-						}
+					}
 				}
-		}	
+			}
+			else = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 1
+						OR = {
+							has_building = ramparts
+							has_construction = ramparts
+						}
+					}
+				}
+			}
+		}
+		NOT = { province_id	= 151 }
+		NOT = { province_id = 6002 }
 	}
 	keep_trigger = {
-			NOT = {
-				tag = ROOT
-					NOT = { province_id = root }
-					OR = {
-						has_building = ramparts
-						has_construction = ramparts
-					}
-				
-	
-			}
-			NOT = {
-				any_province  = {
-						owner = {
-							tag = ROOT
+		owner = {
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_subjects_with = {
+							value = 1
+							OR = {
+								has_building = ramparts
+								has_construction = ramparts
+							}
 						}
+					}
+				}
+			}
+			else = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 1
 						OR = {
 							has_building = ramparts
 							has_construction = ramparts
 						}
-				}	
+					}
+				}
 			}
+		}
 	}
 	on_built = {
 		###X###
