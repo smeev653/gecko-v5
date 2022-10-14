@@ -838,6 +838,7 @@ coastal_defence = {
 		blockade_force_required = 1
 		hostile_disembark_speed = 1.0
 		hostile_fleet_attrition = 1
+		block_slave_raid = yes
 	}
 	on_built = {
 		###X###
@@ -1524,6 +1525,7 @@ naval_battery = {
 		blockade_force_required = 1.0
 		hostile_disembark_speed = 2.0
 		hostile_fleet_attrition = 5
+		block_slave_raid = yes
 	}
 	on_built = {
 		###X###
@@ -1643,7 +1645,7 @@ university = {
 	cost = 50
 	time = 12
 	modifier = {
-		
+		local_development_cost = -0.05
 		allowed_num_of_buildings = 1
 	}
 	build_trigger = {
@@ -3459,6 +3461,45 @@ ramparts = {
 	modifier = {
 		local_hostile_attrition = 1
 		local_defensiveness = 0.15
+		local_defender_dice_roll_bonus = 1
+	}
+	
+	build_trigger = {
+		NOT = {
+				any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = ramparts
+							has_construction = ramparts
+						}
+				}	
+			}
+		NOT = { province_id	= 151 }
+	}
+	keep_trigger = {
+			NOT = {
+				tag = ROOT
+					NOT = { province_id = root }
+					OR = {
+						has_building = ramparts
+						has_construction = ramparts
+					}
+				
+	
+			}
+			NOT = {
+				any_neighbor_province = {
+						owner = {
+							tag = ROOT
+						}
+						OR = {
+							has_building = ramparts
+							has_construction = ramparts
+						}
+				}	
+			}
 	}
 	on_built = {
 		###X###
