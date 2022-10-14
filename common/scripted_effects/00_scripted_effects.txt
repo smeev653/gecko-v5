@@ -2125,7 +2125,7 @@ disable_propogate_religion_immunity = {
 }
 
 #Country effect
-enable_propogate_religion_in_abrahamic_provinces = {
+enable_propagate_religion_in_abrahamic_provinces= {
 	custom_tooltip = enable_propogate_religion_in_abrahamic_provinces_tt
 	hidden_effect = {
 		set_country_flag = can_propagate_religion_in_abrahamic_provinces

@@ -193,14 +193,14 @@ swe_scandinavian_colonialism_mission_slot = {
 			jutland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			denmark_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -360,7 +360,10 @@ swe_scandinavian_colonialism_mission_slot = {
 			OR = {
 				NOT = { religion = ROOT }
 				NOT = { owned_by = ROOT }
-				has_owner_accepted_culture = no
+				AND = {
+					owned_by = ROOT
+					has_owner_accepted_culture = no
+				}
 			}
 		}
 		trigger = {
@@ -369,7 +372,12 @@ swe_scandinavian_colonialism_mission_slot = {
 					tooltip = swe_handle_the_sami_tt
 					owned_by = ROOT
 					religion = ROOT
-					has_owner_accepted_culture = yes
+					if = {
+						limit = {
+							owned_by = ROOT
+						}
+						has_owner_accepted_culture = yes
+					}
 				}
 				type = all
 			}
@@ -378,7 +386,12 @@ swe_scandinavian_colonialism_mission_slot = {
 					tooltip = swe_handle_the_sami_tt
 					owned_by = ROOT
 					religion = ROOT
-					has_owner_accepted_culture = yes
+					if = {
+						limit = {
+							owned_by = ROOT
+						}
+						has_owner_accepted_culture = yes
+					}
 				}
 				type = all
 			}
@@ -387,7 +400,12 @@ swe_scandinavian_colonialism_mission_slot = {
 					tooltip = swe_handle_the_sami_tt
 					owned_by = ROOT
 					religion = ROOT
-					has_owner_accepted_culture = yes
+					if = {
+						limit = {
+							owned_by = ROOT
+						}
+						has_owner_accepted_culture = yes
+					}
 				}
 				type = all
 			}
@@ -787,6 +805,7 @@ swe_diplomacy_mission_slot = {
 				OR = {
 					overlord = {
 						calc_true_if = {
+						desc = swe_swedish_allies_bt
 							all_known_country = {
 								OR = {
 									is_rival = PREV
@@ -845,22 +864,25 @@ swe_diplomacy_mission_slot = {
 					}
 					value = 7
 				}
-				any_ally = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					trust = {
-						who = ROOT
-						value = 70
-					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						OR = {
-							area = hinter_pommern_area
-							area = vorpommern_area
-							area = mecklenburg_area
+				custom_trigger_tooltip = {
+					tooltip = swe_swedish_pommerania_at
+					any_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 100
 						}
-						value = 7
+						trust = {
+							who = ROOT
+							value = 70
+						}
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							OR = {
+								area = hinter_pommern_area
+								area = vorpommern_area
+								area = mecklenburg_area
+							}
+							value = 7
+						}
 					}
 				}
 			}
@@ -884,14 +906,14 @@ swe_diplomacy_mission_slot = {
 				lower_saxony_area = {
 					limit = {
 						NOT = { is_core = ROOT }
-						NOT = { is_claim = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_claim = ROOT
 				}
 				weser_area = {
 					limit = {
 						NOT = { is_core = ROOT }
-						NOT = { is_claim = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_claim = ROOT
 				}
@@ -1478,13 +1500,13 @@ swe_kalmar_union_mission_slot = {
 					}
 				}
 				38 = {
-					if = {
-						limit = { NOT = { province_has_center_of_trade_of_level = 2 } }
-						add_center_of_trade_level = 1
+					hidden_effect = {
+						if = {
+							limit = { NOT = { province_has_center_of_trade_of_level = 2 } }
+							add_center_of_trade_level = 1
+						}
 					}
-					else = {
-						custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
-					}
+					custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				}
 				38 = {
 					add_base_tax = 2
@@ -1858,7 +1880,11 @@ swe_kalmar_union_mission_slot = {
 		trigger = {
 			owns_core_province = 8
 			8 = {
-				prosperity = 25
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					prosperity = 25
+				}
+				else = { num_of_times_improved = 10 }
 				has_production_building_trigger = yes
 				base_production = 10
 			}
@@ -2121,13 +2147,17 @@ swe_internal_slot = {
 			310 = { 
 				NOT = { devastation = 1 }
 				is_state = yes
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					has_state_edict = edict_centralization_effort
+				}
 			}
 		}
 		effect = {
 			add_accepted_culture_or_dip_power = { culture = novgorodian }
 			310 = {
-				change_province_name = "Holmgar�r"
-				rename_capital = "Holmgar�r"
+				change_province_name = "Hólmgarðr"
+				rename_capital = "Hólmgarðr"
 				if = {
 					limit = {
 						NOT = { province_has_center_of_trade_of_level = 2 }
@@ -2404,20 +2434,20 @@ swe_internal_slot = {
 		position = 11
 		required_missions = { swe_reforms_of_vasa }
 		provinces_to_highlight = {
+			owned_by = ROOT
 			OR = {
 				province_id = 28
 				culture = finnish
 			}
 			OR = {
 				AND = {
+					NOT = { province_id = 28 }
 					NOT = { development = 10 }
-					owned_by = ROOT
 				}
-				NOT = { owned_by = ROOT }
-			}
-			AND = {
-				province_id = 28 
-				NOT = { development = 15 }
+				AND = {
+					province_id = 28 
+					NOT = { development = 15 }
+				}
 			}
 		}
 		trigger = {
@@ -2832,19 +2862,17 @@ swe_religion_start_mission_slot = {
 			OR = {
 				total_own_and_non_tributary_subject_development = 1000
 				calc_true_if = {
+					desc = swe_dabble_into_european_diplomacy_tt
 					all_ally = {
-						custom_trigger_tooltip = {
-							tooltip = swe_dabble_into_european_diplomacy_tt
-							OR = {
-								tag = PAP
-								is_emperor = yes
-								total_own_and_non_tributary_subject_development = 250
-							}
-							capital_scope = { continent = europe }
-							has_opinion = {
-								who = ROOT
-								value = 75
-							}
+						OR = {
+							tag = PAP
+							is_emperor = yes
+							total_own_and_non_tributary_subject_development = 250
+						}
+						capital_scope = { continent = europe }
+						has_opinion = {
+							who = ROOT
+							value = 75
 						}
 					}
 					amount = 3
@@ -5061,8 +5089,9 @@ swe_sca_hakkapeliitta_slot = {
 		required_missions = { swe_steel_for_the_hakkapeliitta }
 		position = 13
 		provinces_to_highlight = {
-			AND = {
-				culture = finnish
+			owned_by = ROOT
+			culture = finnish
+			OR = {
 				NOT = { development = 10 }
 				has_manpower_building_trigger = no
 			}
@@ -5165,7 +5194,7 @@ sca_swe_industrialize_norway_slot = {
 	has_country_shield = yes
 	
 	sca_invest_into_work_forces = {
-		icon = mission_state_manufactories	#TODO
+		icon = mission_state_manufactories
 		position = 13
 		required_missions = {  }
 		provinces_to_highlight = {}

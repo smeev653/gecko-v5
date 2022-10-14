@@ -1003,76 +1003,105 @@ same_govt_as_root_trigger = {
 # Building triggers
 
 has_tax_building_trigger = {
-	OR = {
-		has_building = temple
-		has_building = cathedral
+	custom_trigger_tooltip = {
+		tooltip = has_tax_building_trigger_tt
+		OR = {
+			has_building = temple
+			has_building = cathedral
+		}
 	}
 }
 
 has_trade_building_trigger = {
-	OR = {
-		has_building = marketplace
-		has_building = trade_depot
-		has_building = stock_exchange
+	custom_trigger_tooltip = {
+		tooltip = has_trade_building_trigger_tt
+		OR = {
+			has_building = marketplace
+			has_building = trade_depot
+			has_building = stock_exchange
+		}
 	}
 }
 
 has_production_building_trigger = {
-	OR = {
-		has_building = workshop
-		has_building = counting_house
+	custom_trigger_tooltip = {
+		tooltip = has_production_building_trigger_tt
+		OR = {
+			has_building = workshop
+			has_building = counting_house
+		}
 	}
 }
 
 has_manpower_building_trigger = {
-	OR = {
-		has_building = barracks
-		has_building = training_fields
+	custom_trigger_tooltip = {
+		tooltip = has_manpower_building_trigger_tt
+		OR = {
+			has_building = barracks
+			has_building = training_fields
+		}
 	}
 }
 
 has_shipyard_building_trigger = {
-	OR = {
-		has_building = shipyard
-		has_building = grand_shipyard
+	custom_trigger_tooltip = {
+		tooltip = has_shipyard_building_trigger_tt
+		OR = {
+			has_building = shipyard
+			has_building = grand_shipyard
+		}
 	}
 }
 
 has_dock_building_trigger = {
-	OR = {
-		has_building = dock
-		has_building = drydock
+	custom_trigger_tooltip = {
+		tooltip = has_dock_building_trigger_tt
+		OR = {
+			has_building = dock
+			has_building = drydock
+		}
 	}
 }
 
 has_forcelimit_building_trigger = {
-	OR = {
-		has_building = regimental_camp
-		has_building = conscription_center
-		has_building = armory
+	custom_trigger_tooltip = {
+		tooltip = has_forcelimit_building_trigger_tt
+		OR = {
+			has_building = regimental_camp
+			has_building = conscription_center
+		}
 	}
 }
 
 has_courthouse_building_trigger = {
-	OR = {	
-		has_building = courthouse
-		has_building = town_hall
+	custom_trigger_tooltip = {
+		tooltip = has_courthouse_building_trigger_tt
+		OR = {	
+			has_building = courthouse
+			has_building = town_hall
+		}
 	}
 }
 
 
 has_fort_building_trigger = {
-	OR = {
-		has_building = fort_15th
-		has_building = fort_16th
-		has_building = fort_17th
-		has_building = fort_18th
+	custom_trigger_tooltip = {
+		tooltip = has_fort_building_trigger_tt
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
 	}
 }
 has_coast_defense_building_trigger = {
-	OR = {
-		has_building = coastal_defence
-		has_building = naval_battery
+	custom_trigger_tooltip = {
+		tooltip = has_coast_defense_building_trigger_tt
+		OR = {
+			has_building = coastal_defence
+			has_building = naval_battery
+		}
 	}
 }
 has_been_insulted_by_root = {
@@ -1165,7 +1194,12 @@ province_has_current_tech_fort_trigger = {
 					NOT = { mil_tech = 14 }
 				}
 			}
-			has_building = fort_15th
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
 		}
 		else_if = {
 			limit = {
@@ -1176,7 +1210,11 @@ province_has_current_tech_fort_trigger = {
 					}
 				}
 			}
-			has_building = fort_16th
+			OR = {
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
 		}
 		else_if = {
 			limit = {
@@ -1187,7 +1225,10 @@ province_has_current_tech_fort_trigger = {
 					}
 				}
 			}
-			has_building = fort_17th
+			OR = {
+				has_building = fort_17th
+				has_building = fort_18th
+			}
 		}
 		else_if = {
 			limit = {
@@ -2377,6 +2418,21 @@ has_unlocked_estate = {
 # prussian_monarchy
 # prussian_republic_reform
 # prussian_theocratic_reform
+# livonian_military_monarchy
+# livonian_naval_monarchy
+# livonian_trade_monarchy
+# livonian_theocratic_monarchy
+# livonian_elective_monarchy
+# livonian_monarchy
+# livonian_mercenary_monarchy
+# livonian_diplomatic_monarchy
+# livonian_constitutional_monarchy
+# livonian_administrative_monarchy
+# livonian_admiral_monarchy
+# livonian_naval_controlled_monarchy
+# livonian_general_controlled_monarchy
+# livonian_absolute_monarchy
+# livonian_enlightened_monarchy
 has_unlocked_government_reform_tooltip = {
 	custom_trigger_tooltip = {
 		tooltip = unlocked_$government_reform$_tt
@@ -2556,6 +2612,93 @@ province_is_buddhist_or_accepts_buddhism = {
 				}
 				has_harmonized_with = ROOT
 			}
+		}
+	}
+}
+
+#Had to make a new scripted trigger or otherwise the conditions looks too cluttered...
+province_is_buddhist_or_accepts_buddhism_or_is_dharmic = {
+	OR = {
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_at
+			OR = {
+				AND = {
+					religion = buddhism
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = buddhism }
+						owner = { secondary_religion = buddhism }
+					}
+				}
+				AND = {
+					religion = vajrayana
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = vajrayana }
+						owner = { secondary_religion = vajrayana }
+					}
+				}
+				AND = {
+					religion = mahayana
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = mahayana }
+						owner = { secondary_religion = mahayana }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_bt
+			owner = {
+				OR = {
+					has_harmonized_with = buddhism
+					has_harmonized_with = vajrayana
+					has_harmonized_with = mahayana
+				}
+			}
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_ct
+			owner = {
+				OR = {
+					secondary_religion = buddhism
+					secondary_religion = vajrayana
+					secondary_religion = mahayana
+				}
+			}
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_dt
+			religion = shinto
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_et
+			owner = { has_personal_deity = buddha }
+			has_owner_religion = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = province_is_buddhist_or_accepts_buddhism_ft
+			owner = { has_adopted_cult = buddhism_cult }
+			has_owner_religion = yes
+		}
+		#For the case the province has a religion which the player has already harmonized with and cannot convert
+		#It's a hidden trigger because the tooltip is already super flooded and it is incredibly niche
+		hidden_trigger = {
+			owner = {
+				OR = {
+					has_harmonized_with = buddhism
+					has_harmonized_with = vajrayana
+					has_harmonized_with = mahayana
+				}
+				has_harmonized_with = ROOT
+			}
+		}
+		province_is_or_accepts_religion_group = {
+			religion_group = dharmic
 		}
 	}
 }
@@ -2873,6 +3016,23 @@ num_of_ruler_traits = {
 		ruler_has_personality = reformist_personality
 		amount = $amount$
 	}
+}
+
+#Country scope
+can_swap_out_of_estate_granting_reform = {
+	OR = {
+		NOT = { has_estate = $estate$ }
+		NOT = {
+			num_of_estate_privileges = {
+				estate = $estate$
+				value = 1
+			}
+		}
+	}
+	#custom_trigger_tooltip = {
+	#	tooltip = did_not_sell_crownland_tt
+	#	NOT = { has_country_flag = recent_land_distribution }
+	#}
 }
 
 #Country scope - bugged for whatever reason...

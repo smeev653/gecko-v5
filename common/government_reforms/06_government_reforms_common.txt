@@ -962,9 +962,6 @@ separate_clergy_from_state_affairs_reform = {
 		tolerance_of_heretics_capacity = 1
 		innovativeness_gain = 0.25
 	}
-	custom_attributes = {
-		disables_clergy = yes
-	}
 	
 	ai = {
 		factor = 1
@@ -981,7 +978,8 @@ cult_of_reason_reform = {
 	}
 	trigger = {
 		has_country_modifier = cult_of_reason
-	}
+	}	
+	
 	modifiers = {
 		rr_jacobins_influence = 0.1
 		idea_cost = -0.2
@@ -1099,7 +1097,7 @@ reestablish_the_burgeoisie_reform = {
 		max_revolutionary_zeal = -10
 	}
 	custom_attributes = {
-		enables_burghers = yes
+		enables_estate_burghers = yes
 	}
 	ai = {
 		factor = 1
@@ -1131,8 +1129,11 @@ new_world_exploitation_reform = {
 			limit = {
 				is_revolutionary = yes
 				has_dlc = "Emperor"
+				has_government_attribute = enables_estate_burghers
 			}
-			NOT = { has_estate_privilege = estate_burghers_indebted_to_burghers }
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_burghers
+			}
 		}
 	}
 	modifiers = {
@@ -1158,8 +1159,11 @@ mercantilistic_approach_reform = {
 			limit = {
 				is_revolutionary = yes
 				has_dlc = "Emperor"
+				has_government_attribute = enables_estate_burghers
 			}
-			NOT = { has_estate_privilege = estate_burghers_indebted_to_burghers }
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_burghers
+			}
 		}
 	}
 	modifiers = {
@@ -1186,8 +1190,11 @@ free_trade_reform = {
 			limit = {
 				is_revolutionary = yes
 				has_dlc = "Emperor"
+				has_government_attribute = enables_estate_burghers
 			}
-			NOT = { has_estate_privilege = estate_burghers_indebted_to_burghers }
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_burghers
+			}
 		}
 	}
 	modifiers = {
@@ -1245,8 +1252,11 @@ embrace_the_economic_theory_reform = {
 			limit = {
 				is_revolutionary = yes
 				has_dlc = "Emperor"
+				has_government_attribute = enables_estate_burghers
 			}
-			NOT = { has_estate_privilege = estate_burghers_indebted_to_burghers }
+			can_swap_out_of_estate_granting_reform = {
+				estate = estate_burghers
+			}
 		}
 	}
 	modifiers = {
