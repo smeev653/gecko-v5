@@ -26,7 +26,7 @@ christian = {
 			protestant
 		}
 		country = {
-			tolerance_own = 1
+			technology_cost = -0.05
 			land_morale = 0.05
 		}
 		can_have_secondary_religion = yes
@@ -98,7 +98,7 @@ christian = {
 				third_concession = {
 					harsh = {
 						relation_with_heretics = -20
-						manpower_in_true_faith_provinces  = 0.15
+						manpower_in_true_faith_provinces  = 0.10
 					}	
 					concilatory = {
 						relation_with_heretics = 10
@@ -399,7 +399,7 @@ christian = {
 			catholic
 		}
 		country = {
-			global_tax_modifier = 0.2
+			global_tax_modifier = 0.15
 			improve_relation_modifier = 0.15
 			church_loyalty_modifier = 0.1
 		}
