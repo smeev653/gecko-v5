@@ -3425,7 +3425,7 @@ picture = COURT_eventPicture
 								region = sahel_region
 								NOT = { has_province_modifier = subsaharan_buildings }
 							}
-								add_province_modifier = {
+								add_permanent_province_modifier = {
 									name = subsaharan_buildings
 									duration = -1
 									#hidden = yes
