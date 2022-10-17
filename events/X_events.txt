@@ -1199,7 +1199,9 @@ country_event = {
 	desc = X_test_events.1.d1
 	picture = no_eventPicture
 	is_triggered_only = yes
-	
+	trigger = {
+		X_culture_union_trigger = { english = yes }
+	}
 	option = {
 		name = X_test_events.1.a
 	}

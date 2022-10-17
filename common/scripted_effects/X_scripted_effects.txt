@@ -8007,7 +8007,7 @@ X_culture_control_development_effect = {
 		limit = { 
 			culture_group = $group$
 			country_or_non_sovereign_subject_holds = PREV
-			is_colony = no
+			is_overseas = no
 		}
 		export_to_variable = {
 			which = X_$group$_control_province_development_variable
@@ -8037,7 +8037,7 @@ X_culture_total_development_effect = {
 		value = 0
 	}
 	every_province = {
-		limit = { culture_group = $group$ is_colony = no }
+		limit = { culture_group = $group$ is_overseas = no }
 		export_to_variable = {
 			which = X_$group$_province_development_variable
 			value = development
@@ -8059,7 +8059,7 @@ X_culture_group_control_effect = {
 	clr_global_flag = X_$group$_control_$type$_gflag
 	set_global_flag = X_$group$_control_$type$_gflag
 	if = {
-		limit = { any_province = { culture_group = $group$ is_colony = no } $who$ = { exists = yes ai = no } }
+		limit = { any_province = { culture_group = $group$ } $who$ = { exists = yes ai = no } }
 		$who$ = {
 			if = {
 				limit = { has_global_flag = X_$group$_control_union_gflag }
