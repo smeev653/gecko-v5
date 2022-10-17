@@ -138,24 +138,27 @@ country_event = {
 		name = "flavor_tur.EVTOPTA3354"
 		ai_chance = { factor = 50 }
 		add_army_professionalism = 0.02
-		add_ruler_modifier = {
+		add_country_modifier = {
 			name = tur_army_reform
+			duration = 7300
 		}
 	}
 	option = {		# Reform Army and Navy
 		name = "flavor_tur.EVTOPTB3354"
 		ai_chance = { factor = 25 }
 		add_army_professionalism = 0.02
-		add_ruler_modifier = {
+		add_country_modifier = {
 			name = tur_army_and_navy_reform
+	duration = 7300
 		}
 	}
 	option = {		# Great Navy Reform
 		name = "flavor_tur.EVTOPTC3354"
 		ai_chance = { factor = 25 }
 		add_army_professionalism = 0.02
-		add_ruler_modifier = {
+		add_country_modifier = {
 			name = tur_navy_reform
+	duration = 7300
 		}
 	}
 }
@@ -184,8 +187,9 @@ country_event = {
 		name = "flavor_tur.EVTOPTA3357"
 		add_years_of_income = -0.10
 		add_army_professionalism = 0.02
-		add_ruler_modifier = {
+		add_country_modifier = {
 			name = enderun_academy
+	duration = 7300
 		}
 		
 	}
@@ -194,6 +198,7 @@ country_event = {
 		add_army_professionalism = 0.02
 		add_ruler_modifier = {
 			name = expanded_timariot_system
+			duration = 7300
 		}		
 	}
 }
@@ -946,7 +951,7 @@ country_event = {
 				female = yes
 			}
 			hidden_effect = {
-				add_queen_personality = incorruptible_personality
+				add_queen_personality_ancestor = { key = incorruptible }
 			}
 		}
 	}
@@ -2057,6 +2062,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		NOT = { current_age = age_of_discovery }
 		NOT = { has_disaster = janissary_decadence }
 		OR = {
 			has_country_modifier = tur_janissary
@@ -2112,7 +2118,7 @@ country_event = {
 		NOT = { has_disaster = janissary_decadence }
 		has_country_modifier = the_devshirme_system
 		num_of_cities = 50
-		#has_country_flag = had_muslim_janissaries
+		has_country_flag = had_muslim_janissaries
 		NOT = { has_country_flag = lapse_of_devshirme }
 	}
 	
