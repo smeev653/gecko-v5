@@ -748,13 +748,6 @@ BRA_missions_4 = {
 			}
 		}
 		effect = {
-			thuringia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			silesia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

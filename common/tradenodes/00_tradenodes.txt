@@ -1528,22 +1528,6 @@ rheinland = {
 	color = {
 		114 171 184 
 	}
-		outgoing = {
-		name = "wien"
-		path = {
-		}
-		control = {
-			2976.000 1515.500 2984.000 1508.000 2996.000 1499.500 3028.000 1487.000
-		}
-	}
-	outgoing = {
-		name = "saxony"
-		path = {
-		}
-		control = {
-			2976.000 1532.500 2999.000 1547.000 3019.000 1543.000
-		}
-	}
 	outgoing = {
 		name = "lubeck"
 		path = {
@@ -1608,6 +1592,14 @@ saxony = {
 		}
 	}
 	outgoing = {
+		name = "rheinland"
+		path = {
+		}
+		control = {
+			3019.000 1543.000 2999.000 1547.000 2976.000 1532.500 
+		}
+	}
+	outgoing = {
 		name="pest"
 		path = {
 		}
@@ -1647,7 +1639,14 @@ wien = {
 			3074.000 1484.000
 		}
 	}
-
+	outgoing = {
+		name = "rheinland"
+		path = {
+		}
+		control = {	
+			3028.000 1487.000 2996.000 1499.500 2984.000 1508.000 2976.000 1515.500
+		}
+	}
 	members = {
 		1769 4751 129 #krain_area
 		73 110 1768 4758 #tirol_area
