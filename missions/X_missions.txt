@@ -3595,3 +3595,96 @@ X_CRI_slot_5 = {
 		}
 	}
 }
+
+########################
+# Portugal Missions
+########################
+X_POR_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = { tag = POR }
+	
+	#Great City of Lisbon
+	X_POR_mission_1 = {
+		icon = mission_golden_century
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 227
+					OR = {
+						NOT = {
+							has_great_project = {
+								type = belem_tower
+								tier = 1
+							}
+						}
+						NOT = { development = 40 }
+					}
+				}
+				AND = {
+					if = {
+						limit = {
+							OR = {
+								exists = SPA
+								exists = CAS
+							}
+						}
+						OR = {
+							is_capital_of = CAS
+							is_capital_of = SPA
+						}
+						227 = {
+							NOT = { higher_development_than = PREV }
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			227 = {
+				owned_by = ROOT
+				development = 40
+				custom_trigger_tooltip = {
+					tooltip = X_POR_mission_1_tt
+					any_province = {
+						if = {
+							limit = {
+								OR = {
+									exists = SPA
+									exists = CAS
+								}
+							}
+						}
+						OR = {
+							is_capital_of = CAS
+							is_capital_of = SPA
+						}
+						227 = {
+							higher_development_than = PREV
+						}
+					}
+				}
+				has_great_project = {
+					type = belem_tower
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			add_splendor = 200
+			277 = {
+				add_great_project_tier = {
+					type = belem_tower
+					tier = 1
+				}
+			}
+			reset_golden_age = yes 
+			clr_country_flag = X_POR_economic_golden_age_cflag
+		}
+	}
+}

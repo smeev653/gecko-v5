@@ -6,7 +6,7 @@ gc_por_1 = {
 		has_dlc = "Golden Century"
 	}
 	potential = {
-		 has_dlc = "Golden Century"
+		has_dlc = "Golden Century"
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
@@ -384,25 +384,25 @@ gc_por_2 = {
 		}
 	
 		effect = {
+			###X###
+			sao_tome_area = {
+				cede_province = POR
+				add_core = POR
+			}
+			#######
 			add_country_modifier = {
 				name = "gc_west_african_integration"
 				duration = -1
 			}
-			create_explorer = {
-				tradition = 60
-			}
+			create_explorer = { tradition = 60 }
 			add_dip_power = 60
-			1097 = {
-				cede_province = POR
-				add_core = POR
-			}
 			coastal_kongo = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-			}	
+			}
 			tekrur_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -602,66 +602,6 @@ gc_por_2_c = {
 						name = "por_african_gold_modifier"
 						duration = 7300
 					}
-				}
-			}
-		}
-	}
-	gc_por_ceylon = {
-		icon = mission_portuguese_ceylon
-		required_missions = { gc_por_malabar }
-		position = 7
-		
-		provinces_to_highlight = {
-			OR = {
-				area = lanka_area
-				area = south_lanka_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			lanka_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			south_lanka_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_mercantilism = 3
-		}
-	}
-	gc_por_burma = {
-		icon = mission_portuguese_burma
-		required_missions = { gc_por_surat }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = arakan_area
-				area = lower_burma_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			arakan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			lower_burma_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			1343 = {
-				add_trade_modifier = {
-					who = root
-					duration = 7300
-					power = 50
-					key = burmese_trade
 				}
 			}
 		}
@@ -880,162 +820,6 @@ gc_por_3_c = {
 			}
 		}
 	}
-	gc_por_malabar = {
-		icon = mission_portuguese_malabar
-		required_missions = { gc_portugal_discovers_india }
-		
-		provinces_to_highlight = {
-			area = malabar_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			malabar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			lanka_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			south_lanka_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			529 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			4430 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			517 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
-	gc_por_surat = {
-		icon = mission_control_surat
-		required_missions = { gc_por_malabar }
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 529
-				province_id = 4430
-				province_id = 517
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			529 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4430 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			517 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Dharma"
-				}
-				add_country_modifier = {
-					name = "portuguese_surat_modifier"
-					duration = 7300
-				}
-			}
-			else = {
-				add_mercantilism = 2
-			}
-			arakan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lower_burma_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	gc_por_indian_investment = {
-		icon = mission_indian_trade_company
-		required_missions = { gc_por_surat }
-		
-		trigger = {
-			if = {
-				limit = {
-					has_dlc = "Dharma"
-				}
-				calc_true_if = {
-					desc = por_indian_investment_tooltip
-					coromandel_region = {
-						type = all
-						has_trade_company_investment_in_area = {
-							investor = ROOT
-							count_one_per_area = yes
-						}
-					}
-					amount = 5
-				}
-			}
-			else = {
-				504 = {
-					is_strongest_trade_power = ROOT
-				}
-				1340 = {
-					is_strongest_trade_power = ROOT
-				}
-				1343 = {
-					is_strongest_trade_power = ROOT
-				}
-			}
-		}
-		effect = {
-			set_country_flag = por_india_mission_flag
-			country_event = { id = flavor_por.4 }
-		}
-	}
 }
 
 gc_por_4 = {
@@ -1095,43 +879,6 @@ gc_por_4 = {
 			add_country_modifier = {
 				name = prester_john_discovered
 				duration = -1
-			}
-		}
-	}
-	gc_portugal_discovers_india = {
-		icon = mission_trade_company_region_abroad
-		required_missions = { gc_por_discovers_prestor_john }
-		completed_by = 1536.1.1
-		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = portugal_discovers_india.tooltip
-				coromandel_region = {
-					has_discovered = ROOT
-				}
-				2030 = {
-					has_discovered = POR
-				}
-			}
-		}
-		
-		effect = {
-			define_explorer = {
-				name = "Afonso de Albuquerque"
-				fire = 5
-				shock = 5
-				manuever = 5
-				siege = 0
-			}
-			country_event = {
-				id = flavor_por.11
-			}
-			malabar_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
