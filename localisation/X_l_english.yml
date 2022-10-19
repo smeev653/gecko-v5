@@ -589,6 +589,11 @@
  X_POL_silesian_raids_pmod:0 "Silesian Raids"
  desc_X_POL_silesian_raids_pmod:0 ""
  ####################
+ # Arabia
+ ####################
+ X_ARB_great_skulls_of_arabia_tmod:0 "The Great Skulls"
+ desc_X_ARB_great_skulls_of_arabia_tmod:0 ""
+ ####################
  # Tiered Modifiers
  ####################
  #tartar
