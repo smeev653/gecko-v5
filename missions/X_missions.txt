@@ -3677,7 +3677,7 @@ X_POR_slot_3 = {
 		}
 		effect = {
 			add_splendor = 200
-			277 = {
+			227 = {
 				add_great_project_tier = {
 					type = belem_tower
 					tier = 1
