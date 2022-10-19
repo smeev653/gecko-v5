@@ -86,7 +86,7 @@ X_cultural_union_group_control_effect_ptmod = {
 			}
 			every_country = {
 				limit = { culture_group = french ai = no }
-				ROOT = { X_culture_group_control_effect = { group = french type = union who = PREV } }
+				ROOT = { X_culture_group_control_effect = { group = french type = development who = PREV } }
 			}
 			every_country = {
 				limit = { culture_group = lowlands ai = no }
