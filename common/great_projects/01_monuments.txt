@@ -13573,13 +13573,16 @@ malbork_castle = {
 		}
 		on_upgraded = {
 			owner = {
-				every_owned_province = {
-					limit = {
-						trade_goods = gems
-					}
-					add_province_modifier = {
-						name = X_POL_amber_monopoly_pmod
-						duration = -1
+				if = {
+					limit = { gems = 1 }
+					every_owned_province = {
+						limit = {
+							trade_goods = gems
+						}
+						add_province_modifier = {
+							name = X_POL_amber_monopoly_pmod
+							duration = -1
+						}
 					}
 				}
 			}

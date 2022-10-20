@@ -56,13 +56,13 @@ slaves = {
 	base_price = 2.5
 }
 ivory = {
-	base_price = 3 
+	base_price = 3.25
 }
 
 
 # Eastern Resources
 tea = {
-	base_price = 2
+	base_price = 2.25
 }
 
 chinaware = {
@@ -70,7 +70,7 @@ chinaware = {
 }
 
 spices = {
-	base_price = 2.75
+	base_price = 3.25
 }
 
 

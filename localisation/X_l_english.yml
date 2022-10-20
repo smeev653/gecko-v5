@@ -238,7 +238,7 @@
  X_VEN_ordo_salis:0 "Ordo Salis"
  ####################
  # Crimea
- ####################
+ ####################X_POR_mission_1
  #Government
  X_CRI_great_tatar_state_reform:0 "Great Tatar State"
  X_CRI_great_tatar_state_reform_desc:0 "The Great Tatar State proclaims its rulers to be sons of Genghis Khan, who trace their legitimacy to this royal descent." 
@@ -588,6 +588,19 @@
  desc_X_POL_saint_johns_blood_pmod:0 ""
  X_POL_silesian_raids_pmod:0 "Silesian Raids"
  desc_X_POL_silesian_raids_pmod:0 ""
+ ####################
+ # Arabia
+ ####################
+ X_ARB_great_skulls_of_arabia_tmod:0 "The Great Skulls"
+ desc_X_ARB_great_skulls_of_arabia_tmod:0 ""
+ ####################
+ # Portugal
+ ####################
+ #Missions
+ X_POR_mission_1_title:0 "Great City of Lisbon"
+ X_POR_mission_1_desc:0 ""
+ #Mission Tooltips
+ X_POR_mission_1_tt:0 "[227.GetName] has higher Development than the §YSpanish§! capital."
  ####################
  # Tiered Modifiers
  ####################

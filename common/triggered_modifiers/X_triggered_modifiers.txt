@@ -1,0 +1,17 @@
+X_ARB_great_skulls_of_arabia_tmod = {
+	potential = {
+		culture_group = turko_semitic
+		ai = no
+	}
+	trigger  = {
+		arabia_region = {
+			type = all
+			has_owner_accepted_culture = yes
+			owned_by = ROOT
+		}
+	}
+	cavalry_power = 0.05
+	cavalry_cost = -0.05
+	hostile_attrition = 1
+	movement_speed = 0.10
+}
