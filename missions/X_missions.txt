@@ -3751,7 +3751,9 @@ X_POR_slot_4 = {
 		icon = mission_secure_hajj_ports
 		position = 1
 		required_missions = { }
-		provinces_to_highlight = { }
+		provinces_to_highlight = {
+			province_id = 368 #lazy highlight for now
+		}
 		trigger = {
 			368 = {
 				owned_by = ROOT
@@ -3792,6 +3794,11 @@ X_POR_slot_4 = {
 				change_trade_goods = sugar
 				X_center_of_trade_effect = { cost_equivalency_max_lvl_3 = yes }
 				rename_capital = "Funchal"
+				add_prosperity = 50
+			}
+			add_country_modifier = {
+				name = X_POR_proto_colonialism_cmod
+				duration = 9125
 			}
 		}
 	}

@@ -421,6 +421,9 @@ X_POR_manueline_architecture_cmod = {
 	build_time = -0.10
 	great_project_upgrade_cost = -0.25
 }
+X_POR_proto_colonialism_cmod = {
+	global_colonial_growth = 10
+}
 ########################################
 # Tiered Modifiers
 ########################################
