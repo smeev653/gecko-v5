@@ -17522,22 +17522,19 @@ gme_sagres_school_navigation = {
 	date = 1.01.01
 	time = { months = 0 }
 	build_cost = 2000
-	starting_tier = 0
+	starting_tier = 1
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-		#culture_group = iberian
-		has_owner_culture = yes
+		culture_group = iberian
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		#culture_group = iberian
-		has_owner_culture = yes
+		culture_group = iberian
 	}
 	can_upgrade_trigger = {
-		#culture_group = iberian
-		has_owner_culture = yes
+		culture_group = iberian
 	}
 	keep_trigger = { }
 	tier_0 = {

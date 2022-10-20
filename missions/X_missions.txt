@@ -681,7 +681,7 @@ X_VEN_slot_2 = {
 	
 	#Reclaim Ragusa
 	X_VEN_mission_2 = {
-		icon = mission_eastern_european_city
+		icon = dalmatian_conquest
 		position = 2
 		
 		required_missions = {
@@ -3647,6 +3647,7 @@ X_POR_slot_2 = {
 		}
 	}
 }
+
 X_POR_slot_3 = {
 	slot = 3
 	generic = no
@@ -3733,6 +3734,65 @@ X_POR_slot_3 = {
 			}
 			reset_golden_age = yes 
 			clr_country_flag = X_POR_economic_golden_age_cflag
+		}
+	}
+}
+
+X_POR_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = { tag = POR }
+	
+	#Levadas System
+	X_POR_mission_3 = {
+		icon = mission_secure_hajj_ports
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+			368 = {
+				owned_by = ROOT
+				higher_development_than = 321
+				X_has_latest_building_trigger = { production = yes trade = yes builder = ROOT }
+			}
+			years_of_income = 0.5
+			if = {
+				limit = { exists = GEN }
+				OR = {
+					reverse_has_opinion = {
+						who = GEN
+						value = 150
+					}
+					alliance_with = GEN
+				}
+			}
+			else = {
+				trader = 3
+			}
+			if = {
+				limit = { exists = SIC }
+				OR = {
+					reverse_has_opinion = {
+						who = SIC
+						value = 150
+					}
+					alliance_with = SIC
+				}
+			}
+			else = {
+				natural_scientist = 3
+			}
+		}
+		effect = {
+			add_years_of_income = -0.5
+			368 = {
+				change_trade_goods = sugar
+				X_center_of_trade_effect = { cost_equivalency_max_lvl_3 = yes }
+				rename_capital = "Funchal"
+			}
 		}
 	}
 }

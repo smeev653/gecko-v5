@@ -3,7 +3,7 @@
 culture = berber
 religion = animism
 capital = "The Azores"
-trade_goods = fish
+trade_goods = sugar
 hre = no
 base_tax = 3 
 base_production = 3

@@ -601,6 +601,8 @@
  X_POR_mission_1_desc:0 ""
  X_POR_mission_2_title:0 "Exceptional Renaissance"
  X_POR_mission_2_desc:0 ""
+ X_POR_mission_3_title:0 "Levadas System"
+ X_POR_mission_3_desc:0 ""
  #Mission Tooltips
  X_POR_mission_1_tt:0 "[227.GetName] has higher Development than the §YSpanish§! capital."
  X_POR_mission_2_tt:0 "All owned provinces are prosperous."
