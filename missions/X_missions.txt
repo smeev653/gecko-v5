@@ -3629,6 +3629,13 @@ X_POR_slot_2 = {
 			has_institution = renaissance
 		}
 		effect = {
+			add_prestige_or_monarch_power = { amount = 25 }
+			add_estate_loyalty_modifier = {
+				estate = estate_nobles
+				desc = X_POR_estate_nobility_mission_2_lmod
+				loyalty = 10
+				duration = 18250
+			}
 			add_country_modifier = {
 				name = X_POR_portugese_renaissance_cmod
 				duration = 18250
@@ -3637,13 +3644,6 @@ X_POR_slot_2 = {
 				name = X_POR_manueline_architecture_cmod
 				duration = 18250
 			}
-			add_estate_loyalty_modifier = {
-				estate = estate_nobles
-				desc = X_POR_estate_nobility_mission_2_lmod
-				loyalty = 10
-				duration = 18250
-			}
-			add_prestige_or_monarch_power = { amount = 25 }
 		}
 	}
 }
