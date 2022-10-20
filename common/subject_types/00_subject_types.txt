@@ -713,7 +713,7 @@ tributary_state = {
 	# Subject Interactions:
 	# (immediate)
 	conscript_general = yes
-	contribute_to_capital = yes
+	#contribute_to_capital = yes
 	enforce_religion = no
 	grant_core_claim = no
 	bestow_gifts = yes
