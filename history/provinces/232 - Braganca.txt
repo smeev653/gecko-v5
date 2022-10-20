@@ -13,7 +13,7 @@ base_manpower = 3
 is_city = yes
 estate = estate_nobles
 add_core = POR
-
+fort_15th = yes
 
 
 discovered_by = western

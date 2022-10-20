@@ -410,6 +410,18 @@ X_POL_silesian_raids_pmod = {
 	local_production_efficiency = -0.2
 }
 ########################################
+# Modifiers for Portugal
+########################################
+X_POR_portugese_renaissance_cmod = {
+	technology_cost = -0.05
+	idea_cost	idea_cost = -0.05
+}
+X_POR_manueline_architecture_cmod = {
+	build_cost = -0.05
+	build_time = -0.10
+	great_project_upgrade_cost = -0.25
+}
+########################################
 # Tiered Modifiers
 ########################################
 #tartar

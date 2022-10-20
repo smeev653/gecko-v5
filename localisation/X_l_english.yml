@@ -238,7 +238,7 @@
  X_VEN_ordo_salis:0 "Ordo Salis"
  ####################
  # Crimea
- ####################X_POR_mission_1
+ ####################
  #Government
  X_CRI_great_tatar_state_reform:0 "Great Tatar State"
  X_CRI_great_tatar_state_reform_desc:0 "The Great Tatar State proclaims its rulers to be sons of Genghis Khan, who trace their legitimacy to this royal descent." 
@@ -599,8 +599,18 @@
  #Missions
  X_POR_mission_1_title:0 "Great City of Lisbon"
  X_POR_mission_1_desc:0 ""
+ X_POR_mission_2_title:0 "Exceptional Renaissance"
+ X_POR_mission_2_desc:0 ""
  #Mission Tooltips
  X_POR_mission_1_tt:0 "[227.GetName] has higher Development than the §YSpanish§! capital."
+ X_POR_mission_2_tt:0 "All owned provinces are prosperous."
+ #Modifiers
+ X_POR_portugese_renaissance_cmod:0 "Spread of Foreign Ideas"
+ desc_X_POR_portugese_renaissance_cmod:0 ""
+ X_POR_manueline_architecture_cmod:0 "Manueline Architecture"
+ desc_X_POR_manueline_architecture_cmod:0 ""
+ #Estate Modifiers
+ X_POR_estate_nobility_mission_2_lmod:0 "A New Age for Heroism"
  ####################
  # Tiered Modifiers
  ####################

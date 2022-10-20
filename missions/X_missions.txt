@@ -3599,6 +3599,54 @@ X_CRI_slot_5 = {
 ########################
 # Portugal Missions
 ########################
+X_POR_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = { tag = POR }
+	
+	#Exceptional Renaissance
+	X_POR_mission_2 = {
+		icon = fund_the_monasteries
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+			if = {
+				limit = { current_age = age_of_discovery }
+				current_age = age_of_discovery
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = X_POR_mission_2_tt
+					all_owned_province = {
+						is_prosperous = yes
+					}
+				}
+			}
+			has_institution = renaissance
+		}
+		effect = {
+			add_country_modifier = {
+				name = X_POR_portugese_renaissance_cmod
+				duration = 18250
+			}
+			add_country_modifier = {
+				name = X_POR_manueline_architecture_cmod
+				duration = 18250
+			}
+			add_estate_loyalty_modifier = {
+				estate = estate_nobles
+				desc = X_POR_estate_nobility_mission_2_lmod
+				loyalty = 10
+				duration = 18250
+			}
+			add_prestige_or_monarch_power = { amount = 25 }
+		}
+	}
+}
 X_POR_slot_3 = {
 	slot = 3
 	generic = no
