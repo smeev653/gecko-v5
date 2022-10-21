@@ -1200,6 +1200,12 @@ country_event = {
 	picture = no_eventPicture
 	is_triggered_only = yes
 	trigger = {
+		957 = {
+			is_colony = no
+		}
+		957 = {
+			is_empty = no
+		}
 	}
 	option = {
 		name = X_test_events.1.a

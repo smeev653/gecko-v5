@@ -8007,6 +8007,7 @@ X_culture_control_development_effect = {
 		limit = { 
 			culture_group = $group$
 			country_or_non_sovereign_subject_holds = PREV
+			X_is_colonial_province_trigger = no
 		}
 		export_to_variable = {
 			which = X_$group$_control_province_development_variable
@@ -8036,7 +8037,7 @@ X_culture_total_development_effect = {
 		value = 0
 	}
 	every_province = {
-		limit = { culture_group = $group$ }
+		limit = { culture_group = $group$ X_is_colonial_province_trigger = no }
 		export_to_variable = {
 			which = X_$group$_province_development_variable
 			value = development
