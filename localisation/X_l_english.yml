@@ -2,6 +2,7 @@
  ####################
  # General
  ####################
+ X_test_events.1.a:0 "[Root.X_iberian_control_development_variable.GetValue] [Root.X_iberian_total_development_variable.GetValue]"
  #Buildings
  X_local_building_development_tier_1_pmod:0 "Local Investment"
  X_local_building_development_tier_2_pmod:0 "Local Investment"

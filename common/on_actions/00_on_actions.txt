@@ -60,7 +60,6 @@ on_startup = {
 		set_country_flag = PR_discover_africa_flag
 	}
 	###X###
-	#ai = no within these limits may be redundant as it is already in the effect, but just in case I included it here
 	every_country = {
 		limit = { culture_group = tartar ai = no }
 		ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
