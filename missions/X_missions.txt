@@ -3610,7 +3610,7 @@ X_POR_slot_2 = {
 	#Exceptional Renaissance
 	X_POR_mission_2 = {
 		icon = fund_the_monasteries
-		position = 1
+		position = 6
 		required_missions = { }
 		provinces_to_highlight = { }
 		trigger = {
@@ -3659,7 +3659,7 @@ X_POR_slot_3 = {
 	#Great City of Lisbon
 	X_POR_mission_1 = {
 		icon = mission_golden_century
-		position = 1
+		position = 6
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
@@ -3749,7 +3749,7 @@ X_POR_slot_4 = {
 	#Levadas System
 	X_POR_mission_3 = {
 		icon = mission_secure_hajj_ports
-		position = 1
+		position = 5
 		required_missions = { }
 		provinces_to_highlight = {
 			province_id = 368 #lazy highlight for now
