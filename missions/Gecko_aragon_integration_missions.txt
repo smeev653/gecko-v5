@@ -1,4 +1,4 @@
-XMP_aragon_integration_slot_4 = {
+aragon_integration_slot_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -16,7 +16,7 @@ XMP_aragon_integration_slot_4 = {
 		icon = mission_consulate_of_the_sea
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1298
+				province_id = 109
 				province_id = 1295
 				AND = {
 					OR = {
@@ -37,7 +37,7 @@ XMP_aragon_integration_slot_4 = {
 					share = 70
 				}
 			}
-			1298 = {
+			109 = {
 				trade_share = {
 					country = ROOT
 					share = 15
@@ -63,6 +63,13 @@ XMP_aragon_integration_slot_4 = {
 				add_permanent_claim = ROOT
 			}
 			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			corsica_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -155,7 +162,7 @@ XMP_aragon_integration_slot_4 = {
 	}
 }
 
-XMP_aragon_integration_slot_5 = {
+aragon_integration_slot_5 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -214,7 +221,6 @@ XMP_aragon_integration_slot_5 = {
 		required_missions = { gc_ara_trade_guilds }
 		
 		trigger = {
-			NOT = { num_of_loans = 1 }
 			treasury = 3000
 		}
 		effect = {

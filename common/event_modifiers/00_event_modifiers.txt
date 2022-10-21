@@ -3767,14 +3767,13 @@ ara_monastery_maria = {
 
 }
 ara_monastery_painter = {
-	prestige = 0.25
+	prestige = 1
 
 }
 ara_sindicat_remenca = {
-	trade_goods_size = 0.2
+	trade_goods_size = 0.5
 	local_manpower_modifier = -0.1
 	local_unrest = -1
-	local_autonomy = 0.05
 }
 
 #Papal States

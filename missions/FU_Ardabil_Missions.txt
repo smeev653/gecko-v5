@@ -362,7 +362,7 @@ fu_ardabil_missions_3 = {
 				limit = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = { is_permanent_claim = ROOT }
-					is_empty = no
+					 
 				}
 				add_permanent_claim = ROOT
 			}

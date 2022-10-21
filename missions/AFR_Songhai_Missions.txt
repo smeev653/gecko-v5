@@ -391,7 +391,7 @@ songhai_historical_conquest_slot = {
 				region = maghreb_region
 				region = guinea_region
 			}
-			is_empty = no
+			 
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
@@ -508,7 +508,7 @@ songhai_maghreb_slot = {
 				area = azbin_area
 				area = east_azbin_area
 			}
-			is_empty = no
+			 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1196,7 +1196,7 @@ songhai_question_mark_slot = {
 									region = niger_region
 									region = guinea_region
 								}
-								is_empty = no
+								 
 								NOT = { religion = ROOT }
 							}
 						}
@@ -1514,7 +1514,7 @@ songhai_jihad_slot = {
 				region = niger_region
 				region = guinea_region
 			}
-			is_empty = no
+			 
 			NOT = { religion = ROOT }
 		}
 		trigger = {
@@ -1527,7 +1527,7 @@ songhai_jihad_slot = {
 							region = niger_region
 							region = guinea_region
 						}
-						is_empty = no
+						 
 						NOT = { religion = ROOT }
 					}
 				}

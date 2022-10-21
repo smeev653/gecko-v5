@@ -36,7 +36,7 @@ yem_levantine_gunpowder_modifier = {
 yem_warriors_of_iran_modifier = {
 	cavalry_power = 0.1
 	cavalry_cost = -0.1
-	cav_to_inf_ratio = 0.25 
+	cav_to_inf_ratio = 0.35 
 }
 yem_rajput_royal_battalions_modifier = {
 	infantry_power = 0.1 
