@@ -616,6 +616,22 @@
  #Estate Modifiers
  X_POR_estate_nobility_mission_2_lmod:0 "A New Age for Heroism"
  ####################
+ # Spain
+ ####################
+ #Events
+ X_SPA_events.1.t:0 "Lonja de la Seda"
+ X_SPA_events.1.d1:0 ""
+ X_SPA_events.1.a:0 "A notable entrance to the silk trade"
+ #Event Tooltips
+ X_SPA_events_1_tt:0 "Upon being built, §YSilk§! will now be produced in §Y[220.GetName]§!."
+ #Monuments
+ X_SPA_lonja_de_la_seda:0 "Lonja de la Seda"
+ X_SPA_lonja_de_la_seda_title:0 "Lonja de la Seda"
+ great_project_X_SPA_lonja_de_la_seda:0 "Lonja de la Seda"
+ #Modifiers
+ X_SPA_royal_shipyards_of_barcelona_pmod:0 "Reials Drassanes de Barcelona"
+ desc_X_SPA_royal_shipyards_of_barcelona_pmod:0 ""
+ ####################
  # Tiered Modifiers
  ####################
  #tartar

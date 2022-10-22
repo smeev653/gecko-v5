@@ -424,6 +424,14 @@ X_POR_manueline_architecture_cmod = {
 X_POR_proto_colonialism_cmod = {
 	global_colonial_growth = 10
 }
+
+########################################
+# Modifiers for Spain
+########################################
+X_SPA_royal_shipyards_of_barcelona_pmod = {
+	galley_power = 0.1
+	global_ship_cost = -0.05
+}
 ########################################
 # Tiered Modifiers
 ########################################

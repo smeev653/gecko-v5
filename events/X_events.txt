@@ -1190,6 +1190,33 @@ country_event = {
 }
 
 ########################################
+# Events for Spain
+########################################
+namespace = X_SPA_events
+
+#Lonja de la Seda
+country_event = {
+	id = X_SPA_events.1
+	title = X_SPA_events.1.t
+	desc = X_SPA_events.1.d1
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = X_SPA_gc_ara_valencian_silk_mission_completed_cflag
+	}
+	option = {
+		name = X_SPA_events.1.a
+		220 = {
+			add_great_project = {
+				type = X_SPA_lonja_de_la_seda
+				instant = no
+			}
+		}
+		custom_tooltip = X_SPA_events_1_tt
+	}
+}
+
+########################################
 # Test Events
 ########################################
 namespace = X_test_events

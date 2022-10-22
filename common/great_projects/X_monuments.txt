@@ -23,6 +23,7 @@ X_CRI_hansaray = {
 		else = { add_building = cathedral }
 		owner = { 
 			add_mandate = 5
+			clr_country_flag = X_CRI_mission_2_completed_cflag
 		}
 	}
 	on_destroyed = { }
@@ -48,6 +49,7 @@ X_CRI_hansaray = {
 			trade_value_modifier = 0.1
 			local_tax_modifier = 0.2
 		}
+		region_modifier = { }
 		country_modifiers = {
 			church_loyalty_modifier = 0.025
 			imperial_mandate = 0.05
@@ -66,6 +68,7 @@ X_CRI_hansaray = {
 			trade_value_modifier = 0.25
 			local_tax_modifier = 0.33
 		}
+		region_modifier = { }
 		country_modifiers = {
 			church_loyalty_modifier = 0.05
 			imperial_mandate = 0.1
@@ -84,6 +87,7 @@ X_CRI_hansaray = {
 			trade_value_modifier = 0.33
 			local_tax_modifier = 0.5
 		}
+		region_modifier = { }
 		country_modifiers = {
 			church_loyalty_modifier = 0.1
 			imperial_mandate = 0.2
@@ -132,6 +136,7 @@ X_RUS_trinity_lavra = {
 		area_modifier = {
 			local_institution_spread = 0.05
 		}
+		region_modifier = { }
 		country_modifiers = {
 			idea_cost = -0.025
 			church_loyalty_modifier = 0.025
@@ -156,6 +161,7 @@ X_RUS_trinity_lavra = {
 		area_modifier = {
 			local_institution_spread = 0.15
 		}
+		region_modifier = { }
 		country_modifiers = {
 			idea_cost = -0.05
 			church_loyalty_modifier = 0.05
@@ -177,6 +183,7 @@ X_RUS_trinity_lavra = {
 			local_development_cost = -0.2
 			local_tax_modifier = 1.0
 		}
+		region_modifier = { }
 		area_modifier = {
 			local_institution_spread = 0.25
 		}
@@ -192,6 +199,104 @@ X_RUS_trinity_lavra = {
 					loyalty = 15
 				}
 			}
+		}
+	}
+}
+
+####################
+# Spain
+####################
+
+X_SPA_lonja_de_la_seda = {
+	start = 220 #Valencia
+	date = 1482.01.01
+	time = { months = 60 }
+	build_cost = 0
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = { owner = { has_country_flag = X_SPA_gc_ara_valencian_silk_mission_completed_cflag } }
+	on_built = { 
+		change_trade_goods = silk
+		owner = { clr_country_flag = X_SPA_gc_ara_valencian_silk_mission_completed_cflag }
+	}
+	on_destroyed = { }
+	can_use_modifiers_trigger = { 
+		owner = { culture_group = iberian }
+		has_owner_accepted_culture = yes
+	}
+	can_upgrade_trigger = {
+		owner = { culture_group = iberian }
+		has_owner_accepted_culture = yes
+	}
+	keep_trigger = { }
+	tier_0 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = { }
+		area_modifier = { }
+		region_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 120 }
+		cost_to_upgrade = { factor = 350 }
+		province_modifiers = {
+			province_trade_power_modifier = 0.15
+			trade_goods_size = 0.25
+		}
+		area_modifier = { 
+			local_development_cost = -0.05
+			trade_goods_size_modifier = 0.10
+		}
+		region_modifier = { }
+		country_modifiers = {
+			mercantilism_cost = -0.10
+		}
+		on_upgraded = {
+			add_mercantilism = 5
+		}
+	}
+	tier_2 = {
+		upgrade_time = { months = 240 }
+		cost_to_upgrade = { factor = 750 }
+		province_modifiers = {
+			province_trade_power_modifier = 0.33
+			trade_goods_size = 0.5
+		}
+		area_modifier = {
+			local_development_cost = -0.10
+			trade_goods_size_modifier = 0.20
+		}
+		region_modifier = { }
+		country_modifiers = {
+			trade_efficiency = 0.05
+			mercantilism_cost = -0.20
+		}
+		on_upgraded = {
+			add_mercantilism = 10
+		}
+	}
+	tier_3 = {
+		upgrade_time = { months = 480 }
+		cost_to_upgrade = { factor = 1500 }
+		province_modifiers = {
+			province_trade_power_modifier = 0.50
+			trade_goods_size = 1
+		}
+		area_modifier = {
+			local_development_cost = -0.20
+			trade_goods_size_modifier = 0.33
+		}
+		region_modifier = { }
+		country_modifiers = {
+			mercantilism_cost = -0.33
+			trade_efficiency = 0.10
+			merchants = 1
+		}
+		on_upgraded = {
+			add_mercantilism = 20
 		}
 	}
 }

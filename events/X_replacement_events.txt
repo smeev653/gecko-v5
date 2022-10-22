@@ -96,7 +96,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 	}
 	
 	option = {
@@ -124,7 +124,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 	}
 	
 	option = {
@@ -167,7 +167,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 	}
 	
 	option = {
@@ -204,7 +204,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 	}
 	
 	option = {
@@ -236,7 +236,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 	}
 	
 	option = {
@@ -289,7 +289,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 	}
 	
 	immediate = {

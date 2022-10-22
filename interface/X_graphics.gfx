@@ -21,6 +21,11 @@ spriteTypes = {
 		name = "GFX_great_project_X_RUS_trinity_lavra"
 		texturefile = "gfx//interface//X_graphics//great_project_X_RUS_trinity_lavra.dds"
 	}
+#Spain
+	spriteType = {
+		name = "GFX_great_project_X_SPA_lonja_de_la_seda"
+		texturefile = "gfx//interface//X_graphics//great_project_X_SPA_lonja_de_la_seda.dds"
+	}
 ####################
 # Text Icons
 ####################

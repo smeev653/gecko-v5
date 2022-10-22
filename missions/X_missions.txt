@@ -136,7 +136,7 @@ X_VEN_slot_1 = {
 				AND = {
 					province_id = 151
 					TUR = { exists = no }
-					ROOT = { NOT = { owns = 151 } }
+					ROOT = { NOT = { owns_core_province = 151 } }
 				}
 				AND = {
 					is_capital_of = ROOT
@@ -175,7 +175,7 @@ X_VEN_slot_1 = {
 			}
 			else = {
 				army_size_percentage = 1
-				owns = 151
+				owns_core_province = 151
 			}
 		}
 		effect = {
@@ -1040,7 +1040,7 @@ X_VEN_slot_3 = {
 			province_id = 112
 			ROOT = {
 				OR = {
-					NOT = { owns = 112 }
+					NOT = { owns_core_province = 112 }
 					NOT = { num_of_galley = 30 }
 					NOT = { dip_power = 100 }
 					NOT = { naval_reformer = 2 }
@@ -1049,7 +1049,7 @@ X_VEN_slot_3 = {
 		}
 		
 		trigger = {
-			owns = 112
+			owns_core_province = 112
 			num_of_galley = 30
 			dip_power = 100
 			naval_reformer = 2
@@ -1767,7 +1767,7 @@ X_VEN_slot_4 = {
 				AND = {
 					is_capital = yes
 					owner = {
-						owns = 151
+						owns_core_province = 151
 						primary_culture = greek
 					}
 				}
@@ -1974,7 +1974,7 @@ X_VEN_slot_5 = {
 					is_capital_of = CYP
 					CYP = { 
 						NOT = { is_in_trade_league_with = ROOT }
-						owns = 321
+						owns_core_province = 321
 					}
 					ROOT = {
 						NOT = {
@@ -1995,7 +1995,7 @@ X_VEN_slot_5 = {
 				AND = {
 					CYP = { 
 						is_in_trade_league_with = ROOT
-						owns = 321
+						owns_core_province = 321
 					}
 					358 = {
 						trade_share = {
@@ -2044,7 +2044,7 @@ X_VEN_slot_5 = {
 					is_capital_of = CYP
 					CYP = { 
 						is_subject = no
-						owns = 321
+						owns_core_province = 321
 						NOT = {
 							has_opinion = {
 								who = ROOT
@@ -2072,7 +2072,7 @@ X_VEN_slot_5 = {
 			OR = {
 				CYP = { 
 					is_subject = no
-					owns = 321
+					owns_core_province = 321
 					has_opinion = {
 						who = ROOT
 						value = 190
