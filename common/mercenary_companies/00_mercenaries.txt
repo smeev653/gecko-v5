@@ -247,12 +247,6 @@ merc_bascoli = {
 				tag = BUR
 				tag = LOT
 			}	
-		 NOT = {
-				check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-					}
-		}
 		current_age = age_of_discovery
 	}
 	modifier = { 
