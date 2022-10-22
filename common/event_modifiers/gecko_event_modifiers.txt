@@ -368,7 +368,7 @@ increased_merc_quality = {
 	infantry_power = 0.10
 }	
 
-130percentavailablemercs = {
+140percentavailablemercs = {
 }
 
 100percentavailablemercs = {
