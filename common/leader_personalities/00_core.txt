@@ -20,7 +20,7 @@ born_to_the_saddle_personality = {
 		cavalry_fraction = 0.2
 		is_admiral = no
 	}
-	cavalry_power = 0.1
+	shock_damage = 0.1
 }
 
 defensive_planner_personality = {
