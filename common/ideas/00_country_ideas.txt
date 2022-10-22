@@ -220,12 +220,13 @@ MOS_ideas = {
 	gatherers_of_tribute = {
 		global_tax_modifier = 0.15
 	}
-	pomestnoe_voisko = {
-		land_morale = 0.1
-	}
 	zasechnaya_cherta = {
 		fort_maintenance_modifier = -0.20
 	}
+	pomestnoe_voisko = {
+		land_morale = 0.1
+	}
+	
 	seat_of_metropolitan_bishop  = {
 		tolerance_own = 1
 		global_missionary_strength = 0.01
@@ -677,13 +678,14 @@ FRA_ideas = {
 		manpower_in_culture_group_provinces = 0.25
 		manpower_in_own_culture_provinces = 0.25
 	}
-	elan = {
-		land_morale = 0.20
-	}
 	estates_general = {
 		global_tax_modifier = 0.15
 		cavalry_power = 0.10
 	}
+	elan = {
+		land_morale = 0.20
+	}
+	
 	native_trading_principles = {
 		heavy_ship_power = 0.1
 	}
@@ -1419,6 +1421,9 @@ BUR_Ideas = {
 		global_trade_goods_size_modifier = 0.15
 		num_accepted_cultures = 2
 	}
+	bur_regimental_system = {
+		global_own_trade_power = 0.25
+	}
 	gc_compagnies_ordonnance = {
 		mercenary_discipline = 0.05
 		merc_maintenance_modifier = -0.25
@@ -1430,9 +1435,7 @@ BUR_Ideas = {
 	golden_fleece = {
 		prestige = 1
 	}
-	bur_regimental_system = {
-		global_own_trade_power = 0.20
-	}
+	
 	integrated_towns = {
 		trade_efficiency = 0.10
 	}
@@ -11467,6 +11470,12 @@ TRS_ideas = {
 	}
 	free = yes
 	
+	trs_entrepot_of_the_silk_road = {
+		global_own_trade_power = 0.25
+	}
+	trs_scientific_patronage = {
+		technology_cost = -0.05
+	}
 	trs_mawarannahr = {
 		cavalry_power = 0.10
 	}
@@ -11479,12 +11488,8 @@ TRS_ideas = {
 	trs_turkoman_cannoneers = { #Babur's ambition
 		artillery_cost = -0.15
 	}
-	trs_scientific_patronage = {
-		technology_cost = -0.05
-	}
-	trs_entrepot_of_the_silk_road = {
-		global_own_trade_power = 0.25
-	}
+	
+	
 	reform_the_diwan = {
 		#Same as Timurids
 	}
@@ -13859,21 +13864,22 @@ CRI_ideas = {
 		tag = CRI
 	}
 	free = yes
-	
-	cri_genghisid_legacy = {
-		land_morale = 0.1
-	}
-	cri_ruthenian_raids = {
-		loot_amount = 0.25
-		movement_speed = 0.10
-	}
-	cri_allow_nogai_protectorates = {
-		manpower_recovery_speed = 0.15
-	}
 	cri_slavers = {
 		global_own_trade_power = 0.25
 		trade_efficiency = 0.1
 	}
+	
+	cri_ruthenian_raids = {
+		loot_amount = 0.25
+		movement_speed = 0.10
+	}
+	cri_genghisid_legacy = {
+		land_morale = 0.1
+	}
+	cri_allow_nogai_protectorates = {
+		manpower_recovery_speed = 0.15
+	}
+	
 	cri_free_cattle_grazing = {
 		production_efficiency = 0.1
 	}
