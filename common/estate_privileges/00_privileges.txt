@@ -6945,7 +6945,7 @@ estate_nobles_command_of_the_military = {
 	on_granted = {
 	}
 	penalties = {
-		leader_cost = 0.15
+		general_cost = 0.15
 	}
 	benefits = {
 		yearly_army_professionalism = 0.00250
