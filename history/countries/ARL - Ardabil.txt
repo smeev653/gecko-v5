@@ -7,7 +7,7 @@ religion = shiite
 technology_group = muslim
 capital = 416
 government_rank = 1
-add_army_professionalism = 0.15
+
 religious_school = jafari_school
 national_focus = ADM
 

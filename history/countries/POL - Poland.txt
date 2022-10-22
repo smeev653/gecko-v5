@@ -7,7 +7,7 @@ historical_friend = LIT
 historical_rival = TEU
 capital = 262 # Krakow
 add_accepted_culture = ruthenian
-add_army_professionalism = 0.15
+
 #national_focus = ADM
 
 #1444.10.1 = {

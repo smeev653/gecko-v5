@@ -8,7 +8,7 @@ technology_group = western
 capital = 183 # Paris
 #national_focus = DIP
 historical_rival = HAB
-add_army_professionalism = 0.15
+
 
 change_estate_land_share = {
 	estate = estate_nobles
@@ -86,8 +86,9 @@ change_estate_land_share = {
 		dip = 2
 		mil = 4
 	}	
-	#clear_scripted_personalities = yes
-	#add_ruler_personality = inspiring_leader_personality
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = free_thinker_personality
 	
 	queen = {
         country_of_origin = PRO

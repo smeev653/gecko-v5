@@ -10,7 +10,7 @@ historical_rival = BYZ
 historical_rival = HAB
 capital = 149 # Edirne
 national_focus = MIL
-add_army_professionalism = 0.15
+
 religious_school = hanafi_school
 
 change_estate_land_share = {

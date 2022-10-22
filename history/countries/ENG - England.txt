@@ -7,7 +7,7 @@ religion = catholic
 capital = 236 # London
 national_focus = MIL
 add_accepted_culture = normand
-add_army_professionalism = 0.15
+
 
 change_estate_land_share = {
 	estate = estate_church
