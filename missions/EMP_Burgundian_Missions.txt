@@ -444,7 +444,10 @@ emp_burgundy_2 = {
 		effect = {
 			add_dip_power = 50
 			low_countries_region = {
-				limit = { owned_by = root }
+				limit = { 
+					owned_by = root
+					trade_goods = cloth
+					}
 				add_province_modifier = {
 					name = gc_bur_realm_united_mod
 					duration = 5475
