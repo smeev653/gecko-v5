@@ -244,11 +244,11 @@ per_mount_discipline2_modifier = {
 	fire_damage_received = -0.025
 }
 per_horse_population_boom_modifier = {
-	cav_to_inf_ratio = 0.5
+	cav_to_inf_ratio = 0.25
 	cavalry_cost = -0.15
 }
 per_horse_population_boom2_modifier = {
-	cav_to_inf_ratio = 0.3
+	cav_to_inf_ratio = 0.25
 	cavalry_cost = -0.1 
 }
 per_horse_population_boom4_modifier = {

@@ -444,7 +444,10 @@ emp_burgundy_2 = {
 		effect = {
 			add_dip_power = 50
 			low_countries_region = {
-				limit = { owned_by = root }
+				limit = { 
+					owned_by = root
+					trade_goods = cloth
+					}
 				add_province_modifier = {
 					name = gc_bur_realm_united_mod
 					duration = 5475
@@ -600,34 +603,41 @@ emp_burgundy_3 = {
 		trigger = {
 					NOT = {
 					any_subject_country = {
-						liberty_desire = 35
+						liberty_desire = 40
 						}
 					}	
 		}
 		effect = {
-			add_country_modifier = {
-					name = "burgundy_subjects_placated"
-					duration = 5475 #15 years	
-			}
-			lorraine_area = {
+			if = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {is_year = 1460 }
+				}	
+				add_country_modifier = {
+					name = "burgundy_subjects_placated"
+					duration = 16790 #15 years	
 				}
-				add_permanent_claim = ROOT
-			}
-			4766 = {
+				4766 = {
 					cede_province = BUR
 				}
-			4766 = {
+				4766 = {
 					add_core = BUR
 				}	
-			187 = {
+				187 = {
 					cede_province = BUR
 				}
-			187 = {
+				187 = {
 					add_core = BUR
 				}
+			}
+			else = {
+				lorraine_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	emp_bur_lorraine = {

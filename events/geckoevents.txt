@@ -903,7 +903,7 @@ country_event = {
 				has_country_modifier = gecko_development
 			}	
     }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         months = 120
     }
@@ -1015,6 +1015,18 @@ picture = COURT_eventPicture
 								which = geckomercFL
 								which = availablegeckomercs
 			}
+			if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}
 			export_to_variable = {
 						which = geckomercvalue
 						value = trigger_value:num_of_mercenaries
@@ -1025,13 +1037,13 @@ picture = COURT_eventPicture
 	option = {
 	}
 }
-##pulse event to check mercs####
+##pulse event to check mercs#### ##minor##
 country_event = {
     id = gecko.19
    title = gecko.19.t
     desc = gecko.19.d
 picture = COURT_eventPicture
-
+	
    trigger = {
 		ROOT = {
 				ai = no
@@ -1072,6 +1084,18 @@ picture = COURT_eventPicture
 								which = geckomercFL
 								which = availablegeckomercs
 						}
+			if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}			
 			export_to_variable = {
 						which = geckomercvalue
 						value = trigger_value:num_of_mercenaries
@@ -1164,11 +1188,11 @@ picture = COURT_eventPicture
 				}	
 				
    }
-	hidden = yes
+	
     mean_time_to_happen = {
         days = 1
     }
-	
+	hidden = yes
 	immediate = {
 		set_variable = {            
 						which = availablegeckomercs
@@ -1204,16 +1228,16 @@ picture = COURT_eventPicture
 						total_development = ROOT
 	  }
    }
-	hidden = yes
+	
     mean_time_to_happen = {
         days = 1
     }
-	
+	hidden = yes
 	immediate = {
 		add_country_modifier = {
 				name = gecko_recovery
 				duration = 3650
-				hidden = yes
+				
 			}
 	}
 	option = {	
@@ -1229,7 +1253,7 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 
 	is_triggered_only = yes
-
+	hidden = yes
 	option = {
 		name = gecko.28.a
 		
@@ -1431,11 +1455,11 @@ picture = COURT_eventPicture
 				has_age_ability = ab_hesse_mercs
 			}
    }
-	hidden = yes
+	
     mean_time_to_happen = {
         days = 1
     }
-	
+	hidden = yes
 	immediate = {
 				set_variable = {            
 							which = availablegeckomercs
@@ -1461,11 +1485,11 @@ picture = COURT_eventPicture
 			NOT =  { has_country_modifier = We_stand_alone }
 			has_country_modifier = 130percentavailablemercs
    }
-	hidden = yes
+	
     mean_time_to_happen = {
         days = 1
     }
-	
+	hidden = yes
 	immediate = {
 				if = {
 					limit = {
@@ -1531,7 +1555,19 @@ picture = COURT_eventPicture
 					set_variable = {            
 							which = availablegeckomercs
 							value = 1
-					}		
+					}
+if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}					
 					export_to_variable = {
 								which = geckomercvalue
 								value = trigger_value:num_of_mercenaries
@@ -1562,6 +1598,18 @@ picture = COURT_eventPicture
 							which = availablegeckomercs
 							value = 1
 					}
+					if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}
 					export_to_variable = {
 								which = geckomercvalue
 								value = trigger_value:num_of_mercenaries
@@ -1601,11 +1649,11 @@ picture = COURT_eventPicture
 							}
 		}	
 	}	
-		hidden = yes
+		
 	mean_time_to_happen = {
 			days = 1
 	}
-
+	hidden = yes
 	immediate = {
 		if = {
 			limit = {
@@ -1672,7 +1720,7 @@ picture = COURT_eventPicture
 		 
 			}
 	}		
-		hidden = yes
+	hidden = yes	
 	mean_time_to_happen = {
 			days = 1
 	}
@@ -1778,11 +1826,11 @@ picture = COURT_eventPicture
 		 
 			
 	}		
-		hidden = yes
+		
 	mean_time_to_happen = {
 			days = 1
 	}
-
+		hidden = yes
 	immediate = {
 			set_variable = {            
 						which = availablegeckomercs
@@ -1818,11 +1866,11 @@ picture = COURT_eventPicture
 							}
 			}
 	}		
-		hidden = yes
+		
 	mean_time_to_happen = {
 			days = 1
 	}
-
+	hidden = yes
 	immediate = {
 
 			set_variable = {            
@@ -1845,7 +1893,7 @@ picture = COURT_eventPicture
 		has_country_flag = improve_development_on_buildings_built
 		is_year = 1475
 	}		
-		hidden = yes
+	hidden = yes	
 	mean_time_to_happen = {
 			days = 1
 	}
@@ -1871,7 +1919,7 @@ picture = COURT_eventPicture
 		NOT = { revanchism = 1 }
 			
 	}		
-		hidden = yes
+	hidden = yes	
 	mean_time_to_happen = {
 			days = 1
 	}
@@ -1895,7 +1943,7 @@ picture = COURT_eventPicture
 		has_country_modifier = gc_mecca_agreement
 		owns = 385
 	}		
-		hidden = yes
+	hidden = yes	
 	mean_time_to_happen = {
 			days = 365
 	}
@@ -1942,7 +1990,7 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 
 	is_triggered_only = yes
-
+	hidden = yes
 	option = {
 		name = gecko.39.a #5 mercs
 		trigger = {
@@ -3201,7 +3249,7 @@ country_event = {
 						which = geckomercFL
 		}
 	}		
-	hidden = yes
+	
 	mean_time_to_happen = {
 			days = 1
 	}
@@ -3266,7 +3314,7 @@ picture = COURT_eventPicture
 							}
 		}	
 	}	
-		hidden = yes
+	hidden = yes	
 	mean_time_to_happen = {
 			days = 1
 	}
@@ -3320,7 +3368,7 @@ picture = COURT_eventPicture
 		NOT = { has_country_modifier = We_stand_alone }
 		has_country_flag = had_we_stand_alone_mercs 					
 	}	
-		hidden = yes
+	hidden = yes	
 	mean_time_to_happen = {
 			days = 1
 	}
