@@ -600,34 +600,41 @@ emp_burgundy_3 = {
 		trigger = {
 					NOT = {
 					any_subject_country = {
-						liberty_desire = 35
+						liberty_desire = 40
 						}
 					}	
 		}
 		effect = {
-			add_country_modifier = {
+			if = {
+				limit = {
+					NOT = {is_year = 1460 }
+				}	
+				add_country_modifier = {
 					name = "burgundy_subjects_placated"
 					duration = 16790 #15 years	
-			}
-			lorraine_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = ROOT
-			}
-			4766 = {
+				4766 = {
 					cede_province = BUR
 				}
-			4766 = {
+				4766 = {
 					add_core = BUR
 				}	
-			187 = {
+				187 = {
 					cede_province = BUR
 				}
-			187 = {
+				187 = {
 					add_core = BUR
 				}
+			}
+			else = {
+				lorraine_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	emp_bur_lorraine = {
