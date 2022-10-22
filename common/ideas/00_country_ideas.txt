@@ -1421,9 +1421,6 @@ BUR_Ideas = {
 		global_trade_goods_size_modifier = 0.15
 		num_accepted_cultures = 2
 	}
-	bur_regimental_system = {
-		global_own_trade_power = 0.25
-	}
 	gc_compagnies_ordonnance = {
 		mercenary_discipline = 0.05
 		merc_maintenance_modifier = -0.25
@@ -1431,6 +1428,9 @@ BUR_Ideas = {
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
+	}
+	bur_regimental_system = {
+		global_own_trade_power = 0.25
 	}
 	golden_fleece = {
 		prestige = 1
