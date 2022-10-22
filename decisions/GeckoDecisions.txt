@@ -829,11 +829,11 @@ country_decisions = {
 				duration = -1
 				hidden = yes
 			}
-			add_country_modifier = {
-				name = "merc_spawn_timer"
-				duration = 30
-				hidden = yes
-			}
+			#add_country_modifier = {
+			#	name = "merc_spawn_timer"
+			#	duration = 30
+			#	hidden = yes
+			#}
 			country_event = {
 				id = gecko.39 days = 30
 			}

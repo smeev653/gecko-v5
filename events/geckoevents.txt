@@ -1990,7 +1990,6 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
 	option = {
 		name = gecko.39.a #5 mercs
 		trigger = {
