@@ -7,7 +7,7 @@ technology_group = ottoman
 historical_rival = TUR
 historical_rival = TIM
 capital = 361 # Cairo
-add_army_professionalism = 0.15
+
 religious_school = shafii_school
 
 change_estate_land_share = {
