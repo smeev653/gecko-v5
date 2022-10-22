@@ -450,7 +450,7 @@ emp_burgundy_2 = {
 					}
 				add_province_modifier = {
 					name = gc_bur_realm_united_mod
-					duration = 5475
+					duration = 7300
 				}
 			}
 		}
