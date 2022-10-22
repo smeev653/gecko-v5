@@ -78,11 +78,12 @@ estate_gc_expand_mamluks = {
 			tradition = 50
 		}
 		capital_scope = {
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
+			add_unit_construction = {
+			type = cavalry
+			amount = 5
+			speed = 1
+			cost = 0
+			}
 		}
 		add_country_modifier = {
 		 name = "mamluk_buff"
