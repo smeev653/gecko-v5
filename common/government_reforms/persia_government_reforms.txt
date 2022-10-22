@@ -163,6 +163,7 @@ upgrade_janissary_weaponry_reform = { #tier 2
 		global_tax_modifier = 0.10
 		janissary_influence_modifier = 0.1
 		janissary_loyalty_modifier = 0.05
+		yearly_army_professionalism = 0.001
 	}
 	conditional = {
 		allow = {
