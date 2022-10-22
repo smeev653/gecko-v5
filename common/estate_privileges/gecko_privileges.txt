@@ -32,11 +32,12 @@ estate_gc_sipahi = {
 			tradition = 30
 		}
 		capital_scope = {
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
+			add_unit_construction = {
+			type = cavalry
+			amount = 5
+			speed = 1
+			cost = 0
+			}
 		}
 	}
 	on_revoked = {
@@ -74,11 +75,12 @@ estate_gc_expand_sipahi = {
 			tradition = 50
 		}
 		capital_scope = {
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
-			cossack_cavalry = PREV
+			add_unit_construction = {
+			type = cavalry
+			amount = 5
+			speed = 1
+			cost = 0
+			}
 		}
 		#add_country_modifier = {
 		# name = "sipahi_buff"
