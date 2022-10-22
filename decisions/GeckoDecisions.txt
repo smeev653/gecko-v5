@@ -719,6 +719,18 @@ country_decisions = {
 								which = geckomercFL
 								which = availablegeckomercs
 						}
+						if = {
+							limit = {
+								has_idea = gc_compagnies_ordonnance
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.15
+								}
+						}
+						else = {
+							#nothing
+						}
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
@@ -749,6 +761,18 @@ country_decisions = {
 								which = geckomercFL
 								which = availablegeckomercs
 						}
+						if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
@@ -841,6 +865,18 @@ country_decisions = {
 								which = geckomercFL
 								which = availablegeckomercs
 						}
+						if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
@@ -871,6 +907,18 @@ country_decisions = {
 								which = geckomercFL
 								which = availablegeckomercs
 						}
+						if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
@@ -924,6 +972,18 @@ country_decisions = {
 								which = geckomercFL
 								which = availablegeckomercs
 						}
+						if = {
+							limit = {
+								has_idea = gc_compagnies_ordonnance
+						}
+							multiply_variable = { 
+											which = geckomercFL
+											value = 1.15
+							}
+						}
+							 else = {
+								#nothing
+							}
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
@@ -954,6 +1014,18 @@ country_decisions = {
 								which = geckomercFL
 								which = availablegeckomercs
 						}
+						if = {
+							limit = {
+								has_idea = gc_compagnies_ordonnance
+						}
+							multiply_variable = { 
+											which = geckomercFL
+											value = 1.15
+							}
+						}
+							 else = {
+								#nothing
+							}
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries

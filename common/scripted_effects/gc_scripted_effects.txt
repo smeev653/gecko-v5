@@ -137,7 +137,19 @@ gecko_mercs = {
 			set_variable = {            
 					which = availablegeckomercs
 					value = 1
-			}		
+			}
+			if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
+			}	
 			export_to_variable = {
 						which = geckomercvalue
 						value = trigger_value:num_of_mercenaries
@@ -172,6 +184,18 @@ gecko_mercs = {
 			set_variable = {            
 					which = availablegeckomercs
 					value = 1
+			}
+			if = {
+				limit = {
+					has_idea = gc_compagnies_ordonnance
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.15
+				}
+			}
+			else = {
+				#nothing
 			}
 			export_to_variable = {
 						which = geckomercvalue
