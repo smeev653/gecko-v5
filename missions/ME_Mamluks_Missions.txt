@@ -1265,6 +1265,9 @@ MAM_missions_4 = {
 			}
 		}
 		effect = {
+			unlock_merc_company = {
+				merc_company = merc_mesopotamian_mamluks
+			}
 			add_country_modifier = {
 				name = mamluks_shear_the_black_sheep_modifier
 				duration = 7300
@@ -1521,11 +1524,22 @@ MAM_missions_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			RAM = {
-				has_opinion = {
-							who = root
-							value = 190
-						}
+			if = {
+				limit = {
+					exists = RAM
+				}	
+				RAM = {
+					has_opinion = {
+								who = root
+								value = 190
+							}
+				}
+			}
+			else = {
+				has_spy_network_in = {
+						who = TUR
+						value = 25
+					}
 			}
 		}	
 		effect = {
