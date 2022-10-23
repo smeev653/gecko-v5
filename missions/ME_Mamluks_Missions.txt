@@ -124,6 +124,9 @@ MAM_missions_1 = {
 		}
 		effect = {
 			add_years_of_income = 0.5
+			358 = {
+				change_trade_goods = slaves
+			}
 			delta_area = {
 				add_province_modifier = {
 					name = mamluks_develop_the_delta_province_modifier
@@ -717,19 +720,9 @@ MAM_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			OR = {
-				samtskhe_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				imereti_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				kartli_kakheti_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+			trade_goods_produced_amount = {
+				trade_goods = slaves
+				amount = 3
 			}	
 		}
 		effect = {
