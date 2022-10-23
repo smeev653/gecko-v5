@@ -14736,7 +14736,7 @@ LOT_ideas = {
 	}
 	
 	bonus = {
-		global_trade_goods_size_modifier = 0.15
+		global_trade_power = 0.15
 	}
 	
 	trigger = {
@@ -14745,8 +14745,8 @@ LOT_ideas = {
 	free = yes		#will be added at load.
 	
 	bur_estates_general = {
+		global_trade_goods_size_modifier = 0.15
 		num_accepted_cultures = 2
-		manpower_in_culture_group_provinces = 0.15
 	}
 	gc_compagnies_ordonnance = {
 		mercenary_discipline = 0.05
