@@ -4052,6 +4052,17 @@ on_province_owner_change = {
 	###X###
 	X_on_province_owner_change_pmod_effect = yes
 	#######
+	if = { 
+		limit = {
+			has_fort_building_trigger = yes
+			X_flatland_terrain_trigger = yes
+		}
+		add_province_modifier = {
+			name = X_flatland_fort_bonus_pmod
+			duration = -1
+			hidden = yes
+		}
+	}	
 }
 
 # country
