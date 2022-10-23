@@ -309,6 +309,17 @@ fort_15th = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
 		}
+		if = {
+			limit = { X_flatland_terrain_trigger = yes }
+			custom_tooltip = X_flatland_fort_bonus_tt
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_flatland_fort_bonus_pmod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
 		#######
 		if = {
 			limit = {
@@ -351,6 +362,12 @@ fort_15th = {
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
+				remove_province_modifier = X_flatland_fort_bonus_pmod
+			}
 		}
 		#######
 	}
@@ -816,7 +833,6 @@ keep_trigger = {
 	}
 	modifier = {
 		fort_level = 2
-		local_defender_dice_roll_bonus = 1
 	}
 	
 	onmap = yes
@@ -991,6 +1007,17 @@ fort_16th = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
 		}
+		if = {
+			limit = { X_flatland_terrain_trigger = yes }
+			custom_tooltip = X_flatland_fort_bonus_tt
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_flatland_fort_bonus_pmod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
 		#######
 		if = {
 			limit = {
@@ -1033,6 +1060,12 @@ fort_16th = {
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
+				remove_province_modifier = X_flatland_fort_bonus_pmod
+			}
 		}
 		#######
 	}
@@ -1501,7 +1534,6 @@ fort_16th = {
 	}
 	modifier = {
 		fort_level = 4
-		local_defender_dice_roll_bonus = 1
 	}
 
 	onmap = yes
@@ -1825,6 +1857,17 @@ fort_17th = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
 		}
+		if = {
+			limit = { X_flatland_terrain_trigger = yes }
+			custom_tooltip = X_flatland_fort_bonus_tt
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_flatland_fort_bonus_pmod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
 		#######
 		if = {
 			limit = {
@@ -1867,6 +1910,12 @@ fort_17th = {
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
+				remove_province_modifier = X_flatland_fort_bonus_pmod
+			}
 		}
 		#######
 	}
@@ -2335,7 +2384,6 @@ fort_17th = {
 
 	modifier = {
 		fort_level = 6
-		local_defender_dice_roll_bonus = 1
 	}
 
 	onmap = yes
@@ -2551,6 +2599,17 @@ fort_18th = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
 		}
+		if = {
+			limit = { X_flatland_terrain_trigger = yes }
+			custom_tooltip = X_flatland_fort_bonus_tt
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_flatland_fort_bonus_pmod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
 		#######
 		if = {
 			limit = {
@@ -2593,6 +2652,12 @@ fort_18th = {
 		if = {
 			limit = { FROM = { has_government_attribute = building_dev } }
 			X_local_building_development_cost_effect = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
+				remove_province_modifier = X_flatland_fort_bonus_pmod
+			}
 		}
 		#######
 	}
@@ -3055,7 +3120,6 @@ fort_18th = {
 	}
 	modifier = {
 		fort_level = 8
-		local_defender_dice_roll_bonus = 1
 	}
 
 

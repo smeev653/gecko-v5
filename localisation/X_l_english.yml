@@ -17,6 +17,7 @@
  X_local_building_development_tier_12_pmod:0 "Local Investment"
  #Building Tooltips
  X_local_building_development_cost_effect_tt:0 "Local Development Cost: §G-1.0%§!"
+ X_flatland_fort_bonus_tt:0 "Local Defender Dice Roll Bonus: §G+1.00§!"
  #Tooltips
  X_center_of_trade_effect_tt:0 "Add the equivalent Center of Trade upgrade cost to your treasury."
  X_flatland_terrain_trigger_tt:0 "Province(s) is §lFlatland§! terrain."

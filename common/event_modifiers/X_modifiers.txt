@@ -1,6 +1,9 @@
 ########################################
 # General Modifiers
 ########################################
+X_flatland_fort_bonus_pmod = {
+	local_defender_dice_roll_bonus = 1
+}
 X_local_building_development_tier_1_pmod = {
 	local_development_cost = -0.01
 }
