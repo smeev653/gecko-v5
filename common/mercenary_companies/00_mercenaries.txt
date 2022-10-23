@@ -584,7 +584,7 @@ merc_mesopotamian_mamluks = {
 		} 
 	}
     modifier = {
-        cavalry_shock = 1.0
+        cavalry_shock = 0.5
 		cav_to_inf_ratio = 1
     }
 }
