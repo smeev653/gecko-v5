@@ -462,6 +462,27 @@ X_improve_ruler_stats_effect = {
 }
 
 X_on_province_owner_change_pmod_effect = {
+	if = { 
+		limit = {
+			has_fort_building_trigger = yes
+			X_flatland_terrain_trigger = yes
+		}
+		add_province_modifier = {
+			name = X_flatland_fort_bonus_pmod
+			duration = -1
+			hidden = yes
+		}
+	}
+	else = {
+		limit = {
+			has_province_modifier = X_flatland_fort_bonus_pmod
+			OR = {
+				X_flatland_terrain_trigger = no
+				has_fort_building_trigger = no
+			}
+		}
+		remove_province_modifier = X_flatland_fort_bonus_pmod
+	}
 	####################
 	# Legacy Reforms
 	####################
@@ -486,7 +507,7 @@ X_on_province_owner_change_pmod_effect = {
 			}
 		}
 	}
-	else_if = {
+	else = {
 		limit = {
 			OR = {
 				NOT = { has_terrain = steppe }
@@ -529,7 +550,7 @@ X_on_province_owner_change_pmod_effect = {
 			}
 		}
 	}
-	else_if = {
+	else = {
 		limit = {
 			OR = {
 				NOT = { has_terrain = steppe }
@@ -575,7 +596,7 @@ X_on_province_owner_change_pmod_effect = {
 			duration = -1
 		}
 	}
-	else_if = {
+	else = {
 		limit = {
 			OR = {
 				has_terrain = steppe
@@ -606,7 +627,7 @@ X_on_province_owner_change_pmod_effect = {
 			duration = -1
 		}
 	}
-	else_if = {
+	else = {
 		limit = {
 			trade_goods = slaves
 			owner = { NOT = { has_estate_privilege = X_estate_burghers_privilege_1 } }
