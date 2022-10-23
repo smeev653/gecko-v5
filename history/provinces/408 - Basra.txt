@@ -1,7 +1,7 @@
 #408 - Basra
 
-owner = IRQ
-controller = IRQ
+owner = QAR
+controller = QAR
 culture = al_iraqiya_arabic
 religion = shiite
 capital = "Basra"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 5
 is_city = yes
-add_core = IRQ
+add_core = QAR
 add_core = ORM
 discovered_by = east_african
 discovered_by = muslim
@@ -25,12 +25,12 @@ add_permanent_province_modifier = {
 	name = euphrates_estuary_modifier
 	duration = -1
 }
-1443.2.4 = {
-	owner = AKK
-	controller = AKK
-	add_core = AKK
-	#remove_core = QAR
-}
+#1443.2.4 = {
+#	owner = AKK
+#	controller = AKK
+#	add_core = AKK
+#	#remove_core = QAR
+#}
 1498.1.1 = { discovered_by = POR }
 1508.1.1 = {
 	owner = PER

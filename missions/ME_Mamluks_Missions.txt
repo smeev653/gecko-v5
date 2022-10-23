@@ -124,6 +124,9 @@ MAM_missions_1 = {
 		}
 		effect = {
 			add_years_of_income = 0.5
+			358 = {
+				change_trade_goods = slaves
+			}
 			delta_area = {
 				add_province_modifier = {
 					name = mamluks_develop_the_delta_province_modifier
@@ -717,19 +720,9 @@ MAM_missions_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			OR = {
-				samtskhe_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				imereti_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				kartli_kakheti_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+			trade_goods_produced_amount = {
+				trade_goods = slaves
+				amount = 3
 			}	
 		}
 		effect = {
@@ -1200,15 +1193,21 @@ MAM_missions_4 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				province_id = 418
-				area = al_jazira_area
+				province_id = 2308
+				province_id = 4292
+				province_id = 407 
 			}
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			owns = 418
-			al_jazira_area = {
-				type = all
+			#owns = 418
+			2308 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4292 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			407 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1217,23 +1216,8 @@ MAM_missions_4 = {
 				name = mamluks_shear_the_white_sheep_modifier
 				duration = 7300
 			}
-			if = {
-				limit = {
-					mission_completed = tur_unite_anatolian_tribes 
-				}
 				add_adm_power = 100
-			}
-			else = {
-				every_province = {
-					limit = {
-						region = mashriq_region
-						owned_by = AKK
-						is_core = IRQ
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-			}	
+				
 				al_jazira_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -1274,6 +1258,9 @@ MAM_missions_4 = {
 			}
 		}
 		effect = {
+			unlock_merc_company = {
+				merc_company = merc_mesopotamian_mamluks
+			}
 			add_country_modifier = {
 				name = mamluks_shear_the_black_sheep_modifier
 				duration = 7300
@@ -1530,24 +1517,37 @@ MAM_missions_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			327 = {
-				controlled_by = ROOT
+			if = {
+				limit = {
+					exists = RAM
+				}	
+				RAM = {
+					has_opinion = {
+								who = root
+								value = 190
+							}
+				}
 			}
-		}
+			else = {
+				has_spy_network_in = {
+						who = TUR
+						value = 25
+					}
+			}
+		}	
 		effect = {
 			add_country_modifier = {
 				name = mamluks_beylik_loyalties_modifier
 				duration = 7300
 			}
-			add_core = 327
-			erzurum_area = {
+			dulkadir_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			north_kurdistan_area = {
+			cukurova_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }

@@ -120,13 +120,7 @@ country_event = { #Victory for the Ottoman House
 				duration = 5475
 			}
 		}
-		if = { 
-			limit = { 
-				NOT = { mil = 6 } 
-			}
-			change_mil = 1 
-		}
-		else = { add_mil_power = 50 } 
+		add_mil_power = 100 
 	}
 }
 
@@ -323,12 +317,9 @@ country_event = { #The Fate of the Holy City
 				add_base_manpower = 4 
 				add_nationalism = -10 
 			}
-		}
-		if = { 
-			limit = { dip = 6 } 
-			add_dip_power = 50 
-		}
-		else = { change_dip = 1 } 
+		} 
+			add_dip_power = 100
+		
 	}
 }
 
@@ -521,9 +512,6 @@ country_event = { #New Head of Ummah
 			name = tur_khalifat_rashul_allah_modifier
 			duration = -1 
 		}
-		change_adm = 1 
-		change_dip = 1 
-		change_mil = 1 
 	}
 }
 	
@@ -904,11 +892,10 @@ country_event = { #Supremacy Over the Emerald Lion
 			name = tur_custodian_of_persia_modifier
 			duration = -1 
 		}
-		if = { 
-			limit = { mil = 6 }
-			add_mil_power = 50 
-		}
-		else = { change_mil = 1 }
+
+			add_mil_power = 100 
+		
+
 		set_country_flag = 20_percent_chance_for_extra_dev
 		custom_tooltip = chance_to_gain_supplemental_dev_20_percent_tt
 		custom_tooltip = tur_per_dev_tt
@@ -1500,15 +1487,6 @@ country_event = { #Capital of the Western World
 			limit = { has_dlc = "Leviathan" }
 			custom_tooltip = tur_enable_st_petes_basilica_tt
 			set_country_flag = enable_st_petes_basilica_flag
-			118 = { 
-				add_base_tax = 2 
-				add_base_production = 2
-				add_base_manpower = 2  
-			}
-		}
-		else = { 
-			change_adm = 1 
-			change_dip = 1 
 			118 = { 
 				add_base_tax = 2 
 				add_base_production = 2

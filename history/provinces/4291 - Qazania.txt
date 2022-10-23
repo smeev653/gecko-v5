@@ -1,7 +1,7 @@
 #4391 - Qazaniya
 
-owner = IRQ
-controller = IRQ
+owner = QAR
+controller = QAR
 culture = al_iraqiya_arabic
 religion = sunni
 capital = "Qazaniya"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = IRQ
+add_core = QAR
 #add_core = QAR
 discovered_by = east_african
 discovered_by = muslim
@@ -20,11 +20,12 @@ discovered_by = eastern
 discovered_by = indian
 discovered_by = nomad_group
 
-1443.2.4 = {
-	owner = AKK
-	controller = AKK
-	add_core = AKK
-}
+#1443.2.4 = {
+#	owner = AKK
+#	controller = AKK
+#	add_core = AKK
+#	#remove_core = QAR
+#}
 1474.1.1 = { unrest = 4 } # Rebellion
 1475.1.1 = { unrest = 0 }
 1496.2.8 = { controller = REB revolt = { type = pretender_rebels size = 0 name = "Muhammad's Faction" leader = "Muhammad Ak Koyunlu" } } # Civil war in Ak Koyunlu

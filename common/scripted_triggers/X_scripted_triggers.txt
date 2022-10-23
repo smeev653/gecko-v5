@@ -144,6 +144,7 @@ X_flatland_terrain_trigger = {
 		tooltip = X_flatland_terrain_trigger_tt
 		OR = {
 			has_terrain = farmlands
+			has_terrain = desert
 			has_terrain = grasslands
 			has_terrain = drylands
 			has_terrain = savannah
