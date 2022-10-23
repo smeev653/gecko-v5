@@ -151,7 +151,7 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	infantry_shock		= 	0.2
+	infantry_shock		= 	0.3
 	infantry_fire 		= 	0.20
 	cavalry_shock		=	0.25
 	
@@ -329,7 +329,7 @@ technology = {
 	
 	#Star Bastions
 	fort_16th = yes
-	infantry_fire		=	0.5
+	infantry_fire		=	0.3
 	#cavalry_fire		= 	0.25
 	cavalry_shock		=	0.25
 	enable = african_hussar
