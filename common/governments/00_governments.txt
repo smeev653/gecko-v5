@@ -200,8 +200,6 @@ monarchy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
-				###Gecko###
-				gecko_building_dev
 			}
 		}
 		legitimation_of_power = {
@@ -512,8 +510,6 @@ republic = {
 				master_smugglers_reform
 				cutthroat_approach_reform
 				empowered_quartermasters_reform
-				##gecko##
-				gecko_building_dev
 			}
 		}
 		consolidation_of_power_category = {
@@ -676,7 +672,6 @@ tribal = {
 			reforms = {
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
-				gecko_building_dev
 			}
 		}
 		tribal_reformation = {
@@ -857,8 +852,6 @@ theocracy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
-				##gecko##
-				gecko_building_dev
 			}
 		}
 		divine_cause = {

@@ -1,23 +1,6 @@
 ####################
 # General
 ####################
-X_has_local_building_development_tiered_modifier_trigger = {
-	OR = {
-		has_province_modifier = X_local_building_development_tier_1_pmod
-		has_province_modifier = X_local_building_development_tier_2_pmod
-		has_province_modifier = X_local_building_development_tier_3_pmod
-		has_province_modifier = X_local_building_development_tier_4_pmod
-		has_province_modifier = X_local_building_development_tier_5_pmod
-		has_province_modifier = X_local_building_development_tier_6_pmod
-		has_province_modifier = X_local_building_development_tier_7_pmod
-		has_province_modifier = X_local_building_development_tier_8_pmod
-		has_province_modifier = X_local_building_development_tier_9_pmod
-		has_province_modifier = X_local_building_development_tier_10_pmod
-		has_province_modifier = X_local_building_development_tier_11_pmod
-		has_province_modifier = X_local_building_development_tier_12_pmod
-	}
-}
-
 X_is_colonial_province_trigger = {
 	OR = {
 		colonial_region = colonial_alaska

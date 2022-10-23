@@ -40,12 +40,7 @@ marketplace = {
 			type = production
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -53,12 +48,7 @@ marketplace = {
 			type = production
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -80,12 +70,7 @@ workshop = {
 			type = production
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -93,12 +78,7 @@ workshop = {
 			type = production
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -162,12 +142,7 @@ temple = {
 				type = tax
 				value = 1
 			}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
 		if = {
@@ -198,12 +173,7 @@ temple = {
 			type = tax
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -230,12 +200,7 @@ barracks = {
 			type = manpower
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -243,12 +208,7 @@ barracks = {
 			type = manpower
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -276,20 +236,8 @@ shipyard = {
 		#land_forcelimit = 0.5
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_obsolete = {
 	}
@@ -305,10 +253,6 @@ fort_15th = {
 	on_built = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
 		if = {
 			limit = { X_flatland_terrain_trigger = yes }
 			custom_tooltip = X_flatland_fort_bonus_tt
@@ -359,10 +303,6 @@ fort_15th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
 		hidden_effect = {
 			if = {
 				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
@@ -857,20 +797,8 @@ coastal_defence = {
 		block_slave_raid = yes
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_obsolete = {
 	}
@@ -894,20 +822,8 @@ courthouse = {
 		allowed_num_of_buildings = 1
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_obsolete = {
 	}
@@ -927,20 +843,8 @@ dock = {
 		#local_manpower_modifier = 0.125
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
 	}
 	on_obsolete = {
 	}
@@ -964,12 +868,7 @@ regimental_camp = {
 			type = manpower
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -977,12 +876,7 @@ regimental_camp = {
 			type = manpower
 			value = 1
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -1003,10 +897,7 @@ fort_16th = {
 	on_built = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
+ 
 		if = {
 			limit = { X_flatland_terrain_trigger = yes }
 			custom_tooltip = X_flatland_fort_bonus_tt
@@ -1057,10 +948,7 @@ fort_16th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
+ 
 		hidden_effect = {
 			if = {
 				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
@@ -1560,20 +1448,10 @@ naval_battery = {
 		block_slave_raid = yes
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -1627,12 +1505,7 @@ cathedral = {
 				add_papal_influence = 3
 			}
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
 		if = {
@@ -1658,12 +1531,7 @@ cathedral = {
 				add_papal_influence = -3
 			}
 		}
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -1687,20 +1555,10 @@ university = {
 			}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}	
 	on_obsolete = {
 	}
@@ -1749,20 +1607,10 @@ trade_depot = {
 		
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}	
 	on_obsolete = {
 	}
@@ -1788,20 +1636,10 @@ grand_shipyard = {
 		#land_forcelimit = 1
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -1821,20 +1659,10 @@ training_fields = {
 		
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -1853,10 +1681,7 @@ fort_17th = {
 	on_built = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
+ 
 		if = {
 			limit = { X_flatland_terrain_trigger = yes }
 			custom_tooltip = X_flatland_fort_bonus_tt
@@ -1907,10 +1732,7 @@ fort_17th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
+ 
 		hidden_effect = {
 			if = {
 				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
@@ -2411,20 +2233,10 @@ stock_exchange = {
 		
 	}	
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -2443,20 +2255,10 @@ counting_house = {
 		
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -2482,20 +2284,10 @@ town_hall = {
 		
 		}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -2519,20 +2311,10 @@ drydock = {
 		#local_manpower_modifier = 0.25
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -2554,20 +2336,10 @@ conscription_center = {
 		
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -2595,10 +2367,7 @@ fort_18th = {
 		on_built = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
+ 
 		if = {
 			limit = { X_flatland_terrain_trigger = yes }
 			custom_tooltip = X_flatland_fort_bonus_tt
@@ -2649,10 +2418,7 @@ fort_18th = {
 	on_destroyed = {
 		###X###
 		X_on_province_owner_change_pmod_effect = yes
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
+ 
 		hidden_effect = {
 			if = {
 				limit = { has_province_modifier = X_flatland_fort_bonus_pmod }
@@ -3167,20 +2933,10 @@ wharf = {
 				}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3229,20 +2985,10 @@ weapons = {
 				}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3271,20 +3017,10 @@ textile = {
 				}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3316,20 +3052,10 @@ plantations = {
 				}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3360,20 +3086,10 @@ tradecompany = {
 				}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3402,20 +3118,10 @@ farm_estate = {
 				}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3447,20 +3153,10 @@ mills = {
 				}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3495,20 +3191,10 @@ furnace = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3589,20 +3275,10 @@ ramparts = {
 		}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3659,20 +3335,10 @@ soldier_households = {
 		local_manpower_modifier = 2
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3722,20 +3388,10 @@ impressment_offices = {
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3791,20 +3447,10 @@ state_house = {
 		
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3853,20 +3499,10 @@ armory = {
 		}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}
@@ -3914,20 +3550,10 @@ gc_bureaucracy_manufactory = {
 		}
 	}
 	on_built = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_destroyed = {
-		###X###
-		if = {
-			limit = { FROM = { has_government_attribute = building_dev } }
-			X_local_building_development_cost_effect = yes
-		}
-		#######
+ 
 	}
 	on_obsolete = {
 	}

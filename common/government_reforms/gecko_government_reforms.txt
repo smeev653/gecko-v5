@@ -243,39 +243,3 @@ gc_french_empire = { #tier 1
 	allow_normal_conversion = yes
 	fixed_rank = 3
 }
-
-gecko_building_dev = {
-	icon = "paper_money_map"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		all_estate_loyalty_equilibrium = -0.05
-		build_cost = -0.05
-	}
-	effect = {
-		hidden_effect = {
-			every_owned_province = {
-				X_local_building_development_cost_effect = yes
-			}
-		}
-	}
-	post_removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				X_local_building_development_cost_effect = yes
-			}
-		}
-	}
-	custom_attributes = {
-		building_dev = yes
-	}
-	
-	ai = {
-		factor = 1
-	}
-}	
