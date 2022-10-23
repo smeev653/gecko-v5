@@ -1278,6 +1278,9 @@ ottoman_missions_2 = {
 		} 
 		effect = { 
 			country_event = { id = FU_Ottoman_Events.4 } 
+			unlock_merc_company = {
+				merc_company = merc_mesopotamian_mamluks
+			}
 		}
 	}
 	
