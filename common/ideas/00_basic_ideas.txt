@@ -72,7 +72,7 @@ plutocracy_ideas = {
 	}
 	free_merchants = {
 		leader_land_fire = 1
-		infantry_fire = 0.1
+		infantry_fire = 0.15
 	}
 	free_cities = {
 		monarch_military_power = 1
@@ -398,8 +398,8 @@ offensive_ideas = {
 	}
 
 	bayonet_leaders = {
-		shock_damage = 0.10
-		fire_damage = 0.10
+		shock_damage = 0.125
+		fire_damage = 0.125
 	}
 	glorious_arms = {
 		general_cost = -0.10
@@ -446,7 +446,7 @@ defensive_ideas = {
 		land_morale = 0.1
 	}
 	defensive_mentality = {
-		defensiveness = 0.33
+		defensiveness = 0.2
 		fort_maintenance_modifier = -0.2
 	}
 	
