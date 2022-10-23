@@ -1206,9 +1206,14 @@ MAM_missions_4 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			owns = 418
-			al_jazira_area = {
-				type = all
+			#owns = 418
+			2308 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4292 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			407 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1217,23 +1222,8 @@ MAM_missions_4 = {
 				name = mamluks_shear_the_white_sheep_modifier
 				duration = 7300
 			}
-			if = {
-				limit = {
-					mission_completed = tur_unite_anatolian_tribes 
-				}
 				add_adm_power = 100
-			}
-			else = {
-				every_province = {
-					limit = {
-						region = mashriq_region
-						owned_by = AKK
-						is_core = IRQ
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-			}	
+				
 				al_jazira_area = {
 					limit = {
 						NOT = { owned_by = ROOT }

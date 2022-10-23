@@ -1260,23 +1260,7 @@ ottoman_missions_2 = {
 		}
 		effect = { 
 			country_event = { id = FU_Ottoman_Events.3 } 
-			if = {
-				limit = {
-					mission_completed = mamluks_shear_the_white_sheep
-				}
-				add_adm_power = 100
-			}
-			else = {
-				every_province = {
-					limit = {
-						region = mashriq_region
-						owned_by = AKK
-						is_core = IRQ
-					}
-					remove_core = AKK
-					cede_province = IRQ
-				}
-			}	
+			add_adm_power = 100
 		}
 	}
 	
