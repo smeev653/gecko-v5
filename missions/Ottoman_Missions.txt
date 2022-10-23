@@ -2109,16 +2109,6 @@ ottoman_missions_3 = {
 				type = mission_rewards_power_projection
 				amount = 50
 			}
-			if = { 
-				limit = { dip = 6 } 
-				add_dip_power = 100 
-			}
-			else_if = { 
-				limit = { dip = 5 } 
-				change_dip = 1 
-				add_dip_power = 50 
-			}
-			else = { change_dip = 1 } 
 		}
 	}
 	
@@ -3294,12 +3284,6 @@ ottoman_missions_4 = {
 			NOT = { corruption = 1 } 
 		}
 		effect = { 
-			if = { 
-				limit = { adm = 6 } 
-				add_adm_power = 50 
-			}
-			else = { change_adm = 1 } 
-			custom_tooltip = tur_every_adm_point_grants
 			
 			if = { 
 				limit = { adm = 6 } 
@@ -4611,13 +4595,7 @@ ottoman_missions_5 = {
 				name = tur_arch_marriage_christ_islam_modifier
 				duration = -1 
 			}
-			if = { 
-				limit = { 
-					NOT = { dip = 6 }
-				}
-				change_dip = 1 
-			}
-			else = { add_dip_power = 50 }
+			add_dip_power = 100 
 		}
 	}
 	
@@ -4772,7 +4750,6 @@ ottoman_missions_5 = {
 			}
 		}
 		effect = {
-			change_adm = 2 
 			add_country_modifier = {	
 				name = tur_enlightened_literacy_modern_europe_modifier
 				duration = 7300

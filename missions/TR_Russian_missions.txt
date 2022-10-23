@@ -1270,9 +1270,15 @@ tr_russia_conquest_3 = {
 			}
 			else = {
 				OR = {
-					is_rival = CRI
-					is_rival = GLH
-				}	
+					OR = {
+						is_rival = CRI
+						is_rival = GLH
+					}
+					has_spy_network_in = {
+						who = CRI
+						value = 25
+					}	
+				}
 			}
 			
 		}
@@ -1406,8 +1412,8 @@ tr_russia_conquest_3 = {
 		required_missions = {defeat_the_khanate}
 		trigger = {
 			OR = {
-			is_rival = CRI 
-			war_with = CRI
+				is_rival = CRI 
+				war_with = CRI
 			}
 			
 		}
