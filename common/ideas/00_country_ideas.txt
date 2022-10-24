@@ -312,7 +312,7 @@ SPA_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	spanish_armada = {
-		shock_damage_received = -0.15
+		shock_damage_received = -0.10
 		heavy_ship_power = 0.1
 	}
 	devout_catholisism = {
@@ -14018,14 +14018,15 @@ MOR_ideas = {
 	mor_powerful_viziers = {
 		same_culture_advisor_cost = -0.2
 	}
-	mor_marabouts = {
-		idea_cost = -0.1
-		land_morale = 0.1
-	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
 		development_cost = -0.05
 	}
+	mor_marabouts = {
+		idea_cost = -0.1
+		land_morale = 0.1
+	}
+
 	mor_fleet = {
 		discipline = 0.05
 	}
@@ -14033,7 +14034,7 @@ MOR_ideas = {
 		production_efficiency = 0.10
 	}
 	mor_slave_soldiers = {
-		regiment_cost = -0.05
+		global_regiment_cost = -0.05
 	}
 	mor_curb_power_of_the_tribes = {
 		manpower_recovery_speed = 0.2
@@ -14446,7 +14447,7 @@ ADU_ideas = {
 		colonists = 1
 	}
 	adu_al_awasim = {
-		regiment_cost = -0.1
+		global_regiment_cost = -0.1
 	}
 }
 
