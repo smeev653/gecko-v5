@@ -1459,7 +1459,7 @@ autonomy_increased = {
 
 autonomy_decreased = {
 	local_unrest = 10
-	local_autonomy = -0.1
+	local_autonomy = -0.05
 }
 
 revolution_target = {
