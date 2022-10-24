@@ -788,7 +788,7 @@ country_decisions = {
 				is_bankrupt = no
 				ai = no
 				is_colonial_nation = no 
-				NOT = {has_country_modifier = merc_spawn_timer}
+				NOT = {has_country_modifier = merc_spawn_timer1}
 			}	
 		allow = {
 				treasury = 25
@@ -829,11 +829,11 @@ country_decisions = {
 				duration = -1
 				hidden = yes
 			}
-			#add_country_modifier = {
-			#	name = "merc_spawn_timer"
-			#	duration = 30
-			#	hidden = yes
-			#}
+			add_country_modifier = {
+				name = "merc_spawn_timer1"
+				duration = 30
+				hidden = yes
+			}
 			country_event = {
 				id = gecko.39 days = 30
 			}
