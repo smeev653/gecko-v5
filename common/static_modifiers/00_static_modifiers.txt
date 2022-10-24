@@ -255,7 +255,7 @@ development = {
 	local_sailors = 120			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.2
 	local_amount_of_banners = 0.066
-	local_amount_of_cawa = 0.125
+	local_amount_of_cawa = 0.10
 	local_amount_of_carolean = 0.01
 	local_amount_of_hussars = 0.01
 
@@ -727,6 +727,7 @@ bankruptcy = {
 	#build_cost = 0.2
 	great_project_upgrade_cost = 0.5
 	can_not_build_buildings = yes
+	amount_of_cawa = -1
 }
 
 
