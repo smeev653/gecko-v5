@@ -574,7 +574,7 @@ country_event = {
 		change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES
-			value = 0.7
+			value = 0.6
 			duration = -1
 		}
 		change_price = {
