@@ -175,8 +175,7 @@ PR_manpower_edict_cooldown = {
 		
 
 gc_african_corridor = {
-	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
+	local_production_efficiency = -0.1
 }
 
 my_desert = {
