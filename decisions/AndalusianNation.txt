@@ -126,6 +126,7 @@ country_decisions = {
 				}
 			}
 			change_tag = ADU
+			add_government_reform = ottoman_government 
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
