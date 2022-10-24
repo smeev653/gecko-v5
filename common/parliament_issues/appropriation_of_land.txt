@@ -61,7 +61,7 @@ appropriation_of_land = {
 	}
 	
 	modifier = {
-		build_cost = -0.05
+		build_cost = -0.1
 	}
 
 	ai_will_do = {

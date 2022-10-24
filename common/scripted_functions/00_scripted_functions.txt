@@ -254,6 +254,16 @@ can_colonize_province_siberian_frontier = {
 }
 
 can_add_seat_in_parliament = {
+	condition = {
+		potential = {
+			FROM = {
+				NOT = {is_colonial_nation = yes}
+				}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_add_estate = {

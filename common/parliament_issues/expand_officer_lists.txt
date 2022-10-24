@@ -7,7 +7,7 @@ expand_officer_lists = {
 	}
 	
 	effect = {
-		create_general = { tradition = 40 }
+		create_general = { tradition = 50 }
 	}
 	
 	modifier = {

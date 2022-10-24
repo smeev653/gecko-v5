@@ -11,7 +11,7 @@ issue_investigate_corruption = {
 	}
 	
 	modifier = {
-		yearly_corruption = -0.05
+		yearly_corruption = -0.2
 	}
 
 	chance = {

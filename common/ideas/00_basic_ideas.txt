@@ -304,7 +304,6 @@ spy_ideas = {
 	}
 
 	efficient_spies = {
-		
 		fabricate_claims_cost = -0.25
 	}	
 	state_propaganda = {
