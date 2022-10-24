@@ -1430,7 +1430,7 @@
  mechanic_allow_cawa_no:0 ""
  CAWA_CANT_HAVE:0 "Your nation cannot raise Tercio."
  CAWA_DESC:0 ""
- REGCAT_cawa:0 "Tercioa"
+ REGCAT_cawa:0 "Tercio"
  CAWA_REGIMENT:0 "Tercio Regiment\n$EFFECT$"
  HAVE_LESS_CAWA_THAN:0 "Have less Tercio Regiments than $VALUE|Y$.\n"
  HAVE_AT_LEAST_CAWA_THAN:0 "Have at least $VALUE|Y$ Tercio Regiments.\n"
