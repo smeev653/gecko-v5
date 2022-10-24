@@ -14754,7 +14754,7 @@ LOT_ideas = {
 		#15% available mercs
 	}
 	lot_glory_of_charlemagne = {
-		land_morale = 0.15
+		land_morale = 0.10
 		discipline = 0.05
 	}
 	lot_dutch_cities = {
