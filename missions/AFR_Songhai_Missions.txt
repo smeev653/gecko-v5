@@ -1822,14 +1822,12 @@ songhai_money_maker_slot = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				custom_trigger_tooltip = {
-					tooltip = son_own_develop_clothes_and_salt_ct
 					OR = {
 						region = sahel_region
 						region = niger_region
 						region = guinea_region
 					}
-				}
+				
 				development = 10
 				trade_goods = salt
 				value = 3
