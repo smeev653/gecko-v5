@@ -24,7 +24,7 @@ aragon_integration_slot_4 = {
 						province_id = 220
 					}
 					OR = {
-						NOT = { has_building = marketplace }
+						NOT = { X_has_latest_building_trigger = { builder = ROOT trade = yes } }
 						NOT = { owned_by = ROOT }
 					}
 				}
@@ -44,11 +44,11 @@ aragon_integration_slot_4 = {
 				}
 			}
 			213 = {
-				has_building = marketplace
+				X_has_latest_building_trigger = { builder = ROOT trade = yes }
 				owned_by = ROOT
 			}
 			220 = {
-				has_building = marketplace
+				X_has_latest_building_trigger = { builder = ROOT trade = yes }
 				owned_by = ROOT
 			}
 		}
@@ -92,7 +92,7 @@ aragon_integration_slot_4 = {
 					has_dlc = "Dharma"
 				}
 				220 = {
-					OR = { 
+					OR = {
 						province_has_center_of_trade_of_level = 3
 						development = 20
 					}
