@@ -3486,7 +3486,7 @@ picture = COURT_eventPicture
 								region = niger_region
 								NOT = { has_province_modifier = subsaharan_buildings }
 							}
-								add_province_modifier = {
+								add_permanent_province_modifier = {
 									name = subsaharan_buildings
 									duration = -1
 									#hidden = yes
@@ -3500,7 +3500,7 @@ picture = COURT_eventPicture
 								region = guinea_region
 								NOT = { has_province_modifier = subsaharan_buildings }
 							}
-								add_province_modifier = {
+								add_permanent_province_modifier = {
 									name = subsaharan_buildings
 									duration = -1
 									#hidden = yes
@@ -3523,7 +3523,7 @@ picture = COURT_eventPicture
 		hidden_effect = {
 			set_country_flag = subsaharan_buildings
 			sahel_region = {
-				every_province = {
+				every_owned_province = {
 							limit = {
 								has_province_modifier = subsaharan_buildings 
 							}
@@ -3532,7 +3532,7 @@ picture = COURT_eventPicture
 						}
 			}
 			niger_region= {
-				every_province = {
+				every_owned_province = {
 							limit = {
 								has_province_modifier = subsaharan_buildings 
 							}
@@ -3541,7 +3541,7 @@ picture = COURT_eventPicture
 						}
 			}	
 			guinea_region = {
-				every_province = {
+				every_owned_province = {
 							limit = {
 								has_province_modifier = subsaharan_buildings 
 							}

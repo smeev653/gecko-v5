@@ -417,6 +417,12 @@ gc_morocco_1 = {
 				name = conquest_of_benin_mor
 				duration = 7300
 			}
+			hidden_effect = {
+				country_event = {
+					id = gecko.45
+				}
+			}
+			custom_tooltip = remove_subsaharan_buildings
 		}
 	}
 }
