@@ -12,7 +12,7 @@ silk_road_empire = { #tier 1
 		global_trade_power = 0.25
 		trade_range_modifier = 0.50
 		#movement_speed = 0.20	
-		governing_capacity = 100
+		governing_capacity = 150
 		fort_maintenance_modifier = -0.2
 		
 	}
@@ -47,6 +47,7 @@ mughal_government = {
 		infantry_power = 0.10
 		tolerance_heathen = 3
 		vassal_income = 0.33
+		governing_capacity = 150
 	}
 	
 	conditional = {
@@ -137,6 +138,7 @@ empire_of_hungary_reform = {
 		prestige = 1
 		devotion = 1
 		land_morale = 0.1
+		governing_capacity = 150
 	}
 	allow_normal_conversion = yes
 	fixed_rank = 3
@@ -237,7 +239,7 @@ gc_french_empire = { #tier 1
 		artillery_fire = 0.5
 		leader_land_fire = 1
 	    army_tradition = 0.25
-		governing_capacity = 250
+		governing_capacity = 150
 		vassal_income = 0.1
 	}
 	allow_normal_conversion = yes

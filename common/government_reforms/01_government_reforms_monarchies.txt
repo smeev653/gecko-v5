@@ -134,6 +134,7 @@ austrian_archduchy_reform = {
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
+		governing_capacity = 150
 	}
 }
 
@@ -633,7 +634,7 @@ english_monarchy = {
 	legacy_equivalent = english_monarchy_legacy
 	start_territory_to_estates = 0.3
 	modifiers = {
-		governing_capacity = 50
+		governing_capacity = 150
 		legitimacy = 0.5
 		global_unrest = -1
 		max_absolutism = -30
@@ -792,6 +793,7 @@ austrian_dual_monarchy = {
 		global_unrest = -2
 		monarch_diplomatic_power = 2
 		promote_culture_cost = -0.33
+		governing_capacity = 150
 	}
 }
 
@@ -910,7 +912,7 @@ mamluk_government = {
 		monarch_admin_power = 2
 		same_culture_advisor_cost = -0.15
 		promote_culture_cost = -0.5
-		governing_capacity = 50
+		governing_capacity = 150
 		nobles_influence_modifier = 0.1
 	}
 
