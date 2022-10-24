@@ -17,11 +17,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = PR2 }
-			OR = {
-				tag = YAO
-				tag = MAL
-				tag = MOR
-			}
+			tag = YAO
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
