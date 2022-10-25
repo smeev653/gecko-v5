@@ -305,6 +305,7 @@ spy_ideas = {
 
 	efficient_spies = {
 		fabricate_claims_cost = -0.25
+		can_fabricate_for_vassals = yes
 	}	
 	state_propaganda = {
 		curia_powers_cost = -0.25
@@ -778,6 +779,7 @@ quality_ideas = {
 	}
 	quality_education = {
 		army_tradition = 0.5
+	
 	}
 	finest_of_horses = {
 		drill_gain_modifier = 0.33
