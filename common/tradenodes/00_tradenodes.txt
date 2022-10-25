@@ -1343,59 +1343,6 @@ carribean_trade = {
 		830 2807 4609 4610 4611 #maracaibo_area
 	}
 }
-tunis = {
-	location = 341
-	color = {
-		110 66 12 
-	}
-	outgoing = {
-		name = "sevilla"
-		path = {
-			340 339 1301 1294 1293 
-		}
-		control = {
-			2950.000000 1288.000000 2857.500000 1284.000000 2777.500000 1247.500000
-		}
-	}
-	outgoing = {
-		name = "genua"
-		path = {
-			1302 1300 1297 
-		}
-		control = {
-			2971.500000 1288.000000 2967.000000 1344.000000 
-		}
-			
-	}
-	outgoing = {
-		name = "ragusa"
-		path = {
-			1305 1307 322 317 1320 
-		}
-		control = {
-			3032.5000000 1257.500000 3168.000000 1246.500000 3203.000000 1268.000000 3204.000000 1316.000000 #smeev mod
-		}
-	}
-	members = {
-		347 1110 2470 #southern_morocco_area
-		348 2464 2466 4568 #sus_area
-		342 345 2469 4564 #western_morocco_area
-		343 344 2467 2468 #marrekesh_area
-		334 335 1751 4563 4561 #northern_morocco_area
-		346 349 2460 #tafilalt_area
-		2459 2462 2463 #hautes_plaines_area
-		339 340 1882 #kabylia_area
-		337 2461 338 #barbary_coast_area
-		336 2465 4562 #algiers_area
-		350 351 2458 #ouled_nail_area
-		352 2450 2456 2457 2472 #north_saharan_area
-		353 2453 2954 #djerba_area
-		341 2454 2455 2473 4566 #tunisia_area
-		354 2451 2452 355 #tripolitania_area
-		2448 2449 4567 5825 5826 #fezzan_area
-		5814 5815 5813 #pr_africa_area_7
-	}
-}
 
 genua = {
 	location = 109
@@ -1453,6 +1400,16 @@ genua = {
 			2944.000 1432.000 2943.000 1445.000 2948.500 1469.000 
 		}
 	}
+	outgoing = {
+		name = "tunis"
+		path = {
+			1302 1300 1297 
+		}
+		control = {
+			 2967.000000 1344.000000 2971.500000 1288.000000
+		}
+			
+	}
 	members = {
 		104 1862 4740 6078 105 #lombardy_area
 		115 116 2978 2980 6047 #tuscany_area
@@ -1476,6 +1433,52 @@ genua = {
 		136 137 4753 4754 #east_adriatic_coast_area
 	}
 }
+tunis = {
+	location = 341
+	color = {
+		110 66 12 
+	}
+	outgoing = {
+		name = "sevilla"
+		path = {
+			340 339 1301 1294 1293 
+		}
+		control = {
+			2950.000000 1288.000000 2857.500000 1284.000000 2777.500000 1247.500000
+		}
+	}
+	
+	outgoing = {
+		name = "ragusa"
+		path = {
+			1305 1307 322 317 1320 
+		}
+		control = {
+			3032.5000000 1257.500000 3168.000000 1246.500000 3203.000000 1268.000000 3204.000000 1316.000000 #smeev mod
+		}
+	}
+	members = {
+		347 1110 2470 #southern_morocco_area
+		348 2464 2466 4568 #sus_area
+		342 345 2469 4564 #western_morocco_area
+		343 344 2467 2468 #marrekesh_area
+		334 335 1751 4563 4561 #northern_morocco_area
+		346 349 2460 #tafilalt_area
+		2459 2462 2463 #hautes_plaines_area
+		339 340 1882 #kabylia_area
+		337 2461 338 #barbary_coast_area
+		336 2465 4562 #algiers_area
+		350 351 2458 #ouled_nail_area
+		352 2450 2456 2457 2472 #north_saharan_area
+		353 2453 2954 #djerba_area
+		341 2454 2455 2473 4566 #tunisia_area
+		354 2451 2452 355 #tripolitania_area
+		2448 2449 4567 5825 5826 #fezzan_area
+		5814 5815 5813 #pr_africa_area_7
+	}
+}
+
+
 
 
 gc_south_germany_tradenode = {

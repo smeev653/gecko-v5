@@ -117,6 +117,14 @@ gc_morocco_1 = {
 				name = mor_saharan_trade
 				duration = 7300
 			}
+			1132 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 30
+					key = STRONG_MERCHANTS
+				}
+			}
 		}
 	}
 	gc_mor_timbuktu = {
@@ -526,7 +534,7 @@ gc_morocco_2 = {
 			custom_tooltip = mor_own_develop_clothes_and_salt_ct
 			hidden_effect = {
 				add_country_modifier = {
-					name = son_salt_cloth_trader
+					name = gc_mor_sugar_cloth_trader
 					duration = 9125
 				}
 			}
@@ -766,7 +774,7 @@ gc_morocco_3 = {
 			OR = {
 				area = sicily_area
 				area = western_sicily_area
-				area =corsica_sardinia_area
+				area = corsica_sardinia_area
 			}
 		}
 		
@@ -788,30 +796,6 @@ gc_morocco_3 = {
 		}
 		
 		effect = {
-			north_atlantic_region = {
-				discover_country = ROOT
-			}
-			
-			370 = {
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT	}
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-					discover_country = ROOT
-				}
-			}
-			371 = {
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT	}
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-					discover_country = ROOT
-				}
-			}
 			naples_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -835,14 +819,15 @@ gc_morocco_3 = {
 			}
 		}
 	}
-	gc_mor_iceland = {
-		icon = mission_raid_on_iceland
+	gc_mor_italy_conquest = {
+		icon = renaissance_city
 		required_missions = { gc_mor_pirates }
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 370
-				province_id = 371
+				area = naples_area
+				area = calabria_area
+				area = apulia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -850,39 +835,20 @@ gc_morocco_3 = {
 		}
 		
 		trigger = {
-			OR = {
-				370 = {
-					devastation = 25
-					owner = {
-						war_with = ROOT
-					}
-				}
-				AND = {
-					owns_or_non_sovereign_subject_of = 370
-					owns_or_non_sovereign_subject_of = 371
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8 # out of 10
+				OR = {
+					area = naples_area
+					area = calabria_area
+					area = apulia_area
 				}
 			}
 		}
 		
 		effect = {
 			add_yearly_sailors = 20
-			kingdom_of_the_isles_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			subarctic_islands_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-				discover_country = ROOT
-			}
 			add_country_modifier = {
-				name = "mor_north_sea_corsairs"
+				name = "gc_mor_italy"
 				duration = -1
 			}
 		}
@@ -1057,10 +1023,7 @@ gc_morocco_5 = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "mor_tunis_conquest"
-				duration = 7300
-			}
+			create_explorer = { tradition = 60 }
 		}
 	}
 	gc_mor_brazil = {
@@ -1068,7 +1031,13 @@ gc_morocco_5 = {
 		required_missions = { gc_mor_canaries }
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			OR = {
+				colonial_region = colonial_brazil
+				colonial_region = colonial_colombia
+				colonial_region = colonial_the_carribean
+				colonial_region = colonial_mexico
+				colonial_region = colonial_la_plata
+			}	
 			OR = {
 				is_city = no
 				NOT = { owned_by = ROOT }
@@ -1077,23 +1046,11 @@ gc_morocco_5 = {
 		}
 		
 		trigger = {
-			if = {
-				limit = {
-					is_random_new_world = no
-				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_brazil
-					is_city = yes
-				}
-			}
-			else = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
 					continent = new_world
 					is_city = yes
 				}
-			}
 		}
 		
 		effect = {
@@ -1109,8 +1066,11 @@ gc_morocco_5 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				colonial_region = colonial_the_carribean
+				colonial_region = colonial_brazil
 				colonial_region = colonial_colombia
+				colonial_region = colonial_the_carribean
+				colonial_region = colonial_mexico
+				colonial_region = colonial_la_plata
 			}
 			OR = {
 				is_city = no
@@ -1120,20 +1080,6 @@ gc_morocco_5 = {
 		}
 		
 		trigger = {
-			if = {
-				limit = {
-					is_random_new_world = no
-				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_the_carribean
-					is_city = yes
-				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_colombia
-					is_city = yes
-				}
 				custom_trigger_tooltip = {
 					tooltip = mor_big_colony.tooltip
 					any_country = {
@@ -1142,21 +1088,10 @@ gc_morocco_5 = {
 						num_of_cities = 25
 					}
 				}
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = mor_big_colony.tooltip
-					any_country = {
-						is_subject_of = ROOT
-						is_subject_of_type = colony
-						num_of_cities = 25
-					}
-				}
-			}
 		}
 		
 		effect = {
-			add_mercantilism = 3
+			add_mercantilism = 10
 			add_country_modifier = {
 				name = "mor_new_world_power"
 				duration = -1

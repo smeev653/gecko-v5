@@ -3180,7 +3180,8 @@ mor_colonized_brazil = {
 }
 
 mor_new_world_power = {
-	global_tariffs = 0.05
+	global_tariffs = 0.1
+	heavy_ship_power = 0.1
 }
 
 # Golden Century Spanish modifiers
@@ -6330,7 +6331,7 @@ son_salt_cloth_trader = {	#Has also a province modifier for all cloth and salt p
 }
 
 #Province modifier
-son_salt_cloth_production = {
+gc_mor_sugar_cloth_production = {
 	trade_goods_size = 1
 }
 
