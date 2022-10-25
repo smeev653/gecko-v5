@@ -365,10 +365,7 @@ MAM_missions_1 = {
 		}
 		effect = {
 			add_absolutism = 25
-			add_country_modifier = {
-				name = mamluks_a_new_egyptian_golden_age_modifier
-				duration = 7300
-			}
+			reset_golden_age = yes
 		}
 	}
 	
@@ -712,12 +709,10 @@ MAM_missions_2 = {
 		required_missions = { }
 		position = 5
 		provinces_to_highlight = {
-			OR = {
-				area = samtskhe_area
-				area = imereti_area
-				area = kartli_kakheti_area 
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				AND = {
+					trade_goods = slaves
+					NOT = { owned_by = ROOT }
+				}
 		}
 		trigger = {
 			trade_goods_produced_amount = {
@@ -764,14 +759,6 @@ MAM_missions_2 = {
 			stability = 2
 		}
 		effect = {
-			if = {
-				limit = {
-					religion_group = muslim
-					NOT = { has_reform = iqta }
-				}
-				change_government = monarchy
-				add_government_reform = iqta
-			}
 			add_country_modifier = {
 				name = mamluks_the_mamluk_question_1
 				duration = 9125
@@ -779,19 +766,6 @@ MAM_missions_2 = {
 			add_country_modifier = {
 				name = mamluks_the_mamluk_question_2
 				duration = -1
-			}
-			if = {
-				limit = {
-					normal_or_historical_nations = yes
-					was_never_end_game_tag_trigger = yes
-					NOT = { tag = HLR }
-					NOT = { tag = PAP }
-					NOT = { tag = TUR }
-					NOT = { tag = ARB }
-					NOT = { has_reform = celestial_empire }
-					primary_culture = al_misr_arabic
-				}
-				custom_tooltip = MAM_CAN_FORM_EGYPT_EARLY_TT
 			}
 		}
 	}
@@ -1021,7 +995,6 @@ MAM_missions_3 = {
 		required_missions = { mamluks_restore_baghdad }
 		position = 7
 		trigger = {
-			NOT = { mission_completed = mamluks_the_mamluk_question }
 			if = {
 				limit = {
 					has_dlc = "Common Sense"
