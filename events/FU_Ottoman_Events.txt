@@ -136,7 +136,7 @@ country_event = { #Classical Era of the Ottoman Empire
 		
 		add_country_modifier = {
 			name = tur_classical_era_of_the_ottoman_empire_modifier
-			duration = 7300 
+			duration = 14600
 		}
 		mashriq_region = { 
 			limit = { 
@@ -152,13 +152,6 @@ country_event = { #Classical Era of the Ottoman Empire
 			}
 			add_permanent_claim = ROOT 
 		}
-		#arabia_region = { 
-		#	limit = { 
-		#		NOT = { owned_by = ROOT } 
-		#		NOT = { is_core = ROOT } 
-		#	}
-		#	add_permanent_claim = ROOT 
-		#}
 	}
 }
 

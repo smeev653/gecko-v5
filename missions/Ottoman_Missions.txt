@@ -1260,7 +1260,9 @@ ottoman_missions_2 = {
 		}
 		effect = { 
 			country_event = { id = FU_Ottoman_Events.3 } 
-			add_adm_power = 100
+			###X###
+			X_improve_ruler_stats_effect = { adm = yes adm_amount = 1 }
+			#######
 		}
 	}
 	
@@ -1278,6 +1280,9 @@ ottoman_missions_2 = {
 		} 
 		effect = { 
 			country_event = { id = FU_Ottoman_Events.4 } 
+			###X###
+			X_improve_ruler_stats_effect = { all = yes all_amount = 1 }
+			#######
 			unlock_merc_company = {
 				merc_company = merc_mesopotamian_mamluks
 			}
@@ -2112,6 +2117,9 @@ ottoman_missions_3 = {
 				type = mission_rewards_power_projection
 				amount = 50
 			}
+			###X###
+			X_improve_ruler_stats_effect = { dip = yes dip_amount = 1 }
+			#######
 		}
 	}
 	

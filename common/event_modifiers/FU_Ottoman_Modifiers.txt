@@ -29,19 +29,19 @@ tur_embellishment_queen_cities_modifier = {
 	church_loyalty_modifier = 0.05
 }
 tur_oriental_council_state_modifier1 = {
-	reform_progress_growth = 0.0125
+	reform_progress_growth = 0.01
 }
 tur_oriental_council_state_modifier2 = {
 	reform_progress_growth = 0.025
 }
 tur_oriental_council_state_modifier3 = {
-	reform_progress_growth = 0.5
+	reform_progress_growth = 0.05
 }
 tur_oriental_council_state_modifier4 = {
-	reform_progress_growth = 0.75
+	reform_progress_growth = 0.075
 }
 tur_oriental_council_state_modifier5 = {
-	reform_progress_growth = 0.0075
+	reform_progress_growth = 0.1
 }
 tur_oriental_council_state_modifier6 = {
 	reform_progress_growth = 0.125
