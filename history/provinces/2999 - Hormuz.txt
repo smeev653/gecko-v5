@@ -1,8 +1,8 @@
 #2999 - Hormuz
 
-owner = KRM
-controller = KRM
-add_core = KRM
+owner = ORM
+controller = ORM
+add_core = ORM
 capital = "Hormuz"
 culture = gulf_arabic
 religion = ibadi
