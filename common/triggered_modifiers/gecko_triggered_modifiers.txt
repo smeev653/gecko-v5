@@ -425,7 +425,7 @@ African_Slave_Trade = {
 
 	trigger = {
 		num_of_owned_provinces_with = {
-			value = 10
+			value = 5
 			continent = africa
 			trade_goods = slaves
 		}		
