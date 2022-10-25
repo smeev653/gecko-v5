@@ -3704,3 +3704,60 @@ country_event = {
 		add_mil_power = -100
 	}
 }
+
+country_event = {
+    id = gecko.49
+    title = gecko.49.t
+    desc = gecko.49.d
+picture = COURT_eventPicture
+	
+    is_triggered_only = yes
+	hidden = yes
+    option = {
+		hidden_effect = {
+			set_country_flag = start_autonomy
+				ROOT = {
+						every_province = {
+							limit = {
+								area = syria_area
+							}
+								set_local_autonomy = 50
+						}
+				}
+			
+				ROOT = {
+						every_province = {
+							limit = {
+								area = aleppo_area
+							}
+								set_local_autonomy = 50
+						}
+				}
+				
+				ROOT = {
+						every_province = {
+							limit = {
+								area = jaghbub_area
+							}
+								set_local_autonomy = 50
+						}
+				}
+				ROOT = {
+						every_province = {
+							limit = {
+								area = al_wahat_area
+							}
+								set_local_autonomy = 50
+						}
+				}
+				ROOT = {
+						every_province = {
+							limit = {
+								area = flanders_area
+							}
+								set_local_autonomy = 50
+						}
+				}
+		}
+	}
+}
