@@ -39,25 +39,6 @@ MAM_missions_1 = {
 		effect = {
 			add_splendor = 100
 			if = {
-				limit = {
-					361 = {
-						NOT = { province_has_center_of_trade_of_level = 3 }
-					}
-				}
-				361 = {
-					if = {
-						limit = {
-							NOT = { province_has_center_of_trade_of_level = 1 }
-						}
-						center_of_trade = 3
-					}
-					else_if = {
-						limit = {
-							NOT = { province_has_center_of_trade_of_level = 3 }
-						}
-						add_center_of_trade_level = 2
-					}
-				}
 				add_years_of_owned_provinces_production_income = {
 					years = 5
 					trigger = {

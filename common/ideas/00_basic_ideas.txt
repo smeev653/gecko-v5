@@ -224,7 +224,7 @@ innovativeness_ideas = {
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
-		innovativeness_gain = 1
+		innovativeness_gain = 0.5
 	}
 	empiricism = {
 		reform_progress_growth = 0.25
