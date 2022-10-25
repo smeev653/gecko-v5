@@ -13413,7 +13413,7 @@ maidan-e_naqsh-e_jahan = {
 			factor = 350
 		}
 		province_modifiers = {
-		trade_goods_size = 5
+		trade_goods_size = 1
 		}
 		area_modifier = {
 		}
@@ -13432,7 +13432,7 @@ maidan-e_naqsh-e_jahan = {
 			factor = 750
 		}
 		province_modifiers = {
-		trade_goods_size = 5
+		trade_goods_size = 2
 		}
 		area_modifier = {
 		}
