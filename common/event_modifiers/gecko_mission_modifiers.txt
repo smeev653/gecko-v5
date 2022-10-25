@@ -558,7 +558,7 @@ gc_mor_sugar_cloth_trader = {	#Has also a province modifier for all cloth and sa
 }
 
 gc_mor_sugar_cloth_production = {
-	trade_goods_size = 1
+	trade_goods_size = 0.5
 	local_development_cost = -0.05
 }
 gc_mor_italy = {

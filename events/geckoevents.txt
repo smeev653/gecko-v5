@@ -3631,23 +3631,23 @@ country_event = {
 	option = {
 		if = {
 			limit = {
-				has_country_modifier = son_salt_cloth_trader
+				has_country_modifier = gc_mor_sugar_cloth_trader
 			}
 			every_owned_province = {
 				limit = {
-					has_province_modifier = son_salt_cloth_production
+					has_province_modifier = gc_mor_sugar_cloth_production
 					NOT = { trade_goods = cloth }
 					NOT = { trade_goods = sugar }
 				}
-				remove_province_modifier = son_salt_cloth_production
+				remove_province_modifier = gc_mor_sugar_cloth_production
 			}
 		}
 		else = {
 			every_owned_province = {
 				limit = {
-					has_province_modifier = son_salt_cloth_production
+					has_province_modifier = gc_mor_sugar_cloth_production
 				}
-				remove_province_modifier = son_salt_cloth_production
+				remove_province_modifier = gc_mor_sugar_cloth_production
 			}
 		}
 

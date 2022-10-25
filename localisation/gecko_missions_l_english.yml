@@ -431,10 +431,11 @@ gc_mor_flagship_title:0 "Launch a Flagship"
 gc_mor_flagship_desc:0 ""
 gc_mor_sugar_cloth_production:0 "Accelerated Production"
 gc_mor_sugar_cloth_production_tt:0 "Lasts until the country modifier §YSalt and Cloth Main Production§! expires."
-gc_mor_sugar_cloth_trader:0 "Salt and Cloth Main Production"
+gc_mor_sugar_cloth_trader:0 "Sugar and Cloth Main Production"
 desc_gc_mor_cloth_trader:0 "We have focused a great portion of our manufactories and workshops in the production of salt and cloth, which brings us a significant advantage in the trade nodes."
 gc_mor_italy_conquest_title:0 "Italian Conquest"
 gc_mor_italy_conquest_desc:0 ""
+gc_mor_italy:0 "Western Arms"
 gc_control_of_the_mediterranean_slave_trade:0 "Control of the Mediterranean Slave Trade"
 
  #qq
