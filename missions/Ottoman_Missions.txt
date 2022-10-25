@@ -1325,7 +1325,17 @@ ottoman_missions_2 = {
 					duration = 7300
 				}
 			}
-				361 = { change_trade_goods = cloves } 
+				361 = {
+					if = {
+						limit = {
+							NOT = {trade_goods = cloves}
+						}	
+						change_trade_goods = cloves
+					} 
+					else = {
+						add_base_production = 5
+					}
+				}	
 				add_country_modifier = { 
 					name = tur_monopoly_spice_trade_modifier
 					duration = 9125 
