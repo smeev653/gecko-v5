@@ -3,7 +3,7 @@ tur_united_beyliks_modifier = {
 	nobles_loyalty_modifier = 0.1 
 }
 tur_protection_from_raids_modifier = {
-	local_monthly_devastation = -0.05
+	local_monthly_devastation = -0.5
 	local_prosperity_growth = 1 
 }
 tur_classical_era_of_the_ottoman_empire_modifier = {
