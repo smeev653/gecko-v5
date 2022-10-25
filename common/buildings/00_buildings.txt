@@ -231,8 +231,8 @@ shipyard = {
 	}
 	modifier = {
 		naval_forcelimit = 2
-		ship_recruit_speed = -0.25
-		local_ship_repair = 0.25
+		ship_recruit_speed = -0.5
+		local_ship_repair = 0.5
 		#land_forcelimit = 0.5
 	}
 	on_built = {
@@ -1624,16 +1624,71 @@ grand_shipyard = {
 	cost = 300
 	time = 12
 
-	make_obsolete = shipyard
 
 	build_trigger = {
 		has_port = yes
+		owner = {
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_subjects_with = {
+							value = 1
+							OR = {
+								has_building = grand_shipyard
+								has_construction = grand_shipyard
+							}
+						}
+					}
+				}
+			}
+			else = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 1
+						OR = {
+							has_building = grand_shipyard
+							has_construction = grand_shipyard
+						}
+					}
+				}
+			}
+		}
+	}
+	keep_trigger = {
+		owner = {
+			if = {
+				limit = { is_subject = yes }
+				overlord = {
+					NOT = {
+						num_of_provinces_owned_or_owned_by_subjects_with = {
+							value = 2
+							OR = {
+								has_building =  grand_shipyard
+								has_construction =  grand_shipyard
+							}
+						}
+					}
+				}
+			}
+			else = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 2
+						OR = {
+							has_building =  grand_shipyard
+							has_construction =  grand_shipyard
+						}
+					}
+				}
+			}
+		}
 	}
 	modifier = {
-		naval_forcelimit = 4
-		ship_recruit_speed = -0.50
-		local_ship_repair = 0.50
-		#land_forcelimit = 1
+		global_ship_cost = -0.1
+		ship_recruit_speed = -0.75
+		local_ship_repair = 0.75
+		navy_tradition = 1
 	}
 	on_built = {
  
