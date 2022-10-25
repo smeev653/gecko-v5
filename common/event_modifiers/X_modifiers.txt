@@ -4,42 +4,6 @@
 X_flatland_fort_bonus_pmod = {
 	local_defender_dice_roll_bonus = 1
 }
-X_local_building_development_tier_1_pmod = {
-	local_development_cost = -0.01
-}
-X_local_building_development_tier_2_pmod = {
-	local_development_cost = -0.02
-}
-X_local_building_development_tier_3_pmod = {
-	local_development_cost = -0.03
-}
-X_local_building_development_tier_4_pmod = {
-	local_development_cost = -0.04
-}
-X_local_building_development_tier_5_pmod = {
-	local_development_cost = -0.05
-}
-X_local_building_development_tier_6_pmod = {
-	local_development_cost = -0.06
-}
-X_local_building_development_tier_7_pmod = {
-	local_development_cost = -0.07
-}
-X_local_building_development_tier_8_pmod = {
-	local_development_cost = -0.08
-}
-X_local_building_development_tier_9_pmod = {
-	local_development_cost = -0.09
-}
-X_local_building_development_tier_10_pmod = {
-	local_development_cost = -0.10
-}
-X_local_building_development_tier_11_pmod = {
-	local_development_cost = -0.11
-}
-X_local_building_development_tier_12_pmod = {
-	local_development_cost = -0.12
-}
 ########################################
 # Estate Modifiers
 ########################################
@@ -227,7 +191,7 @@ X_CRI_gateway_protected_pmod = {
 }
 
 X_CRI_rights_of_the_khan_cmod = {
-	imperial_mandate = 0.05
+	imperial_mandate = 0.1
 	meritocracy = 0.25
 }
 
