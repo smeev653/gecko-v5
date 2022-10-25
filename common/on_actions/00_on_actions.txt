@@ -9,15 +9,27 @@ on_startup = {
 		muslim_school_events.20 #Pick School
 		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 		flavor_got.1 #Event for Gotland to select their mission tree
+		
 	}
 	if = {
 		limit = {
 			tag = YAO
 			NOT = { is_year = 1450 }
-				NOT = { has_country_flag = subsahara_buildings }
+				NOT = { has_country_flag = subsaharan_buildings }
 		}
 		country_event = { 
 			id = gecko.44
+			days = 1
+		}
+	}
+	if = {
+		limit = {
+			tag = MAM
+			NOT = { is_year = 1450 }
+			NOT = { has_country_flag = start_autonomy }
+		}
+		country_event = { 
+			id = gecko.49
 			days = 1
 		}
 	}	

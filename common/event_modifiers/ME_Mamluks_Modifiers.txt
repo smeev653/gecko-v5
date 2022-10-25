@@ -16,7 +16,7 @@ mamluks_library_of_alexandria_modifier = {
 }
 
 mamluks_lighthouse_of_alexandria_modifier = {
-	#admiral_skill_gain_modifier = 0.01
+	navy_tradition = 1
 }
 
 mamluks_the_nile_breadbasket_province_modifier = {
@@ -115,7 +115,7 @@ mamluks_the_mamluk_question_1 = {
 }
 
 mamluks_the_mamluk_question_2 = {
-	max_absolutism = 15
+	infantry_power = 0.1
 }
 
 mamluks_trans_saharan_trade_modifier = {
