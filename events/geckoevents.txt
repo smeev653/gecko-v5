@@ -3656,3 +3656,51 @@ country_event = {
 		}
 	}
 }
+
+#Capitulation of the Berber
+country_event = {
+	id = gecko.48
+	title = gecko.48.t
+	desc = gecko.48.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		341 = { owned_by = TUN }
+		tag = MOR
+	}
+	option = {
+		name = gecko.48.2.a
+		custom_tooltip = gecko.48_2_tt
+		hidden_effect = {
+			white_peace = TUN
+			every_province = {
+				limit = { owned_by = TUN }
+				cede_province = ROOT
+			}
+		}
+		add_adm_power = 250
+		add_mil_power = -100
+	}
+	option = {
+		name = gecko.48.2.b
+		hidden_effect = {
+			white_peace = TUN
+		}
+		create_subject = {
+			subject_type = vassal
+			subject = TUN
+		}
+		TUN = { remove_historical_rival = ROOT }
+		remove_historical_rival = TUN
+		tunisia_area = {
+			limit = { owned_by = TUN }
+			cede_province = ROOT
+		}
+		tunisia_area = {
+			add_territorial_core = ROOT 
+		}
+		add_dip_power = -200
+		add_mil_power = -100
+	}
+}

@@ -993,6 +993,10 @@ on_siege_lost_province =  {
 		limit = { province_id = 310 }
 		FROM = { country_event = { id = X_RUS_events.2 } }
 	}
+	if = {
+		limit = { province_id = 341 }
+		FROM = { country_event = { id = gecko.48 } }
+	}
 	#######
 	events = {
 		war_of_the_roses.10		# Lancaster Stronghold

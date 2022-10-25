@@ -6331,9 +6331,10 @@ son_salt_cloth_trader = {	#Has also a province modifier for all cloth and salt p
 }
 
 #Province modifier
-gc_mor_sugar_cloth_production = {
+son_salt_cloth_production = {
 	trade_goods_size = 1
 }
+
 
 #Country modifier
 son_tolerance_of_old_traditions = {

@@ -561,8 +561,12 @@ gc_mor_sugar_cloth_production = {
 	trade_goods_size = 1
 	local_development_cost = -0.05
 }
-
 gc_mor_italy = {
 	global_manpower_modifier = 0.1
 	artillery_fire = 0.5
+}
+
+gc_control_of_the_mediterranean_slave_trade = {
+	trade_goods_size = 1
+	local_development_cost = -0.1
 }
