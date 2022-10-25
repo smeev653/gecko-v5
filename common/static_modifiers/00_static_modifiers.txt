@@ -262,7 +262,7 @@ development = {
 }
 
 development_scaled = {
-	local_development_cost = 0.02
+	local_development_cost = 0.03
 }
 
 capital_city = {
@@ -1706,7 +1706,7 @@ train_horsemanship_modifier = {
 }
 
 promote_culture_in_government_modifier = {
-	all_power_cost = -0.05
+	all_power_cost = -0.025
 }
 
 seize_clerical_holdings_modifier = {
@@ -1846,7 +1846,7 @@ revolutionary_guard_regiment = {
 }
 
 innovativeness = {
-	all_power_cost	= -0.1
+	all_power_cost	= -0.05
 	army_tradition_decay = -0.01
 	navy_tradition_decay = -0.01
 }
