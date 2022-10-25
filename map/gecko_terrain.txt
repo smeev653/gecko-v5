@@ -398,7 +398,7 @@ categories =  {
 			
 			5777 5778
 			6135 6140 432 4334 #gc persia
-			4563 1127 335 #gc morocco
+			1127 226 1751 #gc morocco
 			1934 #gc italy
 			165 #gc switzerland
 			2410
@@ -685,8 +685,6 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			2797 4319 1231 1234 2322 1220 4033 #smeev nile provinces
 			6018 6022 6030 #aba new nile provinces
-			1751 #Sebtah
-			226 #Gibraltar
 			6114 6115 6116 #bunker mod merge
 			361
 			6127 6128 6129 6130 6132
@@ -694,6 +692,7 @@ categories =  {
 			6192 6195
 			381 #Ajloun
 			6117 # sis
+			4563 335 4561 #sale
 		}
 	}
 
@@ -743,7 +742,7 @@ categories =  {
 			2986 4391 #Italy & France
 			4406 4398 # Burma
 			4422 4436 4464 #Central India
-			4561 4566 4553 # new provinces 1.28
+			4566 4553 # new provinces 1.28
 			4701 4699 4780 # 1.30 Greece and Bulgaria
 			1798 1799 #smeev change
 			#405 #smeev change

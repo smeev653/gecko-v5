@@ -903,7 +903,6 @@ country_event = {
 				has_country_modifier = gecko_development
 			}	
     }
-	hidden = yes
     mean_time_to_happen = {
         months = 120
     }
@@ -3523,7 +3522,7 @@ picture = COURT_eventPicture
 		hidden_effect = {
 			set_country_flag = subsaharan_buildings
 			sahel_region = {
-				every_owned_province = {
+				every_province = {
 							limit = {
 								has_province_modifier = subsaharan_buildings 
 							}
@@ -3532,7 +3531,7 @@ picture = COURT_eventPicture
 						}
 			}
 			niger_region= {
-				every_owned_province = {
+				every_province = {
 							limit = {
 								has_province_modifier = subsaharan_buildings 
 							}
@@ -3541,7 +3540,7 @@ picture = COURT_eventPicture
 						}
 			}	
 			guinea_region = {
-				every_owned_province = {
+				every_province = {
 							limit = {
 								has_province_modifier = subsaharan_buildings 
 							}
@@ -3553,7 +3552,7 @@ picture = COURT_eventPicture
 	}
 }
 
-# Increase goods of all salt and cloth provinces
+# Increase goods of all sugar and cloth provinces
 country_event = {
 	id = gecko.46
 	title = none
@@ -3562,13 +3561,13 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		has_country_modifier = son_salt_cloth_trader
+		has_country_modifier = gc_mor_sugar_cloth_trader
 		any_owned_province = {
 			OR = {
 				trade_goods = cloth
 				trade_goods = sugar
 			}
-			NOT = { has_province_modifier = son_salt_cloth_production }
+			NOT = { has_province_modifier = gc_mor_sugar_cloth_production }
 		}
 	}
 
@@ -3583,12 +3582,12 @@ country_event = {
 					trade_goods = cloth
 					trade_goods = sugar
 				}
-				NOT = { has_province_modifier = son_salt_cloth_production }
+				NOT = { has_province_modifier = gc_mor_sugar_cloth_production }
 			}
 			add_province_modifier = {
-				name = son_salt_cloth_production
+				name = gc_mor_sugar_cloth_production
 				duration = -1
-				desc = son_salt_cloth_production_tt	#Remains until son_salt_cloth_trader expired
+				desc = gc_mor_sugar_cloth_production_tt	#Remains until son_salt_cloth_trader expired
 			}
 		}
 
@@ -3609,15 +3608,15 @@ country_event = {
 	trigger = {
 		OR = {
 			AND = {
-				NOT = { has_country_modifier = son_salt_cloth_trader }
+				NOT = { has_country_modifier = gc_mor_sugar_cloth_trader }
 				any_owned_province = {
-					has_province_modifier = son_salt_cloth_production
+					has_province_modifier = gc_mor_sugar_cloth_production
 				}
 			}
 			AND = {
-				has_country_modifier = son_salt_cloth_trader
+				has_country_modifier = gc_mor_sugar_cloth_trader
 				any_owned_province = {
-					has_province_modifier = son_salt_cloth_production
+					has_province_modifier = gc_mor_sugar_cloth_production
 					NOT = { trade_goods = cloth }
 					NOT = { trade_goods = sugar }
 				}
@@ -3632,28 +3631,76 @@ country_event = {
 	option = {
 		if = {
 			limit = {
-				has_country_modifier = son_salt_cloth_trader
+				has_country_modifier = gc_mor_sugar_cloth_trader
 			}
 			every_owned_province = {
 				limit = {
-					has_province_modifier = son_salt_cloth_production
+					has_province_modifier = gc_mor_sugar_cloth_production
 					NOT = { trade_goods = cloth }
 					NOT = { trade_goods = sugar }
 				}
-				remove_province_modifier = son_salt_cloth_production
+				remove_province_modifier = gc_mor_sugar_cloth_production
 			}
 		}
 		else = {
 			every_owned_province = {
 				limit = {
-					has_province_modifier = son_salt_cloth_production
+					has_province_modifier = gc_mor_sugar_cloth_production
 				}
-				remove_province_modifier = son_salt_cloth_production
+				remove_province_modifier = gc_mor_sugar_cloth_production
 			}
 		}
 
 		ai_chance = {
 			factor = 1
 		}
+	}
+}
+
+#Capitulation of the Berber
+country_event = {
+	id = gecko.48
+	title = gecko.48.t
+	desc = gecko.48.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		341 = { owned_by = TUN }
+		tag = MOR
+	}
+	option = {
+		name = gecko.48.2.a
+		custom_tooltip = gecko.48_2_tt
+		hidden_effect = {
+			white_peace = TUN
+			every_province = {
+				limit = { owned_by = TUN }
+				cede_province = ROOT
+			}
+		}
+		add_adm_power = 250
+		add_mil_power = -100
+	}
+	option = {
+		name = gecko.48.2.b
+		hidden_effect = {
+			white_peace = TUN
+		}
+		create_subject = {
+			subject_type = vassal
+			subject = TUN
+		}
+		TUN = { remove_historical_rival = ROOT }
+		remove_historical_rival = TUN
+		tunisia_area = {
+			limit = { owned_by = TUN }
+			cede_province = ROOT
+		}
+		tunisia_area = {
+			add_territorial_core = ROOT 
+		}
+		add_dip_power = -200
+		add_mil_power = -100
 	}
 }

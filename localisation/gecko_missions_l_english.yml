@@ -424,8 +424,19 @@ repulse_gank_bur_desc:0 ""
 
 #morocco
 
+gc_gc_mor_palace_title:0 "Develop Sugar and Cloth"
+gc_gc_mor_palace_desc:0 ""
+mor_own_develop_clothes_and_salt_ct:0 "[Root.GetName] gets '§YSugar and Cloth Main Production§!' for §Y25 years§!, giving the following effects:\nGlobal Trade Power: §G+15.0%§!\nEvery owned province which produces §YSugar§! or §YCloth§!:\nLocal Goods Produced: §G+0.5§! and \nLocal Development Cost: §G-5%§!"
 gc_mor_flagship_title:0 "Launch a Flagship"
 gc_mor_flagship_desc:0 ""
+gc_mor_sugar_cloth_production:0 "Accelerated Production"
+gc_mor_sugar_cloth_production_tt:0 "Lasts until the country modifier §YSalt and Cloth Main Production§! expires."
+gc_mor_sugar_cloth_trader:0 "Sugar and Cloth Main Production"
+desc_gc_mor_cloth_trader:0 "We have focused a great portion of our manufactories and workshops in the production of salt and cloth, which brings us a significant advantage in the trade nodes."
+gc_mor_italy_conquest_title:0 "Italian Conquest"
+gc_mor_italy_conquest_desc:0 ""
+gc_mor_italy:0 "Western Arms"
+gc_control_of_the_mediterranean_slave_trade:0 "Control of the Mediterranean Slave Trade"
 
  #qq
  PR_qar_missions4_reward:0 "Unlock Clergy Exploration Expeditions Estate Privilege"
@@ -449,7 +460,3 @@ gc_mor_flagship_desc:0 ""
  gc_emp_ven_aldine_monopoly_title:0 "Internal Investment"
  gc_emp_ven_aldine_monopoly_desc:0 ""
 
-#morocco
-gc_gc_mor_palace_title:0 "Develop Sugar and Cloth"
-gc_gc_mor_palace_desc:0 ""
-mor_own_develop_clothes_and_salt_ct:0 "[Root.GetName] gets '§YSugar and Cloth Main Production§!' for §Y25 years§!, giving the following effects:\nGlobal Trade Power: §G+15.0%§!\nEvery owned province which produces §YSugar§! or §YCloth§!:\nLocal Goods Produced: §G+1§!"

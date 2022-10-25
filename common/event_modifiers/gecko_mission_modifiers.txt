@@ -552,3 +552,21 @@ hsa_defensive_tactics_modifier = {
 hsa_war_minister_modifier = {
 	leader_land_fire = 1 
 }
+
+gc_mor_sugar_cloth_trader = {	#Has also a province modifier for all cloth and salt provinces attached to it
+	global_trade_power = 0.15
+}
+
+gc_mor_sugar_cloth_production = {
+	trade_goods_size = 0.5
+	local_development_cost = -0.05
+}
+gc_mor_italy = {
+	global_manpower_modifier = 0.1
+	artillery_fire = 0.5
+}
+
+gc_control_of_the_mediterranean_slave_trade = {
+	trade_goods_size = 1
+	local_development_cost = -0.1
+}
