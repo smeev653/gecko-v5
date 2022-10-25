@@ -140,7 +140,7 @@ technology = { #Wharf
 	year = 1544
 	
 	range					= 	100
-
+	grand_shipyard = yes
 	wharf = yes
 
 }
@@ -292,7 +292,7 @@ technology = { #The Archipelago Frigate
 	year = 1715
 	
 	
-	grand_shipyard = yes 
+	#grand_shipyard = yes 
 
 	
 	trade_efficiency 		= 	0.01
