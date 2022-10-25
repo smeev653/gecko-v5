@@ -259,7 +259,7 @@ X_VEN_slot_1 = {
 			OR {
 				AND = {
 					province_id = 142
-					has_fort_building_trigger = no
+					NOT = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
 				}
 				AND = {
 					is_capital_of = ROOT
@@ -283,7 +283,7 @@ X_VEN_slot_1 = {
 			}
 		}
 		trigger = {
-			142 = { has_fort_building_trigger = yes }
+			142 = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
 			if = {
 				limit = { exists = TUR }
 				num_of_admirals = 1
@@ -331,8 +331,8 @@ X_VEN_slot_1 = {
 					province_id = 142
 					OR = {
 						NOT = { owned_by = ROOT }
-						has_shipyard_building_trigger = no
-						has_fort_building_trigger = no
+						NOT = { X_has_latest_building_trigger = { navy_forcelimit = yes builder = ROOT } }
+						NOT = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
 						NOT = { development = 10 }
 					}
 				}
@@ -340,8 +340,8 @@ X_VEN_slot_1 = {
 					province_id = 4698
 					OR = {
 						NOT = { owned_by = ROOT }
-						has_shipyard_building_trigger = no
-						has_fort_building_trigger = no
+						NOT = { X_has_latest_building_trigger = { navy_forcelimit = yes builder = ROOT } }
+						NOT = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
 					}
 				}
 			}
@@ -349,14 +349,14 @@ X_VEN_slot_1 = {
 		trigger = {
 			142 = {
 				owned_by = ROOT
-				has_shipyard_building_trigger = yes
-				has_fort_building_trigger = yes
+				X_has_latest_building_trigger = { navy_forcelimit = yes builder = ROOT }
+				X_has_latest_building_trigger = { fort = yes builder = ROOT }
 				development = 10
 			}
 			4698 = {
 				owned_by = ROOT
-				has_shipyard_building_trigger = yes
-				has_fort_building_trigger = yes
+				X_has_latest_building_trigger = { navy_forcelimit = yes builder = ROOT }
+				X_has_latest_building_trigger = { fort = yes builder = ROOT }
 			}
 		}
 		effect = {
@@ -732,7 +732,7 @@ X_VEN_slot_2 = {
 						NOT = {
 							num_of_owned_provinces_with = {
 								value = 2
-								has_fort_building_trigger = yes
+								X_has_latest_building_trigger = { fort = yes builder = ROOT }
 								area = east_adriatic_coast_area
 							}
 						}
@@ -751,7 +751,7 @@ X_VEN_slot_2 = {
 				tooltip = X_VEN_mission_5_tt
 				num_of_owned_provinces_with = {
 					value = 2
-					has_fort_building_trigger = yes
+					X_has_latest_building_trigger = { fort = yes builder = ROOT }
 					area = east_adriatic_coast_area
 				}
 			}
@@ -1761,7 +1761,7 @@ X_VEN_slot_4 = {
 					province_id = 112
 					OR = {
 						NOT = { owned_by = ROOT }
-						has_production_building_trigger = no
+						NOT = { X_has_latest_building_trigger = { production = yes builder = ROOT } }
 					}
 				}
 				AND = {
@@ -1789,7 +1789,7 @@ X_VEN_slot_4 = {
 		trigger = {
 			112 = {
 				owned_by = ROOT
-				has_production_building_trigger = yes
+				X_has_latest_building_trigger = { production = yes builder = ROOT }
 			}
 			151 = {
 				owner = {
@@ -1846,12 +1846,12 @@ X_VEN_slot_4 = {
 				}
 				AND = {
 					owned_by = ROOT
-					has_tax_building_trigger = no
+					NOT = { X_has_latest_building_trigger = { tax = yes builder = ROOT } }
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
 								value = 10
-								has_tax_building_trigger = yes
+								X_has_latest_building_trigger = { tax = yes builder = ROOT }
 							}
 						}
 					}
@@ -1880,7 +1880,7 @@ X_VEN_slot_4 = {
 			}
 			num_of_owned_provinces_with = {
 				value = 10
-				has_tax_building_trigger = yes
+				X_has_latest_building_trigger = { tax = yes builder = ROOT }
 			}
 		}
 		effect = {
@@ -2126,8 +2126,8 @@ X_VEN_slot_5 = {
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { renaissance = 100 }
-				has_fort_building_trigger = no
-				has_production_building_trigger = no
+				NOT = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
+				NOT = { X_has_latest_building_trigger = { production = yes builder = ROOT } }
 			}
 		}
 		
@@ -2135,8 +2135,8 @@ X_VEN_slot_5 = {
 			321 = {
 				owned_by = ROOT
 				renaissance = 100
-				has_fort_building_trigger = yes
-				has_production_building_trigger = yes
+				X_has_latest_building_trigger = { fort = yes builder = ROOT }
+				X_has_latest_building_trigger = { production = yes builder = ROOT }
 			}
 		}
 		effect = {
@@ -2169,10 +2169,10 @@ X_VEN_slot_5 = {
 				}
 				NOT = { province_has_center_of_trade_of_level = 2 }
 				AND = {
-					has_dock_building_trigger = no
-					has_shipyard_building_trigger = no
+					NOT = { X_has_latest_building_trigger = { sailors = yes builder = ROOT } }
+					NOT = { X_has_latest_building_trigger = { navy_forcelimit = yes builder = ROOT } }
 				}
-				has_trade_building_trigger = no
+				NOT = { X_has_latest_building_trigger = { trade = yes builder = ROOT } }
 				NOT = { has_building = temple }
 			}			
 		}
@@ -2186,10 +2186,10 @@ X_VEN_slot_5 = {
 				}
 				province_has_center_of_trade_of_level = 2
 				OR = {
-					has_dock_building_trigger = yes
-					has_shipyard_building_trigger = yes
+					X_has_latest_building_trigger = { sailors = yes builder = ROOT }
+					X_has_latest_building_trigger = { navy_forcelimit = yes builder = ROOT }
 				}
-				has_trade_building_trigger = yes
+				X_has_latest_building_trigger = { trade = yes builder = ROOT }
 				has_building = temple
 			}
 		}
@@ -2336,7 +2336,7 @@ X_VEN_slot_5 = {
 				NOT = { owned_by = ROOT }
 				unrest = 1
 				devastation = 1
-				has_production_building_trigger = no
+				NOT = { X_has_latest_building_trigger = { production = yes builder = ROOT } }
 				AND = {
 					NOT = { has_building = university }
 					NOT = { province_has_center_of_trade_of_level = 3 }
@@ -2348,7 +2348,7 @@ X_VEN_slot_5 = {
 				owned_by = ROOT
 				NOT = { unrest = 1 }
 				NOT = { devastation = 1 }
-				has_production_building_trigger = yes
+				X_has_latest_building_trigger = { production = yes builder = ROOT }
 				OR = {
 					has_building = university
 					province_has_center_of_trade_of_level = 3
@@ -2675,7 +2675,7 @@ X_CRI_slot_2 = {
 			num_of_light_ship = 20
 			6001 = {
 				owned_by = ROOT
-				has_dock_building_trigger = yes
+				X_has_latest_building_trigger = { sailors = yes builder = ROOT }
 			}
 			1322 = {
 				is_strongest_trade_power = ROOT
@@ -2711,7 +2711,7 @@ X_CRI_slot_2 = {
         required_missions = { X_CRI_mission_6 }
 		position = 3
 		trigger = {
-			6001 = { has_tax_building_trigger = yes }
+			6001 = { X_has_latest_building_trigger = { tax = yes builder = ROOT } }
 			if = {
 				limit = { exists = TUR }
 				OR = {
@@ -2817,7 +2817,7 @@ X_CRI_slot_3 = {
 				estate = estate_dhimmi
 				loyalty = 60
 			}
-			284 = { has_fort_building_trigger = yes }
+			284 = { X_has_latest_building_trigger = { fort = yes builder = ROOT } }
 		}
 		effect = {
 			284 = { 
@@ -2853,7 +2853,7 @@ X_CRI_slot_3 = {
 				is_capital_of = ROOT
 				is_prosperous = yes
 				development = 25
-				has_tax_building_trigger = yes
+				X_has_latest_building_trigger = { tax = yes builder = ROOT }
 			}
 		}
 		effect = {
@@ -2951,13 +2951,6 @@ X_CRI_slot_3 = {
 		}
 		effect = {
 			custom_tooltip = X_CRI_mission_11_tt
-			russia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			295 = {
 				add_devastation = 50
 				owner = {
@@ -3074,6 +3067,13 @@ X_CRI_slot_3 = {
 						}
 					}
 				}
+			}
+			russia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
