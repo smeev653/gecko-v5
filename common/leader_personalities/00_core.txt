@@ -11,8 +11,7 @@ glory_seeker_personality = {
 	allow = {
 		is_admiral = no
 	}
-	prestige_from_land = 0.5
-	army_tradition_from_battle = 0.5
+	land_morale = 0.05
 }
 
 born_to_the_saddle_personality = {
@@ -48,7 +47,7 @@ inspirational_leader_general_personality = {
 	allow = {
 		is_admiral = no
 	}
-	morale_damage = 0.05
+	discipline = 0.05
 }
 
 master_of_arms_personality = {
@@ -59,19 +58,19 @@ master_of_arms_personality = {
 	infantry_power = 0.1
 }
 
-goal_oriented_personality = {
-	allow = {
-		is_admiral = no
-	}
-	movement_speed = 0.1
-}
+#goal_oriented_personality = {
+#	allow = {
+#		is_admiral = no
+#	}
+#	movement_speed = 0.1
+#}
 
-hardy_warrior_personality = {
-	allow = {
-		is_admiral = no
-	}
-	land_attrition = -0.2
-}
+#hardy_warrior_personality = {
+#	allow = {
+#		is_admiral = no
+#	}
+#	land_attrition = -0.2
+#}
 
 siege_specialist_personality = {
 	allow = {
@@ -84,7 +83,7 @@ siege_specialist_personality = {
 cannoneer_personality = {
 	allow = {
 		is_admiral = no
-		artillery_fraction = 0.01 # "any cannons"
+		artillery_fraction = 0.2 # "any cannons"
 	}
 	artillery_power = 0.1
 }
@@ -94,12 +93,12 @@ cannoneer_personality = {
 # Admiral personalities
 ###############################################
 
-#extortioner_personality = {
-#	allow = {
-#		is_admiral = yes
-#	}
-#	global_ship_trade_power = 0.15
-#}
+extortioner_personality = {
+	allow = {
+		is_admiral = yes
+	}
+	global_ship_trade_power = 0.15
+}
 
 ruthless_blockader_personality = {
 	allow = {
@@ -108,12 +107,12 @@ ruthless_blockader_personality = {
 	blockade_efficiency = 0.25
 }
 
-buccaneer_personality = {
-	allow = {
-		is_admiral = yes
-	}
-	privateer_efficiency = 0.15
-}
+#buccaneer_personality = {
+#	allow = {
+#		is_admiral = yes
+#	}
+#	privateer_efficiency = 0.15
+#}
 
 prize_hunter_personality = {
 	allow = {
@@ -129,20 +128,20 @@ ironside_personality = {
 	ship_durability = 0.05
 }
 
-naval_engineer_personality = {
-	allow = {
-		is_admiral = yes
-	}
-	local_ship_repair = 0.25
-}
+#naval_engineer_personality = {
+#	allow = {
+#		is_admiral = yes
+#	}
+#	local_ship_repair = 0.25
+#}
 
-naval_showman_personality = {
-	allow = {
-		is_admiral = yes
-	}
-	prestige_from_naval = 0.5
-	naval_tradition_from_battle = 0.5
-}
+#naval_showman_personality = {
+#	allow = {
+#		is_admiral = yes
+#	}
+#	prestige_from_naval = 0.5
+#	naval_tradition_from_battle = 0.5
+#}
 
 ram_raider_personality = {
 	allow = {
