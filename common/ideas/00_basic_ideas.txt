@@ -813,7 +813,7 @@ quantity_ideas = {
 	}
 	garrison_conscription = {
 		free_leader_pool = 5
-		leader_cost = -0.2
+		leader_cost = -0.1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -967,7 +967,6 @@ influence_ideas = {
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
-		leader_cost = -0.10
 	}
 	additional_loyalist_recruitment = {
 		province_warscore_cost = -0.15
