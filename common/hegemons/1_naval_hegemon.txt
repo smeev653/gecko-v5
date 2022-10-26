@@ -8,10 +8,9 @@ naval_hegemon = {
 			dock = 15
 			drydock = 10
 		}	
-		OR = {
-			shipyard = 15
-			grand_shipyard = 10
-		}
+		shipyard = 15
+
+		
 		#naval_forcelimit = 500
 		#sailors = 50000
 		NOT = { any_other_great_power = { num_of_heavy_ship = root } }
