@@ -8,11 +8,11 @@ mamluks_develop_the_delta_province_modifier = {
 }
 
 mamluks_develop_the_nile_province_modifier = {
-	local_development_cost = -0.15
+	local_development_cost = -0.10
 }
 
 mamluks_library_of_alexandria_modifier = {
-	technology_cost = -0.05
+	technology_cost = -0.025
 }
 
 mamluks_lighthouse_of_alexandria_modifier = {
@@ -95,7 +95,7 @@ mamluks_between_the_rivers_province_modifier = {
 }
 
 mamluks_restore_baghdad_modifier = {
-	technology_cost = -0.05
+	technology_cost = -0.025
 }
 
 mamluks_a_source_of_slaves_modifier = {

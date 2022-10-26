@@ -4280,9 +4280,9 @@ mer_fortification_effort = {
 
 #Granada
 granada_influx = {
-	technology_cost = -0.05
+	technology_cost = -0.025
 	idea_cost = -0.05
-	development_cost = -0.05
+	#development_cost = -0.05
 }
 
 #Jaunpur
@@ -10059,7 +10059,7 @@ cairo_markets = {
 }
 
 cairo_slums = {
-	development_cost = -0.15
+	local_development_cost = -0.15
 	local_tax_modifier = -0.15
 	local_build_cost = 0.1
 }
