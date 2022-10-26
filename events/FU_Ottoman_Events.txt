@@ -1471,7 +1471,7 @@ country_event = { #Capital of the Western World
 				name = tur_jihan_on_europe_modifier
 				duration = 7300
 			}
-			create_general = { tradition = 100 } 
+			create_general = { tradition = 75 } 
 			set_defender_of_the_faith = {
 				who = ROOT 
 			}

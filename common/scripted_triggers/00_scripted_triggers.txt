@@ -1046,10 +1046,8 @@ has_manpower_building_trigger = {
 has_shipyard_building_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = has_shipyard_building_trigger_tt
-		OR = {
 			has_building = shipyard
-			has_building = grand_shipyard
-		}
+		
 	}
 }
 

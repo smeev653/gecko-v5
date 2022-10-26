@@ -1224,7 +1224,6 @@ add_or_upgrade_shipyard_building = {
 			limit = {
 				has_building = shipyard
 			}
-			add_building = grand_shipyard 
 		}
 		else_if = {
 			limit = {

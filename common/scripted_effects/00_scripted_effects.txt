@@ -2471,13 +2471,7 @@ add_latest_building = {
 		}
 	]
 	[[navy_forcelimit]
-		if = {
-			limit = { $builder$ = { dip_tech = 24 } }
-			add_building = grand_shipyard
-		}
-		else = {
-			add_building = shipyard
-		}
+		add_building = shipyard
 	]
 	[[coastal]
 		if = {
@@ -2558,7 +2552,6 @@ upgrade_building = {
 	[[navy_forcelimit]
 		if = {
 			limit = { has_building = shipyard }
-			add_building = grand_shipyard
 		}
 	]
 	[[coastal]

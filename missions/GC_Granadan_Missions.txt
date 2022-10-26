@@ -374,7 +374,7 @@ granada_slot_2_missions = {
 					}
 				}
 				create_general = {
-					tradition = 100
+					tradition = 75
 				}
 			}
 			else = {

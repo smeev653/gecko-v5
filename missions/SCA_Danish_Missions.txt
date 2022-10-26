@@ -498,10 +498,10 @@ dan_rnw_mission_slot = {
 		}
 		effect = {
 			create_conquistador = {
-				tradition = 100
+				tradition = 75
 			}
 			create_explorer = {
-				tradition = 100
+				tradition = 75
 			}
 		}
 	}

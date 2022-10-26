@@ -86,13 +86,7 @@ X_has_latest_building_trigger = {
 		}
 	]
 	[[navy_forcelimit]
-		if = {
-			limit = { $builder$ = { dip_tech = 24 } }
-			has_building = grand_shipyard
-		}
-		else = {
-			has_building = shipyard
-		}
+		has_building = shipyard
 	]
 	[[coastal]
 		if = {

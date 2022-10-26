@@ -1179,7 +1179,7 @@ curia_controller = {
 	#ae_impact = -0.2
 	technology_cost = -0.05
 	church_loyalty_modifier = 0.1
-	land_morale = 0.05
+	#land_morale = 0.05
 }
 
 bought_indulgence = {

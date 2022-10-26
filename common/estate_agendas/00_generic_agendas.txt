@@ -3842,12 +3842,11 @@ estate_burghers_build_trade_building_in_y = {
 
 estate_burghers_build_port_building_in_y = {
 	can_select = {
-		dip_tech = 6
+		always = no
 		any_owned_province = {
 			is_state_core = root
 			has_port = yes
 			OR = {
-				NOT = { has_building = grand_shipyard }
 				NOT = { has_building = drydock }
 			}
 			OR = {
@@ -3866,14 +3865,6 @@ estate_burghers_build_port_building_in_y = {
 					OR = {
 						num_free_building_slots = 1
 						has_building = dock
-					}
-				}
-				AND = {
-					ROOT = { dip_tech = 24 }
-					NOT = { has_building = grand_shipyard }
-					OR = {
-						num_free_building_slots = 1
-						has_building = shipyard
 					}
 				}
 			}
@@ -3941,7 +3932,6 @@ estate_burghers_build_port_building_in_y = {
 				development = 12
 				has_port = yes
 				OR = {
-					NOT = { has_building = grand_shipyard }
 					NOT = { has_building = drydock }
 				}
 				OR = {
@@ -3960,14 +3950,6 @@ estate_burghers_build_port_building_in_y = {
 						OR = {
 							num_free_building_slots = 1
 							has_building = dock
-						}
-					}
-					AND = {
-						ROOT = { dip_tech = 24 }
-						NOT = { has_building = grand_shipyard }
-						OR = {
-							num_free_building_slots = 1
-							has_building = shipyard
 						}
 					}
 				}
@@ -3980,7 +3962,6 @@ estate_burghers_build_port_building_in_y = {
 				development = 20
 				has_port = yes
 				OR = {
-					NOT = { has_building = grand_shipyard }
 					NOT = { has_building = drydock }
 				}
 				OR = {
@@ -3999,14 +3980,6 @@ estate_burghers_build_port_building_in_y = {
 						OR = {
 							num_free_building_slots = 1
 							has_building = dock
-						}
-					}
-					AND = {
-						ROOT = { dip_tech = 24 }
-						NOT = { has_building = grand_shipyard }
-						OR = {
-							num_free_building_slots = 1
-							has_building = shipyard
 						}
 					}
 				}
@@ -4746,7 +4719,7 @@ estate_vaisyas_build_trade_building_in_y = {
 
 estate_vaisyas_build_port_building_in_y = {
 	can_select = {
-		dip_tech = 6
+		always = no
 		any_owned_province = {
 			is_state_core = root
 			has_port = yes
@@ -5649,7 +5622,7 @@ estate_jains_build_trade_building_in_y = {
 
 estate_jains_build_port_building_in_y = {
 	can_select = {
-		dip_tech = 6
+		always = no
 		any_owned_province = {
 			is_state_core = root
 			has_port = yes

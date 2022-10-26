@@ -79,6 +79,6 @@ reserves_organisation_modifier = {
 		always = yes
 	}
 
-	general_cost = -0.25
+	#general_cost = -0.25
 	drill_gain_modifier = 1
 }

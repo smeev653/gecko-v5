@@ -1135,13 +1135,13 @@ estate_nobles_officer_corp = {
 		army_tradition = 30
 	}
 	on_granted = {
-		add_army_tradition = -15
+		add_army_tradition = -5
 	}
 	penalties = {
 	}
 	benefits = {
-		general_cost = -0.10
-		#army_tradition_decay = -0.005
+		#general_cost = -0.10
+		army_tradition_decay = -0.005
 	}
 	ai_will_do = {
 		factor = 1000

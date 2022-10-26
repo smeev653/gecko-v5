@@ -1621,7 +1621,7 @@ trade_depot = {
 }
 
 grand_shipyard = {
-	cost = 300
+	cost = 1000
 	time = 12
 
 
