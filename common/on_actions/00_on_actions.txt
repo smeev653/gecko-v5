@@ -2,75 +2,18 @@
 
 # country
 on_startup = {
-	emperor = {
-		save_global_event_target_as = Emperor
-	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+	emperor = { save_global_event_target_as = Emperor }
 	events = {
 		muslim_school_events.20 #Pick School
-		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 		flavor_got.1 #Event for Gotland to select their mission tree
-		
+		gecko.30
+		gecko.44
+		gecko.49
+		PR_events.1
 	}
-	if = {
-		limit = {
-			tag = YAO
-			NOT = { is_year = 1450 }
-				NOT = { has_country_flag = subsaharan_buildings }
-		}
-		country_event = { 
-			id = gecko.44
-			days = 1
-		}
-	}
-	if = {
-		limit = {
-			tag = MAM
-			NOT = { is_year = 1450 }
-			NOT = { has_country_flag = start_autonomy }
-		}
-		country_event = { 
-			id = gecko.49
-			days = 1
-		}
-	}	
-	if = {
-		limit = {
-			NOT =  {has_country_flag = gecko_mercs_set }
-			ROOT = {
-				ai = no
-			}	
-		}
-		set_country_flag = gecko_mercs_set
-		country_event = { 
-			id = gecko.30
-			days = 1
-		}
-	}	
-	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
-	
 	gecko_merc_count = yes
 	subject_warscore = yes
-	if = {
-		limit = {
-				OR = {
-					#tag = MOR
-					#tag = SON
-					#tag = ZAN
-					tag = ETH
-					tag = MAM
-					#tag = YAO
-					#tag = MAL
-			}
-			NOT = { 
-				has_country_flag = PR_discover_africa_flag
-			}
-		}
-		country_event = { 
-			id = PR_events.1
-			days = 2
-		}
-		set_country_flag = PR_discover_africa_flag
-	}
 	###X###
 	every_province = {
 		limit = {

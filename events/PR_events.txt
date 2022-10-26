@@ -11,72 +11,81 @@ country_event = {
     desc = "PR_events.1.d"
     picture = COURT_eventPicture
 	is_triggered_only = yes
- 
-	
-    immediate = {
-		hidden_effect = {
-			set_country_flag = PR_discover_africa_flag
-			niger_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}
-			guinea_region= {
-				ROOT = {
-								discover_province = PREV
-							}
-			}	
-			sahel_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}	
-			horn_of_africa_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}	
-			maghreb_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}		
-
-			east_africa_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}
-			kongo_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}
-			south_africa_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}
-			central_africa_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}
-			egypt_region = {
-				ROOT = {
-								discover_province = PREV
-							}
-			}
+	###X###
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		africa = {
+			discover_country = MAM
+			discover_country = ETH
+			discover_country = YAO
 		}
 	}
+	#######
 	
-	option = {
-        name = "PR_events.1.a"
-		custom_tooltip = PR_events.1.a
-		ai_chance = {
-			factor = 0
-		}
-    }
+#    immediate = {
+#		hidden_effect = {
+#			niger_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}
+#			guinea_region= {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}	
+#			sahel_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}	
+#			horn_of_africa_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}	
+#			maghreb_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}		
+#
+#			east_africa_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}
+#			kongo_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}
+#			south_africa_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}
+#			central_africa_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}
+#			egypt_region = {
+#				ROOT = {
+#								discover_province = PREV
+#							}
+#			}
+#		}
+#	}
+#	
+#	option = {
+#       name = "PR_events.1.a"
+#		custom_tooltip = PR_events.1.a
+#		ai_chance = {
+#			factor = 0
+#		}
+#   }
 }
 
 # Choosing muslim school
