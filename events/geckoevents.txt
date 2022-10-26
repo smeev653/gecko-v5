@@ -3745,6 +3745,7 @@ country_event = {
 		aleppo_area = { set_local_autonomy = 50 }
 		jaghbub_area = { set_local_autonomy = 50 }
 		al_wahat_area = { set_local_autonomy = 50 }
+		flanders_area  = { set_local_autonomy = 50 }
 	}
 	#######
 #    option = {

@@ -58,19 +58,19 @@ master_of_arms_personality = {
 	infantry_power = 0.1
 }
 
-#goal_oriented_personality = {
-#	allow = {
-#		is_admiral = no
-#	}
-#	movement_speed = 0.1
-#}
+goal_oriented_personality = {
+	allow = {
+		always = no
+	}
+	movement_speed = 0.1
+}
 
-#hardy_warrior_personality = {
-#	allow = {
-#		is_admiral = no
-#	}
-#	land_attrition = -0.2
-#}
+hardy_warrior_personality = {
+	allow = {
+		always = no
+	}
+	land_attrition = -0.2
+}
 
 siege_specialist_personality = {
 	allow = {
@@ -107,12 +107,12 @@ ruthless_blockader_personality = {
 	blockade_efficiency = 0.25
 }
 
-#buccaneer_personality = {
-#	allow = {
-#		is_admiral = yes
-#	}
-#	privateer_efficiency = 0.15
-#}
+buccaneer_personality = {
+	allow = {
+		always = no
+	}
+	privateer_efficiency = 0.15
+}
 
 prize_hunter_personality = {
 	allow = {
@@ -128,20 +128,20 @@ ironside_personality = {
 	ship_durability = 0.05
 }
 
-#naval_engineer_personality = {
-#	allow = {
-#		is_admiral = yes
-#	}
-#	local_ship_repair = 0.25
-#}
+naval_engineer_personality = {
+	allow = {
+		always = no
+	}
+	local_ship_repair = 0.25
+}
 
-#naval_showman_personality = {
-#	allow = {
-#		is_admiral = yes
-#	}
-#	prestige_from_naval = 0.5
-#	naval_tradition_from_battle = 0.5
-#}
+naval_showman_personality = {
+	allow = {
+		always = no
+	}
+	prestige_from_naval = 0.5
+	naval_tradition_from_battle = 0.5
+}
 
 ram_raider_personality = {
 	allow = {

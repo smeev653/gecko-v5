@@ -1032,11 +1032,11 @@ ethiopia_slot_aksumite_empire = {
 			}
 		}
 		effect = {
-			4346 = {
+			1335 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
-					power = 20
+					power = 30
 					key = ETH_CONTROL_OVER_GATE_OF_TEARS
 				}
 			}			
@@ -1252,7 +1252,7 @@ gc_eth_branch_4 = {
         }
 
         trigger = {
-            full_idea_group = religious_ideas
+             religious_unity = 1
         }
 
         effect = {
