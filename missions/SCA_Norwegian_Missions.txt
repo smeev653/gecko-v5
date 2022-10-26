@@ -744,7 +744,7 @@ nor_conquest_mission_slot = {
 				}
 			}
 			create_explorer = {
-				tradition = 100
+				tradition = 75
 			}
 			add_navy_tradition = 10
 		}
@@ -3027,7 +3027,7 @@ nor_sca_colonize_sa_slot = {
 				duration = 9125
 			}
 			create_conquistador = {
-				tradition = 100
+				tradition = 75
 			}
 			custom_tooltip = nor_sca_norwegian_colombia_ct
 			hidden_effect = {
