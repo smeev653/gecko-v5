@@ -100,6 +100,7 @@ trade_company_north_sea = {
 		23 24 2752 4145 #western_norway #smeev
 		4143 22 17 4144 #oslo #smeev
 		315 5033 5039 5028 5029 5032 5030 5031
+		245 4367 4368 4785 #yorkshire_area
 	}
 	
 	# Specific
@@ -189,7 +190,6 @@ trade_company_english_channel = {
 	provinces = {
 		1269 1270 1271 #Seas
 		241 242 4366 4369 #wales_area
-		245 4367 4368 4785 #yorkshire_area
 		239 240 4372 #west_midlands_area
 		243 1860 1861 4370 4376 #east_midlands_area
 		233 234 4130 4373 4374 #wessex_area
