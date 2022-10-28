@@ -9275,18 +9275,19 @@ el_escorial = {
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {			
+		province_modifiers = {		
+			local_development_cost = -0.05	
 		}
 		
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		area_modifier = {			
+		area_modifier = {	
+			local_tax_modifier = 0.1
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.01	
-			global_tariffs = 0.05
-			treasure_fleet_income = 0.05			
+			idea_cost = -0.025
+			prestige_from_land = 0.10
 		}
 
 		#what effects happen when this tier is achieved
@@ -9307,18 +9308,18 @@ el_escorial = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.15
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_tax_modifier = 0.20
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.025
-			governing_capacity_modifier = 0.05
-			global_tariffs = 0.1
-			treasure_fleet_income = 0.1
+			idea_cost = -0.05
+			prestige_from_land = 0.175
 		}
 
 		#what effects happen when this tier is achieved
@@ -9339,18 +9340,18 @@ el_escorial = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_tax_modifier = 0.33
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.05
-			governing_capacity_modifier = 0.1
-			global_tariffs = 0.2
-			treasure_fleet_income = 0.2
+			idea_cost = -0.1
+			prestige_from_land = 0.25
 		}
 
 		#what effects happen when this tier is achieved
@@ -21086,7 +21087,10 @@ gme_mosque_cathedral = {
 			culture_group = iberian
 		}
 		has_owner_accepted_culture = yes
-		has_owner_religion = yes
+		OR = {
+			has_owner_religion = yes
+			owner = { has_estate_privilege = estate_dhimmi_guaranteed_autonomy }
+		}
 	}
 	can_upgrade_trigger = {
 		OR = {
@@ -21097,7 +21101,10 @@ gme_mosque_cathedral = {
 			culture_group = iberian
 		}
 		has_owner_accepted_culture = yes
-		has_owner_religion = yes
+		OR = {
+			has_owner_religion = yes
+			owner = { has_estate_privilege = estate_dhimmi_guaranteed_autonomy }
+		}
 	}
 	keep_trigger = { }
 	tier_0 = {
@@ -21112,39 +21119,45 @@ gme_mosque_cathedral = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 350 }
-		province_modifiers = {
-			local_missionary_strength = 0.01
-		}
+		province_modifiers = { }
 		area_modifier = { }
-		region_modifier = { }
-		country_modifiers = { }
+		region_modifier = {
+			local_amount_of_cawa = 0.1
+		}
+		country_modifiers = {
+			tolerance_heathen = 0.5
+			tolerance_of_heathens_capacity = 0.5
+			global_institution_spread = 0.05
+		}
 		on_upgraded = { }
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 750 }
-		province_modifiers = {
-			local_missionary_strength = 0.01
-			local_unrest = -1
-		}
+		province_modifiers = { }
 		area_modifier = { }
-		region_modifier = { }
-		country_modifiers = { }
+		region_modifier = {
+			local_amount_of_cawa = 0.25
+		}
+		country_modifiers = {
+			tolerance_heathen = 1
+			tolerance_of_heathens_capacity = 1
+			global_institution_spread = 0.10
+		}
 		on_upgraded = { }
 	}
 	tier_3 = {
 		upgrade_time = { months = 360 }
 		cost_to_upgrade = { factor = 1500 }
-		province_modifiers = {
-			local_missionary_strength = 0.02
-			local_unrest = -2
-		}
+		province_modifiers = { }
 		area_modifier = { }
-		region_modifier = { }
+		region_modifier = {
+			local_amount_of_cawa = 0.5
+		}
 		country_modifiers = {
-			tolerance_heathen = 1
-			tolerance_of_heathens_capacity = 1
-			global_institution_spread = 0.10
+			tolerance_heathen = 2
+			tolerance_of_heathens_capacity = 2
+			global_institution_spread = 0.20
 		}
 		on_upgraded = { }
 	}
@@ -21567,7 +21580,10 @@ gme_alcazar_segovia = {
 			religion = catholic
 			religion = sunni
 		}
-		has_owner_religion = yes
+		OR = {
+			has_owner_religion = yes
+			owner = { has_estate_privilege = estate_dhimmi_guaranteed_autonomy }
+		}
 	}
 	can_upgrade_trigger = {
 		owner = {
@@ -21578,7 +21594,10 @@ gme_alcazar_segovia = {
 			religion = catholic
 			religion = sunni
 		}
-		has_owner_religion = yes
+		OR = {
+			has_owner_religion = yes
+			owner = { has_estate_privilege = estate_dhimmi_guaranteed_autonomy }
+		}
 	}
 	keep_trigger = { }
 	tier_0 = {
@@ -21594,40 +21613,47 @@ gme_alcazar_segovia = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 350 }
 		province_modifiers = {
-			local_defensiveness = 0.20
 		}
-		area_modifier = { }
+		area_modifier = {
+			local_defensiveness = 0.05
+			statewide_governing_cost = -0.10
+		}
 		region_modifier = { }
-		country_modifiers = { }
+		country_modifiers = {
+			artillery_power = 0.025
+			mil_tech_cost_modifier = -0.025
+		}
 		on_upgraded = { }
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
-			local_governing_cost = -0.25
 		}
 		area_modifier = {
-			local_defensiveness = 0.20
-			local_governing_cost = -0.25
+			local_defensiveness = 0.10
+			statewide_governing_cost = -0.25
 		}
 		region_modifier = { }
-		country_modifiers = { }
+		country_modifiers = {
+			artillery_power = 0.05
+			mil_tech_cost_modifier = -0.05
+		}
 		on_upgraded = { }
 	}
 	tier_3 = {
 		upgrade_time = { months = 360 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
-			local_defensiveness = 0.20
-			local_governing_cost = -0.25
 		}
 		area_modifier = {
-			statewide_governing_cost = -0.25
+			local_defensiveness = 0.20
+			statewide_governing_cost = -0.50
 		}
 		region_modifier = { }
 		country_modifiers = {
-			prestige = 0.50
+			artillery_power = 0.1
+			mil_tech_cost_modifier = -0.1
 		}
 		on_upgraded = { }
 	}
