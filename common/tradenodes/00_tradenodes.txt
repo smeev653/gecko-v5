@@ -1939,6 +1939,7 @@ north_sea = {
 		20 21 315 5039 5033 #northern_norway
 		17 4143 4144 5031 #eastern_norway
 		5030 5029 5028 10 22 #jemtland_area
+		245 4367 4368 4785 #yorkshire_area
 	}
 }
 
@@ -2164,13 +2165,12 @@ english_channel = {
 		1931 4382 100 6202 #east_frisia_area
 		92 1744 6199 1865 #brabant_area
 		95 4770 1742 2974 6200 #north_brabant_area
-		241 242 4366 4369 #wales_area
-		245 4367 4368 4785 #yorkshire_area
 		239 240 4372 #west_midlands_area
 		243 1861 4376 #east_midlands_area
 		233 4130 4373 4374 6191 #wessex_area
 		235 236 4371 6189 234 #home_counties_area
 		6190 6188 237 #oxford_area
 		238 1860 4370 6187 #east_anglia_area
+		241 242 4366 4369 #wales_area
 	}
 }
