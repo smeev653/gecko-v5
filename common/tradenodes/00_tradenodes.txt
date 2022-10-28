@@ -624,6 +624,7 @@ kazan={
 
 astrakhan = {
 	location = 464
+	color = { 193 179 127 }
 	inland = yes
 	outgoing = {
 		name = "crimea"
