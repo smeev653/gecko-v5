@@ -202,8 +202,9 @@ X_CRI_reform_8 = {
 	empire = celestial_empire
 	emperor = {
 		years_of_nationalism = -5
-		manpower_in_culture_group_provinces = 0.25
-		manpower_in_own_culture_provinces = 0.25
+		manpower_in_own_culture_provinces = 0.2
+		manpower_in_accepted_culture_provinces = 0.2
+		manpower_in_culture_group_provinces = 0.2
 	}
 	on_effect = {
 		custom_tooltip = X_CRI_reform_8_tt
