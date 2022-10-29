@@ -11,6 +11,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			stability = 1
 			custom_trigger_tooltip = {
 				tooltip = X_RUS_isolation_vs_westernization_decision_tt
 				OR = {

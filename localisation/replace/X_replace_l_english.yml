@@ -92,3 +92,7 @@
  REFORM_CELESTIAL_EMPIRE_DESC:0 "The Tradition of the Steppe is re-formed.\n"
  ADD_MANDATE_DESC:0 "$DIRECTION$ $MANDATECHANGE|Y$ Legacy.\n"
  SET_MANDATE_DESC:0 "Set Legacy to $MANDATEVALUE|Y$.\n"
+ ##############################
+ # hnn_l_english
+ ##############################
+ MODIFIER_MILITARY_TACTICS:0 "Military Tactics$VALUE|G$"

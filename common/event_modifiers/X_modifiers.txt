@@ -283,7 +283,7 @@ X_RUS_isolation_2_cmod = {
     trade_efficiency = -0.1
     technology_cost = 0.05
     global_institution_spread = -0.25
-manpower_in_own_culture_provinces = 0.15
+	manpower_in_own_culture_provinces = 0.15
 	manpower_in_accepted_culture_provinces = 0.15
 	manpower_in_culture_group_provinces = 0.15
     infantry_power = 0.05
@@ -313,7 +313,7 @@ X_RUS_isolation_4_cmod = {
 }
 
 X_RUS_westernization_1_cmod = {
-    trade_efficiency = 0.05
+    trade_efficiency = 0.075
     technology_cost = -0.025
     fire_damage = 0.025
     global_institution_spread = 0.125
@@ -322,7 +322,7 @@ X_RUS_westernization_1_cmod = {
 }
 
 X_RUS_westernization_2_cmod = {
-    trade_efficiency = 0.075
+    trade_efficiency = 0.1
     technology_cost = -0.05
     fire_damage = 0.05
     global_institution_spread = 0.25
@@ -331,7 +331,7 @@ X_RUS_westernization_2_cmod = {
 }
 
 X_RUS_westernization_3_cmod = {
-    trade_efficiency = 0.1
+    trade_efficiency = 0.125
     technology_cost = -0.075
     fire_damage = 0.075
     global_institution_spread = 0.375
