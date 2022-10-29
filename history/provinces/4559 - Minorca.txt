@@ -1,7 +1,7 @@
 #Minorca
 
-owner = ARA		# Alfons V of Aragon
-controller = ARA
+owner = MJO		# Alfons V of Aragon
+controller = MJO
 add_core = ARA
 add_core = MJO
 culture = catalan
