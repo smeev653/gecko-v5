@@ -21206,7 +21206,7 @@ gme_santiago_compostela = {
 		province_modifiers = { }
 		area_modifier = { }
 		region_modifier = {
-			local_friendly_movement_speed = 0.15
+			local_friendly_movement_speed = 0.10
 		}
 		country_modifiers = {
 			papal_influence = 1
@@ -21238,7 +21238,7 @@ gme_santiago_compostela = {
 		}
 		area_modifier = { }
 		region_modifier = {
-			local_friendly_movement_speed = 0.15
+			local_friendly_movement_speed = 0.20
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.01
@@ -21471,6 +21471,7 @@ gme_al_qasr_al_muriq = {
 		area_modifier = {
 			local_governing_cost = -0.05
 			local_state_maintenance_modifier = -0.10
+			local_monthly_devastation = -0.1
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -21488,6 +21489,7 @@ gme_al_qasr_al_muriq = {
 		area_modifier = {
 			local_governing_cost = -0.10
 			local_state_maintenance_modifier = -0.20
+			local_monthly_devastation = -0.2
 		}
 		region_modifier = { }
 		country_modifiers = {
@@ -21505,6 +21507,7 @@ gme_al_qasr_al_muriq = {
 		area_modifier = {
 			local_governing_cost = -0.15
 			local_state_maintenance_modifier = -0.33
+			local_monthly_devastation = -0.3
 		}
 		region_modifier = { }
 		country_modifiers = {
