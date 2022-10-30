@@ -851,7 +851,7 @@ ottoman_missions_1 = {
 				}
 				num_of_estate_privileges = { 
 					estate = estate_mamluks 
-					value = 2
+					value = 1
 				}
 			}
 		}
