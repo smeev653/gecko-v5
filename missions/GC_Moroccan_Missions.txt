@@ -537,6 +537,19 @@ gc_morocco_2 = {
 					name = gc_mor_sugar_cloth_trader
 					duration = 7300
 				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							trade_goods = cloth
+							trade_goods = sugar
+						}
+						NOT = { has_province_modifier = gc_mor_sugar_cloth_production }
+					}
+					add_province_modifier = {
+						name = gc_mor_sugar_cloth_production
+						duration = 7300
+					}
+				}
 			}
 		}
 	}
