@@ -273,6 +273,7 @@ trade_company_sevilla = {
 		227 229 230 4150 4787 #alentejo_area
 		366 367 368 4565 #macaronesia_area
 		209 210 2989 #basque_country
+		211 214 2990 4557 #aragon_area
 	}
 	
 	# Specific
@@ -362,7 +363,6 @@ trade_company_genua = {
 		123 1934 2984 5786 #calabria_area
 		5785 2981 6075 2979 4728 #torino_area
 		117 6048 6049 #siena_area
-		211 214 2990 4557 #aragon_area
 		197 212 213 2987 2988 #catalonia_area
 		220 1750 4549 4550 6192 #valencia_area
 		333 4559 4560 #baleares_area

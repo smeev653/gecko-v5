@@ -1162,7 +1162,7 @@ genua = {
 		123 1934 2984 5786 #calabria_area
 		5785 2981 6075 2979 4728 #torino_area
 		117 6048 6049 #siena_area
-		211 214 2990 4557 #aragon_area
+		
 		197 212 213 2987 2988 #catalonia_area
 		220 1750 4549 4550 6192 #valencia_area
 		333 4559 4560 #baleares_area
@@ -1746,6 +1746,7 @@ sevilla = {
 	}
 	members = {
 		224 1749 4548 6194 #lower_andalucia_area
+		211 214 2990 4557 #aragon_area
 		1748 225 6195 2754 #cordoba_area
 		222 223 226 4546 6193 #upper_andalucia_area
 		215 217 2755 4551 4789 #castille_area
