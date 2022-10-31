@@ -1363,7 +1363,7 @@ tobacco = {
 cocoa = {
 	color = { 0.45 0.21 0.09 }
 	modifier = {
-		global_tariffs = 0.25
+		global_tariffs = 0.15
 	}
 	province = {
 		local_missionary_strength = 0.01

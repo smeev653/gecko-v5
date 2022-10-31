@@ -162,6 +162,12 @@ NDefines.NCountry.SCRIPTED_ADVISOR_DISCOUNT = 0.75				-- Multiplier on cost for 
 NDefines.NCountry.EXPAND_INFRASTRUCTURE_DEV_LIMIT = 10 
 NDefines.NCountry.ESTATE_PRIVILEGES_MAX_CONCURRENT = 6
 NDefines.NCountry.CORRUPTION_FROM_BANNERS = 5
+NDefines.NCountry.PS_RAISE_TARIFFS = 25
+NDefines.NCountry.PS_LOWER_TARIFFS = 10
+NDefines.NCountry.BASE_TARIFF = 0.15								-- Basic part of colonies income that goes to tariffs
+NDefines.NCountry.TARIFF_INCREASE_STEP = 0.1					-- Increase on each boost
+NDefines.NCountry.TARIFF_LIBERTY_INCREASE = 0.5					-- Liberty increase for each % tariffs
+NDefines.NCountry.TARIFF_DECREASE_STEP = -0.1
 
 NDefines.NEconomy.EDICTS_COST_INCREASE = 2
 NDefines.NEconomy.EDICTS_DURATION_MONTHS = 1
