@@ -249,13 +249,12 @@ march = {
 	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
 
 	# Properties:
-	pays_overlord = 0.0
 	military_focus = 1.5
 	base_liberty_desire = -15.0
+	pays_overlord = 1.0
 	can_be_annexed = yes
 	forcelimit_to_overlord = 0.2
-	#manpower_bonus = 1.0
-	manpower_to_overlord = 0.15
+	manpower_to_overlord = 0.33
 
 	is_march = yes
 	forms_trade_companies = no		   
@@ -276,6 +275,9 @@ march = {
 	}
 	modifier_overlord = {
 		modifier = march_subject
+		trigger = {
+			num_of_cities = 5
+		}
 	}
 	modifier_subject = {
 		modifier = march_bonus
