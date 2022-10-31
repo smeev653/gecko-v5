@@ -366,7 +366,6 @@ trade_company_genua = {
 		120
 		6125 6126
 		6158 
-		4754 4753 136 137 #dalmatia #smeev	
 	}
 	
 	# Specific
@@ -539,6 +538,7 @@ trade_company_ragusa = {
 		1827 1766 138 #rascia #smeev
 		140 4755 3002 139 1831 #bosnia #smeev
 		6120 6122 6123 #xmp		
+		4754 4753 136 137 #dalmatia #smeev	
 	}
 	
 	# Specific
@@ -647,6 +647,13 @@ trade_company_ethiopia = {
 		2323 6017 6021 #hadendoa #aba
 		1228 1220 #aba
 		6022 6018 6019 #dongola #aba
+		2775 2782 2783 2786 2788 2789 2790 2793 2794 2795 2024 1205 1206 1209 1212 1215 2765 2773 2792 2784 1211 2764 1331 
+		2768 #Angot
+
+		1328 1329 1330 4333 #Red Sea Area
+		4346
+		1210 1208 2778 1207 2779 #ogaden #smeev
+		2781 2776 2780 2785 #ajuuraan #smeev
 	}
 	
 	# Specific
@@ -711,30 +718,6 @@ trade_company_zambezi = {
 	}
 	names = {
 		name = "TRADE_COMPANY_ZAMBEZI_African_Trade_Company"
-	}
-}
-
-trade_company_gulf_of_aden = {
-	color = { 96 75 65 }
-	
-	provinces = {
-		2775 2782 2783 2786 2788 2789 2790 2793 2794 2795 2024 1205 1206 1209 1212 1215 2765 2773 2792 2784 1211 2764 1331 
-		2768 #Angot
-
-		1328 1329 1330 4333 #Red Sea Area
-		4346
-		1210 1208 2778 1207 2779 #ogaden #smeev
-		2781 2776 2780 2785 #ajuuraan #smeev
-	}
-	
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_GULF_OF_ADEN_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_GULF_OF_ADEN_African_Trade_Company"
 	}
 }
 
