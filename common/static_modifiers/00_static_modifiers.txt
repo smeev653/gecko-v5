@@ -352,6 +352,7 @@ march_bonus = {
 	naval_maintenance_modifier = -0.20
 	development_cost = -0.1
 	production_efficiency = 0.1
+	global_regiment_cost = -0.17
 }
 
 pu_overlord_bonus = {

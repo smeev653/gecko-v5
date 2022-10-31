@@ -48,6 +48,7 @@ empowered_subjects = {
 	idea_cost = -0.25
 	technology_cost = -0.10
 	loot_amount = 0.25
+	advisor_cost = -0.25
 }
 
 Minor = {
