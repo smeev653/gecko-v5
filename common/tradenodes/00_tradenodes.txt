@@ -21,9 +21,7 @@ patagonia = {
 
 mexico = {
 	location = 852
-	color = {
-		0 176 0 
-	}
+	color = { 0 176 0 }
 	outgoing = {
 		name = "carribean_trade"
 		path = {
@@ -156,9 +154,7 @@ ohio = {
 doab = {
 	location = 524
 	inland = yes
-	color = {
-		236 162 19 
-	}
+	color = { 236 162 19 }
 	outgoing = {
 		name = "lahore_trade"
 		path = {
@@ -192,6 +188,7 @@ doab = {
 timbuktu = {
 	location = 1132
 	inland = yes
+	color = { 230 231 62 }
 	outgoing = {
 		name = "tunis"
 		path = {
@@ -239,9 +236,7 @@ timbuktu = {
 
 georgia = {
 	location = 421
-	color = {
-		116 0 0 
-	}
+	color = { 190 35 37 }
 	outgoing = {
 		name = "astrakhan"
 		path = {
@@ -293,9 +288,7 @@ georgia = {
 persia = {
 	location = 4341
 	inland = yes
-	color = {
-		204 119 31 
-	}
+	color = { 204 119 31 }
 	outgoing = {
 		name = "basra"
 		path = {
@@ -358,9 +351,7 @@ persia = {
 
 lahore_trade = {
 	location = 454
-	color = {
-		63 150 30 
-	}
+	color = { 63 150 30 }
 	outgoing = {
 		name = "astrakhan"
 		path = {
@@ -395,9 +386,7 @@ lahore_trade = {
 
 aleppo = {
 	location = 377
-	color = {
-		202 150 172 
-	}
+	color = { 202 150 172 }
 	outgoing = {
 		name = "constantinople"
 		path = {
@@ -439,6 +428,7 @@ aleppo = {
 
 basra = {
 	location = 1335
+	color = { 178 103 5 }
 	outgoing = {
 		name = "alexandria" 
 		path = {
@@ -480,6 +470,7 @@ basra = {
 
 gulf_of_aden = {
 	location = 1212
+	color = { 212 175 55 }
 	outgoing = {
 		name = "alexandria"
 		path = {
@@ -511,9 +502,7 @@ gulf_of_aden = {
 
 constantinople = {
 	location = 326
-	color = {
-		126 203 120 
-	}
+	color = { 126 203 120 }
 	outgoing = {
 		name = "ragusa"
 		path = {
@@ -546,9 +535,11 @@ constantinople = {
 		322 1848 4308 4311 #germiyan_area
 	}
 }
+
 siberia = {
 	location = 476
 	inland = yes
+	color = { 139 138 160 }
 	outgoing = {
 		name = "kazan"
 		path = {
@@ -582,9 +573,11 @@ siberia = {
 		1069 1072 1073 2445 4691 #kara_area
 	}
 }
+
 kazan={
 	location = 1082
 	inland = yes
+	color = { 97 102 135 }
 	outgoing = {
 		name = "white_sea"
 		path = {
@@ -661,13 +654,9 @@ astrakhan = {
 	}
 }
 
-
-	
 crimea = {
 	location = 1322
-	color = {
-		59 158 125 
-	}
+	color = { 59 158 125 }
 	outgoing = {
 		name = "ragusa"
 		path = {
@@ -708,6 +697,7 @@ crimea = {
 kiev = {
 	location = 280
 	inland = yes
+	color = { 240 167 130 }
 	outgoing = {
 		name = "novgorod"
 		path = {
@@ -757,9 +747,7 @@ kiev = {
 novgorod = {
 	location = 295
 	inland = yes
-	color = {
-		97 126 37 
-	}
+	color = { 97 126 37 }
 	outgoing = {
 		name = "white_sea"
 		path = {
@@ -878,6 +866,7 @@ amazonas_node = {
 
 ivory_coast = {
 	location = 1466
+	color = { 255 255 185 }
 	outgoing = {
 		name = "carribean_trade"
 		path = {
@@ -944,9 +933,7 @@ ivory_coast = {
 katsina = {
 	location = 1149
 	inland = yes
-	color = {
-		215 56 56 
-	}
+	color = { 215 56 56 }
 	outgoing = {
 		name = "tunis"
 		path = {
@@ -985,6 +972,7 @@ katsina = {
 ethiopia = {
 	location = 2772
 	inland = yes
+	color = { 56 120 191 }
 	outgoing = {
 		name = "alexandria"
 		path = {
@@ -1012,9 +1000,7 @@ ethiopia = {
 
 alexandria = {
 	location = 358
-	color = {
-		200 200 102 
-	}
+	color = { 200 200 102 }
 	outgoing = {
 		name = "ragusa"
 		path = {
@@ -1128,9 +1114,7 @@ carribean_trade = {
 
 genua = {
 	location = 109
-	color = {
-		232 36 39
-	}
+	color = { 232 36 39 }
 	outgoing = {
 		name = "valencia"
 		path = {
@@ -1213,11 +1197,10 @@ genua = {
 		136 137 4753 4754 #east_adriatic_coast_area
 	}
 }
+
 tunis = {
 	location = 1301
-	color = {
-		110 66 12 
-	}
+	color = { 110 66 12 }
 	outgoing = {
 		name = "sevilla"
 		path = {
@@ -1246,14 +1229,9 @@ tunis = {
 	}
 }
 
-
-
-
 gc_south_germany_tradenode = {
 	location = 1872
-	color = {
-		255 146 0
-	}
+	color = { 255 146 0 }
 	outgoing = {
 		name = "rheinland"
 		path = {
@@ -1292,12 +1270,11 @@ gc_south_germany_tradenode = {
 		4715 71 4711 #franconia_area
 	}
 }
+
 saxony = {
 	inland = yes
 	location = 266
-	color = {
-		36 182 69 
-	}
+	color = { 36 182 69 }
 	outgoing = {
 		name="krakow"
 		path = {
@@ -1341,11 +1318,10 @@ saxony = {
 		263 4723 6107 #opole_area
 	}
 }
+
 wien = {
 	location = 134
-	color = {
-		220 220 220 
-	}
+	color = { 220 220 220 }
 	outgoing = {
 		name = "pest"
 		path = {
@@ -1377,9 +1353,7 @@ wien = {
 rheinland = {
 	location = 1876
 	inland = yes
-	color = {
-		114 171 184 
-	}
+	color = { 114 171 184 }
 	outgoing = {
 		name = "lubeck"
 		path = {
@@ -1430,12 +1404,9 @@ rheinland = {
 	}
 }
 
-
 pest = {
 	location = 153
-	color = {
-		172 95 81
-	}
+	color = { 172 95 81 }
 	outgoing = {
 		name = "krakow"
 		path = {
@@ -1466,9 +1437,7 @@ pest = {
 
 krakow = {
 	location = 262
-	color = { 114  70  103 }
-	
-
+	color = { 114 70 103 }
 	outgoing = {
 		name = "baltic_sea"
 		path = {
@@ -1504,8 +1473,10 @@ krakow = {
 		40 41 767 2958 42 #east_prussia_area
 	}
 }
+
 X_vilnius_trade_node = {
 	location = 272
+	color = { 183 176 194 }
 	outgoing = {
 		name = "white_sea"
 		path = {
@@ -1531,11 +1502,10 @@ X_vilnius_trade_node = {
 		35 39 1935 #curonia_area
 	}
 }
+
 chesapeake_bay = {
 	location = 1500
-	color = {
-		193 26 14 
-	}
+	color = { 193 26 14 }
 	outgoing = {
 		name = "st_lawrence"
 		path = {
@@ -1585,9 +1555,7 @@ chesapeake_bay = {
 
 st_lawrence = {
 	location = 1490
-	color = {
-		193 192 14 
-	}
+	color = { 193 192 14 }
 	outgoing = {
 		name = "north_sea"
 		path = {
@@ -1632,8 +1600,10 @@ st_lawrence = {
 		982 984 2568 2569 4891 #lower_acadia_area
 	}
 }
+
 white_sea = {
 	location = 310
+	color = { 236 159 90 }
 	outgoing = {
 		name = "baltic_sea"
 		path = {
@@ -1661,11 +1631,10 @@ white_sea = {
 		1955 4122 4256 4257 5038 #arkhangelsk_area
 	}
 }
+
 north_sea = {
 	location = 1975
-	color = {
-		117 165 188 
-	}
+	color = { 117 165 188 }
 	outgoing = {
 		name = "english_channel"
 		path = {
@@ -1713,9 +1682,7 @@ north_sea = {
 
 baltic_sea = {
 	location = 1926
-	color = {
-		8 82 165 
-	}
+	color = { 8 82 165 }
 	outgoing = {
 		name = "lubeck"
 		path = {
@@ -1743,13 +1710,9 @@ baltic_sea = {
 	}
 }
 
-
-
 lubeck = {
 	location = 45
-	color = {
-		190 70 70 
-	}
+	color = { 190 70 70 }
 	outgoing = {
 		name = "english_channel"
 		path = {
@@ -1776,6 +1739,7 @@ lubeck = {
 ragusa = {
 	location = 151
 	end = yes
+	color = { 160 82 128 }
 	members = {
 		149 151 1764 4779 4705 #thrace_area
 		150 1765 2746 2750 4703 #bulgaria_area
@@ -1795,9 +1759,7 @@ ragusa = {
 
 valencia = {
 	location = 1295
-	color = {
-		87 70 168 #174 142 160
-	}
+	color = { 87 70 168 }
 	outgoing = {
 		name = "bordeaux"
 		path = {
@@ -1834,17 +1796,7 @@ valencia = {
 
 sevilla = {
 	location = 1293
-	color = {
-		57 160 101 
-	}
-	#outgoing = {
-	#	name = "english_channel"
-	#	path = {
-	#	}
-	#	control = {
-	#		2690.000 1247.000 2628.000 1281.000 2641.000 1428.000 2659.000 1480.000 2765.000 1514.000 2816.500 1525.000 2850.500 1553.000
-	#	}
-	#}
+	color = { 57 160 101 }
 	outgoing = {
 		name = "bordeaux"
 		path = {
@@ -1873,9 +1825,7 @@ sevilla = {
 
 bordeaux = {
 	location = 1276
-	color = {
-		36 132 247 
-	}
+	color = { 36 132 247 }
 	outgoing = {
 		name = "champagne"
 		path = {
@@ -1900,9 +1850,7 @@ bordeaux = {
 champagne = {
 	location = 186
 	inland = yes
-	color = {
-		148  30  70
-	}
+	color = { 148 30 70}
 	outgoing = {
 		name = "english_channel"
 		path = {
@@ -1929,9 +1877,7 @@ champagne = {
 english_channel = {
 	location = 1269
 	end = yes
-	color = {
-		220 138 57 
-	}
+	color = { 220 138 57 }
 	members = {
 		87 88 89 6089 1743 #picardy_area
 		94 6090 181 1866 93 #wallonia_area
