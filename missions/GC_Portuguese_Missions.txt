@@ -398,6 +398,7 @@ gc_por_2 = {
 				add_permanent_claim = ROOT
 			}
 			manding_area = {
+			}
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}

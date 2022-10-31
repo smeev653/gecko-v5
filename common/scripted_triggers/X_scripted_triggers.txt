@@ -127,7 +127,7 @@ X_flatland_terrain_trigger = {
 			has_terrain = savannah
 			has_terrain = steppe
 			has_terrain = Oasis
-			has_terrain = coastal
+			has_terrain = coastline
 		}
 	}
 }
