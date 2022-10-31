@@ -720,7 +720,7 @@ vassal_obligations_act = {
 	}	
 	
 	global_trade_goods_size_modifier = 0.1
-	vassal_forcelimit_bonus = 0.2
+	build_cost = -0.1
 	
 	ai_will_do = {
 		factor = 1

@@ -883,8 +883,8 @@ the_integrated_administration_act = {
 		full_idea_group = quality_ideas
 	}	
 	
-	land_morale = 0.05
-	vassal_forcelimit_bonus = 0.2
+	land_morale = 0.025
+	infantry_power = 0.05
 	
 	ai_will_do = {
 		factor = 1
