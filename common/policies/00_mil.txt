@@ -12,7 +12,7 @@ privy_council_establishment_act = {
 		full_idea_group = defensive_ideas
 	}
 
-	siege_ability = 0.05
+	land_attrition = -0.1
 	army_tradition = 1
 	
 	ai_will_do = {
@@ -38,8 +38,8 @@ the_mercenary_registration_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	reinforce_cost_modifier = -0.05
-	land_attrition = -0.1
+	reinforce_cost_modifier = -0.1
+	land_attrition = -0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -626,7 +626,7 @@ autonomous_estates = {
 		full_idea_group = aristocracy_ideas
 	}	
 	land_morale = 0.05
-	defensiveness = 0.10
+	defensiveness = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -802,7 +802,7 @@ guerilla_warfare = {
 	}	
 	
 	global_manpower_modifier = 0.15
-	vassal_forcelimit_bonus = 0.25
+	vassal_forcelimit_bonus = 0.33
 	
 	ai_will_do = {
 		factor = 0.8
@@ -848,7 +848,7 @@ noble_loyalty_act = {
 	}
 
 	#cavalry_cost = -0.05
-	land_forcelimit_modifier = 0.15
+	land_forcelimit_modifier = 0.2
 	reinforce_cost_modifier = -0.05
 	
 	ai_will_do = {
@@ -946,7 +946,7 @@ unified_army_command = {
 		full_idea_group = influence_ideas
 	}	
 	
-	army_tradition_from_battle = 0.5
+	infantry_fire = 0.15
 	land_morale = 0.05
 	
 	ai_will_do = {
@@ -1027,7 +1027,7 @@ deserteur_act = {
 		full_idea_group = quality_ideas
 	}
 
-	discipline = 0.03
+	discipline = 0.035
 	siege_ability = 0.05
 	
 	ai_will_do = {

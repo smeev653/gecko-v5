@@ -52,7 +52,7 @@ hold_the_weather_gauge = {
 		full_idea_group = offensive_ideas
 	}
 	
-	discipline = 0.03
+	discipline = 0.035
 	global_naval_barrage_cost = -0.1
 	
 	ai_will_do = {
@@ -652,7 +652,7 @@ protected_shipping_lanes = {
 	}
 	
 	land_morale = 0.05
-	mercenary_discipline = 0.03
+	mercenary_discipline = 0.035
 
 	ai_will_do = {
 		factor = 1
@@ -884,7 +884,7 @@ the_integrated_administration_act = {
 	}	
 	
 	land_morale = 0.05
-	vassal_forcelimit_bonus = 0.25
+	vassal_forcelimit_bonus = 0.33
 	
 	ai_will_do = {
 		factor = 1
@@ -1089,7 +1089,7 @@ black_chamber_act = {
 	}
 	
 	artillery_cost = -0.10
-	artillery_fire = 0.5
+	artillery_fire = 1
 
 	ai_will_do = {
 		factor = 0.6

@@ -11,7 +11,7 @@ the_combination_act = {
 	}
 	
 	production_efficiency = 0.10
-	discipline = 0.03
+	discipline = 0.035
 	
 	ai_will_do = {
 		factor = 1
@@ -224,8 +224,8 @@ the_royal_commission_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	trade_efficiency = 0.1
-	advisor_cost = -0.05
+	trade_efficiency = 0.125
+	advisor_cost = -0.075
 	
 	ai_will_do = {
 		factor = 0.6
@@ -246,7 +246,7 @@ edict_of_resistance = {
 	}
 
 
-	discipline = 0.03
+	discipline = 0.035
 	hostile_attrition = 1
 
 	ai_will_do = {
@@ -472,7 +472,7 @@ the_pioneer_policy = {
 		full_idea_group = expansion_ideas
 	}
 
-	discipline = 0.03
+	discipline = 0.035
 	reinforce_speed = 0.15
 	
 	ai_will_do = {
@@ -494,7 +494,7 @@ land_inheritance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	mercenary_discipline = 0.03
+	mercenary_discipline = 0.035
 	mercenary_cost = -0.25
 	
 	ai_will_do = {
@@ -720,7 +720,7 @@ vassal_obligations_act = {
 	}	
 	
 	global_trade_goods_size_modifier = 0.1
-	vassal_forcelimit_bonus = 0.25
+	vassal_forcelimit_bonus = 0.33
 	
 	ai_will_do = {
 		factor = 1
@@ -781,7 +781,7 @@ vassal_integration_act = {
 		full_idea_group = administrative_ideas
 	}	
 	
-	diplomatic_annexation_cost = -0.25
+	trade_efficiency = 0.1
 	global_own_trade_power = 0.2
 	
 	ai_will_do = {
