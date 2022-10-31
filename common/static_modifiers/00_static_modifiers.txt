@@ -1337,7 +1337,7 @@ crown_colony_overlord = {
 	land_forcelimit = 20
 	governing_capacity = -200
 	liberty_desire_from_subject_development = 0.25
-	global_tariffs = -0.05
+	global_tariffs = -0.1
 }
 
 private_enterprise_overlord = {
@@ -1345,7 +1345,7 @@ private_enterprise_overlord = {
 	land_forcelimit = 20
 	governing_capacity = -200
 	liberty_desire_from_subject_development = 0.25
-	global_tariffs = -0.05
+	global_tariffs = -0.1
 }
 
 self_governing_colony_overlord = {
@@ -1353,7 +1353,7 @@ self_governing_colony_overlord = {
 	land_forcelimit = 20
 	governing_capacity = -200
 	liberty_desire_from_subject_development = 0.25
-	global_tariffs = -0.05
+	global_tariffs = -0.1
 }
 
 crown_colony_subject = {
