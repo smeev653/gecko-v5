@@ -759,7 +759,7 @@ naples_missions_2 = {
 		}
 		position = 6
 		trigger = {
-			109 = { # Genoa
+			1303 = { # Genoa
 				is_strongest_trade_power = ROOT
 			}
 			151 = { # Constantinople
@@ -2011,7 +2011,7 @@ naples_missions_5 = {
 		}
 		trigger = {
 			num_of_galley = VEN
-			109 = { #Venice
+			1303 = { #Venice
 				trade_share = {
 					country = ROOT
 					share = 20

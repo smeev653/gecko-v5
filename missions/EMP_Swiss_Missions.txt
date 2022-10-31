@@ -846,7 +846,7 @@ swiss_missions_4 = {
 		position = 7
 		provinces_to_highlight = {
 			province_id = 186 
-			province_id = 109
+			province_id = 1303
 			NOT = {
 				OR = {
 					has_merchant = yes 
@@ -866,7 +866,7 @@ swiss_missions_4 = {
 				}
 				has_merchant = yes 
 			}
-			109 = {
+			1303 = {
 				trade_share = {
 					country = ROOT 
 					share = 33 

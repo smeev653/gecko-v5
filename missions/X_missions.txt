@@ -1087,7 +1087,7 @@ X_VEN_slot_3 = {
 				siege = 2
 			}
 			add_dip_power = -100
-			109 = {
+			1303 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1214,7 +1214,7 @@ X_VEN_slot_3 = {
 						any_trade_node_member_province = {
 							OR = {
 								province_id = 151
-								province_id = 109
+								province_id = 1303
 							}
 						}
 						sea_zone = {
@@ -1250,7 +1250,7 @@ X_VEN_slot_3 = {
 										country = PREV
 									}
 								}
-								109 = {
+								1303 = {
 									trade_share = {
 										share = 5
 										country = PREV
@@ -1275,10 +1275,10 @@ X_VEN_slot_3 = {
 					}
 				}
 				AND = {
-					province_id = 109
+					province_id = 1303
 					ROOT = {
 						NOT = {
-							109 = {
+							1303 = {
 								trade_share = {
 									country = ROOT
 									share = 40
@@ -1325,7 +1325,7 @@ X_VEN_slot_3 = {
 									country = PREV 
 								}
 							}
-							109 = {
+							1303 = {
 								trade_share = {
 									share = 5
 									country = PREV 
@@ -1350,7 +1350,7 @@ X_VEN_slot_3 = {
 					any_trade_node_member_province = {
 						OR = {
 							province_id = 151
-							province_id = 109
+							province_id = 1303
 						}
 					}
 				}
@@ -1362,7 +1362,7 @@ X_VEN_slot_3 = {
 					share = 10
 				}
 			}
-			109 = {
+			1303 = {
 				trade_share = {
 					country = ROOT
 					share = 40
@@ -1397,7 +1397,7 @@ X_VEN_slot_3 = {
 						add_permanent_claim = ROOT
 					}
 				}
-				109 = {
+				1303 = {
 					every_trade_node_member_province = {
 						limit = {
 							sea_zone = {
@@ -1436,7 +1436,7 @@ X_VEN_slot_3 = {
 						}
 					}
 				}
-				109 = {
+				1303 = {
 					every_trade_node_member_province = {
 						limit = { 
 							owned_by = ROOT
@@ -1510,14 +1510,14 @@ X_VEN_slot_4 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 113
-				province_id = 109
+				province_id = 1303
 			}	
 		}
 		trigger = {
 			113= {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			109 = {
+			1303 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -2381,7 +2381,7 @@ X_VEN_slot_5 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 109
+					province_id = 1303
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -2392,7 +2392,7 @@ X_VEN_slot_5 = {
 			}
 		}
 		trigger = {
-			109 = {
+			1303 = {
 				trade_share = {
 					country = ROOT
 					share = 25

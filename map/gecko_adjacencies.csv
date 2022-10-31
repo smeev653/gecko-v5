@@ -60,6 +60,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 247;4365;sea;1284;-1;-1;-1;-1;Cumbria-Mann
 333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
 2986;2455;sea;1302;-1;-1;-1;-1;Cagliari-Bizerte
+2986;4736;sea;1302;-1;-1;-1;-1;Cagliari-Trapani
+4559;4735;sea;1300;-1;-1;-1;-1;Menorca-Arborea
 4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
 6192;4560;sea;1295;-1;-1;-1;-1;Alicante-Ibiza
 366;4565;sea;1471;-1;-1;-1;-1;Canaries

@@ -104,8 +104,7 @@ ethiopia_european_slot = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1293	#Sevilla Trade
-				province_id = 1295	#Valencia Trade
-				province_id = 1298	#Genoa Trade
+				province_id = 1303	#Genoa Trade
 				province_id = 1308	#Venice Trade
 			}
 			has_discovered = ROOT
@@ -118,19 +117,7 @@ ethiopia_european_slot = {
 						share = 5
 					}
 				}
-				1295 = {
-					trade_share = {
-						country = ROOT
-						share = 5
-					}
-				}
-				1298 = {
-					trade_share = {
-						country = ROOT
-						share = 5
-					}
-				}
-				1308 = {
+				1303 = {
 					trade_share = {
 						country = ROOT
 						share = 5

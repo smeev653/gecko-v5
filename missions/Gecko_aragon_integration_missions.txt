@@ -16,8 +16,7 @@ aragon_integration_slot_4 = {
 		icon = mission_consulate_of_the_sea
 		provinces_to_highlight = {
 			OR = {
-				province_id = 109
-				province_id = 1295
+				province_id = 1303
 				AND = {
 					OR = {
 						province_id = 213
@@ -31,13 +30,7 @@ aragon_integration_slot_4 = {
 			}
 		}
 		trigger = {
-			1295 = {
-				trade_share = {
-					country = ROOT
-					share = 70
-				}
-			}
-			109 = {
+			1303 = {
 				trade_share = {
 					country = ROOT
 					share = 15
