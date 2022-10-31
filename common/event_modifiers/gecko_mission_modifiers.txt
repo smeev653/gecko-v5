@@ -496,8 +496,8 @@ gc_mug_formation_hope = {
 }
 
 gc_west_african_integration = {
-	 	num_accepted_cultures = 1
-		culture_conversion_cost = -0.1
+	 	num_accepted_cultures = 3
+		culture_conversion_cost = -0.2
 }
 
 swe_baltic_trade_hegemony_modifier = {

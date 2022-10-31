@@ -218,22 +218,9 @@ gc_por_1_b = {
 		}
 		
 		trigger = {
-			OR = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					trade_goods = wine
-					OR = {
-						has_building = workshop
-						has_building = counting_house
-					}
-				}
-				trading_bonus = {
-					trade_goods = wine
-					value = yes
-				}
-				production_leader = {
-					trade_goods = wine
-				}
+			trade_goods_produced_amount = {
+				trade_goods = wine
+				amount = 5
 			}
 		}
 		effect = {
@@ -383,13 +370,6 @@ gc_por_2 = {
 			}
 			create_explorer = { tradition = 60 }
 			add_dip_power = 60
-			coastal_kongo = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			tekrur_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -398,7 +378,20 @@ gc_por_2 = {
 				add_permanent_claim = ROOT
 			}
 			manding_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
+			jolof_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			futa_jallon_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -413,48 +406,48 @@ gc_por_2 = {
 		completed_by = 1584.1.1
 		
 		provinces_to_highlight = {
-			region = kongo_region
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
+			OR = {
+				area = futa_jallon_area
+				area = jolof_area
+				area = manding_area
+			}	
 		}
 		
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = miss_discover_kongo
-				kongo_region = {
-					has_discovered = ROOT
-				}
+			futa_jallon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			custom_trigger_tooltip = {	
-				tooltip = miss_colonize_kongo
-				kongo_region = {
-					owned_by = ROOT
-					is_city = yes
-				}
+			jolof_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			manding_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 	
 		effect = {
-			hidden_effect = {
-				4097 = {
-					discover_country = ROOT
-				}
+			1121 = {
+				change_trade_goods = gold
 			}
-			4097 = {
-				add_trade_modifier = {
-					who = root
-					duration = 5475
-					power = 20
-					key = ivory_coast_ambition
-				}
+			2248 = {
+				change_trade_goods = slaves
 			}
-			central_africa_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
+			2248 = {
+				change_trade_goods = slaves
 			}
+			1114 = {
+				change_trade_goods = slaves
+			}
+			2238 = {
+				change_trade_goods = slaves
+			}
+			1117 = {
+				change_trade_goods = slaves
+			}
+			add_years_of_income = 1
 		}
 	}
 }
@@ -505,9 +498,11 @@ gc_por_2_b = {
 			custom_tooltip = por_triangle_trade_mission_tooltip
 			hidden_effect = {
 				every_owned_province = {
-					limit = {
-						continent = africa
-						trade_goods = slaves
+					OR = {
+						limit = {
+							continent = africa
+							trade_goods = slaves
+						}
 					}
 					add_province_modifier = {
 						name = "por_triangle_trade_modifier"
@@ -534,29 +529,29 @@ gc_por_2_c = {
 	has_country_shield = yes
 	gc_por_african_gold = {
 		icon = mission_african_gold
-		required_missions = { gc_por_discovers_east_africa }
+		required_missions = { gc_por_triangle_trade}
 		position = 5
 		
 		provinces_to_highlight = {
-			OR = {
-				area = zimbabwe_area
-				area = butua_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
 		}
 		
 		trigger = {
-			zimbabwe_area = {
-				type = all
+			1120 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			butua_area = {
-				type = all
+			1120 = {
+				base_production = 10
+			}
+			1121 = {
 				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1121 = {
+				base_production = 10
 			}
 		}
 		effect = {
-			1188 = {
+			1120 = {
 				if = {
 					limit = { trade_goods = gold }
 					add_province_modifier = {
@@ -565,25 +560,7 @@ gc_por_2_c = {
 					}
 				}
 			}
-			1185 = {
-				if = {
-					limit = { trade_goods = gold }
-					add_province_modifier = {
-						name = "por_african_gold_modifier"
-						duration = 7300
-					}
-				}
-			}
-			1184 = {
-				if = {
-					limit = { trade_goods = gold }
-					add_province_modifier = {
-						name = "por_african_gold_modifier"
-						duration = 7300
-					}
-				}
-			}
-			1186 = {
+			1121 = {
 				if = {
 					limit = { trade_goods = gold }
 					add_province_modifier = {
@@ -682,130 +659,10 @@ gc_por_3_c = {
 		effect = {
 			add_prestige = 10
 			add_yearly_sailors = 3
-			cape_of_good_hope_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			mozambique_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1186 = {
-				add_permanent_claim = ROOT
-			}
-			1192 = {
-				add_permanent_claim = ROOT
-			}
-			if = {
-				limit = {
-					1177 = { is_empty = yes }
-				}	
-					1177 = {
-						cede_province = POR
-						add_core = POR
-					}
-			}
-
 			add_country_modifier = {
 					name = "cape_trade_established"
 					duration = -1
 				}
-		}
-	}
-	gc_por_discovers_east_africa = {
-		icon = mission_have_two_subjects
-		required_missions = { gc_por_discovers_cape_good_hope }
-		completed_by = 1530.1.1
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1186
-				province_id = 1192
-				area = mozambique_area
-			}
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = miss_discover_east_africa
-				east_africa_region = {
-					has_discovered = ROOT
-				}
-			}
-			1186 = {
-				owned_by = ROOT
-			}
-			1192 = {
-				owned_by = ROOT
-			}
-			mozambique_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-	
-		effect = {
-			add_prestige = 10
-			majarteen_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
-			zimbabwe_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			butua_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1201 = {
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	gc_por_conquers_zanzibar = {
-		icon = mission_cannons_firing
-		required_missions = { gc_por_discovers_east_africa }
-		position = 5
-		
-		provinces_to_highlight = {
-			province_id = 1201
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			1201 = {
-				owned_by = ROOT
-			}
-		}
-	
-		effect = {
-			1201 = {
-				add_base_production = 3
-				add_base_manpower = 3
-				add_province_modifier = {
-					name = "por_makeshift_defenses"
-					duration = -1
-				}
-			}
 		}
 	}
 }
@@ -852,18 +709,7 @@ gc_por_4 = {
 		}
 	
 		effect = {
-			1201 = {
-				add_trade_modifier = {
-					who = root
-					duration = 5475
-					power = 20
-					key = horn_africa_ambition
-				}
-			}
-			ETH = { set_country_flag = eth_prester_john_discovered }
-			2999 = {
-				add_permanent_claim = ROOT
-			}
+			add_prestige = 50
 			add_country_modifier = {
 				name = prester_john_discovered
 				duration = -1
@@ -987,88 +833,6 @@ gc_por_5 = {
 				add_province_modifier = {
 					name = "buffer_zone_commerce"
 					duration = 5475
-				}
-			}
-		}
-	}
-	gc_por_conquers_hormuz = {
-		icon = mission_persian_soldiers
-		required_missions = { gc_por_discovers_prestor_john }
-		position = 5
-		completed_by = 1508.1.1
-		
-		provinces_to_highlight = {
-			province_id = 2999
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			2999 = {
-				owned_by = ROOT
-			}
-		}
-	
-		effect = {
-			2999 = {
-				add_base_production = 3
-				add_base_manpower = 3
-				add_province_modifier = {
-					name = "por_makeshift_defenses"
-					duration = -1
-				}
-			}
-			mascat_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	gc_por_oman = {
-		icon = mission_portuguese_oman
-		required_missions = { gc_por_conquers_hormuz }
-		
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					area = mascat_area
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					province_id = 400
-					NOT = { owned_by = ROOT }
-				}
-			}
-		}
-		
-		trigger = {
-			mascat_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			400 = { owned_by = ROOT }
-		}
-		effect = {
-			if = {
-				limit = {
-					2999 = {
-						owned_by = ROOT
-					}
-				}
-				2999 = {
-					add_province_modifier = {
-						name = "persian_gulf_trade_por"
-						duration = -1
-					}
-				}
-			}
-			400 = {
-				add_province_modifier = {
-					name = "persian_gulf_trade_por"
-					duration = -1
 				}
 			}
 		}

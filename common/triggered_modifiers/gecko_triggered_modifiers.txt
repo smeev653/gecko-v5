@@ -422,6 +422,7 @@ African_Gold = {
 
 African_Slave_Trade = {
 	potential = {
+		NOT = { technology_group = western }
 	}
 
 	trigger = {
