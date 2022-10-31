@@ -273,7 +273,7 @@ trade_company_sevilla = {
 		227 229 230 4150 4787 #alentejo_area
 		366 367 368 4565 #macaronesia_area
 		209 210 2989 #basque_country
-		211 214 2990 4557 #aragon_area
+
 	}
 	
 	# Specific
@@ -329,6 +329,7 @@ trade_company_champagne = {
 		192 193 4764 6093 #bourgogne_area
 		187 188 189 4766 6091 #lorraine_area
 		94 6090 181 1866 93 #wallonia_area
+		203 204 205 4719 #savoy_dauphine_area
 	}
 	
 	# Specific
@@ -368,7 +369,7 @@ trade_company_genua = {
 		333 4559 4560 #baleares_area
 		200 2753 4391 4695 196 #languedoc_area
 		201 202 2991 4696 #provence_area
-		203 204 205 4719 #savoy_dauphine_area
+		211 214 2990 4557 #aragon_area
 	}
 	
 	# Specific

@@ -1162,13 +1162,13 @@ genua = {
 		123 1934 2984 5786 #calabria_area
 		5785 2981 6075 2979 4728 #torino_area
 		117 6048 6049 #siena_area
-		
+		211 214 2990 4557 #aragon_area
 		197 212 213 2987 2988 #catalonia_area
 		220 1750 4549 4550 6192 #valencia_area
 		333 4559 4560 #baleares_area
 		200 2753 4391 4695 196 #languedoc_area
 		201 202 2991 4696 #provence_area
-		203 204 205 4719 #savoy_dauphine_area
+
 	}
 }
 
@@ -1746,7 +1746,6 @@ sevilla = {
 	}
 	members = {
 		224 1749 4548 6194 #lower_andalucia_area
-		211 214 2990 4557 #aragon_area
 		1748 225 6195 2754 #cordoba_area
 		222 223 226 4546 6193 #upper_andalucia_area
 		215 217 2755 4551 4789 #castille_area
@@ -1808,6 +1807,7 @@ champagne = {
 		192 193 4764 6093 #bourgogne_area
 		187 188 189 4766 6091 #lorraine_area
 		94 6090 181 1866 93 #wallonia_area
+		203 204 205 4719 #savoy_dauphine_area
 	}
 }
 
