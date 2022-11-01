@@ -1338,25 +1338,25 @@ large_colonial_nation = {
 crown_colony_overlord = {
 	merchants = 1						  
 	land_forcelimit = 20
-	governing_capacity = -200
 	liberty_desire_from_subject_development = 0.25
 	global_tariffs = -0.1
+	#global_trade_power = -0.05
 }
 
 private_enterprise_overlord = {
 	merchants = 1						  
 	land_forcelimit = 20
-	governing_capacity = -200
 	liberty_desire_from_subject_development = 0.25
 	global_tariffs = -0.1
+	#global_trade_power = -0.05
 }
 
 self_governing_colony_overlord = {
 	merchants = 1						  
 	land_forcelimit = 20
-	governing_capacity = -200
 	liberty_desire_from_subject_development = 0.25
 	global_tariffs = -0.1
+	#global_trade_power = -0.05
 }
 
 crown_colony_subject = {

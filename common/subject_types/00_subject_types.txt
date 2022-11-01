@@ -491,7 +491,7 @@ colony = {
 	max_government_rank = 1
 	cities_required_for_bonuses = 15
 
-	relative_power_class = 0
+	relative_power_class = 1
 	should_quit_wars_on_activation = yes								 
 
 	can_fight = {
@@ -547,7 +547,7 @@ crown_colony = {
 	count = colony
 	
 	#forcelimit_bonus = 1.0
-	forcelimit_to_overlord = 0.2
+	forcelimit_to_overlord = 0.25 
 	#manpower_bonus = 1.0
 	manpower_to_overlord = 0.2
 	#naval_forcelimit_bonus = 0.5
@@ -557,6 +557,7 @@ crown_colony = {
 	
 	
 	# Subject Interactions:
+	replace_governor = no
 	embargo_rivals = yes
 	support_loyalists =  yes
 	subsidize_armies = no
