@@ -521,9 +521,13 @@ country_event = {
 	major = yes
 
 	trigger = {
-		dip_tech = 20
-		wine = 1
+		dip_tech = 10
 		glass = 1
+		num_of_owned_provinces_with = {
+			value = 5
+			trade_goods = wine
+			has_building = farm_estate
+		}
 		NOT = { has_global_flag = wine_corks_happened }
 	}
 	mean_time_to_happen = {
@@ -536,13 +540,13 @@ country_event = {
 		change_price = {
 			trade_goods = wine
 			key = WINE_CORKS
-			value = 0.25
+			value = 0.15
 			duration = -1
 		}
 		change_price = {
 			trade_goods = glass
 			key = WINE_CORKS
-			value = 0.15
+			value = 0.05
 			duration = -1
 		}
 	}
@@ -826,33 +830,35 @@ country_event = {
 	major = yes
 
 	trigger = {
-		dip_tech = 22
+		dip_tech = 15
 		num_of_ports = 3
+		has_flagship = yes
+		naval_supplies = 5
 		NOT = { has_global_flag = permanent_navies_happened }
 	}
 	mean_time_to_happen = {
 		months = 1
 	}
 	
-	
 	option = {
 		name = prices.19.a
+		add_dip_power = 200
 		change_price = {
 			trade_goods = naval_supplies
 			key = PERMANENT_NAVIES
-			value = 0.5
+			value = 0.35
 			duration = -1
 		}
 		change_price = {
 			trade_goods = glass
 			key = PERMANENT_NAVIES
-			value = 0.15
+			value = 0.1
 			duration = -1
 		}
 		change_price = {
 			trade_goods = livestock
 			key = PERMANENT_NAVIES
-			value = 0.10
+			value = 0.05
 			duration = -1
 		}
 	}
