@@ -279,6 +279,10 @@ NDefines.NMilitary.HUSSARS_MANPOWER_COST_MODIFIER = 1.0
 NDefines.NMilitary.HUSSARS_STARTING_STRENGTH = 1.0
 NDefines.NMilitary.HUSSARS_STARTING_MORALE = 0.1
 NDefines.NMilitary.BANNER_STARTING_STRENGTH = 0.1 -- Starting strength of a banner regiment, 1.0 being full strength
+NDefines.NMilitary.REGULAR_LEADER_POWER = 0.5
+NDefines.NMilitary.EXPLORER_LEADER_POWER = 0.4
+NDefines.NMilitary.LEADER_MAX_PIPS = 8							-- Max general/admiral pips (per skill)
+NDefines.NMilitary.LEADER_MIN_PIPS = 2	
 
 								-- Min general/admiral pips (total)
 NDefines.NMilitary.COMBAT_DICE_SIDE = 9					
