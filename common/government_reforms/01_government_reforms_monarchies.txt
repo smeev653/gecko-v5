@@ -3065,7 +3065,8 @@ centralize_reform = {
 		}
 	}
 	modifiers = {
-		development_cost_modifier = -0.05
+		development_cost_modifier = -0.1
+		global_manpower_modifier = 0.25
 		global_prosperity_growth = 0.5
 		all_estate_loyalty_equilibrium = -0.05
 	}

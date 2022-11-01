@@ -3314,7 +3314,8 @@ por_minas_gerais = {
 }
 
 por_wine_monopolies = {
-	trade_steering = 0.2
+	trade_value = 5
+	trade_goods_size_modifier = 0.25
 }
 
 por_houses_of_trade = {

@@ -217,10 +217,20 @@ gc_por_1_b = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "por_wine_monopolies"
-				duration = 7300
-			}
+			every_owned_province = {
+						limit = {
+							OR = {
+								area = beieras_area
+								area = alentejo_area
+							}
+							trade_goods = wine
+						}
+					
+					add_province_modifier = {
+						name = "por_wine_monopolies"
+						duration = 9125
+					}
+				}
 		}
 	}
 	gc_por_trading_houses = {

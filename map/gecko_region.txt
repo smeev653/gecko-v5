@@ -483,8 +483,7 @@ niger_region = {
 		lower_volta_area
 		kong_area
 		massina_area
-		manding_area
-		tekrur_area
+
 		jenne_area
 		pr_africa_area_11
 	}
@@ -496,6 +495,8 @@ niger_region = {
 
 guinea_region = {
 	areas = {
+		manding_area
+		tekrur_area
 		benin_area
 		cap_verde_area
 		guinea_coast_area

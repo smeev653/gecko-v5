@@ -3479,6 +3479,9 @@ strengthen_executive_powers_reform = {
 		sailor_maintenance_modifer = -0.1
 		#discipline = 0.05
 	}
+	ai = {
+		factor = 1000
+	}
 }
 
 reinforce_republican_values_reform = {

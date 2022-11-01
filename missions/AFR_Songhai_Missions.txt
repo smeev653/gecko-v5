@@ -1884,14 +1884,35 @@ songhai_money_maker_slot = {
 				}
 				base_production = 10
 				has_trade_building_trigger = yes
-				value = 2
+				value = 1
 			}
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_control_over_the_mint
+			1120 = {
+				if = {
+					limit = { 
+						owned_by = ROOT 
+					}
+					
+				add_province_modifier = {
+						name = "gc_african_gold_modifier"
+						duration = 7300
+					}
+				}	
 			}
-		}
+			1121 = {
+				if = {
+					limit = { 
+						trade_goods = gold
+						owned_by = ROOT 
+					}
+						add_province_modifier = {
+							name = "gc_african_gold_modifier"
+							duration = 7300
+						}
+				}	
+			}
+		}	
 	}
 
 	#Unite the trade nodes

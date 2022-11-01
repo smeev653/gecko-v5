@@ -3644,6 +3644,12 @@ X_POR_slot_2 = {
 				name = X_POR_manueline_architecture_cmod
 				duration = 18250
 			}
+			alentejo_area = {
+				add_base_manpower = 2
+			}	
+			beieras_area = {
+				add_base_manpower = 2
+			}	
 		}
 	}
 }
