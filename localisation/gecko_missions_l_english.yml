@@ -258,7 +258,8 @@ gc_build_army_mission_desc:0 ""
 
  repulse_french_gank_title:0 "Defense of France"
  repulse_french_gank_desc:0 ""
- 
+ gc_french_development_tt:0 "All owned provinces in the France Region must be at least §Y10 Development§!. You must have at least 10 Provinces with at least §Y30 Development§!"
+ gc_french_development_tooltip:0 "All owned provinces in the France Region with at least §Y30 Development§! get '§YUrbanisation§!'for §Y50 years§!, giving the following effects:\nLocal Goods Produced: §G+0.25§!\nLocal Development Cost: §G-15.0%§!\nLocal Construction Cost: §G-15.0%§!\nLocal Manpower Modifier: §G33.0%§! \nLocal Governing Cost: §G-200.0%§! \nLocal Governing Cost Increase: §G-15§!"
  FRENCH_EMPIRE:0 "French Empire"
  FRENCH_EMPIRE_ADJ:0 "French"
 

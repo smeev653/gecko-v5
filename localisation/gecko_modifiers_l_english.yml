@@ -119,6 +119,11 @@
  desc_france_united:0 "We have united the French lands much to betterment of our armies"
  lowland_conquest:0 "Conquest of Flanders"
  desc_lowland_conquest:0 "We have re-integrated the lands of Flanders into our realm permanently. Show the rest of Europe our Elan!"
+ gc_fra_paper_industry:0 "Expansion of the Printing Press"
+ gc_land_reform:0 "Land Reform"
+ gc_french_development:0 "Urbanisation"
+ defense_of_france:0 "Defense of France"
+
 
  #Ottoman Missions
 
@@ -151,8 +156,7 @@
  #Italy 
  gc_pope_controls_roman_empire:0 "Empire of God"
 
- #france
- defense_of_france:0 "Defense of France"
+ 
 
  #persia
 

@@ -127,42 +127,45 @@ emp_france_missions_1 = {
 		icon = mission_establish_mint_towns 
 		required_missions = { emp_fra_auld_alliance }
 		provinces_to_highlight = {
-			OR = {
-				AND = {
 					region = france_region
-					OR = {
-						NOT = { owned_by = root }
-						NOT = { development = 10 }
+					owned_by = root 
+					NOT = { development = 10 }
+		}
+		trigger = {
+			crown_land_share = 30
+			custom_trigger_tooltip = {
+			tooltip = gc_french_development_tt
+				all_core_province = {
+							region = france_region
+							 owned_by = root
+							development = 10	
 					}
+				num_of_owned_provinces_with = {
+					value = 10 
+					region = france_region
+					development = 30
 				}
 			}
 		}
-		trigger = {
-			crown_land_share = 50
-			every_owned_province = {
-						limit = {
-							region = france_region
-							development = 10
-						}
-				}
-			num_of_owned_provinces_with = {
-				value = 10 
-				region = france_region
-				development = 30
-			}	
-		}
 		effect = {
-			add_years_of_income = 1.5
-			every_owned_province = {
+			add_years_of_income = 2
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			custom_tooltip = gc_french_development_tooltip
+			hidden_effect = {
+				every_owned_province = {
 						limit = {
 							region = france_region
 							development = 30
 						}
 						add_province_modifier = {
 						name = "gc_french_development"
-						duration = 9125
+						duration = 1825
 					}
 				}
+			}
+			
 		}
 	}
 	emp_fra_conquer_flanders_wallonia = {
