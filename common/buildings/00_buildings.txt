@@ -1620,7 +1620,9 @@ grand_shipyard = {
 	cost = 1000
 	time = 12
 
-
+	build_trigger = {
+		has_port = yes
+	}
 	
 	modifier = {
 		global_ship_cost = -0.1
