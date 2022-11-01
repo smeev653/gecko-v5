@@ -1170,7 +1170,7 @@ estate_nobles_levies = {
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.05
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.375
 	}
 	penalties = {
 	}
@@ -1903,7 +1903,7 @@ estate_burghers_free_enterprise = {
 	loyalty = 0.1
 	influence = 0.1
 	penalties = {
-		global_manpower_modifier = -0.1
+		global_manpower_modifier = -0.05
 	}
 	benefits = {
 		global_trade_goods_size_modifier  = 0.05
@@ -2847,7 +2847,7 @@ estate_maratha_levies = {
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.05
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.375
 	}
 
 	penalties = {
