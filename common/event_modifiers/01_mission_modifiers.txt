@@ -6158,7 +6158,7 @@ eth_modernized_army = {
 eth_blessed_empire = {
 	tolerance_own = 3
 	stability_cost_modifier = -0.15
-	manpower_in_true_faith_provinces = 0.3
+	manpower_in_true_faith_provinces = 0.15
 }
 
 #Country modifier

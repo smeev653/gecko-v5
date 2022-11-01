@@ -180,7 +180,7 @@ AKS_ideas = {
 	}
 	
 	bonus = {
-		manpower_in_true_faith_provinces = 0.20
+		manpower_in_true_faith_provinces = 0.15
 	}
 	
 	trigger = {
