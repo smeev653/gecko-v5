@@ -479,16 +479,7 @@ east_african_militar_slot = {
 			}
 		}
 		effect = {
-			custom_tooltip = east_africa_horn_trade_tooltip
-			trade_company_gulf_of_aden = { 
-				limit = {
-					province_has_center_of_trade_of_level = 1
-					has_port = yes
-					NOT = { is_core = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
-			}
+
 		}
 	}
 	

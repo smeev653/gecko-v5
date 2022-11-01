@@ -3480,13 +3480,13 @@ country_event = {
 				duration = -1
 			}
 		}
-		guinea_region = {
-			limit = { NOT = { has_province_modifier = subsaharan_buildings } }
-			add_permanent_province_modifier = {
-				name = subsaharan_buildings
-				duration = -1
-			}
-		}
+		#guinea_region = {
+		#	limit = { NOT = { has_province_modifier = subsaharan_buildings } }
+		#	add_permanent_province_modifier = {
+		#		name = subsaharan_buildings
+		#		duration = -1
+		#	}
+		#}
 	}
 	#######
 #    option = {
@@ -3565,15 +3565,15 @@ picture = COURT_eventPicture
 								
 						}
 			}	
-			guinea_region = {
-				every_province = {
-							limit = {
-								has_province_modifier = subsaharan_buildings 
-							}
-								remove_province_modifier = subsaharan_buildings
-								
-						}
-			}	
+			#guinea_region = {
+			#	every_province = {
+			#				limit = {
+			#					has_province_modifier = subsaharan_buildings 
+			#				}
+			#					remove_province_modifier = subsaharan_buildings
+			#					
+			#			}
+			#}	
 		}
 	}
 }

@@ -207,14 +207,7 @@ gc_por_1_b = {
 		
 		provinces_to_highlight = {
 			trade_goods = wine
-			NOT = { owned_by = ROOT }
-			NOT = {
-				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
-			}
-			has_discovered = ROOT
+			owned_by = ROOT 
 		}
 		
 		trigger = {
@@ -498,12 +491,11 @@ gc_por_2_b = {
 			custom_tooltip = por_triangle_trade_mission_tooltip
 			hidden_effect = {
 				every_owned_province = {
-					OR = {
 						limit = {
 							continent = africa
 							trade_goods = slaves
 						}
-					}
+					
 					add_province_modifier = {
 						name = "por_triangle_trade_modifier"
 						duration = 7300
@@ -533,7 +525,10 @@ gc_por_2_c = {
 		position = 5
 		
 		provinces_to_highlight = {
-			
+			OR = {
+				province_id = 1120
+				province_id = 1121 
+			}
 		}
 		
 		trigger = {
