@@ -4781,7 +4781,49 @@ on_expanded_infrastructure = {
 #ROOT = province that was centralized in
 on_centralized_state = {
 }
+#ROOT = country
+monarch_on_shipwreck = {
+}
+heir_on_shipwreck = {
+}
+consort_on_shipwreck = {
+}
 
+#ROOT = country
+on_defender_of_faith_loss = {
+	clr_country_flag = claimed_defender_of_faith_flag
+	remove_country_modifier = liv_the_livonian_defender
+	remove_country_modifier = gov_improved_defender_of_faith_mod
+	remove_country_modifier = pol_shield_against_catholicism_modifier
+}
+on_defender_of_faith_claim = {
+	set_country_flag = claimed_defender_of_faith_flag
+	if = {
+		limit = {
+			religion = catholic
+			has_country_flag = liv_proclaim_defender_of_faith
+			NOT = { has_country_modifier = liv_the_livonian_defender }
+		}
+		add_country_modifier = {
+			name = liv_the_livonian_defender
+			duration = -1
+			desc = liv_the_livonian_defender_tt
+		}
+	}
+	if = {
+		limit = {
+			has_government_attribute = improved_defender_of_faith
+		}
+		add_country_modifier = {
+			name = gov_improved_defender_of_faith_mod
+			duration = -1
+		}
+	}
+}
+on_hre_dismantled = {
+}
+on_new_age = {
+}
 #ROOT = province
 on_adm_exploited = {
 	if = {
