@@ -1760,7 +1760,9 @@ aristocratic_values_reform = {
 		}
 	}
 	modifiers = {
-		global_manpower_modifier = 0.1
+		manpower_in_own_culture_provinces = 0.15
+		manpower_in_accepted_culture_provinces = 0.15
+		manpower_in_culture_group_provinces = 0.15
 		nobles_influence_modifier = 0.1
 		maratha_exclusive_influence_modifier = 0.1
 		rajput_exclusive_influence_modifier = 0.1
