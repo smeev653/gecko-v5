@@ -1637,8 +1637,7 @@ republican_authoritarianism_reform = {
 		}
 	}
 	modifiers = {
-		global_unrest = -1
-		max_absolutism = 5
+		build_cost = -0.1
 	}
 	conditional = {
 		allow = {

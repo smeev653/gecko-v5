@@ -3256,7 +3256,7 @@ regional_council_reform = {
 		}
 	}
 	modifiers = {
-		state_maintenance_modifier = -0.2
+		build_cost = -0.1
 	}
 	#conditional = {
 	#	allow = { has_dlc = "Mandate of Heaven" }
