@@ -515,7 +515,7 @@ colonial_garrisons = {
 		full_idea_group = expansion_ideas
 	}
 
-	global_manpower_modifier = 0.2
+	global_manpower_modifier = 0.15
 
 	ai_will_do = {
 		factor = 0.8
@@ -801,7 +801,7 @@ guerilla_warfare = {
 		full_idea_group = quantity_ideas
 	}	
 	
-	global_manpower_modifier = 0.2
+	global_manpower_modifier = 0.15
 
 	
 	ai_will_do = {
@@ -926,7 +926,7 @@ military_allotment_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	global_manpower_modifier = 0.2
+	global_manpower_modifier = 0.15
 
 	ai_will_do = {
 		factor = 0.8
