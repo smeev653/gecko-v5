@@ -813,7 +813,7 @@ coastal_defence = {
 # Tier 2, 16th Century Buildings
 ################################################
 courthouse = {
-	cost = 100
+	cost = 200
 	time = 12
 	modifier = {
 		local_state_maintenance_modifier = -0.1
@@ -2266,7 +2266,7 @@ counting_house = {
 }
 
 town_hall = {
-	cost = 200
+	cost = 400
 	time = 12
 
 	make_obsolete = courthouse
@@ -3236,6 +3236,7 @@ soldier_households = {
 		fish
 	    livestock
 		wine
+		wool
 	}
 	build_trigger = {
 		NOT = {
@@ -3265,10 +3266,10 @@ soldier_households = {
 		}
 	}
 	modifier = {
-			local_manpower_modifier = 1
+			local_manpower_modifier = 3
     }
 	bonus_modifier = {
-		local_manpower_modifier = 2
+		local_manpower_modifier = 1.5
 	}
 	on_built = {
  
@@ -3378,7 +3379,7 @@ state_house = {
 	}
 
 	modifier = {
-		statewide_governing_cost = -0.2
+		statewide_governing_cost = -0.25
 		local_tax_modifier = 1.5
 		
 	}
