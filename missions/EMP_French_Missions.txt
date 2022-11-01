@@ -81,131 +81,88 @@ emp_france_missions_1 = {
 					cost = 0
 				}
 			}
+			brittany_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "gc_land_reform"
+					duration = 5475
+				}
+			}
 		}
 	}
 	
 	emp_fra_auld_alliance = {
-		icon = the_auld_alliance
-		required_missions = { emp_fra_brest emp_fra_end_hyw }
+		icon = victor_for_the_true_faith
+		required_missions = { emp_fra_brest }
 		provinces_to_highlight = {
-			owner = {
-				NOT = { tag = ENG }
-				NOT = { tag = GBR }
-				capital_scope = {
-					region = british_isles_region
-				}
-				total_development = 70
-			}
+			trade_goods = paper
+			owned_by = ROOT 
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = fra_auld_alliance_tt
-				any_country = {
-					NOT = { tag = ENG }
-					NOT = { tag = GBR }
-					capital_scope = {
-						region = british_isles_region
-					}
-					has_opinion = { who = ROOT value = 100 }
-					total_development = 70
-				}
+			trade_goods_produced_amount = {
+				trade_goods = paper
+				amount = 10
 			}
 		}
 		effect = {
-			custom_tooltip = fra_british_claims_tt
-			hidden_effect = {
-				british_isles_region = {
-					limit = {
-						OR = {
-							owned_by = ENG
-							owned_by = GBR
+			every_owned_province = {
+						limit = {
+
+								region = france_region
+
+							
+							trade_goods = paper
 						}
+					
+					add_province_modifier = {
+						name = "gc_fra_paper_industry"
+						duration = 9125
 					}
-					add_claim = ROOT
 				}
-			}
 		}
 	}
 	emp_fra_england = {
-		icon = defeat_the_english
+		icon = mission_establish_mint_towns 
 		required_missions = { emp_fra_auld_alliance }
 		provinces_to_highlight = {
-			region = british_isles_region
-			if = {
-				limit = {
+			OR = {
+				AND = {
+					region = france_region
 					OR = {
-						ENG = {
-							num_of_owned_provinces_with = {
-								region = british_isles_region
-								value = 10
-							}
-						}
-						GBR = {
-							primary_culture = english
-							num_of_owned_provinces_with = {
-								region = british_isles_region
-								value = 10
-							}
-						}
+						NOT = { owned_by = root }
+						NOT = { development = 10 }
 					}
 				}
-				OR = {
-					owned_by = ENG
-					owned_by = GBR
-				}
-			}
-			else = {
-				province_id = 236
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = fra_defeat_england_tt
-				NOT = {
-					ENG = {
-						num_of_owned_provinces_with = {
-							region = british_isles_region
-							value = 10
+			crown_land_share = 50
+			every_owned_province = {
+						limit = {
+							region = france_region
+							development = 10
 						}
-					}
 				}
-				if = {
-					limit = {
-						exists = GBR
-					}
-					GBR = {
-						OR = {
-							NOT = {
-								primary_culture = english
-							}
-							NOT = {
-								num_of_owned_provinces_with = {
-									region = british_isles_region
-									value = 10
-								}
-							}
-						}
-					}
-				}
-			}
-			236 = {
-				NOT = {
-					OR = {
-						owned_by = ENG
-						owned_by = GBR
-					}
-				}
-			}
+			num_of_owned_provinces_with = {
+				value = 10 
+				region = france_region
+				development = 30
+			}	
 		}
 		effect = {
-			add_power_projection = {
-				type = mission_rewards_power_projection
-				amount = 25
-			}
-			add_country_modifier = {
-				name = "france_rules_the_waves"
-				duration = -1
-			}
+			add_years_of_income = 1.5
+			every_owned_province = {
+						limit = {
+							region = france_region
+							development = 30
+						}
+						add_province_modifier = {
+						name = "gc_french_development"
+						duration = 9125
+					}
+				}
 		}
 	}
 	emp_fra_conquer_flanders_wallonia = {
@@ -597,16 +554,16 @@ emp_france_missions_2 = {
 			else = {
 				add_prestige = 15
 			}
-			167 = {
-				if = {
-					limit = {	
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}	
-				center_of_trade = 1
-			}	
+			#167 = {
+			#	if = {
+			#		limit = {	
+			#			NOT = {
+			#				province_has_center_of_trade_of_level = 3
+			#			}
+			#		}
+			#	}	
+			#	center_of_trade = 1
+			#}	
 		}
 	}
 	
@@ -1229,6 +1186,16 @@ emp_france_missions_3 = {
 					name = "toulon_dockyards"
 					duration = -1
 				}
+				4696  = {
+					if = {
+						limit = {	
+							NOT = {
+								province_has_center_of_trade_of_level = 3
+							}
+						}
+					}	
+				center_of_trade = 1
+			 }
 			}
 		}
 	}

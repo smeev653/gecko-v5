@@ -220,7 +220,7 @@ POL_Missions_1 = {
 							value = 10
 						}
 					}
-					add_years_of_income = 1
+					add_years_of_income = 0.5
 				}
 				else = {
 					every_owned_province = {
@@ -1681,7 +1681,7 @@ POL_Missions_3_2 = {
 				name = "proto_industrialization"
 				duration = 9125
 			}
-			add_years_of_income = 1.5
+			add_years_of_income = 0.5
 		}
 	}
 	

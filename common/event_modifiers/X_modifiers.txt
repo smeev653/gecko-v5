@@ -391,6 +391,7 @@ X_POR_manueline_architecture_cmod = {
 	build_cost = -0.05
 	build_time = -0.10
 	great_project_upgrade_cost = -0.25
+	development_cost = -0.05
 }
 X_POR_proto_colonialism_cmod = {
 	global_colonial_growth = 10

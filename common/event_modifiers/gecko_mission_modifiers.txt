@@ -157,11 +157,13 @@ gc_hun_strong_economy = {
 	build_time = -0.25
 	build_cost = -0.1
 	great_project_upgrade_cost = -0.25
+	development_cost = -0.05
 }
 
 gc_bur_realm_united_mod = {
 	local_production_efficiency = 0.5
 	local_autonomy = -0.05
+	development_cost = -0.05
 	#trade_goods_size_modifier = 0.2
 }
 
@@ -323,6 +325,7 @@ gc_investment = {
 	build_cost = -0.10
 	build_time = -0.25
 	great_project_upgrade_cost = -0.25
+	development_cost = -0.05
 }
 
 increased_janissary_recruitment = {
@@ -573,4 +576,20 @@ gc_control_of_the_mediterranean_slave_trade = {
 
 gc_african_gold_modifier = {
 	trade_goods_size_modifier = 0.25
+}
+
+gc_land_reform = {
+	trade_goods_size = 0.5
+	local_development_cost = -0.1
+}
+gc_fra_paper_industry = {
+	trade_goods_size = 0.5
+	local_development_cost = -0.05
+}
+
+gc_french_development = {
+	local_manpower_modifier = 0.33
+	trade_goods_size_modifier = 0.25
+	local_development_cost = -0.15
+	local_build_cost = -0.15
 }

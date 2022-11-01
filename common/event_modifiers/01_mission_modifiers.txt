@@ -55,6 +55,7 @@ dominant_trade_hub = {
 growing_economy = {
 	build_cost = -0.10
 	build_time = -0.25
+	development_cost = -0.05
 }
 
 building_spree = {
@@ -3315,7 +3316,7 @@ por_minas_gerais = {
 
 por_wine_monopolies = {
 	trade_value = 5
-	trade_goods_size_modifier = 0.25
+	trade_goods_size = 3.0
 }
 
 por_houses_of_trade = {
