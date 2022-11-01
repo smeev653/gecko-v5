@@ -2,6 +2,7 @@ gc_growing_economy = {
 	build_cost = -0.10
 	build_time = -0.25
 	great_project_upgrade_cost = -0.25
+	development_cost = -0.05
 }
 gc_thriving_arms_industry = {
 	land_morale = 0.05

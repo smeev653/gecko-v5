@@ -122,7 +122,7 @@ technology = { #Textile Manufactory
 	
 	#Textile Manufactory
 	textile = yes  
-
+	university = yes
 }
 
 technology = { #Early Modern Administration
@@ -146,7 +146,6 @@ technology = { #Scientific Experimentation
 	# Tech 14
 	year = 1583
 	
-	university = yes
 	town_hall = yes
 	plantations = yes
 	allowed_idea_groups	= 4

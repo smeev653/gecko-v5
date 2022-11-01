@@ -1544,17 +1544,11 @@ cathedral = {
 
 
 university = {
-	cost = 50
+	cost = 75
 	time = 12
 	modifier = {
 		local_development_cost = -0.05
 		allowed_num_of_buildings = 1
-	}
-	build_trigger = {
-		area_for_scope_province = {
-				type = all
-				owned_by = ROOT
-			}
 	}
 	on_built = {
  
