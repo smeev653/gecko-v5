@@ -819,6 +819,7 @@ courthouse = {
 		local_state_maintenance_modifier = -0.1
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
+		local_governing_cost_increase = -5
 		local_friendly_movement_speed = 0.1
 		allowed_num_of_buildings = 1
 	}
@@ -2280,7 +2281,7 @@ town_hall = {
 		local_governing_cost = -0.5
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.50
-		
+		local_governing_cost_increase = -10
 		}
 	on_built = {
  
