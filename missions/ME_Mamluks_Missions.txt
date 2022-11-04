@@ -698,7 +698,7 @@ MAM_missions_2 = {
 		trigger = {
 			trade_goods_produced_amount = {
 				trade_goods = slaves
-				amount = 3
+				amount = 8
 			}	
 		}
 		effect = {
