@@ -3120,7 +3120,7 @@ estate_rajput_officer_corp = {
 	max_absolutism = -5
 	influence = 0.05
 	can_select = {
-		army_tradition = 30
+		always = no
 		
 	}
 	on_granted = {
