@@ -1631,10 +1631,10 @@ tactical_genius_personality = {
 	nation_designer_cost = 2
 } #1 better
 bold_fighter_personality = {
-	ruler_allow = {
-		allow = {
-			always = no
+	allow = {
+			MIL = 3
 		}
+	ruler_allow = {
 		chance = {
 			modifier = {
 				factor = 1
@@ -1694,7 +1694,7 @@ bold_fighter_personality = {
 	wants_avoid_debase = yes
 	wants_land = yes
 	
-	leader_land_shock = 1
+	shock_damage = 0.10
 	nation_designer_cost = 2
 } #
 strict_personality = {

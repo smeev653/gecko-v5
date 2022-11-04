@@ -903,7 +903,7 @@ nobles_in_navy_act = {
 		full_idea_group = maritime_ideas
 	}
 
-	leader_land_shock = 1
+	shock_damage = 0.15
 	ai_will_do = {
 		factor = 0.6
 		modifier = {

@@ -421,7 +421,7 @@ per_nashq_e_jahan_square_modifier = {
 	trade_goods_size_modifier = 0.15
 }
 per_horde_shock_tactics_modifier = {
-	leader_land_shock = 1 
+	shock_damage = 0.1
 }
 per_shahnameh_modifier = {
 	diplomatic_reputation = 1 
