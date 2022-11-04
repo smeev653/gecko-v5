@@ -1633,8 +1633,7 @@ tactical_genius_personality = {
 bold_fighter_personality = {
 	ruler_allow = {
 		allow = {
-			NOT = { ruler_has_personality = careful_personality }
-			NOT = { ruler_has_personality = craven_personality }
+			always = no
 		}
 		chance = {
 			modifier = {

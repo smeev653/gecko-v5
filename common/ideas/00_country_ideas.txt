@@ -1821,7 +1821,7 @@ MUG_ideas = {
 TIM_ideas = {
 	start = {
 		core_creation = -0.15
-		leader_land_shock = 1
+		global_manpower_modifier = 0.15
 	}
 	
 	bonus = {
