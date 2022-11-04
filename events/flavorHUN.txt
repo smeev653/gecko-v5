@@ -21,7 +21,7 @@ country_event = {
 		has_regency = yes
 		has_consort_regency = no
 		is_lesser_in_union = no
-		has_leader = "János Hunyadi"
+		#has_leader = "János Hunyadi"
 		is_year = 1444
 		NOT = { is_year = 1470 }
 		has_government_attribute = heir
