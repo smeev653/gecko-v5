@@ -738,6 +738,7 @@ MAM_missions_2 = {
 		trigger = {
 			NOT = { mission_completed = mamluks_the_mamluk_caliphate }
 			stability = 2
+			tag = EGY
 		}
 		effect = {
 			add_country_modifier = {
