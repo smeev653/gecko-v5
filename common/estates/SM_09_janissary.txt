@@ -4,6 +4,7 @@ estate_janissary = {
 	# If true, country will get estate
 	trigger = {
 		has_reform = ottoman_government
+		NOT = {tag = EGY}
 		NOT = { has_country_modifier = force_janissaries_to_undergo_yoklama }
 	}
 
