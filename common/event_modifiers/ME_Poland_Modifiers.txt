@@ -20,7 +20,7 @@ POL_double_trouble = {
 }
 
 POL_leave_brick_2 = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 POL_influx_of_polish_settlers = {
@@ -42,7 +42,7 @@ POL_unconquered_fortress = {
 }
 
 POL_grain = {
-	trade_value_modifier = 0.25
+	trade_value_modifier = 0.15
 }
 POL_foreign_merchants_in_gdansk = {
 	embracement_cost = -0.05
@@ -106,7 +106,7 @@ POL_new_industry = {
 }
 
 POL_cloth_reinforced = {
-	trade_goods_size_modifier = 0.25
+	trade_goods_size_modifier = 0.1
 	local_development_cost = -0.1
 }
 
@@ -173,12 +173,12 @@ POL_mil_adv_1 = {
 }
 
 POL_autorament_cudzoziemski = {
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.025
 	mercenary_cost = -0.25
 }
 
 POL_autorament_narodowy = {
-	army_tradition = 0.5
+	army_tradition = 0.25
 }
 
 POL_skarb_rawski = {
@@ -186,7 +186,7 @@ POL_skarb_rawski = {
 }
 
 POL_zaluski_library = {
-	innovativeness_gain = 0.5
+	innovativeness_gain = 0.25
 	local_institution_spread = 0.33
 	local_prosperity_growth = 2
 }
@@ -203,12 +203,12 @@ POL_university_of_vilnius = {
 
 POL_rejoice_mother_poland = {
  	papal_influence = 2
-	land_morale = 0.05
+	#land_morale = 0.05
 	global_manpower_modifier = 0.10
 }
 
 POL_honorable_people = {
-	land_morale = 0.075
+	land_morale = 0.025
 }
 
 POL_few_indeed = {
@@ -268,11 +268,11 @@ POL_reaching_new_markets = {
 }
 
 POL_defeated_the_ottoman_empire = {
-	land_morale = 0.1
+	land_morale = 0.05
 }
 
 POL_growing_population = {
-	global_manpower_modifier = 0.1
+	#global_manpower_modifier = 0.1
 	global_tax_modifier = 0.10
 }
 
@@ -374,13 +374,13 @@ POL_kremlin = {
 }
 
 POL_cossack_sich_grows = {
-	cavalry_cost = -0.05
-	cavalry_shock = 0.1
+	cavalry_cost = -0.1
+	#cavalry_shock = 0.1
 }
 
 POL_lisowczycy = {
 	mercenary_cost = -0.1
-	cavalry_power = 0.15
+	cavalry_power = 0.05
 }
 
 POL_religious_minority = {
@@ -389,7 +389,7 @@ POL_religious_minority = {
 }
 
 cossack_vassal_modifier = {
-	leader_land_shock = 1
+	shock_damage = 0.1
 }
 
 POL_extra_power_adm = {
