@@ -9195,7 +9195,7 @@ SLO_ideas = {
 
 GLH_ideas = {
 	start = {
-		leader_land_shock = 1
+		shock_damage = 0.15
 		global_manpower_modifier = 0.20
 	}
 	bonus = {
