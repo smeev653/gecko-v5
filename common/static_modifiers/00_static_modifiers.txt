@@ -561,8 +561,8 @@ base_values = {
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
 ai_nation = {
-	#diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
-	#free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
+	diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
+	free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
 	#sailors_recovery_speed = 0.25
 	#build_cost = 0.25
 	#development_cost = 0.25
@@ -1242,8 +1242,8 @@ bonus_from_merchant_republics_for_trade_league_member = {
 }
 
 merchant_republic_mechanics_modifier = {
-	state_governing_cost = 0.25
-	trade_company_governing_cost = -0.25
+	#state_governing_cost = 0.25
+	#trade_company_governing_cost = -0.25
 }
 
 federation_leader = {
