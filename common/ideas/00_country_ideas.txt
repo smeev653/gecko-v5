@@ -1173,7 +1173,7 @@ VEN_ideas = {
 	}
 	
 	DAL_arsenal = {
-		galley_power = 0.15
+		galley_power = 0.2
 	}
 	DAL_illyria = {
 		core_creation = -0.15
@@ -2166,7 +2166,7 @@ ITA_ideas = { #Italian Ideas
 	}
 	mare_nostrum = {
 		galley_cost = -0.15
-		galley_power = 0.15
+		galley_power = 0.2
 	}
 	office_of_censor = {
 		global_manpower_modifier = 0.2

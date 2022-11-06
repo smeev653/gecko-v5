@@ -19,7 +19,7 @@ free_oarsmen =
 	}
 
 	country_modifier = {
-		galley_power = 0.15
+		galley_power = 0.1
 	}
 	
 	button_gfx = 2
@@ -59,7 +59,7 @@ wooden_wall =
 	}
 
 	country_modifier = {
-		own_coast_naval_combat_bonus = 1.0
+		heavy_ship_power = 0.1
 	}
 
 	button_gfx = 5

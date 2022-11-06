@@ -280,7 +280,7 @@ bedouins_pacified = {
 
 spa_rb_italian_ambition_mod = {
 	artillery_fire = 0.5
-	galley_power = 0.25
+	galley_power = 0.20
 }
 
 #Country modifier
