@@ -309,7 +309,6 @@ War_chest = {
 
 Peace_of_Italy = {
 	potential = {
-		NOT  = { is_year = 1500}
 		OR = {
 			tag = MLO
 			tag = VEN
@@ -318,13 +317,18 @@ Peace_of_Italy = {
 			tag = ITA
 			tag = ROM
 		}
+		
 	}
 
 	trigger = {
 		italy_region = {
 			owner = { culture_group = latin }
 		}
-		is_at_war = no
+		OR = {
+				great_power_rank = 5
+				 is_great_power = no
+				}
+		#is_at_war = no
 		NOT = { is_lacking_institutions = yes }
 		NOT = {	
 			italy_region = {
@@ -341,7 +345,7 @@ Peace_of_Italy = {
 			}											
 		}			
 	}
-	all_power_cost = -0.02
+	all_power_cost = -0.05
 	build_cost = -0.05
 	production_efficiency = 0.1
 	global_tax_modifier = 0.1

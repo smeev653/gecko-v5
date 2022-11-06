@@ -300,7 +300,7 @@ catholic_rome = {
 		NOT = { overlord_of = PAP }
 		#owns_or_vassal_of = 118 # Roma
 		num_of_owned_provinces_with = {
-				value = 20
+				value = 10
 				region = italy_region
 				is_core = root
 			}
@@ -316,6 +316,9 @@ catholic_rome = {
 	production_efficiency = 0.1
 	global_tax_modifier = 0.1
 	global_manpower_modifier = 0.1
+	build_cost = -0.05
+	monthly_reform_progress_modifier = 0.05
+
 	#icon = 9
 }
 
