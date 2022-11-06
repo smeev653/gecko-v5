@@ -50,8 +50,8 @@ dominican_order = {
         add_base_production = -1
     }
     modifier = {
-        local_culture_conversion_cost = -0.3
-		local_governing_cost = -0.15
+        local_culture_conversion_cost = -0.25
+		local_governing_cost = -0.10
     }
     ai_priority = {
         factor = 1

@@ -292,12 +292,11 @@ RUS_ideas = {
 SPA_ideas = {
 	start = {
 		land_morale = 0.15
-		production_efficiency = 0.10
+		artillery_fire = 0.5
 
 	}
 	
 	bonus = {
-		artillery_fire = 0.5
 		cawa_cost_modifier = -0.5
 	}
 	
@@ -310,10 +309,10 @@ SPA_ideas = {
 		colonists = 1
 	}
 	gold_fleet = {
-		global_trade_goods_size_modifier = 0.1
+		treasure_fleet_income = 0.1
 	}
 	spanish_armada = {
-		shock_damage_received = -0.10
+		leader_naval_manuever = 1
 		heavy_ship_power = 0.1
 	}
 	devout_catholisism = {
@@ -326,7 +325,7 @@ SPA_ideas = {
 	}
 	spa_cortes = { 
 		possible_dip_policy = 1
-		allowed_marine_fraction = 0.05
+		#allowed_marine_fraction = 0.05
 	}
 	siglo_de_oro = {
 		prestige = 1

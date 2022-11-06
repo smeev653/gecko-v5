@@ -3181,7 +3181,7 @@ mor_colonized_brazil = {
 }
 
 mor_new_world_power = {
-	global_tariffs = 0.1
+	global_tariffs = 0.2
 	heavy_ship_power = 0.1
 }
 
@@ -3273,7 +3273,7 @@ industria_sedera = {
 }
 
 ara_golden_age = {
-	all_power_cost = -0.025
+	all_power_cost = -0.01
 }
 
 barcelona_guilds = {
