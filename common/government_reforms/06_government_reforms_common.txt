@@ -212,8 +212,8 @@ council_of_the_indies_reform = {
 		}
 	}
 	modifiers = {
-		global_tariffs = 0.2
-		treasure_fleet_income = 0.2
+		global_tariffs = 0.1
+		treasure_fleet_income = 0.1
 	}
 	ai = {
 		factor = 2
@@ -1133,8 +1133,8 @@ new_world_exploitation_reform = {
 		}
 	}
 	modifiers = {
-		global_tariffs = 0.25
-		treasure_fleet_income = 0.25
+		global_tariffs = 0.1
+		treasure_fleet_income = 0.1
 	}
 	custom_attributes = {
 		extra_trade_goods_for_colonial_subjects = yes

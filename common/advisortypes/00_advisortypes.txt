@@ -294,7 +294,7 @@ colonial_governor = {
 	skill_scaled_modifier = { 
 		modifier = { 
 			meritocracy = 0.25
-			global_tariffs = 0.05
+			global_tariffs = 0.025
 		} 
 	}
 

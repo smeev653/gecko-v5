@@ -449,7 +449,7 @@ African_Slave_Trade_Western = {
 		}		
 	}
 	global_trade_goods_size_modifier = 0.1
-	global_tariffs = 0.15
+	global_tariffs = 0.1
 }
 too_many_subjects = {
 	potential = {
