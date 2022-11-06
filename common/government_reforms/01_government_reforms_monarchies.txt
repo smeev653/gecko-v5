@@ -2967,6 +2967,7 @@ centralize_reform = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
 		}
+		NOT = { is_colonial_nation = yes }
 		if = {
 			limit = { current_age = age_of_discovery }
 			custom_trigger_tooltip = {
@@ -3024,7 +3025,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 15
+						value = 25
 					}
 				}
 			}
@@ -3036,7 +3037,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 25
+						value = 50
 					}
 				}
 			}
@@ -3048,7 +3049,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 35
+						value = 75
 					}
 				}
 			}
@@ -3060,7 +3061,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 50
+						value = 100
 					}
 				}
 			}

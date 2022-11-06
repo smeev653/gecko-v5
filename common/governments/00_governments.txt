@@ -477,6 +477,7 @@ republic = {
 				union_of_states_reform
 				penal_colonies_reform
 				cultural_administration_reform
+				centralize_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -672,6 +673,7 @@ tribal = {
 			reforms = {
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
+				centralize_reform
 			}
 		}
 		tribal_reformation = {
@@ -830,6 +832,7 @@ theocracy = {
 				pious_merchants_reform
 				monastic_breweries_reform
 				warrior_monks_reform
+				centralize_reform
 			}
 		}
 		secularization = {
