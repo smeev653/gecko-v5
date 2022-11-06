@@ -283,7 +283,7 @@ renaissance = {
 	
 
 	bonus = {
-		development_cost = -0.05
+		#development_cost = -0.05
 		build_cost = -0.05
 		build_time = -0.05
 		reform_progress_growth = 0.2

@@ -75,7 +75,7 @@ bonus = {
 		#global_manpower_modifier = 0.10
 		global_trade_goods_size_modifier = 0.025
 		 reform_progress_growth = 0.1
-		 development_cost = -0.025
+		 #development_cost = -0.025
     }
 }
 
@@ -90,7 +90,7 @@ bonus = {
 		#global_manpower_modifier = 0.15
 		global_trade_goods_size_modifier = 0.05
 		reform_progress_growth = 0.2
-		development_cost = -0.0375
+		development_cost = -0.025
     }
 }
 
@@ -105,7 +105,7 @@ bonus = {
 		#global_manpower_modifier = 0.20
 		global_trade_goods_size_modifier = 0.075
         global_autonomy = -0.05
-		development_cost = -0.05
+		development_cost = -0.0375
 		reform_progress_growth = 0.4
     }
 }
@@ -122,6 +122,6 @@ bonus = {
 		global_trade_goods_size_modifier = 0.10
         global_autonomy = -0.1
 		reform_progress_growth = 0.5
-		development_cost = -0.075
+		development_cost = -0.05
     }
 }

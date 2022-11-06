@@ -644,6 +644,7 @@ Ahead_of_time = {
 	monthly_reform_progress_modifier = 0.25
 	technology_cost = -0.025
 	yearly_army_professionalism = 0.002
+	development_cost = -0.05
 }
 
 Over_merc_limit = {
