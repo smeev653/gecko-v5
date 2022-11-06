@@ -2974,7 +2974,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 15
+						value = 25
 					}
 				}
 			}
@@ -2986,7 +2986,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 25
+						value = 50
 					}
 				}
 			}
@@ -2998,7 +2998,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 35
+						value = 75
 					}
 				}
 			}
@@ -3010,7 +3010,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 50
+						value = 100
 					}
 				}
 			}
