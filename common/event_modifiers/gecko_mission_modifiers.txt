@@ -164,7 +164,7 @@ gc_hun_strong_economy = {
 gc_bur_realm_united_mod = {
 	local_production_efficiency = 0.5
 	local_autonomy = -0.05
-	development_cost = -0.05
+	local_development_cost = -0.05
 	#trade_goods_size_modifier = 0.2
 }
 
