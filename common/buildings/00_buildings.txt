@@ -3379,7 +3379,7 @@ state_house = {
 	}
 
 	modifier = {
-		statewide_governing_cost = -0.25
+		statewide_governing_cost = -0.15
 		local_tax_modifier = 1.5
 		
 	}
@@ -3392,7 +3392,7 @@ state_house = {
 	on_obsolete = {
 	}
 	bonus_modifier = {
-		statewide_governing_cost = -0.2
+		statewide_governing_cost = -0.15
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
