@@ -351,7 +351,7 @@ persia = {
 
 lahore_trade = {
 	location = 454
-	color = { 63 150 30 }
+	color = { 49 185 191 }
 	outgoing = {
 		name = "astrakhan"
 		path = {
@@ -370,6 +370,9 @@ lahore_trade = {
 		}
 	}
 	members = {
+		458 460 1967 #ferghana_area
+		457 2364 2356 #arys_area
+		455 1970 2363 #kyzylkum_area
 		448 451 452 578 2226 #kabulistan_area	
 		447 449 2225 #ghor_area
 		435 2224 2229 2230 4324 #sistan_area
@@ -735,10 +738,7 @@ siberia = {
 		}
 	}
 	members = {
-		458 460 1967 #ferghana_area
-		457 2364 2356 #arys_area
 		459 2126 2368 #jetysuu_area
-		455 1970 2363 #kyzylkum_area
 		456 1969 2352 2361 #syr_darya_area
 		476 2351 2353 2358 2359 #kazakhstan_area
 		477 478 2355 2360 4685 #balchasj_area
