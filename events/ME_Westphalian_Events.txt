@@ -491,42 +491,42 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = ME_Westphalian_Events.7.b
-		
-		ai_chance = { factor = 1 }
-		
-		custom_tooltip = WES_all_noble_land
-		hidden_effect = {
-			while = {
-				limit = {
-					estate_territory = {
-						estate = estate_nobles
-						territory = 1
-					}
-				}
-				random_owned_province = {
-					random_list = {
-						33 = { add_base_tax = 1 }
-						33 = { add_base_production = 1 }
-						33 = { add_base_manpower = 1 }
-					}
-				}
-				change_estate_land_share = {
-					estate = estate_nobles
-					share = -1
-				}
-			}
-		}
-		add_country_modifier = {
-			name = WES_nobles_displeased #yeah, "displeased"
-			duration = -1
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -50
-		}
-	}
+	#option = {
+	#	name = ME_Westphalian_Events.7.b
+	#	
+	#	ai_chance = { factor = 1 }
+	#	
+	#	custom_tooltip = WES_all_noble_land
+	#	hidden_effect = {
+	#		while = {
+	#			limit = {
+	#				estate_territory = {
+	#					estate = estate_nobles
+	#					territory = 1
+	#				}
+	#			}
+	#			random_owned_province = {
+	#				random_list = {
+	#					33 = { add_base_tax = 1 }
+	#					33 = { add_base_production = 1 }
+	#					33 = { add_base_manpower = 1 }
+	#				}
+	#			}
+	#			change_estate_land_share = {
+	#				estate = estate_nobles
+	#				share = -1
+	#			}
+	#		}
+	#	}
+	#	add_country_modifier = {
+	#		name = WES_nobles_displeased #yeah, "displeased"
+	#		duration = -1
+	#	}
+	#	add_estate_loyalty = {
+	#		estate = estate_nobles
+	#		loyalty = -50
+	#	}
+	#}
 	
 	option = {
 		name = ME_Westphalian_Events.7.c
