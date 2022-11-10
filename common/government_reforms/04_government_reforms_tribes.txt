@@ -922,6 +922,7 @@ tribe_becomes_horde_reform = {
 	icon = "horde_riding_highlighted"
 	allow_normal_conversion = yes
 	potential = {
+		always = no
 		NOT = { 
 			has_reform = stateless_society
 		}
