@@ -4,6 +4,9 @@
 X_flatland_fort_bonus_pmod = {
 	local_defender_dice_roll_bonus = 1
 }
+X_home_node_merchant_cmod = {
+	merchants = 1
+}
 ########################################
 # Estate Modifiers
 ########################################

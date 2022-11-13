@@ -1,4 +1,35 @@
 ####################
+# General
+####################
+country_decisions = {
+	X_home_node_merchant_decision = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = X_home_node_merchant_decision_cflag }
+		}
+		allow = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			treasury = 500
+		}
+		effect = {
+			add_treasury = -500
+			custom_tooltip = X_home_node_merchant_decision_tt
+			add_country_modifier = {
+				name = X_home_node_merchant_cmod
+				duration = -1
+				hidden = yes
+			}
+			set_country_flag = X_home_node_merchant_decision_cflag
+		}
+		ai_will_do = { factor = 0 }
+	}
+}
+####################
 # Russia
 ####################
 country_decisions = {
