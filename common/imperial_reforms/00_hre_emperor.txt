@@ -295,19 +295,19 @@ emperor_privilegia_de_non_appelando = {
 	emperor = {
 		advisor_cost = -0.1
 	}
-	on_effect = {
-		if = {
-			limit = {
-				hre_religion_locked = no
-				hre_religion_treaty = no
-			}
-			set_hre_religion_treaty = yes
-		}
-		hre_inheritable = yes
-	}
-	off_effect = {
-		hre_inheritable = no
-	}
+	#on_effect = {
+	#	if = {
+	#		limit = {
+	#			hre_religion_locked = no
+	#			hre_religion_treaty = no
+	#		}
+	#		set_hre_religion_treaty = yes
+	#	}
+	#	hre_inheritable = yes
+	#}
+	#off_effect = {
+	#	hre_inheritable = no
+	#}
 	required_reform = emperor_erbkaisertum
 	gui_container = right_branch
 }

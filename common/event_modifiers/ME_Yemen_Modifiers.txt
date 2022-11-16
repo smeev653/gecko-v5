@@ -1,6 +1,6 @@
 yem_rasulid_malik_modifier = {
 	reduced_liberty_desire = 50
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.5
 }
 yem_public_hospitals_modifier = {
 	monarch_lifespan = 0.1

@@ -22,7 +22,7 @@ yem_missions_1 = {
 			add_stability_or_adm_power = yes
 			add_country_modifier = {
 				name = yem_rasulid_malik_modifier
-				duration = 36500
+				duration = 9125
 			}
 			vassalize = DAW
 			#vassalize = MDA

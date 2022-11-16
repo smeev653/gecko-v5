@@ -2974,7 +2974,6 @@ centralize_reform = {
 				tooltip = less_than_15_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 25
 					}
 				}
@@ -2986,7 +2985,6 @@ centralize_reform = {
 				tooltip = less_than_25_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 50
 					}
 				}
@@ -2998,7 +2996,6 @@ centralize_reform = {
 				tooltip = less_than_35_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 75
 					}
 				}
@@ -3010,7 +3007,6 @@ centralize_reform = {
 				tooltip = less_than_50_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 100
 					}
 				}
@@ -3024,7 +3020,6 @@ centralize_reform = {
 				tooltip = less_than_15_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 25
 					}
 				}
@@ -3036,7 +3031,6 @@ centralize_reform = {
 				tooltip = less_than_25_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 50
 					}
 				}
@@ -3048,7 +3042,6 @@ centralize_reform = {
 				tooltip = less_than_35_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 75
 					}
 				}
@@ -3060,7 +3053,6 @@ centralize_reform = {
 				tooltip = less_than_50_provinces_on_same_continent
 				NOT = {
 					num_of_owned_provinces_with = {
-						same_continent = ROOT
 						value = 100
 					}
 				}
@@ -3097,7 +3089,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 15
 				}
 			}
@@ -3107,7 +3098,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 25
 				}
 			}
@@ -3117,7 +3107,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 35
 				}
 			}
@@ -3127,7 +3116,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 50
 				}
 			}
@@ -3139,7 +3127,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 15
 				}
 			}
@@ -3149,7 +3136,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 25
 				}
 			}
@@ -3159,7 +3145,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 35
 				}
 			}
@@ -3169,7 +3154,6 @@ centralize_empire_reform = {
 			custom_trigger_tooltip = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
-					same_continent = ROOT
 					value = 50
 				}
 			}
