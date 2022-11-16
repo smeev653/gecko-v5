@@ -7,9 +7,13 @@
  #Tooltips
  X_center_of_trade_effect_tt:0 "Add the equivalent Center of Trade upgrade cost to your treasury."
  X_flatland_terrain_trigger_tt:0 "Province(s) is §lFlatland§! terrain."
+ X_home_node_merchant_decision_tt:0 "Gain §G+1§! Merchant."
  #Provinces
  PROV6213:0 "Karasu"
  PROV6213_ADJ:0 "Karasu"
+ #Decisions
+ X_home_node_merchant_decision_title:0 "Promote Mercantile Policies"
+ X_home_node_merchant_decision_desc:0 ""
  #Trade Nodes
  X_vilnius_trade_node:0 "Vilnius"
  #Trade Companies
