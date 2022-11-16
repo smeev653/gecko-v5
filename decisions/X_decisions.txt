@@ -1,6 +1,3 @@
-####################
-# General
-####################
 country_decisions = {
 	X_home_node_merchant_decision = {
 		major = yes
@@ -13,12 +10,18 @@ country_decisions = {
 					country = ROOT
 					share = 50
 				}
+				custom_trigger_tooltip = {
+					tooltip = X_home_node_merchant_decision_tt
+					any_trade_node_member_province = {
+						province_has_center_of_trade_of_level = 3
+					}
+				}
 			}
 			treasury = 500
 		}
 		effect = {
 			add_treasury = -500
-			custom_tooltip = X_home_node_merchant_decision_tt
+			custom_tooltip = X_home_node_merchant_decision_tt2
 			add_country_modifier = {
 				name = X_home_node_merchant_cmod
 				duration = -1
@@ -28,11 +31,7 @@ country_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
-}
-####################
-# Russia
-####################
-country_decisions = {
+	
 	X_RUS_isolation_vs_westernization_decision = {
 		major = yes
 		potential = {
