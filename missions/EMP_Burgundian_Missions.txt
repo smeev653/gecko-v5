@@ -577,7 +577,7 @@ emp_burgundy_3 = {
 				}	
 				add_country_modifier = {
 					name = "burgundy_subjects_placated"
-					duration = 16790 #15 years	
+					duration = 5475 #15 years	
 				}
 				4766 = {
 					cede_province = BUR
