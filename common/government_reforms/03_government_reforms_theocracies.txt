@@ -642,7 +642,7 @@ education_of_the_advisors_reform = {
 	icon = "arabic_scripture"
 	allow_normal_conversion = yes
 	modifiers = {
-		build_cost = -0.1
+		build_cost = -0.05
 	}
 }
 

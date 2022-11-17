@@ -1637,7 +1637,7 @@ republican_authoritarianism_reform = {
 		}
 	}
 	modifiers = {
-		build_cost = -0.1
+		build_cost = -0.05
 	}
 	conditional = {
 		allow = {

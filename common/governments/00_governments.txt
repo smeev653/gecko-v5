@@ -113,7 +113,6 @@ monarchy = {
 				corvee_reform
 				expand_imperial_court_reform
 				limit_imperial_court_reform
-				regional_council_reform
 				representation_of_the_crown_reform
 				###Gecko###
 				foreign_ghilman_reform
@@ -182,6 +181,7 @@ monarchy = {
 				feuillant_reform
 				two_chamber_reform
 				imperial_decree_reform
+				regional_council_reform
 				become_a_republic_reform
 				install_theocratic_government_reform
 				become_rev_republic_reform
@@ -405,7 +405,6 @@ republic = {
 		}
 		republican_virtues = {
 			reforms = {
-				republican_authoritarianism_reform
 				nepotism_reform
 				republicanism_reform
 				democratic_values_reform
@@ -482,6 +481,7 @@ republic = {
 		}
 		parliamentary_vs_presidential = {
 			reforms = {
+				republican_authoritarianism_reform
 				parliamentary_reform
 				presidential_reform
 				estate_council_reform
@@ -791,7 +791,6 @@ theocracy = {
 			reforms = {
 				kingdom_of_god_reform
 				education_of_the_bishop_reform
-				education_of_the_advisors_reform
 				education_of_the_missionaries_reform
 				education_of_the_people_reform
 			}
@@ -837,6 +836,7 @@ theocracy = {
 		}
 		secularization = {
 			reforms = {
+				education_of_the_advisors_reform
 				partial_secularisation_reform
 				maintain_religious_head_reform
 				hereditary_religious_leadership_reform
