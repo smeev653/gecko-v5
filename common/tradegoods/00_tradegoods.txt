@@ -1942,7 +1942,7 @@ coal = {
 cloves = {
 	color = { 1.0 0.5 0.85 }
 	modifier = {
-		trade_efficiency = 0.05
+		trade_efficiency = 0.025
 	}
 	province = {
 		province_trade_power_modifier = 0.2
