@@ -13529,7 +13529,7 @@ malbork_castle = {
 			legitimacy = 0.25
 			devotion = 0.25
 			mercenary_cost = -0.05
-			garrison_size = 0.1
+			garrison_size = 0.025
 		}
 		on_upgraded = {
 		}
@@ -13552,7 +13552,7 @@ malbork_castle = {
 			legitimacy = 0.5
 			devotion = 0.5
 			mercenary_cost = -0.05
-			garrison_size = 0.15
+			garrison_size = 0.05
 		}
 		on_upgraded = {
 		}
@@ -13575,7 +13575,7 @@ malbork_castle = {
 			legitimacy = 1
 			devotion = 1
 			mercenary_cost = -0.1
-			garrison_size = 0.25
+			garrison_size = 0.1
 		}
 		on_upgraded = {
 			owner = {
@@ -20741,7 +20741,7 @@ salvador_da_bahia = {
 		area_modifier = {
 		}
 		region_modifier = {
-			trade_goods_size = 0.25
+			trade_goods_size = 0.1
 		}
 		country_modifiers = {
 			global_trade_power = 0.15
@@ -20764,7 +20764,7 @@ salvador_da_bahia = {
 		area_modifier = {
 		}
 		region_modifier = {
-			trade_goods_size = 0.5
+			trade_goods_size = 0.25
 		}
 		country_modifiers = {
 			global_trade_power = 0.2
@@ -21029,7 +21029,7 @@ gme_rock_gibraltar = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 350 }
 		province_modifiers = {
-			garrison_growth = 0.10
+			garrison_growth = 0.05
 			local_defensiveness = 0.15
 			local_garrison_size = 0.33
 			local_hostile_attrition = 1

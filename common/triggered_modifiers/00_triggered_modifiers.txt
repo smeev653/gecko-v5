@@ -317,7 +317,7 @@ catholic_rome = {
 	global_tax_modifier = 0.1
 	global_manpower_modifier = 0.1
 	build_cost = -0.05
-	monthly_reform_progress_modifier = 0.05
+	monthly_reform_progress_modifier = 0.025
 
 	#icon = 9
 }
