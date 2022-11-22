@@ -3201,9 +3201,8 @@ furnace = {
 }
 
 ramparts = {
-	manufactory = {
-		all
-	}
+	cost = 500
+	time = 60
 	modifier = {
 		local_hostile_attrition = 1
 		local_defensiveness = 0.15
@@ -3227,9 +3226,8 @@ ramparts = {
 }
 
 soldier_households = {
-	manufactory = {
-		all
-	}
+	cost = 500
+	time = 60
 
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		grain
@@ -3340,9 +3338,8 @@ impressment_offices = {
 
 
 state_house = {
-	manufactory = {
-		all
-	}
+	cost = 500
+	time = 60
 
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		paper
@@ -3405,9 +3402,9 @@ state_house = {
 #Gecko
 ####################################################################
 armory = {
-	manufactory = {
-		all
-	}
+	cost = 500
+	time = 60
+
 	build_trigger = {
 		NOT = {
 			area_for_scope_province = {
@@ -3456,9 +3453,8 @@ armory = {
 }
 
 gc_bureaucracy_manufactory = {
-	manufactory = {
-		all
-	}
+	cost = 500
+	time = 60
 	build_trigger = {
 		NOT = {
 			area_for_scope_province = {
