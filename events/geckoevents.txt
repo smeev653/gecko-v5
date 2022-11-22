@@ -3589,6 +3589,11 @@ country_event = {
 	trigger = {
 		341 = { owned_by = TUN }
 		tag = MOR
+		is_in_war = {
+			casus_belli = cb_conquest
+			defender_leader = TUN
+			attacker_leader = MOR
+		}
 	}
 	option = {
 		name = gecko.48.2.a
@@ -3600,7 +3605,7 @@ country_event = {
 				cede_province = ROOT
 			}
 		}
-		add_adm_power = 250
+		#add_adm_power = 250
 		add_mil_power = -100
 	}
 	option = {
@@ -3621,8 +3626,8 @@ country_event = {
 		tunisia_area = {
 			add_territorial_core = ROOT 
 		}
-		add_dip_power = -200
-		add_mil_power = -100
+		add_dip_power = -100
+		#add_mil_power = -100
 	}
 }
 

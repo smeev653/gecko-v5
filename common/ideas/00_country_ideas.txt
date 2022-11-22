@@ -13863,7 +13863,7 @@ RIG_ideas = {
 CRI_ideas = {
 	start = {
 		tolerance_heathen = 3
-		shock_damage = 0.10
+		trade_efficiency = 0.1
 	}
 	bonus = {
 		global_manpower_modifier = 0.15
@@ -13874,12 +13874,11 @@ CRI_ideas = {
 	free = yes
 	cri_slavers = {
 		global_own_trade_power = 0.25
-		trade_efficiency = 0.1
 	}
 	
 	cri_ruthenian_raids = {
 		loot_amount = 0.25
-		movement_speed = 0.10
+		shock_damage = 0.10
 	}
 	cri_genghisid_legacy = {
 		land_morale = 0.1
@@ -14023,7 +14022,7 @@ MOR_ideas = {
 	}
 	free = yes
 	mor_powerful_viziers = {
-		same_culture_advisor_cost = -0.2
+		same_culture_advisor_cost = -0.15
 	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
@@ -14041,10 +14040,10 @@ MOR_ideas = {
 		production_efficiency = 0.10
 	}
 	mor_slave_soldiers = {
-		global_regiment_cost = -0.05
+		land_maintenance_modifier = -0.05
 	}
 	mor_curb_power_of_the_tribes = {
-		manpower_recovery_speed = 0.2
+		manpower_recovery_speed = 0.15
 	}
 }
 
@@ -14426,7 +14425,7 @@ ADU_ideas = {
 	}
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		land_forcelimit_modifier = 0.2
 	}
     
 	trigger = {
@@ -14439,6 +14438,7 @@ ADU_ideas = {
 	}
 	adu_taifa_adminstration = {
 		development_cost = -0.05
+		global_trade_goods_size_modifier = 0.1
     }
 	adu_ahl_uhl_dhimma = {
 		discipline = 0.05
