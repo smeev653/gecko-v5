@@ -14012,7 +14012,7 @@ SYN_ideas = {
 MOR_ideas = {
 	start = {
 		may_perform_slave_raid = yes
-		galley_power = 0.2
+		galley_power = 0.15
 		cavalry_power = 0.10
 	}
 	bonus = {
