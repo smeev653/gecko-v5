@@ -52,7 +52,7 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage = 0.10
+		fire_damage = 0.15
 		burghers_loyalty_modifier = 0.1
 	}
 	bill_of_rights = {
@@ -793,7 +793,7 @@ quality_ideas = {
 		drill_decay_modifier = -0.1
 	}
 	copper_bottoms = {
-		reserves_organisation = 0.15
+		reserves_organisation = 0.1
 	}
 	naval_drill = {
 		reinforce_speed = 0.15
@@ -803,7 +803,7 @@ quality_ideas = {
 		artillery_power = 0.1
 	}
 	escort_ships = {
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.001
 	}
 	ai_will_do = {
 		factor = 5
@@ -829,14 +829,14 @@ quantity_ideas = {
 		global_regiment_cost = -0.1
 	}
 	mass_army = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.33
 		mercenary_manpower = 0.25
 	}
 	enforced_service = {
 		land_morale = 0.05
 	}
 	camp_followers = {
-		reserves_organisation = 0.15
+		reserves_organisation = 0.2
 	}
 	
 	expanded_supply_trains = {
