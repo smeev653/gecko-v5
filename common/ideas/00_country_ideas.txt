@@ -13487,7 +13487,7 @@ BHA_ideas = {
 HIN_ideas = {
 	start = {
 		governing_capacity_modifier = 0.1
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.15
 	}
 	bonus = {
 		discipline = 0.05
@@ -13516,7 +13516,7 @@ HIN_ideas = {
 		global_missionary_strength = 0.02
 	}
 	hin_industrialization = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 }
 
