@@ -16204,7 +16204,7 @@ gme_arsenale_veneziano = {
 		area_modifier = { }
 		country_modifiers = {
 			navy_tradition_decay = -0.005
-			allowed_marine_fraction = 0.25
+			allowed_marine_fraction = 0.05
 		}
 		on_upgraded = {
 			owner = {
@@ -16223,7 +16223,7 @@ gme_arsenale_veneziano = {
 		country_modifiers = {
 			sailors_recovery_speed = 0.10
 			navy_tradition_decay = -0.01
-			allowed_marine_fraction = 0.33
+			allowed_marine_fraction = 0.125
 		}
 		on_upgraded = {
 			owner = {
@@ -16242,7 +16242,7 @@ gme_arsenale_veneziano = {
 		country_modifiers = {
 			sailors_recovery_speed = 0.20
 			navy_tradition_decay = -0.02
-			allowed_marine_fraction = 0.50
+			allowed_marine_fraction = 0.25
 		}
 		on_upgraded = {
 			owner = {
@@ -21059,7 +21059,7 @@ gme_mosque_cathedral = {
 		province_modifiers = { }
 		area_modifier = { }
 		region_modifier = {
-			local_amount_of_cawa = 0.1
+			local_amount_of_cawa = 0.05
 		}
 		country_modifiers = {
 			tolerance_heathen = 0.5
@@ -21074,7 +21074,7 @@ gme_mosque_cathedral = {
 		province_modifiers = { }
 		area_modifier = { }
 		region_modifier = {
-			local_amount_of_cawa = 0.25
+			local_amount_of_cawa = 0.125
 		}
 		country_modifiers = {
 			tolerance_heathen = 1
@@ -21089,7 +21089,7 @@ gme_mosque_cathedral = {
 		province_modifiers = { }
 		area_modifier = { }
 		region_modifier = {
-			local_amount_of_cawa = 0.5
+			local_amount_of_cawa = 0.25
 		}
 		country_modifiers = {
 			tolerance_heathen = 2
