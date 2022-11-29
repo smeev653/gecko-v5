@@ -1147,7 +1147,7 @@ lubeck_missions_3 = { #Made by Big Boss
 				type = treasurer
 				skill = 3 
 				culture = tuscan
-				cost_multiplier = 0.3
+				cost_multiplier = 0.75
 				name = "Luca Pacioli" 
 			}
 			add_adm_power = 100 
@@ -2126,7 +2126,7 @@ lubeck_missions_5 = { #Made by Big Boss
 			}	
 			define_advisor = {
 				type = naval_reformer 
-				cost_multiplier = 0.5 
+				cost_multiplier = 0.75 
 				skill = 3 
 			}
 		}

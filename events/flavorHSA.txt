@@ -809,7 +809,7 @@ country_event = { #George Giese
 		define_advisor = {
 			name = "Georg Giese"
 			type = trader 
-			cost_multiplier = 0.25 
+			cost_multiplier = 0.75 
 			skill = 3 
 		}
 		add_republican_tradition = 5 
@@ -841,7 +841,7 @@ country_event = { #Albrecht Moldenhauer
 		define_advisor = {
 			name = "Albrecht Moldenhauer"
 			type = trader 
-			cost_multiplier = 0.25
+			cost_multiplier = 0.75
 		}
 		add_mercantilism = 1
 	}
@@ -1004,7 +1004,7 @@ country_event = { #Hans Holbein the Younger
 		define_advisor = {
 			name = "Hans Holbein the Younger"
 			type = artist 
-			cost_multiplier = 0.5 
+			cost_multiplier = 0.75 
 			skill = 3 
 			culture = swabian
 		}

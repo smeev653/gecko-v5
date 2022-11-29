@@ -717,17 +717,6 @@ the_two_sicilies_missions_4 = {
 							cost = 0
 						}
 					}
-					if = {
-						limit = {
-							has_building = shipyard
-						}
-						remove_building = shipyard
-						add_building_construction = {
-							building = grand_shipyard
-							speed = 0.75
-							cost = 0
-						}
-					}
 				}
 			}
 		}

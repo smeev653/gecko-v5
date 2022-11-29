@@ -663,6 +663,10 @@ ottoman_government = {
 				NOT = { map_setup = map_setup_random }
 			}
 			AND = {
+				tag = ADU
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
 		tag = EGY
 				NOT = { map_setup = map_setup_random }
 			}

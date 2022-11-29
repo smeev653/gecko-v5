@@ -1112,8 +1112,13 @@ gc_morocco_5 = {
 		trigger = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
-					continent = new_world
-					is_city = yes
+					OR = {
+						colonial_region = colonial_brazil
+						colonial_region = colonial_colombia
+						colonial_region = colonial_the_carribean
+						colonial_region = colonial_mexico
+						colonial_region = colonial_la_plata
+					}
 				}
 		}
 		
@@ -1135,10 +1140,6 @@ gc_morocco_5 = {
 				colonial_region = colonial_the_carribean
 				colonial_region = colonial_mexico
 				colonial_region = colonial_la_plata
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
 			}
 			has_discovered = ROOT
 		}

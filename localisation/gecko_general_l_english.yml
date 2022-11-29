@@ -18,7 +18,7 @@
  h_tooltip_many_allies:0 "You may have a maximum of five alliances."
  h_tooltip_from_many_allies:0 "The target already has five alliances."
  h_tooltip_many_marches_noinfluence:0 "You must take Influence ideas to unlock marches."
- h_tooltip_many_marches_influence:0 "You may have a maximum of three marches with Influence ideas."
+ h_tooltip_many_marches_influence:0 "You may have a maximum of two marches with Influence ideas."
  h_tooltip_move_capital:0 "You may not move your capital to the new world."
  h_tooltip_cn_colonize:0 "You may not colonize provinces outside of your colonial region."
  tribute_system:0 "Empowered Subjects"
