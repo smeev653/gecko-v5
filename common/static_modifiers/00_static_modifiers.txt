@@ -255,7 +255,7 @@ development = {
 	local_sailors = 120			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.2
 	local_amount_of_banners = 0.066
-	local_amount_of_cawa = 0.033
+	local_amount_of_cawa = 0.025
 	local_amount_of_carolean = 0.01
 	local_amount_of_hussars = 0.01
 
@@ -1802,8 +1802,8 @@ army_drill_modifier = { # Used by an entire army, is the average of all subunits
 janissary_regiment = {
 	recover_army_morale_speed = 0.1
 	reinforce_speed = 0.1
-	reinforce_cost_modifier = 0.5
-	discipline = 0.025
+	#reinforce_cost_modifier = 0.5
+	discipline = 0.05
 }
 
 cawa_regiment = {
@@ -1836,9 +1836,8 @@ cossacks_regiment = {
 	fire_damage_received = -0.1
 }
 carolean_regiment = {
-	morale_damage_received = -0.2
-	discipline = 0.1
-	fire_damage = 0.15
+	discipline = 0.25
+	fire_damage = 0.2
 	drill_decay_modifier = -0.25
 	drill_gain_modifier = 0.25
 	land_maintenance_modifier = 1

@@ -141,6 +141,7 @@ governmental_purbias_register_reform = {
 	potential = {
 		has_dlc = "Dharma"
 		has_estate = estate_rajput
+		always = no
 	OR = {
 					technology_group = indian
 					tag = MUG
