@@ -952,93 +952,93 @@ X_british_culture_full_control_cmod = {
 }
 #hindusthani
 X_hindusthani_culture_tier_1_cmod = {
-	fire_damage = 0.010
+	artillery_cost = -0.015
 	global_trade_goods_size_modifier = 0.003
 }
 X_hindusthani_culture_tier_2_cmod = {
-	fire_damage = 0.020
+	artillery_cost = -0.030
 	global_trade_goods_size_modifier = 0.006
 }
 X_hindusthani_culture_tier_3_cmod = {
-	fire_damage = 0.030
+	artillery_cost = -0.045
 	global_trade_goods_size_modifier = 0.009
 }
 X_hindusthani_culture_tier_4_cmod = {
-	fire_damage = 0.040
+	artillery_cost = -0.060
 	global_trade_goods_size_modifier = 0.012
 }
 X_hindusthani_culture_tier_5_cmod = {
-	fire_damage = 0.050
+	artillery_cost = -0.075
 	global_trade_goods_size_modifier = 0.015
 }
 X_hindusthani_culture_tier_6_cmod = {
-	fire_damage = 0.060
+	artillery_cost = -0.090
 	global_trade_goods_size_modifier = 0.018
 }
 X_hindusthani_culture_tier_7_cmod = {
-	fire_damage = 0.070
+	artillery_cost = -0.105
 	global_trade_goods_size_modifier = 0.021
 }
 X_hindusthani_culture_tier_8_cmod = {
-	fire_damage = 0.080
+	artillery_cost = -0.120
 	global_trade_goods_size_modifier = 0.024
 }
 X_hindusthani_culture_tier_9_cmod = {
-	fire_damage = 0.090
+	artillery_cost = -0.135
 	global_trade_goods_size_modifier = 0.027
 }
 X_hindusthani_culture_tier_10_cmod = {
-	fire_damage = 0.100
+	artillery_cost = -0.150
 	global_trade_goods_size_modifier = 0.030
 }
 X_hindusthani_culture_full_control_cmod = {
-	fire_damage = 0.125
+	artillery_cost = -0.200
 	global_trade_goods_size_modifier = 0.05
 }
 #iranian
 X_iranian_culture_tier_1_cmod = {
 	global_manpower_modifier = 0.010
-	artillery_cost = -0.015
+	fire_damage = 0.01
 }
 X_iranian_culture_tier_2_cmod = {
 	global_manpower_modifier = 0.020
-	artillery_cost = -0.030
+	fire_damage = 0.02
 }
 X_iranian_culture_tier_3_cmod = {
 	global_manpower_modifier = 0.030
-	artillery_cost = -0.045
+	fire_damage = 0.03
 }
 X_iranian_culture_tier_4_cmod = {
 	global_manpower_modifier = 0.040
-	artillery_cost = -0.060
+	fire_damage = 0.04
 }
 X_iranian_culture_tier_5_cmod = {
 	global_manpower_modifier = 0.050
-	artillery_cost = -0.075
+	fire_damage = 0.05
 }
 X_iranian_culture_tier_6_cmod = {
 	global_manpower_modifier = 0.060
-	artillery_cost = -0.090
+	fire_damage = 0.06
 }
 X_iranian_culture_tier_7_cmod = {
 	global_manpower_modifier = 0.070
-	artillery_cost = -0.105
+	fire_damage = 0.07
 }
 X_iranian_culture_tier_8_cmod = {
 	global_manpower_modifier = 0.080
-	artillery_cost = -0.120
+	fire_damage = 0.08
 }
 X_iranian_culture_tier_9_cmod = {
 	global_manpower_modifier = 0.090
-	artillery_cost = -0.135
+	fire_damage = 0.09
 }
 X_iranian_culture_tier_10_cmod = {
 	global_manpower_modifier = 0.100
-	artillery_cost = -0.150
+	fire_damage = 0.1
 }
 X_iranian_culture_full_control_cmod = {
 	global_manpower_modifier = 0.125
-	artillery_cost = -0.200
+	fire_damage = 0.125
 }
 #turko_semitic
 X_turko_semitic_culture_tier_1_cmod = {
