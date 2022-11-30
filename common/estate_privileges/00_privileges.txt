@@ -3119,9 +3119,11 @@ estate_rajput_officer_corp = {
 	icon = privilege_recruit_rajput_general
 	max_absolutism = -5
 	influence = 0.05
+	is_valid = {
+		always = no
+	}
 	can_select = {
 		always = no
-		
 	}
 	on_granted = {
 		add_army_tradition = -15
