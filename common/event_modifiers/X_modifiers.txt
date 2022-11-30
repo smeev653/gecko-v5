@@ -278,7 +278,7 @@ X_RUS_isolation_1_cmod = {
 	manpower_in_own_culture_provinces = 0.1
 	manpower_in_accepted_culture_provinces = 0.1
 	manpower_in_culture_group_provinces = 0.1
-    infantry_power = 0.025
+    infantry_power = 0.05
     global_missionary_strength = 0.02
 }
 
@@ -289,7 +289,7 @@ X_RUS_isolation_2_cmod = {
 	manpower_in_own_culture_provinces = 0.15
 	manpower_in_accepted_culture_provinces = 0.15
 	manpower_in_culture_group_provinces = 0.15
-    infantry_power = 0.05
+    infantry_power = 0.075
     global_missionary_strength = 0.03
 }
 
@@ -300,7 +300,7 @@ X_RUS_isolation_3_cmod = {
 	manpower_in_own_culture_provinces = 0.2
 	manpower_in_accepted_culture_provinces = 0.2
 	manpower_in_culture_group_provinces = 0.2
-    infantry_power = 0.075
+    infantry_power = 0.1
     global_missionary_strength = 0.04
 }
 
@@ -311,7 +311,7 @@ X_RUS_isolation_4_cmod = {
 	manpower_in_own_culture_provinces = 0.25
 	manpower_in_accepted_culture_provinces = 0.25
 	manpower_in_culture_group_provinces = 0.25
-    infantry_power = 0.1
+    infantry_power = 0.15
     global_missionary_strength = 0.05
 }
 
