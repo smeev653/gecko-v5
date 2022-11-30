@@ -207,12 +207,12 @@ picked_right_incident_option = {
 ##################################
 
 want_your_provinces = {
-	opinion = -15
+	opinion = 0
 	min = -200
 }
 
 want_subject_provinces = {
-	opinion = -15
+	opinion = 0
 	min = -200
 }
 
