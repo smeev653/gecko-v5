@@ -592,47 +592,47 @@ X_west_slavic_culture_full_control_cmod = {
 }
 #east_slavic
 X_east_slavic_culture_tier_1_cmod = {
-	morale_damage_received = -0.005
+	land_morale = 0.005
 	war_exhaustion = -0.010
 }
 X_east_slavic_culture_tier_2_cmod = {
-	morale_damage_received = -0.010
+	land_morale = 0.010
 	war_exhaustion = -0.020
 }
 X_east_slavic_culture_tier_3_cmod = {
-	morale_damage_received = -0.015
+	land_morale = 0.015
 	war_exhaustion = -0.030
 }
 X_east_slavic_culture_tier_4_cmod = {
-	morale_damage_received = -0.020
+	land_morale = 0.020
 	war_exhaustion = -0.040
 }
 X_east_slavic_culture_tier_5_cmod = {
-	morale_damage_received = -0.025
+	land_morale = 0.025
 	war_exhaustion = -0.050
 }
 X_east_slavic_culture_tier_6_cmod = {
-	morale_damage_received = -0.030
+	land_morale = 0.030
 	war_exhaustion = -0.060
 }
 X_east_slavic_culture_tier_7_cmod = {
-	morale_damage_received = -0.035
+	land_morale = 0.035
 	war_exhaustion = -0.070
 }
 X_east_slavic_culture_tier_8_cmod = {
-	morale_damage_received = -0.040
+	land_morale = 0.040
 	war_exhaustion = -0.08
 }
 X_east_slavic_culture_tier_9_cmod = {
-	morale_damage_received = -0.045
+	land_morale = 0.045
 	war_exhaustion = -0.090
 }
 X_east_slavic_culture_tier_10_cmod = {
-	morale_damage_received = -0.050
+	land_morale = 0.050
 	war_exhaustion = -0.010
 }
 X_east_slavic_culture_full_control_cmod = {
-	morale_damage_received = -0.075
+	land_morale = 0.075
 	war_exhaustion = -0.020
 }
 #scandinavian
@@ -683,47 +683,47 @@ X_scandinavian_culture_full_control_cmod = {
 #carpathian
 X_carpathian_culture_tier_1_cmod = {
 	defensiveness = 0.020
-	cavalry_cost = -0.010
+	cavalry_power = 0.010
 }
 X_carpathian_culture_tier_2_cmod = {
 	defensiveness = 0.040
-	cavalry_cost = -0.020
+	cavalry_power = 0.020
 }
 X_carpathian_culture_tier_3_cmod = {
 	defensiveness = 0.060
-	cavalry_cost = -0.030
+	cavalry_power = 0.030
 }
 X_carpathian_culture_tier_4_cmod = {
 	defensiveness = 0.080
-	cavalry_cost = -0.040
+	cavalry_power = 0.040
 }
 X_carpathian_culture_tier_5_cmod = {
 	defensiveness = 0.100
-	cavalry_cost = -0.050
+	cavalry_power = 0.050
 }
 X_carpathian_culture_tier_6_cmod = {
 	defensiveness = 0.120
-	cavalry_cost = -0.060
+	cavalry_power = 0.060
 }
 X_carpathian_culture_tier_7_cmod = {
 	defensiveness = 0.140
-	cavalry_cost = -0.070
+	cavalry_power = 0.070
 }
 X_carpathian_culture_tier_8_cmod = {
 	defensiveness = 0.160
-	cavalry_cost = -0.080
+	cavalry_power = 0.080
 }
 X_carpathian_culture_tier_9_cmod = {
 	defensiveness = 0.180
-	cavalry_cost = -0.090
+	cavalry_power = 0.090
 }
 X_carpathian_culture_tier_10_cmod = {
 	defensiveness = 0.200
-	cavalry_cost = -0.100
+	cavalry_power = 0.100
 }
 X_carpathian_culture_full_control_cmod = {
 	defensiveness = 0.250
-	cavalry_cost = -0.125
+	cavalry_power = 0.125
 }
 #iberian
 X_iberian_culture_tier_1_cmod = {
@@ -953,47 +953,47 @@ X_british_culture_full_control_cmod = {
 #hindusthani
 X_hindusthani_culture_tier_1_cmod = {
 	fire_damage = 0.010
-	global_trade_goods_size_modifier = 0.005
+	global_trade_goods_size_modifier = 0.003
 }
 X_hindusthani_culture_tier_2_cmod = {
 	fire_damage = 0.020
-	global_trade_goods_size_modifier = 0.010
+	global_trade_goods_size_modifier = 0.006
 }
 X_hindusthani_culture_tier_3_cmod = {
 	fire_damage = 0.030
-	global_trade_goods_size_modifier = 0.015
+	global_trade_goods_size_modifier = 0.009
 }
 X_hindusthani_culture_tier_4_cmod = {
 	fire_damage = 0.040
-	global_trade_goods_size_modifier = 0.020
+	global_trade_goods_size_modifier = 0.012
 }
 X_hindusthani_culture_tier_5_cmod = {
 	fire_damage = 0.050
-	global_trade_goods_size_modifier = 0.025
+	global_trade_goods_size_modifier = 0.015
 }
 X_hindusthani_culture_tier_6_cmod = {
 	fire_damage = 0.060
-	global_trade_goods_size_modifier = 0.030
+	global_trade_goods_size_modifier = 0.018
 }
 X_hindusthani_culture_tier_7_cmod = {
 	fire_damage = 0.070
-	global_trade_goods_size_modifier = 0.035
+	global_trade_goods_size_modifier = 0.021
 }
 X_hindusthani_culture_tier_8_cmod = {
 	fire_damage = 0.080
-	global_trade_goods_size_modifier = 0.040
+	global_trade_goods_size_modifier = 0.024
 }
 X_hindusthani_culture_tier_9_cmod = {
 	fire_damage = 0.090
-	global_trade_goods_size_modifier = 0.045
+	global_trade_goods_size_modifier = 0.027
 }
 X_hindusthani_culture_tier_10_cmod = {
 	fire_damage = 0.100
-	global_trade_goods_size_modifier = 0.050
+	global_trade_goods_size_modifier = 0.030
 }
 X_hindusthani_culture_full_control_cmod = {
 	fire_damage = 0.125
-	global_trade_goods_size_modifier = 0.075
+	global_trade_goods_size_modifier = 0.05
 }
 #iranian
 X_iranian_culture_tier_1_cmod = {
