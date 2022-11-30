@@ -789,7 +789,7 @@ age_of_absolutism = {
 				}	
 			}
 			modifier = {
-				artillery_power = 0.15
+				artillery_power = 0.1
 			}
 			ai_will_do = {
 				factor = 100

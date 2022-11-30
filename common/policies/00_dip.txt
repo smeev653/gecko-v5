@@ -1089,7 +1089,7 @@ black_chamber_act = {
 	}
 	
 	artillery_cost = -0.10
-	artillery_fire = 1
+	artillery_fire = 0.5
 
 	ai_will_do = {
 		factor = 0.6
