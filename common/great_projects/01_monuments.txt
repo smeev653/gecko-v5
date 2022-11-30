@@ -8370,6 +8370,7 @@ belem_tower = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_trade_power = 0.05
+			fire_damage = 0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -8401,7 +8402,7 @@ belem_tower = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_trade_power = 0.1
-			global_sailors_modifier = 0.1
+			fire_damage = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -8433,7 +8434,7 @@ belem_tower = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_trade_power = 0.15
-			global_sailors_modifier = 0.25
+			fire_damage = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -21514,7 +21515,7 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			artillery_power = 0.025
+			#artillery_power = 0.025
 			mil_tech_cost_modifier = -0.025
 		}
 		on_upgraded = { }
@@ -21530,7 +21531,7 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			artillery_power = 0.05
+			#artillery_power = 0.05
 			mil_tech_cost_modifier = -0.05
 		}
 		on_upgraded = { }
@@ -21546,7 +21547,7 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			artillery_power = 0.1
+			#artillery_power = 0.1
 			mil_tech_cost_modifier = -0.1
 		}
 		on_upgraded = { }
