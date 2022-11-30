@@ -100,8 +100,8 @@ country_decisions = {
 					owns_core_province = 445	# Merv
 					#owns_core_province = 465	# Nogai
 				}
-			army_size = 25
-			share_of_starting_income = 1 
+			army_size = 3
+			share_of_starting_income = 2
 		}
 		effect = {
 			454 = {

@@ -189,7 +189,7 @@ technology = {
 	military_tactics 	= 	0.25
 	#infantry_shock		= 	0.15
 	#infantry_fire 		= 	0.10
-	cavalry_shock		=	0.25
+	cavalry_shock		=	0.15
 	regimental_camp = yes
 	
 }
@@ -200,7 +200,7 @@ technology = {
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
-	cavalry_shock		=	0.25
+	cavalry_shock		=	0.15
 	
 }
 
@@ -273,7 +273,7 @@ technology = {
 	#Matchlock Musket
 	infantry_shock		= 	0.20
 	#cavalry_fire		= 	0.5
-	#cavalry_shock		=	0.25
+	cavalry_shock		=	0.2
 	
 	weapons = yes
 	armory = yes
@@ -369,7 +369,7 @@ technology = {
 	#Maurician Infantry
 	land_morale 		=	1.0
 	military_tactics	=	0.25
-
+	infantry_fire 		= 	0.25
 	
 	enable = irish_charge 
 	enable = dutch_maurician	
@@ -479,7 +479,7 @@ technology = {
 	
 	#Killing Grounds
 	
-	infantry_fire		= 	0.5
+	infantry_fire		= 	0.25
 		
 	enable = swivel_cannon		
 
