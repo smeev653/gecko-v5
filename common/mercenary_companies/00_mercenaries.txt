@@ -744,7 +744,7 @@ merc_asafo_company = {
     #artillery_weight = 0.2
 	cavalry_cap = 6
     #home_province = 2278
-	#cost_modifier = 1.1
+	cost_modifier = 0.75
 	sprites = { dlc062_msi_sprite_pack africangfx_sprite_pack }
 	trigger = {
 		NOT = {has_country_modifier = merc_spawn_timer }
@@ -757,7 +757,7 @@ merc_asafo_company = {
 		}
 	}
     modifier = {
-        land_morale = 0.05
+        fire_damage = 0.2
 	}
 }
 
