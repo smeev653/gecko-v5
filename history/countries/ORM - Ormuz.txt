@@ -13,8 +13,8 @@ religious_school = maliki_school
 	monarch = {
 		name = "Fakhr al-Din"
 		dynasty = "Turani"
-		dip = 6
-		mil = 5
+		dip = 4
+		mil = 4
 		adm = 4
 	}
 	clear_scripted_personalities = yes
