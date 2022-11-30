@@ -490,13 +490,6 @@ tim_reconquest_transoxiana = {
 				province_id = 1967
 				province_id = 457
 				province_id = 2356
-				area = arys_area
-				area = ferghana_area
-				area = kashgaria_area
-				area = jetysuu_area
-				area = syr_darya_area
-				area = balchasj_area 
-				area = kazakhstan_area
 			}
 			NOT = { owned_by = ROOT }
 		}
