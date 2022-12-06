@@ -3599,63 +3599,9 @@ X_CRI_slot_5 = {
 ########################
 # Portugal Missions
 ########################
-X_POR_slot_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = { tag = POR }
-	
-	#Exceptional Renaissance
-	X_POR_mission_2 = {
-		icon = fund_the_monasteries
-		position = 6
-		required_missions = { }
-		provinces_to_highlight = { }
-		trigger = {
-			if = {
-				limit = { current_age = age_of_discovery }
-				current_age = age_of_discovery
-			}
-			else = {
-				custom_trigger_tooltip = {
-					tooltip = X_POR_mission_2_tt
-					all_owned_province = {
-						is_prosperous = yes
-					}
-				}
-			}
-			has_institution = renaissance
-		}
-		effect = {
-			add_prestige_or_monarch_power = { amount = 25 }
-			add_estate_loyalty_modifier = {
-				estate = estate_nobles
-				desc = X_POR_estate_nobility_mission_2_lmod
-				loyalty = 10
-				duration = 18250
-			}
-			add_country_modifier = {
-				name = X_POR_portugese_renaissance_cmod
-				duration = 18250
-			}
-			add_country_modifier = {
-				name = X_POR_manueline_architecture_cmod
-				duration = 18250
-			}
-			alentejo_area = {
-				add_base_manpower = 2
-			}	
-			beieras_area = {
-				add_base_manpower = 2
-			}	
-		}
-	}
-}
 
-X_POR_slot_3 = {
-	slot = 3
+X_POR_slot_4 = {
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -3665,7 +3611,7 @@ X_POR_slot_3 = {
 	#Great City of Lisbon
 	X_POR_mission_1 = {
 		icon = mission_golden_century
-		position = 6
+		position = 5
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
@@ -3742,20 +3688,11 @@ X_POR_slot_3 = {
 			clr_country_flag = X_POR_economic_golden_age_cflag
 		}
 	}
-}
-
-X_POR_slot_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	
-	potential = { tag = POR }
 	
 	#Levadas System
 	X_POR_mission_3 = {
 		icon = mission_secure_hajj_ports
-		position = 5
+		position = 6
 		required_missions = { }
 		provinces_to_highlight = {
 			province_id = 368 #lazy highlight for now
@@ -3806,6 +3743,98 @@ X_POR_slot_4 = {
 				name = X_POR_proto_colonialism_cmod
 				duration = 9125
 			}
+		}
+	}
+}
+
+X_POR_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = { tag = POR }
+	
+	#Exceptional Renaissance
+	X_POR_mission_2 = {
+		icon = fund_the_monasteries
+		position = 5
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+			if = {
+				limit = { current_age = age_of_discovery }
+				current_age = age_of_discovery
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = X_POR_mission_2_tt
+					all_owned_province = {
+						is_prosperous = yes
+					}
+				}
+			}
+			has_institution = renaissance
+		}
+		effect = {
+			alentejo_area = {
+				add_base_manpower = 2
+			}	
+			beieras_area = {
+				add_base_manpower = 2
+			}	
+			add_prestige_or_monarch_power = { amount = 25 }
+			add_estate_loyalty_modifier = {
+				estate = estate_nobles
+				desc = X_POR_estate_nobility_mission_2_lmod
+				loyalty = 10
+				duration = 18250
+			}
+			add_country_modifier = {
+				name = X_POR_portugese_renaissance_cmod
+				duration = 18250
+			}
+			add_country_modifier = {
+				name = X_POR_manueline_architecture_cmod
+				duration = 18250
+			}
+		}
+	}
+	
+	#Mercado de Escravos
+	X_POR_mission_4 = {
+		icon = me_mission_kilwa_slave
+		position = 6
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 230 #lazy highlight for now
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = X_POR_mission_4_tt
+				has_country_flag = X_POR_west_african_slave_trade_cflag
+			}
+			slaves = 10
+			230 = {
+				owned_by = ROOT
+				trade_goods = slaves
+				X_has_latest_building_trigger = { production = yes builder = ROOT }
+			}
+		}
+		effect = {
+			230 = {
+				X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			change_price = {
+				trade_goods = slaves
+				key = "West African Slave Trade"
+				value = 0.2
+				duration = 7300
+			}
+			clr_country_flag = X_POR_west_african_slave_trade_cflag
 		}
 	}
 }

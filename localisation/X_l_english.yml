@@ -588,6 +588,11 @@
  ####################
  # Portugal
  ####################
+ #Events
+ X_POR_events.1.t:0 "West African Slave Trade"
+ X_POR_events.1.d1:0 ""
+ X_POR_events.1.a:0 "Establish formal relations"
+ X_POR_events.1.b:0 "Maintain slave raids"
  #Missions
  X_POR_mission_1_title:0 "Great City of Lisbon"
  X_POR_mission_1_desc:0 ""
@@ -595,9 +600,12 @@
  X_POR_mission_2_desc:0 ""
  X_POR_mission_3_title:0 "Levadas System"
  X_POR_mission_3_desc:0 ""
+ X_POR_mission_4_title:0 "Mercado de Escravos"
+ X_POR_mission_4_desc:0 ""
  #Mission Tooltips
  X_POR_mission_1_tt:0 "[227.GetName] has higher Development than the §YSpanish§! capital."
  X_POR_mission_2_tt:0 "All owned provinces are prosperous."
+ X_POR_mission_4_tt:0 "Event '§YWest African Slave Trade§!' has happened."
  #Modifiers
  X_POR_portugese_renaissance_cmod:0 "Spread of Foreign Ideas"
  desc_X_POR_portugese_renaissance_cmod:0 ""
@@ -605,6 +613,10 @@
  desc_X_POR_manueline_architecture_cmod:0 ""
  X_POR_proto_colonialism_cmod:0 "Proto-Colonialism"
  desc_X_POR_proto_colonialism_cmod:0 ""
+ X_POR_companhia_de_lagos_cmod:0 "Companhia de Lagos"
+ desc_X_POR_companhia_de_lagos_cmod:0 ""
+ X_POR_razias_de_escravos_cmod:0 "Razias de Escravos"
+ desc_X_POR_razias_de_escravos_cmod:0 ""
  #Estate Modifiers
  X_POR_estate_nobility_mission_2_lmod:0 "A New Age for Heroism"
  ####################

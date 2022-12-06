@@ -400,6 +400,13 @@ X_POR_proto_colonialism_cmod = {
 	global_colonial_growth = 10
 }
 
+X_POR_companhia_de_lagos_cmod = {
+	trade_efficiency = 0.20
+}
+
+X_POR_razias_de_escravos_cmod = {
+	manpower_recovery_speed = 0.2
+}
 ########################################
 # Modifiers for Spain
 ########################################

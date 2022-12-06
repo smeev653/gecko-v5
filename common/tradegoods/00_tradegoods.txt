@@ -20,6 +20,9 @@ grain = {
 		modifier = {
 			factor = 0
 			OR = {
+				###X###
+				province_id = 1111
+				#######
 				has_terrain = desert
 				has_terrain = glacier
 				has_terrain = coastline
@@ -175,6 +178,9 @@ wool = {
 		modifier = {
 			factor = 0
 			OR = {
+				###X###
+				province_id = 1111
+				#######
 				has_terrain = glacier
 				has_terrain = marsh
 				has_terrain = jungle
@@ -282,7 +288,12 @@ fish = {
 		factor = 20
 		modifier = {
 			factor = 0
-			NOT = { has_port = yes }
+			OR = {
+				###X###
+				province_id = 1111
+				#######
+				NOT = { has_port = yes }
+			}
 		}
 		modifier = {
 			factor = 0.65
@@ -1577,6 +1588,9 @@ livestock = {
 		modifier = {
 			factor = 0
 			OR = {
+				###X###
+				province_id = 1111
+				#######
 				has_terrain = glacier
 				has_terrain = marsh
 				has_terrain = jungle

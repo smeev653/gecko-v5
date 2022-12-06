@@ -366,12 +366,19 @@ gc_por_2 = {
 				cede_province = POR
 				add_core = POR
 			}
+			define_explorer = {
+				name = "Lançarote de Freitas"
+				shock = 1
+				fire = 3
+				manuever = 2
+				siege = 0
+			}
 			#######
 			add_country_modifier = {
 				name = "gc_west_african_integration"
 				duration = -1
 			}
-			create_explorer = { tradition = 60 }
+			#create_explorer = { tradition = 60 }
 			add_dip_power = 60
 			tekrur_area = {
 				limit = {
