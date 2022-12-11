@@ -110,9 +110,7 @@ permanent_marathas_council_reform = {
 	icon = "noble_indian"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Dharma"
-		has_estate = estate_maratha
-		technology_group = indian
+		always = no
 	}
 	modifiers = {
 		leader_land_shock = 1

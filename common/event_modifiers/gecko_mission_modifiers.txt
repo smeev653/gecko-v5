@@ -554,7 +554,7 @@ hsa_defensive_tactics_modifier = {
 	shock_damage_received = -0.1 
 }
 hsa_war_minister_modifier = {
-	leader_land_fire = 1 
+	fire_damage = 0.1
 }
 
 gc_mor_sugar_cloth_trader = {	#Has also a province modifier for all cloth and salt provinces attached to it
