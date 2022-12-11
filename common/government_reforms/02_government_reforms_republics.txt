@@ -376,10 +376,7 @@ pirate_republic_reform = {
 		allowed_marine_fraction = 0.5
 	}
 	trigger = {
-		OR = {
-			has_government_attribute = is_pirate_republic_reform
-			crown_stronger_than_estate = { estate = all }
-		}
+			always = no
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -2801,7 +2798,7 @@ pirate_king_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = pirate_kingdom
 	potential = {
-		has_government_attribute = is_pirate_republic_reform
+			always = no
 	}
 	modifiers = {
 		pr_captains_influence = 0.1
@@ -3172,7 +3169,7 @@ admiralty_reform = {
 	icon = "admiralty_reform"
 	allow_normal_conversion = yes
 	potential = {
-		is_revolutionary = no
+		always = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 	}
 	trigger = {
@@ -3200,7 +3197,7 @@ military_rulership_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
 	potential = {
-		is_revolutionary = no
+			always = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 	}
 	modifiers = {

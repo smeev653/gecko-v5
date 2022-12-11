@@ -65,7 +65,7 @@ per_wasp_artillery_modifier = {
 }
 per_cavalry_muskets_modifier = {
 	cavalry_fire = 0.5
-	leader_land_fire = 1 
+	#leader_land_fire = 1 
 }
 per_expanded_the_royal_qurci_guard_modifier = {
 	infantry_power = 0.05

@@ -17,7 +17,7 @@ sic_marche_savoye = {
 	global_tax_modifier = 0.10
 }
 sic_difendere_lu_mari = {
-	leader_naval_shock = 1
+	#leader_naval_shock = 1
 	own_coast_naval_combat_bonus = 1
 }
 #3
