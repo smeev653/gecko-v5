@@ -172,3 +172,7 @@
  trade_company_lahore_trade:0 "Transoxianian Charter"
  TRADE_COMPANY_LAHORE_trade_Root_Culture_GetName:0 "[Root.Culture.GetName] Transoxiana Company"
  TRADE_COMPANY_LAHORE_trade_Asia_Trade_Company:0 "Transoxiana Trade Company"
+ #centers of trade
+
+ regional_hub:0 "Regional Hub"
+ regional_hub_desc:0 ""
