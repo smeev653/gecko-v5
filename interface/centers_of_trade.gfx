@@ -68,6 +68,12 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
 	spriteType = {
+		name = "GFX_center_of_trade_map_coastal_5"
+		texturefile = "gfx//interface//cot_icons//cot_coastal_5.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
 		name = "GFX_center_of_trade_map_inland_1"
 		texturefile = "gfx//interface//cot_icons//cot_inland_1.dds"
 		noOfFrames = 1
@@ -88,6 +94,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_center_of_trade_map_inland_4"
 		texturefile = "gfx//interface//cot_icons//cot_inland_4.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_center_of_trade_map_inland_5"
+		texturefile = "gfx//interface//cot_icons//cot_inland_5.dds"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
