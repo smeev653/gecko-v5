@@ -1055,7 +1055,7 @@ country_event = {
 			}
 		}
 		X_RUS_change_isolation_vs_westernization_level_effect = { isolation = yes amount = 1 }
-		add_stability = -2
+		add_stability = -1
 		add_navy_tradition = -20
 		add_estate_loyalty = {
 			estate = estate_burghers
@@ -1094,7 +1094,7 @@ country_event = {
 			}
 		}
 		X_RUS_change_isolation_vs_westernization_level_effect = { westernization = yes amount = -1 }
-		add_stability = -2
+		add_stability = -1
 		add_navy_tradition = 20
 		add_estate_loyalty = {
 			estate = estate_burghers
