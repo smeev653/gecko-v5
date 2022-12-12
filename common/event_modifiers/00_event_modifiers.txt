@@ -1676,7 +1676,7 @@ braveheart = {
 
 #for the toll
 bosphorous_sound_toll = {
-	province_trade_power_value = 10
+	province_trade_power_value = 30
 }
 
 sound_toll = {
