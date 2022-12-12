@@ -237,7 +237,7 @@ gc_hungary_branch_2 = {
 			add_army_tradition = 20
 			add_country_modifier = {
 				name = hun_supreme_black_army
-				duration = 7300
+				duration = -1
 			}
 		}
 	}

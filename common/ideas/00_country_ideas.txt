@@ -1554,6 +1554,7 @@ HUN_ideas = {
 	}
 	found_the_black_army = {
 		discipline = 0.05
+		mercenary_discipline = 0.025
 		recover_army_morale_speed = 0.1
 	}
 	bulwark_of_christianity = {

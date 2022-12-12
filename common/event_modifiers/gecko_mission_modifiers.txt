@@ -319,7 +319,6 @@ mamluks_subjugated = {
 
 hun_supreme_black_army = {
 	mercenary_discipline = 0.05
-	core_creation = -0.1
 }
 
 gc_investment = {

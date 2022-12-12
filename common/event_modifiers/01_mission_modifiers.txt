@@ -4213,10 +4213,10 @@ hun_hungary_poland = {
 	num_accepted_cultures = 1
 }
 
-hun_supreme_black_army = {
-	mercenary_discipline = 0.05
-	core_creation = -0.1
-}
+#hun_supreme_black_army = {
+#	mercenary_discipline = 0.05
+#	core_creation = -0.1
+#}
 
 hun_strong_economy = {
 	land_forcelimit_modifier = 0.15
