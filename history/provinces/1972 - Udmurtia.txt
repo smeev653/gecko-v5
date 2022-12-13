@@ -3,7 +3,7 @@
 owner = KAZ
 controller = KAZ
 capital = "Elabuga"
-culture = udmurt
+culture = uralic
 religion = tengri_pagan_reformed #Sami Shamanism
 trade_goods = grain
 hre = no

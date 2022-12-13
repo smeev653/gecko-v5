@@ -1951,42 +1951,6 @@ finno_ugric = { #Ugric
 			Nasta Katy? ?lga
 		}
 	}
-	mari = {
-		male_names = {
-			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
-			Kos'ta ?ndrey Stepan ?ly?ksey Boris Danil Dmitry Pedot Illya Seg? Sem? Ped?r 
-		}
-		female_names = {
-			Nasta Katy? ?lga
-		}
-	}
-	mordvin = {
-		male_names = {
-			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
-			Kos'ta ?ndrey Stepan ?ly?ksey Boris Danil Dmitry Pedot Illya Seg? Sem? Ped?r 
-		}
-		female_names = {
-			Nasta Katy? ?lga
-		}
-	}
-	meschyora = {
-		male_names = {
-			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
-			Kos'ta ?ndrey Stepan ?ly?ksey Boris Danil Dmitry Pedot Illya Seg? Sem? Ped?r 
-		}
-		female_names = {
-			Nasta Katy? ?lga
-		}
-	}
-	udmurt = {
-		male_names = {
-			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
-			Kos'ta ?ndrey Stepan ?ly?ksey Boris Danil Dmitry Pedot Illya Seg? Sem? Ped?r 
-		}
-		female_names = {
-			Nasta Katy? ?lga
-		}
-	}
 	samoyed = {
 		male_names = {
 			Alik Hasaba Kako Kharuchi Kolik Mandak Nabtiko Nenyts Nga Ng?noh Noumea Num Nyalku Panay 
@@ -9371,26 +9335,6 @@ tartar	= {
 		}
 		female_names = {
 			"Aibanoo" "Aininoor" "Alfia" "Janan" "Alfira" "Alfiya" "Alia" "Amenya" "Asia" "Assel" "Dinara"
-		}
-	}
-	chuvash = {
-		dynasty_names = {
-			"Boke Temur" "Qutlugh Vachir" "Suren Chinua" "Delger Bayar" "Shria Gan" "Bora Chinua" Nasange Temur-chi Chinuagene 
-			Toluilun Qutughqan "Koke Burilgi" Surenchar Bayangge
-		}
-		male_names = {
-			"Abdul-Karim" "Abdul-Latif" "Abdul-Rahman" "Abdullah" "Agalak" "Ahmad" "Ak K?bek" "Ali Beg" "Arab Shah" 
-			"Arslan" "Baraq" "Bek Bulat" "Bolaq" "Cherkes" "Chokra" "Daniyal" "Darwish" "Darwish Ali" "Devlet Berdi" 
-			"Edigu" "Hajji Muhammad" "Husayn" "Ibak" "Ibrahim" "Ilham" "Ishim" "Jabbar Berdi" "Jalal al-Din" "Jan Ali" 
-			"Janay" "Jani Beg" "Jumaduq" "Karim Berdi" "Kebek" "Khalil" "Khaqan Beg" "K?ch?k Muhammad" "Kuchum" 
-			"Mahmud" "Mahmudak" "Mamai" "Mamuk" "Mansur" "Muhammad" "Murtaza" "Mustafa Ali" "Nogai" "Pulad" 
-			"Pulad Timur" "Qadir Berdi" "Qasim" "Sain Bulat" "Satilghan" "Sayid Ahmad" "Sayid Burhan" "Sayid Mahmud" 
-			"Shadi Beg" "Shah Ali" "Shaikh Ahmad" "Shaikh Awliar" "Shaikh Haidar" "Shiban" "Taibugha" "Timur" 
-			"Timur Qutlugh" "Toqtamish" "Ulugh Muhammad" "Urus" "Urus Muhammad" "Yadigar Muhammad" "Yamghurchi"
-		}
-		female_names = {
-			"Fatima" "Ibtisam" "Jalila" "Janan" "Layla" "Sakina" "Sharifa" Ibtisam Jalila Janan Layla Sakina Sharifa Acenith 
-			Alia Amunet Andali Asanet Asenath Asenet Azenet Badiat Cena Fatima Halima
 		}
 	}
 	mishary = {
