@@ -765,3 +765,31 @@ conquest_of_prague= {
 	
 	}
 }
+
+conquest_of_toledo= {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				NOT = { tag = CAS }
+				NOT = { tag = SPA }
+				toledo_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+			}
+		controlled_by = ROOT	
+		}	
+	discipline = 0.025
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
