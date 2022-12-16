@@ -1063,11 +1063,11 @@ recovery_motivation = {
 }
 
 militarized_society = {
-	yearly_army_professionalism = 0.01
-	land_forcelimit_modifier = 0.20
-	manpower_recovery_speed = 0.20
-	land_maintenance_modifier = -0.20
-	military_tactics = 0.1
+	yearly_army_professionalism = 0.005
+	land_forcelimit_modifier = 0.25
+	manpower_recovery_speed = 0.25
+	land_maintenance_modifier = -0.25
+	military_tactics = 0.05
 }
 
 
