@@ -68,11 +68,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			OR = {
-				tag = AFG
-				tag = TRS
-				tag = ISF
-			}
+			tag = TRS
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -82,6 +78,7 @@ country_decisions = {
 				#province_id = 465
 				province_id = 2221	# Mashhad
 				#province_id = 451
+				province_id = 446
 				province_id = 445
 				#province_id = 428
 			}
@@ -95,12 +92,13 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 454	# Samarkand
+			owns_core_province = 446	# Samarkand
 			AND = {
 					owns_core_province = 2221	# Mashhad
 					owns_core_province = 445	# Merv
 					#owns_core_province = 465	# Nogai
 				}
-			army_size = 3
+			army_size = 30
 			share_of_starting_income = 2
 		}
 		effect = {

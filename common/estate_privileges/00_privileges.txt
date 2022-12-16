@@ -1927,11 +1927,14 @@ PR_estate_clergy_exploration_expedition = {
 	is_valid = {
 			OR = {
 				tag = MOR
+				tag = ADU
+				tag = TRS
+				tag = TIM
 				tag = BUK
 				tag = ARB
 				tag = KHA
 				tag = OIR
-				tag = MGE
+				tag = MGE		
 			}
 			NOT = { has_estate_privilege = estate_burghers_hydraulic_rights	}
 	}
@@ -2006,6 +2009,9 @@ smeev_mountain_dev_cost = {
 			tag = SGF
 			tag = SWI
 			tag = SWA
+			tag = TRS
+			tag = TIM
+			tag = BUK
 			} 
 	}
 	

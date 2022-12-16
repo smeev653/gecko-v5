@@ -403,4 +403,8 @@ subsaharan_buildings = {
 
 local_investment = {
 	local_development_cost = -0.025
+}
+
+gc_tim_resurgent = {
+	development_cost = -0.1
 }	

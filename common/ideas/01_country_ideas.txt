@@ -9,7 +9,7 @@
 BUK_ideas = {
 	start = {
 		global_own_trade_power = 0.25
-		infantry_power = 0.125
+		infantry_power = 0.1
 	}
 	
 	bonus = {

@@ -3,7 +3,7 @@ silk_road_empire = { #tier 1
 	icon = "asian_scripture"
 	lock_level_when_selected = yes
 	potential = {
-			tag = BUK
+			always = no
 		}
 	modifiers = {
 		merchants = 2

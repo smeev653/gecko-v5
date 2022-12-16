@@ -97,7 +97,7 @@
  smeev_mountain_dev_cost_desc:0 "[Root.GetClergyName] roam our mountainous frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."
  PR_estate_clergy_exploration_expedition_mod:0 "Clergy Exploration"
  desc_PR_estate_clergy_exploration_expedition_mod:0 "We are harnessing the pioneering instincts of the clergy to accelerate the settlement and growth of this area."
- smeev_mountain_dev_cost_effect_tooltip:1 "§G-5.0%§! Local Development Cost in all Mountain provinces."
+ smeev_mountain_dev_cost_effect_tooltip:1 "§G-10.0%§! Local Development Cost in all Mountain provinces."
  smeev_mountain_dev_cost_mod_revoke_tooltip:0 "Removes §YClergy Exploration§! from all owned Mountain provinces."
  #estate_safavid_order_militarized
  estate_safavid_order_militarised:0 "Safavid Order Militarised"
