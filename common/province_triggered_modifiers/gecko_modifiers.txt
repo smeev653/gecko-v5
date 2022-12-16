@@ -320,7 +320,7 @@ conquest_of_constantinople = {
 		}
 		controlled_by = ROOT
 	}
-	infantry_power = 0.075
+	infantry_power = 0.05
 	global_tax_modifier = 0.05
 	
 	#Province scope
@@ -355,7 +355,7 @@ conquest_of_paris = {
 		controlled_by = ROOT
 		
 	}
-	discipline = 0.03
+	discipline = 0.025
  
 	
 	#Province scope
@@ -391,7 +391,7 @@ conquest_of_vienna = {
 		
 		controlled_by = ROOT
 	}
-	discipline = 0.03
+	discipline = 0.025
  
 	
 	#Province scope
@@ -427,7 +427,7 @@ conquest_of_cairo = {
 			}
 		controlled_by = ROOT	
 		}	
-	infantry_power = 0.075
+	infantry_power = 0.05
 	production_efficiency = 0.05
 	
 	#Province scope
@@ -439,7 +439,12 @@ conquest_of_cairo = {
 	
 	}
 }
+conquest_of_fez = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
 
+	trigger = {
 		owner = {
 				NOT = { tag = MOR }
 				NOT = { tag = ADU }
@@ -458,7 +463,8 @@ conquest_of_cairo = {
 		controlled_by = ROOT	
 		}
 				
-	discipline = 0.03
+
+	discipline = 0.025
  
 	
 	#Province scope
@@ -504,8 +510,6 @@ conquest_of_berlin = {
 	}
 	trigger = {
 		owner = {
-				NOT = { tag = BRA }
-				NOT = { tag = PRU }
 			berlin_area	 = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -513,7 +517,7 @@ conquest_of_berlin = {
 		}		
 		controlled_by = ROOT
 	}
-	land_morale = 0.05
+	yearly_army_professionalism = 0.01
  
 	
 	#Province scope
@@ -553,7 +557,7 @@ conquest_of_saint_petersburg = {
 
 		controlled_by = ROOT	
 		}	
-	discipline = 0.03
+	discipline = 0.025
  
 	
 	#Province scope
@@ -587,7 +591,7 @@ conquest_of_samarkand = {
 			}
 		controlled_by = ROOT	
 	}	
-	discipline = 0.03
+	discipline = 0.025
 	
 	#Province scope
 	on_activation = {
@@ -648,7 +652,7 @@ conquest_of_copenhagen = {
 		controlled_by = ROOT
 		
 	}	
-	discipline = 0.03
+	discipline = 0.025
 	ship_durability = 0.05
 	
 	#Province scope
@@ -693,7 +697,63 @@ conquest_of_herat = {
 				}	
 		}		
 	}
-	infantry_power = 0.075
+	infantry_power = 0.05
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_frankfurt = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				NOT = { tag = HES }
+				NOT = { tag = WES }
+				#NOT = { tag = TUR }
+				hesse_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+			}
+		controlled_by = ROOT	
+		}	
+	land_morale = 0.05
+ 
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+conquest_of_prague= {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+				#NOT = { tag = TUR }
+				bohemia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+			}
+		controlled_by = ROOT	
+		}	
+	artillery_levels_available_vs_fort = 1
  
 	
 	#Province scope
