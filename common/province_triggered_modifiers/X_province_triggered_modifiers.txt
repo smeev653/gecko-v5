@@ -54,11 +54,11 @@ X_cultural_union_group_control_effect_ptmod = {
 			}
 			every_country = {
 				limit = { culture_group = germanic ai = no }
-				ROOT = { X_culture_group_control_effect = { group = germanic type = union who = PREV } }
+				ROOT = { X_culture_group_control_effect = { group = germanic type = development who = PREV } }
 			}
 			every_country = {
 				limit = { culture_group = latin ai = no }
-				ROOT = { X_culture_group_control_effect = { group = latin type = union who = PREV } }
+				ROOT = { X_culture_group_control_effect = { group = latin type = development who = PREV } }
 			}
 			every_country = {
 				limit = { culture_group = west_slavic ai = no }
@@ -70,7 +70,7 @@ X_cultural_union_group_control_effect_ptmod = {
 			}
 			every_country = {
 				limit = { culture_group = scandinavian ai = no }
-				ROOT = { X_culture_group_control_effect = { group = scandinavian type = union who = PREV } }
+				ROOT = { X_culture_group_control_effect = { group = scandinavian type = development who = PREV } }
 			}
 			every_country = {
 				limit = { culture_group = carpathian ai = no }
@@ -94,15 +94,15 @@ X_cultural_union_group_control_effect_ptmod = {
 			}
 			every_country = {
 				limit = { culture_group = british ai = no }
-				ROOT = { X_culture_group_control_effect = { group = british type = union who = PREV } }
+				ROOT = { X_culture_group_control_effect = { group = british type = development who = PREV } }
 			}
 			every_country = {
 				limit = { culture_group = hindusthani ai = no }
-				ROOT = { X_culture_group_control_effect = { group = hindusthani type = union who = PREV } }
+				ROOT = { X_culture_group_control_effect = { group = hindusthani type = development who = PREV } }
 			}
 			every_country = {
 				limit = { culture_group = iranian ai = no }
-				ROOT = { X_culture_group_control_effect = { group = iranian type = union who = PREV } }
+				ROOT = { X_culture_group_control_effect = { group = iranian type = development who = PREV } }
 			}
 			every_country = {
 				limit = { culture_group = turko_semitic ai = no }
