@@ -317,10 +317,17 @@ conquest_of_constantinople = {
 					value = 0.33
 					}
 				}
+			NOT = { 	
+					has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.33
+					}
+				}	
 		}
 		controlled_by = ROOT
 	}
 	infantry_power = 0.05
+	cavalry_power = 0.05
 	global_tax_modifier = 0.05
 	
 	#Province scope
@@ -356,7 +363,7 @@ conquest_of_paris = {
 		
 	}
 	discipline = 0.025
- 
+	land_morale = 0.025
 	
 	#Province scope
 	on_activation = {
@@ -392,7 +399,7 @@ conquest_of_vienna = {
 		controlled_by = ROOT
 	}
 	discipline = 0.025
- 
+	land_morale = 0.025
 	
 	#Province scope
 	on_activation = {
@@ -424,10 +431,17 @@ conquest_of_cairo = {
 					value = 0.33
 					}
 				}
+				NOT = { 	
+					has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.33
+					}
+				}
 			}
 		controlled_by = ROOT	
 		}	
 	infantry_power = 0.05
+	cavalry_power = 0.05
 	production_efficiency = 0.05
 	
 	#Province scope
@@ -465,7 +479,7 @@ conquest_of_fez = {
 				
 
 	discipline = 0.025
- 
+	land_morale = 0.025
 	
 	#Province scope
 	on_activation = {
@@ -484,6 +498,12 @@ conquest_of_london = {
 		owner = {
 				NOT = { tag = ENG }
 				NOT = { tag = GBR }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 				home_counties_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -491,8 +511,8 @@ conquest_of_london = {
 			}
 		controlled_by = ROOT	
 		}	
-	land_morale = 0.05
- 
+	land_morale = 0.025
+	discipline = 0.025
 	
 	#Province scope
 	on_activation = {
@@ -517,7 +537,7 @@ conquest_of_berlin = {
 		}		
 		controlled_by = ROOT
 	}
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.005
  
 	
 	#Province scope
@@ -555,9 +575,43 @@ conquest_of_saint_petersburg = {
 	}
 }
 
+conquest_of_tabriz = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+				religion = sunni
+				religion = shiite
+				religion = ibadi
+			}
+	}
+
+	trigger = {
+		owner = {
+				NOT = { tag = ARL }
+				NOT = { tag = PER }
+				NOT = { tag = ISF }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = infantry_power
+					value = 0.33
+					}
+				}
+				NOT = { 	
+					has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.33
+					}
+				}
+				tabriz_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			
 		controlled_by = ROOT	
 		}	
-	discipline = 0.025
+	infantry_power = 0.05
+	cavalry_power = 0.05
  
 	
 	#Province scope
@@ -592,7 +646,7 @@ conquest_of_samarkand = {
 		controlled_by = ROOT	
 	}	
 	discipline = 0.025
-	
+	land_morale = 0.025
 	#Province scope
 	on_activation = {
 	
@@ -652,8 +706,8 @@ conquest_of_copenhagen = {
 		controlled_by = ROOT
 		
 	}	
+	land_morale = 0.025
 	discipline = 0.025
-	ship_durability = 0.05
 	
 	#Province scope
 	on_activation = {
@@ -690,7 +744,12 @@ conquest_of_herat = {
 					value = 0.33
 					}
 				}
-				
+			NOT = { 	
+					has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.33
+					}
+				}	
 			balkh_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -698,7 +757,7 @@ conquest_of_herat = {
 		}		
 	}
 	infantry_power = 0.05
- 
+	cavalry_power = 0.05
 	
 	#Province scope
 	on_activation = {
@@ -782,7 +841,7 @@ conquest_of_toledo= {
 		controlled_by = ROOT	
 		}	
 	discipline = 0.025
- 
+	land_morale = 0.025
 	
 	#Province scope
 	on_activation = {
