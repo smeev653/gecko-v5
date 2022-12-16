@@ -589,7 +589,6 @@ conquest_of_tabriz = {
 		owner = {
 				NOT = { tag = ARL }
 				NOT = { tag = PER }
-				NOT = { tag = ISF }
 				NOT = { 	
 					has_global_modifier_value = {
 					which = infantry_power
@@ -665,6 +664,12 @@ conquest_of_pest = {
 		owner = {
 				NOT = { tag = HUN }
 				#NOT = { tag = TUR }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 				alfold_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -672,8 +677,8 @@ conquest_of_pest = {
 			}
 		controlled_by = ROOT	
 		}	
-	land_morale = 0.05
- 
+	land_morale = 0.025
+	discipline = 0.025
 	
 	#Province scope
 	on_activation = {
@@ -778,6 +783,12 @@ conquest_of_frankfurt = {
 				NOT = { tag = HES }
 				NOT = { tag = WES }
 				#NOT = { tag = TUR }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 				hesse_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -785,8 +796,8 @@ conquest_of_frankfurt = {
 			}
 		controlled_by = ROOT	
 		}	
-	land_morale = 0.05
- 
+	land_morale = 0.025
+	discipline = 0.025
 	
 	#Province scope
 	on_activation = {
@@ -813,7 +824,7 @@ conquest_of_prague= {
 		controlled_by = ROOT	
 		}	
 	artillery_levels_available_vs_fort = 1
- 
+	siege_ability = 0.1
 	
 	#Province scope
 	on_activation = {
@@ -833,6 +844,12 @@ conquest_of_toledo= {
 		owner = {
 				NOT = { tag = CAS }
 				NOT = { tag = SPA }
+				NOT = { 	
+					has_global_modifier_value = {
+					which = discipline
+					value = 0.30
+					}
+				}
 				toledo_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
