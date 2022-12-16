@@ -345,13 +345,14 @@ Peace_of_Italy = {
 			}											
 		}			
 	}
-	all_power_cost = -0.025
-	build_cost = -0.05
+	#all_power_cost = -0.025
+	#build_cost = -0.05
 	production_efficiency = 0.05
 	global_tax_modifier = 0.05
 	global_manpower_modifier = 0.05
 	global_autonomy = -0.025
 	monthly_reform_progress_modifier = 0.075
+	infantry_power = 0.05
 }
 
 Control_African_Slave_Trade = {
