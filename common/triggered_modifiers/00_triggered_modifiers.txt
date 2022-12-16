@@ -293,7 +293,7 @@ catholic_rome = {
 		has_discovered = 118	# Roma
 		#religion = catholic
 		NOT = { tag = PAP }
-		NOT  = { is_year = 1550}
+		#NOT  = { is_year = 1550}
 	}
 
 	trigger = {	
@@ -318,7 +318,7 @@ catholic_rome = {
 	global_manpower_modifier = 0.1
 	build_cost = -0.05
 	monthly_reform_progress_modifier = 0.025
-
+	infantry_power = 0.05
 	#icon = 9
 }
 

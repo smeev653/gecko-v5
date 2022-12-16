@@ -765,7 +765,7 @@ prussian_monarchy = {
 		max_absolutism = 10
 		monarch_military_power = 1
 		nobles_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.33
+		governing_capacity_modifier = -0.25
 		#expand_administration_cost = 2
 	}
 

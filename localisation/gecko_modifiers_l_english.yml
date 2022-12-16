@@ -57,6 +57,9 @@
  gc_catanzaro_silk:0 "Catanzaro Silk"
  conquest_of_copenhagen:0 "Conquest of Copenhagen"
  conquest_of_amsterdam:0 "Conquest of Amsterdam"
+ conquest_of_prague:0 "Conquest of Prague"
+ conquest_of_frankfurt:0 "Conquest of Frankfurt"
+ conquest_of_toledo:0 "Conquest of Toledo"
  caliph_of_cairo:0 "Seat of the Caliph of Cairo"
  subsaharan_buildings:0 "Subsaharan Infrastructure"
  #Advisor Event modifiers

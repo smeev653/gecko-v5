@@ -16,7 +16,7 @@ add_core = QAR
 #add_core = QAR
 #add_claim = MAM
 
-
+#add_province_triggered_modifier=conquest_of_baghdad
 
 discovered_by = east_african
 discovered_by = muslim

@@ -198,10 +198,8 @@ X_RUS_estate_streltsy_privilege_8 = {
     loyalty = 0.05        
     influence  = 0.10
 	is_valid = {
-		always = no
 	}
 	can_select = {
-		always = no
 	}
 	benefits = { leader_land_fire = 1 }
 	penalties = { general_cost = 0.25 }
