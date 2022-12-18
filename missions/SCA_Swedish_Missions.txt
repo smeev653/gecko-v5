@@ -226,7 +226,7 @@ swe_scandinavian_colonialism_mission_slot = {
 				}
 				AND = {
 					OR = {
-						province_id = 12
+						province_id = 5004
 						province_id = 6
 						province_id = 4142
 					}
@@ -240,13 +240,13 @@ swe_scandinavian_colonialism_mission_slot = {
 				DAN = { NOT = { any_owned_province = { region = scandinavia_region } } }
 				DAN = { is_subject_of = ROOT }
 			}
-			owns_or_non_sovereign_subject_of = 12
+			owns_or_non_sovereign_subject_of = 5004
 			owns_or_non_sovereign_subject_of = 6
 			owns_or_non_sovereign_subject_of = 4142
 		}
 		effect = {
 			6 = { center_of_trade = 2 }
-			12 = {
+			 5004 = {
 				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				hidden_effect = {
 					if = {
@@ -2461,7 +2461,9 @@ swe_internal_slot = {
 			28 = { 
 				center_of_trade = 2
 				add_building = town_hall
+				change_trade_goods = iron
 			}
+			
 			add_stability_or_adm_power = yes
 		}
 	}
