@@ -406,5 +406,7 @@ local_investment = {
 }
 
 gc_tim_resurgent = {
-	development_cost = -0.1
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
 }	

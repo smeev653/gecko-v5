@@ -17,7 +17,7 @@ country_event = { #New Heir of Timur
 		add_mil_power = 100
 		add_country_modifier = {
 			name = gc_tim_resurgent
-			duration = 5475
+			duration = 6083.3333333333333333333333333333
 		}
 		454 = {
 				set_great_project_tier_3 = {
