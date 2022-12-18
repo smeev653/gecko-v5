@@ -3940,7 +3940,6 @@ allotment_system = {
 		manpower_in_own_culture_provinces = 0.33
 		manpower_in_accepted_culture_provinces = 0.2
 		manpower_in_culture_group_provinces = 0.1
-		#amount_of_carolean = 0.25
 	}
 
 	ai = {

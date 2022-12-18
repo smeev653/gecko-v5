@@ -411,9 +411,6 @@ swe_scandinavian_colonialism_mission_slot = {
 			}
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_forest_expansion
-			}
 			laponia_area = {
 				add_local_autonomy = -100
 				add_base_manpower = 2
@@ -1875,11 +1872,11 @@ swe_kalmar_union_mission_slot = {
 		position = 8
 		required_missions = { swe_high_income }
 		provinces_to_highlight = {
-			province_id = 8
+			province_id = 4
 		}
 		trigger = {
-			owns_core_province = 8
-			8 = {
+			owns_core_province = 4
+			4 = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
 					prosperity = 25
@@ -1888,7 +1885,7 @@ swe_kalmar_union_mission_slot = {
 				has_production_building_trigger = yes
 				base_production = 10
 			}
-			treasury = 1500
+			treasury = 750
 		}
 		effect = {
 			country_event = {
@@ -1978,7 +1975,7 @@ swe_kalmar_union_mission_slot = {
 				absolutism = 75
 				AND = {
 					has_mil_advisor_3 = yes
-					mil_power_cost = 800
+					mil_power_cost = 200
 					if = {
 						limit = {
 							#Promote Advisors - +2
@@ -2019,7 +2016,7 @@ swe_kalmar_union_mission_slot = {
 				custom_tooltip = swe_the_carolean_units_at
 			}
 			else = {
-				mil_power_cost = 800
+				mil_power_cost = 200
 				custom_tooltip = swe_the_carolean_units_bt
 			}
 			country_event = {

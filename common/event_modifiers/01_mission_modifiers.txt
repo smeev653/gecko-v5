@@ -749,6 +749,9 @@ swe_fight_for_independence = {
 swe_economical_upswing = {
 	global_prosperity_growth = 0.5
 	global_ship_recruit_speed = -0.2
+	development_cost = -0.05
+	build_time = -0.1
+	build_cost = -0.1
 	production_efficiency = 0.1
 }
 
@@ -897,7 +900,7 @@ swe_an_empire_of_tolerance = {	#Permanent
 }
 
 swe_dominium_maris_baltici_mod = {	#Permnanent
-	years_of_nationalism = -5
+	land_forcelimit_modifier = 0.25
 	monthly_splendor = 2
 }
 
@@ -1128,10 +1131,11 @@ nor_iron_for_soldiers = {
 nor_copper_for_cannons = {
 	artillery_levels_available_vs_fort = 1
 	artillery_cost = -0.1
+	artillery_power = 0.15
 }
 
 nor_gold_for_the_state = {
-	global_tax_income = 24
+	global_tax_income = 240
 	trade_efficiency = 0.1
 }
 

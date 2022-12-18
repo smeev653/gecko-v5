@@ -7760,9 +7760,9 @@ estate_nobles_carolean_march = {
 		remove_country_modifier = estate_nobles_carolean_march_modifier
 	}
 	penalties = {
-		amount_of_carolean = -0.1
 	}
 	benefits = {
+		amount_of_carolean = 0.25
 	}
 	cooldown_years = 5
 	ai_will_do = {
@@ -7820,9 +7820,9 @@ estate_nobles_carolean_charge = {
 		remove_country_modifier = estate_nobles_carolean_charge_modifier
 	}
 	penalties = {
-		amount_of_carolean = -0.1
 	}
 	benefits = {
+		amount_of_carolean = 0.25
 	}
 	cooldown_years = 5
 	ai_will_do = {
