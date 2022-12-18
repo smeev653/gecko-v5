@@ -93,7 +93,7 @@ regional_hub = {
     cost = 500
     type = inland
     province_modifiers = {
-        province_trade_power_value = 20
+        province_trade_power_value = 15
         local_institution_spread = 0.3
 		trade_goods_size = 1
     }
@@ -109,9 +109,9 @@ world_trade_center = {
     cost = 1000
     type = inland
     province_modifiers = {
-        province_trade_power_value = 30
+        province_trade_power_value = 20
         local_institution_spread = 0.5
-		trade_goods_size = 2
+		trade_goods_size = 1.5
     }
     state_modifiers = {
         local_development_cost = -0.15
@@ -128,9 +128,9 @@ world_trade_center_2 = {
     cost = 0
     type = inland
     province_modifiers = {
-        province_trade_power_value = 30
+        province_trade_power_value = 20
         local_institution_spread = 0.5
-		trade_goods_size = 2
+		trade_goods_size = 1.5
     }
     state_modifiers = {
         local_development_cost = -0.15
