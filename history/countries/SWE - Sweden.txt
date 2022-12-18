@@ -14,9 +14,10 @@ national_focus = MIL
 		name = "Bilnycklar I"
 		dynasty = "Vasa"
 		birth_date = 1426.2.26
-		adm = 3
-		dip = 3
-		mil = 4
+		adm = 5
+		dip = 5
+		mil = 5
+		leader = {	name = "Karl VIII"   	type = general	fire = 2	shock = 4	manuever = 3	siege = 2 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
