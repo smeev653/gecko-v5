@@ -1308,9 +1308,7 @@ country_event = { #Sanjak of Albania
 		}
 		hidden_effect = { 
 			create_general = { 
-				tradition = 70 
-				add_shock = 1 
-				add_siege = 1				
+				tradition = 50 			
 			}
 		}
 	}
