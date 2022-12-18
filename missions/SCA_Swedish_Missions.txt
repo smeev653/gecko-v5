@@ -1836,7 +1836,7 @@ swe_kalmar_union_mission_slot = {
 		}
 		trigger = {
 			share_of_starting_income = 2
-			NOT = { num_of_loans = 1 }
+			#NOT = { num_of_loans = 1 }
 			NOT = { corruption = 1 }
 			is_bankrupt = no
 			is_in_deficit = no
