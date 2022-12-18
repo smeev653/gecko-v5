@@ -48,7 +48,7 @@ estate_gc_noble_levies = {
 	#	can_recruit_hussars = yes
 	#}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 }
 estate_gc_expand_mamluks = {

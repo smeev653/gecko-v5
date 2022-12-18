@@ -3236,7 +3236,7 @@ country_event = {
    title = gecko.40.t
     desc = gecko.40.d
 	picture = COURT_eventPicture
-
+	
    trigger = {
 			ROOT = {
 				ai = no
@@ -3249,7 +3249,7 @@ country_event = {
 						which = geckomercFL
 		}
 	}		
-	
+	hidden = yes
 	mean_time_to_happen = {
 			days = 1
 	}

@@ -6959,7 +6959,7 @@ estate_nobles_command_of_the_military = {
 		yearly_army_professionalism = 0.00250
 	}
 	ai_will_do = {
-		factor = 100
+		factor = 0
 	}
 }
 
