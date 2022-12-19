@@ -1019,6 +1019,7 @@ picture = COURT_eventPicture
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
+								}	
 							}
 								multiply_variable = { 
 									which = geckomercFL
@@ -1090,6 +1091,7 @@ picture = COURT_eventPicture
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
+								}	
 							}
 								multiply_variable = { 
 									which = geckomercFL
@@ -1566,6 +1568,7 @@ if = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
+								}	
 							}
 								multiply_variable = { 
 									which = geckomercFL
@@ -1610,6 +1613,7 @@ if = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
+								}	
 							}
 								multiply_variable = { 
 									which = geckomercFL

@@ -143,6 +143,7 @@ gecko_mercs = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
+								}	
 							}
 								multiply_variable = { 
 									which = geckomercFL
@@ -192,6 +193,7 @@ gecko_mercs = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
+								}	
 							}
 								multiply_variable = { 
 									which = geckomercFL
