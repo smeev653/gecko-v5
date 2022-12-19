@@ -255,6 +255,9 @@ gc_mug_formation_hope:0 "Indian Raid"
 berber_fury_2:0 "Berber Fury"
 gc_west_african_integration:0 "West African Integration"
 
+#sweden
+gc_swe_hakkapeliitta:0 "Hakkapeliitta"
+
 ######province modifiers######
  northern_dvina_estuary_modifier:0 "Northern Dvina Estuary"
  desc_northern_dvina_estuary_modifier:0 "Controlling the important river estuary of Northern Dvina strengthens our hold of the trade in the region."

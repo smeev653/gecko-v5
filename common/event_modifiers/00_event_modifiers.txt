@@ -2312,7 +2312,6 @@ swe_vasa_leads_the_rebellion = {
 }
 
 swe_any_vasa_leads_the_rebellion = {
-	liberty_desire = 25
 	global_unrest = -2
 }
 vasa_centralization_reforms = {

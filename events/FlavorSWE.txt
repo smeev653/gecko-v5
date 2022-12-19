@@ -2559,7 +2559,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = swe_any_vasa_leads_the_rebellion
-			duration = 10950
+			duration = 1825
 		}
 		custom_tooltip = swe_vasa_will_lead_sweden_tt
 		ai_chance = {
@@ -3852,21 +3852,6 @@ country_event = {
 	immediate = { hidden_effect = { set_country_flag = swe_selecting_polish_goal } }
 	after = { hidden_effect = { clr_country_flag = swe_selecting_polish_goal } }
 	
-	option = {	#Try to get our dynasty on their throne
-		name = "flavor_swe.124.a"
-		trigger = {
-			religion_group = christian
-		}
-		custom_tooltip = flavor_swe.124.a.tt
-		hidden_effect = {
-			set_country_flag = swe_polish_throne_goal
-			clr_country_flag = swe_poland_conquest_goal
-			clr_country_flag = swe_polish_swedish_coexistence_goal
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
 	
 	option = {	#Poland is our claim!
 		name = "flavor_swe.124.b"
@@ -4113,7 +4098,7 @@ country_event = {
 				}
 			}
 		}
-		add_treasury = 1000
+		add_treasury = 500
 		FROM = {
 			country_event = {
 				id = flavor_swe.131
@@ -4148,7 +4133,7 @@ country_event = {
 	
 	option = {	#Accepts
 		name = "flavor_swe.131.a"
-		add_treasury = -1000
+		add_treasury = -500
 		38 = {
 			cede_province = ROOT
 			if = {
@@ -4210,13 +4195,13 @@ country_event = {
 			add_base_tax = 2
 		}
 		2 = {	#Östergötland
-			add_base_tax = 1
+			add_base_tax = 2
 		}
 		7 = {	#Västergötland
-			add_base_tax = 1
+			add_base_tax = 2
 		}
 		27 = {	#Finland
-			add_base_tax = 1
+			add_base_tax = 2
 		}
 
 		1 = {	# Stockholm
