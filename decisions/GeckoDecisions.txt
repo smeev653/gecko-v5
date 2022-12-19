@@ -724,7 +724,7 @@ country_decisions = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
+								}
 							}
 								multiply_variable = { 
 									which = geckomercFL
@@ -765,17 +765,16 @@ country_decisions = {
 								which = availablegeckomercs
 						}
 						if = {
-							limit = {
-								OR = {
+				limit = {
+					OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
-							}
-								multiply_variable = { 
-									which = geckomercFL
-									value = 1.1
 								}
-						}
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.1
+				}
 			}
 			else = {
 				#nothing
@@ -873,17 +872,17 @@ country_decisions = {
 								which = availablegeckomercs
 						}
 						if = {
-							limit = {
-								OR = {
+				limit = {
+					OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
-							}
-								multiply_variable = { 
-									which = geckomercFL
-									value = 1.1
 								}
-						}
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.1
+				}
+			}
 			else = {
 				#nothing
 			}
@@ -918,17 +917,17 @@ country_decisions = {
 								which = availablegeckomercs
 						}
 						if = {
-							limit = {
-								OR = {
+				limit = {
+					OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
-							}
-								multiply_variable = { 
-									which = geckomercFL
-									value = 1.1
 								}
-						}
+				}
+				multiply_variable = { 
+								which = geckomercFL
+								value = 1.1
+				}
+			}
 			else = {
 				#nothing
 			}
@@ -990,12 +989,12 @@ country_decisions = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
-							}
-								multiply_variable = { 
-									which = geckomercFL
-									value = 1.1
 								}
+						}
+							multiply_variable = { 
+											which = geckomercFL
+											value = 1.1
+							}
 						}
 							 else = {
 								#nothing
@@ -1035,12 +1034,12 @@ country_decisions = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
-							}
-								multiply_variable = { 
-									which = geckomercFL
-									value = 1.1
 								}
+						}
+							multiply_variable = { 
+											which = geckomercFL
+											value = 1.1
+							}
 						}
 							 else = {
 								#nothing
