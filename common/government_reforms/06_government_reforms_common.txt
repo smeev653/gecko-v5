@@ -305,8 +305,8 @@ papal_embassy_reform = {
 		papal_influence_from_cardinals = 0.33
 		curia_treasury_contribution = 0.33
 		church_influence_modifier = 0.1
-		church_loyalty_modifier = 0.05
-		curia_powers_cost = -0.1
+		church_loyalty_modifier = 0.1
+		curia_powers_cost = -0.25
 	}
 	effect = {
 		hidden_effect = {
@@ -922,7 +922,8 @@ maintain_clergy_balance_of_power_reform = {
 		}
 	}
 	modifiers = {
-		all_estate_loyalty_equilibrium = 0.05
+		all_estate_loyalty_equilibrium = 0.1
+		global_prosperity_growth = 0.25
 	}
 	
 	ai = {

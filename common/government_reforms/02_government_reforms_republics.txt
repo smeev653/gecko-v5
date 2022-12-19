@@ -2374,7 +2374,7 @@ provincial_governments_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
 	modifiers = {
-		state_maintenance_modifier = -0.25
+		state_maintenance_modifier = -0.5
 		global_prosperity_growth = 0.5
 	}
 	ai = {
