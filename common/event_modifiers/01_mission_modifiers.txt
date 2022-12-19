@@ -808,7 +808,7 @@ swe_support_of_the_sapmi = { #Permanent, province, gets removed as soon Sami is 
 }
 
 swe_arctic_expansion = {
-	local_development_cost = -0.4
+	local_development_cost = -0.2
 	allowed_num_of_buildings = 1
 }
 

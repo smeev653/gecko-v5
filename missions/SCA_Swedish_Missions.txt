@@ -459,7 +459,7 @@ swe_scandinavian_colonialism_mission_slot = {
 				}
 				scandinavia_region = {
 					limit = { owned_by = ROOT }
-					add_prosperity = 10
+					add_prosperity = 25
 				}
 			}
 		}
