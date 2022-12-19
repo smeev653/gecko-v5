@@ -65,7 +65,7 @@ plutocracy_ideas = {
 	free_subjects = {
 		global_trade_goods_size_modifier = 0.1
 	}
-	tradition_of_payment = {
+	gc_tradition_of_payment = {
 		mercenary_cost = -0.15
 		mercenary_discipline = 0.05
 	}
@@ -206,23 +206,23 @@ innovativeness_ideas = {
 	category = ADM
 
 	bonus = {
-		burghers_loyalty_modifier = 0.05
-		church_loyalty_modifier = 0.05
-		nobles_loyalty_modifier = 0.05
-		rajput_loyalty_modifier = 0.05
-		cossacks_loyalty_modifier = 0.05
-		nomadic_tribes_loyalty_modifier = 0.05
-		dhimmi_loyalty_modifier = 0.05
-		jains_loyalty_modifier = 0.05
-		qizilbash_loyalty_modifier = 0.05
-		ghilman_loyalty_modifier = 0.05
-		janissary_loyalty_modifier = 0.05
-		mamluks_loyalty_modifier = 0.05
-		brahmins_hindu_loyalty_modifier = 0.05
-		brahmins_muslim_loyalty_modifier = 0.05
-		brahmins_other_loyalty_modifier = 0.05
-		maratha_loyalty_modifier = 0.05
-		vaisyas_loyalty_modifier = 0.05
+		burghers_loyalty_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		rajput_loyalty_modifier = 0.1
+		cossacks_loyalty_modifier = 0.1
+		nomadic_tribes_loyalty_modifier = 0.1
+		dhimmi_loyalty_modifier = 0.1
+		jains_loyalty_modifier = 0.1
+		qizilbash_loyalty_modifier = 0.1
+		ghilman_loyalty_modifier = 0.1
+		janissary_loyalty_modifier = 0.1
+		mamluks_loyalty_modifier = 0.1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_muslim_loyalty_modifier = 0.1
+		brahmins_other_loyalty_modifier = 0.1
+		maratha_loyalty_modifier = 0.1
+		vaisyas_loyalty_modifier = 0.1
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
@@ -238,10 +238,10 @@ innovativeness_ideas = {
 		idea_cost = -0.1
 	}
 	print_culture = {
-		all_power_cost = -0.01
+		all_power_cost = -0.02
 	}
 	optimism = {
-		autonomy_change_time = -0.25
+		autonomy_change_time = -0.5
 	}
 	formalized_officer_corps = {
 		free_mil_policy = 1
@@ -306,6 +306,7 @@ spy_ideas = {
 	}
 
 	efficient_spies = {
+		monthly_splendor = 2
 		fabricate_claims_cost = -0.25
 		can_fabricate_for_vassals = yes
 		embargo_efficiency = 0.5
@@ -439,7 +440,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		morale_damage_received = -0.05
+		land_morale = 0.05
 	}
 	battlefield_commisions = {
 		army_tradition_from_battle = 0.375	
@@ -516,7 +517,7 @@ economic_ideas = {
 	category = ADM
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.10
+		global_allowed_num_of_buildings = 1
 	}
 
 	bureaucracy = {
@@ -531,16 +532,18 @@ economic_ideas = {
 		inflation_action_cost = -0.25
 	}
 	debt_and_loans = {
-		interest = -0.25
+		interest = -0.5
 	}
 	centralization = {
 		global_autonomy = -0.05
+		global_prosperity_growth = 0.25
 	}
 	nationalistic_enthusiasm = {
 		land_maintenance_modifier = -0.05
 	}
 	smithian_economics = {
 		production_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.10
  	}
 
 	ai_will_do = {
@@ -752,7 +755,7 @@ maritime_ideas = {
 		move_capital_cost_modifier = -0.75
 	}	
 	grand_navy = {
-		all_power_cost = -0.01
+		all_power_cost = -0.02
 	}
 	ships_penny = {
 		advisor_pool = 2
@@ -855,7 +858,7 @@ expansion_ideas = {
 
 	bonus = {
 		governing_capacity = 250
-		governing_capacity_modifier = 0.1
+		governing_capacity_modifier = 0.2
 	}
 
 	adaptability = {
@@ -881,7 +884,7 @@ expansion_ideas = {
 		land_forcelimit_modifier = 0.10
 	}
 	additional_diplomats = {
-		land_attrition = -0.15
+		land_attrition = -0.2
 		movement_speed = 0.1
 	}
 	ai_will_do = {
@@ -970,7 +973,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		development_cost_modifier = -0.025
+		development_cost_modifier = -0.05
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
@@ -984,7 +987,7 @@ influence_ideas = {
 		dip_advisor_cost = -0.15
 	}
 	inf_flexible_negotiation = {
-		center_of_trade_upgrade_cost = -0.1
+		center_of_trade_upgrade_cost = -0.2
 		expand_administration_cost = -0.15
 		#allow_free_estate_privilege_revocation = yes
 	}
