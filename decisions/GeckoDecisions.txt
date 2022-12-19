@@ -28,11 +28,11 @@ country_decisions = {
 				ai = no
 			}
 			effect = {
-				add_years_of_income = -0.25
+				add_years_of_income = -0.2
 				define_advisor  = { 
 				type = recruitmaster
-				skill = 2
-				discount = yes
+				skill = 3
+				cost_multiplier = 0.5
 			}	
 				set_country_flag = sm_hire_recruitmaster
 			}
