@@ -20,7 +20,7 @@ edict_encourage_development = {
 	}
 	
 	modifier = {
-		local_production_efficiency = 0.25
+		local_production_efficiency = 0.33
 	}
 	
 	color = {  244 184 12  }
@@ -52,7 +52,7 @@ gc_edict_encourage_development_1 = {
 	}
 	
 	modifier = {
-		local_production_efficiency = 0.4
+		local_production_efficiency = 0.66
 	}
 	
 	color = {  244 184 12  }
