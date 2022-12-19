@@ -721,11 +721,13 @@ country_decisions = {
 						}
 						if = {
 							limit = {
-								has_idea = gc_compagnies_ordonnance
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
 							}
 								multiply_variable = { 
 									which = geckomercFL
-									value = 1.15
+									value = 1.1
 								}
 						}
 						else = {
@@ -762,13 +764,16 @@ country_decisions = {
 								which = availablegeckomercs
 						}
 						if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
 			}
 			else = {
 				#nothing
@@ -866,14 +871,16 @@ country_decisions = {
 								which = availablegeckomercs
 						}
 						if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
 			else = {
 				#nothing
 			}
@@ -908,14 +915,16 @@ country_decisions = {
 								which = availablegeckomercs
 						}
 						if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
 			else = {
 				#nothing
 			}
@@ -974,12 +983,14 @@ country_decisions = {
 						}
 						if = {
 							limit = {
-								has_idea = gc_compagnies_ordonnance
-						}
-							multiply_variable = { 
-											which = geckomercFL
-											value = 1.15
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
 							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
 						}
 							 else = {
 								#nothing
@@ -1016,12 +1027,14 @@ country_decisions = {
 						}
 						if = {
 							limit = {
-								has_idea = gc_compagnies_ordonnance
-						}
-							multiply_variable = { 
-											which = geckomercFL
-											value = 1.15
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
 							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
 						}
 							 else = {
 								#nothing

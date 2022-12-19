@@ -1015,14 +1015,16 @@ picture = COURT_eventPicture
 								which = availablegeckomercs
 			}
 			if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.15
+								}
+						}
 			else = {
 				#nothing
 			}
@@ -1084,14 +1086,16 @@ picture = COURT_eventPicture
 								which = availablegeckomercs
 						}
 			if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.15
+								}
+						}
 			else = {
 				#nothing
 			}			
@@ -1558,14 +1562,16 @@ country_event = {
 							value = 1
 					}
 if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.15
+								}
+						}
 			else = {
 				#nothing
 			}					
@@ -1600,14 +1606,16 @@ if = {
 							value = 1
 					}
 					if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.15
+								}
+						}
 			else = {
 				#nothing
 			}

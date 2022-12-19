@@ -139,14 +139,16 @@ gecko_mercs = {
 					value = 1
 			}
 			if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.15
+								}
+						}
 			else = {
 				#nothing
 			}	
@@ -186,14 +188,16 @@ gecko_mercs = {
 					value = 1
 			}
 			if = {
-				limit = {
-					has_idea = gc_compagnies_ordonnance
-				}
-				multiply_variable = { 
-								which = geckomercFL
-								value = 1.15
-				}
-			}
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.15
+								}
+						}
 			else = {
 				#nothing
 			}
