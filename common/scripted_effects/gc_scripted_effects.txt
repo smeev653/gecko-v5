@@ -146,7 +146,7 @@ gecko_mercs = {
 							}
 								multiply_variable = { 
 									which = geckomercFL
-									value = 1.15
+									value = 1.1
 								}
 						}
 			else = {
@@ -195,7 +195,7 @@ gecko_mercs = {
 							}
 								multiply_variable = { 
 									which = geckomercFL
-									value = 1.15
+									value = 1.1
 								}
 						}
 			else = {

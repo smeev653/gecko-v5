@@ -532,7 +532,7 @@ economic_ideas = {
 		inflation_action_cost = -0.25
 	}
 	debt_and_loans = {
-		interest = -0.5
+		interest = -0.25
 	}
 	centralization = {
 		global_autonomy = -0.05
