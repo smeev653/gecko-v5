@@ -281,10 +281,8 @@ NDefines.NMilitary.BANNER_STARTING_STRENGTH = 0.1 -- Starting strength of a bann
 NDefines.NMilitary.REGULAR_LEADER_POWER = 0.75
 NDefines.NMilitary.EXPLORER_LEADER_POWER = 0.65
 NDefines.NMilitary.LEADER_MAX_PIPS = 8							-- Max general/admiral pips (per skill)
-NDefines.NMilitary.LEADER_MIN_PIPS = 2	
-
-								-- Min general/admiral pips (total)
-			
+NDefines.NMilitary.LEADER_MIN_PIPS = 2
+NDefines.NMilitary.CANNOT_RETREAT_DAYS = 6
 
 NDefines.NAI.DIPLOMATIC_ACTION_OFFER_CONDOTTIERI_DISABLE_VERSUS_PLAYER_ENEMIES = 1
 NDefines.NAI.ACCEPTABLE_FRACTION_OF_INTEREST_PAYMENTS = 0.4
