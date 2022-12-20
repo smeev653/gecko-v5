@@ -114,6 +114,7 @@ merc_knights_templar = {
 	regiments_per_development = 0.065
 	#home_province = 379
 	cavalry_weight = 1
+	cavalry_cap = 10
 	cost_modifier = 0.5
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
@@ -125,9 +126,8 @@ merc_knights_templar = {
 		}
 		owns = 379
 	}
-	modifier = {
-		cavalry_power = 0.10
-		shock_damage = 0.05
+	 modifier = {
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 1
 	}
 }
@@ -401,7 +401,8 @@ merc_flemish_company = {
     regiments_per_development = 0.05
 	cavalry_weight = 1
 	#artillery_weight = 0.3
-	#cavalry_cap = 2
+	cavalry_cap = 10
+	cost_modifier = 0.5
     #home_province = 90
 	sprites = { dlc042_ned_sprite_pack dlc028_ned_sprite_pack westerngfx_sprite_pack }
     trigger = {
@@ -425,8 +426,8 @@ merc_flemish_company = {
 			has_country_modifier = swedish_mercenary_core
 		}
 	}
-	modifier = {
-        #infantry_power = 0.10
+	 modifier = {
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 1
 	}
 }
@@ -548,9 +549,10 @@ merc_banjara_company = {
 # Bukhara Band
 merc_bukhara_band = {
     regiments_per_development = 0.05
-	#cavalry_weight = 0.4
+	cavalry_weight = 1
+	cost_modifier = 0.5
     #artillery_weight = 0.2
-	cavalry_cap = 6
+	cavalry_cap = 10
 	#home_province = 442
 	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
     trigger = {
@@ -565,7 +567,7 @@ merc_bukhara_band = {
 			}
 		}
 	}
-	modifier = { shock_damage = 0.15 }
+	modifier = { shock_damage = 0.15 cav_to_inf_ratio = 1 }
 }
 
 # Mesopotamian Mamluks
@@ -573,7 +575,7 @@ merc_mesopotamian_mamluks = {
     regiments_per_development = 0.05
     cavalry_weight = 1
     #artillery_weight = 0.2
-	#cavalry_cap = 6
+	cavalry_cap = 10
 	#home_province = 410
 	cost_modifier = 0.5
 	sprites = { dlc080_alh_sprite_pack muslimgfx_sprite_pack }
@@ -583,10 +585,10 @@ merc_mesopotamian_mamluks = {
 			merc_company = merc_mesopotamian_mamluks
 		} 
 	}
-    modifier = {
-        cavalry_shock = 0.5
+     modifier = {
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 1
-    }
+	}
 }
 
 # Nile Mamluks
@@ -594,7 +596,7 @@ merc_nile_mamluks = {
     regiments_per_development = 0.05
     cavalry_weight = 1
     #artillery_weight = 0.2
-	#cavalry_cap = 6
+	cavalry_cap = 10
     #home_province = 361
 	cost_modifier = 0.5
 	sprites = { dlc002_mam_sprite_pack dlc058_mam_sprite_pack muslimgfx_sprite_pack }
@@ -621,6 +623,7 @@ merc_nile_mamluks = {
     modifier = {
         cavalry_power = 0.1
         discipline = 0.025
+		cav_to_inf_ratio = 1
     }
 }
 
@@ -628,7 +631,7 @@ merc_delhi_mamluks = {
     regiments_per_development = 0.05
     cavalry_weight = 1
     #artillery_weight = 0.2
-	#cavalry_cap = 6
+	cavalry_cap = 10
     #home_province = 522
 	cost_modifier = 0.5
 	sprites = { dlh_base_sprite_pack }
@@ -637,10 +640,9 @@ merc_delhi_mamluks = {
 		NOT = {has_country_modifier = merc_spawn_timer }
 		
 	}
-    modifier = {
-		  cavalry_power = 0.1
-		   discipline = 0.025
-		   cav_to_inf_ratio = 1
+     modifier = {
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 1
 	}
 }
 
@@ -976,7 +978,7 @@ merc_maghreb_raiders = {
     regiments_per_development = 0.05
 	cavalry_weight = 1
     #artillery_weight = 0.1
-	#cavalry_cap = 6
+	cavalry_cap = 10
 	cost_modifier = 0.5
     #home_province = 341 # Tunis
 	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
@@ -990,7 +992,7 @@ merc_maghreb_raiders = {
 		}
 	}
     modifier = {
-		cavalry_power = 0.1
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 1
 	}
 }
@@ -1050,7 +1052,7 @@ merc_independent_cossack_host = {
 	cost_modifier = 0.5
 	cavalry_weight = 1 # lots of cavalry relative to other units
 	artillery_weight = 0 # no artillery
-	#cavalry_cap = 6
+	cavalry_cap = 10
 	sprites = { dlc047_zaz_sprite_pack easterngfx_sprite_pack }
 	trigger = {
 		NOT = {has_country_modifier = merc_spawn_timer }
@@ -1064,8 +1066,10 @@ merc_independent_cossack_host = {
 			has_country_modifier = swedish_mercenary_core
 		}
 	}
-    modifier = { cavalry_power = 0.1
-	cav_to_inf_ratio = 1}
+     modifier = {
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 1
+	}
 }
 
 merc_kazakh_company = {
@@ -1073,7 +1077,8 @@ merc_kazakh_company = {
     #home_province = 478 # Argyn
 	cavalry_weight = 1
 	cost_modifier = 0.5
-	#cavalry_cap = 6
+	infantry_cap = 10
+	cavalry_cap = 10
 	sprites = { dlc048_shy_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
 		NOT = {has_country_modifier = merc_spawn_timer }
@@ -1088,7 +1093,10 @@ merc_kazakh_company = {
 			has_country_modifier = glut_of_mercs
 		}
 	}
-    modifier = {cav_to_inf_ratio = 1 }
+     modifier = {
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 1
+	}
 }
 
 merc_yaka_free_warriors = {
@@ -1319,6 +1327,7 @@ merc_oyo_cavalry = {
 	regiments_per_development = 0.05
 	cost_modifier = 0.25
 	cavalry_weight = 1
+	cavalry_cap = 10
 	home_province = 1144
 	sprites = { dlc062_ben_sprite_pack africangfx_sprite_pack }
     trigger = {
@@ -1328,9 +1337,8 @@ merc_oyo_cavalry = {
 		}
 	}
     modifier = {
-		cavalry_flanking = 0.5
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 1
-		cavalry_power = 0.2
 	}
 }
 

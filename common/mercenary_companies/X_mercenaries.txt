@@ -7,9 +7,9 @@ merc_X_VEN_stratioti = {
 	}
 	regiments_per_development = 0.05
 	cavalry_weight = 1
-	modifier = {
-		shock_damage = 0.50
-		movement_speed = 0.20
-		cavalry_flanking = 0.33
+	cavalry_cap = 10
+	 modifier = {
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 1
 	}
 }

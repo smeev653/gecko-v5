@@ -72,7 +72,7 @@ gecko_merc_black_army_1 = {
 gecko_merc_black_army_2 = {
 	regiments_per_development = 0.05
 	cavalry_weight = 1
-   #cavalry_cap = 15
+	cavalry_cap = 10
     artillery_weight = 0
 	#home_province = 153
 	sprites = { easterngfx_sprite_pack }
@@ -83,9 +83,9 @@ gecko_merc_black_army_2 = {
 			}
 			NOT = {has_country_modifier = merc_spawn_timer }	
 	}
-	cost_modifier = 0.35
-	modifier = {
-		discipline = 0.1
+	cost_modifier = 0.5
+	 modifier = {
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 1
 	}
 }
@@ -94,6 +94,7 @@ gecko_merc_black_army_2 = {
 gecko_merc_aristo_ideas = {
 	regiments_per_development = 0.05
 	cavalry_weight = 1
+	cavalry_cap = 10
     artillery_weight = 0
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
@@ -101,7 +102,8 @@ gecko_merc_aristo_ideas = {
 		NOT = {has_country_modifier = merc_spawn_timer }
 	}
 	cost_modifier = 0.5
-	modifier = {
+	 modifier = {
+		cavalry_power = 0.15
 		cav_to_inf_ratio = 1
 	}
 }
