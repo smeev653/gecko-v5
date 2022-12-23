@@ -977,13 +977,13 @@ influence_ideas = {
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
-		global_own_trade_power = 0.25
+		global_own_trade_power = 0.15
 	}
 	additional_loyalist_recruitment = {
 		province_warscore_cost = -0.10
 	}
 	integrated_elites = {
-		dip_tech_cost_modifier = -0.15
+		dip_tech_cost_modifier = -0.10
 		dip_advisor_cost = -0.15
 	}
 	inf_flexible_negotiation = {
@@ -996,10 +996,10 @@ influence_ideas = {
 	}
 
 	tribute_system = {
-		reduced_liberty_desire = 35
+		reduced_liberty_desire = 20
 		diplomatic_annexation_cost = -0.25
 		diplomatic_upkeep = 2
-		vassal_income = 0.10
+		#vassal_income = 0.10
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1

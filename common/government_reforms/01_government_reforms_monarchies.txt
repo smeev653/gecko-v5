@@ -3265,7 +3265,7 @@ representation_of_the_crown_reform = {
 		}
 	}
 	modifiers = {
-		diplomatic_upkeep = 1
+		#diplomatic_upkeep = 1
 		vassal_forcelimit_bonus = 0.25
 	}
 	custom_attributes = {
