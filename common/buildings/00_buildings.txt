@@ -819,7 +819,7 @@ courthouse = {
 		#local_state_maintenance_modifier = -0.1
 		local_autonomy = -0.1
 		local_governing_cost = -0.125
-		local_governing_cost_increase = 2
+		local_governing_cost_increase = -2
 		local_friendly_movement_speed = 0.1
 		allowed_num_of_buildings = 1
 	}
