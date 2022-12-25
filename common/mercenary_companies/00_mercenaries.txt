@@ -1077,7 +1077,6 @@ merc_kazakh_company = {
     #home_province = 478 # Argyn
 	cavalry_weight = 1
 	cost_modifier = 0.5
-	infantry_cap = 10
 	cavalry_cap = 10
 	sprites = { dlc048_shy_sprite_pack muslimgfx_sprite_pack }
 	trigger = {
