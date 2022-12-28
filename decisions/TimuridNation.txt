@@ -88,6 +88,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			has_country_flag = ME_ALLOW_FORMATION_OF_TIMURIDS
 			NOT = { exists = TIM }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
