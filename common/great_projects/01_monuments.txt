@@ -21515,7 +21515,7 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			#artillery_power = 0.025
+			artillery_power = 0.025
 			mil_tech_cost_modifier = -0.025
 		}
 		on_upgraded = { }
@@ -21531,7 +21531,7 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			#artillery_power = 0.05
+			artillery_power = 0.05
 			mil_tech_cost_modifier = -0.05
 		}
 		on_upgraded = { }
@@ -21547,7 +21547,7 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			#artillery_power = 0.1
+			artillery_power = 0.1
 			mil_tech_cost_modifier = -0.1
 		}
 		on_upgraded = { }

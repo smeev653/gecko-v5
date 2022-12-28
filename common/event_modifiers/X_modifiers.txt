@@ -734,47 +734,47 @@ X_carpathian_culture_full_control_cmod = {
 }
 #iberian
 X_iberian_culture_tier_1_cmod = {
-	artillery_power = 0.010
+	trade_efficiency = 0.010
 	naval_maintenance_modifier = -0.020
 }
 X_iberian_culture_tier_2_cmod = {
-	artillery_power = 0.020
+	trade_efficiency = 0.020
 	naval_maintenance_modifier = -0.040
 }
 X_iberian_culture_tier_3_cmod = {
-	artillery_power = 0.030
+	trade_efficiency = 0.030
 	naval_maintenance_modifier = -0.060
 }
 X_iberian_culture_tier_4_cmod = {
-	artillery_power = 0.040
+	trade_efficiency = 0.040
 	naval_maintenance_modifier = -0.080
 }
 X_iberian_culture_tier_5_cmod = {
-	artillery_power = 0.050
+	trade_efficiency = 0.050
 	naval_maintenance_modifier = -0.100
 }
 X_iberian_culture_tier_6_cmod = {
-	artillery_power = 0.060
+	trade_efficiency = 0.060
 	naval_maintenance_modifier = -0.120
 }
 X_iberian_culture_tier_7_cmod = {
-	artillery_power = 0.070
+	trade_efficiency = 0.070
 	naval_maintenance_modifier = -0.140
 }
 X_iberian_culture_tier_8_cmod = {
-	artillery_power = 0.080
+	trade_efficiency = 0.080
 	naval_maintenance_modifier = -0.160
 }
 X_iberian_culture_tier_9_cmod = {
-	artillery_power = 0.090
+	trade_efficiency = 0.090
 	naval_maintenance_modifier = -0.180
 }
 X_iberian_culture_tier_10_cmod = {
-	artillery_power = 0.100
+	trade_efficiency = 0.100
 	naval_maintenance_modifier = -0.200
 }
 X_iberian_culture_full_control_cmod = {
-	artillery_power = 0.125
+	trade_efficiency = 0.125
 	naval_maintenance_modifier = -0.250
 }
 #maghrebi
