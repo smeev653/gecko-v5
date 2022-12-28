@@ -103,7 +103,7 @@ country_event = { #Ulugh Beg
 
 	trigger = {
 		tag = TRS
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 
 	mean_time_to_happen = {
@@ -131,7 +131,7 @@ country_event = { #Babur
 
 	trigger = {
 		tag = KHO
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 
 	mean_time_to_happen = {
@@ -165,7 +165,7 @@ country_event = { #justiceforsistan
 
 	trigger = {
 		tag = SIS
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 
 	mean_time_to_happen = {
@@ -195,7 +195,6 @@ country_event = { #an unlikely shah
 		NOT = { exists = TIM }
 		has_ruler_flag = Ulugh_beg_is_ruler
 		NOT = { has_country_flag = formed_timurids_flag }
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
 
 	mean_time_to_happen = {
@@ -367,7 +366,7 @@ country_event = { #Mizra Asks for Promotion
 	picture = COURT_eventPicture
 
 	trigger = {
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 		advisor = abu_said_mirza
 	}
 
@@ -529,7 +528,7 @@ country_event = { #End of the rebellion
 			is_subject = no
 		}
 		NOT = { war_with = QOM }
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 
 	mean_time_to_happen = {
@@ -1203,7 +1202,7 @@ country_event = { #Karatshar bin Soyurghatmish
 
 	trigger = {
 		tag = AFG
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 
 	mean_time_to_happen = {
@@ -1229,7 +1228,7 @@ country_event = { #Regency in Fars
 
 	trigger = {
 		tag = FRS
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 
 	mean_time_to_happen = {
@@ -1256,7 +1255,7 @@ country_event = { #Muhammad bin Baysonqor
 
 	trigger = {
 		tag = QOM
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 
 	mean_time_to_happen = {

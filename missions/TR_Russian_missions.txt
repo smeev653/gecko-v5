@@ -413,7 +413,7 @@ tr_russia_conquest_1 = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
-		
+		}
 	}
 	tr_consolidate_russia_mission = {
 		icon = mission_unite_home_region

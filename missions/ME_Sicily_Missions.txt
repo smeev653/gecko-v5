@@ -18,7 +18,7 @@ sicily_mission_1 = {
 				}
 			}
 		}
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 	has_country_shield = yes
 
@@ -289,7 +289,7 @@ sicily_mission_2 = {
 				}
 			}
 		}
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 	has_country_shield = yes
 
@@ -569,7 +569,7 @@ sicily_mission_3 = {
 				}
 			}
 		}
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 	has_country_shield = yes
 
@@ -1034,7 +1034,7 @@ sicily_mission_4 = {
 				}
 			}
 		}
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 	has_country_shield = yes
 
@@ -1241,7 +1241,7 @@ sicily_mission_5 = {
 				}
 			}
 		}
-		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		
 	}
 	has_country_shield = yes
 
