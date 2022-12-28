@@ -200,7 +200,9 @@ age_of_discovery = {
 					tag = POR				
 			}
 			modifier = {
-				global_colonial_growth = 50
+				global_colonial_growth = 75
+				infantry_power = 0.05
+				infantry_cost = -0.2
 			}
 			ai_will_do = {
 				factor = 100

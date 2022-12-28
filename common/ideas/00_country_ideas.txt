@@ -1187,7 +1187,7 @@ POR_ideas = {
 	start = {
 		colonists = 1
 		may_explore = yes
-		trade_efficiency = 0.10
+		development_cost = -0.1
 	}
 	
 	bonus = {
@@ -1221,7 +1221,7 @@ POR_ideas = {
 	}
 	royal_absolutism = {
 		build_cost = -0.10
-		development_cost = -0.05
+		trade_efficiency = 0.05
 	}
 	por_royal_military_academy = {
 		defensiveness = 0.1
