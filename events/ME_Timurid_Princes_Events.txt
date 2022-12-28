@@ -10,7 +10,6 @@ country_event = { #Fall of the Timurid Empire
 	fire_only_once = yes
 
 	trigger = {
-		tag = YZD
 		has_country_flag = ME_fall_of_herat
 		NOT = { has_country_flag = formed_timurids_flag } #So formed Timmies don't get it
 		NOT = { is_year = 1470 }
@@ -45,7 +44,6 @@ country_event = { #Fall of Herat
 
 	trigger = {
 		NOT = { is_year = 1470 }
-		tag = YZD
 		NOT = { has_global_flag = ME_fall_of_herat_fired }
 		NOT = { has_country_flag = formed_timurids_flag } #So formed Timmies don't get it
 		ai = yes
@@ -211,17 +209,6 @@ country_event = { #an unlikely shah
 			factor = 90
 		}
 	}
-
-	option = {
-		name = "ME_Timurid_Princes_Event6.EVTOPTA2"
-
-		ai_chance = {
-			factor = 10
-		}
-
-		set_country_flag = transoxiana_allows_mission_completion
-		add_legitimacy_equivalent = { amount = -5 republican_tradition = -5 }
-	}
 }
 
 country_event = { #Against Ulugh Beg
@@ -339,12 +326,11 @@ country_event = { #Abu Sa'id Mirza
 		}
 
 		define_advisor = {
-			type = abu_said_mirza
 			name = "Abu Sa'id Mirza"
 			skill = 2
 			culture = ROOT
 			religion = ROOT
-			cost_multiplier = 0.33
+			cost_multiplier = 0.25
 		}
 		custom_tooltip = ALLOW_ABU_SAID_MIZRA_EVENTS
 		set_country_flag = Mirza_flag
