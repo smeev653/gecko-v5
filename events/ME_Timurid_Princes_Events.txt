@@ -327,10 +327,9 @@ country_event = { #Abu Sa'id Mirza
 
 		define_advisor = {
 			name = "Abu Sa'id Mirza"
+			type = diplomat
 			skill = 2
-			culture = ROOT
-			religion = ROOT
-			cost_multiplier = 0.25
+			cost_multiplier = 0.75
 		}
 		custom_tooltip = ALLOW_ABU_SAID_MIZRA_EVENTS
 		set_country_flag = Mirza_flag
