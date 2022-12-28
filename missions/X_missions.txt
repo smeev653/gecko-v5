@@ -1510,14 +1510,14 @@ X_VEN_slot_4 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 113
-				province_id = 1303
+				province_id = 109
 			}	
 		}
 		trigger = {
 			113= {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1303 = {
+			109 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
