@@ -277,14 +277,12 @@ NDefines.NMilitary.HUSSARS_MANPOWER_COST_MODIFIER = 1.0
 NDefines.NMilitary.HUSSARS_STARTING_STRENGTH = 1.0
 NDefines.NMilitary.HUSSARS_STARTING_MORALE = 0.1
 NDefines.NMilitary.BANNER_STARTING_STRENGTH = 0.1 -- Starting strength of a banner regiment, 1.0 being full strength
-NDefines.NMilitary.REGULAR_LEADER_POWER = 0.65
-NDefines.NMilitary.EXPLORER_LEADER_POWER = 0.55
+NDefines.NMilitary.REGULAR_LEADER_POWER = 0.70
+NDefines.NMilitary.EXPLORER_LEADER_POWER = 0.60
 NDefines.NMilitary.LEADER_MAX_PIPS = 8							-- Max general/admiral pips (per skill)
 NDefines.NMilitary.LEADER_MIN_PIPS = 2
 NDefines.NMilitary.INSUFFICIENT_SUPPORT = -0.25
-NDefines.NMilitary.LEADER_MIN_PIPS = 2	
 
-								-- Min general/admiral pips (total)
 			
 
 NDefines.NAI.DIPLOMATIC_ACTION_OFFER_CONDOTTIERI_DISABLE_VERSUS_PLAYER_ENEMIES = 1
@@ -482,7 +480,6 @@ NDefines.NGovernment.EXPAND_ADMIN_COST = 400.0
 NDefines.NGovernment.CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.5
 NDefines.NGovernment.EXPAND_INFRASTRUCTURE_ADM_COST = 30
 NDefines.NGovernment.RUSSIAN_ABILITY_STRELTSY_WE_CHANGE = -1
-NDefines.NGovernment.RUSSIAN_ABILITY_STRELTSY_SPAWN_SIZE = 0.2
 NDefines.NGovernment.LEADER_AS_MONARCH_TRADITION = 15
 
 NDefines.NGui.AUTO_SELECT_EVENT_MONTHS = 6
