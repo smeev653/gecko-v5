@@ -16,6 +16,7 @@ trade_company_west_africa = {
 		1096 1111 #cap_verde_area
 		1112 1113 1116 2239 #jolof_area
 		1114 1117 2238 #futa_jallon_area
+		1172 1167 4080 4079 1166 4078
 	}
 	
 	# Specific
@@ -28,23 +29,23 @@ trade_company_west_africa = {
 	}
 }
 
-trade_company_south_africa = {
-	color = { 0 175 0 }
-	
-	provinces = {
-		1460 789 833 1175 1176 1177 1178 1179 1180 1181 1182 1173 1800 2856 2864 2880 4781 4782 4783 4784
-		6029 1174 6028 #aba provinces
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_SOUTH_AFRICA_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_SOUTH_AFRICA_Africa_Trade_Company"
-	}
-}
+#trade_company_south_africa = {
+#	color = { 0 175 0 }
+#	
+#	provinces = {
+#		1460 789 833 1175 1176 1177 1178 1179 1180 1181 1182 1173 1800 2856 2864 2880 4781 4782 4783 4784
+#		6029 1174 6028 #aba provinces
+#	}
+#	
+#	# Specific
+#	# Generic
+#	names = {
+#		name = "TRADE_COMPANY_SOUTH_AFRICA_Root_Culture_GetName"
+#	}
+#	names = {
+#		name = "TRADE_COMPANY_SOUTH_AFRICA_Africa_Trade_Company"
+#	}
+#}
 
 trade_company_east_africa = {
 	color = { 200 0 0 }

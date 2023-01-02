@@ -48,6 +48,7 @@
  bordeaux:0 "Bordeaux"
  champagne:0 "Champagne"
  english_channel:0 "English Channel"
+ cape_of_good_hope:0 "Cape of Good Hope"
  #Trade Companies
  trade_company_south_africa:0 "South African Charter"
  TRADE_COMPANY_SOUTH_AFRICA_Root_Culture_GetName:0 "[Root.Culture.GetName] South Africa Company"
