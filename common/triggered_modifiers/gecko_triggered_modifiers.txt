@@ -289,7 +289,8 @@ War_chest = {
 						total_development = ROOT
 					}
 			is_year = 1600		
-		}			
+		}
+		NOT = {is_hegemon = yes}
 		years_of_income = 1.25
 		NOT = { corruption = 1 }
 		NOT = { num_of_loans = 1 }

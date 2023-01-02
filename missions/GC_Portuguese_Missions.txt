@@ -671,6 +671,23 @@ gc_por_3_c = {
 		effect = {
 			add_prestige = 10
 			add_yearly_sailors = 3
+			cape_of_good_hope_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					1177 = { is_empty = yes }
+				}	
+					1177 = {
+						cede_province = POR
+						add_core = POR
+					}
+			}
+
 			add_country_modifier = {
 					name = "cape_trade_established"
 					duration = -1

@@ -464,7 +464,7 @@ governor_general_mansion = {
 	}
 
 	company_region_modifier = {
-		min_local_autonomy = -25
+		min_local_autonomy = -15
 	}
 	
 	owner_modifier = {

@@ -751,7 +751,7 @@ maritime_ideas = {
 		manpower_in_culture_group_provinces = 0.1
 	}
 	sea_hawks = {
-		min_autonomy_in_territories = -0.15
+		min_autonomy_in_territories = -0.10
 		move_capital_cost_modifier = -0.75
 	}	
 	grand_navy = {
