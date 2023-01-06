@@ -139,6 +139,7 @@ estate_brahmins = {
 
 	
 	privileges = {
+		estate_brahmins_brahmin_governance
 		estate_brahmins_land_rights
 		
 		estate_brahmins_brahmin_governance

@@ -1224,10 +1224,8 @@ estate_nobles_levies = {
 		remove_estate_privilege = estate_nobles_levies
 	}
 	is_valid = {
-		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 50
@@ -1289,14 +1287,7 @@ estate_nobles_levies = {
 				loyalty = -15
 			}
 	}
-	modifier_by_land_ownership = {
-		global_tax_modifier = -0.05
-		global_manpower_modifier = 0.375
-	}
 	penalties = {
-	}
-	mechanics = {
-		exempt_from_seize_land
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1694,7 +1685,7 @@ estate_church_clerical_ministers = {
 	}
 	on_granted = {
 		define_advisor  = { 
-				type = inquisitor
+				type = theologian
 				skill = 3
 				cost_multiplier = 0.75
 		}		
@@ -3172,6 +3163,7 @@ estate_maratha_military = {
 	max_absolutism = -5
 	loyalty = -0.05
 	is_valid = {
+		always = no
 	}
 	can_select = {
 		custom_trigger_tooltip = {
@@ -3239,15 +3231,8 @@ estate_maratha_levies = {
 	is_valid = {
 		NOT = { religion_group = muslim }
 	}
-	modifier_by_land_ownership = {
-		global_tax_modifier = -0.05
-		global_manpower_modifier = 0.375
-	}
 
 	penalties = {
-	}
-	mechanics = {
-		exempt_from_seize_land
 	}
 	conditional_modifier = {
 		trigger = {
@@ -3444,9 +3429,9 @@ estate_rajput_rajput_regiments = {
 
 estate_rajput_military = {
 	icon = privilege_military_power
-	land_share = 10
+	#land_share = 10
 	max_absolutism = -5
-	loyalty = -0.05
+	#loyalty = -0.05
 	is_valid = {
 		technology_group = indian
 	}
@@ -3455,17 +3440,78 @@ estate_rajput_military = {
 			tooltip = no_other_mil_privilege
 			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
 		}
+		estate_loyalty = {
+			estate = estate_rajput
+			loyalty = 50
+		}
 	}
 	on_granted = {
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_rajput
+							influence = 50
+						}	
+					}
+				}
+				add_mil_power = 50
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajput
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_rajput
+							influence = 75
+						}	
+					}
+				}
+				add_mil_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajput
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_rajput
+							influence = 100
+						}	
+					}
+				}
+				add_mil_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajput
+						influence = 100
+					}
+				}
+				add_mil_power = 200
+			}				
+			add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = -20
+			}
 	}
 
 	penalties = {
 	}
 	benefits = {
-		country_military_power = 1
 	}
 	ai_will_do = {
-		factor = 1500
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+	remove_estate_privilege = estate_rajput_military
 	}
 }
 
@@ -3763,6 +3809,7 @@ estate_nobles_supremacy_over_crown = {
 	loyalty = 0.1
 	is_valid = {
 		has_dlc = "Emperor"
+		always = no
 	}
 
 	penalties = {
@@ -6156,6 +6203,7 @@ estate_nobles_golden_liberty = {
 	influence = 0.1
 	loyalty = 0.05
 	is_valid = {
+		always = no
 		OR = {
 			has_estate_privilege = estate_nobles_golden_liberty #Poland starts with it
 			has_reform = elective_monarchy
@@ -7372,8 +7420,8 @@ estate_nobles_command_of_the_military = {
 	icon = privilege_promote_purbias
 	#land_share = 5
 	max_absolutism = -10
-	loyalty = 0.1
-	influence = 0.2
+	loyalty = 0.05
+	influence = 0.1
 	is_valid = {
 	}
 	can_select = {
