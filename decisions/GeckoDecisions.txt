@@ -33,10 +33,11 @@ country_decisions = {
 				type = recruitmaster
 				skill = 3
 				cost_multiplier = 0.5
-				hidden_effect = {
+				
+			}	
+			hidden_effect = {
 					gecko_mercs = yes
 				}
-			}	
 				set_country_flag = sm_hire_recruitmaster
 			}
 		}

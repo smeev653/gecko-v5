@@ -250,6 +250,7 @@ estate_burghers = {
 	privileges = {
 		estate_burghers_land_rights
 		estate_burghers_land_of_commerce
+		estate_burghers_free_enterprise
 		estate_burghers_admirals
 		estate_gecko_ethiopia_highlands_and_mountains
 		estate_burghers_patronage_of_the_arts
@@ -257,7 +258,6 @@ estate_burghers = {
 		estate_burghers_new_world_charter
 		estate_burghers_indebted_to_burghers
 		estate_burghers_indebted_to_burghers_2
-		estate_burghers_free_enterprise
 		estate_burghers_the_great_privilege
 		estate_burghers_exclusive_trade_rights
 		estate_burghers_control_over_monetary_policy

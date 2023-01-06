@@ -388,7 +388,7 @@ estate_brahmins_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 	on_granted = {
 	}
@@ -459,7 +459,7 @@ estate_nobles_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 	on_granted = {
 	}
@@ -530,7 +530,7 @@ estate_church_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 
 	on_granted = {
@@ -602,7 +602,7 @@ estate_maratha_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 
 	on_granted = {
@@ -674,7 +674,7 @@ estate_burghers_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 
 	on_granted = {
@@ -746,7 +746,7 @@ estate_vaisyas_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 
 	on_granted = {
@@ -818,7 +818,7 @@ estate_cossacks_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 	on_granted = {
 	}
@@ -889,7 +889,7 @@ estate_dhimmi_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 
 	on_granted = {
@@ -961,7 +961,7 @@ estate_jains_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 	on_granted = {
 	}
@@ -1032,7 +1032,7 @@ estate_rajput_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
 	max_absolutism = -5
-	loyalty = 0.05
+	#loyalty = 0.05
 	influence = 0.05
 	on_granted = {
 	}
@@ -1103,9 +1103,9 @@ estate_rajput_land_rights = {
 
 estate_nobles_nobility_primacy = {
 	icon = privilege_military_power
-	land_share = 10
+	#land_share = 5
 	max_absolutism = -5
-	loyalty = -0.05
+	#loyalty = -0.05
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = no_other_mil_privilege
@@ -1114,38 +1114,103 @@ estate_nobles_nobility_primacy = {
 			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
 
 		}
+		estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 50
+		}
 	}
 	on_granted = {
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 50
+						}	
+					}
+				}
+				add_mil_power = 50
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 75
+						}	
+					}
+				}
+				add_mil_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 100
+						}	
+					}
+				}
+				add_mil_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 100
+					}
+				}
+				add_mil_power = 200
+			}				
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}
 	benefits = {
-		country_military_power = 1
 	}
 	ai_will_do = {
-		factor = 1500
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+	remove_estate_privilege = estate_nobles_nobility_primacy
 	}
 }
 
 estate_nobles_officer_corp = {
 	icon = privilege_promote_purbias
 	max_absolutism = -5
-	influence = 0.05
+	influence = 0.2
 	can_select = {
-		army_tradition = 30
+		estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 30
+		}		
 	}
 	on_granted = {
-		add_army_tradition = -10
-		
+		create_general = { tradition = 40 }
 	}
 	penalties = {
 	}
 	benefits = {
-		general_cost = -0.10
-		army_tradition_decay = -0.005
 	}
 	ai_will_do = {
 		factor = 1000
+	}
+	cooldown_years = 10
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_nobles_officer_corp
 	}
 }
 
@@ -1154,20 +1219,75 @@ estate_nobles_levies = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.1
-	cooldown_years = 10
+	cooldown_years = 25
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_nobles_levies
+	}
 	is_valid = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		
+		estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 50
+		}
 	}
 	on_granted = {
-		add_yearly_manpower = 1
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -20
-		}
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 50
+						}	
+					}
+				}
+				add_yearly_manpower = 1
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 75
+						}	
+					}
+				}
+				add_yearly_manpower = 1.5
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 100
+						}	
+					}
+				}
+				add_yearly_manpower = 2
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 100
+					}
+				}
+				add_yearly_manpower = 2.5
+			}	
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.05
@@ -1278,20 +1398,81 @@ estate_nobles_french_strong_duchies = {
 
 estate_church_religious_state = {
 	icon = privilege_seek_support_of_clergy
-	land_share = 10
+	#land_share = 5
 	max_absolutism = -5
-	loyalty = -0.05
+	#loyalty = -0.05
 	can_select = {
+		estate_loyalty = {
+			estate = estate_church
+			loyalty = 50
+		}
 	}
 	on_granted = {
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 50
+						}	
+					}
+				}
+				add_adm_power = 50
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 75
+						}	
+					}
+				}
+				add_adm_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 100
+						}	
+					}
+				}
+				add_adm_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 100
+					}
+				}
+				add_adm_power = 200
+			}				
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}
 	benefits = {
-		country_admin_power = 1
 	}
 	ai_will_do = {
-		factor = 1500
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_religious_state
 	}
 }
 
@@ -1393,9 +1574,12 @@ estate_church_papal_emissary = {
 estate_church_clerical_ministers = {
 	icon = privilege_recruit_minister
 	max_absolutism = -5
-	influence = 0.10
+	influence = 0.15
 	can_select = {
-		NOT = { has_estate_privilege = estate_church_negative_piety_privilege}
+		estate_loyalty = {
+			estate = estate_church
+			loyalty = 30
+		}
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1508,6 +1692,13 @@ estate_church_clerical_ministers = {
 	}
 	benefits = {
 	}
+	on_granted = {
+		define_advisor  = { 
+				type = inquisitor
+				skill = 3
+				cost_multiplier = 0.75
+		}		
+	}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -1524,6 +1715,7 @@ estate_church_clerical_ministers = {
 			num_of_aspects = 3
 		}
 	}
+	cooldown_years = 15
 }
 
 #smeev change
@@ -1554,7 +1746,9 @@ estate_church_clerical_oversight = {
 	max_absolutism = -10
 	loyalty = 0.1
 	influence = 0.1
-	
+	is_valid = {
+		always = no
+	}
 	penalties = {
 		global_manpower_modifier = -0.15
 	}
@@ -1665,42 +1859,110 @@ estate_church_enforced_one_faith = {
 
 estate_burghers_land_of_commerce = {
 	icon = privilege_diplo_power
-	land_share = 10
+	#land_share = 5
 	max_absolutism = -5
-	loyalty = -0.05
+	#loyalty = -0.05
 	can_select = {
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 50
+		}
 	}
 	on_granted = {
-	}
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 50
+						}	
+					}
+				}
+				add_dip_power = 50
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 75
+						}	
+					}
+				}
+				add_dip_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 100
+						}	
+					}
+				}
+				add_dip_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 100
+					}
+				}
+				add_dip_power = 200
+			}				
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -20
+			}
+		}
+	
 	penalties = {
 	}
 	benefits = {
-		country_diplomatic_power = 1
 	}
 	ai_will_do = {
-		factor = 1500
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { 
+		remove_estate_privilege = estate_burghers_free_enterprise
 	}
 }
 
 estate_burghers_admirals = {
 	icon = privilege_admiral
 	max_absolutism = -5
-	influence = 0.05
+	influence = 0.15
 	can_select = {
-		navy_tradition = 30
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 30
+		}
 	}
 	on_granted = {
-		add_navy_tradition = -15
+		define_advisor  = { 
+				type = naval_reformer
+				skill = 3
+				cost_multiplier = 0.75
+		}	
 	}
 	penalties = {
 	}
 	benefits = {
-		admiral_cost = -0.15
-		navy_tradition_decay = -0.005
 	}
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 15
 }
 
 estate_burghers_commercial_board_of_advice = {
@@ -1899,15 +2161,75 @@ estate_burghers_indebted_to_burghers_2 = {
 }
 
 estate_burghers_free_enterprise = {
-	icon = privilege_comission_merchant_ships_for_war
+	icon = privilege_give_money
 	max_absolutism = -10
-	loyalty = 0.1
-	influence = 0.1
+	#loyalty = 0.1
+	#influence = 0.1
+	can_select = {
+	estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 30
+		}
+	}
 	penalties = {
-		global_manpower_modifier = -0.05
 	}
 	benefits = {
-		global_trade_goods_size_modifier  = 0.05
+	}
+	on_granted = {
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 50
+						}	
+					}
+				}
+				add_years_of_income = 0.25
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 75
+						}	
+					}
+				}
+				add_years_of_income = 0.5
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 100
+						}	
+					}
+				}
+				add_years_of_income = 0.75
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 100
+					}
+				}
+				add_years_of_income = 1
+			}	
+		add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
 	}
 	ai_will_do = {
 		factor = 0
@@ -1915,6 +2237,10 @@ estate_burghers_free_enterprise = {
 			factor = 0
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 10
+	on_cooldown_expires = { 
+		remove_estate_privilege = estate_burghers_free_enterprise
 	}
 }
 
@@ -2474,24 +2800,85 @@ estate_dhimmi_guaranteed_autonomy = {
 
 estate_brahmins_brahmin_governance = {
 	icon = privilege_admin_power
-	land_share = 10
+	#land_share = 5
 	max_absolutism = -5
-	loyalty = -0.05
+	#loyalty = -0.05
 	is_valid = {
 		NOT = { religion_group = muslim }
 	}
 	can_select = {
-
+		estate_loyalty = {
+			estate = estate_brahmins
+			loyalty = 50
+		}
 	}
 	on_granted = {
-	}
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 50
+						}	
+					}
+				}
+				add_adm_power = 50
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 75
+						}	
+					}
+				}
+				add_adm_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 100
+						}	
+					}
+				}
+				add_adm_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 100
+					}
+				}
+				add_adm_power = 200
+			}				
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -20
+			}
+		}
+	
 	penalties = {
 	}
 	benefits = {
-		country_admin_power = 1
 	}
 	ai_will_do = {
-		factor = 1500
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { 
+		remove_estate_privilege = estate_brahmins_brahmin_governance
 	}
 }
 
@@ -3427,6 +3814,7 @@ estate_brahmins_supremacy_over_crown = {
 	influence = 0.1
 	loyalty = 0.1
 	is_valid = {
+		always = no
 		has_dlc = "Emperor"
 			NOT = { has_estate = estate_nobles }
 
@@ -6319,32 +6707,47 @@ estate_jains_control_over_monetary_policy = {
 estate_burghers_private_trade_fleets = {
 	icon = privilege_comission_merchant_ships_for_war
 	max_absolutism = -5
-	influence = 0.1
-	loyalty = 0.05
+	#influence = 0.1
+	#loyalty = 0.1
+	can_select = {
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 30
+		}
+	}
 	is_valid = {
 		has_dlc = "Emperor"
 		any_owned_province = {
 			has_port = yes
 		}
-		navy_size = 1
+		num_of_ports = 10
 	}
+	
 	penalties = {
 	}
-	benefits = {
-		light_ship_cost = -0.2
-		global_ship_trade_power = 0.1
+	on_granted = {
+		add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -15
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 5
+					type = heavy_ship
+					speed = 0.5
+					cost = 0
+				}
+			}
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			num_of_light_ship = 15
-			trade_income_percentage = 0.35
-		}
-		modifier = {
 			factor = 0
-			is_absolutism_active = yes
 		}
+	cooldown_years = 30
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_burghers_private_trade_fleets
 	}
 }
 
@@ -6353,19 +6756,39 @@ estate_vaisyas_private_trade_fleets = {
 	max_absolutism = -5
 	influence = 0.1
 	loyalty = 0.05
+	can_select = {
+	estate_loyalty = {
+			estate = estate_vaisyas
+			loyalty = 30
+		}
+	}
 	is_valid = {
 		has_dlc = "Emperor"
 		any_owned_province = {
 			has_port = yes
 		}
-		navy_size = 1
+		num_of_ports = 10
 	}
-
+	on_granted = {
+		add_estate_loyalty = {
+				estate = estate_vaisyas
+				loyalty = -15
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 5
+					type = heavy_ship
+					speed = 0.5
+					cost = 0
+				}
+			}
+	}
 	penalties = {
 	}
 	benefits = {
-		light_ship_cost = -0.2
-		global_ship_trade_power = 0.1
 	}
 	ai_will_do = {
 		factor = 1
@@ -6378,6 +6801,10 @@ estate_vaisyas_private_trade_fleets = {
 			factor = 0
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 30
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_vaisyas_private_trade_fleets
 	}
 }
 
