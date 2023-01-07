@@ -159,7 +159,7 @@ NDefines.NCountry.MAXIMUM_ADVISOR_SKILL = 7
 NDefines.NCountry.PROMOTE_COST_MONTHS_ADVISOR_SALARY = 100.0		
 NDefines.NCountry.SCRIPTED_ADVISOR_DISCOUNT = 0.75				-- Multiplier on cost for advisors scripted with discount=yes
 NDefines.NCountry.EXPAND_INFRASTRUCTURE_DEV_LIMIT = 10 
-NDefines.NCountry.ESTATE_PRIVILEGES_MAX_CONCURRENT = 6
+NDefines.NCountry.ESTATE_PRIVILEGES_MAX_CONCURRENT = 4
 NDefines.NCountry.CORRUPTION_FROM_BANNERS = 5
 NDefines.NCountry.PS_RAISE_TARIFFS = 25
 NDefines.NCountry.PS_LOWER_TARIFFS = 10
@@ -426,7 +426,7 @@ NDefines.NAI.APPOINT_CARDINAL_WANTS_ALLY = 200							-- AI scoring for appoint c
 NDefines.NAI.APPOINT_CARDINAL_CAN_INTEGRATE = 150
 NDefines.NAI.ESTATE_PRIVILEGE_GRANT_THRESHOLD = 0
 NDefines.NAI.ESTATE_MIN_WANTED_CROWNLAND = 0
-NDefines.NAI.ESTATE_MAX_PRIVILEGES = 6
+NDefines.NAI.ESTATE_MAX_PRIVILEGES = 4
 
 NDefines.NAIEconomy.BUDGETING_ADJUSTMENT_STEP = 0.1							-- Amount in percent to increase/decrease spending on budget posts when adjusting due to surplus/deficit
 NDefines.NAIEconomy.REBEL_THREAT_MILITARIZE_THRESHOLD = 0.5					-- Above what rebel threat should the AI militarize (i.e. focus spending on armies)
