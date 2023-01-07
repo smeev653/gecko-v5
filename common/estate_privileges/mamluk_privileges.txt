@@ -28,9 +28,9 @@ estate_gc_noble_levies = {
 		special_unit_forcelimit = 0.1
 	}
 	on_granted = {
-		create_general = {
-			tradition = 30
-		}
+		#create_general = {
+		#	tradition = 30
+		#}
 		capital_scope = {
 			add_unit_construction = {
 			type = cavalry

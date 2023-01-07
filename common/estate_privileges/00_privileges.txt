@@ -1502,7 +1502,7 @@ estate_church_independent_inquisition = {
 	penalties = {
 		nobles_loyalty_modifier = -0.1
 		rajput_loyalty_modifier = -0.1
-		burghers_loyalty_modifier = 0.1
+		burghers_loyalty_modifier = -0.1
 	}
 	benefits = {
 	}
@@ -1556,7 +1556,7 @@ estate_church_papal_emissary = {
 		num_of_cardinals = 1
 	}
 	on_granted = {
-		add_papal_influence = -5
+		add_papal_influence = -10
 	}
 	penalties = {
 		curia_powers_cost = -0.05
@@ -1743,7 +1743,7 @@ estate_church_clerical_ministers = {
 			num_of_aspects = 3
 		}
 	}
-	cooldown_years = 15
+	cooldown_years = 20
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_clerical_minister
 	}
@@ -1756,7 +1756,7 @@ estate_church_negative_piety_privilege = {
 	max_absolutism = -5
 	influence = 0.10
 	is_valid = {
-		religion_group = muslim
+		always = no
 	}
 	can_select = {
 		}
@@ -1886,8 +1886,9 @@ estate_church_enforced_one_faith = {
 	penalties = {
 	}
 	benefits = {
+		monthly_piety = -0.02
 	}
-	cooldown_years = 15
+	cooldown_years = 20
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_enforced_one_faith
 	}
@@ -6170,6 +6171,9 @@ estate_cossacks_recruit_cossack_generals = {
 			is_absolutism_active = yes
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_cossacks_recruit_cossack_generals
+	}
 }
 
 estate_cossacks_prime_herding_rights = {
@@ -6227,6 +6231,9 @@ estate_cossacks_prime_herding_rights = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_cossacks_prime_herding_rights
+	}
 }
 
 estate_nobles_junker_primacy = {
@@ -6256,6 +6263,9 @@ estate_nobles_junker_primacy = {
 			factor = 0.5
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_nobles_junker_primacy
 	}
 }
 
@@ -6312,6 +6322,9 @@ estate_nobles_strong_duchies = {
 			factor = 10
 			has_estate_privilege = estate_nobles_strong_duchies
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_nobles_strong_duchies
 	}
 }
 
@@ -6431,6 +6444,9 @@ estate_nobles_nieszawa_privileges = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_nobles_nieszawa_privileges
 	}
 }
 
@@ -6613,6 +6629,9 @@ estate_burghers_exclusive_trade_rights = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_burghers_exclusive_trade_rights
+	}
 }
 
 estate_vaisyas_exclusive_trade_rights = {
@@ -6766,6 +6785,7 @@ estate_jains_exclusive_trade_rights = {
 	ai_will_do = {
 		factor = 0
 	}
+	
 }
 
 estate_burghers_control_over_monetary_policy = {
@@ -6783,7 +6803,7 @@ estate_burghers_control_over_monetary_policy = {
 	}
 	
 	modifier_by_land_ownership = {
-			production_efficiency = 0.35
+			production_efficiency = 0.5
 			}
 			
 	ai_will_do = {
@@ -6799,6 +6819,9 @@ estate_burghers_control_over_monetary_policy = {
 			factor = 0
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_burghers_control_over_monetary_policy
 	}
 }
 
@@ -6911,7 +6934,7 @@ estate_burghers_private_trade_fleets = {
 	ai_will_do = {
 			factor = 0
 		}
-	cooldown_years = 30
+	cooldown_years = 20
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_burghers_private_trade_fleets
 	}
@@ -7658,6 +7681,7 @@ estate_church_religious_diplomats = {
 	penalties = {
 	}
 	benefits = {
+		reform_progress_growth = 0.1
 	}
 	ai_will_do = {
 		factor = 100	#The privilege is a little bit too niche to be really usable for the AI
