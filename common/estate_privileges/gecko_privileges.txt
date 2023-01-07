@@ -98,4 +98,8 @@ estate_gc_expand_sipahi = {
 	ai_will_do = {
 		factor = 1000
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_gc_expand_sipahi
+	}
 }

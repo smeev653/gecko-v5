@@ -39,6 +39,10 @@ X_RUS_estate_streltsy_privilege_1 = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_1
+	}
 }
 X_RUS_estate_streltsy_privilege_2 = {
     icon = privilege_promote_purbias
@@ -62,6 +66,10 @@ X_RUS_estate_streltsy_privilege_2 = {
 	}	
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_2
 	}
 }
 X_RUS_estate_streltsy_privilege_3 = {
@@ -92,6 +100,10 @@ X_RUS_estate_streltsy_privilege_3 = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_3
+	}
 }
 X_RUS_estate_streltsy_privilege_4 = {
     icon = privilege_tolerance_heathen
@@ -116,6 +128,10 @@ X_RUS_estate_streltsy_privilege_4 = {
 	penalties = { technology_cost = 0.05 }
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_4
 	}
 }
 X_RUS_estate_streltsy_privilege_5 = {
@@ -142,6 +158,10 @@ X_RUS_estate_streltsy_privilege_5 = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_5
+	}
 }
 X_RUS_estate_streltsy_privilege_6 = {
     icon = privilege_grant_autonomy
@@ -151,6 +171,10 @@ X_RUS_estate_streltsy_privilege_6 = {
 	benefits = { governing_capacity = 100 }
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_6
 	}
 }
 X_RUS_estate_streltsy_privilege_7 = {
@@ -191,6 +215,10 @@ X_RUS_estate_streltsy_privilege_7 = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_7
+	}
 }
 X_RUS_estate_streltsy_privilege_8 = {
     icon = privilege_promote_purbias
@@ -205,6 +233,10 @@ X_RUS_estate_streltsy_privilege_8 = {
 	penalties = { general_cost = 0.25 }
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege =X_RUS_estate_streltsy_privilege_8
 	}
 }
 #####################
@@ -281,6 +313,10 @@ X_estate_cossacks_privilege_1 = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =X_estate_cossacks_privilege_1
+	}
 }
 
 X_estate_cossacks_privilege_2 = {
@@ -350,6 +386,10 @@ X_estate_cossacks_privilege_2 = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =X_estate_cossacks_privilege_2
+	}
 }
 
 #####################
@@ -413,5 +453,9 @@ X_estate_burghers_privilege_1 = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =X_estate_burghers_privilege_1
 	}
 }

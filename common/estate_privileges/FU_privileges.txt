@@ -38,6 +38,10 @@ estate_dhimmi_jewish_community = {
 			mil = 5
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_dhimmi_jewish_community
+	}
 }
 
 estate_dhimmi_millet_system = {
@@ -97,6 +101,10 @@ estate_dhimmi_millet_system = {
 			factor = 0.8
 			mil = 5
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_dhimmi_millet_system
 	}
 }
 

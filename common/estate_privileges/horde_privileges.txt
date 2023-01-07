@@ -20,6 +20,10 @@ estate_nomadic_tribes_tribal_host = {
 			is_absolutism_active = yes
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_nomadic_tribes_tribal_host
+	}
 }
 
 #estate_nomadic_tribes_tribute = {
@@ -90,6 +94,10 @@ estate_nomadic_tribes_share_of_the_spoils = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_nomadic_tribes_share_of_the_spoils
 	}
 }
 

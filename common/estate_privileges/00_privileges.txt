@@ -1308,15 +1308,29 @@ estate_nobles_advisors = {
 	max_absolutism = -5
 	influence = 0.1
 	loyalty = 0.05
-	is_valid = {
-		always = no
+	can_select = {
+		estate_loyalty = {
+			estate = estate_nobles_advisors
+			loyalty = 30
+		}
 	}
 
+	on_granted = {
+		define_advisor  = { 
+				type = diplomat
+				skill = 3
+				cost_multiplier = 0.75
+		}
+	}
 	penalties = {
-		stability_cost_modifier = 0.05
 	}
 	benefits = {
-		mil_advisor_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+	cooldown_years = 15
+	on_cooldown_expires = {estate_nobles_advisors
 	}
 	ai_will_do = {
 		factor = 1000
@@ -1329,7 +1343,11 @@ estate_nobles_right_of_counsel = {
 	loyalty = 0.1
 	influence = 0.1
 	
+	on_granted = {
+		add_army_tradition = 15
+	}
 	penalties = {
+		general_cost = 0.05
 	}
 	benefits = {
 	}
@@ -1339,6 +1357,10 @@ estate_nobles_right_of_counsel = {
 			factor = 0
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_nobles_right_of_counsel
 	}
 }
 
@@ -1470,20 +1492,25 @@ estate_church_religious_state = {
 estate_church_independent_inquisition = {
 	icon = privilege_empty_throne
 	max_absolutism = -5
-	influence = 0.1
-	loyalty = 0.05
-	is_valid = {
-		always = no
-	}
+	influence = 0.15
+	#loyalty = 0.05
 
+	on_granted = {
+		add_stability = 1
+	}
 	penalties = {
-		stability_cost_modifier = 0.05
+		nobles_loyalty_modifier = -0.1
+		rajput_loyalty_modifier = -0.1
+		burghers_loyalty_modifier = 0.1
 	}
 	benefits = {
-		adm_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 1000
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_independent_inquisition
 	}
 }
 
@@ -1500,12 +1527,17 @@ estate_church_new_world_mission = {
 	}
 
 	penalties = {
+		global_colonial_growth = -20
 	}
 	benefits = {
-		native_assimilation = 0.5
+		colonists = 1
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_new_world_mission
 	}
 }
 
@@ -1526,7 +1558,7 @@ estate_church_papal_emissary = {
 		add_papal_influence = -5
 	}
 	penalties = {
-		curia_powers_cost = 0.05
+		curia_powers_cost = -0.05
 	}
 	benefits = {
 		papal_influence = 1
@@ -1559,6 +1591,10 @@ estate_church_papal_emissary = {
 				}
 			}
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_papal_emissary
 	}
 }
 
@@ -1707,6 +1743,9 @@ estate_church_clerical_ministers = {
 		}
 	}
 	cooldown_years = 15
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_clerical_minister
+	}
 }
 
 #smeev change
@@ -1728,6 +1767,10 @@ estate_church_negative_piety_privilege = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_negative_piety_privilege
 	}
 }
 
@@ -1815,31 +1858,35 @@ estate_burghers_enforced_interfaith_dialogue = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+	}
 }
 
 estate_church_enforced_one_faith = {
 	icon = privilege_recruit_inouisitor
 	max_absolutism = -5
-	loyalty = 0.1
-	is_valid = {
-		any_owned_province = {
-			NOT = { religion = root }
-		}
-		always = no
-	}
+	#loyalty = 0.1
+	influence = 0.15
 	can_select = {
-		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }
-		NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+		estate_loyalty = {
+			estate = estate_church
+			loyalty = 50
+		}
+	}
+	on_granted = {
+		define_advisor  = { 
+				type = inquisitor
+				skill = 3
+				cost_multiplier = 0.75
+		}
 	}
 	penalties = {
-		tolerance_heathen = -2
-		tolerance_heretic = -2
 	}
 	benefits = {
-		global_missionary_strength = 0.01
-		tolerance_own = 1
 	}
-	cooldown_years = 20
+	cooldown_years = 15
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_enforced_one_faith
 	}
@@ -1930,7 +1977,7 @@ estate_burghers_land_of_commerce = {
 }
 
 estate_burghers_admirals = {
-	icon = privilege_admiral
+	icon = privilege_recruit_minister
 	max_absolutism = -5
 	influence = 0.15
 	can_select = {
@@ -1959,20 +2006,31 @@ estate_burghers_admirals = {
 estate_burghers_commercial_board_of_advice = {
 	icon = privilege_recruit_minister
 	max_absolutism = -5
-	influence = 0.1
-	loyalty = 0.05
-	is_valid = {
-		always = no
+	influence = 0.15
+	#loyalty = 0.05
+	can_select = {
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 30
+		}
 	}
 
+	on_granted = {
+		define_advisor  = { 
+				type = statesman
+				skill = 3
+				cost_multiplier = 0.75
+		}
+	}
 	penalties = {
-		stability_cost_modifier = 0.05
 	}
 	benefits = {
-		dip_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 1000
+	}
+	cooldown_years = 15
+	on_cooldown_expires = {estate_burghers_commercial_board_of_advice
 	}
 }
 
@@ -2013,6 +2071,9 @@ estate_burghers_new_world_charter = {
 			factor = 0
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {estate_burghers_new_world_charter
 	}
 }
 
@@ -2306,7 +2367,10 @@ PR_estate_clergy_exploration_expedition = {
 		}
 	ai_will_do = {
 		factor = 500
-		}	
+		}
+	cooldown_years = 20
+	on_cooldown_expires = {PR_estate_clergy_exploration_expedition
+	}	
 }
 
 
@@ -2364,7 +2428,9 @@ smeev_mountain_dev_cost = {
 	ai_will_do = {
 		factor = 500
 		}
-	
+	cooldown_years = 20
+	on_cooldown_expires = {smeev_mountain_dev_cost
+	}
 	
 }
 
@@ -2441,6 +2507,9 @@ estate_cossacks_cossack_self_governance = {
 			is_absolutism_active = yes
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {estate_cossacks_cossack_self_governance
+	}
 }
 
 estate_cossacks_establish_the_cossack_regiments = {
@@ -2491,6 +2560,9 @@ estate_cossacks_establish_the_cossack_regiments = {
 			NOT = { has_estate_privilege = estate_cossacks_establish_the_cossack_regiments }
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = { estate_cossacks_establish_the_cossack_regiments
+	}
 }
 
 estate_cossacks_expand_the_cossack_regiments = {
@@ -2498,7 +2570,7 @@ estate_cossacks_expand_the_cossack_regiments = {
 	max_absolutism = -5
 	influence = 0.05
 	is_valid = {
-		has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+		always = no
 	}
 	can_select = {
 	
@@ -2586,6 +2658,9 @@ estate_dhimmi_lighter_dhimmi_taxes = {
 	ai_will_do = {
 		factor = 1000
 	}
+	cooldown_years = 20
+	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_lighter_dhimmi_taxes
+	}
 }
 
 estate_dhimmi_dhimmi_nobles = {
@@ -2603,6 +2678,9 @@ estate_dhimmi_dhimmi_nobles = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_dhimmi_nobles
 	}
 }
 
@@ -2663,6 +2741,9 @@ estate_dhimmi_manpower = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 20
+	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_manpower
+	}
 }
 
 estate_dhimmi_tolerance = {
@@ -2706,6 +2787,9 @@ estate_dhimmi_tolerance = {
 			factor = 0.8
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_tolerance
 	}
 }
 
@@ -2785,6 +2869,9 @@ estate_dhimmi_guaranteed_autonomy = {
 				}
 			}
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_guaranteed_autonomy
 	}
 }
 
@@ -3723,7 +3810,7 @@ estate_burghers_patronage_of_the_arts = {
 	influence = 0.05
 	
 	penalties = {
-		#global_tax_modifier = -0.05
+		global_tax_modifier = -0.05
 	}
 	benefits = {
 		prestige = 0.25
@@ -3751,6 +3838,9 @@ estate_burghers_patronage_of_the_arts = {
 	}
 	ai_will_do = {
 		factor = 100
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { remove_estate_privilege = estate_burghers_patronage_of_the_arts
 	}
 }
 
@@ -6920,6 +7010,7 @@ estate_jains_private_trade_fleets = {
 estate_church_for_the_faith = {
 	icon = privilege_recruit_inouisitor
 	max_absolutism = -5
+	influence = 0.05
 	is_valid = {
 		has_dlc = "Emperor"
 		NOT = {		
@@ -6982,6 +7073,10 @@ estate_church_for_the_faith = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_church_for_the_faith
 	}
 }
 
@@ -7331,6 +7426,10 @@ estate_church_influence_temples = {
 	ai_will_do = {
 		factor = 100
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_influence_temples
+	}
 }
 
 estate_burghers_tropical_nation = {
@@ -7464,6 +7563,10 @@ estate_nobles_command_of_the_military = {
 	ai_will_do = {
 		factor = 0
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_nobles_command_of_the_military 
+	}
 }
 
 estate_burghers_orang_laut_alliances = {
@@ -7524,7 +7627,10 @@ estate_nobles_better_integration = {
 	benefits = {
 		diplomatic_annexation_cost = -0.1
 	}
-	cooldown_years = 10
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_nobles_better_integration 
+	}
 	ai_will_do = {
 		factor = 10
 	}
@@ -7554,6 +7660,10 @@ estate_church_religious_diplomats = {
 	}
 	ai_will_do = {
 		factor = 100	#The privilege is a little bit too niche to be really usable for the AI
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_religious_diplomats
 	}
 }
 
@@ -7809,6 +7919,10 @@ estate_burghers_hydraulic_rights = {
 			is_absolutism_active = yes
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_burghers_hydraulic_rights
+	}
 }
 
 estate_nobles_cawa_peace_keepers = {
@@ -8054,6 +8168,10 @@ estate_dhimmi_guarantee_of_traditions = {
 			}
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_dhimmi_guarantee_of_traditions
+	}
 }
 
 estate_church_yakobs_churches = {
@@ -8215,6 +8333,10 @@ estate_burghers_forest_expansion = {
 			is_absolutism_active = yes
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_burghers_forest_expansion
+	}
 }
 
 estate_nobles_carolean_march = {
@@ -8267,15 +8389,17 @@ estate_nobles_carolean_march = {
 	benefits = {
 		amount_of_carolean = 0.25
 	}
-	cooldown_years = 5
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_nobles_carolean_march
+	}
 	ai_will_do = {
 		factor = 4
 		modifier = {
 			factor = 0
 			NOT = { num_of_carolean = 10 }
 		}
-	}
-}
+	}}
 
 estate_nobles_carolean_charge = {
 	icon = privilege_carolean_charge
@@ -8327,7 +8451,10 @@ estate_nobles_carolean_charge = {
 	benefits = {
 		amount_of_carolean = 0.25
 	}
-	cooldown_years = 5
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_nobles_carolean_charge
+	}
 	ai_will_do = {
 		factor = 4
 		modifier = {
@@ -8424,6 +8551,10 @@ estate_burghers_mountain_expansion = {
 			factor = 0
 			is_absolutism_active = yes
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_burghers_mountain_expansion
 	}
 }
 
@@ -8664,6 +8795,10 @@ estate_burghers_orthodox_tolerance = {
 			}
 		}
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_burghers_orthodox_tolerance
+	}
 }
 
 estate_church_anti_heresy_act = {
@@ -8704,6 +8839,10 @@ estate_church_anti_heresy_act = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege =estate_church_anti_heresy_act
 	}
 }
 
@@ -8965,6 +9104,7 @@ estate_dhimmi_grant_liberties = {
 	influence = 0.1
 	loyalty = 0.1
 	is_valid = {
+		always = no
 	}
 	penalties = {
 	}

@@ -67,4 +67,8 @@ estate_gecko_ethiopia_highlands_and_mountains = {
 	ai_will_do = {
 		factor = 100
 	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_gecko_ethiopia_highlands_and_mountains
+	}
 }
