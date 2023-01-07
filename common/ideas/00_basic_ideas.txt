@@ -312,7 +312,7 @@ spy_ideas = {
 		embargo_efficiency = 0.5
 	}	
 	state_propaganda = {
-		curia_powers_cost = -0.25
+		curia_powers_cost = -0.15
 		papal_influence_from_cardinals = 1.0
 		church_power_modifier = 0.25
 		monthly_fervor_increase = 1
