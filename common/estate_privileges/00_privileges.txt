@@ -1310,7 +1310,7 @@ estate_nobles_advisors = {
 	loyalty = 0.05
 	can_select = {
 		estate_loyalty = {
-			estate = estate_nobles_advisors
+			estate = estate_nobles
 			loyalty = 30
 		}
 	}
@@ -1330,7 +1330,8 @@ estate_nobles_advisors = {
 		factor = 1000
 	}
 	cooldown_years = 15
-	on_cooldown_expires = {estate_nobles_advisors
+	on_cooldown_expires = {
+	remove_estate_privilege = estate_nobles_advisors
 	}
 	ai_will_do = {
 		factor = 1000
@@ -2030,7 +2031,7 @@ estate_burghers_commercial_board_of_advice = {
 		factor = 1000
 	}
 	cooldown_years = 15
-	on_cooldown_expires = {estate_burghers_commercial_board_of_advice
+	on_cooldown_expires = {remove_estate_privilege = estate_burghers_commercial_board_of_advice
 	}
 }
 
@@ -2073,7 +2074,7 @@ estate_burghers_new_world_charter = {
 		}
 	}
 	cooldown_years = 20
-	on_cooldown_expires = {estate_burghers_new_world_charter
+	on_cooldown_expires = {remove_estate_privilege = estate_burghers_new_world_charter
 	}
 }
 
@@ -2369,7 +2370,7 @@ PR_estate_clergy_exploration_expedition = {
 		factor = 500
 		}
 	cooldown_years = 20
-	on_cooldown_expires = {PR_estate_clergy_exploration_expedition
+	on_cooldown_expires = {remove_estate_privilege = PR_estate_clergy_exploration_expedition
 	}	
 }
 
@@ -2429,7 +2430,7 @@ smeev_mountain_dev_cost = {
 		factor = 500
 		}
 	cooldown_years = 20
-	on_cooldown_expires = {smeev_mountain_dev_cost
+	on_cooldown_expires = {remove_estate_privilege = smeev_mountain_dev_cost
 	}
 	
 }
@@ -2508,7 +2509,7 @@ estate_cossacks_cossack_self_governance = {
 		}
 	}
 	cooldown_years = 20
-	on_cooldown_expires = {estate_cossacks_cossack_self_governance
+	on_cooldown_expires = {remove_estate_privilege = estate_cossacks_cossack_self_governance
 	}
 }
 
@@ -2561,7 +2562,7 @@ estate_cossacks_establish_the_cossack_regiments = {
 		}
 	}
 	cooldown_years = 20
-	on_cooldown_expires = { estate_cossacks_establish_the_cossack_regiments
+	on_cooldown_expires = {remove_estate_privilege =  estate_cossacks_establish_the_cossack_regiments
 	}
 }
 
