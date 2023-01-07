@@ -83,7 +83,7 @@ estate_church =
 	}
 
 	# Influence modifiers
-	base_influence = 10
+	base_influence = 15
 	influence_modifier = {
 		desc = EST_VAL_SHARIFS
 		trigger = {
@@ -438,5 +438,5 @@ estate_church =
 		estate_church_hire_advisor
 		estate_church_fire_advisor
 	}
-	influence_from_dev_modifier = 1.0
+	influence_from_dev_modifier = 1.5
 }

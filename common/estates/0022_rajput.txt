@@ -95,7 +95,7 @@ estate_rajput = {
 	}
 
 	# Influence modifiers
-	base_influence = 10
+	base_influence = 15
 	influence_modifier = {
 		desc = EST_VAL_PROMOTED_RAJASTHANI_CULTURE
 		trigger = {
@@ -200,5 +200,5 @@ estate_rajput = {
 
 	color = { 220 20 20 }
 	
-	influence_from_dev_modifier = 1.0
+	influence_from_dev_modifier = 1.5
 }

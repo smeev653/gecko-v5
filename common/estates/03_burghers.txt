@@ -80,7 +80,7 @@ estate_burghers = {
 	}
 
 	# Influence modifiers
-	base_influence = 10
+	base_influence = 15
 	influence_modifier = {	
 		desc = EST_HIGH_DEVELOPMENT_PROVINCE
 		trigger = {
@@ -313,5 +313,5 @@ estate_burghers = {
 		estate_burghers_fire_advisor
 	}
 
-	influence_from_dev_modifier = 1.0
+	influence_from_dev_modifier = 1.5
 }
