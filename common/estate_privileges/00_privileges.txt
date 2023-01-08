@@ -1346,10 +1346,10 @@ estate_nobles_right_of_counsel = {
 	influence = 0.1
 	
 	on_granted = {
-		add_army_tradition = 15
+		add_army_tradition = 25
 	}
 	penalties = {
-		general_cost = 0.05
+		general_cost = 0.1
 	}
 	benefits = {
 	}
@@ -1360,7 +1360,7 @@ estate_nobles_right_of_counsel = {
 			is_absolutism_active = yes
 		}
 	}
-	cooldown_years = 15
+	cooldown_years = 20
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_nobles_right_of_counsel
 	}
@@ -2051,10 +2051,10 @@ estate_burghers_new_world_charter = {
 	}
 
 	penalties = {
-		global_tariffs = -0.05
+		global_tariffs = -0.1
 	}
 	benefits = {
-		global_colonial_growth = 10
+		global_colonial_growth = 20
 		colonist_placement_chance = 0.05
 	}
 	ai_will_do = {
@@ -2143,6 +2143,10 @@ estate_burghers_indebted_to_burghers_2 = {
 		num_of_loans = 20 
 		is_at_war = no
 	}
+	is_valid = {
+		num_of_loans = 1 
+	}
+	
     on_granted = {
         custom_tooltip = estate_burghers_indebted_to_burghers_effect_2_tooltip
         if = {
@@ -7579,12 +7583,12 @@ estate_nobles_command_of_the_military = {
 	can_select = {
 	}
 	on_granted = {
+		add_army_professionalism = 0.1
 	}
 	penalties = {
 		general_cost = 0.1
 	}
 	benefits = {
-		yearly_army_professionalism = 0.00250
 	}
 	ai_will_do = {
 		factor = 0
@@ -7683,7 +7687,7 @@ estate_church_religious_diplomats = {
 	penalties = {
 	}
 	benefits = {
-		missionary_strength = 0.02
+		global_missionary_strength = 0.02
 	}
 	ai_will_do = {
 		factor = 100	#The privilege is a little bit too niche to be really usable for the AI
