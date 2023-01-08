@@ -476,6 +476,7 @@ categories =  {
 			6120 #xmp
 			6171 1867 4720 6170 4721 6169 1869 #gcswitzerland
 			137 4753 # Balkans
+			4968
 		}
 	}
 
@@ -693,6 +694,7 @@ categories =  {
 			381 #Ajloun
 			6117 # sis
 			4563 335 4561 #sale
+			4969 4965
 		}
 	}
 
