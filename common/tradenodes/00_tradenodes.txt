@@ -158,10 +158,28 @@ doab = {
 	outgoing = {
 		name = "lahore_trade"
 		path = {
-			522 2062 4411
+			506 4503 504
 		}
 		control = {
 			4021.000000 1115.000000 
+		}
+	}
+	outgoing = {
+		name = "persia"
+		path = {
+			522 2062 4411
+		}
+		control = {
+			3926.000000 1140.000000 3872.000000 1106.000000 3877.000000 1079.000000 3862.000000 1061.000000 3711.000000 1078.000000 3684.000000 1104.000000 3669.000000 1148.000000 3610.500000 1190.000000 3611.000000 1219.000000 3628.000000 1235.000000
+		}
+	}
+	outgoing = {
+		name = "zanzibar"
+		path = {
+			522 2062 4411
+		}
+		control = {
+			3926.000000 1140.000000 3872.000000 1106.000000 3877.000000 1079.000000 3862.000000 1061.000000 3734.000000 959.000000
 		}
 	}
 	members = {
@@ -182,6 +200,9 @@ doab = {
 		506 2079 2086 4508 4509 #multan_area
 		2077 2078 4511 #sind_sagar_area
 		508 2073 2074 4449 4521 #kashmir_area
+		576 577 2068 #kalat_area
+		505 2072 4505 #northern_sindh_area
+		504 4503 4504 #sindh_area
 	}
 }
 
@@ -343,9 +364,8 @@ persia = {
 		432 2220 2234 4345 #kerman_area
 		431 2999 4327 #mogostan_area
 		434 575 2231 2232 2233 #makran_area
-		576 577 2068 #kalat_area
-		505 2072 4505 #northern_sindh_area
-		504 4503 4504 #sindh_area
+		435 2224 2229 2230 4324 #sistan_area
+		2221 2235 2236 4326 2214 #mashhad_area
 	}
 }
 
@@ -375,9 +395,7 @@ lahore_trade = {
 		455 1970 2363 #kyzylkum_area
 		448 451 452 578 2226 #kabulistan_area	
 		447 449 2225 #ghor_area
-		435 2224 2229 2230 4324 #sistan_area
 		450 2227 2228 446 #balkh_area
-		2221 2235 2236 4326 2214 #mashhad_area
 		444 445 2350 4325 #merv_area
 		1968 4344 4343 6131 6132 #termez_area
 		454 6127 6128 6130 6129 #samarkand_area
@@ -426,6 +444,129 @@ aleppo = {
 		415 4293 4294 #shahrizor_area
 		406 409 410 2310 4291 #iraq_arabi_area
 		408 2311 2312 4288 #basra_area
+	}
+}
+
+basra = {
+	location = 1335
+	color = { 178 103 5 }
+	outgoing = {
+		name = "alexandria" 
+		path = {
+			394 393 361 358
+		}
+		control = {
+			3572.000000 1100.500000 3539.000000 1045.000000 3520.000000 1044.000000 3444.000000 1008.000000 3424.000000 980.000000 3399.000000 1002.000000 3329.000000 1110.500000 3317.000000 1130.000000 3286.000000 1151.000000
+		}
+	}
+	outgoing = {
+		name = "ethiopia" 
+		path = {
+		}
+		control = {
+			3598.000 1096.000 3642.000 1070.500 3677.500 1079.000 3685.000 1081.500 3692.500 1082.000 3693.000 1063.000 3736.000 1042.000 3731.000 960.000 3643.000 888.000 3549.000 849.000 3481.000 817.000 3456.000 795.000 3398.000 838.000     
+		}
+	}
+	members = {
+		383 2328 4268 4269 2327 #tabuk_area
+		393 2338 2337 4272 #nafud_area
+		384 2329 2330 #medina_area
+		385 2331 2332 4277 4278 #mecca_area
+		386 391 4282 #asir_area
+		387 2346 4279 #tihama_al_yemen_area
+		390 2344 4281 #upper_yemen_area
+		388 2345 4280 #yemen_area
+		389 2343 4283 #hadramut_area
+		402 1099 4284 #mahra_area
+		401 2341 2342 #dhofar_area
+		2335 2336 2339 4275 #yamamah_area
+		392 4273 4274 #qasim_area
+		399 400 4286 #mascat_area
+		403 4285 4287 #oman_area
+		397 398 404 2333 #pirate_coast_area
+		394 395 396 2340 2347 #bahrain_area
+	}
+}
+katsina = {
+	location = 1149
+	inland = yes
+	color = { 215 56 56 }
+	outgoing = {
+		name = "tunis"
+		path = {
+		}
+		control = {
+			2933.000 931.000 3001.500 1082.000 3013.000 1188.000 2990.000 1220.500 2973.500 1275.500
+		}
+	}
+	outgoing = {
+		name = "ethiopia"
+		path = {
+			2800 2772 
+		}
+		control = {
+			2997.000000 856.000000 3036.000000 845.000000 3198.000000 868.000000 
+		}
+	}
+	members = {
+		1144 1145 1146 1152 1153 #lower_niger_area
+		1161 1162 1249 2285 #adamawa_plateau_area
+		1155 2280 2281 #hausa_area
+		1150 1154 2278 2293 #zazzau_area
+		1148 1149 2279 #katsina_area
+		1157 1160 2282 2283 2284 #bornu_area
+		1158 1159 2286 2287 2288 #kanem_area
+		1156 2272 2273 2274 2276 #azbin_area
+		2275 2277 5830 #east_azbin_area
+		5827 5828 2474 5817 #pr_africa_area_8
+		5820 5824 5829 #pr_africa_area_4
+		5819 5823 5822 5818 #pr_africa_area_5
+		2475 5821 5816 #pr_africa_area_6
+		5814 5815 5813 #pr_africa_area_7
+	}
+}
+ethiopia = {
+	location = 2772
+	inland = yes
+	color = { 56 120 191 }
+	outgoing = {
+		name = "alexandria"
+		path = {
+			1232 2321 361 358 
+		}
+		control = {
+			3325.000000 905.000000 3318.000000 1017.000000 3313.000000 1058.000000 3301.000000 1079.000000 3284.000000 1104.000000 
+		}
+	}
+	outgoing = {
+		name = "zanzibar"
+		path = {
+			1446 1447 1448 
+		}
+		control = {
+			3619.000000 810.000000 3602.000000 764.000000 3521.500000 652.000000 
+		}
+	}
+	members = {
+		774 1219 2801 2802 2932 #darfur_central_sahara_area
+		1216 1221 2800 #kurdufan_area
+		1220 1228 6018 6019 6022 #dongola_area
+		6017 2323 6021 1229 #hadendoa_area
+		1222 1226 1225 2797 2798 #upper_nubia_area
+		1217 2799 4033 #sennar_area
+		1227 2766 2767 2771 #tigray_area
+		1214 1223 1224 2769 2772 #central_ethiopia_area
+		2762 2763 2770 #damot_area
+		2757 2758 2759 4158 #southern_ethiopia_area
+		1218 2756 2760 #hadiya_area
+		1213 2761 2791 #shewa_area
+		1215 2764 2765 2768 #aussa_area
+		1211 1212 2773 2793 #ifat_area 
+		1207 1208 1210 2778 2779 #ogaden_area
+		1209 2786 2789 2792 2790 #somaliland_area
+		1206 2024 2783 2784 2788 #majarteen_area
+		2776 2780 2781 2785 #ajuuran_area
+		1205 2775 2782 2794 2795 #mogadishu_area
 	}
 }
 laplata = {
@@ -499,6 +640,28 @@ brazil = {
 		750 751 753 #ceara_area
 	}
 }
+zanzibar = {
+	location = 1448
+	color = {
+		130 17 17 
+	}
+	outgoing = {
+		name = "cape_of_good_hope"
+		path = {
+			1449 1456 1457 1458 1459 1460 
+		}
+		control = {
+			3492.000000 449.000000 3452.000000 374.500000 3388.000000 270.000000 3347.500000 175.000000 3233.000000 73.500000 
+		}
+	}
+	members = {
+		1204 2774 2796 #northern_swahili_coast_area
+		1200 1202 1203 #mombasa_area
+		1196 1197 1198 1199 1201 #central_swahili_coast_area
+		788 1195 4049 4020 #mozambique_area
+		1183 1186 1192 #quelimane_area
+	}
+}
 cape_of_good_hope={
 	location=1460
 	outgoing={
@@ -555,15 +718,16 @@ ivory_coast = {
 			2702.000000 692.000000 2568.000000 783.000000 2524.000000 940.000000 2556.000000 1060.000000 2617.000000 1127.000000 2641.000000 1223.000000 
 		}
 	}
-	outgoing = {
-		name = "katsina"
-		path = {
-			1467 1468 1470 1471 1566 1563 
-		}
-		control = {
-			2888.000000 749.000000 2931.500000 791.000000
-		}
-	}
+	#outgoing = {
+	#	name = "katsina"
+	#	path = {
+	#		1467 1468 1470 1471 1566 1563 
+	#	}
+	#	control = {
+	#		2888.000000 749.000000 2931.500000 791.000000
+	#	}
+	#}
+	#to prevent trade loop
 	members = {
 		5849 5850 5851 5852	#pr_africa_area_14
 		1151 1163 1164 1165 #gulf_of_guinea_area
@@ -583,120 +747,6 @@ ivory_coast = {
 	}
 }
 
-katsina = {
-	location = 1149
-	inland = yes
-	color = { 215 56 56 }
-	outgoing = {
-		name = "tunis"
-		path = {
-		}
-		control = {
-			2933.000 931.000 3001.500 1082.000 3013.000 1188.000 2990.000 1220.500 2973.500 1275.500
-		}
-	}
-	outgoing = {
-		name = "ethiopia"
-		path = {
-			2800 2772 
-		}
-		control = {
-			2997.000000 856.000000 3036.000000 845.000000 3198.000000 868.000000 
-		}
-	}
-	members = {
-		1144 1145 1146 1152 1153 #lower_niger_area
-		1161 1162 1249 2285 #adamawa_plateau_area
-		1155 2280 2281 #hausa_area
-		1150 1154 2278 2293 #zazzau_area
-		1148 1149 2279 #katsina_area
-		1157 1160 2282 2283 2284 #bornu_area
-		1158 1159 2286 2287 2288 #kanem_area
-		1156 2272 2273 2274 2276 #azbin_area
-		2275 2277 5830 #east_azbin_area
-		5827 5828 2474 5817 #pr_africa_area_8
-		5820 5824 5829 #pr_africa_area_4
-		5819 5823 5822 5818 #pr_africa_area_5
-		2475 5821 5816 #pr_africa_area_6
-		5814 5815 5813 #pr_africa_area_7
-	}
-}
-basra = {
-	location = 1335
-	color = { 178 103 5 }
-	outgoing = {
-		name = "alexandria" 
-		path = {
-			394 393 361 358
-		}
-		control = {
-			3572.000000 1100.500000 3539.000000 1045.000000 3520.000000 1044.000000 3444.000000 1008.000000 3424.000000 980.000000 3399.000000 1002.000000 3329.000000 1110.500000 3317.000000 1130.000000 3286.000000 1151.000000
-		}
-	}
-	outgoing = {
-		name = "ethiopia" 
-		path = {
-		}
-		control = {
-			3598.000 1096.000 3642.000 1070.500 3677.500 1079.000 3685.000 1081.500 3692.500 1082.000 3693.000 1063.000 3736.000 1042.000 3731.000 960.000 3643.000 888.000 3549.000 849.000 3481.000 817.000 3456.000 795.000 3398.000 838.000     
-		}
-	}
-	members = {
-		383 2328 4268 4269 2327 #tabuk_area
-		393 2338 2337 4272 #nafud_area
-		384 2329 2330 #medina_area
-		385 2331 2332 4277 4278 #mecca_area
-		386 391 4282 #asir_area
-		387 2346 4279 #tihama_al_yemen_area
-		390 2344 4281 #upper_yemen_area
-		388 2345 4280 #yemen_area
-		389 2343 4283 #hadramut_area
-		402 1099 4284 #mahra_area
-		401 2341 2342 #dhofar_area
-		2335 2336 2339 4275 #yamamah_area
-		392 4273 4274 #qasim_area
-		399 400 4286 #mascat_area
-		403 4285 4287 #oman_area
-		397 398 404 2333 #pirate_coast_area
-		394 395 396 2340 2347 #bahrain_area
-	}
-}
-
-ethiopia = {
-	location = 2772
-	inland = yes
-	color = { 56 120 191 }
-	outgoing = {
-		name = "alexandria"
-		path = {
-			1232 2321 361 358 
-		}
-		control = {
-			3325.000000 905.000000 3318.000000 1017.000000 3313.000000 1058.000000 3301.000000 1079.000000 3284.000000 1104.000000 
-		}
-	}
-	members = {
-		774 1219 2801 2802 2932 #darfur_central_sahara_area
-		1216 1221 2800 #kurdufan_area
-		1220 1228 6018 6019 6022 #dongola_area
-		6017 2323 6021 1229 #hadendoa_area
-		1222 1226 1225 2797 2798 #upper_nubia_area
-		1217 2799 4033 #sennar_area
-		1227 2766 2767 2771 #tigray_area
-		1214 1223 1224 2769 2772 #central_ethiopia_area
-		2762 2763 2770 #damot_area
-		2757 2758 2759 4158 #southern_ethiopia_area
-		1218 2756 2760 #hadiya_area
-		1213 2761 2791 #shewa_area
-		1215 2764 2765 2768 #aussa_area
-		1211 1212 2773 2793 #ifat_area 
-		1207 1208 1210 2778 2779 #ogaden_area
-		1209 2786 2789 2792 2790 #somaliland_area
-		1206 2024 2783 2784 2788 #majarteen_area
-		2776 2780 2781 2785 #ajuuran_area
-		1205 2775 2782 2794 2795 #mogadishu_area
-	}
-}
 
 constantinople = {
 	location = 326

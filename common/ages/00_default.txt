@@ -265,8 +265,6 @@ age_of_discovery = {
 			allow = {
 				OR = {
 					tag = HUN
-					tag = ETH
-					tag = ZAN
 				}	
 			}
 			modifier = {

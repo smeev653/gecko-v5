@@ -1576,8 +1576,7 @@ prussian_rhine = {
 # Portuguese missions
 
 por_makeshift_defenses = {
-	local_defensiveness = 0.25
-	supply_limit_modifier = 0.25
+	artillery_fire = 1
 }
 
 buffer_zone_commerce = {

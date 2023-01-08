@@ -25,8 +25,9 @@ grain = {
 				#######
 				has_terrain = desert
 				has_terrain = glacier
-				has_terrain = coastline
+				#has_terrain = coastline
 				has_climate = arctic
+				region = south_africa_region
 			}
 		}
 		modifier = {
@@ -190,6 +191,7 @@ wool = {
 				has_terrain = forest
 				has_terrain = woods
 				region = central_africa_region
+				region = south_africa_region
 				AND = {
 					has_climate = tropical
 					NOT = { area = paraguay_area }
@@ -303,6 +305,10 @@ fish = {
 				region = moluccas_region
 				region = indonesia_region
 			}
+		}
+		modifier = {
+			factor = 0
+			continent = africa
 		}
 		modifier = {
 			factor = 15
@@ -474,6 +480,10 @@ naval_supplies = {
 			area = newfoundland_area
 		}
 		modifier = {
+			factor = 0
+			continent = africa
+		}
+		modifier = {
 			factor = 0.65
 			region = carribeans_region
 		}
@@ -637,6 +647,7 @@ gold = {
 			NOT = { area = amapa_area }
 			NOT = { area = ucayali_area }
 			NOT = { area = amazon_area }
+			NOT = { area = central_swahili_coast_area }
 		}
 		modifier = {
 			factor = 0
@@ -857,6 +868,7 @@ ivory = {
 			NOT = { has_terrain = jungle }
 			NOT = { has_terrain = savannah }
 			NOT = { has_terrain = glacier }
+			NOT = { has_terrain = coastline }
 		}
 		modifier = {
 			factor = 0
@@ -1553,6 +1565,10 @@ tropical_wood = {
 			NOT = { province_id = 1240 }
 		}
 		modifier = {
+			factor = 0
+			continent = africa
+		}
+		modifier = {
 			factor = 1.5
 			area = amazon_area
 		}
@@ -1590,6 +1606,7 @@ livestock = {
 			OR = {
 				###X###
 				province_id = 1111
+				province_id = 1177
 				#######
 				has_terrain = glacier
 				has_terrain = marsh
@@ -1874,6 +1891,7 @@ gems = {
 			OR = {
 				continent = south_america
 				continent = north_america
+				region = south_africa_region
 			}
 		}
 		modifier = {
@@ -1882,6 +1900,7 @@ gems = {
 				area = diamantina_area
 				area = bogota_area
 				area = murray_river_area #Opal
+				region = south_africa_region
 			}
 		}
 		modifier = {

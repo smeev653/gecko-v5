@@ -17,6 +17,7 @@ trade_company_west_africa = {
 		1112 1113 1116 2239 #jolof_area
 		1114 1117 2238 #futa_jallon_area
 		1172 1167 4080 4079 1166 4078
+		1168
 	}
 	
 	# Specific
@@ -85,6 +86,9 @@ trade_company_north_india = {
 		506 2079 2086 4508 4509 #multan_area
 		2077 2078 4511 #sind_sagar_area
 		508 2073 2074 4449 4521 #kashmir_area
+		576 577 2068 #kalat_area
+		505 2072 4505 #northern_sindh_area
+		504 4503 4504 #sindh_area
 	}
 	
 	# Generic
@@ -947,9 +951,8 @@ trade_company_persia = {
 		432 2220 2234 4345 #kerman_area
 		431 2999 4327 #mogostan_area
 		434 575 2231 2232 2233 #makran_area
-		576 577 2068 #kalat_area
-		505 2072 4505 #northern_sindh_area
-		504 4503 4504 #sindh_area
+		435 2224 2229 2230 4324 #sistan_area
+		2221 2235 2236 4326 2214 #mashhad_area
 	}
 
 	# Specific
@@ -1043,9 +1046,7 @@ trade_company_lahore_trade = {
 		455 1970 2363 #kyzylkum_area
 		448 451 452 578 2226 #kabulistan_area	
 		447 449 2225 #ghor_area
-		435 2224 2229 2230 4324 #sistan_area
 		450 2227 2228 446 #balkh_area
-		2221 2235 2236 4326 2214 #mashhad_area
 		444 445 2350 4325 #merv_area
 		1968 4344 4343 6131 6132 #termez_area
 		454 6127 6128 6130 6129 #samarkand_area

@@ -1746,7 +1746,7 @@ estate_church_clerical_ministers = {
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
-		remove_estate_privilege = estate_church_clerical_minister
+		remove_estate_privilege = estate_church_clerical_ministers
 	}
 }
 
@@ -7683,7 +7683,7 @@ estate_church_religious_diplomats = {
 	penalties = {
 	}
 	benefits = {
-		reform_progress_growth = 0.1
+		missionary_strength = 0.02
 	}
 	ai_will_do = {
 		factor = 100	#The privilege is a little bit too niche to be really usable for the AI

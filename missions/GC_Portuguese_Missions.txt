@@ -582,7 +582,7 @@ gc_por_2_c = {
 				}
 			}
 		}
-	}
+	}	
 }
 
 
@@ -678,6 +678,19 @@ gc_por_3_c = {
 				}
 				add_permanent_claim = ROOT
 			}
+				mozambique_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1186 = {
+				add_permanent_claim = ROOT
+			}
+			1192 = {
+				add_permanent_claim = ROOT
+			}
 			if = {
 				limit = {
 					1177 = { is_empty = yes }
@@ -692,6 +705,165 @@ gc_por_3_c = {
 					name = "cape_trade_established"
 					duration = -1
 				}
+		}
+	}
+	gc_por_discovers_east_africa = {
+		icon = mission_have_two_subjects
+		required_missions = { gc_por_discovers_cape_good_hope }
+		completed_by = 1530.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1186
+				province_id = 1192
+				area = mozambique_area
+			}
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_east_africa
+				east_africa_region = {
+					has_discovered = ROOT
+				}
+			}
+			1186 = {
+				owned_by = ROOT
+			}
+			1192 = {
+				owned_by = ROOT
+			}
+			mozambique_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+	
+		effect = {
+			add_prestige = 10
+			majarteen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			1201 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	gc_por_conquers_zanzibar = {
+		icon = mission_cannons_firing
+		required_missions = { gc_por_discovers_east_africa }
+		position = 5
+		
+		provinces_to_highlight = {
+			province_id = 1201
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			1201 = {
+				owned_by = ROOT
+			}
+		}
+	
+		effect = {
+			1201 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				change_trade_goods = spices
+				add_country_modifier = {
+					name = "por_makeshift_defenses"
+					duration = -1
+				}
+			}
+		}
+	}
+	gc_por_conquers_hormuz = {
+		icon = mission_persian_soldiers
+		required_missions = { gc_por_conquers_zanzibar }
+		position = 5
+		completed_by = 1508.1.1
+		
+		provinces_to_highlight = {
+			province_id = 2999
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			2999 = {
+				owned_by = ROOT
+			}
+		}
+	
+		effect = {
+			2999 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "por_makeshift_defenses"
+					duration = -1
+				}
+			}
+			mascat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	gc_por_oman = {
+		icon = mission_portuguese_oman
+		required_missions = { gc_por_conquers_hormuz }
+		
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = mascat_area
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 400
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+		
+		trigger = {
+			mascat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			400 = { owned_by = ROOT }
+		}
+		effect = {
+			if = {
+				limit = {
+					2999 = {
+						owned_by = ROOT
+					}
+				}
+				2999 = {
+					add_province_modifier = {
+						name = "persian_gulf_trade_por"
+						duration = -1
+					}
+				}
+			}
+			400 = {
+				add_province_modifier = {
+					name = "persian_gulf_trade_por"
+					duration = -1
+				}
+			}
 		}
 	}
 }
