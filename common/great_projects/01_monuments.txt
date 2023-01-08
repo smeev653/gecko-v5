@@ -19641,10 +19641,11 @@ fu_globe_theatre = {
 		}
 
 		province_modifiers = {
-			local_development_cost = -0.05 
+			
 		}
 
 		area_modifier = {
+			local_development_cost = -0.05 
 		}
 
 		country_modifiers = {
@@ -19670,11 +19671,10 @@ fu_globe_theatre = {
 		}
 
 		province_modifiers = {
-			local_development_cost = -0.1
 		}
 
 		area_modifier = {
-			
+				local_development_cost = -0.10
 		}
 
 		country_modifiers = {
@@ -19696,6 +19696,7 @@ fu_globe_theatre = {
 		}
 
 		area_modifier = {
+			local_development_cost = -0.15
 		}
 
 		country_modifiers = {
