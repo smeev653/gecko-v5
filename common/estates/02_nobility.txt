@@ -410,6 +410,7 @@ estate_nobles =
 		estate_nobles_officer_corp
 		estate_nobles_advisors
 		estate_nobles_right_of_counsel
+		estate_gc_priv_3
 		estate_nobles_french_strong_duchies
 		estate_nobles_supremacy_over_crown
 		estate_nobles_junker_primacy
