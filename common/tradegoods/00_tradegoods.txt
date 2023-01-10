@@ -1596,7 +1596,7 @@ livestock = {
 		local_tax_modifier = 0.15
 	}
 	chance = {
-		factor = 30
+		factor = 20
 		modifier = {
 			factor = 0
 			area = newfoundland_area
