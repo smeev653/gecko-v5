@@ -168,3 +168,8 @@
  estate_gc_priv_4_desc:0 ""
  estate_gc_priv_5:0 "Burgher Investments in the Colonies"
  estate_gc_priv_5_desc:0 ""
+
+#tribes
+
+estate_gc_priv_6:0 "Primacy of the Tribes"
+estate_gc_priv_6_desc:0 ""

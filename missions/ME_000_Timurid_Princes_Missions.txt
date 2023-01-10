@@ -130,9 +130,9 @@ Timurid_princes_missions_2 = {
 			OR = {
 				total_development = 400
 				AND = {
-					ADM = 4
-					DIP = 4
-					MIL = 4
+					ADM = 3
+					DIP = 3
+					MIL = 3
 				}
 			}
 		}
