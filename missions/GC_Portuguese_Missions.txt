@@ -777,10 +777,6 @@ gc_por_3_c = {
 				add_base_production = 3
 				add_base_manpower = 3
 				change_trade_goods = spices
-				add_country_modifier = {
-					name = "por_makeshift_defenses"
-					duration = -1
-				}
 			}
 		}
 	}
