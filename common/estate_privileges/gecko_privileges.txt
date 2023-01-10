@@ -249,8 +249,6 @@ estate_gc_priv_6 = {
 			tooltip = no_other_mil_privilege
 			NOT = { has_estate_privilege = estate_rajput_military }
 			NOT = { has_estate_privilege = estate_maratha_military }
-			NOT = { has_estate_privilege = estate_nomadic_tribes_nobility_primacy }
-
 		}
 		estate_loyalty = {
 			estate = estate_nomadic_tribes
