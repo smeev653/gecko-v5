@@ -264,13 +264,13 @@ critical_province = {
 
 gecko_b = {
 	#inflation_action_cost = 0.40
-	reinforce_speed = -0.15
+	#reinforce_speed = -0.15
 	reform_progress_growth = -0.5
-	army_tradition_decay = 0.005
+	#army_tradition_decay = 0.005
 	autonomy_change_time = 0.25
 	global_spy_defence = -0.5
-	reinforce_cost_modifier = 0.05
-	state_maintenance_modifier = 0.25
+	#reinforce_cost_modifier = 0.05
+	#state_maintenance_modifier = 0.25
 	yearly_corruption = 0.2
 	interest = 1
 }

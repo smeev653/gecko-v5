@@ -255,6 +255,81 @@ emp_burgundy_1 = {
 			}
 		}
 	}
+	repulse_gank_bur = {
+        icon = conquer_burgundy
+        required_missions = {  }
+
+        trigger = {
+			NOT = {
+				is_year = 1500
+			}
+			is_in_war = {
+				attackers = ENG
+			}
+			OR = {
+				has_won_war_against = {
+				who = FRA
+				max_years_since = 5
+				}
+				FRA = {
+					has_won_war_against = {
+					who = BUR
+					max_years_since = 5
+					}
+				}
+			}
+			OR = {
+				is_bankrupt = yes
+				num_of_loans = 10
+			}
+		}
+        effect = {
+			if = {
+				limit = {
+					is_bankrupt = yes
+				}
+				add_stability = 3
+				add_prestige = 75
+				add_corruption = -2
+				define_general = {
+					shock = 4
+					fire = 4
+					manuever = 1
+					siege = 3
+					name = "Charles I"
+                }
+				add_country_modifier = {
+                name = "defense_of_burgundy"
+                duration = 1825
+                }
+				hidden_effect = {
+					remove_country_modifier = gecko_b
+				}	
+			}
+			else = {
+				define_general = {
+					shock = 4
+					fire = 4
+					manuever = 1
+					siege = 3
+					name = "Charles I"
+                }
+				add_country_modifier = {
+                name = "defense_of_burgundy"
+                duration = 1825
+                }
+			}
+           
+
+                
+				#add_country_modifier = {
+				#	name = "geckoavailablemercs"
+				#	duration = 1825
+				#	hidden = yes
+				#}
+            }
+			
+        }
 }
 
 emp_lotharingia_1 = {

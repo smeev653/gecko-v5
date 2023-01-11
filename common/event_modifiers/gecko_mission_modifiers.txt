@@ -380,15 +380,16 @@ defense_of_france = {
 }
 
 defense_of_burgundy = {
-	land_morale = 0.05
-	discipline = 0.05
-	land_forcelimit_modifier = 0.1
+	land_morale = 0.2
+	discipline = 0.1
+	land_forcelimit_modifier = 0.25
 	merc_maintenance_modifier = -0.5
-	mercenary_cost = -0.25
-	mercenary_manpower = 0.5
-	interest = -0.5
+	mercenary_cost = -0.5
+	merc_maintenance_modifier = -1
+	interest = -1
 	global_tax_modifier = 0.1
 	defensiveness = 0.2
+	stability_cost_modifier = -0.5
 }
 
 defense_of_anatolia = {
