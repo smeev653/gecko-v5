@@ -66,6 +66,7 @@ estate_nobles =
 	}
 	land_ownership_modifier = {
 		nobles_loyalty_modifier = 0.2
+		global_manpower_modifier = 0.5
 	}
 
 	province_independence_weight = {

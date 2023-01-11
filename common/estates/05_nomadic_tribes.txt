@@ -24,6 +24,7 @@ estate_nomadic_tribes = {
 	}
 	land_ownership_modifier = {
 		nomadic_tribes_loyalty_modifier = 0.2
+		global_manpower_modifier = 0.5
 	}
 	
 	#For each province bordering another country, the neighboring provinces with the highest weights are added, until (share of land ownership * total development) is reached. From all these tries (It will do 32 of the highest weight border provinces at most), the result with the highest total sum of weights is then selected and these provinces then become the new country.

@@ -1346,7 +1346,7 @@ estate_nobles_right_of_counsel = {
 	influence = 0.1
 	
 	on_granted = {
-		add_army_tradition = 20
+		add_army_tradition = 15
 	}
 	penalties = {
 		general_cost = 0.1

@@ -34,8 +34,8 @@ estate_gc_noble_levies = {
 		capital_scope = {
 			add_unit_construction = {
 			type = cavalry
-			amount = 5
-			speed = 1
+			amount = 10
+			speed = 2
 			cost = 0
 			}
 		}	
@@ -77,14 +77,11 @@ estate_gc_expand_mamluks = {
 		cavalry_cost = -0.1
 	}
 	on_granted = {
-		create_general = {
-			tradition = 50
-		}
 		capital_scope = {
 			add_unit_construction = {
 			type = cavalry
-			amount = 5
-			speed = 1
+			amount = 10
+			speed = 2
 			cost = 0
 			}
 		}
