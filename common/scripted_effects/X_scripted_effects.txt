@@ -203,6 +203,10 @@ X_on_religion_change_effect = {
 	X_province_estates_on_religion_change_effect = yes
 }
 
+X_on_province_religion_converted_effect = {
+	X_province_estates_on_province_religion_converted_effect = yes
+}
+
 X_on_capital_moved_effect = {
 	X_province_estates_on_capital_moved_effect = yes
 }
@@ -386,7 +390,7 @@ X_on_province_owner_change_pmod_effect = {
 	####################
 	if = {
 		limit = {
-			X_has_province_estates_pmod_trigger = { where = ROOT }
+			X_has_province_estates_pmod_trigger = yes
 		}
 		X_remove_all_province_estates_pmod_effect = yes
 	}
@@ -653,6 +657,7 @@ X_RUS_change_isolation_vs_westernization_level_effect = {
 X_province_estates_on_religion_change_effect = { 
 	if = {
 		limit = {
+			NOT = { religion_group = muslim }
 			any_owned_province = {
 				has_province_modifier = X_estate_dhimmi_province_control_pmod
 				religion_group = muslim
@@ -665,10 +670,20 @@ X_province_estates_on_religion_change_effect = {
 	}
 }
 
+X_province_estates_on_province_religion_converted_effect = { 
+	if = {
+		limit = {
+			religion_group = muslim
+			has_province_modifier = X_estate_dhimmi_province_control_pmod
+		}
+		remove_province_modifier = X_estate_dhimmi_province_control_pmod
+	}
+}
+
 X_province_estates_on_capital_moved_effect = { 
 	if = {
 		limit = {
-			X_has_province_estates_pmod_trigger = { where = ROOT }
+			X_has_province_estates_pmod_trigger = yes
 		}
 		X_remove_all_province_estates_pmod_effect = yes
 	}

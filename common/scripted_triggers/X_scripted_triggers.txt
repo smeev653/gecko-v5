@@ -166,19 +166,6 @@ X_has_expand_infrastructure_pmod_trigger = {
 	}
 }
 
-X_province_estates_grant_or_revoke_trigger = {
-	owner = {
-		has_estate = $estate$ 
-		check_variable = {
-			which = X_province_estates_crownland_variable
-			which = X_province_estates_development_localization_variable
-		}
-	}
-	NOT = { is_territorial_core = ROOT }
-	is_capital = no
-	is_territory = no
-}
-
 X_has_province_estates_pmod_trigger = {
 	OR = {
 		has_province_modifier = X_estate_church_province_control_pmod
@@ -186,6 +173,32 @@ X_has_province_estates_pmod_trigger = {
 		has_province_modifier = X_estate_nobles_province_control_pmod
 		has_province_modifier = X_estate_dhimmi_province_control_pmod
 	}
+}
+
+X_province_estates_grant_or_revoke_trigger = {
+	if = {
+		limit = {
+			owner = {
+				check_variable = {
+					which = X_province_estates_development_localization_variable
+					which = X_province_estates_crownland_variable
+				}
+			}
+		}
+		X_has_province_estates_pmod_trigger = yes
+	}
+	else = {
+		owner = {
+			check_variable = {
+				which = X_province_estates_crownland_variable
+				which = X_province_estates_development_localization_variable
+			}
+		}
+	}
+	owner = { has_estate = $estate$ }
+	NOT = { is_territorial_core = ROOT }
+	is_capital = no
+	is_territory = no
 }
 ####################
 # Cultural Unions

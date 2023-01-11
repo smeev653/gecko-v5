@@ -55,6 +55,7 @@ province_event = {
 					which = X_province_estates_crownland_variable
 				}
 			}
+			X_has_province_estates_pmod_trigger = no
 		}
 		desc = X_pe_and_ei_events.2.d5
 	}
