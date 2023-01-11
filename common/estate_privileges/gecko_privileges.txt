@@ -103,3 +103,223 @@ estate_gc_expand_sipahi = {
 		remove_estate_privilege =estate_gc_expand_sipahi
 	}
 }
+
+estate_gc_priv_1 = {
+	icon = privilege_devotion_blue
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_gc_priv_1}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	modifier = { monthly_splendor = 2}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_gc_priv_2 = {
+	icon = privilege_devotion_purple
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_gc_priv_2}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	modifier = { culture_conversion_cost = -0.15}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_gc_priv_3 = {
+	icon =  privilege_marines
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_gc_priv_3}
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+		manpower_recovery_speed = -0.1
+	}
+	benefits = {
+		allowed_marine_fraction = 0.2
+		burghers_loyalty_modifier = 0.05
+		burghers_influence_modifier = 0.05
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_gc_priv_4 = {
+	icon = privilege_comission_merchant_ships_for_war
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_gc_priv_4}
+	is_valid = {
+			num_of_ports = 1
+	}
+	can_select = {
+	}
+	on_granted = {
+		add_dip_power = -50
+		create_admiral = {
+			tradition = 40
+			add_manuever  = 3
+		}
+	}
+	modifier = { }
+	penalties = {
+	}
+	benefits = {
+
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_gc_priv_5 = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_gc_priv_5}
+	is_valid = {
+		OR = {
+			num_of_colonists = 1
+			num_of_colonies = 1
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	modifier = { can_colony_boost_development = yes}
+	mechanics = {
+	}
+	penalties = {
+		global_colonial_growth = -25
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_gc_priv_6 = {
+	icon = privilege_military_power
+	land_share = 5
+	max_absolutism = -5
+	#loyalty = -0.05
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = no_other_mil_privilege
+			NOT = { has_estate_privilege = estate_rajput_military }
+			NOT = { has_estate_privilege = estate_maratha_military }
+		}
+		estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = 50
+		}
+	}
+	on_granted = {
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nomadic_tribes
+							influence = 50
+						}	
+					}
+				}
+				add_mil_power = 50
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nomadic_tribes
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nomadic_tribes
+							influence = 75
+						}	
+					}
+				}
+				add_mil_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nomadic_tribes
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nomadic_tribes
+							influence = 100
+						}	
+					}
+				}
+				add_mil_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nomadic_tribes
+						influence = 100
+					}
+				}
+				add_mil_power = 200
+			}				
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -20
+			}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+	remove_estate_privilege = estate_gc_priv_6
+	}
+}

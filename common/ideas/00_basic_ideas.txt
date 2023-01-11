@@ -21,7 +21,7 @@ aristocracy_ideas = {
 		discipline = 0.03
 	}
 	local_nobility = {
-		army_tradition_from_battle = 0.25
+		army_tradition_from_battle = 0.375
 		prestige_from_land = 1
 		nobles_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
@@ -400,7 +400,7 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		discipline = 0.05
+		leader_land_shock = 1
 	}
 
 	bayonet_leaders = {
@@ -409,9 +409,6 @@ offensive_ideas = {
 	}
 	glorious_arms = {
 		general_cost = -0.10
-	}
-	superior_firepower = {
-		leader_land_shock = 1
 	}
 	engineer_corps = {
 		siege_ability = 0.1
@@ -425,9 +422,12 @@ offensive_ideas = {
 		land_forcelimit_modifier = 0.10
 		manpower_recovery_speed = 0.15
 	}
-	napoleonic_warfare = {
+	superior_firepower = {
 		artillery_power = 0.1
 		recover_army_morale_speed = 0.1
+	}
+	napoleonic_warfare = {
+		discipline = 0.05
 	}
 
 	ai_will_do = {

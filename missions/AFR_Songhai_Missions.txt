@@ -1900,7 +1900,19 @@ songhai_money_maker_slot = {
 					}
 				}	
 			}
-			1121 = {
+			1157 = {
+				if = {
+					limit = { 
+						owned_by = ROOT 
+					}
+					
+				add_province_modifier = {
+						name = "gc_african_gold_modifier"
+						duration = 7300
+					}
+				}	
+			}
+			2288 = {
 				if = {
 					limit = { 
 						trade_goods = gold

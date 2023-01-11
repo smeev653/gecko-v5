@@ -9684,6 +9684,7 @@ kaaba = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			land_morale = 0.05	
+			global_missionary_strength = 0.01	
 		}
 
 		#what effects happen when this tier is achieved
@@ -19640,10 +19641,11 @@ fu_globe_theatre = {
 		}
 
 		province_modifiers = {
-			local_development_cost = -0.05 
+			
 		}
 
 		area_modifier = {
+			local_development_cost = -0.05 
 		}
 
 		country_modifiers = {
@@ -19669,11 +19671,10 @@ fu_globe_theatre = {
 		}
 
 		province_modifiers = {
-			local_development_cost = -0.1
 		}
 
 		area_modifier = {
-			
+				local_development_cost = -0.10
 		}
 
 		country_modifiers = {
@@ -19695,6 +19696,7 @@ fu_globe_theatre = {
 		}
 
 		area_modifier = {
+			local_development_cost = -0.15
 		}
 
 		country_modifiers = {

@@ -253,6 +253,8 @@ estate_burghers = {
 		estate_burghers_land_rights
 		estate_burghers_admirals
 		estate_burghers_private_trade_fleets
+		estate_gc_priv_4
+		estate_gc_priv_5
 		estate_gecko_ethiopia_highlands_and_mountains
 		estate_burghers_patronage_of_the_arts
 		estate_burghers_commercial_board_of_advice

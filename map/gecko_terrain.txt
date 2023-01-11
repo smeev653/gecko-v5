@@ -476,6 +476,7 @@ categories =  {
 			6120 #xmp
 			6171 1867 4720 6170 4721 6169 1869 #gcswitzerland
 			137 4753 # Balkans
+			4968
 		}
 	}
 
@@ -487,7 +488,7 @@ categories =  {
 
 		movement_cost = 1.0
 		defence = 1
-		local_development_cost = 0.2
+		local_development_cost = 0.1
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
 		
@@ -693,6 +694,7 @@ categories =  {
 			381 #Ajloun
 			6117 # sis
 			4563 335 4561 #sale
+			4969 4965
 		}
 	}
 
@@ -760,7 +762,7 @@ categories =  {
 
 		supply_limit = 6
 		movement_cost = 1.0
-		local_development_cost = 0.15
+		local_development_cost = 0.1
 		nation_designer_cost_multiplier = 0.95	
 		
 		terrain_override = {
@@ -794,7 +796,7 @@ categories =  {
 		sound_type = plains
 
 		movement_cost = 1.0
-		local_development_cost = 0.20
+		local_development_cost = 0.10
 		nation_designer_cost_multiplier = 0.9	
 		supply_limit = 6
 		

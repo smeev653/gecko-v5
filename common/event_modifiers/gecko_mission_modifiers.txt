@@ -409,7 +409,7 @@ eth_coptic_offense = {
 }
 
 eth_increased_gold_mining = {
-	trade_goods_size = 1
+	trade_goods_size = 0.6
 }
 
 zan_conversion_of_fetishist = {

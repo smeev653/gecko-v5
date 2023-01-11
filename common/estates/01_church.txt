@@ -384,6 +384,8 @@ estate_church =
 		PR_estate_clergy_exploration_expedition
 		estate_church_land_rights
 		estate_church_clerical_ministers
+		estate_gc_priv_1
+		estate_gc_priv_2
 		estate_church_papal_emissary
 		estate_church_independent_inquisition
 		estate_church_new_world_mission

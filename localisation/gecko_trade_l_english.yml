@@ -22,6 +22,7 @@
  brazil:0 "Brazil"
  amazonas_node:0 "Amazonas"
  ivory_coast:0 "Ivory Coast"
+ zanzibar:0 "Zanzibar"
  katsina:0 "Katsina"
  ethiopia:0 "Ethiopia"
  alexandria:0 "Alexandria"
@@ -173,6 +174,7 @@
  trade_company_lahore_trade:0 "Transoxianian Charter"
  TRADE_COMPANY_LAHORE_trade_Root_Culture_GetName:0 "[Root.Culture.GetName] Transoxiana Company"
  TRADE_COMPANY_LAHORE_trade_Asia_Trade_Company:0 "Transoxiana Trade Company"
+ colonial_south_africa:0 "Colonial South Africa"
  #centers of trade
  regional_port:0 "Regional Port"
  regional_port_desc:0 ""

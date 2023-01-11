@@ -32,6 +32,7 @@ estate_brahmins = {
 		is_nomad = no
 		is_colonial_nation = no
 		NOT = { has_reform = revolutionary_empire_reform }
+		always = no
 	}
 
 	# These scale with loyalty & power

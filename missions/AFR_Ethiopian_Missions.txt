@@ -285,9 +285,6 @@ ethiopia_policy_with_the_cushitic_people = {
 			}
 		}
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_control_over_the_mint
-			}
 			2762 = {
 				add_local_autonomy = -100
 				add_province_modifier = {

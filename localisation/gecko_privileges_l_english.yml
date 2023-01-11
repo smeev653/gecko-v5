@@ -90,6 +90,10 @@
 
  ######estate privileges######
  #clergy#
+ estate_gc_priv_1:0 "Church Connections"
+ estate_gc_priv_1_desc:0 ""
+ estate_gc_priv_2:0 "Church Inquisitions"
+ estate_gc_priv_2_desc:0 ""
  estate_church_negative_piety_privilege:0 "Sufi Ministers"
  estate_church_negative_piety_privilege_desc:0 "If we listen to the advice of the [Root.GetClergyName] and place their concerns at the forefront of our mind, we may derive considerable benefits for our rule and see the people's faith in [Root.GetReligionNoun] greatly strengthened."
  #mountain dev cost 
@@ -155,3 +159,17 @@
  estate_janissary_reform_the_janissaries:0 "Reform the Janissary Corps"
  estate_janissary_reform_the_janissaries_desc:0 "Having chosen to keep the Janissary Corps as our primary infantry corps, we will ensure they remain loyal to the Sultan and update their methods of warfare to match the growing threat of Western technology and military tactics."
  estate_janissary_discipline_modifier:0 "Reformed Janissaries"
+ #nobles
+ estate_gc_priv_3:0 "Noble Conscriptions"
+ estate_gc_priv_3_desc:0 "Noble Conscriptions"
+
+ #burghers
+ estate_gc_priv_4:0 "Burgher Connections"
+ estate_gc_priv_4_desc:0 ""
+ estate_gc_priv_5:0 "Burgher Investments in the Colonies"
+ estate_gc_priv_5_desc:0 ""
+
+#tribes
+
+estate_gc_priv_6:0 "Primacy of the Tribes"
+estate_gc_priv_6_desc:0 ""
