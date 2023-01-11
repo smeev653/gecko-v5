@@ -85,6 +85,9 @@
  CONVERT_TRIBUTARY_TO_VASSAL_CANNOT_NOT_ENOUGH_MANDATE:0 "You do not have the $MANDATE$ Legacy required."
  CONVERT_TRIBUTARY_TO_VASSAL_DESC2:0 "Spend $MANDATE|Y$ Legacy ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal."
  CONVERT_TRIBUTARY_TO_VASSAL_DESC:0 "We will spend $MANDATE|Y$ Legacy ($PERCENT|%$ of their development) to convert $COUNTRY|Y$ from a Tributary State to a Vassal."
+ EXPAND_INFRASTRUCTURE_COST_TOOLTIP:0 ""
+ EXPAND_INFRASTRUCTURE_NOT_OWNED:0 ""
+ EXPAND_INFRASTRUCTURE_NOPOWER:0 ""
  ##############################
  # triggers_and_effects_l_english
  ##############################
@@ -96,3 +99,11 @@
  # hnn_l_english
  ##############################
  MODIFIER_MILITARY_TACTICS:0 "Military Tactics$VALUE|G$"
+ ##############################
+ # leviathan_l_english
+ ##############################
+ EXPAND_INFRASTRUCTURE:0 "Estates & Expand Infrastructure"
+ EXPAND_INFRASTRUCTURE_DESC:0 "Estates & Expand Infrastructure for $NAME|Y$."
+ EXPAND_INFRASTRUCTURE_NEEDED_DEV:0 ""
+ EXPAND_INFRASTRUCTURE_TOOLTIP:0 "§YEstates & Expand Infrastructure§!"
+ EXPAND_INFRASTRUCTURE_TOOLTIP_MODIFIER:0 ""

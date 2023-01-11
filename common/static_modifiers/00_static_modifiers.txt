@@ -1915,15 +1915,6 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 
 
 expanded_infrastructure = {
-	allowed_num_of_buildings = 1
-	allowed_num_of_manufactories = 1
-	local_governing_cost_increase = 5
-	local_governing_cost = 1.0
-	local_manpower_modifier = 0.1
-	local_tax_modifier = 0.1
-	local_production_efficiency = 0.1
-	local_development_cost = -0.05
-	land_forcelimit = 1
 }
 
 centralize_state = {

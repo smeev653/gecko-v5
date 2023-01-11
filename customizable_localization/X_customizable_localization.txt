@@ -147,6 +147,251 @@ defined_text = {
 	}
 }
 ####################
+# Province Estates
+####################
+defined_text = {
+	name = GetXProvinceEstatesController
+	random = no
+	text = {
+		trigger = {
+			has_province_modifier = X_estate_church_province_control_pmod
+		}
+		localisation_key = X_estate_church_province_controller
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_estate_burghers_province_control_pmod
+		}
+		localisation_key = X_estate_burghers_province_controller
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_estate_nobles_province_control_pmod
+		}
+		localisation_key = X_estate_nobles_province_controller
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_estate_dhimmi_province_control_pmod
+		}
+		localisation_key = X_estate_dhimmi_province_controller
+	}
+	text = {
+		trigger = {
+		   always = yes
+		}
+		localisation_key = X_no_estate_province_controller
+	}
+}
+
+defined_text = {
+	name = GetXProvinceEstatesGrantOrRevoke
+	random = no
+	text = {
+		trigger = {
+			X_has_province_estates_pmod_trigger = no
+		}
+		localisation_key = X_grant
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = X_revoke
+	}
+}
+
+defined_text = {
+	name = GetXProvinceEstatesBurghersRestrictions
+	random = no
+	text = {
+		trigger = {
+			X_has_province_estates_pmod_trigger = no
+			NOT = { province_trade_power = 5 }
+			NOT = { development = 10 }
+			NOT = { province_has_center_of_trade_of_level = 1 }
+		}
+		localisation_key = X_estate_burghers_province_restrictions
+	}
+}
+
+defined_text = {
+	name = GetXProvinceEstatesDhimmiRestrictions
+	random = no
+	text = {
+		trigger = {
+			X_has_province_estates_pmod_trigger = no
+			religion_group = muslim
+		}
+		localisation_key = X_estate_dhimmi_province_restrictions
+	}
+}
+
+defined_text = {
+	name = GetXExpandInfrastructureCostRestrictions
+	random = no
+	text = {
+		trigger = {
+			owner = { NOT = { adm_power = 30 } }
+		}
+		localisation_key = X_expand_infrastructure_cost_restrictions
+	}
+}
+
+defined_text = {
+	name = GetXExpandInfrastructureDevelopmentRestrictions
+	random = no
+	text = {
+		trigger = {
+			NOT = { development = 10 }
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_1
+	}
+	text = {
+		trigger = {
+			development = 10
+			NOT = { development = 20 }
+			has_province_modifier = X_expand_infrastructure_tier_1_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_2
+	}
+	text = {
+		trigger = {
+			development = 20
+			NOT = { development = 30 }
+			has_province_modifier = X_expand_infrastructure_tier_2_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_3
+	}
+	text = {
+		trigger = {
+			development = 30
+			NOT = { development = 40 }
+			has_province_modifier = X_expand_infrastructure_tier_3_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_4
+	}
+	text = {
+		trigger = {
+			development = 40
+			NOT = { development = 50 }
+			has_province_modifier = X_expand_infrastructure_tier_4_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_5
+	}
+	text = {
+		trigger = {
+			development = 50
+			NOT = { development = 60 }
+			has_province_modifier = X_expand_infrastructure_tier_5_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_6
+	}
+	text = {
+		trigger = {
+			development = 60
+			NOT = { development = 70 }
+			has_province_modifier = X_expand_infrastructure_tier_6_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_7
+	}
+	text = {
+		trigger = {
+			development = 70
+			NOT = { development = 80 }
+			has_province_modifier = X_expand_infrastructure_tier_7_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_8
+	}
+	text = {
+		trigger = {
+			development = 80
+			NOT = { development = 90 }
+			has_province_modifier = X_expand_infrastructure_tier_8_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_9
+	}
+	text = {
+		trigger = {
+			development = 90
+			NOT = { development = 100 }
+			has_province_modifier = X_expand_infrastructure_tier_9_pmod
+		}
+		localisation_key = X_expand_infrastructure_development_restrictions_10
+	}
+}
+
+defined_text = {
+	name = GetXExpandInfrastructureLevel
+	random = no
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_1_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_1
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_2_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_2
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_3_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_3
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_4_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_4
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_5_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_5
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_6_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_6
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_7_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_7
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_8_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_8
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_9_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_9
+	}
+	text = {
+		trigger = {
+			has_province_modifier = X_expand_infrastructure_tier_10_pmod
+		}
+		localisation_key = X_expand_infrastructure_level_10
+	}
+	text = {
+		trigger = {
+		   always = yes
+		}
+		localisation_key = X_expand_infrastructure_level_0
+	}
+}
+####################
 # Cultural Unions
 ####################
 #tartar

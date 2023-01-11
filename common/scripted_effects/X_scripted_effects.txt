@@ -178,6 +178,35 @@ X_improve_ruler_stats_effect = {
 	]
 }
 
+X_on_development_effect = {
+	X_province_estates_on_development_effect = { development = yes estate = estate_church }
+	X_province_estates_on_development_effect = { development = yes estate = estate_burghers }
+	X_province_estates_on_development_effect = { development = yes estate = estate_nobles }
+	X_province_estates_on_development_effect = { development = yes estate = estate_dhimmi }
+}
+
+X_on_exploited_effect = {
+	X_province_estates_on_development_effect = { exploited = yes estate = estate_church }
+	X_province_estates_on_development_effect = { exploited = yes estate = estate_burghers }
+	X_province_estates_on_development_effect = { exploited = yes estate = estate_nobles }
+	X_province_estates_on_development_effect = { exploited = yes estate = estate_dhimmi }
+}
+
+X_on_estate_removed_effect = {
+	X_province_estates_on_estate_removed_effect = { estate = estate_church }
+	X_province_estates_on_estate_removed_effect = { estate = estate_burghers }
+	X_province_estates_on_estate_removed_effect = { estate = estate_nobles }
+	X_province_estates_on_estate_removed_effect = { estate = estate_dhimmi }
+}
+
+X_on_religion_change_effect = {
+	X_province_estates_on_religion_change_effect = yes
+}
+
+X_on_capital_moved_effect = {
+	X_province_estates_on_capital_moved_effect = yes
+}
+
 X_on_province_owner_change_pmod_effect = {
 	if = { 
 		limit = {
@@ -351,6 +380,15 @@ X_on_province_owner_change_pmod_effect = {
 			has_province_modifier = X_estate_burghers_privilege_1_pmod
 		}
 		remove_province_modifier = X_estate_burghers_privilege_1_pmod
+	}
+	####################
+	# Province Estates
+	####################
+	if = {
+		limit = {
+			X_has_province_estates_pmod_trigger = { where = ROOT }
+		}
+		X_remove_all_province_estates_pmod_effect = yes
 	}
 }
 
@@ -606,6 +644,170 @@ X_RUS_change_isolation_vs_westernization_level_effect = {
 				which = X_RUS_isolation_vs_westernization_localization_variable
 				value = -1
 			}
+		}
+	}
+}
+####################
+# Expand Infrastructure & Province Estates
+####################
+X_province_estates_on_religion_change_effect = { 
+	if = {
+		limit = {
+			any_owned_province = {
+				has_province_modifier = X_estate_dhimmi_province_control_pmod
+				religion_group = muslim
+			}
+		}
+		every_owned_province = {
+			limit = { has_province_modifier = X_estate_dhimmi_province_control_pmod }
+			remove_province_modifier = X_estate_dhimmi_province_control_pmod
+		}
+	}
+}
+
+X_province_estates_on_capital_moved_effect = { 
+	if = {
+		limit = {
+			X_has_province_estates_pmod_trigger = { where = ROOT }
+		}
+		X_remove_all_province_estates_pmod_effect = yes
+	}
+}
+
+X_province_estates_on_development_effect = {
+	[[development]
+		if = {
+			limit = { has_province_modifier = X_$estate$_province_control_pmod }
+			owner = {
+				change_estate_land_share = {
+					estate = $estate$
+					share = 0.1
+				}
+			}
+		}
+	]
+	[[exploited]
+		if = {
+			limit = { has_province_modifier = X_$estate$_province_control_pmod }
+			owner = {
+				change_estate_land_share = {
+					estate = $estate$
+					share = -0.1
+				}
+			}
+		}
+	]
+}
+
+X_remove_all_province_estates_pmod_effect = {
+	remove_province_modifier = X_estate_church_province_control_pmod
+	remove_province_modifier = X_estate_burghers_province_control_pmod
+	remove_province_modifier = X_estate_nobles_province_control_pmod
+	remove_province_modifier = X_estate_dhimmi_province_control_pmod
+}
+
+X_province_estates_on_estate_removed_effect = {
+	if = {
+		limit = {
+			any_owned_province = {
+				has_province_modifier = X_$estate$_province_control_pmod
+			}
+			NOT = { has_estate = $estate$ }
+		}
+		every_owned_province = {
+			limit = { has_province_modifier = X_$estate$_province_control_pmod }
+			remove_province_modifier = X_$estate$_province_control_pmod
+		}
+	}
+}
+
+X_province_estates_grant_or_revoke_effect = {
+	if = {
+		limit = { owner = { has_estate = $estate$ } }
+		if = {
+			limit = { NOT = { has_province_modifier = X_$estate$_province_control_pmod } }
+			custom_tooltip = X_province_estates_development_tt
+			while = {
+				limit = {
+					check_variable = {
+						which = X_province_estates_development_variable
+						value = 1
+					}
+				}
+				owner = {
+					change_estate_land_share = {
+						estate = $estate$
+						share = 0.1
+					}
+				}
+				subtract_variable = {
+					which = X_province_estates_development_variable
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = X_province_estates_loyalty_variable
+						value = 1
+					}
+				}
+				owner = {
+					add_estate_loyalty = {
+						estate = $estate$
+						loyalty = 1
+					}
+				}
+				subtract_variable = {
+					which = X_province_estates_loyalty_variable
+					value = 1
+				}
+			}
+			add_province_modifier = {
+				name = X_$estate$_province_control_pmod
+				duration = -1
+			}
+		}
+		else = {
+			limit = { has_province_modifier = X_$estate$_province_control_pmod owner = { has_estate = $estate$ } }
+			custom_tooltip = X_province_estates_development_tt2
+			while = {
+				limit = {
+					check_variable = {
+						which = X_province_estates_development_variable
+						value = 1
+					}
+				}
+				owner = {
+					change_estate_land_share = {
+						estate = $estate$
+						share = -0.1
+					}
+				}
+				subtract_variable = {
+					which = X_province_estates_development_variable
+					value = 1
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = X_province_estates_loyalty_variable
+						value = 1
+					}
+				}
+				owner = {
+					add_estate_loyalty = {
+						estate = $estate$
+						loyalty = -3
+					}
+				}
+				subtract_variable = {
+					which = X_province_estates_loyalty_variable
+					value = 1
+				}
+			}
+			remove_province_modifier = X_$estate$_province_control_pmod
 		}
 	}
 }
@@ -7988,5 +8190,80 @@ X_culture_group_control_effect = {
 				}
 			}
 		}
+	}
+}
+
+X_cultural_unions_effect = {
+	every_country = {
+		limit = { culture_group = tartar ai = no }
+		ROOT = { X_culture_group_control_effect = { group = tartar type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = germanic ai = no }
+		ROOT = { X_culture_group_control_effect = { group = germanic type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = latin ai = no }
+		ROOT = { X_culture_group_control_effect = { group = latin type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = west_slavic ai = no }
+		ROOT = { X_culture_group_control_effect = { group = west_slavic type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = east_slavic ai = no }
+		ROOT = { X_culture_group_control_effect = { group = east_slavic type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = scandinavian ai = no }
+		ROOT = { X_culture_group_control_effect = { group = scandinavian type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = carpathian ai = no }
+		ROOT = { X_culture_group_control_effect = { group = carpathian type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = iberian ai = no }
+		ROOT = { X_culture_group_control_effect = { group = iberian type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = maghrebi ai = no }
+		ROOT = { X_culture_group_control_effect = { group = maghrebi type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = french ai = no }
+		ROOT = { X_culture_group_control_effect = { group = french type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = lowlands ai = no }
+		ROOT = { X_culture_group_control_effect = { group = lowlands type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = british ai = no }
+		ROOT = { X_culture_group_control_effect = { group = british type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = hindusthani ai = no }
+		ROOT = { X_culture_group_control_effect = { group = hindusthani type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = iranian ai = no }
+		ROOT = { X_culture_group_control_effect = { group = iranian type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = turko_semitic ai = no }
+		ROOT = { X_culture_group_control_effect = { group = turko_semitic type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = cushitic ai = no }
+		ROOT = { X_culture_group_control_effect = { group = cushitic type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = southern_african ai = no }
+		ROOT = { X_culture_group_control_effect = { group = southern_african type = development who = PREV } }
+	}
+	every_country = {
+		limit = { culture_group = mande ai = no }
+		ROOT = { X_culture_group_control_effect = { group = mande type = development who = PREV } }
 	}
 }

@@ -315,7 +315,7 @@ X_estate_cossacks_privilege_1 = {
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
-		remove_estate_privilege =X_estate_cossacks_privilege_1
+		remove_estate_privilege = X_estate_cossacks_privilege_1
 	}
 }
 
@@ -388,7 +388,7 @@ X_estate_cossacks_privilege_2 = {
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
-		remove_estate_privilege =X_estate_cossacks_privilege_2
+		remove_estate_privilege = X_estate_cossacks_privilege_2
 	}
 }
 

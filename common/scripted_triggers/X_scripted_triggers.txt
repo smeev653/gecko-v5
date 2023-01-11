@@ -149,6 +149,45 @@ X_RUS_has_isolation_vs_westernization_modifier_trigger = {
 	}
 }
 ####################
+# Province Estates & Expand Infrastructure
+####################
+X_has_expand_infrastructure_pmod_trigger = {
+	OR = {
+		has_province_modifier = X_expand_infrastructure_tier_1_pmod
+		has_province_modifier = X_expand_infrastructure_tier_2_pmod
+		has_province_modifier = X_expand_infrastructure_tier_3_pmod
+		has_province_modifier = X_expand_infrastructure_tier_4_pmod
+		has_province_modifier = X_expand_infrastructure_tier_5_pmod
+		has_province_modifier = X_expand_infrastructure_tier_6_pmod
+		has_province_modifier = X_expand_infrastructure_tier_7_pmod
+		has_province_modifier = X_expand_infrastructure_tier_8_pmod
+		has_province_modifier = X_expand_infrastructure_tier_9_pmod
+		has_province_modifier = X_expand_infrastructure_tier_10_pmod
+	}
+}
+
+X_province_estates_grant_or_revoke_trigger = {
+	owner = {
+		has_estate = $estate$ 
+		check_variable = {
+			which = X_province_estates_crownland_variable
+			which = X_province_estates_development_localization_variable
+		}
+	}
+	NOT = { is_territorial_core = ROOT }
+	is_capital = no
+	is_territory = no
+}
+
+X_has_province_estates_pmod_trigger = {
+	OR = {
+		has_province_modifier = X_estate_church_province_control_pmod
+		has_province_modifier = X_estate_burghers_province_control_pmod
+		has_province_modifier = X_estate_nobles_province_control_pmod
+		has_province_modifier = X_estate_dhimmi_province_control_pmod
+	}
+}
+####################
 # Cultural Unions
 ####################
 X_culture_union_trigger = {

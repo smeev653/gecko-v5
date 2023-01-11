@@ -23,6 +23,139 @@ X_estate_cossacks_privilege_2_pmod = {
 	local_manpower_modifier = -0.15
 }
 ########################################
+# Province Estates Modifiers
+########################################
+X_estate_burghers_province_control_pmod = {
+	trade_goods_size_modifier = 0.1
+	local_center_of_trade_upgrade_cost = -0.1
+	province_trade_power_modifier = 0.25
+}
+X_estate_church_province_control_pmod = {
+	local_tax_modifier = 0.15
+	local_missionary_strength = 0.02
+	local_missionary_maintenance_cost = -0.1
+}
+X_estate_nobles_province_control_pmod = {
+	local_manpower_modifier = 0.25
+	regiment_recruit_speed = -0.1
+	local_fort_maintenance_modifier = -0.15
+}
+X_estate_dhimmi_province_control_pmod = {
+	local_tax_modifier = 0.33
+	local_missionary_strength = -1.00
+	local_religious_unity_contribution = -1.00
+}
+X_expand_infrastructure_tier_1_pmod = {
+	allowed_num_of_buildings = 1
+	allowed_num_of_manufactories = 1
+	local_governing_cost_increase = 5
+	local_governing_cost = 1.0
+	local_manpower_modifier = 0.1
+	local_tax_modifier = 0.1
+	local_production_efficiency = 0.1
+	local_development_cost = -0.05
+	land_forcelimit = 1
+}
+X_expand_infrastructure_tier_2_pmod = {
+	allowed_num_of_buildings = 2
+	allowed_num_of_manufactories = 2
+	local_governing_cost_increase = 10
+	local_governing_cost = 2.0
+	local_manpower_modifier = 0.2
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
+	local_development_cost = -0.10
+	land_forcelimit = 2
+}
+X_expand_infrastructure_tier_3_pmod = {
+	allowed_num_of_buildings = 3
+	allowed_num_of_manufactories = 3
+	local_governing_cost_increase = 15
+	local_governing_cost = 3.0
+	local_manpower_modifier = 0.3
+	local_tax_modifier = 0.3
+	local_production_efficiency = 0.3
+	local_development_cost = -0.15
+	land_forcelimit = 3
+}
+X_expand_infrastructure_tier_4_pmod = {
+	allowed_num_of_buildings = 4
+	allowed_num_of_manufactories = 4
+	local_governing_cost_increase = 20
+	local_governing_cost = 4.0
+	local_manpower_modifier = 0.4
+	local_tax_modifier = 0.4
+	local_production_efficiency = 0.4
+	local_development_cost = -0.20
+	land_forcelimit = 4
+}
+X_expand_infrastructure_tier_5_pmod = {
+	allowed_num_of_buildings = 5
+	allowed_num_of_manufactories = 5
+	local_governing_cost_increase = 25
+	local_governing_cost = 5.0
+	local_manpower_modifier = 0.5
+	local_tax_modifier = 0.5
+	local_production_efficiency = 0.5
+	local_development_cost = -0.25
+	land_forcelimit = 5
+}
+X_expand_infrastructure_tier_6_pmod = {
+	allowed_num_of_buildings = 6
+	allowed_num_of_manufactories = 6
+	local_governing_cost_increase = 30
+	local_governing_cost = 6.0
+	local_manpower_modifier = 0.6
+	local_tax_modifier = 0.6
+	local_production_efficiency = 0.6
+	local_development_cost = -0.30
+	land_forcelimit = 6
+}
+X_expand_infrastructure_tier_7_pmod = {
+	allowed_num_of_buildings = 7
+	allowed_num_of_manufactories = 7
+	local_governing_cost_increase = 35
+	local_governing_cost = 7.0
+	local_manpower_modifier = 0.7
+	local_tax_modifier = 0.7
+	local_production_efficiency = 0.7
+	local_development_cost = -0.35
+	land_forcelimit = 7
+}
+X_expand_infrastructure_tier_8_pmod = {
+	allowed_num_of_buildings = 8
+	allowed_num_of_manufactories = 8
+	local_governing_cost_increase = 40
+	local_governing_cost = 8.0
+	local_manpower_modifier = 0.8
+	local_tax_modifier = 0.8
+	local_production_efficiency = 0.8
+	local_development_cost = -0.40
+	land_forcelimit = 8
+}
+X_expand_infrastructure_tier_9_pmod = {
+	allowed_num_of_buildings = 9
+	allowed_num_of_manufactories = 9
+	local_governing_cost_increase = 45
+	local_governing_cost = 9.0
+	local_manpower_modifier = 0.9
+	local_tax_modifier = 0.9
+	local_production_efficiency = 0.9
+	local_development_cost = -0.45
+	land_forcelimit = 9
+}
+X_expand_infrastructure_tier_10_pmod = {
+	allowed_num_of_buildings = 10
+	allowed_num_of_manufactories = 10
+	local_governing_cost_increase = 50
+	local_governing_cost = 10.0
+	local_manpower_modifier = 1.0
+	local_tax_modifier = 1.0
+	local_production_efficiency = 1.0
+	local_development_cost = -0.50
+	land_forcelimit = 10
+}
+########################################
 # Modifiers for Venice
 ########################################
 X_VEN_monopolio_adriatico_pmod = {

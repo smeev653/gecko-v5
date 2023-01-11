@@ -1,4 +1,563 @@
 ########################################
+# Expand Infrastructure & Province Estates Events
+########################################
+namespace = X_pe_and_ei_events
+
+country_event = {
+	id = X_pe_and_ei_events.1
+	title = X_pe_and_ei_events.1.t
+	desc = X_pe_and_ei_events.1.d1
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = X_in_pe_and_ei_event_1_cflag }
+	}
+	immediate = {
+		hidden_effect = { set_country_flag = X_in_pe_and_ei_event_1_cflag }
+	}
+	option = {
+		name = X_pe_and_ei_events.1.a
+		hidden_effect = { FROM = { province_event = { id = X_pe_and_ei_events.2 } } }
+	}
+	option = {
+		name = X_pe_and_ei_events.1.b
+		hidden_effect = { FROM = { province_event = { id = X_pe_and_ei_events.3 } } }
+	}
+	option = {
+		name = X_pe_and_ei_events.1.c
+	}
+	after = {
+		clr_country_flag = X_in_pe_and_ei_event_1_cflag
+	}
+}
+
+#Control of [Root.GetName]
+province_event = {
+	id = X_pe_and_ei_events.2
+	title = X_pe_and_ei_events.2.t
+	desc = {
+		trigger = { is_capital = yes }
+		desc = X_pe_and_ei_events.2.d2
+	}
+	desc = {
+		trigger = { is_territory = yes }
+		desc = X_pe_and_ei_events.2.d3
+	}
+	desc = {
+		trigger = { is_territorial_core = ROOT }
+		desc = X_pe_and_ei_events.2.d4
+	}
+	desc = {
+		trigger = {
+			owner = {
+				check_variable = {
+					which = X_province_estates_development_localization_variable
+					which = X_province_estates_crownland_variable
+				}
+			}
+		}
+		desc = X_pe_and_ei_events.2.d5
+	}
+	desc = {
+		trigger = { always = yes }
+		desc = X_pe_and_ei_events.2.d1
+	}
+	picture = NOBLE_ESTATE_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = X_in_pe_and_ei_event_3_cflag }
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			owner = {
+				set_country_flag = X_in_pe_and_ei_event_3_cflag
+				set_variable = {
+					which = X_province_estates_crownland_variable
+					value = 0
+				}
+				export_to_variable = {
+					which = X_province_estates_crownland_variable
+					value = trigger_value:crown_land_share
+				}
+				set_variable = {
+					which = X_province_estates_development_variable
+					value = 0
+				}
+				PREV = {
+					export_to_variable = {
+						variable_name = X_province_estates_development_variable
+						value = development
+					}
+					PREV = {
+						set_variable = {
+							which = X_province_estates_development_variable
+							which = PREV
+						}
+					}
+					set_variable = {
+						which = X_province_estates_development_localization_variable
+						which = X_province_estates_development_variable
+					}
+					divide_variable = {
+						which = X_province_estates_development_localization_variable
+						value = 10
+					}
+					PREV = {
+						set_variable = {
+							which = X_province_estates_development_localization_variable
+							which = PREV
+						}
+					}
+					set_variable = {
+						which = X_province_estates_loyalty_variable
+						which = X_province_estates_development_variable
+					}
+					divide_variable = {            
+						which = X_province_estates_loyalty_variable
+						value = 10
+					}
+					set_variable = {
+						which = X_province_estates_loyalty_localization_variable
+						which = X_province_estates_loyalty_variable
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = X_province_estates_loyalty_localization_variable
+								value = 1
+							}
+						}
+						subtract_variable = {
+							which = X_province_estates_loyalty_localization_variable
+							value = 1
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								is_variable_equal = {
+									which = X_province_estates_loyalty_localization_variable
+									value = 0
+								}
+							}
+							check_variable = {
+								which = X_province_estates_loyalty_localization_variable
+								value = 0
+							}
+							NOT = { 
+								check_variable = {
+									which = X_province_estates_loyalty_localization_variable
+									value = 1
+								}
+							}
+						}
+						set_variable = {
+							which = X_province_estates_loyalty_float_variable
+							value = 1
+						}
+						subtract_variable = {
+							which = X_province_estates_loyalty_float_variable
+							which = X_province_estates_loyalty_localization_variable
+						}
+					}
+					change_variable = {
+						which = X_province_estates_loyalty_variable
+						which = X_province_estates_loyalty_float_variable
+					}
+					set_variable = {
+						which = X_province_estates_disloyalty_localization_variable
+						which = X_province_estates_loyalty_variable
+					}
+					multiply_variable = {
+						which = X_province_estates_disloyalty_localization_variable
+						value = 3
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = X_pe_and_ei_events.2.a
+		trigger = {
+			X_province_estates_grant_or_revoke_trigger = { estate = estate_church }
+			NOT = { has_province_modifier = X_estate_burghers_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_nobles_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_dhimmi_province_control_pmod }
+		}
+		X_province_estates_grant_or_revoke_effect = { estate = estate_church }
+	}
+	option = {
+		name = X_pe_and_ei_events.2.b
+		trigger = {
+			X_province_estates_grant_or_revoke_trigger = { estate = estate_burghers }
+			OR = {
+				province_trade_power = 5
+				development = 10
+				province_has_center_of_trade_of_level = 1
+			}
+			NOT = { has_province_modifier = X_estate_church_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_nobles_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_dhimmi_province_control_pmod }
+		}
+		X_province_estates_grant_or_revoke_effect = { estate = estate_burghers }
+	}
+	option = {
+		name = X_pe_and_ei_events.2.c
+		trigger = {
+			X_province_estates_grant_or_revoke_trigger = { estate = estate_nobles }
+			NOT = { has_province_modifier = X_estate_church_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_burghers_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_dhimmi_province_control_pmod }
+		}
+		X_province_estates_grant_or_revoke_effect = { estate = estate_nobles }
+	}
+	option = {
+		name = X_pe_and_ei_events.2.d
+		trigger = {
+			X_province_estates_grant_or_revoke_trigger = { estate = estate_dhimmi }
+			NOT = { has_province_modifier = X_estate_church_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_burghers_province_control_pmod }
+			NOT = { has_province_modifier = X_estate_nobles_province_control_pmod }
+			NOT = { religion_group = muslim }
+		}
+		X_province_estates_grant_or_revoke_effect = { estate = estate_dhimmi }
+	}
+	option = {
+		name = X_pe_and_ei_events.2.s
+		hidden_effect = { FROM = { country_event = { id = X_pe_and_ei_events.1 } } } 
+	}
+	after = {
+		owner = {
+			clr_country_flag = X_in_pe_and_ei_event_3_cflag
+		}
+	}
+}
+
+province_event = {
+	id = X_pe_and_ei_events.3
+	title = X_pe_and_ei_events.3.t
+	desc = {
+		trigger = { always = yes }
+		desc = X_pe_and_ei_events.3.d1
+	}
+	picture = CITY_DEVELOPMENT_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		owner = { NOT = { has_country_flag = X_in_pe_and_ei_event_3_cflag } }
+	}
+	immediate = {
+		hidden_effect = { 
+			owner = { set_country_flag = X_in_pe_and_ei_event_3_cflag }
+		}
+	}
+	option = {
+		name = X_pe_and_ei_events.3.a
+		trigger = {
+			owner = { adm_power = 30 }
+			development = 10
+			OR = {
+				AND = {
+					development = 10
+					NOT = { development = 20 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_1_pmod }
+				}
+				AND = {
+					development = 20
+					NOT = { development = 30 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_2_pmod }
+				}
+				AND = {
+					development = 30
+					NOT = { development = 40 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_3_pmod }
+				}
+				AND = {
+					development = 40
+					NOT = { development = 50 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_4_pmod }
+				}
+				AND = {
+					development = 50
+					NOT = { development = 60 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+				}
+				AND = {
+					development = 60
+					NOT = { development = 70 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+				}
+				AND = {
+					development = 70
+					NOT = { development = 80 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+				}
+				AND = {
+					development = 80
+					NOT = { development = 90 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+				}
+				AND = {
+					development = 90
+					NOT = { development = 100 }
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+				}
+				AND = {
+					development = 100
+					NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+				}
+			}
+		}
+		owner = { add_adm_power = -30 }
+		if = {
+			limit = {
+				development = 10
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_1_pmod }
+			}
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_1_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 20
+				has_province_modifier = X_expand_infrastructure_tier_1_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_2_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_1_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_2_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 30
+				has_province_modifier = X_expand_infrastructure_tier_2_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_3_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_2_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_3_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 40
+				has_province_modifier = X_expand_infrastructure_tier_3_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_4_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_3_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_4_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 50
+				has_province_modifier = X_expand_infrastructure_tier_4_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_4_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_5_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 60
+				has_province_modifier = X_expand_infrastructure_tier_5_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_5_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_6_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 70
+				has_province_modifier = X_expand_infrastructure_tier_6_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_6_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_7_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 80
+				has_province_modifier = X_expand_infrastructure_tier_7_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_7_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_8_pmod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				development = 90
+				has_province_modifier = X_expand_infrastructure_tier_8_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_8_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_9_pmod
+				duration = -1
+			}
+		}
+		else = {
+			limit = {
+				development = 100
+				has_province_modifier = X_expand_infrastructure_tier_9_pmod
+				NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+			}
+			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_9_pmod }
+			add_province_modifier = {
+				name = X_expand_infrastructure_tier_10_pmod
+				duration = -1
+			}
+		}
+	}
+	option = {
+		trigger = {
+			X_has_expand_infrastructure_pmod_trigger = yes
+		}
+		name = X_pe_and_ei_events.3.b
+		if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_1_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_1_pmod
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_2_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_2_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_1_pmod
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_3_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_3_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_2_pmod
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_4_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_4_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_3_pmod
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_5_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_5_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_4_pmod
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_6_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_6_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_5_pmod
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_7_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_7_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_6_pmod
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_8_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_8_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_7_pmod
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_9_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_9_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_8_pmod
+					duration = -1
+				}
+			}
+		}
+		else = {
+			limit = {
+				has_province_modifier = X_expand_infrastructure_tier_10_pmod
+			}
+			remove_province_modifier = X_expand_infrastructure_tier_10_pmod
+			hidden_effect = {
+				add_province_modifier = {
+					name = X_expand_infrastructure_tier_9_pmod
+					duration = -1
+				}
+			}
+		}
+	}
+	option = {
+		name = X_pe_and_ei_events.3.c
+		hidden_effect = { FROM = { country_event = { id = X_pe_and_ei_events.1 } } } 
+	}
+	after = {
+		owner = { clr_country_flag = X_in_pe_and_ei_event_3_cflag }
+	}
+}
+########################################
 # Estate Events
 ########################################
 namespace = X_estate_events
