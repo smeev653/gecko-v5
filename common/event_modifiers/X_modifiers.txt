@@ -42,8 +42,8 @@ X_estate_nobles_province_control_pmod = {
 }
 X_estate_dhimmi_province_control_pmod = {
 	local_tax_modifier = 0.33
-	local_missionary_strength = -1.00
-	local_religious_unity_contribution = -1.00
+	local_governing_cost = -0.25
+	religion = yes
 }
 X_expand_infrastructure_tier_1_pmod = {
 	allowed_num_of_buildings = 1
