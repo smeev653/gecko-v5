@@ -160,9 +160,6 @@ on_religion_change = {
 			remove_province_modifier = son_fetishism_as_secondary_religion_province
 		}
 	}
-	###X###
-	X_on_religion_change_effect = yes
-	#######
 	events = {
 		muslim_school_events.20 #Pick School
 		propagate_religion_events.7 #Propagated Country is now Muslim
@@ -3784,9 +3781,6 @@ on_province_religion_converted = {
 		remove_province_modifier = son_fetishism_as_secondary_religion_province
 	}
 	judaism_on_province_change_religion_or_change_owner_effect = yes
-	###X###
-	X_on_province_religion_converted_effect = yes
-	#######
 }
 
 # province
