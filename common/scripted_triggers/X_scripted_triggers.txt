@@ -178,21 +178,17 @@ X_has_province_estates_pmod_trigger = {
 X_province_estates_grant_or_revoke_trigger = {
 	if = {
 		limit = {
-			owner = {
-				check_variable = {
-					which = X_province_estates_development_localization_variable
-					which = X_province_estates_crownland_variable
-				}
+			check_variable = {
+				which = X_province_estates_crownland_cost_variable
+				which = X_province_estates_crownland_variable
 			}
 		}
 		X_has_province_estates_pmod_trigger = yes
 	}
 	else = {
-		owner = {
-			check_variable = {
-				which = X_province_estates_crownland_variable
-				which = X_province_estates_development_localization_variable
-			}
+		check_variable = {
+			which = X_province_estates_crownland_variable
+			which = X_province_estates_crownland_cost_variable
 		}
 	}
 	owner = { has_estate = $estate$ }

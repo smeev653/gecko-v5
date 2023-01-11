@@ -49,11 +49,9 @@ province_event = {
 	}
 	desc = {
 		trigger = {
-			owner = {
-				check_variable = {
-					which = X_province_estates_development_localization_variable
-					which = X_province_estates_crownland_variable
-				}
+			check_variable = {
+				which = X_province_estates_crownland_cost_variable
+				which = X_province_estates_crownland_variable
 			}
 			X_has_province_estates_pmod_trigger = no
 		}
@@ -66,116 +64,164 @@ province_event = {
 	picture = NOBLE_ESTATE_eventPicture
 	is_triggered_only = yes
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = X_in_pe_and_ei_event_3_cflag }
-		}
+		FROM = { NOT = { has_country_flag = X_in_pe_and_ei_event_3_cflag } }
 	}
 	immediate = {
 		hidden_effect = {
-			owner = {
-				set_country_flag = X_in_pe_and_ei_event_3_cflag
-				set_variable = {
-					which = X_province_estates_crownland_variable
-					value = 0
-				}
-				export_to_variable = {
-					which = X_province_estates_crownland_variable
-					value = trigger_value:crown_land_share
-				}
-				set_variable = {
-					which = X_province_estates_development_variable
-					value = 0
-				}
-				PREV = {
-					export_to_variable = {
-						variable_name = X_province_estates_development_variable
-						value = development
-					}
-					PREV = {
-						set_variable = {
-							which = X_province_estates_development_variable
-							which = PREV
-						}
-					}
-					set_variable = {
-						which = X_province_estates_development_localization_variable
-						which = X_province_estates_development_variable
-					}
-					divide_variable = {
-						which = X_province_estates_development_localization_variable
-						value = 10
-					}
-					PREV = {
-						set_variable = {
-							which = X_province_estates_development_localization_variable
-							which = PREV
-						}
-					}
-					set_variable = {
-						which = X_province_estates_loyalty_variable
-						which = X_province_estates_development_variable
-					}
-					divide_variable = {            
-						which = X_province_estates_loyalty_variable
-						value = 10
-					}
-					set_variable = {
+			FROM = { set_country_flag = X_in_pe_and_ei_event_3_cflag }
+			set_variable = {
+				which = X_province_estates_crownland_variable
+				value = 0
+			}
+			export_to_variable = {
+				which = X_province_estates_crownland_variable
+				value = trigger_value:crown_land_share
+				who = FROM
+			}
+			set_variable = {
+				which = X_province_estates_num_of_provs_variable
+				value = 0
+			}
+			export_to_variable = {
+				which = X_province_estates_num_of_provs_variable
+				value = trigger_value:num_of_provinces_in_states 
+				who = FROM
+			}
+			set_variable = {
+				which = X_province_estates_num_of_provs_variable
+				value = 0
+			}
+			export_to_variable = {
+				which = X_province_estates_local_autonomy_variable
+				value = trigger_value:local_autonomy_above_min 
+				who = ROOT
+			}
+			set_variable = {
+				which = X_province_estates_average_autonomy_variable
+				value = 0
+			}
+			export_to_variable = {
+				which = X_province_estates_average_autonomy_variable
+				value = trigger_value:average_home_autonomy 
+				who = FROM
+			}
+			set_variable = {
+				which = X_province_estates_total_development_variable
+				value = 0
+			}
+			export_to_variable = {
+				which = X_province_estates_total_development_variable
+				value = total_development
+				who = FROM
+			}
+			set_variable = {
+				which = X_province_estates_development_variable
+				value = 0
+			}
+			export_to_variable = {
+				variable_name = X_province_estates_development_variable
+				value = development
+				who = ROOT
+			}
+			subtract_variable = {
+				which = X_province_estates_average_autonomy_variable
+				value = 100
+			}
+			multiply_variable = {
+				which = X_province_estates_average_autonomy_variable
+				value = -0.01
+			}
+			subtract_variable = {
+				which = X_province_estates_local_autonomy_variable
+				value = 100
+			}
+			multiply_variable = {
+				which = X_province_estates_local_autonomy_variable
+				value = -0.01
+			}
+			multiply_variable = {
+				which = X_province_estates_total_development_variable
+				which = X_province_estates_average_autonomy_variable
+			}
+			multiply_variable = {
+				which = X_province_estates_development_variable
+				which = X_province_estates_local_autonomy_variable
+			}
+			set_variable = {
+				which = X_province_estates_crownland_cost_variable
+				which = X_province_estates_development_variable
+			}
+			divide_variable = {
+				which = X_province_estates_crownland_cost_variable
+				which = X_province_estates_total_development_variable
+			}
+			multiply_variable = { #Turns CL cost into % form for development of province / total development of nation
+				which = X_province_estates_crownland_cost_variable
+				value = 100
+			}
+			divide_variable = { #Scale
+				which = X_province_estates_crownland_cost_variable
+				value = 2
+			}
+			set_variable = {
+				which = X_province_estates_loyalty_variable
+				which = X_province_estates_crownland_cost_variable
+			}
+			set_variable = {
+				which = X_province_estates_loyalty_localization_variable
+				which = X_province_estates_loyalty_variable
+			}
+			while = {
+				limit = {
+					check_variable = {
 						which = X_province_estates_loyalty_localization_variable
-						which = X_province_estates_loyalty_variable
-					}
-					while = {
-						limit = {
-							check_variable = {
-								which = X_province_estates_loyalty_localization_variable
-								value = 1
-							}
-						}
-						subtract_variable = {
-							which = X_province_estates_loyalty_localization_variable
-							value = 1
-						}
-					}
-					if = {
-						limit = {
-							NOT = {
-								is_variable_equal = {
-									which = X_province_estates_loyalty_localization_variable
-									value = 0
-								}
-							}
-							check_variable = {
-								which = X_province_estates_loyalty_localization_variable
-								value = 0
-							}
-							NOT = { 
-								check_variable = {
-									which = X_province_estates_loyalty_localization_variable
-									value = 1
-								}
-							}
-						}
-						set_variable = {
-							which = X_province_estates_loyalty_float_variable
-							value = 1
-						}
-						subtract_variable = {
-							which = X_province_estates_loyalty_float_variable
-							which = X_province_estates_loyalty_localization_variable
-						}
-					}
-					change_variable = {
-						which = X_province_estates_loyalty_variable
-						which = X_province_estates_loyalty_float_variable
-					}
-					set_variable = {
-						which = X_province_estates_disloyalty_localization_variable
-						which = X_province_estates_loyalty_variable
-					}
-					multiply_variable = {
-						which = X_province_estates_disloyalty_localization_variable
-						value = 3
+						value = 1
 					}
 				}
+				subtract_variable = {
+					which = X_province_estates_loyalty_localization_variable
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_variable_equal = {
+							which = X_province_estates_loyalty_localization_variable
+							value = 0
+						}
+					}
+					check_variable = {
+						which = X_province_estates_loyalty_localization_variable
+						value = 0
+					}
+					NOT = { 
+						check_variable = {
+							which = X_province_estates_loyalty_localization_variable
+							value = 1
+						}
+					}
+				}
+				set_variable = {
+					which = X_province_estates_loyalty_float_variable
+					value = 1
+				}
+				subtract_variable = {
+					which = X_province_estates_loyalty_float_variable
+					which = X_province_estates_loyalty_localization_variable
+				}
+			}
+			change_variable = {
+				which = X_province_estates_loyalty_variable
+				which = X_province_estates_loyalty_float_variable
+			}
+			set_variable = {
+				which = X_province_estates_disloyalty_localization_variable
+				which = X_province_estates_loyalty_variable
+			}
+			multiply_variable = {
+				which = X_province_estates_disloyalty_localization_variable
+				value = 3
 			}
 		}
 	}
@@ -230,7 +276,7 @@ province_event = {
 		hidden_effect = { FROM = { country_event = { id = X_pe_and_ei_events.1 } } } 
 	}
 	after = {
-		owner = {
+		FROM = {
 			clr_country_flag = X_in_pe_and_ei_event_3_cflag
 		}
 	}

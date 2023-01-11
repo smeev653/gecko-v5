@@ -712,19 +712,19 @@ X_province_estates_grant_or_revoke_effect = {
 			while = {
 				limit = {
 					check_variable = {
-						which = X_province_estates_development_variable
-						value = 1
+						which = X_province_estates_crownland_cost_variable
+						value = 0.001
 					}
 				}
 				owner = {
 					change_estate_land_share = {
 						estate = $estate$
-						share = 0.1
+						share = 0.001
 					}
 				}
 				subtract_variable = {
-					which = X_province_estates_development_variable
-					value = 1
+					which = X_province_estates_crownland_cost_variable
+					value = 0.001
 				}
 			}
 			while = {
@@ -756,19 +756,19 @@ X_province_estates_grant_or_revoke_effect = {
 			while = {
 				limit = {
 					check_variable = {
-						which = X_province_estates_development_variable
-						value = 1
+						which = X_province_estates_crownland_cost_variable
+						value = 0.001
 					}
 				}
 				owner = {
 					change_estate_land_share = {
 						estate = $estate$
-						share = -0.1
+						share = -0.001
 					}
 				}
 				subtract_variable = {
-					which = X_province_estates_development_variable
-					value = 1
+					which = X_province_estates_crownland_cost_variable
+					value = 0.001
 				}
 			}
 			while = {

@@ -649,7 +649,7 @@
  X_pe_and_ei_events.2.d2:0 "You cannot grant an estate control of your capital."
  X_pe_and_ei_events.2.d3:0 "You cannot grant an estate control of a territory."
  X_pe_and_ei_events.2.d4:0 "You cannot grant an estate control of a territorial core."
- X_pe_and_ei_events.2.d5:0 "You cannot grant an estate control of [Root.GetName] due to the following reasons:\nNot enough Crownland (Current amount: [From.From.From.X_province_estates_crownland_variable.GetValue]%) (Needed: [From.From.X_province_estates_development_localization_variable.GetValue]%)"
+ X_pe_and_ei_events.2.d5:0 "You cannot grant an estate control of [Root.GetName] due to the following reasons:\nNot enough Crownland (Current amount: [Root.X_province_estates_crownland_variable.GetValue]%) (Needed: [Root.X_province_estates_crownland_cost_variable.GetValue]%)"
  X_pe_and_ei_events.2.a:0 "[GetXProvinceEstatesGrantOrRevoke] the $ESTATE_CHURCH$ control of [Root.GetName]"
  X_pe_and_ei_events.2.b:0 "[GetXProvinceEstatesGrantOrRevoke] the $ESTATE_BURGHERS$ control of [Root.GetName]"
  X_pe_and_ei_events.2.c:0 "[GetXProvinceEstatesGrantOrRevoke] the $ESTATE_NOBLES$ control of [Root.GetName]"
@@ -724,8 +724,8 @@
  X_expand_infrastructure_tier_10_pmod:0 "Expand Infrastructure: Level 10"
  desc_X_expand_infrastructure_tier_10_pmod:0 ""
  #Tooltips
- X_province_estates_development_tt:0 "The land controlled by this estate changes: §Y+[Root.X_province_estates_development_localization_variable.GetValue]%§!\nThis estate will gain §G[Root.X_province_estates_loyalty_variable.GetValue]§! loyalty."
- X_province_estates_development_tt2:0 "The land controlled by this estate changes: §Y-[Root.X_province_estates_development_localization_variable.GetValue]%§!\nThis estate will lose §R[Root.X_province_estates_disloyalty_localization_variable.GetValue]§! loyalty."
+ X_province_estates_development_tt:0 "[Root.X_province_estates_average_autonomy_variable.GetValue] The land controlled by this estate changes: §Y+[Root.X_province_estates_crownland_cost_variable.GetValue]%§!\nThis estate will gain §G[Root.X_province_estates_loyalty_variable.GetValue]§! loyalty."
+ X_province_estates_development_tt2:0 "The land controlled by this estate changes: §Y-[Root.X_province_estates_crownland_cost_variable.GetValue]%§!\nThis estate will lose §R[Root.X_province_estates_disloyalty_localization_variable.GetValue]§! loyalty."
  ####################
  # Tiered Modifiers
  ####################
