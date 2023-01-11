@@ -9,21 +9,6 @@ national_focus = MIL
 add_accepted_culture = normand
 
 
-change_estate_land_share = {
-	estate = estate_church
-	share = -10
-}
-change_estate_land_share = {
-	estate = estate_burghers
-	share = -10
-}
-
-#1422.8.31 = { #Succession
-
-change_estate_land_share = { #compensates for lack of nobles, distributes 20 between the remaining estates
-	estate = all
-	share = 20
-}
 
 
 1429.11.6 = { #Coronation

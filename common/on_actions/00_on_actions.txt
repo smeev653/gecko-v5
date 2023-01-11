@@ -12,9 +12,15 @@ on_startup = {
 		gecko.49
 		PR_events.1
 	}
+	if = {
+		limit = {
+			ai = no
+			NOT = { has_country_flag = start_estates_setup }
+		}
+		country_event = { id = gecko.50 }
+	}
 	gecko_merc_count = yes
-	gecko_mercs = yes
-				
+	gecko_mercs = yes			
 	subject_warscore = yes
 	###X###
 	every_province = {

@@ -1,6 +1,6 @@
 estate_gecko_ethiopia_highlands_and_mountains = {
 	icon = privilege_grant_new_world_charter
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	influence = 0.05
 	loyalty = 0.05

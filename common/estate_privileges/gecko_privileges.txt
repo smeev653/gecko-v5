@@ -235,7 +235,7 @@ estate_gc_priv_5 = {
 
 estate_gc_priv_6 = {
 	icon = privilege_military_power
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = -0.05
 	can_select = {

@@ -111,7 +111,7 @@ estate_cossacks = {
 		influence = -40
 	}
 
-	influence_from_dev_modifier = 2.0
+	influence_from_dev_modifier = 1
 	
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY

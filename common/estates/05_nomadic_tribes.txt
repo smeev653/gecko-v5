@@ -59,7 +59,7 @@ estate_nomadic_tribes = {
 
 	# Influence modifiers
 	base_influence = 15
-	influence_from_dev_modifier = 1.5
+	influence_from_dev_modifier = 1
 
 	privileges = {
 		estate_nomadic_tribes_land_rights

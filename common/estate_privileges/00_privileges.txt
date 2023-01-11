@@ -386,7 +386,7 @@ estate_church_brahmins_at_court = {
 }
 estate_brahmins_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -457,7 +457,7 @@ estate_brahmins_land_rights = {
 
 estate_nobles_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -528,7 +528,7 @@ estate_nobles_land_rights = {
 
 estate_church_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -600,7 +600,7 @@ estate_church_land_rights = {
 
 estate_maratha_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -672,7 +672,7 @@ estate_maratha_land_rights = {
 
 estate_burghers_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -744,7 +744,7 @@ estate_burghers_land_rights = {
 
 estate_vaisyas_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -816,7 +816,7 @@ estate_vaisyas_land_rights = {
 
 estate_cossacks_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -887,7 +887,7 @@ estate_cossacks_land_rights = {
 
 estate_dhimmi_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -959,7 +959,7 @@ estate_dhimmi_land_rights = {
 
 estate_jains_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -1030,7 +1030,7 @@ estate_jains_land_rights = {
 
 estate_rajput_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = 0.05
 	influence = 0.05
@@ -1103,7 +1103,7 @@ estate_rajput_land_rights = {
 
 estate_nobles_nobility_primacy = {
 	icon = privilege_military_power
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = -0.05
 	can_select = {
@@ -1217,7 +1217,7 @@ estate_nobles_officer_corp = {
 estate_nobles_levies = {
 	icon = privilege_demand_more_troops
 	max_absolutism = -5
-	land_share = 5
+	#land_share = 5
 	loyalty = 0.05
 	influence = 0.1
 	cooldown_years = 25
@@ -1413,7 +1413,7 @@ estate_nobles_french_strong_duchies = {
 
 estate_church_religious_state = {
 	icon = privilege_seek_support_of_clergy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = -0.05
 	can_select = {
@@ -1798,7 +1798,7 @@ estate_church_clerical_oversight = {
 
 estate_church_inwards_perfection = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.1
 	influence = 0.05
@@ -1901,7 +1901,7 @@ estate_church_enforced_one_faith = {
 
 estate_burghers_land_of_commerce = {
 	icon = privilege_diplo_power
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = -0.05
 	can_select = {
@@ -2306,7 +2306,7 @@ estate_burghers_free_enterprise = {
 
 PR_estate_clergy_exploration_expedition = {
 	icon = privilege_grant_new_world_charter
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
@@ -2384,7 +2384,7 @@ PR_estate_clergy_exploration_expedition = {
 
 smeev_mountain_dev_cost = {
 	icon = privilege_grant_new_world_charter
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
@@ -2694,7 +2694,7 @@ estate_dhimmi_dhimmi_nobles = {
 
 estate_dhimmi_manpower = {
 	icon = privilege_demand_more_troops
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = -0.05
 	influence = 0.05
@@ -2886,7 +2886,7 @@ estate_dhimmi_guaranteed_autonomy = {
 
 estate_brahmins_brahmin_governance = {
 	icon = privilege_admin_power
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = -0.05
 	is_valid = {
@@ -3524,7 +3524,7 @@ estate_rajput_rajput_regiments = {
 
 estate_rajput_military = {
 	icon = privilege_military_power
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	#loyalty = -0.05
 	is_valid = {
@@ -3684,7 +3684,7 @@ estate_rajput_officer_corp = {
 
 estate_rajput_look_up_purbias = {
 	icon = privilege_promote_purbias
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	influence = 0.05
 	is_valid = {

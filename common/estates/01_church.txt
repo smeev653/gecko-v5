@@ -38,7 +38,7 @@ estate_church =
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		global_missionary_strength = 0.2
+		global_missionary_strength = 0.02
 		papal_influence = 1
 		devotion = 0.5
 		church_power_modifier = 0.1
@@ -46,10 +46,10 @@ estate_church =
 		stability_cost_modifier = -0.1
 	}
 	country_modifier_neutral = {
-		global_missionary_strength = 0.2
+		global_missionary_strength = 0.02
 	}	
 	country_modifier_angry = {
-		global_missionary_strength = -0.1
+		global_missionary_strength = -0.01
 		papal_influence = -1
 		devotion = -0.5
 		church_power_modifier = -0.25
@@ -60,7 +60,7 @@ estate_church =
 
 	land_ownership_modifier = {
 		church_loyalty_modifier = 0.4
-		global_tax_modifier = 0.5
+		global_tax_modifier = 1
 	}
 
 	province_independence_weight = {
@@ -441,5 +441,5 @@ estate_church =
 		estate_church_hire_advisor
 		estate_church_fire_advisor
 	}
-	influence_from_dev_modifier = 1.5
+	influence_from_dev_modifier = 1
 }

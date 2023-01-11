@@ -104,16 +104,6 @@ Timurid_princes_missions_2 = {
 			all_owned_province = { 
 				NOT = { unrest = 0.01 }
 			}
-			OR = {
-				DIP = 4
-				calc_true_if = {
-					all_country = {
-						dynasty = "Timurid"
-						alliance_with = ROOT
-					}
-					amount = 2
-				}
-			}
 		}
 		effect = {
 			add_dip_power = 50

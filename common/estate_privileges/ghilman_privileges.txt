@@ -2,7 +2,7 @@
 
 estate_ghilman_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
@@ -23,7 +23,7 @@ estate_ghilman_land_rights = {
 
 estate_ghilman_military_corps = {
 	icon = privilege_promote_purbias
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.00
 	influence = 0.05
@@ -56,7 +56,7 @@ estate_ghilman_military_corps = {
 
 estate_ghilman_morale = {
 	icon = privilege_promote_purbias
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.00
 	influence = 0.05

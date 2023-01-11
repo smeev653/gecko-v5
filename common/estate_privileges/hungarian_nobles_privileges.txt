@@ -4,7 +4,7 @@ gc_hungarian_nobles_privilege_1 = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.10
-	land_share = 5
+	#land_share = 5
 	is_valid = {
 	}
 	modifier_by_land_ownership = {
@@ -85,7 +85,7 @@ gc_hungarian_nobles_privilege_3 = {
 	icon = privilege_conscript_cossack_elite
 	max_absolutism = -5
 	influence = 0.10
-	land_share = 5
+	#land_share = 5
 	is_valid = {
 	}
 	modifier = {
@@ -175,7 +175,7 @@ gc_hungarian_nobles_privilege_9 = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	land_share = 5
+	#land_share = 5
 	benefits = {
 		governing_capacity = 100
 	}

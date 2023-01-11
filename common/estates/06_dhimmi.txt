@@ -34,19 +34,21 @@ estate_dhimmi = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		technology_cost = -0.05
+		global_tax_modifier = 0.1
 		tolerance_heathen = 2
 	}
 	country_modifier_neutral = {
 		tolerance_heathen = 2
+		global_tax_modifier = 0.1
 	}	
 	country_modifier_angry = {
-		technology_cost = 0.05
+		global_tax_modifier = -0.1
 		tolerance_heathen = -1
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		dhimmi_loyalty_modifier = 0.2
+		dhimmi_loyalty_modifier = 0.4
+		technology_cost = -0.5
 	}
 
 
@@ -86,7 +88,7 @@ estate_dhimmi = {
 		influence = -40
 	}
 
-	influence_from_dev_modifier = 0.5
+	influence_from_dev_modifier = 1
 	
 	#Loyalty Modifiers
 	loyalty_modifier = {

@@ -3709,3 +3709,24 @@ country_event = {
 #		}
 #	}
 }
+
+country_event = {
+    id = gecko.50
+    title = gecko.50.t
+    desc = gecko.50.d
+	picture = COURT_eventPicture
+
+	hidden = yes
+	###X###
+	option = {
+		trigger = {
+			ai = no
+			NOT = { has_country_flag = start_estates_setup }
+		}
+		change_estate_land_share = {
+			estate = all
+			share = 25
+		}
+		set_country_flag = start_estates_setup
+	}
+}

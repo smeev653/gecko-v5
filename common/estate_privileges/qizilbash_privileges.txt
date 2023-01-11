@@ -1,6 +1,6 @@
 estate_qizilbash_land_rights = {
 	icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
@@ -21,7 +21,7 @@ estate_qizilbash_land_rights = {
 
 estate_qizilbash_levies = {
         icon = privilege_demand_more_troops
-		land_share = 5
+		#land_share = 5
         max_absolutism = -5        
         loyalty = -0.05               
         influence  = 0.05            
@@ -88,7 +88,7 @@ estate_qizilbash_levies = {
 
 estate_qizilbash_establish_qurchis = {
 	icon = privilege_promote_maratha_nobility
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.10
 	influence = 0.05
@@ -115,7 +115,7 @@ estate_qizilbash_officer_corps = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.05
-	land_share = 5
+	#land_share = 5
 	is_valid = {
 		has_reform = qizilbash_in_officer_corps_reform
 	}

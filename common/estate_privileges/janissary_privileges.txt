@@ -30,7 +30,7 @@ estate_janissary_phase_base = {
 
 estate_janissary_upgrade_weaponry = {
 	icon = privilege_promote_purbias
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.10
@@ -96,7 +96,7 @@ estate_janissary_reform_the_janissaries = {
 
 estate_janissary_auxiliaries = {
 	icon = privilege_promote_purbias
-	land_share = 5
+	#land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.10

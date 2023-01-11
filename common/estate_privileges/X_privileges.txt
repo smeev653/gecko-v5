@@ -165,7 +165,7 @@ X_RUS_estate_streltsy_privilege_5 = {
 }
 X_RUS_estate_streltsy_privilege_6 = {
     icon = privilege_grant_autonomy
-	land_share = 5
+	#land_share = 5
     loyalty = 0.05         
     influence  = 0.05
 	benefits = { governing_capacity = 100 }
@@ -244,7 +244,7 @@ X_RUS_estate_streltsy_privilege_8 = {
 #####################
 X_estate_cossacks_privilege_1 = {
     icon = privilege_demand_more_troops
-	land_share = 5
+	#land_share = 5
     loyalty = 0.05            
     influence  = 0.1      
 	is_valid = {
