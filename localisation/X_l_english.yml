@@ -724,7 +724,7 @@
  X_expand_infrastructure_tier_10_pmod:0 "Expand Infrastructure: Level 10"
  desc_X_expand_infrastructure_tier_10_pmod:0 ""
  #Tooltips
- X_province_estates_development_tt:0 "[Root.X_province_estates_average_autonomy_variable.GetValue] The land controlled by this estate changes: §Y+[Root.X_province_estates_crownland_cost_variable.GetValue]%§!\nThis estate will gain §G[Root.X_province_estates_loyalty_variable.GetValue]§! loyalty."
+ X_province_estates_development_tt:0 "The land controlled by this estate changes: §Y+[Root.X_province_estates_crownland_cost_variable.GetValue]%§!\nThis estate will gain §G[Root.X_province_estates_loyalty_variable.GetValue]§! loyalty."
  X_province_estates_development_tt2:0 "The land controlled by this estate changes: §Y-[Root.X_province_estates_crownland_cost_variable.GetValue]%§!\nThis estate will lose §R[Root.X_province_estates_disloyalty_localization_variable.GetValue]§! loyalty."
  ####################
  # Tiered Modifiers

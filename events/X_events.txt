@@ -79,16 +79,7 @@ province_event = {
 				who = FROM
 			}
 			set_variable = {
-				which = X_province_estates_num_of_provs_variable
-				value = 0
-			}
-			export_to_variable = {
-				which = X_province_estates_num_of_provs_variable
-				value = trigger_value:num_of_provinces_in_states 
-				who = FROM
-			}
-			set_variable = {
-				which = X_province_estates_num_of_provs_variable
+				which = X_province_estates_local_autonomy_variable
 				value = 0
 			}
 			export_to_variable = {
