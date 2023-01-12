@@ -1200,7 +1200,7 @@ POR_ideas = {
 	land_before_faith = {
 		global_colonial_growth = 15
 		range = 0.5
-		trade_range_modifier = 0.5
+		colonist_placement_chance = 0.15
 	}
 	the_bandeirantes = {
 		land_morale = 0.1

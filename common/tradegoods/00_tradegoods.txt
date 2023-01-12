@@ -259,7 +259,7 @@ cloth = {
 		merc_maintenance_modifier = -0.15
 	}
 	province = {
-		local_development_cost = -0.05
+		local_development_cost = -0.1
 	}
 	chance = {
 		factor = 10
@@ -1181,7 +1181,7 @@ cotton = {
 		global_colonial_growth = 20
 	}
 	province = {
-		local_development_cost = -0.05
+		local_development_cost = -0.1
 	}
 	chance = {
 		factor = 20

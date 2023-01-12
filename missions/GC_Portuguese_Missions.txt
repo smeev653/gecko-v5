@@ -228,9 +228,13 @@ gc_por_1_b = {
 					
 					add_province_modifier = {
 						name = "por_wine_monopolies"
-						duration = 9125
+						duration = 36500
 					}
 				}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}	
 		}
 	}
 	gc_por_trading_houses = {
@@ -407,6 +411,10 @@ gc_por_2 = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
+			}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
 			}
 		}
 	}
