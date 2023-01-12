@@ -3318,8 +3318,8 @@ por_minas_gerais = {
 }
 
 por_wine_monopolies = {
-	trade_value = 5
-	trade_goods_size = 3.0
+	trade_value = 3
+	trade_goods_size = 2
 }
 
 por_houses_of_trade = {

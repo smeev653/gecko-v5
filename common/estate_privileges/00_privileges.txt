@@ -1976,7 +1976,7 @@ estate_burghers_land_of_commerce = {
 	}
 	cooldown_years = 20
 	on_cooldown_expires = { 
-		remove_estate_privilege = estate_burghers_free_enterprise
+		remove_estate_privilege = estate_burghers_land_of_commerce
 	}
 }
 

@@ -223,7 +223,7 @@ estate_gc_priv_5 = {
 	mechanics = {
 	}
 	penalties = {
-		global_colonial_growth = -25
+		global_colonial_growth = -35
 	}
 	benefits = {
 		
