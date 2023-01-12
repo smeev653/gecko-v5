@@ -3718,11 +3718,12 @@ country_event = {
 
 	hidden = yes
 	###X###
+	trigger = {
+		NOT = { is_year = 1445}
+		NOT = { has_country_flag = start_estates_setup }
+		ai = no
+	}
 	option = {
-		trigger = {
-			ai = no
-			NOT = { has_country_flag = start_estates_setup }
-		}
 		change_estate_land_share = {
 			estate = all
 			share = 25
