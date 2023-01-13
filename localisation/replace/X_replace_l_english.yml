@@ -42,6 +42,7 @@
  CELESTIAL_EMPEROR:0 "$EMPERORNAME|Y$ is the Great Khan"
  CELESTIAL_MANDATE:0 "Legacy"
  CELESTIAL_DECREES:0 "Yarlig"
+ CELESTIAL_DECISIONS:0 "Khanate Reforms"
  bg_celestial_emperor:0 "In the year $YEAR$ $MONARCHTITLE$ $MONARCHNAME$ became the Great Khan"
  IS_CELESTIAL_EMPEROR:0 "Is the Great Khan"
  ISNT_CELESTIAL_EMPEROR:0 "Is NOT the Great Khan"
