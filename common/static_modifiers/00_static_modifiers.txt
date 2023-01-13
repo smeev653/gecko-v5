@@ -1458,7 +1458,7 @@ gov_rank_10 = {
 # For autonomy mechanics
 autonomy_increased = {
 	picture="autonomy_increased"
-	local_autonomy = 0.1
+	local_autonomy = 0.05
 }
 
 autonomy_decreased = {

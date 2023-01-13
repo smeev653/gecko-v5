@@ -21,7 +21,6 @@ estate_gc_noble_levies = {
 	}
 	mechanics = {
 		enables_cossack_regiments
-		exempt_from_seize_land
 	}
 	modifier = {
 		special_unit_forcelimit = 0.1

@@ -1157,6 +1157,234 @@ country_decisions = {
 		}
 		
 	}
+	allow_estate_rebalance = {
+		potential = {
+				ai = no
+				is_year = 1450
+				crown_land_share = 25
+				NOT = { has_country_flag = allowed_estate_rebalance }
+			}
+			allow = {
+			}
+			effect = {
+				set_country_flag = allowed_estate_rebalance
+			}
+	}		
+	estate_rebalance_nobles = {	
+		potential = {
+				ai = no
+				NOT = { has_country_modifier = estate_rebalance_nobles }
+				is_year = 1450
+				has_estate = estate_nobles
+				has_country_flag = allowed_estate_rebalance
+			}
+			allow = {
+				crown_land_share = 25
+				years_of_income = 0.5
+				mil_power = 100
+				adm_power = 100
+				dip_power = 100
+				splendor = 100
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			effect = {
+					hidden_effect = {set_estate_privilege = estate_gc_priv_8}
+				add_years_of_income = -0.5
+				add_mil_power = -100
+				add_adm_power = -100
+				add_dip_power = -100
+				add_splendor = -100
+				add_country_modifier = {
+				name = "estate_rebalance_nobles"
+				duration = 5475
+				hidden = yes
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -25
+				}
+				change_estate_land_share = {
+					estate = estate_nobles
+					share = 25
+				}
+				hidden_effect = {remove_estate_privilege = estate_gc_priv_8}
+			}	
+		}
+	estate_rebalance_tribes = {	
+		potential = {
+				ai = no
+				NOT = { has_country_modifier = estate_rebalance_tribes }
+				is_year = 1450
+				has_estate = estate_nomadic_tribes
+				has_country_flag = allowed_estate_rebalance
+			}
+			allow = {
+				crown_land_share = 25
+				years_of_income = 0.5
+				mil_power = 100
+				adm_power = 100
+				dip_power = 100
+				splendor = 100
+				estate_loyalty = {
+					estate = estate_nomadic_tribes
+					loyalty = 60
+				}
+			}
+			effect = {
+				hidden_effect = {set_estate_privilege = estate_gc_priv_8}
+				add_years_of_income = -0.5
+				add_mil_power = -100
+				add_adm_power = -100
+				add_dip_power = -100
+				add_splendor = -100
+				add_country_modifier = {
+				name = "estate_rebalance_tribes"
+				duration = 5475
+				hidden = yes
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -25
+				}
+				change_estate_land_share = {
+					estate = estate_nomadic_tribes
+					share = 25
+				}
+				hidden_effect = {remove_estate_privilege = estate_gc_priv_8}
+			}	
+		}
+	estate_rebalance_church = {	
+		potential = {
+				ai = no
+				NOT = { has_country_modifier = estate_rebalance_church }
+				is_year = 1450
+				has_estate = estate_church
+				has_country_flag = allowed_estate_rebalance
+			}
+			allow = {
+				crown_land_share = 25
+				years_of_income = 0.5
+				mil_power = 100
+				adm_power = 100
+				dip_power = 100
+				splendor = 100
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+			effect = {
+				hidden_effect = {set_estate_privilege = estate_gc_priv_9}
+				add_years_of_income = -0.5
+				add_mil_power = -100
+				add_adm_power = -100
+				add_dip_power = -100
+				add_splendor = -100
+				add_country_modifier = {
+				name = "estate_rebalance_church"
+				duration = 5475
+				hidden = yes
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -25
+				}
+				change_estate_land_share = {
+					estate = estate_church
+					share = 25
+				}
+				hidden_effect = {remove_estate_privilege = estate_gc_priv_9}
+			}	
+		}
+	estate_rebalance_burghers = {	
+		potential = {
+				ai = no
+				NOT = { has_country_modifier = estate_rebalance_burghers}
+				is_year = 1450
+				has_estate = estate_burghers
+				has_country_flag = allowed_estate_rebalance
+			}
+			allow = {
+				crown_land_share = 25
+				years_of_income = 0.5
+				mil_power = 100
+				adm_power = 100
+				dip_power = 100
+				splendor = 100
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+			effect = {
+			hidden_effect = {set_estate_privilege = estate_gc_priv_10}
+				add_years_of_income = -0.5
+				add_mil_power = -100
+				add_adm_power = -100
+				add_dip_power = -100
+				add_splendor = -100
+				add_country_modifier = {
+				name = "estate_rebalance_burghers"
+				duration = 5475
+				hidden = yes
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -25
+				}
+				change_estate_land_share = {
+					estate = estate_burghers
+					share = 25
+				}
+				hidden_effect = {remove_estate_privilege = estate_gc_priv_10}
+			}	
+		}
+	estate_rebalance_dhimmi = {	
+		potential = {
+				ai = no
+				NOT = { has_country_modifier = estate_rebalance_dhimmi}
+				is_year = 1450
+				has_estate = estate_dhimmi
+				has_country_flag = allowed_estate_rebalance
+			}
+			allow = {
+				crown_land_share = 25
+				years_of_income = 0.5
+				mil_power = 100
+				adm_power = 100
+				dip_power = 100
+				splendor = 100
+				estate_loyalty = {
+					estate = estate_dhimmi
+					loyalty = 60
+				}
+			}
+			effect = {
+				hidden_effect = {set_estate_privilege = estate_gc_priv_11}
+				add_years_of_income = -0.5
+				add_mil_power = -100
+				add_adm_power = -100
+				add_dip_power = -100
+				add_splendor = -100
+				add_country_modifier = {
+				name = "estate_rebalance_dhimmi"
+				duration = 5475
+				hidden = yes
+				}
+				change_estate_land_share = {
+					estate = all
+					share = -25
+				}
+				change_estate_land_share = {
+					estate = estate_dhimmi
+					share = 25
+				}
+				hidden_effect = {remove_estate_privilege = estate_gc_priv_11}
+			}	
+		}	
 } #End of the bracket	
 
 

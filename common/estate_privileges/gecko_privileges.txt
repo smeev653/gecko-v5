@@ -19,7 +19,6 @@ estate_gc_sipahi = {
 	}
 	mechanics = {
 		enables_cossack_regiments
-		exempt_from_seize_land
 	}
 
 	modifier = {
@@ -403,5 +402,94 @@ estate_gc_priv_7 = {
 	}
 	ai_will_do = {
 		factor = 1000
+	}
+}
+
+estate_gc_priv_8 = {
+	icon = privilege_devotion_purple
+	#land_share = 5
+	max_absolutism = -5
+	influence = 0.05
+	can_select = {
+		has_estate_privilege = estate_gc_priv_8
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_gc_priv_9 = {
+	icon = privilege_devotion_purple
+	#land_share = 5
+	max_absolutism = -5
+	influence = 0.05
+	can_select = {
+		has_estate_privilege = estate_gc_priv_9
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_gc_priv_10 = {
+	icon = privilege_devotion_purple
+	#land_share = 5
+	max_absolutism = -5
+	influence = 0.05
+	can_select = {
+		has_estate_privilege = estate_gc_priv_10
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_gc_priv_11 = {
+	icon = privilege_devotion_purple
+	#land_share = 5
+	max_absolutism = -5
+	influence = 0.05
+	can_select = {
+		has_estate_privilege = estate_gc_priv_11
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
 	}
 }

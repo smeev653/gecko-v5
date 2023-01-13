@@ -47,7 +47,7 @@ estate_dhimmi = {
 	}
 	land_ownership_modifier = {
 		dhimmi_loyalty_modifier = 0.4
-		monthly_reform_progress_modifier  = 1
+		all_power_cost  = -0.1
 	}
 
 
@@ -128,6 +128,7 @@ estate_dhimmi = {
 		estate_dhimmi_guarantee_of_traditions
 		estate_dhimmi_jewish_community
 		estate_dhimmi_millet_system
+		estate_gc_priv_11
 	}
 
 	agendas = {
