@@ -69,6 +69,9 @@ estate_nomadic_tribes = {
 		estate_nomadic_tribes_primacy_to_the_bannermen
 		estate_nomadic_tribes_share_of_the_spoils #gchorde		
 		estate_gc_noble_levies
+		estate_nobles_better_integration
+		estate_nobles_command_of_the_military
+		estate_nobles_right_of_counsel
 	}
 
 	agendas = {
