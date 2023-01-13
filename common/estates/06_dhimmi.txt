@@ -46,7 +46,7 @@ estate_dhimmi = {
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		dhimmi_loyalty_modifier = 0.4
+		dhimmi_loyalty_modifier = 0.5
 		all_power_cost  = -0.1
 	}
 
