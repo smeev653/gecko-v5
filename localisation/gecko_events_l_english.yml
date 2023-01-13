@@ -115,8 +115,8 @@
  #Estate privs
  gecko.8.t:0 "Nobility Levies"
  gecko.8.d:0 "The levies previously provided by our Nobles have been put to good use. We now have an opportunity to press them for service again, however they will not like it."
- gecko.8.a:0 "Do nothing."
- gecko.8.b:0 "Seize back their influence and press them for levies again."
+ gecko.8.a:0 "Seize back their influence and press them for levies again."
+ gecko.8.b:0 "Do nothing."
 
  #gecko hyw
 

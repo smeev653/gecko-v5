@@ -11,8 +11,6 @@ estate_gc_noble_levies = {
 			NOT = {tag = TUR}
 			NOT = {tag = MAM}
 			NOT = {tag = EGY}
-			NOT = {tag = CRI}
-			NOT = {tag = GLH}
 			NOT = {tag = DLH}
 			NOT = {tag = HIN}
 	}
@@ -23,6 +21,7 @@ estate_gc_noble_levies = {
 	}
 	mechanics = {
 		enables_cossack_regiments
+		exempt_from_seize_land
 	}
 	modifier = {
 		special_unit_forcelimit = 0.1
@@ -35,7 +34,7 @@ estate_gc_noble_levies = {
 			add_unit_construction = {
 			type = cavalry
 			amount = 10
-			speed = 2
+			speed = 0.5
 			cost = 0
 			}
 		}	
@@ -72,6 +71,7 @@ estate_gc_expand_mamluks = {
 	mechanics = {
 		enables_cossack_regiments
 	}
+
 	modifier = {
 		special_unit_forcelimit = 0.1
 		cavalry_cost = -0.1
@@ -81,7 +81,7 @@ estate_gc_expand_mamluks = {
 			add_unit_construction = {
 			type = cavalry
 			amount = 10
-			speed = 2
+			speed = 0.5
 			cost = 0
 			}
 		}

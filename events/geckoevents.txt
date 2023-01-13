@@ -618,10 +618,10 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = gecko.8.a
+		name = gecko.8.b
 	}
 	option = {
-		name = gecko.8.b
+		name = gecko.8.a
 		if = {
 			limit = {
 				has_estate = estate_nomadic_tribes

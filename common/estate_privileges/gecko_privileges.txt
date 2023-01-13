@@ -19,10 +19,9 @@ estate_gc_sipahi = {
 	}
 	mechanics = {
 		enables_cossack_regiments
+		exempt_from_seize_land
 	}
-	#mechanics = {
-	#	exempt_from_seize_land
-	#}
+
 	modifier = {
 		#cavalry_cost = -0.1
 		special_unit_forcelimit = 0.1
@@ -32,7 +31,7 @@ estate_gc_sipahi = {
 			add_unit_construction = {
 			type = cavalry
 			amount = 10
-			speed = 2
+			speed = 0.5
 			cost = 0
 			}
 		}
@@ -72,15 +71,14 @@ estate_gc_expand_sipahi = {
 			add_unit_construction = {
 			type = cavalry
 			amount = 10
-			speed = 2
+			speed = 0.5
 			cost = 0
 			}
 		}
-		#add_country_modifier = {
-		# name = "sipahi_buff"
-		# duration = -1
-		#}
-		
+		add_country_modifier = {
+		 name = "sipahi_buff"
+		 duration = -1
+		}
 	}
 	on_revoked = {
 	}
@@ -315,5 +313,95 @@ estate_gc_priv_6 = {
 	cooldown_years = 20
 	on_cooldown_expires = {
 	remove_estate_privilege = estate_gc_priv_6
+	}
+}
+
+estate_gc_priv_7 = {
+	icon = privilege_demand_more_troops
+	max_absolutism = -5
+	#land_share = 5
+	loyalty = 0.05
+	influence = 0.1
+	cooldown_years = 25
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_gc_priv_7
+	}
+	is_valid = {
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = 50
+		}
+	}
+	on_granted = {
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nomadic_tribes
+							influence = 50
+						}	
+					}
+				}
+				add_yearly_manpower = 1
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nomadic_tribes
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nomadic_tribes
+							influence = 75
+						}	
+					}
+				}
+				add_yearly_manpower = 1.5
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nomadic_tribes
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nomadic_tribes
+							influence = 100
+						}	
+					}
+				}
+				add_yearly_manpower = 2
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nomadic_tribes
+						influence = 100
+					}
+				}
+				add_yearly_manpower = 2.5
+			}	
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -15
+			}
+	}
+	penalties = {
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = free_noble_levies
+		}
+		modifier = {
+			max_absolutism = 5
+			nobles_influence_modifier = -0.1
+		}
+	}
+	ai_will_do = {
+		factor = 1000
 	}
 }
