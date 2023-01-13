@@ -2245,7 +2245,7 @@ estate_burghers_free_enterprise = {
 						}	
 					}
 				}
-				add_years_of_income = 0.25
+				add_years_of_income = 0.125
 			}
 			if = {
 				limit = {
@@ -2260,7 +2260,7 @@ estate_burghers_free_enterprise = {
 						}	
 					}
 				}
-				add_years_of_income = 0.5
+				add_years_of_income = 0.25
 			}
 			if = {
 				limit = {
@@ -2275,7 +2275,7 @@ estate_burghers_free_enterprise = {
 						}	
 					}
 				}
-				add_years_of_income = 0.75
+				add_years_of_income = 0.375
 			}
 			if = {
 				limit = {
@@ -2284,7 +2284,7 @@ estate_burghers_free_enterprise = {
 						influence = 100
 					}
 				}
-				add_years_of_income = 1
+				add_years_of_income = 0.5
 			}	
 		add_estate_loyalty = {
 				estate = estate_burghers
