@@ -501,6 +501,8 @@ estate_gc_priv_12 = {
 	max_absolutism = -5
 	loyalty = 0.05
 	influence = 0.1
+	cooldown_years = 20
+	on_cooldown_expires = {remove_estate_privilege = estate_gc_priv_12}
 	can_select = {
 
 	}
