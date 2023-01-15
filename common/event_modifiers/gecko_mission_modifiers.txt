@@ -23,14 +23,16 @@ hungary_unleashed = {
 	province_warscore_cost = -0.1
 }
 hun_golden_kremnica = {
-	trade_goods_size = 1
+	trade_goods_size = 0.5
 	inflation_reduction = 0.1
+	local_development_cost = -0.15
 }
 
 hun_royal_town = {
 	local_development_cost = -0.15
-	local_build_cost = -0.15
 	province_trade_power_modifier = 0.15
+	trade_value_modifier = 0.2
+	trade_goods_size = 1
 }
 rule_britannia = {
 	prestige = 1

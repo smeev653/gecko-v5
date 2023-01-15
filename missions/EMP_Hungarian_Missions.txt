@@ -286,56 +286,89 @@ gc_hungary_branch_3 = {
 		position = 2
 	
 		trigger = {
+			owns = 154
+			154 = {
+				owned_by = ROOT 
+				OR = {
+					development = 15
+						AND = {
+							OR = {
+								has_building = workshop
+								has_building = counting_house
+							}
+							OR = {
+								has_building = temple
+								has_building = cathedral
+							}
+						}
+				}	
+			}
 			owns = 1772
 			1772 = {
 				owned_by = ROOT 
-				development = 15
 				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
+					development = 15
+						AND = {
+							OR = {
+								has_building = workshop
+								has_building = counting_house
+							}
+							OR = {
+								has_building = temple
+								has_building = cathedral
+							}
+						}
 				}
 			}
 			owns = 1318
 			1318 = {
 				owned_by = ROOT 
-				development = 15
 				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
+					development = 15
+						AND = {
+							OR = {
+								has_building = workshop
+								has_building = counting_house
+							}
+							OR = {
+								has_building = temple
+								has_building = cathedral
+							}
+						}
 				}
 			}
 			owns = 4236
 			4236 = {
 				owned_by = ROOT 
-				development = 15
 				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
+					development = 15
+						AND = {
+							OR = {
+								has_building = workshop
+								has_building = counting_house
+							}
+							OR = {
+								has_building = temple
+								has_building = cathedral
+							}
+						}
 				}
 			}
 			owns = 4128
 			4128 = {
 				owned_by = ROOT 
-				development = 15
 				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
+					development = 15
+						AND = {
+							OR = {
+								has_building = workshop
+								has_building = counting_house
+							}
+							OR = {
+								has_building = temple
+								has_building = cathedral
+							}
+						}
 				}
 			}
 	}
@@ -344,26 +377,33 @@ gc_hungary_branch_3 = {
 	provinces_to_highlight = {
 		OR = {
 		province_id = 4128
-		province_id = 4795
-		province_id = 4794
+		province_id = 4236
+		province_id = 1318
 		province_id = 1772
+		province_id = 154
 		}
 	}
 	
 	effect = {
+			154 = {
+				add_province_modifier = {
+					name = "hun_royal_town"
+					duration = -1
+				}
+			}
 			4128 = {
 				add_province_modifier = {
 					name = "hun_royal_town"
 					duration = -1
 				}
 			}
-			4794 = {
+			4236  = {
 				add_province_modifier = {
 					name = "hun_royal_town"
 					duration = -1
 				}
 			}
-			4795 = {
+			1318 = {
 				add_province_modifier = {
 					name = "hun_royal_town"
 					duration = -1
