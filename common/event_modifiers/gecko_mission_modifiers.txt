@@ -23,7 +23,7 @@ hungary_unleashed = {
 	province_warscore_cost = -0.1
 }
 hun_golden_kremnica = {
-	global_tax_modifier = 0.1
+	trade_goods_size = 1
 	inflation_reduction = 0.1
 }
 

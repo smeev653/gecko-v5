@@ -262,7 +262,7 @@ gc_hungary_branch_3 = {
 		
 		trigger = {
 			154 = {
-				development = 15
+				base_production = 10
 			}
 		}
 		
@@ -271,9 +271,11 @@ gc_hungary_branch_3 = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "hun_golden_kremnica"
-				duration = 9125
+			154 = {
+				add_province_modifier = {
+					name = "hun_golden_kremnica"
+					duration = 9125
+				}
 			}
 		}
 	}
