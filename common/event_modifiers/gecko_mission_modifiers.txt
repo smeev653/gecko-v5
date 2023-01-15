@@ -30,10 +30,10 @@ hun_golden_kremnica = {
 }
 
 hun_royal_town = {
-	local_development_cost = -0.15
+	local_development_cost = -0.20
 	province_trade_power_modifier = 0.15
 	trade_goods_size_modifier = 0.25
-	trade_goods_size = 1
+	trade_goods_size = 0.5
 }
 rule_britannia = {
 	prestige = 1
