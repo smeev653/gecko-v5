@@ -29,6 +29,7 @@ aristocracy_ideas = {
 	noble_knights = {
 		cavalry_power = 0.10
 		cavalry_flanking = 1
+		special_unit_forcelimit = 0.1
 	}
 	noble_resilience = {
 		leader_land_manuever = 2
@@ -39,8 +40,8 @@ aristocracy_ideas = {
 		manpower_in_culture_group_provinces = 0.15
 	}
 	noble_officers = {
-		army_tradition_decay = -0.005
-		navy_tradition_decay = -0.005
+		army_tradition_decay = -0.01
+		navy_tradition_decay = -0.01
 	}
 	ai_will_do = {
 		factor = 5
@@ -819,7 +820,6 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
-		#special_unit_forcelimit = 0.1
 	}
 	garrison_conscription = {
 		free_leader_pool = 5
