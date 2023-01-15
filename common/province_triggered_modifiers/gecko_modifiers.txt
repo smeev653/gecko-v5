@@ -310,19 +310,7 @@ conquest_of_constantinople = {
 			thrace_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-			}
-			NOT = { 	
-					has_global_modifier_value = {
-					which = infantry_power
-					value = 0.33
-					}
-				}
-			NOT = { 	
-					has_global_modifier_value = {
-					which = cavalry_power
-					value = 0.33
-					}
-				}	
+			}	
 		}
 		controlled_by = ROOT
 	}
@@ -424,18 +412,6 @@ conquest_of_cairo = {
 				bahari_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-				}
-				NOT = { 	
-					has_global_modifier_value = {
-					which = infantry_power
-					value = 0.33
-					}
-				}
-				NOT = { 	
-					has_global_modifier_value = {
-					which = cavalry_power
-					value = 0.33
-					}
 				}
 			}
 		controlled_by = ROOT	
@@ -589,18 +565,6 @@ conquest_of_tabriz = {
 		owner = {
 				NOT = { tag = ARL }
 				NOT = { tag = PER }
-				NOT = { 	
-					has_global_modifier_value = {
-					which = infantry_power
-					value = 0.33
-					}
-				}
-				NOT = { 	
-					has_global_modifier_value = {
-					which = cavalry_power
-					value = 0.33
-					}
-				}
 				tabriz_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -742,19 +706,7 @@ conquest_of_herat = {
 				religion = ibadi
 				religion = tengri_pagan_reformed
 			}
-		owner = {
-			NOT = { 	
-					has_global_modifier_value = {
-					which = infantry_power
-					value = 0.33
-					}
-				}
-			NOT = { 	
-					has_global_modifier_value = {
-					which = cavalry_power
-					value = 0.33
-					}
-				}	
+		owner = {	
 			balkh_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
