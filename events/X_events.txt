@@ -146,11 +146,11 @@ province_event = {
 				which = X_province_estates_crownland_cost_variable
 				which = X_province_estates_total_development_variable
 			}
-			multiply_variable = { #Turns CL cost into % form for development of province / total development of nation
+			multiply_variable = { #Turns CL cost into % for development of province / total development of nation
 				which = X_province_estates_crownland_cost_variable
 				value = 100
 			}
-			divide_variable = { #Scale
+			divide_variable = { #Scale (Greater value results in lesser CL cost)
 				which = X_province_estates_crownland_cost_variable
 				value = 2
 			}
