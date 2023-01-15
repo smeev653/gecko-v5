@@ -1496,7 +1496,9 @@ estate_church_independent_inquisition = {
 	max_absolutism = -5
 	influence = 0.15
 	#loyalty = 0.05
-
+	can_select = {
+		NOT = { stability = 3 }
+	}
 	on_granted = {
 		add_stability = 1
 	}
@@ -4009,9 +4011,9 @@ estate_burghers_monopoly_of_textiles = {
 	}
 
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				OR = {
 					trade_goods = cloth
@@ -4092,9 +4094,9 @@ estate_burghers_monopoly_of_dyes = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = dyes
 			}
@@ -4167,9 +4169,9 @@ estate_burghers_monopoly_of_glass = {
 		}
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = glass
 			}
@@ -4245,9 +4247,9 @@ estate_burghers_monopoly_of_paper = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = paper
 			}
@@ -4326,9 +4328,9 @@ estate_vaisyas_monopoly_of_textiles = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				OR = {
 					trade_goods = cloth
@@ -4410,9 +4412,9 @@ estate_vaisyas_monopoly_of_dyes = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = dyes
 			}
@@ -4488,9 +4490,9 @@ estate_vaisyas_monopoly_of_glass = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = glass
 			}
@@ -4566,9 +4568,9 @@ estate_vaisyas_monopoly_of_paper = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = paper
 			}
@@ -4649,9 +4651,9 @@ estate_jains_monopoly_of_textiles = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				OR = {
 					trade_goods = cloth
@@ -4735,9 +4737,9 @@ estate_jains_monopoly_of_dyes = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = dyes
 			}
@@ -4815,9 +4817,9 @@ estate_jains_monopoly_of_glass = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = glass
 			}
@@ -4895,9 +4897,9 @@ estate_jains_monopoly_of_paper = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = paper
 			}
@@ -4976,9 +4978,9 @@ estate_nobles_monopoly_of_metals = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				OR = {
 					trade_goods = iron
@@ -5060,9 +5062,9 @@ estate_nobles_monopoly_of_livestock = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = livestock
 			}
@@ -5137,9 +5139,9 @@ estate_nobles_monopoly_of_gems = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = gems
 			}
@@ -5219,9 +5221,9 @@ estate_rajput_monopoly_of_metals = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				OR = {
 					trade_goods = iron
@@ -5303,9 +5305,9 @@ estate_rajput_monopoly_of_livestock = {
 	can_select = {
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = livestock
 			}
@@ -5382,9 +5384,9 @@ estate_rajput_monopoly_of_gems = {
 
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = gems
 			}
@@ -5464,9 +5466,9 @@ estate_maratha_monopoly_of_metals = {
 	
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				OR = {
 					trade_goods = iron
@@ -5548,9 +5550,9 @@ estate_maratha_monopoly_of_livestock = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = livestock
 			}
@@ -5626,9 +5628,9 @@ estate_maratha_monopoly_of_gems = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = gems
 			}
@@ -5703,9 +5705,9 @@ estate_church_monopoly_of_incense = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = incense
 			}
@@ -5780,9 +5782,9 @@ estate_church_monopoly_of_wool = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = wool
 			}
@@ -5858,9 +5860,9 @@ estate_church_monopoly_of_wine = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = wine
 			}
@@ -5936,9 +5938,9 @@ estate_church_monopoly_of_slaves = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = slaves
 			}
@@ -6014,9 +6016,9 @@ estate_brahmins_monopoly_of_incense = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = incense
 			}
@@ -6092,9 +6094,9 @@ estate_brahmins_monopoly_of_wool = {
 		
 	}
 	on_granted = {
-		add_mercantilism = 1
+		add_mercantilism = 2
 		add_years_of_owned_provinces_production_income = {
-			years = 12
+			years = 13
 			trigger = {
 				trade_goods = wool
 			}
