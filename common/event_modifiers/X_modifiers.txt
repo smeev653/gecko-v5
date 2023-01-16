@@ -234,7 +234,7 @@ X_VEN_mercantile_system_cmod = {
 
 X_VEN_venetokratia_cmod = {
 	tolerance_heretic = 3
-	global_manpower_modifier = 0.1
+	global_manpower_modifier = 0.15
 }
 
 X_VEN_ottomans_defeated_cmod = {
@@ -273,7 +273,7 @@ X_VEN_new_advisement_cmod = {
 }
 
 X_VEN_venetian_marines_cmod = {
-	discipline = 0.05
+	discipline = 0.1
 	is_marine_modifier = yes
 }
 
