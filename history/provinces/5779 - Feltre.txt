@@ -13,7 +13,6 @@ capital = "Feltre"
 is_city = yes # Estimated
 add_core = VEN
 add_core = AQU
-fort_15th = yes
 
 
 

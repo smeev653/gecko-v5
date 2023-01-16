@@ -1087,7 +1087,7 @@ X_VEN_slot_3 = {
 				siege = 2
 			}
 			add_dip_power = -100
-			1303 = {
+			109 = {
 				if = {
 					limit = {
 						NOT = {
@@ -1214,7 +1214,7 @@ X_VEN_slot_3 = {
 						any_trade_node_member_province = {
 							OR = {
 								province_id = 151
-								province_id = 1303
+								province_id = 1308
 							}
 						}
 						sea_zone = {
@@ -1250,7 +1250,7 @@ X_VEN_slot_3 = {
 										country = PREV
 									}
 								}
-								1303 = {
+								1308 = {
 									trade_share = {
 										share = 5
 										country = PREV
@@ -1275,10 +1275,10 @@ X_VEN_slot_3 = {
 					}
 				}
 				AND = {
-					province_id = 1303
+					province_id = 1308
 					ROOT = {
 						NOT = {
-							1303 = {
+							1308 = {
 								trade_share = {
 									country = ROOT
 									share = 40
@@ -1325,7 +1325,7 @@ X_VEN_slot_3 = {
 									country = PREV 
 								}
 							}
-							1303 = {
+							1308 = {
 								trade_share = {
 									share = 5
 									country = PREV 
@@ -1350,7 +1350,7 @@ X_VEN_slot_3 = {
 					any_trade_node_member_province = {
 						OR = {
 							province_id = 151
-							province_id = 1303
+							province_id = 1308
 						}
 					}
 				}
@@ -1362,7 +1362,7 @@ X_VEN_slot_3 = {
 					share = 10
 				}
 			}
-			1303 = {
+			1308 = {
 				trade_share = {
 					country = ROOT
 					share = 40
@@ -1397,7 +1397,7 @@ X_VEN_slot_3 = {
 						add_permanent_claim = ROOT
 					}
 				}
-				1303 = {
+				1308 = {
 					every_trade_node_member_province = {
 						limit = {
 							sea_zone = {
@@ -1436,7 +1436,7 @@ X_VEN_slot_3 = {
 						}
 					}
 				}
-				1303 = {
+				1308 = {
 					every_trade_node_member_province = {
 						limit = { 
 							owned_by = ROOT
@@ -2381,7 +2381,7 @@ X_VEN_slot_5 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 1303
+					province_id = 1308
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -2392,7 +2392,7 @@ X_VEN_slot_5 = {
 			}
 		}
 		trigger = {
-			1303 = {
+			1308 = {
 				trade_share = {
 					country = ROOT
 					share = 25
