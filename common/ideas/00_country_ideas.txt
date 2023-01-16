@@ -1143,44 +1143,41 @@ VRN_ideas = {
 
 VEN_ideas = {
 	start = {
-		trade_efficiency = 0.10
-		land_morale = 0.10
+		shock_damage_received = -0.15
+		allowed_marine_fraction = 0.25
 	}
 	
 	bonus = {
-		naval_morale = 0.10
+		artillery_power = 0.1
 	}
+	
 	trigger = {
 		tag = VEN
 	}
 	free = yes		#will be added at load.
-	
-	DAL_kingdom_of_dalmatia = {
+	defend_the_law = {
 		reform_progress_growth = 0.25
-		development_cost = -0.05
 	}
-	DAL_principalities = {
-		global_foreign_trade_power = 0.15
+	conscription = {
+		global_sailors_modifier = 0.33
 	}
-	DAL_language = {
-		num_accepted_cultures = 2
-	}
-	DAL_independent_army = {
-		infantry_power = 0.10
-	}
-	DAL_art_and_lit = {
-		technology_cost = -0.05
-	}
-	
-	DAL_arsenal = {
+	venetian_arsenal = {
 		galley_power = 0.2
 	}
-	DAL_illyria = {
-		core_creation = -0.15
+	printing_industry = {
+		technology_cost = -0.1
+	}
+	provveditori_ai_beni_inculti = {
+		development_cost = -0.1
+	}
+	stato_da_mar = {
+		trade_efficiency = 0.15
+	}
+	state_inquisition = {
+		all_estate_loyalty_equilibrium = 0.1
+		yearly_corruption = -0.15
 	}
 }
-
-
 
 POR_ideas = {
 	start = {
