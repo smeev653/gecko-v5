@@ -31,9 +31,16 @@ remove_steppe_devcost_ukr = {
 }
 
 develop_adm = {
-	random = {
-		chance = 25
-		add_base_tax = 1
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_gc_priv_12
+			}
+		}
+		random = {
+			chance = 25
+			add_base_tax = 1
+		}
 	}
 }	
 

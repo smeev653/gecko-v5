@@ -3,6 +3,7 @@ gc_growing_economy = {
 	build_time = -0.25
 	great_project_upgrade_cost = -0.25
 	development_cost = -0.05
+	interest = -0.5
 }
 gc_thriving_arms_industry = {
 	land_morale = 0.05
@@ -23,14 +24,16 @@ hungary_unleashed = {
 	province_warscore_cost = -0.1
 }
 hun_golden_kremnica = {
-	global_tax_modifier = 0.1
+	trade_goods_size = 0.5
 	inflation_reduction = 0.1
+	local_development_cost = -0.15
 }
 
 hun_royal_town = {
-	local_development_cost = -0.15
-	local_build_cost = -0.15
+	local_development_cost = -0.20
 	province_trade_power_modifier = 0.15
+	trade_goods_size_modifier = 0.25
+	trade_goods_size = 0.5
 }
 rule_britannia = {
 	prestige = 1
@@ -159,6 +162,7 @@ gc_hun_strong_economy = {
 	build_cost = -0.1
 	great_project_upgrade_cost = -0.25
 	development_cost = -0.05
+	interest = -0.5
 }
 
 gc_bur_realm_united_mod = {
@@ -326,6 +330,7 @@ gc_investment = {
 	build_time = -0.25
 	great_project_upgrade_cost = -0.25
 	development_cost = -0.05
+	interest = -0.5
 }
 
 increased_janissary_recruitment = {

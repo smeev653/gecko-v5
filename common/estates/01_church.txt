@@ -59,7 +59,7 @@ estate_church =
 	}
 
 	land_ownership_modifier = {
-		church_loyalty_modifier = 0.4
+		church_loyalty_modifier = 0.5
 		global_tax_modifier = 1
 	}
 
@@ -387,6 +387,8 @@ estate_church =
 		estate_church_clerical_ministers
 		estate_gc_priv_1
 		estate_gc_priv_2
+		estate_gc_priv_9
+		estate_gc_priv_12
 		estate_church_papal_emissary
 		estate_church_independent_inquisition
 		estate_church_new_world_mission
@@ -418,7 +420,7 @@ estate_church =
 		estate_church_bishopric_of_osel_wiek
 		estate_church_bishopric_of_courland
 		estate_church_bishopric_of_reval
-		estate_gc_priv_9
+
 	}
 
 	agendas = {

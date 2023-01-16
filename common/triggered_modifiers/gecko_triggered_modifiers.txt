@@ -577,7 +577,6 @@ Defense_of_Arabia = {
 
 Defense_of_Europe = {
 	potential = {
-	
 		capital_scope = { continent = europe }
 		ROOT = {
 				ai = no	
@@ -585,23 +584,26 @@ Defense_of_Europe = {
 	}
 
 	trigger = {
-		NOT = {
-			tag = TUR
-		}
-		134 = {
+		OR = {
+			AND = {
+				NOT  = { is_year = 1462}
+				tag = HUN
+			}	
+			134 = {
 				owned_by = TUR
 			}
-		
+		}	
 		is_in_war = {
 			attacker_leader = TUR
 			duration = 30
-		}
+		}	
 		land_maintenance = 1
 		army_size_percentage = 0.65
 	}
-	land_morale = 0.10
-	garrison_size = 0.5
+	land_morale = 0.1
 	global_regiment_cost = -0.1
+	garrison_size = 0.5
+	war_exhaustion = -0.05
 }
 
 Defense_of_the_Rus = {

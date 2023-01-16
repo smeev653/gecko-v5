@@ -41,7 +41,7 @@ estate_burghers = {
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		burghers_loyalty_modifier = 0.4
+		burghers_loyalty_modifier = 0.5
 		trade_efficiency = 0.5
 	}
 	

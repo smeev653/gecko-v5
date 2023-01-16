@@ -29,6 +29,7 @@ aristocracy_ideas = {
 	noble_knights = {
 		cavalry_power = 0.10
 		cavalry_flanking = 1
+		special_unit_forcelimit = 0.1
 	}
 	noble_resilience = {
 		leader_land_manuever = 2
@@ -39,8 +40,8 @@ aristocracy_ideas = {
 		manpower_in_culture_group_provinces = 0.15
 	}
 	noble_officers = {
-		army_tradition_decay = -0.005
-		navy_tradition_decay = -0.005
+		army_tradition_decay = -0.01
+		navy_tradition_decay = -0.01
 	}
 	ai_will_do = {
 		factor = 5
@@ -302,7 +303,7 @@ spy_ideas = {
 	category = DIP
 
 	bonus = {
-		mil_advisor_cost = -0.15
+		may_return_manpower_on_disband = yes
 	}
 
 	efficient_spies = {
@@ -325,7 +326,10 @@ spy_ideas = {
 	claim_fabrication = {
 		global_manpower = 15
 		land_forcelimit = 15
+		global_manpower_modifier = 0.05
+		land_forcelimit_modifier = 0.05
 		special_unit_forcelimit = 0.10
+		amount_of_carolean = 0.25
 	}
 	vetting = {
 		war_taxes_cost_modifier = -1 #If you decide to move the modifier to another (Espionage idea), please do also fix the "WAR TAXES ARE ON" decision
@@ -341,6 +345,7 @@ spy_ideas = {
 	}
 	audit_checks = {
 		reinforce_cost_modifier = -0.15
+		mil_advisor_cost = -0.15
 	}
 
 	ai_will_do = {
@@ -819,7 +824,6 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
-		#special_unit_forcelimit = 0.1
 	}
 	garrison_conscription = {
 		free_leader_pool = 5
@@ -905,7 +909,6 @@ administrative_ideas = {
 	}
 	civil_servants = {
 		reform_progress_growth = 0.25
-		monarch_admin_power = 1
 	}
 	benefits_for_mercenaries = {
 		mercenary_cost = -0.15
@@ -915,6 +918,8 @@ administrative_ideas = {
 	adm_adaptability = {
 		global_manpower = 15
 		land_forcelimit = 15
+		global_manpower_modifier = 0.05
+		land_forcelimit_modifier = 0.05
 	}
 	bookkeeping = {
 		advisor_cost = -0.1

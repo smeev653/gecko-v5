@@ -11,15 +11,15 @@ capital = 192	# Dijon
 
 change_estate_land_share = {
 	estate = estate_nobles
-	share = 15
+	share = -15
 }
 change_estate_land_share = {
 	estate = estate_church
-	share = -10
+	share = -15
 }
 change_estate_land_share = {
 	estate = estate_burghers
-	share = -5
+	share = 30
 }
 
 1363.1.1 = {
