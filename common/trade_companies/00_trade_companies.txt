@@ -354,27 +354,21 @@ trade_company_genua = {
 		115 116 2978 2980 6047 #tuscany_area
 		121 2983 6060 6053 #naples_area
 		118 4731 6052 6051 2976 #lazio_area
-		122 1933 2985 4733 6126 #apulia_area
-		112 1774 4729 5779 6124 #venetia_area
-		4739 107 109 108 #po_valley_area
 		1875 4727 5783 103 #piedmont_area
 		101 102 2992 6046 #liguria_area
 		127 2986 4735 5780 #corsica_sardinia_area
 		124 126 2982 5776 #sicily_area
 		125 4736 4737 5775 6158 #western_sicily_area
-		119 120 6050 2977 6125 #central_italy_area
-		130 4738 5777 111 5778 #carinthia_area
 		5781 1247 5782  #corsica_area
-		106 113 114 4730 6045 #emilia_romagna_area
 		123 1934 2984 5786 #calabria_area
 		5785 2981 6075 2979 4728 #torino_area
 		117 6048 6049 #siena_area
+		211 214 2990 4557 #aragon_area
 		197 212 213 2987 2988 #catalonia_area
 		220 1750 4549 4550 6192 #valencia_area
 		333 4559 4560 #baleares_area
 		200 2753 4391 4695 196 #languedoc_area
 		201 202 2991 4696 #provence_area
-		211 214 2990 4557 #aragon_area
 	}
 	
 	# Specific
@@ -384,6 +378,29 @@ trade_company_genua = {
 	}
 	names = {
 		name = "TRADE_COMPANY_GENUA_European_Trade_Company"
+	}
+}
+
+trade_company_venice = {
+	color = { 54 167 156 }
+	
+	provinces = {
+		4739 107 109 108 #po_valley_area
+		106 113 114 4730 6045 #emilia_romagna_area
+		112 1774 4729 5779 6124 #venetia_area
+		130 4738 5777 111 5778 #carinthia_area
+		119 120 6050 2977 6125 #central_italy_area
+		136 137 4753 4754 #east_adriatic_coast_area
+		122 1933 2985 4733 6126 #apulia_area
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_VENICE_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_VENICE_European_Trade_Company"
 	}
 }
 
@@ -430,12 +447,16 @@ trade_company_rheinland = {
 		82 81 1762 6208 4774 #westphalia_area
 		57 1758 4773 2972 4775 #braunschweig_area
 		66 67 4717 79 #upper_franconia_area
-		63 2965 4743 4716 #thuringia_area
-		52 58 2964 4741 4742 #northern_saxony_area
-		59 61 4744 62 #south_saxony_area
-		51 1759 4748 4749 4786 #mittelmark_area
-		49 2969 4747 6179 6178 #neumark_area
-		6163 6162 50 2993 #berlin_area
+		6171 1867 1871 4720 #romandie_area
+		165 6169 4721 6170 #bern_area
+		166 1869 1870 6174 6173 #switzerland_area
+		4722 1873 6176 6172 6175 #grisons_area
+		68 1868 1872 4710 #upper_swabia_area
+		70 4713 4712 #lower_swabia_area
+		72 74 4714 #upper_rhineland_area
+		75 1880 4765 #alsace_area
+		77 1761 4767 6206 #palatinate_area
+		4715 71 4711 #franconia_area
 	}
 	
 	# Specific
@@ -452,7 +473,6 @@ trade_company_wien = {
 	color = { 220 220 220 }
 	
 	provinces = {
-		1769 4751 129 #krain_area
 		73 110 1768 4758 #tirol_area
 		128 132 1863 4759 #inner_austria_area
 		133 6186 4761 #outer_austria_area
@@ -460,14 +480,16 @@ trade_company_wien = {
 		76 4760 4709 64 #east_bavaria_area
 		65 4707 4708 6183 6185 #upper_bavaria_area
 		1757 2956 2957 6184 2955 #lower_bavaria_area
-		131 1826 4752 1828 #croatia_area
-		152 4756 1767 4173 #slavonia_area
 		135 1864 4126 4240 6099 #transdanubia_area
 		155 1953 4125 6100 153 #alfold_area
 		154 162 1318 1772 4236 #slovakia_area
 		156 1951 4128 1954 #southern_transylvania_area
 		157 158 1952 4127 #transylvania_area
 		160 161 2998 4531 4532 #wallachia_area
+		152 4756 1767 4173 #slavonia_area
+		131 1826 4752 1828 #croatia_area
+		1769 4751 129 #krain_area
+		6106 265 4237 4726 #moravia_area
 	}
 	
 	# Specific
@@ -487,11 +509,16 @@ trade_company_saxony = {
 		267 1771 2967 6101 #erzgebirge_area
 		266 2968 6103 6102 4725 #bohemia_area
 		4724 6104 2970 6105 #hradecko_area
-		6106 265 4237 4726 #moravia_area
 		60 1763 4778 #lusatia_area
 		2966 6112 6111 4238 #silesia_area
 		6110 6109 6108 264 #breg_area
 		263 4723 6107 #opole_area
+		63 2965 4743 4716 #thuringia_area
+		52 58 2964 4741 4742 #northern_saxony_area
+		59 61 4744 62 #south_saxony_area
+		51 1759 4748 4749 4786 #mittelmark_area
+		49 2969 4747 6179 6178 #neumark_area
+		6163 6162 50 2993 #berlin_area
 	}
 	
 	# Specific
@@ -543,7 +570,6 @@ trade_company_ragusa = {
 		138 1766 1827 #rascia_area
 		143 4174 4175 4750 #albania_area
 		139 140 1831 3002 4755 #bosnia_area
-		136 137 4753 4754 #east_adriatic_coast_area	
 	}
 	
 	# Specific
@@ -982,31 +1008,6 @@ trade_company_caucasus = {
 	}
 	names = {
 		name = "TRADE_COMPANY_caucasus_Near_East_Trade_Company"
-	}
-}
-
-trade_company_south_germany = {
-	color = {
-		255 146 0
-	}
-	
-	provinces = { 
-		6171 1867 1871 4720 #romandie_area
-		165 6169 4721 6170 #bern_area
-		166 1869 1870 6174 6173 #switzerland_area
-		4722 1873 6176 6172 6175 #grisons_area
-		68 1868 1872 4710 #upper_swabia_area
-		70 4713 4712 #lower_swabia_area
-		72 74 4714 #upper_rhineland_area
-		75 1880 4765 #alsace_area
-		77 1761 4767 6206 #palatinate_area
-		4715 71 4711 #franconia_area
-	}
-	names = {
-		name = "TRADE_COMPANY_south_germany_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_south_germany_European_Trade_Company"
 	}
 }
 

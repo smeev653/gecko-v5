@@ -1184,11 +1184,11 @@ genua = {
 		}
 	}
 	outgoing = {
-		name = "gc_south_germany_tradenode"
+		name = "rheinland"
 		path = {
 		}
-		control = {
-			2969.500 1378.000 2942.500 1409.000 2944.000 1432.000 2943.000 1445.000 2945.000 1472.500
+		control = { 
+			2969.500 1377.500 2942.500 1409.000 2944.000 1432.000 2943.000 1445.000 2931.000 1465.000 2962.000 1489.000
 		}
 	}
 	members = {
@@ -1276,58 +1276,24 @@ tunis = {
 	}
 }
 
-gc_south_germany_tradenode = {
-	location = 1872
-	color = { 255 146 0 }
-	outgoing = {
-		name = "rheinland"
-		path = {
-		}
-		control = {
-			2943.500 1490.000 2929.000 1510.000 2933.000 1518.000
-		}
-	}
-	outgoing = {
-		name = "champagne"
-		path = {
-			165 192 4392 
-		}
-		control = {
-			2944.000 1482.000 2923.500 1458.000 2886.000 1462.000
-		}
-	}
-	outgoing = {
-		name = "wien"
-		path = {
-		}
-		control = {
-			2987.000 1477.000 3009.000 1474.000 
-		}
-	}
-	members = {
-		6171 1867 1871 4720 #romandie_area
-		165 6169 4721 6170 #bern_area
-		166 1869 1870 6174 6173 #switzerland_area
-		4722 1873 6176 6172 6175 #grisons_area
-		68 1868 1872 4710 #upper_swabia_area
-		70 4713 4712 #lower_swabia_area
-		72 74 4714 #upper_rhineland_area
-		75 1880 4765 #alsace_area
-		77 1761 4767 6206 #palatinate_area
-		4715 71 4711 #franconia_area
-	}
-}
-
 saxony = {
 	inland = yes
-	location = 266
+	location = 61
 	color = { 36 182 69 }
 	outgoing = {
 		name="krakow"
 		path = {
 		}
 		control = {
-			3034.000 1526.000 3075.500 1544.500
+			3055.500 1553.500 3075.500 1544.500 
+		}
+	}
+	outgoing = {
+		name="lubeck"
+		path = {
+		}
+		control = {
+			3020.000 1573.000 
 		}
 	}
 	outgoing = {
@@ -1343,18 +1309,23 @@ saxony = {
 		path = {
 		}
 		control = {
-			 3032.000 1503.000 3041.000 1491.500 3061.000 1494.000
+			 3027.500 1517.000 3057.000 1508.000
 		}
 	}
 	members = {
 		267 1771 2967 6101 #erzgebirge_area
 		266 2968 6103 6102 4725 #bohemia_area
 		4724 6104 2970 6105 #hradecko_area
-		6106 265 4237 4726 #moravia_area
 		60 1763 4778 #lusatia_area
 		2966 6112 6111 4238 #silesia_area
 		6110 6109 6108 264 #breg_area
 		263 4723 6107 #opole_area
+		63 2965 4743 4716 #thuringia_area
+		52 58 2964 4741 4742 #northern_saxony_area
+		59 61 4744 62 #south_saxony_area
+		51 1759 4748 4749 4786 #mittelmark_area
+		49 2969 4747 6179 6178 #neumark_area
+		6163 6162 50 2993 #berlin_area
 	}
 }
 ragusa = {
@@ -1436,6 +1407,7 @@ wien = {
 		152 4756 1767 4173 #slavonia_area
 		131 1826 4752 1828 #croatia_area
 		1769 4751 129 #krain_area
+		6106 265 4237 4726 #moravia_area
 	}
 }
 
@@ -1468,14 +1440,6 @@ rheinland = {
 			2911.500 1537.500 2903.000 1558.000 2887.000 1561.000 2882.000 1567.000
 		}
 	}
-	outgoing = {
-		name="krakow"
-		path = {
-		}
-		control = {
-			 2985.000 1560.000 3020.000 1573.000 3048.500 1579.000 3069.000 1563.500  3096.000 1549.000
-		}
-	}
 	members = { 
 		56 86 2973 69 2971 #north_westphalia_area
 		84 85 2975 6205 6204 #north_rhine_area
@@ -1484,12 +1448,16 @@ rheinland = {
 		82 81 1762 6208 4774 #westphalia_area
 		57 1758 4773 2972 4775 #braunschweig_area
 		66 67 4717 79 #upper_franconia_area
-		63 2965 4743 4716 #thuringia_area
-		52 58 2964 4741 4742 #northern_saxony_area
-		59 61 4744 62 #south_saxony_area
-		51 1759 4748 4749 4786 #mittelmark_area
-		49 2969 4747 6179 6178 #neumark_area
-		6163 6162 50 2993 #berlin_area
+		6171 1867 1871 4720 #romandie_area
+		165 6169 4721 6170 #bern_area
+		166 1869 1870 6174 6173 #switzerland_area
+		4722 1873 6176 6172 6175 #grisons_area
+		68 1868 1872 4710 #upper_swabia_area
+		70 4713 4712 #lower_swabia_area
+		72 74 4714 #upper_rhineland_area
+		75 1880 4765 #alsace_area
+		77 1761 4767 6206 #palatinate_area
+		4715 71 4711 #franconia_area
 	}
 }
 
