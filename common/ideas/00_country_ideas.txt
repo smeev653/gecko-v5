@@ -2643,7 +2643,7 @@ SAX_ideas = {
 LIT_ideas = {
 	start = {
 		manpower_recovery_speed = 0.15
-		global_missionary_strength = 0.02
+		global_own_trade_power = 0.25
 	}
 	
 	bonus = {
@@ -2651,25 +2651,25 @@ LIT_ideas = {
 	}
 	
 	trigger = {
-			tag = LIT
+		tag = LIT
 	}
 	free = yes		#will be added at load.
 	
+	magnate_estates = {
+		global_trade_goods_size_modifier = 0.2
+	}
 	warlord_dukes = {
 		leader_land_shock = 1
-	}
-	auksine_laisve = {
-		stability_cost_modifier = -0.1
-	}
-	magdeburg_laws = {
-		global_tax_modifier = 0.1
-	}
-	magnate_estates = {
-		production_efficiency = 0.1
 	}
 	lithuanian_hussars = {
 		cavalry_power = 0.1
 		#can_recruit_hussars = yes
+	}
+	auksine_laisve = {
+		nobles_loyalty_modifier = 0.1
+	}
+	magdeburg_laws = {
+		global_tax_modifier = 0.1
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
