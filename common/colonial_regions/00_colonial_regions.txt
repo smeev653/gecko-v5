@@ -51,6 +51,7 @@ colonial_south_africa = {
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
 	}
+	
 }
 
 # Alaska
