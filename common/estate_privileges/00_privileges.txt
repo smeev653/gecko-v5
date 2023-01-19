@@ -6569,16 +6569,6 @@ estate_burghers_exclusive_trade_rights = {
 	influence = 0.1
 	loyalty = 0.05
 	is_valid = {
-		has_dlc = "Emperor"
-		any_active_trade_node = {
-			calc_true_if = {
-				amount = 3
-				all_trade_node_member_province = {
-					owned_by = root
-					province_has_center_of_trade_of_level = 1
-				}
-			}
-		}
 	}
 	on_granted = {
 		random_active_trade_node = {

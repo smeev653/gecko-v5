@@ -466,6 +466,9 @@ internal_mission_reform = {
 		}
 		claim_states = yes
 	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 }
 
 external_mission_reform = {
@@ -480,6 +483,9 @@ conditional = {
 		allow = {
 		}
 		claim_states = yes
+	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
 	}
 }
 
@@ -502,6 +508,9 @@ conditional = {
 		}
 		claim_states = yes
 	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 }
 
 mission_to_kill_pirates_reform = {
@@ -521,6 +530,9 @@ mission_to_kill_pirates_reform = {
 		}
 		claim_states = yes
 	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 }
 
 balanced_mission_reform = {
@@ -534,6 +546,9 @@ balanced_mission_reform = {
 		allow = {
 		}
 		claim_states = yes
+	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
 	}
 }
 
@@ -549,6 +564,9 @@ commercial_mission_reform = {
 		}
 		claim_states = yes
 	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 }
 
 mission_to_protect_reform = {
@@ -563,6 +581,9 @@ mission_to_protect_reform = {
 		allow = {
 		}
 		claim_states = yes
+	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
 	}
 }
 

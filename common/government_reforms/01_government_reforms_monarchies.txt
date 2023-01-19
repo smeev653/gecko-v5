@@ -882,6 +882,10 @@ tsardom = {
 			russian_mechanic
 		}
 		claim_states = yes
+		
+	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
 	}
 }
 
@@ -2553,6 +2557,9 @@ enforce_privileges_reform = {
 		}
 		claim_states = yes
 	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	ai = {
 		factor = 1
 		modifier = {
@@ -2578,6 +2585,9 @@ quash_noble_power_reform = {
 		allow = {
 		}
 		claim_states = yes
+	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
 	}
 	ai = {
 		factor = 1
@@ -2607,6 +2617,7 @@ grant_noble_castle_rights_reform = {
 	}
 	custom_attributes = {
 		on_fort_built_nobles_loyalty = yes	#5 Loyalty
+		seizing_land_no_rebels = yes
 	}
 	ai = {
 		factor = 1
@@ -2641,6 +2652,7 @@ maintain_nobles_status_quo_reform = {
 	}
 	custom_attributes = {
 		free_noble_levies = yes
+		seizing_land_no_rebels = yes
 	}
 	ai = {
 		factor = 1
@@ -2662,6 +2674,7 @@ grant_military_command_reform = {
 	}
 	custom_attributes = {
 		recruiting_generals_increases_nobles_loyalty = yes
+		seizing_land_no_rebels = yes
 	}
 	conditional = {
 		allow = {
@@ -2728,6 +2741,7 @@ grant_nobles_electorate_reform = {
 	}
 	custom_attributes = {
 		improved_nobles_regency = yes
+		seizing_land_no_rebels = yes
 	}
 	ai = {
 		factor = 1
@@ -2760,7 +2774,7 @@ blackmail_nobility_reform = {
 		claim_states = yes
 	}
 	custom_attributes = {
-		seizing_land_no_rebels_from_estate_nobles = yes
+		seizing_land_no_rebels = yes
 	}
 	ai = {
 		factor = 0
@@ -2790,6 +2804,9 @@ enforce_trader_privileges_reform = {
 		allow = {
 		}
 		claim_states = yes
+	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
 	}
 	ai = {
 		factor = 2

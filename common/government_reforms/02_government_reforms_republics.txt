@@ -1641,6 +1641,9 @@ republican_authoritarianism_reform = {
 		}
 		claim_states = yes
 	}
+	custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	ai = {
 		factor = 1
 	}
@@ -1698,14 +1701,18 @@ republicanism_reform = {
 			NOT = { has_dlc = "Emperor" }
 		}
 	}
-	modifiers = {
+		modifiers = {
 		republican_tradition = 0.1
-	}
-		conditional = {
-		allow = {
 		}
-		claim_states = yes
-	}
+		conditional = {
+			allow = {
+			}
+			claim_states = yes
+			
+			}
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+		}
 	ai = {
 		factor = 1.5
 	}
@@ -1737,6 +1744,9 @@ democratic_values_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	ai = {
 		factor = 1
@@ -1770,6 +1780,9 @@ aristocratic_values_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	ai = {
 		factor = 1
@@ -1801,6 +1814,9 @@ religious_values_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	ai = {
 		factor = 1
@@ -1836,6 +1852,9 @@ council_of_captains_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	ai = {
 		factor = 2.5
@@ -1871,6 +1890,9 @@ articles_of_agreement_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	ai = {
 		factor = 2.5
@@ -1905,6 +1927,9 @@ smugglers_haven_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	ai = {
 		factor = 2.5
@@ -1928,6 +1953,9 @@ the_pirate_ways_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	effect = {
 		custom_tooltip = break_every_non_pirate_alliance_tt
@@ -1967,6 +1995,9 @@ liberte_reform = {
 		allow = {
 		}
 		claim_states = yes
+		custom_attributes = {
+		seizing_land_no_rebels = yes
+	}
 	}
 	ai = {
 		factor = 2.5
