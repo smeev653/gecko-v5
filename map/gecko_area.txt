@@ -2349,7 +2349,7 @@ jangladesh_area = { #4
 }
 
 marwar_area = { #4
-	513 514 2067 4506
+	513 514 2067 4506 2088
 }
 
 jaipur_area = { #4
