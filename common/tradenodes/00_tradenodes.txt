@@ -1188,7 +1188,7 @@ ragusa = {
 		150 1765 2746 2750 4703 #bulgaria_area
 		4704 4706 159 #silistria_area
 		164 2348 4700 6122 6123 #aegean_archipelago_area
-		146 3003 147 6120 #XMP_central_greece_area
+		146 3003 147 6120 #X_central_greece_area
 		142 144 4699 4698 #northern_greece_area
 		145 1773 4701 #morea_area
 		148 1853 3001 4702 4780 #macedonia_area

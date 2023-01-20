@@ -2051,7 +2051,7 @@ ottoman_missions_3 = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			XMP_central_greece_area = { 
+			X_central_greece_area = { 
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT } 

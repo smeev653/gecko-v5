@@ -406,7 +406,7 @@ X_VEN_slot_1 = {
 		}
 		
 		effect = {
-			XMP_central_greece_area = {
+			X_central_greece_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -441,7 +441,7 @@ X_VEN_slot_1 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					area = XMP_central_greece_area
+					area = X_central_greece_area
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				AND = {
@@ -451,7 +451,7 @@ X_VEN_slot_1 = {
 			}
 		}
 		trigger = {
-			XMP_central_greece_area = {
+			X_central_greece_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -503,7 +503,7 @@ X_VEN_slot_1 = {
 								province_is_on_an_island = no
 								OR = {
 									area = morea_area
-									area = XMP_central_greece_area
+									area = X_central_greece_area
 									area = northern_greece_area
 									area = macedonia_area
 									area = thrace_area
@@ -516,7 +516,7 @@ X_VEN_slot_1 = {
 					NOT = { owned_by = ROOT }
 					OR = {
 						area = morea_area
-						area = XMP_central_greece_area
+						area = X_central_greece_area
 						area = northern_greece_area
 						area = macedonia_area
 						area = thrace_area
@@ -532,7 +532,7 @@ X_VEN_slot_1 = {
 								province_is_on_an_island = no
 								OR = {
 									area = morea_area
-									area = XMP_central_greece_area
+									area = X_central_greece_area
 									area = northern_greece_area
 									area = macedonia_area
 									area = thrace_area
@@ -546,7 +546,7 @@ X_VEN_slot_1 = {
 					has_owner_accepted_culture = no
 					OR = {
 						area = morea_area
-						area = XMP_central_greece_area
+						area = X_central_greece_area
 						area = northern_greece_area
 						area = macedonia_area
 						area = thrace_area
@@ -569,7 +569,7 @@ X_VEN_slot_1 = {
 				}
 				OR = {
 					area = morea_area
-					area = XMP_central_greece_area
+					area = X_central_greece_area
 					area = northern_greece_area
 					area = macedonia_area
 					area = thrace_area

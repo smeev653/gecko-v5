@@ -473,7 +473,7 @@ categories =  {
 			4340 #persia #smeev
 			6157 6156 6155 426 #persia #smeev
 			4238 #gcbohemia
-			6120 #xmp
+			6120
 			6171 1867 4720 6170 4721 6169 1869 #gcswitzerland
 			137 4753 # Balkans
 			4968

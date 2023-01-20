@@ -311,7 +311,7 @@ balkan_region = {
 		albania_area
 		silistria_area
 		slavonia_area
-		XMP_central_greece_area
+		X_central_greece_area
 		eastern_mediterrenean_islands_area
 		aegean_archipelago_area
 		krain_area
