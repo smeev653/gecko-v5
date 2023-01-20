@@ -281,7 +281,7 @@ NDefines.NMilitary.REGULAR_LEADER_POWER = 0.70
 NDefines.NMilitary.EXPLORER_LEADER_POWER = 0.60
 NDefines.NMilitary.LEADER_MAX_PIPS = 8							-- Max general/admiral pips (per skill)
 NDefines.NMilitary.LEADER_MIN_PIPS = 2
-NDefines.NMilitary.INSUFFICIENT_SUPPORT = -0.25
+NDefines.NMilitary.INSUFFICIENT_SUPPORT = -0.5
 
 			
 
