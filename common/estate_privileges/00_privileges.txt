@@ -1746,7 +1746,7 @@ estate_church_clerical_ministers = {
 			num_of_aspects = 3
 		}
 	}
-	cooldown_years = 20
+	cooldown_years = 15
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_clerical_ministers
 	}
@@ -1772,7 +1772,7 @@ estate_church_negative_piety_privilege = {
 	ai_will_do = {
 		factor = 0
 	}
-	cooldown_years = 20
+	cooldown_years = 15
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_church_negative_piety_privilege
 	}
