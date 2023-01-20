@@ -1073,7 +1073,7 @@ gc_hungary_gh_branch_4 = {
 			northern_greece_area = {
                 add_permanent_claim = ROOT
             }
-            XMP_central_greece_area = {
+            X_central_greece_area = {
                 add_permanent_claim = ROOT
             }
             morea_area = {
@@ -1089,7 +1089,7 @@ gc_hungary_gh_branch_4 = {
         provinces_to_highlight = {
             OR = {
                 area = northern_greece_area
-                area = XMP_central_greece_area
+                area = X_central_greece_area
                 area = morea_area
             }
             NOT = { owned_by = ROOT }
@@ -1099,7 +1099,7 @@ gc_hungary_gh_branch_4 = {
                 type = all 
                 country_or_non_sovereign_subject_holds = ROOT
             }
-            XMP_central_greece_area = {
+            X_central_greece_area = {
                 type = all 
                 country_or_non_sovereign_subject_holds = ROOT
             }
