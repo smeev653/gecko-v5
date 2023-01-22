@@ -3189,6 +3189,7 @@ citizenry_reform = {
 		
 	}
 	conditional = {
+		allow = { has_dlc = "Lions of the North" }
 		allow_carolean = yes
 	}
 	ai = {

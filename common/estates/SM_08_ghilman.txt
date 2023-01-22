@@ -55,4 +55,7 @@ estate_ghilman = {
 	}
 	
 	influence_from_dev_modifier = 1.0
+	agendas = {
+		
+	}
 }

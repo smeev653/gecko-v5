@@ -4,7 +4,7 @@ culture = chontales
 #owner = YOK
 #controller = YOK
 #add_core = YOK
-is_city = yes
+
 religion = mesoamerican_religion
 capital = "Tochtepec"
 trade_goods = fish

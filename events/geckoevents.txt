@@ -3459,7 +3459,7 @@ country_event = {
 					name = "trade_hub_created_in_province"
 					duration = 3650
 				}
-				add_country_modifier = {
+				add_province_modifier = {
 					name = "trade_hub_created"
 					duration = 3650
 				}

@@ -2,7 +2,7 @@
 
 #owner = CHT
 #controller = CHT
-is_city = yes
+
 #add_core = CHT
 culture = highland_mayan
 religion = mesoamerican_religion

@@ -527,7 +527,7 @@ add_government_reform = autocracy_reform }
 
 1598.4.13 = { clr_country_flag = religious_turmoil clr_country_flag = religious_intolerance  decision = enact_edict_de_nantes } # Edict of Nantes
 
-1600.1.1 = { decision = enlist_privateers }
+#1600.1.1 = { decision = enlist_privateers }
 
 1600.10.5 = {
     queen = {

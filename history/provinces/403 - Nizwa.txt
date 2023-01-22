@@ -1,6 +1,6 @@
 #403 - Nizwa
 
-owner = OMAs
+owner = OMA
 controller = OMA
 culture = omani_culture
 religion = ibadi

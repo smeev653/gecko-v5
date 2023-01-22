@@ -110,6 +110,9 @@ gc_hungarian_nobles_privilege_4 = {
 	penalties = {
 		global_tax_modifier = -0.05
 	}
+	ai_will_do = {					
+        factor = 0                              
+    }
 }
 
 #Hungarian Noble Officers
@@ -123,6 +126,9 @@ gc_hungarian_nobles_privilege_5 = {
 		general_cost = -0.05
 		army_tradition_decay = -0.0025
 	}
+	ai_will_do = {					
+        factor = 0                              
+    }
 }
 
 #Hungarian Cardinals
@@ -140,6 +146,9 @@ gc_hungarian_nobles_privilege_6 = {
 	penalties = {
 		curia_powers_cost = 0.05
 	}
+	ai_will_do = {					
+        factor = 0                              
+    }
 }
 
 #Hungarian Tolerance
@@ -155,6 +164,9 @@ gc_hungarian_nobles_privilege_7 = {
 	penalties = {
 		global_missionary_strength = -0.02
 	}
+	ai_will_do = {					
+        factor = 0                              
+    }
 }
 
 #Integrate Hungarian Shock Tactics
@@ -167,6 +179,9 @@ gc_hungarian_nobles_privilege_8 = {
 		shock_damage = 0.1
 		cavalry_flanking = 1
 	}
+	ai_will_do = {					
+        factor = 0                              
+    }
 }
 
 #Land Rights
@@ -179,4 +194,7 @@ gc_hungarian_nobles_privilege_9 = {
 	benefits = {
 		governing_capacity = 100
 	}
+	ai_will_do = {					
+        factor = 0                              
+    }
 }

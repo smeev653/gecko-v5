@@ -567,7 +567,7 @@ change_estate_land_share = {
 
 1577.1.1 = { leader = {	name = "Francis Drake"         	type = explorer	fire = 5	shock = 5	manuever = 6	siege = 0	death_date = 1596.1.28 } }
 
-1580.1.1 = { decision = enlist_privateers }
+#1580.1.1 = { decision = enlist_privateers }
 
 1580.1.1 = { leader = {	name = "Walter Raleigh"		type = conquistador	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1618.10.29 } }
 

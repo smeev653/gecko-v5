@@ -742,6 +742,9 @@ christian = {
 				allow = {
 					always = yes
 				}
+				visible = {
+					always = yes
+				}
 				ai_will_do = {
 					factor = 0.5
 				}

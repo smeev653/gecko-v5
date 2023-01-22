@@ -4,7 +4,7 @@
 culture = swahili
 religion = shamanism #Fetishism
 capital = "Bagamayo"
-is_city = yes
+
 base_manpower = 1
 trade_goods = ivory
 hre = no

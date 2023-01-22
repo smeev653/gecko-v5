@@ -4,7 +4,7 @@ culture = tepic
 #owner = TON
 #controller = TON
 #add_core = TON
-is_city = yes
+
 religion = nahuatl
 capital = "Tizapan"
 trade_goods = grain

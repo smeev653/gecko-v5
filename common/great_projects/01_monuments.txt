@@ -18415,9 +18415,11 @@ fu_la_scala = {
 			yearly_absolutism = 0.5
 		}
 		on_upgraded = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 5 
+			ROOT = {
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 5 
+				}
 			}
 		}
 	}
@@ -18450,9 +18452,11 @@ fu_la_scala = {
 		}
 		
 		on_upgraded = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10 
+			ROOT = {
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 10
+				}
 			}
 		}
 	}
@@ -18485,9 +18489,11 @@ fu_la_scala = {
 		}
 		
 		on_upgraded = {
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 15 
+			ROOT = {
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 15 
+				}
 			}
 		}
 	}
@@ -18767,10 +18773,12 @@ fu_topkapi_palace = {
 	type = monument
 
 	build_trigger = {
-		OR = {
-			tag = TUR 
-			tag = RUM 
-			religion_group = muslim 
+		ROOT = {
+			OR = {
+				tag = TUR 
+				tag = RUM 
+				religion_group = muslim 
+			}
 		}
 	}
 	
@@ -19325,7 +19333,7 @@ fu_colossus = {
 	type = monument
 
 	build_trigger = {
-		has_institution = renaissance 
+
 	}
 	
 	can_use_modifiers_trigger = {
