@@ -5,7 +5,7 @@ religion = animism
 #owner = GAM
 #controller = GAM
 #add_core = GAM
-is_city = yes
+
 capital = "Xochipillan"
 trade_goods = wool
 hre = no

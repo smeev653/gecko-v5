@@ -3,7 +3,7 @@
 #owner = CCM
 #controller = CCM
 #add_core = CCM
-is_city = yes
+
 culture = chichimecan 
 religion = animism
 capital = "Pame" 
