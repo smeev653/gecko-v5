@@ -2912,7 +2912,7 @@ guiTypes = {
 					textureFile = ""
 					font = "vic_22"
 					borderSize = {x = 2 y = 2}
-					text = "Estates & Expand Infrastructure"
+					text = "Estates & Infrastructure"
 					maxWidth = 256
 					maxHeight = 32
 					format = left

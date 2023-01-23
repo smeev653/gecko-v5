@@ -4,7 +4,7 @@ country_decisions = {
 	####################
 	X_estate_church_province_control_decision = {
 		major = yes
-		potential = { has_estate = estate_church }
+		potential = { always = no has_estate = estate_church }
 		provinces_to_highlight = { has_province_modifier = X_estate_church_province_control_pmod  }
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_church_province_control_pmod } } }
 		effect = { }
@@ -12,7 +12,7 @@ country_decisions = {
 	}
 	X_estate_burghers_province_control_decision = {
 		major = yes
-		potential = { has_estate = estate_burghers }
+		potential = { always = no has_estate = estate_burghers }
 		provinces_to_highlight = { has_province_modifier = X_estate_burghers_province_control_pmod  }
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_burghers_province_control_pmod } } }
 		effect = { }
@@ -20,7 +20,7 @@ country_decisions = {
 	}
 	X_estate_nobles_province_control_decision = {
 		major = yes
-		potential = { has_estate = estate_nobles }
+		potential = { always = no has_estate = estate_nobles }
 		provinces_to_highlight = { has_province_modifier = X_estate_nobles_province_control_pmod  }
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_nobles_province_control_pmod } } }
 		effect = { }
@@ -28,7 +28,7 @@ country_decisions = {
 	}
 	X_estate_dhimmi_province_control_decision = {
 		major = yes
-		potential = { has_estate = estate_dhimmi }
+		potential = { always = no has_estate = estate_dhimmi }
 		provinces_to_highlight = { has_province_modifier = X_estate_dhimmi_province_control_pmod  }
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_dhimmi_province_control_pmod } } }
 		effect = { }
