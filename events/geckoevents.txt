@@ -916,56 +916,9 @@ country_event = {
 	}
 }
 
-province_event = {
-    id = gecko.16
-    title = gecko.16.t
-    desc = gecko.16.d
-picture = COURT_eventPicture
 
-    trigger = {
-			has_province_modifier = gecko_occupation
-			had_province_flag = {
-				flag = gecko_occupation
-				days = 1825
-			}
-			NOT = {is_capital = yes}
-			NOT = { controlled_by = owner }
-    }
-	hidden = yes
-	mean_time_to_happen = {
-        days = 1
-    }
-	
-    option = {	
-				 cede_province = controller 
-				 add_core = controller 
-	}	
-}
 
-province_event = {
-    id = gecko.17
-    title = gecko.17.t
-    desc = gecko.17.d
-picture = COURT_eventPicture
-    trigger = {
-			has_province_modifier = gecko_occupation
-			had_province_flag = {
-				flag = gecko_occupation_core
-				days = 365
-			}
-			NOT = {is_capital = yes}
-			NOT = { controlled_by = owner }
-    }
-	hidden = yes
-	mean_time_to_happen = {
-        days = 1
-    }
-	
-    option = {	
-				 cede_province = controller 
-				 add_core = controller 
-	}	
-}
+
 
 
 ##pulse event to check mercs####
