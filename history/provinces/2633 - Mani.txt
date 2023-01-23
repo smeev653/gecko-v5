@@ -4,7 +4,7 @@ culture = yucatec
 #owner = XIU
 #controller = XIU
 #add_core = XIU
-is_city = yes
+
 religion = mesoamerican_religion
 capital = "Ceh Pech"
 trade_goods = cocoa

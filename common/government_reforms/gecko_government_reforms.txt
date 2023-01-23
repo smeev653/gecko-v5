@@ -181,6 +181,7 @@ gecko_noble_regiments_reform = { #Noble Regiments
 		possible_policy = 1
 	}
 	conditional = {
+		allow = { has_dlc = "Lions of the North" }
 		allow_carolean = yes
 	}
 }
@@ -199,6 +200,7 @@ gecko_professional_army_reform = { #Noble Regiments
 		yearly_army_professionalism = 0.0025
 	}
 	conditional = {
+		allow = { has_dlc = "Lions of the North" }
 		allow_carolean = yes
 	}
 }

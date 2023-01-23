@@ -710,13 +710,7 @@ ethiopia_trade_slot = {
 			}
 			add_accepted_culture = nubian
 			add_permanent_claim = 1232
-			hadendoa_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			
 		}
 	}
 
@@ -734,10 +728,6 @@ ethiopia_trade_slot = {
 		}
 		trigger = {
 			owns_or_non_sovereign_subject_of = 1232
-			hadendoa_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 		}
 		effect = {
 			country_event = {

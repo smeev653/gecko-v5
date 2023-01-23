@@ -4,7 +4,7 @@
 culture = swahili
 religion = sunni
 capital = "Mombasa"
-is_city = yes
+
 base_manpower = 2
 trade_goods = ivory
 hre = no

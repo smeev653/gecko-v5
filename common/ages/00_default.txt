@@ -653,13 +653,13 @@ age_of_absolutism = {
 	absolutism = {
 		harsh_treatment = 1
 		stability = 1
-		#decrease_autonomy_command = 1
+		decrease_autonomy_command = 0
 		strengthen_government = 2
 		war_exhaustion = 0
 		increase_autonomy_command = -2
-		#debase_currency = -1
+		debase_currency = 0
 		execute_rebel_acceptance_command = -10
-		#seat_in_parliament = -3
+		seat_in_parliament = 0
 	}
 	
 	

@@ -12,7 +12,7 @@ base_manpower = 4
 capital = "Hory Kutné"
 is_city = yes
 extra_cost = 26
-center_of_trade = yes
+center_of_trade = 1
 
 discovered_by = eastern
 discovered_by = ottoman

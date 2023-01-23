@@ -269,11 +269,11 @@ fu_ardabil_missions_3 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				province_id 4300
-				province_id 4340
-				province_id 2212
+				province_id = 4300
+				province_id = 4340
+				province_id = 2212
 			}
-			NOT = { owned_by ROOT }
+			NOT = { owned_by =ROOT }
 		}
 		trigger = {
 			AND = {
