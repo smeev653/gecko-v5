@@ -14,6 +14,10 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = { set_country_flag = X_in_pe_and_ei_event_1_cflag }
+		X_province_estates_num_of_estate_provinces_effect = { estate = estate_church }
+		X_province_estates_num_of_estate_provinces_effect = { estate = estate_burghers }
+		X_province_estates_num_of_estate_provinces_effect = { estate = estate_nobles }
+		X_province_estates_num_of_estate_provinces_effect = { estate = estate_dhimmi }
 	}
 	option = {
 		name = X_pe_and_ei_events.1.a
@@ -468,10 +472,10 @@ province_event = {
 		}
 	}
 	option = {
+		name = X_pe_and_ei_events.3.b
 		trigger = {
 			X_has_expand_infrastructure_pmod_trigger = yes
 		}
-		name = X_pe_and_ei_events.3.b
 		if = {
 			limit = {
 				has_province_modifier = X_expand_infrastructure_tier_1_pmod

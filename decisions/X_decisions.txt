@@ -1,4 +1,42 @@
 country_decisions = {
+	####################
+	# Estates
+	####################
+	X_estate_church_province_control_decision = {
+		major = yes
+		potential = { has_estate = estate_church }
+		provinces_to_highlight = { has_province_modifier = X_estate_church_province_control_pmod  }
+		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_church_province_control_pmod } } }
+		effect = { }
+		ai_will_do = { factor = 0 }
+	}
+	X_estate_burghers_province_control_decision = {
+		major = yes
+		potential = { has_estate = estate_burghers }
+		provinces_to_highlight = { has_province_modifier = X_estate_burghers_province_control_pmod  }
+		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_burghers_province_control_pmod } } }
+		effect = { }
+		ai_will_do = { factor = 0 }
+	}
+	X_estate_nobles_province_control_decision = {
+		major = yes
+		potential = { has_estate = estate_nobles }
+		provinces_to_highlight = { has_province_modifier = X_estate_nobles_province_control_pmod  }
+		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_nobles_province_control_pmod } } }
+		effect = { }
+		ai_will_do = { factor = 0 }
+	}
+	X_estate_dhimmi_province_control_decision = {
+		major = yes
+		potential = { has_estate = estate_dhimmi }
+		provinces_to_highlight = { has_province_modifier = X_estate_dhimmi_province_control_pmod  }
+		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_dhimmi_province_control_pmod } } }
+		effect = { }
+		ai_will_do = { factor = 0 }
+	}
+	####################
+	# General
+	####################
 	X_home_node_merchant_decision = {
 		major = yes
 		potential = {
@@ -31,7 +69,9 @@ country_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
-	
+	####################
+	# Russia
+	####################
 	X_RUS_isolation_vs_westernization_decision = {
 		major = yes
 		potential = {

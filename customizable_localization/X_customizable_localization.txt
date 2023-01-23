@@ -147,8 +147,52 @@ defined_text = {
 	}
 }
 ####################
-# Province Estates
+# Province Estates & Expand Infrastructure
 ####################
+defined_text = {
+	name = GetXProvinceEstatesNumOfChurchProvinces
+	random = no
+	text = {
+		trigger = {
+			has_estate = estate_church
+		}
+		localisation_key = X_province_estates_num_of_estate_church_provinces
+	}
+}
+
+defined_text = {
+	name = GetXProvinceEstatesNumOfBurghersProvinces
+	random = no
+	text = {
+		trigger = {
+			has_estate = estate_burghers
+		}
+		localisation_key = X_province_estates_num_of_estate_burghers_provinces
+	}
+}
+
+defined_text = {
+	name = GetXProvinceEstatesNumOfNoblesProvinces
+	random = no
+	text = {
+		trigger = {
+			has_estate = estate_nobles
+		}
+		localisation_key = X_province_estates_num_of_estate_nobles_provinces
+	}
+}
+
+defined_text = {
+	name = GetXProvinceEstatesNumOfDhimmiProvinces
+	random = no
+	text = {
+		trigger = {
+			has_estate = estate_dhimmi
+		}
+		localisation_key = X_province_estates_num_of_estate_dhimmi_provinces
+	}
+}
+
 defined_text = {
 	name = GetXProvinceEstatesController
 	random = no

@@ -646,6 +646,30 @@ X_RUS_change_isolation_vs_westernization_level_effect = {
 ####################
 # Expand Infrastructure & Province Estates
 ####################
+X_province_estates_num_of_estate_provinces_effect = {
+	if = {
+		limit = { has_estate = $estate$ }
+		hidden_effect = {
+			set_variable = {
+				which = X_province_estates_num_of_$estate$_provinces_variable
+				value = 0
+			}
+			every_owned_province = {
+				limit = { has_province_modifier = X_$estate$_province_control_pmod }
+				set_variable = {
+					which = X_province_estates_num_of_$estate$_provinces_variable
+					value = 1
+				}
+				PREV = {
+					change_variable = {
+						which = X_province_estates_num_of_$estate$_provinces_variable
+						which = PREV
+					}
+				}
+			}
+		}
+	}
+}
 
 X_province_estates_on_capital_moved_effect = { 
 	if = {

@@ -640,7 +640,7 @@
  ####################
  #Events
  X_pe_and_ei_events.1.t:0 "Estates & Expand Infrastructure"
- X_pe_and_ei_events.1.d1:0 ""
+ X_pe_and_ei_events.1.d1:0 "Current Estate Land Distribution:[GetXProvinceEstatesNumOfChurchProvinces][GetXProvinceEstatesNumOfBurghersProvinces][GetXProvinceEstatesNumOfNoblesProvinces][GetXProvinceEstatesNumOfDhimmiProvinces]"
  X_pe_and_ei_events.1.a:0 "Estates"
  X_pe_and_ei_events.1.b:0 "Expand Infrastructure"
  X_pe_and_ei_events.1.c:0 "§YClose§!"
@@ -676,6 +676,10 @@
  X_revoke:0 "Revoke"
  X_expand:0 "Expand"
  X_reduce:0 "Reduce"
+ X_province_estates_num_of_estate_church_provinces:0 "\n§OClergy§!: [Root.X_province_estates_num_of_estate_church_provinces_variable.GetValue] provinces"
+ X_province_estates_num_of_estate_burghers_provinces:0 "\n§BBurghers§!: [Root.X_province_estates_num_of_estate_burghers_provinces_variable.GetValue] provinces"
+ X_province_estates_num_of_estate_nobles_provinces:0 "\n§RNobility§!: [Root.X_province_estates_num_of_estate_nobles_provinces_variable.GetValue] provinces"
+ X_province_estates_num_of_estate_dhimmi_provinces:0 "\n§JDhimmi§!: [Root.X_province_estates_num_of_estate_dhimmi_provinces_variable.GetValue] provinces"
  X_estate_church_province_controller:0 "§OClergy§!."
  X_estate_burghers_province_controller:0 "§BBurghers§!."
  X_estate_nobles_province_controller:0 "§RNobility§!."
