@@ -136,7 +136,13 @@ temple = {
 				}
 				FROM = {
 					add_papal_influence = 3
-				}
+				}	
+					add_development_from_building_2 = {
+						building = temple
+						type = tax
+						value = 1
+					}
+				
 		}
 			add_development_from_building = {
 				building = temple
@@ -167,7 +173,13 @@ temple = {
 			}
 			FROM = {
 				add_papal_influence = -3
-			}
+			}	
+				remove_development_from_building_2 = {
+						building = temple
+						type = tax
+						value = 1
+					}
+			
 		}
 		remove_development_from_building = {
 			building = temple

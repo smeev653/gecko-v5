@@ -284,11 +284,11 @@ renaissance = {
 
 	bonus = {
 		#development_cost = -0.05
-		build_cost = -0.05
-		build_time = -0.05
+		#build_cost = -0.05
+		build_time = -0.1
 		reform_progress_growth = 0.2
 		#free_leader_pool = 1
-		governing_capacity = 50
+		governing_capacity = 100
 	}
 
 	trade_company_efficiency = 0.4
