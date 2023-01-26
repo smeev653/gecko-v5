@@ -1340,16 +1340,174 @@ estate_nobles_advisors = {
 }
 
 estate_nobles_right_of_counsel = {
-	icon = privilege_royal_authority
+	icon = privilege_cawa_offensive_fighters
 	max_absolutism = -10
 	loyalty = 0.1
 	influence = 0.1
-	
-	on_granted = {
-		add_army_tradition = 15
+	can_select = {
+		mil_tech = 4
 	}
+	on_granted = {
+		if = {
+				limit = {
+						mil_tech = 4	
+					NOT = {
+						mil_tech = 10	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 10
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+		}		
+		if = {
+				limit = {
+						mil_tech = 10	
+					
+					NOT = {
+						mil_tech = 13	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 15
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}
+		if = {
+				limit = {
+						mil_tech = 13	
+					
+					NOT = {
+						mil_tech = 16	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 27
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}
+		if = {
+				limit = {
+						mil_tech = 16	
+					NOT = {
+						mil_tech = 18	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 30
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}
+		if = {
+				limit = {
+						mil_tech = 18	
+					NOT = {
+						mil_tech = 20	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 32
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}
+		if = {
+				limit = {
+						mil_tech = 20	
+					NOT = {
+						mil_tech = 22	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 34
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}
+		if = {
+				limit = {
+						mil_tech = 22	
+					NOT = {
+						mil_tech = 24	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 36
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}	
+		if = {
+				limit = {
+						mil_tech = 24	
+					NOT = {
+						mil_tech = 26	
+					}
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 38
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}	
+		if = {
+				limit = {
+						mil_tech = 26	
+				}
+				capital_scope = {
+					add_unit_construction = {
+					type = artillery
+					amount = 40
+					speed = 0.5
+					cost = 0
+					}
+				}
+				add_mil_power = -50
+			}	
+	
+	add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
+	}
+	modifier_by_land_ownership = { artillery_cost = -0.5 }	
 	penalties = {
-		general_cost = 0.1
 	}
 	benefits = {
 	}
@@ -1360,7 +1518,7 @@ estate_nobles_right_of_counsel = {
 			is_absolutism_active = yes
 		}
 	}
-	cooldown_years = 20
+	cooldown_years = 10
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_nobles_right_of_counsel
 	}
@@ -1372,7 +1530,6 @@ estate_nobles_french_strong_duchies = {
 	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
-		always = no
 	}
 	can_select = {
 		if = {
@@ -2007,6 +2164,9 @@ estate_burghers_admirals = {
 		factor = 0
 	}
 	cooldown_years = 15
+	on_cooldown_expires = { 
+		remove_estate_privilege = estate_burghers_admirals
+	}
 }
 
 estate_burghers_commercial_board_of_advice = {
@@ -6284,6 +6444,7 @@ estate_nobles_strong_duchies = {
 	influence = 0.1
 	loyalty = 0.05
 	is_valid = {
+		NOT = {tag = FRA }
 		OR = {
 			any_subject_country = {
 				is_march = yes
