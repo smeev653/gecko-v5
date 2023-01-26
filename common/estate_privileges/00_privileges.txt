@@ -7601,10 +7601,8 @@ estate_church_influence_temples = {
 	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
-		religion = catholic
 	}
 	can_select = {
-		religion = catholic
 	}
 	on_granted = {
 		custom_tooltip = estate_church_influence_temples_tt
