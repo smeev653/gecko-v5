@@ -20,7 +20,7 @@ edict_advancement_effort = {
 	}
 	
 	modifier = {
-		local_institution_spread = 0.33
+		local_institution_spread = 0.5
 	}
 	
 	color = { 50 173 192 }
@@ -72,7 +72,7 @@ gc_edict_advancement_effort_1 = {
 	}
 	
 	modifier = {
-		local_institution_spread = 0.5
+		local_institution_spread = 1
 	}
 	
 	color = { 50 173 192 }

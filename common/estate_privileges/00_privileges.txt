@@ -1320,7 +1320,7 @@ estate_nobles_advisors = {
 		define_advisor  = { 
 				type = diplomat
 				skill = 3
-				cost_multiplier = 0.75
+				cost_multiplier = 0.67
 		}
 	}
 	penalties = {
@@ -1340,12 +1340,16 @@ estate_nobles_advisors = {
 }
 
 estate_nobles_right_of_counsel = {
-	icon = privilege_cawa_offensive_fighters
+	icon = privilege_limited_war_support
 	max_absolutism = -10
 	loyalty = 0.1
 	influence = 0.1
 	can_select = {
 		mil_tech = 4
+		estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 50
+		}
 	}
 	on_granted = {
 		if = {
@@ -1565,6 +1569,10 @@ estate_nobles_french_strong_duchies = {
 			factor = 10
 			has_estate_privilege = estate_nobles_french_strong_duchies
 		}
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_nobles_french_strong_duchies
 	}
 }
 
@@ -1884,7 +1892,7 @@ estate_church_clerical_ministers = {
 		define_advisor  = { 
 				type = theologian
 				skill = 3
-				cost_multiplier = 0.75
+				cost_multiplier = 0.67
 		}		
 	}
 	ai_will_do = {
@@ -2041,7 +2049,7 @@ estate_church_enforced_one_faith = {
 		define_advisor  = { 
 				type = inquisitor
 				skill = 3
-				cost_multiplier = 0.75
+				cost_multiplier = 0.67
 		}
 	}
 	penalties = {
@@ -2153,7 +2161,7 @@ estate_burghers_admirals = {
 		define_advisor  = { 
 				type = naval_reformer
 				skill = 3
-				cost_multiplier = 0.75
+				cost_multiplier = 0.67
 		}	
 	}
 	penalties = {
@@ -2185,7 +2193,7 @@ estate_burghers_commercial_board_of_advice = {
 		define_advisor  = { 
 				type = statesman
 				skill = 3
-				cost_multiplier = 0.75
+				cost_multiplier = 0.67
 		}
 	}
 	penalties = {
@@ -6444,7 +6452,7 @@ estate_nobles_strong_duchies = {
 	influence = 0.1
 	loyalty = 0.05
 	is_valid = {
-		NOT = {tag = FRA }
+		NOT = { tag = FRA }
 		OR = {
 			any_subject_country = {
 				is_march = yes
@@ -6455,6 +6463,7 @@ estate_nobles_strong_duchies = {
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
 	}
 	can_select = {
+			NOT = { tag = FRA }
 		if = {
 			limit = {
 				has_dlc = "Art of War"
@@ -7734,17 +7743,21 @@ estate_nobles_command_of_the_military = {
 	can_select = {
 	}
 	on_granted = {
-		add_army_professionalism = 0.1
+		
 	}
 	penalties = {
-		general_cost = 0.1
+		general_cost = 0.2
 	}
 	benefits = {
+		drill_gain_modifier = 0.33
+		yearly_army_professionalism = 0.001
+		global_supply_limit_modifier = 0.5
 	}
+	modifier =  { may_build_supply_depot = yes }
 	ai_will_do = {
 		factor = 0
 	}
-	cooldown_years = 20
+	cooldown_years = 10
 	on_cooldown_expires = {
 		remove_estate_privilege = estate_nobles_command_of_the_military 
 	}
