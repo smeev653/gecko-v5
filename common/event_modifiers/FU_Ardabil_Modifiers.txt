@@ -45,7 +45,7 @@ arl_chinese_salt_modifier = {
 	siege_ability = 0.15
 }
 arl_persian_gunpowder_modifier = {
-	trade_goods_size = 0.5
+	trade_goods_size = 0.25
 }
 arl_a_new_challenger_modifier = {
 	core_creation = -0.1
@@ -91,5 +91,5 @@ arl_on_the_silk_road_modifier = {
 	local_production_efficiency = 0.15
 }
 arl_silk_road_renewal_modifier = {
-	trade_goods_size_modifier = 1
+	trade_goods_size_modifier = 0.5
 }

@@ -547,7 +547,6 @@ economic_ideas = {
 		land_maintenance_modifier = -0.05
 	}
 	smithian_economics = {
-		production_efficiency = 0.1
 		global_trade_goods_size_modifier = 0.10
  	}
 
@@ -760,7 +759,7 @@ maritime_ideas = {
 		move_capital_cost_modifier = -0.75
 	}	
 	grand_navy = {
-		all_power_cost = -0.02
+		all_power_cost = -0.025
 	}
 	ships_penny = {
 		advisor_pool = 2
@@ -773,7 +772,7 @@ maritime_ideas = {
 		num_accepted_cultures = 2
 	}
 	merchant_marine = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.05
 	}
 	ai_will_do = {
 		factor = 2
@@ -904,7 +903,7 @@ administrative_ideas = {
 		country_admin_power = 1
 	}
 	organised_mercenary_payment = {
-		production_efficiency = 0.15
+		production_efficiency = 0.10
 		advisor_pool = 4
 	}
 	civil_servants = {

@@ -426,8 +426,8 @@ local_army_organisation = {
 		full_idea_group = defensive_ideas
 	}
 
-	global_trade_goods_size_modifier = 0.1
-	global_trade_power = 0.1
+	global_trade_goods_size_modifier = 0.05
+	global_trade_power = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -823,7 +823,8 @@ weapon_quality_standards = {
 	}
 	
 	build_cost = -0.10
-	global_trade_goods_size_modifier = 0.025
+	production_efficiency = 0.05
+	#global_trade_goods_size_modifier = 0.025
 	
 	ai_will_do = {
 		factor = 2
@@ -986,8 +987,8 @@ trade_kontor_network = {
 		full_idea_group = trade_ideas
 	}
 	
-	global_trade_goods_size_modifier = 0.1
-	placed_merchant_power = 15
+	global_trade_goods_size_modifier = 0.05
+	production_efficiency = 0.1
 
 	ai_will_do = {
 		factor = 0.6

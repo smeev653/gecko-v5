@@ -4512,8 +4512,8 @@ bur_pope_is_hated = {
 }
 
 bur_lowlands_secured_mod = {
-	local_autonomy = -0.1
-	local_unrest = -2
+	local_autonomy = -0.125
+	local_unrest = -10
 }
 
 bur_realm_united_mod = {

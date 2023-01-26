@@ -86,7 +86,7 @@ treasurer = {
 	monarch_power = ADM
 	
 	# Bonus
-	global_tax_modifier = 0.025
+	global_tax_modifier = 0.075
 	
 	skill_scaled_modifier = { 
 		modifier = { 

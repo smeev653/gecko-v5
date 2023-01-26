@@ -264,7 +264,7 @@ GER_ideas = {
 		republican_tradition = 0.3
 	}
 	ger_eisen_und_kohle = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.15
 	}
 }
 

@@ -394,7 +394,7 @@ African_Gold_Monopoly = {
 			trade_goods = gold
 		}		
 	}
-	global_trade_goods_size_modifier = 0.2
+	global_trade_goods_size_modifier = 0.1
 	gold_depletion_chance_modifier = -1
 	global_prosperity_growth  = 0.1
 	monthly_gold_inflation_modifier = -1
@@ -428,7 +428,7 @@ African_Gold = {
 
 African_Slave_Trade = {
 	potential = {
-		NOT = { technology_group = western }
+
 	}
 
 	trigger = {
@@ -444,7 +444,7 @@ African_Slave_Trade = {
 
 African_Slave_Trade_Western = {
 	potential = {
-		technology_group = western 
+		always = no
 	}
 
 	trigger = {

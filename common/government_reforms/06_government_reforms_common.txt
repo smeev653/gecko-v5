@@ -1230,7 +1230,7 @@ lockean_proviso_reform = {
 	}
 	modifiers = {
 		development_cost = -0.025
-		global_trade_goods_size_modifier = 0.05
+		production_efficiency = 0.05
 	}
 	ai = {
 		factor = 1

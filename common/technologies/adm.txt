@@ -3,6 +3,7 @@ monarch_power = ADM
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
 	production_efficiency = 0.05
+	global_tax_modifier = 0.1
 	yearly_corruption = -0.05
 }
 
@@ -50,7 +51,7 @@ technology = { #Feudal Monarchy
 technology = { #Medieval Administration
 	# Tech 3
 	year = 1440
-
+	global_tax_modifier = 0.02
 	production_efficiency	=	0.01
 	may_support_rebels = yes
 }
@@ -69,6 +70,7 @@ technology = { #National Ideas
 
 	allowed_idea_groups = 1
 	production_efficiency	=	0.01
+	global_tax_modifier = 0.02
 }
 
 technology = { #Workshop
@@ -104,7 +106,7 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.01
-	
+	global_tax_modifier = 0.02
 
 }
 
@@ -140,6 +142,7 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.01
+	global_tax_modifier = 0.02
 }
 
 technology = { #Scientific Experimentation
@@ -166,7 +169,7 @@ technology = { #Metallurgy
 	
 	mills = yes
 	production_efficiency 	=	0.01
-
+	global_tax_modifier = 0.02
 
 }
 
@@ -209,6 +212,7 @@ technology = { #Land Clearance
 	
 	#Land Clearance
 	production_efficiency 	=	0.01
+	global_tax_modifier = 0.02
 	furnace = yes
 }
 
@@ -245,6 +249,7 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.01
+	global_tax_modifier = 0.02
 }
 
 technology = { #Separation of Powers
@@ -269,6 +274,7 @@ technology = { #Rotherham Plough
 	
 	#Rotherham Plough
 	production_efficiency 	=	0.01
+	global_tax_modifier = 0.02
 }
 
 technology = { #Rights of Man
@@ -286,6 +292,7 @@ technology = { #Advanced Production
 	
 	#Improved Draft Animals
 	production_efficiency 	=	0.01
+	global_tax_modifier = 0.02
 }
 
 technology = { #Revolutionary Ideals
@@ -303,4 +310,5 @@ technology = { #Four Field Rotation
 	
 	#Four field rotation
 	production_efficiency 	=	0.01
+	global_tax_modifier = 0.02
 }

@@ -13,7 +13,7 @@ economic_hegemon = {
 	
 	# At max 100% tickup.
 	scale = {
-		global_trade_goods_size_modifier = 0.25
+		global_trade_goods_size_modifier = 0.15
 		#min_autonomy_in_territories = -0.1
 		governing_capacity_modifier = 0.1
 		build_cost = -0.15

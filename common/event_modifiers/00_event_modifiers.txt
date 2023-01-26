@@ -13,7 +13,7 @@
 the_proper_old_ways = {
 	raze_power_gain = 0.20
 	land_morale = 0.1
-	global_trade_goods_size_modifier = -0.25
+	#global_trade_goods_size_modifier = -0.25
 }
 
 #eth_mil_aid_from_portugal = {

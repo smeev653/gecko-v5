@@ -313,9 +313,9 @@ catholic_rome = {
 	}
 
 	#papal_influence = -10
-	production_efficiency = 0.1
-	global_tax_modifier = 0.1
-	global_manpower_modifier = 0.1
+	production_efficiency = 0.05
+	global_tax_modifier = 0.05
+	global_manpower_modifier = 0.05
 	build_cost = -0.05
 	monthly_reform_progress_modifier = 0.025
 	infantry_power = 0.05

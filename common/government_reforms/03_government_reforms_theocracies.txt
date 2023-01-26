@@ -1519,6 +1519,9 @@ state_of_theologians_reform = {
 divinity_through_craftsmanship_reform = {
 	icon = "peasant_republic"
 	allow_normal_conversion = yes
+	potential = {
+		always = no
+	}
 	modifiers = {
 		#development_cost_modifier = -0.025
 		global_trade_goods_size_modifier = 0.1

@@ -719,8 +719,8 @@ vassal_obligations_act = {
 		full_idea_group = economic_ideas
 	}	
 	
-	global_trade_goods_size_modifier = 0.1
-	build_cost = -0.1
+	global_trade_goods_size_modifier = 0.05
+	build_cost = -0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -1441,8 +1441,8 @@ church_sponsored_guilds = {
 		full_idea_group = trade_ideas
 	}
 	
-	global_trade_goods_size_modifier = 0.1
-	global_missionary_strength = 0.01
+	global_trade_goods_size_modifier = 0.05
+	global_missionary_strength = 0.03
 	
 	ai_will_do = {
 		factor = 1

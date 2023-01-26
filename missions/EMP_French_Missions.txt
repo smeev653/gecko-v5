@@ -1673,25 +1673,10 @@ emp_france_missions_5 = {
 		icon = centralize_france
 		required_missions = {  }
 		provinces_to_highlight = {
-			owner = {
-				is_subject_of = ROOT
-				capital_scope = {
-					region = france_region
-				}
-			}
+			NOT = { average_autonomy = 10 }
 		}
 		trigger = {
-			NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
-			custom_trigger_tooltip = {
-				tooltip = centralize_fra_tt
-				NOT = {
-					any_subject_country = {
-						capital_scope = {
-							region = france_region
-						}
-					}
-				}
-			}
+			NOT = { average_autonomy = 10 }
 		}
 		effect = {
 			if = {

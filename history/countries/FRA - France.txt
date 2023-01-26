@@ -141,9 +141,9 @@ change_estate_land_share = {
 		
 	}
 }
-#1444.10.1 = {
-#	set_estate_privilege = estate_nobles_french_strong_duchies
-#}
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_french_strong_duchies
+}
 
 
 

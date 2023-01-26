@@ -10508,7 +10508,7 @@ dutch_polders = {
 			local_monthly_devastation = -0.5
 		}
 		country_modifiers = {
-			global_trade_goods_size_modifier = 0.05
+			global_trade_goods_size_modifier = 0.075
 			burghers_loyalty_modifier = 0.05
 		}
 		on_upgraded = {

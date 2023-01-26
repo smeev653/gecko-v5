@@ -24,7 +24,7 @@ regional_port = {
     province_modifiers = {
         province_trade_power_value = 15
         local_institution_spread = 0.3
-		trade_goods_size = 1
+		trade_goods_size = 0.5
     }
     state_modifiers = {
         local_development_cost = -0.10
@@ -40,7 +40,7 @@ world_port = {
     province_modifiers = {
         province_trade_power_value = 20
         local_institution_spread = 0.3
-		trade_goods_size = 1.5
+		trade_goods_size = 1
     }
     state_modifiers = {
         local_development_cost = -0.15
@@ -58,7 +58,7 @@ world_port_2 = {
     province_modifiers = {
         province_trade_power_value = 20
         local_institution_spread = 0.3
-		trade_goods_size = 2
+		trade_goods_size = 1
     }
     state_modifiers = {
         local_development_cost = -0.15
@@ -95,7 +95,7 @@ regional_hub = {
     province_modifiers = {
         province_trade_power_value = 15
         local_institution_spread = 0.3
-		trade_goods_size = 1
+		trade_goods_size = 0.5
     }
     state_modifiers = {
         local_development_cost = -0.10
@@ -111,7 +111,7 @@ world_trade_center = {
     province_modifiers = {
         province_trade_power_value = 20
         local_institution_spread = 0.5
-		trade_goods_size = 1.5
+		trade_goods_size = 1
     }
     state_modifiers = {
         local_development_cost = -0.15
@@ -130,7 +130,7 @@ world_trade_center_2 = {
     province_modifiers = {
         province_trade_power_value = 20
         local_institution_spread = 0.5
-		trade_goods_size = 1.5
+		trade_goods_size = 1
     }
     state_modifiers = {
         local_development_cost = -0.15

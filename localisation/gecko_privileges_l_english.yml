@@ -98,7 +98,7 @@
  estate_church_negative_piety_privilege_desc:0 "If we listen to the advice of the [Root.GetClergyName] and place their concerns at the forefront of our mind, we may derive considerable benefits for our rule and see the people's faith in [Root.GetReligionNoun] greatly strengthened."
  estate_gc_priv_12:0 "Additional Tithes"
  estate_gc_priv_12_desc:0 ""
- estate_gc_priv_12_tt:0 "25% chance for an additional base tax per admin development."
+ estate_gc_priv_12_tt:0 "§G+25§% chance for an additional base tax per provincial tax development."
  #mountain dev cost 
  smeev_mountain_dev_cost:0 "Clergy Exploration Expeditions"
  smeev_mountain_dev_cost_desc:0 "[Root.GetClergyName] roam our mountainous frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."

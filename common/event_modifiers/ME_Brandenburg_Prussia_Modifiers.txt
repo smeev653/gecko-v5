@@ -186,7 +186,7 @@ PRU_the_lust_for_resources = {
 	fabricate_claims_cost = -0.2
 }
 PRU_zollverein_modifier = {
-	global_trade_goods_size_modifier = 0.33
+	global_trade_goods_size_modifier = 0.2
 }
 PRU_cornerstone_of_a_furnace = {
 	local_build_cost = -0.1
