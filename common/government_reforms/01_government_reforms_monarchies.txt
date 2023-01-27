@@ -2576,7 +2576,7 @@ quash_noble_power_reform = {
 		is_revolutionary = no
 	}
 	modifiers = {
-		global_tax_modifier = 0.10
+		global_tax_modifier = 0.15
 		nobles_influence_modifier = -0.1
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
@@ -2605,7 +2605,7 @@ grant_noble_castle_rights_reform = {
 		is_revolutionary = no
 	}
 	modifiers = {
-		fort_maintenance_modifier = -0.2
+		fort_maintenance_modifier = -0.25
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
@@ -3181,8 +3181,8 @@ centralize_empire_reform = {
 		}
 	}
 	modifiers = {
-		global_autonomy = -0.025
-		autonomy_change_time = -0.25
+		global_autonomy = -0.05
+		#autonomy_change_time = -0.25
 		culture_conversion_cost = -0.1
 		all_estate_loyalty_equilibrium = -0.05
 	}
