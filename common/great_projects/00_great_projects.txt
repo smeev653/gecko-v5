@@ -3,7 +3,7 @@ kiel_canal = {
 	start = 1775
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1895.06.20
+	date = 1443.01.01
 	
 	#time to build
 	time = {
@@ -360,8 +360,7 @@ panama_canal = {
 	start = 835
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1914.08.14
-	
+	date = 1443.01.01
 	#time to build
 	time = {
 		months = 120
