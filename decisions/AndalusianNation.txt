@@ -141,12 +141,12 @@ country_decisions = {
 				duration = 3650
 			}
 			set_capital = 225 # Cordoba
-			if = {
-				limit = {
-					NOT = { primary_culture = andalucian }
-				}
-				change_primary_culture = andalucian
-			}
+			#if = {
+			#	limit = {
+			#		NOT = { primary_culture = andalucian }
+			#	}
+			#	change_primary_culture = andalucian
+			#}
 			if = {
 				limit = {
 					government = tribal
