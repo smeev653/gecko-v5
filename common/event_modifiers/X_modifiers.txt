@@ -26,7 +26,7 @@ X_estate_cossacks_privilege_2_pmod = {
 # Province Estates Modifiers
 ########################################
 X_estate_church_province_control_pmod = {
-	local_tax_modifier = 0.20
+	local_tax_modifier = 0.4
 	local_culture_conversion_cost = -0.10
 	local_missionary_strength = 0.02
 	local_missionary_maintenance_cost = -0.1
