@@ -261,7 +261,7 @@ shipyard = {
 }
 
 fort_15th = {
-	cost = 100
+	cost = 200
 	time = 30
 	on_built = {
 		###X###
@@ -310,6 +310,7 @@ fort_15th = {
 						loyalty = 5
 					}
 				}
+				add_army_tradition = 5
 			}
 		}
 	}
