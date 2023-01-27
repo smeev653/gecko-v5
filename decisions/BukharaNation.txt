@@ -3,6 +3,7 @@ country_decisions = {
 	bukharan_nation = {
 		major = yes
 		potential = {
+			always = no
 			OR = {
 				tag = TRS
 				tag = TIM
