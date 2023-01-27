@@ -19,7 +19,7 @@ estate_ghilman = {
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		ghilman_loyalty_modifier = 0.2
+		ghilman_loyalty_modifier = 0.5
 	}
 	province_independence_weight = {
 		factor = 1

@@ -81,7 +81,8 @@ estate_cossacks = {
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		cossacks_loyalty_modifier = 0.2
+		cossacks_loyalty_modifier = 0.5
+		cavalry_cost = -1
 	}
 
 	# Influence modifiers

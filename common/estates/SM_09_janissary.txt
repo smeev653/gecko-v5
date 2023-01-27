@@ -9,19 +9,19 @@ estate_janissary = {
 	}
 
 	country_modifier_happy = {
-		infantry_cost = -0.10
+		fire_damage = 0.1
 		army_tradition_decay = -0.005
 	}
 	country_modifier_neutral = {
 		army_tradition_decay = -0.005
 	}
 	country_modifier_angry = {
-		infantry_cost = 0.10
+		fire_damage = -0.1
 		army_tradition_decay = 0.005
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		janissary_loyalty_modifier = 0.2
+		janissary_loyalty_modifier = 0.5
 	}
 	province_independence_weight = {
 		factor = 1

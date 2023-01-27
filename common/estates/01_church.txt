@@ -44,6 +44,8 @@ estate_church =
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
 		stability_cost_modifier = -0.1
+		yearly_patriarch_authority = 0.0025
+		land_morale = 0.025
 	}
 	country_modifier_neutral = {
 		global_missionary_strength = 0.02
@@ -56,6 +58,8 @@ estate_church =
 		monthly_fervor_increase = -1
 		stability_cost_modifier = 0.1
 		global_unrest = 2
+		yearly_patriarch_authority = -0.0025
+		land_morale = -0.025
 	}
 
 	land_ownership_modifier = {

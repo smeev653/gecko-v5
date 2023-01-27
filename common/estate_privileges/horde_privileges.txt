@@ -11,7 +11,7 @@ estate_nomadic_tribes_tribal_host = {
 		manpower_in_culture_group_provinces = 0.1
 	}
 	modifier_by_land_ownership = {
-		cavalry_cost = -0.20
+		cavalry_cost = -0.5
 	}
 	ai_will_do = {
 		factor = 10
@@ -22,7 +22,7 @@ estate_nomadic_tribes_tribal_host = {
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
-		remove_estate_privilege =estate_nomadic_tribes_tribal_host
+		remove_estate_privilege = estate_nomadic_tribes_tribal_host
 	}
 }
 

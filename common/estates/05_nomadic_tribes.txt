@@ -23,7 +23,7 @@ estate_nomadic_tribes = {
 		cavalry_cost = 0.1
 	}
 	land_ownership_modifier = {
-		nomadic_tribes_loyalty_modifier = 0.2
+		nomadic_tribes_loyalty_modifier = 0.5
 		global_manpower_modifier = 0.5
 	}
 	
