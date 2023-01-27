@@ -1534,6 +1534,7 @@ estate_nobles_french_strong_duchies = {
 	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
+		tag = FRA
 	}
 	can_select = {
 		if = {
