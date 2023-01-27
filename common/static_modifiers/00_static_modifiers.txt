@@ -268,6 +268,7 @@ development_scaled = {
 
 capital_city = {
 	fort_level = 1
+	local_governing_cost = -1000
 }
 
 
@@ -1820,7 +1821,7 @@ hussars_regiment = {
 	reinforce_speed = -0.5
 }
 marine_regiment = {
-    shock_damage_received = -0.1
+    shock_damage_received = -0.25
     regiment_disembark_speed = 2 #requires a new country modifier
 }
 banner_regiment = {
