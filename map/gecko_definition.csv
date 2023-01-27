@@ -459,7 +459,7 @@ province;red;green;blue;x;x
 458;65;52;192;Kokand;x
 459;193;54;255;Taraz;x
 460;65;56;0;Uzkend;x
-461;193;58;64;Zhetysu;x
+#461;193;58;64;Zhetysu;x
 462;66;60;128;Mingrelia;x
 463;194;62;192;Circassia;x
 464;66;64;255;Astrakhan;x
