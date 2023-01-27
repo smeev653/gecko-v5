@@ -29,7 +29,7 @@ christian = {
 			technology_cost = -0.05
 			land_morale = 0.05
 		}
-		can_have_secondary_religion = yes
+		
 		
 		hre_religion = yes
 		
@@ -320,7 +320,7 @@ christian = {
 	anglican = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 135 77 255 }
 		icon = 28
 
@@ -352,7 +352,7 @@ christian = {
 	hussite = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 244 55 9 }
 		icon = 22
 
@@ -387,7 +387,7 @@ christian = {
 	protestant = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 0 0 178 }
 		icon = 2
 
@@ -528,7 +528,7 @@ christian = {
 	reformed = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 76 76 229 }
 		icon = 3
 		allowed_conversion = {
@@ -646,7 +646,6 @@ christian = {
 	orthodox = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
 		color = { 178 127 0 }
 		icon = 4
 		country = {
@@ -791,7 +790,7 @@ christian = {
 	coptic = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
@@ -1360,12 +1359,12 @@ muslim = {
 		heretic = { BEKTASHI AHMADI ZIKRI YAZIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
-		can_have_secondary_religion = yes
+		
 	}
 
 	shiite = {
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 0 204 0 }
 		icon = 6
 		country = {
@@ -1382,7 +1381,7 @@ muslim = {
 	
 	ibadi = {
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 0 102 0 }
 		icon = 16
 		country = {
@@ -1440,7 +1439,7 @@ eastern = {
 	vajrayana = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 204 76 76 }
 		icon = 25
 		allowed_conversion = {
@@ -1470,7 +1469,7 @@ eastern = {
 	mahayana = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 204 76 127 }
 		icon = 23
 		allowed_conversion = {
@@ -1542,7 +1541,7 @@ dharmic = {
 	hinduism = {
 		allow_female_defenders_of_the_faith = yes
 		declare_war_in_regency = yes
-		can_have_secondary_religion = yes
+		
 		color = { 0 204 204 }
 		icon = 8
 		allowed_conversion = {
@@ -2321,7 +2320,7 @@ pagan = {
 			#movement_speed = 0.2
 			global_manpower_modifier = 0.2
 		}
-		can_have_secondary_religion = yes
+		
 		heretic = { OLD_TENGRI }
 		ancestors = yes
 	}
