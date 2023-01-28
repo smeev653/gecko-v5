@@ -1185,7 +1185,7 @@ GBR_missions_2_2 = {
 		required_missions = { ENG_chart_india }
 		position = 18
 		trigger = {
-			4346 = {
+			2783 = {
 				trade_share = {
 					country = ROOT
 					share = 33
@@ -1245,16 +1245,10 @@ GBR_missions_2_2 = {
 
 	GBR_spice_must_flow = {
 		icon = mission_dominate_home_trade_node
-		required_missions = { GBR_Melaka }
+		required_missions = { ENG_chart_india }
 		position = 20
 		trigger = {
-			1361 = {
-				trade_share = {
-					country = ROOT
-					share = 50
-				}
-			}
-			1357 = {
+			524 = {
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -1958,24 +1952,18 @@ GBR_missions_3_2 = {
 		position = 14
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1100
 				province_id = 2025
 				province_id = 1098
 				province_id = 744
-				province_id = 874
-				province_id = 1991
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			mission_completed = GBR_indian_dominion
 			mission_completed = GBR_conquer_egypt
 			mission_completed = ENG_jamaican_colony
 			mission_completed = ENG_thirteen_colonies
 			mission_completed = ENG_royal_canada
-			1100 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+
 			2025 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1983,12 +1971,6 @@ GBR_missions_3_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			744 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			874 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1991 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -2139,142 +2121,6 @@ ENG_missions_3_4 = {
 	}
 }
 
-GBR_missions_3_4 = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		tag = GBR
-		
-		
-	}
-	has_country_shield  = yes
-
-	GBR_Melaka = {
-		icon = mission_galleys_in_port
-		required_missions = { ENG_Pacific_exploration }
-		position = 19
-		provinces_to_highlight = {
-			province_id = 596
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			596 = {
-				owned_by = ROOT
-			}
-		}
-		effect = {
-			malaya_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			malacca_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			brunei_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			596 = {
-				add_province_modifier = {
-					name = ENG_major_port
-					duration = -1
-				}
-			}
-		}
-	}
-
-	GBR_british_malaya = {
-		icon = mission_trade_company_region_abroad
-		required_missions = { GBR_Melaka }
-		position = 20
-		provinces_to_highlight = {
-			OR = {
-				area = brunei_area
-				area = malacca_area
-				area = malaya_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			brunei_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			malacca_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			malaya_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			1357 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 25
-					key = ENG_british_influence
-				}
-			}
-		}
-	}
-
-	GBR_chinese_entrepot = {
-		icon = mission_trade_with_cathay
-		required_missions = { GBR_british_malaya }
-		position = 21
-		provinces_to_highlight = {
-			OR = {
-				region = south_china_region
-				region = north_china_region
-			}
-			NOT = {
-				OR = {
-					south_china_region = {
-						owned_by = ROOT
-					}
-					north_china_region = {
-						owned_by = ROOT
-					}
-				}
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			OR = {
-				south_china_region = {
-					owned_by = ROOT
-				}
-				north_china_region = {
-					owned_by = ROOT
-				}
-			}
-		}
-		effect = {
-			667 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 15
-					key = ENG_chinese_entrepot
-				}
-			}
-		}
-	}
-}
 
 ENG_missions_3_5 = {
 	slot = 3
@@ -2964,10 +2810,7 @@ ENG_missions_4_2 = {
 		provinces_to_highlight = {
 			OR = {
 				region = hindusthan_region
-				region = coromandel_region
 				region = west_india_region
-				region = bengal_region
-				region = deccan_region
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -2976,37 +2819,13 @@ ENG_missions_4_2 = {
 				all_owned_province = {
 					OR = {
 						region = hindusthan_region
-						region = coromandel_region
 						region = west_india_region
-						region = bengal_region
-						region = deccan_region
 					}
 				}
 				amount = 3
 			}
 		}
 		effect = {
-			west_bengal_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_bengal_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			gaur_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			add_years_of_income = 0.5
 		}
 	}
@@ -3925,6 +3744,10 @@ GBR_missions_5_2 = {
 			OR = {
 				area = cape_of_good_hope_area
 				area = south_african_plateau_area
+				area = highveld_area
+				area = transvaal_area
+				area = kalahari_basin_area
+				area = senqu_delta_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -3933,7 +3756,23 @@ GBR_missions_5_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			highveld_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			south_african_plateau_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			transvaal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalahari_basin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			senqu_delta_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3945,7 +3784,31 @@ GBR_missions_5_2 = {
 					duration = -1
 				}
 			}
+			highveld_area = {
+				add_province_modifier = {
+					name = ENG_wealth_of_africa
+					duration = -1
+				}
+			}
 			south_african_plateau_area = {
+				add_province_modifier = {
+					name = ENG_wealth_of_africa
+					duration = -1
+				}
+			}
+			transvaal_area= {
+				add_province_modifier = {
+					name = ENG_wealth_of_africa
+					duration = -1
+				}
+			}
+			kalahari_basin_area = {
+				add_province_modifier = {
+					name = ENG_wealth_of_africa
+					duration = -1
+				}
+			}
+			senqu_delta_area = {
 				add_province_modifier = {
 					name = ENG_wealth_of_africa
 					duration = -1
@@ -3953,118 +3816,6 @@ GBR_missions_5_2 = {
 			}
 		}
 	}
-
-	GBR_bengal = {
-		icon = mission_rb_conquer_bengal
-		required_missions = { ENG_indian_company }
-		position = 19
-		provinces_to_highlight = {
-			OR = {
-				area = west_bengal_area
-				area = east_bengal_area
-				area = gaur_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			west_bengal_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			east_bengal_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gaur_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			1343 = {
-				add_trade_modifier = {
-					who = ROOT
-					duration = -1
-					power = 25
-					key = ENG_Bengal_monopoly
-				}
-			}
-			andhra_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			orissa_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	GBR_coromandel = {
-		icon = mission_rb_take_indian_coast
-		required_missions = { GBR_bengal }
-		position = 22
-		provinces_to_highlight = {
-			OR = {
-				area = orissa_area
-				area = andhra_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			orissa_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			andhra_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			coromandel_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			hindusthan_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	GBR_along_the_rivers = {
-		icon = mission_advance_to_the_dnieper
-		required_missions = { GBR_coromandel }
-		position = 23
-		provinces_to_highlight = {
-			region = hindusthan_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 25
-				region = hindusthan_region
-			}
-		}
-		effect = {
-			#custom_tooltip = ENG_Tooltip.9
-			add_mil_power = 100
-		}
-	}
-
 	GBR_indian_dominion = {
 		icon = mission_unite_home_region
 		required_missions = { GBR_along_the_rivers }
@@ -4072,10 +3823,8 @@ GBR_missions_5_2 = {
 		provinces_to_highlight = {
 			OR = {
 				region = hindusthan_region
-				region = bengal_region
-				region = deccan_region
 				region = west_india_region
-				region = coromandel_region
+
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -4084,19 +3833,7 @@ GBR_missions_5_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			bengal_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			deccan_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			west_india_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			coromandel_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
