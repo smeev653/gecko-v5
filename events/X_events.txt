@@ -57,7 +57,7 @@ province_event = {
 				which = X_province_estates_crownland_cost_variable
 				which = X_province_estates_crownland_variable
 			}
-			X_has_province_estates_pmod_trigger = no
+			X_province_estates_has_pmod_trigger = no
 		}
 		desc = X_pe_and_ei_events.2.d5
 	}
@@ -355,7 +355,7 @@ province_event = {
 		if = {
 			limit = {
 				development = 10
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_1_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 1 = yes }
 			}
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_1_pmod
@@ -366,9 +366,9 @@ province_event = {
 			limit = {
 				development = 20
 				has_province_modifier = X_expand_infrastructure_tier_1_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_2_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 2 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_1_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_2_pmod
 				duration = -1
@@ -378,9 +378,9 @@ province_event = {
 			limit = {
 				development = 30
 				has_province_modifier = X_expand_infrastructure_tier_2_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_3_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 3 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_2_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_3_pmod
 				duration = -1
@@ -390,9 +390,9 @@ province_event = {
 			limit = {
 				development = 40
 				has_province_modifier = X_expand_infrastructure_tier_3_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_4_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 4 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_3_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_4_pmod
 				duration = -1
@@ -402,9 +402,9 @@ province_event = {
 			limit = {
 				development = 50
 				has_province_modifier = X_expand_infrastructure_tier_4_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 5 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_4_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_5_pmod
 				duration = -1
@@ -414,9 +414,9 @@ province_event = {
 			limit = {
 				development = 60
 				has_province_modifier = X_expand_infrastructure_tier_5_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 6 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_5_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_6_pmod
 				duration = -1
@@ -426,9 +426,9 @@ province_event = {
 			limit = {
 				development = 70
 				has_province_modifier = X_expand_infrastructure_tier_6_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 7 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_6_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_7_pmod
 				duration = -1
@@ -438,9 +438,9 @@ province_event = {
 			limit = {
 				development = 80
 				has_province_modifier = X_expand_infrastructure_tier_7_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 8 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_7_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_8_pmod
 				duration = -1
@@ -450,9 +450,9 @@ province_event = {
 			limit = {
 				development = 90
 				has_province_modifier = X_expand_infrastructure_tier_8_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 9 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_8_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_9_pmod
 				duration = -1
@@ -462,9 +462,9 @@ province_event = {
 			limit = {
 				development = 100
 				has_province_modifier = X_expand_infrastructure_tier_9_pmod
-				NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+				X_expand_infrastructure_has_higher_tier_pmod_trigger = { 10 = yes }
 			}
-			hidden_effect = { remove_province_modifier = X_expand_infrastructure_tier_9_pmod }
+			hidden_effect = { X_expand_infrastructure_remove_all_pmod_effect = yes }
 			add_province_modifier = {
 				name = X_expand_infrastructure_tier_10_pmod
 				duration = -1
@@ -474,7 +474,7 @@ province_event = {
 	option = {
 		name = X_pe_and_ei_events.3.b
 		trigger = {
-			X_has_expand_infrastructure_pmod_trigger = yes
+			X_expand_infrastructure_has_pmod_trigger = yes
 		}
 		if = {
 			limit = {

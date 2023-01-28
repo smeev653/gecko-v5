@@ -233,7 +233,7 @@ defined_text = {
 	random = no
 	text = {
 		trigger = {
-			X_has_province_estates_pmod_trigger = no
+			X_province_estates_has_pmod_trigger = no
 		}
 		localisation_key = X_grant
 	}
@@ -250,7 +250,7 @@ defined_text = {
 	random = no
 	text = {
 		trigger = {
-			X_has_province_estates_pmod_trigger = no
+			X_province_estates_has_pmod_trigger = no
 			NOT = { province_trade_power = 5 }
 			NOT = { development = 10 }
 			NOT = { province_has_center_of_trade_of_level = 1 }
@@ -264,7 +264,7 @@ defined_text = {
 	random = no
 	text = {
 		trigger = {
-			X_has_province_estates_pmod_trigger = no
+			X_province_estates_has_pmod_trigger = no
 			religion_group = muslim
 		}
 		localisation_key = X_estate_dhimmi_province_restrictions

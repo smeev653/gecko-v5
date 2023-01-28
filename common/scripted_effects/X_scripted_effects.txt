@@ -382,9 +382,9 @@ X_on_province_owner_change_pmod_effect = {
 	####################
 	if = {
 		limit = {
-			X_has_province_estates_pmod_trigger = yes
+			X_province_estates_has_pmod_trigger = yes
 		}
-		X_remove_all_province_estates_pmod_effect = yes
+		X_province_estates_remove_all_pmod_effect = yes
 	}
 }
 
@@ -646,6 +646,19 @@ X_RUS_change_isolation_vs_westernization_level_effect = {
 ####################
 # Expand Infrastructure & Province Estates
 ####################
+X_expand_infrastructure_remove_all_pmod_effect = {
+	remove_province_modifier = X_expand_infrastructure_tier_1_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_2_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_3_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_4_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_5_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_6_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_7_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_8_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_9_pmod
+	remove_province_modifier = X_expand_infrastructure_tier_10_pmod
+}
+
 X_province_estates_num_of_estate_provinces_effect = {
 	if = {
 		limit = { has_estate = $estate$ }
@@ -674,9 +687,9 @@ X_province_estates_num_of_estate_provinces_effect = {
 X_province_estates_on_capital_moved_effect = { 
 	if = {
 		limit = {
-			X_has_province_estates_pmod_trigger = yes
+			X_province_estates_has_pmod_trigger = yes
 		}
-		X_remove_all_province_estates_pmod_effect = yes
+		X_province_estates_remove_all_pmod_effect = yes
 	}
 }
 
@@ -705,7 +718,7 @@ X_province_estates_on_development_effect = {
 	]
 }
 
-X_remove_all_province_estates_pmod_effect = {
+X_province_estates_remove_all_pmod_effect = {
 	remove_province_modifier = X_estate_church_province_control_pmod
 	remove_province_modifier = X_estate_burghers_province_control_pmod
 	remove_province_modifier = X_estate_nobles_province_control_pmod

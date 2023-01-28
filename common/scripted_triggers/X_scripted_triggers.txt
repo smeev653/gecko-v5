@@ -151,7 +151,85 @@ X_RUS_has_isolation_vs_westernization_modifier_trigger = {
 ####################
 # Province Estates & Expand Infrastructure
 ####################
-X_has_expand_infrastructure_pmod_trigger = {
+X_expand_infrastructure_has_higher_tier_pmod_trigger = {
+	[[1]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_1_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_2_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_3_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_4_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[2]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_2_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_3_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_4_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[3]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_3_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_4_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[4]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_4_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[5]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_5_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[6]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_6_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[7]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_7_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[8]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_8_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[9]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_9_pmod }
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+	[[10]
+		NOT = { has_province_modifier = X_expand_infrastructure_tier_10_pmod }
+	]
+}
+
+X_expand_infrastructure_has_pmod_trigger = {
 	OR = {
 		has_province_modifier = X_expand_infrastructure_tier_1_pmod
 		has_province_modifier = X_expand_infrastructure_tier_2_pmod
@@ -166,7 +244,7 @@ X_has_expand_infrastructure_pmod_trigger = {
 	}
 }
 
-X_has_province_estates_pmod_trigger = {
+X_province_estates_has_pmod_trigger = {
 	OR = {
 		has_province_modifier = X_estate_church_province_control_pmod
 		has_province_modifier = X_estate_burghers_province_control_pmod
@@ -183,7 +261,7 @@ X_province_estates_grant_or_revoke_trigger = {
 				which = X_province_estates_crownland_variable
 			}
 		}
-		X_has_province_estates_pmod_trigger = yes
+		X_province_estates_has_pmod_trigger = yes
 	}
 	else = {
 		check_variable = {
