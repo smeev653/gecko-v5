@@ -358,7 +358,7 @@ panama_canal = {
 	start = 835
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1443.01.01
+	date = 1760.01.01
 	#time to build
 	time = {
 		months = 120
