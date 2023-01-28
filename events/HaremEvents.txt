@@ -891,7 +891,7 @@ country_event = {
 	option = {
 		name = harem_events.8.a
 		add_adm_power = -25 #Loss of the Function of the Valide Sultan
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 	option = {
 		name = harem_events.8.b
@@ -904,7 +904,7 @@ country_event = {
 			}
 		}
 		add_adm_power = -25 #Loss of the Function of the Valide Sultan
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		random_owned_province = {
 			limit = {
 				is_state = yes
@@ -1151,7 +1151,7 @@ country_event = {
 
 	option = {
 		name = harem_events.11.a
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		if = {
 			limit = {
 				NOT = { heir_claim = 100 }
@@ -1418,7 +1418,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		define_consort = { }
 	}
 	option = {
@@ -1560,7 +1560,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 	option = {
 		name = harem_events.20.b #The newcomer has our heart now.

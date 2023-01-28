@@ -1031,7 +1031,7 @@ yem_missions_5 = {
 				country_event = { id = ME_Yemen_Events.6 }
 			}
 			else = {
-				add_prestige = 20 
+				add_prestige_or_monarch_power = { amount = 20 } 
 			}
 			if = {
 				limit = {

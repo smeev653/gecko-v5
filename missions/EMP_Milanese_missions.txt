@@ -344,7 +344,7 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 					118 = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				set_papacy_active = no
-				add_prestige = 50 
+				add_prestige_or_monarch_power = { amount = 50 } 
 			}
 			else_if = {
 				limit = {

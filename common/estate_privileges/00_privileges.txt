@@ -4005,11 +4005,11 @@ estate_burghers_patronage_of_the_arts = {
 		}
 		else_if = {
 			limit = { prestige = -25 }
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 		}
 		else_if = {
 			limit = { prestige = -50 }
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 		}
 		else = {
 			add_prestige = 30

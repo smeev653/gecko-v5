@@ -95,7 +95,7 @@ country_event = { #The High Court of Cyprus
 		trigger = { 
 			CYP = { is_subject_of = ROOT } 
 		}
-		add_prestige = 10 
+		add_prestige_or_monarch_power = { amount = 10 } 
 		CYP = { 
 			add_historical_friend = ROOT 
 		}
@@ -1354,7 +1354,7 @@ country_event = { #Eyalets of Hungary
 					limit = { 
 						NOT = { prestige = -50 } 
 					}
-					add_prestige = 100
+					add_prestige_or_monarch_power = { amount = 100 }
 				}
 				add_historical_friend = ROOT 
 			}
@@ -1867,7 +1867,7 @@ country_event = { #Granadan Moriscos seek Refuge in [151.GetName]
 	option = { 
 		name = FU_Ottoman_Events.42.b 
 		
-		add_prestige = 10 
+		add_prestige_or_monarch_power = { amount = 10 } 
 	}
 }
 
@@ -2907,7 +2907,7 @@ country_event = { #Suleiman the Magnificent
 	option = { 
 		name = FU_Ottoman_Events.66.b 
 		
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		custom_tooltip = tur_suleiman_accident_tt
 	}
 }
@@ -3262,7 +3262,7 @@ country_event = { #Family First
 		
 		custom_tooltip = tur_she_appreciates_it_tt
 		add_legitimacy = 5 
-		add_prestige = 5 
+		add_prestige_or_monarch_power = { amount = 5 } 
 	}
 }
 

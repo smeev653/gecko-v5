@@ -31,7 +31,7 @@ gc_hungary_branch_1 = {
 			}
 		}
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 			add_country_modifier = {
 				name = hun_funded_paulines
 				duration = 7300
@@ -820,7 +820,7 @@ gc_hungary_gh_branch_3 = {
 		
 		effect = {
 			add_adm_power = 100
-			add_prestige = 50
+			add_prestige_or_monarch_power = { amount = 50 }
             add_years_of_income = 1
 			add_country_modifier = {
 				name = "hun_constantinople"
@@ -1110,7 +1110,7 @@ gc_hungary_gh_branch_4 = {
         }
         effect = {
             add_adm_power = 100
-			add_prestige = 50
+			add_prestige_or_monarch_power = { amount = 50 }
             aegean_archipelago_area = {
                 add_permanent_claim = ROOT
             }
@@ -1142,7 +1142,7 @@ gc_hungary_gh_branch_4 = {
             }
         }
         effect = {
-            add_prestige = 50
+            add_prestige_or_monarch_power = { amount = 50 }
             add_sailors = 2500
         }
     }
@@ -1565,7 +1565,7 @@ gc_hungary_eoh_branch_3 = {
             }
         }
         effect = {
-            add_prestige = 50
+            add_prestige_or_monarch_power = { amount = 50 }
             austria_proper_area = {
                 add_permanent_claim = ROOT
             }
@@ -2073,7 +2073,7 @@ gc_hungary_eoh_branch_5 = {
         }
         effect = {
             add_adm_power = 100
-            add_prestige = 50
+            add_prestige_or_monarch_power = { amount = 50 }
             red_ruthenia_area = {
                 add_permanent_claim = ROOT
             }

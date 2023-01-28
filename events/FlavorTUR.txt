@@ -1170,7 +1170,7 @@ country_event = {
 				NOT = { army_size = PER }
 			}
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -1232,7 +1232,7 @@ country_event = {
 				NOT = { army_size = TUR }
 			}
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		hidden_effect = {
 			clr_country_flag = full_reconciliation
 			clr_country_flag = moderate_treaty

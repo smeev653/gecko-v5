@@ -1008,7 +1008,7 @@ country_event = {
 			}
 		}
 		add_piety = 0.2
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 	option = {
 		name = muslim_piety.12.b
@@ -1554,7 +1554,7 @@ country_event = {
 		show_ambient_object = hagia_sophia_minarets
 		hide_ambient_object = hagia_sophia
 		add_piety = 0.4
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_years_of_income = -0.1
 		if = {
 			limit = {

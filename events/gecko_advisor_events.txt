@@ -65,7 +65,7 @@ country_event = { #Arty Officer
     option = { # His reputation will reach further than our borders
         name = gc_advisor_events.1.c
         add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
         add_country_modifier = {
 			name = "gc_arty_officer_modifier"
 			duration = 2190
@@ -138,7 +138,7 @@ country_event = { #Drill Master
     option = { # His reputation will reach further than our borders
         name = gc_advisor_events.2.c
         add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
         add_country_modifier = {
 			name = "gc_drill_master_modifier"
 			duration = 2190
@@ -207,7 +207,7 @@ country_event = { #siege_specialist
     option = { # His reputation will reach further than our borders
         name = gc_advisor_events.3.c
         add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
         add_country_modifier = {
 			name = "gc_siege_specialist_modifier"
 			duration = 2190
@@ -282,7 +282,7 @@ country_event = { #infantry_leader
     option = { # His reputation will reach further than our borders
         name = gc_advisor_events.4.c
         add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
         add_country_modifier = {
 			name = "gc_infantry_leader_modifier"
 			duration = 2190
@@ -362,7 +362,7 @@ country_event = { #cavalry_leader
     option = { # His reputation will reach further than our borders
         name = gc_advisor_events.5.c
         add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
         add_country_modifier = {
 			name = "gc_cavalry_leader_modifier"
 			duration = 2190

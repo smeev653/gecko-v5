@@ -636,7 +636,7 @@ country_event = {
 
 		# ai_chance = { factor = 50 }
 
-		# add_prestige = 10
+		# add_prestige_or_monarch_power = { amount = 10 }
 	# }
 # }
 

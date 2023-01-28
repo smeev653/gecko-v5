@@ -73,7 +73,7 @@ country_decisions = {
 				}
 				add_permanent_claim = GBR
 			}
-			add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -93,6 +93,7 @@ country_decisions = {
 	british_nation_diplomatically = {
 		major = yes
 		potential = {
+			always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { exists = GBR }
@@ -186,7 +187,7 @@ country_decisions = {
 				}
 				add_permanent_claim = GBR
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			
 			add_country_modifier = {
 				name = "centralization_modifier"

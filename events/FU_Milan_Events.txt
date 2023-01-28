@@ -38,7 +38,7 @@ country_event = { #Academy of Bologna
 		name = FU_Milan_Events.2.a 
 		
 		change_innovativeness = 1 
-		add_prestige = 10 
+		add_prestige_or_monarch_power = { amount = 10 } 
 	}
 }
 
@@ -216,7 +216,7 @@ country_event = {
 	
 	option = {
 		name = FU_Milan_Events.7.b 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		ai_chance = { factor = 0 }
 	}
 }
@@ -416,7 +416,7 @@ country_event = { #San Fedele a Milano
 	option = {
 		name = FU_Milan_Events.16.a 
 		
-		add_prestige = 20 
+		add_prestige_or_monarch_power = { amount = 20 } 
 		add_splendor = 100 
 	}
 } 

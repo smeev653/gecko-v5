@@ -57,7 +57,7 @@ country_event = {
 	option = {
 		name = ambrosian_republic.1.a
 		add_stability = 1
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 
@@ -147,7 +147,7 @@ country_event = {
 	option = {
 		name = ambrosian_republic.3.b
 		ai_chance = { factor = 25 }
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -191,7 +191,7 @@ country_event = {
 	option = {
 		name = ambrosian_republic.3.b
 		ai_chance = { factor = 25 }
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 

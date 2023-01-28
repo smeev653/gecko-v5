@@ -266,7 +266,7 @@ POL_Missions_1 = {
 				name = POL_athelta_christi
 				duration = 10950
 			}
-			add_prestige = 20 
+			add_prestige_or_monarch_power = { amount = 20 } 
 			custom_tooltip = POL_if_before_1500
 			hidden_effect = {
 				if = {

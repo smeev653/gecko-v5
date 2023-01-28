@@ -838,7 +838,7 @@ country_event = {
 				}
 			}
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		create_general = { tradition = 75 }
 		if = {
 			limit = {
@@ -1169,7 +1169,7 @@ country_event = {
 
 	option = {
 		name = "randomeventsstapehordes.24.EVTOPTA"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_stability_or_adm_power = yes
 	}
 }

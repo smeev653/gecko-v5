@@ -1373,7 +1373,7 @@ country_event = {
 				}
 			}
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_ruler_modifier = { name = jnana }
 	}
 }
@@ -1804,7 +1804,7 @@ country_event = {
 	# I have many years left!
 	option = {
 		name = "hindu_events.40.b"
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -2136,7 +2136,7 @@ country_event = {
 			MIL = 4
 			claim = 20
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 
 	option = {
@@ -2172,7 +2172,7 @@ country_event = {
 	option = {
 		name = "hindu_events.49.a"
 		create_general = { tradition = 30 }
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 
 	option = {

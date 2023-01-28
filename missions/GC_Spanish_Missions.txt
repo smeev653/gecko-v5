@@ -1779,7 +1779,7 @@ gc_spain_5_b = {
 				add_imperial_influence = 50
 			}
 			else = {
-				add_prestige = 50
+				add_prestige_or_monarch_power = { amount = 50 }
 			}
 		}
 	}

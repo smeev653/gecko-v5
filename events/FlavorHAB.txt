@@ -1130,7 +1130,7 @@ country_event = {
 #	option = {		# Forgery is not the path
 #		name = "flavor_hab.EVTOPTB1"
 #		ai_chance = { factor = 0 }
-#		add_prestige = 10
+#		add_prestige_or_monarch_power = { amount = 10 }
 #	}
 #}
 
@@ -1166,7 +1166,7 @@ country_event = {
 
 	option = {		# This will show the glory of our dynasty
 		name = "flavor_hab.EVTOPTA2"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1484,7 +1484,7 @@ country_event = {
 	option = {		# Excellent
 		name = "EXCELLENT"
 		add_adm_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1515,7 +1515,7 @@ country_event = {
 	option = {		# Excellent
 		name = "EXCELLENT"
 		add_dip_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_innovativeness_small_effect = yes
 	}
 }
@@ -1652,7 +1652,7 @@ country_event = {
 			}
 		}
 		ai_chance = { factor = 90 }
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		FROM = {
 			add_opinion = {
 				who = ROOT
@@ -1916,7 +1916,7 @@ country_event = {
 
 	option = {# Ok.
 		name = flavor_hab.15.a
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_country_modifier = {
 				name = "hab_geheime_kabinettskanzlei"
 				duration = -1
@@ -2000,7 +2000,7 @@ country_event = {
 	
 	option = {# No the Austrian peasants should not be preoccupied with such things.
 		name = flavor_hab.17.b
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_legitimacy = 5
 	}
 }
@@ -2155,7 +2155,7 @@ country_event = {
 		country_event = {
 			id = ideagroups.1
 		}
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		ai_chance = {
 			factor = 1000
 		}

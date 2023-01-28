@@ -315,7 +315,7 @@ country_event = {
 		name = FU_Ardabil_Events.5.a
 		
 		ai_chance = { factor = 1 }
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_years_of_income = 1
 	}
 	

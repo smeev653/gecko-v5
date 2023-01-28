@@ -1287,7 +1287,7 @@ province_event = {
 	# There is no need for such underhanded tactics... or risks.
 	option = {
 		name = "aow_events.29.b"
-		owner = { add_prestige = 10 }
+		owner = { add_prestige_or_monarch_power = { amount = 10 } }
 	}
 }
 
@@ -1490,7 +1490,7 @@ country_event = {
 	# Together, we can return Christianity to what it was meant to be.
 	option = {
 		name = "aow_events.33.a"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_opinion = {
 			who = FROM
 			modifier = reformation_pioneers
@@ -1526,7 +1526,7 @@ country_event = {
 	# The pious of [Root.GetName] and [From.GetName] will remember this day.
 	option = {
 		name = "aow_events.34.a"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_opinion = {
 			who = FROM
 			modifier = reformation_pioneers
@@ -2171,7 +2171,7 @@ country_event = {
 
 	option = {
 		name = "aow_events.49.b"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 

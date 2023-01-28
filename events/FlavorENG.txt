@@ -1215,7 +1215,7 @@ country_event = {
 		months = 1200
 		modifier = {
 			factor = 0.5
-			mission_completed = conquer_ireland
+			mission_completed = ENG_ireland
 		}
 	}
 
@@ -2219,7 +2219,7 @@ country_event = {
 	option = {				# Ok
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				NOT = { has_completed_all_reforms_trigger = yes }
@@ -2261,7 +2261,7 @@ country_event = {
 	option = {				# Ok
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				NOT = { has_completed_all_reforms_trigger = yes }
@@ -2303,7 +2303,7 @@ country_event = {
 	option = {				# Ok
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				NOT = { has_completed_all_reforms_trigger = yes }
@@ -2345,7 +2345,7 @@ country_event = {
 	option = {				# Ok
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				NOT = { has_completed_all_reforms_trigger = yes }
@@ -2387,7 +2387,7 @@ country_event = {
 	option = {				# Ok
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_innovativeness_big_effect = yes
 	}
 }
@@ -2526,7 +2526,7 @@ country_event = {
 				duration = 1825
 			}
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 
 	option = {
@@ -2562,7 +2562,7 @@ country_event = {
 		4370 = {
 			owned_by = ROOT
 		}
-		mission_completed = eng_oxbridge
+		mission_completed = ENG_oxbridge
 	}
 	
 	immediate = {

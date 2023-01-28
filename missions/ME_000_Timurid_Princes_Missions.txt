@@ -127,7 +127,7 @@ Timurid_princes_missions_2 = {
 			}
 		}
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 		}
 	}
 }
@@ -247,7 +247,7 @@ Timurid_princes_missions_3 = {
 					mission_completed = Timurid_prince_power_strugle
 				}
 			}
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 			add_legitimacy_equivalent = { amount = 10 republican_tradition = 10 }
 		}
 	}

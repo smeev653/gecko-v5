@@ -1620,7 +1620,7 @@ ENG_missions_3_1 = {
 		required_missions = { }
 		position = 6
 		trigger = {
-			army_size = 32
+			army_size = 24
 			army_size_percentage = 0.8
 		}
 		effect = {
@@ -1884,9 +1884,6 @@ ENG_missions_3_2 = {
 				area = yorkshire_area
 			}
 			province_has_center_of_trade_of_level = 1
-			NOT = { has_building = marketplace }
-			NOT = { has_building = trade_depot }
-			NOT = { has_building = stock_exchange }
 		}
 		trigger = {
 			NOT = {
@@ -1901,9 +1898,7 @@ ENG_missions_3_2 = {
 						area = yorkshire_area
 					}
 					province_has_center_of_trade_of_level = 1
-					NOT = { has_building = marketplace }
-					NOT = { has_building = trade_depot }
-					NOT = { has_building = stock_exchange }
+
 				}
 			}
 		}
@@ -1974,7 +1969,6 @@ GBR_missions_3_2 = {
 		}
 		trigger = {
 			mission_completed = GBR_indian_dominion
-			mission_completed = GBR_pacific_dominions
 			mission_completed = GBR_conquer_egypt
 			mission_completed = ENG_jamaican_colony
 			mission_completed = ENG_thirteen_colonies
@@ -2136,7 +2130,7 @@ ENG_missions_3_4 = {
 			}
 		}
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 			add_country_modifier = {
 				name = ENG_terra_australis_incognita
 				duration = 9125

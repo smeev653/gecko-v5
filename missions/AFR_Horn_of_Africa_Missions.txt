@@ -123,7 +123,7 @@ gen_horn_of_africa_diplomatic_slot = {
 		}
 		effect = { 
 			add_dip_power = 150
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 		}
 	}
 

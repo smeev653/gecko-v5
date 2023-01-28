@@ -760,7 +760,7 @@ country_event = {
 	option = {
 		name = ME_Muscovy_Events.90.b
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -785,7 +785,7 @@ country_event = {
 			mutual = yes
 		}
 
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 
 	option = {

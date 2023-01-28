@@ -605,7 +605,7 @@ mug_sufis = {
 				}
 			}
 			else = {
-				add_prestige = 20
+				add_prestige_or_monarch_power = { amount = 20 }
 			}
 		}
 	}

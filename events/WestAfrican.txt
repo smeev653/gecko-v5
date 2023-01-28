@@ -1289,7 +1289,7 @@ country_event = {
 	# Have a countrywide animist celebration
 	option = {
 		name = "west_african.26.a"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_legitimacy = 10
 		every_neighbor_country = {
 			limit = {
@@ -1337,7 +1337,7 @@ country_event = {
 	option = {
 		name = "west_african.27.a"
 		add_years_of_income = -0.1
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_legitimacy = 5
 	}
 
@@ -1345,7 +1345,7 @@ country_event = {
 	option = {
 		name = "west_african.27.b"
 		add_years_of_income = -0.2
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_legitimacy = 5
 	}
 
@@ -1367,7 +1367,7 @@ country_event = {
 			any_owned_province = { trade_goods = gold }
 		}
 		add_years_of_income = -0.4
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_legitimacy = 10
 	}
 

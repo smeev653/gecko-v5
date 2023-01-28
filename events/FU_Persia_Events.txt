@@ -110,7 +110,7 @@ country_event = { #Sarkhej Roza and the City of Ahmedabad
 		}
 		if = {
 			limit = { religion = zoroastrian }
-			add_prestige = 10
+			add_prestige_or_monarch_power = { amount = 10 }
 		}
 	}
 }
@@ -1214,7 +1214,7 @@ country_event = { #Masjid-i Ali
 			estate = estate_church 
 			loyalty = 15 
 		}
-		add_prestige = 5 
+		add_prestige_or_monarch_power = { amount = 5 } 
 	}
 }
 
@@ -1250,7 +1250,7 @@ country_event = { #Tomb of Amin al-Din Jibrail
 		name = FU_Persia_Events.26.a 
 		
 		424 = { add_base_tax = 2 }
-		add_prestige = 5 
+		add_prestige_or_monarch_power = { amount = 5 } 
 	}
 }
 	
@@ -1480,7 +1480,7 @@ country_event = { #The Shah's Mosque in Isfahan
 			}
 			else = { add_base_tax = 2 } 
 		}
-		add_prestige = 5 
+		add_prestige_or_monarch_power = { amount = 5 } 
 	}
 }
 

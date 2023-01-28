@@ -1412,7 +1412,7 @@ country_event = {
 	}
 	option = {		# Refuse to sign it
 		name = "flavor_fra.EVTOPTB3143"
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		if = {
 			limit = {
 				exists = ENG
@@ -1473,7 +1473,7 @@ country_event = {
 			add_reform_progress_small_effect = yes
 		}
 		add_dip_power = 25
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1545,7 +1545,7 @@ country_event = {
 			}
 			add_reform_progress_small_effect = yes
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_innovativeness_small_effect = yes
 	}
 }
@@ -1609,7 +1609,7 @@ country_event = {
 	option = {		# Excellent
 		name = "EXCELLENT"
 		add_mil_power = 50
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1830,7 +1830,7 @@ country_event = {
 
 	option = {
 		name = "flavor_fra.8.a" #
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		hidden_effect = {
 			FROM = {
 				add_truce_with = ROOT

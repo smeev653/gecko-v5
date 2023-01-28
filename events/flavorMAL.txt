@@ -1955,7 +1955,7 @@ country_event = {
 
 	option = {	#Send no gold whatsoever
 		name = flavor_mal.31.c
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 
 		ai_chance = {
 			factor = 1

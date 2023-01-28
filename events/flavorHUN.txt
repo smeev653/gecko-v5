@@ -433,7 +433,7 @@ country_event = {
 	option = {
 		name = flavor_hun.3.a
 		add_legitimacy = 5
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -556,7 +556,7 @@ country_event = {
 	
 	option = {
 		name = flavor_hun.5.a	
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				NOT = { has_completed_all_reforms_trigger = yes }
@@ -852,7 +852,7 @@ country_event = {
 			}
 			add_reform_progress_small_effect = yes
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		define_advisor = {
 			type = statesman
 			name = "Tamás Bakócz"
@@ -918,7 +918,7 @@ country_event = {
 			who = BOH
 			modifier = hun_crowned_by_rebels
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				265 = { #Moravia
@@ -977,7 +977,7 @@ country_event = {
 			modifier = hun_refused_to_help_rebels
 		}
 		BOH = {
-			add_prestige = 10
+			add_prestige_or_monarch_power = { amount = 10 }
 			265 = {
 				spawn_rebels = {
 					type = heretic_rebels
@@ -1215,7 +1215,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_hun.17.b
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				has_estate = estate_nobles
