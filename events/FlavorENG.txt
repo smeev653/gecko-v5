@@ -666,8 +666,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 2
-				leader = "Jane"
-				leader_dynasty = "Grey"
+				leader = "Jane Grey"
 				female = yes
 			}
 		}
@@ -2563,7 +2562,7 @@ country_event = {
 		4370 = {
 			owned_by = ROOT
 		}
-		mission_completed = eng_rb_universities
+		mission_completed = eng_oxbridge
 	}
 	
 	immediate = {
