@@ -306,9 +306,9 @@ country_event = {
 			type = philosopher
 			culture = tuscan
 			name = "Niccolò Machiavelli"
-			discount = yes
+			cost_multiplier = 0.25
 			location = 116
-			skill = 2
+			skill = 3
 		}	
 		add_prestige_or_monarch_power = { amount = 20 }
 	}
@@ -324,9 +324,9 @@ country_event = {
 			type = statesman
 			name = "Niccolò Machiavelli"
 			culture = tuscan
-			discount = yes
+			cost_multiplier = 0.25
 			location = 116
-			skill = 2
+			skill = 3
 		}	
 		add_stability_or_adm_power = yes		
 	}
@@ -432,7 +432,7 @@ country_event = {
 			type = natural_scientist
 			name = "Leonardo da Vinci"
 			culture = tuscan
-			cost_multiplier = 0.75
+			cost_multiplier = 0.25
 			skill = 3
 		}
 		add_dip_power = 50
