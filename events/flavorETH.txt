@@ -318,7 +318,7 @@ country_event = {
 	option = {
 		name = flavor_eth.12.a #Send a sarcastic reply.
 		ai_chance = { factor = 90 }
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		ETH = {
 			country_event = { id = flavor_eth.14 days = 14 }
 		}
@@ -373,7 +373,7 @@ country_event = {
 	option = {
 		name = flavor_eth.14.a #Imprison the Ambassador
 		ai_chance = { factor = 90 }
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		MAM = {
 			country_event = { id = flavor_eth.16 days = 14 }
 			add_opinion = { who = ETH modifier = opinion_irritated }
@@ -383,7 +383,7 @@ country_event = {
 	option = {
 		name = flavor_eth.14.b #This is cause for war!
 		ai_chance = { factor = 0 }
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_casus_belli = {
 			target = MAM
 			type = cb_insult
@@ -412,7 +412,7 @@ country_event = {
 	
 	option = {
 		name = flavor_eth.15.a #Ok
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		tooltip = {
 			add_opinion = { who = MAM modifier = opinion_improved_relations }
 		}

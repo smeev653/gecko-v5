@@ -242,12 +242,37 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 				}
 				country_event = { id = FU_Milan_Events.1 }
 			}
+			corsica_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+						is_empty = no
+					}
+					add_permanent_claim = ROOT
+				}
 			define_advisor = {
 				name = "Andrea Doria"
 				type = statesman 
 				culture = ligurian
 				skill = 2
-				cost_multiplier = 0.75 
+				cost_multiplier = 0.5 
+			}
+			101 = {
+				add_center_of_trade_level = 2
+				add_unit_construction = {
+					type = galley
+					amount = 20
+					speed = 0.1
+					cost = 0
+				}
+			}
+			6045 = {
+				add_unit_construction = {
+					type = transport
+					amount = 20
+					speed = 0.1
+					cost = 0
+				}
 			}
 		}
 	}
@@ -344,7 +369,7 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 					118 = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				set_papacy_active = no
-				add_prestige = 50 
+				add_prestige_or_monarch_power = { amount = 50 } 
 			}
 			else_if = {
 				limit = {
@@ -485,6 +510,7 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 					}
 					add_permanent_claim = ROOT
 				}
+				
 				piedmont_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -501,7 +527,14 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 					}
 					add_permanent_claim = ROOT
 				}
-
+				siena_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+						is_empty = no
+					}
+					add_permanent_claim = ROOT
+				}
 				tuscany_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -510,14 +543,7 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 					}
 					add_permanent_claim = ROOT
 				}
-				venetia_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-						is_empty = no
-					}
-					add_permanent_claim = ROOT
-				}
+				
 				lazio_area = {
 					limit = {
 						NOT = { owned_by = ROOT }

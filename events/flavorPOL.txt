@@ -1017,7 +1017,7 @@ country_event = {
 	option = {
 		name = "flavor_pol.EVTOPTA4" # Sponsor the University
 		add_years_of_income = -0.25
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_adm_power = 100
 		add_innovativeness_small_effect = yes
 	}
@@ -1143,7 +1143,7 @@ country_event = {
 	option = {
 		name = "flavor_pol.EVTOPTA4" # Sponsor the university
 		add_years_of_income = -0.25
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_mil_power = 100
 		add_innovativeness_small_effect = yes
 	}
@@ -1390,7 +1390,7 @@ country_event = {
 		remove_country_modifier = pol_sejm_veto
 		remove_country_modifier = pol_sejm_refuse_troops
 		remove_country_modifier = pol_sejm_comply_policies
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_stability = 3
 		add_legitimacy = 50
 		take_estate_land_share_large = { estate = estate_nobles }
@@ -1468,7 +1468,7 @@ country_event = {
 	
 	option = {
 		name = flavor_pol.14.a #Great!
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		42 = {
 			add_province_modifier = {
 				name = "pol_collegium_hosianum"
@@ -1636,7 +1636,7 @@ country_event = {
 	
 	option = {
 		name = flavor_pol.17.a #
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		remove_historical_rival = TEU
 		TEU = {
 			remove_historical_rival = ROOT

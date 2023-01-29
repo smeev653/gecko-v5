@@ -697,7 +697,7 @@ country_event = {
 			limit = { is_part_of_hre = yes }
 			set_in_empire = no
 		}
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		if = {
 			limit = { has_country_flag = teu_is_allowed_to_stay_in_the_hre }
 			reverse_add_opinion = {
@@ -1403,7 +1403,7 @@ country_event = {
 		#	limit = { religion = catholic }
 		#	change_religion = protestant
 		#	hidden_effect = {
-		#		add_prestige = 100
+		#		add_prestige_or_monarch_power = { amount = 100 }
 		#	}
 		#}
 		if = {
@@ -2631,7 +2631,7 @@ country_event = {
 			limit = { is_part_of_hre = yes }
 			set_in_empire = no
 		}
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		if = {
 			limit = { has_country_flag = teu_is_allowed_to_stay_in_the_hre }
 			reverse_add_opinion = {

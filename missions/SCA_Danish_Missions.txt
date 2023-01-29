@@ -166,7 +166,7 @@ dan_secure_baltic_mission_slot = {
 			}
 		}
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 			add_mercantilism = 2
 			add_years_of_trade_income = {
 				custom_tooltip = dan_the_german_trade_cities_ct

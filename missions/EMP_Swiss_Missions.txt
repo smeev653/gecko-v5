@@ -551,7 +551,7 @@ swiss_missions_3 = {
 			total_development = SAV 
 		}
 		effect = {
-			add_prestige = 20 
+			add_prestige_or_monarch_power = { amount = 20 } 
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 25

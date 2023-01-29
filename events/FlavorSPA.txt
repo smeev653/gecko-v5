@@ -413,7 +413,7 @@ country_event = {
 
 	option = {		# Now so have we!
 		name = "flavor_spa.EVTOPTA1005"
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_innovativeness_small_effect = yes
 	}
 }
@@ -547,7 +547,7 @@ country_event = {
 
 	option = {		# Expansion in North Africa seems prosperous
 		name = "flavor_spa.EVTOPTA1000"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_years_of_income = 0.05
 	}
 }
@@ -1670,7 +1670,7 @@ country_event = {
 	option = {		# Inconclusive result
 		name = "flavor_spa.2.b"
 		ai_chance = { factor = 70 }
-		add_prestige = 10 #For holding the debate
+		add_prestige_or_monarch_power = { amount = 10 } #For holding the debate
 	}
 	option = {		# Let Las Casas Arguments shape our policies
 		name = "flavor_spa.2.c"
@@ -1761,7 +1761,7 @@ country_event = {
 				has_idea_group = humanist_ideas
 			}
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -2508,7 +2508,7 @@ country_event = {
 	
 	option = {
 		name = flavor_spa.14.a
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 

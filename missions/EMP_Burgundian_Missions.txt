@@ -394,7 +394,7 @@ emp_lotharingia_1 = {
 			}
 		}
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 			add_country_modifier = {
 				name = bur_italian_king
 				duration = -1
@@ -789,7 +789,7 @@ emp_burgundy_3 = {
 		}
 		
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 			1269 = {
 				add_trade_modifier = {
 					who = root
@@ -1455,7 +1455,7 @@ emp_burgundy_4 = {
 				}
 			}	
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = { amount = 20 }
 			if = {
 				limit = { hre_size = 1 }
 				add_imperial_influence = 25

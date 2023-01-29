@@ -1151,7 +1151,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_mng.19.a" #
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_dip_power = 100
 	}
 }
@@ -1230,7 +1230,7 @@ country_event = {
 	option = {
 		name = "flavor_mng.21.b" #Support the Dominicans
 		ai_chance = { factor = 75 }
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		event_target:jesuits_china = {
 			country_event = { id = flavor_mng.22 days = 60 }
 			add_opinion = {

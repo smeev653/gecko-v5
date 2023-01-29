@@ -78,7 +78,7 @@ country_event = { #Swiss Cheese
 	option = {
 		name = FU_Switzerland_Events.3.b 
 		
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		
 		ai_chance = { factor = 0 }
 	}

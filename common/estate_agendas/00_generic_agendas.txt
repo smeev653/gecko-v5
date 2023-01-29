@@ -8741,7 +8741,7 @@ estate_church_develop_x = {
 			estate = estate_church
 			loyalty = 10
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
     }
     failing_effect = {
 		event_target:agenda_province = {
@@ -8906,7 +8906,7 @@ estate_brahmins_develop_x = {
 			estate = estate_brahmins
 			loyalty = 10
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
     }
     failing_effect = {
 		event_target:agenda_province = {
@@ -9960,7 +9960,7 @@ estate_nomadic_tribes_develop_x = {
 			add_years_of_income = 0.3
 		}
 		else = {
-			add_prestige = 10
+			add_prestige_or_monarch_power = { amount = 10 }
 		}
     }
     failing_effect = {
@@ -10191,7 +10191,7 @@ estate_cossacks_develop_x = {
 			add_years_of_income = 0.3
 		}
 		else = {
-			add_prestige = 10
+			add_prestige_or_monarch_power = { amount = 10 }
 		}
     }
     failing_effect = {

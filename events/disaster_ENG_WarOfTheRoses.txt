@@ -836,7 +836,7 @@ country_event = {
 			}
 		}
 		set_country_flag = no_support_for_rose_rebels
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1010,7 +1010,7 @@ country_event = {
 			}
 		}
 		set_country_flag = no_support_for_rose_rebels
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1182,7 +1182,7 @@ country_event = {
 	option = {		# Order has finally been restored
 		name = war_of_the_roses.100.a
 		add_stability_or_adm_power = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		hidden_effect = {
 			if = {
 				limit = {

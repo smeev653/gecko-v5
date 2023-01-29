@@ -55,7 +55,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		set_country_flag = philosopher
 	}
 }
@@ -120,7 +120,7 @@ country_event = {
 				NOT = { stability = 1 }
 			}
 		}
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_meritocracy_effect = yes
 		add_country_modifier = {
 			name = "scientific_evolution"
@@ -193,7 +193,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "land_investment"
 			duration = 2190
@@ -263,7 +263,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "naval_investment"
 			duration = 2190
@@ -335,7 +335,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "reduced_stability_cost"
 			duration = 2190
@@ -407,7 +407,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "trading_investment"
 			duration = 2190
@@ -479,7 +479,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "theology"
 			duration = 2190
@@ -551,7 +551,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "government_investment"
 			duration = 2190
@@ -623,7 +623,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "more_tariffs"
 			duration = 2190
@@ -694,7 +694,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "spy"
 			duration = 2190
@@ -762,7 +762,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_dip_power = 50
 		set_country_flag = diplomat
 	}
@@ -827,7 +827,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_dip_power = 25
 		set_country_flag = trader
 	}
@@ -895,7 +895,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "master_of_mint_boost"
 			duration = 2190
@@ -966,7 +966,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "navigator_boost"
 			duration = 2190
@@ -1044,7 +1044,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "grand_captain_boost"
 			duration = 2190
@@ -1132,7 +1132,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "army_organiser_boost"
 			duration = 2190
@@ -1211,7 +1211,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "commandant_boost"
 			duration = 2190
@@ -1298,7 +1298,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "quartermaster_boost"
 			duration = 2190
@@ -1369,7 +1369,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "recruitmaster_boost"
 			duration = 2190
@@ -1440,7 +1440,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "fortification_expert_boost"
 			duration = 2190
@@ -1512,7 +1512,7 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_country_modifier = {
 			name = "inquisitor_boost"
 			duration = 2190

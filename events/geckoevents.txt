@@ -497,7 +497,7 @@ country_event = {
 
 	option = {
 		name = gecko.5.b
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 

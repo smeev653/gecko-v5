@@ -405,7 +405,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA10"
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		country_event = {
 			id = usa_dlc.11
 		}
@@ -650,7 +650,7 @@ country_event = {
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB20"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1185,7 +1185,7 @@ country_event = {
 	option = {
 		name = "usa_dlc.EVTOPTB35"
 		add_adm_power = -20
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 	option = {
 		name = "usa_dlc.EVTOPTC35"
@@ -1220,7 +1220,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA36"
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		set_country_flag = evacuation_day
 	}
 }
@@ -1290,7 +1290,7 @@ country_event = {
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB38"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1314,7 +1314,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA39"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1421,7 +1421,7 @@ country_event = {
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB41"
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -1478,7 +1478,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA43"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_adm_power = 50
 		add_dip_power = 50
 		add_mil_power = 50
@@ -1897,7 +1897,7 @@ country_event = {
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB48"
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -3260,7 +3260,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA100"
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB100"

@@ -129,7 +129,7 @@ country_event = {
 	option = {		# It all belongs to Mother Russia
 		name = "flavor_rus.EVTOPTA3404"
 		ai_chance = { factor = 100 }
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		ural_region = {
 			limit = {
 				NOT = { owned_by = ROOT }
@@ -1904,7 +1904,7 @@ country_event = {
 	option = {		# Excellent
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1931,7 +1931,7 @@ country_event = {
 	option = {		# Excellent
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1958,7 +1958,7 @@ country_event = {
 	option = {		# Excellent
 		name = "EXCELLENT"
 		add_adm_power = 10
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 

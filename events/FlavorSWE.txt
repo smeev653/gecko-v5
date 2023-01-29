@@ -3180,7 +3180,7 @@ country_event = {
 
 	option = {	#We need nobody but ourselves
 		name = flavor_swe.108.d
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		ai_chance = {
 			factor = 1
 		}
@@ -3510,7 +3510,7 @@ country_event = {
 			has_country_flag = lost_first_vasa_ship
 		}
 		add_navy_tradition = 20
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		event_target:vasa_ii_province = {
 			create_flagship = {
 				name = "Vasa II, the Unsinkable"

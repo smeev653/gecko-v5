@@ -875,7 +875,7 @@ country_event = {
 			}
 			set_government_rank = 2
 		}
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		if = {
 			limit = {
 				has_custom_ideas = no
@@ -890,7 +890,7 @@ country_event = {
 	
 	option = { #nah
 		name = new_flavour_bur.4.B
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 
 		ai_chance = {
 			factor = 0

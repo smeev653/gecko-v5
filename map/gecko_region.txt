@@ -767,8 +767,7 @@ tibet_region = {
 
 hindusthan_region = {
 	areas = {
-		sindh_area
-		northern_sindh_area
+		
 		jaipur_area
 		jangladesh_area
 		#bihar_area
@@ -824,7 +823,8 @@ west_india_region = {
 		khandesh_area
 		ahmedabad_area
 		patan_area
-
+		sindh_area
+		northern_sindh_area
 	}
 	monsoon = {
 		00.07.01

@@ -338,7 +338,7 @@ country_event = {
 	}
 	option = { # The current situation suits us
 		name = emp_mission_events.8.c
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		if = {
 			limit = {
 				BRA = {
@@ -412,7 +412,7 @@ country_event = {
 	}
 	option = { # keep them as a vassal
 		name = emp_mission_events.8.c
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		if = {
 			limit = {
 				SAX = {

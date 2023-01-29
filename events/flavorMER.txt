@@ -166,7 +166,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_mer.4.a"	#Ok.
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 
