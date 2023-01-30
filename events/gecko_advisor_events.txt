@@ -375,3 +375,74 @@ country_event = { #cavalry_leader
         #set_country_flag = gc_cavalry_leader_flag
     }
 }
+
+# banker
+country_event = {
+	  id = gc_advisor_events.6
+    title = gc_advisor_events.6.t
+    desc = gc_advisor_events.6.d 
+    picture = ADVISOR_eventPicture
+	
+	trigger = {
+		gc_banker = 3
+		NOT = { has_country_flag = gc_banker }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+	
+		modifier = {
+			factor = 0.9
+			economic_ideas = 4
+		}
+		modifier = {
+			factor = 0.9
+			economic_ideas = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { economic_ideas = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { economic_ideas = 2 }
+		}
+	}
+	
+	option = {
+		name = "gc_advisor_events.6.a"	# His efforts will be admired throughout the nation
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = "gc_banker_boost"
+			duration = 2190
+		}
+		set_country_flag = gc_banker
+	}
+		
+	option = {
+		name = "gc_advisor_events.6.b"	# His reputation will reach further than our borders
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		add_meritocracy_effect = yes
+		add_prestige_or_monarch_power = { amount = 50 }
+		add_country_modifier = {
+			name = "gc_banker_boost"
+			duration = 2190
+		}
+		set_country_flag = gc_banker
+	}
+}

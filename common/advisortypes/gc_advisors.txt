@@ -72,6 +72,32 @@ gc_inquisitor = {
 	}
 }
 
+gc_banker = {
+	monarch_power = ADM
+	
+	# Bonus
+	interest = -0.125
+
+	skill_scaled_modifier = { 
+		modifier = { 
+			meritocracy = 0.25
+			interest = -0.125
+		} 
+	}
+
+	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			num_of_loans = 10
+			factor = 5000
+		}
+	}
+}
+
 siege_specialist = {
 	monarch_power = MIL
 	

@@ -216,6 +216,10 @@ gc_cavalry_leader_modifier = {
 gc_cavalry_leader_cooldown = {
 }
 
+gc_banker_boost = {
+	interest = -0.5
+}
+
 gc_pope_controls_roman_empire = {
 	infantry_power = 0.1
 	land_forcelimit_modifier = 0.2

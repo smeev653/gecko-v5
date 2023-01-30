@@ -68,6 +68,11 @@
  gc_advisor_events.5.b:0 "$CAVALRY_LEADER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
  gc_advisor_events.5.c:0 "$CAVALRY_LEADER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
 
+ gc_advisor_events.6.t:0 "$BANKER$"
+ gc_advisor_events.6.d:0 "Through devious means, $BANKER$ has secured more generous terms on our loans."
+ gc_advisor_events.6.a:0 "$BANKER_CAP_POSS_PRONOUN$ efforts will be admired throughout the nation."
+ gc_advisor_events.6.b:0 "$BANKER_CAP_POSS_PRONOUN$ reputation will reach further than our borders."
+ 
  gecko.11.title:0 "Recruit Military Advisor"
  gecko.11.desc:0 "Use the state's resources to find an appropriate advisor. Scroll down for more."
  gecko.11.a:0 "Recruit Commandant"
