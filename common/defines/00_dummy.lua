@@ -349,7 +349,6 @@ NDefines.NAIEconomy.FORT_FRACTION_CAPITALIST = 0.3
 
 
 NDefines.NReligion.CONVERSION_ZEAL_DURATION = 1825
-NDefines.NReligion.PIETY_MANPOWER = 0.5
 NDefines.NReligion.YEARLY_POPE_INVESTED_INFLUENCE_PER_CARDINAL = 0
 NDefines.NReligion.MAX_PAPAL_INFLUENCE = 999								-- The maximum stored amount of papal influence for each country.
 NDefines.NReligion.CALL_ECUMENICAL_COUNCIL_COST = 100

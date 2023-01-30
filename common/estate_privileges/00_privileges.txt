@@ -1257,7 +1257,7 @@ estate_nobles_levies = {
 						}	
 					}
 				}
-				add_yearly_manpower = 1.5
+				add_yearly_manpower = 2
 			}
 			if = {
 				limit = {
@@ -1272,7 +1272,7 @@ estate_nobles_levies = {
 						}	
 					}
 				}
-				add_yearly_manpower = 2
+				add_yearly_manpower = 3
 			}
 			if = {
 				limit = {
@@ -1281,7 +1281,7 @@ estate_nobles_levies = {
 						influence = 100
 					}
 				}
-				add_yearly_manpower = 2.5
+				add_yearly_manpower = 4
 			}	
 			add_estate_loyalty = {
 				estate = estate_nobles
