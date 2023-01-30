@@ -96,19 +96,6 @@ tributary_state_action = {
 	}
 }
 
-#callaction = {
-#	condition = {
-#			tooltip = mid_war
-#				potential = {
-#					ai = no
-#				}
-#				allow = {
-#					ROOT = {
-#							war_score = -49
-#							}
-#					}
-##				}
-#}
 
 declarewar = {
 	###X###

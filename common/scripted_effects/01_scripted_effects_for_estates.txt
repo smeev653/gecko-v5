@@ -570,7 +570,7 @@ on_province_religion_converted_estate_privileges_effect = {
 	if = {
 		limit = {
 			owner = {
-		has_country_flag = burghers_tolerates_orthodoxy
+				has_country_flag = burghers_tolerates_orthodoxy
 			}
 		}
 		if = {
@@ -915,7 +915,7 @@ on_province_owner_change_estate_privileges_effect = {
 	if = {
 		limit = {
 			owner = {
-	has_country_flag = burghers_tolerates_orthodoxy
+				has_country_flag = burghers_tolerates_orthodoxy
 			}
 			OR = {
 				religion = orthodox
@@ -2032,6 +2032,24 @@ on_trade_good_changed_estate_privileges_effect = {
 		}
 		remove_province_modifier = estate_maratha_monopoly_of_gems_mod
 	}
+	if = {
+		limit = {
+			has_province_modifier = estate_burghers_control_over_gold_mine
+			NOT = { trade_goods = gold }
+		}
+		remove_province_modifier = estate_burghers_control_over_gold_mine
+	}
+	else_if = {
+		limit = {
+			from = { has_estate_privilege = estate_burghers_control_over_the_mint }
+			NOT = { has_province_modifier = estate_burghers_control_over_gold_mine }
+			trade_goods = gold
+		}
+		add_province_modifier = {
+			name = estate_burghers_control_over_gold_mine
+			duration = -1
+		}
+	}
 }
 
 on_loan_repaid_estate_privileges_effect = {
@@ -2060,16 +2078,16 @@ on_loan_repaid_estate_privileges_effect = {
 
 
 on_bi_yearly_pulse_estate_privileges_effect = {
-	#if = {
-	#	limit = {
-	#		OR = {
-	#			has_estate_privilege = estate_nobles_supremacy_over_crown
-	#			has_estate_privilege = estate_brahmins_supremacy_over_crown
-	#		}
-	#		NOT = { has_any_active_estate_agenda = yes }
-	#	}
-	#	country_event = { id = estate_privileges_and_agendas_events.3 }
-	#}
+	if = {
+		limit = {
+			OR = {
+				has_estate_privilege = estate_nobles_supremacy_over_crown
+				has_estate_privilege = estate_brahmins_supremacy_over_crown
+			}
+			NOT = { has_any_active_estate_agenda = yes }
+		}
+		country_event = { id = estate_privileges_and_agendas_events.3 }
+	}
 }
 
 on_culture_promoted_estate_privileges_effect = {
@@ -2267,7 +2285,7 @@ seize_land_effect = {
 							limit = {
 								NOT = { has_province_flag = has_estate_unrest_flag }
 							}
-					add_named_unrest = { name = estate_land_seized value = 10 }
+							add_named_unrest = { name = estate_land_seized value = 10 }
 							set_province_flag = has_estate_unrest_flag
 						}
 					}
