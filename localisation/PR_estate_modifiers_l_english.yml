@@ -1,5 +1,0 @@
-﻿l_english:
- PR_estate_clergy_exploration_expedition:0 "Clergy Exploration Expeditions"
- PR_estate_clergy_exploration_expedition_desc:0 "[Root.GetClergyName] roam our desert frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."
- PR_estate_clergy_exploration_expedition_effect_tooltip:1 "§G-10%§! local development cost in all Desert provinces"
- PR_estate_clergy_exploration_expedition_mod_revoke_tooltip:0 "Removes §YClergy Exploration§! from all owned Desert provinces."
