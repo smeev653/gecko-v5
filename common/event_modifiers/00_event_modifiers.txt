@@ -4537,7 +4537,7 @@ hab_plague_of_vienna = {
 }
 
 hab_schwaz_mine = {
-	trade_goods_size = 3.0
+	trade_goods_size = 2.0
 }
 
 hab_centralization_of_austria = {
