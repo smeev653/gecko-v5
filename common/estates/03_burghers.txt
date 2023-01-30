@@ -20,7 +20,7 @@ estate_burghers = {
 		OR = {
 			NOT = { is_nomad = yes }
 			tag = CRI
-			tag = HET
+			tag = GLH
 			tag = OIR
 			tag = KHA
 			tag = MGE

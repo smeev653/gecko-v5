@@ -80,47 +80,7 @@ EGY_ideas = { #Egyptian Empire
 	}
 }	
 
-GZM_ideas = { #Great Zimbabwe Empire
-	start = {
-		land_morale = 0.10
-		infantry_cost = -0.1
-	}
-	
-	bonus = {
-		culture_conversion_cost = -0.25
-	}
-	
-	trigger = {
-		tag = GZM
-	}
-	free = yes
-	
-	GZM_legacy_of_zimbabwe = {
-		build_cost = -0.10
-		inflation_reduction = 0.1
-	}
-	rzw_discipline_and_traning = {
-		discipline = 0.05
-	}
-	GZM_empowering_the_rozwi = {
-		fire_damage_received = -0.10
-	}
-	GZM_4 = {
-		infantry_shock = 0.25
-		infantry_power = 0.125
-	}
-	GZM_5 = { 
-		global_manpower_modifier = 0.2
-	}
-	GZM_6 = {
-		movement_speed = 0.15
-	}
-	GZM_vashambadzi = {
-		trade_efficiency = 0.1
-		merchants = 1
-	}
-	
-}	
+
 
 #Ethiopian ideas for better scaling
 
