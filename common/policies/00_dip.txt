@@ -773,7 +773,7 @@ cultural_unity = {
 	}	
 	
 	province_warscore_cost = -0.1
-	global_tax_modifier = 0.1
+	global_tax_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 0.6
