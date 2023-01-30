@@ -42,6 +42,22 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	spriteType = {
+		name = "GFX_advisor_gc_banker"
+		texturefile = "gfx//interface//advisors//gc_banker.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_gc_banker_female"
+		texturefile = "gfx//interface//advisors//gc_banker_female.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
 		name = "GFX_advisor_gc_inquisitor_female"
 		texturefile = "gfx//interface//advisors//gc_inquisitor_female.dds"
 		noOfFrames = 1
