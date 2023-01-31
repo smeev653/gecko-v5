@@ -736,7 +736,7 @@ bankruptcy = {
 war = {
 	rr_girondists_influence = 0.15
 	#interest = -0.25
-	yearly_army_professionalism = 0.0025
+	#yearly_army_professionalism = 0.0025
 	monthly_fervor_increase = 1
 }
 
@@ -1478,7 +1478,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.0025
 }
 
 ##################################################################################################

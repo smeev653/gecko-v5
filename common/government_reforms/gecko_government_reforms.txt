@@ -197,7 +197,7 @@ gecko_professional_army_reform = { #Noble Regiments
 	modifiers = {
 		discipline = 0.025
 		army_tradition = 0.5
-		yearly_army_professionalism = 0.0025
+		yearly_army_professionalism = 0.001
 	}
 	conditional = {
 		allow = { has_dlc = "Lions of the North" }
