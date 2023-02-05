@@ -460,21 +460,6 @@
  ####################
  # Russia
  ####################
- #Decisions
- X_RUS_isolation:0 "§R[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§!"
- X_RUS_westernization:0 "§G[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§!"
- X_RUS_isolation_vs_westernization_decision_title:0 "Promote Societal Change ([Root.GetXRUSIsolationVsWesternization])"
- X_RUS_isolation_vs_westernization_decision_desc:0 "[Root.GetXRUSIsolationVsWesternizationEffects]"
- X_RUS_isolation_4_cmod_effects:0 "Our current §YIsolation Level§! of §R[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficiency: §R-15.0%§!\nMissionary Strength: §G+5.0%§!\nInfantry Combat Ability: §G+10.0%§!\nTechnology Cost: §R+10.0%§!\nInstitution Spread: §R-50.0%§!\nManpower in Primary Culture provinces: §G+25.0%§!\nManpower in same Culture Group provinces: §G+25.0%§!\nManpower in Accepted Culture provinces: §G+25.0%§!"
- X_RUS_isolation_3_cmod_effects:0 "Our current §YIsolation Level§! of §R[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficiency: §R-12.5%§!\nMissionary Strength: §G+4.0%§!\nInfantry Combat Ability: §G+7.5%§!\nTechnology Cost: §R+7.5%§!\nInstitution Spread: §R-37.5%§!\nManpower in Primary Culture provinces: §G+20.0%§!\nManpower in same Culture Group provinces: §G+20.0%§!\nManpower in Accepted Culture provinces: §G+20.0%§!"
- X_RUS_isolation_2_cmod_effects:0 "Our current §YIsolation Level§! of §R[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficiency: §R-10.0%§!\nMissionary Strength: §G+3.0%§!\nInfantry Combat Ability: §G+5.0%§!\nTechnology Cost: §R+5.0%§!\nInstitution Spread: §R-25.0%§!\nManpower in Primary Culture provinces: §G+15.0%§!\nManpower in same Culture Group provinces: §G+15.0%§!\nManpower in Accepted Culture provinces: §G+15.0%§!"
- X_RUS_isolation_1_cmod_effects:0 "Our current §YIsolation Level§! of §R[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficiency: §R-7.5%§!\nMissionary Strength: §G+2.0%§!\nInfantry Combat Ability: §G+2.5%§!\nTechnology Cost: §R+2.5%§!\nInstitution Spread: §R-12.5%§!\nManpower in Primary Culture provinces: §G+10.0%§!\nManpower in same Culture Group provinces: §G+10.0%§!\nManpower in Accepted Culture provinces: §G+10.0%§!"
- X_RUS_westernization_1_cmod_effects:0 "Our current §YWesternization Level§! of §G[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficieny: §G+7.5%§!\nLand Force Limit Modifier: §R-5.0%§!\nTechnology Cost: §G-2.5%§!\nInstitution Spread: §G+12.5%§!\nLand Fire Damage: §G+2.5%§!\nMilitary Tactics: §G+5.0%§!"
- X_RUS_westernization_2_cmod_effects:0 "Our current §YWesternization Level§! of §G[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficieny: §G+10.0%§!\nLand Force Limit Modifier: §R-10.0%§!\nTechnology Cost: §G-5.0%§!\nInstitution Spread: §G+25.0%§!\nLand Fire Damage: §G+5.0%§!\nMilitary Tactics: §G+10.0%§!"
- X_RUS_westernization_3_cmod_effects:0 "Our current §YWesternization Level§! of §G[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficieny: §G+12.5%§!\nLand Force Limit Modifier: §R-15.0%§!\nTechnology Cost: §G-7.5%§!\nInstitution Spread: §G+37.5%§!\nLand Fire Damage: §G+7.5%§!\nMilitary Tactics: §G+15.0%§!"
- X_RUS_westernization_4_cmod_effects:0 "Our current §YWesternization Level§! of §G[Root.X_RUS_isolation_vs_westernization_localization_variable.GetValue]§! gives us the following effects:\nTrade Efficieny: §G+15.0%§!\nLand Force Limit Modifier: §R-20.0%§!\nTechnology Cost: §G-10.0%§!\nInstitution Spread: §G+50.0%§!\nLand Fire Damage: §G+10.0%§!\nMilitary Tactics: §G+20.0%§!"
- #Decision Tooltips
- X_RUS_isolation_vs_westernization_decision_tt:0 "Have not forcefully changed your §YIsolation Level§! or §YWesternization Level§! for at least §Y50§! years."
  #Estates
  x_rus_estate_streltsy:0 "Streletskaya"
  x_rus_estate_streltsy_desc:0 ""
@@ -520,26 +505,6 @@
  desc_X_RUS_hanseatic_decline_pmod:0 ""
  X_RUS_novgorodian_maritime_rights_cmod:0 "Novgorodian Maritime Rights"
  desc_X_RUS_novgorodian_maritime_rights_cmod:0 ""
- X_RUS_isolation_1_cmod:0 "Isolation Level: 1"
- desc_X_RUS_isolation_1_cmod:0 ""
- X_RUS_isolation_2_cmod:0 "Isolation Level: 2"
- desc_X_RUS_isolation_2_cmod:0 ""
- X_RUS_isolation_3_cmod:0 "Isolation Level: 3"
- desc_X_RUS_isolation_3_cmod:0 ""
- X_RUS_isolation_4_cmod:0 "Isolation Level: 4"
- desc_X_RUS_isolation_4_cmod:0 ""
- X_RUS_westernization_1_cmod:0 "Westernization Level: 1"
- desc_X_RUS_westernization_1_cmod:0 ""
- X_RUS_westernization_2_cmod:0 "Westernization Level: 2"
- desc_X_RUS_westernization_2_cmod:0 ""
- X_RUS_westernization_3_cmod:0 "Westernization Level: 3"
- desc_X_RUS_westernization_3_cmod:0 ""
- X_RUS_westernization_4_cmod:0 "Westernization Level: 4"
- desc_X_RUS_westernization_4_cmod:0 ""
- X_RUS_forced_isolation_cmod:0 "Forced Isolation"
- desc_X_RUS_forced_isolation_cmod:0 ""
- X_RUS_forced_westernization_cmod:0 "Forced Westernization"
- desc_X_RUS_forced_westernization_cmod:0 ""
  #Monuments
  X_RUS_trinity_lavra:0 "Trinity Lavra"
  X_RUS_trinity_lavra_title:0 "Trinity Lavra"
@@ -556,11 +521,8 @@
  X_RUS_events.3.c:0 "Perhaps another time..."
  #Event Tooltips
  X_RUS_event_2_tt:0 "Every owned province of §Y[NOV.GetName]§! is ceded to §Y[Root.GetName]§!, and gets '§YHanseatic Decline§!', giving the following effects:\nLocal Unrest: §R+2.00§!\nLocal Goods Produced Modifier: §R-25.0%§!"
- #Tooltips
- X_RUS_change_isolation_vs_westernization_increase_tt:0 "§YIncrease our Isolation Level§!."
- X_RUS_change_isolation_vs_westernization_maximum_tt:0 "§YYou already have the maximum Isolation Level§!."
- X_RUS_change_isolation_vs_westernization_decrease_tt:0 "§YIncrease our Westernization Level§!."
- X_RUS_change_isolation_vs_westernization_minimum_tt:0 "§YYou already have the maximum Westernization Level§!."
+ #Mission Tooltips
+ X_RUS_veche_capitulation_tt:0 "Event '§YCapitulation of the Veche§!' has happened."
  ####################
  # Poland
  ####################

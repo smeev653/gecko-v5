@@ -69,38 +69,4 @@ country_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
-	####################
-	# Russia
-	####################
-	X_RUS_isolation_vs_westernization_decision = {
-		major = yes
-		potential = {
-			OR = {
-				tag = MOS
-				tag = RUS
-			}
-		}
-		allow = {
-			stability = 1
-			custom_trigger_tooltip = {
-				tooltip = X_RUS_isolation_vs_westernization_decision_tt
-				OR = {
-					had_country_flag = {
-						flag = X_RUS_isolation_vs_westernization_decision_cflag
-						days = 18250
-					}
-					NOT = {
-						had_country_flag = {
-							flag = X_RUS_isolation_vs_westernization_decision_cflag
-							days = 0
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			country_event = { id = X_RUS_events.3 }
-		}
-		ai_will_do = { factor = 0 }
-	}
 }

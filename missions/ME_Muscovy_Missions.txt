@@ -527,19 +527,28 @@ MOS_3 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			OR = {
-				AND = {
-					war_with = NOV
-					war_score_against = {
-						who = NOV
-						value = 75
-					}
-					controls = 310
-				}
-				owns_core_province = 310
+			###X###
+			custom_trigger_tooltip = {
+				tooltip = X_RUS_veche_capitulation_tt
+				has_country_flag = X_RUS_veche_capitulation_cflag
 			}
+			#OR = {
+			#	AND = {
+			#		war_with = NOV
+			#		war_score_against = {
+			#			who = NOV
+			#			value = 75
+			#		}
+			#		controls = 310
+			#	}
+			#	owns_core_province = 310
+			#}
+			#######
 		}
 		effect = {
+			###X###
+			clr_country_flag = X_RUS_veche_capitulation_cflag
+			#######
 			russia_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
