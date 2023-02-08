@@ -1937,10 +1937,7 @@ country_event = {
 			days = 180
 	}
 
-	immediate = {
-		remove_country_modifier  = gc_mecca_agreement
 
-	}
 	option = {
 		name = gecko.38.a
 		
@@ -3203,6 +3200,7 @@ country_event = {
 	picture = COURT_eventPicture
 	
    trigger = {
+			always = no
 			ROOT = {
 				ai = no
 			}
