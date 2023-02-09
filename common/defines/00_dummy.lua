@@ -358,7 +358,7 @@ NDefines.NReligion.BUY_INDULGENCE_TREASURY_CONTRIBUTION = 1
 NDefines.NReligion.APPOINT_CARDINAL_INFLUENCE = 0					-- Invested Influence given by appointing a cardinal
 NDefines.NReligion.APPOINT_CARDINAL_CORRUPTION = 0.1						-- Corruption gained by the Papal State when appointing cardinals in its own land
 NDefines.NReligion.APPOINT_CARDINAL_INFLUENCE_PAPAL_STATE = 0
-
+NDefines.NReligion.PIETY_MANPOWER = 0.5
 NDefines.NGovernment.SELECT_HEIR_FROM_HAREM_AT_MONARCH_AGE = 20
 NDefines.NGovernment.FEUDAL_THEOCRACY_INTERACTION_COOLDOWN_YEARS = 10
 
