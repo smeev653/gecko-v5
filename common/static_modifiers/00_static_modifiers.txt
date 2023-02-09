@@ -257,8 +257,8 @@ development = {
 	province_trade_power_value = 0.2
 	local_amount_of_banners = 0.066
 	local_amount_of_cawa = 0.025
-	local_amount_of_carolean = 0.01
-	local_amount_of_hussars = 0.01
+	local_amount_of_carolean = 0.015
+	local_amount_of_hussars = 0.015
 
 }
 
@@ -1821,6 +1821,7 @@ hussars_regiment = {
 	cavalry_shock = 1
 	morale_damage = 0.5
 	reinforce_speed = -0.5
+	regiment_manpower_usage = -1
 }
 marine_regiment = {
     shock_damage_received = -0.25
@@ -1845,6 +1846,7 @@ carolean_regiment = {
 	drill_decay_modifier = -0.25
 	drill_gain_modifier = 0.25
 	land_maintenance_modifier = 1
+	regiment_manpower_usage = -1
 }
 
 revolutionary_guard_regiment = {
