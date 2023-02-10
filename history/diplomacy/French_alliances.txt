@@ -9,8 +9,7 @@ dependency = {
 	end_date = 1465.1.1
 }
 # France-Orleans
-dependency = {
-	subject_type = "french_vassal"
+vassal = {
 	first = FRA
 	second = ORL
 	start_date = 1444.1.1
@@ -18,8 +17,7 @@ dependency = {
 }
 
 # France-Armagnac
-dependency = {
-	subject_type = "french_vassal"
+vassal = {
 	first = FRA
 	second = AMG
 	start_date = 1444.1.1
@@ -27,8 +25,7 @@ dependency = {
 }
 
 # France-Auvergne
-dependency = {
-	subject_type = "french_vassal"
+vassal = {
 	first = FRA
 	second = AUV
 	start_date = 1444.1.1
@@ -36,8 +33,7 @@ dependency = {
 }
 
 # France-Foix
-dependency = {
-	subject_type = "french_vassal"
+vassal = {
 	first = FRA
 	second = FOI
 	start_date = 1444.1.1
@@ -45,8 +41,7 @@ dependency = {
 }
 
 # France-Bourbon
-dependency = {
-	subject_type = "french_vassal"
+vassal = {
 	first = FRA
 	second = BOU
 	start_date = 1444.1.1

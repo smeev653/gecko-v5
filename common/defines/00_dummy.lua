@@ -127,6 +127,7 @@ NDefines.NCountry.TARIFF_INCREASE_STEP = 0.1					-- Increase on each boost
 NDefines.NCountry.TARIFF_LIBERTY_INCREASE = 0.5					-- Liberty increase for each % tariffs
 NDefines.NCountry.TARIFF_DECREASE_STEP = -0.1
 NDefines.NCountry.MINIMUM_POLICY_TIME = 1
+NDefines.NCountry.CONCENTRATE_DEVELOPMENT_DEVELOPMENT_DECREASE = 0.0
 
 NDefines.NEconomy.EDICTS_DURATION_MONTHS = 1
 NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 10
