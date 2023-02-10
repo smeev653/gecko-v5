@@ -1,7 +1,7 @@
 # 176 Béarn - Principal cities: Pau
 
-owner = FRA
-controller = FRA
+owner = FOI
+controller = FOI
 capital = "Pau"
 is_city = yes
 culture = gascon
@@ -11,11 +11,9 @@ base_tax = 4
 base_production = 4
 trade_goods = wool
 base_manpower = 4
-add_core = FOI
 add_core = GUY
 add_core = AMG
-add_core = FRA
-add_local_autonomy = 50
+add_core = FOI
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

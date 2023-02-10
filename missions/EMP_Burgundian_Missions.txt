@@ -647,28 +647,11 @@ emp_burgundy_3 = {
 					}	
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = {is_year = 1460 }
-				}	
 				add_country_modifier = {
 					name = "burgundy_subjects_placated"
 					duration = 5475 #15 years	
 				}
-				4766 = {
-					cede_province = BUR
-				}
-				4766 = {
-					add_core = BUR
-				}	
-				187 = {
-					cede_province = BUR
-				}
-				187 = {
-					add_core = BUR
-				}
-			}
-			else = {
+			
 				lorraine_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -676,7 +659,7 @@ emp_burgundy_3 = {
 					}
 				add_permanent_claim = ROOT
 				}
-			}
+			
 		}
 	}
 	emp_bur_lorraine = {

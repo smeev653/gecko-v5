@@ -122,7 +122,12 @@ change_estate_land_share = {
 	set_heir_flag = is_charles_of_burg_flag
 }
 
-
+1444.11.10 = { add_country_modifier = {
+				name = "hungary_unleashed"
+				duration = 5475 #15 years
+				hidden = yes
+			}
+}
 
 1467.6.16 = {
 	monarch = {

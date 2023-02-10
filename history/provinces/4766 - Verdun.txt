@@ -1,7 +1,7 @@
 # 4766 - Verdun
 
-owner = PRO
-controller = PRO
+owner = LOR
+controller = LOR
 capital = "Verdun"
 is_city = yes
 culture = burgundian
@@ -10,7 +10,7 @@ base_tax = 3
 base_production = 3
 trade_goods = grain
 base_manpower = 3
-add_core = PRO
+add_core = LOR
 
 
 
