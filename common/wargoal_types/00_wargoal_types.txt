@@ -715,6 +715,7 @@ take_capital_conquest = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 	}
 	
@@ -726,6 +727,7 @@ take_capital_conquest = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 	}
 
@@ -748,6 +750,7 @@ take_core = {
 			po_demand_provinces
 			po_return_cores
 			make_canton
+			make_french_vassal
 		}
 		
 		prov_desc = ALL_CORES
@@ -766,6 +769,7 @@ take_core = {
 			po_demand_provinces
 			po_return_cores
 			make_canton
+			make_french_vassal
 		}
 		
 		prov_desc = ALL_CORES	
@@ -822,6 +826,7 @@ take_claim = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 		prov_desc = ALL_CLAIMS
 	}
@@ -897,6 +902,7 @@ take_province_nationalist = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -915,6 +921,7 @@ take_province_nationalist = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -940,6 +947,7 @@ take_capital_imperial = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 		
 		country_desc = ALL_COUNTRIES
@@ -959,6 +967,7 @@ take_capital_imperial = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 		
 		country_desc = ALL_COUNTRIES
@@ -1492,6 +1501,7 @@ take_province_excommunication = {
 			po_gold
 			po_concede_defeat
 			make_canton
+			make_french_vassal
 		}
 		prov_desc = ALL_CGROUP_PROVS
 	}
@@ -1506,6 +1516,7 @@ take_province_excommunication = {
 		peace_options = {
 			po_demand_provinces
 			make_canton
+			make_french_vassal
 		}
 	}
 
