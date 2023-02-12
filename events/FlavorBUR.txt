@@ -870,10 +870,10 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					government_rank = 2
+					government_rank = 3
 				}
 			}
-			set_government_rank = 2
+			set_government_rank = 3
 		}
 		add_prestige_or_monarch_power = { amount = 20 }
 		if = {

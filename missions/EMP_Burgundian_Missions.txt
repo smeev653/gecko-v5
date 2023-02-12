@@ -23,6 +23,7 @@ emp_burgundy_1 = {
 			OR = {
 				province_id = 191
 				province_id = 181
+				province_id = 6090
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -57,279 +58,143 @@ emp_burgundy_1 = {
 		}
 	}
 	emp_bur_romandie = {
-		icon = mission_landsknecht_soldier
+		icon = unite_the_realm
 		required_missions = { emp_bur_nevers }
 		
 		provinces_to_highlight = {
-			OR = {
-				area = romandie_area
-				province_id = 205
-				province_id = 4719
-			}
+			area = alsace_area
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			romandie_area = {
-				type = all
-				owned_by = ROOT
+			treasury = 750
+			prestige = 25
+			reverse_has_opinion = {
+				who = HAB
+				value = 100
 			}
-			205 = {
-				owned_by = ROOT
+			75 = {
+			 owned_by = ALS
 			}
-			4719 = {
-				owned_by = ROOT
+			4765 = {
+			 owned_by = MLH
 			}
+			1880 = {
+			 owned_by = TIR
+			}
+			ALS = { is_vassal = no }
+			MLH = { is_vassal = no }
+			TIR = { is_vassal = no }
 		}
 		
 		effect = {
-			savoy_dauphine_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			provence_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			102 = {
-				add_permanent_claim = ROOT
-			}
+			country_event = { id = gc_burgundy_event.2 }
 		}
 	}
 	
 	emp_bur_cisjurania = {
-		icon = mission_italian_condottiere
+		icon = mission_landsknecht_soldier
 		required_missions = { emp_bur_romandie }
 		
-		provinces_to_highlight = {
-			OR = {
-				area = provence_area
-				area = savoy_dauphine_area
-				province_id = 102
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			NOT = {
-				ROOT = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 8 #out of 9 (so you can leave out Avignon)
-						OR = {
-							area = provence_area
-							area = savoy_dauphine_area
-							province_id = 102
-						}
-					}
-				}
-			}
-		}
-		
+			
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 8 #out of 9 (so you can leave out Avignon)
-				OR = {
-					area = provence_area
-					area = savoy_dauphine_area
-					province_id = 102
-				}
-			}
+			army_tradition = 25
+			mil_power = 150
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-				else = {
-					add_adm_power = 100
-				}
-			}
+			add_mil_power = -150
 			add_country_modifier = {
-				name = "bur_arles_mod"
-				duration = "7300"
+				name = charles_army_reorganisation
+				duration = -1
 			}
-			piedmont_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lombardy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			po_valley_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			capital_score = {
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
+				pedrero =  ROOT
 			}
 		}
 	}
 	emp_bur_lombardy = {
-		icon = kingdom_of_lombardy
+		icon = balance_the_estates
 		required_missions = { emp_bur_cisjurania }
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					OR = {
-						area = piedmont_area
-						area = lombardy_area
-						area = po_valley_area
+				
+		trigger = {
+			adm_power = 300
+			crown_land_share = 20
+			monthly_adm = 10
+			monthly_dip = 10
+			monthly_mil = 10
+		}
+		effect = {
+			if = {
+					limit = {
+						NOT = { crown_land_share = 60 }
 					}
-					NOT = {
-						ROOT = {
-							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								value = 10 #out of 12
-								OR = {
-									area = piedmont_area
-									area = lombardy_area
-									area = po_valley_area
-								}
-							}
+					custom_tooltip = add_5_crown_land_share
+					hidden_effect = {
+						change_estate_land_share = {
+							estate = all
+							share = -5
 						}
 					}
 				}
-				province_id = 104
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			owns_or_non_sovereign_subject_of = 104
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 10 #out of 12
-				OR = {
-					area = piedmont_area
-					area = lombardy_area
-					area = po_valley_area
-				}
-			}
-		}
-		effect = {
-			add_adm_power = 100
-			liguria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			venetia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			emilia_romagna_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			tuscany_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			siena_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = charles_court_reorganisation
+				duration = 7300
 			}
 		}
 	}
-	repulse_gank_bur = {
+	repulse_gank_bur = { #ascension
         icon = conquer_burgundy
-        required_missions = {  }
-
+        required_missions = { emp_bur_lombardy emp_bur_secure_the_lowlands  }
+		provinces_to_highlight = {
+			OR = {
+				area = alsace_area
+				area = lorraine_area
+				region = low_countries_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}	
         trigger = {
-			NOT = {
-				is_year = 1500
+			low_countries_region = {
+				type = all
+				owned_by = root
+				is_core = root
 			}
-			is_in_war = {
-				attackers = ENG
+			alsace_area = {
+				type = all
+				owned_by = ROOT
 			}
-			OR = {
-				has_won_war_against = {
-				who = FRA
-				max_years_since = 5
-				}
-				FRA = {
-					has_won_war_against = {
-					who = BUR
-					max_years_since = 5
-					}
-				}
-			}
-			OR = {
-				is_bankrupt = yes
-				num_of_loans = 10
+			lorraine_area = {
+				type = all
+				owned_by = ROOT
 			}
 		}
         effect = {
-			if = {
-				limit = {
-					is_bankrupt = yes
+			   FRA = { free_vassal = BUR }
+			   set_government_rank = 2
+			   add_prestige = 50
+			   add_power_projection = {
+					type = mission_rewards_power_projection
+					amount = 50
 				}
-				add_stability = 3
-				add_prestige = 75
-				add_corruption = -2
-				define_general = {
-					shock = 4
-					fire = 4
-					manuever = 1
-					siege = 3
-					name = "Charles I"
-                }
-				add_country_modifier = {
-                name = "defense_of_burgundy"
-                duration = 1825
-                }
-				hidden_effect = {
-					remove_country_modifier = gecko_b
-				}	
-			}
-			else = {
-				define_general = {
-					shock = 4
-					fire = 4
-					manuever = 1
-					siege = 3
-					name = "Charles I"
-                }
-				add_country_modifier = {
-                name = "defense_of_burgundy"
-                duration = 1825
-                }
-			}
-           
-
-                
-				#add_country_modifier = {
-				#	name = "geckoavailablemercs"
-				#	duration = 1825
-				#	hidden = yes
-				#}
+				country_event = { id = gc_burgundy_event.1 }
             }
 			
-        }
+    }
 }
 
 emp_lotharingia_1 = {
@@ -647,11 +512,6 @@ emp_burgundy_3 = {
 					}	
 		}
 		effect = {
-				add_country_modifier = {
-					name = "burgundy_subjects_placated"
-					duration = 5475 #15 years	
-				}
-			
 				lorraine_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -659,7 +519,6 @@ emp_burgundy_3 = {
 					}
 				add_permanent_claim = ROOT
 				}
-			
 		}
 	}
 	emp_bur_lorraine = {
@@ -703,8 +562,8 @@ emp_burgundy_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = frisia_area
-				area = east_frisia_area
+				area = north_brabant_area
+				area = wallonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -756,7 +615,10 @@ emp_burgundy_3 = {
 		required_missions = { emp_bur_liege }
 		
 		provinces_to_highlight = {
-			area = frisia_area
+			OR = {
+				area = frisia_area
+				area = east_frisia_area
+			}	
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -1751,10 +1613,10 @@ emp_burgundy_5 = {
 #					set_in_empire = yes	
 #				}
 #			}
-			add_country_modifier = {
-				name = bur_seed_is_strong
-				duration = -1
-			}
+			#add_country_modifier = {
+			#	name = bur_seed_is_strong
+			#	duration = -1
+			#}
 			add_country_modifier = {
 				name = bur_we_shall_not_be_annexed
 				duration = 7300

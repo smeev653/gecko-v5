@@ -15,11 +15,11 @@ change_estate_land_share = {
 }
 change_estate_land_share = {
 	estate = estate_church
-	share = -15
+	share = -25
 }
 change_estate_land_share = {
 	estate = estate_burghers
-	share = 30
+	share = 50
 }
 
 1363.1.1 = {
@@ -127,6 +127,10 @@ change_estate_land_share = {
 				duration = 5475 #15 years
 				hidden = yes
 			}
+			add_country_modifier = {
+					name = "burgundy_subjects_placated"
+					duration = 5475 #15 years	
+				}
 }
 
 1467.6.16 = {

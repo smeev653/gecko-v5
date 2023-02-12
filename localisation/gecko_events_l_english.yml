@@ -131,10 +131,14 @@
  gecko.9_warning_tt:1 "§YEngland will lose this modifier if they lose Normandy to France§!"
 
 
- #gecko Bavaria
- gc_bavarian_event.1.t:0 "Unification of Bavaria"
- gc_bavarian_event.1.d:0 "The Wittelsbach in Bavaria have been united under one. We shall be a dominant power in Germany with the new found riches of our family."
- gc_bavarian_event.1.a:0 "Gott mit uns!"
+ #gecko burgundy
+ gc_burgundy_event.1.t:0 "The Ascension of Burgundy to an Independent Kingdom"
+ gc_burgundy_event.1.d:0 "The Duchy of Burgundy is no more. Through a series of acquisitions and shrewd diplomacy, they have broken free from the authority of the French king and have been crowned in Trier by the Emperor."
+ gc_burgundy_event.1.a:0 "So be it."
+
+ gc_burgundy_event.2.t:0 "The Purchase of the Counties of Elsass and Ferrette"
+ gc_burgundy_event.2.d:0 "Through our deft diplomacy, we have convinced the Emperor to sell us the Counties of Ferrette, Mulhousen and Elsass. The Emperor has however now also gained a claim on these territories.."
+ gc_burgundy_event.2.a:0 "It is our right."
 
  #Gecko Austria
  flavor_hab.20.gc:0 "We may not abandon our German roots."
