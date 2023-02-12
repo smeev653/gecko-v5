@@ -132,7 +132,7 @@ country_decisions = {
 				add_base_tax = 1
 			}
 			set_country_flag = formed_plc_flag
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			#if = { 
 			#	limit = { 
 			#		has_dlc = "Lions of the North"
@@ -294,7 +294,7 @@ country_decisions = {
 				add_base_tax = 1
 			}
 			set_country_flag = formed_plc_flag
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			#complete_mission = pol_leverage_magnates
 			#complete_mission = pol_great_sejm
 			#complete_mission = plc_articles_agreement
@@ -461,7 +461,7 @@ country_decisions = {
 				add_base_tax = 1
 			}
 			set_country_flag = formed_plc_flag
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			if = { 
 				limit = { 
 					NOT = { was_tag = POL } 

@@ -45,8 +45,55 @@ country_event = { #Swiss Cheese
 		name = FU_Switzerland_Events.2.a 
 		
 			add_years_of_income = 2 
-			add_prestige = 25
-		
+			add_prestige_or_monarch_power = { amount = 25 }
+		1867 = {
+			if = {
+				limit = {
+					NOT = { trade_goods = iron }
+				}
+				change_trade_goods = iron 
+			}
+			add_province_modifier = {
+				name = swi_swiss_cheese_modifier
+				duration = -1 
+			}
+		}
+		1871 = {
+			if = {
+				limit = {
+					NOT = { trade_goods = iron }
+				}
+				change_trade_goods = iron 
+			}
+			add_province_modifier = {
+				name = swi_swiss_cheese_modifier
+				duration = -1 
+			}
+		}
+		4722 = {
+			if = {
+				limit = {
+					NOT = { trade_goods = iron }
+				}
+				change_trade_goods = iron 
+			}
+			add_province_modifier = {
+				name = swi_swiss_cheese_modifier
+				duration = -1 
+			}
+		}
+		1873 = {
+			if = {
+				limit = {
+					NOT = { trade_goods = iron }
+				}
+				change_trade_goods = iron 
+			}
+			add_province_modifier = {
+				name = swi_swiss_cheese_modifier
+				duration = -1 
+			}
+		}		
 	}
 }
 

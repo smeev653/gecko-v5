@@ -1415,7 +1415,7 @@ country_event = {
 			limit = { NOT = { government_rank = 2 } }
 			set_government_rank = 2
 		}
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		ai_chance = {
 			factor = 100
 		}
@@ -1895,7 +1895,7 @@ country_event = {
 			name = "centralization_modifier"
 			duration = 7300
 		}
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		set_country_flag = formed_germany_flag
 		if = {
 			limit = {

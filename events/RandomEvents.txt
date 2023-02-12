@@ -238,7 +238,7 @@ country_event = {
 		else = {
 			add_reform_progress_small_effect = yes
 		}
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_adm_power = 40
 	}
 	option = {
@@ -257,7 +257,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_adm_power = 100
 		add_mil_power = 100
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_army_tradition = 10
 	}
 	after = {
@@ -9705,7 +9705,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA876"
 		set_global_flag = bible_printed
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		event_target:printing_bible_province = {
 			add_institution_embracement = {
 				value = 50

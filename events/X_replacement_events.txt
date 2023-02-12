@@ -173,7 +173,7 @@ country_event = {
 	option = {
 		name = "flavor_ara.EVTOPTA3"
 		add_adm_power = 100
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		define_advisor = {
 			type = artist
 			name = "Antonio Beccadelli"
@@ -209,7 +209,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_ara.EVTOPTA4"
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		change_innovativeness = 10
 	}
 	option = {

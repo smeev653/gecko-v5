@@ -235,15 +235,14 @@ age_of_discovery = {
 				OR = {
 					tag = VEN
 					tag = MLO
-					tag = PAP
 					tag = SIC
 					tag = TTS
 					tag = SWI
 				}
 			}	
 			modifier = {
-				mercenary_discipline = 0.025
-				mercenary_manpower = 0.1
+				mercenary_discipline = 0.05
+				merc_maintenance_modifier = -0.15
 			}
 			ai_will_do = {
 				factor = 100
@@ -268,7 +267,7 @@ age_of_discovery = {
 				}	
 			}
 			modifier = {
-				defensiveness = 0.2
+				defensiveness = 0.35
 				gold_depletion_chance_modifier = -1
 				fort_maintenance_modifier = -0.5
 			}
@@ -640,7 +639,7 @@ age_of_reformation = {
 }
 
 age_of_absolutism = {
-	start = 1620
+	start = 1600
 	
 	can_start = {
 		is_institution_enabled = global_trade
@@ -774,7 +773,7 @@ age_of_absolutism = {
 				}
 			}
 			modifier = {
-				infantry_fire = 0.5
+				fire_damage = 0.25
 			}
 			ai_will_do = {
 				factor = 100

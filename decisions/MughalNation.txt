@@ -236,7 +236,7 @@ country_decisions = {
 				}
 				add_permanent_claim = MUG
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_government_reform = mughal_government
 			change_unit_type = gunpowder_empire
 			define_ruler = {

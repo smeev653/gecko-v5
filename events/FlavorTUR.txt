@@ -728,7 +728,7 @@ modifier = {
 	option = {		# Assume the title of Khadim al-Haramayn.
 		name = "flavor_tur.EVTOPTA3371"
 		add_adm_power = 400
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_legitimacy = 25
 		add_piety = 0.25
 add_estate_loyalty = {

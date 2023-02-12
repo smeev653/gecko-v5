@@ -1876,7 +1876,7 @@ country_event = {
 
 	option = {				# Excellent
 		name = "EXCELLENT"
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_innovativeness_big_effect = yes
 	}
 }
@@ -2927,7 +2927,7 @@ country_event = {
 			has_country_flag = swe_defeated_denmark
 		}
 		remove_country_modifier = swe_fight_for_independence
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_legitimacy = 10
 		add_splendor = 200
 		add_adm_power = 100

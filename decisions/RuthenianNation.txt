@@ -95,7 +95,7 @@ country_decisions = {
 				}
 				add_permanent_claim = UKR
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			change_tag = UKR
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes

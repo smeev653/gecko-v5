@@ -598,7 +598,7 @@ country_event = {
 	option = { # We rule by the right of Conqueror!
 		name = "flavor_spa.EVTOPTB1001"
 		ai_chance = { factor = 25 }
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 	}
 }
 
@@ -681,7 +681,7 @@ country_event = {
 
 	option = {		# We truly rule the world!
 		name = "flavor_spa.EVTOPTA1004"
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_legitimacy = 25
 		add_papal_influence = 100
 	}
@@ -1434,7 +1434,7 @@ country_event = {
 
 	option = {		# Excellent
 		name = "EXCELLENT"
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 	}
 }
 
@@ -2409,7 +2409,7 @@ country_event = {
 	}
 	option = {		# Their contributions to our Society has been too great to measure.
 		name = "flavor_spa.12.b"
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		ai_chance = {
 			factor = 0
 		}

@@ -126,7 +126,7 @@ country_decisions = {
 				estate_privilege = estate_burghers_hydraulic_rights
 			}
 			
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			set_country_flag = formed_arabia_flag
 			change_unit_type = gunpowder_empire
 			#change_government = tribal
@@ -258,7 +258,7 @@ country_decisions = {
 					name = "centralization_modifier"
 					duration = 7300
 				}
-				add_prestige = 25
+				add_prestige_or_monarch_power = { amount = 25 }
 				set_country_flag = formed_arabia_flag
 
 				if = {
