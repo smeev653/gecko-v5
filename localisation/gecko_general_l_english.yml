@@ -89,4 +89,4 @@
  french_vassal_title_plural:0 "French Duchies"
  french_vassal_is_our:0 "§Y$NAME$§! is our Ducal Vassal."
  make_french_vassal_desc:0 "Make French Ducal Vassal"
- PEACE_make_canton:0 "Become $TAKERS$ Ducal Vassal"
+ PEACE_make_french_vassal:0 "Become $TAKERS$ Ducal Vassal"

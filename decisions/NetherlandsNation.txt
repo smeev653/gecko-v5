@@ -64,7 +64,12 @@ country_decisions = {
 				max_years_since = 5
 				}
 			}
-			
+			BUR = {
+				has_won_war_against = {
+				who = FRA
+				max_years_since = 5
+				}
+			}
 			OR = {
 				is_bankrupt = yes
 				num_of_loans = 10
@@ -78,14 +83,14 @@ country_decisions = {
 						}
 					}
 			}
-			NOT = {
-				BUR = {
+			BUR = {
+					NOT = {
 							france_region = {
 								owned_by = PREV
 							}
+					}	
+			}
 						
-					}
-			}			
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

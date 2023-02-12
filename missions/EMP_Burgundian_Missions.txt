@@ -373,7 +373,6 @@ emp_burgundy_2 = {
 			}
 		}
 		effect = {
-			change_primary_culture = dutch
 			low_countries_region = {
 				limit = { 
 					owned_by = root
