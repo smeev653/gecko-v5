@@ -58,6 +58,34 @@ country_decisions = {
 			}
 		}
 		allow = {
+			FRA = {
+				has_won_war_against = {
+				who = BUR
+				max_years_since = 5
+				}
+			}
+			
+			OR = {
+				is_bankrupt = yes
+				num_of_loans = 10
+			}
+			NOT = {
+				BUR = {
+						any_subject_country = {
+							france_region = {
+								owned_by = PREV
+							}
+						}
+					}
+			}
+			NOT = {
+				BUR = {
+							france_region = {
+								owned_by = PREV
+							}
+						
+					}
+			}			
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -110,62 +138,12 @@ country_decisions = {
 					move_capital_effect = yes
 				}
 			}
-			if = {
-				limit = {
-					tag = BUR
-					exists = FRA
-				}
-	  			france_region = {
-					limit = {
-						owned_by = BUR
-					}
-	  				remove_core = BUR
-	  				add_core = FRA
-	  				cede_province = FRA
-	  			}
-				france_region = {
-	  				remove_core = BUR
-	  			}
-				89 = {	
-	  				remove_core = BUR
-	  				add_core = FRA
-	  				cede_province = FRA
-				}
-	  		}
+			
 			low_countries_region = {
 				limit = { country_or_non_sovereign_subject_holds = ROOT }
 					add_base_manpower = 1
 					add_base_production = 1
 				}
-			if = {
-				limit = {
-					tag = BUR
-					exists = FRA
-					BUR = {
-						any_subject_country = {
-							france_region = {
-								owned_by = PREV
-							}
-						}
-					}
-				}
-				every_subject_country = {
-					limit = {
-						france_region = {
-							owned_by = PREV
-						}
-					}
-					france_region = {
-						limit = {
-							owned_by = PREV
-						}
-						remove_core = BUR
-						remove_core = PREV
-						add_core = FRA
-						cede_province = FRA
-					}
-				}
-	  		}
 			change_tag = NED
 			swap_non_generic_missions = yes
 			low_countries_region = {
@@ -185,7 +163,7 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			set_country_flag = formed_netherlands_flag
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			if = {
 				limit = {
 					has_custom_ideas = no

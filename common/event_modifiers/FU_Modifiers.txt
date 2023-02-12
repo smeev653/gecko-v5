@@ -1206,9 +1206,10 @@ swi_period_of_stability_modifier = {
 }
 swi_swiss_linen_industry_modifier = {
 	trade_goods_size = 1 
+	trade_value_modifier = 0.2
 }
 swi_swiss_cheese_modifier = {
-	trade_goods_size_modifier = 0.1 
+	trade_goods_size_modifier = 0.2 
 	trade_value_modifier = 0.2
 }
 swi_direct_democracy_modifier = {
@@ -1230,6 +1231,7 @@ swi_accept_culture_modifier = {
 }
 swi_swiss_mercenaries_modifier2 = {
 	possible_condottieri = 0.5
+	mercenary_discipline = 0.05
 }
 swi_swiss_mercenaries_modifier = {
 	possible_condottieri = 1

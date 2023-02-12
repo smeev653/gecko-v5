@@ -108,7 +108,7 @@ emp_burgundy_1 = {
 				name = charles_army_reorganisation
 				duration = -1
 			}
-			capital_score = {
+			capital_scope = {
 				pedrero =  ROOT
 				pedrero =  ROOT
 				pedrero =  ROOT

@@ -662,7 +662,7 @@ SCA_ideas = {
 FRA_ideas = {
 	start = {
 		build_cost = -0.1
-		recover_army_morale_speed = 0.1
+		artillery_cost = -0.2
 	}
 	
 	bonus = {

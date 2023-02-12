@@ -605,3 +605,13 @@ gc_swe_hakkapeliitta = {
 	cavalry_cost = -0.1
 	cavalry_power = 0.1
 }
+
+charles_army_reorganisation = {
+	land_forcelimit = 15
+	artillery_cost = -0.2
+}
+
+charles_court_reorganisation = {
+	advisor_cost = -0.15
+	advisor_pool = 1
+}
