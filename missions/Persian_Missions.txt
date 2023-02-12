@@ -2731,7 +2731,7 @@ fu_persia_missions_4_islam = {
 				limit = { religion = shiite }
 				country_event = { id = flavor_per.9 }
 			}
-			add_prestige = 25 
+			add_prestige_or_monarch_power = { amount = 25 } 
 		}
 	}
 	

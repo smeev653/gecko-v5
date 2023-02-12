@@ -726,7 +726,7 @@ gc_hungary_branch_5 = {
 					duration = 10950
 				}
 			}
-            add_prestige = 25
+            add_prestige_or_monarch_power = { amount = 25 }
             add_manpower = 10
 		}
 	}
@@ -782,7 +782,7 @@ gc_hungary_gh_branch_2 = {
         }
         effect = {
             add_mil_power = 50
-            add_prestige = 25
+            add_prestige_or_monarch_power = { amount = 25 }
         }
     }
 }
@@ -1225,7 +1225,7 @@ gc_hungary_gh_branch_5 = {
             }
         }
         effect = {
-            add_prestige = 25
+            add_prestige_or_monarch_power = { amount = 25 }
             add_mil_power = 100
         }
     }

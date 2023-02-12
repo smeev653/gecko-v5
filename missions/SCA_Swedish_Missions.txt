@@ -1283,7 +1283,7 @@ swe_diplomacy_mission_slot = {
 			}
 		}
 		effect = {
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_country_modifier = {
 				name = swe_swedish_influence_in_asia
 				duration = 18250

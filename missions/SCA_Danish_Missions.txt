@@ -1766,7 +1766,7 @@ dan_sweden_and_great_power_mission_slot = {
 			}
 		}
 		effect = {
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			custom_tooltip = dan_denmark_on_european_stage_at
 			hidden_effect = {
 				every_ally = {

@@ -1497,7 +1497,7 @@ gc_spain_4_b = {
 				}
 			}
 			else = {
-				add_prestige = 25
+				add_prestige_or_monarch_power = { amount = 25 }
 			}
 			if = {
 				limit = {
@@ -1607,7 +1607,7 @@ gc_spain_5_a = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_adm_power = 100
 		}
 	}
