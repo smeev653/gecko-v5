@@ -882,26 +882,6 @@ X_culture_union_effect = {
 		}
 		if = {
 			limit = { 
-				X_culture_union_trigger = { ostyaki = yes }
-				has_global_flag = X_$group$_culture_exists_yes_gflag
-			}
-			change_variable = {            
-				which = X_$group$_union_variable
-				value = 1
-			}
-		}
-		else_if = {
-			limit = { 
-				NOT = { X_culture_union_trigger = { ostyaki = yes } }
-				has_global_flag = X_$group$_culture_union_no_gflag 
-			}
-			change_variable = {            
-				which = X_$group$_union_variable
-				value = 1
-			}
-		}
-		if = {
-			limit = { 
 				X_culture_union_trigger = { turkmeni = yes }
 				has_global_flag = X_$group$_culture_exists_yes_gflag
 			}
@@ -1864,6 +1844,12 @@ X_culture_union_effect = {
 				value = 1
 			}
 		}
+	]
+	[[scandinavian]
+		set_variable = {
+			which = X_$group$_union_variable
+			value = 0
+		}
 		if = {
 			limit = { 
 				X_culture_union_trigger = { karelian = yes }
@@ -1883,12 +1869,6 @@ X_culture_union_effect = {
 				which = X_$group$_union_variable
 				value = 1
 			}
-		}
-	]
-	[[scandinavian]
-		set_variable = {
-			which = X_$group$_union_variable
-			value = 0
 		}
 		if = {
 			limit = { 
@@ -3025,6 +3005,46 @@ X_culture_union_effect = {
 		else_if = {
 			limit = { 
 				NOT = { X_culture_union_trigger = { avadhi = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { gujarati = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { gujarati = yes } }
+				has_global_flag = X_$group$_culture_union_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_union_trigger = { saurashtri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag
+			}
+			change_variable = {            
+				which = X_$group$_union_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_union_trigger = { saurashtri = yes } }
 				has_global_flag = X_$group$_culture_union_no_gflag 
 			}
 			change_variable = {            
@@ -4415,26 +4435,6 @@ X_culture_exists_effect = {
 		}
 		if = {
 			limit = { 
-				X_culture_exists_trigger = { ostyaki = yes }
-				has_global_flag = X_$group$_culture_exists_yes_gflag 
-			}
-			change_variable = {            
-				which = X_$group$_exists_variable
-				value = 1
-			}
-		}
-		else_if = {
-			limit = { 
-				NOT = { X_culture_exists_trigger = { ostyaki = yes } }
-				has_global_flag = X_$group$_culture_exists_no_gflag 
-			}
-			change_variable = {            
-				which = X_$group$_exists_variable
-				value = 1
-			}
-		}
-		if = {
-			limit = { 
 				X_culture_exists_trigger = { turkmeni = yes }
 				has_global_flag = X_$group$_culture_exists_yes_gflag 
 			}
@@ -5397,6 +5397,12 @@ X_culture_exists_effect = {
 				value = 1
 			}
 		}
+	]
+	[[scandinavian]
+		set_variable = {
+			which = X_$group$_exists_variable
+			value = 0
+		}
 		if = {
 			limit = { 
 				X_culture_exists_trigger = { karelian = yes }
@@ -5416,12 +5422,6 @@ X_culture_exists_effect = {
 				which = X_$group$_exists_variable
 				value = 1
 			}
-		}
-	]
-	[[scandinavian]
-		set_variable = {
-			which = X_$group$_exists_variable
-			value = 0
 		}
 		if = {
 			limit = { 
@@ -6558,6 +6558,46 @@ X_culture_exists_effect = {
 		else_if = {
 			limit = { 
 				NOT = { X_culture_exists_trigger = { avadhi = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { gujarati = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { gujarati = yes } }
+				has_global_flag = X_$group$_culture_exists_no_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		if = {
+			limit = { 
+				X_culture_exists_trigger = { saurashtri = yes }
+				has_global_flag = X_$group$_culture_exists_yes_gflag 
+			}
+			change_variable = {            
+				which = X_$group$_exists_variable
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { X_culture_exists_trigger = { saurashtri = yes } }
 				has_global_flag = X_$group$_culture_exists_no_gflag 
 			}
 			change_variable = {            

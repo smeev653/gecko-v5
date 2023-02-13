@@ -281,7 +281,6 @@ X_culture_union_trigger = {
 	#tartar
 	[[astrakhani] owns_all_provinces = { X_is_colonial_province_trigger = no culture = astrakhani } any_province = { X_is_colonial_province_trigger = no culture = astrakhani } ]
 	[[uzbehk] owns_all_provinces = { X_is_colonial_province_trigger = no culture = uzbehk } any_province = { X_is_colonial_province_trigger = no culture = uzbehk } ]
-	[[ostyaki] owns_all_provinces = { X_is_colonial_province_trigger = no culture = ostyaki } any_province = { X_is_colonial_province_trigger = no culture = ostyaki } ]
 	[[turkmeni] owns_all_provinces = { X_is_colonial_province_trigger = no culture = turkmeni } any_province = { X_is_colonial_province_trigger = no culture = turkmeni } ]
 	[[bashkir] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bashkir } any_province = { X_is_colonial_province_trigger = no culture = bashkir } ]
 	[[khazak] owns_all_provinces = { X_is_colonial_province_trigger = no culture = khazak } any_province = { X_is_colonial_province_trigger = no culture = khazak } ]
@@ -333,8 +332,8 @@ X_culture_union_trigger = {
 	[[ryazanian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = ryazanian } any_province = { X_is_colonial_province_trigger = no culture = ryazanian } ]
 	[[byelorussian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = byelorussian } any_province = { X_is_colonial_province_trigger = no culture = byelorussian } ]
 	[[ruthenian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = ruthenian } any_province = { X_is_colonial_province_trigger = no culture = ruthenian } ]
-	[[karelian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = karelian } any_province = { X_is_colonial_province_trigger = no culture = karelian } ]
 	#scandinavian
+	[[karelian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = karelian } any_province = { X_is_colonial_province_trigger = no culture = karelian } ]
 	[[swedish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = swedish } any_province = { X_is_colonial_province_trigger = no culture = swedish } ]
 	[[danish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = danish } any_province = { X_is_colonial_province_trigger = no culture = danish } ]
 	[[norwegian] owns_all_provinces = { X_is_colonial_province_trigger = no culture = norwegian } any_province = { X_is_colonial_province_trigger = no culture = norwegian } ]
@@ -397,6 +396,8 @@ X_culture_union_trigger = {
 	[[highland_scottish] owns_all_provinces = { X_is_colonial_province_trigger = no culture = highland_scottish } any_province = { X_is_colonial_province_trigger = no culture = highland_scottish } ]
 	#hindusthani
 	[[avadhi] owns_all_provinces = { X_is_colonial_province_trigger = no culture = avadhi } any_province = { X_is_colonial_province_trigger = no culture = avadhi } ]
+	[[gujarati] owns_all_provinces = { X_is_colonial_province_trigger = no culture = avadhi } any_province = { X_is_colonial_province_trigger = no culture = avadhi } ]
+	[[saurashtri] owns_all_provinces = { X_is_colonial_province_trigger = no culture = avadhi } any_province = { X_is_colonial_province_trigger = no culture = avadhi } ]
 	[[bihari] owns_all_provinces = { X_is_colonial_province_trigger = no culture = bihari } any_province = { X_is_colonial_province_trigger = no culture = bihari } ]
 	[[pahari] owns_all_provinces = { X_is_colonial_province_trigger = no culture = pahari } any_province = { X_is_colonial_province_trigger = no culture = pahari } ]
 	[[nepali] owns_all_provinces = { X_is_colonial_province_trigger = no culture = nepali } any_province = { X_is_colonial_province_trigger = no culture = nepali } ]
@@ -473,7 +474,6 @@ X_culture_exists_trigger = {
 	#tartar
 	[[astrakhani] any_province = { X_is_colonial_province_trigger = no culture = astrakhani } ]
 	[[uzbehk] any_province = { X_is_colonial_province_trigger = no culture = uzbehk } ]
-	[[ostyaki] any_province = { X_is_colonial_province_trigger = no culture = ostyaki } ]
 	[[turkmeni] any_province = { X_is_colonial_province_trigger = no culture = turkmeni } ]
 	[[bashkir] any_province = { X_is_colonial_province_trigger = no culture = bashkir } ]
 	[[khazak] any_province = { X_is_colonial_province_trigger = no culture = khazak } ]
@@ -525,8 +525,8 @@ X_culture_exists_trigger = {
 	[[ryazanian] any_province = { X_is_colonial_province_trigger = no culture = ryazanian } ]
 	[[byelorussian] any_province = { X_is_colonial_province_trigger = no culture = byelorussian } ]
 	[[ruthenian] any_province = { X_is_colonial_province_trigger = no culture = ruthenian } ]
-	[[karelian] any_province = { X_is_colonial_province_trigger = no culture = karelian } ]
 	#scandinavian
+	[[karelian] any_province = { X_is_colonial_province_trigger = no culture = karelian } ]
 	[[swedish] any_province = { X_is_colonial_province_trigger = no culture = swedish } ]
 	[[danish] any_province = { X_is_colonial_province_trigger = no culture = danish } ]
 	[[norwegian] any_province = { X_is_colonial_province_trigger = no culture = norwegian } ]
@@ -591,6 +591,8 @@ X_culture_exists_trigger = {
 	#hindusthani
 	[[avadhi] any_province = { X_is_colonial_province_trigger = no culture = avadhi } ]
 	[[bihari] any_province = { X_is_colonial_province_trigger = no culture = bihari } ]
+	[[gujarati] any_province = { X_is_colonial_province_trigger = no culture = bihari } ]
+	[[saurashtri] any_province = { X_is_colonial_province_trigger = no culture = bihari } ]
 	[[pahari] any_province = { X_is_colonial_province_trigger = no culture = pahari } ]
 	[[nepali] any_province = { X_is_colonial_province_trigger = no culture = nepali } ]
 	[[kanauji] any_province = { X_is_colonial_province_trigger = no culture = kanauji } ]

@@ -86,7 +86,6 @@ trade_company_north_india = {
 		506 2079 2086 4508 4509 #multan_area
 		2077 2078 4511 #sind_sagar_area
 		508 2073 2074 4449 4521 #kashmir_area
-		576 577 2068 #kalat_area
 		505 2072 4505 #northern_sindh_area
 		504 4503 4504 #sindh_area
 		2051 2052 2053 2054 2067 2088 4454 4455 4456 4457 4480 4506 4512 503 513 514 515 521
@@ -1055,6 +1054,7 @@ trade_company_lahore_trade = {
 		442 453 441 #transoxiana_area
 		440 1973 2362 2370 #khiva_area
 		437 438 439 443 2349 #transcaspia_area
+		576 577 2068 #kalat_area
 	}
 	
 	# Specific
