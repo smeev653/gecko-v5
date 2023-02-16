@@ -16,7 +16,7 @@ estate_ghilman_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 }
 

@@ -26,12 +26,36 @@ estate_gc_sipahi = {
 		special_unit_forcelimit = 0.1
 	}
 	on_granted = {
-		capital_scope = {
-			add_unit_construction = {
-			type = cavalry
-			amount = 10
-			speed = 0.5
-			cost = 0
+		if = {
+			limit = {
+				capital_scope = { 
+					owned_by = ROOT
+				}
+			}
+			capital_scope = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+			random_owned_province = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
 			}
 		}
 	}
@@ -66,12 +90,36 @@ estate_gc_expand_sipahi = {
 	#	special_unit_forcelimit = 0.1
 	#}
 	on_granted = {
-		capital_scope = {
-			add_unit_construction = {
-			type = cavalry
-			amount = 10
-			speed = 0.5
-			cost = 0
+		if = {
+			limit = {
+				capital_scope = { 
+					owned_by = ROOT
+				}
+			}
+			capital_scope = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+			random_owned_province = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
 			}
 		}
 		add_country_modifier = {
@@ -139,7 +187,7 @@ estate_gc_priv_2 = {
 
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 
@@ -165,7 +213,7 @@ estate_gc_priv_3 = {
 		burghers_influence_modifier = 0.05
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 
@@ -195,7 +243,7 @@ estate_gc_priv_4 = {
 
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 
@@ -226,7 +274,7 @@ estate_gc_priv_5 = {
 		
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 
@@ -401,7 +449,7 @@ estate_gc_priv_7 = {
 		}
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 
@@ -425,7 +473,7 @@ estate_gc_priv_8 = {
 		exempt_from_seize_land
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 	}
 }
 estate_gc_priv_9 = {
@@ -447,7 +495,7 @@ estate_gc_priv_9 = {
 		exempt_from_seize_land
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 	}
 }
 estate_gc_priv_10 = {
@@ -469,7 +517,7 @@ estate_gc_priv_10 = {
 		exempt_from_seize_land
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 	}
 }
 estate_gc_priv_11 = {
@@ -491,7 +539,7 @@ estate_gc_priv_11 = {
 		exempt_from_seize_land
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 	}
 }
 
@@ -518,6 +566,6 @@ estate_gc_priv_12 = {
 
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 	}
 }

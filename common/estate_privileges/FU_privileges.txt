@@ -24,19 +24,7 @@ estate_dhimmi_jewish_community = {
 		advisor_pool = 1 
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { mil = 2 }
-		}
-		modifier = {
-			factor = 0.8
-			mil = 5
-		}
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
@@ -88,19 +76,7 @@ estate_dhimmi_millet_system = {
 		reform_progress_growth = 0.1
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { mil = 2 }
-		}
-		modifier = {
-			factor = 0.8
-			mil = 5
-		}
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {

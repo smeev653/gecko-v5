@@ -29,14 +29,38 @@ estate_gc_noble_levies = {
 		#create_general = {
 		#	tradition = 30
 		#}
-		capital_scope = {
-			add_unit_construction = {
-			type = cavalry
-			amount = 10
-			speed = 0.5
-			cost = 0
+		if = {
+			limit = {
+				capital_scope = { 
+					owned_by = ROOT
+				}
 			}
-		}	
+			capital_scope = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+			random_owned_province = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
+			}
+		}
 	}
 	on_revoked = {
 	}
@@ -46,7 +70,7 @@ estate_gc_noble_levies = {
 	#	can_recruit_hussars = yes
 	#}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 estate_gc_expand_mamluks = {
@@ -76,12 +100,36 @@ estate_gc_expand_mamluks = {
 		cavalry_cost = -0.1
 	}
 	on_granted = {
-		capital_scope = {
-			add_unit_construction = {
-			type = cavalry
-			amount = 10
-			speed = 0.5
-			cost = 0
+		if = {
+			limit = {
+				capital_scope = { 
+					owned_by = ROOT
+				}
+			}
+			capital_scope = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+			random_owned_province = { 
+				add_unit_construction = {
+					type = cavalry
+					amount = 10
+					speed = 1 #seems to be capped to some point
+					cost = 0
+				}
 			}
 		}
 		add_country_modifier = {
@@ -97,7 +145,7 @@ estate_gc_expand_mamluks = {
 
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 estate_mamluks_land_rights = {
@@ -198,11 +246,7 @@ estate_mamluks_promote_leadership = {
 		remove_country_modifier = estate_ghilman_discipline_modifier
 		}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -225,10 +269,6 @@ estate_mamluks_recruit_turkmen = {
 		movement_speed = 0.1
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }

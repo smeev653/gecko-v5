@@ -90,7 +90,7 @@ estate_janissary_reform_the_janissaries = {
 		remove_country_modifier = estate_janissary_discipline_modifier
 		}		
 	ai_will_do = {					
-        factor = 0                               
+        factor = 1000                               
         }			
 }
 

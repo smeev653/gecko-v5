@@ -65,7 +65,7 @@ estate_gecko_ethiopia_highlands_and_mountains = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {

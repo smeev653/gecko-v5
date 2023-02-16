@@ -398,60 +398,7 @@ estate_brahmins_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_brahmins
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_brahmins_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_brahmins_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_brahmins_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -469,60 +416,7 @@ estate_nobles_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_nobles
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_nobles_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_nobles_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_nobles_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 0
 	}
 }
 
@@ -541,60 +435,7 @@ estate_church_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_church
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_church_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -613,60 +454,7 @@ estate_maratha_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_maratha
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_maratha_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_maratha_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_maratha_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -685,60 +473,7 @@ estate_burghers_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_burghers
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -757,60 +492,7 @@ estate_vaisyas_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_vaisyas
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_vaisyas_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_vaisyas_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_vaisyas_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -828,60 +510,7 @@ estate_cossacks_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -900,60 +529,7 @@ estate_dhimmi_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_dhimmi
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -971,60 +547,7 @@ estate_jains_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_jains
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_jains_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_jains_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_jains_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -1042,60 +565,7 @@ estate_rajput_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 1.4
-			num_of_territories = 5
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 10
-		}
-		modifier = {
-			factor = 1.5
-			num_of_territories = 15
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_rajput
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_rajput_land_rights }
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_territories = 1 }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 40 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 60 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_rajput_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			OR = {
-				NOT = { crown_land_share = 30 }
-				AND = {
-					is_absolutism_active = yes
-					NOT = { crown_land_share = 50 }
-				}
-			}
-			NOT = { has_estate_privilege = estate_rajput_land_rights }
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 }
 
@@ -1300,7 +770,7 @@ estate_nobles_levies = {
 		}
 	}
 	ai_will_do = {
-		factor = 1000
+		factor = 0
 	}
 }
 
@@ -1526,10 +996,6 @@ estate_nobles_right_of_counsel = {
 	}
 	ai_will_do = {
 		factor = 0
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
 	}
 	cooldown_years = 10
 	on_cooldown_expires = {
@@ -1574,11 +1040,7 @@ estate_nobles_french_strong_duchies = {
 		reduced_liberty_desire_on_same_continent = 10
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = { #will lose it via invalid sooner or later
-			factor = 10
-			has_estate_privilege = estate_nobles_french_strong_duchies
-		}
+		factor = 0
 	}
 	cooldown_years = 20
 }
@@ -1740,33 +1202,7 @@ estate_church_papal_emissary = {
 		papal_influence = 1
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_part_of_hre = yes
-			is_emperor = no
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				tag = SWE
-				tag = ENG
-				tag = GBR
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 0.75
-			NOT = {
-				reverse_has_opinion = {
-					who = PAP
-					value = 50
-				}
-			}
-		}
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
@@ -1903,20 +1339,7 @@ estate_church_clerical_ministers = {
 		}		
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				religion = protestant
-				religion = anglican
-			}
-			religion = protestant
-			num_of_aspects = 3
-		}
+		factor = 1000
 	}
 	cooldown_years = 15
 	on_cooldown_expires = {
@@ -2176,7 +1599,7 @@ estate_burghers_admirals = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 	cooldown_years = 15
 	on_cooldown_expires = { 
@@ -2235,23 +1658,7 @@ estate_burghers_new_world_charter = {
 		colonist_placement_chance = 0.05
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = SPA
-				tag = ENG
-				tag = GBR
-				tag = SCO
-				tag = FRA
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
+		factor = 0
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = estate_burghers_new_world_charter
@@ -2470,10 +1877,6 @@ estate_burghers_free_enterprise = {
 	}
 	ai_will_do = {
 		factor = 0
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
 	}
 	cooldown_years = 10
 	on_cooldown_expires = { 
@@ -2551,7 +1954,7 @@ PR_estate_clergy_exploration_expedition = {
 	penalties = {
 		}
 	ai_will_do = {
-		factor = 500
+		factor = 1000
 		}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = PR_estate_clergy_exploration_expedition
@@ -2611,7 +2014,7 @@ smeev_mountain_dev_cost = {
 	penalties = {
 	}
 	ai_will_do = {
-		factor = 500
+		factor = 1000
 		}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = smeev_mountain_dev_cost
@@ -2686,11 +2089,7 @@ estate_cossacks_cossack_self_governance = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
+		factor = 0
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = estate_cossacks_cossack_self_governance
@@ -2726,24 +2125,7 @@ estate_cossacks_establish_the_cossack_regiments = {
 	mechanics = {
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			any_owned_province = {
-				has_terrain = steppe
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_establish_the_cossack_regiments }
-		}
+		factor = 0
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege =  estate_cossacks_establish_the_cossack_regiments
@@ -2769,25 +2151,7 @@ estate_cossacks_expand_the_cossack_regiments = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			any_owned_province = {
-				has_terrain = steppe
-			}
-			is_absolutism_active = no
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_cossacks
-					influence = 75
-				}
-			}
-			NOT = { has_estate_privilege = estate_cossacks_establish_the_cossack_regiments }
-		}
+		factor = 0
 	}
 }
 
@@ -2924,7 +2288,7 @@ estate_dhimmi_manpower = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_manpower
@@ -2953,25 +2317,6 @@ estate_dhimmi_tolerance = {
 	}
 	ai_will_do = {
 		factor = 1000
-		modifier = {
-			factor = 10
-			num_of_owned_provinces_with = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				value = 15
-			}
-		}
-		modifier = {
-			factor = 0.5
-			estate_influence = {
-				estate = estate_church
-				influence = 75
-			}
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
 	}
 	cooldown_years = 20
 	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_tolerance
@@ -3046,14 +2391,6 @@ estate_dhimmi_guaranteed_autonomy = {
 	}
 	ai_will_do = {
 		factor = 1000
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					NOT = { religion_group = ROOT }
-				}
-			}
-		}
 	}
 	cooldown_years = 20
 	on_cooldown_expires = { remove_estate_privilege = estate_dhimmi_guaranteed_autonomy
@@ -4022,7 +3359,7 @@ estate_burghers_patronage_of_the_arts = {
 		}
 	}
 	ai_will_do = {
-		factor = 100
+		factor = 0
 	}
 	cooldown_years = 20
 	on_cooldown_expires = { remove_estate_privilege = estate_burghers_patronage_of_the_arts
@@ -4042,7 +3379,7 @@ estate_vaisyas_patronage_of_the_arts = {
 		prestige = 0.5
 	}
 	ai_will_do = {
-		factor = 100
+		factor = 0
 	}
 }
 
@@ -6348,11 +5685,7 @@ estate_cossacks_recruit_cossack_generals = {
 		leader_land_manuever = 1
 	}
 	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = estate_cossacks_recruit_cossack_generals
@@ -6412,7 +5745,7 @@ estate_cossacks_prime_herding_rights = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = estate_cossacks_prime_herding_rights
@@ -6437,15 +5770,7 @@ estate_nobles_junker_primacy = {
 		monthly_militarized_society = 0.10
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 10
-			has_dlc = "Rights of Man"
-		}
-		modifier = {
-			factor = 0.5
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = estate_nobles_junker_primacy
@@ -6502,11 +5827,7 @@ estate_nobles_strong_duchies = {
 		reduced_liberty_desire = 15
 	}
 	ai_will_do = {
-		factor = 1
-		modifier = { #will lose it via invalid sooner or later
-			factor = 10
-			has_estate_privilege = estate_nobles_strong_duchies
-		}
+		factor = 0
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = estate_nobles_strong_duchies
@@ -6981,17 +6302,6 @@ estate_burghers_control_over_monetary_policy = {
 			
 	ai_will_do = {
 		factor = 1000
-		modifier = {
-			factor = 10
-			OR = {
-				inflation = 15
-				num_of_loans = 15
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {remove_estate_privilege = estate_burghers_control_over_monetary_policy
@@ -7619,7 +6929,7 @@ estate_church_influence_temples = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
@@ -7831,7 +7141,7 @@ estate_nobles_better_integration = {
 		remove_estate_privilege = estate_nobles_better_integration 
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 0
 	}
 }
 
@@ -7859,7 +7169,7 @@ estate_church_religious_diplomats = {
 		global_missionary_strength = 0.02
 	}
 	ai_will_do = {
-		factor = 100	#The privilege is a little bit too niche to be really usable for the AI
+		factor = 0	#The privilege is a little bit too niche to be really usable for the AI
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
@@ -8101,23 +7411,7 @@ estate_burghers_hydraulic_rights = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2
-			num_of_owned_provinces_with = {
-				OR = {
-					has_terrain = desert
-					has_terrain = coastal_desert
-					has_terrain = steppe
-					has_terrain = savannah
-				}
-				value = 8
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
@@ -8340,33 +7634,6 @@ estate_dhimmi_guarantee_of_traditions = {
 	}
 	ai_will_do = {
 		factor = 1000
-		modifier = {
-			factor = 10
-			num_of_owned_provinces_with = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				value = 15
-			}
-		}
-		modifier = {
-			factor = 0.5
-			estate_influence = {
-				estate = estate_church
-				influence = 75
-			}
-		}
-		modifier = {
-			factor = 0.8
-			is_absolutism_active = yes
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					NOT = { religion_group = ROOT }
-				}
-			}
-		}
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
@@ -8735,22 +8002,7 @@ estate_burghers_mountain_expansion = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 2
-			num_of_owned_provinces_with = {
-				OR = {
-					has_terrain = mountain
-					has_terrain = highlands
-					has_terrain = hills
-				}
-				value = 8
-			}
-		}
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
+		factor = 1000
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
@@ -9311,7 +8563,7 @@ estate_dhimmi_grant_liberties = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 	}
 }
 
