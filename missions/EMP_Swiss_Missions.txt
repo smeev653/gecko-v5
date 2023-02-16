@@ -651,10 +651,6 @@ swiss_missions_3 = {
 		required_missions = { }
 		position = 8 
 		provinces_to_highlight = {
-			any_owned_province = {
-				unrest = 1 
-				average_autonomy_above_min = 10
-			}
 			province_id = 1869 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -666,10 +662,6 @@ swiss_missions_3 = {
 			1869 = { 
 				NOT = { devastation = 1 }
 				num_of_times_improved = 3 
-			}
-			any_owned_province = {
-				NOT = { unrest = 1 }
-				NOT = { average_autonomy_above_min = 10 }
 			}
 		}
 		effect = {
@@ -693,10 +685,12 @@ swiss_missions_3 = {
 		required_missions = { swi_hintersassen_citizenship swi_enact_landsgemeinden swi_of_peace_and_stability }
 		position = 10 
 		provinces_to_highlight = {
-			any_owned_province = {
-				has_terrain = mountain
-				NOT = { development = 25 }
-			}
+			ROOT = {
+				any_owned_province = {
+					has_terrain = mountain
+					NOT = { development = 25 }
+				}
+			}	
 		}
 		trigger = {
 			num_of_owned_provinces_with = {

@@ -17336,13 +17336,14 @@ gme_bundeshaus = {
 		province_modifiers = {
 			local_governing_cost = -0.10
 		}
-		area_modifier = { }
+		area_modifier = { local_development_cost = -0.05}
 		country_modifiers = {
-			reform_progress_growth = 0.05
+			reform_progress_growth = 0.15
+			republican_tradition = 0.1 
 		}
 		on_upgraded = {
 			owner = {
-				change_government_reform_progress  = 10
+				change_government_reform_progress  = 25
 			}
 		}
 	}
@@ -17353,13 +17354,15 @@ gme_bundeshaus = {
 		area_modifier = {
 			local_state_maintenance_modifier = -0.15
 			local_governing_cost = -0.20
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
-			reform_progress_growth = 0.10
+			reform_progress_growth = 0.2
+			republican_tradition = 0.2 
 		}
 		on_upgraded = {
 			owner = {
-				change_government_reform_progress  = 15
+				change_government_reform_progress  = 50
 			}
 		}
 	}
@@ -17370,14 +17373,16 @@ gme_bundeshaus = {
 		area_modifier = {
 			local_state_maintenance_modifier = -0.25
 			local_governing_cost = -0.25
+			local_development_cost = -0.15
 		}
 		country_modifiers = {
 			candidate_random_bonus = 1
-			reform_progress_growth = 0.15
+			reform_progress_growth = 0.3
+			republican_tradition = 0.3 
 		}
 		on_upgraded = {
 			owner = {
-				change_government_reform_progress  = 25
+				change_government_reform_progress  = 100
 			}
 		}
 	}
@@ -17945,7 +17950,7 @@ gme_bretagne_castles = {
 }
 
 gme_chillon_castle = {
-	start = 1867
+	start = 6171
 	date = 1.01.01
 	time = { months = 120 }
 	build_cost = 500
@@ -17970,49 +17975,56 @@ gme_chillon_castle = {
 		province_modifiers = { }
 		area_modifier = { }
 		country_modifiers = { }
-		on_upgraded = { }
+		on_upgraded = {  }
 	}
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 350 }
 		province_modifiers = {
-			local_manpower_modifier = 0.15
-			garrison_growth = 0.15
 		}
-		area_modifier = { }
+		area_modifier = {
+			local_manpower_modifier = 0.15
+			local_defensiveness = 0.15
+			garrison_growth = 0.15
+			}
 		country_modifiers = { }
 		on_upgraded = {
 			add_devastation = -10
+			 add_base_manpower = 2
 		}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
+			
+		}
+		area_modifier = {
 			local_manpower_modifier = 0.25
 			local_defensiveness = 0.25
 			garrison_growth = 0.25
-		}
-		area_modifier = { }
+			}
 		country_modifiers = {
 			defensiveness = 0.15
 		}
-		on_upgraded = { }
+		on_upgraded = { add_base_manpower = 3 }
 	}
 	tier_3 = {
 		upgrade_time = { months = 360 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
+			
+		}
+		area_modifier = {
 			local_manpower_modifier = 0.33
 			local_defensiveness = 0.33
 			garrison_growth = 0.33
 		}
-		area_modifier = { }
 		country_modifiers = {
-			defensiveness = 0.15
-			fort_maintenance_modifier = -0.15
+			defensiveness = 0.33
+			fort_maintenance_modifier = -0.33
 		}
-		on_upgraded = { }
+		on_upgraded = { add_base_manpower = 5 }
 	}
 }
 

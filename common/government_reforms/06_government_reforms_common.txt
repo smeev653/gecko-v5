@@ -15,8 +15,9 @@ united_cantons_reform = {
 		OR = {
 			primary_culture = swiss
 			have_had_reform = united_cantons_reform
+			is_subject_of_type = canton
 		}
-		is_subject_of_type = canton
+		
 	}
 	ai = {
 		factor = 1000 #unique

@@ -87,7 +87,6 @@ emp_burgundy_1 = {
 			}
 			ALS = { is_subject = no }
 			MLH = { is_subject = no }
-			TIR = { is_subject = no }
 		}
 		
 		effect = {
