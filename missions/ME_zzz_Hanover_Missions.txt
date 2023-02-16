@@ -1289,7 +1289,7 @@ HAN_missions_5_1 = {
 		}
 		trigger = {
 			stability = 3
-			NOT = { average_unrest = 0 }
+		
 		}
 		effect = {
 			country_event = { id = ME_Hannover_Events.4 }

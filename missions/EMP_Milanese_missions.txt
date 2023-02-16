@@ -410,7 +410,6 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 				development = 25
 				NOT = { devastation = 1 }
 			}
-			NOT = { average_unrest = 0 }
 		}
 		effect = {
 			custom_tooltip = emp_ven_plague_doctor_training_tt

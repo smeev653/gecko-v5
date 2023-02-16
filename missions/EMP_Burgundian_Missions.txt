@@ -59,7 +59,7 @@ emp_burgundy_1 = {
 	}
 	emp_bur_romandie = {
 		icon = unite_the_realm
-		required_missions = { emp_bur_nevers }
+		required_missions = {  }
 		
 		provinces_to_highlight = {
 			area = alsace_area
@@ -80,11 +80,14 @@ emp_burgundy_1 = {
 			 owned_by = MLH
 			}
 			1880 = {
-			 owned_by = TIR
+				OR = {
+					owned_by = HAB
+					owned_by = TIR
+				}	
 			}
-			ALS = { is_vassal = no }
-			MLH = { is_vassal = no }
-			TIR = { is_vassal = no }
+			ALS = { is_subject = no }
+			MLH = { is_subject = no }
+			TIR = { is_subject = no }
 		}
 		
 		effect = {

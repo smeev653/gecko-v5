@@ -765,7 +765,7 @@ gc_tunis_4 = {
 					has_building = grand_shipyard
 				}
 			}
-			1298 = {
+			1303 = {
 				privateer_power = {
 					country = ROOT
 					share = 25

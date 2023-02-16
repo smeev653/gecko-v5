@@ -333,7 +333,7 @@ PRU_missions_1_2 = {
 		trigger = {
 			stability = 3
 			has_final_tier_reforms_trigger = yes
-			NOT = { average_unrest = 1 }
+			
 		}
 		effect = {
 			change_innovativeness = 3
@@ -2364,7 +2364,7 @@ PRU_missions_5 = {
 		}
 		trigger = {
 			absolutism = 60
-			NOT = { average_unrest = 0 }
+			
 			legitimacy_equivalent = 90
 		}
 		effect = {

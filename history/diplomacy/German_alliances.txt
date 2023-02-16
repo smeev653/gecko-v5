@@ -1,5 +1,6 @@
 # Savoy and Geneva
-vassal = {
+dependency = {
+	subject_type = "canton"
 	first = SAV
 	second = GNV
 	start_date = 1444.1.1

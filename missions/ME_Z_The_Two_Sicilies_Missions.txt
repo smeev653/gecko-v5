@@ -745,7 +745,7 @@ the_two_sicilies_missions_4 = {
 					}
 				}
 			}
-			1298 = {
+			1303 = {
 				custom_trigger_tooltip = {
 					tooltip = ME_5_TRADE_SHARE_NAVY_ROOT
 					NOT = {

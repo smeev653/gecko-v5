@@ -629,7 +629,7 @@ country_decisions = {
 			}
 			add_prestige_or_monarch_power = { amount = 25 }
 			set_country_flag = formed_swabia_flag
-
+			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					OR = {

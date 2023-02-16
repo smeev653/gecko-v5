@@ -196,7 +196,7 @@ swiss_missions_1 = {
 					has_building = fort_17th
 					has_building = fort_18th
 				}
-				has_building = ramparts
+				
 			}
 			166 = { 
 				country_or_non_sovereign_subject_holds = ROOT 
@@ -206,7 +206,7 @@ swiss_missions_1 = {
 					has_building = fort_17th
 					has_building = fort_18th
 				}
-				has_building = ramparts
+				
 			}
 			4727 = { 
 				country_or_non_sovereign_subject_holds = ROOT 
@@ -216,7 +216,7 @@ swiss_missions_1 = {
 					has_building = fort_17th
 					has_building = fort_18th
 				}
-				has_building = ramparts
+				
 			}
 			1873 = { 
 				country_or_non_sovereign_subject_holds = ROOT 
@@ -226,7 +226,7 @@ swiss_missions_1 = {
 					has_building = fort_17th
 					has_building = fort_18th
 				}
-				has_building = ramparts
+				
 			}
 			 fortification_expert = 1 
 		}
@@ -242,7 +242,7 @@ swiss_missions_1 = {
 							has_building = fort_18th
 						}
 					}
-					add_base_manpower = 1 
+					add_base_manpower = 2 
 				}
 			}
 			if = {
@@ -635,7 +635,7 @@ swiss_missions_3 = {
 				name = swi_standarization_of_designs_modifier
 				duration = -1 
 			}
-			1298 = { #Genoese Banks
+			1303 = { #Genoese Banks
 				add_trade_modifier = {
 					who = ROOT
 					power = 25
@@ -908,7 +908,6 @@ swiss_missions_4 = {
 				has_idea = oasis_of_peace_and_prosperity
 				AND = {
 					NOT = { average_autonomy_above_min = 5 }
-					NOT = { average_unrest = 1 } 
 					has_any_disaster = no 
 					legitimacy_equivalent = 80
 				}

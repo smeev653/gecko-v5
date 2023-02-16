@@ -968,7 +968,7 @@ yem_missions_5 = {
 		required_missions = { yem_school_of_thought }
 		position = 2
 		trigger = {
-			NOT = { average_unrest = 1 }
+			
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {

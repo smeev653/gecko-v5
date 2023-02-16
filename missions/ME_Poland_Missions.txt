@@ -1210,7 +1210,7 @@ POL_Missions_2 = {
 		}
 		trigger = {
 			absolutism = 50
-			NOT = { average_unrest = -2 }
+			
 		}
 		effect = {
 			add_country_modifier = {

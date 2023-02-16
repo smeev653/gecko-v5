@@ -1179,9 +1179,9 @@ merc_swiss_canton_mercenaries = {
 		mission_completed = swi_reislaufer
 		tag = SWI
 	}
-	cost_modifier = 0.75
+	cost_modifier = 0.5
 	modifier = {
-		discipline = 0.05
+		discipline = 0.1
 	}
 }
 
