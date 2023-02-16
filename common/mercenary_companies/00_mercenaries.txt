@@ -1020,30 +1020,19 @@ merc_miquelet_company = {
 
 
 merc_free_swiss_guard = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.1
     #home_province = 165 # Bern
-	cost_modifier = 1
+	cost_modifier = 0.25
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-		NOT = {has_country_modifier = merc_spawn_timer }
-		 
+		has_government_reform = united_cantons_reform
 		OR = {
-			any_owned_province = {
-				OR = {
-					area = switzerland_area
-					area = romandie_area
-				}
-			}
-			#has_country_modifier = mercenaries_to_the_standard
-			#has_country_modifier = glut_of_mercs
-			has_country_modifier = swedish_mercenary_core
+			NOT = {tag = SWI }
+			NOT = {tag = SWA }
 		}
-		NOT = { tag = SWI }
-		
-		NOT = { has_country_modifier = gecko_b }
 	}
 	modifier = {
-        discipline = 0.05
+        discipline = 0.1
 	}
 }
 merc_independent_cossack_host = {
