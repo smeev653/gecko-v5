@@ -1304,7 +1304,9 @@ swi_tales_of_legends_modifier = {
 	prestige_from_land = 1
 }
 swi_canton_republican_ties_modifier = {
-	republican_tradition = 0.05
+	republican_tradition = 0.1
+	vassal_income = 0.05
+	advisor_cost = -0.025
 }
 
 swi_bastion_catholicism_modifier = {

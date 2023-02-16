@@ -583,6 +583,14 @@ swiss_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			piedmont_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	

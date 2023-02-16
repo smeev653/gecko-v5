@@ -400,7 +400,7 @@ categories =  {
 			6135 6140 432 4334 #gc persia
 			1127 226 1751 #gc morocco
 			1934 #gc italy
-			165 #gc switzerland
+			6171 6173 165 #gc switzerland
 			2410
 		}
 	}
@@ -474,7 +474,7 @@ categories =  {
 			6157 6156 6155 426 #persia #smeev
 			4238 #gcbohemia
 			6120
-			6171 1867 4720 6170 4721 6169 1869 #gcswitzerland
+			 1867 4720 6170 4721 6169 1869 #gcswitzerland
 			137 4753 # Balkans
 			4968
 		}
