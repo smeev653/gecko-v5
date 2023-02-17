@@ -582,7 +582,7 @@ SWA_ideas = {
 		build_cost = -0.1
 	}
 	swa_barbarossas_legacy = {
-		infantry_power = 0.10
+		infantry_power = 0.125
 	}
 	swa_swabian_league = {
 		diplomatic_upkeep = 2
@@ -602,7 +602,7 @@ SWA_ideas = {
 
 SWI_ideas = {
 	start = {
-		merc_maintenance_modifier = -0.15
+		republican_tradition = 0.5
 		infantry_power = 0.1
 	}
 	
@@ -616,7 +616,8 @@ SWI_ideas = {
 	free = yes  #will be triggered at load
 	
 	swiss_mercenaries = {
-		mercenary_discipline = 0.05
+		merc_maintenance_modifier = -0.25
+		mercenary_cost = -0.25
 	}
 	oasis_of_peace_and_prosperity = {
 		build_cost = -0.05

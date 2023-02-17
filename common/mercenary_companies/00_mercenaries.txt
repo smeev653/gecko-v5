@@ -1026,10 +1026,8 @@ merc_free_swiss_guard = {
 	sprites = { westerngfx_sprite_pack }
     trigger = {
 		has_reform = united_cantons_reform
-		OR = {
-			NOT = {tag = SWI }
-			NOT = {tag = SWA }
-		}
+		NOT = {tag = SWI }
+		NOT = {tag = SWA }
 	}
 	modifier = {
         discipline = 0.1
