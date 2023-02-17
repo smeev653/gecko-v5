@@ -1279,11 +1279,11 @@ kartli_kakheti_area = { #3
 }
 
 armenia_area = { #5
-	420 419 2202 2205 6141
+	419 2202 2205 6141 4302
 }
 shirvan_area = { #5 #Northern Azerbaijan
 	color = { 225 231 53 }
-	421 4299 4305 4340 6139
+	421 4299 4305 6139 420
 }
 
 dagestan_area = { #5
@@ -1300,7 +1300,7 @@ rum_area = { #5
 }
 
 erzurum_area = { #3	Erzurum and Trebizond
-	330 331 2305 2306
+	330 331 2305
 }
 
 hudavendigar_area = { #3
@@ -1336,7 +1336,7 @@ cukurova_area = { #3
 }
 
 aleppo_area = { #4
-	377 1849 2313 6114
+	377 1849 2313 6114 4298
 }
 
 syria_area = { #4
@@ -1344,12 +1344,12 @@ syria_area = { #4
 }
 
 palestine_area = { #3
-	379 1854 380 381 
+	379 1854 380 381 364
 }
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 4310 4298
+	332 2303 4310 2308
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
@@ -1366,7 +1366,7 @@ luristan_area = { #4
 }
 
 north_kurdistan_area = { #5
-	418 2307 4295 4296 4302
+	418 2307 4295 4296 2306
 }
 
 khuzestan_area = { #5
@@ -1380,7 +1380,7 @@ shahrizor_area = {	#4
 
 al_jazira_area = { #5
 	color = { 92 200 92 }
-	2308 411 2309 407 4292
+	411 2309 407 4292 2314
 }
 
 
@@ -1460,7 +1460,7 @@ mascat_area = { #3 (Batinah and Muscat coast
 
 syrian_desert_area = { #3
 	color = { 219 30 57 } 
-	405 4270 4271 2314
+	405 4270 4271
 }
 
 ########################################
@@ -1469,7 +1469,7 @@ syrian_desert_area = { #3
 
 gulf_of_arabia_area = { #5
 	color = { 19 219 75 }
-	365 2315 2320 2321 364
+	365 2315 2320 2321
 }
 
 al_wahat_area = { #3
@@ -2194,7 +2194,7 @@ urmia_area = {
 }
 
 tabarestan_area = { #5
-	417 426 4339 6155
+	417 426 4339 6155 4340
 }
 
 astrabad_area = {
