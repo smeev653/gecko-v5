@@ -435,9 +435,6 @@ aleppo = {
 		324 2301 4307 323 #karaman_area
 		418 2307 4295 4296 2306 #north_kurdistan_area
 		332 2303 4310 2308 #dulkadir_area
-		324 2301 4307 323 #karaman_area
-		418 2307 4295 4296 2306 #north_kurdistan_area
-		332 2303 4310 2308 #dulkadir_area
 		6115 6116 6117 327 2302 #cukurova_area
 	}
 }
