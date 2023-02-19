@@ -69,9 +69,12 @@ emp_burgundy_1 = {
 		trigger = {
 			treasury = 750
 			prestige = 25
-			reverse_has_opinion = {
-				who = HAB
-				value = 100
+			OR = {
+				reverse_has_opinion = {
+					who = HAB
+					value = 100
+				}
+				army_size = HAB
 			}
 			75 = {
 			 owned_by = ALS
