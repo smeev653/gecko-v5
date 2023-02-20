@@ -30,14 +30,15 @@ estate_burghers = {
 	# These scale with loyalty & power
 	country_modifier_happy = {
 		development_cost = -0.10
-		trade_efficiency = 0.1
-	}
+		global_trade_goods_size_modifier = 0.05
+	}	
+	
 	country_modifier_neutral = {
-		trade_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.05
 	}	
 	country_modifier_angry = {
-		trade_efficiency = -0.1
-		global_unrest = 2
+		global_trade_goods_size_modifier = -0.05
+		global_unrest = 2	
 	}
 	land_ownership_modifier = {
 		burghers_loyalty_modifier = 0.5

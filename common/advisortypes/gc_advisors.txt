@@ -5,14 +5,31 @@ gc_drill_master = {
 	drill_gain_modifier = 0.1
 	drill_decay_modifier = -0.05
 	
-	skill_scaled_modifier = { 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
 		modifier = { 
 			meritocracy = 0.25
 			drill_gain_modifier = 0.1
 			drill_decay_modifier = -0.05
-		} 
+			republican_tradition = 0.02 
+		}
 	}
-
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			drill_gain_modifier = 0.1
+			drill_decay_modifier = -0.05
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -29,14 +46,31 @@ gc_arty_officer = {
 	artillery_power = 0.0625
 	artillery_cost = -0.0625
 
-	skill_scaled_modifier = { 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
 		modifier = { 
 			meritocracy = 0.25
 			artillery_power = 0.0125
 			artillery_cost = -0.0125
-		} 
+			republican_tradition = 0.02 
+		}
 	}
-
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			artillery_power = 0.0125
+			artillery_cost = -0.0125
+		}
+	}
 	chance = {
 		factor = 1
 		modifier = {
@@ -56,13 +90,29 @@ gc_inquisitor = {
 	# Bonus
 	culture_conversion_cost = -0.05
 
-	skill_scaled_modifier = { 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
 		modifier = { 
 			meritocracy = 0.25
 			culture_conversion_cost = -0.05
-		} 
+			republican_tradition = 0.02 
+		}
 	}
-
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			culture_conversion_cost = -0.05
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -77,16 +127,36 @@ gc_banker = {
 	
 	# Bonus
 	interest = -0.125
-
-	skill_scaled_modifier = { 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
 		modifier = { 
 			meritocracy = 0.25
 			interest = -0.125
-		} 
+			republican_tradition = 0.02 
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			interest = -0.125
+		}
 	}
 
 	chance = {
 		factor = 1
+		modifier = {
+			num_of_loans = 10
+			factor = 2
+		}
 	}
 	
 	ai_will_do = {
@@ -105,13 +175,29 @@ siege_specialist = {
 	siege_ability = 0.05
 	artillery_levels_available_vs_fort = 1
 	
-	skill_scaled_modifier = { 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
 		modifier = { 
 			meritocracy = 0.25
 			siege_ability = 0.025
-		} 
+			republican_tradition = 0.02 
+		}
 	}
-
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			siege_ability = 0.025
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -127,13 +213,31 @@ infantry_leader = {
 	shock_damage_received = -0.0625
 	fire_damage_received = -0.0625
 
-	skill_scaled_modifier = { 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
 		modifier = { 
+			meritocracy = 0.25
 			shock_damage_received = -0.0125
 			fire_damage_received = -0.0125
-		} 
+			republican_tradition = 0.02 
+		}
 	}
-
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			shock_damage_received = -0.0125
+			fire_damage_received = -0.0125
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -151,13 +255,31 @@ cavalry_leader = {
 	fire_damage = 0.0625
 
 
-	skill_scaled_modifier = { 
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = republican_tradition_from_advisors 
+			}
+		}
 		modifier = { 
+			meritocracy = 0.25
 			shock_damage = 0.0125
 			fire_damage = 0.0125
-		} 
+			republican_tradition = 0.02 
+		}
 	}
-
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = { 
+				NOT = { has_government_attribute = republican_tradition_from_advisors }
+			}
+		}
+		modifier = { 
+			meritocracy = 0.25
+			shock_damage = 0.0125
+			fire_damage = 0.0125
+		}
+	}
 	chance = {
 		factor = 1
 	}
