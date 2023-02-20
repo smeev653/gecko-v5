@@ -8,8 +8,17 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1465.1.1
 }
+# France-Barrois
+dependency = {
+	subject_type = "french_vassal"
+	first = FRA
+	second = BAR
+	start_date = 1444.1.1
+	end_date = 1465.1.1
+}
 # France-Orleans
-vassal = {
+dependency = {
+	subject_type = "french_vassal"
 	first = FRA
 	second = ORL
 	start_date = 1444.1.1
@@ -17,7 +26,8 @@ vassal = {
 }
 
 # France-Armagnac
-vassal = {
+dependency = {
+	subject_type = "french_vassal"
 	first = FRA
 	second = AMG
 	start_date = 1444.1.1
