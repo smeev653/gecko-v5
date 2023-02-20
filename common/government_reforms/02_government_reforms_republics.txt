@@ -1702,7 +1702,7 @@ republicanism_reform = {
 		}
 	}
 		modifiers = {
-		republican_tradition = 0.1
+		republican_tradition = 0.15
 		}
 		conditional = {
 			allow = {
