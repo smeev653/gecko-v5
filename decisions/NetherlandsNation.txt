@@ -58,16 +58,18 @@ country_decisions = {
 			}
 		}
 		allow = {
-			FRA = {
-				has_won_war_against = {
-				who = BUR
-				max_years_since = 5
+			OR = {
+				FRA = {
+					has_won_war_against = {
+					who = BUR
+					max_years_since = 5
+					}
 				}
-			}
-			BUR = {
-				has_won_war_against = {
-				who = FRA
-				max_years_since = 5
+				BUR = {
+					has_won_war_against = {
+					who = FRA
+					max_years_since = 5
+					}
 				}
 			}
 			OR = {
