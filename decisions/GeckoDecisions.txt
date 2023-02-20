@@ -713,7 +713,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL
@@ -758,7 +758,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL
@@ -865,7 +865,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL
@@ -910,7 +910,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL
@@ -978,7 +978,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL
@@ -1023,7 +1023,7 @@ country_decisions = {
 						}
 						multiply_variable = {
 								which = geckomercFL
-								value = 33
+								value = 25
 						}
 						change_variable = {
 								which = geckomercFL

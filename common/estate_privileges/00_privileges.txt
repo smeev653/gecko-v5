@@ -5823,7 +5823,7 @@ estate_nobles_strong_duchies = {
 	penalties = {
 	}
 	benefits = {
-		#diplomatic_upkeep = 2
+		diplomatic_upkeep = 1
 		reduced_liberty_desire = 15
 	}
 	ai_will_do = {

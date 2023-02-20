@@ -153,10 +153,6 @@ gc_banker = {
 
 	chance = {
 		factor = 1
-		modifier = {
-			num_of_loans = 10
-			factor = 2
-		}
 	}
 	
 	ai_will_do = {

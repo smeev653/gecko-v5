@@ -126,10 +126,6 @@ artist = {
 
 	chance = {
 		factor = 1
-			modifier = {
-				NOT = { stability = 1 }
-				factor = 2
-			}
 	}
 	
 	ai_will_do = {
