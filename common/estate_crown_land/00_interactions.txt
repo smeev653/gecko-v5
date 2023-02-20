@@ -58,22 +58,6 @@ interaction = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }	
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_estate_privilege = estate_church_religious_state }
-		}
-		modifier = {
-			factor = 0
-			technology_group = indian
-		}
-		modifier = {
-			factor = 0
 			is_nomad = yes
 		}		
 		modifier = {
@@ -350,23 +334,6 @@ interaction = {
 			# This check is needed to prevent collision with day-1 event theocracy.1
 			uses_devotion = yes
 			has_heir = no
-		}
-		modifier = {
-			factor = 0
-					NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-			}
-		
-		modifier = {
-			factor = 0
-					NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
-			}
-		modifier = {
-			factor = 0
-					NOT = { has_estate_privilege = estate_church_religious_state }	
-			}
-		modifier = {
-			factor = 0
-			technology_group = indian
 		}
 		modifier = {
 			factor = 0
