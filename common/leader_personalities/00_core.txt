@@ -16,7 +16,7 @@ glory_seeker_personality = {
 
 born_to_the_saddle_personality = {
 	allow = {
-		cavalry_fraction = 0.2
+		cavalry_fraction = 0.1
 		is_admiral = no
 	}
 	shock_damage = 0.1
@@ -47,7 +47,7 @@ inspirational_leader_general_personality = {
 	allow = {
 		is_admiral = no
 	}
-	discipline = 0.05
+	fire_damage_received = -0.1
 }
 
 master_of_arms_personality = {

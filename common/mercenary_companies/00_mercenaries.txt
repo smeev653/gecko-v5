@@ -83,7 +83,7 @@ merc_black_army = {
 			}
 	}
 	cost_modifier = 0.75
-	modifier = {
+	modifier = { infantry_power = 0.1
 	}
 }
 
