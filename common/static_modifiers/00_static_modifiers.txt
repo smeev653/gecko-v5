@@ -1838,6 +1838,7 @@ streltsy_regiment = {
 cossacks_regiment = {
     shock_damage = 0.1
 	fire_damage_received = -0.1
+	cavalry_shock = 0.5
 }
 carolean_regiment = {
 	discipline = 0.25
@@ -1876,7 +1877,7 @@ serfs_recieved_by_cossacks = {
 }
 
 cossacks_modifier = {
-	cavalry_power = 0.5
+	cavalry_power = 1
 	cavalry_cost = -1
 	#fire_damage_received = -0.25
 	#shock_damage_received = -0.25

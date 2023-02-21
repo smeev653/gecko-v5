@@ -27,12 +27,12 @@ aristocracy_ideas = {
 		nomadic_tribes_loyalty_modifier = 0.1
 	}
 	noble_knights = {
-		cavalry_power = 0.10
+		cavalry_cost = -0.1
 		cavalry_flanking = 1
 		special_unit_forcelimit = 0.1
 	}
 	noble_resilience = {
-		leader_land_manuever = 2
+		leader_siege = 1
 	}
 	serfdom = {
 		manpower_in_own_culture_provinces = 0.15
@@ -328,7 +328,7 @@ spy_ideas = {
 		land_forcelimit = 15
 		global_manpower_modifier = 0.05
 		land_forcelimit_modifier = 0.05
-		special_unit_forcelimit = 0.10
+		special_unit_forcelimit = 0.05
 		amount_of_carolean = 0.25
 	}
 	vetting = {
