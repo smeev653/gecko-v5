@@ -147,6 +147,18 @@ religious_center = {
 			}
 			religion = hussite
 		}
+	else_if = {
+			limit = {
+				province_id = 2140 # Yanzhou
+			}
+			religion = confucianism
+		}
+		else_if = {
+			limit = {
+				province_id = 1 # Stockholm - or rather Uppsala
+			}
+			religion = norse_pagan_reformed
+		}
 	}
 
 	local_missionary_strength = -0.05
@@ -616,11 +628,14 @@ changbai_mountain = {
 				primary_culture = manchu
 				primary_culture = manchu_new
 				primary_culture = korean
+				primary_culture = korean_new
 			}
 			OR = {
 				religion = tengri_pagan_reformed
 				religion = confucianism
 			}
+			owns_core_province = 2743
+			owns_core_province = 4201
 		}
 	}
 	
@@ -648,6 +663,7 @@ mongol_kurultai = {
 				primary_culture = chahar
 				primary_culture = khalkha
 				primary_culture = oirats
+				primary_culture = altaic_new
 			}
 		}
 	}
@@ -691,11 +707,10 @@ mil_vatican_library = {
 		owner = {
 			tag = PAP
 		}
-		controlled_by = ROOT
 	}
 	
 	mil_tech_cost_modifier = -0.05
-	discipline = 0.05
+	army_tradition_from_battle = 0.5
 }
 
 pap_sistine_chapel = {
@@ -782,14 +797,20 @@ krantor_crane = {
 		normal_or_historical_nations = yes
 	}
 	trigger = {
-		is_capital = yes
 		owner = {
-			has_reform = merchants_reform
+			estate_loyalty = { 
+				estate = estate_burghers 
+				loyalty = 50 
+			}
+		}
+		if = { 
+			limit = { has_dlc = "Mandate of Heaven" }
+			NOT = { devastation = 5 } 
 		}
 	}
-	global_trade_power = 0.05
+	province_trade_power_value = 5 
 	trade_efficiency = 0.1
-	dip_tech_cost_modifier = -0.01
+	
 }
 
 #Province modifiers, which have become monuments
@@ -929,13 +950,12 @@ imperial_prussian_capital = {
 		owner = {
 			OR = {
 				has_reform = prussian_monarchy
-				has_reform = prussian_republic
+				has_reform = prussian_republic_reform
 				has_reform = prussian_theocratic_reform
 			}
-			NOT = { has_idea_group = administrative_ideas }
 		}
 	}
-	governing_capacity_modifier = 0.25
+	governing_capacity_modifier = 0.1
 }
 
 holy_horde_capital = {

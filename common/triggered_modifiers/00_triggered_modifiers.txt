@@ -255,11 +255,11 @@ custodian_of_the_two_holy_mosques = {
 
 	trigger = {
 		is_free_or_tributary_trigger = yes
-		owns = 385
-		owns = 384
+		owns_or_vassal_of = 385
+		owns_or_vassal_of = 384
 	}
 
-	prestige = 0.5
+	legitimacy = 0.5
 	missionaries = 1
 }
 ###########################################
@@ -334,6 +334,31 @@ papal_subjugation = {
 	trigger = {	
 		overlord_of = PAP
 		NOT = { tag = ITA }
+		NOT = { tag = HLR }
+		if = {
+			limit = {
+				is_emperor = yes
+				has_dlc = "Emperor"
+			}
+			OR = {
+				PAP = {
+					NOT = { is_part_of_hre = yes }	#Needs to be written like that for localization purpose
+				}
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+			}
+		}
+		else_if = {
+			limit = {
+				is_emperor = yes
+				NOT = { has_dlc = "Emperor" }
+			}
+			OR = {
+				PAP = {
+					NOT = { is_part_of_hre = yes }	#Needs to be written like that for localization purpose
+				}
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
+			}
+		}
 	}
 
 	diplomatic_reputation = -2
@@ -379,21 +404,20 @@ rapid_collapse_of_society = {
 ######################################
 submission_to_emperor = {
 	potential = {
-		always = no
+		# AI will avoid joining HRE when this modifier is potential:
+
 		has_global_flag = italians_leave_hre
 		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
-		is_part_of_hre = yes
+		is_emperor = no
+		NOT = { is_year = 1550 }
 		culture_group = latin
 	}
 
 	trigger = {
-		is_emperor = no
+		is_part_of_hre = yes
 		NOT = { tag = ITA }
-		capital_scope = {
-			is_part_of_hre = yes
-		}
-		NOT = { is_year = 1550 }
 		NOT = { emperor = { alliance_with = ROOT } }
+		NOT = { is_year = 1550 } # Duplicating so it shows in tooltip
 	}
 
 	global_unrest = 3
@@ -450,7 +474,6 @@ reaction = {
 		always = no
 		revolution_target_exists = yes
 		is_revolutionary = no
-		always = no
 		any_country = {
 			is_revolution_target = yes
 			capital_scope = {
@@ -602,6 +625,28 @@ the_mandate_of_heaven_lost = {
 	global_unrest = 10
 }
 
+ai_wants_chinese_capitals = {
+	potential = {
+		ai = yes
+		OR = {
+			owns = 1816
+			owns = 1821
+			owns = 667
+		}
+		has_dlc = "Mandate of Heaven"
+		capital_scope = {
+			superregion = china_superregion
+		}
+	}
+	trigger = {
+		owns = 1816
+		owns = 1821
+		owns = 667
+	}
+	ai_weight = {
+		factor = 100 # Makes AI try to conquer the cities
+	}
+}
 lost_control_of_beijing = {
 	potential = {
 		always = no
@@ -764,22 +809,22 @@ synthetic_remnants = {
 # The Golden Age of Piracy
 ######################################
 
-#golden_age_of_piracy = {
-#	potential = {
-#		always = no
-#		has_global_flag = golden_age_of_piracy
-#		NOT = { # lasts 50 years
-#			had_global_flag = { flag = golden_age_of_piracy days = 18250 }
-#		}
-#		1516 = { has_discovered = ROOT }
-#	}
-#	trigger = {
-#		1516 = {
-#			privateer_power = { country = ROOT share = 1 }
-#		}
-#	}
-#	privateer_efficiency = 0.2
-#}
+golden_age_of_piracy = {
+	potential = {
+			always = no
+		has_global_flag = golden_age_of_piracy
+		NOT = { # lasts 50 years
+			had_global_flag = { flag = golden_age_of_piracy days = 18250 }
+		}
+		1516 = { has_discovered = ROOT }
+	}
+	trigger = {
+		1516 = {
+			privateer_power = { country = ROOT share = 1 }
+		}
+	}
+	privateer_efficiency = 0.2
+}
 
 ######################################
 # The Great Peasants' War
@@ -823,19 +868,20 @@ great_peasants_war_concessions_triggered_modifier = {
 ######################################
 # Pope is in the empire
 ######################################
+pope_in_hre_triggered_modifier = {
+	potential = {
+		always = no
+		PAP = { is_part_of_hre = yes }
+		religion = catholic
+	}
+	trigger = {
+		PAP = { is_part_of_hre = yes }
+		religion = catholic
+		NOT = { is_part_of_hre = yes }
+	}
+	prestige = -0.5
+}
 
-#pope_in_hre_triggered_modifier = {
-#	potential = {
-#		PAP = { is_part_of_hre = yes }
-#		religion = catholic
-#	}
-#	trigger = {
-#		PAP = { is_part_of_hre = yes }
-#		religion = catholic
-#		NOT = { is_part_of_hre = yes }
-#	}
-#	prestige = 0
-#}
 
 ######################################
 # The Italian Wars
@@ -895,4 +941,35 @@ defense_of_the_empire_modifier = {
 		}
 	}
 	war_taxes_cost_modifier = -1.0
+}
+
+######################################
+# Judaism Defensive Aspect
+######################################
+
+judaism_yom_kippur_aspect_war_modifier = {
+	potential = {
+		religion = jewish
+		has_church_aspect = judaism_yom_kippur_aspect
+	}
+	trigger = {
+		is_at_war = yes
+	}
+	manpower_recovery_speed = 0.20
+	church_power_modifier = 0.25
+}
+
+judaism_yom_kippur_aspect_defensive_war_modifier = {
+	potential = {
+		religion = jewish
+		has_church_aspect = judaism_yom_kippur_aspect
+	}
+	trigger = {
+		is_at_war = yes
+		is_in_war = {
+			defenders = ROOT
+		}
+	}
+	manpower_recovery_speed = 0.20
+	church_power_modifier = 0.25
 }

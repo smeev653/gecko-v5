@@ -40,7 +40,6 @@ restore_merv = {
 				}
 			if = {
 				limit = {
-					has_dlc = "Dharma"
 					445 = {
 						NOT = {
 							province_has_center_of_trade_of_level = 3
@@ -49,16 +48,6 @@ restore_merv = {
 				}
 				445 = {
 					add_center_of_trade_level = 1
-				}
-			}
-			else = {
-				445 = {
-					add_trade_modifier = {
-						who = root
-						duration = 7300
-						power = 50
-						key = crimean_trade
-					}
 				}
 			}	
 		}

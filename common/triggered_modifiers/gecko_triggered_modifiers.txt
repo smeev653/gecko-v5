@@ -59,7 +59,7 @@ Minor = {
             NOT = {is_great_power = yes}
 		}
 	}	
-			NOT = {total_own_and_non_tributary_subject_development = 300 }
+			NOT = {total_own_and_non_tributary_subject_development = 500 }
 			ROOT = {
 				ai = no
 			}	
@@ -674,23 +674,6 @@ Over_merc_limit = {
 	mercenary_cost = 5
 }
 
-Knights_vassalised = {
-	potential = {
-		tag = KNI
-		KNI = {
-			is_subject = yes
-		}
-	}
-	trigger = {
-		tag = KNI
-			KNI = {
-			is_subject = yes
-		}
-	}
-	galley_power = -0.2
-	naval_forcelimit = -50
-	naval_maintenance_modifier = 0.9
-}
 
 POL_rawa_triggered_modifier = {
 	potential = {

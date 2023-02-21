@@ -139,9 +139,9 @@ emp_burgundy_1 = {
 		trigger = {
 			adm_power = 300
 			crown_land_share = 20
-			monthly_adm = 10
-			monthly_dip = 10
-			monthly_mil = 10
+			monthly_adm = 9
+			monthly_dip = 9
+			monthly_mil = 9
 		}
 		effect = {
 			if = {
@@ -176,16 +176,15 @@ emp_burgundy_1 = {
         trigger = {
 			low_countries_region = {
 				type = all
-				owned_by = root
-				is_core = root
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			alsace_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			lorraine_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
         effect = {
@@ -373,8 +372,7 @@ emp_burgundy_2 = {
 		trigger = {
 			low_countries_region = {
 				type = all
-				owned_by = root
-				is_core = root
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -537,7 +535,7 @@ emp_burgundy_3 = {
 		trigger = {
 			lorraine_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		

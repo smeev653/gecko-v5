@@ -30,7 +30,6 @@
 marketplace = {
 	cost = 100
 	time = 12
-	time = 12
 
 	modifier = {
 		province_trade_power_modifier = 0.5
@@ -354,12 +353,7 @@ coastal_defence = {
 		hostile_fleet_attrition = 1
 		block_slave_raid = yes
 	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	on_obsolete = {
-	}
+	
 	ai_will_do = {
 		factor = 1
 	}
@@ -549,14 +543,7 @@ naval_battery = {
 		hostile_fleet_attrition = 5
 		block_slave_raid = yes
 	}
-	on_built = {
- 
-	}
-	on_destroyed = {
- 
-	}
-	on_obsolete = {
-	}
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -1106,17 +1093,7 @@ wharf = {
 		salt
 	}
 	onmap = yes
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+
 	on_built = {
  
 	}
@@ -1158,17 +1135,7 @@ weapons = {
 		iron
 	}
 	onmap = yes
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+
 	on_built = {
  
 	}
@@ -1190,17 +1157,7 @@ textile = {
 		dyes
 	}
 	onmap = yes
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+	
 	on_built = {
  
 	}
@@ -1225,17 +1182,7 @@ plantations = {
 		cocoa
 	}
 	onmap = yes
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+
 	on_built = {
  
 	}
@@ -1259,17 +1206,7 @@ tradecompany = {
 		incense
 	}
 	onmap = yes
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+	
 	on_built = {
  
 	}
@@ -1291,17 +1228,7 @@ farm_estate = {
 		wine
 	}
 	onmap = yes
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+	
 	on_built = {
  
 	}
@@ -1326,17 +1253,7 @@ mills = {
 		chinaware
 	}
 	onmap = yes
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+	
 	on_built = {
  
 	}
@@ -1356,17 +1273,7 @@ furnace = {
 		coal
 	}
 
-	build_trigger = {
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
-	}
+	
 
 	modifier = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
@@ -1398,14 +1305,7 @@ ramparts = {
 		local_defender_dice_roll_bonus = 1
 	}
 	
-	on_built = {
- 
-	}
-	on_destroyed = {
- 
-	}
-	on_obsolete = {
-	}
+
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	one_per_country = yes
@@ -1415,8 +1315,9 @@ ramparts = {
 }
 
 soldier_households = {
-	cost = 500
-	time = 60
+	manufactory = {
+		all
+	}
 
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		grain
@@ -1425,45 +1326,14 @@ soldier_households = {
 		wine
 		wool
 	}
-	build_trigger = {
-		NOT = {
-			area_for_scope_province = {
-				owner = {
-					tag = ROOT
-				}
-				OR = {
-					has_building = soldier_households
-					has_construction = soldier_households
-				}
-			}
-		}
-	}
-	keep_trigger = {
-		NOT = {
-			area_for_scope_province = {
-				NOT = { province_id = root }
-				owner = {
-					tag = ROOT
-				}
-				OR = {
-					has_building = soldier_households
-					has_construction = soldier_households
-				}
-			}
-		}
-	}
+	
 	modifier = {
-			local_manpower_modifier = 3
-    }
+		local_manpower = 0.5
+	}
 	bonus_modifier = {
-		local_manpower_modifier = 1.5
+		local_manpower = 0.5
 	}
-	on_built = {
- 
-	}
-	on_destroyed = {
- 
-	}
+	
 	on_obsolete = {
 	}
 	onmap = no
@@ -1488,15 +1358,6 @@ impressment_offices = {
 
 	build_trigger = {
 		has_port = yes
-		area_for_scope_province = {
-						type = all
-						OR = {
-							owned_by = root
-							owner = {
-								is_subject_of = root
-							}
-						}			
-				}
 	}
 
 	modifier = {

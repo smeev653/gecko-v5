@@ -191,31 +191,7 @@ country_decisions = {
 				set_country_flag = enlist_rajputs
 			}
 		}
-	educate_ruler = {
-		major = yes
-		potential = {
-			ai = no
-			NOT = { has_ruler_flag = educate_ruler_flag }
-			NOT = {
-				government = republic
-			}
-			GC_educate_ruler_trigger = yes
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = educate_ruler_tooltip
-				GC_educate_ruler_trigger = yes
-			}
-		}
-		effect = {
-			change_adm = 1
-			change_dip = 1
-			change_mil = 1
-			add_years_of_income = -0.5
-			set_ruler_flag = educate_ruler_flag
-		}
-	}
-	PR_critical_events = {
+		PR_critical_events = {
 		major = yes
 		potential = {
 			ai = no
@@ -377,42 +353,6 @@ country_decisions = {
 		effect = {
 		}
 	}
-	
-	force_urbanisation = {
-		potential = {
-				always = no
-				NOT = { has_country_modifier = gc_urbanisation}
-				dip_tech = 6
-				NOT = { has_country_modifier = gc_urbanisation_timer}
-			}
-
-		allow = {
-				ai = no
-				OR = {great_power_rank = 6
-				 is_great_power = no
-				}
-				any_country = {
-						total_development = ROOT
-					}
-				#dip_tech = 10
-				NOT = { num_of_allies = 2 }
-				NOT = { is_colonial_nation = yes }	
-				#NOT = { is_lacking_institutions = yes }
-				NOT = { is_subject_of_type = tributary_state }
-		}
-		effect = {
-			add_country_modifier = {
-				name = "gc_urbanisation_timer"
-				duration = 18250
-				hidden = yes
-			}
-			add_country_modifier = {
-				name = "gc_urbanisation"
-				duration = 3650
-			}
-		}
-	}
-	
 	
 	# Apply Edict
 	PR_manpower_edict = {
@@ -1070,7 +1010,7 @@ country_decisions = {
 				
 		}
 		effect = {
-			set_global_flag = eoc_vassalize_tributaries
+		
 		}
 	}
 
