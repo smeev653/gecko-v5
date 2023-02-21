@@ -32,7 +32,6 @@ NDefines.NDiplomacy.CLAIM_STATE_MODIFIER = 0.25
 NDefines.NDiplomacy.PEACE_COST_GOLD_STEP = 4
 NDefines.NDiplomacy.PEACE_COST_WAR_REPARATIONS = 5
 NDefines.NDiplomacy.PEACE_COST_HUMILIATE_RIVAL = 30
-
 NDefines.NDiplomacy.IMPERIAL_CITY_IA = 0.01
 NDefines.NDiplomacy.FORCE_BREAK_ALLIANCE_TRUCE_YEARS = 0
 NDefines.NDiplomacy.TRIBUTE_BASE_CASH = 0						-- Tributary State: Part of yearly income given in tribute
@@ -128,7 +127,7 @@ NDefines.NCountry.TARIFF_LIBERTY_INCREASE = 0.5					-- Liberty increase for each
 NDefines.NCountry.TARIFF_DECREASE_STEP = -0.1
 NDefines.NCountry.MINIMUM_POLICY_TIME = 1
 NDefines.NCountry.CONCENTRATE_DEVELOPMENT_DEVELOPMENT_DECREASE = 0.0
-
+NDefines.NEconomy.GOLD_MINE_SIZE = 20
 NDefines.NEconomy.EDICTS_DURATION_MONTHS = 1
 NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 10
 NDefines.NEconomy.TRADE_POWER_HOME_BONUS = 0.15
@@ -165,7 +164,6 @@ NDefines.NMilitary.TRANSPORT_TIME = 30				-- 1 = 1 men in cost.
 NDefines.NMilitary.MIN_MONTHLY_MANPOWER = 0.2							-- _MDEF_LIGHT_SHIP_COST = 10,
 NDefines.NMilitary.GALLEY_COST = 10 								-- _MDEF_GALLEY_COST = 10,
 NDefines.NMilitary.TRANSPORT_COST = 1
-
 NDefines.NMilitary.LOOTED_SCALE = 2
 NDefines.NMilitary.LOOTED_MAX = 10
 NDefines.NMilitary.SUPPLYLIMIT_BASE_MULTIPLIER = 8.0
@@ -215,7 +213,6 @@ NDefines.NMilitary.EXPLORER_LEADER_POWER = 0.60
 NDefines.NMilitary.LEADER_MAX_PIPS = 8							-- Max general/admiral pips (per skill)
 NDefines.NMilitary.LEADER_MIN_PIPS = 2
 NDefines.NMilitary.INSUFFICIENT_SUPPORT = -0.5
-
 NDefines.NAI.ADVISOR_BUDGET_FRACTION_MAX = 0.5 -- AI will spend a maximum of this fraction of monthly income on advisor maintenance
 NDefines.NAI.ADVISOR_PROMOTION_AGE_CUTOFF = 61
 NDefines.NAI.ADVISOR_BUDGET_FRACTION = 0.9
@@ -230,10 +227,8 @@ NDefines.NAI.DEFICIT_SPENDING_MIN_MONTHS = 1 -- AI must have at least this many 
 NDefines.NAI.DEFICIT_SPENDING_MIN_MONTHS_PEACETIME = 1 -- Same as DEFICIT_SPENDING_MIN_MONTHS, but during peacetime, no rebels and no war exhaustion
 NDefines.NAI.BIGSHIP_FRACTION = 0.1
 NDefines.NAI.TRANSPORT_FRACTION = -1 -- Max fraction of naval forcelimit that should be transports
-
 NDefines.NAI.DESIRED_SURPLUSEXTRA_SURPLUS_WHEN_NEEDING_BUILDINGS = 0.1 -- AI will aim for having at least this fraction of their income as additional surplus when they need buildings
 NDefines.NAI.MAX_BUILDING_COST_INCOME_MONTHS = 50.0
-
 NDefines.NAI.ARMY_BUDGET_FRACTION = 0.8
 NDefines.NAI.ACCEPTABLE_BALANCE_MULT_FRIEND_IN_COMBAT = 0.45
 NDefines.NAI.ACCEPTABLE_BALANCE_MULT_OFFENSIVE = 0.55
@@ -245,7 +240,6 @@ NDefines.NAI.PURSUE_DISTANCE = 90
 NDefines.NAI.BASE_CAN_MAKE_CORE_DESIRE_TO_RETURN_PROVINCE = 15
 NDefines.NAI.DEVELOPMENT_CAP_BASE = 20	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 NDefines.NAI.DEVELOPMENT_CAP_MULT = 1
-
 NDefines.NAI.PEACE_TIME_MONTHS = 12
 NDefines.NAI.PEACE_FORCE_BALANCE_FACTOR = 0
 NDefines.NAI.PEACE_WARGOAL_FACTOR = 0.5 -- AI unwillingness to peace based on holding the wargoal
@@ -332,20 +326,12 @@ NDefines.NAI.REPAY_LOAN_BASE_AI_DESIRE = 1
 NDefines.NAI.APPOINT_CARDINAL_WANTS_BEFRIEND = 200						-- AI scoring for appoint cardinals is increased by this if they have an attitude with 'befriend' desire
 NDefines.NAI.APPOINT_CARDINAL_WANTS_ALLY = 200							-- AI scoring for appoint cardinals is increased by this if they have an attitude with 'ally' desire
 NDefines.NAI.APPOINT_CARDINAL_CAN_INTEGRATE = 150
-
-
-
 NDefines.NAIEconomy.MILITARY_FOCUS_DEFAULT = 1.5
 NDefines.NAIEconomy.MILITARY_FOCUS_LOWER_BOUND = 1
 NDefines.NAIEconomy.ARMY_FRACTION_PEACEFUL = 1.5
 NDefines.NAIEconomy.ARMY_FRACTION_MILITARIST = 2
 NDefines.NAIEconomy.FORT_FRACTION_MILITARIST = 0.3
 NDefines.NAIEconomy.FORT_FRACTION_CAPITALIST = 0.3
-
-
-
-
-
 NDefines.NReligion.CONVERSION_ZEAL_DURATION = 1825
 NDefines.NReligion.YEARLY_POPE_INVESTED_INFLUENCE_PER_CARDINAL = 0
 NDefines.NReligion.MAX_PAPAL_INFLUENCE = 999								-- The maximum stored amount of papal influence for each country.
@@ -359,7 +345,6 @@ NDefines.NReligion.APPOINT_CARDINAL_INFLUENCE_PAPAL_STATE = 0
 NDefines.NReligion.PIETY_MANPOWER = 0.5
 NDefines.NGovernment.SELECT_HEIR_FROM_HAREM_AT_MONARCH_AGE = 20
 NDefines.NGovernment.FEUDAL_THEOCRACY_INTERACTION_COOLDOWN_YEARS = 10
-
 NDefines.NGovernment.TRAIN_HORSEMANSHIP_DURATION_YEARS = 10
 NDefines.NGovernment.CONSCRIPT_FROM_TRIBES_AMOUNT = 10
 NDefines.NGovernment.CONSCRIPT_FROM_TRIBES_TIME = 0.25
@@ -368,15 +353,12 @@ NDefines.NGovernment.YEARLY_TRIBAL_ALLEGIANCE_MAX = 0.0
 NDefines.NGovernment.TRIBAL_ALLEGIANCE_HUMILIATE = 30.0 -- TA gained from doing Humiliate or Show Strength in a war.
 NDefines.NGovernment.TRIBAL_FEDERATION_ABILITY_COST = 50
 NDefines.NGovernment.ENLIST_GENERAL_TRADITION = 30
-
 NDefines.NGovernment.GOVERNMENT_REFORM_CHANGE_PROGRESS_COST = 25.0
 NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 25.0
 NDefines.NGovernment.CENTRALIZE_STATE_YEARS = 2.5
 NDefines.NGovernment.CENTRALIZE_STATE_ADM_COST = 25
 NDefines.NGovernment.EXPAND_ADMIN_COST = 400.0
 NDefines.NGovernment.LEADER_AS_MONARCH_TRADITION = 15
-
 NDefines.NGui.AUTO_SELECT_EVENT_MONTHS = 6
-
 NDefines.NGovernment.EXPAND_INFRASTRUCTURE_ADM_COST = 0
 NDefines.NCountry.EXPAND_INFRASTRUCTURE_DEV_LIMIT = 0
