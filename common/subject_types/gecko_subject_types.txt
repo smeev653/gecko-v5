@@ -64,7 +64,7 @@ french_vassal = {
 	can_have_subjects_of_other_types = yes
 	pays_overlord = 2
 	forcelimit_to_overlord = 0.25
-	manpower_to_overlord = 0.25
+	manpower_to_overlord = 0.5
 	restoration_cb = cb_disloyal_vassal
 	
 	# Subject Interactions:

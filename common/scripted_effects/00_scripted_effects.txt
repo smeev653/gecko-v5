@@ -291,6 +291,136 @@ remove_vassalise_cb_effect = {
 	}
 }
 
+#Ends the normal Revolution disaster (if you have it) and clears all related modifiers and flags
+clear_standard_revolution_elements_effect = {
+	if = {
+		limit = {
+			has_disaster = revolution
+		}
+		end_disaster = revolution
+	}
+
+	clr_country_flag = religious_revolution
+	clr_country_flag = serfdom
+	clr_country_flag = social_reform
+	clr_country_flag = royal_bureaucracy
+	clr_country_flag = deplorable_reign
+	clr_country_flag = road_to_bankruptcy
+	clr_country_flag = financial_crisis
+	clr_country_flag = revolutionary_philosopher
+	remove_country_modifier = religious_intolerance
+	remove_country_modifier = religious_tolerance
+	remove_country_modifier = restrict_serfdom
+	remove_country_modifier = enforce_serfdom
+	remove_country_modifier = suppress_free_thinkers
+	remove_country_modifier = bureaucratic_reduction
+	remove_country_modifier = bureaucratic_expansion
+	remove_country_modifier = support_monarch
+	remove_country_modifier = oppose_monarch
+	remove_country_modifier = mint_money
+	remove_country_modifier = fight_inflation
+	remove_country_modifier = disarmament
+	remove_country_modifier = financial_disaster
+}
+
+enact_revolution_effect = {
+	disband_rebels = revolutionary_rebels
+	disband_rebels = anti_tax_rebels
+	hidden_effect = {
+		if = {	
+			limit = {
+				any_subject_country = {
+					has_country_modifier = colony_inspired_by_revolution
+				}
+			}
+			every_subject_country = {
+				remove_country_modifier = colony_inspired_by_revolution
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_disaster = french_revolution
+					has_country_flag = use_french_disaster_exile_effect
+				}
+				has_regency = no
+			}
+			set_country_flag = ruler_of_france_exiled
+		}
+		if = {
+			limit = {
+				OR = {
+					has_disaster = french_revolution
+					has_country_flag = use_french_disaster_exile_effect
+				}
+				has_heir = yes
+			}
+			exile_heir_as = heir_of_france
+			set_country_flag = heir_of_france_exiled
+		}
+	}
+	if = {
+		limit = { is_emperor_of_china = yes }
+		dismantle_empire_of_china = yes
+		set_global_flag = empire_of_china_dismantled
+	}
+	if = {
+		limit = { NOT = { government = republic } }
+		change_government_to_republic = yes
+	}
+	if = {
+		limit = {
+			revolution_target_exists = yes
+		}
+		add_government_reform = junior_revolutionary_republic_reform
+	}
+	else = {
+		add_government_reform = revolutionary_republic_reform
+		set_revolution_target = ROOT
+	}
+	if = {
+		limit = { has_reform = parliamentary_reform }
+		remove_government_reform = parliamentary_reform
+	}
+	if = {
+		limit = { has_reform = states_general_reform }
+		remove_government_reform = states_general_reform
+	}
+	if = {
+		limit = {
+			OR = {
+				has_disaster = french_revolution
+				has_country_flag = use_french_disaster_exile_effect
+			}
+		}
+		hidden_effect = {
+			exile_ruler_as = { name = ruler_of_france }
+		}
+	}
+	else = {
+		kill_ruler = yes
+	}
+
+	add_yearly_manpower = 5
+
+	if = {
+		limit = {
+			has_country_flag = revolution_disaster_reactionary
+		}
+		add_country_modifier = {
+			name = reactionaries_failed
+			duration = 9125
+		}
+	}
+
+	if = {
+		limit = {
+			has_country_flag = revolution_disaster_immediate_revolution
+		}
+		clr_country_flag = revolution_disaster_immediate_revolution
+	}
+	set_country_flag = revolutionary_republic_flag
+}
 
 #province scope
 add_half_industrialization_effect = {
@@ -343,6 +473,16 @@ clear_random_development_bonus_flags_effect = {
 	clr_province_flag = add_base_tax_flag
 	clr_province_flag = add_base_production_flag
 	clr_province_flag = add_base_manpower_flag
+}
+#province scope, should be used whenever the revolution is removed from a province
+remove_revolution_from_province_effect = {
+	hidden_effect = { set_revolution_in_province = no }
+	custom_tooltip = no_spread_here_for_15_years_tt
+	add_province_modifier = {
+		name = no_revolution_here_dummy
+		duration = 5475
+		hidden = yes
+	}
 }
 
 
@@ -689,7 +829,7 @@ restore_old_nation_on_formation_effect = {
 						is_subject_of_type = crown_colony
 						is_subject_of_type = private_enterprise
 						is_subject_of_type = self_governing_colony
-					}				
+					}
 				}
 				ROOT = { inherit = PREV }
 			}
@@ -1871,6 +2011,7 @@ disable_estate_effect = {
 		clr_country_flag = enables_$estate$_flag
 	}
 }
+
 halves_parliament_bribe_costs = {
     if = {
         limit = { has_dlc = "Common Sense" }
@@ -1890,7 +2031,7 @@ add_increase_same_religion_opinion = {
 					ROOT = { has_harmonized_with = PREV }
 					religion = ROOT
 				}
-				NOT = {		
+				NOT = {
 					has_opinion_modifier = {
 						who = ROOT
 						modifier = increased_same_religion
