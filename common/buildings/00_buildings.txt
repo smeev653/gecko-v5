@@ -329,7 +329,7 @@ fort_15th = {
 	
 	modifier = {
 		fort_level = 2
-		allowed_num_of_buildings = -2
+		allowed_num_of_buildings = -1
 	}
 	
 	onmap = yes
