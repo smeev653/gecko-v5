@@ -145,24 +145,24 @@ declarewar = {
 			stability = 0
 		}
 	}
-	condition = {
-		tooltip = gc_may_not_declare_war_yet
-		potential = {
-			ROOT = { ai = no }
-			NOT = { is_year = 1450 }
-		}
-		allow = {
-				FROM = { 
-					NOT = {
-						OR = {
-							ai = no
-							is_subject_of = FROM
-						}
-					
-					}
-				}
-		}
-	}	
+	#condition = {
+	#	tooltip = gc_may_not_declare_war_yet
+	#	potential = {
+	#		ROOT = { ai = no }
+	#		NOT = { is_year = 1450 }
+	#	}
+	#	allow = {
+	#			FROM = { 
+	#				NOT = {
+	#					OR = {
+	#						ai = no
+	#						is_subject_of = FROM
+	#					}
+	#				
+	#				}
+	#			}
+	#	}
+	#}	
 	#condition = {
 	#	tooltip = gc_may_not_declare_war_yet_empswi
 	#	potential = {
@@ -291,26 +291,26 @@ declarewar = {
 	#}
 }
 	
-threaten_war = {
-	condition = {
-		tooltip = gc_may_not_declare_war_yet
-		potential = {
-			ROOT = { ai = no }
-			NOT = { is_year = 1450 }
-		}
-		allow = {
-				FROM = { 
-					NOT = {
-						OR = {
-							ai = no
-							is_subject_of = FROM
-						}
-					
-					}
-				}
-		}
-	}
-}	
+#threaten_war = {
+#	condition = {
+#		tooltip = gc_may_not_declare_war_yet
+#		potential = {
+#			ROOT = { ai = no }
+#			NOT = { is_year = 1450 }
+#		}
+#		allow = {
+#				FROM = { 
+#					NOT = {
+#						OR = {
+#							ai = no
+#							is_subject_of = FROM
+#						}
+#					
+#					}
+#				}
+#		}
+#	}
+#}	
 royal_marriage = {
 	condition = {
 		tooltip = MARWAR
@@ -488,36 +488,6 @@ invite_to_trade_league = {
 			}
 		}
 	}
-	condition = {
-		tooltip = gc_knights
-		potential = {
-			ROOT = { tag = KNI}
-			NOT = {
-				is_year = 1550
-			}
-		}	
-		allow = {
-			always = no
-		}
-	}
-	
-	condition = {
-		tooltip = gc_knights
-		potential = {
-			NOT = {
-				is_year = 1550
-			}
-		}	
-		allow = {
-			FROM = {
-				NOT = { 
-					OR = {
-						tag = KNI				
-					}
-				}
-			}
-		}
-	}
 }
 
 
@@ -545,36 +515,6 @@ guaranteeaction = {
 				}
 			}
 			FROM = { is_at_war = no }
-		}
-	}
-	condition = {
-		tooltip = gc_knights
-		potential = {
-			ROOT = { tag = KNI}
-			NOT = {
-				is_year = 1550
-			}
-		}	
-		allow = {
-			always = no
-		}
-	}
-	
-	condition = {
-		tooltip = gc_knights
-		potential = {
-			NOT = {
-				is_year = 1550
-			}
-		}	
-		allow = {
-			FROM = {
-				NOT = { 
-					OR = {
-						tag = KNI				
-					}
-				}
-			}
 		}
 	}
 }
@@ -681,100 +621,9 @@ allianceaction = {
 			}	
 		}
 	}
-	condition = {
-		tooltip = gc_knights
-		potential = {
-			ROOT = { tag = KNI}
-			NOT = {
-				is_year = 1550
-			}
-		}	
-		allow = {
-			always = no
-		}
-	}
-	
-	condition = {
-		tooltip = gc_knights
-		potential = {
-			NOT = {
-				is_year = 1550
-			}
-		}	
-		allow = {
-			FROM = {
-				NOT = { 
-					OR = {
-						tag = KNI				
-					}
-				}
-			}
-		}
-	}
 	
 	
-	condition = {
-		tooltip = gc_denmark
-		potential = {
-			ROOT = { tag = DAN}
-			NOT = {
-				is_year = 1450
-			}
-		}	
-		allow = {
-			always = no
-		}
-	}
 	
-	condition = {
-		tooltip = gc_to_denmark
-		potential = {
-			ROOT = { ai = yes }
-			NOT = {
-				is_year = 1450
-			}
-		}	
-		allow = {
-			FROM = {
-				NOT = { 
-					OR = {
-						tag = DAN			
-					}
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = gc_naples
-		potential = {
-			ROOT = { tag = NAP}
-			NOT = {
-				is_year = 1450
-			}
-		}	
-		allow = {
-			always = no
-		}
-	}
-	
-	condition = {
-		tooltip = gc_to_naples
-		potential = {
-			ROOT = { ai = yes }
-			NOT = {
-				is_year = 1450
-			}
-		}	
-		allow = {
-			FROM = {
-				NOT = { 
-					OR = {
-						tag = NAP			
-					}
-				}
-			}
-		}
-	}
 	
 	condition = {
 		tooltip = sm_tooltip_mamottoally
@@ -829,7 +678,6 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_mamhunally
 		potential = {
-				NOT = { is_year = 1520 }
 			ROOT = {
 				OR = {
 					tag = MAM
@@ -859,7 +707,6 @@ allianceaction = {
 	condition = {
 		tooltip = sm_tooltip_hunmamally
 		potential = {
-			NOT = { is_year = 1520 }
 			ROOT = {
 				tag = HUN
 				NOT = {

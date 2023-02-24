@@ -354,120 +354,6 @@ country_decisions = {
 		}
 	}
 	
-	# Apply Edict
-	PR_manpower_edict = {
-		major = yes
-		potential = {
-			AND = {
-				ai = no
-				NOT = { has_country_modifier = PR_manpower_edict_cooldown }
-				NOT = { has_country_flag = PR_manpower_edict_activated }
-			}
-			is_year = 1459
-		}
-		allow = {
-		}
-		effect = {
-			custom_tooltip = PR_manpower_edict_tooltip
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						OR = {
-							is_state_core = ROOT
-							is_territorial_core = ROOT
-						}
-						NOT = {
-							OR = {
-								has_state_edict = edict_advancement_effort
-								has_state_edict = edict_defensive_edict
-								has_state_edict = edict_feudal_de_jure_law
-								has_state_edict = edict_promote_military_recruitment
-								has_state_edict = edict_protect_trade
-								has_state_edict = edict_religion_enforced
-								has_state_edict = edict_religious_unity
-								has_state_edict = edict_devastation_edict
-								has_state_edict = edict_encourage_development	
-
-								#New Edicts		
-								has_state_edict = gc_edict_advancement_effort_1
-								has_state_edict = gc_edict_defensive_edict_1
-								has_state_edict = gc_edict_devastation_edict_1
-								has_state_edict = gc_edict_encourage_development_1
-								has_state_edict = gc_edict_feudal_de_jure_law_1
-								has_state_edict = gc_edict_promote_military_recruitment_1
-								has_state_edict = gc_edict_protect_trade_1
-								has_state_edict = gc_edict_religious_unity_1
-							}
-						}
-					}
-					if = {
-						limit = {
-							any_province_in_state = {
-								has_building = gc_bureaucracy_manufactory
-							}
-						}
-						add_province_modifier = {
-							name = PR_manpower_edict_province_2
-							duration = -1
-						}
-					}
-					else = {
-						add_province_modifier = {
-							name = PR_manpower_edict_province
-							duration = -1
-						}
-					}
-				}
-				add_country_modifier = {
-				name = "PR_manpower_edict_cooldown"
-				duration = 365
-				}
-			}
-			set_country_flag = PR_manpower_edict_activated
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	# Remove Edict
-	PR_manpower_edict_removal = {
-		major = yes
-		potential = {
-			AND = {
-				ai = no
-				has_country_flag = PR_manpower_edict_activated
-			}
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = PR_manpower_edict_removal_tooltip
-				NOT = { 
-					has_country_modifier = PR_manpower_edict_cooldown 
-				}
-			}
-		}
-		effect = {
-			hidden_effect = {
-				every_owned_province = {
-					if = {
-						limit = {
-							OR = {
-								has_province_modifier = PR_manpower_edict_province
-								has_province_modifier = PR_manpower_edict_province_2
-							}
-						}
-						remove_province_modifier = PR_manpower_edict_province
-						remove_province_modifier = PR_manpower_edict_province_2
-					}
-				}
-			}
-			clr_country_flag = PR_manpower_edict_activated
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	#credit to HashMP
 	h_found_riyadh = {
 		potential = {
@@ -499,7 +385,6 @@ country_decisions = {
 	gecko_recruit_military_advisor = {
 		major = yes
 		potential = {
-			is_year = 1445
 			ai = no
        }
 		allow = {
@@ -515,7 +400,6 @@ country_decisions = {
 	gecko_debt = {
 		major = yes
 		potential = {
-			is_year = 1445
 			ai = no
 			is_bankrupt = no
 			is_at_war = no
@@ -548,7 +432,6 @@ country_decisions = {
 	gecko_debt_2 = {
 		major = yes
 		potential = {
-			is_year = 1445
 			ai = no
 			is_bankrupt = no
 			has_country_flag = gecko_tackle_debt
@@ -1100,7 +983,6 @@ country_decisions = {
 	allow_estate_rebalance = {
 		potential = {
 				ai = no
-				is_year = 1450
 				crown_land_share = 25
 				NOT = { has_country_flag = allowed_estate_rebalance }
 			}
@@ -1114,7 +996,6 @@ country_decisions = {
 		potential = {
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_nobles }
-				is_year = 1450
 				has_estate = estate_nobles
 				has_country_flag = allowed_estate_rebalance
 			}
@@ -1157,7 +1038,6 @@ country_decisions = {
 		potential = {
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_tribes }
-				is_year = 1450
 				has_estate = estate_nomadic_tribes
 				has_country_flag = allowed_estate_rebalance
 			}
@@ -1200,7 +1080,6 @@ country_decisions = {
 		potential = {
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_church }
-				is_year = 1450
 				has_estate = estate_church
 				has_country_flag = allowed_estate_rebalance
 			}
@@ -1243,7 +1122,6 @@ country_decisions = {
 		potential = {
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_burghers}
-				is_year = 1450
 				has_estate = estate_burghers
 				has_country_flag = allowed_estate_rebalance
 			}
@@ -1286,7 +1164,6 @@ country_decisions = {
 		potential = {
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_dhimmi}
-				is_year = 1450
 				has_estate = estate_dhimmi
 				has_country_flag = allowed_estate_rebalance
 			}

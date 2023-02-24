@@ -44,10 +44,6 @@ philosopher = {
 
 	chance = {
 		factor = 1
-		modifier = {
-				NOT = { is_year = 1500 }
-				factor = 2
-			}
 	}
 	
 	ai_will_do = {

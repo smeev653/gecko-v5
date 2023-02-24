@@ -145,13 +145,11 @@ songhai_military_slot = {
 			OR = {
 				AND = {
 					government = republic
-					has_reached_government_reform_tier = {
-						tier_5 = yes
-					}
+					reform_level = 5
 				}
 				AND = {
 					absolutism = 75
-					has_final_tier_reforms_trigger = yes
+					reform_level = 7
 				}
 			}
 		}
