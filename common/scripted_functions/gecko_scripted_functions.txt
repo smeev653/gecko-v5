@@ -1,0 +1,144 @@
+can_harsh_treatment = {
+	condition = {
+			potential = {
+				FROM = {
+					ai = yes
+				}
+			}
+			allow = {
+				always = no
+			}
+		}
+}
+
+can_declare_bankruptcy = {
+	condition = {
+			potential = {
+				FROM = {
+						ai = yes
+				}	
+			}
+			allow = {
+				always = no
+			}
+		}
+}
+
+can_increase_autonomy = {
+	condition = {
+			potential = {
+				FROM = {
+						ai = yes
+				}	
+			}
+			allow = {
+				always = no
+			}
+		}
+}
+
+can_make_state = {
+	condition = {
+		tooltip = "gecko_state"
+			potential = {
+				FROM = {
+						ai = no
+				}	
+			}
+			allow = {
+				OR = {
+					area_for_scope_province = {
+							type = all
+							OR = {
+								owned_by = root
+								owner = {
+									is_subject_of = root
+								}
+							}			
+					}
+					area_for_scope_province = {
+							is_claim = ROOT
+					}
+				}	
+			}
+		}
+}
+
+can_move_capital = {
+	condition = {
+		tooltip = "PR_tooltip_move_capital"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			NOT = {
+				OR = {
+					continent = south_america
+					continent = north_america
+					region = australia_region
+					region = oceanea_region
+				}
+			}
+		}
+	}
+}
+
+can_move_trade_port = {
+	condition = {
+		tooltip = "PR_tooltip_move_capital"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			NOT = {
+				OR = {
+					continent = south_america
+					continent = north_america
+					region = australia_region
+					region = oceanea_region
+				}
+			}
+		}
+	}
+}
+
+can_order_assault = {
+	condition = {
+		tooltip = "PR_tooltip_cn_assault"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				region = australia_region
+				region = oceanea_region
+			}
+		}
+	}
+}
+
+can_colonize_province = {
+	condition = {
+		tooltip = "PR_tooltip_cn_colonize"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			FROM = {
+				capital_scope = {
+					colonial_region = ROOT
+				}
+			}
+		}
+	}
+}
