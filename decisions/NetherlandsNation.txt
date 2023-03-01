@@ -59,20 +59,6 @@ country_decisions = {
 		}
 		allow = {
 			OR = {
-				FRA = {
-					has_won_war_against = {
-					who = BUR
-					max_years_since = 5
-					}
-				}
-				BUR = {
-					has_won_war_against = {
-					who = FRA
-					max_years_since = 5
-					}
-				}
-			}
-			OR = {
 				is_bankrupt = yes
 				num_of_loans = 10
 			}
