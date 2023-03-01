@@ -2842,7 +2842,6 @@ ottoman_missions_3 = {
 					name = tur_tranquil_tulip_period_modifier
 					duration = -1 
 				}
-			}
 		}
 	}
 }

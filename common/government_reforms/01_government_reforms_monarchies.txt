@@ -1466,9 +1466,9 @@ negusa_nagast = {
 	legacy_equivalent = negusa_nagast_legacy
 
 	modifiers = {
-		move_capital_cost_modifier = -0.75
+		move_capital_cost_modifier = -0.15
 		global_unrest = -1
-		stability_cost_modifier = -0.1
+		stability_cost_modifier = -0.15
 	}
 
 	conditional = {
@@ -1480,12 +1480,6 @@ negusa_nagast = {
 		}
 	}
 
-	conditional = {
-		allow = {
-			has_dlc = "Origins"
-		}
-		allow_cawa = yes
-	}
 }
 
 solomonic_empire = {

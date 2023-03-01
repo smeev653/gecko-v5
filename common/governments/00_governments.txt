@@ -146,6 +146,9 @@ monarchy = {
 				restoration_of_clergy_reform
 				cult_of_reason_reform
 				secularization_of_the_state_reform
+				###Gecko###
+				establish_auxiliary_support_system_reform
+				qizilbash_in_officer_corps_reform
 
 			}
 		}
@@ -165,8 +168,8 @@ monarchy = {
 				sakdina_system_reform
 				allotment_system
 				###Gecko###
-				qizilbash_in_officer_corps_reform
-				establish_auxiliary_support_system_reform
+				reforms_of_abbas_i_reform
+				janissary_administrative_positions_reform
 			}
 		}
 		deliberative_assembly = {
@@ -186,8 +189,8 @@ monarchy = {
 				install_theocratic_government_reform
 				become_rev_republic_reform
 				###Gecko###
-				reforms_of_abbas_i_reform
-				janissary_administrative_positions_reform
+				ghilman_administrative_positions_reform
+				reform_the_janissaries_reform
 			}
 		}
 		economical_matters = {
@@ -220,9 +223,7 @@ monarchy = {
 				consulate_reform
 				military_electorate_reform
 				revolutionary_council_reform
-				###Gecko###
-				ghilman_administrative_positions_reform
-				reform_the_janissaries_reform
+				
 			}
 		}
 		separation_of_power = {
