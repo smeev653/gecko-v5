@@ -1169,7 +1169,7 @@ province;red;green;blue;x;x
 1168;206;217;77;Nsoyo;x
 1169;175;62;173;Mayombe;x
 1170;48;64;32;Kongo;x
-1171;176;66;79;Ndongo;x
+#1171;176;66;79;Ndongo;x
 1172;48;68;126;Benguela;x
 1173;176;70;173;Namibia;x
 1174;48;172;32;Angra Pequena;x
@@ -4937,7 +4937,6 @@ province;red;green;blue;x;x
 4939;210;80;11;Te Moana-a-Toi;x
 4940;29;216;197;Lake Tulare;x
 4941;30;216;201;Lake Cahuilla;x
-4959;255;216;79;Gariep;x
 4960;109;255;255;Karas;x
 4961;255;96;22;Kakamas;x
 4962;17;21;255;Cuoa;x
@@ -4951,9 +4950,7 @@ province;red;green;blue;x;x
 4970;204;0;166;Segonyana;x
 4971;57;204;191;Vhembe;x
 4972;204;85;0;Lekwa;x
-4973;0;3;204;Nami-Nus;x
 4974;88;38;255;Kheis;x
-4975;51;17;175;Maputo;x
 5003;117;26;238;Aalborg;x
 5004;21;73;142;Copenhagen;x
 5005;127;92;158;Aabenraa;x
