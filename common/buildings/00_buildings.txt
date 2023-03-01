@@ -129,7 +129,6 @@ temple = {
 		if = {
 				limit = {
 					FROM = {
-						religion = catholic
 						has_estate_privilege = estate_church_influence_temples
 					}
 				}
@@ -166,7 +165,6 @@ temple = {
 		if = {
 			limit = {
 				FROM = {
-					religion = catholic
 					has_estate_privilege = estate_church_influence_temples
 				}
 			}
@@ -586,7 +584,6 @@ cathedral = {
 		if = {
 			limit = {
 				FROM = {
-					religion = catholic
 					has_estate_privilege = estate_church_influence_temples
 				}
 			}
@@ -612,7 +609,6 @@ cathedral = {
 		if = {
 			limit = {
 				FROM = {
-					religion = catholic
 					has_estate_privilege = estate_church_influence_temples
 				}
 			}
