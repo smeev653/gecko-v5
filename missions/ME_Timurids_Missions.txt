@@ -7,7 +7,18 @@ TIM_missions_1 = {
 		
 	}
 	has_country_shield = yes
-
+	tim_high_income_mission = {
+		icon = mission_high_income
+		required_missions = {  } #None
+		position = 1
+		trigger = { share_of_starting_income = 1.5 }
+		effect = {
+			add_country_modifier = {
+				name = "gc_growing_economy"
+				duration = 9125 #25 years
+			}
+		}
+	}
 	preperation_against_osman = {
 		required_missions = {
 			revenge_against_the_sheep
