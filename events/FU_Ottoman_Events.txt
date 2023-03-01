@@ -596,42 +596,6 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = { 
-				1340 = { 
-					trade_share = {
-						country = ROOT 
-						share = 30
-					}
-				}
-			}
-			1340 = { 
-				add_trade_modifier = {
-					who = ROOT
-					duration = 9125
-					power = 50
-					key = STRONG_MERCHANTS
-				}
-			}
-		}
-		if = {
-			limit = { 
-				1343 = { 
-					trade_share = {
-						country = ROOT 
-						share = 30
-					}
-				}
-			}
-			1343 = { 
-				add_trade_modifier = {
-					who = ROOT
-					duration = 9125
-					power = 50
-					key = STRONG_MERCHANTS
-				}
-			}
-		}
 		if = { 
 			limit = { 
 				any_owned_province = {
@@ -805,14 +769,7 @@ country_event = { #The Baghdad Eyalet
 			name = tur_baghdad_center_of_scholars_modifier
 			duration = -1 
 		}
-		if = {
-			limit = { 
-				religion_group = muslim 
-				NOT = { has_estate_privilege = estate_church_scholar_connections } 
-			} 
-			enable_baseline_invite_scholar = yes
-		}
-		else = { change_innovativeness = 2 } 
+		 change_innovativeness = 2 
 	}
 }
 
@@ -1678,34 +1635,14 @@ country_event = { #Solidifying the Ottoman Law
 	desc = FU_Ottoman_Events.40.d 
 	picture = BIG_BOOK_eventPicture
 	is_triggered_only = yes 
-	
-	option = { 
-		name = FU_Ottoman_Events.40.a 
-		trigger = { has_parliament = yes } 
-		
-		custom_tooltip = tur_unlock_new_parliament_issues_tt
-		custom_tooltip = tur_every_successful_issue_grants_25_random_pp_tt
-		set_country_flag = tur_unlock_new_parliament_issues_flag 
-		set_country_flag = issue_grants_25_random_pp_flag
-	}
-	
+
 	option = { 
 		name = FU_Ottoman_Events.40.b 
-		trigger = { 
-				full_idea_group = administrative_ideas 
-		}
+		
 		add_country_modifier = { 
 			name = tur_kanuni_osmani_modifier
 			duration = -1 
 		}
-	}
-	
-	option = { 
-		name = FU_Ottoman_Events.40.c 
-		
-		custom_tooltip = tur_unlock_absolute_sultanic_law_tt
-		set_country_flag = tur_unlock_absolute_sultanic_law_flag
-		change_government_reform_progress = 25
 	}
 }
 
@@ -1861,13 +1798,13 @@ country_event = { #Granadan Moriscos seek Refuge in [151.GetName]
 			cost_multiplier = 0.75
 			religion = sunni 
 		}
-		set_country_flag = tur_accepted_moriscos_flag
 	}
 
 	option = { 
 		name = FU_Ottoman_Events.42.b 
 		
 		add_prestige_or_monarch_power = { amount = 10 } 
+
 	}
 }
 

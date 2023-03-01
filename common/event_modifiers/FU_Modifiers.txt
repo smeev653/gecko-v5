@@ -387,7 +387,7 @@ tur_ottoman_thalassocracy_modifier = {
 	global_ship_cost = -0.1
 }
 tur_baghdad_center_of_scholars_modifier = {
-	idea_cost = -0.025 
+	idea_cost = -0.05
 }
 
 euphrates_estuary_modifier2 = {

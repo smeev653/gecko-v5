@@ -847,7 +847,7 @@ ottoman_missions_1 = {
 				limit = { has_estate = estate_mamluks } 
 				estate_loyalty = {
 					estate = estate_mamluks 
-					loyalty = 60 
+					loyalty = 50 
 				}
 				num_of_estate_privileges = { 
 					estate = estate_mamluks 
@@ -857,26 +857,10 @@ ottoman_missions_1 = {
 		}
 		effect = { 
 			country_event = { id = FU_Ottoman_Events.40 } 
-			if = { 
-				limit = { has_estate = estate_mamluks } 
-				custom_tooltip = tur_bye_bye_mams_tt
-				hidden_effect = { 
-					every_province = {
-						limit = { 
-							OR = { 
-								has_province_modifier = tur_fall_of_cairo_modifier
-								has_province_modifier = tur_fall_of_cairo_modifier2
-							}
-						}
-						remove_province_modifier = tur_fall_of_cairo_modifier
-						remove_province_modifier = tur_fall_of_cairo_modifier2
-					}
-				}
 				add_country_modifier = { 
 					name = tur_integration_of_the_mamluk_bureaucracy_modifier
 					duration = -1 
 				}
-			}
 		}
 	}
 
@@ -922,28 +906,7 @@ ottoman_missions_1 = {
 			}
 		}
 		effect = { 
-			custom_tooltip = tur_every_european_inflation_based_on_trade_tt
-			hidden_effect = { 
-				every_country = {
-					limit = {
-						capital_scope = {
-							continent = europe
-						}
-						ai = yes
-						was_player = no
-						OR = {
-							is_free_or_tributary_trigger = yes
-							overlord = {
-								ai = yes
-								was_player = no
-							}
-						}
-					}
-					add_inflation_scaled_to_trade = {
-						inflation = 1.5
-					}
-				}
-			}
+			
 			add_country_modifier = { 
 				name = tur_blanket_scheme_modifier
 				duration = -1 
@@ -1400,43 +1363,12 @@ ottoman_missions_2 = {
 			
 		}
 		effect = { 
-			custom_tooltip = tur_if_active_mamluk_estate
-			tooltip = { 
 				add_country_modifier = { 
-					name = tur_cooperation_with_mamluk_locals_modifier
-					duration = -1 
-				}
-				add_estate_loyalty = {
-					estate = estate_mamluks 
-					loyalty = 15 
-				}
-			}
-			custom_tooltip = tur_else_tt
-			tooltip = { 
-				add_country_modifier = { 
-					name = tur_master_egypt_modifier 
-					duration = -1 
-				}
-			}
-			hidden_effect = { 
-				if = { 
-					limit = { has_estate = estate_mamluks } 
-					add_country_modifier = { 
-						name = tur_cooperation_with_mamluk_locals_modifier
-						duration = -1 
-					}
-					add_estate_loyalty = {
-						estate = estate_mamluks 
-						loyalty = 15 
-					}
-				}
-				else = { 
-					add_country_modifier = { 
 						name = tur_master_egypt_modifier 
 						duration = -1 
-					}
 				}
-			}
+				
+			
 			horn_of_africa_region = { 
 				limit = { 
 					NOT = { owned_by = ROOT } 
@@ -1542,33 +1474,19 @@ ottoman_missions_2 = {
 				}
 				num_of_owned_provinces_with = { 
 					OR = { 
-						region = deccan_region 
 						region = west_india_region 
-						region = coromandel_region 
+						region = hindusthan_region
 					}
 					province_has_center_of_trade_of_level = 1 
 					value = 3 
 				}
-				OR = { 
 					504 = { 
 						trade_share = {
 							country = ROOT 
 							share = 30
 						}
 					}
-					1340 = { 
-						trade_share = {
-							country = ROOT 
-							share = 30
-						}
-					}
-					1343 = { 
-						trade_share = {
-							country = ROOT 
-							share = 30
-						}
-					}
-				}
+				
 			}
 		}
 		effect = { 
@@ -2893,14 +2811,8 @@ ottoman_missions_3 = {
 		position = 28
 		trigger = {
 			OR = { 
-				custom_trigger_tooltip = {
-					tooltip = tur_accepted_morisco_refugees_tt
-					has_country_flag = tur_accepted_moriscos_flag 
-				}
-				AND = { 
-					has_institution = printing_press 
-					capital_scope = { development = 45 } 
-				}
+				has_institution = printing_press 
+				capital_scope = { development = 45 } 
 			}
 			149 = { base_production = 10 } 
 		}
@@ -2914,7 +2826,6 @@ ottoman_missions_3 = {
 					duration = -1 
 				}
 			}
-			clr_country_flag = tur_accepted_moriscos_flag
 		}
 	}
 
@@ -2925,68 +2836,11 @@ ottoman_missions_3 = {
 		trigger = { 
 			has_final_tier_reforms_trigger = yes 
 			crown_land_share = 100
-			has_institution = enlightenment
-			OR = { 
-				is_revolution_target = yes 
-				any_known_country = {
-					is_revolution_target = yes
-					war_with = ROOT
-					capital_scope = {
-						controlled_by = ROOT
-					}
-					NOT = {
-						war_score_against = {
-							who = ROOT
-							value = -98
-						}
-					}
-				}
-			}
 		}
-		effect = { 
-			custom_tooltip = tur_if_crush_revolution_tt
-			tooltip = { 
+		effect = {  
 				add_country_modifier = { 
 					name = tur_tranquil_tulip_period_modifier
 					duration = -1 
-				}
-			}
-			custom_tooltip = tur_if_we_complete_via_rev_target_tt
-			tooltip = {
-				add_country_modifier = {	
-					name = tur_fires_of_revolution_modifier
-					duration = -1 
-				}
-			}
-			hidden_effect = { 
-				if = { 
-					limit = { is_revolution_target = yes }
-					set_country_flag = tur_chose_rev_flag
-					add_country_modifier = {	
-						name = tur_fires_of_revolution_modifier
-						duration = -1 
-					}
-					every_country = { 
-						limit = { 
-							capital_scope = { continent = europe }
-							government = monarchy
-						}
-						capital_scope = { 
-							revolutionary_rebels = 3 
-							revolutionary_rebels = 3 
-							revolutionary_rebels = 3 
-							revolutionary_rebels = 3 
-							revolutionary_rebels = 3 
-							revolutionary_rebels = 3 
-						}
-					}
-					swap_non_generic_missions = yes 
-				}
-				else = { 
-					add_country_modifier = { 
-						name = tur_tranquil_tulip_period_modifier
-						duration = -1 
-					}
 				}
 			}
 		}
@@ -3379,7 +3233,7 @@ ottoman_missions_4 = {
 			}
 		}
 		effect = { 
-			4346 = { 
+			1335 = { 
 				add_trade_modifier = {
 					who = ROOT
 					duration = 10950
@@ -4195,11 +4049,11 @@ ottoman_missions_5 = {
 		provinces_to_highlight = { 
 			OR = { 
 				province_id = 4279 
-				province_id = 4346 
+				province_id = 1335
 			}
 		}
 		trigger = {
-			4346 = { 
+			1335 = { 
 				trade_share = {
 					country = ROOT 
 					share = 65 
