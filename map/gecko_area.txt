@@ -2036,7 +2036,7 @@ kongo_area = { #5
 }
 
 angola_namibia_area = { #5
-	1098 1167 1171 1172  
+	1167 1172  
 }
 
 cape_of_good_hope_area = { #5
@@ -2057,7 +2057,7 @@ transvaal_area = { #4
 
 
 senqu_delta_area = {
-	2864 4959 4960 4973 4974
+	2864 4960 4974
 }
 
 xhosa_area = {
@@ -2068,7 +2068,7 @@ kalahari_basin_area = {
 	4961 4970 4972
 }
 limpopo_area = { #4
-	789 1181 1182 1800 4975
+	789 1181 1182 1800
 }
 
 ########################################
