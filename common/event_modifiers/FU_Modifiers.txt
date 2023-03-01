@@ -577,11 +577,11 @@ tur_acemi_oglan_modifier = {
 	janissary_loyalty_modifier = 0.1
 }
 tur_excellent_janissary_recruits_modifier = {
-	land_morale = 0.025
+	land_morale = 0.05
 	is_janissary_modifier = yes 
 }
 tur_excellent_janissary_recruits2_modifier = {
-	land_morale = 0.025
+	land_morale = 0.05
 }
 tur_bektashi_janissaries_modifier = { 
 	monthly_piety = 0.0025
@@ -688,12 +688,10 @@ marmaris_castle_modifier = {
 	local_ship_repair = 0.15
 }
 tur_discontent_in_janissary_ranks_modifier = { 
-	discipline = -0.25
-	land_morale = -0.2
+	
 }
 tur_discontent_in_janissary_ranks2_modifier = { 
-	discipline = -0.25
-	land_morale = -0.2
+	
 }
 tur_supremacy_of_janissaries_modifier = { 
 	max_absolutism = -25
@@ -703,7 +701,8 @@ tur_supremacy_of_janissaries_modifier = {
 	mil_tech_cost_modifier = 0.25
 }
 tur_military_modernization_modifier = { 
-	fire_damage = 0.05
+	fire_damage = 0.1
+	infantry_power = 0.1
 	drill_gain_modifier = 0.5
 }
 tur_abu_hanifa_mosque_modifier = { 

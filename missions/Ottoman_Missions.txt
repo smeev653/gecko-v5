@@ -1970,7 +1970,10 @@ ottoman_missions_2 = {
 			is_at_war = no 
 		}
 		effect = { 
-			#country_event = { id = FU_Ottoman_Events.41 } 
+			add_country_modifier = {
+				name = tur_military_modernization_modifier
+				duration = -1
+			}
 		}
 	}	
 }
