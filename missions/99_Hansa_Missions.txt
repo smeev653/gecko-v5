@@ -147,7 +147,9 @@ lubeck_missions_1 = { #Made by William 'Big Boss' Samelis
 					limit = {
 						12 = { country_or_non_sovereign_subject_holds = ROOT }
 					}
+					owner = {
 					add_mercantilism = 2 
+					}
 				}
 			}
 			custom_tooltip = general_tooltip_dynamic_reward

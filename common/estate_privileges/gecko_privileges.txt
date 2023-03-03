@@ -562,9 +562,7 @@ estate_gc_priv_12 = {
 	benefits = {
 
 	}
-	modifier = {
-
-	}
+	
 	ai_will_do = {
 		factor = 0
 	}

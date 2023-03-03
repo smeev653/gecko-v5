@@ -256,15 +256,7 @@ country_event = {
 
 		ai_chance = {
 			factor = 4
-			modifier = {
-				factor = 0
-				FROM = {
-					ai_attitude = {
-						who = ROOT
-						attitude = attitude_rival
-					}
-				}
-			}
+			
 			modifier = {
 				factor = 0
 				FROM = {
@@ -393,15 +385,7 @@ country_event = {
 					}
 				}
 			}
-			modifier = {
-				factor = 0
-				FROM = {
-					ai_attitude = {
-						who = ROOT
-						attitude = attitude_ally
-					}
-				}
-			}
+			
 			modifier = {
 				factor = 0
 				has_opinion = {
@@ -583,13 +567,13 @@ country_event = {
 		ai_chance = { factor = 0 } #AI likes coal.
 
 		82 = {
-			add_country_modifier = {
+			add_province_modifier = {
 				name = RHN_coal_industry_coexisting
 				duration = 36500
 			}
 		}
 		1878 = {
-			add_country_modifier = {
+			add_province_modifier = {
 				name = RHN_coal_industry_coexisting
 				duration = 36500
 			}
@@ -791,7 +775,6 @@ province_event = {
 	trigger = {
 		has_province_flag = RHN_coal_debuff
 		trade_goods = coal
-		has_institution = enlightenment
 	}
 
 	option = {

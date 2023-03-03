@@ -460,10 +460,10 @@ country_event = {
 
 	trigger = {
 		OR = {
-			has_country_flag = patriarchate_mission
+			has_country_flag = muscovy_influence_patriarchate_mission
 			AND = {
 				NOT = {
-					has_mission = rus_patriarchate_mission
+					has_mission = muscovy_influence_patriarchate
 				}
 				tag = RUS
 				religion = orthodox

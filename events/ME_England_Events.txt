@@ -74,7 +74,7 @@ country_event = {
 
 		capital_scope = {
 			spawn_rebels = {
-				type = peasant_rebels
+				type = anti_tax_rebels
 				size = 5
 				win = yes
 			}

@@ -1672,7 +1672,7 @@ country_event = {
 			}		
 		}
 		is_year = 1700
-		owns = 8		# Dalaskogen
+		owns = 4		# Dalaskogen
 		NOT = { stability = 0 }
 	}
 	
@@ -1683,7 +1683,7 @@ country_event = {
 	
 	option = {		# Restrict their trade
 		name = "flavor_swe.EVTOPTA1743"
-		8 = {
+		4 = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				size = 2
@@ -1693,7 +1693,7 @@ country_event = {
 	option = {		# Confirm their trade rights
 		name = "flavor_swe.EVTOPTB1743"
 		ai_chance = { factor = 10 }
-		8 = {
+		4 = {
 			add_province_modifier = {
 				name = local_free_trade
 				duration = -1
@@ -3413,11 +3413,11 @@ country_event = {
 	option = {	#Expand into the infrastructure around the Mine
 		name = flavor_swe.112.b
 		trigger = {
-			8 = {
+			4 = {
 				NOT = { trade_goods = gold }	#Will never be true, but better safe tahn 
 			}
 		}
-		8 = {
+		4 = {
 			if = {
 				limit = {
 					has_manufactory_trigger = yes
@@ -3446,7 +3446,7 @@ country_event = {
 
 	option = {	#We don't have to do anything
 		name = flavor_swe.112.c
-		8 = {
+		4 = {
 			add_base_production = 4
 		}
 		

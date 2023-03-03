@@ -37,10 +37,6 @@ fu_janissary_rebels = {
 			factor = 0.01
 			is_overseas = yes
 		}
-		modifier = {
-			factor = 2
-			owner = { religion = christian_group }
-		}
 	}
  
  	# This is checked for EACH province in the Area of Operations

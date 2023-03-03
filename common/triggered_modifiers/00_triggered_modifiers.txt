@@ -810,10 +810,6 @@ synthetic_remnants = {
 golden_age_of_piracy = {
 	potential = {
 			always = no
-		has_global_flag = golden_age_of_piracy
-		NOT = { # lasts 50 years
-			had_global_flag = { flag = golden_age_of_piracy days = 18250 }
-		}
 		1516 = { has_discovered = ROOT }
 	}
 	trigger = {

@@ -294,7 +294,6 @@ country_event = {
 		treasury = 200
 		owns = 385 # Mecca
 		NOT = { has_ruler_modifier = repaired_masjid_al_haram }
-		NOT = { is_advisor_employed = 1191 }
 		NOT = { has_country_flag = mimar_sinan_flag }
 	}
 	
@@ -1233,7 +1232,6 @@ country_event = {
 		is_year = 1585
 		NOT = { is_year = 1635 }
 		religion_group = muslim
-		NOT = { is_advisor_employed = 961 }
 	}
 	
 	mean_time_to_happen = {

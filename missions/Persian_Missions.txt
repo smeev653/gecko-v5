@@ -322,7 +322,7 @@ fu_persia_missions_1 = {
 				NOT = {
 					any_country = {
 						capital_scope = {
-							superregion = hindusthan_region
+							region = hindusthan_region
 						}
 						army_size = ROOT
 					}
@@ -879,9 +879,11 @@ fu_persia_missions_2 = {
 					}
 					151 = { 
 						change_culture = ROOT
-						add_ruler_modifier = {
-							name = per_glory_of_monarch_modifier
-							duration = -1 
+						owner = {
+							add_ruler_modifier = {
+								name = per_glory_of_monarch_modifier
+								duration = -1 
+							}
 						}
 					}
 				}
@@ -2533,7 +2535,7 @@ fu_persia_missions_4 = {
 						duration = -1 
 					}
 					add_base_production = 3 
-					add_prestige = 15
+					owner = {add_prestige = 15}
 				}
 			}
 		}
@@ -3420,10 +3422,11 @@ fu_persia_missions_5 = {
 						}
 						if = {
 							limit = { has_estate = estate_nobles }
-							add_estate_loyalty = {
+							owner = {add_estate_loyalty = {
 								estate = estate_nobles 
 								loyalty = 20 
 							}
+						}
 						}
 					}
 				}

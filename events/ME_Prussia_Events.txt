@@ -1030,10 +1030,7 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	major = yes
-	major_trigger = {
-		continent = europe
-	}
+	
 	option = {
 		name = ME_Prussia_Events.24.a #Ok
 		
@@ -1662,10 +1659,7 @@ country_event = {
 		months = 60
 	}
 	
-	immediate = {
-		clr_province_flag = PRU_vassal_dev_cost
-		set_country_flag = PRU_vassal_dev_cost
-	}
+	
 	option = {
 		name = ME_Prussia_Events.44.a
 		

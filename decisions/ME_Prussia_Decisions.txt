@@ -1,6 +1,6 @@
 country_decisions = {
 	PRU_decision_bav = {
-		major = no
+		major = yes
 		potential = {
 			tag = PRU
 			has_country_modifier = PRU_vassal_play
@@ -175,7 +175,7 @@ country_decisions = {
 		}
 	}
 	PRU_decision_wur = {
-		major = no
+		major = yes
 		potential = {
 			tag = PRU
 			has_country_modifier = PRU_vassal_play
@@ -453,18 +453,7 @@ country_decisions = {
 			}
 			swap_non_generic_missions = yes
 			
-			custom_tooltip = PRU_annex_all_vassals_of_germanic
-			hidden_effect = {
-				every_subject_country = {
-					limit = {
-						NOT = { is_free_or_tributary_trigger = yes }
-						culture_group = germanic
-						NOT = { development = 500 }
-						ai = yes
-					}
-					ROOT = { inherit = PREV }
-				}
-			}
+			
 		}
 		ai_will_do = {
 			factor = 1
@@ -475,7 +464,7 @@ country_decisions = {
 		}
 	}
 	PRU_decision_bad = {
-		major = no
+		major = yes
 		potential = {
 			tag = PRU
 			has_country_modifier = PRU_vassal_play
@@ -579,7 +568,7 @@ country_decisions = {
 		}
 	}
 	PRU_decision_sax = {
-		major = no
+		major = yes
 		potential = {
 			tag = PRU
 			has_country_modifier = PRU_vassal_play
@@ -694,7 +683,7 @@ country_decisions = {
 		}
 	}
 	PRU_decision_mkl = {
-		major = no
+		major = yes
 		potential = {
 			tag = PRU
 			has_country_modifier = PRU_vassal_play
@@ -796,7 +785,7 @@ country_decisions = {
 	}
 	
 	PRU_do_not_integrate_me = {
-		major = no
+		major = yes
 		potential = {
 			ai = yes
 			OR = {

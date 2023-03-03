@@ -77,16 +77,13 @@ emp_burgundy_1 = {
 				army_size = HAB
 			}
 			75 = {
-			 owned_by = ALS
+				is_part_of_hre = yes
 			}
 			4765 = {
-			 owned_by = MLH
+				is_part_of_hre = yes
 			}
 			1880 = {
-				OR = {
-					owned_by = HAB
-					owned_by = TIR
-				}	
+				is_part_of_hre = yes
 			}
 			ALS = { is_subject = no }
 			MLH = { is_subject = no }

@@ -352,10 +352,7 @@ country_event = {
 	desc = ME_Poland_Events.9.d
 
 	is_triggered_only = yes
-	major = yes
-	major_trigger = {
-		continent = europe
-	}
+	
 		
 	option = {
 		name = ME_Poland_Events.9.b
@@ -924,10 +921,7 @@ province_event = {
 	desc = ME_Poland_Events.19.d
 
 	is_triggered_only = yes
-	major = yes
-	major_trigger = {
-		is_neighbor_of = ROOT
-	}
+
 	
 	immediate = {
 		hidden_effect = { save_global_event_target_as = POL_rawa_province }
@@ -1243,10 +1237,7 @@ province_event = {
 
 	is_triggered_only = yes
 	
-	major = yes
-	major_trigger = {
-		owns = event_target:POL_ortho_province
-	}
+	
 	
 	immediate = {
 		random_province = {
@@ -1900,10 +1891,7 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	major = yes
-	major_trigger = {
-		continent = europe
-	}
+	
 	
 	option = {
 		name = ME_Poland_Events.37.a 

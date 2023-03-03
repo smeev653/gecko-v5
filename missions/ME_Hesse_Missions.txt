@@ -522,7 +522,7 @@ HES_Missions_5 = {
 							type = artist
 							name = "Alessandro Pasqualini"
 							skill = 1
-							culture = romagnol
+
 							religion = catholic
 							location = 4730
 							culture = PREV
@@ -542,7 +542,7 @@ HES_Missions_5 = {
 								type = artist
 								name = "Alessandro Pasqualini"
 								skill = 1
-								culture = romagnol
+
 								religion = catholic
 								location = 4730
 								culture = PREV

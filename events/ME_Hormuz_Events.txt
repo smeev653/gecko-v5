@@ -74,9 +74,9 @@ country_event = {
 				religion = shiite
 				capital_scope = {
 					OR = {
-					superregion = persia_region
-					superregion = khorasan_region
-					superregion = caucasia_region 
+					region = persia_region
+					region = khorasan_region
+					region = caucasia_region 
 					}
 				}
 			}

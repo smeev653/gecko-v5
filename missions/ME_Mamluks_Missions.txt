@@ -38,14 +38,13 @@ MAM_missions_1 = {
 		}
 		effect = {
 			add_splendor = 100
-			if = {
 				add_years_of_owned_provinces_production_income = {
 					years = 5
 					trigger = {
 							trade_goods = grain
 					}
 				}
-			}	
+				
 			361 = {
 				change_trade_goods = cloves
 				if = {

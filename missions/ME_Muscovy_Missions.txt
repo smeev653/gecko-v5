@@ -41,6 +41,7 @@ MOS_1 = {
 		effect = {
 			add_patriarch_authority = 0.05
 			295 = { add_base_tax = 1 }
+			set_country_flag = muscovy_influence_patriarchate_mission
 		}
 	}
 	
@@ -226,7 +227,7 @@ MOS_1 = {
 				}
 			}
 			define_advisor = {
-				type = muscovy_architect
+				type = gc_banker
 				name = "Postnik Yakovlev"
 				skill = 1
 				cost_multiplier = 0.5

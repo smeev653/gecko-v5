@@ -16552,7 +16552,8 @@ gme_alkarak_castle = {
 		}
 		area_modifier = { }
 		country_modifiers = { }
-		on_upgraded = {add_army_tradition = 10 }
+		on_upgraded = {owner = {add_army_tradition = 10 }
+		}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
@@ -18427,7 +18428,7 @@ fu_la_scala = {
 			yearly_absolutism = 0.5
 		}
 		on_upgraded = {
-			ROOT = {
+			owner = {
 				add_estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 5 
@@ -18464,7 +18465,7 @@ fu_la_scala = {
 		}
 		
 		on_upgraded = {
-			ROOT = {
+			owner = {
 				add_estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 10
@@ -18501,7 +18502,7 @@ fu_la_scala = {
 		}
 		
 		on_upgraded = {
-			ROOT = {
+			owner = {
 				add_estate_loyalty = {
 					estate = estate_burghers
 					loyalty = 15 
@@ -18785,13 +18786,7 @@ fu_topkapi_palace = {
 	type = monument
 
 	build_trigger = {
-		ROOT = {
-			OR = {
-				tag = TUR 
-				tag = RUM 
-				religion_group = muslim 
-			}
-		}
+		religion_group = muslim 
 	}
 	
 	can_use_modifiers_trigger = {
@@ -20235,12 +20230,14 @@ fu_library_alexandria = {
 		on_upgraded = {
 			custom_tooltip = byz_every_paper_province_tt 
 			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						trade_goods = paper 
-						has_manufactory_trigger = yes 
+				owner = {
+					every_owned_province = {
+						limit = {
+							trade_goods = paper 
+							has_manufactory_trigger = yes 
+						}
+						add_base_production = 1 
 					}
-					add_base_production = 1 
 				}
 			}
 		}

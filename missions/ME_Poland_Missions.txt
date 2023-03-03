@@ -649,7 +649,6 @@ POL_Missions_1 = {
 		position = 17
 		provinces_to_highlight = {
 			owned_by = ROOT
-			NOT = { has_institution = enlightenment }
 		}
 		trigger = {
 			has_adm_advisor_3 = yes

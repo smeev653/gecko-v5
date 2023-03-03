@@ -309,7 +309,7 @@ conquest_of_constantinople = {
 			NOT = { tag = TUR }
 			thrace_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_non_sovereign_subject_holds = PREV
 			}	
 		}
 		controlled_by = ROOT
@@ -343,7 +343,7 @@ conquest_of_paris = {
 				}
 			ile_de_france_area	= {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_non_sovereign_subject_holds = PREV
 			}	
 				
 		}
@@ -380,7 +380,7 @@ conquest_of_vienna = {
 				}
 			austria_proper_area	= {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				country_or_non_sovereign_subject_holds = PREV
 			}	
 		}
 		
@@ -411,7 +411,7 @@ conquest_of_cairo = {
 				NOT = { tag = AKS}
 				bahari_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}
 			}
 		controlled_by = ROOT	
@@ -446,7 +446,7 @@ conquest_of_fez = {
 				}
 				marrekesh_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}
 				
 			}
@@ -482,7 +482,7 @@ conquest_of_london = {
 				}
 				home_counties_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}
 			}
 		controlled_by = ROOT	
@@ -508,7 +508,7 @@ conquest_of_berlin = {
 		owner = {
 			berlin_area	 = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}
 		}		
 		controlled_by = ROOT
@@ -533,7 +533,7 @@ conquest_of_saint_petersburg = {
 		owner = {
 				moscow_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}
 			}
 		controlled_by = ROOT	
@@ -567,7 +567,7 @@ conquest_of_tabriz = {
 				NOT = { tag = PER }
 				tabriz_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}
 			}
 			
@@ -603,7 +603,7 @@ conquest_of_samarkand = {
 				}
 				samarkand_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}	
 			}
 		controlled_by = ROOT	
@@ -636,7 +636,7 @@ conquest_of_pest = {
 				}
 				alfold_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}	
 			}
 		controlled_by = ROOT	
@@ -669,7 +669,7 @@ conquest_of_copenhagen = {
 				}
 				denmark_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}
 			}
 		controlled_by = ROOT
@@ -709,7 +709,7 @@ conquest_of_herat = {
 		owner = {	
 			balkh_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}	
 		}		
 	}
@@ -743,7 +743,7 @@ conquest_of_frankfurt = {
 				}
 				hesse_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}	
 			}
 		controlled_by = ROOT	
@@ -770,7 +770,7 @@ conquest_of_prague= {
 				#NOT = { tag = TUR }
 				bohemia_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}	
 			}
 		controlled_by = ROOT	
@@ -804,7 +804,7 @@ conquest_of_toledo= {
 				}
 				toledo_area = {
 					type = all
-					country_or_non_sovereign_subject_holds = ROOT
+					country_or_non_sovereign_subject_holds = PREV
 				}	
 			}
 		controlled_by = ROOT	
