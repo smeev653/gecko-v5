@@ -6891,15 +6891,15 @@ pap_sistinechapel_decorated = {
 	global_missionary_strength = 0.01
 }
 
-#pap_indulgences = {
-#	global_tax_income = 5
-#}
-#pap_simony = {
-#	global_tax_income = 5
-#}
-#pap_veneration_relics = {
-#	global_tax_income = 5
-#}
+pap_indulgences = {
+	global_tax_income = 5
+}
+pap_simony = {
+	global_tax_income = 5
+}
+pap_veneration_relics = {
+	global_tax_income = 5
+}
 pap_condemn_slavery = {
 	global_tariffs = -0.05
 }
