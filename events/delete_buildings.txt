@@ -1,0 +1,121 @@
+namespace = destroybuild_events
+
+
+country_event = {
+	id = destroybuild_events.1
+	title = destroybuild_events.1.t
+	desc = destroybuild_events.1.d
+	#picture = ANGLICAN_SERMON_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = destroybuild_events.1.a
+		country_event = { 
+			id = destroybuild_events.2
+		}
+	}
+	option = {
+		name = destroybuild_events.1.z
+		
+	}
+}
+country_event = {
+	id = destroybuild_events.2
+	title = destroybuild_events.2.t
+	desc = destroybuild_events.2.d
+	#picture = ANGLICAN_SERMON_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = destroybuild_events.2.b
+		country_event = { 
+			id = destroybuild_events.4
+		}
+	}
+	option = {
+		name = destroybuild_events.2.c
+		country_event = { 
+			id = destroybuild_events.5
+		}
+	}
+	option = {
+		name = destroybuild_events.2.z
+		
+	}
+}
+
+
+country_event = {
+	id = destroybuild_events.4
+	title = destroybuild_events.4.t
+	desc = destroybuild_events.4.d
+	#picture = ANGLICAN_SERMON_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = destroybuild_events.4.a
+		every_owned_province = {
+			remove_building = dock
+			remove_building = drydock
+		}
+	}
+	option = {
+		name = destroybuild_events.4.z
+		
+	}
+}
+
+country_event = {
+	id = destroybuild_events.5
+	title = destroybuild_events.5.t
+	desc = destroybuild_events.5.d
+	#picture = ANGLICAN_SERMON_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = destroybuild_events.5.a
+		every_owned_province = {
+			remove_building = shipyard
+		}
+	}
+	option = {
+		name = destroybuild_events.5.z
+		
+	}
+}
