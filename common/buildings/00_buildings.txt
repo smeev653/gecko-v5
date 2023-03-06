@@ -97,10 +97,10 @@ workshop = {
 }
 
 temple = {
-	cost = 100
+	cost = 50
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.4
+		local_tax_modifier = 0.5
 		local_missionary_strength = 0.01
 		
 	}
@@ -162,22 +162,14 @@ temple = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
-		if = {
-			limit = {
-				FROM = {
-					has_estate_privilege = estate_church_influence_temples
-				}
-			}
-			FROM = {
-				add_papal_influence = -3
-			}	
-				remove_development_from_building_2 = {
+		
+		remove_development_from_building_2 = {
 						building = temple
 						type = tax
 						value = 1
-					}
-			
 		}
+			
+
 		remove_development_from_building = {
 			building = temple
 			type = tax
@@ -553,7 +545,7 @@ naval_battery = {
 cathedral = {
 	make_obsolete = temple
 
-	cost = 200
+	cost = 100
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
