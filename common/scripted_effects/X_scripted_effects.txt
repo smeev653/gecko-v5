@@ -389,261 +389,6 @@ X_on_province_owner_change_pmod_effect = {
 }
 
 ####################
-# Russia
-####################
-X_RUS_isolation_vs_westernization_remove_modifier_effect = {
-	if = {
-		limit = { X_RUS_has_isolation_vs_westernization_modifier_trigger = { who = ROOT } }
-		remove_country_modifier = X_RUS_isolation_1_cmod
-		remove_country_modifier = X_RUS_isolation_2_cmod
-		remove_country_modifier = X_RUS_isolation_3_cmod
-		remove_country_modifier = X_RUS_isolation_4_cmod
-		remove_country_modifier = X_RUS_westernization_1_cmod
-		remove_country_modifier = X_RUS_westernization_2_cmod
-		remove_country_modifier = X_RUS_westernization_3_cmod
-		remove_country_modifier = X_RUS_westernization_4_cmod
-	}
-}
-
-X_RUS_isolation_vs_westernization_change_modifier_effect = {
-	X_RUS_isolation_vs_westernization_remove_modifier_effect = yes
-	if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = 4
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_isolation_4_cmod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = 3
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_isolation_3_cmod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = 2
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_isolation_2_cmod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = 1
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_isolation_1_cmod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = -1
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_westernization_1_cmod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = -2
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_westernization_2_cmod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = -3
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_westernization_3_cmod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			is_variable_equal = {
-				which = X_RUS_isolation_vs_westernization_variable
-				value = -4
-			}
-		}
-		add_country_modifier = {
-			name = X_RUS_westernization_4_cmod
-			duration = -1
-		}
-	}
-}
-
-X_RUS_change_isolation_vs_westernization_level_effect = {
-	[[isolation]
-		if = {
-			limit = {
-				is_variable_equal = {
-					which = X_RUS_isolation_vs_westernization_variable
-					value = 4
-				}
-			}
-			custom_tooltip = X_RUS_change_isolation_vs_westernization_maximum_tt
-		}
-		else = {
-			custom_tooltip = X_RUS_change_isolation_vs_westernization_increase_tt
-		}
-	]
-	[[westernization]
-		if = {
-			limit = {
-				is_variable_equal = {
-					which = X_RUS_isolation_vs_westernization_variable
-					value = -4
-				}
-			}
-			custom_tooltip = X_RUS_change_isolation_vs_westernization_minimum_tt
-		}
-		else = {
-			custom_tooltip = X_RUS_change_isolation_vs_westernization_decrease_tt
-		}
-	]
-	hidden_effect = {
-		set_variable = { X_RUS_isolation_vs_westernization_change_variable = $amount$ }
-		if = {
-			limit = {
-				check_variable = {
-					which = X_RUS_isolation_vs_westernization_change_variable
-					value = 0
-				}
-			}
-			while = {
-				limit = {
-					NOT = {
-						check_variable = {
-							which = X_RUS_isolation_vs_westernization_variable
-							value = 4
-						}
-					}
-					NOT = {
-						is_variable_equal = {
-							which = X_RUS_isolation_vs_westernization_change_variable
-							value = 0
-						}
-					}
-				}
-				change_variable = {
-					which = X_RUS_isolation_vs_westernization_variable
-					value = 1
-				}
-				subtract_variable = {
-					which = X_RUS_isolation_vs_westernization_change_variable
-					value = 1
-				}
-			}
-			if = {
-				limit = {
-					is_variable_equal = {
-						which = X_RUS_isolation_vs_westernization_variable
-						value = 0
-					}
-				}
-				change_variable = {
-					which = X_RUS_isolation_vs_westernization_variable
-					value = 1
-				}
-			}
-		}
-		else = {
-			while = {
-				limit = {
-					NOT = {
-						is_variable_equal = {
-							which = X_RUS_isolation_vs_westernization_variable
-							value = -4
-						}
-					}
-					check_variable = {
-						which = X_RUS_isolation_vs_westernization_variable
-						value = -4
-					}
-					NOT = {
-						is_variable_equal = {
-							which = X_RUS_isolation_vs_westernization_change_variable
-							value = 0
-						}
-					}
-				}
-				subtract_variable = {
-					which = X_RUS_isolation_vs_westernization_variable
-					value = 1
-				}
-				change_variable = {
-					which = X_RUS_isolation_vs_westernization_change_variable
-					value = 1
-				}
-			}
-			if = {
-				limit = {
-					is_variable_equal = {
-						which = X_RUS_isolation_vs_westernization_variable
-						value = 0
-					}
-				}
-				subtract_variable = {
-					which = X_RUS_isolation_vs_westernization_variable
-					value = 1
-				}
-			}
-		}
-		X_RUS_isolation_vs_westernization_change_modifier_effect = yes
-		set_variable = {
-			which = X_RUS_isolation_vs_westernization_localization_variable
-			which = X_RUS_isolation_vs_westernization_variable
-		}
-		if = {
-			limit = {
-				NOT = {
-					check_variable = {
-						which = X_RUS_isolation_vs_westernization_variable
-						value = 0
-					}
-				}
-			}
-			multiply_variable = {
-				which = X_RUS_isolation_vs_westernization_localization_variable
-				value = -1
-			}
-		}
-	}
-}
-####################
 # Expand Infrastructure & Province Estates
 ####################
 X_expand_infrastructure_remove_all_pmod_effect = {
@@ -7953,6 +7698,27 @@ X_remove_tiered_modifier_effect = {
 	remove_country_modifier = X_$group$_culture_full_control_cmod
 }
 
+X_remove_all_tiered_modifier_effect = {
+	X_remove_tiered_modifier_effect = { group = tartar }
+	X_remove_tiered_modifier_effect = { group = germanic }
+	X_remove_tiered_modifier_effect = { group = latin }
+	X_remove_tiered_modifier_effect = { group = west_slavic }
+	X_remove_tiered_modifier_effect = { group = east_slavic }
+	X_remove_tiered_modifier_effect = { group = scandinavian }
+	X_remove_tiered_modifier_effect = { group = carpathian }
+	X_remove_tiered_modifier_effect = { group = iberian }
+	X_remove_tiered_modifier_effect = { group = maghrebi }
+	X_remove_tiered_modifier_effect = { group = french }
+	X_remove_tiered_modifier_effect = { group = lowlands }
+	X_remove_tiered_modifier_effect = { group = british }
+	X_remove_tiered_modifier_effect = { group = hindusthani }
+	X_remove_tiered_modifier_effect = { group = iranian }
+	X_remove_tiered_modifier_effect = { group = turko_semitic }
+	X_remove_tiered_modifier_effect = { group = cushitic }
+	X_remove_tiered_modifier_effect = { group = southern_african }
+	X_remove_tiered_modifier_effect = { group = mande }
+}
+
 X_culture_control_development_effect = {
 	set_variable = {
 		which = X_$group$_control_province_development_variable
@@ -8046,7 +7812,7 @@ X_culture_group_control_effect = {
 					which = X_$group$_control_development_variable
 				}
 			}
-			X_remove_tiered_modifier_effect = { group = $group$ }
+			X_remove_all_tiered_modifier_effect = yes
 			if = {
 				limit = { culture_group = $group$ is_subject = no }
 				if = {
