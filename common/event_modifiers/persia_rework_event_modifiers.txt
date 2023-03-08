@@ -43,6 +43,7 @@ estate_janissary_weaponry_modifier = {
 estate_janissary_discipline_modifier = {
 	is_janissary_modifier = yes
 	discipline = 0.05
+	infantry_power = 0.05
 }
 
 estate_janissary_auxiliaries_modifier = {
