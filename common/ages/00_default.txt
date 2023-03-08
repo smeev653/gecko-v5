@@ -581,12 +581,14 @@ age_of_reformation = {
 		crimean_raids = {
 		
 			allow = {
+				OR = {
 					tag = CRI
 					tag = GLH
+				}	
 				
 			}	
 			modifier = {
-				movement_speed = 0.3
+				movement_speed = 0.25
 			}
 			ai_will_do = {
 					factor = 100
