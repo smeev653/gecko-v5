@@ -976,7 +976,7 @@
  estate_burghers_ownership:0 "Burgher Land Ownership"
  estate_vaisyas_ownership:0 "[Country.GetVaishyasName] Land Ownership"
  estate_cossacks_ownership:0 "[Country.GetCossacksName] Land Ownership"
- estate_nomadic_tribes_ownership:0 "[Country.GetTribesName] Land Ownership"
+ estate_nomadic_tribes_ownership:0 "Tribes Land Ownership"
  estate_dhimmi_ownership:0 "Dhimmi Land Ownership"
  estate_jains_ownership:0 "[Country.GetJainsName] Land Ownership"
  estate_rajput_ownership:0 "[Country.GetRajputsName] Land Ownership"
