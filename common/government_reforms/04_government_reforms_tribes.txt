@@ -117,6 +117,7 @@ tribal_federation = {
 		years_of_nationalism = -5
 		tolerance_heretic = 2
 		tolerance_heathen = 2
+		reform_progress_growth = -0.5
 	}
 
 	conditional = {

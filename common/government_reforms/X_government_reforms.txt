@@ -26,6 +26,7 @@ X_CRI_great_tatar_state_reform = {
 		manpower_in_accepted_culture_provinces = 0.1
 		manpower_in_culture_group_provinces = 0.1
 		nomadic_tribes_loyalty_modifier = 0.05
+		reform_progress_growth = -0.5
 	}
 	custom_attributes = {
 		locked_government_type = yes
