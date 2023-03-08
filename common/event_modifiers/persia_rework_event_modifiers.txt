@@ -51,8 +51,8 @@ estate_janissary_auxiliaries_modifier = {
 }
 
 estate_nomadic_tribes_steppes_devcost = {
-	local_production_efficiency = 0.20
-	local_development_cost = -0.05
+	local_production_efficiency = 0.33
+	local_development_cost = -0.025
 }
 
 force_janissaries_to_undergo_yoklama = {
