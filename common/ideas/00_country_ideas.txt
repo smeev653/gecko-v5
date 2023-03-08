@@ -9218,8 +9218,7 @@ GLH_ideas = {
 		reinforce_speed = 0.1
 	}
 	glh_populating_the_steppes = {
-		development_cost = -0.05
-		build_cost = -0.05
+		build_cost = -0.1
 	}
 	glh_religious_pragmatism = {
 		tolerance_heathen = 4
