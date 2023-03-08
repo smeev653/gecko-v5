@@ -3868,7 +3868,7 @@ letat_cest_moi_reform = {
 	icon = "letat_cest_moi"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity = 150
+		governing_capacity = 250
 	}
 	ai = {
 		factor = 1.5

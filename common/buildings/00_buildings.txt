@@ -883,7 +883,7 @@ counting_house = {
 }
 
 town_hall = {
-	cost = 200
+	cost = 250
 	time = 12
 
 	make_obsolete = courthouse
@@ -895,6 +895,7 @@ town_hall = {
 		allowed_num_of_buildings = 1
 		local_friendly_movement_speed = 0.2
 		local_governing_cost_increase = -10
+		local_development_cost = -0.05
 		}
 	on_built = {
  

@@ -459,7 +459,7 @@ internal_mission_reform = {
 	icon = "clergyman"
 	allow_normal_conversion = yes
 	modifiers = {
-		governing_capacity = 100
+		governing_capacity = 150
 	}
 	conditional = {
 		allow = {

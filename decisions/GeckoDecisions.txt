@@ -433,6 +433,7 @@ country_decisions = {
 
 	disband_janissaries = {	
 		potential = {
+				always = no
 				ai = no
 				tag = TUR
 				NOT = { current_age = age_of_discovery }
