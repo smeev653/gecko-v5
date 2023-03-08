@@ -31,7 +31,7 @@
  desc_estate_dhimmi_lighter_dhimmi_taxes_privilege_mod:1 "The state demands higher taxes from the Dhimmi than from the general population."
  estate_dhimmi_dhimmi_nobles:0 "Promote the Dhimmi Nobles"
  estate_dhimmi_manpower:0 "Conscript the Dhimmi"
- estate_dhimmi_manpower_effect_tooltip:0 "Every owned province NOT of §YMuslim§! faith gains §Y'Dhimmi Conscription'§!, giving the following effects:\nLocal Manpower Modifier: §G+15.0%§!"
+ estate_dhimmi_manpower_effect_tooltip:0 "Every owned province NOT of §YMuslim§! faith gains §Y'Dhimmi Conscription'§!, giving the following effects:\nLocal Manpower Modifier: §G+10.0%§!"
  estate_dhimmi_manpower_revoke_effect_tooltip:0 "The modifier §Y'Dhimmi Conscription'§! is removed from all owned non-§YMuslim§! provinces."
  estate_dhimmi_manpower_mod:0 "Dhimmi Conscription"
  desc_estate_dhimmi_manpower_mod:0 "The state has increased its conscription of the Dhimmi."
