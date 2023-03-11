@@ -1273,7 +1273,7 @@ taxation_with_representation = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	army_tradtion = 1
+	army_tradition = 1
 	land_forcelimit_modifier = 0.1
 
 	ai_will_do = {

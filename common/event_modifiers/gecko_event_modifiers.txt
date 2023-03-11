@@ -422,3 +422,6 @@ estate_rebalance_burghers= {
 estate_rebalance_church= {
 
 }
+
+enacted_states_general_reform = {
+}
