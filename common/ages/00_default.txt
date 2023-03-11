@@ -461,8 +461,7 @@ age_of_reformation = {
 			
 		ab_allow_religion_enforced = {
 			effect = {
-				custom_tooltip = religion_enforced_edict
-				set_country_flag = religion_enforced_edict
+				modifier = governing_capacity = 150
 			}
 			ai_will_do = {
 				factor = 0
