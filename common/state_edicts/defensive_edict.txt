@@ -10,13 +10,7 @@ edict_defensive_edict = {
 	}
 	
 	allow = {
-		NOT = {
-			FROM = {
-				any_province_in_state  = {
-					has_province_modifier = PR_manpower_edict_province
-				}
-			}
-		}
+	
 	}
 	
 	modifier = {
@@ -41,13 +35,7 @@ gc_edict_defensive_edict_1 = {
 	}
 	
 	allow = {
-		NOT = {
-			FROM = {
-				any_province_in_state  = {
-					has_province_modifier = PR_manpower_edict_province_2
-				}
-			}
-		}
+	
 	}
 	
 	modifier = {
