@@ -1301,6 +1301,7 @@ high_army_professionalism = {
 	reinforce_speed = 0.33
 	recover_army_morale_speed = 0.1
 	regiment_manpower_usage = -0.25
+	manpower_recovery_speed = 0.2
 }
 
 streltsy_modifier = {
