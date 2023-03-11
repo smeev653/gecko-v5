@@ -1154,15 +1154,6 @@ designate_march = {
 			ROOT = { NOT = {has_idea = marcher_lords } }
 		}
 		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = gc_take_influence_ideas_for_marches
-		potential = {
-			ROOT = { NOT = {has_idea = marcher_lords } }
-		}
-		allow = {
 			FROM = {total_development = 300 }
 		}
 	}

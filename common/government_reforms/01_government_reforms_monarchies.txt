@@ -22,7 +22,7 @@ feudalism_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		vassal_income = 0.25
+		vassal_income = 0.1
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
@@ -3644,6 +3644,7 @@ states_general_reform = {
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
 		is_emperor = no
+		NOT = {has_country_modifier = enacted_states_general_reform}
 	}
 
 	modifiers = {
@@ -3655,8 +3656,12 @@ states_general_reform = {
 		factor = 0 # AI should never pick this
 	}
 
-	removed_effect = {
-		country_event = { id = dutch_republic.33 }
+	effect = {
+		add_country_modifier = { 
+			name = enacted_states_general_reform
+			duration = 9125 
+			hidden = yes
+}
 	}
 
 	conditional = {
