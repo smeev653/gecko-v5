@@ -113,7 +113,7 @@ X_expand_infrastructure_tier_6_pmod = {
 	local_manpower_modifier = 1.4
 	local_tax_modifier = 1.4
 	local_production_efficiency = 1.4
-	local_development_cost = -3.2
+	local_development_cost = -2.4
 	land_forcelimit = 6
 }
 X_expand_infrastructure_tier_7_pmod = {
@@ -124,7 +124,7 @@ X_expand_infrastructure_tier_7_pmod = {
 	local_manpower_modifier = 1.9
 	local_tax_modifier = 1.9
 	local_production_efficiency = 1.9
-	local_development_cost = -6.4
+	local_development_cost = -3.6
 	land_forcelimit = 7
 }
 X_expand_infrastructure_tier_8_pmod = {
@@ -135,7 +135,7 @@ X_expand_infrastructure_tier_8_pmod = {
 	local_manpower_modifier = 2.5
 	local_tax_modifier = 2.5
 	local_production_efficiency = 2.5
-	local_development_cost = -6.4
+	local_development_cost = -4.8
 	land_forcelimit = 8
 }
 X_expand_infrastructure_tier_9_pmod = {
@@ -146,7 +146,7 @@ X_expand_infrastructure_tier_9_pmod = {
 	local_manpower_modifier = 3.2
 	local_tax_modifier = 3.2
 	local_production_efficiency = 3.2
-	local_development_cost = -6.4
+	local_development_cost = -6
 	land_forcelimit = 9
 }
 X_expand_infrastructure_tier_10_pmod = {
@@ -157,7 +157,7 @@ X_expand_infrastructure_tier_10_pmod = {
 	local_manpower_modifier = 4.0
 	local_tax_modifier = 4.0
 	local_production_efficiency = 4.0
-	local_development_cost = -6.4
+	local_development_cost = -7.2
 	land_forcelimit = 10
 }
 ########################################
