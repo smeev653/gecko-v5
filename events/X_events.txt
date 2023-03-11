@@ -297,7 +297,7 @@ province_event = {
 	option = {
 		name = X_pe_and_ei_events.3.a
 		trigger = {
-			owner = { adm_power = 4 }
+			owner = { adm_power = 40 }
 			development = 10
 			OR = {
 				AND = {
