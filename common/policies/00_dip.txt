@@ -52,8 +52,7 @@ hold_the_weather_gauge = {
 		full_idea_group = offensive_ideas
 	}
 	
-	discipline = 0.035
-	global_naval_barrage_cost = -0.1
+	backrow_artillery_damage = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -74,7 +73,7 @@ the_wooden_wall = {
 	}
 
 	fire_damage_received = -0.10
-	fire_damage = 0.05
+	fire_damage = 0.1
 	
 	ai_will_do = {
 		factor = 0.6
@@ -288,7 +287,7 @@ naval_infrastructure_act = {
 	}
 
 
-	min_autonomy_in_territories = -0.10
+	expand_administration_cost = -0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -328,7 +327,7 @@ new_naval_tactis = {
 	}
 
 	technology_cost = -0.025
-	monthly_reform_progress_modifier = 0.25
+	monthly_reform_progress_modifier = 0.33
 
 	ai_will_do = {
 		factor = 1
@@ -352,7 +351,7 @@ trade_connection_policy = {
 	}
 
 	trade_efficiency = 0.1
-	merchants = 1
+	mercantilism_cost = -0.1
 
 	ai_will_do = {
 		factor = 0.8		
@@ -411,8 +410,7 @@ streamlined_galley_production = {
 		full_idea_group = quantity_ideas
 	}
 	
-	land_forcelimit_modifier = 0.15
-	global_manpower_modifier = 0.10
+	global_manpower_modifier = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -436,6 +434,7 @@ cloth_quality_edict = {
 		full_idea_group = quality_ideas
 	}
 	trade_efficiency = 0.10
+	global_ship_trade_power = 0.1
 
 	ai_will_do = {
 		factor = 1.2
@@ -773,7 +772,7 @@ cultural_unity = {
 	}	
 	
 	province_warscore_cost = -0.1
-	global_tax_modifier = 0.15
+	global_tax_modifier = 0.25
 	
 	ai_will_do = {
 		factor = 0.6
@@ -1003,6 +1002,7 @@ naval_school_act = {
 	}
 
 	trade_efficiency = 0.1
+	advisor_cost = -0.05
 
 	ai_will_do = {
 		factor = 1
@@ -1029,7 +1029,7 @@ the_foreign_support_act = {
 	}
 
 	global_trade_goods_size_modifier = 0.05
-	spy_offence  = 0.5	
+	reinforce_cost_modifier = -0.10
 	
 	ai_will_do = {
 		factor = 0
@@ -1135,7 +1135,7 @@ armed_neutrality_act = {
 	}
 	
 	trade_steering = 0.25
-	merchants = 1
+	trade_efficiency = 0.1
 
 	ai_will_do = {
 		factor = 0.6
