@@ -124,7 +124,8 @@ in_capital_state = {
 
 coastal = {
 	supply_limit_modifier = 0.5
-	province_trade_power_modifier = 0.25
+	province_trade_power_modifier = 0.5
+	local_sailors_modifier = 0.33
 }
 
 seat_in_parliament = {
