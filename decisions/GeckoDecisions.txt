@@ -384,7 +384,7 @@ country_decisions = {
 	gecko_debt = {
 		major = yes
 		potential = {
-			NOT = { has_country_modifier = recover_economy_modifier }
+			NOT = { has_country_modifier = gecko_debt_tackled }
 			ai = no
        }
 		allow = {
@@ -393,13 +393,6 @@ country_decisions = {
 		}
 		effect = {
 			custom_tooltip = recover_economy_tt
-			hidden_effect = {
-				add_country_modifier = {
-					name = "hidden_recovery_modifier"
-					duration = 1825
-					hidden = yes
-				}
-			}
 			add_country_modifier = {
 				name = "gecko_debt_tackled"
 				duration = -1
@@ -409,15 +402,14 @@ country_decisions = {
 	gecko_debt_2 = {
 		major = yes
 		potential = {
-			has_country_modifier = recover_economy_modifier
+			has_country_modifier = gecko_debt_tackled
 			ai = no
-			NOT = { has_country_modifier = hidden_recovery_modifier }
        }
 		allow = {
 			is_in_deficit = no
 		}
 		effect = {
-			remove_country_modifier = recover_economy_modifier
+			remove_country_modifier = gecko_debt_tackled
 			
 			add_country_modifier = {
 				name = "gecko_debt_tackled_2"

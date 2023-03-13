@@ -470,7 +470,7 @@ local_autonomy = {
 local_autonomy_trade_company_multiplicative = {
 	local_manpower_modifier = -1.0
 	local_sailors_modifier = -1.0
-	local_tax_modifier = -1
+	local_tax_modifier = -1.0
 	local_production_efficiency = -0.5
 	land_forcelimit_modifier = -1.0
 }
@@ -553,7 +553,7 @@ base_values = {
 	artillery_levels_available_vs_fort = 3
 	cav_to_inf_ratio = 0.55
 	merc_maintenance_modifier = 0.5
-	monthly_heir_claim_increase = 0.208
+	monthly_heir_claim_increase = 0.333
 	tolerance_of_heretics_capacity = 5
 	tolerance_of_heathens_capacity = 5
 	yearly_army_professionalism = -0.01
@@ -561,41 +561,23 @@ base_values = {
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
 ai_nation = {
+	may_return_manpower_on_disband = yes
+	possible_mil_policy = 1
+	free_policy = 1
 	diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
 	free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
-	#sailors_recovery_speed = 0.25
-	#build_cost = 0.25
-	#development_cost = 0.25
-	global_autonomy = -0.3
-	#global_tax_modifier = 0.15
-	fort_maintenance_modifier = -1
-	missionary_maintenance_cost = -1
-	yearly_corruption = -2
-	war_exhaustion = -0.5
-	#cav_to_inf_ratio = 0.5
-	#siege_ability = -0.2
+	fort_maintenance_modifier = -1.0
+	missionary_maintenance_cost = -1.0
+	yearly_corruption = -2.0
+	war_exhaustion = -0.05
+	interest = -0.5
+	advisor_cost = -0.1
 	global_supply_limit_modifier = 0.25
 	country_admin_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	country_diplomatic_power = 1 #temporary solution until 1.33 ai advisor use is fixed
 	country_military_power = 1 #temporary solution until 1.33 ai advisor use is fixed
-	burghers_loyalty_modifier = 0.1
-		church_loyalty_modifier = 0.1
-		nobles_loyalty_modifier = 0.1
-		rajput_loyalty_modifier = 0.1
-		cossacks_loyalty_modifier = 0.1
-		nomadic_tribes_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
-		jains_loyalty_modifier = 0.1
-		qizilbash_loyalty_modifier = 0.1
-		ghilman_loyalty_modifier = 0.1
-		janissary_loyalty_modifier = 0.1
-		mamluks_loyalty_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_muslim_loyalty_modifier = 0.1
-		brahmins_other_loyalty_modifier = 0.1
-		maratha_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
-		min_autonomy = -25
+	all_estate_loyalty_equilibrium = 0.1
+	min_autonomy = -25
 }
 
 
@@ -700,7 +682,7 @@ inflation = {
 	#transport_cost = 0.01					#1% for each inflation step
 	flagship_cost = 0.01					#1% for each inflation step
 	advisor_cost = 0.01						#1% for each inflation step
-	mercenary_cost = 0.02					#1% for each inflation step
+	mercenary_cost = 0.01					#1% for each inflation step
 	fort_maintenance_modifier = 0.01		#1% for each inflation step
 	great_project_upgrade_cost = 0.02
 }
@@ -978,9 +960,9 @@ legitimacy = {
 #Multiplied by current Horde Unity - 50
 horde_unity = {
 	global_unrest = -6
-	discipline = 0.1
+	discipline = 0.10
 	nomadic_tribes_loyalty_modifier = 0.2
-	vassal_income = 0.4
+	vassal_income = 0.2
 	tolerance_heathen = 4
 	tolerance_heretic = 2
 	tolerance_own = 2
@@ -1223,7 +1205,7 @@ num_objectives_fullfilled = {
 }
 
 production_leader = {
-	trade_goods_size_modifier = 0.1
+	trade_goods_size_modifier = 0.10
 }
 
 
@@ -1269,6 +1251,7 @@ is_great_power = {						#Only works with Rights of Man DLC enabled
 	prestige_decay = -0.01
 	embracement_cost = -0.1
 	max_absolutism = 5
+	all_power_cost = -0.01
 }
 
 in_golden_era = {
@@ -1283,14 +1266,13 @@ in_golden_era = {
 }
 
 absolutism = {
-	administrative_efficiency = 0.4
+	administrative_efficiency = 0.35
 	discipline = 0.05
 	core_decay_on_your_own = -0.5
 }
 
 low_army_professionalism = {
-	#mercenary_manpower = 0.1
-	merc_maintenance_modifier  = -0.25
+	merc_maintenance_modifier  = -0.15
 }
 
 high_army_professionalism = {
@@ -1834,7 +1816,7 @@ banner_regiment = {
 	regiment_manpower_usage = -0.666
 }
 streltsy_regiment = {
-    fire_damage = 0.05
+    fire_damage = 0.1
 }
 cossacks_regiment = {
     shock_damage = 0.1

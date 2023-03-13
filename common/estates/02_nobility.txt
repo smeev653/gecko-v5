@@ -479,5 +479,5 @@ estate_nobles =
 		estate_nobles_fire_advisor
 	}
 	
-	influence_from_dev_modifier = 1
+	influence_from_dev_modifier = 1.0
 }

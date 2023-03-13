@@ -1,0 +1,48 @@
+country_decisions = {
+
+	development_check_decision = {
+		potential = {
+			ai = no
+		}
+		
+		provinces_to_highlight = {
+		}
+		
+		allow = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = total_dev_clicks_check_ct
+					check_variable = {
+						which = DevelopmentClicksVariable
+						value = 25000
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = total_adm_clicks_check_ct
+					check_variable = {
+						which = AdmClicksVariable
+						value = 10000
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = total_dip_clicks_check_ct
+					check_variable = {
+						which = DipClicksVariable
+						value = 10000
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = total_mil_clicks_check_ct
+					check_variable = {
+						which = MilClicksVariable
+						value = 10000
+					}
+				}
+			}
+		}
+		
+		effect = {
+			
+		}
+	}
+}

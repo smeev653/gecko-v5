@@ -47,6 +47,7 @@
  PR_player_cn:0 "Human Colonial Nation"
  PR_player_cn_navy:0 "Naval Colonial Nation"
  PR_tooltip_move_capital:0 "You may not move your colonial capital."
+ GC_tooltip_move_capital:0 "You may not move your capital to a colonial region."
  PR_tooltip_cn_colonize:0 "You may not colonize provinces outside of your colonial region."
  PR_tooltip_infiltrate:0 "Infiltrate Administration is disabled."
  PR_tooltip_cn_support:0 "Colonial Nations may not ask other nations to support their independence."

@@ -79,6 +79,26 @@ can_move_capital = {
 					continent = north_america
 					region = australia_region
 					region = oceanea_region
+					region = south_africa_region
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "GC_tooltip_move_capital"
+		potential = {
+			FROM = {
+				ai = no
+			}
+		}
+		allow = {
+			NOT = {
+				OR = {
+					continent = south_america
+					continent = north_america
+					region = australia_region
+					region = oceanea_region
+					region = south_africa_region
 				}
 			}
 		}

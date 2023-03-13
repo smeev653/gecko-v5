@@ -308,7 +308,7 @@ gecko_debt_tackled_2 = {
 	drill_gain_modifier = -0.5
 }
 
-gecko_tackle_debt_timer = {
+hidden_recovery_modifier = {
 }
 
 gecko_ipa = {

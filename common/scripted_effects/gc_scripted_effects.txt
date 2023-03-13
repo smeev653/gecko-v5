@@ -75,7 +75,6 @@ gecko_ipa_effect = {
 		remove_country_modifier = gecko_ipa
 		remove_country_modifier = gecko_debt_tackled
 		remove_country_modifier = gecko_debt_tackled_2
-		remove_country_modifier = gecko_tackle_debt_timer
 	}
 }
 

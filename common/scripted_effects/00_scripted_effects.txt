@@ -1233,6 +1233,7 @@ change_government_to_republic = {
 			NOT = { government = republic }
 		}
 		change_government = republic
+		change_government_reform_progress = -200
 	}
 }
 
@@ -1246,9 +1247,11 @@ change_government_to_monarchy = {
 				government = republic
 			}
 			change_government = monarchy
+			change_government_reform_progress = -400
 		}
 		else = {
 			change_government = monarchy
+			change_government_reform_progress = -200
 		}
 	}
 }
@@ -1263,9 +1266,11 @@ change_government_to_theocracy = {
 				government = republic
 			}
 			change_government = theocracy
+			change_government_reform_progress = -400
 		}
 		else = {
 			change_government = theocracy
+			change_government_reform_progress = -200
 		}
 	}
 }
@@ -1276,6 +1281,7 @@ change_government_to_tribal = {
 			NOT = { government = tribal }
 		}
 		change_government = tribal
+		change_government_reform_progress = -800
 	}
 }
 
@@ -1874,6 +1880,7 @@ add_legitimacy_equivalent = {
 ##########################################################
 # When adding new privileges then make sure that a unlock_privilege_$estate_privilege$_tt is defined in the localization
 # For checking if an estate privilege is unlocked already, use has_unlocked_estate_privilege = { estate_privilege = $estate_privilege$ }
+# For localization write the following: "Enable the [Root.<Estate Name>] privilege '§Y<Privilege Name>§!'."
 unlock_estate_privilege = {
 	custom_tooltip = unlock_privilege_$estate_privilege$_tt
 	hidden_effect = {
@@ -1899,6 +1906,7 @@ unlock_estate_privilege = {
 ##########################################################
 # When adding a new merc company then make sure that a unlock_$merc_company$_tt is defined in the localization
 # For checking if a merc company is unlocked already, use has_unlocked_merc_company = { merc_company = $merc_company$ }
+# For localization write the following: "Unlock the mercenary company §Y<Merc Company>§! to recruit."
 unlock_merc_company = {
 	custom_tooltip = unlock_$merc_company$_tt
 	hidden_effect = {
@@ -1948,12 +1956,14 @@ unlock_government_reform = {
 
 #Country effect
 ##########################################################
-# Supports following government reforms
+# Has the localization for the following estates:
 # estate_cossacks
 ##########################################################
 # When adding a new estate then make sure that a unlock_$estate$_tt is defined in the localization
 # For checking if an Estate is unlocked already, use has_unlocked_estate = { estate = $estate$ }
 # For localization write the following: "Unlock the §Y<Estate>§! Estate."
+# Important: this way of unlocking an estate does not give you permanent access to the estate - hence the show_conditions.
+# For granting permanent access, use "enable_estate_effect"
 unlock_estate = {
 	custom_tooltip = unlock_$estate$_tt
 	hidden_effect = {
