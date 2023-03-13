@@ -2,7 +2,7 @@ edict_religion_enforced = {
 	potential = {
 		current_age = age_of_reformation
 		NOT = {
-			any_province_in_state = {
+			area_for_scope_province = {
 				has_building = gc_bureaucracy_manufactory
 			}
 		}

@@ -425,3 +425,9 @@ estate_rebalance_church= {
 
 enacted_states_general_reform = {
 }
+
+generic_timer = { 
+}
+
+draft_timer = {
+}

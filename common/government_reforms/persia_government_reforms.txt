@@ -250,6 +250,10 @@ reform_the_janissaries_reform = { #tier 6
 	custom_attributes = {
 		reform_the_janissaries_privilege_interaction = yes #used for localization of estate privilege
 	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
 	ai = {
 		factor = 1000
 		}

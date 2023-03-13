@@ -2,7 +2,7 @@ edict_advancement_effort = {
 	potential = {
 		NOT = {
 			FROM = {
-				any_province_in_state = {
+				area_for_scope_province = {
 					has_building = gc_bureaucracy_manufactory
 				}
 			}
@@ -31,7 +31,7 @@ edict_advancement_effort = {
 		}
 		modifier = {
 			factor = 5
-			any_province_in_state = {
+			area_for_scope_province = {
 				is_capital = yes
 			}
 		}
@@ -49,7 +49,7 @@ edict_advancement_effort = {
 gc_edict_advancement_effort_1 = {
 	potential = {
 		FROM = {
-			any_province_in_state = {
+			area_for_scope_province = {
 				has_building = gc_bureaucracy_manufactory
 			}
 		}
@@ -77,7 +77,7 @@ gc_edict_advancement_effort_1 = {
 		}
 		modifier = {
 			factor = 5
-			any_province_in_state = {
+			area_for_scope_province = {
 				is_capital = yes
 			}
 		}

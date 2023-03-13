@@ -2,7 +2,7 @@ edict_feudal_de_jure_law = {
 	potential = {
 		NOT = {
 			FROM = {
-				any_province_in_state = {
+				area_for_scope_province = {
 					has_building = gc_bureaucracy_manufactory
 				}
 			}
@@ -73,7 +73,7 @@ edict_feudal_de_jure_law = {
 					NOT = {
 						has_state_edict = edict_feudal_de_jure_law
 					}
-					any_province_in_state = {
+					area_for_scope_province = {
 						unrest = 1
 						NOT = { unrest = 5 }
 					}
@@ -89,7 +89,7 @@ edict_feudal_de_jure_law = {
 gc_edict_feudal_de_jure_law_1 = {
 	potential = {
 		FROM = {
-			any_province_in_state = {
+			area_for_scope_province = {
 				has_building = gc_bureaucracy_manufactory
 			}
 		}
@@ -159,7 +159,7 @@ gc_edict_feudal_de_jure_law_1 = {
 					NOT = {
 						has_state_edict = edict_feudal_de_jure_law
 					}
-					any_province_in_state = {
+					area_for_scope_province = {
 						unrest = 1
 						NOT = { unrest = 5 }
 					}

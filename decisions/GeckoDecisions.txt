@@ -1162,6 +1162,27 @@ country_decisions = {
 				hidden_effect = {remove_estate_privilege = estate_gc_priv_11}
 			}	
 		}	
+		
+	#parliament	
+	assign_parliament_seats = {
+		potential = {
+				ai = no
+				has_parliament = yes
+				NOT = { has_country_modifier = generic_timer}
+			}
+			allow = {
+			}
+			effect = {
+				every_province_in_state = {
+					set_seat_in_parliament = yes
+				}
+				add_country_modifier = {
+					name = "generic_timer"
+					duration = 1825
+					hidden = yes
+				}
+			}
+	}
 } #End of the bracket	
 
 

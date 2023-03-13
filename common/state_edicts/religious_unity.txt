@@ -2,7 +2,7 @@ edict_religious_unity = {
 	potential = {
 		FROM = {
 			NOT = {
-				any_province_in_state = {
+				area_for_scope_province = {
 					has_building = gc_bureaucracy_manufactory
 				}
 			}
@@ -29,7 +29,7 @@ edict_religious_unity = {
 		}
 		modifier = {
 			factor = 3
-			any_province_in_state = {
+			area_for_scope_province = {
 				has_missionary = yes
 			}
 		}
@@ -39,7 +39,7 @@ edict_religious_unity = {
 gc_edict_religious_unity_1 = {
 	potential = {
 		FROM = {
-			any_province_in_state = {
+			area_for_scope_province = {
 				has_building = gc_bureaucracy_manufactory
 			}
 		}
@@ -65,7 +65,7 @@ gc_edict_religious_unity_1 = {
 		}
 		modifier = {
 			factor = 3
-			any_province_in_state = {
+			area_for_scope_province = {
 				has_missionary = yes
 			}
 		}

@@ -63,7 +63,7 @@
 #			
 #			AND = {
 #				NOT = { has_state_edict = edict_of_absolutism }
-#				any_province_in_state = {
+#				area_for_scope_province = {
 #					devastation = 10
 #				}
 #			}

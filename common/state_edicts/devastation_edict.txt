@@ -2,7 +2,7 @@ edict_devastation_edict = {
 	potential = {
 		NOT = {
 			FROM = {
-				any_province_in_state = {
+				area_for_scope_province = {
 					has_building = gc_bureaucracy_manufactory
 				}
 			}
@@ -30,7 +30,7 @@ edict_devastation_edict = {
 gc_edict_devastation_edict_1 = {
 	potential = {
 		FROM = {
-			any_province_in_state = {
+			area_for_scope_province = {
 				has_building = gc_bureaucracy_manufactory
 			}
 		}

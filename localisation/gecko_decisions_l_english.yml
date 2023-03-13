@@ -72,6 +72,8 @@
  estate_rebalance_dhimmi_desc:0 ""
  allow_estate_rebalance_title:0 "§GGrant Land to Estates§!"
  allow_estate_rebalance_desc:0 "Spend the resources of the State to change the influence our Estates have over the nation."
+ assign_parliament_seats_title:0 "Grant all Provinces Seats in Parliament."
+ assign_parliament_seats_desc:0 ""
  development_check_decision_title:0 "§TCheck Development Clicks§!"
  development_check_decision_desc:0 ""
  total_dev_clicks_check_ct:0 "Total Dev Clicks §Y[Root.DevelopmentClicksVariable.GetValue]§!"
