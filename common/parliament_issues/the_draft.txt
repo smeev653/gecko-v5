@@ -4,10 +4,16 @@ the_draft = {
 
 	allow = {
 		is_at_war = no
+		
 	}
 	
 	effect = {
 		add_years_of_manpower_scaled_to_seats = 1
+		add_country_modifier = {
+					name = "draft_timer"
+					duration = 5475
+					hidden = yes
+				}
 	}
 	
 	chance = {
@@ -15,6 +21,10 @@ the_draft = {
 		modifier = {
 			factor = 2
 			NOT = { manpower_percentage = 0.25 }
+		}
+		modifier = {
+			factor = 0
+			has_country_modifier = draft_timer
 		}
 	}
 
