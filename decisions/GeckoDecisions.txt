@@ -319,23 +319,6 @@ country_decisions = {
 
 	}
 
-	disband_janissaries = {	
-		potential = {
-				always = no
-				ai = no
-				tag = TUR
-				NOT = { current_age = age_of_discovery }
-				NOT = { has_country_flag = janissary_decadence }
-				NOT = { has_country_flag = yoklama }
-			}
-			allow = {
-				NOT = { current_age = age_of_discovery }
-				NOT = { num_of_janissaries = 1 }
-			}
-			effect = {
-				set_country_flag = yoklama
-			}
-	}
 	gc_war_taxes_notification = {
 		major = yes
 		potential = {
@@ -401,56 +384,40 @@ country_decisions = {
 	gecko_debt = {
 		major = yes
 		potential = {
+			NOT = { has_country_modifier = recover_economy_modifier }
 			ai = no
-			is_bankrupt = no
-			is_at_war = no
-			NOT = { has_country_flag = gecko_tackle_debt }
-			NOT = { has_country_modifier = gecko_debt_tackled_2 }
-			NOT = { has_country_modifier = gecko_tackle_debt_timer }
-			###X###
-			num_of_loans = 10
-			#######
        }
 		allow = {
-			ai = no
+			is_bankrupt = no
 			num_of_loans = 10
 		}
 		effect = {
-			set_country_flag = gecko_tackle_debt
-			set_country_flag = gecko_tackle_debt_timer_2
-			add_country_modifier = {
-				name = "gecko_tackle_debt_timer"
-				duration = 5475
-				hidden = yes
-			} 
+			custom_tooltip = recover_economy_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = "hidden_recovery_modifier"
+					duration = 1825
+					hidden = yes
+				}
+			}
 			add_country_modifier = {
 				name = "gecko_debt_tackled"
 				duration = -1
 			}
-			add_years_of_income = 1
 		}
 	}
 	gecko_debt_2 = {
 		major = yes
 		potential = {
+			has_country_modifier = recover_economy_modifier
 			ai = no
-			is_bankrupt = no
-			has_country_flag = gecko_tackle_debt
+			NOT = { has_country_modifier = hidden_recovery_modifier }
        }
 		allow = {
-			NOT = { years_of_income = 1.0 }
 			is_in_deficit = no
-			hidden_trigger = {
-				had_country_flag = {
-					flag = gecko_tackle_debt_timer_2
-					days = 30
-				}
-			}
 		}
 		effect = {
-			clr_country_flag = gecko_tackle_debt
-			clr_country_flag = gecko_tackle_debt_timer_2
-			remove_country_modifier = gecko_debt_tackled
+			remove_country_modifier = recover_economy_modifier
 			
 			add_country_modifier = {
 				name = "gecko_debt_tackled_2"
