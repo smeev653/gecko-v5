@@ -59,6 +59,9 @@ X_expand_infrastructure_tier_1_pmod = {
 	local_tax_modifier = 0.1
 	local_production_efficiency = 0.1
 	local_development_cost = -0.1
+	local_build_cost = -0.05
+	local_great_project_upgrade_cost = -0.05
+	local_build_time = -0.05
 	land_forcelimit = 1
 }
 X_expand_infrastructure_tier_2_pmod = {
@@ -70,6 +73,9 @@ X_expand_infrastructure_tier_2_pmod = {
 	local_tax_modifier = 0.25
 	local_production_efficiency = 0.25
 	local_development_cost = -0.2
+	local_build_cost = -0.15
+	local_great_project_upgrade_cost = -0.15
+	local_build_time = -0.15
 	land_forcelimit = 2
 }
 X_expand_infrastructure_tier_3_pmod = {
@@ -81,6 +87,9 @@ X_expand_infrastructure_tier_3_pmod = {
 	local_tax_modifier = 0.45
 	local_production_efficiency = 0.45
 	local_development_cost = -0.4
+	local_build_cost = -0.25
+	local_great_project_upgrade_cost = -0.25
+	local_build_time = -0.25
 	land_forcelimit = 3
 }
 X_expand_infrastructure_tier_4_pmod = {
@@ -92,6 +101,9 @@ X_expand_infrastructure_tier_4_pmod = {
 	local_tax_modifier = 0.7
 	local_production_efficiency = 0.7
 	local_development_cost = -0.8
+	local_build_cost = -0.35
+	local_build_time = -0.35
+	local_great_project_upgrade_cost = -0.25
 	land_forcelimit = 4
 }
 X_expand_infrastructure_tier_5_pmod = {
@@ -103,6 +115,9 @@ X_expand_infrastructure_tier_5_pmod = {
 	local_tax_modifier = 1
 	local_production_efficiency = 1
 	local_development_cost = -1.6
+	local_build_cost = -0.45
+	local_great_project_upgrade_cost = -0.25
+	local_build_time = -0.45
 	land_forcelimit = 5
 }
 X_expand_infrastructure_tier_6_pmod = {
@@ -114,6 +129,9 @@ X_expand_infrastructure_tier_6_pmod = {
 	local_tax_modifier = 1.4
 	local_production_efficiency = 1.4
 	local_development_cost = -2.4
+	local_build_cost = -0.5
+	local_great_project_upgrade_cost = -0.25
+	local_build_time = -0.5
 	land_forcelimit = 6
 }
 X_expand_infrastructure_tier_7_pmod = {
@@ -125,6 +143,9 @@ X_expand_infrastructure_tier_7_pmod = {
 	local_tax_modifier = 1.9
 	local_production_efficiency = 1.9
 	local_development_cost = -3.6
+	local_build_cost = -0.5
+	local_great_project_upgrade_cost = -0.25
+	local_build_time = -0.5
 	land_forcelimit = 7
 }
 X_expand_infrastructure_tier_8_pmod = {
@@ -136,6 +157,9 @@ X_expand_infrastructure_tier_8_pmod = {
 	local_tax_modifier = 2.5
 	local_production_efficiency = 2.5
 	local_development_cost = -4.8
+	local_build_cost = -0.5
+	local_great_project_upgrade_cost = -0.25
+	local_build_time = -0.5
 	land_forcelimit = 8
 }
 X_expand_infrastructure_tier_9_pmod = {
@@ -147,6 +171,9 @@ X_expand_infrastructure_tier_9_pmod = {
 	local_tax_modifier = 3.2
 	local_production_efficiency = 3.2
 	local_development_cost = -6
+	local_build_cost = -0.5
+	local_great_project_upgrade_cost = -0.25
+	local_build_time = -0.5
 	land_forcelimit = 9
 }
 X_expand_infrastructure_tier_10_pmod = {
@@ -158,6 +185,9 @@ X_expand_infrastructure_tier_10_pmod = {
 	local_tax_modifier = 4.0
 	local_production_efficiency = 4.0
 	local_development_cost = -7.2
+	local_build_cost = -0.5
+	local_great_project_upgrade_cost = -0.25
+	local_build_time = -0.5
 	land_forcelimit = 10
 }
 ########################################
