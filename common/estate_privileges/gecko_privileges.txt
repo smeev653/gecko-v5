@@ -3,9 +3,9 @@ estate_gc_sipahi = {
 	max_absolutism = -5
 	loyalty = 0.10
 	influence = 0.20
-	cooldown_years = 10
+	cooldown_years = 20
 	on_cooldown_expires = { 
-		country_event = { id = gecko.8 }
+		remove_estate_privilege = estate_gc_sipahi
 	}
 	is_valid = {
 		tag = TUR
@@ -14,7 +14,7 @@ estate_gc_sipahi = {
 		}
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_gc_sipahi }
+		NOT = { has_estate_privilege = estate_gc_expand_sipahi }
 		NOT = { has_estate_privilege = estate_gc_noble_levies }
 	}
 	mechanics = {
@@ -84,11 +84,12 @@ estate_gc_expand_sipahi = {
 		}
 	}
 	can_select = {
+		NOT = { has_estate_privilege = estate_gc_sipahi }
 		has_reform = derbend_organization_reform
 	}
-	#modifier = {
-	#	special_unit_forcelimit = 0.1
-	#}
+	modifier = {
+		special_unit_forcelimit = 0.1
+	}
 	on_granted = {
 		if = {
 			limit = {
@@ -139,7 +140,7 @@ estate_gc_expand_sipahi = {
 	}
 	cooldown_years = 20
 	on_cooldown_expires = {
-		remove_estate_privilege =estate_gc_expand_sipahi
+		remove_estate_privilege = estate_gc_expand_sipahi
 	}
 }
 

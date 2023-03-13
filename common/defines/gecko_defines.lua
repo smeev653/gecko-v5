@@ -51,6 +51,8 @@ NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_STATE_WITH_PROSPERITY = 0.12
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_DEVASTATION = -20.0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_TRIBUTARY_DEV = 0.5
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_5_LOANS = -0.36
+
+NDefines.NCountry.ABANDON_IDEAGROUP_REFUND = 0.25
 NDefines.NCountry.ABDICATE_LEGITIMACY_THRESHOLD = 0
 NDefines.NCountry.ABDICATE_AGE_THRESHOLD = 30
 NDefines.NCountry.ABDICATE_RULING_LENGTH_THRESHOLD = 10
@@ -123,7 +125,9 @@ NDefines.NCountry.TARIFF_LIBERTY_INCREASE = 0.5					-- Liberty increase for each
 NDefines.NCountry.TARIFF_DECREASE_STEP = -0.1
 NDefines.NCountry.MINIMUM_POLICY_TIME = 1
 NDefines.NCountry.CONCENTRATE_DEVELOPMENT_DEVELOPMENT_DECREASE = 0.0
-NDefines.NEconomy.GOLD_MINE_SIZE = 20
+NDefines.NCountry.EXPAND_INFRASTRUCTURE_DEV_LIMIT = 0
+
+NDefines.NEconomy.GOLD_MINE_SIZE = 25
 NDefines.NEconomy.EDICTS_DURATION_MONTHS = 1
 NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 10
 NDefines.NEconomy.TRADE_POWER_HOME_BONUS = 0.15
@@ -143,6 +147,9 @@ NDefines.NEconomy.CARAVAN_FACTOR = 10
 NDefines.NEconomy.CARAVAN_POWER_MAX = 20
 NDefines.NEconomy.CARAVAN_POWER_MIN = 1
 NDefines.NEconomy.COT_DOWNGRADE_PRESTIGE_COST = 0
+NDefines.NEconomy.GOLD_MINE_DEPLETION_THRESHOLD = 10				-- Gold mines above production level or above can be depleted
+NDefines.NEconomy.GOLD_MINE_DEPLETION_CHANCE = 0.05
+
 NDefines.NMilitary.FORTRESS_COST = 0.166
 NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 33.3
 NDefines.NMilitary.ARMY_DRILL_SKILL_MONTHS = 60
@@ -209,6 +216,7 @@ NDefines.NMilitary.LEADER_MAX_PIPS = 8							-- Max general/admiral pips (per sk
 NDefines.NMilitary.LEADER_MIN_PIPS = 2
 NDefines.NMilitary.SLACKEN_AP_DROP = 0
 NDefines.NMilitary.SLACKEN_MANPOWER_INCREASE = 0
+
 NDefines.NAI.BIGSHIP_FRACTION = 0.1
 NDefines.NAI.TRANSPORT_FRACTION = -1 -- Max fraction of naval forcelimit that should be transports
 NDefines.NAI.PEACE_TIME_MONTHS = 12
@@ -220,8 +228,10 @@ NDefines.NAI.PEACE_ALLY_WARGOAL_MULT = 2 -- Multiplies PEACE_WARGOAL_FACTOR for 
 NDefines.NAI.PEACE_ALLY_CAPITAL_MULT = 1
 NDefines.NAI.PEACE_DESPERATION_FACTOR = 20
 NDefines.NAI.PEACE_CALL_FOR_PEACE_FACTOR = 0
+
 NDefines.NReligion.CONVERSION_ZEAL_DURATION = 1825
 NDefines.NReligion.PIETY_MANPOWER = 0.5
+
 NDefines.NGovernment.SELECT_HEIR_FROM_HAREM_AT_MONARCH_AGE = 20
 NDefines.NGovernment.FEUDAL_THEOCRACY_INTERACTION_COOLDOWN_YEARS = 10
 NDefines.NGovernment.TRAIN_HORSEMANSHIP_DURATION_YEARS = 10
@@ -239,7 +249,8 @@ NDefines.NGovernment.CENTRALIZE_STATE_ADM_COST = 25
 NDefines.NGovernment.EXPAND_ADMIN_COST = 400.0
 NDefines.NGovernment.LEADER_AS_MONARCH_TRADITION = 15
 NDefines.NGovernment.EXPAND_INFRASTRUCTURE_ADM_COST = 0
-NDefines.NCountry.EXPAND_INFRASTRUCTURE_DEV_LIMIT = 0
+
+
 NDefines.NGame.DAYS_BEHIND_PAUSE = 90					-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will pause
 NDefines.NGame.DAYS_BEHIND_LOWER_SPEED = 999			-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will slow down
 NDefines.NGui.AUTO_SELECT_EVENT_MONTHS = 13
