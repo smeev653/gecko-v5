@@ -4149,25 +4149,9 @@ on_province_owner_change = {
 		}
 		remove_province_modifier = son_fetishism_as_secondary_religion_province
 	}
- # PR Colonial Nation Province Ownership
 
-	if = {
-		limit = {
-			owner = {
-				is_colonial_nation = yes
-				capital_scope = {
-					NOT = { colonial_region = ROOT }
-				}
-			}
-		}
-		owner = {
-			colonial_parent = {
-				ROOT = {
-					cede_province = PREV
-				}
-			}
-		}
-	}
+
+	
 
  
  	#removes Temper the Roof of Africa Modifier
