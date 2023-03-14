@@ -21,7 +21,16 @@ edict_encourage_development = {
 	
 	
 	ai_will_do = {
-		factor = 0
+		factor = 500
+		modifier = {
+			factor = 100
+			all_province_in_state = {
+				base_production = 4
+			}
+			area_for_scope_province = {
+				base_production = 16
+			}
+		}
 	}
 	
 }
@@ -47,7 +56,15 @@ gc_edict_encourage_development_1 = {
 	
 	
 	ai_will_do = {
-		factor = 0
+		factor = 500
+		modifier = {
+			factor = 200
+			all_province_in_state = {
+				base_production = 4
+			}
+			area_for_scope_province = {
+				base_production = 16
+			}
+		}
 	}
-	
 }

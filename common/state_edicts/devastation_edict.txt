@@ -23,6 +23,13 @@ edict_devastation_edict = {
 	
 	ai_will_do = {
 		factor = 0
+	
+		modifier = {
+			factor = 500
+				any_province_in_state = {
+						devastation = 1
+				}
+		}
 	}
 	
 }
@@ -50,6 +57,13 @@ gc_edict_devastation_edict_1 = {
 	
 	ai_will_do = {
 		factor = 0
+	
+		modifier = {
+			factor = 500
+				any_province_in_state = {
+						devastation = 1
+				}
+		}
 	}
 	
 }

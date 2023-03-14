@@ -23,64 +23,13 @@ edict_feudal_de_jure_law = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
-			factor = 0
-			OR = {
-				AND = {
-					NOT = {
-						has_state_edict = edict_feudal_de_jure_law
-					}
-					all_province_in_state = {
-						NOT = { unrest = 1 }
-					}
-				}
-				AND = {
-					has_state_edict = edict_feudal_de_jure_law
-					
-					all_province_in_state = {
-						NOT = { unrest = 1 }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			
-			AND = {
-				NOT = {
-					has_state_edict = edict_feudal_de_jure_law
+			factor = 500
+				area_for_scope_province = {
+						base_tax = 16
 				}
 				all_province_in_state = {
-					unrest = 1
-					NOT = { unrest = 5 }
+					base_tax = 4
 				}
-			}
-		}
-		modifier = {
-			factor = 3
-			AND = {
-				NOT = {
-					has_state_edict = edict_feudal_de_jure_law
-				}
-				all_province_in_state = {
-					unrest = 1
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				AND = {
-					NOT = {
-						has_state_edict = edict_feudal_de_jure_law
-					}
-					area_for_scope_province = {
-						unrest = 1
-						NOT = { unrest = 5 }
-					}
-				}
-				
-				has_state_edict = edict_feudal_de_jure_law
-			}
 		}
 	}
 	
@@ -107,67 +56,15 @@ gc_edict_feudal_de_jure_law_1 = {
 	
 	
 	ai_will_do = {
-		factor = 100
+		factor = 200
 		modifier = {
-			factor = 0
-			OR = {
-				AND = {
-					NOT = {
-						has_state_edict = edict_feudal_de_jure_law
-					}
-					all_province_in_state = {
-						NOT = { unrest = 1 }
-					}
-				}
-				AND = {
-					has_state_edict = edict_feudal_de_jure_law
-					
-					all_province_in_state = {
-						NOT = { unrest = 1 }
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			
-			AND = {
-				NOT = {
-					has_state_edict = edict_feudal_de_jure_law
+			factor = 500
+				area_for_scope_province = {
+						base_tax = 16
 				}
 				all_province_in_state = {
-					unrest = 1
-					NOT = { unrest = 5 }
+					base_tax = 4
 				}
-			}
-		}
-		modifier = {
-			factor = 3
-			AND = {
-				NOT = {
-					has_state_edict = edict_feudal_de_jure_law
-				}
-				all_province_in_state = {
-					unrest = 1
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				AND = {
-					NOT = {
-						has_state_edict = edict_feudal_de_jure_law
-					}
-					area_for_scope_province = {
-						unrest = 1
-						NOT = { unrest = 5 }
-					}
-				}
-				
-				has_state_edict = edict_feudal_de_jure_law
-			}
 		}
 	}
-	
 }
