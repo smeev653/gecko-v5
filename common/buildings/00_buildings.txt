@@ -55,6 +55,10 @@ marketplace = {
 
 	ai_will_do = {
 		factor = 0 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		modifier = {
+			factor = 100
+			province_trade_power = 15
+		}
 	}
 }
 
@@ -345,7 +349,7 @@ coastal_defence = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -393,7 +397,12 @@ dock = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 1
+		modifier = {
+			factor = 250
+			base_manpower = 6	
+			is_state = yes
+		}
 	}
 }
 
@@ -535,7 +544,7 @@ naval_battery = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -614,6 +623,11 @@ cathedral = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 250
+			base_tax = 4
+			is_state = yes
+		}
 	}
 }
 
@@ -641,18 +655,6 @@ university = {
 			factor = 250
 			development = 20
 			is_state = yes
-		}
-		modifier = {
-			factor = 0.9
-			OR =
-			{
-				has_climate = tropical
-				has_climate = arid
-			}
-		}
-		modifier = {
-			factor = 0.4
-			has_climate = arctic
 		}
 		modifier = {
 			factor = 2
@@ -688,7 +690,11 @@ trade_depot = {
 	}
 
 	ai_will_do = {
-		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		factor = 0 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		modifier = {
+			factor = 100
+			province_trade_power = 15
+		}
 	}
 }
 
@@ -739,7 +745,12 @@ training_fields = {
 	on_obsolete = {
 	}
 	ai_will_do = {
-		factor = 250
+		factor = 1
+		modifier = {
+			factor = 250
+			base_manpower = 3	
+			is_state = yes
+		}
 	}
 }
 
@@ -855,7 +866,11 @@ stock_exchange = {
 	on_obsolete = {
 	}
 	ai_will_do = {
-		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		factor = 0 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		modifier = {
+			factor = 100
+			province_trade_power = 15
+		}
 	}
 }
 
@@ -907,7 +922,24 @@ town_hall = {
 	on_obsolete = {
 	}
 	ai_will_do = {
+		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
 		factor = 250
+		modifier = {
+			factor = 250
+			development = 20
+			is_state = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_terrain = grasslands
+				has_terrain = drylands
+			}
+		}
+		modifier = {
+			factor = 3
+			has_terrain = farmlands
+		}
 	}
 }
 
@@ -935,7 +967,12 @@ drydock = {
 	}
 
 	ai_will_do = {
-		factor = 0
+		factor = 1
+		modifier = {
+			factor = 250
+			base_manpower = 6	
+			is_state = yes
+		}
 	}
 }
 
@@ -1095,27 +1132,6 @@ wharf = {
 
 	ai_will_do = {
 		factor = 3000
-
-		modifier = {
-			factor = 1.5
-			base_production = 10
-		}
-		modifier = {
-			factor = 1.5
-			base_production = 15
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				has_province_modifier = skanemarket
-				has_province_modifier = comet_ore_modifier
-				has_province_modifier = paradise_modifier
-			}
-		}
-		modifier = {
-			NOT = { num_free_building_slots = 3 }
-			factor = 1.5
-		}
 	}
 }
 
@@ -1230,7 +1246,7 @@ farm_estate = {
 	
 
 	ai_will_do = {
-		factor = 250
+		factor = 3000
 	}
 }
 
@@ -1435,7 +1451,12 @@ state_house = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	ai_will_do = {
-		factor = 1
+		factor = 0
+		modifier = {
+			factor = 3000
+			base_tax = 7
+			is_state = yes
+		}
 	}
 }
 ####################################################################
@@ -1488,7 +1509,7 @@ armory = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	ai_will_do = {
-		factor = 1
+		factor = 3000
 	}
 }
 
@@ -1538,6 +1559,6 @@ gc_bureaucracy_manufactory = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 	}
 }
