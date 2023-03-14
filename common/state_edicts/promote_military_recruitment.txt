@@ -21,9 +21,9 @@ edict_promote_military_recruitment = {
 	
 	
 	ai_will_do = {
-		factor = 500
+		factor = 0
 		modifier = {
-			factor = 100
+			factor = 500
 			all_province_in_state = {
 				base_manpower = 4
 			}
@@ -55,9 +55,9 @@ gc_edict_promote_military_recruitment_1 = {
 	
 	
 	ai_will_do = {
-		factor = 500
+		factor = 0
 		modifier = {
-			factor = 200
+			factor = 1000
 			all_province_in_state = {
 				base_manpower = 4
 			}

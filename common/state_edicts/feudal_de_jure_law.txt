@@ -21,7 +21,7 @@ edict_feudal_de_jure_law = {
 	
 	
 	ai_will_do = {
-		factor = 100
+		factor = 0
 		modifier = {
 			factor = 500
 				area_for_scope_province = {
@@ -56,9 +56,9 @@ gc_edict_feudal_de_jure_law_1 = {
 	
 	
 	ai_will_do = {
-		factor = 200
+		factor = 0
 		modifier = {
-			factor = 500
+			factor = 1000
 				area_for_scope_province = {
 						base_tax = 16
 				}
