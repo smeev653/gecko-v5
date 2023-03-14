@@ -1,32 +1,3 @@
-# Pope and Spoleto
-#vassal = {
-#	first = PAP
-#	second = SPL
-#	start_date = 1444.1.1
-#	end_date = 1534.1.1
-#}
-
-#Germany
-#vassal = {
-#	first = UBV
-#	second = SLZ
-#	start_date = 1444.1.1
-#	end_date = 1534.1.1
-#}
-
-#vassal = {
-#	first = SWI
-#	second = TTL
-#	start_date = 1444.1.1
-#	end_date = 1534.1.1
-#}
-
-#vassal = {
-#	first = SWI
-#	second = KNZ
-#	start_date = 1444.1.1
-#	end_date = 1534.1.1
-#}
 
 #Italian Alliances
 alliance = {
@@ -39,12 +10,6 @@ alliance = {
 alliance = {
 	first = MLO
 	second = SIC
-	start_date = 1444.1.1
-	end_date = 1454.4.9
-}
-alliance = {
-	first = KAZ
-	second = SHY
 	start_date = 1444.1.1
 	end_date = 1454.4.9
 }

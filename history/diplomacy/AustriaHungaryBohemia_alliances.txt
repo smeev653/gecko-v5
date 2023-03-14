@@ -99,12 +99,12 @@ union = {
 }
 
 # Poland-Hungary
-#union = {
-#	first = POL
-#	second = HUN
-#	start_date = 1439.10.27
-#	end_date = 1444.11.11
-#}
+union = {
+	first = POL
+	second = HUN
+	start_date = 1439.10.27
+	end_date = 1444.11.11
+}
 
 # Bohemia-Hungary
 union = {
