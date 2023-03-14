@@ -16,21 +16,6 @@ alliance = {
 	end_date = 1667.1.1
 }
 
-alliance = {
-	first = HSA
-	second = MAG
-	trade_league = 1
-	start_date = 1380.1.1
-	end_date = 1680.10.4
-}
-
-alliance = {
-	first = HSA
-	second = LUN
-	trade_league = 1
-	start_date = 1380.1.1
-	end_date = 1692.1.1
-}
 
 #alliance = {
 #	first = HSA
