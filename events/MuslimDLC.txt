@@ -16,8 +16,9 @@ country_event = {
 	trigger = {
 		has_dlc = "Star and Crescent"
 		religion_group = muslim
-		is_month = 6
-		NOT = { is_month = 8 }
+		always = no
+		#is_month = 6
+		#NOT = { is_month = 8 }
 		NOT = {
 			has_country_modifier = ignored_ramadan_timer
 		}
