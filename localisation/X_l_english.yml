@@ -649,7 +649,7 @@
  X_no_estate_province_controller:0 "§gNone§!."
  X_estate_burghers_province_restrictions:0 "-You cannot grant the Burghers control of [Root.GetName] because [Root.GetName] does not meet at least one of these conditions:\n   Province Trade Power at least 5\n   Development at least 10\n   At least one Center of Trade of level 1"
  X_estate_dhimmi_province_restrictions:0 "-You cannot grant the Dhimmi control of [Root.GetName] because [Root.GetName] does not meet at least one of these conditions:\n   Province is NOT in Muslim religion group"
- X_expand_infrastructure_cost_restrictions:0 "-You cannot Expand Infrastructure in [Root.GetName] because of the following reasons: Administrative Power is less than 40"
+ X_expand_infrastructure_cost_restrictions:0 "-You cannot Expand Infrastructure in [Root.GetName] because of the following reasons: Administrative Power is less than 25"
  X_expand_infrastructure_development_restrictions_1:0 "-You cannot Expand Infrastructure in [Root.GetName] because of the following reasons: Development in [Root.GetName] is less than 10"
  X_expand_infrastructure_development_restrictions_2:0 "-You cannot Expand Infrastructure in [Root.GetName] because of the following reasons: Development in [Root.GetName] is less than 20"
  X_expand_infrastructure_development_restrictions_3:0 "-You cannot Expand Infrastructure in [Root.GetName] because of the following reasons: Development in [Root.GetName] is less than 30"

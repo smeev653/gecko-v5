@@ -351,7 +351,7 @@ province_event = {
 				}
 			}
 		}
-		owner = { add_adm_power = -40 }
+		owner = { add_adm_power = -25 }
 		if = {
 			limit = {
 				development = 10

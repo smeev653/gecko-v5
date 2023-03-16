@@ -1310,11 +1310,36 @@ ramparts = {
 		local_defensiveness = 0.15
 		local_defender_dice_roll_bonus = 1
 	}
-	
+	build_trigger = {
+		NOT = {
+			region_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = ramparts
+					has_construction = ramparts
+				}
+			}
+		}
+	}
+	keep_trigger = {
+		NOT = {
+			region_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = ramparts
+					has_construction = ramparts
+				}
+			}
+		}
+	}	
 
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
-	one_per_country = yes
 	ai_will_do = {
 		factor = 0
 	}
