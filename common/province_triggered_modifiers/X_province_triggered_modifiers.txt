@@ -5,8 +5,8 @@ X_RUS_estate_streltsy_privilege_ptmod = {
 	}
 	trigger = {
 		always = no
-		#is_month = 0
-		#NOT = { is_month = 1 }
+		is_month = 0
+		NOT = { is_month = 1 }
 	}
 	on_activation = {
 		owner = {
