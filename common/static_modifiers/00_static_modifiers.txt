@@ -310,6 +310,7 @@ core = {
 	local_tax_modifier = 0.75				#90% more in a core
 	local_manpower_modifier = 0.5		#75% more in a core
 	local_sailors_modifier = 0.75
+	local_has_carolean = yes
 }
 
 non_core = {
@@ -668,23 +669,26 @@ cancelled_loan = {
 }
 
 bank_loan = {
-	#no effects
+	build_cost = 0.02	#0?0.02
+	great_project_upgrade_cost = 0.04	#0?0.04
+	center_of_trade_upgrade_cost = 0.04	#0?0.04	#no effects
 }
 
 inflation = {
 	build_cost = 0.01						#1% for each inflation step.
 	infantry_cost = 0.01					#1% for each inflation step
-	cavalry_cost = 0.01					#1% for each inflation step
+	cavalry_cost = 0.01						#1% for each inflation step
 	artillery_cost = 0.01					#1% for each inflation step
 	heavy_ship_cost = 0.01					#1% for each inflation step
 	light_ship_cost = 0.01					#1% for each inflation step
 	galley_cost = 0.01						#1% for each inflation step
-	#transport_cost = 0.01					#1% for each inflation step
+	transport_cost = 0.01					#1% for each inflation step
 	flagship_cost = 0.01					#1% for each inflation step
 	advisor_cost = 0.01						#1% for each inflation step
 	mercenary_cost = 0.01					#1% for each inflation step
 	fort_maintenance_modifier = 0.01		#1% for each inflation step
-	great_project_upgrade_cost = 0.02
+	great_project_upgrade_cost = 0.01
+center_of_trade_upgrade_cost = 0.01	#0?0.01
 }
 
 bankruptcy = {
