@@ -254,12 +254,6 @@ inquisitor = {
 	# Bonus
 	global_missionary_strength = 0.01
 	
-	skill_scaled_modifier = { 
-		modifier = { 
-			meritocracy = 0.25
-			global_missionary_strength = 0.01
-		} 
-	}
 	skill_scaled_modifier = {
 		trigger = {
 			owner = { 
@@ -280,7 +274,7 @@ inquisitor = {
 		}
 		modifier = { 
 			meritocracy = 0.25
-			global_missionary_strength = 0.01
+			global_missionary_strength = 0.005
 		}
 	}
 	chance = {
@@ -557,7 +551,7 @@ navigator = {
 	monarch_power = DIP
 	
 	# Bonus
-	global_colonial_growth = 20
+	global_colonial_growth = 15
 	
 	skill_scaled_modifier = {
 		trigger = {

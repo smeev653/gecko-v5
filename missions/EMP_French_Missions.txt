@@ -135,11 +135,11 @@ emp_france_missions_1 = {
 			crown_land_share = 30
 			custom_trigger_tooltip = {
 			tooltip = gc_french_development_tt
-				all_core_province = {
-							region = france_region
-							 owned_by = root
-							development = 10	
-					}
+				num_of_owned_provinces_with = {
+					value = 30 
+					region = france_region
+					development = 10
+				}
 				num_of_owned_provinces_with = {
 					value = 10 
 					region = france_region

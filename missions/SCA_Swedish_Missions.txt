@@ -2117,18 +2117,10 @@ swe_internal_slot = {
 			33 = { 
 				NOT = { devastation = 1 }
 				is_state = yes
-				if = {
-					limit = { has_dlc = "Mandate of Heaven" }
-					has_state_edict = edict_centralization_effort
-				}
 			}
 			310 = { 
 				NOT = { devastation = 1 }
 				is_state = yes
-				if = {
-					limit = { has_dlc = "Mandate of Heaven" }
-					has_state_edict = edict_centralization_effort
-				}
 			}
 		}
 		effect = {
