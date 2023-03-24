@@ -391,6 +391,7 @@ country_decisions = {
 	gecko_debt = {
 		major = yes
 		potential = {
+			has_country_flag = show_extra_decisions
 			NOT = { has_country_modifier = gecko_debt_tackled }
 			ai = no
        }
@@ -975,6 +976,7 @@ country_decisions = {
 	Create_a_Trade_Hub = {
 	
 		potential = {
+			has_country_flag = show_extra_decisions
 			ai = no
 			has_dlc = "Dharma"
 			NOT = { has_country_modifier = trade_hub_created }

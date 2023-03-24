@@ -79,6 +79,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = X_home_node_merchant_decision_cflag }
+			has_country_flag = show_extra_decisions
+			}
 		}
 		allow = {
 			home_trade_node = {
