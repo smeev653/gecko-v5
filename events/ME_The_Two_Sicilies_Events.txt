@@ -139,7 +139,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = tts_genio
-			duration = -1
+			duration = 18250
 		}
 	}
 
@@ -151,7 +151,7 @@ country_event = {
 
 		add_country_modifier = {
 			name = tts_infantry
-			duration = -1
+			duration = 18250
 		}
 	}
 }

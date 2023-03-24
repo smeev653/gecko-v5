@@ -2533,8 +2533,7 @@ tts_tonnara_siciliana = {
 
 #Events
 tts_genio = {
-	leader_siege = 1
-	siege_ability = 0.10
+	land_morale = 0.1
 }
 tts_infantry = {
 	discipline = 0.05

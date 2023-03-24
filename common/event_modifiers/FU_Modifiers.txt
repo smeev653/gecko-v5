@@ -650,8 +650,8 @@ tur_overseas_markets_modifier = {
 }
 tur_pax_ottomana_modifier = { 
 	merchants = 2 
-	yearly_army_professionalism = 0.01
-	global_prosperity_growth = 1
+	all_power_cost = -0.05
+	global_manpower_modifier = 0.1
 }
 tur_ehl-i_hiref_community_modifier = {
 	build_cost = -0.05

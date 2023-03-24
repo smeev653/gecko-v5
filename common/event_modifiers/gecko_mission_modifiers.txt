@@ -3,7 +3,7 @@ gc_growing_economy = {
 	build_time = -0.25
 	great_project_upgrade_cost = -0.25
 	development_cost = -0.05
-	interest = -0.5
+	interest = -0.25
 }
 gc_thriving_arms_industry = {
 	land_morale = 0.05
@@ -162,7 +162,7 @@ gc_hun_strong_economy = {
 	build_cost = -0.1
 	great_project_upgrade_cost = -0.25
 	development_cost = -0.05
-	interest = -0.5
+	interest = -0.25
 }
 
 gc_bur_realm_united_mod = {
@@ -329,7 +329,7 @@ gc_investment = {
 	build_time = -0.25
 	great_project_upgrade_cost = -0.25
 	development_cost = -0.05
-	interest = -0.5
+	interest = -0.25
 }
 
 increased_janissary_recruitment = {
@@ -595,7 +595,7 @@ gc_fra_paper_industry = {
 gc_french_development = {
 	local_manpower_modifier = 0.33
 	trade_goods_size_modifier = 0.25
-	local_development_cost = -0.15
+	local_development_cost = -0.25
 	local_build_cost = -0.15
 	local_governing_cost_increase = -15
 	local_governing_cost = -2

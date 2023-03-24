@@ -592,8 +592,7 @@ the_education_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	backrow_artillery_damage = 0.10
-	artillery_cost = -0.15
+	artillery_fire = 1
 
 	ai_will_do = {
 		factor = 0.8
