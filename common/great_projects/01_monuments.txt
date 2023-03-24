@@ -8369,7 +8369,6 @@ belem_tower = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_trade_power = 0.05
 			fire_damage = 0.025
 		}
 
@@ -8401,7 +8400,6 @@ belem_tower = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_trade_power = 0.1
 			fire_damage = 0.05
 		}
 
@@ -8433,7 +8431,7 @@ belem_tower = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_trade_power = 0.15
+			global_trade_power = 0.05
 			fire_damage = 0.1
 		}
 
@@ -17569,7 +17567,7 @@ gme_sagres_school_navigation = {
 		}
 		area_modifier = { }
 		country_modifiers = {
-			allowed_marine_fraction = 0.15
+			allowed_marine_fraction = 0.10
 		}
 		on_upgraded = { }
 	}
@@ -17583,7 +17581,7 @@ gme_sagres_school_navigation = {
 			local_ship_cost = -0.2
 		}
 		country_modifiers = {
-			allowed_marine_fraction = 0.25
+			allowed_marine_fraction = 0.15
 		}
 		on_upgraded = { }
 	}
@@ -17599,7 +17597,7 @@ gme_sagres_school_navigation = {
 		country_modifiers = {
 			navy_tradition_decay = -0.01
 			sailor_maintenance_modifer = -0.1
-			allowed_marine_fraction = 0.33
+			allowed_marine_fraction = 0.20
 		}
 		on_upgraded = { }
 	}
@@ -21183,6 +21181,7 @@ gme_santiago_compostela = {
 		country_modifiers = {
 			papal_influence = 0.5
 			church_loyalty_modifier = 0.05
+			land_morale = 0.0125
 		}
 		on_upgraded = { }
 	}
@@ -21200,7 +21199,7 @@ gme_santiago_compostela = {
 		country_modifiers = {
 			global_missionary_strength = 0.01
 			papal_influence = 1
-			land_morale = 0.05
+			land_morale = 0.025
 			church_loyalty_modifier = 0.10
 		}
 		on_upgraded = { }
@@ -21253,8 +21252,8 @@ gme_cathedral_seville = {
 		area_modifier = { }
 		region_modifier = { }
 		country_modifiers = {
-			papal_influence_from_cardinals = 0.15
-			build_cost = -0.025
+			papal_influence_from_cardinals = 0.25
+			build_cost = -0.0125
 		}
 		on_upgraded = { }
 	}
@@ -21269,8 +21268,8 @@ gme_cathedral_seville = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			papal_influence_from_cardinals = 0.25
-			build_cost = -0.05
+			papal_influence_from_cardinals = 0.5
+			build_cost = -0.025
 		}
 		on_upgraded = { }
 	}
@@ -21285,8 +21284,8 @@ gme_cathedral_seville = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			papal_influence_from_cardinals = 0.50
-			build_cost = -0.10
+			papal_influence_from_cardinals = 1
+			build_cost = -0.05
 		}
 		on_upgraded = { }
 	}
@@ -21349,7 +21348,7 @@ gme_casa_de_contratacion = {
 			colonist_placement_chance = 0.05
 			global_colonial_growth = 10
 			global_tariffs = 0.05
-			treasure_fleet_income = 0.15
+			treasure_fleet_income = 0.10
 		}
 		on_upgraded = { }
 	}
@@ -21363,7 +21362,7 @@ gme_casa_de_contratacion = {
 			colonist_placement_chance = 0.10
 			global_colonial_growth = 15
 			global_tariffs = 0.1
-			treasure_fleet_income = 0.25
+			treasure_fleet_income = 0.15
 		}
 		on_upgraded = { }
 	}
@@ -21432,7 +21431,7 @@ gme_al_qasr_al_muriq = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			establish_order_cost = -0.25
+			establish_order_cost = -0.15
 		}
 		on_upgraded = { }
 	}
@@ -21450,7 +21449,7 @@ gme_al_qasr_al_muriq = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			establish_order_cost = -0.50
+			establish_order_cost = -0.20
 		}
 		on_upgraded = { }
 	}
@@ -21468,7 +21467,7 @@ gme_al_qasr_al_muriq = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			establish_order_cost = -0.75
+			establish_order_cost = -0.25
 		}
 		on_upgraded = { }
 	}
@@ -21534,8 +21533,8 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			artillery_power = 0.025
-			mil_tech_cost_modifier = -0.025
+			artillery_power = 0.0125
+			mil_tech_cost_modifier = -0.0125
 		}
 		on_upgraded = { }
 	}
@@ -21550,8 +21549,8 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			artillery_power = 0.05
-			mil_tech_cost_modifier = -0.05
+			artillery_power = 0.025
+			mil_tech_cost_modifier = -0.025
 		}
 		on_upgraded = { }
 	}
@@ -21566,8 +21565,8 @@ gme_alcazar_segovia = {
 		}
 		region_modifier = { }
 		country_modifiers = {
-			artillery_power = 0.1
-			mil_tech_cost_modifier = -0.1
+			artillery_power = 0.05
+			mil_tech_cost_modifier = -0.05
 		}
 		on_upgraded = { }
 	}
