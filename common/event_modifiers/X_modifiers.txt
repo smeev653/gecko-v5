@@ -62,7 +62,7 @@ X_expand_infrastructure_tier_1_pmod = {
 	local_build_cost = -0.05
 	local_great_project_upgrade_cost = -0.05
 	local_build_time = -0.05
-	land_forcelimit = 1
+	land_forcelimit = 0.5
 }
 X_expand_infrastructure_tier_2_pmod = {
 	allowed_num_of_buildings = 2
@@ -76,7 +76,7 @@ X_expand_infrastructure_tier_2_pmod = {
 	local_build_cost = -0.15
 	local_great_project_upgrade_cost = -0.15
 	local_build_time = -0.15
-	land_forcelimit = 2
+	land_forcelimit = 1
 }
 X_expand_infrastructure_tier_3_pmod = {
 	allowed_num_of_buildings = 3
@@ -90,7 +90,7 @@ X_expand_infrastructure_tier_3_pmod = {
 	local_build_cost = -0.25
 	local_great_project_upgrade_cost = -0.25
 	local_build_time = -0.25
-	land_forcelimit = 3
+	land_forcelimit = 1.5
 }
 X_expand_infrastructure_tier_4_pmod = {
 	allowed_num_of_buildings = 4
@@ -104,7 +104,7 @@ X_expand_infrastructure_tier_4_pmod = {
 	local_build_cost = -0.35
 	local_build_time = -0.35
 	local_great_project_upgrade_cost = -0.25
-	land_forcelimit = 4
+	land_forcelimit = 2
 }
 X_expand_infrastructure_tier_5_pmod = {
 	allowed_num_of_buildings = 5
@@ -118,7 +118,7 @@ X_expand_infrastructure_tier_5_pmod = {
 	local_build_cost = -0.45
 	local_great_project_upgrade_cost = -0.25
 	local_build_time = -0.45
-	land_forcelimit = 5
+	land_forcelimit = 2.5
 }
 X_expand_infrastructure_tier_6_pmod = {
 	allowed_num_of_buildings = 6
@@ -132,7 +132,7 @@ X_expand_infrastructure_tier_6_pmod = {
 	local_build_cost = -0.5
 	local_great_project_upgrade_cost = -0.25
 	local_build_time = -0.5
-	land_forcelimit = 6
+	land_forcelimit = 3
 }
 X_expand_infrastructure_tier_7_pmod = {
 	allowed_num_of_buildings = 7
@@ -146,7 +146,7 @@ X_expand_infrastructure_tier_7_pmod = {
 	local_build_cost = -0.5
 	local_great_project_upgrade_cost = -0.25
 	local_build_time = -0.5
-	land_forcelimit = 7
+	land_forcelimit = 3.5
 }
 X_expand_infrastructure_tier_8_pmod = {
 	allowed_num_of_buildings = 8
@@ -160,7 +160,7 @@ X_expand_infrastructure_tier_8_pmod = {
 	local_build_cost = -0.5
 	local_great_project_upgrade_cost = -0.25
 	local_build_time = -0.5
-	land_forcelimit = 8
+	land_forcelimit = 4
 }
 X_expand_infrastructure_tier_9_pmod = {
 	allowed_num_of_buildings = 9
@@ -174,7 +174,7 @@ X_expand_infrastructure_tier_9_pmod = {
 	local_build_cost = -0.5
 	local_great_project_upgrade_cost = -0.25
 	local_build_time = -0.5
-	land_forcelimit = 9
+	land_forcelimit = 4.5
 }
 X_expand_infrastructure_tier_10_pmod = {
 	allowed_num_of_buildings = 10
@@ -188,7 +188,7 @@ X_expand_infrastructure_tier_10_pmod = {
 	local_build_cost = -0.5
 	local_great_project_upgrade_cost = -0.25
 	local_build_time = -0.5
-	land_forcelimit = 10
+	land_forcelimit = 5
 }
 ########################################
 # Modifiers for Venice
@@ -471,7 +471,7 @@ X_POR_manueline_architecture_cmod = {
 	build_time = -0.10
 	great_project_upgrade_cost = -0.25
 	development_cost = -0.05
-	interest = -0.5
+	interest = -0.25
 }
 X_POR_proto_colonialism_cmod = {
 	global_colonial_growth = 10
