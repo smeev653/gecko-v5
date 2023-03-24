@@ -1013,8 +1013,8 @@ country_decisions = {
 		
 	}
 	show_extra_decisions = {
+		major = yes
 		potential = {
-				major = yes
 				ai = no
 				NOT = { has_country_flag = show_extra_decisions }
 			}
