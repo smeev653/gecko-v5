@@ -3,6 +3,7 @@ country_decisions = {
 	development_check_decision = {
 		potential = {
 			ai = no
+			has_country_flag = show_extra_decisions
 		}
 		
 		provinces_to_highlight = {

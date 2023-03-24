@@ -2372,9 +2372,8 @@ country_event = {
    title = gecko.18.t
     desc = gecko.18.d
 	picture = COURT_eventPicture
-   trigger = {
-		is_triggered_only = yes
-	}
+	is_triggered_only = yes
+	
 	hidden = yes
 	
 	immediate = {

@@ -2,6 +2,7 @@ country_decisions = {
 	
 	sm_hire_general = {
 			potential = {
+				has_country_flag = show_extra_decisions
 				is_bankrupt = no
 				ai = no
 				NOT = { has_country_flag = sm_hire_general }
@@ -21,6 +22,7 @@ country_decisions = {
 		
 	sm_hire_recruitmaster = {
 			potential = {
+				has_country_flag = show_extra_decisions
 				ai = no
 				NOT = { has_country_flag = sm_hire_recruitmaster }
 			}
@@ -43,6 +45,7 @@ country_decisions = {
 		}
 	sm_hire_naval_reformer = {
 			potential = {
+				has_country_flag = show_extra_decisions
 				ai = no
 				NOT = { has_country_modifier = hired_naval_reformer }
 			}
@@ -97,6 +100,7 @@ country_decisions = {
 	
 	sm_hire_explorer = {	
 		potential = {
+				has_country_flag = show_extra_decisions
 				is_bankrupt = no
 				ai = no
 				#has_institution = new_world_i
@@ -118,6 +122,7 @@ country_decisions = {
 		
 	sm_hire_conquistador = {	
 		potential = {
+				has_country_flag = show_extra_decisions
 				is_bankrupt = no
 				ai = no
 				#has_institution = new_world_i
@@ -263,6 +268,7 @@ country_decisions = {
 			}
 	drain_the_mesopotamian_marshes = {
 		potential = {
+			has_country_flag = show_extra_decisions
 			owns = 2311
 			#owns = 4288
 			#owns = 4290
@@ -370,6 +376,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
+			has_country_flag = show_extra_decisions
        }
 		allow = {
 			adm_power = 25
@@ -1005,24 +1012,35 @@ country_decisions = {
 		}
 		
 	}
-	allow_estate_rebalance = {
+	show_extra_decisions = {
 		potential = {
+				major = yes
 				ai = no
-				crown_land_share = 25
-				NOT = { has_country_flag = allowed_estate_rebalance }
+				NOT = { has_country_flag = show_extra_decisions }
 			}
 			allow = {
 			}
 			effect = {
-				set_country_flag = allowed_estate_rebalance
+				set_country_flag = show_extra_decisions
+			}
+	}
+	hide_extra_decisions = {
+		potential = {
+				ai = no
+				has_country_flag = show_extra_decisions
+			}
+			allow = {
+			}
+			effect = {
+				clr_country_flag = show_extra_decisions
 			}
 	}		
 	estate_rebalance_nobles = {	
 		potential = {
+				has_country_flag = show_extra_decisions
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_nobles }
 				has_estate = estate_nobles
-				has_country_flag = allowed_estate_rebalance
 			}
 			allow = {
 				crown_land_share = 25
@@ -1061,10 +1079,10 @@ country_decisions = {
 		}
 	estate_rebalance_tribes = {	
 		potential = {
+				has_country_flag = show_extra_decisions
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_tribes }
 				has_estate = estate_nomadic_tribes
-				has_country_flag = allowed_estate_rebalance
 			}
 			allow = {
 				crown_land_share = 25
@@ -1103,10 +1121,10 @@ country_decisions = {
 		}
 	estate_rebalance_church = {	
 		potential = {
+				has_country_flag = show_extra_decisions
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_church }
 				has_estate = estate_church
-				has_country_flag = allowed_estate_rebalance
 			}
 			allow = {
 				crown_land_share = 25
@@ -1145,10 +1163,10 @@ country_decisions = {
 		}
 	estate_rebalance_burghers = {	
 		potential = {
+				has_country_flag = show_extra_decisions
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_burghers}
 				has_estate = estate_burghers
-				has_country_flag = allowed_estate_rebalance
 			}
 			allow = {
 				crown_land_share = 25
@@ -1187,10 +1205,10 @@ country_decisions = {
 		}
 	estate_rebalance_dhimmi = {	
 		potential = {
+				has_country_flag = show_extra_decisions
 				ai = no
 				NOT = { has_country_modifier = estate_rebalance_dhimmi}
 				has_estate = estate_dhimmi
-				has_country_flag = allowed_estate_rebalance
 			}
 			allow = {
 				crown_land_share = 25
@@ -1226,7 +1244,31 @@ country_decisions = {
 				}
 				hidden_effect = {remove_estate_privilege = estate_gc_priv_11}
 			}	
+		}
+		Show_manus = {
+			potential = {
+				has_country_flag = show_extra_decisions
+				ai = no
+				OR = {
+					adm_tech = 11
+					dip_tech = 11
+					mil_tech = 11
+				}	
+			}
+			allow = {
+				always = no
+			}	
+			provinces_to_highlight = {
+				NOT = { has_production_building_trigger = yes }
+				has_manufactory_no_custom_tooltip_trigger = yes
+				
+				OR = {
+					 owned_by = ROOT 
+					 is_core = ROOT 
+				}
+			}
+			effect = {
+			}
 		}	
 } #End of the bracket	
-
-
+	
