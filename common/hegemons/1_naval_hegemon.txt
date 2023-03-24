@@ -9,10 +9,9 @@ naval_hegemon = {
 			drydock = 10
 		}	
 		shipyard = 15
-
+		
 		
 		#naval_forcelimit = 500
-		#sailors = 50000
 		NOT = { any_other_great_power = { num_of_heavy_ship = root } }
 	}
 	
@@ -25,7 +24,7 @@ naval_hegemon = {
 	# At max 100% tickup.
 	scale = {
 		global_sailors_modifier = 2.0
-		trade_efficiency = 0.2
+		trade_efficiency = 0.15
 		global_ship_cost = -0.2
 		ship_durability = 0.1
 		reduced_liberty_desire = 20
@@ -33,7 +32,7 @@ naval_hegemon = {
 	}
 	
 	max = {
-		own_coast_naval_combat_bonus = 1.0
+		global_naval_engagement_modifier = 0.10
 		all_power_cost = -0.1
 		backrow_artillery_damage = 0.15
 	}

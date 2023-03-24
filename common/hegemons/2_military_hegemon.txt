@@ -3,7 +3,6 @@ military_hegemon = {
 		is_great_power = yes
 		army_size = 1000
 		NOT = { any_other_great_power = { army_size = root } }
-		#manpower = 250
 	}
 	
 	base = {
@@ -24,7 +23,7 @@ military_hegemon = {
 	max = {
 		all_power_cost = -0.1
 		land_forcelimit_modifier = 0.15
-		global_manpower_modifier = 0.10
+		land_morale = 0.1
 	}
 	
 }
