@@ -12,7 +12,7 @@ reduce_trade_regulations = {
 	
 	modifier = {
 		trade_efficiency = 0.10
-		global_trade_power = 0.05
+		global_trade_power = 0.1
 	}
 	
 	chance = {
