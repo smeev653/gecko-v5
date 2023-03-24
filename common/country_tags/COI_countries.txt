@@ -1,3 +1,0 @@
-
-STI = "countries/Asti.txt"
-RIM = "countries/Rimini.txt"

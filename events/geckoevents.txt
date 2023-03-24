@@ -1106,113 +1106,7 @@ picture = COURT_eventPicture
 }
 
 
-###merc modifying event###
-country_event = {
-	id = gecko.28
-	title = gecko.28.title
-	desc = gecko.28.desc
-	picture = LAND_MILITARY_eventPicture
 
-	is_triggered_only = yes
-	hidden = yes
-	option = {
-		name = gecko.28.a
-		
-		custom_tooltip = gecko_increased_merc_limit_tt
-			
-			hidden_effect = {
-				export_to_variable = {
-						which = geckomercvalue
-						value = trigger_value:num_of_mercenaries
-						who = ROOT
-					}
-				#add_country_modifier = {
-				#	name = "We_stand_alone"
-				#	duration = 3650
-				#}
-				if = {
-					limit = {
-						OR = {
-							AND = {
-								 has_country_modifier = We_stand_alone
-								 has_age_ability = ab_hesse_mercs
-							}
-							AND = {
-								 has_country_modifier = We_stand_alone
-								 has_age_ability = ab_burgundy_merc_manpower
-							}
-						}
-					}
-					set_variable = {            
-								which = availablegeckomercs
-								value = 1.3
-						}	
-					add_country_modifier = {
-						name = "130percentavailablemercs"
-						duration = -1
-						hidden = yes
-					}	
-				}
-				else = {
-					set_variable = {            
-							which = availablegeckomercs
-							value = 1.1
-					}
-				}	
-			}
-	}
-	option = {
-		name = gecko.28.b
-		
-		custom_tooltip = gecko_decreased_merc_limit_tt
-			
-			hidden_effect = {
-				export_to_variable = {
-						which = geckomercvalue
-						value = trigger_value:num_of_mercenaries
-						who = ROOT
-					}
-				add_country_modifier = {
-					name = "increased_merc_quality"
-					duration = 3650
-				}
-				if = {
-					limit = {
-						OR = {
-							AND = {
-								 has_country_modifier = increased_merc_quality
-								 has_age_ability = ab_hesse_mercs
-							}
-							AND = {
-								 has_country_modifier = increased_merc_quality
-								 has_age_ability = ab_burgundy_merc_manpower
-							}
-						}
-					}
-					set_variable = {            
-								which = availablegeckomercs
-								value = 1
-						}
-					add_country_modifier = {
-						name = "100percentavailablemercs"
-						duration = -1
-						hidden = yes
-					}
-				}
-				else = {
-					set_variable = {            
-							which = availablegeckomercs
-							value = 0.85
-					}
-				}
-			}
-	}
-	option = {
-		name = gecko.28.c
-		
-		#nothing
-	}
-}
 
 ####on losing age ability for increased available mercs####
 country_event = {
@@ -1264,73 +1158,7 @@ picture = COURT_eventPicture
 	}
 }
 
-###on losing increased merc quality modifier #####
-country_event = {
-    id = gecko.26
-   title = gecko.26.t
-    desc = gecko.26.d
-picture = COURT_eventPicture
 
-   trigger = {
-        ROOT = {
-         ai = no
-		}
-			NOT =  { has_country_modifier = increased_merc_quality }
-			NOT = { 
-				check_variable = {
-								which = availablegeckomercs
-								value = 0.85
-							}
-			}
-   }
-	hidden = yes
-    mean_time_to_happen = {
-        days = 1
-    }
-	
-	immediate = {
-				set_variable = {            
-							which = availablegeckomercs
-							value = 1
-					}
-						
-	}
-	option = {	
-	}
-}
-###on losing increased quality but having available mercs ###
-country_event = {
-    id = gecko.27
-   title = gecko.27.t
-    desc = gecko.27.d
-picture = COURT_eventPicture
-
-   trigger = {
-         ROOT = {
-         ai = no
-		}
-			NOT =  { has_country_modifier = increased_merc_quality }
-			has_country_modifier = 100percentavailablemercs
-			OR = {
-				has_age_ability = ab_burgundy_merc_manpower
-				has_age_ability = ab_hesse_mercs
-			}
-   }
-	
-    mean_time_to_happen = {
-        days = 1
-    }
-	hidden = yes
-	immediate = {
-				set_variable = {            
-							which = availablegeckomercs
-							value = 1.1
-					}
-				remove_country_modifier = 100percentavailablemercs
-	}
-	option = {	
-	}
-}
 
 ###on losing increased merc recruitment but having available mercs ###
 country_event = {
@@ -1487,228 +1315,10 @@ if = {
 	}
 }
 
-##increase available mercs event with age ability option####
-country_event = {
-    id = gecko.23
-   title = gecko.23.t
-    desc = gecko.23.d
-picture = COURT_eventPicture
-
-   trigger = {
-        ROOT = {
-         ai = no
-		}
-		 OR = {
-			 has_age_ability = ab_burgundy_merc_manpower
-			 has_age_ability = ab_hesse_mercs
-		}	 
-		has_country_modifier = We_stand_alone
-		 
-		NOT = {  has_country_modifier = increased_merc_quality }
-		check_variable = {
-								which = availablegeckomercs
-								value = 1.1
-							}
-		NOT = {
-			check_variable = {
-								which = availablegeckomercs
-								value = 1.3
-							}
-		}	
-	}	
-		
-	mean_time_to_happen = {
-			days = 1
-	}
-	hidden = yes
-	immediate = {
-		if = {
-			limit = {
-			    OR = {
-					AND = {
-						 has_country_modifier = We_stand_alone
-						 has_age_ability = ab_hesse_mercs
-					}
-					AND = {
-						 has_country_modifier = We_stand_alone
-						 has_age_ability = ab_burgundy_merc_manpower
-					}
-				}
-			}
-			set_variable = {            
-						which = availablegeckomercs
-						value = 1.3
-				}	
-			add_country_modifier = {
-					name = "130percentavailablemercs"
-					duration = -1
-				}
-		}
-		else = {
-				set_variable = {            
-						which = availablegeckomercs
-						value = 1.1
-				}
-			}	
-	}
-	option = {	
-	}
-}
 
 
-##increase merc quality event with age ability option####
-country_event = {
-    id = gecko.31
-   title = gecko.31.t
-    desc = gecko.31.d
-picture = COURT_eventPicture
 
-   trigger = {
-         ROOT = {
-         ai = no
-		}
-			OR = {
-			 has_age_ability = ab_burgundy_merc_manpower
-			 has_age_ability = ab_hesse_mercs
-			} 
-			 has_country_modifier = increased_merc_quality
 
-		 
-		 NOT = {  has_country_modifier = We_stand_alone}
-		 check_variable = {
-								which = availablegeckomercs
-								value = 0.85
-							}
-		 NOT = {
-				check_variable = {
-								which = availablegeckomercs
-								value = 1
-							}
-		 
-			}
-	}		
-	hidden = yes	
-	mean_time_to_happen = {
-			days = 1
-	}
-
-	immediate = {
-		if = {
-			limit = {
-			    OR = {
-					AND = {
-						 has_country_modifier = increased_merc_quality
-						 has_age_ability = ab_hesse_mercs
-					}
-					AND = {
-						 has_country_modifier = increased_merc_quality
-						 has_age_ability = ab_burgundy_merc_manpower
-					}
-				}
-			}
-			set_variable = {            
-						which = availablegeckomercs
-						value = 1
-				}
-			add_country_modifier = {
-					name = "100percentavailablemercs"
-					duration = -1
-				}
-		}
-		else = {
-				set_variable = {            
-						which = availablegeckomercs
-						value = 0.85
-				}
-			}	
-	}
-	option = {	
-	}
-}
-
-##on losing age ability with increase quality option####
-country_event = {
-    id = gecko.32
-   title = gecko.32.t
-    desc = gecko.32.d
-picture = COURT_eventPicture
-
-   trigger = {
-         ROOT = {
-         ai = no
-		}
-			AND = {
-				NOT = {	has_age_ability = ab_burgundy_merc_manpower }
-				NOT = {	has_age_ability = ab_hesse_mercs }
-			}	
-			 has_country_modifier = increased_merc_quality
-			 has_country_modifier = 100percentavailablemercs
-		 NOT = {  has_country_modifier = We_stand_alone }
-			check_variable = {
-								which = availablegeckomercs
-								value = 1
-							}
-		 
-			
-	}		
-		hidden = yes
-	mean_time_to_happen = {
-			days = 1
-	}
-
-	immediate = {
-			set_variable = {            
-						which = availablegeckomercs
-						value = 0.85
-				}
-			remove_country_modifier = 100percentavailablemercs
-		}	
-	
-	option = {	
-	}
-}
-
-##on losing age ability with increase merc recruitment option####
-country_event = {
-    id = gecko.33
-   title = gecko.33.t
-    desc = gecko.33.d
-picture = COURT_eventPicture
-
-   trigger = {
-         ROOT = {
-         ai = no
-		}
-			AND = {
-				NOT = {	has_age_ability = ab_burgundy_merc_manpower }
-				NOT = {	has_age_ability = ab_hesse_mercs }
-			}	
-			 has_country_modifier = We_stand_alone
-			 has_country_modifier = 130percentavailablemercs
-		 NOT = {  has_country_modifier = increased_merc_quality }
-			check_variable = {
-								which = availablegeckomercs
-								value = 1.3
-							}
-		 
-			
-	}		
-		
-	mean_time_to_happen = {
-			days = 1
-	}
-		hidden = yes
-	immediate = {
-			set_variable = {            
-						which = availablegeckomercs
-						value = 1.1
-				}
-			remove_country_modifier = 130percentavailablemercs
-		}	
-	
-	option = {	
-	}
-}
 
 ## available mercs age ability ####
 country_event = {
@@ -1758,7 +1368,7 @@ picture = COURT_eventPicture
 
    trigger = {
 		has_country_flag = improve_development_on_buildings_built
-		is_year = 1490
+		is_year = 1475
 	}		
 	hidden = yes	
 	mean_time_to_happen = {
@@ -3070,67 +2680,7 @@ country_event = {
 	}
 }
 
-######remove excess mercs########
 
-country_event = {
-    id = gecko.40
-   title = gecko.40.t
-    desc = gecko.40.d
-	picture = COURT_eventPicture
-	
-   trigger = {
-			always = no
-			ROOT = {
-				ai = no
-			}
-			any_owned_province = {
-				has_province_modifier = "merc_recruited"
-			}	
-		check_variable = {
-						which = geckomercvalue
-						which = geckomercFL
-		}
-	}		
-	hidden = yes
-	mean_time_to_happen = {
-			days = 1
-	}
-
-	immediate = {
-		capital_scope = {
-			kill_units = {
-				who = controller
-				type = infantry
-				amount = 1
-			}
-			every_neighbor_province	= {
-						limit = {
-						 OR = {
-							country_or_non_sovereign_subject_holds = ROOT
-							controlled_by = ROOT
-							}	
-						}
-						if = {
-							limit = {
-								has_province_modifier = "merc_recruited"
-							}
-							extend_province_modifier = { name = "merc_recruited" duration = 30 }
-						}
-			}
-		}
-		if = {
-				limit = {
-						has_country_modifier = Minor
-					}
-				add_years_of_income = 0.075	
-			}
-			else = {	
-				add_treasury = 25
-			}
-	}
-	option = {	
-	}
-}
 
 ##we stand alone with age ability option####
 country_event = {
@@ -3289,9 +2839,10 @@ country_event = {
 					name = "trade_hub_created_in_province"
 					duration = 3650
 				}
-				add_province_modifier = {
+				add_country_modifier = {
 					name = "trade_hub_created"
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}

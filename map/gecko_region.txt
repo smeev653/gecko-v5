@@ -133,6 +133,7 @@ south_german_region = {
 		tirol_area
 		austria_proper_area
 		inner_austria_area
+		krain_area
 		switzerland_area
 		grisons_area
 		bern_area
@@ -314,7 +315,6 @@ balkan_region = {
 		X_central_greece_area
 		eastern_mediterrenean_islands_area
 		aegean_archipelago_area
-		krain_area
 	}
 }
 
@@ -652,9 +652,9 @@ central_asia_region = {
 		arys_area
 		lower_yik_area
 		syr_darya_area
-		#kashgaria_area
-		#tarim_basin_area
-		#shanshan_area
+		kashgaria_area
+		tarim_basin_area
+		shanshan_area
 		kyzylkum_area
 	}
 }
@@ -663,9 +663,9 @@ south_africa_region = {
 	areas = {
 		south_african_plateau_area
 		cape_of_good_hope_area
-		#zimbabwe_area
+		zimbabwe_area
 		quelimane_area
-		#butua_area
+		butua_area
 		limpopo_area
 		transvaal_area
 		highveld_area
@@ -688,6 +688,8 @@ west_siberia_region = {
 		yrtesh_area
 		ob_area
 		central_siberia_area
+		tunguska_area
+		irkutsk_area
 		ishim_area
 		kara_area
 		aqmola_area
@@ -719,14 +721,13 @@ mongolia_region = {
 		turpan_kumul_area
 		tannu_uriankhai_area
 		xilin_gol_area
-		west_gansu_area
 		chahar_area
 		cicigar_area
 	}
 }
 
 manchuria_region = {
-areas = {
+	areas = {
 		heilongjiang_area
 		east_heilongjiang_area
 		jilin_area
@@ -767,12 +768,10 @@ tibet_region = {
 
 hindusthan_region = {
 	areas = {
-		
-		jaipur_area
-		jangladesh_area
-		#bihar_area
+		bihar_area
 		oudh_area
 		purvanchal_area
+		nepal_area
 		himalayan_hills_area
 		lower_doab_area
 		upper_doab_area
@@ -780,6 +779,7 @@ hindusthan_region = {
 		lahore_area
 		multan_area
 		kashmir_area
+		mithila_area
 		baghelkhand_area
 		gird_area
 		katehar_area
@@ -817,14 +817,16 @@ west_india_region = {
 	areas = {
 		marwar_area
 		mewar_area
+		jaipur_area
 		malwa_area
 		saurashtra_area
 		tapti_area
+		sindh_area
+		northern_sindh_area
 		khandesh_area
 		ahmedabad_area
 		patan_area
-		sindh_area
-		northern_sindh_area
+		jangladesh_area
 	}
 	monsoon = {
 		00.07.01
@@ -864,7 +866,6 @@ coromandel_region = {
 		kongu_area
 		south_carnatic_area
 		north_carnatic_area
-		#indian_ocean_islands_area
 	}
 	monsoon = {
 		00.06.01
@@ -891,7 +892,7 @@ burma_region = {
 }
 
 japan_region = {
-areas = {
+	areas = {
 		hokkaido_area
 		hokuriku_area
 		kanto_area
@@ -938,7 +939,7 @@ australia_region = {
 
 
 south_china_region = {
-areas = {
+	areas = {
 		guangdong_area
 		west_guangdong_area
 		fujian_area
@@ -956,8 +957,9 @@ areas = {
 		00.06.30
 	}
 }
+
 xinan_region = {
-areas = {
+	areas = {
 		sichuan_area
 		yun_gui_area
 		chuannan_area
@@ -965,7 +967,6 @@ areas = {
 		chuanbei_area
 	}
 }
-
 
 north_china_region = {
 	areas = {
@@ -1157,7 +1158,7 @@ indonesia_region = { #Eastern Indonesian/Malayan Islands.
 		central_java_area
 		west_java_area
 		lesser_sunda_islands_area
-		#indonesian_islands_area
+		indonesian_islands_area
 		surabaya_area
 		banten_area
 	}
@@ -1170,6 +1171,8 @@ indonesia_region = { #Eastern Indonesian/Malayan Islands.
 		00.03.30
 	}
 }
+
+
 oceanea_region = {
 	areas = {
 		polynesia_area
@@ -1405,6 +1408,7 @@ rio_grande_region = {
 
 central_america_region = {
 	areas = {
+		guatemala_area
 		honduras_area
 		nicaragua_area
 		yucatan_area

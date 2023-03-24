@@ -127,16 +127,6 @@ declarewar = {
 			}
 		}
 	}
-	#######
-	condition = {
-		tooltip = h_tooltip_cn_declarewar
-		potential = {
-			is_colonial_nation = yes
-		}
-		allow = {
-			FROM = { same_continent = ROOT }
-		}
-	}
 	condition = {
 		tooltip = gecko_stability
 		potential = {
@@ -145,172 +135,8 @@ declarewar = {
 			stability = 0
 		}
 	}
-	#condition = {
-	#	tooltip = gc_may_not_declare_war_yet
-	#	potential = {
-	#		ROOT = { ai = no }
-	#		NOT = { is_year = 1450 }
-	#	}
-	#	allow = {
-	#			FROM = { 
-	#				NOT = {
-	#					OR = {
-	#						ai = no
-	#						is_subject_of = FROM
-	#					}
-	#				
-	#				}
-	#			}
-	#	}
-	#}	
-	#condition = {
-	#	tooltip = gc_may_not_declare_war_yet_empswi
-	#	potential = {
-	#		is_emperor = yes
-	#		NOT = { is_year = 1465 }
-	#		ai = no
-	#	}
-	#	allow = {
-	#			FROM = { 
-	#				NOT = {
-	#					OR = {
-	#						tag = SWI
-	#						is_subject_of = SWI
-	#					}
-	#				}
-	#			}
-	#	}
-	#}
-	#condition = {
-	#	tooltip = gc_may_not_declare_war_yet_brahsa
-	#	potential = {
-	#		OR = { 
-	#			 tag = HSA
-	#			 tag = BRA
-	#		}
-	#		NOT = { is_year = 1460 }
-	#		ai = no
-	#	}
-	#	allow = {
-	#		FROM = {
-	#			NOT = {
-	#				OR = {
-	#					tag = BRA
-	#					tag = HSA 
-	#					is_subject_of = BRA
-	#					is_subject_of = HSA
-	#				}
-	#			}
-	#		}
-	#	}
-	#}	
-	#condition = {
-	#	tooltip = gc_may_not_declare_war_yet_polcrimos
-	#	potential = {
-	#		OR = { 
-	#			 tag = POL
-	#			 tag = MOS
-	#			 tag = CRI
-	#		}
-	#		NOT = { is_year = 1460 }
-	#		ai = no
-	#	}
-	#	allow = {
-	#		FROM = {
-	#			NOT = {
-	#				OR = {
-	#					tag = MOS
-	#					tag = CRI 
-	#					tag = POL
-	#					is_subject_of = MOS
-	#					is_subject_of = CRI 
-	#					is_subject_of = POL
-	#				}
-	#			}
-	#		}
-	#	}
-	#}
-	#condition = {
-	#	tooltip = gc_may_not_declare_war_yet_papsic
-	#	potential = {
-	#		OR = { 
-	#			 tag = PAP
-	#			 tag = SIC
-	#		}
-	#		NOT = { is_year = 1455 }
-	#		ai = no
-	#	}
-	#	allow = {
-	#		FROM = {
-	#			NOT = {
-	#				OR = {
-	#					tag = PAP
-	#					tag = SIC
-	#					is_subject_of = PAP
-	#					is_subject_of = SIC
-	#				}
-	#			}
-	#		}
-	#	}
-	#}
-	#condition = {
-	#	tooltip = gc_may_not_declare_war_yet_mamorm
-	#	potential = {
-	#		tag = MAM
-	#		NOT = { is_year = 1460 }
-	#		ai = no
-	#	}
-	#	allow = {
-	#		FROM = { 
-	#			NOT = {
-	#				OR = {
-	#					tag = ORM
-	#					is_subject_of = ORM
-	#				}	
-	#			}
-	#		}	
-	#	}
-	#}
-	#condition = {
-	#	tooltip = gc_may_not_declare_war_yet_mormal
-	#	potential = {
-	#		tag = MOR
-	#		NOT = { is_year = 1460 }
-	#		ai = no
-	#	}
-	#	allow = {
-	#		FROM = { 
-	#			NOT = {
-	#				OR = {
-	#					tag = MAL
-	#					is_subject_of = MAL
-	#				}	
-	#			}
-	#		}
-	#	}
-	#}
 }
 	
-#threaten_war = {
-#	condition = {
-#		tooltip = gc_may_not_declare_war_yet
-#		potential = {
-#			ROOT = { ai = no }
-#			NOT = { is_year = 1450 }
-#		}
-#		allow = {
-#				FROM = { 
-#					NOT = {
-#						OR = {
-#							ai = no
-#							is_subject_of = FROM
-#						}
-#					
-#					}
-#				}
-#		}
-#	}
-#}	
 royal_marriage = {
 	condition = {
 		tooltip = MARWAR
@@ -338,22 +164,6 @@ annexationaction = {
 			}
 		}
 	}
-	#condition = {
-	#	tooltip = ANNEXINVALID
-	#	potential = {
-	#		FROM = {
-	#			vassal_of = ROOT
-	#		}
-	#	}
-	#	allow = {
-	#		FROM = {
-	#			years_in_vassalage_under = {
-	#				who = ROOT
-	#				years = 10
-	#			}
-	#		}
-	#	}
-	#}
 }
 
 integrationaction = {
@@ -401,14 +211,6 @@ vassalaction = {
 				}
 			}
 			FROM = { is_at_war = no }
-		}
-	}
-	condition = {
-		tooltip = h_tooltip_vassalize
-		potential = {
-		}
-		allow = {
-			FROM = { ai = yes }
 		}
 	}
 }
@@ -459,15 +261,6 @@ request_to_join_trade_league = {
 					share = 1
 				}
 			}
-		}
-	}
-	condition = {
-		tooltip = gc_knights
-		potential = {
-			ROOT = { tag = KNI}
-		}
-		allow = {
-			always = no
 		}
 	}
 }
@@ -529,19 +322,6 @@ allianceaction = {
 		}
 		allow = {
 			FROM = { is_colonial_nation = no }
-		}
-	}
-	condition = {
-		tooltip = h_tooltip_many_allies
-		potential = {
-			ROOT = { ai = yes }
-		}
-		allow = {
-			ROOT = {
-				NOT = {
-					num_of_allies = 1
-				}
-			}
 		}
 	}
 	condition = {

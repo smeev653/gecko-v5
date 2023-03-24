@@ -10,3 +10,5 @@ AHU = "countries/HabsburgEmpire.txt"
 #Gecko
 EOH = "countries/EmpireOfHungary.txt"
 FU5 = "countries/KraliyetMacaristanFU.txt"
+STI = "countries/Asti.txt"
+RIM = "countries/Rimini.txt"

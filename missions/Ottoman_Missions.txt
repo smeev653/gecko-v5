@@ -4691,7 +4691,6 @@ ottoman_missions_5 = {
 				has_manufactory_trigger = yes 
 				value = 50 
 			}
-			has_institution = manufactories 
 			OR = { 
 				production_efficiency = 0.3
 				production_income_percentage = 0.3
@@ -4712,7 +4711,7 @@ ottoman_missions_5 = {
 		trigger = { 
 			has_institution = global_trade 
 			OR = {
-				1320 = { highest_value_trade_node = yes }
+				151 = { highest_value_trade_node = yes }
 				AND = { 
 					full_idea_group = trade_ideas 
 					monthly_income = 500
