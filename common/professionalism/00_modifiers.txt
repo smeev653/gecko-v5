@@ -65,7 +65,8 @@ general_cost_modifier = {
 	}
 
 	reserves_organisation = 0.10
-	yearly_army_professionalism = 0.01
+	drill_gain_modifier = 1
+	yearly_army_professionalism = 0.005
 }
 
 reserves_organisation_modifier = {
@@ -79,6 +80,6 @@ reserves_organisation_modifier = {
 		always = yes
 	}
 
-	#general_cost = -0.25
+	general_cost = -0.25
 	drill_gain_modifier = 1
 }

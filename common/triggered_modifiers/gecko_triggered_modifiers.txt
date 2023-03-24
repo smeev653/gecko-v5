@@ -596,3 +596,21 @@ POL_rawa_triggered_modifier = {
 	
 	land_maintenance_modifier = -0.05
 }
+
+Standing_Army = {
+	potential = {
+		ROOT = {
+				ai = no	
+			}
+		is_year = 1510	
+	}
+	
+
+	trigger = {
+		army_size_percentage = 0.75
+	}
+	drill_gain_modifier = 0.10
+	land_maintenance_modifier = -0.1
+	army_tradition_decay = -0.005
+	yearly_army_professionalism = 0.005
+}

@@ -735,7 +735,7 @@ peace = {
 	rr_girondists_influence = -0.1
 	pr_smugglers_influence = 0.1
 	#interest = -0.5
-	#army_tradition_decay = 0.01
+	army_tradition_decay = 0.005
 }
 
 unconditional_surrender = {
