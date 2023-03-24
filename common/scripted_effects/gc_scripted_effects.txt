@@ -78,42 +78,6 @@ gecko_ipa_effect = {
 	}
 }
 
-#gecko_occupation_effect = {
-#		if = {
-#			limit = {
-#				ai = no
-#				any_owned_province = {
-#					has_province_modifier = gecko_occupation 
-#					is_core = owner
-#					controlled_by = owner
-#				}	
-#			}
-#			remove_province_modifier = gecko_occupation
-#		}
-#		if = {
-#			limit = {
-#				ai = no
-#				any_owned_province = {
-#					has_province_flag = gecko_occupation
-#					is_core = owner
-#					controlled_by = owner
-#				}
-#			}
-#			clr_province_flag = gecko_occupation
-#		}
-#		if = {
-#			limit = {
-#				ai = no
-#				any_owned_province = {
-#					has_province_flag = gecko_occupation_core
-#					is_core = owner
-#					controlled_by = owner
-#				}
-#			}
-#			clr_province_flag = gecko_occupation_core
-#		}
-#}
-
 gecko_mercs = {
 	if = {
 		limit = {	
@@ -137,6 +101,20 @@ gecko_mercs = {
 					which = geckomercFL
 					value = 30
 			}
+			if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
 			if = {
 							limit = {
 								OR = {
@@ -233,6 +211,20 @@ gecko_mercs = {
 					which = geckomercFL
 					value = 20
 			}
+			if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
 if = {
 							limit = {
 								OR = {

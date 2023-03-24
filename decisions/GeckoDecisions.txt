@@ -460,11 +460,6 @@ country_decisions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "mercs_bought"
-				duration = -1
-				hidden = yes
-			}
-			add_country_modifier = {
 				name = "merc_spawn_timer1"
 				duration = 30
 				hidden = yes
@@ -482,7 +477,7 @@ country_decisions = {
 						export_to_variable = {
 								which = geckomercFL
 								value = land_forcelimit
-								who = $who$
+								who = ROOT
 						}
 						divide_variable = {
 								which = geckomercFL
@@ -495,6 +490,20 @@ country_decisions = {
 						change_variable = {
 								which = geckomercFL
 								value = 30
+						}
+						if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
 						}
 						if = {
 							limit = {
@@ -566,7 +575,7 @@ country_decisions = {
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
-									who = $who$
+									who = ROOT
 						}
 					}	
 				}
@@ -588,6 +597,20 @@ country_decisions = {
 						change_variable = {
 								which = geckomercFL
 								value = 20
+						}
+						if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
 						}
 						if = {
 							limit = {
@@ -659,7 +682,7 @@ country_decisions = {
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
-									who = $who$
+									who = ROOT
 						}
 					}
 				}
@@ -691,7 +714,7 @@ country_decisions = {
 						export_to_variable = {
 								which = geckomercFL
 								value = land_forcelimit
-								who = $who$
+								who = ROOT
 						}
 						divide_variable = {
 								which = geckomercFL
@@ -707,6 +730,20 @@ country_decisions = {
 						}
 						if = {
 							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
@@ -775,7 +812,7 @@ country_decisions = {
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
-									who = $who$
+									who = ROOT
 						}
 					}	
 				}
@@ -784,7 +821,7 @@ country_decisions = {
 						export_to_variable = {
 								which = geckomercFL
 								value = land_forcelimit
-								who = $who$
+								who = ROOT
 						}
 						divide_variable = {
 								which = geckomercFL
@@ -800,6 +837,20 @@ country_decisions = {
 						}
 						if = {
 							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
@@ -868,7 +919,7 @@ country_decisions = {
 						export_to_variable = {
 									which = geckomercvalue
 									value = trigger_value:num_of_mercenaries
-									who = $who$
+									who = ROOT
 						}
 					}
 				}

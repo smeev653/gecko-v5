@@ -829,7 +829,7 @@ gecko_mercs_effect_ptmod = {
 	}
 	trigger = {
 		is_month = 0
-		NOT = { is_month = 5 }
+		NOT = { is_month = 2 }
 	}
 	on_activation = {
 		every_country = {

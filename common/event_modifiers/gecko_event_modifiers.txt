@@ -318,16 +318,10 @@ gecko_ipa = {
 	interest = -0.5
 }
 
-gecko_occupation = {
-}
-
-mercs_bought = {
-}
 merc_recruited = {
 	local_friendly_movement_speed = -0.9
 }
-geckoavailablemercs = {
-}
+
 
 gecko_recovery = {
 	global_tax_modifier = 0.5
@@ -341,11 +335,6 @@ gecko_recovery = {
 	global_autonomy = -0.3
 	interest = -0.5
 	stability_cost_modifier = -0.25
-}
-
-increased_merc_recruitment = {
-	is_mercenary_modifier = yes
-	land_morale = -0.15
 }
 
 sipahi_buff = {
@@ -363,16 +352,7 @@ streltsy_buff = {
 	fire_damage = 0.05
 }
 
-increased_merc_quality = {
-	is_mercenary_modifier = yes
-	infantry_power = 0.10
-}	
 
-130percentavailablemercs = {
-}
-
-100percentavailablemercs = {
-}
 
 gc_urbanisation_timer = {
 }
