@@ -5,7 +5,10 @@ country_decisions = {
 	X_estate_church_province_control_decision = {
 		major = yes
 		potential = { has_country_flag = show_extra_decisions has_estate = estate_church }
-		provinces_to_highlight = { has_province_modifier = X_estate_church_province_control_pmod  }
+		provinces_to_highlight = { has_province_modifier = X_estate_church_province_control_pmod OR = {
+					 owned_by = ROOT 
+					 is_core = ROOT 
+				}  }
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_church_province_control_pmod } } }
 		effect = { }
 		ai_will_do = { factor = 0 }
@@ -13,7 +16,10 @@ country_decisions = {
 	X_estate_burghers_province_control_decision = {
 		major = yes
 		potential = { has_country_flag = show_extra_decisions has_estate = estate_burghers }
-		provinces_to_highlight = { has_province_modifier = X_estate_burghers_province_control_pmod  }
+		provinces_to_highlight = { has_province_modifier = X_estate_burghers_province_control_pmod OR = {
+					 owned_by = ROOT 
+					 is_core = ROOT 
+				}  }
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_burghers_province_control_pmod } } }
 		effect = { }
 		ai_will_do = { factor = 0 }
@@ -21,7 +27,10 @@ country_decisions = {
 	X_estate_nobles_province_control_decision = {
 		major = yes
 		potential = {has_country_flag = show_extra_decisions  has_estate = estate_nobles }
-		provinces_to_highlight = { has_province_modifier = X_estate_nobles_province_control_pmod  }
+		provinces_to_highlight = { has_province_modifier = X_estate_nobles_province_control_pmod OR = {
+					 owned_by = ROOT 
+					 is_core = ROOT 
+				} }
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_nobles_province_control_pmod } } }
 		effect = { }
 		ai_will_do = { factor = 0 }
@@ -29,7 +38,11 @@ country_decisions = {
 	X_estate_dhimmi_province_control_decision = {
 		major = yes
 		potential = {has_country_flag = show_extra_decisions has_estate = estate_dhimmi }
-		provinces_to_highlight = { has_province_modifier = X_estate_dhimmi_province_control_pmod  }
+		provinces_to_highlight = { has_province_modifier = X_estate_dhimmi_province_control_pmod
+			OR = {
+					 owned_by = ROOT 
+					 is_core = ROOT 
+				}		}
 		allow = { hidden_trigger = { any_owned_province = { has_province_modifier = X_estate_dhimmi_province_control_pmod } } }
 		effect = { }
 		ai_will_do = { factor = 0 }
@@ -50,7 +63,12 @@ country_decisions = {
 				has_province_modifier = X_expand_infrastructure_tier_9_pmod
 				has_province_modifier = X_expand_infrastructure_tier_10_pmod
 				}
+			OR = {
+					 owned_by = ROOT 
+					 is_core = ROOT 
+				}	
 			}
+			
 		allow = {
 			hidden_trigger = { 
 				any_owned_province = {
@@ -80,7 +98,6 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_flag = X_home_node_merchant_decision_cflag }
 			has_country_flag = show_extra_decisions
-			}
 		}
 		allow = {
 			home_trade_node = {

@@ -1027,6 +1027,7 @@ country_decisions = {
 			}
 	}
 	hide_extra_decisions = {
+		major = yes
 		potential = {
 				ai = no
 				has_country_flag = show_extra_decisions
@@ -1248,6 +1249,7 @@ country_decisions = {
 			}	
 		}
 		Show_manus = {
+			major = yes
 			potential = {
 				has_country_flag = show_extra_decisions
 				ai = no
