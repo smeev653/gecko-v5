@@ -821,30 +821,3 @@ conquest_of_toledo= {
 	
 	}
 }
-
-gecko_mercs_effect_ptmod = {
-	hidden = yes
-	potential = {
-		always = yes
-	}
-	trigger = {
-		is_month = 0
-		NOT = { is_month = 2 }
-	}
-	on_activation = {
-		every_country = {
-			limit = {
-				ai = no
-			}	
-			gecko_mercs = { who = THIS }
-		}
-	}
-	on_deactivation = {
-		every_country = {
-			limit = {
-				ai = no
-			}	
-			gecko_mercs = { who = THIS }
-		}
-	}
-}

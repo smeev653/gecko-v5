@@ -2365,3 +2365,21 @@ country_event = {
 		set_country_flag = start_estates_setup
 	}
 }
+
+    ##pulse event to check mercs####
+country_event = {
+    id = gecko.18
+   title = gecko.18.t
+    desc = gecko.18.d
+	picture = COURT_eventPicture
+   trigger = {
+		is_triggered_only = yes
+	}
+	hidden = yes
+	
+	immediate = {
+		gecko_mercs = yes
+	}
+	option = {
+	}
+}

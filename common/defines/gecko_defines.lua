@@ -248,4 +248,5 @@ NDefines.NGovernment.EXPAND_INFRASTRUCTURE_ADM_COST = 0
 
 NDefines.NGame.DAYS_BEHIND_PAUSE = 90					-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will pause
 NDefines.NGame.DAYS_BEHIND_LOWER_SPEED = 999			-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will slow down
-NDefines.NGui.AUTO_SELECT_EVENT_MONTHS = 13
+
+NDefines.NEngine.EVENT_PROCESS_OFFSET = 120 
