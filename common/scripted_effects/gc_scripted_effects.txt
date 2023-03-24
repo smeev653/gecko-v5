@@ -116,17 +116,14 @@ gecko_ipa_effect = {
 
 gecko_mercs = {
 	if = {
-		limit = {
-			ROOT = {
-				ai = no
-			}	
+		limit = {	
 			has_country_modifier = Minor
 		}
-		#hidden_effect = {
+		hidden_effect = {
 			export_to_variable = {
 					which = geckomercFL
 					value = land_forcelimit
-					who = ROOT
+					who = $who$
 			}
 			divide_variable = {
 					which = geckomercFL
@@ -140,20 +137,68 @@ gecko_mercs = {
 					which = geckomercFL
 					value = 30
 			}
-			set_variable = {            
-					which = availablegeckomercs
-					value = 1
-			}
 			if = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
+								}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								NOT = { has_country_modifier = We_stand_alone}
 							}
 								multiply_variable = { 
 									which = geckomercFL
 									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+								}
+								has_country_modifier = We_stand_alone
+								NOT = {has_age_ability = ab_burgundy_merc_manpower}
+								NOT = {has_age_ability = ab_hesse_mercs}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								has_country_modifier = We_stand_alone
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.3
 								}
 						}
 			else = {
@@ -162,21 +207,19 @@ gecko_mercs = {
 			export_to_variable = {
 						which = geckomercvalue
 						value = trigger_value:num_of_mercenaries
-						who = ROOT
+						who = $who$
 			}
-		#}	
+		}	
 	}
 	else_if = {
 		limit = {
-			ROOT = {
-				ai = no
-			}	
+			NOT = { has_country_modifier = Minor }
 		}
 		hidden_effect = {
 			export_to_variable = {
 					which = geckomercFL
 					value = land_forcelimit
-					who = ROOT
+					who = $who$
 			}
 			divide_variable = {
 					which = geckomercFL
@@ -190,20 +233,68 @@ gecko_mercs = {
 					which = geckomercFL
 					value = 20
 			}
-			set_variable = {            
-					which = availablegeckomercs
-					value = 1
-			}
-			if = {
+if = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
 									has_idea = gc_tradition_of_payment
-								}	
+								}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								NOT = { has_country_modifier = We_stand_alone}
 							}
 								multiply_variable = { 
 									which = geckomercFL
 									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+								}
+								has_country_modifier = We_stand_alone
+								NOT = {has_age_ability = ab_burgundy_merc_manpower}
+								NOT = {has_age_ability = ab_hesse_mercs}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_tradition_of_payment
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								has_country_modifier = We_stand_alone
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.3
 								}
 						}
 			else = {
@@ -212,7 +303,7 @@ gecko_mercs = {
 			export_to_variable = {
 						which = geckomercvalue
 						value = trigger_value:num_of_mercenaries
-						who = ROOT
+						who = $who$
 			}
 		}
 	}
