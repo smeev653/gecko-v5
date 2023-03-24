@@ -1744,7 +1744,7 @@ me_RUS_missions_5 = {
 		required_missions = { russia_workshops }
 		icon = mission_sovereign_principality
 		trigger = {
-			years_of_income = 3.0
+			years_of_income = 1.0
 		}
 		effect = {
 			add_adm_power = 100
@@ -1790,7 +1790,7 @@ me_RUS_missions_5 = {
 				name = rus_production
 				duration = 7300
 			}
-			add_years_of_income = 2
+			add_years_of_income = 1
 		}
 	}
 
@@ -1841,7 +1841,7 @@ me_RUS_missions_5 = {
 			}
 		}
 		effect = {
-			add_years_of_income = 2.0
+			add_years_of_income = 1.0
 			add_country_modifier = {
 				name = markets
 				duration = 7300
@@ -1991,14 +1991,14 @@ me_RUS_missions_5_3 = {
 			}
 		}
 		effect = {
-			add_years_of_income = 2
-			add_yearly_manpower = 2
+			add_years_of_income = 1
+			add_yearly_manpower = 1
 			every_known_country = {
 				limit = {
 					vassal_of = ROOT
 				}
-				add_years_of_income = 2
-				add_yearly_manpower = 2
+				add_years_of_income = 1
+				add_yearly_manpower = 1
 			}
 		}
 	}
