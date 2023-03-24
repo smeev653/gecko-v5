@@ -671,7 +671,7 @@ university = {
 }
 
 trade_depot = {
-	cost = 300
+	cost = 200
 	time = 12
 
 	make_obsolete = marketplace
@@ -848,13 +848,13 @@ fort_17th = {
 # Tier 4, 18th Century Buildings
 ################################################
 stock_exchange = {
-	cost = 400
+	cost = 300
 	time = 12
 
 	make_obsolete = trade_depot
 
 	modifier = {
-		province_trade_power_modifier = 1.25
+		province_trade_power_modifier = 2
 		
 	}	
 	on_built = {
@@ -1488,7 +1488,7 @@ state_house = {
 #Gecko
 ####################################################################
 armory = {
-	cost = 500
+	cost = 750
 	time = 60
 
 	build_trigger = {
