@@ -122,7 +122,7 @@ gecko_mercs = {
 			}	
 			has_country_modifier = Minor
 		}
-		hidden_effect = {
+		#hidden_effect = {
 			export_to_variable = {
 					which = geckomercFL
 					value = land_forcelimit
@@ -164,7 +164,7 @@ gecko_mercs = {
 						value = trigger_value:num_of_mercenaries
 						who = ROOT
 			}
-		}	
+		#}	
 	}
 	else_if = {
 		limit = {
@@ -218,22 +218,7 @@ gecko_mercs = {
 	}
 }
 
-gecko_merc_count = {
-	if = {
-		limit = {
-			ROOT = {
-				ai = no
-			}	
-		}
-		hidden_effect = {
-			export_to_variable = {
-						which = geckomercvalue
-						value = trigger_value:num_of_mercenaries
-						who = ROOT
-			}
-		}	
-	}	
-}	
+
 
 add_or_upgrade_university_building = {
 	custom_tooltip = add_or_upgrade_university_building_tt

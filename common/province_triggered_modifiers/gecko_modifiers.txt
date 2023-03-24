@@ -821,3 +821,24 @@ conquest_of_toledo= {
 	
 	}
 }
+
+gecko_mercs_effect_ptmod = {
+	hidden = yes
+	potential = {
+		always = yes
+	}
+	trigger = {
+		is_month = 0
+		NOT = { is_month = 5 }
+	}
+	on_activation = {
+		owner = {
+			gecko_mercs = yes
+		}
+	}
+	on_deactivation = {
+		owner = {
+			gecko_mercs = yes
+		}
+	}
+}
