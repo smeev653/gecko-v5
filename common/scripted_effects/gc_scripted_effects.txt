@@ -211,7 +211,7 @@ gecko_mercs = {
 					which = geckomercFL
 					value = 20
 			}
-			if = {
+				if = {
 							limit = {
 								has_country_modifier = We_stand_alone
 								NOT = {has_idea = gc_compagnies_ordonnance}
@@ -225,7 +225,7 @@ gecko_mercs = {
 									value = 1.1
 								}
 						}
-if = {
+				if = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance

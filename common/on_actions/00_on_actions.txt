@@ -1994,16 +1994,6 @@ on_siberian_pulse = {
 
 # country random events
 on_monthly_pulse = {
-	if = {
-		limit = {
-			ROOT = {
-				ai = no
-			}
-		}
-	}	
-	events = {
-		gecko.18
-	}
 }
 on_yearly_pulse = {
 }

@@ -2375,6 +2375,59 @@ country_event = {
 	is_triggered_only = yes
 	
 	hidden = yes
+	trigger = {
+		ai = no
+		num_of_mercenaries = 1
+	}
+	immediate = {
+		gecko_mercs = yes
+	}
+	option = {
+	}
+}
+
+##pulse event to check mercs####
+country_event = {
+    id = gecko.18
+   title = gecko.18.t
+    desc = gecko.18.d
+picture = COURT_eventPicture
+
+   trigger = {
+		ROOT = {
+				ai = no
+			}
+		 NOT = { has_country_modifier = Minor}
+   }
+	hidden = yes
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	immediate = {
+		gecko_mercs = yes
+	}
+
+	option = {
+	}
+}
+##pulse event to check mercs####
+country_event = {
+    id = gecko.19
+   title = gecko.19.t
+    desc = gecko.19.d
+picture = COURT_eventPicture
+
+   trigger = {
+		ROOT = {
+				ai = no
+			}
+		has_country_modifier = Minor	
+   }
+	hidden = yes
+   mean_time_to_happen = {
+        days = 30
+    }
 	
 	immediate = {
 		gecko_mercs = yes
