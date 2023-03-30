@@ -47,29 +47,6 @@ kaffa_slave_market = {
 	
 }
 
-the_upper_nile = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-
-	trigger = {
-		controlled_by = ROOT
-	}
-
-	trade_goods_size= 1
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-	
-}
-
-
 conquest_of_jerusalem = {
 	potential = {
 		normal_or_historical_nations = yes

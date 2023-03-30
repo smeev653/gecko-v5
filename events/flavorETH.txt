@@ -18,6 +18,10 @@ country_event = {
 	option = { 
 		name = flavor_eth.4.a
 		reverse_add_opinion = { who = POR modifier = opinion_military_aid }
+		add_country_modifier = {
+			name = eth_mil_aid_from_portugal
+			duration = 3650
+		}
 	}
 }
 
