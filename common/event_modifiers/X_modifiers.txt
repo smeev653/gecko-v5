@@ -217,8 +217,8 @@ X_VEN_contrafossa_pmod = {
 }
 
 X_VEN_generale_da_mar_cmod = {
-	admiral_cost = -0.25
-	republican_tradition = 0.2
+	admiral_cost = -0.15
+	republican_tradition = 0.1
 }
 
 X_VEN_bulwark_of_europe_pmod = {
@@ -259,7 +259,7 @@ X_VEN_cypriot_sammet_pmod = {
 }
 
 X_VEN_mercantile_system_cmod = {
-	mercantilism_cost = -0.33
+	mercantilism_cost = -0.15
 }
 
 X_VEN_venetokratia_cmod = {
@@ -276,15 +276,15 @@ X_VEN_innovative_tactics_cmod = {
 }
 
 X_VEN_galilean_ballistics_cmod = {
-	artillery_fire = 1
+	artillery_fire = 0.5
 }
 
 X_VEN_magistrato_al_sal_cmod = {
-	global_tax_modifier = 0.15
+	global_tax_modifier = 0.1
 }
 
 X_VEN_preservation_of_classics_cmod = {
-	technology_cost = -0.1
+	technology_cost = -0.05
 	idea_cost = -0.05
 }
 

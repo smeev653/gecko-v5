@@ -132,6 +132,7 @@ mlo_regulation_of_the_curia_treasury_modifier = {
 mlo_exhibition_modifier = {
 	tolerance_own = 1 
 	adm_advisor_cost = -0.1
+	development_cost = -0.1
 }
 mlo_scrofa_semilanuta_modifier = {
 	land_morale = 0.05

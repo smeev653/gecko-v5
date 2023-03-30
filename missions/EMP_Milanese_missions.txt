@@ -204,6 +204,10 @@ milan_missions_1 = { #Made by Big Boss for Flavor Universalis
 			else = { reform_level = 3 }
 		}
 		effect = { 
+			 change_estate_land_share = {
+			estate = all
+			share = -10
+	}
 			add_country_modifier = {
 				name = mlo_court_stability_modifier
 				duration = 9125
@@ -438,7 +442,7 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 					ROOT = {
 						NOT = {
 							development_in_provinces = {
-								value = 125
+								value = 100
 								area = lombardy_area
 							}
 						}
@@ -1109,6 +1113,12 @@ milan_missions_4 = { #Made by Big Boss for Flavor Universalis
 			}
 		}
 		effect = {
+			104 = {
+				add_great_project_tier = { 
+						type = duomo_milano
+						tier = 1 
+					}
+			}
 			country_event = { id = FU_Milan_Events.8 } 
 		}
 	}

@@ -18484,9 +18484,10 @@ fu_la_scala = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			dip_advisor_cost = -0.1
+			dip_advisor_cost = -0.15
+			yearly_absolutism = 1.5
 			max_absolutism = 10
-			promote_culture_cost = -0.3
+			promote_culture_cost = -0.3r
 		}
 		
 		on_upgraded = {
@@ -19760,13 +19761,15 @@ gme_lanterna_genova = {
 			naval_forcelimit = 2
 			ship_recruit_speed = -0.15
 		}
-		area_modifier = { }
+		area_modifier = { 
+			local_development_cost = -0.10
+		}
 		country_modifiers = {
 			range = 0.15
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 5
+				add_mercantilism = 10
 			}
 		}
 	}
@@ -19781,13 +19784,14 @@ gme_lanterna_genova = {
 		area_modifier = {
 			province_trade_power_modifier = 0.1
 			local_ship_cost = -0.10
+			local_development_cost = -0.15
 		}
 		country_modifiers = {
 			range = 0.20
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 5
+				add_mercantilism = 10
 			}
 		}
 	}
@@ -19802,6 +19806,7 @@ gme_lanterna_genova = {
 			province_trade_power_modifier = 0.1
 			ship_recruit_speed = -0.15
 			local_ship_cost = -0.10
+			local_development_cost = -0.2
 		}
 		country_modifiers = {
 			range = 0.25
@@ -19811,7 +19816,7 @@ gme_lanterna_genova = {
 		}
 		on_upgraded = {
 			owner = {
-				add_mercantilism = 5
+				add_mercantilism = 10
 			}
 		}
 	}

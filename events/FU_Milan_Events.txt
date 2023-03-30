@@ -125,6 +125,12 @@ country_event = {
 		add_republican_tradition = 10 
 		add_legitimacy = 15 
 		add_ruler_personality = midas_touched_personality 
+		104 = {
+				add_great_project_tier = { 
+						type = fu_la_scala
+						tier = 3 
+					}
+			}
 	}
 }
 
@@ -234,7 +240,7 @@ country_event = {
 		
 		define_advisor = {
 			type = artist 
-			cost_multiplier = 0.75
+			cost_multiplier = 0.25
 			skill = 3 
 		}
 		add_splendor = 200 
@@ -302,7 +308,7 @@ country_event = { #Milano Conservatories and Opera Houses
 			name = "Wolfgang Amadeus Mozart"
 			skill = 3
 			culture = bavarian
-			cost_multiplier = 0.75 
+			cost_multiplier = 0.25 
 		}
 	}
 }

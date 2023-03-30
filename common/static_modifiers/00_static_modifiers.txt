@@ -673,11 +673,11 @@ bank_loan = {
 	build_cost = 0.005
 	great_project_upgrade_cost = 0.005
 	center_of_trade_upgrade_cost = 0.005
-	global_colonial_growth = -5
+	global_colonial_growth = -2.5
 }
 
 inflation = {
-	build_cost = 0.01						#1% for each inflation step.
+	#build_cost = 0.01						#1% for each inflation step.
 	infantry_cost = 0.01					#1% for each inflation step
 	cavalry_cost = 0.01						#1% for each inflation step
 	artillery_cost = 0.01					#1% for each inflation step
@@ -689,8 +689,8 @@ inflation = {
 	advisor_cost = 0.01						#1% for each inflation step
 	mercenary_cost = 0.01					#1% for each inflation step
 	fort_maintenance_modifier = 0.01		#1% for each inflation step
-	great_project_upgrade_cost = 0.01
-	center_of_trade_upgrade_cost = 0.01	#0?0.01
+	#great_project_upgrade_cost = 0.01
+	#center_of_trade_upgrade_cost = 0.01	#0?0.01
 }
 
 bankruptcy = {
@@ -702,7 +702,7 @@ bankruptcy = {
 	mr_guilds_influence = 0.25
 	manpower_recovery_speed = -1.0
 	sailors_recovery_speed = -1.0
-	advisor_cost = 0.2
+	#advisor_cost = 0.2
 	monthly_fervor_increase = -1
 	#global_autonomy = 0.05
 	global_institution_spread = -0.50
