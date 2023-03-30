@@ -2378,12 +2378,9 @@ picture = COURT_eventPicture
 				ai = no
 			}
 		 NOT = { has_country_modifier = Minor}
-		 OR = {
-			has_country_modifier = mercs_bought 
-			has_country_modifier = We_stand_alone
-		 }	
+		 has_country_modifier = mercs_bought 
    }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         days = 30
     }
@@ -2407,12 +2404,10 @@ picture = COURT_eventPicture
 				ai = no
 			}
 		has_country_modifier = Minor
-		 OR = {
-			has_country_modifier = mercs_bought 
-			has_country_modifier = We_stand_alone
-		 }	
+		has_country_modifier = mercs_bought 
+		 
    }
-	#hidden = yes
+	hidden = yes
    mean_time_to_happen = {
         days = 30
     }
@@ -2435,7 +2430,7 @@ picture = COURT_eventPicture
 		NOT = { num_of_mercenaries = 1 }
 		has_country_modifier = mercs_bought 
    }
-	#hidden = yes
+	hidden = yes
     mean_time_to_happen = {
         days = 90
     }
