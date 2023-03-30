@@ -13231,7 +13231,6 @@ kilwa_city = {
 		country_modifiers = {
 			prestige = 1
 			global_ship_trade_power = 0.3
-			development_cost = -0.05
 		}
 		on_upgraded = {
 		}

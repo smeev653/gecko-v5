@@ -1,9 +1,9 @@
 kiel_canal = {
 	# province it starts in
-	start = 1775
+	start = 387
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1895.06.20
+	date = 1443.01.01
 	
 	#time to build
 	time = {
@@ -11,7 +11,7 @@ kiel_canal = {
 	}
 	
 	#how much to build one
-	build_cost = 10000
+	build_cost = 1
 	
 	#can we move it?
 	can_be_moved = no
@@ -24,12 +24,7 @@ kiel_canal = {
 
 	#can we build it?
 	build_trigger = {
-		FROM = {
-			owns_or_vassal_of = 1775
-			owns_or_vassal_of = 4141
-			is_subject = no			
-			adm_tech = 22
-		}
+	
 	}
 	
 	#what to do when it's built
@@ -89,12 +84,12 @@ kiel_canal = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -119,12 +114,12 @@ kiel_canal = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -149,12 +144,12 @@ kiel_canal = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -189,7 +184,7 @@ suez_canal = {
 	}
 	
 	#how much to build one
-	build_cost = 20000
+	build_cost = 1
 
 	#can we move it?
 	can_be_moved = no
@@ -202,13 +197,6 @@ suez_canal = {
 
 	#can we build it?
 	build_trigger = {
-		FROM = {
-			owns_or_vassal_of = 4316
-			owns_or_vassal_of = 2315
-			is_subject = no
-			adm_tech = 22
-			treasury = 20000
-		}
 	}
 
 	#what to do when it's built
@@ -268,12 +256,12 @@ suez_canal = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -298,12 +286,12 @@ suez_canal = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -328,12 +316,12 @@ suez_canal = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -357,10 +345,10 @@ suez_canal = {
 }
 panama_canal = {
 	# province it starts in
-	start = 835
+	start = 1751
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1914.08.14
+	date = 1443.01.01
 	
 	#time to build
 	time = {
@@ -368,7 +356,7 @@ panama_canal = {
 	}
 	
 	#how much to build one
-	build_cost = 30000
+	build_cost = 1
 
 	#can we move it?
 	can_be_moved = no
@@ -381,11 +369,6 @@ panama_canal = {
 
 	#can we build it?
 	build_trigger = {
-		FROM = {
-			owns_or_vassal_of = 835
-			is_subject = no
-			adm_tech = 22
-		}
 	}
 
 	#what to do when it's built
@@ -445,12 +428,12 @@ panama_canal = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -475,12 +458,12 @@ panama_canal = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
@@ -505,12 +488,12 @@ panama_canal = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 1
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 1
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
