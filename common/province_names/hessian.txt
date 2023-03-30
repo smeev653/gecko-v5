@@ -1,0 +1,8 @@
+85 = "Kölle"
+1878 = "Oche"
+1760 = "Kowelenz"
+1876 = "Frangford am Maa"
+4767 = "Zweebrigge"
+1761 = "Palz"
+4718 = "Aschebersch"
+189 = "Lottringe"
