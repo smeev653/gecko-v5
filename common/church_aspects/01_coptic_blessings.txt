@@ -2,7 +2,7 @@ legitimize_government = {
 	is_blessing = yes
 
 	modifier = {
-		land_morale = 0.025
+		idea_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -89,7 +89,8 @@ will_of_the_martyrs = {
 	is_blessing = yes
 
 	modifier = {
-		discipline = 0.05
+		discipline = 0.025
+		land_morale = 0.025
 	}
 	ai_will_do = {
 		factor = 15
