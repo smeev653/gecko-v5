@@ -92,7 +92,8 @@ adu_popular_appeal = {
 
 recently_hired_mercs = {
 }
-
+mercs_bought = {
+}
 gecko_ethiopia_highlands_and_mountains_modifier = {
 	local_development_cost = -0.05
 }

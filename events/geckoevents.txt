@@ -2368,9 +2368,9 @@ country_event = {
 
 ##pulse event to check mercs####
 country_event = {
-    id = gecko.18
-   title = gecko.18.t
-    desc = gecko.18.d
+    id = gecko.20
+   title = gecko.20.t
+    desc = gecko.20.d
 picture = COURT_eventPicture
 
    trigger = {
@@ -2378,9 +2378,12 @@ picture = COURT_eventPicture
 				ai = no
 			}
 		 NOT = { has_country_modifier = Minor}
-		 num_of_mercenaries = 1
+		 OR = {
+			has_country_modifier = mercs_bought 
+			has_country_modifier = We_stand_alone
+		 }	
    }
-	hidden = yes
+	#hidden = yes
     mean_time_to_happen = {
         days = 30
     }
@@ -2394,9 +2397,9 @@ picture = COURT_eventPicture
 }
 ##pulse event to check mercs####
 country_event = {
-    id = gecko.19
-   title = gecko.19.t
-    desc = gecko.19.d
+    id = gecko.21
+   title = gecko.21.t
+    desc = gecko.21.d
 picture = COURT_eventPicture
 
    trigger = {
@@ -2404,9 +2407,12 @@ picture = COURT_eventPicture
 				ai = no
 			}
 		has_country_modifier = Minor
-		num_of_mercenaries = 1		
+		 OR = {
+			has_country_modifier = mercs_bought 
+			has_country_modifier = We_stand_alone
+		 }	
    }
-	hidden = yes
+	#hidden = yes
    mean_time_to_happen = {
         days = 30
     }
@@ -2415,5 +2421,33 @@ picture = COURT_eventPicture
 		gecko_mercs = yes
 	}
 	option = {
+	}
+}
+
+###stop pulse event#####
+country_event = {
+    id = gecko.22
+   title = gecko.22.t
+    desc = gecko.22.d
+picture = COURT_eventPicture
+
+   trigger = {
+		NOT = { num_of_mercenaries = 1 }
+		has_country_modifier = mercs_bought 
+   }
+	#hidden = yes
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	immediate = {
+		remove_country_modifier = mercs_bought 
+		export_to_variable = {
+						which = geckomercvalue
+						value = trigger_value:num_of_mercenaries
+						who = ROOT
+		}	
+	}
+	option = {	
 	}
 }
