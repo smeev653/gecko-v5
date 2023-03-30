@@ -9568,7 +9568,6 @@ kaaba = {
 
 	#can we build it?
 	build_trigger = {
-		religion_group = muslim
 		has_owner_religion = yes
 	}
 
@@ -9584,7 +9583,6 @@ kaaba = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		religion_group = muslim
 		has_owner_religion = yes
 		385 = {
 			controlled_by = ROOT
@@ -9593,7 +9591,6 @@ kaaba = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		religion_group = muslim
 		has_owner_religion = yes
 	}
 
@@ -13145,7 +13142,6 @@ kilwa_city = {
 	type = monument
 
 	build_trigger = {
-		religion_group = muslim
 		has_owner_religion = yes
 	}
 
@@ -13156,12 +13152,10 @@ kilwa_city = {
 	}
 
 	can_use_modifiers_trigger = {
-		religion_group = muslim
 		has_owner_religion = yes
 	}
 
 	can_upgrade_trigger = {
-		religion_group = muslim
 		has_owner_religion = yes
 	}
 
@@ -13218,7 +13212,6 @@ kilwa_city = {
 		country_modifiers = {
 			prestige = 0.5
 			global_ship_trade_power = 0.2
-			placed_merchant_power = 2
 		}
 		on_upgraded = {
 		}
@@ -13238,7 +13231,7 @@ kilwa_city = {
 		country_modifiers = {
 			prestige = 1
 			global_ship_trade_power = 0.3
-			placed_merchant_power = 4
+			development_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -14322,7 +14315,7 @@ churches_lalibela = {
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.005
-			prestige = 0.25
+			global_tax_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -14341,8 +14334,7 @@ churches_lalibela = {
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.01
-			missionary_maintenance_cost = -0.05
-			prestige = 0.5
+				global_tax_modifier = 0.15
 		}
 		on_upgraded = {
 		}
@@ -14360,9 +14352,8 @@ churches_lalibela = {
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_modifier = 0.2
 			global_missionary_strength = 0.02
-			missionary_maintenance_cost = -0.1
-			prestige = 1
 		}
 		on_upgraded = {
 		}
@@ -19311,7 +19302,9 @@ fu_toob_benadir = {
 		area_modifier = {
 			local_development_cost = -0.15
 		}
-
+		region_modifier = {
+			trade_goods_size = 0.25
+		}
 		country_modifiers = { 
 			trade_efficiency = 0.1
 		} 
@@ -20916,9 +20909,7 @@ harar_jugol = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+			province_is_or_accepts_culture = yes
 	}
 
 	on_built = {
@@ -20928,15 +20919,11 @@ harar_jugol = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+			province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+			province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {
@@ -20972,7 +20959,7 @@ harar_jugol = {
 		area_modifier = {
 		}
 		country_modifiers = {			
-			prestige_per_development_from_conversion = 0.1
+			idea_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -20992,7 +20979,7 @@ harar_jugol = {
 		}
 		country_modifiers = {
 			stability_cost_modifier = -0.1
-			prestige_per_development_from_conversion = 0.2
+			idea_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -21012,10 +20999,9 @@ harar_jugol = {
 		}
 		country_modifiers = {
 			stability_cost_modifier = -0.25
-			prestige_per_development_from_conversion = 0.3
+			idea_cost = -0.1
 		}
 		on_upgraded = {
-			custom_tooltip = mechanic_allow_piety_switch_decision_yes
 		}
 	}
 }
