@@ -17,7 +17,7 @@ discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
 
-add_province_triggered_modifier=the_upper_nile
+
 
 1470.1.1 = {
 	remove_core = ALO
