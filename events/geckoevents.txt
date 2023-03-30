@@ -2366,26 +2366,6 @@ country_event = {
 	}
 }
 
-    ##pulse event to check mercs####
-country_event = {
-    id = gecko.18
-   title = gecko.18.t
-    desc = gecko.18.d
-	picture = COURT_eventPicture
-	is_triggered_only = yes
-	
-	hidden = yes
-	trigger = {
-		ai = no
-		num_of_mercenaries = 1
-	}
-	immediate = {
-		gecko_mercs = yes
-	}
-	option = {
-	}
-}
-
 ##pulse event to check mercs####
 country_event = {
     id = gecko.18
@@ -2398,6 +2378,7 @@ picture = COURT_eventPicture
 				ai = no
 			}
 		 NOT = { has_country_modifier = Minor}
+		 num_of_mercenaries = 1
    }
 	hidden = yes
     mean_time_to_happen = {
@@ -2422,7 +2403,8 @@ picture = COURT_eventPicture
 		ROOT = {
 				ai = no
 			}
-		has_country_modifier = Minor	
+		has_country_modifier = Minor
+		num_of_mercenaries = 1		
    }
 	hidden = yes
    mean_time_to_happen = {
