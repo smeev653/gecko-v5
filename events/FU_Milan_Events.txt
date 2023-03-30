@@ -271,6 +271,12 @@ country_event = { #Milaner Wealth Display
 			name = mlo_fashion_exhibitions_modifier 
 			duration = -1 
 		}
+		104 = {
+			change_trade_goods = silk
+			}
+		4740 = {
+			change_trade_goods = silk
+			}	
 	}
 }
 

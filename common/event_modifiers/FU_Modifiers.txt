@@ -195,7 +195,8 @@ mlo_tax_reform_modifier = {
 	interest = -1 
 }
 mlo_fashion_exhibitions_modifier = {
-	monthly_splendor = 1 
+	monthly_splendor = 1
+	global_trade_goods_size_modifier = 0.1
 }
 mlo_printing_press_modifier = {
 	yearly_corruption = -0.2 

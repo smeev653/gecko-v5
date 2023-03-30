@@ -601,6 +601,15 @@ gc_french_development = {
 	local_governing_cost = -2
 }
 
+gc_milanese_development = {
+	local_manpower_modifier = 0.33
+	trade_goods_size_modifier = 0.25
+	local_development_cost = -0.25
+	local_build_cost = -0.15
+	local_governing_cost_increase = -15
+	local_governing_cost = -2
+}
+
 gc_swe_hakkapeliitta = {
 	cavalry_cost = -0.1
 	cavalry_power = 0.1

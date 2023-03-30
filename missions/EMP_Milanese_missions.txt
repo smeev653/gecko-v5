@@ -456,7 +456,7 @@ milan_missions_2 = { #Made by Big Boss for Flavor Universalis
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			development_in_provinces = {
-				value = 125
+				value = 100
 				area = lombardy_area
 			} 
 			num_of_owned_provinces_with = {
@@ -786,12 +786,40 @@ milan_missions_3 = { #Made by Big Boss for Flavor Universalis
 		required_missions = { mlo_architectural_works mlo_royal_palace_of_milan mlo_ambrosiana_projects }
 		position = 9 
 		trigger = {
-			is_great_power = yes 
-			government_rank = 3 
-			OR = { 
-				in_golden_age = yes 
-				has_final_tier_reforms_trigger = yes
+			crown_land_share = 30
+			custom_trigger_tooltip = {
+			tooltip = gc_mlo_development_tt
+				num_of_owned_provinces_with = {
+					value = 10 
+					region = italy_region
+					development = 20
+				}
+				num_of_owned_provinces_with = {
+					value = 10 
+					region = italy_region
+					development = 30
+				}
 			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			custom_tooltip = gc_mlo_development_tooltip
+			hidden_effect = {
+				every_owned_province = {
+						limit = {
+							region = italy_region
+							development = 30
+						}
+						add_province_modifier = {
+						name = "gc_milanese_development"
+						duration = 36500
+					}
+				}
+			}
+			
 		}
 		effect = {
 			if = {

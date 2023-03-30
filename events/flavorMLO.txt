@@ -453,7 +453,7 @@ country_event = {
 	
 	trigger = {
 		tag = MLO
-		is_year = 1500
+		is_year = 1490
 		owns = 104
 		NOT = { is_year = 1600 }
 	}

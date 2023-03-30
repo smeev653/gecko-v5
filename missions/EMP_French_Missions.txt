@@ -161,7 +161,7 @@ emp_france_missions_1 = {
 						}
 						add_province_modifier = {
 						name = "gc_french_development"
-						duration = 1825
+						duration = 18250
 					}
 				}
 			}
