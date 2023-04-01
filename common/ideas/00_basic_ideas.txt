@@ -66,7 +66,7 @@ plutocracy_ideas = {
 	free_subjects = {
 		global_trade_goods_size_modifier = 0.1
 	}
-	gc_tradition_of_payment = {
+	tradition_of_payment = {
 		mercenary_cost = -0.15
 		mercenary_discipline = 0.05
 	}
@@ -834,9 +834,8 @@ quantity_ideas = {
 	the_old_and_infirm = {
 		global_regiment_cost = -0.1
 	}
-	mass_army = {
+	gc_mass_army = {
 		global_manpower_modifier = 0.33
-		mercenary_manpower = 0.25
 	}
 	enforced_service = {
 		land_morale = 0.05

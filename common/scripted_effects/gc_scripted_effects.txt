@@ -105,7 +105,7 @@ gecko_mercs = {
 							limit = {
 								has_country_modifier = We_stand_alone
 								NOT = {has_idea = gc_compagnies_ordonnance}
-								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = {has_idea = gc_mass_army}
 								NOT = { has_age_ability = ab_burgundy_merc_manpower }
 								NOT = { has_age_ability = ab_hesse_mercs}
 								
@@ -119,7 +119,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								NOT = { has_age_ability = ab_burgundy_merc_manpower }
 								NOT = { has_age_ability = ab_hesse_mercs}
@@ -134,7 +134,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								OR = {
 									has_age_ability = ab_burgundy_merc_manpower
@@ -151,7 +151,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								has_country_modifier = We_stand_alone
 								NOT = {has_age_ability = ab_burgundy_merc_manpower}
@@ -166,7 +166,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								OR = {
 									has_age_ability = ab_burgundy_merc_manpower
@@ -215,7 +215,7 @@ gecko_mercs = {
 							limit = {
 								has_country_modifier = We_stand_alone
 								NOT = {has_idea = gc_compagnies_ordonnance}
-								NOT = {has_idea = gc_tradition_of_payment}
+								NOT = {has_idea = gc_mass_army}
 								NOT = { has_age_ability = ab_burgundy_merc_manpower }
 								NOT = { has_age_ability = ab_hesse_mercs}
 								
@@ -229,7 +229,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								NOT = { has_age_ability = ab_burgundy_merc_manpower }
 								NOT = { has_age_ability = ab_hesse_mercs}
@@ -244,7 +244,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								OR = {
 									has_age_ability = ab_burgundy_merc_manpower
@@ -261,7 +261,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								has_country_modifier = We_stand_alone
 								NOT = {has_age_ability = ab_burgundy_merc_manpower}
@@ -276,7 +276,7 @@ gecko_mercs = {
 							limit = {
 								OR = {
 									has_idea = gc_compagnies_ordonnance
-									has_idea = gc_tradition_of_payment
+									has_idea = gc_mass_army
 								}
 								OR = {
 									has_age_ability = ab_burgundy_merc_manpower
