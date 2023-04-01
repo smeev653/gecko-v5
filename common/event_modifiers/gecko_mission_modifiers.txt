@@ -517,28 +517,28 @@ hsa_general_army_reform_modifier = {
 	land_morale = 0.05
 }
 hsa_general_army_organization_modifier = {
-	land_forcelimit_modifier = 0.1
+	land_forcelimit_modifier = 0.15
 }
 hsa_military_excellence_modifier = {
 	discipline = 0.025 
 }
 hsa_modernized_supply_lines_modifier = {
-	reinforce_cost_modifier = -0.15
-	reinforce_speed = 0.15 
+	reinforce_cost_modifier = -0.25
+	reinforce_speed = 0.25 
 }
 hsa_zealous_recruitment_modifier = {
-	global_manpower_modifier = 0.1
+	global_manpower_modifier = 0.2
 }
 hsa_improved_military_administration_modifier = {
 	global_regiment_cost = -0.05 
-	land_maintenance_modifier = -0.1
+	land_maintenance_modifier = -0.15
 }
 hsa_hanseatic_military_conduct_modifier = {
-	army_tradition_decay = -0.01 
+	army_tradition_decay = -0.02 
 }
 hsa_modern_drilling_techniques_modifier = {
 	drill_gain_modifier = 0.33
-	fire_damage_received = -0.05 
+	fire_damage_received = -0.15
 }
 hsa_fortification_efforts_modifier = {
 	defensiveness = 0.25

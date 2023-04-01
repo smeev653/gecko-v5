@@ -523,7 +523,46 @@ HSA_ideas = {
 		disengagement_chance = 0.05
 	}
 }
-
+FU2_ideas = {
+	start = {
+		trade_efficiency = 0.2
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		trade_steering = 0.2 
+	}
+	
+	trigger = {
+		tag = HSA
+		has_country_flag = hsa_proclaimed_queen_of_the_hansa_flag
+	}
+	free = yes 
+	
+	FU2_foreign_kontors = {
+		global_trade_power = 0.15
+	}
+	FU2_the_handelsmarine = {
+		global_ship_trade_power = 0.25
+		global_ship_cost = -0.05
+	}
+	FU2_reform_queens_army = {
+		discipline = 0.05
+	}
+	FU2_adler_von_lubeck_legacy = {
+		heavy_ship_power = 0.1
+	}
+	FU2_merchants_with_state = {
+		global_trade_goods_size_modifier = 0.1
+		development_cost = -0.05
+	}
+	FU2_spread_the_northern_style = {
+		idea_cost = -0.1
+	}
+	regularised_contribution = {
+		global_prov_trade_power_modifier = 0.20
+	}
+}
 
 HES_ideas = {
 	start = {

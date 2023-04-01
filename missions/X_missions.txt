@@ -1168,10 +1168,6 @@ X_VEN_slot_3 = {
 				}
 			}
 			natural_scientist = 3			
-			OR = {
-				full_idea_group = trade_ideas
-				full_idea_group = plutocracy_ideas
-			}
 			mil_tech = 10
 			num_of_artillery = 20
 		}

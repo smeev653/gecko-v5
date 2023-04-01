@@ -2017,10 +2017,6 @@ fu_persia_missions_3_islam = {
 		position = 23
 		trigger = {
 			is_defender_of_faith = yes 	
-				OR = {
-					full_idea_group = religious_ideas 
-					full_idea_group = maritime_ideas 
-				}
 			
 			OR = {
 				num_of_estate_privileges = {

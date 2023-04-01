@@ -1214,7 +1214,6 @@ if = {
 	random_events = {
 		1000 = 0
 		100 = flavor_kol.1		# Bavarian Archbishop
-		100 = flavor_hsa.3		# Hansa: Tagfahrt
 		100 = inti_events.1		# Birth of a Panaca
 		50 = dynastic_events.4
 		50 = dynastic_events.5

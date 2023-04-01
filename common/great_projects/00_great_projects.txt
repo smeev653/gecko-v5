@@ -1,6 +1,6 @@
 kiel_canal = {
 	# province it starts in
-	start = 387
+	start = 1775
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1443.01.01
@@ -345,10 +345,10 @@ suez_canal = {
 }
 panama_canal = {
 	# province it starts in
-	start = 1751
+	start = 835
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1443.01.01
+	date = 1914.08.14
 	
 	#time to build
 	time = {

@@ -111,7 +111,7 @@ age_of_discovery = {
 			}
 			modifier = {
 				war_exhaustion = -0.05
-				#global_autonomy = -0.025
+				global_autonomy = -0.025
 			}
 			ai_will_do = {
 				factor = 10
@@ -362,6 +362,24 @@ age_of_discovery = {
 				NOT = {total_own_and_non_tributary_subject_development = 300 }
 				NOT = { is_emperor = yes }
 				is_colonial_nation = no
+				OR = {
+					tag = POR
+					tag = BRA
+					tag = HSA
+					tag = HES
+					tag = SWI
+					tag = SIC
+					tag = MLO
+					tag = VEN
+					tag = ARL
+					tag = YEM
+					tag = ARB
+					tag = TRS
+					tag = TIM
+					tag = ETH
+					tag = YAO
+					tag = PR2
+				}
 			}
 			effect = {
 				enable_development_on_buildings_built = yes

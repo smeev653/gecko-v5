@@ -4916,7 +4916,7 @@
  hsa_permanent_mod_if_50_trade_in_lubeck:0 "The modifier will become §Ypermanent§! if we complete it while owning at least §Y50%§! Trade Power in the §YLubeck§! Trade Node"
  hsa_every_level_lowers_corruption_tt:0 "Every level of this advisor will lower our §YCorruption§!"
  largest_trade_fleet_in_europe_ttt:0 "Has the largest §YTrade Fleet§! in Europe"
- hsa_hamburg_dev_per_member:0 "If we complete the mission while @HAM §YHamburg§! has at least §Y160§! opinion of us, the entire Trade League will receive a §GDevelopment Cost Reduction§! bonus scaling according to the number of the League's members"
+ hsa_hamburg_dev_per_member:0 "The entire Trade League will receive a §GDevelopment Cost Reduction§! bonus scaling according to the number of the League's members"
  hsa_has_at_least_75_vessels:0 "Has at least §Y75§! ships"
  hsa_imperial_favor_tt:0 "If the §YHoly Roman Emperor§! has at least §Y100§! opinion of us, we will attempt to sway them and earn a core in §YHolstein§!"
  hsa_reduce_denmark_trade_tt:1 "A Danish defeat in Holstein will have §Gadverse effects§! on the their hold around the markets of §YLubeck§!"
