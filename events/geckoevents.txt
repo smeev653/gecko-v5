@@ -2176,6 +2176,7 @@ country_event = {
 						has_building = stock_exchange
 					}
 				}
+				center_of_trade = 1
 				add_province_modifier = {
 					name = "trade_hub_created_in_province_grain"
 					duration = -1
@@ -2216,6 +2217,7 @@ country_event = {
 						has_building = stock_exchange
 					}
 				}
+				center_of_trade = 1
 				change_trade_goods = cotton
 			}
 			add_country_modifier = {
@@ -2248,7 +2250,7 @@ country_event = {
 					}
 				}
 				change_trade_goods = cloth
-				
+				center_of_trade = 1
 				if = {
 					limit = {
 						has_province_modifier = ENG_english_wool
@@ -2287,6 +2289,7 @@ country_event = {
 						has_building = stock_exchange
 					}
 				}
+				center_of_trade = 1
 				add_province_modifier = {
 					name = "trade_hub_created_in_province_livestock"
 					duration = 18250
@@ -2328,6 +2331,7 @@ country_event = {
 						has_building = stock_exchange
 					}
 				}
+				center_of_trade = 1
 				add_province_modifier = {
 					name = "trade_hub_created_in_province_naval_supplies"
 					duration = 18250
