@@ -326,8 +326,10 @@ spy_ideas = {
 	claim_fabrication = {
 		global_manpower = 15
 		land_forcelimit = 15
-		global_manpower_modifier = 0.1
-		land_forcelimit_modifier = 0.1
+		global_manpower_modifier = 0.05
+		land_forcelimit_modifier = 0.05
+		special_unit_forcelimit = 0.05
+		amount_of_carolean = 0.25
 	}
 	vetting = {
 		war_taxes_cost_modifier = -1 #If you decide to move the modifier to another (Espionage idea), please do also fix the "WAR TAXES ARE ON" decision
@@ -897,7 +899,7 @@ administrative_ideas = {
 	category = ADM
 
 	bonus = {
-		development_cost_modifier = -0.05
+		country_admin_power = 1
 	}
 	organised_mercenary_payment = {
 		production_efficiency = 0.10
@@ -973,7 +975,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		global_trade_goods_size = 0.1
+		development_cost_modifier = -0.05
 	}
 	diplomatic_influence = {
 		global_tax_income = 48
