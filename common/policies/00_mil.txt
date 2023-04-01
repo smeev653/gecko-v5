@@ -1027,7 +1027,7 @@ deserteur_act = {
 		full_idea_group = quality_ideas
 	}
 
-	discipline = 0.035
+	discipline = 0.03
 	siege_ability = 0.05
 	
 	ai_will_do = {
