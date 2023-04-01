@@ -11,7 +11,7 @@ the_combination_act = {
 	}
 	
 	production_efficiency = 0.10
-	discipline = 0.035
+	land_morale = 0.05
 	
 	ai_will_do = {
 		factor = 1
@@ -431,8 +431,8 @@ vassal_taxation_policy = {
 		full_idea_group = administrative_ideas
 	}
 
-	global_tax_modifier = 0.25
-	global_regiment_cost = -0.05
+	global_tax_modifier = 0.15
+	land_morale = 0.05
 
 	ai_will_do = {
 		factor = 1
@@ -472,8 +472,8 @@ the_pioneer_policy = {
 		full_idea_group = expansion_ideas
 	}
 
-	discipline = 0.035
-	reinforce_speed = 0.1
+	siege_ability = 0.15
+	land_forcelimit_modifier = 0.1
 	
 	ai_will_do = {
 		factor = 0.6
@@ -1127,8 +1127,8 @@ the_licensing_of_the_press_act = {
 		full_idea_group = aristocracy_ideas
 	}
 
-	land_morale = 0.05
-	global_tax_modifier = 0.25
+	discipline = 0.035
+	global_tax_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 0.8
