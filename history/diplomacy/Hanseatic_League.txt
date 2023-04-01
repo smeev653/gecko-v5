@@ -23,8 +23,35 @@ alliance = {
 	start_date = 1380.1.1
 	end_date = 1667.1.1
 }
+alliance = {
+	first = HSA
+	second = GOS
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1667.1.1
+}
 
-
+alliance = {
+	first = HSA
+	second = ANH
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1667.1.1
+}
+alliance = {
+	first = HSA
+	second = EFR
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1667.1.1
+}
+alliance = {
+	first = HSA
+	second = RVA
+	trade_league = 1
+	start_date = 1380.1.1
+	end_date = 1667.1.1
+}
 #alliance = {
 #	first = HSA
 #	second = BRE

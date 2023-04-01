@@ -856,7 +856,6 @@ lubeck_missions_3 = { #Made by Big Boss
 		position = 1 
 		trigger = {
 			army_size_percentage = 0.9
-			manpower_percentage = 0.6
 		}
 		effect = {
 			if = {
