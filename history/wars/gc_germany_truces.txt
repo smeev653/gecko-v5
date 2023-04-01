@@ -1,20 +1,23 @@
 
-name = "Denmark - Swedish "
+name = "Austrian - Munich War"
 war_goal = {
     type = take_claim
     casus_belli = cb_conquest
-	province = 1 
+	province = 65 
 }
 # War start date
 1443.1.1 = {
-	add_attacker = DEN
-	add_attacker = HSA
-	add_defender = SWE
-
+	add_attacker = HAB
+	add_attacker = MLO
+	add_defender = SWI
+	add_defender = KNZ
+	add_defender = TTL
 }
 # War end date
 1444.11.10 = {
-    rem_attacker = DEN
-	rem_attacker = HSA
-	rem_defender = SWE
+    rem_attacker = HAB
+	rem_attacker = MLO
+	rem_defender = SWI
+	rem_defender = KNZ
+	rem_defender = TTL
 }

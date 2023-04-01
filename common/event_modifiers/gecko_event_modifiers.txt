@@ -346,7 +346,7 @@ merc_spawn_timer1 = {
 }
 #######
 trade_hub_created_in_province_grain = {
-	trade_value_modifier = 0.75
+	trade_value_modifier = 1
 }
 trade_hub_created_in_province_livestock = {
 	trade_value_modifier = 0.5
@@ -356,7 +356,8 @@ trade_hub_created_in_province_naval_supplies = {
 }
 trade_hub_created = {
 }
-
+gc_province_investment = {
+}
 subject_warscore = {
 	local_warscore_cost_modifier = -0.25
 }

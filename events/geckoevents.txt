@@ -2153,6 +2153,7 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_province = {
+					NOT = {has_province_modifier = gc_province_investment}
 					trade_goods = grain
 					NOT = {continent = africa}
 					is_state = yes
@@ -2166,6 +2167,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					NOT = {has_province_modifier = gc_province_investment}
 					is_state = yes
 					development = 30
 					OR = {
@@ -2174,17 +2176,21 @@ country_event = {
 						has_building = stock_exchange
 					}
 				}
-				add_base_production = 2
 				add_province_modifier = {
 					name = "trade_hub_created_in_province_grain"
 					duration = -1
 				}
-				add_country_modifier = {
+				add_province_modifier = {
+					name = "gc_province_investment"
+					duration = -1
+					hidden = yes
+				}
+			}
+			add_country_modifier = {
 					name = "trade_hub_created"
 					duration = 3650
 					hidden = yes
 				}
-			}
 		}
 		if = {
 			limit = {
@@ -2211,13 +2217,12 @@ country_event = {
 					}
 				}
 				change_trade_goods = cotton
-				add_base_production = 2
-				add_country_modifier = {
+			}
+			add_country_modifier = {
 					name = "trade_hub_created"
 					duration = 3650
 					hidden = yes
 				}
-			}
 		}
 		if = {
 			limit = {
@@ -2243,12 +2248,7 @@ country_event = {
 					}
 				}
 				change_trade_goods = cloth
-				add_base_production = 2
-				add_country_modifier = {
-					name = "trade_hub_created"
-					duration = 3650
-					hidden = yes
-				}
+				
 				if = {
 					limit = {
 						has_province_modifier = ENG_english_wool
@@ -2256,10 +2256,16 @@ country_event = {
 					remove_province_modifier = ENG_english_wool
 				}
 			}
+			add_country_modifier = {
+					name = "trade_hub_created"
+					duration = 3650
+					hidden = yes
+				}
 		}
 		if = {
 			limit = {
 				any_owned_province = {
+					NOT = {has_province_modifier = gc_province_investment}
 					trade_goods = livestock
 					is_state = yes
 					development = 30
@@ -2272,6 +2278,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					NOT = {has_province_modifier = gc_province_investment}
 					is_state = yes
 					development = 30
 					OR = {
@@ -2280,21 +2287,26 @@ country_event = {
 						has_building = stock_exchange
 					}
 				}
-				add_base_production = 2
 				add_province_modifier = {
 					name = "trade_hub_created_in_province_livestock"
 					duration = 18250
 				}
-				add_country_modifier = {
+				add_province_modifier = {
+					name = "gc_province_investment"
+					duration = -1
+					hidden = yes
+				}
+			}
+			add_country_modifier = {
 					name = "trade_hub_created"
 					duration = 3650
 					hidden = yes
 				}
-			}
 		}
 		if = {
 			limit = {
 				any_owned_province = {
+					NOT = {has_province_modifier = gc_province_investment}
 					trade_goods = naval_supplies
 					is_state = yes
 					development = 30
@@ -2307,6 +2319,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					NOT = {has_province_modifier = gc_province_investment}
 					is_state = yes
 					development = 30
 					OR = {
@@ -2315,17 +2328,21 @@ country_event = {
 						has_building = stock_exchange
 					}
 				}
-				add_base_production = 2
 				add_province_modifier = {
 					name = "trade_hub_created_in_province_naval_supplies"
 					duration = 18250
 				}
-				add_country_modifier = {
+				add_province_modifier = {
+					name = "gc_province_investment"
+					duration = -1
+					hidden = yes
+				}
+			}
+			add_country_modifier = {
 					name = "trade_hub_created"
 					duration = 3650
 					hidden = yes
 				}
-			}
 		}
 	}	
 }
@@ -2574,5 +2591,33 @@ picture = COURT_eventPicture
 		}	
 	}
 	option = {	
+	}
+}
+
+#Adds the base cav ratio compensation
+country_event = {
+	id = ratio.1
+	title = "ratio.1.t"
+	desc = "ratio.1.d"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+
+	hidden = yes
+
+	trigger = {
+			mil_tech = 1
+			NOT = {	has_country_modifier =  "ratio_compensation_1" }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "ratio.1.a"
+		ai_chance = { factor = 100 }
+			add_country_modifier = {
+				name = "ratio_compensation_1"
+				duration = -1
+		}
 	}
 }
