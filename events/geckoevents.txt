@@ -2277,11 +2277,6 @@ country_event = {
 					trade_goods = naval_supplies
 					is_state = yes
 					base_production = 10
-					OR = {
-						has_building = marketplace
-						has_building = trade_depot
-						has_building = stock_exchange
-					}
 				}
 			}
 			random_owned_province = {
@@ -2290,11 +2285,6 @@ country_event = {
 					NOT = {has_province_modifier = gc_province_investment}
 					is_state = yes
 					base_production = 10
-					OR = {
-						has_building = marketplace
-						has_building = trade_depot
-						has_building = stock_exchange
-					}
 				}
 				add_province_modifier = {
 					name = "trade_hub_created_in_province_naval_supplies"
