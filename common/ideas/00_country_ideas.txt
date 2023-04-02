@@ -1531,6 +1531,7 @@ HUN_ideas = {
 	start = {
 		cavalry_power = 0.10
 		army_tradition = 1
+		no_religion_penalty = yes
 	}
 	
 	bonus = {

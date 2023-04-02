@@ -815,25 +815,26 @@ EOH_ideas = {
 		no_religion_penalty = yes
 	}
 	bonus = {
-		army_tradition_decay = -0.01
+		army_tradition = 1
 	}
 	trigger = {
 		tag = EOH
 	}
 	free = yes		#will be added at load.
 	
-	reformed_coinage = {
+	gc_reformed_coinage = {
 		global_tax_modifier = 0.15
 	}
 	found_the_black_army = {
 		discipline = 0.05
-		recover_army_morale_speed = 0.1
+		mercenary_discipline = 0.025
 	}
-	bulwark_of_christianity = {
-		global_manpower_modifier = 0.2
+	gc_bulwark_of_christianity = {
+		global_manpower_modifier = 0.25
 	}
-	hun_renaissanse_knowledge = {
+	gc_hun_renaissanse_knowledge = {
 		technology_cost = -0.05
+		development_cost -0.05
 	}
 	curtailed_peasantry = {
 		production_efficiency = 0.1
