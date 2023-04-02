@@ -101,7 +101,7 @@ workshop = {
 }
 
 temple = {
-	cost = 50
+	cost = 100
 	time = 12
 	modifier = {
 		local_tax_modifier = 0.4
