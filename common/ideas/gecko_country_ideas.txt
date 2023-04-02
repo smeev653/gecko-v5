@@ -830,7 +830,7 @@ EOH_ideas = {
 		mercenary_discipline = 0.025
 	}
 	gc_bulwark_of_christianity = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.20
 	}
 	gc_hun_renaissanse_knowledge = {
 		technology_cost = -0.05
