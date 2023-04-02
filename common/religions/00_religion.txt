@@ -1350,7 +1350,7 @@ muslim = {
 		color = { 0 153 0 }
 		icon = 5
 		country = {
-			cav_to_inf_ratio = 0.1
+			idea_cost = -0.05
 			heir_chance = 1.0
 		}
 		province = {
