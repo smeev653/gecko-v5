@@ -1809,7 +1809,7 @@ hussars_regiment = {
 	cavalry_shock = 1
 	morale_damage = 0.5
 	reinforce_speed = -0.5
-	regiment_manpower_usage = -1
+	regiment_manpower_usage = -0.75
 }
 marine_regiment = {
     shock_damage_received = -0.25
