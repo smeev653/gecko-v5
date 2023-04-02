@@ -7,7 +7,7 @@ merc_X_VEN_stratioti = {
 	}
 	regiments_per_development = 0.05
 	cavalry_weight = 1
-	cavalry_cap = 10
+	#cavalry_cap = 10
 	 modifier = {
 		cavalry_power = 0.15
 		cav_to_inf_ratio = 1

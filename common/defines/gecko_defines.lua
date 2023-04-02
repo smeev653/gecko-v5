@@ -185,7 +185,7 @@ NDefines.NMilitary.JANISSARIES_USES_CONSTRUCTION = 1
 NDefines.NMilitary.FLAGSHIP_REQUIRED_NAVY_SIZE_IN_SAILORS = 750
 NDefines.NMilitary.MERCENARY_COMPANY_STARTING_MORALE = 0.25
 NDefines.NMilitary.MERCENARY_COMPANY_MIN_REGIMENTS = 10
-NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 10
+NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40
 NDefines.NMilitary.MERCENARY_REINFORCE_COST_MULTIPLIER = 0.25
 NDefines.NMilitary.SIEGE_BONUS_FOOD_SHORTAGE = 1
 NDefines.NMilitary.SIEGE_BONUS_WATER_SHORTAGE = 1
@@ -213,6 +213,7 @@ NDefines.NMilitary.LEADER_MAX_PIPS = 8							-- Max general/admiral pips (per sk
 NDefines.NMilitary.LEADER_MIN_PIPS = 2
 NDefines.NMilitary.SLACKEN_AP_DROP = 0
 NDefines.NMilitary.SLACKEN_MANPOWER_INCREASE = 0
+NDefines.NMilitary.INSUFFICIENT_SUPPORT = -0.5
 
 NDefines.NAI.BIGSHIP_FRACTION = 0.1
 NDefines.NAI.TRANSPORT_FRACTION = -1 -- Max fraction of naval forcelimit that should be transports
