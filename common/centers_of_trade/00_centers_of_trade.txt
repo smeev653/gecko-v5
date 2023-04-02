@@ -42,7 +42,7 @@ world_port = {
         local_institution_spread = 0.3
     }
     state_modifiers = {
-        local_development_cost = -0.15
+        local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
 		trade_value_modifier = 0.2
@@ -60,7 +60,7 @@ world_port_2 = {
         local_institution_spread = 0.3
     }
     state_modifiers = {
-        local_development_cost = -0.15
+        local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
 		trade_value_modifier = 0.2
@@ -113,7 +113,7 @@ world_trade_center = {
         local_institution_spread = 0.5
     }
     state_modifiers = {
-        local_development_cost = -0.15
+        local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
 		trade_value_modifier = 0.2
@@ -132,7 +132,7 @@ world_trade_center_2 = {
         local_institution_spread = 0.5
     }
     state_modifiers = {
-        local_development_cost = -0.15
+        local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
 		trade_value_modifier = 0.2
