@@ -1326,27 +1326,12 @@ large_colonial_nation = {
 	
 }
 crown_colony_overlord = {
-	merchants = 1						  
-	land_forcelimit = 20
-	liberty_desire_from_subject_development = 0.5
-	stability_cost_modifier = 0.1
-	global_colonial_growth = -10
 }
 
 private_enterprise_overlord = {
-	merchants = 1						  
-	land_forcelimit = 20
-	liberty_desire_from_subject_development = 0.5
-	stability_cost_modifier = 0.1
-	global_colonial_growth = -10
 }
 
 self_governing_colony_overlord = {
-	merchants = 1						  
-	land_forcelimit = 20
-	liberty_desire_from_subject_development = 0.5
-	stability_cost_modifier = 0.1
-	global_colonial_growth = -10
 }
 
 crown_colony_subject = {
