@@ -1030,7 +1030,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			any_owned_province = {
-					development = 30
+					base_production = 10
 					OR = {
 						trade_goods = naval_supplies
 						trade_goods = livestock
@@ -1039,8 +1039,8 @@ country_decisions = {
 					}
 			}
 			NOT = { has_country_modifier = trade_hub_created_2 }
-			treasury = 200
-			dip_power = 50
+			treasury = 250
+			dip_power = 100
 		}
 		
 		effect = {
