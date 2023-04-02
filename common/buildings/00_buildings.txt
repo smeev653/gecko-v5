@@ -104,7 +104,7 @@ temple = {
 	cost = 50
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.5
+		local_tax_modifier = 0.4
 		local_missionary_strength = 0.01
 		
 	}

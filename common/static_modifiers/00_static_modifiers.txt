@@ -421,7 +421,7 @@ devastation = {
 
 prosperity = {
 	local_manpower_modifier = 0.15
-	local_tax_modifier = 0.15
+	local_tax_modifier = 0.10
 	local_autonomy = -0.05
 }
 
