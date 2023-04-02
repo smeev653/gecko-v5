@@ -1403,7 +1403,7 @@ PER_ideas = {
 
 BUR_Ideas = {
 	start = {
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.10
 		land_morale = 0.1
 	}
 	
@@ -1423,9 +1423,9 @@ BUR_Ideas = {
 		num_accepted_cultures = 2
 	}
 	gc_compagnies_ordonnance = {
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.025
 		merc_maintenance_modifier = -0.25
-		#15% available mercs
+		#10% available mercs
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
@@ -14732,11 +14732,11 @@ EPI_ideas = {
 LOT_ideas = {
 	start = {
 		infantry_power = 0.1
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.25
 	}
 	
 	bonus = {
-		global_trade_power = 0.15
+		global_trade_power = 0.2
 	}
 	
 	trigger = {
@@ -14744,14 +14744,14 @@ LOT_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	bur_estates_general = {
+	gc_bur_estates_general = {
 		global_trade_goods_size_modifier = 0.15
 		num_accepted_cultures = 2
 	}
 	gc_compagnies_ordonnance = {
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.025
 		merc_maintenance_modifier = -0.25
-		#15% available mercs
+		#10% available mercs
 	}
 	lot_glory_of_charlemagne = {
 		land_morale = 0.10
@@ -14765,7 +14765,7 @@ LOT_ideas = {
 	}
 	lot_court_of_europe = {
 		prestige = 1
-		advisor_pool = 1
+		advisor_cost = -0.1
 	}
 	lot_european_empire = {
 		core_creation = -0.15
