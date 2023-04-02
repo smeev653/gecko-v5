@@ -118,8 +118,6 @@ splendor_mercs_2_desc:0 "Hire Mercenaries in bulk."
 Show_Merc_limit_title:0 "§Y1. Mercenary Force Limit§!"
 Show_Merc_limit_desc:0 "This is our Mercenary Force Limit. If we go over this, our Mercenaries will become unsustainably expensive."
 gecko_merc_limit_tt:0 "Manually Update Mercenary Forcelimit"
-gecko_increased_merc_limit_tt:0 "This will §GIncrease our Available Mercenaries by +15%§!, but they will have -§R15.0% Morale§! for 10 Years."
-gecko_decreased_merc_limit_tt:0 "This will §RDecrease our Available Mercenaries by -15%§!, but they will have +§G10.0% Combat Ability§! for 10 Years."
 
 
 #arabia decision
@@ -130,10 +128,6 @@ gecko_decreased_merc_limit_tt:0 "This will §RDecrease our Available Mercenaries
  sm_hire_general_title:0 "Recruit Foreign General"
  sm_hire_general_desc:0 "Our nobility is producing an underwhelming amount of promising generals. Perhaps we should look to hiring a foreign general for a fee.."				
 
- #disband
- yoklama_effect_tooltip:0 "§RThe Janissaries estate will be removed entirely and all Janissary related government reforms and privileges will be lost. However, this brings an opportunity to reform the army..§!"
- force_janissaries_to_undergo_yoklama:0 "§YPost-Janissary Army Reform§!"
- 
 #trade hub
  Create_a_Trade_Hub_title:0 "Create a Center of Trade"
  Create_a_Trade_Hub_desc:0 "At least one of our province has become a trade hub and could potentially become a center of trade, our merchants say. They would however, need some investment to make this happen."
