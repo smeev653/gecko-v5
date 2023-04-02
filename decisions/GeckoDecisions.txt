@@ -1023,7 +1023,7 @@ country_decisions = {
 			has_country_flag = show_extra_decisions
 			ai = no
 			has_dlc = "Dharma"
-			NOT = { has_country_modifier = trade_hub_created }
+			NOT = { has_country_modifier = trade_hub_created_2 }
 		}
 		
 		allow = {
@@ -1043,7 +1043,7 @@ country_decisions = {
 		}
 		
 		effect = {
-			country_event = { id = gecko.43 }
+			country_event = { id = gecko.42 }
 		}
 		
 	}
