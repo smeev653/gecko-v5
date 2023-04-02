@@ -1254,7 +1254,6 @@ POL_ideas = {
 	winged_hussars = {
 		cavalry_power = 0.10
 		cossacks_loyalty_modifier = 0.1
-		cav_to_inf_ratio = 0.1
 		can_recruit_hussars = yes
 	}
 	foreign_section = {
