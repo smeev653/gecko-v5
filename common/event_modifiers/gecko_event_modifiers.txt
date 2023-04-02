@@ -356,7 +356,8 @@ trade_hub_created_in_province_naval_supplies = {
 }
 trade_hub_created = {
 }
-
+trade_hub_created_in_province = {
+}
 trade_hub_created_2 = {
 }
 gc_province_investment = {
