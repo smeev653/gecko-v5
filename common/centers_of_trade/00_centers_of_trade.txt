@@ -45,7 +45,7 @@ world_port = {
         local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
-		trade_value_modifier = 0.2
+		trade_value_modifier = 0.25
     }
     global_modifiers = {
         
@@ -63,7 +63,7 @@ world_port_2 = {
         local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
-		trade_value_modifier = 0.2
+		trade_value_modifier = 0.25
     }
     global_modifiers = {
         
@@ -116,7 +116,7 @@ world_trade_center = {
         local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
-		trade_value_modifier = 0.2
+		trade_value_modifier = 0.25
     }
 	global_modifiers = {
         
@@ -135,7 +135,7 @@ world_trade_center_2 = {
         local_development_cost = -0.10
         local_manpower_modifier = 0.33
         allowed_num_of_buildings = 1
-		trade_value_modifier = 0.2
+		trade_value_modifier = 0.25
     }
 	global_modifiers = {
         
