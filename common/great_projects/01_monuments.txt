@@ -18487,7 +18487,7 @@ fu_la_scala = {
 			dip_advisor_cost = -0.15
 			yearly_absolutism = 1.5
 			max_absolutism = 10
-			promote_culture_cost = -0.3r
+			promote_culture_cost = -0.3
 		}
 		
 		on_upgraded = {
