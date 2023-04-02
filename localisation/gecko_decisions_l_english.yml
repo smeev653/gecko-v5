@@ -135,5 +135,8 @@ gecko_decreased_merc_limit_tt:0 "This will §RDecrease our Available Mercenaries
  force_janissaries_to_undergo_yoklama:0 "§YPost-Janissary Army Reform§!"
  
 #trade hub
- Create_a_Trade_Hub_title:0 "Invest in the Provinces"
- Create_a_Trade_Hub_desc:0 "At least one of our province has become a production hub and could potentially become a center of production, our merchants say. They would however, need some investment to make this happen."
+ Create_a_Trade_Hub_title:0 "Create a Center of Trade"
+ Create_a_Trade_Hub_desc:0 "At least one of our province has become a trade hub and could potentially become a center of trade, our merchants say. They would however, need some investment to make this happen."
+
+ Create_a_Trade_Hub_2_title:0 "Invest in the Provinces"
+ Create_a_Trade_Hub_2_desc:0 "At least one of our province has become a production hub and could potentially become a center of production, our merchants say. They would however, need some investment to make this happen."

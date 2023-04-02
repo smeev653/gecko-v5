@@ -977,8 +977,47 @@ country_decisions = {
 			custom_tooltip = gc_hungary_change_paths_2_tooltip 
 		}
 	}
-
 	Create_a_Trade_Hub = {
+	
+		potential = {
+			ai = no
+			has_dlc = "Dharma"
+			NOT = { has_country_modifier = trade_hub_created }
+		}
+		
+		allow = {
+			is_at_war = no
+			any_owned_province = {
+					area_for_scope_province = {
+								type = all
+								NOT = {
+									province_has_center_of_trade_of_level = 1
+								}
+							}
+					development = 30
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+					NOT = {
+					province_has_center_of_trade_of_level = 1
+					}
+				
+			}
+			NOT = { has_country_modifier = trade_hub_created }
+			treasury = 200
+			dip_power = 50
+		}
+		
+		effect = {
+			country_event = { id = gecko.43 }
+			add_treasury = -200
+			add_dip_power = -50
+		}
+		
+	}
+	Create_a_Trade_Hub_2 = {
 	
 		potential = {
 			has_country_flag = show_extra_decisions
@@ -992,20 +1031,19 @@ country_decisions = {
 			any_owned_province = {
 					development = 30
 					OR = {
-						has_building = marketplace
-						has_building = trade_depot
-						has_building = stock_exchange
+						trade_goods = naval_supplies
+						trade_goods = livestock
+						trade_goods = wool
+						trade_goods = grain
 					}
 			}
-			NOT = { has_country_modifier = trade_hub_created }
+			NOT = { has_country_modifier = trade_hub_created_2 }
 			treasury = 200
 			dip_power = 50
 		}
 		
 		effect = {
 			country_event = { id = gecko.43 }
-			add_treasury = -200
-			add_dip_power = -50
 		}
 		
 	}

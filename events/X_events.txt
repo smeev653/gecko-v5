@@ -354,7 +354,7 @@ province_event = {
 		if = {
 			limit = {
 				owner = {
-					has_idea = {organised_mercenary_recruitment}
+					has_idea = organised_mercenary_recruitment
 				}	
 			}
 			owner = { add_adm_power = -15 }
