@@ -489,7 +489,7 @@ colony = {
 	liberty_desire_development_ratio = 0.1
 
 	max_government_rank = 1
-	cities_required_for_bonuses = 20
+	cities_required_for_bonuses = 10
 
 	relative_power_class = 1
 	should_quit_wars_on_activation = yes								 
@@ -524,7 +524,7 @@ colony = {
 	modifier_overlord = {
 		modifier = large_colonial_nation
 		trigger = {
-			num_of_cities = 15
+			num_of_cities = 10
 		}
 	}
 	modifier_subject = {
