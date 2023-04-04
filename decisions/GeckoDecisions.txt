@@ -1039,7 +1039,7 @@ country_decisions = {
 					}
 			}
 			NOT = { has_country_modifier = trade_hub_created_2 }
-			treasury = 250
+			treasury = 250 
 			dip_power = 100
 		}
 		
