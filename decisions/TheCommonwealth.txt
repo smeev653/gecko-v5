@@ -68,7 +68,7 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { accepted_culture = lithuanian } }
-				add_accepted_culture = lithuanian
+				add_accepted_culture_or_dip_power = lithuanian
 			}
 			add_country_modifier = {
 				name = plc_polish_lithuanian_union
