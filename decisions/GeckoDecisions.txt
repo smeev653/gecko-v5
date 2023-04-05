@@ -441,30 +441,6 @@ country_decisions = {
 						which = geckomercFL
 					}
 				}
-				#capital_scope = {	
-				#	NOT = {
-				#		num_of_units_in_province = {
-				#		amount = 1
-				#		}
-				#	}	
-				#}	
-				#splendor = 200
-				#NOT = {
-				#	check_variable = {
-				#		which = geckomercvalue
-				#		which = geckomercFL
-				#	}
-				#}
-				#NOT = { 
-				#	capital_scope = {
-				#		infantry_in_province = 30
-				#	}
-				#}	
-				capital_scope = {
-						controlled_by = ROOT
-						has_siege = no
-						unit_in_battle = no
-				}
 		}
 		effect = {
 			add_country_modifier = {
