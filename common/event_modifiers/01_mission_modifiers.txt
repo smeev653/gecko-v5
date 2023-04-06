@@ -7452,19 +7452,19 @@ hsa_development_works_of_the_hansa_modifier1 = {
 	development_cost = -0.025
 }
 hsa_development_works_of_the_hansa_modifier2 = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 hsa_development_works_of_the_hansa_modifier3 = {
-	development_cost = -0.075
+	development_cost = -0.025
 }
 hsa_development_works_of_the_hansa_modifier4 = {
-	development_cost = -0.1
+	development_cost = -0.025
 }
 hsa_development_works_of_the_hansa_modifier5 = {
-	development_cost = -0.125
+	development_cost = -0.025
 }
 hsa_development_works_of_the_hansa_modifier6 = {
-	development_cost = -0.15
+	development_cost = -0.025
 }
 hsa_lower_saxon_drittel_modifier = {
 	country_admin_power = 1 
