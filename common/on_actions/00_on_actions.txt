@@ -86,62 +86,6 @@ on_startup = {
 			set_country_flag = ayu_monarch_flag
 		}
 	}
-		if = { # Total Dev
-		limit = {
-			NOT = {
-				check_variable = {
-					which = DevelopmentClicksVariable
-					value = 1
-				}
-			}
-		} 
-		set_variable = {
-			which = DevelopmentClicksVariable
-			value = 0
-		}
-	}
-	if = { # Adm
-		limit = {
-			NOT = {
-				check_variable = {
-					which = AdmClicksVariable
-					value = 1
-				}
-			}
-		} 
-		set_variable = {
-			which = AdmClicksVariable
-			value = 0
-		}
-	}
-	if = { # Dip
-		limit = {
-			NOT = {
-				check_variable = {
-					which = DipClicksVariable
-					value = 1
-				}
-			}
-		} 
-		set_variable = {
-			which = DipClicksVariable
-			value = 0
-		}
-	}
-	if = { # Mil
-		limit = {
-			NOT = {
-				check_variable = {
-					which = MilClicksVariable
-					value = 1
-				}
-			}
-		} 
-		set_variable = {
-			which = MilClicksVariable
-			value = 0
-		}
-	}
 	gecko_mercs = yes
 	subject_warscore = yes
 	###X###
@@ -1837,18 +1781,6 @@ on_adm_development = {
 		}
 		add_base_tax = 1 
 	}
-	owner = {
-		change_variable = {
-			which = DevelopmentClicksVariable
-			value = 1
-		}
-	}
-	owner = {
-		change_variable = {
-			which = AdmClicksVariable
-			value = 1
-		}
-	}
 }
 
 # province
@@ -1869,19 +1801,6 @@ on_dip_development = {
 		}
 		add_base_production = 1 
 	}
-	owner = {
-		change_variable = {
-			which = DevelopmentClicksVariable
-			value = 1
-		}
-	}
-	owner = {
-		change_variable = {
-			which = DipClicksVariable
-			value = 1
-		}
-	}
-	
 }
 
 # province
@@ -1901,18 +1820,6 @@ on_mil_development = {
 			owner = { has_country_modifier = lit_increased_dev_modifier }
 		}
 		add_base_manpower = 1 
-	}
-	owner = {
-		change_variable = {
-			which = DevelopmentClicksVariable
-			value = 1
-		}
-	}
-	owner = {
-		change_variable = {
-			which = MilClicksVariable
-			value = 1
-		}
 	}
 }
 
