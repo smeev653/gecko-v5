@@ -15,15 +15,6 @@ national_bank_inflation = {
 	build_cost = -0.1
 	}
 
-estate_cossacks_exploration_expedition_mod = {
-	local_development_cost = -0.10
-}
-
-estate_cossacks_prime_herding_rights_mod = {
-	local_tax_modifier = -0.2
-	local_manpower_modifier = 0.25
-}
-
 domain_of_spouses_family = {
 	local_missionary_strength = -0.05
 	local_unrest = -3

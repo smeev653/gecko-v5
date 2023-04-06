@@ -185,39 +185,7 @@ country_event = {
 	picture = BORDER_TENSION_eventPicture
 
 	is_triggered_only = yes
-	
-	immediate = {
-		random_province = {
-			limit = {
-				region = low_countries_region
-			}
-			owner = {
-				save_event_target_as = ME_Hanover_Target_1
-			}
-		}
-		pick_best_tags = {
-			1 = yes
-			global_trigger = "capital_scope = { region = low_countries_region }"
-			event_target_name = "ME_Hanover_Target"
-			scale = "total_development"
-		}
-	}
-	
-	major = yes
-	major_trigger = {
-		OR = {
-			AND = {
-				tag = GBR
-				GBR = { junior_union_with = HAN }
-			}
-			AND = {
-				tag = ENG
-				ENG = { junior_union_with = HAN }
-			}
-			tag = event_target:ME_Hanover_Target_1
-		}
-	}
-	
+		
 	option = {
 		name = ME_Hannover_Events.5.a
 		

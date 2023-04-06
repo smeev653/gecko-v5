@@ -455,7 +455,7 @@ HAN_gen_missions_4 = {
 				name = HAN_north_resolved
 				duration = 9125
 			}
-			add_army_tradition_or_mil_power = { amount = 10 }
+			add_army_tradition = 10 
 		}
 	}
 	

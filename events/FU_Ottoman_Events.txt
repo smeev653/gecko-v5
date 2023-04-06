@@ -1392,18 +1392,18 @@ country_event = { #The Crown of Rome
 				duration = -1 
 				hidden = yes 
 			}
-			add_accepted_culture_or_dip_power = lombard
-			add_accepted_culture_or_dip_power = tuscan
-			add_accepted_culture_or_dip_power = sardinian
-			add_accepted_culture_or_dip_power = romagnan
-			add_accepted_culture_or_dip_power = ligurian
-			add_accepted_culture_or_dip_power = venetian
-			add_accepted_culture_or_dip_power = dalmatian
-			add_accepted_culture_or_dip_power = neapolitan
-			add_accepted_culture_or_dip_power = piedmontese
-			add_accepted_culture_or_dip_power = umbrian
-			add_accepted_culture_or_dip_power = sicilian
-			add_accepted_culture_or_dip_power = maltese
+			add_accepted_culture = lombard
+			add_accepted_culture = tuscan
+			add_accepted_culture = sardinian
+			add_accepted_culture = romagnan
+			add_accepted_culture = ligurian
+			add_accepted_culture = venetian
+			add_accepted_culture = dalmatian
+			add_accepted_culture = neapolitan
+			add_accepted_culture = piedmontese
+			add_accepted_culture = umbrian
+			add_accepted_culture = sicilian
+			add_accepted_culture = maltese
 		}
 	}
 }

@@ -509,7 +509,7 @@ BRA_missions_2 = {
 			}
 			else = {
 				add_mil_power = 100
-				add_army_tradition_or_mil_power = { amount = 10 }
+				add_army_tradition = 10
 				add_yearly_manpower = 0.5
 			}
 		}

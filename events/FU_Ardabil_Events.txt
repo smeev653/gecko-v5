@@ -82,7 +82,7 @@ country_event = {
 				name = arl_accepted_persian_culture_modifier
 				duration = -1 
 			}
-			add_accepted_culture_or_dip_power = persian 
+			add_accepted_culture = persian 
 		}
 		if = { 
 			limit = { has_heir = yes }

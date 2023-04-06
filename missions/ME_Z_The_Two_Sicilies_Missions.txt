@@ -293,12 +293,9 @@ the_two_sicilies_missions_1 = {
 			}
 		}
 		effect = {
-			capital_scope = {
-				add_development_scaled_on_monthly_monarch_power = yes
-			}
 			add_power_projection = {
 				type = mission_rewards_power_projection
-				amount = 30
+				amount = 50
 			}
 		}
 	}
@@ -607,10 +604,6 @@ the_two_sicilies_missions_3 = {
 		}
 		effect = {
 			118 = { add_core = ROOT }
-			capital_scope = {
-				add_development_scaled_on_monthly_monarch_power = yes
-			}
-			add_mana_scaled_on_monthly_monarch_power = yes
 			complete_conquest_of_rome_missions = yes
 		}
 	}

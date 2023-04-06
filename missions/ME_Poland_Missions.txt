@@ -523,7 +523,7 @@ POL_Missions_1 = {
 						264 = { country_or_non_sovereign_subject_holds = ROOT }
 					}
 					264 = {
-						create_or_add_center_of_trade_level = { level = 1 }
+						add_center_of_trade_level = 1
 					}
 				}
 			}
@@ -2442,7 +2442,7 @@ POL_Missions_4_2 = {
 			}
 			
 			add_papal_influence = 50
-			add_army_tradition_or_mil_power = { amount = 30 }
+			add_army_tradition = 30
 		}
 	}
 	

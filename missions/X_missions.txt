@@ -3081,7 +3081,7 @@ X_CRI_slot_4 = {
 			}
 		}
 		effect = {
-			add_army_tradition_or_mil_power = { amount = 20 }
+			add_army_tradition = 20
 			add_army_professionalism = 0.1
 			add_country_modifier = {
 				name = X_CRI_end_of_the_cossacks_cmod

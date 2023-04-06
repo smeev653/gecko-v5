@@ -85,18 +85,6 @@ country_event = {
 		ai_chance = { factor = 0 }
 		
 		set_country_flag = HES_refused
-		hidden_effect = {
-			pick_best_tags = {
-				1 = yes
-				global_trigger = " is_part_of_hre = yes religion = protestant NOT = { has_country_flag = HES_refused } NOT = { is_subject = yes }"
-				event_target_name = "HES_target"
-				scale = "total_development"
-			}
-			event_target:HES_target_1 = {
-				set_country_flag = HES_proposed_leader
-				country_event = { id = ME_Hesse_Events.1 }
-			}
-		}
 	}
 }
 

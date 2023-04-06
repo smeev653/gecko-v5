@@ -1185,7 +1185,7 @@ PRU_missions_3 = {
 			}
 			else = {
 				add_mil_power = 100
-				add_army_tradition_or_mil_power = { amount = 10 }
+				add_army_tradition = 15
 				add_yearly_manpower = 0.5
 			}
 		}
@@ -1831,15 +1831,15 @@ PRU_missions_4 = {
 				limit = {
 					NOT = { has_country_modifier = PRU_vassal_play }
 				}
-				add_army_tradition_or_mil_power = { amount = 20 }
+				add_army_tradition = 20
 			}
 			else = {
-				add_army_tradition_or_mil_power = { amount = 10 }
+				add_army_tradition = 10
 				custom_tooltip = PRU_for_every_vassal
 				hidden_effect = {
 					every_subject_country = {
 						ROOT = {
-							add_army_tradition_or_mil_power = { amount = 5 }
+							add_army_tradition = 5
 						}
 					}
 				}
@@ -1895,9 +1895,7 @@ PRU_missions_4 = {
 			set_country_flag = renovate_berlin_flag
 			country_event = { id = flavor_brapru.20 }
 			50 = {
-				create_or_add_center_of_trade_level = {
-					level = 1
-				}
+				add_center_of_trade_level = 1
 			}
 		}
 	}

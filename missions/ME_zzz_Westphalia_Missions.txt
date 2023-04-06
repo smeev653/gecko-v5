@@ -192,15 +192,6 @@ WES_missions_1 = {
 			owns = 86
 			owns = 69
 			prestige = 80
-			custom_trigger_tooltip = {
-				tooltip = WES_25_manpower_dev
-				area_has_total_development_of_type = {
-					type = manpower
-					1 = 86
-					2 = 69
-					total = 25
-				}
-			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -270,7 +261,7 @@ WES_missions_2 = {
 		effect = {
 			add_adm_power = 50
 			57 = {
-				create_or_add_center_of_trade_level = { level = 1 }
+				add_center_of_trade_level = 1
 			}
 			lower_bavaria_area = {
 				limit = {
@@ -578,7 +569,7 @@ WES_missions_3 = {
 			}
 		}
 		effect = {
-			add_army_tradition_or_mil_power = { amount = 15 }
+			add_army_tradition = 15
 			add_country_modifier = {
 				name = WES_saxon_traditions
 				duration = 5475
@@ -729,7 +720,6 @@ WES_missions_3 = {
 		trigger = {
 			has_adm_advisor_3 = yes
 			stability = 3
-			is_ahead_of_time_in_tech = { type = adm }
 		}
 		effect = {
 			add_country_modifier = {
@@ -920,7 +910,7 @@ WES_missions_4 = {
 				religion = ROOT
 				cost_multiplier = 0.75
 			}
-			add_army_tradition_or_mil_power = { amount = 10 }
+			add_army_tradition = 10
 		}
 	}
 
@@ -1195,7 +1185,7 @@ WES_missions_5 = {
 				name = WES_unbreakable_state
 				duration = 10950
 			}
-			add_army_tradition_or_mil_power = { amount = 20 }
+			add_army_tradition = 20
 		}
 	}
 }
