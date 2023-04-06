@@ -20,10 +20,6 @@ X_CRI_peace_treaty_2 = { #Defend Legacy
 		set_country_flag = X_CRI_defend_legacy_cflag
 	}
 	ai_weight = { 
-		export_to_variable = {
-			variable_name = ai_value 
-			value = 1
-		}
 		limit = { always = no }
 	}
 }
