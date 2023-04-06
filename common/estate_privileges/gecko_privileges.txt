@@ -300,7 +300,7 @@ estate_gc_priv_6 = {
 		}
 	}
 	on_granted = {
-		estate_gc_manual_power_points_tt
+		custom_tooltip = estate_gc_manual_power_points_tt
 		if = {
 				limit = {
 					NOT = {
