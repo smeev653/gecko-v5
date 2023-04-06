@@ -29,34 +29,34 @@ X_CRI_war_goal_1 = { #Crush the Tatar Yoke
 	war_name = X_CRI_war_name_1
 }
 
-X_CRI_war_goal_2 = { #Harvest the Steppe
-	type = superiority
-	attacker = {
-		badboy_factor = 1.0
-		prestige_factor = 1.0
-		peace_cost_factor = 1.0
-		required_treaty_to_take_provinces = {
-			X_CRI_peace_treaty_3
-		}
-		peace_options = {
-			X_CRI_peace_treaty_3
-			po_demand_provinces
-			po_become_vassal
-			po_become_tributary_state
-		}
-		prov_desc = ALL_PROVS
-	}
-	defender = {
-		badboy_factor = 1.0
-		prestige_factor = 1.0
-		peace_cost_factor = 1.0
-		peace_options = { 
-			po_demand_provinces
-		}
-		prov_desc = ALL_PROVS
-	}
-	war_name = X_CRI_war_name_2
-}
+#X_CRI_war_goal_2 = { #Harvest the Steppe
+#	type = superiority
+#	attacker = {
+#		badboy_factor = 1.0
+#		prestige_factor = 1.0
+#		peace_cost_factor = 1.0
+#		required_treaty_to_take_provinces = {
+#			X_CRI_peace_treaty_3
+#		}
+#		peace_options = {
+#			X_CRI_peace_treaty_3
+#			po_demand_provinces
+#			po_become_vassal
+#			po_become_tributary_state
+#		}
+#		prov_desc = ALL_PROVS
+#	}
+#	defender = {
+#		badboy_factor = 1.0
+#		prestige_factor = 1.0
+#		peace_cost_factor = 1.0
+#		peace_options = { 
+#			po_demand_provinces
+#		}
+#		prov_desc = ALL_PROVS
+#	}
+#	war_name = X_CRI_war_name_2
+#}
 
 X_CRI_war_goal_3 = { #Claim Genghisid Legacy
 	type = take_capital

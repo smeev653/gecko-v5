@@ -876,7 +876,7 @@ country_event = {
 					trade = yes
 					builder = ROOT
 				}
-				X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+				add_center_of_trade_level = 1
 			}
 		}
 	}
@@ -1002,7 +1002,7 @@ country_event = {
 		321 = {
 			cede_province = ROOT
 			add_core = ROOT
-			X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+			add_center_of_trade_level = 1
 		}
 		if = {
 			limit = {
@@ -1166,7 +1166,7 @@ country_event = {
 				culture = greek
 				NOT = { province_has_center_of_trade_of_level = 1 }
 			}
-			X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+			add_center_of_trade_level = 1
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
@@ -1765,7 +1765,7 @@ country_event = {
 			change_trade_goods = slaves
 		}
 		1111 = {
-			X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+			add_center_of_trade_level = 1
 		}
 		add_country_modifier = {
 			name = X_POR_companhia_de_lagos_cmod
@@ -1789,7 +1789,7 @@ country_event = {
 			change_trade_goods = slaves
 		}
 		1111 = {
-			X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
+			add_center_of_trade_level = 1
 		}
 		add_country_modifier = {
 			name = X_POR_razias_de_escravos_cmod

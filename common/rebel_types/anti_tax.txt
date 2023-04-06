@@ -170,14 +170,6 @@ anti_tax_rebels = {
 				NOT = { has_reform = peasants_republic }
 			}
 			country_event = { id = great_peasant_war.2 }
-			hidden_effect = {
-				1 = {
-					change_variable = {
-						which = GPW_counting_variable
-						value = 1
-					}
-				}
-			}
 		}
 		else = {
 			add_prestige = -50

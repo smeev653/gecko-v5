@@ -795,31 +795,6 @@ on_battle_won_unit = {
 	}
 	if = {
 		limit = {
-			general_with_name = "Damarwulan"
-		}
-		unit_owner = {
-			change_variable = {
-				which = DamarwulanWinVariable 
-				value = 1
-			}
-		}
-	}
-	if = {
-		limit = {
-			general_with_name = "Damarwulan"
-			unit_owner = {
-				check_variable = {
-					which = DamarwulanWinVariable
-					value = 5
-				}
-			}
-		}
-		unit_owner = {
-			country_event = { id = majapahit.2 days = 2 }
-		}
-	}
-	if = {
-		limit = {
 			unit_owner = {
 				mission_completed = son_military_expertise
 				NOT = { mission_completed = son_win_battles }
@@ -1768,19 +1743,6 @@ on_government_change = {
 	if = {
 		limit = { has_country_modifier = the_reign_of_terror }
 		remove_country_modifier = the_reign_of_terror
-	}
-	if = {
-		limit = {
-			has_global_flag = great_peasants_war_flag
-			is_part_of_hre = yes
-			has_reform = peasants_republic
-		}
-		1 = {
-			change_variable = {
-				which = GPW_counting_variable
-				value = -3
-			}
-		}
 	}
 }
 
@@ -4926,26 +4888,6 @@ on_colonist_boosting_colony = {
 			limit = {
 				OR = {
 					religion = noreligion
-					#test if colonists outnumber natives
-					variable_arithmetic_trigger = {
-						custom_tooltip = colonysize_is_larger_than_nativesize_tt
-						export_to_variable = {
-							which = vab_colonysize
-							value = trigger_value:colonysize
-						}
-						export_to_variable = {
-							which = vab_nativesize
-							value = trigger_value:native_size
-						}
-						multiply_variable = {
-							which = vab_nativesize
-							value = 100
-						}
-						check_variable = {
-							which = vab_colonysize
-							which = vab_nativesize
-						}
-					}
 					is_in_capital_area = yes
 					continent = north_america
 					continent = south_america
@@ -4965,25 +4907,6 @@ on_colonist_boosting_colony = {
 				OR = {
 					culture = noculture
 					#test if colonists outnumber natives
-					variable_arithmetic_trigger = {
-						custom_tooltip = colonysize_is_larger_than_nativesize_tt
-						export_to_variable = {
-							which = vab_colonysize
-							value = trigger_value:colonysize
-						}
-						export_to_variable = {
-							which = vab_nativesize
-							value = trigger_value:native_size
-						}
-						multiply_variable = {
-							which = vab_nativesize
-							value = 100
-						}
-						check_variable = {
-							which = vab_colonysize
-							which = vab_nativesize
-						}
-					}
 					is_in_capital_area = yes
 					continent = north_america
 					continent = south_america
