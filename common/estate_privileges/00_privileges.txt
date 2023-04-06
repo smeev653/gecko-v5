@@ -2518,7 +2518,6 @@ estate_jains_diplomacy = {
 		NOT = { has_estate = estate_burghers }
 	}
 	can_select = {
-			NOT = { has_estate_privilege = gc_estate_jains_diplomacy }
 	}
 	on_granted = {
 		custom_tooltip =  estate_gc_power_points_tt
