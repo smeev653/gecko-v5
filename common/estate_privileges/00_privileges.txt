@@ -588,6 +588,10 @@ estate_nobles_nobility_primacy = {
 	}
 	on_granted = {
 		custom_tooltip =  estate_gc_power_points_tt
+		add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}
@@ -996,6 +1000,10 @@ estate_church_religious_state = {
 	}
 	on_granted = {
 		custom_tooltip =  estate_gc_power_points_tt
+		add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}
@@ -1388,6 +1396,10 @@ estate_burghers_land_of_commerce = {
 	}
 	on_granted = {
 		custom_tooltip =  estate_gc_power_points_tt
+		add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}
@@ -2270,6 +2282,10 @@ estate_brahmins_brahmin_governance = {
 	}
 	on_granted = {
 		custom_tooltip =  estate_gc_power_points_tt
+			add_estate_loyalty = {
+				estate = estate_brahmins
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}
@@ -2650,6 +2666,10 @@ estate_maratha_military = {
 	}
 	on_granted = {
 		custom_tooltip =  estate_gc_power_points_tt
+		add_estate_loyalty = {
+				estate = estate_maratha
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}
@@ -2944,8 +2964,10 @@ estate_rajput_military = {
 	max_absolutism = -5
 	loyalty = -0.05
 	is_valid = {
+		always = no
 	}
 	can_select = {
+		always = no
 		custom_trigger_tooltip = {
 			tooltip = no_other_mil_privilege
 			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
@@ -2954,6 +2976,10 @@ estate_rajput_military = {
 	}
 	on_granted = {
 		custom_tooltip =  estate_gc_power_points_tt
+		add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = -20
+			}
 	}
 	penalties = {
 	}

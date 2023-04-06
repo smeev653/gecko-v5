@@ -184,5 +184,5 @@ gc_estate_nobles_nobility_primacy_desc:0 "Giving the [Root.GetNobilityName] free
 gc_estate_burghers_land_of_commerce:0 "Supreme Land of Commerce"
 gc_estate_burghers_land_of_commerce_desc:0 "In the land where the Burgher is king, the interests of commerce shall be well looked after."
 
-estate_gc_power_points_tt:0 "§RYou may not select both this privilege and privilege below at the same."
-estate_gc_manual_power_points_tt:0 "§G+150 Points at 0-49 Influence. \n+200 Points at 50-74 Influence. \n+250 Points at 75-99 Influence. \n+300 Points at 100 Influence.§!"
+estate_gc_power_points_tt:0 "§RYou may not select both this privilege and privilege below at the same time.§!"
+estate_gc_manual_power_points_tt:0 "§G+150§! Points at 0-49 Influence. \n§G+200§! Points at 50-74 Influence. \n§G+250§! Points at 75-99 Influence. \n§G+300§! Points at 100 Influence."

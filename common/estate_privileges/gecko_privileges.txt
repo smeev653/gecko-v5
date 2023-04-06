@@ -300,6 +300,7 @@ estate_gc_priv_6 = {
 		}
 	}
 	on_granted = {
+		estate_gc_manual_power_points_tt
 		if = {
 				limit = {
 					NOT = {
@@ -350,10 +351,6 @@ estate_gc_priv_6 = {
 				}
 				add_mil_power = 300
 			}				
-			add_estate_loyalty = {
-				estate = estate_nomadic_tribes
-				loyalty = -20
-			}
 	}
 	penalties = {
 	}
@@ -636,10 +633,6 @@ gc_estate_brahmins_brahmin_governance = {
 				}
 				add_adm_power = 300
 			}				
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -20
-			}
 	}
 	
 	penalties = {
@@ -674,7 +667,7 @@ gc_estate_church_religious_state = {
 						}	
 					}
 				}
-				add_adm_power = 100
+				add_adm_power = 150
 			}
 			if = {
 				limit = {
@@ -715,10 +708,6 @@ gc_estate_church_religious_state = {
 				}
 				add_adm_power = 300
 			}				
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -20
-			}
 		
 		penalties = {
 		}
@@ -738,12 +727,6 @@ gc_estate_burghers_land_of_commerce = {
 	#land_share = 5
 	max_absolutism = -5
 	#loyalty = -0.05
-	can_select = {
-		estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 50
-		}
-	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
 	}
@@ -799,11 +782,7 @@ gc_estate_burghers_land_of_commerce = {
 				}
 				add_dip_power = 300
 			}				
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -20
-			}
-		}
+	}
 	
 	penalties = {
 	}
@@ -882,15 +861,10 @@ gc_estate_maratha_military = {
 				}
 				add_mil_power = 300
 			}				
-			add_estate_loyalty = {
-				estate = estate_maratha
-				loyalty = -20
-			}
 	}
 	penalties = {
 	}
 	benefits = {
-		country_military_power = 1
 	}
 	ai_will_do = {
 		factor = 1500
@@ -962,10 +936,6 @@ gc_estate_rajput_military = {
 				}
 				add_mil_power = 300
 			}				
-			add_estate_loyalty = {
-				estate = estate_rajput
-				loyalty = -20
-			}
 	}
 
 	penalties = {
@@ -1043,10 +1013,6 @@ gc_estate_nobles_nobility_primacy = {
 				}
 				add_mil_power = 300
 			}				
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -20
-			}
 	}
 	penalties = {
 	}
