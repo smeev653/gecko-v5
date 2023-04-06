@@ -87,7 +87,7 @@ the_mining_act = {
 		full_idea_group = quality_ideas
 	}
 	
-	leader_land_fire = 1
+	fire_damage = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -761,7 +761,7 @@ foreign_conscription_centers = {
 		full_idea_group = offensive_ideas
 	}	
 	
-	leader_land_fire = 1
+	fire_damage = 0.15
 	
 	ai_will_do = {
 		factor = 1

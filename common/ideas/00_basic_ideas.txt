@@ -21,7 +21,6 @@ aristocracy_ideas = {
 		discipline = 0.03
 	}
 	local_nobility = {
-		army_tradition_from_battle = 0.375
 		prestige_from_land = 1
 		nobles_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
@@ -53,12 +52,12 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage = 0.15
+		fire_damage = 0.10
 		burghers_loyalty_modifier = 0.1
 	}
 	bill_of_rights = {
 		infantry_cost = -0.10
-		#army_tradition_from_battle = 0.15
+		army_tradition_from_battle = 0.25
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
@@ -74,8 +73,7 @@ plutocracy_ideas = {
 		manpower_recovery_speed = 0.2
 	}
 	free_merchants = {
-		leader_land_fire = 1
-		infantry_fire = 0.15
+		infantry_fire = 0.2
 	}
 	free_cities = {
 		monarch_military_power = 1
@@ -405,7 +403,8 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		leader_land_shock = 1
+		shock_damage = 0.05
+		fire_damage = 0.05
 	}
 
 	bayonet_leaders = {
@@ -414,6 +413,7 @@ offensive_ideas = {
 	}
 	glorious_arms = {
 		general_cost = -0.10
+		army_tradition_from_battle = 0.375
 	}
 	engineer_corps = {
 		siege_ability = 0.1
@@ -448,7 +448,7 @@ defensive_ideas = {
 		land_morale = 0.05
 	}
 	battlefield_commisions = {
-		army_tradition_from_battle = 0.375	
+		army_tradition_from_battle = 0.5
 	}
 
 	
@@ -468,7 +468,7 @@ defensive_ideas = {
 		leader_land_manuever = 1
 	}
 	supply_trains = {
-		land_forcelimit_modifier = 0.15
+		land_forcelimit_modifier = 0.2
 	}
 	improved_foraging = {
 		shock_damage_received = -0.15
@@ -800,7 +800,7 @@ quality_ideas = {
 		drill_decay_modifier = -0.1
 	}
 	copper_bottoms = {
-		reserves_organisation = 0.1
+		reserves_organisation = 0.15
 	}
 	naval_drill = {
 		reinforce_speed = 0.15
@@ -823,10 +823,11 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
+		special_unit_forcelimit = 0.1
 	}
 	garrison_conscription = {
 		free_leader_pool = 5
-		leader_cost = -0.1
+		leader_cost = -0.2
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -841,7 +842,7 @@ quantity_ideas = {
 		land_morale = 0.05
 	}
 	camp_followers = {
-		reserves_organisation = 0.2
+		reserves_organisation = 0.20
 	}
 	
 	expanded_supply_trains = {
