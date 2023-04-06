@@ -716,36 +716,6 @@ BRA_missions_4 = {
 		}
 		trigger = {
 			has_dip_advisor = yes
-			variable_arithmetic_trigger = {
-				custom_tooltip = BRA_larger_army
-				export_to_variable = {
-					variable_name = BRA_SAX_Army
-					value = army_size
-					who = SAX
-				}
-				export_to_variable = {
-					variable_name = BRA_THU_Army
-					value = army_size
-					who = THU
-				}
-				export_to_variable = {
-					variable_name = BRA_BRA_Army
-					value = army_size
-					who = BRA
-				}
-				change_variable = {			
-					which = BRA_SAX_Army
-					which = BRA_THU_Army
-				}
-				multiply_variable = {
-					which = BRA_SAX_Army
-					value = 1.5
-				}
-				check_variable = {
-					which = BRA_BRA_Army
-					which = BRA_SAX_Army
-				}
-			}
 		}
 		effect = {
 			silesia_area = {

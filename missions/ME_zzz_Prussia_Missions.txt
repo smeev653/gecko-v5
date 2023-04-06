@@ -2172,48 +2172,6 @@ PRU_missions_4 = {
 			tooltip = {
 				add_years_of_income = 0.1
 			}
-			if = {
-				limit = {
-					has_country_modifier = PRU_vassal_play
-				}
-				custom_tooltip = PRU_free_trade_vassal
-				hidden_effect = {
-					every_subject_country = {
-						limit = {
-							is_subject_of_type = prussian_vassal
-						}
-						ROOT = {
-							set_variable = {
-								which = PRU_money_to_add
-								value = 0
-							}
-							export_to_variable = {
-							}
-						}
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						num_of_owned_provinces_with = {
-							has_trade_building_trigger = yes
-							value = 20
-						}
-					}
-					add_years_of_income = 2
-				}
-				else = {
-					every_owned_province = {
-						limit = {
-							has_trade_building_trigger = yes
-						}
-						ROOT = {
-							add_years_of_income = 0.1
-						}
-					}
-				}
-			}
 		}
 	}
 	
