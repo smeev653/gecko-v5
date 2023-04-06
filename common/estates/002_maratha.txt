@@ -156,6 +156,7 @@ estate_maratha = {
 	privileges = {
 		estate_maratha_land_rights
 		estate_maratha_military
+		gc_estate_maratha_military
 		estate_maratha_advisor
 		estate_maratha_special_privilege
 		estate_maratha_loyalty_privilege

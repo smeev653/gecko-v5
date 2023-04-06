@@ -42,13 +42,7 @@
  estate_mamluks_ownership: "Mamluks Land Ownership"
  mamluks_loyalty_modifier: "Mamluks Loyalty Equilibrium"
  mamluks_influence_modifier: "Mamluks Influence"
- EST_VAL_HIGH_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 50% of the total Army: §Y$VAL$%§!"
- EST_VAL_MEDIUM_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 25% of the total Army: §Y$VAL$%§!"
- EST_VAL_LOW_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising at least 10% of the total Army: §Y$VAL$%§!"
- EST_VAL_VERY_LOW_CAVALRY_FRACTION_INF:0 "Has Cavalry units comprising less than 10% of the total Army: §Y$VAL$%§!"
- EST_VAL_HIGH_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 50% of the total Army: §G$VAL$§!"
- EST_VAL_MEDIUM_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising at least 25% of the total Army: §G$VAL$§!"
- EST_VAL_VERY_LOW_CAVALRY_FRACTION_MAM_LOY:0 "Has Cavalry units comprising less than 10% of the total Army: §R$VAL$§!"
+
 
 
  #Hungarian Nobles Estate
@@ -174,7 +168,21 @@
 
 #tribes
 
-estate_gc_priv_6:0 "Primacy of the Tribes"
-estate_gc_priv_6_desc:0 ""
+estate_gc_priv_6:0 "Supreme Primacy of the Tribes"
+estate_gc_priv_6_desc:0 "Giving the [Root.GetTribesName] free rein over our military would strengthen our capacities considerably, even if it may cost us dearly in compensating their contributions."
 estate_gc_priv_7:0 "Increased Levies"
 estate_gc_priv_7_desc:0 ""
+
+gc_estate_brahmins_brahmin_governance:0 "Supreme Brahmin Governance"
+gc_estate_brahmins_brahmin_governance_desc:0 "The [Root.GetBrahminsName] command considerable respect among Hindus and non-Hindus alike with their knowledge and wisdom. Few would balk at the notion of bringing them into the administration so that their ability and judgment may benefit the nation as a whole."
+gc_estate_maratha_military:0 "Supreme Primacy of the Marathas"
+gc_estate_maratha_military_desc:0 "Giving the [Root.GetNobilityName] free rein over our military would strengthen our capacities considerably, even if it may cost us dearly in compensating their contributions."
+gc_estate_church_religious_state:0 "Supreme Religious State"
+gc_estate_church_religious_state_desc:0 "By making matters of religion our foremost priority, we shall forge our nation into a more cohesive whole."
+gc_estate_nobles_nobility_primacy:0 "Supreme Primacy of the $ESTATE_NAME$"
+gc_estate_nobles_nobility_primacy_desc:0 "Giving the [Root.GetNobilityName] free rein over our military would strengthen our capacities considerably, even if it may cost us dearly in compensating their contributions."
+gc_estate_burghers_land_of_commerce:0 "Supreme Land of Commerce"
+gc_estate_burghers_land_of_commerce_desc:0 "In the land where the Burgher is king, the interests of commerce shall be well looked after."
+
+estate_gc_power_points_tt:0 "§RYou may not select both this privilege and privilege below at the same."
+estate_gc_manual_power_points_tt:0 "§G+150 Points at 0-49 Influence. \n+200 Points at 50-74 Influence. \n+250 Points at 75-99 Influence. \n+300 Points at 100 Influence.§!"

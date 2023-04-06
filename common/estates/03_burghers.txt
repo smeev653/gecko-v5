@@ -250,6 +250,7 @@ estate_burghers = {
 
 	privileges = {
 		estate_burghers_land_of_commerce
+		gc_estate_burghers_land_of_commerce
 		estate_burghers_free_enterprise
 		estate_burghers_land_rights
 		estate_burghers_admirals

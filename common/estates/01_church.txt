@@ -383,6 +383,7 @@ estate_church =
 	}
 	privileges = {
 		estate_church_religious_state
+		gc_estate_church_religious_state
 		smeev_mountain_dev_cost #smeev
 		PR_estate_clergy_exploration_expedition
 		estate_church_land_rights

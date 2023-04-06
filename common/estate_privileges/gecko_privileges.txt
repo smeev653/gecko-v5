@@ -292,6 +292,7 @@ estate_gc_priv_6 = {
 			tooltip = no_other_mil_privilege
 			NOT = { has_estate_privilege = estate_rajput_military }
 			NOT = { has_estate_privilege = estate_maratha_military }
+			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
 		}
 		estate_loyalty = {
 			estate = estate_nomadic_tribes
@@ -308,7 +309,7 @@ estate_gc_priv_6 = {
 						}	
 					}
 				}
-				add_mil_power = 50
+				add_mil_power = 150
 			}
 			if = {
 				limit = {
@@ -323,7 +324,7 @@ estate_gc_priv_6 = {
 						}	
 					}
 				}
-				add_mil_power = 100
+				add_mil_power = 200
 			}
 			if = {
 				limit = {
@@ -338,7 +339,7 @@ estate_gc_priv_6 = {
 						}	
 					}
 				}
-				add_mil_power = 150
+				add_mil_power = 250
 			}
 			if = {
 				limit = {
@@ -347,7 +348,7 @@ estate_gc_priv_6 = {
 						influence = 100
 					}
 				}
-				add_mil_power = 200
+				add_mil_power = 300
 			}				
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
@@ -569,5 +570,493 @@ estate_gc_priv_12 = {
 	
 	ai_will_do = {
 		factor = 0
+	}
+}
+
+gc_estate_brahmins_brahmin_governance = {
+	icon = privilege_admin_power
+	#land_share = 5
+	max_absolutism = -5
+	#loyalty = -0.05
+	is_valid = {
+		NOT = { religion_group = muslim }
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
+	}
+	on_granted = {
+		custom_tooltip =  estate_gc_manual_power_points_tt
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 50
+						}	
+					}
+				}
+				add_adm_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 75
+						}	
+					}
+				}
+				add_adm_power = 200
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 100
+						}	
+					}
+				}
+				add_adm_power = 250
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 100
+					}
+				}
+				add_adm_power = 300
+			}				
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -20
+			}
+	}
+	
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { 
+		remove_estate_privilege = estate_brahmins_brahmin_governance
+	}
+}
+
+gc_estate_church_religious_state = {
+	icon = privilege_seek_support_of_clergy
+	#land_share = 5
+	max_absolutism = -5
+	#loyalty = -0.05
+	can_select = {
+		NOT = { has_estate_privilege = estate_church_religious_state }
+	}
+	on_granted = {
+		custom_tooltip =  estate_gc_manual_power_points_tt
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 50
+						}	
+					}
+				}
+				add_adm_power = 100
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 75
+						}	
+					}
+				}
+				add_adm_power = 200
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 100
+						}	
+					}
+				}
+				add_adm_power = 250
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_church
+						influence = 100
+					}
+				}
+				add_adm_power = 300
+			}				
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -20
+			}
+		
+		penalties = {
+		}
+		benefits = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cooldown_years = 20
+		on_cooldown_expires = {
+			remove_estate_privilege = estate_church_religious_state
+		}
+	}
+}
+gc_estate_burghers_land_of_commerce = {
+	icon = privilege_diplo_power
+	#land_share = 5
+	max_absolutism = -5
+	#loyalty = -0.05
+	can_select = {
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 50
+		}
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
+	}
+	on_granted = {
+		custom_tooltip =  estate_gc_manual_power_points_tt
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 50
+						}	
+					}
+				}
+				add_dip_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 75
+						}	
+					}
+				}
+				add_dip_power = 200
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 100
+						}	
+					}
+				}
+				add_dip_power = 250
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 100
+					}
+				}
+				add_dip_power = 300
+			}				
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -20
+			}
+		}
+	
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = { 
+		remove_estate_privilege = estate_burghers_land_of_commerce
+	}
+}
+
+gc_estate_maratha_military = {
+	icon = privilege_military_power
+	land_share = 10
+	max_absolutism = -5
+	loyalty = -0.05
+	is_valid = {
+		always = no
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_maratha_military }
+		NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
+	}
+	on_granted = {
+		custom_tooltip =  estate_gc_manual_power_points_tt
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_maratha
+							influence = 50
+						}	
+					}
+				}
+				add_mil_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate =estate_maratha
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_maratha
+							influence = 75
+						}	
+					}
+				}
+				add_mil_power = 200
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_maratha
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_maratha
+							influence = 100
+						}	
+					}
+				}
+				add_mil_power = 250
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_maratha
+						influence = 100
+					}
+				}
+				add_mil_power = 300
+			}				
+			add_estate_loyalty = {
+				estate = estate_maratha
+				loyalty = -20
+			}
+	}
+	penalties = {
+	}
+	benefits = {
+		country_military_power = 1
+	}
+	ai_will_do = {
+		factor = 1500
+	}
+}
+
+gc_estate_rajput_military = {
+	icon = privilege_military_power
+	#land_share = 5
+	max_absolutism = -5
+	#loyalty = -0.05
+	is_valid = {
+		technology_group = indian
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_maratha_military }
+		NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
+		NOT = { has_estate_privilege = estate_rajput_military }
+	}
+	on_granted = {
+		custom_tooltip =  estate_gc_manual_power_points_tt
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_rajput
+							influence = 50
+						}	
+					}
+				}
+				add_mil_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajput
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_rajput
+							influence = 75
+						}	
+					}
+				}
+				add_mil_power = 200
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajput
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_rajput
+							influence = 100
+						}	
+					}
+				}
+				add_mil_power = 250
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_rajput
+						influence = 100
+					}
+				}
+				add_mil_power = 300
+			}				
+			add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = -20
+			}
+	}
+
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+	remove_estate_privilege = estate_rajput_military
+	}
+}
+
+gc_estate_nobles_nobility_primacy = {
+	icon = privilege_military_power
+	#land_share = 5
+	max_absolutism = -5
+	#loyalty = -0.05
+	can_select = {
+		NOT = { has_estate_privilege = estate_maratha_military }
+		NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
+		NOT = { has_estate_privilege = estate_rajput_military }
+	}
+	on_granted = {
+		custom_tooltip =  estate_gc_manual_power_points_tt
+		if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 50
+						}	
+					}
+				}
+				add_mil_power = 150
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 75
+						}	
+					}
+				}
+				add_mil_power = 200
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 100
+						}	
+					}
+				}
+				add_mil_power = 250
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 100
+					}
+				}
+				add_mil_power = 300
+			}				
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -20
+			}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+	remove_estate_privilege = estate_nobles_nobility_primacy
 	}
 }
