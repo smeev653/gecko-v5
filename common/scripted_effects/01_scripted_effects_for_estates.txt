@@ -3,8 +3,6 @@
 # Will apply effect if estate is present
 # effect: Will apply effect to each estate present if defined
 # <estate>_effect: Will apply effect to specific estate present if defined
-
-
 each_estate_effect = {
 	if = {
 		limit = {
@@ -454,18 +452,35 @@ on_religion_change_estate_privileges_effect = {
 			remove_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
 		}
 	}
-
 	if = {
 		limit = {
-			any_owned_province = { has_province_modifier = estate_nomadic_tribes_steppes_devcost }
+			OR = {
+				has_estate_privilege = estate_church_one_faith_one_culture
+				has_estate_privilege = estate_brahmins_one_faith_one_culture
+			}
 		}
 		every_owned_province = {
 			limit = {
-				has_province_modifier = estate_nomadic_tribes_steppes_devcost
+				has_province_modifier = estate_church_united_faith_and_culture
+				NOT = { religion = ROOT }
 			}
-		remove_province_modifier = estate_nomadic_tribes_steppes_devcost
-		}		
-	}					
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		every_owned_province = {
+			limit = {				
+				NOT = { has_province_modifier = estate_church_united_faith_and_culture }
+				religion = ROOT
+				OR = {
+					culture_group = ROOT
+					has_owner_accepted_culture = yes
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_united_faith_and_culture
+				duration = -1
+			}
+		}
+	}
 }
 
 on_secondary_religion_change_estate_privileges_effect = {
@@ -477,8 +492,43 @@ on_secondary_religion_change_estate_privileges_effect = {
 }
 
 on_harmonized_religion_estate_privileges_effect = {
-	
+	if = {
+		limit = {
+			OR = {
+				has_estate_privilege = estate_church_one_faith_one_culture
+				has_estate_privilege = estate_brahmins_one_faith_one_culture
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = estate_church_united_faith_and_culture
+				NOT = { religion = ROOT }
+				owner = { NOT = { has_harmonized_with = PREV } }
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+		every_owned_province = {
+			limit = {				
+				NOT = { has_province_modifier = estate_church_united_faith_and_culture }
+				owner = {
+					OR = {
+						religion = PREV
+						has_harmonized_with = PREV
+					}
+				}
+				OR = {
+					culture_group = ROOT
+					has_owner_accepted_culture = yes
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_united_faith_and_culture
+				duration = -1
+			}
+		}
+	}
 }
+
 on_annexed_estate_privileges_effect = {
 	if = {
 		limit = {
@@ -726,98 +776,133 @@ on_province_religion_converted_estate_privileges_effect = {
 			remove_province_modifier = estate_maratha_levies_for_muslims_mod
 		}
 	}
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					has_estate_privilege = estate_church_one_faith_one_culture
+					has_estate_privilege = estate_brahmins_one_faith_one_culture
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						religion = ROOT
+						has_harmonized_with = ROOT
+						secondary_religion = ROOT
+					}
+					OR = {
+						culture_group = ROOT
+						accepted_culture = ROOT
+					}
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_united_faith_and_culture
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = { culture_group = ROOT }
+					NOT = { accepted_culture = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_false_culture
+				duration = -1
+			}
+		}
+	}
 }
 
 on_province_culture_converted_estate_privilges_effect = {
-
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					has_estate_privilege = estate_church_one_faith_one_culture
+					has_estate_privilege = estate_brahmins_one_faith_one_culture
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						accepted_culture = ROOT
+						culture_group = ROOT
+					}
+					OR = {
+						religion = ROOT
+						has_harmonized_with = ROOT
+						secondary_religion = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_province_modifier = estate_church_false_culture
+				}
+				remove_province_modifier = estate_church_false_culture
+			}
+			add_province_modifier = {
+				name = estate_church_united_faith_and_culture
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = { culture_group = ROOT }
+					NOT = { accepted_culture = ROOT }
+				}
+			}
+			if = {
+				limit = {
+					has_province_modifier = estate_church_united_faith_and_culture
+				}
+				remove_province_modifier = estate_church_united_faith_and_culture
+			}
+			add_province_modifier = {
+				name = estate_church_false_culture
+				duration = -1
+			}
+		}
+	}
 }
 
-
-
-
-
 on_province_owner_change_estate_privileges_effect = {
-###nomadic tribes changes###
 	if = {
 		limit = { has_terrain = steppe }
 		if = {
 			limit = {
 				owner = {
-					has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils
+					has_estate_privilege = estate_cossacks_prime_herding_rights
 				}
-				NOT = { has_province_modifier = estate_nomadic_tribes_steppes_devcost }
+				NOT = { has_province_modifier = estate_cossacks_prime_herding_rights_mod }
 			}
 			add_province_modifier = {
-				name = estate_nomadic_tribes_steppes_devcost
+				name = estate_cossacks_prime_herding_rights_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_cossacks_exploration_expedition
+				}
+				NOT = { has_province_modifier = estate_cossacks_exploration_expedition_mod }
+			}
+			add_province_modifier = {
+				name = estate_cossacks_exploration_expedition_mod
 				duration = -1
 			}
 		}
 	}
-	else_if = {
-		limit = {
-			has_terrain = steppe
-			has_province_modifier = estate_nomadic_tribes_steppes_devcost
-			owner = {
-				NOT = { has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils }
-			}
-		}
-		remove_province_modifier = estate_nomadic_tribes_steppes_devcost
-	}
-	
-###qizilbash changes###
-	if = {
-		limit = {
-			owner = {
-				has_estate_privilege = estate_qizilbash_levies
-			}
-			OR = {
-				culture = azerbaijani
-				culture = turkish
-				culture = luri
-				}
-		}
-		add_province_modifier = {
-			name = estate_qizilbash_levies_mod
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			has_province_modifier = estate_qizilbash_levies_mod
-			owner = {
-				NOT = { has_estate_privilege = estate_qizilbash_levies }
-			}
-		}
-		remove_province_modifier = estate_qizilbash_levies_mod
-	}
-############################
-	#if = {
-	#	limit = { has_terrain = steppe }
-	#	if = {
-	#		limit = {
-	#			owner = {
-	#				has_estate_privilege = estate_cossacks_prime_herding_rights
-	#			}
-	#			NOT = { has_province_modifier = estate_cossacks_prime_herding_rights_mod }
-	#		}
-	#		add_province_modifier = {
-	#			name = estate_cossacks_prime_herding_rights_mod
-	#			duration = -1
-	#		}
-	#	}
-	#	if = {
-	#		limit = {
-	#			owner = {
-	#				has_estate_privilege = estate_cossacks_exploration_expedition
-	#			}
-	#			NOT = { has_province_modifier = estate_cossacks_exploration_expedition_mod }
-	#		}
-	#		add_province_modifier = {
-	#			name = estate_cossacks_exploration_expedition_mod
-	#			duration = -1
-	#		}
-	#	}
-	#}
 	else_if = {
 		limit = {
 			has_terrain = steppe
@@ -828,54 +913,6 @@ on_province_owner_change_estate_privileges_effect = {
 		}
 		remove_province_modifier = estate_cossacks_prime_herding_rights_mod
 	}
-	if = {
-		limit = { has_terrain = desert }
-		if = {
-			limit = {
-				owner = {
-					has_estate_privilege = PR_estate_clergy_exploration_expedition
-				}
-				NOT = { has_province_modifier = PR_estate_clergy_exploration_expedition_mod }
-			}
-			add_province_modifier = {
-				name = PR_estate_clergy_exploration_expedition_mod
-				duration = -1
-			}
-		}
-	}
-	
-	if = {
-        limit = { has_terrain = coastal_desert }
-        if = {
-            limit = {
-                owner = {
-                    has_estate_privilege = PR_estate_clergy_exploration_expedition
-                }
-                NOT = { has_province_modifier = PR_estate_clergy_exploration_expedition_mod }
-            }
-            add_province_modifier = {
-                name = PR_estate_clergy_exploration_expedition_mod
-                duration = -1
-            }
-        }
-    }
-	
-	if = {
-        limit = { has_terrain = mountain }
-        if = {
-            limit = {
-                owner = {
-                    has_estate_privilege = smeev_mountain_dev_cost
-                }
-                NOT = { has_province_modifier = PR_estate_clergy_exploration_expedition_mod }
-            }
-            add_province_modifier = {
-                name = PR_estate_clergy_exploration_expedition_mod
-                duration = -1
-            }
-        }
-    }
-	
 	if = {
 		limit = {
 			owner = {
@@ -1348,6 +1385,45 @@ on_province_owner_change_estate_privileges_effect = {
 	}
 	if = {
 		limit = {
+			trade_goods = grain
+			owner = {
+				OR = {
+					has_estate_privilege = estate_burghers_khmer_irrigation
+					has_estate_privilege = estate_vaisyas_khmer_irrigation
+				}
+			}
+		}
+		add_province_modifier = {
+			name = estate_burghers_khmer_irrigation_mod
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_climate = tropical
+			owner = {
+				has_estate_privilege = estate_burghers_tropical_nation
+			}
+		}
+		add_province_modifier = {
+			name = estate_burghers_tropical_mod
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			religion = animism
+			owner = {
+				has_estate_privilege = estate_church_lao_animism
+			}
+		}
+		add_province_modifier = {
+			name = estate_church_lao_animism_mod
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
 			religion = hinduism
 			owner = {
 				has_estate_privilege = estate_maratha_levies_for_muslims
@@ -1356,6 +1432,47 @@ on_province_owner_change_estate_privileges_effect = {
 		add_province_modifier = {
 			name = estate_maratha_levies_for_muslims_mod
 			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					has_estate_privilege = estate_church_one_faith_one_culture
+					has_estate_privilege = estate_brahmins_one_faith_one_culture
+				}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						religion = ROOT
+						has_harmonized_with = ROOT
+						secondary_religion = ROOT
+					}
+					OR = {
+						culture_group = ROOT
+						accepted_culture = ROOT
+					}
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_united_faith_and_culture
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = { culture_group = ROOT }
+					NOT = { accepted_culture = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = estate_church_false_culture
+				duration = -1
+			}
 		}
 	}
 	if = {
@@ -1460,6 +1577,115 @@ on_province_owner_change_estate_privileges_effect = {
 			}
 		}
 	}
+	if = {
+		limit = { has_terrain = steppe }
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils
+				}
+				NOT = { has_province_modifier = estate_nomadic_tribes_steppes_devcost }
+			}
+			add_province_modifier = {
+				name = estate_nomadic_tribes_steppes_devcost
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_terrain = steppe
+			has_province_modifier = estate_nomadic_tribes_steppes_devcost
+			owner = {
+				NOT = { has_estate_privilege = estate_nomadic_tribes_share_of_the_spoils }
+			}
+		}
+		remove_province_modifier = estate_nomadic_tribes_steppes_devcost
+	}
+	
+###qizilbash changes###
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_qizilbash_levies
+			}
+			OR = {
+				culture = azerbaijani
+				culture = turkish
+				culture = luri
+				}
+		}
+		add_province_modifier = {
+			name = estate_qizilbash_levies_mod
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = estate_qizilbash_levies_mod
+			owner = {
+				NOT = { has_estate_privilege = estate_qizilbash_levies }
+			}
+		}
+		remove_province_modifier = estate_qizilbash_levies_mod
+	}
+	else_if = {
+		limit = {
+			has_terrain = steppe
+			has_province_modifier = estate_cossacks_prime_herding_rights_mod
+			owner = {
+				NOT = { has_estate_privilege = estate_cossacks_prime_herding_rights }
+			}
+		}
+		remove_province_modifier = estate_cossacks_prime_herding_rights_mod
+	}
+	if = {
+		limit = { has_terrain = desert }
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = PR_estate_clergy_exploration_expedition
+				}
+				NOT = { has_province_modifier = PR_estate_clergy_exploration_expedition_mod }
+			}
+			add_province_modifier = {
+				name = PR_estate_clergy_exploration_expedition_mod
+				duration = -1
+			}
+		}
+	}
+	
+	if = {
+        limit = { has_terrain = coastal_desert }
+        if = {
+            limit = {
+                owner = {
+                    has_estate_privilege = PR_estate_clergy_exploration_expedition
+                }
+                NOT = { has_province_modifier = PR_estate_clergy_exploration_expedition_mod }
+            }
+            add_province_modifier = {
+                name = PR_estate_clergy_exploration_expedition_mod
+                duration = -1
+            }
+        }
+    }
+	
+	if = {
+        limit = { has_terrain = mountain }
+        if = {
+            limit = {
+                owner = {
+                    has_estate_privilege = smeev_mountain_dev_cost
+                }
+                NOT = { has_province_modifier = PR_estate_clergy_exploration_expedition_mod }
+            }
+            add_province_modifier = {
+                name = PR_estate_clergy_exploration_expedition_mod
+                duration = -1
+            }
+        }
+    }
 }
 
 on_province_tax_building_built_estate_privileges_effect = {
@@ -2048,6 +2274,24 @@ on_trade_good_changed_estate_privileges_effect = {
 		}
 		remove_province_modifier = estate_maratha_monopoly_of_gems_mod
 	}
+	if = {
+		limit = {
+			has_province_modifier = estate_burghers_control_over_gold_mine
+			NOT = { trade_goods = gold }
+		}
+		remove_province_modifier = estate_burghers_control_over_gold_mine
+	}
+	else_if = {
+		limit = {
+			from = { has_estate_privilege = estate_burghers_control_over_the_mint }
+			NOT = { has_province_modifier = estate_burghers_control_over_gold_mine }
+			trade_goods = gold
+		}
+		add_province_modifier = {
+			name = estate_burghers_control_over_gold_mine
+			duration = -1
+		}
+	}
 }
 
 on_loan_repaid_estate_privileges_effect = {
@@ -2057,13 +2301,6 @@ on_loan_repaid_estate_privileges_effect = {
 			has_estate_loan = no
 		}
 		remove_estate_privilege = estate_burghers_indebted_to_burghers
-	}
-	if = {
-		limit = {
-			has_estate_privilege = estate_burghers_indebted_to_burghers_2
-			has_estate_loan = no
-		}
-		remove_estate_privilege = estate_burghers_indebted_to_burghers_2
 	}
 	if = {
 		limit = {
@@ -2089,14 +2326,123 @@ on_bi_yearly_pulse_estate_privileges_effect = {
 }
 
 on_culture_promoted_estate_privileges_effect = {
+	if = {
+		limit = {
+			OR = {
+				has_estate_privilege = estate_church_one_faith_one_culture
+				has_estate_privilege = estate_brahmins_one_faith_one_culture
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+				OR = {
+					culture_group = ROOT
+					has_owner_accepted_culture = yes
+				}
+			}
+			remove_province_modifier = estate_church_false_culture
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							religion = PREV
+							has_harmonized_with = PREV
+							secondary_religion = PREV
+						}
+					}
+				}
+				add_province_modifier = {
+					name = estate_church_united_faith_and_culture
+					duration = -1
+				}
+			}
+		}
+	}
 }
 
 on_culture_demoted_estate_privileges_effect = {
-	
+	if = {
+		limit = {
+			OR = {
+				has_estate_privilege = estate_church_one_faith_one_culture
+				has_estate_privilege = estate_brahmins_one_faith_one_culture
+			}
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					NOT = { has_province_modifier = estate_church_false_culture }
+					has_province_modifier = estate_church_united_faith_and_culture
+				}
+				has_owner_accepted_culture = no
+				NOT = { culture_group = ROOT }
+			}
+			add_province_modifier = {
+				name = estate_church_false_culture
+				duration = -1
+			}
+			remove_province_modifier = estate_church_united_faith_and_culture
+		}
+	}
 }
+
 on_primary_culture_changed_privileges_effect = {
-	
+	if = {
+		limit = {
+			OR = {
+				has_estate_privilege = estate_church_one_faith_one_culture
+				has_estate_privilege = estate_brahmins_one_faith_one_culture
+			}
+		}
+		every_owned_province = {
+			remove_province_modifier = estate_church_false_culture
+			remove_province_modifier = estate_church_united_faith_and_culture
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							religion = PREV
+							has_harmonized_with = PREV
+							secondary_religion = PREV
+						}
+					}
+					OR = {
+						has_owner_accepted_culture = yes
+						culture_group = ROOT
+					}
+				}
+				add_province_modifier = {
+					name = estate_church_united_faith_and_culture
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_province_modifier = estate_church_united_faith_and_culture
+				}
+				remove_province_modifier = estate_church_united_faith_and_culture
+			}
+			if = {
+				limit = {
+					NOT = { culture_group = ROOT }
+					has_owner_accepted_culture = no
+				}
+				add_province_modifier = {
+					name = estate_church_false_culture
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_province_modifier = estate_church_false_culture
+				}
+				remove_province_modifier = estate_church_false_culture
+			}
+		}
+	}
 }
+
 reapply_estate_privilege = {
 	# privilege: The privilege we want to reapply
 	if = {
@@ -2969,6 +3315,7 @@ spawn_rebels_seize_land_switch = {
 		1 = { custom_tooltip = estate_seize_land_interaction_tooltip_1 seize_land_effect = { scale = 1 } }
 	}
 }
+
 # Supports the following parameters
 ###########################################
 # estate_nobles
