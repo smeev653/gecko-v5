@@ -6767,7 +6767,7 @@ estate_burghers_build_manufactory_in_y = {
 			has_burghers_trade_good_trigger = yes
 		}
 		monthly_income = 30
-	adm_tech = 16	
+		adm_tech = 16	
 	}
 	selection_weight = {
 		factor = 2
@@ -7484,6 +7484,7 @@ estate_church_build_manufactory_in_y = {
 		}
     }
     task_completed_effect = {
+		on_completed_agenda_effect_church = yes
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
@@ -7798,6 +7799,7 @@ estate_church_build_university_in_y = {
 		}
     }
     task_completed_effect = {
+		on_completed_agenda_effect_church = yes
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
@@ -8647,7 +8649,6 @@ estate_church_develop_x = {
 						area_for_scope_province = {
 							is_capital_of = root
 						}
-						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -8685,7 +8686,6 @@ estate_church_develop_x = {
 						region_for_scope_province = {
 							is_capital_of = root
 						}
-						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -8694,7 +8694,6 @@ estate_church_develop_x = {
 				random_owned_province = {
 					limit = {
 						is_state_core = root
-						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -8737,6 +8736,7 @@ estate_church_develop_x = {
 		}
     }
     task_completed_effect = {
+		on_completed_agenda_effect_church = yes
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
@@ -8983,7 +8983,6 @@ estate_nobles_develop_x = {
 						region_for_scope_province = {
 							is_capital_of = root
 						}
-						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
@@ -8992,7 +8991,6 @@ estate_nobles_develop_x = {
 				random_owned_province = {
 					limit = {
 						is_state_core = root
-						NOT = { has_province_modifier = gc_african_corridor } #Gecko African corridor
 					}
 					save_event_target_as = agenda_province
 				}
