@@ -152,7 +152,7 @@ hin_slot_2 = {
 					}
 				}
 				add_prestige_or_monarch_power = { amount = 20 }
-				add_yearly_manpower = 5
+				add_yearly_manpower = 1
 			}
 		}
 	}
@@ -161,15 +161,15 @@ hin_slot_2 = {
 		required_missions = { hin_west_india }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1334
-				province_id = 4346
+				province_id = 4341
+				province_id = 1335
 			}
 		}
 		trigger = {
-			1334 = {
+			4341 = {
 				is_strongest_trade_power = ROOT
 			}
-			4346 = {
+			1335 = {
 				is_strongest_trade_power = ROOT
 			}
 		}

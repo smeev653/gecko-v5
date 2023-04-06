@@ -2446,7 +2446,7 @@ south_lanka_area = { #3
 }
 
 ahmedabad_area = { #5
-	516 2051 2054 4512 4457
+	2051 2054 4512 4457
 }
 
 patan_area = { #4
@@ -4096,6 +4096,7 @@ trans_jordan_area = { }
 guatemala_area = { }
 
 X_unused_provinces_area = {
+	516
 	436
 	461
 	528

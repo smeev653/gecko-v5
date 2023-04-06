@@ -398,6 +398,7 @@ country_decisions = {
 		allow = {
 			is_bankrupt = no
 			num_of_loans = 10
+			NOT = { num_of_allies = 1 }
 		}
 		effect = {
 			custom_tooltip = recover_economy_tt
@@ -405,6 +406,11 @@ country_decisions = {
 				name = "gecko_debt_tackled"
 				duration = -1
 			}
+			define_advisor = { 
+				type = gc_banker
+				skill = 3
+				cost_multiplier = 0.75
+			}	
 		}
 	}
 	gecko_debt_2 = {

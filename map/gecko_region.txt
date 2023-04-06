@@ -768,10 +768,8 @@ tibet_region = {
 
 hindusthan_region = {
 	areas = {
-		bihar_area
 		oudh_area
 		purvanchal_area
-		nepal_area
 		himalayan_hills_area
 		lower_doab_area
 		upper_doab_area
@@ -779,7 +777,6 @@ hindusthan_region = {
 		lahore_area
 		multan_area
 		kashmir_area
-		mithila_area
 		baghelkhand_area
 		gird_area
 		katehar_area
@@ -816,14 +813,10 @@ bengal_region = {
 west_india_region = {
 	areas = {
 		marwar_area
-		mewar_area
 		jaipur_area
-		malwa_area
 		saurashtra_area
-		tapti_area
 		sindh_area
 		northern_sindh_area
-		khandesh_area
 		ahmedabad_area
 		patan_area
 		jangladesh_area
