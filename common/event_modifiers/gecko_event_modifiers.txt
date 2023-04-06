@@ -248,8 +248,11 @@ gecko_development = {
 
 gecko_debt_tackled = {
 	build_cost = 0.33
-	land_maintenance_modifier = -0.5
-	interest = -0.75
+	land_maintenance_modifier = -0.75
+	global_trade_goods_size_modifier = 0.1
+	production_efficiency = 0.25
+	global_tax_modifier = 0.25
+	interest = -1
 	inflation_action_cost = -0.25
 	inflation_reduction = 1
 	global_regiment_recruit_speed = 1
