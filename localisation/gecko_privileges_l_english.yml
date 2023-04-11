@@ -17,7 +17,6 @@
  estate_nomadic_tribes_tribute:0 "Increased Tribal Tribute"
  estate_nomadic_tribes_tribute_desc:0 " "
 
-
 #mamluk privilege
  estate_gc_noble_levies:0 "Recruit Cavalry Retinue"
  estate_gc_noble_levies_desc:0 " "
@@ -42,8 +41,6 @@
  estate_mamluks_ownership: "Mamluks Land Ownership"
  mamluks_loyalty_modifier: "Mamluks Loyalty Equilibrium"
  mamluks_influence_modifier: "Mamluks Influence"
-
-
 
  #Hungarian Nobles Estate
 

@@ -4280,10 +4280,6 @@
  flavor_pol.33.a:0 "A surprise to be sure, but a welcome one!"
  flavor_pol.33.b:0 "As long as we are the heads of the Empire, they shall never join it!"
  
- 
- 
- 
- 
  #Personality 
  reformist_personality:0 "Reformist"
  desc_reformist_personality:0 "This ruler is a Reformist. Striving for stability and greatness of the country our ruler is ready to introduce reforms to existing systems in order to modernize the state."
@@ -4389,8 +4385,6 @@
  sca_lit_conquer_muscovy_title:0 "Campaign to Moscow"
  sca_lit_conquer_muscovy_desc:0 "Even with a strong Novgorod to check their power, the Muscovites remain an unacceptable threat. We must put a Lithuanian king upon their throne, or else strike at Moscow itself."
  
- 
- 
  #Modifiers
  lit_wave_piety_modifier:0 "Wave of Piety"
  desc_lit_wave_piety_modifier:0 "Our people have demonstrated unprecedented strength of faith, expressing our unity with the divine and its representatives upon the Earth."
@@ -4425,7 +4419,6 @@
  lit_forum_thought_modifier:0 "A Lithuanian Market of Ideas"
  desc_lit_forum_thought_modifier:0 "This institution is the beating heart of the scientific movement in Lithuania. Teaching subjects such as law, architecture, philosophy and more, this university has become quite prestigious and innovative."
  
- 
  #Tooltips
  lit_canonize_casimir_tt:1 "\n§YIf we complete this mission before Casimir's passing, he will be canonized, making him a Saint§!"
  until_we_form_country_desc:0 "until we form another country"
@@ -4446,12 +4439,10 @@
  lit_has_3_toh_tt:0 "Has at least §G3§! Tolerance of Heretics"
  lit_every_province_with_man_base_production_tt:0 "\nEvery owned province with a §YManufactory§! will gain §G1§! Base Production"
  
- 
  #Events 
  flavor_lit.14.t:0 "Canonization of Kazimierz Jagiellon"
  flavor_lit.14.d:0 "Originally born in the royal palace at Warsaw, Casimir was brought into adulthood under the tutelage of a Polish priest. His conservative upbringing led him to value his faith and wear it as an emblem upon his chest. His works during his reign, namely the erection of several temples and the betterment of relations with the Holy See led to him being declared a saint, a vibrant figure of Lithuanian piety and religious strength."
  flavor_lit.14.a:0 "Bless our lord!"
- 
  
  flavor_lit.15.t:0 "Academia et Universitas Vilnensis Societatis Jesu"
  flavor_lit.15.d:0 "In [GetYear], after a request of the monarch and the upper echelons of the nobility, the Jesuit Academy was created in [272.GetName]. Its primary function was to intermarry religion and science, philosophy and the humanities with theology. The first students enrolled soon after and a grand library was established in the same year, with various prominent figures of Lithuanian politics donating thousands of books and tomes of knowledge."
@@ -4478,7 +4469,6 @@
  flavor_lit.19.a:0 "Give them the autonomy they yearn for."
  flavor_lit.19.b:0 "Fetch my whip!"
  flavor_lit.19.c:0 "The steppes are calling!"
- 
  
  #Ideas 
  lit_new_magdeburg_laws:0 "New Magdeburg Laws"
@@ -4552,7 +4542,6 @@
  fin_handle_the_sami_title:0 "Integrate the Sami"
  fin_handle_the_sami_desc:0 "The Sami are a people living in the dense forests of the North, where no other Scandinavian - be it Swede, Norwegian or Dane - lives. They do not trade with the world outside their territory, and are completely isolated. They are, however, living in territory, which formally belongs to us. We should integrate them into our society so we can benefit from these forests."
  
- 
  #Modifiers
  fin_savage_tactics_modifier:0 "Savage Tactics"
  desc_fin_savage_tactics_modifier:0 "Our enemies are many and they will not stop until we have either been subjugated or erased from history. To prevent that, we must fight fire with fire and unleash our savage tactics upon all those who seek to harm or enslave our people."
@@ -4590,7 +4579,6 @@
  fin_claim_baltic_trade_node_tt:0 "Gain permanent claims on every province within the §YBaltic Trade Node§!"
  fin_finnish_militarization_tt:0 "\nIf we complete the mission while [1930.GetName] has a §YFortification§! building we will gain the following reward:"
  fin_gain_golden_era_bonuses_tt:0 "\nIf we have already had our §YGolden Era§! we will be able to have a second one. Alternatively, if we complete the mission while experiencing a §YGolden Era§!, its duration will be extended by §Y20§! years"
- 
  
  #Name Change 
  FBE:0 "Finnish Baltic Empire"
@@ -4672,8 +4660,6 @@
  hsa_marine_pilots_desc:0 "The navigation of the seas is no easy task. To assure that our cargo and ships remain as safe as possible, we must train better admirals and captains, the famous "Marine Pilots" of Lubeck, to guide our ships and deliver them in one piece."
  hsa_eagle_of_lubeck_title:0 "Eagle of Lubeck"
  hsa_eagle_of_lubeck_desc:0 "A large flagship to spearhead our naval forces would make our foes and rivals tremble in fear! The time to claim our naval superiority is nigh!"
- 
- 
  
  #Modifiers
  hsa_peterhof_depot_modifier:0 "St. Peterhof Depot Trade Station"

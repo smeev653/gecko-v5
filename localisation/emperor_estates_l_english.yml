@@ -1036,7 +1036,6 @@
  estate_jains_three_privileges_desc:0 "As a minority in the [Root.GetAdjective] state, the [Root.GetJainsName] feel disadvantaged in many aspects of life. They ask that we reassure them of their status by granting them further privileges."
  estate_jains_protect_against_piracy_desc:0 "The [Root.GetJainsName] bemoan their losses from piracy in the [agenda_trade_node_sea.GetName]. They beseech us to take action to drive out the pirates and privateers that are plundering their trade ships."
 
-
  #Privilege Descriptions
  estate_brahmins_land_rights_desc:0 "Performing the spiritual and worldly duties of the Hindu priestly caste does not come cheap. The [Root.GetBrahminsName] will be able to fulfil their role far better with more land at their disposal."
  estate_nobles_land_rights_desc:0 "The [Root.GetNobilityName], the best men of the nation, are surely those with the greatest claim to its lands."

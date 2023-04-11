@@ -1,7 +1,6 @@
 ﻿l_english:
 
  
- 
  ######estates and loyalty/influence modifiers######
  #ghilman#
  estate_ghilman: "Ghilman"
@@ -26,10 +25,5 @@
  #safavid order#
  estate_safavid_order:0 "Safavid Order" #description and loyalty/influence modifiers same as churc2h
  
- 
- 
 
-
- 
- 
  

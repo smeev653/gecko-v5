@@ -116,7 +116,6 @@
  gc_tim_events.1.d:0 "Sword of Islam, Conqueror of the World. The latest claimant to the title of heir of Timur has declared themselves an empire in His Name. Only time will tell if history will repeat itself. For the sake of innocent people everywhere, let us hope it does not."
  gc_tim_events.1.a:0 "One to rule them all"
 
-
  #Estate privs
  gecko.8.t:0 "Nobility Levies"
  gecko.8.d:0 "The levies previously provided by our Nobles have been put to good use. We now have an opportunity to press them for service again, however they will not like it."
@@ -129,7 +128,6 @@
  gecko.9.d:0 "Following the disaster of Arras and the tragic death of the Duke of Bedford, we are left with just our Norman possessions in France. We must hold on to these at all costs if we are to claim victory."
  gecko.9.a:0 "Once more unto the breach, dear friends, once more; Or close the wall up with our English dead."
  gecko.9_warning_tt:1 "§YEngland will lose this modifier if they lose Normandy to France§!"
-
 
  #gecko burgundy
  gc_burgundy_event.1.t:0 "The Ascension of Burgundy to an Independent Kingdom"
