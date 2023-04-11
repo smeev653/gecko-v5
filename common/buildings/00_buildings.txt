@@ -1488,7 +1488,7 @@ state_house = {
 #Gecko
 ####################################################################
 armory = {
-	cost = 750
+	cost = 500
 	time = 60
 
 	build_trigger = {
@@ -1527,7 +1527,7 @@ armory = {
 	on_obsolete = {
 	}
 	modifier = {
-		land_forcelimit = 5
+		land_forcelimit = 3
 		
 	}
 	onmap = no
