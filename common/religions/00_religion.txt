@@ -1049,7 +1049,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_maliki"
 
-			development_cost = -0.05
+			idea_cost = -0.05
 		}
 		shafii_school = {
 			potential_invite_scholar = {
@@ -1196,7 +1196,7 @@ muslim = {
 
 			horde_unity = 1
 			legitimacy = 1
-			republican_tradition = 0.2
+			republican_tradition = 0.5
 			devotion = 1
 		}
 		jafari_school = {
@@ -1351,7 +1351,7 @@ muslim = {
 		icon = 5
 		country = {
 			idea_cost = -0.05
-			heir_chance = 1.0
+			development_cost = -0.05
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1368,7 +1368,7 @@ muslim = {
 		color = { 0 204 0 }
 		icon = 6
 		country = {
-			heir_chance = 1.0
+			development_cost = -0.05
 			land_morale = 0.05
 		}
 		province = {
@@ -1385,7 +1385,7 @@ muslim = {
 		color = { 0 102 0 }
 		icon = 16
 		country = {
-			tolerance_heretic = 2
+			development_cost = -0.05
 			global_trade_goods_size_modifier = 0.1
 		}
 		province = {

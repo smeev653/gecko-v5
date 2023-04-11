@@ -1318,14 +1318,14 @@ trade_company_strong = {
 
 
 new_world_exploitation_modifier = {
-	global_trade_goods_size_modifier = 0.1
 }
 
 
 large_colonial_nation = {
-	
 }
 crown_colony_overlord = {
+		global_tariffs = -0.1
+		max_absolutism = -10
 }
 
 private_enterprise_overlord = {
@@ -1723,7 +1723,7 @@ maliki_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	development_cost = -0.05
+	idea_cost = -0.05
 }
 
 shafii_scholar_modifier = {
@@ -1758,7 +1758,7 @@ zaidi_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	shock_damage_received = -0.1
+	shock_damage_received = -0.10
 }
 
 ########################################
