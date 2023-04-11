@@ -236,10 +236,10 @@ shipyard = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 2
+		naval_forcelimit = 1
 		ship_recruit_speed = -0.5
 		local_ship_repair = 0.5
-		land_forcelimit = 0.5
+		land_forcelimit = 0.25
 	}
 	on_built = {
 	}
@@ -407,10 +407,10 @@ dock = {
 }
 
 regimental_camp = {
-	cost = 200
+	cost = 150
 	time = 12
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 0.75
 		
 	}
 
@@ -977,14 +977,14 @@ drydock = {
 }
 
 conscription_center = {
-	cost = 400
+	cost = 300
 	time = 12
 
 
 	make_obsolete = regimental_camp
 
 	modifier = {
-		land_forcelimit = 2
+		land_forcelimit = 1.5
 		
 	}
 	on_built = {

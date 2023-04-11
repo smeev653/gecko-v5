@@ -1005,7 +1005,7 @@ influence_ideas = {
 		vassal_income = 0.10
 	}
 	marcher_lords = {
-		vassal_forcelimit_bonus = 1
+		vassal_forcelimit_bonus = 0.5
 	}
 	ai_will_do = {
 		factor = 0
