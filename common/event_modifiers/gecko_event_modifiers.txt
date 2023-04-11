@@ -1,3 +1,7 @@
+PR_estate_clergy_exploration_expedition_mod = {
+	local_development_cost = -0.1
+}
+
 russian_consolidation = {
 	province_warscore_cost = -0.1
 }
