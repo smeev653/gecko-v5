@@ -19708,7 +19708,6 @@ fu_globe_theatre = {
 		}
 		
 		on_upgraded = {
-			custom_tooltip = fu_gain_patron_of_arts_personality_tt
 			hidden_effect = {
 				owner = { 
 					country_event = { id = FU_Monument_Events.6 }

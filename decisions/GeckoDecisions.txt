@@ -233,7 +233,6 @@ country_decisions = {
 				tooltip = GC_arty_officer_cooldown_tooltip
 				NOT = { has_country_modifier = gc_arty_officer_cooldown }
 			}
-			always = no
 		}
 		effect = {
 		}
@@ -580,6 +579,10 @@ country_decisions = {
 			any_owned_province = {
 					base_production = 10
 					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
+					OR = {
 						trade_goods = naval_supplies
 						trade_goods = livestock
 						trade_goods = wool
@@ -842,7 +845,6 @@ country_decisions = {
 				}	
 			}
 			allow = {
-				always = no
 			}	
 			provinces_to_highlight = {
 				NOT = { has_production_building_trigger = yes }
