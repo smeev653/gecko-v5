@@ -1724,7 +1724,7 @@ maliki_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	idea_cost = -0.05
+	development_cost = -0.05
 }
 
 shafii_scholar_modifier = {

@@ -1049,7 +1049,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_maliki"
 
-			idea_cost = -0.05
+			development_cost = -0.05
 		}
 		shafii_school = {
 			potential_invite_scholar = {
@@ -1350,8 +1350,8 @@ muslim = {
 		color = { 0 153 0 }
 		icon = 5
 		country = {
-			idea_cost = -0.05
-			development_cost = -0.05
+			cav_to_inf_ratio = 0.1
+			heir_chance = 1.0
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1368,7 +1368,7 @@ muslim = {
 		color = { 0 204 0 }
 		icon = 6
 		country = {
-			development_cost = -0.05
+			heir_chance = 1.0
 			land_morale = 0.05
 		}
 		province = {
@@ -1385,7 +1385,7 @@ muslim = {
 		color = { 0 102 0 }
 		icon = 16
 		country = {
-			development_cost = -0.05
+			heir_chance = 1.0
 			global_trade_goods_size_modifier = 0.1
 		}
 		province = {

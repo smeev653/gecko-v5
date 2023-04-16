@@ -152,7 +152,9 @@ PR_manpower_edict_province_2 = {
 
 PR_manpower_edict_cooldown = {
 }
-	
+
+PR_muslim_school_cooldown = {
+}	
 gc_african_corridor = {
 	local_production_efficiency = -0.1
 }

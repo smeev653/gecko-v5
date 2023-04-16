@@ -2,6 +2,7 @@ country_decisions = {
 	PR_manpower_edict = {
 		major = yes
 		potential = {
+			has_country_flag = show_extra_decisions
 			AND = {
 				ai = no
 				NOT = { has_country_modifier = PR_manpower_edict_cooldown }
@@ -969,6 +970,34 @@ country_decisions = {
 			}
 			effect = {
 			}
-		}	
+		}
+	# Select School
+	PR_muslim_school = {
+		major = yes
+		potential = {
+			has_country_flag = show_extra_decisions
+			AND = { 
+				religion_group = muslim
+				NOT = { has_country_modifier = PR_muslim_school_cooldown }
+				ai = no
+			}
+		}
+		allow = {
+			NOT = { has_country_modifier = PR_muslim_school_cooldown }
+		}
+		effect = {
+			country_event = {
+				id = PR_events.2
+			}
+			add_country_modifier = {
+				name = "PR_muslim_school_cooldown"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	
 } #End of the bracket	
 	

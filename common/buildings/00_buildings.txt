@@ -1322,7 +1322,7 @@ ramparts = {
 				}
 			}
 		}
-		NOT = {has_terrain = mountains }
+		NOT = {has_terrain = mountain }
 	}
 	keep_trigger = {
 		NOT = {
@@ -1337,7 +1337,7 @@ ramparts = {
 				}
 			}
 		}
-		NOT = {has_terrain = mountains }
+		NOT = {has_terrain = mountain }
 	}	
 
 	onmap = no
