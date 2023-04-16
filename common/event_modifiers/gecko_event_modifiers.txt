@@ -140,6 +140,19 @@ urbanisation = {
 	global_trade_goods_size_modifier = 0.1
 }
 
+PR_manpower_edict_province = {
+	local_manpower_modifier = 0.25
+	local_state_maintenance_modifier = 2.0
+}
+
+PR_manpower_edict_province_2 = {
+	local_manpower_modifier = 0.50
+	local_state_maintenance_modifier = 2.0
+}
+
+PR_manpower_edict_cooldown = {
+}
+	
 gc_african_corridor = {
 	local_production_efficiency = -0.1
 }
