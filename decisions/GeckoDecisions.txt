@@ -561,7 +561,6 @@ country_decisions = {
 				}
 		}
 		effect = {
-			gecko_mercs = yes
 			add_country_modifier = {
 				name = "mercs_bought"
 				duration = -1
@@ -575,6 +574,225 @@ country_decisions = {
 			country_event = {
 				id = gecko.39 days = 30
 			}
+			
+			
+			if = {
+					limit = {
+						has_country_modifier = Minor
+					}
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 30
+						}
+						if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_mass_army}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								has_country_modifier = We_stand_alone
+								NOT = {has_age_ability = ab_burgundy_merc_manpower}
+								NOT = {has_age_ability = ab_hesse_mercs}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								has_country_modifier = We_stand_alone
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.3
+								}
+						}
+						else = {
+							#nothing
+						}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}	
+				}
+				else = {
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 20
+						}
+						if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_mass_army}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								has_country_modifier = We_stand_alone
+								NOT = {has_age_ability = ab_burgundy_merc_manpower}
+								NOT = {has_age_ability = ab_hesse_mercs}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								has_country_modifier = We_stand_alone
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.3
+								}
+						}
+			else = {
+				#nothing
+			}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}
+				}
 		}
 	}
 	Show_Merc_limit = {
@@ -595,7 +813,223 @@ country_decisions = {
 		}
 		effect = {
 			custom_tooltip = gecko_merc_limit_tt
-			gecko_mercs = yes
+				if = {
+					limit = {
+						has_country_modifier = Minor
+					}
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 30
+						}
+						if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_mass_army}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								has_country_modifier = We_stand_alone
+								NOT = {has_age_ability = ab_burgundy_merc_manpower}
+								NOT = {has_age_ability = ab_hesse_mercs}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								has_country_modifier = We_stand_alone
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.3
+								}
+						}
+							 else = {
+								#nothing
+							}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}	
+				}
+				else = {
+					hidden_effect = {
+						export_to_variable = {
+								which = geckomercFL
+								value = land_forcelimit
+								who = ROOT
+						}
+						divide_variable = {
+								which = geckomercFL
+								value = 100
+						}
+						multiply_variable = {
+								which = geckomercFL
+								value = 25
+						}
+						change_variable = {
+								which = geckomercFL
+								value = 20
+						}
+						if = {
+							limit = {
+								has_country_modifier = We_stand_alone
+								NOT = {has_idea = gc_compagnies_ordonnance}
+								NOT = {has_idea = gc_mass_army}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								NOT = { has_age_ability = ab_burgundy_merc_manpower }
+								NOT = { has_age_ability = ab_hesse_mercs}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.1
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								NOT = { has_country_modifier = We_stand_alone}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								has_country_modifier = We_stand_alone
+								NOT = {has_age_ability = ab_burgundy_merc_manpower}
+								NOT = {has_age_ability = ab_hesse_mercs}
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.2
+								}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_idea = gc_compagnies_ordonnance
+									has_idea = gc_mass_army
+								}
+								OR = {
+									has_age_ability = ab_burgundy_merc_manpower
+									has_age_ability = ab_hesse_mercs
+								}
+								has_country_modifier = We_stand_alone
+							}
+								multiply_variable = { 
+									which = geckomercFL
+									value = 1.3
+								}
+						}
+							 else = {
+								#nothing
+							}
+						export_to_variable = {
+									which = geckomercvalue
+									value = trigger_value:num_of_mercenaries
+									who = ROOT
+						}
+					}
+				}
 		}	
 	}
 	gc_hungary_swap_path_1 = { #Changes Hungarian Path from East to West 
