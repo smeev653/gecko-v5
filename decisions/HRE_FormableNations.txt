@@ -1059,14 +1059,14 @@ country_decisions = {
 					NOT = { primary_culture = hessian }
 					NOT = { accepted_culture = hessian }
 				}
-				add_accepted_culture = hessian
+				add_accepted_culture_or_dip_power = hessian
 			}
 			if = {
 				limit = {
 					NOT = { primary_culture = hannoverian }
 					NOT = { accepted_culture = hannoverian }
 				}
-				add_accepted_culture = hannoverian
+				add_accepted_culture_or_dip_power = hannoverian
 			}
 			add_country_modifier = {
 				name = "decentralization_modifier"

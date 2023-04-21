@@ -2274,6 +2274,24 @@ on_trade_good_changed_estate_privileges_effect = {
 		}
 		remove_province_modifier = estate_maratha_monopoly_of_gems_mod
 	}
+	if = {
+		limit = {
+			has_province_modifier = estate_burghers_control_over_gold_mine
+			NOT = { trade_goods = gold }
+		}
+		remove_province_modifier = estate_burghers_control_over_gold_mine
+	}
+	else_if = {
+		limit = {
+			from = { has_estate_privilege = estate_burghers_control_over_the_mint }
+			NOT = { has_province_modifier = estate_burghers_control_over_gold_mine }
+			trade_goods = gold
+		}
+		add_province_modifier = {
+			name = estate_burghers_control_over_gold_mine
+			duration = -1
+		}
+	}
 }
 
 on_loan_repaid_estate_privileges_effect = {

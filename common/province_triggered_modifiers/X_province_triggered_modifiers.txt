@@ -37,3 +37,21 @@ X_RUS_estate_streltsy_privilege_ptmod = {
 	on_deactivation = {
 	}
 }
+
+X_cultural_union_group_control_effect_ptmod = {
+	hidden = yes
+	potential = {
+		always = yes
+	}
+	trigger = {
+		is_month = 0
+		NOT = { is_month = 1 }
+	}
+	on_activation = {
+		owner = {
+			X_cultural_unions_effect = yes
+		}
+	}
+	on_deactivation = {
+	}
+}

@@ -324,7 +324,7 @@ HES_Missions_4 = {
 		}
 		effect = {
 			add_mil_power = 100
-			add_army_tradition = 15
+			add_army_tradition_or_mil_power = { amount = 15 }
 			custom_tooltip = HES_every_fort_province
 			tooltip = {
 				add_institution_embracement = {

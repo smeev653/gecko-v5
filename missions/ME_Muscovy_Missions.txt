@@ -966,7 +966,7 @@ MOS_4 = {
 			464 = {
 				change_religion = ROOT
 				change_culture = ROOT
-				add_center_of_trade_level = 1
+				create_or_add_center_of_trade_level = { level = 1 }
 			}
 		}
 	}

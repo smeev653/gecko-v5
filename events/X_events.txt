@@ -1397,7 +1397,7 @@ country_event = {
 		custom_tooltip = X_CRI_event_8_tt
 		custom_tooltip = X_CRI_event_8_tt2
 		hidden_effect = {
-			286 = { add_center_of_trade_level = 2 }
+			286 = { X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes } }
 		}
 		GEN = {
 			while = {

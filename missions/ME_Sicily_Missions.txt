@@ -668,7 +668,7 @@ sicily_mission_3 = {
 		}
 		effect = {
 			125 = {
-				add_center_of_trade_level = 1
+				create_or_add_center_of_trade_level = { level = 1 }
 				if = {
 					limit = {
 						has_building = shipyard
@@ -1006,6 +1006,7 @@ sicily_mission_3 = {
 			}
 		}
 		effect = {
+			add_mana_scaled_on_monarch_skill = yes
 			hidden_effect = {
 				complete_mission = nap_sicilian_union
 			}

@@ -72,6 +72,11 @@ on_startup = {
 			hidden = yes
 		}
 	}
+	######################
+	# Cultural Unions
+	######################
+	X_cultural_unions_effect = yes
+	#######
 }
 
 # country

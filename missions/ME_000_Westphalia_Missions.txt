@@ -133,7 +133,7 @@ WES_Generic_Missions_2 = {
 			manpower_percentage = 0.2
 		}
 		effect = {
-			add_army_tradition = 10
+			add_army_tradition_or_mil_power = { amount = 10 }
 			custom_tooltip = WES_claim_on_all
 			hidden_effect = {
 				every_province = {

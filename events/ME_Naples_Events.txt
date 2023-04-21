@@ -372,6 +372,9 @@ country_event = {
 			factor = 50
 		}
 
+		change_religious_influence_equivalent = {
+			add = 25
+		}
 		add_stability_or_adm_power = yes
 	}
 }
