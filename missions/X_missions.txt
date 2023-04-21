@@ -2091,7 +2091,7 @@ X_VEN_slot_5 = {
 		effect = {
 			if = {
 				limit = { owns_or_subject_of = 321 }
-				321 = { add_center_of_trade_level = 1}
+				321 = { X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes } }
 			}
 			else = { country_event = { id = X_VEN_events.3 } }
 			320 = {
@@ -2919,7 +2919,7 @@ X_CRI_slot_3 = {
 			}
 			6213 = {
 				change_trade_goods = slaves
-				add_center_of_trade_level = 1
+				X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
 				rename_capital = "Qarasubazar"
 			}
 			if = { 
@@ -2946,11 +2946,122 @@ X_CRI_slot_3 = {
 			}
 		}
 		effect = {
+			custom_tooltip = X_CRI_mission_11_tt
 			295 = {
 				add_devastation = 50
 				owner = {
 					add_prestige = -50
 					add_legitimacy = -25
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					which = X_CRI_moscow_development_variable
+					value = 0
+				}
+				set_variable = {
+					which = X_CRI_moscow_development_to_remove_variable
+					value = 0
+				}
+				295 = {
+					export_to_variable = {
+						which = X_CRI_moscow_development_variable
+						value = development
+					}
+					for_variable_amount = {
+						variable = X_CRI_moscow_development_variable
+						effect = "
+							ROOT = {
+								add_manpower = 1
+								add_treasury = 20
+							}
+						"
+					}
+					divide_variable = {            
+						which = X_CRI_moscow_development_variable
+						value = 3
+					}
+					for_variable_amount = {
+						variable = X_CRI_moscow_development_variable
+						effect = "
+							ROOT = {
+								add_manpower = 1
+								add_treasury = 20
+							}
+						"
+					}
+					while = {	
+						limit = {		
+							check_variable = {
+								which = X_CRI_moscow_development_variable
+								value = 1
+							}
+						}
+						random_list = {
+							1 = {
+								if = {
+									limit = { base_tax = 2 }
+									add_base_tax = -1
+								}
+								else_if = {
+									limit = { base_production = 2 }
+									add_base_production = -1
+								}
+								else = {
+									limit = { base_manpower = 2 }
+									add_base_manpower = -1
+								}
+							}
+							1 = {
+								if = {
+									limit = { base_production = 2 }
+									add_base_production = -1
+								}
+								else_if = {
+									add_base_tax = -1
+									limit = { base_manpower = 2 }
+									add_base_manpower = -1
+								}
+								else = {
+									limit = { base_tax = 2 }
+									add_base_tax = -1
+								}
+							}
+							1 = {
+								if = {
+									limit = { base_manpower = 2 }
+									add_base_manpower = -1
+								}
+								else_if = {
+									limit = { base_tax = 2 }
+									add_base_tax = -1
+								}
+								else = {
+									limit = { base_production = 2 }
+									add_base_production = -1
+								}
+							}
+						}
+						ROOT = {
+							random_owned_province = {
+								random_list = {
+									1 = {
+										add_base_tax = 1
+									}
+									1 = {
+										add_base_production = 1
+									}
+									1 = {
+										add_base_manpower = 1
+									}
+								}
+							}
+						}
+						subtract_variable = {
+							which = X_CRI_moscow_development_variable
+							value = 1
+						}
+					}
 				}
 			}
 			russia_region = {
@@ -3329,13 +3440,13 @@ X_CRI_slot_5 = {
 						limit = {
 							2961 = { is_core = VOL }
 						}
-						2961 = {add_center_of_trade_level = 1 }
+						2961 = { X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes } }
 					}
 					if = {
 						limit = {
 							279 = { is_core = VOL }
 						}
-						279 = { add_center_of_trade_level = 1 }
+						279 = { X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes } }
 					}
 					if = {
 						limit = {
@@ -3370,13 +3481,13 @@ X_CRI_slot_5 = {
 					limit = {
 						2961 = { country_or_subject_holds = ROOT }
 					}
-					2961 = { add_center_of_trade_level = 1 }
+					2961 = { X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes } }
 				}
 				if = {
 					limit = {
 						279 = { country_or_subject_holds = ROOT }
 					}
-					279 = { add_center_of_trade_level = 1 }
+					279 = { X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes } }
 				}
 				if = {
 					limit = {
@@ -3620,7 +3731,7 @@ X_POR_slot_4 = {
 			add_years_of_income = -0.5
 			368 = {
 				change_trade_goods = sugar
-				add_center_of_trade_level = 1
+				X_center_of_trade_effect = { cost_equivalency_max_lvl_3 = yes }
 				rename_capital = "Funchal"
 				add_prosperity = 50
 			}
@@ -3708,7 +3819,7 @@ X_POR_slot_5 = {
 		}
 		effect = {
 			230 = {
-				add_center_of_trade_level = 1
+				X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1

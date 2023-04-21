@@ -1,6 +1,153 @@
 ####################
 # General
 ####################
+X_center_of_trade_effect = { #Not using country flags to switch between max levels due to tooltips.
+	[[standard_max_lvl_2]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+			add_center_of_trade_level = 1
+		}
+	]
+	[[standard_max_lvl_3]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			add_center_of_trade_level = 1
+		}
+	]
+	[[cost_equivalency_max_lvl_2]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else_if = {
+			limit = { NOT = { province_has_center_of_trade_of_level = 2 } }
+			add_center_of_trade_level = 1
+		}
+		else = { 
+			custom_tooltip = X_center_of_trade_effect_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 2
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					owner = {
+						set_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 0
+						}
+						export_to_variable = {
+							variable_name = X_center_of_trade_effect_cost_variable
+							value = modifier:center_of_trade_upgrade_cost
+							who = ROOT
+						}
+						change_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 1
+						}
+						multiply_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 200
+						}
+						for_variable_amount = {
+							variable = X_center_of_trade_effect_cost_variable
+							effect = "
+								add_treasury = 1
+							"
+						}
+					}
+				}
+				else = {
+					owner = { 
+						set_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 0
+						}
+						export_to_variable = {
+							variable_name = X_center_of_trade_effect_cost_variable
+							value = modifier:center_of_trade_upgrade_cost
+							who = ROOT
+						}
+						change_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 1
+						}
+						multiply_variable = {
+							which = X_center_of_trade_effect_cost_variable
+							value = 1000
+						}
+						for_variable_amount = {
+							variable = X_center_of_trade_effect_cost_variable
+							effect = "
+								add_treasury = 1
+							"
+						}
+					}
+				}
+			}
+		}
+	]
+	[[cost_equivalency_max_lvl_3]
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+		else_if = {
+			limit = { NOT = { province_has_center_of_trade_of_level = 3 } }
+			add_center_of_trade_level = 1
+		}
+		else = {
+			custom_tooltip = X_center_of_trade_effect_tt
+			hidden_effect = {
+				owner = {
+					set_variable = {
+						which = X_center_of_trade_effect_cost_variable
+						value = 0
+					}
+					export_to_variable = {
+						variable_name = X_center_of_trade_effect_cost_variable
+						value = modifier:center_of_trade_upgrade_cost
+						who = ROOT
+					}
+					change_variable = {
+						which = X_center_of_trade_effect_cost_variable
+						value = 1
+					}
+					multiply_variable = {
+						which = X_center_of_trade_effect_cost_variable
+						value = 1000
+					}
+					for_variable_amount = {
+						variable = X_center_of_trade_effect_cost_variable
+						effect = "
+							add_treasury = 1
+						"
+					}
+				}
+			}
+		}
+	]
+}
 
 X_improve_ruler_stats_effect = {
 	[[adm]
