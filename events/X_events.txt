@@ -609,7 +609,221 @@ province_event = {
 		owner = { clr_country_flag = X_in_pe_and_ei_event_3_cflag }
 	}
 }
+########################################
+# Estate Events
+########################################
+namespace = X_estate_events
 
+#[x_estate_cossacks_privilege_2_country_event_target.GetAdjective] Cossack Raid of [x_estate_cossacks_privilege_2_area_event_target.GetAreaName]
+country_event = {
+	id = X_estate_events.2
+	title = X_estate_events.2.t
+	desc = X_estate_events.2.d1
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
+	mean_time_to_happen = { months = 3 }
+	trigger = {
+		ROOT = {
+			NOT = {
+				any_province = {
+					owned_by = ROOT
+					has_province_modifier = X_estate_cossacks_privilege_2_pmod
+				}
+			}
+			any_country = {
+				has_estate_privilege = X_estate_cossacks_privilege_2
+				NOT = { religion_group = ROOT }
+				NOT = { truce_with = ROOT }
+				NOT = { war_with = ROOT }
+				NOT = {
+					has_estate_loyalty_modifier = {
+						estate = estate_cossacks
+						modifier = X_estate_cossacks_sponsored_raid_lmod
+					}
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					any_neighbor_country = {
+						is_subject_of = ROOT
+					}
+					any_subject_country = { 
+						OR = {
+							AND = {
+								is_neighbor_of = ROOT
+							}
+							any_neighbor_country = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					has_estate_privilege = X_estate_cossacks_privilege_2
+					OR = {
+						is_neighbor_of = ROOT
+						any_neighbor_country = {
+							is_subject_of = ROOT
+						}
+						any_subject_country = { 
+							OR = {
+								AND = {
+									is_neighbor_of = ROOT
+								}
+								any_neighbor_country = {
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
+				}
+				save_event_target_as = x_estate_cossacks_privilege_2_country_event_target
+				ROOT = {
+					set_variable = {
+						which = X_cossack_raid_development_variable
+						value = 0
+					}
+					set_variable = {
+						which = X_cossack_raid_total_development_variable
+						value = 0
+					}
+					set_variable = {
+						which = X_cossack_raid_total_development_localization_variable
+						value = 0
+					}
+					random_owned_area = { save_event_target_as = x_estate_cossacks_privilege_2_area_event_target }
+					every_owned_province = {
+						limit = { area = event_target:x_estate_cossacks_privilege_2_area_event_target }
+						export_to_variable = {
+							which = X_cossack_raid_development_variable
+							value = development
+						}
+						PREV = {
+							set_variable = {
+								which = X_cossack_raid_development_variable
+								which = PREV
+							}
+							change_variable = {
+								which = X_cossack_raid_total_development_variable
+								which = X_cossack_raid_development_variable
+							}
+						}
+					}
+					set_variable = {
+						which = X_cossack_raid_total_development_localization_variable
+						which = X_cossack_raid_total_development_variable
+					}
+					while = {
+						limit = {		
+							check_variable = {
+								which = X_cossack_raid_total_development_variable
+								value = 1
+							}
+							treasury = 10
+						}
+						add_treasury = -10
+						PREV = {
+							add_treasury = 10
+						}
+						subtract_variable = {
+							which = X_cossack_raid_total_development_variable
+							value = 1
+						}
+					}
+					subtract_variable = {
+						which = X_cossack_raid_total_development_localization_variable
+						which = X_cossack_raid_total_development_variable
+					}
+					multiply_variable = {
+						which = X_cossack_raid_total_development_localization_variable
+						value = 10
+					}
+					event_target:x_estate_cossacks_privilege_2_country_event_target = {
+						country_event = { id = X_estate_events.3 }
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = X_estate_events.2.a
+		random_owned_area = {
+			add_devastation = 10
+			add_province_modifier = {
+				name = X_estate_cossacks_privilege_2_pmod
+				duration = 3650
+			}
+		}
+		custom_tooltip = X_cossack_raid_tt
+	}
+}
+
+#Cossack Raid of [From.GetName]
+country_event = {
+	id = X_estate_events.3
+	title = X_estate_events.3.t
+	desc = X_estate_events.3.d1
+	picture = COSSACK_ESTATE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_estate_loyalty_modifier = {
+				estate = estate_cossacks
+				desc = X_estate_cossacks_sponsored_raid_lmod
+				loyalty = 5
+				duration = 3650
+			}
+		}
+	}
+	option = {
+		name = X_estate_events.3.a
+		tooltip = {
+			add_estate_loyalty_modifier = {
+				estate = estate_cossacks
+				desc = X_estate_cossacks_sponsored_raid_lmod
+				loyalty = 5
+				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					OR = {
+						has_terrain = steppe
+						AND = {
+							region = ruthenia_region
+							OR = {
+								has_terrain = farmlands
+								has_terrain = grasslands
+							}
+						}
+					}
+				}
+			}
+			random_owned_province = { 
+				limit = {
+					OR = {
+						has_terrain = steppe
+						AND = {
+							region = ruthenia_region
+							OR = {
+								has_terrain = farmlands
+								has_terrain = grasslands
+							}
+						}
+					}
+				}
+				add_base_tax = 2
+				add_base_production = 2
+			}
+		}
+		custom_tooltip = X_cossack_raid_tt2
+	}
+}
 ########################################
 # Events for Venice
 ########################################

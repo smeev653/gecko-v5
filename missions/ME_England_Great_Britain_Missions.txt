@@ -3300,6 +3300,7 @@ ENG_missions_5_1 = {
 		position = 7
 		trigger = {
 			army_tradition = 40
+			check_variable = { which = voting_streak value = 5 }
 		}
 		effect = {
 			set_country_flag = eng_longbowmen_last_until_end_of_reformation

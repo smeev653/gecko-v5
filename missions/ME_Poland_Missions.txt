@@ -488,6 +488,29 @@ POL_Missions_1 = {
 				39 = { 
 					country_or_non_sovereign_subject_holds = ROOT
 				}
+				custom_trigger_tooltip = {
+					tooltip = POL_50_dev
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = area_var
+							value = development
+							who = 43
+						}
+						export_to_variable = {
+							which = province_41
+							value = development
+							who = 41
+						}
+						change_variable = { which = area_var which = province_41 }
+						export_to_variable = {
+							which = province_39
+							value = development
+							who = 39
+						}
+						change_variable = { which = area_var which = province_39 }
+						check_variable = { which = area_var value = 50 }
+					}
+				}
 			}
 			262 = {
 				trade_share ={
@@ -2756,6 +2779,50 @@ POL_Missions_5_Jagiellon = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
+				AND  = {
+					variable_arithmetic_trigger = {
+						custom_tooltip = POL_larger_army_than_BOH
+						export_to_variable = {
+							variable_name = BRA_BOH_Army
+							value = army_size
+							who = BOH
+						}
+						export_to_variable = {
+							variable_name = BRA_POL_Army
+							value = army_size
+							who = ROOT
+						}
+						multiply_variable = {
+							which = BRA_BOH_Army
+							value = 3
+						}
+						check_variable = {
+							which = BRA_POL_Army
+							which = BRA_BOH_Army
+						}
+					}
+					variable_arithmetic_trigger = {
+						custom_tooltip = POL_greater_development_than_BOH
+						export_to_variable = {
+							variable_name = BRA_BOH_Development
+							value = total_development
+							who = BOH
+						}
+						export_to_variable = {
+							variable_name = BRA_POL_Development
+							value = total_development
+							who = ROOT
+						}
+						multiply_variable = {
+							which = BRA_BOH_Development
+							value = 3
+						}
+						check_variable = {
+							which = BRA_POL_Development
+							which = BRA_BOH_Development
+						}
+					}
+				}
 			}
 		}
 		effect = {
@@ -2847,6 +2914,50 @@ POL_Missions_5_Jagiellon = {
 				slovakia_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
+				}
+				AND = {
+					variable_arithmetic_trigger = {
+						custom_tooltip = POL_larger_army_than_HUN
+						export_to_variable = {
+							variable_name = BRA_HUN_Army
+							value = army_size
+							who = HUN
+						}
+						export_to_variable = {
+							variable_name = BRA_POL_Army
+							value = army_size
+							who = ROOT
+						}
+						multiply_variable = {
+							which = BRA_HUN_Army
+							value = 3
+						}
+						check_variable = {
+							which = BRA_POL_Army
+							which = BRA_HUN_Army
+						}
+					}
+					variable_arithmetic_trigger = {
+						custom_tooltip = POL_greater_development_than_HUN
+						export_to_variable = {
+							variable_name = BRA_HUN_Development
+							value = total_development
+							who = HUN
+						}
+						export_to_variable = {
+							variable_name = BRA_POL_Development
+							value = total_development
+							who = ROOT
+						}
+						multiply_variable = {
+							which = BRA_HUN_Development
+							value = 3
+						}
+						check_variable = {
+							which = BRA_POL_Development
+							which = BRA_HUN_Development
+						}
+					}
 				}
 			}
 		}
