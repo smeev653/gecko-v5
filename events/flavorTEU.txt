@@ -1976,7 +1976,7 @@ country_event = {
 	goto = 295
 	option = {	#Integrate the Muscovites
 		name = flavor_teu.37.a
-		add_accepted_culture_or_dip_power = russian
+		add_accepted_culture_or_dip_power = { culture = russian }
 		add_dip_power = 100
 		295 = {
 			add_base_tax = 3

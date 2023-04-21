@@ -797,7 +797,7 @@ categories =  {
 		sound_type = plains
 
 		movement_cost = 1.0
-		local_development_cost = 0.10
+		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.9	
 		supply_limit = 6
 		

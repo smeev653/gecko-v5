@@ -2261,7 +2261,7 @@ country_event = { #The Crown of Rome
 					change_culture = ROOT
 				}
 			}
-			add_accepted_culture_or_dip_power = polish
+			add_accepted_culture_or_dip_power = { culture = polish }
 		}
 		151 = { 
 			if = { 
